@@ -53,6 +53,7 @@ def tech(pid):
     desc = L.get('description', '')
     add('no em dashes or emojis', not re.search('[—\U0001F300-\U0001FAFF]', desc + L.get('title', '')), 'checked title and description')
     claims = [int(m) for m in re.findall(r'(\d{2,4})\+?\s*(?:hyperlinked\s+|linked\s+)?pages', desc)]
+    claims = [c for c in claims if not 2020 <= c <= 2039]  # years ("Nov and Dec 2026 pages") are not page counts
     add('page claims match the file', all(c <= n for c in claims), f'claims {claims}, file has {n}')
     add('says digital download', 'digital' in desc.lower() and 'shipped' in desc.lower(), 'download and nothing-shipped note')
     store.write(os.path.join(d, 'check-tech.json'), out)

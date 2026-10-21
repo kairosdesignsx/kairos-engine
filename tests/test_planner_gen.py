@@ -31,6 +31,11 @@ def run(spec, name):
     W, H = r['size']
     out = subprocess.run(['node', 'lines/planner/render.js', html, pdf, os.path.abspath('tests/out'), 'd0115,w03,start,linktest', str(W), str(H)], capture_output=True, text=True)
     over = json.loads(out.stdout.split('overflow', 1)[1].strip().splitlines()[0]) if 'overflow' in out.stdout else None
+    import pypdf
+    rd = pypdf.PdfReader(pdf)
+    fonts = {str(f.get_object().get('/BaseFont', '')) for pg in rd.pages[::max(1, len(rd.pages) // 60)] for f in ((pg.get('/Resources') or {}).get('/Font') or {}).values()}
+    bad = [f for f in fonts if any(x in f for x in ('Liberation', 'DejaVu', 'Noto', 'Arial', 'Times', 'Helvetica'))]
+    assert not bad, f'fallback fonts embedded: {bad}'
     print(name, r['pages'], 'pages', r['links'], 'links', f"{os.path.getsize(pdf)/1e6:.1f} MB raw", 'overflow:', over, f'{time.time()-t:.0f}s', out.stderr[:200])
     return r, over
 

@@ -1,6 +1,6 @@
 """Stage 9: Queue. Package a checked product for the Review Queue page.
 
-  python3 stages/queue.py <pid>  -> data/products/<pid>/queue/NN.jpg and queue.json
+  python3 stages/enqueue.py <pid>  -> data/products/<pid>/queue/NN.jpg and queue.json
 queue.json = {"doc": product row for the page's database (collection "products", id = pid),
               "files": {published path: local path}}  (published as p/<pid>/NN.jpg)
 The session then publishes the files to the Review Queue artifact and writes the row with ArtifactData.
@@ -65,7 +65,8 @@ def run(pid):
            "line": LINE_NAMES.get(brief['line'], brief['line']), "lane": brief['type_id'], "price": listing['price'],
            "images": list(files), "status": "queued" if check['pass'] else "needs_help", "created": int(time.time() * 1000),
            "listing": {"title": listing['title'], "tags": listing['tags'], "description": listing['description']},
-           "files": build['files'], "evidence": evidence, "engine": {"brief_id": brief['brief_id'], "product_id": pid}}
+           "files": build['files'], "evidence": evidence, "engine": {"brief_id": brief['brief_id'], "product_id": pid},
+           "claude_note": ' '.join(check.get('notes', []) + ["Before approving: open the PDF in Goodnotes (or your tablet app), tap a few month tabs and dates, and write on one page. The listing names apps we have not tested on a real device yet."])}
     store.write(os.path.join(d, 'queue.json'), {"doc": doc, "files": files})
     return {"ok": True, "images": len(files), "queue": os.path.join(d, 'queue.json')}
 

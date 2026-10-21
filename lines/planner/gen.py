@@ -38,6 +38,12 @@ def esc(s):
     return H.escape(str(s))
 
 
+def arrow(d='r', size=14):
+    """Arrow drawn as SVG: the planner fonts have no arrow glyphs, and a fallback font would be embedded (licensing check)."""
+    path = 'M2,7 H12 M8,3 L12,7 L8,11' if d == 'r' else 'M12,7 H2 M6,3 L2,7 L6,11'
+    return f'<svg width="{size}" height="{size}" viewBox="0 0 14 14" style="vertical-align:-2px"><path d="{path}" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+
+
 def resolve_theme(t):
     if isinstance(t, str):
         return dict(THEMES[t])
@@ -336,7 +342,7 @@ def m_lined(P, sec):
     _register(P, sec, sec['label'], a, sec.get('kicker', 'Pages'))
     for i in range(1, n + 1):
         anchor = a if i == 1 else f'{a}{i}'
-        nxt = f' <a href="#{a}{i + 1}">&rarr;</a>' if i < n else ''
+        nxt = f' <a href="#{a}{i + 1}">{arrow('r')}</a>' if i < n else ''
         P.page(anchor, P.head(sec.get('kicker', '') if n == 1 else f'{sec.get("kicker", "")} · page {i} of {n}', sec['label'], right=f'<span class="k" style="font-size:16px">{nxt}</span>') +
                f'<div class="box" style="flex:1"><div class="{"dots" if sec.get("dots") else "lines"}"></div></div>', active=a)
 
@@ -387,7 +393,7 @@ def m_guide(P, sec):
 def m_link_test(P, sec):
     th = P.th; a = sec.get('anchor', 'linktest')
     targets = [('A month page', 'm01'), ('The year', 'year'), ('Contents', 'index')]
-    btns = ''.join(f'<a href="#{t}" style="padding:14px 18px;border-radius:14px;background:{th["soft"]};font:600 15px \'{th["body"]}\';display:flex;justify-content:space-between"><span>{esc(l)}</span><span>&rarr;</span></a>' for l, t in targets)
+    btns = ''.join(f'<a href="#{t}" style="padding:14px 18px;border-radius:14px;background:{th["soft"]};font:600 15px \'{th["body"]}\';display:flex;justify-content:space-between"><span>{esc(l)}</span><span>{arrow('r')}</span></a>' for l, t in targets)
     inner = P.head('Setup check', sec.get('label', 'Do your links work?')) + f'''
       <div class="row" style="flex:1"><div class="col" style="flex:1"><div class="box fill"><span class="k">Try it now</span><span style="font-size:{P.fs(14)};line-height:1.5">Tap each button. If it jumps, your planner is set up. Use the Home tab at the top to come back.</span></div>{btns}</div>
       <div class="col" style="flex:1"><div class="box" style="flex:1"><span class="k">Nothing happened?</span>{_chk(4, ["Turn the pen off (read or view mode)", "Open the file in a PDF planner app, not Files or Photos", "Re-import the PDF, do not convert it", "Still stuck? Message us on Etsy, we reply fast"])}</div></div></div>'''
@@ -481,7 +487,7 @@ def _day(P, d, n, m, i, lay):
         next_a = P.did(nd) if nd.year == P.year else None
         title = f'{MONTHS[d.month - 1]} {d.day}'
         kicker = d.strftime('%A')
-    arrows = (f'<a href="#{prev_a}">&larr;</a>' if prev_a else '') + (f' <a href="#{next_a}">&rarr;</a>' if next_a else '')
+    arrows = (f'<a href="#{prev_a}">{arrow('l')}</a>' if prev_a else '') + (f' <a href="#{next_a}">{arrow('r')}</a>' if next_a else '')
     left = ''.join(block(P, b) for b in lay['left'])
     right = ''.join(block(P, b) for b in lay['right'])
     inner = f'{P.head(kicker, title, right=f"<span class=k style=font-size:16px>{arrows}</span>")}<div class="row" style="flex:1"><div class="col" style="flex:1">{left}</div><div class="col" style="flex:1.15">{right}</div></div>'
@@ -516,7 +522,7 @@ def m_head_start(P, sec):
     dlay = dsec if dsec.get('left') else DAY_PRESETS[dsec.get('preset', 'default')]
     side_labels = (sec.get('month') or {}).get('side', ['Goals', 'Notes'])
     _register(P, sec, sec.get('label', 'Head start'), f'{pre}{m0:02d}', sec.get('kicker', 'Start now'), nav=False)
-    contlink = f'<a href="#{cont}" style="padding:6px 12px;border-radius:{P.rpill}px;background:{th["ink"]};color:{th["paper"]};font:600 11px \'{th["body"]}\';letter-spacing:.08em;text-transform:uppercase">Continue to {MONTHS[0] if cont == "m01" else "the year"} {P.year if not P.undated else ""} &rarr;</a>'
+    contlink = f'<a href="#{cont}" style="padding:6px 12px;border-radius:{P.rpill}px;background:{th["ink"]};color:{th["paper"]};font:600 11px \'{th["body"]}\';letter-spacing:.08em;text-transform:uppercase">Continue to {MONTHS[0] if cont == "m01" else "the year"} {P.year if not P.undated else ""} {arrow('r')}</a>'
     done = set()
     for (yy, mm) in months:
         cells = ''.join(f'<span class="d hd">{x}</span>' for x in DOW)
@@ -562,7 +568,7 @@ def m_head_start(P, sec):
                     if not in_lead(d):
                         continue
                     pd, nd = d - datetime.timedelta(days=1), d + datetime.timedelta(days=1)
-                    arrows = (f'<a href="#{day_anchor(pd)}">&larr;</a>' if in_lead(pd) else '') + (f' <a href="#{day_anchor(nd)}">&rarr;</a>' if in_lead(nd) else (f' <a href="#{P.did(nd)}">&rarr;</a>' if in_main(nd) else ''))
+                    arrows = (f'<a href="#{day_anchor(pd)}">{arrow('l')}</a>' if in_lead(pd) else '') + (f' <a href="#{day_anchor(nd)}">{arrow('r')}</a>' if in_lead(nd) else (f' <a href="#{P.did(nd)}">{arrow('r')}</a>' if in_main(nd) else ''))
                     left = ''.join(block(P, b) for b in dlay['left']); rightb = ''.join(block(P, b) for b in dlay['right'])
                     P.page(day_anchor(d), f'{P.head(d.strftime("%A"), f"{MONTHS[d.month - 1]} {d.day}", right=f"<span class=k style=font-size:16px>{arrows}</span>")}<div class="row" style="flex:1"><div class="col" style="flex:1">{left}</div><div class="col" style="flex:1.15">{rightb}</div></div>',
                            crumb=f'<a href="#{pre}{d.month:02d}">{MONTHS[d.month - 1]}</a> / <a href="#{wk_anchor(w)}">{title}</a>')

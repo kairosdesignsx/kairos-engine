@@ -61,7 +61,7 @@ Paths below are relative to the repo root (where this file is). Run `./setup.sh`
    config `check.max_build_retries` times. Still failing: queue it marked "needs help" with the reasons.
 
 ## Stage 7. Queue
-`python3 stages/queue.py <pid>` prepares the review payload; publish it to the Review Queue artifact
+`python3 stages/enqueue.py <pid>` prepares the review payload; publish it to the Review Queue artifact
 (images as files, product and evidence rows in its database).
 
 ## Stage 8. Feedback, laptop results, stats (start of each night, before Stage 1)

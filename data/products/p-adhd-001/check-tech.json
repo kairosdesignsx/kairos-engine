@@ -1,0 +1,57 @@
+[
+ {
+  "name": "file size",
+  "pass": true,
+  "detail": "Just-Today.pdf: 16.41 MB (limit 19.5, Etsy 20)"
+ },
+ {
+  "name": "no text overflow",
+  "pass": true,
+  "detail": "none"
+ },
+ {
+  "name": "page count",
+  "pass": true,
+  "detail": "475 pages in PDF"
+ },
+ {
+  "name": "links present in PDF",
+  "pass": true,
+  "detail": "12556 link annotations for 11818 links in the source"
+ },
+ {
+  "name": "fonts licensed (OFL list only)",
+  "pass": true,
+  "detail": "fonts: ['Fraunces-SemiBold', 'OutfitThin-Medium', 'OutfitThin-Regular', 'OutfitThin-SemiBold']"
+ },
+ {
+  "name": "listing photos",
+  "pass": true,
+  "detail": "10 photos, sizes [(2700, 2025)]"
+ },
+ {
+  "name": "title",
+  "pass": true,
+  "detail": "132 chars"
+ },
+ {
+  "name": "13 tags, max 20 chars",
+  "pass": true,
+  "detail": "13 tags"
+ },
+ {
+  "name": "no em dashes or emojis",
+  "pass": true,
+  "detail": "checked title and description"
+ },
+ {
+  "name": "page claims match the file",
+  "pass": true,
+  "detail": "claims [475, 475], file has 475"
+ },
+ {
+  "name": "says digital download",
+  "pass": true,
+  "detail": "download and nothing-shipped note"
+ }
+]
