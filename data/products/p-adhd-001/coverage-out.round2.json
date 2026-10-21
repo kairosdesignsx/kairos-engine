@@ -1,0 +1,236 @@
+{
+ "items": [
+  {
+   "key": "must:mh_dated",
+   "found": true,
+   "where": "year, m01, m07, w01, w03, w27, d0101, d0111, d0502, d0831 (+ product.html link scan)",
+   "note": "2027 weekdays correct (Jan 1 Fri, Feb 1 Mon, Dec 31 Fri), Monday-start everywhere; year page links all 365 dates and 12 month names; each month links its week chips and every date; each week links its month and days; every day links week, month, prev and next (Jan 1 next only, Dec 31 prev only); 0 broken links."
+  },
+  {
+   "key": "must:mh_multi_year",
+   "found": true,
+   "where": "hs11, hsw03 (page_modules: hs11, hsw01-06, hs12, hsw07-09 before m01); listing title and description",
+   "note": "Nov and Dec 2026 month pages and 9 head-start week pages precede 2027 (14 months); the Dec 28 week is 2027 Week 1, no duplicate. But Dec 2026 (hs12, hsw07-09) can only be reached by swiping, see fix:f_nav and visual."
+  },
+  {
+   "key": "must:mh_apps",
+   "found": true,
+   "where": "listing title, listing description 'Works with', files/Just-Today.pdf",
+   "note": "One 474-page PDF, 768x576 pt landscape, no JS or form fields, 12,572 link annotations; Goodnotes is the first app in the title and the Works with list (Notability, Samsung Notes, Xodo, Noteshelf; iPad, Android, Windows tablets). Not tested inside those apps."
+  },
+  {
+   "key": "must:mh_adhd",
+   "found": true,
+   "where": "d0101, d0111, d0502, d0831; all 365 day sections in product.html",
+   "note": "Every day page (365/365 checked in HTML, 4 seen) has Today's top 3, Time blocks 7am-9pm, Brain dump, Energy 1 to 5, Basics, One win today and Dopamine break in the same places."
+  },
+  {
+   "key": "must:mh_core",
+   "found": true,
+   "where": "year, m01, m07, m01h, w01, w03, w27, day shots, energy, dump; page_modules",
+   "note": "Saw year at a glance, month pages with right-edge tabs, weeks, days, January habit tracker, energy map, brain dump. page_modules has 12 months, 12 habit trackers, 53 weeks, 365 days, 4 brain dump and 8 notes pages; notes pages confirmed by page_modules only (no screenshot)."
+  },
+  {
+   "key": "must:mh_look",
+   "found": true,
+   "where": "all 22 screenshots",
+   "note": "Finished, consistent design: Fraunces headings, Outfit body, one card grid and margin system on every page. Weak spots: half-empty guide pages, year-page rows not aligned, off-centre week chip labels (see visual)."
+  },
+  {
+   "key": "must:mh_guide",
+   "found": true,
+   "where": "start, linktest, restart, index ('How the links work')",
+   "note": "Instructions printed in the file: 4-step Start here, Setup check with 'Nothing happened?' list, 4-step Restart, links explainer on Contents."
+  },
+  {
+   "key": "fix:f_hard",
+   "found": true,
+   "where": "d0101, d0111, d0502, d0831; cover (href #start); all pages",
+   "note": "Same boxes in the same places on every day page; Open planner links to #start. Home, top bar and 12 month tabs on every page except the cover (no top bar). Month / Week breadcrumb only on calendar pages; head-start month crumbs are plain text. Energy and Basics are drawn as two separate boxes (7 boxes on the page)."
+  },
+  {
+   "key": "fix:f_download",
+   "found": true,
+   "where": "listing 'How to start' and 'What you get'; photo-04-ph4_apps.jpg; start step 1",
+   "note": "Photo 4 and the listing give 3 numbered steps (download in a browser, Etsy app cannot; open in your app; check then plan). One PDF, not a zip, 16.42 MB (< 19.5). Start here step 1 repeats it."
+  },
+  {
+   "key": "fix:f_misleading",
+   "found": true,
+   "where": "all 10 photos; listing 'What's inside' and 'Good to know'; photo-10-ph10_inside.jpg",
+   "note": "Every photo is a real page render with a page-name caption; description lists page types with counts and says landscape only, Monday-start, Nov-Dec no day pages, no stickers, not a fillable form; photo 10 repeats these by the Contents page. Minor: photo 1's rear tablet (Jan 11 day page) has no caption."
+  },
+  {
+   "key": "fix:f_device",
+   "found": true,
+   "where": "files/Just-Today.pdf (768x576 pt = 1024x768, 4:3); listing 'Works with' / 'Not made for'; linktest",
+   "note": "4:3 landscape pages with no empty margins; links are plain PDF link annotations; listing has Works with / Not made for (phones, e-ink, Files, Photos, Google Drive preview); Setup check page present."
+  },
+  {
+   "key": "fix:f_not_useful",
+   "found": true,
+   "where": "all screenshots (right-edge tabs), index, year/m01/w03/d0111 links",
+   "note": "12 month tabs on all 474 pages incl. cover; year, month, week and day pages cross-linked; dates pre-filled; Contents shows 11 section cards and 12 months on one screen."
+  },
+  {
+   "key": "fix:f_setup",
+   "found": true,
+   "where": "index, start (page 3), linktest (page 4), listing 'No stickers'",
+   "note": "Start here has the exact 4 numbered steps; Start here and Setup check are the first two Contents cards and pages 3-4; listing says No stickers."
+  },
+  {
+   "key": "fix:f_quality",
+   "found": true,
+   "where": "product.html page order; check-tech.json; files/Just-Today.pdf",
+   "note": "474 unique page ids, no week or day printed twice (hsw10 duplicate gone); 365 day pages strictly consecutive Jan 1-Dec 31; head start then 2027 months; 0 broken links; no overflow; text is embedded vector fonts. Days of a month-crossing week sit after the next month's page (e.g. Mar 29-31 after m04)."
+  },
+  {
+   "key": "fix:f_support",
+   "found": false,
+   "where": "linktest 'Nothing happened?'; start; listing description",
+   "note": "Setup check fix list (pen off, planner app, re-import, message us) and Start here steps are in the file. MISSING: no listing FAQ. The five answers are scattered across Good to know, Works with and How to start, and the Help section only says 'Message us on Etsy'."
+  },
+  {
+   "key": "fix:f_value",
+   "found": true,
+   "where": "listing price 14; d0111; w03; photo-02-ph2_day.jpg",
+   "note": "$14; brain dump and time blocks fill about half of each day page; each weekday has its own 7-line box on the week page; photo 2 shows the full Jan 11 page, though at about 57% of the frame width, not literally real size."
+  },
+  {
+   "key": "fix:f_nav",
+   "found": false,
+   "where": "hs11, hs12, hsw06, hsw07-09, index; 2027 m/w/d pages",
+   "note": "2027 is fully done (tabs, 7-item top bar, linked breadcrumb, day arrows, 365 year dates, Contents). FAIL: December 2026 (hs12, hsw07-09) has no inbound link except from those pages; Contents, hs11 and hsw06 do not link it, and the head-start month breadcrumbs are plain text, not back links."
+  },
+  {
+   "key": "fix:f_overwhelm",
+   "found": true,
+   "where": "index, start step 4, restart, d0111, listing 'Short on purpose'",
+   "note": "The nine promised page types plus guide pages; same boxes every day; Contents fits one screen; Start here says 'Plan one day'; Restart says 'No catching up / Do not go back and fill them in'; listing says 'Not 50 templates'."
+  },
+  {
+   "key": "fix:f_edit",
+   "found": true,
+   "where": "start step 3, m01h, m01, dopamine, routines, listing 'Good to know'",
+   "note": "Start here explains pen on to write, pen off to tap, text tool to type; habit names and One goal this month blank; dopamine and routine columns 3-4 of 10 rows pre-filled; listing says not a fillable form."
+  },
+  {
+   "key": "fix:f_broken",
+   "found": true,
+   "where": "linktest (#m01, #year, #index); full HTML link scan",
+   "note": "Three buttons (A month page, The year, Contents) jump to real pages, 'Nothing happened?' list present, 0 broken links of 11,834. Coming back is Home -> Contents -> Setup check card (2 taps), not a direct return."
+  },
+  {
+   "key": "unique:u_start",
+   "found": true,
+   "where": "cover (href #start), start (page 3), linktest (page 4)",
+   "note": "Page 3 is the 4-step Start here, page 4 the Setup check with 3 jump buttons and a fix list; Open planner lands on Start here. Start here step 2 tells you to go to Setup check but has no link to it."
+  },
+  {
+   "key": "unique:u_day",
+   "found": true,
+   "where": "d0101, d0111, d0502, d0831, w01, w03, w27, hsw03",
+   "note": "Same day layout on every day page; Basics = Meds or vitamins, Water, A real meal. Week pages mirror it with This week's top 3, Weekly reset and Not this week (all 62 week pages checked)."
+  },
+  {
+   "key": "unique:u_restart",
+   "found": true,
+   "where": "restart; RESTART in top bar on every page except cover",
+   "note": "One page, 4 steps: skip the gap, jump to today in two taps, write one thing in Today's top 3, empty your head into the brain dump; tip points to the Weekly reset."
+  },
+  {
+   "key": "unique:u_dopamine",
+   "found": true,
+   "where": "dopamine, routines, day pages' Dopamine break box",
+   "note": "Dopamine menu: Quick 5 min, Medium 20 min, Big rewards, Costs you later. Routines: Morning, Leaving the house, Evening wind-down. Each column part pre-filled, part blank; day pages have a Dopamine break box."
+  },
+  {
+   "key": "look",
+   "found": true,
+   "where": "all screenshots; product.html CSS",
+   "note": "Cream #FAF6EE paper, slate #1F2D3A ink at 13.0:1, muted #5B6874 at 5.3:1, pale-teal filled top-3 boxes, coral bar on Contents and guide pages, teal-to-periwinkle tabs with dark labels, Fraunces + Outfit, no florals. Deviations: rounded corners and pill buttons, not square; cover is mint, not cream."
+  }
+ ],
+ "visual": [
+  {
+   "issue": "December 2026 cannot be reached by any link. hs12 (December month) and hsw07-09 only link to each other. Contents' Head start card, the November page and the Nov 30 week (hsw06) never link to December. The 'Head start / November 2026' breadcrumb is plain text, and the NOV/DEC tabs go to 2027. A November buyer has to swipe through 7 pages to reach December.",
+   "where": "hs11, hs12, hsw06, hsw07-hsw09, index",
+   "severity": "high"
+  },
+  {
+   "issue": "Start here step 2 says 'Go to the Setup check page and tap the buttons', but the page has no button or link to Setup check, and the top bar has none either. The buyer has to guess Home, then the Contents card.",
+   "where": "start",
+   "severity": "medium"
+  },
+  {
+   "issue": "Photo 5 ('Any day in two taps') shows four small static page thumbnails with no arrows or callouts. The month tabs, Home, back trail and day arrows it promises are not pointed out, and the pages cannot be read at listing size. Its alt text describes arrows and circled tabs that are not in the image.",
+   "where": "photo-05-ph5_nav.jpg",
+   "severity": "medium"
+  },
+  {
+   "issue": "The guide pages look half-empty. Each Start here and Restart card has 2-3 lines of text at the top and is empty below. On Setup check, the three buttons are oversized and the 'Nothing happened?' box is about 60% blank. The same empty pages show in photos 3, 4 and 7.",
+   "where": "start, restart, linktest",
+   "severity": "medium"
+  },
+  {
+   "issue": "Head-start week pages say 'Week N of 10', but only 9 head-start week pages exist. Week 10 is 2027 Week 1, where Dec 28-31 are greyed out as if outside the planner.",
+   "where": "hsw01-hsw09, w01",
+   "severity": "low"
+  },
+  {
+   "issue": "On the Contents page the eyebrows are swapped: the Setup check card is labelled 'START HERE', and the Start here card is labelled 'FIVE MINUTES'. A buyer may tap the wrong card first.",
+   "where": "index, photo-10-ph10_inside.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "The Contents 'How the links work' box says 'Every page has Home at the top and a Month / Week trail to go back'. The cover has no Home, the 21 guide and tool pages have no trail, and the head-start month trail is not tappable.",
+   "where": "index",
+   "severity": "low"
+  },
+  {
+   "issue": "On month pages the 'Week 1'-'Week 5' chip labels sit in the top half of their pills instead of the centre. They look misaligned next to the centred HABIT TRACKER pill.",
+   "where": "m01, m07 (all 12 month pages)",
+   "severity": "low"
+  },
+  {
+   "issue": "Year page rows do not line up across months. February, June and July spread their rows taller than their neighbours, so dates in the same band sit at different heights.",
+   "where": "year",
+   "severity": "low"
+  },
+  {
+   "issue": "On the Dopamine menu and Routines, the lines stop about 65% down, leaving the bottom third of each column box empty. The habit tracker leaves the bottom quarter of the page blank.",
+   "where": "dopamine, routines, m01h",
+   "severity": "low"
+  },
+  {
+   "issue": "The day page draws seven bordered boxes (Energy and Basics are separate), while photo 2 and the listing say 'six boxes'. The Energy box is about 60% empty under the 1-5 circles.",
+   "where": "d0101 (all day pages), photo-02-ph2_day.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "The Energy map key (Lots of energy, Steady, Low, Running on empty, Rest day) does not match the day page's Energy 1 to 5 scale, and the column under the key is empty.",
+   "where": "energy",
+   "severity": "low"
+  },
+  {
+   "issue": "Photo 2 is labelled 'Day page, real size', but the page fills only about 57% of the frame width and the bottom fifth of the image is empty.",
+   "where": "photo-02-ph2_day.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "Photo 1 has a stray coral bar cut off at the top-right edge, away from both tablets. The rear tablet (Jan 11 day page) has no caption.",
+   "where": "photo-01-ph1_hero.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "Photos 3, 4 and 6-10 leave the bottom 20-33% of the frame empty. In photo 7 the three pages are too small to read. Photo 4's alt text says the Start here page is 'faded' and that the tablets are listed, but neither is true in the image.",
+   "where": "photo-03, photo-04 (alt), photo-06 to photo-10",
+   "severity": "low"
+  },
+  {
+   "issue": "The 'Kairos Design Studio' footer on every page is 9px grey at 2.9:1 contrast and barely readable.",
+   "where": "all pages",
+   "severity": "low"
+  }
+ ]
+}

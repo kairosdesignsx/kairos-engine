@@ -26,6 +26,7 @@ def run(spec, name):
     r = gen.build(spec)
     assert not r['broken_links'], r['broken_links'][:10]
     assert not r['duplicate_pages'], r['duplicate_pages'][:10]
+    assert not r['orphan_pages'], ('unreachable pages', r['orphan_pages'][:10])
     html = os.path.abspath(f'tests/out/{name}.html'); open(html, 'w').write(r['html'])
     pdf = os.path.abspath(f'tests/out/{name}.pdf')
     W, H = r['size']

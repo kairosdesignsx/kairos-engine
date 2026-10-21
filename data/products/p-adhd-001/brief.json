@@ -543,7 +543,7 @@
    "motif": "lines"
   },
   "type_scale": 1.1,
-  "index_tip": "Tap a card above, a month below, or a month tab on the right. Every page has Home at the top and a Month / Week trail to go back. Follow links with the pen off (read mode); turn the pen on to write.",
+  "index_tip": "Tap a card above, a month below, or a month tab on the right. Calendar pages have Home at the top and a Month / Week trail to go back. Follow links with the pen off (read mode); turn the pen on to write.",
   "sections": [
    {
     "module": "cover",
@@ -565,7 +565,8 @@
      ],
      [
       "Check the links",
-      "Go to the Setup check page and tap the buttons. If they jump, you are ready. If not, the fix is on that page."
+      "Go to the Setup check page and tap the buttons. If they jump, you are ready. If not, the fix is on that page.",
+      "linktest"
      ],
      [
       "Pen off to tap, on to write",
@@ -879,5 +880,12 @@
   "Section order is deliberate: the top bar is drawn when each page is made, so Restart, Dopamine, Routines, Energy map, Brain dump and Notes come before the calendar so that every month, week and day page carries the full top bar. Start here and Setup check stay right after Contents.",
   "Render check done on a 15-page sample (cover, index, start, linktest, year, m01, m01h, w03, d0111, restart, dopamine, routines, energy, dump, notes): no overflow at type_scale 1.1.",
   "Before listing, open the built PDF in Goodnotes, Notability, Samsung Notes and Xodo and tap the Setup check buttons. The listing's Works with list must name only apps that were actually tested."
+ ],
+ "revisions": [
+  {
+   "at": "2026-10-21",
+   "by": "session",
+   "why": "coverage check round 2: Start here step 2 now links to Setup check; Contents tip made accurate"
+  }
  ]
 }
