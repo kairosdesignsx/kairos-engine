@@ -80,7 +80,7 @@
   {
    "id": "f_hard",
    "complaint": "complaint:c_hard",
-   "how": "Every day page has the same six boxes in the same places (Today's top 3, Time blocks 7am to 9pm, Brain dump, Energy 1 to 5 with Basics, One win today, Dopamine break), so there is one page to learn. The cover's Open planner button lands on the 4-step Start here page, and every page carries Home, the month tabs and a Month / Week breadcrumb.",
+   "how": "Every day page has the same seven boxes in the same places (Today's top 3, Time blocks 7am to 9pm, Brain dump, Energy 1 to 5 with Basics, One win today, Dopamine break), so there is one page to learn. The cover's Open planner button lands on the 4-step Start here page, and every page carries Home, the month tabs and a Month / Week breadcrumb.",
    "evidence": [
     "complaint:c_hard",
     "praise:p_easy",
@@ -227,7 +227,7 @@
   {
    "id": "f_overwhelm",
    "complaint": "complaint:c_overwhelm",
-   "how": "Short on purpose: nine page types (year, month, habit tracker, week, day, dopamine menu, routines, energy map, brain dump and notes) instead of dozens of templates, six boxes per day page, and a Contents page that fits on one screen. Start here says 'plan one day' and the Restart page says 'do not catch up'. The listing says: not 50 templates, just the pages you will use every day.",
+   "how": "Short on purpose: nine page types (year, month, habit tracker, week, day, dopamine menu, routines, energy map, brain dump and notes) instead of dozens of templates, seven boxes per day page, and a Contents page that fits on one screen. Start here says 'plan one day' and the Restart page says 'do not catch up'. The listing says: not 50 templates, just the pages you will use every day.",
    "evidence": [
     "complaint:c_overwhelm",
     "praise:p_as_described"
@@ -292,7 +292,7 @@
   {
    "id": "u_day",
    "name": "One calm ADHD day page",
-   "what": "The same six boxes every day: Today's top 3, Time blocks 7am to 9pm, Brain dump, Energy 1 to 5 with Basics (meds, water, a real meal), One win today and Dopamine break. The week page mirrors it with This week's top 3, a Weekly reset and Not this week.",
+   "what": "The same seven boxes every day: Today's top 3, Time blocks 7am to 9pm, Brain dump, Energy 1 to 5 with Basics (meds, water, a real meal), One win today and Dopamine break. The week page mirrors it with This week's top 3, a Weekly reset and Not this week.",
    "why": "Time blocking and a top-3 priority list are not seen in any top seller's title and brain dump pages appear in 3%, yet overwhelm and 'no idea where to start' are recurring complaints. A fixed short layout answers both.",
    "evidence": [
     "feature:time_blocking",
@@ -435,7 +435,7 @@
   },
   {
    "id": "ph2_day",
-   "shows": "Day page at real size with six labelled callouts (Today's top 3, Time blocks, Brain dump, Energy and Basics, One win, Dopamine break), line: 'The same six boxes every day'.",
+   "shows": "Day page at real size with six labelled callouts (Today's top 3, Time blocks, Brain dump, Energy and Basics, One win, Dopamine break), line: 'The same seven boxes every day'.",
    "proves": "feature:time_blocking, feature:priority_matrix, complaint:c_overwhelm, complaint:c_value",
    "pages": [
     "d0111"
@@ -574,10 +574,11 @@
      ],
      [
       "Plan one day",
-      "Tap Year, then today's date. Fill Today's top 3 and one time block. That is the whole job for today."
+      "Tap Year, then today's date. Buying in November or December 2026? Tap Head start on the Year page instead. Fill Today's top 3 and one time block. That is the whole job for today."
      ]
     ],
-    "tip": "Missed a day, a week or a month? Skip it and go straight to today. The Restart page shows how."
+    "tip": "Missed a day, a week or a month? Skip it and go straight to today. The Restart page shows how.",
+    "map": true
    },
    {
     "module": "link_test",
@@ -586,7 +587,13 @@
     "nav": false
    },
    {
-    "module": "year"
+    "module": "year",
+    "links": [
+     [
+      "Starting in 2026? Head start",
+      "hs11"
+     ]
+    ]
    },
    {
     "module": "guide",
@@ -601,7 +608,7 @@
      ],
      [
       "Jump to today",
-      "Tap the month tab on the right, then today's date. You are back in two taps."
+      "Tap this month below or on the tabs, then today's date. In Nov or Dec 2026, use Head start on the Year page. You are back in two taps."
      ],
      [
       "Write one thing",
@@ -612,7 +619,8 @@
       "Put everything else that is looping into the Brain dump box or the Brain dump pages."
      ]
     ],
-    "tip": "Back after a long break? Start with the Weekly reset on this week's page. It takes about ten minutes."
+    "tip": "Back after a long break? Start with the Weekly reset on this week's page. It takes about ten minutes.",
+    "months": true
    },
    {
     "module": "checklist",
@@ -728,7 +736,7 @@
     "nav": false,
     "from": "2026-11",
     "to": "2026-12",
-    "days": false,
+    "days": true,
     "continue_to": "m01",
     "week": {
      "side": [
@@ -753,6 +761,66 @@
       {
        "kind": "lines",
        "label": "Not this week"
+      }
+     ]
+    },
+    "day": {
+     "left": [
+      {
+       "kind": "checklist",
+       "label": "Today's top 3",
+       "rows": 3,
+       "fill": true
+      },
+      {
+       "kind": "dots",
+       "label": "Brain dump"
+      },
+      {
+       "kind": "pair",
+       "items": [
+        {
+         "kind": "scale",
+         "label": "Energy 1 to 5",
+         "max": 5
+        },
+        {
+         "kind": "checklist",
+         "label": "Basics",
+         "rows": 3,
+         "items": [
+          "Meds or vitamins",
+          "Water",
+          "A real meal"
+         ]
+        }
+       ]
+      }
+     ],
+     "right": [
+      {
+       "kind": "hours",
+       "label": "Time blocks",
+       "from": 7,
+       "to": 21,
+       "row": 27
+      },
+      {
+       "kind": "pair",
+       "items": [
+        {
+         "kind": "lines",
+         "label": "One win today",
+         "grow": false,
+         "height": 56
+        },
+        {
+         "kind": "lines",
+         "label": "Dopamine break",
+         "grow": false,
+         "height": 56
+        }
+       ]
       }
      ]
     }
@@ -886,6 +954,11 @@
    "at": "2026-10-21",
    "by": "session",
    "why": "coverage check round 2: Start here step 2 now links to Setup check; Contents tip made accurate"
+  },
+  {
+   "at": "2026-10-21",
+   "by": "session",
+   "why": "coverage check round 3: buyers before Jan 2027 hit a dead end; head start now has day pages, Year page links to it, setup steps cover Nov and Dec 2026; guide pages get a top bar map and a month grid"
   }
  ]
 }

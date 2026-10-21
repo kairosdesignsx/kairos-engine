@@ -39,7 +39,7 @@
   {
    "key": "fix:f_hard",
    "kind": "fix",
-   "text": "complaint:c_hard: Every day page has the same six boxes in the same places (Today's top 3, Time blocks 7am to 9pm, Brain dump, Energy 1 to 5 with Basics, One win today, Dopamine break), so there is one page to learn. The cover's Open planner button lands on the 4-step Start here page, and every page carries Home, the month tabs and a Month / Week breadcrumb."
+   "text": "complaint:c_hard: Every day page has the same seven boxes in the same places (Today's top 3, Time blocks 7am to 9pm, Brain dump, Energy 1 to 5 with Basics, One win today, Dopamine break), so there is one page to learn. The cover's Open planner button lands on the 4-step Start here page, and every page carries Home, the month tabs and a Month / Week breadcrumb."
   },
   {
    "key": "fix:f_download",
@@ -89,7 +89,7 @@
   {
    "key": "fix:f_overwhelm",
    "kind": "fix",
-   "text": "complaint:c_overwhelm: Short on purpose: nine page types (year, month, habit tracker, week, day, dopamine menu, routines, energy map, brain dump and notes) instead of dozens of templates, six boxes per day page, and a Contents page that fits on one screen. Start here says 'plan one day' and the Restart page says 'do not catch up'. The listing says: not 50 templates, just the pages you will use every day."
+   "text": "complaint:c_overwhelm: Short on purpose: nine page types (year, month, habit tracker, week, day, dopamine menu, routines, energy map, brain dump and notes) instead of dozens of templates, seven boxes per day page, and a Contents page that fits on one screen. Start here says 'plan one day' and the Restart page says 'do not catch up'. The listing says: not 50 templates, just the pages you will use every day."
   },
   {
    "key": "fix:f_edit",
@@ -109,7 +109,7 @@
   {
    "key": "unique:u_day",
    "kind": "unique",
-   "text": "One calm ADHD day page: The same six boxes every day: Today's top 3, Time blocks 7am to 9pm, Brain dump, Energy 1 to 5 with Basics (meds, water, a real meal), One win today and Dopamine break. The week page mirrors it with This week's top 3, a Weekly reset and Not this week."
+   "text": "One calm ADHD day page: The same seven boxes every day: Today's top 3, Time blocks 7am to 9pm, Brain dump, Energy 1 to 5 with Basics (meds, water, a real meal), One win today and Dopamine break. The week page mirrors it with This week's top 3, a Weekly reset and Not this week."
   },
   {
    "key": "unique:u_restart",
@@ -346,7 +346,39 @@
    "head_start"
   ],
   [
+   "hs1101",
+   "head_start"
+  ],
+  [
    "hsw02",
+   "head_start"
+  ],
+  [
+   "hs1102",
+   "head_start"
+  ],
+  [
+   "hs1103",
+   "head_start"
+  ],
+  [
+   "hs1104",
+   "head_start"
+  ],
+  [
+   "hs1105",
+   "head_start"
+  ],
+  [
+   "hs1106",
+   "head_start"
+  ],
+  [
+   "hs1107",
+   "head_start"
+  ],
+  [
+   "hs1108",
    "head_start"
   ],
   [
@@ -354,7 +386,63 @@
    "head_start"
   ],
   [
+   "hs1109",
+   "head_start"
+  ],
+  [
+   "hs1110",
+   "head_start"
+  ],
+  [
+   "hs1111",
+   "head_start"
+  ],
+  [
+   "hs1112",
+   "head_start"
+  ],
+  [
+   "hs1113",
+   "head_start"
+  ],
+  [
+   "hs1114",
+   "head_start"
+  ],
+  [
+   "hs1115",
+   "head_start"
+  ],
+  [
    "hsw04",
+   "head_start"
+  ],
+  [
+   "hs1116",
+   "head_start"
+  ],
+  [
+   "hs1117",
+   "head_start"
+  ],
+  [
+   "hs1118",
+   "head_start"
+  ],
+  [
+   "hs1119",
+   "head_start"
+  ],
+  [
+   "hs1120",
+   "head_start"
+  ],
+  [
+   "hs1121",
+   "head_start"
+  ],
+  [
+   "hs1122",
    "head_start"
   ],
   [
@@ -362,7 +450,63 @@
    "head_start"
   ],
   [
+   "hs1123",
+   "head_start"
+  ],
+  [
+   "hs1124",
+   "head_start"
+  ],
+  [
+   "hs1125",
+   "head_start"
+  ],
+  [
+   "hs1126",
+   "head_start"
+  ],
+  [
+   "hs1127",
+   "head_start"
+  ],
+  [
+   "hs1128",
+   "head_start"
+  ],
+  [
+   "hs1129",
+   "head_start"
+  ],
+  [
    "hsw06",
+   "head_start"
+  ],
+  [
+   "hs1130",
+   "head_start"
+  ],
+  [
+   "hs1201",
+   "head_start"
+  ],
+  [
+   "hs1202",
+   "head_start"
+  ],
+  [
+   "hs1203",
+   "head_start"
+  ],
+  [
+   "hs1204",
+   "head_start"
+  ],
+  [
+   "hs1205",
+   "head_start"
+  ],
+  [
+   "hs1206",
    "head_start"
   ],
   [
@@ -374,11 +518,111 @@
    "head_start"
   ],
   [
+   "hs1207",
+   "head_start"
+  ],
+  [
+   "hs1208",
+   "head_start"
+  ],
+  [
+   "hs1209",
+   "head_start"
+  ],
+  [
+   "hs1210",
+   "head_start"
+  ],
+  [
+   "hs1211",
+   "head_start"
+  ],
+  [
+   "hs1212",
+   "head_start"
+  ],
+  [
+   "hs1213",
+   "head_start"
+  ],
+  [
    "hsw08",
    "head_start"
   ],
   [
+   "hs1214",
+   "head_start"
+  ],
+  [
+   "hs1215",
+   "head_start"
+  ],
+  [
+   "hs1216",
+   "head_start"
+  ],
+  [
+   "hs1217",
+   "head_start"
+  ],
+  [
+   "hs1218",
+   "head_start"
+  ],
+  [
+   "hs1219",
+   "head_start"
+  ],
+  [
+   "hs1220",
+   "head_start"
+  ],
+  [
    "hsw09",
+   "head_start"
+  ],
+  [
+   "hs1221",
+   "head_start"
+  ],
+  [
+   "hs1222",
+   "head_start"
+  ],
+  [
+   "hs1223",
+   "head_start"
+  ],
+  [
+   "hs1224",
+   "head_start"
+  ],
+  [
+   "hs1225",
+   "head_start"
+  ],
+  [
+   "hs1226",
+   "head_start"
+  ],
+  [
+   "hs1227",
+   "head_start"
+  ],
+  [
+   "hs1228",
+   "head_start"
+  ],
+  [
+   "hs1229",
+   "head_start"
+  ],
+  [
+   "hs1230",
+   "head_start"
+  ],
+  [
+   "hs1231",
    "head_start"
   ],
   [

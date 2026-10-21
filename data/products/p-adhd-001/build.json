@@ -1,23 +1,23 @@
 {
  "product_id": "p-adhd-001",
  "brief_id": "b-adhd-001",
- "built_at": "2026-10-21T13:42:14Z",
+ "built_at": "2026-10-21T13:57:20Z",
  "line": "planner",
  "files": [
   {
    "name": "Just-Today.pdf",
-   "mb": 16.43,
-   "pages": 474
+   "mb": 18.19,
+   "pages": 535
   }
  ],
- "links": 11961,
+ "links": 13445,
  "overflow": [],
  "lean": false,
  "attempts": [
   {
    "lean": false,
-   "mb": 16.43,
-   "pages": 474
+   "mb": 18.19,
+   "pages": 535
   }
  ],
  "page_modules": [
@@ -114,7 +114,39 @@
    "head_start"
   ],
   [
+   "hs1101",
+   "head_start"
+  ],
+  [
    "hsw02",
+   "head_start"
+  ],
+  [
+   "hs1102",
+   "head_start"
+  ],
+  [
+   "hs1103",
+   "head_start"
+  ],
+  [
+   "hs1104",
+   "head_start"
+  ],
+  [
+   "hs1105",
+   "head_start"
+  ],
+  [
+   "hs1106",
+   "head_start"
+  ],
+  [
+   "hs1107",
+   "head_start"
+  ],
+  [
+   "hs1108",
    "head_start"
   ],
   [
@@ -122,7 +154,63 @@
    "head_start"
   ],
   [
+   "hs1109",
+   "head_start"
+  ],
+  [
+   "hs1110",
+   "head_start"
+  ],
+  [
+   "hs1111",
+   "head_start"
+  ],
+  [
+   "hs1112",
+   "head_start"
+  ],
+  [
+   "hs1113",
+   "head_start"
+  ],
+  [
+   "hs1114",
+   "head_start"
+  ],
+  [
+   "hs1115",
+   "head_start"
+  ],
+  [
    "hsw04",
+   "head_start"
+  ],
+  [
+   "hs1116",
+   "head_start"
+  ],
+  [
+   "hs1117",
+   "head_start"
+  ],
+  [
+   "hs1118",
+   "head_start"
+  ],
+  [
+   "hs1119",
+   "head_start"
+  ],
+  [
+   "hs1120",
+   "head_start"
+  ],
+  [
+   "hs1121",
+   "head_start"
+  ],
+  [
+   "hs1122",
    "head_start"
   ],
   [
@@ -130,7 +218,63 @@
    "head_start"
   ],
   [
+   "hs1123",
+   "head_start"
+  ],
+  [
+   "hs1124",
+   "head_start"
+  ],
+  [
+   "hs1125",
+   "head_start"
+  ],
+  [
+   "hs1126",
+   "head_start"
+  ],
+  [
+   "hs1127",
+   "head_start"
+  ],
+  [
+   "hs1128",
+   "head_start"
+  ],
+  [
+   "hs1129",
+   "head_start"
+  ],
+  [
    "hsw06",
+   "head_start"
+  ],
+  [
+   "hs1130",
+   "head_start"
+  ],
+  [
+   "hs1201",
+   "head_start"
+  ],
+  [
+   "hs1202",
+   "head_start"
+  ],
+  [
+   "hs1203",
+   "head_start"
+  ],
+  [
+   "hs1204",
+   "head_start"
+  ],
+  [
+   "hs1205",
+   "head_start"
+  ],
+  [
+   "hs1206",
    "head_start"
   ],
   [
@@ -142,11 +286,111 @@
    "head_start"
   ],
   [
+   "hs1207",
+   "head_start"
+  ],
+  [
+   "hs1208",
+   "head_start"
+  ],
+  [
+   "hs1209",
+   "head_start"
+  ],
+  [
+   "hs1210",
+   "head_start"
+  ],
+  [
+   "hs1211",
+   "head_start"
+  ],
+  [
+   "hs1212",
+   "head_start"
+  ],
+  [
+   "hs1213",
+   "head_start"
+  ],
+  [
    "hsw08",
    "head_start"
   ],
   [
+   "hs1214",
+   "head_start"
+  ],
+  [
+   "hs1215",
+   "head_start"
+  ],
+  [
+   "hs1216",
+   "head_start"
+  ],
+  [
+   "hs1217",
+   "head_start"
+  ],
+  [
+   "hs1218",
+   "head_start"
+  ],
+  [
+   "hs1219",
+   "head_start"
+  ],
+  [
+   "hs1220",
+   "head_start"
+  ],
+  [
    "hsw09",
+   "head_start"
+  ],
+  [
+   "hs1221",
+   "head_start"
+  ],
+  [
+   "hs1222",
+   "head_start"
+  ],
+  [
+   "hs1223",
+   "head_start"
+  ],
+  [
+   "hs1224",
+   "head_start"
+  ],
+  [
+   "hs1225",
+   "head_start"
+  ],
+  [
+   "hs1226",
+   "head_start"
+  ],
+  [
+   "hs1227",
+   "head_start"
+  ],
+  [
+   "hs1228",
+   "head_start"
+  ],
+  [
+   "hs1229",
+   "head_start"
+  ],
+  [
+   "hs1230",
+   "head_start"
+  ],
+  [
+   "hs1231",
    "head_start"
   ],
   [
