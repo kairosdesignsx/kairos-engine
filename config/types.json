@@ -1,0 +1,11 @@
+{
+ "adhd-digital-planner": {
+  "name": "ADHD digital planner",
+  "query": "adhd digital planner",
+  "line": "planner",
+  "format": "Hyperlinked PDF planner for tablets (Goodnotes, Notability, Samsung Notes, Xodo)",
+  "include_any": ["goodnotes", "notability", "ipad", "digital planner", "android", "tablet", "hyperlink", "samsung", "remarkable", "digital journal", "pdf planner"],
+  "exclude_any": ["notion", "google sheets", "sheets", "excel", "spreadsheet", "plr", "mrr", "resell", "canva", "planner app", "wallpaper", "printable", "cleaning", "budget planner", "paycheck"],
+  "focus_any": ["adhd", "neurodivergent", "executive function", "add "]
+ }
+}

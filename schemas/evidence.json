@@ -1,0 +1,32 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Teardown evidence for one product type",
+ "type": "object",
+ "required": ["type_id", "query", "refreshed_at", "market", "listings", "shops", "reviews", "tags", "sources"],
+ "properties": {
+  "type_id": {"type": "string"},
+  "query": {"type": "string"},
+  "refreshed_at": {"type": "string"},
+  "market": {"type": "object"},
+  "listings": {"type": "array", "minItems": 10, "items": {
+    "type": "object",
+    "required": ["listing_id", "title", "shop", "price", "mo_revenue", "total_sales", "relevant"],
+    "properties": {
+     "listing_id": {"type": "string"}, "title": {"type": "string"}, "shop": {"type": "string"},
+     "price": {"type": ["number", "null"]}, "mo_sales": {"type": ["number", "null"]}, "mo_revenue": {"type": ["number", "null"]},
+     "total_sales": {"type": ["number", "null"]}, "reviews": {"type": ["number", "null"]}, "favorites": {"type": ["number", "null"]},
+     "views": {"type": ["number", "null"]}, "age_months": {"type": ["number", "null"]}, "conversion": {"type": ["number", "null"]},
+     "tags": {"type": "array", "items": {"type": "string"}}, "url": {"type": "string"}, "image": {"type": "string"},
+     "relevant": {"type": "boolean"}, "relevance_note": {"type": "string"},
+     "rank": {"type": "integer"}, "photos": {"type": "array", "items": {"type": "string"}},
+     "features": {"type": "object"}
+    }}},
+  "shops": {"type": "array", "items": {"type": "object", "required": ["shop"]}},
+  "reviews": {"type": "array", "items": {
+    "type": "object", "required": ["shop", "stars", "text"],
+    "properties": {"shop": {"type": "string"}, "stars": {"type": "integer", "minimum": 1, "maximum": 5}, "text": {"type": "string"},
+                   "listing_id": {"type": ["string", "null"]}, "date": {"type": "string"}, "on_top_listing": {"type": "boolean"}}}},
+  "tags": {"type": "array"},
+  "sources": {"type": "array", "items": {"type": "object", "required": ["tool", "input"]}}
+ }
+}

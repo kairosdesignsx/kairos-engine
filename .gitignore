@@ -1,0 +1,16 @@
+node_modules/
+__pycache__/
+*.pyc
+tests/out/
+# big or third-party files live on the laptop (Kairos folder), not in git
+data/products/*/files/
+data/products/*/shots/
+data/products/*/photos/
+data/products/*/queue/
+data/products/*/product.html
+data/types/*/photos/
+data/jobs/
+# never commit keys
+laptop/.env
+laptop/tokens.json
+*.env

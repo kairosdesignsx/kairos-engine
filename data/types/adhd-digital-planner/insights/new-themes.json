@@ -1,0 +1,56 @@
+[
+ {
+  "id": "p_fits_needs",
+  "theme": "Useful, fits my needs",
+  "use_for": "Useful, helpful, exactly what I needed or was looking for; suits how the buyer plans.",
+  "count": 7
+ },
+ {
+  "id": "c_upsell",
+  "theme": "Pushes paid add-ons or sign-ups",
+  "use_for": "Links or pages inside the product lead to extra purchases, paywalls or forced email/subscription sign-ups.",
+  "count": 2
+ },
+ {
+  "id": "c_security",
+  "theme": "Spam, privacy or virus worries",
+  "use_for": "Buyer links the purchase to spam, sold personal data, a virus or other security problems.",
+  "count": 2
+ },
+ {
+  "id": "w_file_format",
+  "theme": "Other file formats (Google Docs, Word, Pages)",
+  "use_for": "Wants the product in another file format or editor, such as Google Docs, Word or Apple Pages.",
+  "count": 2
+ },
+ {
+  "id": "c_review_gate",
+  "theme": "Forced to leave a review",
+  "use_for": "Seller required a rating or review before giving access to the file.",
+  "count": 2
+ },
+ {
+  "id": "c_review_nag",
+  "theme": "Seller pestered me for a review",
+  "use_for": "Seller pushed, pestered or harassed the buyer to leave or change a review.",
+  "count": 1
+ },
+ {
+  "id": "w_order",
+  "theme": "Pages in a logical order",
+  "use_for": "Wants pages or sections arranged in a sensible order so things are quick to find.",
+  "count": 1
+ },
+ {
+  "id": "w_page_types",
+  "theme": "More page types included",
+  "use_for": "Wants a specific kind of page added to the product, such as to-do lists.",
+  "count": 1
+ },
+ {
+  "id": "w_sharper_images",
+  "theme": "Larger, sharper image files",
+  "use_for": "Wants higher-resolution stickers or images that stay sharp when enlarged.",
+  "count": 1
+ }
+]

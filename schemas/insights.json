@@ -1,0 +1,30 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "What the market says, distilled from evidence",
+ "type": "object",
+ "required": ["type_id", "built_at", "basis", "features", "complaints", "praise", "wishes", "price", "looks", "keywords"],
+ "properties": {
+  "type_id": {"type": "string"},
+  "built_at": {"type": "string"},
+  "basis": {"type": "object", "required": ["listings", "reviews", "negative_reviews"]},
+  "features": {"type": "array", "minItems": 5, "items": {
+    "type": "object", "required": ["id", "name", "have", "share", "tier"],
+    "properties": {"id": {"type": "string"}, "name": {"type": "string"},
+     "have": {"type": "array", "items": {"type": "string"}}, "share": {"type": "number"},
+     "revenue_share": {"type": "number"},
+     "tier": {"enum": ["standard", "common", "rare", "nobody", "not_seen"]}}}},
+  "complaints": {"type": "array", "items": {"$ref": "#/$defs/theme"}},
+  "praise": {"type": "array", "items": {"$ref": "#/$defs/theme"}},
+  "wishes": {"type": "array", "items": {"$ref": "#/$defs/theme"}},
+  "price": {"type": "object", "required": ["median", "p25", "p75"]},
+  "looks": {"type": "array"},
+  "keywords": {"type": "array"},
+  "gaps": {"type": "array"}
+ },
+ "$defs": {
+  "theme": {"type": "object", "required": ["id", "theme", "count", "quotes"],
+   "properties": {"id": {"type": "string"}, "theme": {"type": "string"}, "count": {"type": "integer", "minimum": 1},
+    "quotes": {"type": "array", "items": {"type": "object", "required": ["text", "shop", "stars"]}},
+    "review_ids": {"type": "array"}}}
+ }
+}

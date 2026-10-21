@@ -1,0 +1,355 @@
+{
+ "type_id": "adhd-digital-planner",
+ "made": "2026-10-21T12:15:38Z",
+ "shops": [
+  "phenixdigital",
+  "HappyDownloads",
+  "BrighterPlans",
+  "AuraPlannersCo",
+  "FutureADHD",
+  "WBaiStudio",
+  "RachyTreasures",
+  "TheMAMdesign",
+  "BytheBrookDesign",
+  "PrintMagicStudioX",
+  "Manifestable",
+  "NozomuNoto"
+ ],
+ "calls": [
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "phenixdigital",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "phenixdigital",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "phenixdigital",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "HappyDownloads",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "HappyDownloads",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "HappyDownloads",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "BrighterPlans",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "BrighterPlans",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "BrighterPlans",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "AuraPlannersCo",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "AuraPlannersCo",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "AuraPlannersCo",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "FutureADHD",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "FutureADHD",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "FutureADHD",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "WBaiStudio",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "WBaiStudio",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "WBaiStudio",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "RachyTreasures",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "RachyTreasures",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "RachyTreasures",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "TheMAMdesign",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "TheMAMdesign",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "TheMAMdesign",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "BytheBrookDesign",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "BytheBrookDesign",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "BytheBrookDesign",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PrintMagicStudioX",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PrintMagicStudioX",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PrintMagicStudioX",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "Manifestable",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "Manifestable",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "Manifestable",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "NozomuNoto",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "NozomuNoto",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "NozomuNoto",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "phenixdigital"
+   },
+   "optional": true
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "HappyDownloads"
+   },
+   "optional": true
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "BrighterPlans"
+   },
+   "optional": true
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "AuraPlannersCo"
+   },
+   "optional": true
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "FutureADHD"
+   },
+   "optional": true
+  }
+ ]
+}

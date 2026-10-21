@@ -1,0 +1,563 @@
+{
+ "line": "planner",
+ "features": [
+  {
+   "id": "hyperlinked",
+   "name": "Hyperlinked tabs and dates",
+   "match": [
+    "hyperlink",
+    "linked",
+    "tabs"
+   ]
+  },
+  {
+   "id": "undated",
+   "name": "Undated version",
+   "match": [
+    "undated"
+   ]
+  },
+  {
+   "id": "dated",
+   "name": "Dated for the year",
+   "match": [
+    "\\b202[5-9]\\b",
+    "\\bdated\\b"
+   ]
+  },
+  {
+   "id": "multi_year",
+   "name": "Covers more than one year",
+   "match": [
+    "202[5-9][ ,+&/-]+202[6-9]",
+    "multi.?year"
+   ]
+  },
+  {
+   "id": "adhd_specific",
+   "name": "Built for ADHD",
+   "match": [
+    "adhd",
+    "neurodivergent",
+    "executive function"
+   ]
+  },
+  {
+   "id": "all_in_one",
+   "name": "All-in-one life planner",
+   "match": [
+    "all.?in.?one",
+    "ultimate",
+    "life planner"
+   ]
+  },
+  {
+   "id": "habit_tracker",
+   "name": "Habit tracker",
+   "match": [
+    "habit"
+   ]
+  },
+  {
+   "id": "self_care",
+   "name": "Self-care, mood or wellness pages",
+   "match": [
+    "self.?care",
+    "wellness",
+    "mood"
+   ]
+  },
+  {
+   "id": "budget",
+   "name": "Budget or finance pages",
+   "match": [
+    "budget",
+    "finance",
+    "financial"
+   ]
+  },
+  {
+   "id": "meal",
+   "name": "Meal planning",
+   "match": [
+    "meal"
+   ]
+  },
+  {
+   "id": "goals",
+   "name": "Goal setting",
+   "match": [
+    "goal"
+   ]
+  },
+  {
+   "id": "time_blocking",
+   "name": "Time blocking or hourly schedule",
+   "match": [
+    "time.?block",
+    "hourly",
+    "schedule"
+   ]
+  },
+  {
+   "id": "stickers",
+   "name": "Digital stickers included",
+   "match": [
+    "sticker"
+   ]
+  },
+  {
+   "id": "journal",
+   "name": "Journal or notebook pages",
+   "match": [
+    "journal",
+    "notebook"
+   ]
+  },
+  {
+   "id": "dark_mode",
+   "name": "Dark mode",
+   "match": [
+    "dark mode",
+    "\\bdark\\b"
+   ]
+  },
+  {
+   "id": "goodnotes",
+   "name": "Says Goodnotes",
+   "match": [
+    "goodnotes",
+    "good notes"
+   ]
+  },
+  {
+   "id": "notability",
+   "name": "Says Notability",
+   "match": [
+    "notability"
+   ]
+  },
+  {
+   "id": "android",
+   "name": "Android or Samsung support",
+   "match": [
+    "android",
+    "samsung",
+    "xodo",
+    "noteshelf"
+   ]
+  },
+  {
+   "id": "eink",
+   "name": "E-ink tablets (reMarkable, Boox, Kindle Scribe)",
+   "match": [
+    "remarkable",
+    "boox",
+    "kindle scribe",
+    "supernote",
+    "e-?ink"
+   ]
+  },
+  {
+   "id": "landscape",
+   "name": "Landscape layout",
+   "match": [
+    "landscape",
+    "horizontal"
+   ]
+  },
+  {
+   "id": "portrait",
+   "name": "Portrait layout",
+   "match": [
+    "portrait",
+    "vertical"
+   ]
+  },
+  {
+   "id": "minimalist",
+   "name": "Minimalist look",
+   "match": [
+    "minimal"
+   ]
+  },
+  {
+   "id": "colorful",
+   "name": "Colorful or aesthetic look",
+   "match": [
+    "aesthetic",
+    "rainbow",
+    "pastel",
+    "colorful",
+    "boho",
+    "sunset"
+   ]
+  },
+  {
+   "id": "bundle",
+   "name": "Bundle of several products",
+   "match": [
+    "bundle",
+    "whole shop"
+   ]
+  },
+  {
+   "id": "student",
+   "name": "Student or academic",
+   "match": [
+    "student",
+    "academic"
+   ]
+  },
+  {
+   "id": "work",
+   "name": "Work or productivity focus",
+   "match": [
+    "\\bwork\\b",
+    "business",
+    "productivity"
+   ]
+  },
+  {
+   "id": "custom",
+   "name": "Customizable or personalized",
+   "match": [
+    "custom",
+    "personali"
+   ]
+  },
+  {
+   "id": "brain_dump",
+   "name": "Brain dump pages",
+   "match": [
+    "brain dump"
+   ]
+  },
+  {
+   "id": "routines",
+   "name": "Routine builder",
+   "match": [
+    "routine"
+   ]
+  },
+  {
+   "id": "dopamine_menu",
+   "name": "Dopamine menu",
+   "match": [
+    "dopamine"
+   ]
+  },
+  {
+   "id": "priority_matrix",
+   "name": "Priority matrix or top 3",
+   "match": [
+    "priorit",
+    "eisenhower",
+    "top 3"
+   ]
+  },
+  {
+   "id": "quick_start",
+   "name": "Quick start or setup guide",
+   "match": [
+    "quick start",
+    "setup guide",
+    "how to use",
+    "tutorial"
+   ]
+  },
+  {
+   "id": "test_page",
+   "name": "Link test or setup check page",
+   "match": [
+    "test page",
+    "link test"
+   ]
+  }
+ ],
+ "codebook": {
+  "complaints": [
+   {
+    "id": "c_download",
+    "theme": "Couldn't download or open the file",
+    "use_for": "Download failed, file won't open, can't find the file after buying."
+   },
+   {
+    "id": "c_setup",
+    "theme": "Confusing setup or unclear instructions",
+    "use_for": "Didn't know how to import, set up or start; instructions or videos unclear."
+   },
+   {
+    "id": "c_hard",
+    "theme": "Hard to use day to day",
+    "use_for": "General 'hard to use', 'not user friendly', 'not intuitive' with no specific cause."
+   },
+   {
+    "id": "c_nav",
+    "theme": "Hard to navigate or find pages",
+    "use_for": "Can't find pages, tabs or buttons awkward, wants faster ways around."
+   },
+   {
+    "id": "c_links",
+    "theme": "Links broken or go to the wrong page",
+    "use_for": "Specific hyperlink failures."
+   },
+   {
+    "id": "c_device",
+    "theme": "Doesn't work on my app or device",
+    "use_for": "Android, Samsung, reMarkable, OneNote, Kindle, Windows, app glitches."
+   },
+   {
+    "id": "c_extra_app",
+    "theme": "Needed an app or subscription that wasn't clear",
+    "use_for": "Had to buy Goodnotes or another app to use it."
+   },
+   {
+    "id": "c_lag",
+    "theme": "Slow, laggy or file too big",
+    "use_for": "Performance and file size."
+   },
+   {
+    "id": "c_dates",
+    "theme": "Wrong or missing dates, calendar errors",
+    "use_for": "Dates, weekdays or calendar order wrong."
+   },
+   {
+    "id": "c_missing",
+    "theme": "Missing pages or less than expected",
+    "use_for": "Fewer pages, sections or items than promised."
+   },
+   {
+    "id": "c_space",
+    "theme": "Too little writing space",
+    "use_for": "Boxes, calendar cells or lines too small to write in."
+   },
+   {
+    "id": "c_readability",
+    "theme": "Text too small or hard to read",
+    "use_for": "Font size, contrast, legibility."
+   },
+   {
+    "id": "c_edit",
+    "theme": "Can't edit, type or customize",
+    "use_for": "Wanted to type, edit text, change colors or tabs and couldn't."
+   },
+   {
+    "id": "c_overwhelm",
+    "theme": "Too much, overwhelming",
+    "use_for": "So many pages or sections that the buyer didn't know where to start."
+   },
+   {
+    "id": "c_basic",
+    "theme": "Too basic or boring",
+    "use_for": "Too simple, not enough to it."
+   },
+   {
+    "id": "c_look",
+    "theme": "Didn't like the look",
+    "use_for": "Colors, style or design disliked."
+   },
+   {
+    "id": "c_misleading",
+    "theme": "Not as described or pictured",
+    "use_for": "Product differs from photos or description, misleading listing."
+   },
+   {
+    "id": "c_not_useful",
+    "theme": "Not useful for my needs",
+    "use_for": "Didn't fit how the buyer plans, no specific defect."
+   },
+   {
+    "id": "c_quality",
+    "theme": "Errors, typos or low quality",
+    "use_for": "Mistakes, sloppy pages, blurry images, broken elements."
+   },
+   {
+    "id": "c_broken",
+    "theme": "Doesn't work (no detail)",
+    "use_for": "'Doesn't work' with no further detail."
+   },
+   {
+    "id": "c_value",
+    "theme": "Not worth the price",
+    "use_for": "Price or value complaints."
+   },
+   {
+    "id": "c_support",
+    "theme": "Seller didn't help or reply",
+    "use_for": "Slow or unhelpful support."
+   },
+   {
+    "id": "c_refund",
+    "theme": "Refund refused",
+    "use_for": "Seller refused refund or exchange."
+   },
+   {
+    "id": "c_language",
+    "theme": "Only in English",
+    "use_for": "Wanted another language."
+   }
+  ],
+  "praise": [
+   {
+    "id": "p_look",
+    "theme": "Beautiful design",
+    "use_for": "Pretty, aesthetic, love the colors."
+   },
+   {
+    "id": "p_easy",
+    "theme": "Easy to set up and use",
+    "use_for": "Easy, simple, user friendly."
+   },
+   {
+    "id": "p_nav",
+    "theme": "Links work, easy to navigate",
+    "use_for": "Praise for hyperlinks and moving around."
+   },
+   {
+    "id": "p_complete",
+    "theme": "Has everything I need",
+    "use_for": "Comprehensive, lots of pages, all in one."
+   },
+   {
+    "id": "p_adhd",
+    "theme": "Helps me stay on track",
+    "use_for": "Helps with ADHD, focus, staying organized."
+   },
+   {
+    "id": "p_daily",
+    "theme": "I use it every day",
+    "use_for": "Daily use, habit, hooked."
+   },
+   {
+    "id": "p_flexible",
+    "theme": "Flexible or customizable",
+    "use_for": "Can adapt it, undated, choose pages."
+   },
+   {
+    "id": "p_extras",
+    "theme": "Love the stickers and extras",
+    "use_for": "Stickers, bonus files."
+   },
+   {
+    "id": "p_device",
+    "theme": "Works on my device",
+    "use_for": "Works on Android, Samsung, Kindle, other apps."
+   },
+   {
+    "id": "p_guide",
+    "theme": "Clear instructions or tutorials",
+    "use_for": "Helpful guide, video, instructions."
+   },
+   {
+    "id": "p_as_described",
+    "theme": "Exactly as described",
+    "use_for": "Matches the listing."
+   },
+   {
+    "id": "p_quality",
+    "theme": "High quality",
+    "use_for": "Well made, professional."
+   },
+   {
+    "id": "p_value",
+    "theme": "Great value",
+    "use_for": "Good price for what you get."
+   },
+   {
+    "id": "p_support",
+    "theme": "Seller was helpful",
+    "use_for": "Good support."
+   },
+   {
+    "id": "p_repeat",
+    "theme": "Repeat buyer",
+    "use_for": "Bought before, will buy again, favorite shop."
+   }
+  ],
+  "wishes": [
+   {
+    "id": "w_customize",
+    "theme": "More ways to customize",
+    "use_for": "Edit tabs, change colors, add pages."
+   },
+   {
+    "id": "w_side_tabs",
+    "theme": "Side tabs for faster navigation",
+    "use_for": "Wants tabs instead of buttons."
+   },
+   {
+    "id": "w_back_button",
+    "theme": "A back button",
+    "use_for": "Return to previous page."
+   },
+   {
+    "id": "w_portrait",
+    "theme": "Portrait version",
+    "use_for": "Wants portrait orientation."
+   },
+   {
+    "id": "w_sunday_start",
+    "theme": "Sunday-start weeks",
+    "use_for": "Calendar starting on Sunday."
+   },
+   {
+    "id": "w_listing_info",
+    "theme": "Listing should say which apps are needed",
+    "use_for": "Clarity before buying."
+   }
+  ]
+ },
+ "fix_map": {
+  "c_download": [
+   "quick_start",
+   "download_help_photo"
+  ],
+  "c_setup": [
+   "quick_start",
+   "test_page"
+  ],
+  "c_links": [
+   "hyperlinked",
+   "link_check_automated"
+  ],
+  "c_device": [
+   "android",
+   "eink",
+   "app_guides"
+  ],
+  "c_lag": [
+   "small_file",
+   "split_files"
+  ],
+  "c_dates": [
+   "dated",
+   "date_check_automated"
+  ],
+  "c_missing": [
+   "page_list_in_listing"
+  ],
+  "c_space": [
+   "roomy_layouts"
+  ],
+  "c_readability": [
+   "large_type"
+  ],
+  "c_look": [
+   "true_to_photo_mockups"
+  ],
+  "c_overwhelm": [
+   "simple_mode",
+   "quick_start"
+  ],
+  "c_value": [
+   "price_position"
+  ],
+  "c_support": [
+   "help_page"
+  ],
+  "c_quality": [
+   "automated_checks"
+  ]
+ }
+}

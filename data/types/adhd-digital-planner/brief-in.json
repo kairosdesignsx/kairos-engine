@@ -1,0 +1,1373 @@
+{
+ "type_id": "adhd-digital-planner",
+ "product_type": "ADHD digital planner",
+ "format": "Hyperlinked PDF planner for tablets (Goodnotes, Notability, Samsung Notes, Xodo)",
+ "line": "planner",
+ "rules": {
+  "significant_complaint_count": 10,
+  "min_unique": 2,
+  "evidence_ref_kinds": [
+   "complaint:<id>",
+   "praise:<id>",
+   "wish:<id>",
+   "feature:<id>",
+   "price:<field>",
+   "keyword:<tag>",
+   "listing:<listing_id>",
+   "market:<field>",
+   "look:<style>"
+  ]
+ },
+ "basis": {
+  "listings": 30,
+  "reviews": 511,
+  "reviews_coded": 437,
+  "off_type_dropped": 56,
+  "negative_reviews": 227,
+  "feature_sources": [
+   "titles"
+  ],
+  "photos": "pending"
+ },
+ "market": {
+  "opportunity_score": 58.0,
+  "monthly_searches": 2800.0,
+  "competing_listings": 40773.0,
+  "top_seller_revenue": 13634.0,
+  "new_sellers_in_top_pct": 35.0,
+  "summary": "Proceed with caution. ~2,800 monthly searches, competition crowded (40,773 listings), and 35% of top sellers are under 6 months old. Top seller earns ~$13,634/mo; the best-earning price band is $4–32.",
+  "best_price_band": "$4-32"
+ },
+ "must_address": [
+  {
+   "ref": "complaint:c_hard",
+   "theme": "Hard to use day to day",
+   "count": 42,
+   "quotes": [
+    {
+     "text": "Worst download ever, save your money.  Hard to download and impossible to use.",
+     "stars": 1
+    },
+    {
+     "text": "This product was very hard to use and I couldn't download it to use on my iPad or computer with having issues seeing part of the planning pages.",
+     "stars": 1
+    },
+    {
+     "text": "Can't work out how to use it",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_download",
+   "theme": "Couldn't download or open the file",
+   "count": 41,
+   "quotes": [
+    {
+     "text": "Worst download ever, save your money.  Hard to download and impossible to use.",
+     "stars": 1
+    },
+    {
+     "text": "This product was very hard to use and I couldn't download it to use on my iPad or computer with having issues seeing part of the planning pages.",
+     "stars": 1
+    },
+    {
+     "text": "If your looking for sumthing to purchase and just instantly download this was not the product. Process took awhile to finally get purchase downloaded I reached out to seller who said she would get bac",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_misleading",
+   "theme": "Not as described or pictured",
+   "count": 23,
+   "quotes": [
+    {
+     "text": "Ich habe es gekauft, weil es in der Beschreibung hiess, das hochkant möglich ist, doch weder in Goodnotes, noch in Notability funktioniert hochkant!",
+     "stars": 1
+    },
+    {
+     "text": "Until today I have not been able to use it, what you show in the video is so easy but in reality, it is complicated",
+     "stars": 1
+    },
+    {
+     "text": "produkt jest niezgodny z opisem i zawiera coś zupełnie innego niż jest zaprezentowane na zdjęciach 😒",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_device",
+   "theme": "Doesn't work on my app or device",
+   "count": 22,
+   "quotes": [
+    {
+     "text": "Unable to use on a Samsung tablet S.  Seller tried to help, but after doing research, it's not compatible with this style tablet.",
+     "stars": 1
+    },
+    {
+     "text": "Not comparable with new iPad. It will not work properly",
+     "stars": 1
+    },
+    {
+     "text": "The size doesn’t fit iPad Pro, too much margin and not much actual writing space on some pages, fonts alignment incoherency, to name a few",
+     "stars": 2
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_not_useful",
+   "theme": "Not useful for my needs",
+   "count": 21,
+   "quotes": [
+    {
+     "text": "Just wasn’t a very impressive or practical item.",
+     "stars": 1
+    },
+    {
+     "text": "This planner isn’t helpful, there are no monthly tabs so you are swiping through 5he pages to get through month to month",
+     "stars": 1
+    },
+    {
+     "text": "This was more work than I anticipated to set up. Lovely for those who can make it work. Beautiful design, just not for me.",
+     "stars": 2
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_setup",
+   "theme": "Confusing setup or unclear instructions",
+   "count": 19,
+   "quotes": [
+    {
+     "text": "I was not sure how to edit this file I followed the instructions and it still didn’t turn out right.",
+     "stars": 1
+    },
+    {
+     "text": "Great planner. Took a couple of tries before I got it right for me",
+     "stars": 4
+    },
+    {
+     "text": "Where are the stickers located?",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_quality",
+   "theme": "Errors, typos or low quality",
+   "count": 15,
+   "quotes": [
+    {
+     "text": "This product was very hard to use and I couldn't download it to use on my iPad or computer with having issues seeing part of the planning pages.",
+     "stars": 1
+    },
+    {
+     "text": "The design of the planner itself is really nice. However, it is extremely out of order in some places and the pages for certain things skip all around without it being consecutive with the correspondi",
+     "stars": 2
+    },
+    {
+     "text": "some of the items were not as crisp and clear as the others. A little blurry.",
+     "stars": 4
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_support",
+   "theme": "Seller didn't help or reply",
+   "count": 15,
+   "quotes": [
+    {
+     "text": "How to download too many apps just to make their main app work plus it took days for their customer service to reach back",
+     "stars": 1
+    },
+    {
+     "text": "Geen reactie op email helaas",
+     "stars": 1
+    },
+    {
+     "text": "If your looking for sumthing to purchase and just instantly download this was not the product. Process took awhile to finally get purchase downloaded I reached out to seller who said she would get bac",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_value",
+   "theme": "Not worth the price",
+   "count": 14,
+   "quotes": [
+    {
+     "text": "I did not feel the spacing for writing in the calendar was sufficient for my needs.  Sucks wasted $14 and I have already deleted.",
+     "stars": 1
+    },
+    {
+     "text": "Worst download ever, save your money.  Hard to download and impossible to use.",
+     "stars": 1
+    },
+    {
+     "text": "The hyperlinks never worked complete waste of money",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_nav",
+   "theme": "Hard to navigate or find pages",
+   "count": 13,
+   "quotes": [
+    {
+     "text": "It’s very difficult to navigate, too many options but not satisfied with the after import navigation.",
+     "stars": 1
+    },
+    {
+     "text": "Layout was very busy and hard for me to navigate",
+     "stars": 1
+    },
+    {
+     "text": "This planner isn’t helpful, there are no monthly tabs so you are swiping through 5he pages to get through month to month",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_overwhelm",
+   "theme": "Too much, overwhelming",
+   "count": 11,
+   "quotes": [
+    {
+     "text": "It was overwhelming, I sat and tried to read through as much of it as possible, but I had no idea where to start.",
+     "stars": 1
+    },
+    {
+     "text": "It’s very difficult to navigate, too many options but not satisfied with the after import navigation.",
+     "stars": 1
+    },
+    {
+     "text": "First of all this product cannot be edited, I reached out to the seller still not very helpful.It has so many unnecessary information.",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_edit",
+   "theme": "Can't edit, type or customize",
+   "count": 10,
+   "quotes": [
+    {
+     "text": "I was not sure how to edit this file I followed the instructions and it still didn’t turn out right.",
+     "stars": 1
+    },
+    {
+     "text": "Not usable. It’s pretty, but you can’t enter text in it.",
+     "stars": 1
+    },
+    {
+     "text": "Too complicated. The tags switch before you can label them. A lot of jumping back and forth",
+     "stars": 3
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_broken",
+   "theme": "Doesn't work (no detail)",
+   "count": 10,
+   "quotes": [
+    {
+     "text": "so confusing. does not work",
+     "stars": 1
+    },
+    {
+     "text": "I can't make it work no matter how many times I've read see and re do all the instructions.",
+     "stars": 1
+    },
+    {
+     "text": "Does not work well.  It's really like a refund.",
+     "stars": 1
+    }
+   ]
+  }
+ ],
+ "other_complaints": [
+  {
+   "ref": "complaint:c_basic",
+   "theme": "Too basic or boring",
+   "count": 8
+  },
+  {
+   "ref": "complaint:c_look",
+   "theme": "Didn't like the look",
+   "count": 7
+  },
+  {
+   "ref": "complaint:c_missing",
+   "theme": "Missing pages or less than expected",
+   "count": 6
+  },
+  {
+   "ref": "complaint:c_extra_app",
+   "theme": "Needed an app or subscription that wasn't clear",
+   "count": 6
+  },
+  {
+   "ref": "complaint:c_links",
+   "theme": "Links broken or go to the wrong page",
+   "count": 5
+  },
+  {
+   "ref": "complaint:c_refund",
+   "theme": "Refund refused",
+   "count": 5
+  },
+  {
+   "ref": "complaint:c_space",
+   "theme": "Too little writing space",
+   "count": 4
+  },
+  {
+   "ref": "complaint:c_language",
+   "theme": "Only in English",
+   "count": 3
+  },
+  {
+   "ref": "complaint:c_lag",
+   "theme": "Slow, laggy or file too big",
+   "count": 3
+  },
+  {
+   "ref": "complaint:c_review_gate",
+   "theme": "Forced to leave a review",
+   "count": 3
+  },
+  {
+   "ref": "complaint:c_dates",
+   "theme": "Wrong or missing dates, calendar errors",
+   "count": 3
+  },
+  {
+   "ref": "complaint:c_upsell",
+   "theme": "Pushes paid add-ons or sign-ups",
+   "count": 2
+  },
+  {
+   "ref": "complaint:c_security",
+   "theme": "Spam, privacy or virus worries",
+   "count": 2
+  },
+  {
+   "ref": "complaint:c_readability",
+   "theme": "Text too small or hard to read",
+   "count": 2
+  }
+ ],
+ "praise": [
+  {
+   "ref": "praise:p_look",
+   "theme": "Beautiful design",
+   "count": 50,
+   "quotes": [
+    {
+     "text": "Beautiful, easy-to-use planner! The minimalist layout looks lovely on my iPad and works well in GoodNotes.",
+     "stars": 5
+    },
+    {
+     "text": "Great product! The planner is beautiful, useful, and just as described. Very happy with my purchase!",
+     "stars": 5
+    },
+    {
+     "text": "Beautiful templates, loved the different choices, options, fonts, designs and colors!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_easy",
+   "theme": "Easy to set up and use",
+   "count": 39,
+   "quotes": [
+    {
+     "text": "Beautiful, easy-to-use planner! The minimalist layout looks lovely on my iPad and works well in GoodNotes.",
+     "stars": 5
+    },
+    {
+     "text": "This is truly amazing, I love all the hyper-links and how it incorporates wellbeing, the coloring, etc. Tons of templates and super easy to use.",
+     "stars": 5
+    },
+    {
+     "text": "I am very satisfied. Cute design, downloads perfectly, and the digital files are easy to use. I highly recommend it to everyone! Thank you very much for the product!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_complete",
+   "theme": "Has everything I need",
+   "count": 28,
+   "quotes": [
+    {
+     "text": "This is truly amazing, I love all the hyper-links and how it incorporates wellbeing, the coloring, etc. Tons of templates and super easy to use.",
+     "stars": 5
+    },
+    {
+     "text": "Great resources! Full of fun ways to stay organized, digitally!",
+     "stars": 5
+    },
+    {
+     "text": "The planner has everything you could need",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_support",
+   "theme": "Seller was helpful",
+   "count": 22,
+   "quotes": [
+    {
+     "text": "Unable to use on a Samsung tablet S.  Seller tried to help, but after doing research, it's not compatible with this style tablet.",
+     "stars": 1
+    },
+    {
+     "text": "I love this planner. It’s exactly what I need. The builder is also really neat. Great customer service. Highly recommend and will purchase again.",
+     "stars": 5
+    },
+    {
+     "text": "Good after sales service as well, thanks.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_flexible",
+   "theme": "Flexible or customizable",
+   "count": 20,
+   "quotes": [
+    {
+     "text": "Beautiful templates, loved the different choices, options, fonts, designs and colors!",
+     "stars": 5
+    },
+    {
+     "text": "I love this planner. It’s exactly what I need. The builder is also really neat. Great customer service. Highly recommend and will purchase again.",
+     "stars": 5
+    },
+    {
+     "text": "Great product, easy to customize and use.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_adhd",
+   "theme": "Helps me stay on track",
+   "count": 20,
+   "quotes": [
+    {
+     "text": "Really love this planner. It makes it so much easier to stick to organising everything.",
+     "stars": 5
+    },
+    {
+     "text": "Artikel von dem Verkäufer begleiten mich scheon ein paar Jahre und sie gestalten meinen Alltag einfacher. Kann ich für Spectrum- Ponies nur empfehlen!",
+     "stars": 5
+    },
+    {
+     "text": "Item is as described. Much needed in helping to manage my schedule.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_quality",
+   "theme": "High quality",
+   "count": 19,
+   "quotes": [
+    {
+     "text": "Exceptional product, onboarding experience, and support",
+     "stars": 5
+    },
+    {
+     "text": "Muito bom, bem organizado a agenda.",
+     "stars": 5
+    },
+    {
+     "text": "Great product, well designed file",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_repeat",
+   "theme": "Repeat buyer",
+   "count": 16,
+   "quotes": [
+    {
+     "text": "I love this planner. It’s exactly what I need. The builder is also really neat. Great customer service. Highly recommend and will purchase again.",
+     "stars": 5
+    },
+    {
+     "text": "Artikel von dem Verkäufer begleiten mich scheon ein paar Jahre und sie gestalten meinen Alltag einfacher. Kann ich für Spectrum- Ponies nur empfehlen!",
+     "stars": 5
+    },
+    {
+     "text": "Awesome awesome product! Looking to purchase more from this seller.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_as_described",
+   "theme": "Exactly as described",
+   "count": 15,
+   "quotes": [
+    {
+     "text": "Great product! The planner is beautiful, useful, and just as described. Very happy with my purchase!",
+     "stars": 5
+    },
+    {
+     "text": "Item is as described. Much needed in helping to manage my schedule.",
+     "stars": 5
+    },
+    {
+     "text": "Not the fault of the seller - this is exactly what it purports to be.  It's just so MUCH that it's overwhelming and I won't be able to use it effectively.",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_daily",
+   "theme": "I use it every day",
+   "count": 13,
+   "quotes": [
+    {
+     "text": "Obsessed! I've had since May & I am so happy I made this purchase",
+     "stars": 5
+    },
+    {
+     "text": "I got the all-in-one digital planner and I’m absolutely obsessed with it. As a type-a girl this is my new hobby, my new personality, and my primary source of dopamine.",
+     "stars": 5
+    },
+    {
+     "text": "This is perfect for school and daily activities.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_guide",
+   "theme": "Clear instructions or tutorials",
+   "count": 10,
+   "quotes": [
+    {
+     "text": "I am new to rights planning,  and I'm excited to be using this Planner! Love all of her tutorial videos.",
+     "stars": 5
+    },
+    {
+     "text": "Great for keeping organised and easy to understand instructions.",
+     "stars": 4
+    },
+    {
+     "text": "Exceptional product, onboarding experience, and support",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_value",
+   "theme": "Great value",
+   "count": 8,
+   "quotes": [
+    {
+     "text": "I love how affordable, easy to manage, and pretty this digital planner is. Also, a special shoutout to the company for reaching out personally to make sure that my experience was good.",
+     "stars": 5
+    },
+    {
+     "text": "This planner has helped me so much. So much care and thought has been put into it, and it shows. Well worth the money. Highly recommend.",
+     "stars": 5
+    },
+    {
+     "text": "Incredible quality and value for the price!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_fits_needs",
+   "theme": "Useful, fits my needs",
+   "count": 7,
+   "quotes": [
+    {
+     "text": "Great product! The planner is beautiful, useful, and just as described. Very happy with my purchase!",
+     "stars": 5
+    },
+    {
+     "text": "Great product! Definitely recommend. Exactly what I was looking for.",
+     "stars": 5
+    },
+    {
+     "text": "Love it!  Exactly what I was looking for.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_nav",
+   "theme": "Links work, easy to navigate",
+   "count": 7,
+   "quotes": [
+    {
+     "text": "This is truly amazing, I love all the hyper-links and how it incorporates wellbeing, the coloring, etc. Tons of templates and super easy to use.",
+     "stars": 5
+    },
+    {
+     "text": "Exactly what I was looking for. The tabs make organizing modules and chapters really easy. The perfect notebook for my needs.",
+     "stars": 5
+    },
+    {
+     "text": "Everything is laid out well, hyperlinks work perfectly, additional pages are thoughtfully made, and the color scheme is so pretty. I really enjoy using it!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_extras",
+   "theme": "Love the stickers and extras",
+   "count": 7,
+   "quotes": [
+    {
+     "text": "great templates, easy to use, beautifully designed and with great instructions and extras like icons",
+     "stars": 5
+    },
+    {
+     "text": "Good Assortment of Stickers. Thank you for your product!",
+     "stars": 5
+    },
+    {
+     "text": "Very cute stickers, easy to use",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_device",
+   "theme": "Works on my device",
+   "count": 3,
+   "quotes": [
+    {
+     "text": "Ottima agenda. Funziona benissimo con noteshelf 3. Complimenti.",
+     "stars": 5
+    },
+    {
+     "text": "Wonderful monochrome look! Works beautifully with Kindle Scribe!",
+     "stars": 5
+    }
+   ]
+  }
+ ],
+ "wishes": [
+  {
+   "ref": "wish:w_listing_info",
+   "theme": "Listing should say which apps are needed",
+   "count": 4
+  },
+  {
+   "ref": "wish:w_customize",
+   "theme": "More ways to customize",
+   "count": 3
+  },
+  {
+   "ref": "wish:w_side_tabs",
+   "theme": "Side tabs for faster navigation",
+   "count": 2
+  },
+  {
+   "ref": "wish:w_portrait",
+   "theme": "Portrait version",
+   "count": 2
+  },
+  {
+   "ref": "wish:w_back_button",
+   "theme": "A back button",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_order",
+   "theme": "Pages in a logical order",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_sunday_start",
+   "theme": "Sunday-start weeks",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_page_types",
+   "theme": "More page types included",
+   "count": 1
+  }
+ ],
+ "features": [
+  {
+   "ref": "feature:dated",
+   "name": "Dated for the year",
+   "tier": "standard",
+   "share": 0.967,
+   "revenue_share": 0.997
+  },
+  {
+   "ref": "feature:multi_year",
+   "name": "Covers more than one year",
+   "tier": "standard",
+   "share": 0.867,
+   "revenue_share": 0.961
+  },
+  {
+   "ref": "feature:goodnotes",
+   "name": "Says Goodnotes",
+   "tier": "standard",
+   "share": 0.833,
+   "revenue_share": 0.904
+  },
+  {
+   "ref": "feature:journal",
+   "name": "Journal or notebook pages",
+   "tier": "common",
+   "share": 0.533,
+   "revenue_share": 0.699
+  },
+  {
+   "ref": "feature:adhd_specific",
+   "name": "Built for ADHD",
+   "tier": "common",
+   "share": 0.5,
+   "revenue_share": 0.402
+  },
+  {
+   "ref": "feature:undated",
+   "name": "Undated version",
+   "tier": "common",
+   "share": 0.4,
+   "revenue_share": 0.375
+  },
+  {
+   "ref": "feature:android",
+   "name": "Android or Samsung support",
+   "tier": "common",
+   "share": 0.4,
+   "revenue_share": 0.459
+  },
+  {
+   "ref": "feature:all_in_one",
+   "name": "All-in-one life planner",
+   "tier": "common",
+   "share": 0.333,
+   "revenue_share": 0.398
+  },
+  {
+   "ref": "feature:notability",
+   "name": "Says Notability",
+   "tier": "rare",
+   "share": 0.267,
+   "revenue_share": 0.319
+  },
+  {
+   "ref": "feature:self_care",
+   "name": "Self-care, mood or wellness pages",
+   "tier": "rare",
+   "share": 0.2,
+   "revenue_share": 0.1
+  },
+  {
+   "ref": "feature:minimalist",
+   "name": "Minimalist look",
+   "tier": "rare",
+   "share": 0.2,
+   "revenue_share": 0.095
+  },
+  {
+   "ref": "feature:colorful",
+   "name": "Colorful or aesthetic look",
+   "tier": "rare",
+   "share": 0.167,
+   "revenue_share": 0.126
+  },
+  {
+   "ref": "feature:dark_mode",
+   "name": "Dark mode",
+   "tier": "rare",
+   "share": 0.133,
+   "revenue_share": 0.058
+  },
+  {
+   "ref": "feature:hyperlinked",
+   "name": "Hyperlinked tabs and dates",
+   "tier": "rare",
+   "share": 0.1,
+   "revenue_share": 0.076
+  },
+  {
+   "ref": "feature:habit_tracker",
+   "name": "Habit tracker",
+   "tier": "rare",
+   "share": 0.1,
+   "revenue_share": 0.039
+  },
+  {
+   "ref": "feature:stickers",
+   "name": "Digital stickers included",
+   "tier": "rare",
+   "share": 0.1,
+   "revenue_share": 0.299
+  },
+  {
+   "ref": "feature:landscape",
+   "name": "Landscape layout",
+   "tier": "rare",
+   "share": 0.1,
+   "revenue_share": 0.033
+  },
+  {
+   "ref": "feature:bundle",
+   "name": "Bundle of several products",
+   "tier": "rare",
+   "share": 0.1,
+   "revenue_share": 0.315
+  },
+  {
+   "ref": "feature:work",
+   "name": "Work or productivity focus",
+   "tier": "rare",
+   "share": 0.1,
+   "revenue_share": 0.065
+  },
+  {
+   "ref": "feature:portrait",
+   "name": "Portrait layout",
+   "tier": "rare",
+   "share": 0.067,
+   "revenue_share": 0.069
+  },
+  {
+   "ref": "feature:student",
+   "name": "Student or academic",
+   "tier": "rare",
+   "share": 0.067,
+   "revenue_share": 0.06
+  },
+  {
+   "ref": "feature:custom",
+   "name": "Customizable or personalized",
+   "tier": "rare",
+   "share": 0.067,
+   "revenue_share": 0.074
+  },
+  {
+   "ref": "feature:eink",
+   "name": "E-ink tablets (reMarkable, Boox, Kindle Scribe)",
+   "tier": "rare",
+   "share": 0.033,
+   "revenue_share": 0.04
+  },
+  {
+   "ref": "feature:brain_dump",
+   "name": "Brain dump pages",
+   "tier": "rare",
+   "share": 0.033,
+   "revenue_share": 0.028
+  },
+  {
+   "ref": "feature:budget",
+   "name": "Budget or finance pages",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:meal",
+   "name": "Meal planning",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:goals",
+   "name": "Goal setting",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:time_blocking",
+   "name": "Time blocking or hourly schedule",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:routines",
+   "name": "Routine builder",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:dopamine_menu",
+   "name": "Dopamine menu",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:priority_matrix",
+   "name": "Priority matrix or top 3",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:quick_start",
+   "name": "Quick start or setup guide",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:test_page",
+   "name": "Link test or setup check page",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  }
+ ],
+ "standard_features": [
+  "feature:dated",
+  "feature:multi_year",
+  "feature:goodnotes"
+ ],
+ "price": {
+  "p25": 7.35,
+  "median": 22.16,
+  "p75": 29.13,
+  "top10_by_revenue_median": 15.0,
+  "revenue_weighted_median": 19.87,
+  "best_band": "$4-32"
+ },
+ "keywords": [
+  {
+   "tag": "adhd planner",
+   "used_by_top": 23,
+   "volume": null
+  },
+  {
+   "tag": "goodnotes planner",
+   "used_by_top": 19,
+   "volume": null
+  },
+  {
+   "tag": "ipad planner",
+   "used_by_top": 18,
+   "volume": null
+  },
+  {
+   "tag": "daily planner",
+   "used_by_top": 14,
+   "volume": null
+  },
+  {
+   "tag": "digital planner",
+   "used_by_top": 14,
+   "volume": null
+  },
+  {
+   "tag": "goodnotes template",
+   "used_by_top": 12,
+   "volume": null
+  },
+  {
+   "tag": "weekly planner",
+   "used_by_top": 12,
+   "volume": null
+  },
+  {
+   "tag": "undated planner",
+   "used_by_top": 10,
+   "volume": null
+  },
+  {
+   "tag": "digital journal",
+   "used_by_top": 10,
+   "volume": null
+  },
+  {
+   "tag": "monthly planner",
+   "used_by_top": 9,
+   "volume": null
+  },
+  {
+   "tag": "notability planner",
+   "used_by_top": 9,
+   "volume": null
+  },
+  {
+   "tag": "2026 digital planner",
+   "used_by_top": 9,
+   "volume": null
+  },
+  {
+   "tag": "adhd digital planner",
+   "used_by_top": 8,
+   "volume": null
+  },
+  {
+   "tag": "digital notebook",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "adhd planner adult",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "aesthetic planner",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "2027 digital planner",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "digital planners",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "adhd journal",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "adhd organizer",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "adhd workbook",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "adhd work planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "adhd goal setting",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "adhd resources",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "adhd goodnotes",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "all in one planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "student planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "minimalist planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "goodnotes notebook",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "digital planner 2026",
+   "used_by_top": 3,
+   "volume": null
+  }
+ ],
+ "looks": [
+  {
+   "ref": "look:Minimalist look",
+   "share": 0.2
+  },
+  {
+   "ref": "look:Colorful or aesthetic look",
+   "share": 0.167
+  },
+  {
+   "ref": "look:Dark mode",
+   "share": 0.133
+  },
+  {
+   "ref": "look:Landscape layout",
+   "share": 0.1
+  },
+  {
+   "ref": "look:Portrait layout",
+   "share": 0.067
+  }
+ ],
+ "top_listings": [
+  {
+   "ref": "listing:1784469516",
+   "title": "All-in-One Digital Planner 2026, 2027, 2028 Digital Planner, Digital Journal, Digital Goodnotes Template, Weekly, Daily ",
+   "shop": "phenixdigital",
+   "price": 3.96,
+   "mo_revenue": 2911.0,
+   "total_sales": 39759.0
+  },
+  {
+   "ref": "listing:661944197",
+   "title": "Digital Planner 2026 2027 Undated Digital Planners Goodnotes Planner iPad Planner Daily Planner Weekly Planner Digital J",
+   "shop": "HappyDownloads",
+   "price": 29.13,
+   "mo_revenue": 1398.0,
+   "total_sales": 44860.0
+  },
+  {
+   "ref": "listing:4466031892",
+   "title": "Digital Planner, Undated iPad & Android Planner Bundle, GoodNotes Calendar, Daily Weekly Monthly Journal with Stickers, ",
+   "shop": "BrighterPlans",
+   "price": 6.72,
+   "mo_revenue": 2717.0,
+   "total_sales": 1915.0
+  },
+  {
+   "ref": "listing:4340822313",
+   "title": "Digital Planner Whole Shop Bundle, GoodNotes Calendar, iPad & Android Digital Notebooks, Journals, ADHD Planner, Digital",
+   "shop": "BrighterPlans",
+   "price": 28.01,
+   "mo_revenue": 2323.0,
+   "total_sales": 1270.0
+  },
+  {
+   "ref": "listing:1661820574",
+   "title": "All-in-One Digital Planner 2026, Undated Digital Planner, Digital Journal, Digital Goodnotes Template, Notability, Daily",
+   "shop": "AuraPlannersCo",
+   "price": 3.7,
+   "mo_revenue": 56.0,
+   "total_sales": 27025.0
+  },
+  {
+   "ref": "listing:1282376971",
+   "title": "2026 + 2027 ADHD Digital Planner (Rainbow): Self-Care and Habit Tracker (Goodnotes/Android) (Digital Download)",
+   "shop": "FutureADHD",
+   "price": 24.33,
+   "mo_revenue": 148.0,
+   "total_sales": 20694.0
+  },
+  {
+   "ref": "listing:4568300822",
+   "title": "Digital Planner 2026 2027 2028 | GoodNotes Planner | All In One Digital Planner | iPad Planner | Hyperlinked Planner | D",
+   "shop": "WBaiStudio",
+   "price": 4.64,
+   "mo_revenue": 923.0,
+   "total_sales": 197.0
+  },
+  {
+   "ref": "listing:1867253627",
+   "title": "All-in-One Digital Planner 2027 2028 2029, Hyperlink Digital Planner, Daily Weekly Monthly Journal, Goodnotes Planner, A",
+   "shop": "RachyTreasures",
+   "price": 2.81,
+   "mo_revenue": 0.0,
+   "total_sales": 12332.0
+  },
+  {
+   "ref": "listing:1833235300",
+   "title": "Custom Digital Planner Bundle 2026 2027 2028 & Undated, All-in-One Digital Planner for iPad and Tablet, Goodnotes Planne",
+   "shop": "TheMAMdesign",
+   "price": 35.0,
+   "mo_revenue": 875.0,
+   "total_sales": 1368.0
+  },
+  {
+   "ref": "listing:809907874",
+   "title": "Digital Planner 2026 2027 Undated Goodnotes Planner iPad Planner Daily Weekly Planner Digital Journal ADHD Planner Goodn",
+   "shop": "HappyDownloads",
+   "price": 29.13,
+   "mo_revenue": 233.0,
+   "total_sales": 11665.0
+  },
+  {
+   "ref": "listing:4519060359",
+   "title": "2026-2027 Mid Year Digital Planner, Portrait Layout, Aesthetic Digital Planner for Goodnotes, Notability, Samsung Notes",
+   "shop": "TheMAMdesign",
+   "price": 20.0,
+   "mo_revenue": 760.0,
+   "total_sales": 38.0
+  },
+  {
+   "ref": "listing:1345063957",
+   "title": "2026 2027 Digital Planner | iPad & Samsung Tablet | Minimalist Modern Horizontal | Dated",
+   "shop": "BytheBrookDesign",
+   "price": 15.0,
+   "mo_revenue": 0.0,
+   "total_sales": 8336.0
+  },
+  {
+   "ref": "listing:1873095379",
+   "title": "For reMarkable Paper Pro Planner All In One Digital Planner, 2026, 2027, 2028 Digital Journal, Daily Planner, Weekly Dig",
+   "shop": "PrintMagicStudioX",
+   "price": 25.23,
+   "mo_revenue": 757.0,
+   "total_sales": 1960.0
+  },
+  {
+   "ref": "listing:1259249004",
+   "title": "2026 + 2027 ADHD Digital Planner (Sunset): Habit and Self-Care Tracker (Goodnotes/Android)",
+   "shop": "FutureADHD",
+   "price": 24.33,
+   "mo_revenue": 33.0,
+   "total_sales": 7575.0
+  },
+  {
+   "ref": "listing:4332596790",
+   "title": "ADHD Planner 2026-2027, ADHD Digital Planner, Goodnotes Planner, iPad Planner, Daily Weekly Monthly Planner, Productivit",
+   "shop": "Manifestable",
+   "price": 9.99,
+   "mo_revenue": 599.0,
+   "total_sales": 2610.0
+  }
+ ],
+ "capabilities": {
+  "modules": {
+   "cover": {
+    "desc": "Cover page with title, subtitle and an Open planner button",
+    "params": {}
+   },
+   "index": {
+    "desc": "Contents page: a card for every section plus all months",
+    "params": {}
+   },
+   "year": {
+    "desc": "Year at a glance: 12 mini calendars, every date links to its day (dated) or month (undated)",
+    "params": {}
+   },
+   "lined": {
+    "desc": "Lined or dot-grid writing pages (notes, goals, brain dump). label, kicker, pages, dots, anchor",
+    "params": {
+     "label": "str",
+     "kicker": "str",
+     "pages": "int",
+     "dots": "bool",
+     "anchor": "str"
+    }
+   },
+   "checklist": {
+    "desc": "Checklist page in columns. label, kicker, groups: [[title, [items]]], anchor",
+    "params": {
+     "label": "str",
+     "kicker": "str",
+     "groups": "list",
+     "anchor": "str"
+    }
+   },
+   "table": {
+    "desc": "Table page. label, kicker, headers, rows, first_column (pre-filled), anchor",
+    "params": {
+     "label": "str",
+     "headers": "list",
+     "rows": "int",
+     "first_column": "list",
+     "anchor": "str"
+    }
+   },
+   "year_pixels": {
+    "desc": "Year in pixels: color one square per day for mood or energy. label, keys",
+    "params": {
+     "label": "str",
+     "keys": "list"
+    }
+   },
+   "guide": {
+    "desc": "Printed guide page with numbered steps (how to start, how to import, how links work). label, kicker, steps: [[title, text]], tip, anchor",
+    "params": {
+     "label": "str",
+     "kicker": "str",
+     "steps": "list",
+     "tip": "str",
+     "anchor": "str"
+    }
+   },
+   "link_test": {
+    "desc": "Setup check page: buttons that jump to a test page and back, so buyers confirm links work before planning. label, anchor",
+    "params": {}
+   },
+   "calendar": {
+    "desc": "The dated or undated calendar: month pages, optional habit page per month, week pages and day pages, all cross-linked. month: {side: [labels]}, habits: bool, week: {preset | side: [blocks]}, day: {preset | left: [blocks], right: [blocks]}, days: bool",
+    "params": {
+     "month": "dict",
+     "habits": "bool",
+     "week": "dict",
+     "day": "dict",
+     "days": "bool"
+    }
+   }
+  },
+  "blocks": {
+   "checklist": "Checkbox list. label, rows, items (pre-filled), fill, grow",
+   "lines": "Lined writing box. label, grow (default true) or height",
+   "dots": "Dot-grid box. label, grow or height",
+   "water": "Water tracker drops. label, count",
+   "scale": "Circles 1 to max to rate energy, mood or focus. label, max",
+   "hours": "Hourly schedule. label, from, to, row (px)",
+   "pair": "Two blocks side by side. items: [block, block]",
+   "text": "Short printed tip or instruction. label, text"
+  },
+  "day_presets": [
+   "default",
+   "adhd"
+  ],
+  "week_presets": [
+   "default",
+   "adhd"
+  ],
+  "themes": [
+   "sage",
+   "neutral",
+   "pastel",
+   "navy",
+   "blush",
+   "night"
+  ],
+  "orientations": [
+   "landscape",
+   "portrait"
+  ],
+  "dating": [
+   "dated (year)",
+   "undated"
+  ],
+  "fonts": [
+   "Corm",
+   "Jost",
+   "Fraunces",
+   "Manrope",
+   "Quicksand",
+   "Nunito",
+   "DMSerif",
+   "Outfit",
+   "Baskerville",
+   "Script"
+  ],
+  "type_scale": "number, 1.0 default; 1.15 for larger text"
+ },
+ "style_rules": [],
+ "past_briefs": []
+}

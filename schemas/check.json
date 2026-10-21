@@ -1,0 +1,15 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Automatic check result for one product",
+ "type": "object",
+ "required": ["product_id", "at", "tech", "coverage", "clone", "pass"],
+ "properties": {
+  "product_id": {"type": "string"},
+  "at": {"type": "string"},
+  "tech": {"type": "array", "items": {"type": "object", "required": ["name", "pass", "detail"]}},
+  "coverage": {"type": "array", "items": {"type": "object", "required": ["item", "kind", "found", "where"]}},
+  "clone": {"type": "object", "required": ["max_image_sim", "max_text_sim", "pass"]},
+  "pass": {"type": "boolean"},
+  "notes": {"type": "array"}
+ }
+}
