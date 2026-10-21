@@ -2,7 +2,7 @@
  {
   "name": "file size",
   "pass": true,
-  "detail": "Just-Today.pdf: 16.41 MB (limit 19.5, Etsy 20)"
+  "detail": "Just-Today.pdf: 16.42 MB (limit 19.5, Etsy 20)"
  },
  {
   "name": "no text overflow",
@@ -12,12 +12,12 @@
  {
   "name": "page count",
   "pass": true,
-  "detail": "475 pages in PDF"
+  "detail": "474 pages in PDF"
  },
  {
   "name": "links present in PDF",
   "pass": true,
-  "detail": "12556 link annotations for 11818 links in the source"
+  "detail": "12572 link annotations for 11834 links in the source"
  },
  {
   "name": "fonts licensed (OFL list only)",
@@ -47,7 +47,7 @@
  {
   "name": "page claims match the file",
   "pass": true,
-  "detail": "claims [475, 475], file has 475"
+  "detail": "claims [474, 474], file has 474"
  },
  {
   "name": "says digital download",

@@ -154,8 +154,11 @@ a{{color:inherit;text-decoration:none}}
 """
 
     def nav(self, active=None, crumb=''):
-        links = ''.join(f'<a href="#{a}" class="{"on" if a == active else ""}">{esc(l)}</a>' for l, a in self.nav_items[:7 if self.W > self.HT else 4])
-        return f'<div class="nav">{links}<span class="crumb">{crumb}</span></div>'
+        # placeholder, filled in html() once every section has registered, so early pages get the full bar
+        return f'<div class="nav">%%NAV:{active or ""}%%<span class="crumb">{crumb}</span></div>'
+
+    def nav_links(self, active):
+        return ''.join(f'<a href="#{a}" class="{"on" if a == active else ""}">{esc(l)}</a>' for l, a in self.nav_items[:7 if self.W > self.HT else 4])
 
     def rail(self, month=None):
         out = []
@@ -208,7 +211,8 @@ a{{color:inherit;text-decoration:none}}
         return cells, len(cal)
 
     def html(self):
-        return f'<!doctype html><html><head><meta charset="utf-8"><style>{self.css()}</style></head><body>{"".join(self.pages)}</body></html>'
+        body = re.sub(r'%%NAV:([^%]*)%%', lambda m: self.nav_links(m.group(1) or None), ''.join(self.pages))
+        return f'<!doctype html><html><head><meta charset="utf-8"><style>{self.css()}</style></head><body>{body}</body></html>'
 
 
 # ---------- day and week blocks ----------
@@ -312,7 +316,7 @@ def _fill_index(P):
     cards = ''.join(f'<a href="#{a}" class="box" style="justify-content:space-between;min-height:76px;background:{c}22;border-color:{c}"><span class="k">{esc(k)}</span><span class="h" style="font-size:22px">{esc(l)}</span></a>'
                     for (l, a, k), c in zip(P.index_items[:12], P.tabs * 3))
     months = ''.join(f'<a href="#m{i + 1:02d}" style="padding:8px 0;text-align:center;border-radius:8px;background:{P.tabs[i]}55;font:600 12px \'{th["body"]}\'">{MONTHS[i]}</a>' for i in range(12))
-    tip = P.s.get('index_tip', 'Tap a month tab on the right, any section above, or any date to jump there. Every page links back here with Home. Follow links in read mode (Goodnotes: turn the pen off).')
+    tip = P.s.get('index_tip', 'Tap a month tab on the right, any section above, or any date to jump there. Home on the top bar brings you back here, and calendar pages show where you are at the top right. Follow links in read mode (Goodnotes: turn the pen off).')
     inner = f'''<p class="h" style="font-size:44px">Contents</p>
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">{cards}</div>
       <p class="k" style="margin-top:6px">Months</p><div style="display:grid;grid-template-columns:repeat(6,1fr);gap:8px">{months}</div>
@@ -374,7 +378,7 @@ def m_pixels(P, sec):
     head = '<span></span>' + ''.join(f'<span class="k" style="text-align:center;font-size:9px">{m[:1]}</span>' for m in MONTHS)
     rows = ''.join(f'<span style="font:600 9px \'{th["body"]}\';color:{th["muted"]};text-align:right;padding-right:4px">{d}</span>' +
                    ''.join(f'<i style="border:1px solid {th["line"]};border-radius:3px;{"opacity:.25;" if (not P.undated and d > calendar.monthrange(P.year, m)[1]) else ""}"></i>' for m in range(1, 13)) for d in range(1, 32))
-    keys = ''.join(f'<div style="display:flex;gap:8px;align-items:center;font-size:12px"><i style="width:16px;height:16px;border-radius:4px;background:{c}"></i>{esc(k)}</div>' for k, c in zip(sec.get('keys', ['Great', 'Good', 'Okay', 'Low', 'Hard']), P.tabs[::2]))
+    keys = ''.join(f'<div style="display:flex;gap:8px;align-items:center;font-size:12px"><i style="width:16px;height:16px;border-radius:4px;background:{c}"></i>{esc(k)}</div>' for k, c in zip(sec.get('keys', ['Great', 'Good', 'Okay', 'Low', 'Hard']), [P.th['accent'], P.tabs[0], P.th['warm'], P.tabs[-1], P.th['muted']]))
     _register(P, sec, sec.get('label', 'Year in pixels'), a, 'Track')
     P.page(a, P.head('' if P.undated else str(P.year), sec.get('label', 'Year in pixels')) + f'<div class="row" style="flex:1"><div style="flex:3;display:grid;grid-template-columns:22px repeat(12,1fr);grid-template-rows:auto repeat(31,1fr);gap:2px">{head}{rows}</div><div class="box" style="flex:1;align-self:flex-start"><span class="k">Color key</span>{keys}</div></div>', active=a)
 
@@ -383,20 +387,20 @@ def m_pixels(P, sec):
         params={'label': 'str', 'kicker': 'str', 'steps': 'list', 'tip': 'str', 'anchor': 'str'})
 def m_guide(P, sec):
     a = sec.get('anchor') or re.sub(r'[^a-z0-9]', '', sec['label'].lower())[:12]
-    steps = ''.join(f'<div class="step"><b>{i}</b><div><p class="h" style="font-size:20px;margin-bottom:4px">{esc(t)}</p><p style="font-size:{P.fs(13)};line-height:1.45;color:{P.th["muted"]}">{esc(x)}</p></div></div>' for i, (t, x) in enumerate(sec['steps'], 1))
+    steps = ''.join(f'<div class="box step" style="padding:18px 20px;gap:14px;flex-direction:row"><b style="width:36px;height:36px;font-size:16px">{i}</b><div><p class="h" style="font-size:24px;margin-bottom:8px">{esc(t)}</p><p style="font-size:{P.fs(14.5)};line-height:1.5;color:{P.th["muted"]}">{esc(x)}</p></div></div>' for i, (t, x) in enumerate(sec['steps'], 1))
     tip = f'<div class="box fill" style="margin-top:auto"><span class="k">Tip</span><span style="font-size:13px;line-height:1.45">{esc(sec["tip"])}</span></div>' if sec.get('tip') else ''
     _register(P, sec, sec['label'], a, sec.get('kicker', 'Start here'))
-    P.page(a, P.head(sec.get('kicker', 'Start here'), sec['label']) + f'<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px 28px">{steps}</div>{tip}', active=a, deco=True)
+    P.page(a, P.head(sec.get('kicker', 'Start here'), sec['label']) + f'<div style="display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:1fr;gap:14px;flex:1">{steps}</div>{tip}', active=a, deco=True)
 
 
 @module('link_test', 'Setup check page: buttons that jump to a test page and back, so buyers confirm links work before planning. label, anchor')
 def m_link_test(P, sec):
     th = P.th; a = sec.get('anchor', 'linktest')
     targets = [('A month page', 'm01'), ('The year', 'year'), ('Contents', 'index')]
-    btns = ''.join(f'<a href="#{t}" style="padding:14px 18px;border-radius:14px;background:{th["soft"]};font:600 15px \'{th["body"]}\';display:flex;justify-content:space-between"><span>{esc(l)}</span><span>{arrow('r')}</span></a>' for l, t in targets)
+    btns = ''.join(f'<a href="#{t}" style="flex:1;padding:14px 22px;border-radius:14px;background:{th["soft"]};font:600 18px \'{th["body"]}\';display:flex;justify-content:space-between;align-items:center"><span>{esc(l)}</span><span>{arrow('r')}</span></a>' for l, t in targets)
     inner = P.head('Setup check', sec.get('label', 'Do your links work?')) + f'''
       <div class="row" style="flex:1"><div class="col" style="flex:1"><div class="box fill"><span class="k">Try it now</span><span style="font-size:{P.fs(14)};line-height:1.5">Tap each button. If it jumps, your planner is set up. Use the Home tab at the top to come back.</span></div>{btns}</div>
-      <div class="col" style="flex:1"><div class="box" style="flex:1"><span class="k">Nothing happened?</span>{_chk(4, ["Turn the pen off (read or view mode)", "Open the file in a PDF planner app, not Files or Photos", "Re-import the PDF, do not convert it", "Still stuck? Message us on Etsy, we reply fast"])}</div></div></div>'''
+      <div class="col" style="flex:1"><div class="box" style="flex:1"><span class="k">Nothing happened?</span>{_chk(4, ["Turn the pen off (read or view mode)", "Open the file in a PDF planner app, not Files or Photos", "Re-import the PDF, do not convert it", "Still stuck? Message us on Etsy and we will help"])}</div></div></div>'''
     _register(P, sec, sec.get('label', 'Setup check'), a, 'Start here')
     P.page(a, inner, active=a)
 
@@ -491,7 +495,8 @@ def _day(P, d, n, m, i, lay):
     left = ''.join(block(P, b) for b in lay['left'])
     right = ''.join(block(P, b) for b in lay['right'])
     inner = f'{P.head(kicker, title, right=f"<span class=k style=font-size:16px>{arrows}</span>")}<div class="row" style="flex:1"><div class="col" style="flex:1">{left}</div><div class="col" style="flex:1.15">{right}</div></div>'
-    P.page(anchor, inner, month=(d.month if d else m), crumb=f'<a href="#m{m:02d}">{MONTHS[m - 1]}</a> / <a href="#w{n:02d}">Week {n}</a>')
+    mm = d.month if d else m
+    P.page(anchor, inner, month=mm, crumb=f'<a href="#m{mm:02d}">{MONTHS[mm - 1]}</a> / <a href="#w{n:02d}">Week {n}</a>')
 
 
 @module('head_start', 'Lead-in months before the main dated year (for example Nov and Dec 2026 in a 2027 planner): month pages whose dates link to lead-in week pages, Monday-start week pages titled by date range, optional lead-in day pages. Anchors use their own prefix. The last week links days that fall in the main year to their day pages and offers Continue to the main year. label, kicker, anchor (prefix, default hs), from YYYY-MM, to YYYY-MM, days bool, month {side}, week {preset|side}, day {preset|left,right}, continue_to (default m01)',
@@ -517,6 +522,9 @@ def m_head_start(P, sec):
     def week_of(d):
         return next(i + 1 for i, w in enumerate(weeks) if w[0] <= d <= w[6])
     with_days = sec.get('days', False)
+    # a lead-in week that reaches into the main year IS the main year's week 1: link there instead of printing it twice
+    overlaps = lambda w: (not P.undated) and any(d.year == P.year for d in w)
+    main_week = lambda d: f'w{P.week_of(d):02d}'
     wside = (sec.get('week') or {}).get('side') or WEEK_PRESETS[(sec.get('week') or {}).get('preset', 'default')]
     dsec = sec.get('day') or {}
     dlay = dsec if dsec.get('left') else DAY_PRESETS[dsec.get('preset', 'default')]
@@ -532,9 +540,12 @@ def m_head_start(P, sec):
                 if d.month != mm:
                     cells += f'<span class="d x">{d.day}</span>'
                 else:
-                    cells += f'<a class="d" href="#{day_anchor(d) if with_days else wk_anchor(week_of(d))}">{d.day}</a>'
-        ws = sorted({week_of(d) for d in calendar.Calendar(0).itermonthdates(yy, mm) if d.month == mm})
-        wl = ''.join(f'<a href="#{wk_anchor(w)}" style="padding:4px 8px;border-radius:{P.rpill}px;background:{th["soft"]};font:600 10.5px \'{th["body"]}\'">{MONTHS[weeks[w - 1][0].month - 1][:3]} {weeks[w - 1][0].day}</a>' for w in ws)
+                    w_ = weeks[week_of(d) - 1]
+                    target = main_week(w_[6]) if overlaps(w_) else (day_anchor(d) if with_days else wk_anchor(week_of(d)))
+                    cells += f'<a class="d" href="#{target}">{d.day}</a>'
+        ws_all = sorted({week_of(d) for d in calendar.Calendar(0).itermonthdates(yy, mm) if d.month == mm})
+        ws = [w for w in ws_all if not overlaps(weeks[w - 1])]
+        wl = ''.join(f'<a href="#{wk_anchor(w)}" style="padding:4px 8px;border-radius:{P.rpill}px;background:{th["soft"]};font:600 10.5px \'{th["body"]}\'">{MONTHS[weeks[w - 1][0].month - 1][:3]} {weeks[w - 1][0].day}</a>' for w in ws) + ''.join(f'<a href="#{main_week(weeks[w - 1][6])}" style="padding:4px 8px;border-radius:{P.rpill}px;background:{th["soft"]};font:600 10.5px \'{th["body"]}\'">{MONTHS[weeks[w - 1][0].month - 1][:3]} {weeks[w - 1][0].day}</a>' for w in ws_all if overlaps(weeks[w - 1]))
         side = ''.join(f'<div class="box" style="flex:1"><span class="k">{esc(x)}</span><div class="lines"></div></div>' for x in side_labels)
         extra = contlink if (yy, mm) == months[-1] else ''
         inner = f'''<div class="row" style="align-items:flex-end;justify-content:space-between"><div><p class="k">{esc(sec.get("kicker", "Head start"))} · {yy}</p><p class="h" style="font-size:52px">{MONTHS[mm - 1]}</p></div><div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;max-width:560px">{wl}{extra}</div></div>
@@ -559,7 +570,7 @@ def m_head_start(P, sec):
                 cols += f'<div class="box" style="flex:1">{head}<div class="lines"></div></div>'
             sideb = ''.join(block(P, b) for b in wside)
             title = f'{MONTHS[days[0].month - 1][:3]} {days[0].day} to {MONTHS[days[6].month - 1][:3]} {days[6].day}'
-            right = contlink if w == len(weeks) else ''
+            right = contlink if w == max(x for x in range(1, len(weeks) + 1) if not overlaps(weeks[x - 1])) else ''
             inner = f'''{P.head(f"Head start · week {w} of {len(weeks)}", title, right=right)}
               <div class="row" style="flex:1"><div style="flex:3;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:1fr 1fr;gap:10px">{cols}<div class="box fill"><span class="k">Notes</span><div class="dots"></div></div></div><div class="col" style="flex:1.05">{sideb}</div></div>'''
             P.page(wk_anchor(w), inner, crumb=f'<a href="#{pre}{mm:02d}">{MONTHS[mm - 1]} {yy}</a> / {title}')
@@ -568,7 +579,15 @@ def m_head_start(P, sec):
                     if not in_lead(d):
                         continue
                     pd, nd = d - datetime.timedelta(days=1), d + datetime.timedelta(days=1)
-                    arrows = (f'<a href="#{day_anchor(pd)}">{arrow('l')}</a>' if in_lead(pd) else '') + (f' <a href="#{day_anchor(nd)}">{arrow('r')}</a>' if in_lead(nd) else (f' <a href="#{P.did(nd)}">{arrow('r')}</a>' if in_main(nd) else ''))
+                    if in_lead(nd) and not overlaps(weeks[week_of(nd) - 1]):
+                        nxt = day_anchor(nd)
+                    elif in_main(nd):
+                        nxt = P.did(nd)
+                    elif in_lead(nd):
+                        nxt = main_week(weeks[week_of(nd) - 1][6])
+                    else:
+                        nxt = None
+                    arrows = (f'<a href="#{day_anchor(pd)}">{arrow('l')}</a>' if in_lead(pd) else '') + (f' <a href="#{nxt}">{arrow('r')}</a>' if nxt else '')
                     left = ''.join(block(P, b) for b in dlay['left']); rightb = ''.join(block(P, b) for b in dlay['right'])
                     P.page(day_anchor(d), f'{P.head(d.strftime("%A"), f"{MONTHS[d.month - 1]} {d.day}", right=f"<span class=k style=font-size:16px>{arrows}</span>")}<div class="row" style="flex:1"><div class="col" style="flex:1">{left}</div><div class="col" style="flex:1.15">{rightb}</div></div>',
                            crumb=f'<a href="#{pre}{d.month:02d}">{MONTHS[d.month - 1]}</a> / <a href="#{wk_anchor(w)}">{title}</a>')
