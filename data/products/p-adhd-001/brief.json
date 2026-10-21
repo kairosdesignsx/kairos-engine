@@ -1,0 +1,883 @@
+{
+ "brief_id": "b-adhd-001",
+ "product_id": "p-adhd-001",
+ "type_id": "adhd-digital-planner",
+ "line": "planner",
+ "created_at": "2026-10-21T20:37:00+08:00",
+ "positioning": "For adults with ADHD who have bought pretty planners before and stopped using them: a dated 2027 planner for Goodnotes, Notability and Android tablets that starts with a Nov to Dec 2026 head start, works in the first five minutes (Start here page plus a Setup check page), keeps every day to one calm page, and has a no-guilt Restart page for coming back. Top sellers compete on how much is inside, while their buyers' biggest complaints are that they could not get it working or it was too much, so this one wins on working first time and being easy to return to.",
+ "must_haves": [
+  {
+   "id": "mh_dated",
+   "what": "Dated 2027, Monday-start, every date linked: year page to month, month to its weeks, week to each day, day to the next and previous day.",
+   "evidence": [
+    "feature:dated",
+    "feature:hyperlinked",
+    "keyword:2027 digital planner",
+    "praise:p_nav"
+   ]
+  },
+  {
+   "id": "mh_multi_year",
+   "what": "Covers two years: Nov and Dec 2026 head-start month and week pages before the full 2027 year (14 months in all), so a buyer in late October can start this week instead of waiting for January.",
+   "evidence": [
+    "feature:multi_year",
+    "keyword:2026 digital planner",
+    "listing:1282376971",
+    "listing:4332596790"
+   ]
+  },
+  {
+   "id": "mh_apps",
+   "what": "One landscape PDF that works in Goodnotes (named first in title and listing), Notability, Samsung Notes, Xodo and Noteshelf on iPad, Android and Windows tablets.",
+   "evidence": [
+    "feature:goodnotes",
+    "feature:notability",
+    "feature:android",
+    "keyword:goodnotes planner",
+    "keyword:notability planner",
+    "keyword:ipad planner"
+   ]
+  },
+  {
+   "id": "mh_adhd",
+   "what": "ADHD-specific on the page, not only in the title: every day has Today's top 3, time blocks, a brain dump box, an energy rating and one win.",
+   "evidence": [
+    "feature:adhd_specific",
+    "praise:p_adhd",
+    "keyword:adhd planner",
+    "keyword:adhd planner adult"
+   ]
+  },
+  {
+   "id": "mh_core",
+   "what": "The core set buyers praise and use daily: year at a glance, 12 month pages with side tabs, every week, every day, a habit tracker per month, an energy map for the year, brain dump and notes pages.",
+   "evidence": [
+    "praise:p_complete",
+    "praise:p_daily",
+    "feature:journal",
+    "feature:habit_tracker",
+    "feature:self_care"
+   ]
+  },
+  {
+   "id": "mh_look",
+   "what": "A finished, designed look with real typography and consistent spacing; design is the single biggest praise driver.",
+   "evidence": [
+    "praise:p_look",
+    "praise:p_quality"
+   ]
+  },
+  {
+   "id": "mh_guide",
+   "what": "Instructions printed inside the file, not only in a video or a separate PDF.",
+   "evidence": [
+    "praise:p_guide",
+    "praise:p_easy"
+   ]
+  }
+ ],
+ "fixes": [
+  {
+   "id": "f_hard",
+   "complaint": "complaint:c_hard",
+   "how": "Every day page has the same six boxes in the same places (Today's top 3, Time blocks 7am to 9pm, Brain dump, Energy 1 to 5 with Basics, One win today, Dopamine break), so there is one page to learn. The cover's Open planner button lands on the 4-step Start here page, and every page carries Home, the month tabs and a Month / Week breadcrumb.",
+   "evidence": [
+    "complaint:c_hard",
+    "praise:p_easy",
+    "praise:p_guide"
+   ],
+   "modules": [
+    "calendar",
+    "guide",
+    "cover"
+   ]
+  },
+  {
+   "id": "f_download",
+   "complaint": "complaint:c_download",
+   "how": "Listing copy and photo 4 give the download in 3 steps: buy, download from Etsy in a web browser (the Etsy app cannot download digital files), open the PDF in a planner app. It ships as one PDF, not a zip, under 19.5 MB so it downloads and imports quickly. The Start here page repeats the steps for anyone who opened it on a computer first.",
+   "evidence": [
+    "complaint:c_download",
+    "complaint:c_lag",
+    "wish:w_listing_info"
+   ],
+   "modules": [
+    "guide"
+   ]
+  },
+  {
+   "id": "f_misleading",
+   "complaint": "complaint:c_misleading",
+   "how": "Every listing photo is a screenshot of the built file, captioned with the page name; no mockup shows anything the file lacks. The description lists each page type with counts and says plainly: landscape only, Monday-start weeks, Nov to Dec 2026 has month and week pages (no day pages), no stickers, handwrite or use the app's text tool (not a fillable form). Photo 10 repeats this next to the Contents page.",
+   "evidence": [
+    "complaint:c_misleading",
+    "praise:p_as_described",
+    "wish:w_portrait"
+   ],
+   "modules": [
+    "index"
+   ]
+  },
+  {
+   "id": "f_device",
+   "complaint": "complaint:c_device",
+   "how": "Pages are 1024 x 768 landscape (4:3, the iPad's own shape) so there are no big empty margins, and all tabs and dates are plain PDF links. The listing has a Works with / Not for box: works in Goodnotes, Notability, Samsung Notes, Xodo and Noteshelf on iPad, Android and Windows tablets; not made for phones, e-ink tablets, or viewing in Files, Photos or Google Drive preview. The Setup check page proves it on the buyer's own device in one minute.",
+   "evidence": [
+    "complaint:c_device",
+    "feature:android",
+    "feature:notability",
+    "wish:w_listing_info",
+    "praise:p_device"
+   ],
+   "modules": [
+    "link_test"
+   ]
+  },
+  {
+   "id": "f_not_useful",
+   "complaint": "complaint:c_not_useful",
+   "how": "Month tabs run down the right edge of every page (answering 'there are no monthly tabs so you are swiping through the pages'), and year, month, week and day pages are all linked to each other. It is dated, so there is nothing to set up: open today and write. The Contents page shows every section and month on one screen.",
+   "evidence": [
+    "complaint:c_not_useful",
+    "praise:p_complete",
+    "praise:p_fits_needs",
+    "wish:w_side_tabs"
+   ],
+   "modules": [
+    "calendar",
+    "year",
+    "index"
+   ]
+  },
+  {
+   "id": "f_setup",
+   "complaint": "complaint:c_setup",
+   "how": "Start here (4 numbered steps: open it in a planner app, check the links, pen off to tap and on to write, plan one day) and Setup check are the first two cards on the Contents page and the pages right after it. 'Where are the stickers?' cannot happen: there are none, and the listing says so.",
+   "evidence": [
+    "complaint:c_setup",
+    "praise:p_guide",
+    "feature:quick_start"
+   ],
+   "modules": [
+    "guide",
+    "link_test",
+    "index"
+   ]
+  },
+  {
+   "id": "f_quality",
+   "complaint": "complaint:c_quality",
+   "how": "Pages run in strict date order: Nov to Dec 2026 head start, then each 2027 month followed by its weeks and their days, and each week and day page appears exactly once (the line currently prints the 8 weeks that span two months twice; see build_notes). The build checks 0 broken links and no overflowing text, and all text is vector so it stays crisp at any zoom.",
+   "evidence": [
+    "complaint:c_quality",
+    "complaint:c_links",
+    "complaint:c_dates",
+    "wish:w_order",
+    "praise:p_quality"
+   ],
+   "modules": [
+    "calendar",
+    "head_start"
+   ]
+  },
+  {
+   "id": "f_support",
+   "complaint": "complaint:c_support",
+   "how": "Most support messages are 'it does not work' questions, so the answers are in the file and the listing: the Setup check page's 'Nothing happened?' list (pen off, open in a planner app, import as PDF, then message us), the Start here steps, and a listing FAQ with the top five problems (Etsy app download, which app, links not tapping, how to type, landscape only). How fast the shop replies is shop-level (Darren's Etsy inbox), not something the file can fix.",
+   "evidence": [
+    "complaint:c_support",
+    "praise:p_support"
+   ],
+   "modules": [
+    "link_test",
+    "guide"
+   ]
+  },
+  {
+   "id": "f_value",
+   "complaint": "complaint:c_value",
+   "how": "Priced at $14, well under the $22 median, for a full dated 2027 with day pages plus a 2026 head start. Writing space, the thing a $14 buyer said was missing, is generous: half of each day page is open writing (brain dump, time blocks), each weekday gets its own lined box on the week page, and text is set at 1.1 scale. Photo 2 shows a day page at real size so buyers can judge the space before buying.",
+   "evidence": [
+    "complaint:c_value",
+    "complaint:c_space",
+    "price:median",
+    "praise:p_value"
+   ],
+   "modules": [
+    "calendar"
+   ]
+  },
+  {
+   "id": "f_nav",
+   "complaint": "complaint:c_nav",
+   "how": "Three ways to move on every month, week and day page: month tabs down the right edge, a top bar (Home, Year, Restart, Dopamine, Energy, Brain dump, Notes), and a breadcrumb (January / Week 3) that works as a back button. Day pages add previous and next arrows, every date on the year page jumps to its day, and the Contents page links every section and month.",
+   "evidence": [
+    "complaint:c_nav",
+    "wish:w_side_tabs",
+    "wish:w_back_button",
+    "praise:p_nav",
+    "feature:hyperlinked"
+   ],
+   "modules": [
+    "calendar",
+    "index",
+    "year"
+   ]
+  },
+  {
+   "id": "f_overwhelm",
+   "complaint": "complaint:c_overwhelm",
+   "how": "Short on purpose: nine page types (year, month, habit tracker, week, day, dopamine menu, routines, energy map, brain dump and notes) instead of dozens of templates, six boxes per day page, and a Contents page that fits on one screen. Start here says 'plan one day' and the Restart page says 'do not catch up'. The listing says: not 50 templates, just the pages you will use every day.",
+   "evidence": [
+    "complaint:c_overwhelm",
+    "praise:p_as_described"
+   ],
+   "modules": [
+    "calendar",
+    "guide",
+    "index"
+   ]
+  },
+  {
+   "id": "f_edit",
+   "complaint": "complaint:c_edit",
+   "how": "The Start here page says how to write and type: pen on to write, pen off to tap links, the app's text tool to type. Anything personal is left blank to fill in (habit names, the month's one goal, about half of each dopamine menu and routine column), so buyers customize by writing, not by editing the PDF. The listing says it is not a fillable form.",
+   "evidence": [
+    "complaint:c_edit",
+    "wish:w_customize",
+    "praise:p_flexible"
+   ],
+   "modules": [
+    "guide",
+    "checklist",
+    "calendar"
+   ]
+  },
+  {
+   "id": "f_broken",
+   "complaint": "complaint:c_broken",
+   "how": "The Setup check page has three buttons (a month, the year, Contents) that jump and come back, plus the 'Nothing happened?' fix list. Every link in the file is checked at build (0 broken links allowed).",
+   "evidence": [
+    "complaint:c_broken",
+    "complaint:c_links",
+    "feature:test_page"
+   ],
+   "modules": [
+    "link_test"
+   ]
+  }
+ ],
+ "unique": [
+  {
+   "id": "u_start",
+   "name": "Five-minute start and setup check",
+   "what": "Page 3 is a 4-step Start here guide and page 4 is a Setup check page with buttons that jump and return, plus a fix list if they do not. The cover's Open planner button lands on Start here.",
+   "why": "The biggest complaint cluster is buyers who could not get the file working: hard to use (42), could not download or open (41), wrong device or app (22), confusing setup (19), does not work (10). No top seller shows a quick start or a link test in their titles.",
+   "evidence": [
+    "feature:quick_start",
+    "feature:test_page",
+    "complaint:c_hard",
+    "complaint:c_download",
+    "complaint:c_setup",
+    "complaint:c_broken",
+    "praise:p_guide"
+   ],
+   "modules": [
+    "guide",
+    "link_test",
+    "cover"
+   ],
+   "verified_absent": false
+  },
+  {
+   "id": "u_day",
+   "name": "One calm ADHD day page",
+   "what": "The same six boxes every day: Today's top 3, Time blocks 7am to 9pm, Brain dump, Energy 1 to 5 with Basics (meds, water, a real meal), One win today and Dopamine break. The week page mirrors it with This week's top 3, a Weekly reset and Not this week.",
+   "why": "Time blocking and a top-3 priority list are not seen in any top seller's title and brain dump pages appear in 3%, yet overwhelm and 'no idea where to start' are recurring complaints. A fixed short layout answers both.",
+   "evidence": [
+    "feature:time_blocking",
+    "feature:priority_matrix",
+    "feature:brain_dump",
+    "complaint:c_overwhelm",
+    "complaint:c_hard"
+   ],
+   "modules": [
+    "calendar"
+   ],
+   "verified_absent": false
+  },
+  {
+   "id": "u_restart",
+   "name": "Fell off? Start again page",
+   "what": "A one-page, no-guilt way back in, in the top bar as Restart: skip the gap and do not catch up, jump to today in two taps, write one thing in Today's top 3, empty your head into the brain dump. Its tip points to the weekly reset for longer breaks.",
+   "why": "Overwhelmed buyers say they had 'no idea where to start', and buyers who could not keep up called the planner not useful. Missed weeks are the normal ADHD planner failure; giving people a door back in keeps them using it, which drives the 'I use it every day' and repeat-buyer praise.",
+   "evidence": [
+    "complaint:c_overwhelm",
+    "complaint:c_not_useful",
+    "praise:p_adhd",
+    "praise:p_daily"
+   ],
+   "modules": [
+    "guide"
+   ],
+   "verified_absent": false
+  },
+  {
+   "id": "u_dopamine",
+   "name": "Dopamine menu and routines",
+   "what": "A Dopamine menu page (Quick 5 min, Medium 20 min, Big rewards, Costs you later) and a Routines page (Morning, Leaving the house, Evening wind-down), each column part pre-filled and part blank to make your own. The day page's Dopamine break box is where you note the one you picked.",
+   "why": "Dopamine menus and routine builders are not seen in any top seller's title, and buyers ask for more ways to customize. Both are single pages, so they add tools without adding overwhelm.",
+   "evidence": [
+    "feature:dopamine_menu",
+    "feature:routines",
+    "wish:w_customize",
+    "praise:p_adhd"
+   ],
+   "modules": [
+    "checklist"
+   ],
+   "verified_absent": false
+  }
+ ],
+ "waived": [
+  {
+   "ref": "wish:w_portrait",
+   "reason": "Landscape only. The day and week layouts are two-column and need the width, and the 1-star review about a false portrait claim shows that promising an orientation that does not work costs more than not offering it. The listing and photo 10 say landscape only."
+  },
+  {
+   "ref": "feature:stickers",
+   "reason": "No sticker file: the planner line builds one PDF. The listing says there are no stickers so nobody goes looking for them (a 1-star setup review asked where the stickers were). A sticker pack could be a later, separate listing."
+  },
+  {
+   "ref": "feature:undated",
+   "reason": "Dated is on 97% of top sellers and only dated pages can link every date. An undated edition would need a second full build and would not fit in the same file under the size limit, so it would be a separate listing."
+  },
+  {
+   "ref": "wish:w_sunday_start",
+   "reason": "The line builds Monday-start weeks only and one review asked for Sunday. The listing says Monday-start so nobody is surprised."
+  }
+ ],
+ "look": {
+  "direction": "Calm and clear, not cute and not beige. Warm cream paper (not white, so it glows less in a dark room) with deep slate ink at 13:1 contrast so it stays sharp in daylight; muted text is still 5.3:1. Structure is soft teal (filled boxes like Today's top 3 are pale teal), with one small coral accent bar on the Contents and guide pages. Month tabs run from teal to periwinkle, a cool, quiet range rather than a rainbow, with dark ink labels on every tab. Fraunces headings add warmth; Outfit body text is wide and easy to read at 1.1 scale. Square, plain decoration (motif 'lines'): no florals, no clip-art.",
+  "theme": {
+   "base": "sage",
+   "paper": "#FAF6EE",
+   "ink": "#1F2D3A",
+   "muted": "#5B6874",
+   "line": "#CFC7B8",
+   "accent": "#2C7A74",
+   "soft": "#E6F0EC",
+   "warm": "#E07A5F",
+   "tabs": [
+    "#86C2B4",
+    "#B4B1E6"
+   ],
+   "display": "Fraunces",
+   "body": "Outfit",
+   "motif": "lines"
+  },
+  "avoid": [
+   "beige and greige minimalism (the most common look in top sellers)",
+   "rainbow or sunset pastel palettes used by colorful ADHD planners",
+   "dark-mode-only pages",
+   "pure white pages with thin grey text",
+   "script fonts, florals and clip-art on every page"
+  ],
+  "evidence": [
+   "look:Minimalist look",
+   "look:Colorful or aesthetic look",
+   "look:Dark mode",
+   "praise:p_look",
+   "complaint:c_readability",
+   "complaint:c_look"
+  ]
+ },
+ "price": {
+  "amount": 14,
+  "why": "Under the $22 median and right at the median of the 10 highest-earning listings ($15): a new shop with no reviews has to win on clarity and value, and buyers paying around $14 judge hard when a planner does not work or lacks space. The best-selling ADHD-specific listing in the set earns about $599 a month at $9.99, while the $24 ADHD planners sell less now. $14 leaves room for a 20% launch sale that stays above the $7 lower quartile.",
+  "evidence": [
+   "price:median",
+   "price:top10_by_revenue_median",
+   "price:revenue_weighted_median",
+   "price:p25",
+   "complaint:c_value",
+   "listing:4332596790",
+   "listing:1282376971"
+  ]
+ },
+ "seo": {
+  "title": "ADHD Planner 2027 Digital, Goodnotes Planner for iPad and Android, Daily Weekly Monthly, Time Blocking, Starts Nov 2026, Hyperlinked",
+  "tags": [
+   "adhd planner",
+   "adhd digital planner",
+   "goodnotes planner",
+   "ipad planner",
+   "digital planner",
+   "2027 digital planner",
+   "daily planner",
+   "weekly planner",
+   "monthly planner",
+   "notability planner",
+   "adhd planner adult",
+   "android planner",
+   "time blocking"
+  ]
+ },
+ "photos": [
+  {
+   "id": "ph1_hero",
+   "shows": "Cover and the January 11 day page side by side on a tablet frame, line: 'One calm page a day, linked from the year to the hour'.",
+   "proves": "praise:p_look, feature:adhd_specific",
+   "pages": [
+    "cover",
+    "d0111"
+   ]
+  },
+  {
+   "id": "ph2_day",
+   "shows": "Day page at real size with six labelled callouts (Today's top 3, Time blocks, Brain dump, Energy and Basics, One win, Dopamine break), line: 'The same six boxes every day'.",
+   "proves": "feature:time_blocking, feature:priority_matrix, complaint:c_overwhelm, complaint:c_value",
+   "pages": [
+    "d0111"
+   ]
+  },
+  {
+   "id": "ph3_start",
+   "shows": "Start here and Setup check pages, line: 'Working in five minutes, and you can check it yourself'.",
+   "proves": "complaint:c_setup, complaint:c_broken, feature:quick_start, feature:test_page",
+   "pages": [
+    "start",
+    "linktest"
+   ]
+  },
+  {
+   "id": "ph4_apps",
+   "shows": "Plain text panel over a faded Start here page: Works with Goodnotes, Notability, Samsung Notes, Xodo, Noteshelf on iPad, Android and Windows tablets. Download in a web browser, not the Etsy app. Not for phones or e-ink.",
+   "proves": "complaint:c_download, complaint:c_device, wish:w_listing_info, complaint:c_extra_app",
+   "pages": [
+    "start"
+   ]
+  },
+  {
+   "id": "ph5_nav",
+   "shows": "How to move: Year page, then January, Week 3 and Jan 11 with arrows between them; month tabs, Home and the breadcrumb circled.",
+   "proves": "complaint:c_nav, wish:w_side_tabs, wish:w_back_button, feature:hyperlinked",
+   "pages": [
+    "year",
+    "m01",
+    "w03",
+    "d0111"
+   ]
+  },
+  {
+   "id": "ph6_month_week",
+   "shows": "January month page (dated grid, One goal this month, week links) and Week 3 page (seven lined day boxes, This week's top 3, Weekly reset).",
+   "proves": "praise:p_complete, feature:goals, feature:dated",
+   "pages": [
+    "m01",
+    "w03"
+   ]
+  },
+  {
+   "id": "ph7_tools",
+   "shows": "Dopamine menu, Routines and Fell off? Start again pages.",
+   "proves": "feature:dopamine_menu, feature:routines, complaint:c_overwhelm",
+   "pages": [
+    "dopamine",
+    "routines",
+    "restart"
+   ]
+  },
+  {
+   "id": "ph8_trackers",
+   "shows": "January habit tracker and the Energy map year page.",
+   "proves": "feature:habit_tracker, feature:self_care",
+   "pages": [
+    "m01h",
+    "energy"
+   ]
+  },
+  {
+   "id": "ph9_headstart",
+   "shows": "November 2026 head-start month and one head-start week, line: 'Start this week, not in January'.",
+   "proves": "feature:multi_year",
+   "pages": [
+    "hs11",
+    "hsw03"
+   ]
+  },
+  {
+   "id": "ph10_inside",
+   "shows": "Contents page next to a plain list: exact page count, every page type, landscape only, Monday-start, no stickers, not a fillable form.",
+   "proves": "complaint:c_misleading, praise:p_as_described",
+   "pages": [
+    "index"
+   ]
+  }
+ ],
+ "spec": {
+  "title": "Just Today",
+  "subtitle": "A calm, linked ADHD planner. Plan one day, skip the guilt, start again any time. November 2026 to December 2027.",
+  "kicker": "ADHD digital planner · 2027",
+  "brand": "Kairos Design Studio",
+  "orientation": "landscape",
+  "dating": {
+   "mode": "dated",
+   "year": 2027
+  },
+  "theme": {
+   "base": "sage",
+   "paper": "#FAF6EE",
+   "ink": "#1F2D3A",
+   "muted": "#5B6874",
+   "line": "#CFC7B8",
+   "accent": "#2C7A74",
+   "soft": "#E6F0EC",
+   "warm": "#E07A5F",
+   "tabs": [
+    "#86C2B4",
+    "#B4B1E6"
+   ],
+   "display": "Fraunces",
+   "body": "Outfit",
+   "motif": "lines"
+  },
+  "type_scale": 1.1,
+  "index_tip": "Tap a card above, a month below, or a month tab on the right. Every page has Home at the top and a Month / Week trail to go back. Follow links with the pen off (read mode); turn the pen on to write.",
+  "sections": [
+   {
+    "module": "cover",
+    "start": "start"
+   },
+   {
+    "module": "index"
+   },
+   {
+    "module": "guide",
+    "label": "Start here",
+    "kicker": "Five minutes",
+    "anchor": "start",
+    "nav": false,
+    "steps": [
+     [
+      "Open it in a planner app",
+      "Download from Etsy in a web browser (the Etsy app cannot download files). Open the PDF in Goodnotes, Notability, Samsung Notes, Xodo or Noteshelf, and import it as a PDF."
+     ],
+     [
+      "Check the links",
+      "Go to the Setup check page and tap the buttons. If they jump, you are ready. If not, the fix is on that page."
+     ],
+     [
+      "Pen off to tap, on to write",
+      "Links work in read or view mode. In Goodnotes, tap the pen icon off to follow a link and on again to write. To type, use your app's text tool."
+     ],
+     [
+      "Plan one day",
+      "Tap Year, then today's date. Fill Today's top 3 and one time block. That is the whole job for today."
+     ]
+    ],
+    "tip": "Missed a day, a week or a month? Skip it and go straight to today. The Restart page shows how."
+   },
+   {
+    "module": "link_test",
+    "label": "Setup check",
+    "anchor": "linktest",
+    "nav": false
+   },
+   {
+    "module": "year"
+   },
+   {
+    "module": "guide",
+    "label": "Fell off? Start again",
+    "kicker": "No catching up",
+    "anchor": "restart",
+    "nav_label": "Restart",
+    "steps": [
+     [
+      "Skip the gap",
+      "Leave the missed days blank. Do not go back and fill them in. Blank pages are part of using a planner, not a failure."
+     ],
+     [
+      "Jump to today",
+      "Tap the month tab on the right, then today's date. You are back in two taps."
+     ],
+     [
+      "Write one thing",
+      "Put a single task in Today's top 3. One finished thing makes a good day."
+     ],
+     [
+      "Empty your head",
+      "Put everything else that is looping into the Brain dump box or the Brain dump pages."
+     ]
+    ],
+    "tip": "Back after a long break? Start with the Weekly reset on this week's page. It takes about ten minutes."
+   },
+   {
+    "module": "checklist",
+    "label": "Dopamine menu",
+    "kicker": "When you are stuck",
+    "anchor": "dopamine",
+    "nav_label": "Dopamine",
+    "groups": [
+     [
+      "Quick, 5 min",
+      [
+       "One loud song",
+       "Step outside",
+       "Cold water splash",
+       "Stretch it out"
+      ]
+     ],
+     [
+      "Medium, 20 min",
+      [
+       "Walk the block",
+       "Call a friend",
+       "Tidy one surface",
+       "Make a snack"
+      ]
+     ],
+     [
+      "Big rewards",
+      [
+       "Movie night",
+       "Coffee out",
+       "A new book or game"
+      ]
+     ],
+     [
+      "Costs you later",
+      [
+       "Doomscrolling",
+       "One more episode",
+       "Impulse shopping"
+      ]
+     ]
+    ]
+   },
+   {
+    "module": "checklist",
+    "label": "Routines",
+    "kicker": "Less thinking",
+    "anchor": "routines",
+    "nav": false,
+    "groups": [
+     [
+      "Morning",
+      [
+       "Meds",
+       "Water",
+       "Breakfast",
+       "Look at today's top 3"
+      ]
+     ],
+     [
+      "Leaving the house",
+      [
+       "Keys",
+       "Phone",
+       "Wallet",
+       "Charger"
+      ]
+     ],
+     [
+      "Evening wind-down",
+      [
+       "Phone on charger",
+       "Clothes for tomorrow",
+       "Two-minute brain dump"
+      ]
+     ]
+    ]
+   },
+   {
+    "module": "year_pixels",
+    "label": "Energy map",
+    "anchor": "energy",
+    "nav_label": "Energy",
+    "keys": [
+     "Lots of energy",
+     "Steady",
+     "Low",
+     "Running on empty",
+     "Rest day"
+    ]
+   },
+   {
+    "module": "lined",
+    "label": "Brain dump",
+    "kicker": "Empty your head",
+    "pages": 4,
+    "dots": true,
+    "anchor": "dump"
+   },
+   {
+    "module": "lined",
+    "label": "Notes",
+    "kicker": "Notes",
+    "pages": 8,
+    "anchor": "notes"
+   },
+   {
+    "module": "head_start",
+    "label": "Head start: Nov and Dec 2026",
+    "kicker": "Start now",
+    "anchor": "hs",
+    "nav": false,
+    "from": "2026-11",
+    "to": "2026-12",
+    "days": false,
+    "continue_to": "m01",
+    "week": {
+     "side": [
+      {
+       "kind": "checklist",
+       "label": "This week's top 3",
+       "rows": 3,
+       "fill": true
+      },
+      {
+       "kind": "checklist",
+       "label": "Weekly reset",
+       "rows": 5,
+       "items": [
+        "Empty the brain dumps",
+        "Look at next week",
+        "Plan easy meals",
+        "Laundry and dishes",
+        "One rest evening"
+       ]
+      },
+      {
+       "kind": "lines",
+       "label": "Not this week"
+      }
+     ]
+    }
+   },
+   {
+    "module": "calendar",
+    "habits": true,
+    "days": true,
+    "month": {
+     "side": [
+      "One goal this month",
+      "Notes"
+     ]
+    },
+    "week": {
+     "side": [
+      {
+       "kind": "checklist",
+       "label": "This week's top 3",
+       "rows": 3,
+       "fill": true
+      },
+      {
+       "kind": "checklist",
+       "label": "Weekly reset",
+       "rows": 5,
+       "items": [
+        "Empty the brain dumps",
+        "Look at next week",
+        "Plan easy meals",
+        "Laundry and dishes",
+        "One rest evening"
+       ]
+      },
+      {
+       "kind": "lines",
+       "label": "Not this week"
+      }
+     ]
+    },
+    "day": {
+     "left": [
+      {
+       "kind": "checklist",
+       "label": "Today's top 3",
+       "rows": 3,
+       "fill": true
+      },
+      {
+       "kind": "dots",
+       "label": "Brain dump"
+      },
+      {
+       "kind": "pair",
+       "items": [
+        {
+         "kind": "scale",
+         "label": "Energy 1 to 5",
+         "max": 5
+        },
+        {
+         "kind": "checklist",
+         "label": "Basics",
+         "rows": 3,
+         "items": [
+          "Meds or vitamins",
+          "Water",
+          "A real meal"
+         ]
+        }
+       ]
+      }
+     ],
+     "right": [
+      {
+       "kind": "hours",
+       "label": "Time blocks",
+       "from": 7,
+       "to": 21,
+       "row": 27
+      },
+      {
+       "kind": "pair",
+       "items": [
+        {
+         "kind": "lines",
+         "label": "One win today",
+         "grow": false,
+         "height": 56
+        },
+        {
+         "kind": "lines",
+         "label": "Dopamine break",
+         "grow": false,
+         "height": 56
+        }
+       ]
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "new_modules": [
+  {
+   "name": "head_start",
+   "what": "Lead-in months before the main dated year (here Nov and Dec 2026 in a 2027 planner). For each month from..to: a month page in the same layout as the calendar's month pages, with its dates linking to that date's week page (there are no lead-in day pages) and week chips under the title; then Monday-start week pages titled by date range ('Nov 2 to Nov 8') with seven lined day boxes and the same side blocks as the main weeks. Anchors are prefixed so they never clash with the main year: hs11, hs12 for months, hsw01 to hsw10 for weeks (hs1101 style for days if days is true). The last lead-in week (Dec 28 to Jan 3) links Jan 1 to 3 into the main year's day pages, and the last page has a 'Continue to January 2027' link to continue_to. Registers one Contents card (label, kicker) and no top-bar item; the month rail still links to the main year's months.",
+   "params": {
+    "label": "str",
+    "kicker": "str",
+    "anchor": "str prefix, default 'hs'",
+    "from": "YYYY-MM, first lead-in month",
+    "to": "YYYY-MM, last lead-in month (the month before the main year starts)",
+    "days": "bool, day pages for lead-in weeks (false here, to stay inside the size budget)",
+    "week": "dict, same as calendar.week (preset or side blocks)",
+    "day": "dict, same as calendar.day, used only when days is true",
+    "continue_to": "anchor of the first main-year month, default m01"
+   },
+   "why": "feature:multi_year is on 87% of top sellers (96% of revenue), and this listing goes live in late October 2026, so a 2027-only file gives an October or November buyer nothing to use for ten weeks. Two months plus ten week pages cost about 12 pages (roughly 0.45 MB), while a second full year with day pages would break the 19.5 MB file limit."
+  }
+ ],
+ "build_notes": [
+  "Bug in lines/planner/gen.py (dated calendar): weeks that span two months are built under both months, so w14, w18, w23, w27, w31, w36, w40 and w49 and all their day pages are printed twice (64 duplicate pages with duplicate ids; checked with gen.build on this spec). Build each week once, under the month its Monday falls in, and keep its link chip on both months. This removes about 2.4 MB and the out-of-order pages that complaint:c_quality describes.",
+  "Size: the probe in tests/out shows a full dated year at about 37 KB a page after qpdf. This spec builds 527 pages without head_start today; with the dedup fix and head_start it is about 475 pages (around 17.5 MB). Without the fix it is about 540 pages, over the 19.5 MB limit, which would force lean mode.",
+  "Section order is deliberate: the top bar is drawn when each page is made, so Restart, Dopamine, Routines, Energy map, Brain dump and Notes come before the calendar so that every month, week and day page carries the full top bar. Start here and Setup check stay right after Contents.",
+  "Render check done on a 15-page sample (cover, index, start, linktest, year, m01, m01h, w03, d0111, restart, dopamine, routines, energy, dump, notes): no overflow at type_scale 1.1.",
+  "Before listing, open the built PDF in Goodnotes, Notability, Samsung Notes and Xodo and tap the Setup check buttons. The listing's Works with list must name only apps that were actually tested."
+ ]
+}

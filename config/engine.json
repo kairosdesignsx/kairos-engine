@@ -1,29 +1,48 @@
 {
-  "shop": "KairosDesignStudioCo",
-  "teardown": {
-    "top_n": 30,
-    "by_revenue": 30,
-    "by_total_sales": 30,
-    "review_shops": 12,
-    "reviews_per_call": 50,
-    "shop_teardowns": 5,
-    "refresh_days": 30
-  },
-  "brief": {
-    "min_unique_features": 2,
-    "standard_share": 0.6,
-    "common_share": 0.3
-  },
-  "check": {
-    "max_image_similarity": 0.85,
-    "max_text_similarity": 0.6,
-    "max_pdf_mb": 19.5,
-    "max_build_retries": 2
-  },
-  "nightly": {
-    "max_new_products": 3,
-    "max_fixes": 5
-  },
-  "kill_rule": {"listings": 20, "days": 45},
-  "fonts_allowed": ["Corm", "Jost", "Script", "Fraunces", "Manrope", "Quicksand", "Nunito", "DMSerif", "Outfit", "Baskerville"]
+ "shop": "KairosDesignStudioCo",
+ "teardown": {
+  "top_n": 30,
+  "by_revenue": 30,
+  "by_total_sales": 30,
+  "review_shops": 12,
+  "reviews_per_call": 50,
+  "shop_teardowns": 5,
+  "refresh_days": 30
+ },
+ "brief": {
+  "min_unique_features": 2,
+  "standard_share": 0.6,
+  "common_share": 0.3
+ },
+ "check": {
+  "max_image_similarity": 0.85,
+  "max_text_similarity": 0.6,
+  "max_pdf_mb": 19.5,
+  "max_build_retries": 2
+ },
+ "nightly": {
+  "max_new_products": 3,
+  "max_fixes": 5
+ },
+ "kill_rule": {
+  "listings": 20,
+  "days": 45
+ },
+ "fonts_allowed": [
+  "Corm",
+  "Jost",
+  "Script",
+  "Fraunces",
+  "Manrope",
+  "Quicksand",
+  "Nunito",
+  "DMSerif",
+  "Outfit",
+  "Baskerville"
+ ],
+ "laptop": {
+  "root": "C:\\Users\\darre\\Documents\\Kairos",
+  "mirror": "/mnt/user-data/uploads/Kairos"
+ },
+ "publish_as": "draft"
 }

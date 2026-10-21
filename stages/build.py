@@ -82,8 +82,8 @@ def run(pid):
     for lean in (False, True):
         spec['lean'] = lean
         res = gen.build(spec)
-        if res['broken_links']:
-            return {"ok": False, "blocked": "broken links", "broken": res['broken_links'][:20]}
+        if res['broken_links'] or res['duplicate_pages']:
+            return {"ok": False, "blocked": "broken links or duplicate pages", "broken": res['broken_links'][:20], "duplicates": res['duplicate_pages'][:20]}
         html_path = os.path.join(pdir, 'product.html'); open(html_path, 'w').write(res['html'])
         anchors = shot_anchors(res, brief)
         raw = os.path.join(files_dir, 'raw.pdf')

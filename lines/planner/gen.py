@@ -429,6 +429,11 @@ def m_calendar(P, sec):
             P.page(f'm{m:02d}h', P.head(MONTHS[m - 1], 'Habit tracker', right='<span class="k">One habit per line, fill a dot each day</span>') +
                    f'<div style="display:grid;grid-template-columns:150px repeat({days},1fr);padding-bottom:4px"><span class="k">Habit</span>{head}</div><div style="flex:1">{hrows}</div>', month=m, crumb=f'<a href="#m{m:02d}">{MONTHS[m - 1]}</a> / Habits')
         for n in weeks:
+            if not P.undated:
+                thu = P.week_start(n) + datetime.timedelta(days=3)
+                owner = thu.month if thu.year == P.year else (1 if thu.year < P.year else 12)
+                if owner != m:
+                    continue  # a week that spans two months is built once, under the month holding its Thursday
             _week(P, n, m, wside, dlay, sec.get('days', True))
 
 
@@ -483,6 +488,86 @@ def _day(P, d, n, m, i, lay):
     P.page(anchor, inner, month=(d.month if d else m), crumb=f'<a href="#m{m:02d}">{MONTHS[m - 1]}</a> / <a href="#w{n:02d}">Week {n}</a>')
 
 
+@module('head_start', 'Lead-in months before the main dated year (for example Nov and Dec 2026 in a 2027 planner): month pages whose dates link to lead-in week pages, Monday-start week pages titled by date range, optional lead-in day pages. Anchors use their own prefix. The last week links days that fall in the main year to their day pages and offers Continue to the main year. label, kicker, anchor (prefix, default hs), from YYYY-MM, to YYYY-MM, days bool, month {side}, week {preset|side}, day {preset|left,right}, continue_to (default m01)',
+        params={'label': 'str', 'kicker': 'str', 'anchor': 'str', 'from': 'YYYY-MM', 'to': 'YYYY-MM', 'days': 'bool', 'month': 'dict', 'week': 'dict', 'day': 'dict', 'continue_to': 'str'})
+def m_head_start(P, sec):
+    th = P.th; pre = sec.get('anchor', 'hs'); cont = sec.get('continue_to', 'm01')
+    y0, m0 = map(int, sec['from'].split('-')); y1, m1 = map(int, sec['to'].split('-'))
+    months = []
+    y, m = y0, m0
+    while (y, m) <= (y1, m1):
+        months.append((y, m)); y, m = (y + 1, 1) if m == 12 else (y, m + 1)
+    first = datetime.date(y0, m0, 1)
+    last = datetime.date(y1, m1, calendar.monthrange(y1, m1)[1])
+    start = first - datetime.timedelta(days=first.weekday())
+    weeks = []
+    d = start
+    while d <= last:
+        weeks.append([d + datetime.timedelta(days=i) for i in range(7)]); d += datetime.timedelta(days=7)
+    wk_anchor = lambda n: f'{pre}w{n:02d}'
+    day_anchor = lambda d: f'{pre}{d.month:02d}{d.day:02d}'
+    in_lead = lambda d: first <= d <= last
+    in_main = lambda d: (not P.undated) and d.year == P.year
+    def week_of(d):
+        return next(i + 1 for i, w in enumerate(weeks) if w[0] <= d <= w[6])
+    with_days = sec.get('days', False)
+    wside = (sec.get('week') or {}).get('side') or WEEK_PRESETS[(sec.get('week') or {}).get('preset', 'default')]
+    dsec = sec.get('day') or {}
+    dlay = dsec if dsec.get('left') else DAY_PRESETS[dsec.get('preset', 'default')]
+    side_labels = (sec.get('month') or {}).get('side', ['Goals', 'Notes'])
+    _register(P, sec, sec.get('label', 'Head start'), f'{pre}{m0:02d}', sec.get('kicker', 'Start now'), nav=False)
+    contlink = f'<a href="#{cont}" style="padding:6px 12px;border-radius:{P.rpill}px;background:{th["ink"]};color:{th["paper"]};font:600 11px \'{th["body"]}\';letter-spacing:.08em;text-transform:uppercase">Continue to {MONTHS[0] if cont == "m01" else "the year"} {P.year if not P.undated else ""} &rarr;</a>'
+    done = set()
+    for (yy, mm) in months:
+        cells = ''.join(f'<span class="d hd">{x}</span>' for x in DOW)
+        cal = calendar.Calendar(0).monthdatescalendar(yy, mm)
+        for wk in cal:
+            for d in wk:
+                if d.month != mm:
+                    cells += f'<span class="d x">{d.day}</span>'
+                else:
+                    cells += f'<a class="d" href="#{day_anchor(d) if with_days else wk_anchor(week_of(d))}">{d.day}</a>'
+        ws = sorted({week_of(d) for d in calendar.Calendar(0).itermonthdates(yy, mm) if d.month == mm})
+        wl = ''.join(f'<a href="#{wk_anchor(w)}" style="padding:4px 8px;border-radius:{P.rpill}px;background:{th["soft"]};font:600 10.5px \'{th["body"]}\'">{MONTHS[weeks[w - 1][0].month - 1][:3]} {weeks[w - 1][0].day}</a>' for w in ws)
+        side = ''.join(f'<div class="box" style="flex:1"><span class="k">{esc(x)}</span><div class="lines"></div></div>' for x in side_labels)
+        extra = contlink if (yy, mm) == months[-1] else ''
+        inner = f'''<div class="row" style="align-items:flex-end;justify-content:space-between"><div><p class="k">{esc(sec.get("kicker", "Head start"))} · {yy}</p><p class="h" style="font-size:52px">{MONTHS[mm - 1]}</p></div><div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;max-width:560px">{wl}{extra}</div></div>
+          <div class="row" style="flex:1"><div class="cal" style="flex:3;grid-template-rows:auto repeat({len(cal)},1fr);border-bottom:1px solid {th["line"]}">{cells}</div><div class="col" style="flex:1.1">{side}</div></div>'''
+        P.page(f'{pre}{mm:02d}', inner, crumb=f'Head start / {MONTHS[mm - 1]} {yy}')
+        for w in ws:
+            if w in done:
+                continue
+            done.add(w)
+            days = weeks[w - 1]
+            cols = ''
+            for d in days:
+                lab = f'<span class="k">{DOW[d.weekday()]}</span><span class="h" style="font-size:22px">{d.day}</span>'
+                if in_lead(d) and with_days:
+                    head = f'<a href="#{day_anchor(d)}" style="display:flex;justify-content:space-between;align-items:baseline">{lab}</a>'
+                elif in_main(d):
+                    head = f'<a href="#{P.did(d)}" style="display:flex;justify-content:space-between;align-items:baseline">{lab}</a>'
+                elif in_lead(d):
+                    head = f'<div style="display:flex;justify-content:space-between;align-items:baseline">{lab}</div>'
+                else:
+                    head = f'<div style="display:flex;justify-content:space-between;opacity:.4">{lab}</div>'
+                cols += f'<div class="box" style="flex:1">{head}<div class="lines"></div></div>'
+            sideb = ''.join(block(P, b) for b in wside)
+            title = f'{MONTHS[days[0].month - 1][:3]} {days[0].day} to {MONTHS[days[6].month - 1][:3]} {days[6].day}'
+            right = contlink if w == len(weeks) else ''
+            inner = f'''{P.head(f"Head start · week {w} of {len(weeks)}", title, right=right)}
+              <div class="row" style="flex:1"><div style="flex:3;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:1fr 1fr;gap:10px">{cols}<div class="box fill"><span class="k">Notes</span><div class="dots"></div></div></div><div class="col" style="flex:1.05">{sideb}</div></div>'''
+            P.page(wk_anchor(w), inner, crumb=f'<a href="#{pre}{mm:02d}">{MONTHS[mm - 1]} {yy}</a> / {title}')
+            if with_days:
+                for i, d in enumerate(days):
+                    if not in_lead(d):
+                        continue
+                    pd, nd = d - datetime.timedelta(days=1), d + datetime.timedelta(days=1)
+                    arrows = (f'<a href="#{day_anchor(pd)}">&larr;</a>' if in_lead(pd) else '') + (f' <a href="#{day_anchor(nd)}">&rarr;</a>' if in_lead(nd) else (f' <a href="#{P.did(nd)}">&rarr;</a>' if in_main(nd) else ''))
+                    left = ''.join(block(P, b) for b in dlay['left']); rightb = ''.join(block(P, b) for b in dlay['right'])
+                    P.page(day_anchor(d), f'{P.head(d.strftime("%A"), f"{MONTHS[d.month - 1]} {d.day}", right=f"<span class=k style=font-size:16px>{arrows}</span>")}<div class="row" style="flex:1"><div class="col" style="flex:1">{left}</div><div class="col" style="flex:1.15">{rightb}</div></div>',
+                           crumb=f'<a href="#{pre}{d.month:02d}">{MONTHS[d.month - 1]}</a> / <a href="#{wk_anchor(w)}">{title}</a>')
+
+
 # ---------- build ----------
 def capabilities():
     return {'modules': {k: {'desc': v['desc'], 'params': v['params']} for k, v in MODULES.items()},
@@ -518,9 +603,11 @@ def build(spec):
     if getattr(P, '_index_pending', False):
         _fill_index(P)
     html = P.html()
+    all_ids = re.findall(r'<section class="pg" id="([^"]+)"', html)
     ids = set(re.findall(r'id="([^"]+)"', html))
+    dup = sorted({a for a in all_ids if all_ids.count(a) > 1})
     broken = sorted(set(h for h in re.findall(r'href="#([^"]+)"', html) if h not in ids))
-    return {'html': html, 'pages': len(P.pages), 'page_modules': P.page_modules, 'broken_links': broken,
+    return {'html': html, 'pages': len(P.pages), 'page_modules': P.page_modules, 'broken_links': broken, 'duplicate_pages': dup,
             'size': (P.W, P.HT), 'links': len(re.findall(r'href="#', html))}
 
 

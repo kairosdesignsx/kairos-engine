@@ -64,10 +64,18 @@ Paths below are relative to the repo root (where this file is). Run `./setup.sh`
 `python3 stages/queue.py <pid>` prepares the review payload; publish it to the Review Queue artifact
 (images as files, product and evidence rows in its database).
 
-## Stage 8. Feedback, publish, stats (start of each night, before Stage 1)
-- `python3 stages/feedback.py pull`: read Darren's decisions. Approve -> laptop publish job. Fix -> tonight's
-  plan. Reject -> learning log. Reasons update data/learn/style-rules.json.
-- Laptop results (published listing ids, competitor photos, stats) arrive in the laptop's Kairos/jobs/results.
+## Stage 8. Feedback, laptop results, stats (start of each night, before Stage 1)
+1. Review Queue rows to files: ArtifactData `list` collection `reviews` and `products` with
+   `out_dir` data/feedback/raw. Then `python3 stages/feedback.py process`.
+   Approve (owner) -> laptop publish job. Fix -> fix queue for tonight. Reject -> lessons.
+   Read data/learn/reason-tally.json and lessons.jsonl; when a reason repeats, write a plain rule into
+   data/learn/style-rules.json (for example "day pages: minimum 13px body text").
+2. Laptop results: device_stage_files the laptop's Kairos\jobs\results\*.json (and new competitor photos under
+   Kairos\data\types\<type>\photos\). Then `python3 stages/ingest.py results`.
+3. New competitor photos: `python3 stages/ingest.py photo-tasks <type>`, one subagent per task with
+   prompts/photo-reader.md, then `photo-merge <type>` and rebuild insights. Briefs written after this see real features.
+4. Jobs for the laptop (data/jobs/outbox/*.json) go to Kairos\jobs\outbox\ with device_commit_files, and finished
+   product files (PDF, photos) go to Kairos\data\products\<pid>\ so the laptop can publish them.
 
 ## Stage 9. Morning report
 `python3 run.py report` -> what was made, what failed and why, what is waiting for Darren. Send it with

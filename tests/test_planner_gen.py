@@ -16,6 +16,7 @@ SPEC = {
   {"module": "checklist", "label": "Routines", "groups": [["Morning", ["Water"]], ["Evening", ["Phone away"]]]},
   {"module": "table", "label": "Bills", "headers": ["Bill", "Due", "Paid"], "rows": 12},
   {"module": "year_pixels", "label": "Year in moods"},
+  {"module": "head_start", "label": "Head start", "from": "2026-11", "to": "2026-12", "days": True, "week": {"preset": "adhd"}, "day": {"preset": "adhd"}},
   {"module": "calendar", "habits": True, "week": {"preset": "adhd"}, "day": {"preset": "adhd"}},
   {"module": "lined", "label": "Notes", "pages": 3}
  ]}
@@ -24,6 +25,7 @@ def run(spec, name):
     t = time.time()
     r = gen.build(spec)
     assert not r['broken_links'], r['broken_links'][:10]
+    assert not r['duplicate_pages'], r['duplicate_pages'][:10]
     html = os.path.abspath(f'tests/out/{name}.html'); open(html, 'w').write(r['html'])
     pdf = os.path.abspath(f'tests/out/{name}.pdf')
     W, H = r['size']

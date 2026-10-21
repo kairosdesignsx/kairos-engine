@@ -141,10 +141,16 @@ def build(type_id):
     n = len(listings)
     rev_total = sum(L['mo_revenue'] or 0 for L in listings) or 1
     sales_total = sum(L['total_sales'] or 0 for L in listings) or 1
-    hits = {L['listing_id']: _feature_hits(L, cfg['features']) for L in listings}
+    feats_all = list(cfg['features'])
+    known = {f['id'] for f in feats_all}
+    for L in listings:  # features the photo readers found that the line's list doesn't have yet
+        for nf in L.get('new_features', []):
+            if nf['id'] not in known:
+                known.add(nf['id']); feats_all.append({"id": nf['id'], "name": nf['name'], "match": [], "discovered": True})
+    hits = {L['listing_id']: _feature_hits(L, feats_all) | {nf['id'] for nf in L.get('new_features', [])} for L in listings}
     detailed = any(L.get('features') or L.get('description') for L in listings)
     features = []
-    for f in cfg['features']:
+    for f in feats_all:
         have = [lid for lid, h in hits.items() if f['id'] in h]
         share = len(have) / n
         tier = 'standard' if share >= TIER['standard_share'] else 'common' if share >= TIER['common_share'] else 'rare' if have else ('nobody' if detailed else 'not_seen')

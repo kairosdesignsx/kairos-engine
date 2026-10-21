@@ -55,6 +55,13 @@ def scenes(brief, listing, build, shots_dir, out_dir):
             S[key] = base(th, f'''<div style="position:absolute;inset:0;padding:110px 150px;display:flex;flex-direction:column;align-items:center;gap:60px">
               <div style="text-align:center">{label or '<p class="k">What\'s inside</p>'}<p class="h" style="font-size:130px;margin-top:20px">{head}</p></div>
               <div style="display:grid;grid-template-columns:repeat({cols},1fr);gap:50px;width:100%">{cells}</div></div>''')
+        elif 2 <= len(pg) <= 3:
+            n = len(pg)
+            tw = (1180 if n == 2 else 790) if not portrait else (900 if n == 2 else 640)
+            gap = 2700 - 300 - tw * n
+            tabs = ''.join(tablet(P(a), tw, 150 + k * (tw + gap // max(1, n - 1)), 700 if not portrait else 560, ratio, (-1.5 + 1.5 * k) if n == 3 else (-1.5 + 3 * k), 1) for k, a in enumerate(pg))
+            S[key] = base(th, f'''<div style="position:absolute;left:150px;right:150px;top:110px;display:flex;flex-direction:column;gap:26px">
+              {label}<p class="h" style="font-size:120px">{head}</p><div style="display:flex;gap:60px;flex-wrap:wrap">{''.join(f'<p class="pt"><b>&#9679;</b><span>{esc(x)}</span></p>' for x in c.get('points', [])[:3])}</div></div>''' + tabs)
         elif ph['id'].startswith('how') or 'how it works' in ph['shows'].lower():
             steps = listing.get('how_steps') or [['Buy', 'Download the PDF from Etsy.'], ['Import', 'Open it in your PDF planner app.'], ['Plan', 'Write with your stylus.']]
             S[key] = base(th, motif(th, 'tr', 11, 480) + f'''<div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:90px">
