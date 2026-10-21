@@ -406,7 +406,7 @@
   ]
  },
  "seo": {
-  "title": "ADHD Planner 2027 Digital, Goodnotes Planner for iPad and Android, Daily Weekly Monthly, Time Blocking, Starts Nov 2026, Hyperlinked",
+  "title": "ADHD Planner 2027 Digital, Goodnotes Planner for iPad and Android, Daily Weekly Monthly, Time Blocking, Starts Oct 2026, Hyperlinked",
   "tags": [
    "adhd planner",
    "adhd digital planner",
@@ -503,7 +503,8 @@
    "proves": "feature:multi_year",
    "pages": [
     "hs11",
-    "hsw03"
+    "hsw01",
+    "hs1027"
    ]
   },
   {
@@ -517,7 +518,7 @@
  ],
  "spec": {
   "title": "Just Today",
-  "subtitle": "A calm, linked ADHD planner. Plan one day, skip the guilt, start again any time. November 2026 to December 2027.",
+  "subtitle": "A calm, linked ADHD planner. Plan one day, skip the guilt, start again any time. October 26, 2026 to December 2027.",
   "kicker": "ADHD digital planner · 2027",
   "brand": "Kairos Design Studio",
   "orientation": "landscape",
@@ -964,6 +965,11 @@
    "at": "2026-10-21",
    "by": "session",
    "why": "coverage check round 4: late-October buyers; head start days begin Mon Oct 26 and 2026 pages use their own month tabs"
+  },
+  {
+   "at": "2026-10-21",
+   "by": "session",
+   "why": "coverage check round 5: one start date everywhere (Oct 26, 2026); top bar map no longer overflows; head start weeks under their Thursday's month"
   }
  ]
 }

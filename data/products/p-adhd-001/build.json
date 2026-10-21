@@ -1,7 +1,7 @@
 {
  "product_id": "p-adhd-001",
  "brief_id": "b-adhd-001",
- "built_at": "2026-10-21T14:09:54Z",
+ "built_at": "2026-10-21T14:22:56Z",
  "line": "planner",
  "files": [
   {
@@ -10,7 +10,7 @@
    "pages": 541
   }
  ],
- "links": 13595,
+ "links": 13597,
  "overflow": [],
  "lean": false,
  "attempts": [
@@ -270,6 +270,10 @@
    "head_start"
   ],
   [
+   "hs12",
+   "head_start"
+  ],
+  [
    "hsw06",
    "head_start"
   ],
@@ -299,10 +303,6 @@
   ],
   [
    "hs1206",
-   "head_start"
-  ],
-  [
-   "hs12",
    "head_start"
   ],
   [
@@ -2195,8 +2195,9 @@
   "dopamine.png",
   "dump.png",
   "energy.png",
+  "hs1027.png",
   "hs11.png",
-  "hsw03.png",
+  "hsw01.png",
   "index.png",
   "linktest.png",
   "m01.png",

@@ -5,7 +5,21 @@ const [,, html, pdf, shots, anchors, w, h] = process.argv;
   const b = await chromium.launch({ executablePath: process.env.CHROMIUM || require('fs').readdirSync('/opt/pw-browsers').filter(d => d.startsWith('chromium_headless_shell')).map(d => '/opt/pw-browsers/' + d + '/chrome-linux/headless_shell')[0], args: ['--no-sandbox'] });
   const p = await b.newPage({ viewport: { width: +(w || 1024), height: +(h || 768) }, deviceScaleFactor: 2 });
   await p.goto('file://' + html, { waitUntil: 'load' }); await p.waitForTimeout(500);
-  const over = await p.evaluate(() => [...document.querySelectorAll('.pg .body')].map(b => [b.parentElement.id, b.scrollHeight - b.clientHeight]).filter(x => x[1] > 2).slice(0, 10));
+  const over = await p.evaluate(() => {
+    const out = [];
+    for (const b of document.querySelectorAll('.pg .body')) {
+      const pg = b.parentElement.id;
+      if (b.scrollHeight - b.clientHeight > 2) out.push([pg, 'page', b.scrollHeight - b.clientHeight]);
+      const bb = b.getBoundingClientRect();
+      for (const box of b.querySelectorAll('.box')) {               // content spilling out of a box, or a box spilling off the page
+        if (box.scrollHeight - box.clientHeight > 3) out.push([pg, 'box: ' + (box.querySelector('.k') || {}).textContent, box.scrollHeight - box.clientHeight]);
+        const r = box.getBoundingClientRect();
+        if (r.bottom - bb.bottom > 3) out.push([pg, 'off page: ' + (box.querySelector('.k') || {}).textContent, Math.round(r.bottom - bb.bottom)]);
+      }
+      if (out.length > 30) break;
+    }
+    return out;
+  });
   console.log('overflow', JSON.stringify(over));
   if (pdf !== '-') await p.pdf({ path: pdf, preferCSSPageSize: true, printBackground: true });
   if (shots && anchors) for (const a of anchors.split(',')) {

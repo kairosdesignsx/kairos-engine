@@ -169,13 +169,18 @@
    "module": "year_pixels"
   },
   {
+   "path": "/home/claude/kairos-engine/data/products/p-adhd-001/shots/hs1027.png",
+   "anchor": "hs1027",
+   "module": "head_start"
+  },
+  {
    "path": "/home/claude/kairos-engine/data/products/p-adhd-001/shots/hs11.png",
    "anchor": "hs11",
    "module": "head_start"
   },
   {
-   "path": "/home/claude/kairos-engine/data/products/p-adhd-001/shots/hsw03.png",
-   "anchor": "hsw03",
+   "path": "/home/claude/kairos-engine/data/products/p-adhd-001/shots/hsw01.png",
+   "anchor": "hsw01",
    "module": "head_start"
   },
   {
@@ -502,6 +507,10 @@
    "head_start"
   ],
   [
+   "hs12",
+   "head_start"
+  ],
+  [
    "hsw06",
    "head_start"
   ],
@@ -531,10 +540,6 @@
   ],
   [
    "hs1206",
-   "head_start"
-  ],
-  [
-   "hs12",
    "head_start"
   ],
   [

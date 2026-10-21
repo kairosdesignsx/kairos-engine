@@ -333,10 +333,11 @@ def _fill_guides(P):
     for a, sec in getattr(P, 'guide_extras', {}).items():
         extra = ''
         if sec.get('map'):
-            items = ''.join(f'<a href="#{an}" style="display:flex;gap:10px;align-items:baseline;padding:5px 0;border-bottom:1px solid {th["line"]}"><b style="min-width:120px;font:700 13px \'{th["body"]}\';text-transform:uppercase;letter-spacing:.08em">{esc(l)}</b><span style="font-size:{P.fs(13.5)};color:{th["muted"]}">{esc(next((k for (l2, a2, k) in P.index_items if a2 == an), ""))}</span></a>' for l, an in P.nav_items[:7])
-            extra += f'<div class="box" style="flex:1"><span class="k">{esc(sec.get("map_label", "The top bar, on every page"))}</span><div style="display:grid;grid-template-columns:1fr 1fr;gap:0 28px">{items}</div></div>'
+            items = ''.join(f'<a href="#{an}" style="display:flex;gap:10px;align-items:baseline;padding:5px 0;border-bottom:1px solid {th["line"]}"><b style="min-width:110px;font:700 12px \'{th["body"]}\';text-transform:uppercase;letter-spacing:.08em">{esc(l)}</b><span style="font-size:{P.fs(13.5)};color:{th["muted"]}">{esc(next((k for (l2, a2, k) in P.index_items if a2 == an), ""))}</span></a>' for l, an in P.nav_items[:7])
+            extra += f'<div class="box" style="flex:none"><span class="k">{esc(sec.get("map_label", "The top bar, on every page"))}</span><div style="display:grid;grid-template-columns:1fr 1fr;gap:0 28px">{items}</div></div>'
         if sec.get('months'):
-            ms = ''.join(f'<a href="#m{i + 1:02d}" style="display:flex;align-items:center;justify-content:center;border-radius:12px;background:{P.tabs[i]}55;font:600 15px \'{th["body"]}\'">{MONTHS[i]}</a>' for i in range(12))
+            ms = ''.join(f'<a href="#{an}" style="display:flex;align-items:center;justify-content:center;border-radius:12px;background:{th["ink"]};color:{th["paper"]};font:600 15px \'{th["body"]}\'">{esc(lb)}</a>' for lb, an in getattr(P, 'head_start_links', []))
+            ms += ''.join(f'<a href="#m{i + 1:02d}" style="display:flex;align-items:center;justify-content:center;border-radius:12px;background:{P.tabs[i]}55;font:600 15px \'{th["body"]}\'">{MONTHS[i]}{"" if P.undated else " " + str(P.year)}</a>' for i in range(12))
             extra += f'<div class="box" style="flex:1"><span class="k">{esc(sec.get("months_label", "Jump back in: tap this month"))}</span><div style="flex:1;display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:1fr;gap:10px">{ms}</div></div>'
         if not extra:
             extra = '<div style="flex:1"></div>'
@@ -412,7 +413,7 @@ def m_guide(P, sec):
     steps = ''.join(f'<div class="box step" style="padding:18px 20px;gap:14px;flex-direction:row"><b style="width:36px;height:36px;font-size:16px">{i}</b><div style="display:flex;flex-direction:column;gap:8px;flex:1"><p class="h" style="font-size:24px">{esc(st[0])}</p><p style="font-size:{P.fs(14.5)};line-height:1.5;color:{P.th["muted"]}">{esc(st[1])}</p>{(f'<a href="#{st[2]}" style="align-self:flex-start;margin-top:auto;padding:8px 16px;border-radius:{P.rpill}px;background:{P.th["ink"]};color:{P.th["paper"]};font:600 12px \'{P.th["body"]}\';letter-spacing:.08em;text-transform:uppercase">Go there {arrow("r")}</a>') if len(st) > 2 and st[2] else ''}</div></div>' for i, st in enumerate(sec['steps'], 1))
     tip = f'<div class="box fill" style="margin-top:auto"><span class="k">Tip</span><span style="font-size:13px;line-height:1.45">{esc(sec["tip"])}</span></div>' if sec.get('tip') else ''
     _register(P, sec, sec['label'], a, sec.get('kicker', 'Start here'))
-    P.page(a, P.head(sec.get('kicker', 'Start here'), sec['label']) + f'<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">{steps}</div>%%GUIDE_EXTRA:{a}%%{tip}', active=a, deco=True)
+    P.page(a, P.head(sec.get('kicker', 'Start here'), sec['label']) + f'<div style="display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:1fr;gap:14px;flex:1">{steps}</div>%%GUIDE_EXTRA:{a}%%{tip}', active=a, deco=True)
     P.guide_extras = getattr(P, 'guide_extras', {})
     P.guide_extras[a] = sec
 
@@ -575,6 +576,7 @@ def m_head_start(P, sec):
                crumb=f'<a href="#{pre}{(d.month if (d.year, d.month) in months else m0):02d}">{MONTHS[d.month - 1]} {d.year}</a> / <a href="#{week_anchor}">{week_title}</a>')
 
     rail_map = {m2: f'{pre}{m2:02d}' for y2, m2 in months}
+    P.head_start_links = [(f'{MONTHS[m2 - 1]} {y2}', f'{pre}{m2:02d}') for y2, m2 in months]
     done = set()
     for (yy, mm) in months:
         cells = ''.join(f'<span class="d hd">{x}</span>' for x in DOW)
@@ -584,7 +586,7 @@ def m_head_start(P, sec):
                 if d.month != mm and not (with_days and in_lead(d) and d < first):
                     cells += f'<span class="d x">{d.day}</span>'
                 elif d.month != mm:
-                    cells += f'<a class="d x" href="#{day_anchor(d)}">{d.day}</a>'  # lead-in days before the first month (e.g. Oct 26 to 31)
+                    cells += f'<a class="d" href="#{day_anchor(d)}">{d.day}</a>'  # lead-in days before the first month (e.g. Oct 26 to 31)
                 else:
                     w_ = weeks[week_of(d) - 1]
                     target = day_anchor(d) if with_days else (main_week(w_[6]) if overlaps(w_) else wk_anchor(week_of(d)))
@@ -602,7 +604,9 @@ def m_head_start(P, sec):
         trail = ' · '.join(f'<a href="#{pre}{m2:02d}">{MONTHS[m2 - 1][:3]} {y2}</a>' for y2, m2 in months)
         P.page(f'{pre}{mm:02d}', inner, crumb=f'Head start: {trail}', month=mm, rail_map=rail_map)
         for w in ws:
-            if w in done:
+            thu = weeks[w - 1][3]
+            home = (thu.year, thu.month) if (thu.year, thu.month) in months else (months[0] if thu < first else months[-1])
+            if w in done or home != (yy, mm):
                 continue
             done.add(w)
             days = weeks[w - 1]

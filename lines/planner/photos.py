@@ -22,6 +22,7 @@ def page_name(a, names):
     if _re.fullmatch(r'm\d{2}', a): return 'Month'
     if _re.fullmatch(r'w\d{2}', a): return 'Week'
     if _re.fullmatch(r'hs\d{2}', a): return 'Head start month'
+    if _re.fullmatch(r'hs\d{4}', a): return 'Head start day'
     if _re.fullmatch(r'hsw\d{2}', a): return 'Head start week'
     return a
 
@@ -87,9 +88,11 @@ def scenes(brief, listing, build, shots_dir, out_dir):
               <div style="display:grid;grid-template-columns:repeat({cols},1fr);gap:50px;width:100%">{cells}</div></div>''')
         elif 2 <= len(pg) <= 3:
             n = len(pg)
-            tw = (1180 if n == 2 else 790) if not portrait else (900 if n == 2 else 640)
+            tw = (1180 if n == 2 else 800) if not portrait else (900 if n == 2 else 640)
             gap = 2700 - 300 - tw * n
-            tabs = ''.join(tablet(P(a), tw, 150 + k * (tw + gap // max(1, n - 1)), 660 if not portrait else 560, ratio, 0, 1, N(a)) for k, a in enumerate(pg))
+            th_ = tw * (H / W) + tw * .064  # tablet height incl. frame
+            top_ = 560 + max(0, (2025 - 560 - 90 - th_) / 2)  # centred in the space under the headline, room for captions
+            tabs = ''.join(tablet(P(a), tw, 150 + k * (tw + gap // max(1, n - 1)), int(top_), ratio, 0, 1, N(a)) for k, a in enumerate(pg))
             S[key] = base(th, f'''<div style="position:absolute;left:150px;right:150px;top:110px;display:flex;flex-direction:column;gap:26px">
               {label}<p class="h" style="font-size:120px">{head}</p><div style="display:flex;gap:60px;flex-wrap:wrap">{''.join(f'<p class="pt"><b>&#9679;</b><span>{esc(x)}</span></p>' for x in c.get('points', [])[:3])}</div></div>''' + tabs)
         elif ph['id'].startswith('how') or 'how it works' in ph['shows'].lower():
