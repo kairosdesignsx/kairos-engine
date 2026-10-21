@@ -10,6 +10,10 @@ A promise counts only if you can SEE it in a page screenshot or READ it in the l
 - `listing`: path to listing.json (title, description, photo copy).
 - `page_modules`: every page anchor in the PDF and its module, so you know what exists beyond the screenshots.
 
+## Also check
+- The rules in /home/claude/kairos-engine/data/learn/style-rules.json.
+- Day one for a buyer at the start of the selling window and for one mid-year: can each follow the printed steps to a page they can use today?
+
 ## Output: `coverage-out.json`
 {"items": [{"key": "...", "found": true|false, "where": "page anchor, photo file or listing field", "note": "what you saw, one line"}],
  "visual": [{"issue": "...", "where": "...", "severity": "high|medium|low"}]}

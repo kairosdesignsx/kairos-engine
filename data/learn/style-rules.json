@@ -1,0 +1,50 @@
+[
+ {
+  "id": "r001",
+  "rule": "Every page must be reachable by links from the first page. Groups of pages that only link to each other count as unreachable.",
+  "enforced": "build (automatic)",
+  "from": "p-adhd-001 check round 2"
+ },
+ {
+  "id": "r002",
+  "rule": "Setup steps must work for a buyer on any purchase date in the selling window, for example before the dated year starts. Walk through day one for an early buyer and a mid-year buyer.",
+  "enforced": "brief writer and coverage checker",
+  "from": "p-adhd-001 check round 3"
+ },
+ {
+  "id": "r003",
+  "rule": "Every number or fact in the listing (pages, file size, what is and isn't included) must match the built file. Rebuilds change counts; update the copy.",
+  "enforced": "check tech (page counts automatic)",
+  "from": "p-adhd-001 rebuilds"
+ },
+ {
+  "id": "r004",
+  "rule": "Use only glyphs the embedded fonts contain. Draw arrows and icons as SVG, otherwise a non-licensed fallback font gets embedded.",
+  "enforced": "check tech + line test (automatic)",
+  "from": "p-adhd-001 check tech"
+ },
+ {
+  "id": "r005",
+  "rule": "A listing photo must show what its copy and alt text claim. A small multi-page grid needs captions and readable pages (2x2 beats 4 in a row).",
+  "enforced": "coverage checker",
+  "from": "p-adhd-001 check rounds 1 to 3"
+ },
+ {
+  "id": "r006",
+  "rule": "No half-empty pages. Fill spare space with something a buyer uses (a map of the top bar, a month jump grid, a pen test area), never decoration.",
+  "enforced": "coverage checker",
+  "from": "p-adhd-001 check rounds 1 to 3"
+ },
+ {
+  "id": "r007",
+  "rule": "Never promise service levels in the product (for example 'we reply fast'). Say what the buyer can do instead.",
+  "enforced": "coverage checker",
+  "from": "p-adhd-001 check round 1"
+ },
+ {
+  "id": "r008",
+  "rule": "A week that spans two months is built once, under the month that holds its Thursday; day pages name their own month in the trail.",
+  "enforced": "planner line (automatic)",
+  "from": "brief writer found it"
+ }
+]

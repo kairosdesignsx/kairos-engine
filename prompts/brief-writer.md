@@ -42,6 +42,8 @@ Strings `kind:id`, using ids that exist in brief-in.json: `complaint:c_hard`, `p
 `feature:dated`, `price:median`, `keyword:adhd planner`, `listing:<id>`, `market:monthly_searches`, `look:<style name>`.
 
 ## Rules
+- Follow every rule in `style_rules` (learned from past checks and Darren's reviews).
+- Walk through day one for a buyer who purchases at the start of the selling window and one mid-year: the start-up steps must work for both.
 - Account for every item in `must_address` (fix or waive) and every `standard_features` item (must_have or waive).
 - Do not copy any competitor's title, wording, layout or art. Ideas and features are fair game.
 - Keep the file under 19 MB: a full dated year with daily pages is about 500 pages and near the limit; adding more
