@@ -19,6 +19,7 @@ A promise counts only if you can SEE it in a page screenshot or READ it in the l
  "visual": [{"issue": "...", "where": "...", "severity": "high|medium|low"}]}
 - `found` is true only with concrete proof. "Exists in page_modules" is enough for a page type you could not screenshot,
   but say so in `note`.
+- Severity: high = a buyer would be blocked, misled, or see something broken; medium = a buyer would notice and be annoyed; low = polish.
 - `visual`: anything a buyer would notice: cut-off text, overlapping elements, unreadable contrast, empty-looking pages,
   photos that misrepresent the product, typos. Look at every screenshot and every photo.
 Check the file parses, then reply: `done <found>/<total>, <n> visual issues (<n high>)`.

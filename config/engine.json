@@ -18,7 +18,7 @@
   "max_image_similarity": 0.85,
   "max_text_similarity": 0.6,
   "max_pdf_mb": 19.5,
-  "max_build_retries": 2
+  "max_build_retries": 4
  },
  "nightly": {
   "max_new_products": 3,
