@@ -1,23 +1,23 @@
 {
  "product_id": "p-adhd-001",
  "brief_id": "b-adhd-001",
- "built_at": "2026-10-21T13:57:20Z",
+ "built_at": "2026-10-21T14:09:54Z",
  "line": "planner",
  "files": [
   {
    "name": "Just-Today.pdf",
-   "mb": 18.19,
-   "pages": 535
+   "mb": 18.37,
+   "pages": 541
   }
  ],
- "links": 13445,
+ "links": 13595,
  "overflow": [],
  "lean": false,
  "attempts": [
   {
    "lean": false,
-   "mb": 18.19,
-   "pages": 535
+   "mb": 18.37,
+   "pages": 541
   }
  ],
  "page_modules": [
@@ -111,6 +111,30 @@
   ],
   [
    "hsw01",
+   "head_start"
+  ],
+  [
+   "hs1026",
+   "head_start"
+  ],
+  [
+   "hs1027",
+   "head_start"
+  ],
+  [
+   "hs1028",
+   "head_start"
+  ],
+  [
+   "hs1029",
+   "head_start"
+  ],
+  [
+   "hs1030",
+   "head_start"
+  ],
+  [
+   "hs1031",
    "head_start"
   ],
   [

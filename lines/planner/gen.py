@@ -160,20 +160,21 @@ a{{color:inherit;text-decoration:none}}
     def nav_links(self, active):
         return ''.join(f'<a href="#{a}" class="{"on" if a == active else ""}">{esc(l)}</a>' for l, a in self.nav_items[:7 if self.W > self.HT else 4])
 
-    def rail(self, month=None):
+    def rail(self, month=None, rail_map=None):
         out = []
         for i in range(12):
             c = self.tabs[i]; on = month == i + 1
-            out.append(f'<a href="#m{i + 1:02d}" class="{"on" if on else ""}" style="background:{c}{"" if on else "cc"}">{MONTHS[i][:3].upper()}</a>')
+            target = (rail_map or {}).get(i + 1, f'm{i + 1:02d}')
+            out.append(f'<a href="#{target}" class="{"on" if on else ""}" style="background:{c}{"" if on else "cc"}">{MONTHS[i][:3].upper()}</a>')
         return f'<div class="rail">{"".join(out)}</div>'
 
-    def page(self, anchor, inner, active=None, month=None, crumb='', deco=False, raw=False, style=''):
+    def page(self, anchor, inner, active=None, month=None, crumb='', deco=False, raw=False, style='', rail_map=None):
         self.seed += 3
         m = (motif(self.th, 'tr', self.seed) + motif(self.th, 'bl', self.seed + 1)) if deco else ''
         if raw:
             self.pages.append(f'<section class="pg" id="{anchor}" style="{style}">{inner}</section>')
         else:
-            self.pages.append(f'<section class="pg" id="{anchor}" style="{style}">{m}{self.nav(active, crumb)}{self.rail(month)}<div class="body">{inner}</div><p class="foot">{esc(self.s.get("brand", ""))}</p></section>')
+            self.pages.append(f'<section class="pg" id="{anchor}" style="{style}">{m}{self.nav(active, crumb)}{self.rail(month, rail_map)}<div class="body">{inner}</div><p class="foot">{esc(self.s.get("brand", ""))}</p></section>')
         self.page_modules.append((anchor, self.current))
 
     def head(self, kicker, title, size=44, right=''):
@@ -548,7 +549,8 @@ def m_head_start(P, sec):
         weeks.append([d + datetime.timedelta(days=i) for i in range(7)]); d += datetime.timedelta(days=7)
     wk_anchor = lambda n: f'{pre}w{n:02d}'
     day_anchor = lambda d: f'{pre}{d.month:02d}{d.day:02d}'
-    in_lead = lambda d: first <= d <= last
+    lead_from = first - datetime.timedelta(days=first.weekday())  # e.g. Mon Oct 26 for a November head start
+    in_lead = lambda d: lead_from <= d <= last
     in_main = lambda d: (not P.undated) and d.year == P.year
     def week_of(d):
         return next(i + 1 for i, w in enumerate(weeks) if w[0] <= d <= w[6])
@@ -569,17 +571,20 @@ def m_head_start(P, sec):
         nxt = day_anchor(nd) if in_lead(nd) else (P.did(nd) if in_main(nd) else None)
         arrows = (f'<a href="#{day_anchor(pd)}">{arrow("l")}</a>' if in_lead(pd) else '') + (f' <a href="#{nxt}">{arrow("r")}</a>' if nxt else '')
         left = ''.join(block(P, b) for b in dlay['left']); rightb = ''.join(block(P, b) for b in dlay['right'])
-        P.page(day_anchor(d), f'{P.head(d.strftime("%A") + f" · {d.year}", f"{MONTHS[d.month - 1]} {d.day}", right=f"<span class=k style=font-size:16px>{arrows}</span>")}<div class="row" style="flex:1"><div class="col" style="flex:1">{left}</div><div class="col" style="flex:1.15">{rightb}</div></div>',
-               crumb=f'<a href="#{pre}{d.month:02d}">{MONTHS[d.month - 1]} {d.year}</a> / <a href="#{week_anchor}">{week_title}</a>')
+        P.page(day_anchor(d), month=d.month if (d.year, d.month) in months else None, rail_map=rail_map, inner=f'{P.head(d.strftime("%A") + f" · {d.year}", f"{MONTHS[d.month - 1]} {d.day}", right=f"<span class=k style=font-size:16px>{arrows}</span>")}<div class="row" style="flex:1"><div class="col" style="flex:1">{left}</div><div class="col" style="flex:1.15">{rightb}</div></div>',
+               crumb=f'<a href="#{pre}{(d.month if (d.year, d.month) in months else m0):02d}">{MONTHS[d.month - 1]} {d.year}</a> / <a href="#{week_anchor}">{week_title}</a>')
 
+    rail_map = {m2: f'{pre}{m2:02d}' for y2, m2 in months}
     done = set()
     for (yy, mm) in months:
         cells = ''.join(f'<span class="d hd">{x}</span>' for x in DOW)
         cal = calendar.Calendar(0).monthdatescalendar(yy, mm)
         for wk in cal:
             for d in wk:
-                if d.month != mm:
+                if d.month != mm and not (with_days and in_lead(d) and d < first):
                     cells += f'<span class="d x">{d.day}</span>'
+                elif d.month != mm:
+                    cells += f'<a class="d x" href="#{day_anchor(d)}">{d.day}</a>'  # lead-in days before the first month (e.g. Oct 26 to 31)
                 else:
                     w_ = weeks[week_of(d) - 1]
                     target = day_anchor(d) if with_days else (main_week(w_[6]) if overlaps(w_) else wk_anchor(week_of(d)))
@@ -595,7 +600,7 @@ def m_head_start(P, sec):
         inner = f'''<div class="row" style="align-items:flex-end;justify-content:space-between"><div><p class="k">{esc(sec.get("kicker", "Head start"))} · {yy}</p><p class="h" style="font-size:52px">{MONTHS[mm - 1]}</p></div><div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;max-width:560px">{wl}{extra}</div></div>
           <div class="row" style="flex:1"><div class="cal" style="flex:3;grid-template-rows:auto repeat({len(cal)},1fr);border-bottom:1px solid {th["line"]}">{cells}</div><div class="col" style="flex:1.1">{side}</div></div>'''
         trail = ' · '.join(f'<a href="#{pre}{m2:02d}">{MONTHS[m2 - 1][:3]} {y2}</a>' for y2, m2 in months)
-        P.page(f'{pre}{mm:02d}', inner, crumb=f'Head start: {trail}')
+        P.page(f'{pre}{mm:02d}', inner, crumb=f'Head start: {trail}', month=mm, rail_map=rail_map)
         for w in ws:
             if w in done:
                 continue
@@ -622,7 +627,7 @@ def m_head_start(P, sec):
             right = f'<span class="k" style="font-size:16px">{prev_w}{next_w}</span>' + (contlink if pos + 1 == len(lead_weeks) else '')
             inner = f'''{P.head(f"Head start · week {pos + 1} of {len(lead_weeks)}", title, right=right)}
               <div class="row" style="flex:1"><div style="flex:3;display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:1fr 1fr;gap:10px">{cols}<div class="box fill"><span class="k">Notes</span><div class="dots"></div></div></div><div class="col" style="flex:1.05">{sideb}</div></div>'''
-            P.page(wk_anchor(w), inner, crumb=f'<a href="#{pre}{mm:02d}">{MONTHS[mm - 1]} {yy}</a> / {title}')
+            P.page(wk_anchor(w), inner, crumb=f'<a href="#{pre}{mm:02d}">{MONTHS[mm - 1]} {yy}</a> / {title}', month=mm, rail_map=rail_map)
             if with_days:
                 for d in days:
                     if in_lead(d):

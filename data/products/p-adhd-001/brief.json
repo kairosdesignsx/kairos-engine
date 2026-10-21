@@ -574,7 +574,7 @@
      ],
      [
       "Plan one day",
-      "Tap Year, then today's date. Buying in November or December 2026? Tap Head start on the Year page instead. Fill Today's top 3 and one time block. That is the whole job for today."
+      "Tap Year, then today's date. Buying between October 26 and December 31, 2026? Tap Head start on the Year page instead. Fill Today's top 3 and one time block. That is the whole job for today."
      ]
     ],
     "tip": "Missed a day, a week or a month? Skip it and go straight to today. The Restart page shows how.",
@@ -608,7 +608,7 @@
      ],
      [
       "Jump to today",
-      "Tap this month below or on the tabs, then today's date. In Nov or Dec 2026, use Head start on the Year page. You are back in two taps."
+      "Tap this month below or on the tabs, then today's date. Before 2027, use Head start on the Year page. You are back in two taps."
      ],
      [
       "Write one thing",
@@ -730,7 +730,7 @@
    },
    {
     "module": "head_start",
-    "label": "Head start: Nov and Dec 2026",
+    "label": "Head start: Oct 26 to Dec 2026",
     "kicker": "Start now",
     "anchor": "hs",
     "nav": false,
@@ -959,6 +959,11 @@
    "at": "2026-10-21",
    "by": "session",
    "why": "coverage check round 3: buyers before Jan 2027 hit a dead end; head start now has day pages, Year page links to it, setup steps cover Nov and Dec 2026; guide pages get a top bar map and a month grid"
+  },
+  {
+   "at": "2026-10-21",
+   "by": "session",
+   "why": "coverage check round 4: late-October buyers; head start days begin Mon Oct 26 and 2026 pages use their own month tabs"
   }
  ]
 }
