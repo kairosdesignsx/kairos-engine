@@ -316,7 +316,8 @@ def _fill_index(P):
     th = P.th
     cards = ''.join(f'<a href="#{a}" class="box" style="justify-content:space-between;min-height:76px;background:{c}22;border-color:{c}"><span class="k">{esc(k)}</span><span class="h" style="font-size:22px">{esc(l)}</span></a>'
                     for (l, a, k), c in zip(P.index_items[:12], P.tabs * 3))
-    months = ''.join(f'<a href="#m{i + 1:02d}" style="padding:8px 0;text-align:center;border-radius:8px;background:{P.tabs[i]}55;font:600 12px \'{th["body"]}\'">{MONTHS[i]}</a>' for i in range(12))
+    months = ''.join(f'<a href="#{an}" style="padding:8px 0;text-align:center;border-radius:8px;background:{th["ink"]};color:{th["paper"]};font:600 12px \'{th["body"]}\'">{esc(lb)}</a>' for lb, an in getattr(P, 'head_start_links', []))
+    months += ''.join(f'<a href="#m{i + 1:02d}" style="padding:8px 0;text-align:center;border-radius:8px;background:{P.tabs[i]}55;font:600 12px \'{th["body"]}\'">{MONTHS[i]}{"" if P.undated or not getattr(P, "head_start_links", None) else " " + str(P.year)}</a>' for i in range(12))
     tip = P.s.get('index_tip', 'Tap a month tab on the right, any section above, or any date to jump there. Home on the top bar brings you back here, and calendar pages show where you are at the top right. Follow links in read mode (Goodnotes: turn the pen off).')
     inner = f'''<p class="h" style="font-size:44px">Contents</p>
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">{cards}</div>
@@ -333,7 +334,7 @@ def _fill_guides(P):
     for a, sec in getattr(P, 'guide_extras', {}).items():
         extra = ''
         if sec.get('map'):
-            items = ''.join(f'<a href="#{an}" style="display:flex;gap:10px;align-items:baseline;padding:5px 0;border-bottom:1px solid {th["line"]}"><b style="min-width:110px;font:700 12px \'{th["body"]}\';text-transform:uppercase;letter-spacing:.08em">{esc(l)}</b><span style="font-size:{P.fs(13.5)};color:{th["muted"]}">{esc(next((k for (l2, a2, k) in P.index_items if a2 == an), ""))}</span></a>' for l, an in P.nav_items[:7])
+            items = ''.join(f'<a href="#{an}" style="display:flex;gap:10px;align-items:baseline;padding:5px 0;border-bottom:1px solid {th["line"]}"><b style="min-width:110px;font:700 12px \'{th["body"]}\';text-transform:uppercase;letter-spacing:.08em">{esc(l)}</b><span style="font-size:{P.fs(13.5)};color:{th["muted"]}">{esc(next((k for (l2, a2, k) in P.index_items if a2 == an), ""))}</span></a>' for l, an in P.nav_items[:7] if next((k for (l2, a2, k) in P.index_items if a2 == an), ""))
             extra += f'<div class="box" style="flex:none"><span class="k">{esc(sec.get("map_label", "The top bar, on every page"))}</span><div style="display:grid;grid-template-columns:1fr 1fr;gap:0 28px">{items}</div></div>'
         if sec.get('months'):
             ms = ''.join(f'<a href="#{an}" style="display:flex;align-items:center;justify-content:center;border-radius:12px;background:{th["ink"]};color:{th["paper"]};font:600 15px \'{th["body"]}\'">{esc(lb)}</a>' for lb, an in getattr(P, 'head_start_links', []))

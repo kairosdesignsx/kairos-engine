@@ -1,0 +1,241 @@
+{
+ "items": [
+  {
+   "key": "must:mh_dated",
+   "found": true,
+   "where": "year, m01, m07, w01, w03, w27, d0101, d0111, d0502, d0831; product.html and PDF link check",
+   "note": "Dated 2027 with Monday-start grids. The year page links all 365 dates to their day pages and the 12 month names to m01-m12. Each month links its habit tracker, week chips and every date, and each week links its 7 days. All 432 day pages have correct prev/next arrows. 0 broken links, and all 540 PDF named destinations resolve to the right page."
+  },
+  {
+   "key": "must:mh_multi_year",
+   "found": true,
+   "where": "hs11, hsw01, hs1027 shots; year 'Starting in 2026? Head start'; index Head start card; restart Nov/Dec 2026 buttons; page_modules hs1026-hs1231",
+   "note": "The head start runs Mon Oct 26 to Dec 31 2026 (2 month, 9 week and 67 day pages) before 2027. An Oct 27 buyer taps Year, then Head start, then 27 and lands on Tuesday, October 27 (3 taps). The NOV/DEC tab trap remains (see visual)."
+  },
+  {
+   "key": "must:mh_apps",
+   "found": true,
+   "where": "listing.title, listing.description 'Works with', files/Just-Today.pdf",
+   "note": "One 541-page PDF, every page 768x576 pt landscape, 14,589 plain GoTo link annotations, no form fields or JavaScript. Goodnotes is the first app named in the title and in the Works with list. There is no evidence of real testing in the five apps."
+  },
+  {
+   "key": "must:mh_adhd",
+   "found": true,
+   "where": "d0101, d0111, d0502, d0831, hs1027 shots; product.html check of all 432 day pages",
+   "note": "All 432 day pages (2026 and 2027) have Today's top 3, Time blocks 7am-9pm, Brain dump, Energy 1 to 5, Basics, One win today and Dopamine break."
+  },
+  {
+   "key": "must:mh_core",
+   "found": true,
+   "where": "year, m01, m07, m01h, w01/w03/w27, day shots, energy, dump; PDF render of m02h; page_modules notes-notes8",
+   "note": "Present: year at a glance, 12 month pages with right-edge tabs, 53 weeks, 365 days, 12 habit trackers with the right 28/30/31 day columns, the 2027 energy map, 4 brain dump pages and 8 notes pages."
+  },
+  {
+   "key": "must:mh_look",
+   "found": true,
+   "where": "all 23 shots plus PDF renders of hs12, hsw09, hs1228, m02, m02h, w53, dump4, notes8",
+   "note": "The design is finished and consistent: Fraunces and Outfit, cream paper, aligned boxes and the same grid on every calendar page. One spacing defect: Start here is squeezed (see visual)."
+  },
+  {
+   "key": "must:mh_guide",
+   "found": true,
+   "where": "start, linktest, restart, index 'How the links work'",
+   "note": "Start here (4 steps), Setup check with its fix list and pen test, the Restart page and the Contents link tip are all printed inside the PDF."
+  },
+  {
+   "key": "fix:f_hard",
+   "found": true,
+   "where": "cover, start, d0101/d0111/d0502/d0831/hs1027, product.html",
+   "note": "All 432 day pages have the same seven boxes in the same places, and the cover's Open planner button links to #start. Every page except the cover has the top bar with Home, all 541 pages have the 12 tabs, and calendar and habit pages have a Month / Week trail. Guide and tool pages have no trail."
+  },
+  {
+   "key": "fix:f_download",
+   "found": true,
+   "where": "listing.description 'How to start', photo-04-ph4_apps.jpg, start step 1, files/Just-Today.pdf",
+   "note": "The listing and photo 4 give 3 steps: download in a browser, open in your app, check and plan. The file is one 18.37 MB PDF, not a zip. Start here step 1 repeats the browser and app advice."
+  },
+  {
+   "key": "fix:f_misleading",
+   "found": true,
+   "where": "photos 1-10 captions; listing.description 'What's inside' and 'Good to know'; photo-10-ph10_inside.jpg",
+   "note": "Every photo shows built pages captioned with the page name, except the uncaptioned rear tablet in photo 1. The description lists each page type with counts that match the file, and says landscape only, Monday start, head start with day pages, no stickers and not a fillable form. Photo 10 repeats this. The alt text for photos 2, 9 and 10 doesn't match the images (see visual)."
+  },
+  {
+   "key": "fix:f_device",
+   "found": true,
+   "where": "files/Just-Today.pdf (768x576 pt = 1024x768, 4:3); listing.description 'Works with' / 'Not made for'; linktest",
+   "note": "Pages are 4:3 landscape with no letterbox, and every link is a plain PDF GoTo link. The listing has a Works with list and a Not made for list (phones, e-ink, Files/Photos/Drive preview). The Setup check page tests the links on the buyer's own device."
+  },
+  {
+   "key": "fix:f_not_useful",
+   "found": true,
+   "where": "every shot (right rail), index, year, m01, w03, d0111",
+   "note": "Month tabs run down the right edge of every page, and year, month, week and day pages are cross-linked. Pages come dated, and Contents shows every section and all 12 months on one screen."
+  },
+  {
+   "key": "fix:f_setup",
+   "found": true,
+   "where": "index (first two cards); page order cover > index > start > linktest; listing 'No stickers'",
+   "note": "Start here and Setup check are the first two Contents cards and pages 3 and 4, right after Contents. Start here has the 4 numbered steps as specified, and the listing says there are no stickers."
+  },
+  {
+   "key": "fix:f_quality",
+   "found": false,
+   "where": "start (PDF page 3); photo-03-ph3_start.jpg; photo-04-ph4_apps.jpg",
+   "note": "Most of this holds: 541 unique pages, 432 day pages in strict date order, each week and day built once, 0 broken links, vector text. But Start here still overflows. Its content is 17px too tall, so flex shrink pushes the FIVE MINUTES kicker into the top bar (top 39px vs bar bottom 40px) and leaves the Tip text flush on its box edge. The build's overflow check misses this."
+  },
+  {
+   "key": "fix:f_support",
+   "found": true,
+   "where": "linktest 'Nothing happened?'; start; listing.description 'Questions buyers ask'",
+   "note": "The fix list covers pen off, a planner app (not Files or Photos), re-importing the PDF without converting it, then message us. The listing FAQ covers the Etsy app download, which app to use, links not tapping, typing and landscape only."
+  },
+  {
+   "key": "fix:f_value",
+   "found": true,
+   "where": "listing.price 14; d0111; w03; photo-02-ph2_day.jpg",
+   "note": "Priced at $14. Brain dump plus time blocks take over half of the day page, each weekday has its own lined box on the week page, and body text is 13.8px. Photo 2 is labelled 'Day page, real size'."
+  },
+  {
+   "key": "fix:f_nav",
+   "found": true,
+   "where": "m01, w03, d0111, year, index; product.html",
+   "note": "Month, week and day pages have the tabs, the top bar (Home, Year, Restart, Dopamine, Energy, Brain dump, Notes) and a working trail. Day pages have prev/next arrows. All 365 dates on the year page link to their days, and Contents links every section and month."
+  },
+  {
+   "key": "fix:f_overwhelm",
+   "found": true,
+   "where": "index; start step 4; restart; listing 'Short on purpose'",
+   "note": "Nine page types, seven boxes a day and a one-screen Contents. Start here says 'Plan one day', Restart says 'Do not go back and fill them in', and the listing says 'Not 50 templates'."
+  },
+  {
+   "key": "fix:f_edit",
+   "found": true,
+   "where": "start step 3; m01h; m01; dopamine; routines; listing 'not a fillable form'",
+   "note": "Start here says pen off to tap, on to write, and use the text tool to type. Habit names and One goal are blank. Dopamine and routine columns have 3-4 filled lines out of 14 each. The listing says it is not a fillable form."
+  },
+  {
+   "key": "fix:f_broken",
+   "found": true,
+   "where": "linktest; product.html and PDF link check",
+   "note": "Three buttons (A month page > m01, The year > year, Contents > index) plus the 4-item fix list. Getting back is printed as Home, then Setup check (2 taps); there is no return link. 0 broken links, every page is reachable from the cover and every page has inbound links."
+  },
+  {
+   "key": "unique:u_start",
+   "found": true,
+   "where": "cover; start (page 3); linktest (page 4)",
+   "note": "Page 3 is the 4-step Start here and page 4 is Setup check with jump buttons and a fix list. The cover's Open planner button links to #start."
+  },
+  {
+   "key": "unique:u_day",
+   "found": true,
+   "where": "d0101, d0111, d0502, d0831, hs1027, w01, w03, w27, hsw01",
+   "note": "Every day page has the same seven boxes. Week pages (2026 and 2027) have This week's top 3, Weekly reset (5 filled items) and Not this week."
+  },
+  {
+   "key": "unique:u_restart",
+   "found": true,
+   "where": "restart; 'Restart' in the top bar on 540 pages",
+   "note": "Restart has Skip the gap, Jump to today (the month grid now includes November 2026 and December 2026), Write one thing in Today's top 3 and Empty your head. Its tip points to the Weekly reset."
+  },
+  {
+   "key": "unique:u_dopamine",
+   "found": true,
+   "where": "dopamine, routines, day pages",
+   "note": "The Dopamine menu has Quick 5 min, Medium 20 min, Big rewards and Costs you later. Routines has Morning, Leaving the house and Evening wind-down. Each column has 3-4 filled and about 10 blank lines, and every day page has a Dopamine break box."
+  },
+  {
+   "key": "look",
+   "found": true,
+   "where": "all shots; product.html CSS",
+   "note": "Paper #FAF6EE with ink #1F2D3A (13.0:1) and muted text #5B6874 (5.3:1). Fills are pale teal. The coral bar is on the cover, Contents, Start here and Restart. Tabs run teal to periwinkle with ink labels (7.9:1). Fraunces and Outfit, no florals. Deviations: the cover is soft teal, not cream, and boxes and pills are rounded, not square."
+  }
+ ],
+ "visual": [
+  {
+   "issue": "Start here is overfull. Its content is about 17px taller than the page body, and flex shrink hides it. The FIVE MINUTES kicker is pushed up against the top bar (1px overlap; other pages have a 16px gap). The Tip box loses its bottom padding, so its text sits on the box edge. This is the third page every buyer sees and it is in photos 3 and 4. Trimming a line (for example, the empty HOME row of the top-bar map) would fix it.",
+   "where": "start; photo-03-ph3_start.jpg; photo-04-ph4_apps.jpg",
+   "severity": "medium"
+  },
+  {
+   "issue": "2026 buyers can land in 2027. On 463 pages (Contents, Start here, Setup check, Year, Restart, tools and all 2027 pages), the NOV and DEC tabs open November and December 2027. The Contents 'Months' pills show no year and also open 2027. A November 2026 buyer who taps the obvious NOV tab or 'November' on Contents writes in the wrong year. Only the Head start card or button and the Restart grid reach 2026.",
+   "where": "index (Months row and rail); start, linktest, year, restart, dopamine, routines, energy, dump, notes rails",
+   "severity": "medium"
+  },
+  {
+   "issue": "Photo 7 shrinks Dopamine menu, Routines and Restart to three pages in a row, so none of their text is readable at listing size. About 40% of the canvas, above and below the tablets, is empty (r005: 2x2 or two larger pages).",
+   "where": "photo-07-ph7_tools.jpg",
+   "severity": "medium"
+  },
+  {
+   "issue": "The year boundary breaks r008. Week 1 (Dec 28 to Jan 3, Thursday Dec 31) is filed under January 2027, so swiping goes Dec 28-31 day pages, then January, January habits, then Week 1. Head-start week 9 has no next arrow to Week 1, only 'Continue to January 2027' to the month page, and Week 1 has no back arrow. On week 9 the back arrow floats mid-header. The listing does disclose that the Dec 28 week is Week 1.",
+   "where": "hsw09, hs1228-hs1231, m01, w01",
+   "severity": "low"
+  },
+  {
+   "issue": "The listing's start date doesn't match the file (r003). The description opens with 'it starts in November 2026', 'Start now' says 'The November and December 2026 pages', and photo 10 says 'Nov and Dec 2026 included', but the file and title start Mon Oct 26, 2026. The copy says 'begin this week', yet a buyer on Oct 21-25 has no page for this week.",
+   "where": "listing.description; photo-10-ph10_inside.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "Alt text doesn't match the photos. Photo 2's alt says 'labels pointing to Today's top 3, Time blocks...' but the photo has no callouts. Photo 9's alt names only a month and a week page, but a day page is shown too. Photo 10's alt promises a list of page types the photo doesn't have.",
+   "where": "listing.alt.ph2_day; listing.alt.ph9_headstart; listing.alt.ph10_inside",
+   "severity": "low"
+  },
+  {
+   "issue": "Photo 1 has a stray 6px coral bar on the canvas, cut off at the top edge. mock-01 copies the page accent div onto the photo body. The rear tablet (January 11 day page) has no caption.",
+   "where": "photo-01-ph1_hero.jpg; photos/mock-01-ph1_hero.html",
+   "severity": "low"
+  },
+  {
+   "issue": "Half-empty areas (r006). Contents has an empty 12th card slot and a blank band of about 150px between Months and How the links work. The energy map's right column is empty under the color key for about two thirds of its height. Setup check's left column is empty below the fix list. Dopamine and Routines columns end in about 95px of empty box.",
+   "where": "index; energy; linktest; dopamine; routines",
+   "severity": "low"
+  },
+  {
+   "issue": "Rough edges in the head start. The Oct 26-31 day pages show the trail 'October 2026', which opens the page titled November, and no tab is highlighted (OCT opens October 2027). Head-start months say 'Goals' where 2027 months say 'One goal this month'. Nov-Dec 2026 have no habit tracker or energy map.",
+   "where": "hs1026-hs1031; hs11; hs12",
+   "severity": "low"
+  },
+  {
+   "issue": "Restart step 2 still says 'Before 2027, use Head start on the Year page', even though the grid below now has November 2026 and December 2026 buttons. The instruction is stale and adds a step.",
+   "where": "restart",
+   "severity": "low"
+  },
+  {
+   "issue": "The 'The top bar, on every page' map on Start here has a HOME row with no description, set about 3px higher than YEAR beside it. 'NOTES / Notes' repeats itself.",
+   "where": "start; photo-03-ph3_start.jpg; photo-04-ph4_apps.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "Week numbers run one ahead of ISO all year (Week 1 = Dec 28-Jan 3, 53 weeks). A March 2027 buyer checking a phone or work calendar sees different week numbers.",
+   "where": "w01-w53, month week chips, day trails",
+   "severity": "low"
+  },
+  {
+   "issue": "Brain dump and Notes pages only have a forward arrow, and page 4 of 4 and page 8 of 8 have none. There is no way to go back one page; the top bar returns to page 1.",
+   "where": "dump-dump4; notes-notes8",
+   "severity": "low"
+  },
+  {
+   "issue": "On Year at a glance, row spacing varies between months in a band (February's 4 rows vs January's 5), so dates sit at uneven heights side by side.",
+   "where": "year",
+   "severity": "low"
+  },
+  {
+   "issue": "On the day page, the Energy 1 to 5 box is about 60% empty under one row of circles, and One win today and Dopamine break have a single line each. The bottom row looks sparse next to the dense time blocks.",
+   "where": "d0101, d0111, d0502, d0831, hs1027",
+   "severity": "low"
+  },
+  {
+   "issue": "The 6px coral strip is flush with the top edge just left of the tab rail. At page size it reads like a clipped tab or a render glitch, not an accent.",
+   "where": "cover, index, start, restart",
+   "severity": "low"
+  },
+  {
+   "issue": "'Still stuck? Message us on Etsy and we will help' (Setup check) and 'we'll help you set it up' (listing) come close to a service promise (r007). Better to say what the buyer can do.",
+   "where": "linktest; listing.description 'Help'",
+   "severity": "low"
+  }
+ ]
+}

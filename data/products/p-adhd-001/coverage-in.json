@@ -214,11 +214,6 @@
    "module": "guide"
   },
   {
-   "path": "/home/claude/kairos-engine/data/products/p-adhd-001/shots/routines.png",
-   "anchor": "routines",
-   "module": "checklist"
-  },
-  {
    "path": "/home/claude/kairos-engine/data/products/p-adhd-001/shots/start.png",
    "anchor": "start",
    "module": "guide"

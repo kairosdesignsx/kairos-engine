@@ -484,7 +484,6 @@
    "proves": "feature:dopamine_menu, feature:routines, complaint:c_overwhelm",
    "pages": [
     "dopamine",
-    "routines",
     "restart"
    ]
   },
@@ -609,7 +608,7 @@
      ],
      [
       "Jump to today",
-      "Tap this month below or on the tabs, then today's date. Before 2027, use Head start on the Year page. You are back in two taps."
+      "Tap this month in the grid below (Nov and Dec 2026 come first), then today's date. You are back in two taps."
      ],
      [
       "Write one thing",
@@ -970,6 +969,11 @@
    "at": "2026-10-21",
    "by": "session",
    "why": "coverage check round 5: one start date everywhere (Oct 26, 2026); top bar map no longer overflows; head start weeks under their Thursday's month"
+  },
+  {
+   "at": "2026-10-21",
+   "by": "session",
+   "why": "coverage check round 6: Start here fits, Contents and Restart list 2026 months first, photo 7 shows two readable pages"
   }
  ]
 }

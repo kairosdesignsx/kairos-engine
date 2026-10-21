@@ -1,7 +1,7 @@
 {
  "product_id": "p-adhd-001",
  "brief_id": "b-adhd-001",
- "built_at": "2026-10-21T14:22:56Z",
+ "built_at": "2026-10-21T14:35:59Z",
  "line": "planner",
  "files": [
   {
@@ -10,7 +10,7 @@
    "pages": 541
   }
  ],
- "links": 13597,
+ "links": 13598,
  "overflow": [],
  "lean": false,
  "attempts": [
@@ -2204,7 +2204,6 @@
   "m01h.png",
   "m07.png",
   "restart.png",
-  "routines.png",
   "start.png",
   "w01.png",
   "w03.png",
