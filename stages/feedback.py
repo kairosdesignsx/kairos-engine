@@ -52,6 +52,10 @@ def process():
             tally['notes'].append({"product": pid, "decision": r.get('decision'), "reasons": r.get('reasons', []), "note": r['note'], "owner": owner, "at": r.get('at')})
         if r.get('decision') == 'approve' and owner:
             d = store.product_dir(eng)
+            pub = store.read(os.path.join(d, 'published.json')) or {}
+            if pub.get('listing_id'):  # an Etsy draft already exists (for example from a test): never make a second listing
+                actions.append(f"{eng} approved: Etsy draft {pub['listing_id']} already exists, publish it in Shop Manager > Listings > Drafts")
+                continue
             build = store.read(os.path.join(d, 'build.json')) or {}
             listing = store.read(os.path.join(d, 'listing.json')) or p.get('listing', {})
             # photo names come from photos.json (kept in git): the photos folder itself only exists on the laptop and the build session

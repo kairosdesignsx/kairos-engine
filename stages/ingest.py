@@ -34,6 +34,8 @@ def results():
                 if not x:
                     continue
                 L['description'] = x.get('description', '')
+                if x.get('full_price') is not None:  # full price in the seller's currency: with EverBee's USD price it shows who runs a sale
+                    L['full_price'] = x['full_price']; L['currency'] = x.get('currency')
                 local = []
                 for rel in x.get('photos', []):
                     src = os.path.join(MIRROR, rel.replace('\\', '/'))
