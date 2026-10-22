@@ -178,6 +178,9 @@ def _competitor_pass(listings, base):
             info = call('GET', f'/listings/{lid}')
             rec['description'] = info.get('description', '')
             rec['title'] = info.get('title', '')
+            pr = info.get('price') or {}
+            if pr.get('divisor'):  # the listing's full price in the seller's own currency (EverBee shows the price buyers pay now, in USD)
+                rec['full_price'] = pr['amount'] / pr['divisor']; rec['currency'] = pr.get('currency_code')
             imgs = call('GET', f'/listings/{lid}/images').get('results', [])
             rec['photos'] = []
             for i, im in enumerate(imgs, 1):
