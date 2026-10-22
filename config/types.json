@@ -39,7 +39,8 @@
    "neurodivergent",
    "executive function",
    "add "
-  ]
+  ],
+  "group": "ADHD"
  },
  "google-sheets-budget": {
   "name": "Google Sheets budget template",
@@ -77,6 +78,34 @@
    "money",
    "savings",
    "debt"
-  ]
+  ],
+  "group": "Budgets"
+ },
+ "remarkable-planner-template": {
+  "name": "Remarkable planner template",
+  "query": "remarkable planner template",
+  "line": "planner",
+  "group": "E-ink templates",
+  "format": "Planner templates for e-ink tablets (PDF)",
+  "include_any": [
+   "boox",
+   "e-ink",
+   "kindle scribe",
+   "remarkable",
+   "supernote"
+  ],
+  "exclude_any": [
+   "physical",
+   "notion",
+   "plr",
+   "mrr",
+   "sticker"
+  ],
+  "focus_any": [
+   "remarkable",
+   "planner"
+  ],
+  "added_by": "picker",
+  "added_at": "2026-10-22T10:17:26Z"
  }
 }

@@ -1,0 +1,229 @@
+{
+ "_how": "Which product line can build each market group, and the starting relevance words for a new type's teardown. line null = no line yet (the picker lists it under needs_line). fit < 1 = the line can build it but needs new modules or a new format. family: groups that sell to the same buyer; a type in the same family counts as overlap.",
+ "Digital planners": {
+  "line": "planner",
+  "fit": 1.0,
+  "format": "Hyperlinked digital planner PDF for Goodnotes, Notability and other PDF apps",
+  "include_any": [
+   "digital planner",
+   "goodnotes",
+   "notability",
+   "ipad planner",
+   "hyperlinked"
+  ],
+  "exclude_any": [
+   "printable",
+   "physical",
+   "sticker",
+   "notion",
+   "plr",
+   "mrr",
+   "canva"
+  ],
+  "family": "digital-planner"
+ },
+ "ADHD": {
+  "line": "planner",
+  "fit": 1.0,
+  "format": "ADHD planner (PDF)",
+  "include_any": [
+   "adhd"
+  ],
+  "exclude_any": [
+   "physical",
+   "notion",
+   "plr",
+   "mrr",
+   "canva",
+   "sticker"
+  ],
+  "family": "digital-planner"
+ },
+ "2027 planners": {
+  "line": "planner",
+  "fit": 1.0,
+  "format": "Dated 2027 planner PDF",
+  "include_any": [
+   "2027",
+   "planner"
+  ],
+  "exclude_any": [
+   "physical",
+   "notion",
+   "plr",
+   "mrr",
+   "sticker"
+  ],
+  "family": "digital-planner"
+ },
+ "Audience planners": {
+  "line": "planner",
+  "fit": 0.85,
+  "note": "needs audience modules (business: goals, clients, content; student: classes, assignments)",
+  "format": "Digital planner for a specific audience (PDF)",
+  "include_any": [
+   "planner"
+  ],
+  "exclude_any": [
+   "physical",
+   "notion",
+   "plr",
+   "mrr",
+   "sticker",
+   "canva"
+  ],
+  "family": "audience-planner"
+ },
+ "Life planners": {
+  "line": "planner",
+  "fit": 0.85,
+  "note": "needs tracker modules (workouts, meals, measurements)",
+  "format": "Digital life or fitness planner (PDF)",
+  "include_any": [
+   "planner",
+   "tracker",
+   "journal"
+  ],
+  "exclude_any": [
+   "physical",
+   "notion",
+   "plr",
+   "mrr",
+   "sticker"
+  ],
+  "family": "life-planner"
+ },
+ "Journals": {
+  "line": "planner",
+  "fit": 0.85,
+  "note": "needs journal modules (book log, ratings, quotes)",
+  "format": "Digital journal PDF",
+  "include_any": [
+   "journal",
+   "log",
+   "tracker"
+  ],
+  "exclude_any": [
+   "physical",
+   "notion",
+   "plr",
+   "mrr",
+   "sticker",
+   "printable"
+  ],
+  "family": "journal"
+ },
+ "Printable planners": {
+  "line": "planner",
+  "fit": 0.85,
+  "note": "needs print mode (Letter and A4, no tabs, ink-light)",
+  "format": "Printable planner PDF (Letter and A4)",
+  "include_any": [
+   "printable",
+   "planner"
+  ],
+  "exclude_any": [
+   "physical",
+   "notion",
+   "plr",
+   "mrr",
+   "goodnotes",
+   "sticker"
+  ],
+  "family": "printable-planner"
+ },
+ "E-ink templates": {
+  "line": "planner",
+  "fit": 0.85,
+  "note": "needs e-ink format (device page sizes, grayscale, thin lines)",
+  "format": "Planner templates for e-ink tablets (PDF)",
+  "include_any": [
+   "remarkable",
+   "kindle scribe",
+   "supernote",
+   "boox",
+   "e-ink"
+  ],
+  "exclude_any": [
+   "physical",
+   "notion",
+   "plr",
+   "mrr",
+   "sticker"
+  ],
+  "family": "e-ink"
+ },
+ "Budgets": {
+  "line": "spreadsheet",
+  "fit": 1.0,
+  "format": "Budget spreadsheet for Google Sheets and Excel (digital download)",
+  "include_any": [
+   "spreadsheet",
+   "google sheets",
+   "excel",
+   "budget template",
+   "budget tracker"
+  ],
+  "exclude_any": [
+   "notion",
+   "goodnotes",
+   "printable",
+   "canva",
+   "plr",
+   "mrr",
+   "binder",
+   "physical"
+  ],
+  "family": "money-sheet"
+ },
+ "Debt and savings": {
+  "line": "spreadsheet",
+  "fit": 1.0,
+  "format": "Debt or savings tracker spreadsheet for Google Sheets and Excel",
+  "include_any": [
+   "spreadsheet",
+   "google sheets",
+   "excel",
+   "tracker"
+  ],
+  "exclude_any": [
+   "notion",
+   "goodnotes",
+   "printable",
+   "canva",
+   "plr",
+   "mrr",
+   "physical"
+  ],
+  "family": "money-sheet"
+ },
+ "Add-ons": {
+  "line": null,
+  "note": "needs an image line (sticker packs as PNG sets)"
+ },
+ "Invitations": {
+  "line": null,
+  "note": "needs an editable-template line (Canva or Templett links)"
+ },
+ "Save the dates": {
+  "line": null,
+  "note": "needs an editable-template line"
+ },
+ "Wedding websites": {
+  "line": null,
+  "note": "needs an editable-template line"
+ },
+ "Day-of paper": {
+  "line": null,
+  "note": "needs an editable-template line"
+ },
+ "Signs": {
+  "line": null,
+  "note": "needs an editable-template line"
+ },
+ "Planning": {
+  "line": null,
+  "note": "wedding planner printable: planner line print mode, after Printable planners",
+  "family": "wedding"
+ }
+}

@@ -15,3 +15,5 @@ laptop/.env
 laptop/tokens.json
 *.env
 data/handoff/
+data/products/*/work/
+data/products/*/views/

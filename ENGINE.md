@@ -18,8 +18,10 @@ Paths below are relative to the repo root (where this file is). Run `./setup.sh`
 - Keep the main context small: EverBee calls and review coding go to subagents (briefs in prompts/).
 
 ## Stage 0. Plan tonight
-1. `python3 run.py plan` writes runs/<id>/plan.json: which product types get teardowns, how many new products,
-   which fixes from Darren's reviews (max from config `nightly`).
+1. `python3 run.py plan` writes runs/<id>/plan.json. It runs the picker (stages/pick.py: market research x what the
+   lines can build x overlap with what we already make), adds the top picks as new types (config `nightly.new_types_per_night`),
+   lists teardowns, fixes from Darren's reviews, and new products. A type gets no new product while its last one waits
+   for Darren's review: learn before repeating. data/plan/picks.md says why each idea ranks where it does.
 2. Read the plan. If a fix or a reject reason teaches something general ("text too small"), it is already in
    data/learn/style-rules.json via the Feedback stage; briefs read it.
 

@@ -50,6 +50,16 @@ def plan():
     types = store.read(os.path.join(store.ROOT, 'config', 'types.json'))
     cfg = store.CONFIG
     now = dt.datetime.now(dt.timezone.utc)
+    # new product types from the picker (market research x what the lines can build x overlap with what we make)
+    sys.path.insert(0, os.path.join(store.ROOT, 'stages'))
+    import pick
+    picked = pick.run()
+    added = []
+    pending_new = [t for t in types if not store.read(os.path.join(store.type_dir(t), 'evidence.json'))]
+    for p in (store.read(os.path.join(store.DATA, 'plan', 'picks.json')) or {}).get('picks', [])[:max(0, cfg['nightly'].get('new_types_per_night', 1) - len(pending_new))]:
+        r = pick.add(p['idea'])
+        added.append({"type_id": r['type_id'], "idea": p['idea'], "score": p['score'], "why": p['why']})
+    types = store.read(os.path.join(store.ROOT, 'config', 'types.json'))
     teardowns = []
     for tid in types:
         ev = store.read(os.path.join(store.type_dir(tid), 'evidence.json'))
@@ -62,6 +72,12 @@ def plan():
     in_flight = [r for r in status() if r['stage'] not in ('queued',) and not r['stage'].startswith('checked: pass')]
     budget = max(0, cfg['nightly']['max_new_products'] - len(in_flight))
     ready_types = [t for t in types if store.read(os.path.join(store.type_dir(t), 'insights.json'))]
+    rows_ = status()
+    made = {r['type'] for r in rows_ if r.get('type')}
+    waiting = {r['type'] for r in rows_ if r['stage'] == 'queued'}
+    # learn before repeating: no new product of a type while its last one waits for Darren's review
+    ready_types = [t for t in ready_types if t not in waiting]
+    ready_types.sort(key=lambda t: (t in made, 0))  # types with no product yet first
     new = []
     for i in range(budget):
         if not ready_types:
@@ -71,7 +87,7 @@ def plan():
         while any(x['product_id'] == pid for x in new):
             pid = pid[:-3] + f'{int(pid[-3:]) + 1:03d}'
         new.append({"type_id": t, "product_id": pid})
-    p = {"run": run.id, "made": store.now(), "teardowns": teardowns, "fixes": fixes, "continue": in_flight, "new_products": new}
+    p = {"run": run.id, "made": store.now(), "new_types": added, "teardowns": teardowns, "fixes": fixes, "continue": in_flight, "new_products": new}
     store.write(os.path.join(run.dir, 'plan.json'), p)
     run.stage('plan', 'done', teardowns=len(teardowns), fixes=len(fixes), new=len(new), continuing=len(in_flight))
     return p

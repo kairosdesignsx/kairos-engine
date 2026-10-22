@@ -1,0 +1,27 @@
+{
+ "run": "20261022-1017",
+ "made": "2026-10-22T10:17:26Z",
+ "new_types": [
+  {
+   "type_id": "remarkable-planner-template",
+   "idea": "remarkable planner template",
+   "score": 68.8,
+   "why": [
+    "market 81 (Go)",
+    "597 searches a month",
+    "7,454 listings",
+    "top-10 median $2,330/mo at $68.03",
+    "line planner needs: needs e-ink format (device page sizes, grayscale, thin lines)"
+   ]
+  }
+ ],
+ "teardowns": [
+  {
+   "type_id": "remarkable-planner-template",
+   "reason": "no evidence yet"
+  }
+ ],
+ "fixes": [],
+ "continue": [],
+ "new_products": []
+}

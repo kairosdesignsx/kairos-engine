@@ -1,0 +1,868 @@
+{
+ "made": "2026-10-22T10:17:26Z",
+ "source": "data/market/opportunities.json",
+ "picks": [
+  {
+   "idea": "remarkable planner template",
+   "group": "E-ink templates",
+   "line": "planner",
+   "score": 68.8,
+   "market": 81,
+   "call": "Go",
+   "type_id": "remarkable-planner-template",
+   "why": [
+    "market 81 (Go)",
+    "597 searches a month",
+    "7,454 listings",
+    "top-10 median $2,330/mo at $68.03",
+    "line planner needs: needs e-ink format (device page sizes, grayscale, thin lines)"
+   ],
+   "rank": 1
+  },
+  {
+   "idea": "reading journal digital",
+   "group": "Journals",
+   "line": "planner",
+   "score": 63.8,
+   "market": 75,
+   "call": "Go",
+   "type_id": "reading-journal-digital",
+   "why": [
+    "market 75 (Go)",
+    "990 searches a month",
+    "20,470 listings",
+    "top-10 median $1,996/mo at $18.49",
+    "line planner needs: needs journal modules (book log, ratings, quotes)"
+   ],
+   "rank": 2
+  },
+  {
+   "idea": "weekly planner printable",
+   "group": "Printable planners",
+   "line": "planner",
+   "score": 62.9,
+   "market": 74,
+   "call": "Go",
+   "type_id": "weekly-planner-printable",
+   "why": [
+    "market 74 (Go)",
+    "1,473 searches a month",
+    "153,792 listings",
+    "top-10 median $1,812/mo at $35.78",
+    "line planner needs: needs print mode (Letter and A4, no tabs, ink-light)",
+    "Same #1 listing as 3 other types"
+   ],
+   "rank": 3
+  },
+  {
+   "idea": "business planner digital",
+   "group": "Audience planners",
+   "line": "planner",
+   "score": 61.2,
+   "market": 72,
+   "call": "Go",
+   "type_id": "business-planner-digital",
+   "why": [
+    "market 72 (Go)",
+    "542 searches a month",
+    "41,278 listings",
+    "top-10 median $1,258/mo at $44.89",
+    "line planner needs: needs audience modules (business: goals, clients, content; student: classes, assignments)"
+   ],
+   "rank": 4
+  },
+  {
+   "idea": "kindle scribe template",
+   "group": "E-ink templates",
+   "line": "planner",
+   "score": 59.5,
+   "market": 70,
+   "call": "Go",
+   "type_id": "kindle-scribe-template",
+   "why": [
+    "market 70 (Go)",
+    "302 searches a month",
+    "2,539 listings",
+    "top-10 median $658/mo at $36.11",
+    "line planner needs: needs e-ink format (device page sizes, grayscale, thin lines)"
+   ],
+   "rank": 5
+  },
+  {
+   "idea": "daily planner printable",
+   "group": "Printable planners",
+   "line": "planner",
+   "score": 56.1,
+   "market": 66,
+   "call": "Go",
+   "type_id": "daily-planner-printable",
+   "why": [
+    "market 66 (Go)",
+    "1,505 searches a month",
+    "155,216 listings",
+    "top-10 median $1,299/mo at $38.34",
+    "line planner needs: needs print mode (Letter and A4, no tabs, ink-light)",
+    "Same #1 listing as 3 other types"
+   ],
+   "rank": 6
+  },
+  {
+   "idea": "fitness planner digital",
+   "group": "Life planners",
+   "line": "planner",
+   "score": 52.7,
+   "market": 62,
+   "call": "Go",
+   "type_id": "fitness-planner-digital",
+   "why": [
+    "market 62 (Go)",
+    "747 searches a month",
+    "23,223 listings",
+    "top-10 median $452/mo at $18.91",
+    "line planner needs: needs tracker modules (workouts, meals, measurements)"
+   ],
+   "rank": 7
+  },
+  {
+   "idea": "student planner digital 2026 2027",
+   "group": "Audience planners",
+   "line": "planner",
+   "score": 52.7,
+   "market": 62,
+   "call": "Go",
+   "type_id": "student-planner-digital-2026-2027",
+   "why": [
+    "market 62 (Go)",
+    "1 searches a month",
+    "872 listings",
+    "top-10 median $944/mo at $13.25",
+    "line planner needs: needs audience modules (business: goals, clients, content; student: classes, assignments)",
+    "No search data"
+   ],
+   "rank": 8
+  },
+  {
+   "idea": "self care planner",
+   "group": "Life planners",
+   "line": "planner",
+   "score": 49.3,
+   "market": 58,
+   "call": "Test",
+   "type_id": "self-care-planner",
+   "why": [
+    "market 58 (Test)",
+    "1,412 searches a month",
+    "109,738 listings",
+    "top-10 median $594/mo at $19.66",
+    "line planner needs: needs tracker modules (workouts, meals, measurements)"
+   ],
+   "rank": 9
+  },
+  {
+   "idea": "meal planner printable",
+   "group": "Life planners",
+   "line": "planner",
+   "score": 47.6,
+   "market": 56,
+   "call": "Test",
+   "type_id": "meal-planner-printable",
+   "why": [
+    "market 56 (Test)",
+    "55 searches a month",
+    "55,896 listings",
+    "top-10 median $726/mo at $14.48",
+    "line planner needs: needs tracker modules (workouts, meals, measurements)"
+   ],
+   "rank": 10
+  },
+  {
+   "idea": "goodnotes planner",
+   "group": "Digital planners",
+   "line": "planner",
+   "score": 46.2,
+   "market": 84,
+   "call": "Go",
+   "type_id": "goodnotes-planner",
+   "why": [
+    "market 84 (Go)",
+    "4,833 searches a month",
+    "158,587 listings",
+    "top-10 median $2,720/mo at $21.26",
+    "overlaps a type we already make (digital-planner)",
+    "Same #1 listing as 3 other types"
+   ],
+   "rank": 11
+  },
+  {
+   "idea": "boox planner template",
+   "group": "E-ink templates",
+   "line": "planner",
+   "score": 45.0,
+   "market": 53,
+   "call": "Test",
+   "type_id": "boox-planner-template",
+   "why": [
+    "market 53 (Test)",
+    "42 searches a month",
+    "561 listings",
+    "top-10 median $204/mo at $19.99",
+    "line planner needs: needs e-ink format (device page sizes, grayscale, thin lines)",
+    "Same #1 listing as 3 other types"
+   ],
+   "rank": 12
+  },
+  {
+   "idea": "teacher planner digital",
+   "group": "Audience planners",
+   "line": "planner",
+   "score": 43.4,
+   "market": 51,
+   "call": "Test",
+   "type_id": "teacher-planner-digital",
+   "why": [
+    "market 51 (Test)",
+    "797 searches a month",
+    "16,013 listings",
+    "top-10 median $508/mo at $16.91",
+    "line planner needs: needs audience modules (business: goals, clients, content; student: classes, assignments)"
+   ],
+   "rank": 13
+  },
+  {
+   "idea": "digital planner",
+   "group": "Digital planners",
+   "line": "planner",
+   "score": 42.9,
+   "market": 78,
+   "call": "Go",
+   "type_id": "digital-planner",
+   "why": [
+    "market 78 (Go)",
+    "4,926 searches a month",
+    "734,436 listings",
+    "top-10 median $4,592/mo at $21.84",
+    "overlaps a type we already make (digital-planner)",
+    "Same #1 listing as 2 other types"
+   ],
+   "rank": 14
+  },
+  {
+   "idea": "2027 digital planner",
+   "group": "2027 planners",
+   "line": "planner",
+   "score": 41.8,
+   "market": 76,
+   "call": "Go",
+   "type_id": "2027-digital-planner",
+   "why": [
+    "market 76 (Go)",
+    "241 searches a month",
+    "15,173 listings",
+    "top-10 median $2,814/mo at $23.50",
+    "overlaps a type we already make (digital-planner)",
+    "Same #1 listing as 2 other types"
+   ],
+   "rank": 15
+  },
+  {
+   "idea": "2027 printable planner",
+   "group": "2027 planners",
+   "line": "planner",
+   "score": 41.2,
+   "market": 75,
+   "call": "Go",
+   "type_id": "2027-printable-planner",
+   "why": [
+    "market 75 (Go)",
+    "1 searches a month",
+    "14,360 listings",
+    "top-10 median $1,996/mo at $25.63",
+    "overlaps a type we already make (digital-planner)",
+    "Same #1 listing as 2 other types; No search data"
+   ],
+   "rank": 16
+  },
+  {
+   "idea": "android digital planner",
+   "group": "Digital planners",
+   "line": "planner",
+   "score": 40.7,
+   "market": 74,
+   "call": "Go",
+   "type_id": "android-digital-planner",
+   "why": [
+    "market 74 (Go)",
+    "1,671 searches a month",
+    "7,929 listings",
+    "top-10 median $1,456/mo at $33.98",
+    "overlaps a type we already make (digital-planner)",
+    "Same #1 listing as 3 other types"
+   ],
+   "rank": 17
+  },
+  {
+   "idea": "budget tracker spreadsheet",
+   "group": "Budgets",
+   "line": "spreadsheet",
+   "score": 38.5,
+   "market": 70,
+   "call": "Test",
+   "type_id": "budget-tracker-spreadsheet",
+   "why": [
+    "market 70 (Test)",
+    "2,078 searches a month",
+    "45,410 listings",
+    "top-10 median $3,658/mo at $20.48",
+    "overlaps a type we already make (money-sheet)",
+    "Same #1 listing as 6 other types; Held by old shops"
+   ],
+   "rank": 18
+  },
+  {
+   "idea": "budget planner spreadsheet",
+   "group": "Budgets",
+   "line": "spreadsheet",
+   "score": 38.5,
+   "market": 70,
+   "call": "Test",
+   "type_id": "budget-planner-spreadsheet",
+   "why": [
+    "market 70 (Test)",
+    "2,105 searches a month",
+    "44,349 listings",
+    "top-10 median $3,658/mo at $20.48",
+    "overlaps a type we already make (money-sheet)",
+    "Same #1 listing as 6 other types; Held by old shops"
+   ],
+   "rank": 19
+  },
+  {
+   "idea": "monthly budget spreadsheet",
+   "group": "Budgets",
+   "line": "spreadsheet",
+   "score": 38.0,
+   "market": 69,
+   "call": "Go",
+   "type_id": "monthly-budget-spreadsheet",
+   "why": [
+    "market 69 (Go)",
+    "1,609 searches a month",
+    "21,110 listings",
+    "top-10 median $2,170/mo at $19.65",
+    "overlaps a type we already make (money-sheet)",
+    "Same #1 listing as 6 other types"
+   ],
+   "rank": 20
+  },
+  {
+   "idea": "adhd printable planner",
+   "group": "ADHD",
+   "line": "planner",
+   "score": 36.9,
+   "market": 67,
+   "call": "Go",
+   "type_id": "adhd-printable-planner",
+   "why": [
+    "market 67 (Go)",
+    "1,000 searches a month",
+    "43,591 listings",
+    "top-10 median $1,102/mo at $13.49",
+    "overlaps a type we already make (digital-planner)",
+    "Same #1 listing as 3 other types"
+   ],
+   "rank": 21
+  },
+  {
+   "idea": "annual budget spreadsheet",
+   "group": "Budgets",
+   "line": "spreadsheet",
+   "score": 36.9,
+   "market": 67,
+   "call": "Go",
+   "type_id": "annual-budget-spreadsheet",
+   "why": [
+    "market 67 (Go)",
+    "757 searches a month",
+    "5,811 listings",
+    "top-10 median $1,831/mo at $24.58",
+    "overlaps a type we already make (money-sheet)",
+    "Same #1 listing as 6 other types"
+   ],
+   "rank": 22
+  },
+  {
+   "idea": "adhd cleaning checklist",
+   "group": "ADHD",
+   "line": "planner",
+   "score": 36.3,
+   "market": 66,
+   "call": "Go",
+   "type_id": "adhd-cleaning-checklist",
+   "why": [
+    "market 66 (Go)",
+    "661 searches a month",
+    "8,586 listings",
+    "top-10 median $732/mo at $13.34",
+    "overlaps a type we already make (digital-planner)"
+   ],
+   "rank": 23
+  },
+  {
+   "idea": "paycheck budget template",
+   "group": "Budgets",
+   "line": "spreadsheet",
+   "score": 36.3,
+   "market": 66,
+   "call": "Go",
+   "type_id": "paycheck-budget-template",
+   "why": [
+    "market 66 (Go)",
+    "1,229 searches a month",
+    "9,831 listings",
+    "top-10 median $1,162/mo at $16.54",
+    "overlaps a type we already make (money-sheet)",
+    "Same #1 listing as 1 other type"
+   ],
+   "rank": 24
+  },
+  {
+   "idea": "budget spreadsheet excel",
+   "group": "Budgets",
+   "line": "spreadsheet",
+   "score": 35.8,
+   "market": 65,
+   "call": "Go",
+   "type_id": "budget-spreadsheet-excel",
+   "why": [
+    "market 65 (Go)",
+    "1,181 searches a month",
+    "28,593 listings",
+    "top-10 median $2,015/mo at $18.24",
+    "overlaps a type we already make (money-sheet)",
+    "Same #1 listing as 6 other types"
+   ],
+   "rank": 25
+  },
+  {
+   "idea": "gratitude journal digital",
+   "group": "Journals",
+   "line": "planner",
+   "score": 35.7,
+   "market": 42,
+   "call": "Test",
+   "type_id": "gratitude-journal-digital",
+   "why": [
+    "market 42 (Test)",
+    "303 searches a month",
+    "22,488 listings",
+    "top-10 median $217/mo at $13.54",
+    "line planner needs: needs journal modules (book log, ratings, quotes)"
+   ],
+   "rank": 26
+  },
+  {
+   "idea": "debt payoff tracker spreadsheet",
+   "group": "Debt and savings",
+   "line": "spreadsheet",
+   "score": 34.1,
+   "market": 62,
+   "call": "Go",
+   "type_id": "debt-payoff-tracker-spreadsheet",
+   "why": [
+    "market 62 (Go)",
+    "290 searches a month",
+    "7,416 listings",
+    "top-10 median $1,204/mo at $20.07",
+    "overlaps a type we already make (money-sheet)"
+   ],
+   "rank": 27
+  },
+  {
+   "idea": "couples budget spreadsheet",
+   "group": "Budgets",
+   "line": "spreadsheet",
+   "score": 33.6,
+   "market": 61,
+   "call": "Test",
+   "type_id": "couples-budget-spreadsheet",
+   "why": [
+    "market 61 (Test)",
+    "337 searches a month",
+    "1,989 listings",
+    "top-10 median $1,272/mo at $19.65",
+    "overlaps a type we already make (money-sheet)",
+    "Same #1 listing as 6 other types"
+   ],
+   "rank": 28
+  },
+  {
+   "idea": "undated digital planner",
+   "group": "Digital planners",
+   "line": "planner",
+   "score": 32.5,
+   "market": 59,
+   "call": "Test",
+   "type_id": "undated-digital-planner",
+   "why": [
+    "market 59 (Test)",
+    "126 searches a month",
+    "46,866 listings",
+    "top-10 median $1,918/mo at $29.41",
+    "overlaps a type we already make (digital-planner)"
+   ],
+   "rank": 29
+  },
+  {
+   "idea": "sinking funds tracker",
+   "group": "Debt and savings",
+   "line": "spreadsheet",
+   "score": 32.5,
+   "market": 59,
+   "call": "Test",
+   "type_id": "sinking-funds-tracker",
+   "why": [
+    "market 59 (Test)",
+    "153 searches a month",
+    "21,220 listings",
+    "top-10 median $707/mo at $24.04",
+    "overlaps a type we already make (money-sheet)",
+    "Same #1 listing as 1 other type"
+   ],
+   "rank": 30
+  },
+  {
+   "idea": "debt snowball tracker",
+   "group": "Debt and savings",
+   "line": "spreadsheet",
+   "score": 31.9,
+   "market": 58,
+   "call": "Test",
+   "type_id": "debt-snowball-tracker",
+   "why": [
+    "market 58 (Test)",
+    "465 searches a month",
+    "9,166 listings",
+    "top-10 median $838/mo at $15.41",
+    "overlaps a type we already make (money-sheet)",
+    "Same #1 listing as 1 other type"
+   ],
+   "rank": 31
+  },
+  {
+   "idea": "savings challenge printable",
+   "group": "Debt and savings",
+   "line": "spreadsheet",
+   "score": 27.0,
+   "market": 49,
+   "call": "Test",
+   "type_id": "savings-challenge-printable",
+   "why": [
+    "market 49 (Test)",
+    "176 searches a month",
+    "41,229 listings",
+    "top-10 median $530/mo at $11.50",
+    "overlaps a type we already make (money-sheet)",
+    "Same #1 listing as 1 other type"
+   ],
+   "rank": 32
+  },
+  {
+   "idea": "adhd chore chart adults",
+   "group": "ADHD",
+   "line": "planner",
+   "score": 25.9,
+   "market": 47,
+   "call": "Test",
+   "type_id": "adhd-chore-chart-adults",
+   "why": [
+    "market 47 (Test)",
+    "206 searches a month",
+    "1,594 listings",
+    "top-10 median $210/mo at $11.24",
+    "overlaps a type we already make (digital-planner)"
+   ],
+   "rank": 33
+  },
+  {
+   "idea": "net worth tracker spreadsheet",
+   "group": "Debt and savings",
+   "line": "spreadsheet",
+   "score": 24.2,
+   "market": 44,
+   "call": "Test",
+   "type_id": "net-worth-tracker-spreadsheet",
+   "why": [
+    "market 44 (Test)",
+    "76 searches a month",
+    "2,842 listings",
+    "top-10 median $364/mo at $13.48",
+    "overlaps a type we already make (money-sheet)"
+   ],
+   "rank": 34
+  },
+  {
+   "idea": "2027 calendar printable",
+   "group": "2027 planners",
+   "line": "planner",
+   "score": 23.7,
+   "market": 43,
+   "call": "Test",
+   "type_id": "2027-calendar-printable",
+   "why": [
+    "market 43 (Test)",
+    "21 searches a month",
+    "13,410 listings",
+    "top-10 median $408/mo at $21.48",
+    "overlaps a type we already make (digital-planner)"
+   ],
+   "rank": 35
+  },
+  {
+   "idea": "50 30 20 budget spreadsheet",
+   "group": "Budgets",
+   "line": "spreadsheet",
+   "score": 22.0,
+   "market": 40,
+   "call": "Test",
+   "type_id": "50-30-20-budget-spreadsheet",
+   "why": [
+    "market 40 (Test)",
+    "277 searches a month",
+    "1,433 listings",
+    "top-10 median $173/mo at $18.77",
+    "overlaps a type we already make (money-sheet)"
+   ],
+   "rank": 36
+  }
+ ],
+ "needs_line": [
+  {
+   "idea": "digital stickers goodnotes",
+   "group": "Add-ons",
+   "market": 83,
+   "why": "needs an image line (sticker packs as PNG sets)"
+  },
+  {
+   "idea": "wedding invitation template editable",
+   "group": "Invitations",
+   "market": 77,
+   "why": "needs an editable-template line (Canva or Templett links)"
+  },
+  {
+   "idea": "save the date template",
+   "group": "Save the dates",
+   "market": 72,
+   "why": "needs an editable-template line"
+  },
+  {
+   "idea": "wedding invitation suite template",
+   "group": "Invitations",
+   "market": 67,
+   "why": "needs an editable-template line (Canva or Templett links)"
+  },
+  {
+   "idea": "wedding website template canva",
+   "group": "Wedding websites",
+   "market": 66,
+   "why": "needs an editable-template line"
+  },
+  {
+   "idea": "table number template",
+   "group": "Day-of paper",
+   "market": 65,
+   "why": "needs an editable-template line"
+  },
+  {
+   "idea": "wedding itinerary template",
+   "group": "Day-of paper",
+   "market": 65,
+   "why": "needs an editable-template line"
+  },
+  {
+   "idea": "wedding welcome sign template",
+   "group": "Signs",
+   "market": 63,
+   "why": "needs an editable-template line"
+  },
+  {
+   "idea": "wedding planner printable",
+   "group": "Planning",
+   "market": 63,
+   "why": "wedding planner printable: planner line print mode, after Printable planners"
+  },
+  {
+   "idea": "digital wedding invitation evite",
+   "group": "Invitations",
+   "market": 62,
+   "why": "needs an editable-template line (Canva or Templett links)"
+  },
+  {
+   "idea": "wedding seating chart template",
+   "group": "Signs",
+   "market": 62,
+   "why": "needs an editable-template line"
+  },
+  {
+   "idea": "wedding sign bundle template",
+   "group": "Signs",
+   "market": 62,
+   "why": "needs an editable-template line"
+  },
+  {
+   "idea": "wedding rsvp card template",
+   "group": "Stationery",
+   "market": 61,
+   "why": "no line can build this yet"
+  },
+  {
+   "idea": "budget binder printable",
+   "group": "Printable budget",
+   "market": 61,
+   "why": "no line can build this yet"
+  },
+  {
+   "idea": "bridal shower invitation template",
+   "group": "Pre-wedding events",
+   "market": 60,
+   "why": "no line can build this yet"
+  },
+  {
+   "idea": "wedding day timeline template",
+   "group": "Planning",
+   "market": 59,
+   "why": "wedding planner printable: planner line print mode, after Printable planners"
+  },
+  {
+   "idea": "habit tracker printable",
+   "group": "Trackers",
+   "market": 59,
+   "why": "no line can build this yet"
+  },
+  {
+   "idea": "wedding budget spreadsheet",
+   "group": "Planning",
+   "market": 58,
+   "why": "wedding planner printable: planner line print mode, after Printable planners"
+  },
+  {
+   "idea": "budget planner printable",
+   "group": "Printable budget",
+   "market": 58,
+   "why": "no line can build this yet"
+  },
+  {
+   "idea": "small business bookkeeping spreadsheet",
+   "group": "Business",
+   "market": 57,
+   "why": "no line can build this yet"
+  },
+  {
+   "idea": "income expense tracker spreadsheet",
+   "group": "Business",
+   "market": 57,
+   "why": "no line can build this yet"
+  },
+  {
+   "idea": "digital notebook goodnotes",
+   "group": "Add-ons",
+   "market": 56,
+   "why": "needs an image line (sticker packs as PNG sets)"
+  },
+  {
+   "idea": "grocery budget tracker",
+   "group": "Life events",
+   "market": 56,
+   "why": "no line can build this yet"
+  },
+  {
+   "idea": "video wedding invitation template",
+   "group": "Invitations",
+   "market": 55,
+   "why": "needs an editable-template line (Canva or Templett links)"
+  },
+  {
+   "idea": "wedding program template",
+   "group": "Day-of paper",
+   "market": 55,
+   "why": "needs an editable-template line"
+  },
+  {
+   "idea": "wedding guest list spreadsheet",
+   "group": "Planning",
+   "market": 55,
+   "why": "wedding planner printable: planner line print mode, after Printable planners"
+  },
+  {
+   "idea": "bachelorette party invitation template",
+   "group": "Pre-wedding events",
+   "market": 54,
+   "why": "no line can build this yet"
+  },
+  {
+   "idea": "cash stuffing printable",
+   "group": "Cash envelopes",
+   "market": 54,
+   "why": "no line can build this yet"
+  },
+  {
+   "idea": "wedding details card template",
+   "group": "Stationery",
+   "market": 53,
+   "why": "no line can build this yet"
+  },
+  {
+   "idea": "bachelorette itinerary template",
+   "group": "Pre-wedding events",
+   "market": 50,
+   "why": "no line can build this yet"
+  },
+  {
+   "idea": "place card template wedding",
+   "group": "Day-of paper",
+   "market": 48,
+   "why": "needs an editable-template line"
+  },
+  {
+   "idea": "save the date video template",
+   "group": "Save the dates",
+   "market": 47,
+   "why": "needs an editable-template line"
+  },
+  {
+   "idea": "etsy seller spreadsheet",
+   "group": "Business",
+   "market": 46,
+   "why": "no line can build this yet"
+  },
+  {
+   "idea": "travel budget planner",
+   "group": "Life events",
+   "market": 46,
+   "why": "no line can build this yet"
+  },
+  {
+   "idea": "bill tracker printable",
+   "group": "Printable budget",
+   "market": 43,
+   "why": "no line can build this yet"
+  },
+  {
+   "idea": "wedding thank you card template",
+   "group": "Stationery",
+   "market": 42,
+   "why": "no line can build this yet"
+  },
+  {
+   "idea": "freelancer invoice tracker",
+   "group": "Business",
+   "market": 41,
+   "why": "no line can build this yet"
+  },
+  {
+   "idea": "home renovation budget spreadsheet",
+   "group": "Life events",
+   "market": 40,
+   "why": "no line can build this yet"
+  }
+ ]
+}
