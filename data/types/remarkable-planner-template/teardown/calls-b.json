@@ -1,0 +1,355 @@
+{
+ "type_id": "remarkable-planner-template",
+ "made": "2026-10-22T14:19:13Z",
+ "shops": [
+  "StudioPiksels",
+  "ePaperTemplates",
+  "ePlanneryStudio",
+  "TabletTemplates",
+  "SmartTemplatesStudio",
+  "novaMarkable",
+  "WrittenThinking",
+  "InkyDeal",
+  "DesignersKitCo",
+  "Pathfounder",
+  "PrintMagicStudioX",
+  "eNotebook"
+ ],
+ "calls": [
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "StudioPiksels",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "StudioPiksels",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "StudioPiksels",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "ePaperTemplates",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "ePaperTemplates",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "ePaperTemplates",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "ePlanneryStudio",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "ePlanneryStudio",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "ePlanneryStudio",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "TabletTemplates",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "TabletTemplates",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "TabletTemplates",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "SmartTemplatesStudio",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "SmartTemplatesStudio",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "SmartTemplatesStudio",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "novaMarkable",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "novaMarkable",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "novaMarkable",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "WrittenThinking",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "WrittenThinking",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "WrittenThinking",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "InkyDeal",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "InkyDeal",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "InkyDeal",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "DesignersKitCo",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "DesignersKitCo",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "DesignersKitCo",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "Pathfounder",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "Pathfounder",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "Pathfounder",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PrintMagicStudioX",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PrintMagicStudioX",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PrintMagicStudioX",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "eNotebook",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "eNotebook",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "eNotebook",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "StudioPiksels"
+   },
+   "optional": true
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "ePaperTemplates"
+   },
+   "optional": true
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "ePlanneryStudio"
+   },
+   "optional": true
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "TabletTemplates"
+   },
+   "optional": true
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "SmartTemplatesStudio"
+   },
+   "optional": true
+  }
+ ]
+}

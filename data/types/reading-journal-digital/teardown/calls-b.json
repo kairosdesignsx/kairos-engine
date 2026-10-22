@@ -1,0 +1,355 @@
+{
+ "type_id": "reading-journal-digital",
+ "made": "2026-10-22T14:19:13Z",
+ "shops": [
+  "HeyMorning",
+  "TheFlowPlanner",
+  "Evelibrary",
+  "NestForYourPlans",
+  "LetsPlanPlanners",
+  "LiveLovePlanners",
+  "ExclusiveDesignLab",
+  "HappyDownloads",
+  "ThrivingPlanners",
+  "MyProductiveLifeCo",
+  "PlannedSplendor",
+  "NyxiaJournals"
+ ],
+ "calls": [
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "HeyMorning",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "HeyMorning",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "HeyMorning",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "TheFlowPlanner",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "TheFlowPlanner",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "TheFlowPlanner",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "Evelibrary",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "Evelibrary",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "Evelibrary",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "NestForYourPlans",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "NestForYourPlans",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "NestForYourPlans",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "LetsPlanPlanners",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "LetsPlanPlanners",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "LetsPlanPlanners",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "LiveLovePlanners",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "LiveLovePlanners",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "LiveLovePlanners",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "ExclusiveDesignLab",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "ExclusiveDesignLab",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "ExclusiveDesignLab",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "HappyDownloads",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "HappyDownloads",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "HappyDownloads",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "ThrivingPlanners",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "ThrivingPlanners",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "ThrivingPlanners",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "MyProductiveLifeCo",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "MyProductiveLifeCo",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "MyProductiveLifeCo",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PlannedSplendor",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PlannedSplendor",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PlannedSplendor",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "NyxiaJournals",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "NyxiaJournals",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "NyxiaJournals",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "HeyMorning"
+   },
+   "optional": true
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "TheFlowPlanner"
+   },
+   "optional": true
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "Evelibrary"
+   },
+   "optional": true
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "NestForYourPlans"
+   },
+   "optional": true
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "LetsPlanPlanners"
+   },
+   "optional": true
+  }
+ ]
+}

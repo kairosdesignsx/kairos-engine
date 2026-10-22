@@ -1,0 +1,142 @@
+{
+ "type_id": "reading-journal-digital",
+ "made": "2026-10-22T14:18:12Z",
+ "calls": [
+  {
+   "tool": "mcp__EverBee__validate_product_idea",
+   "input": {
+    "product_idea": "reading journal digital"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_listings",
+   "input": {
+    "params": {
+     "search_term": "reading journal digital",
+     "listing_type": "download",
+     "order_by": "est_mo_revenue",
+     "order_direction": "desc"
+    },
+    "columns": [
+     "Product",
+     "Shop Name",
+     "Price",
+     "Sales",
+     "Revenue",
+     "Total Sales",
+     "Total Reviews",
+     "Listing Age",
+     "Total Favorites",
+     "Total Views",
+     "Conversion Rate",
+     "Shop Age",
+     "Total Shop Sales",
+     "Tags",
+     "URL",
+     "Category"
+    ]
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_listings",
+   "input": {
+    "params": {
+     "search_term": "reading journal digital",
+     "listing_type": "download",
+     "order_by": "est_mo_revenue",
+     "order_direction": "desc",
+     "page": 2
+    },
+    "columns": [
+     "Product",
+     "Shop Name",
+     "Price",
+     "Sales",
+     "Revenue",
+     "Total Sales",
+     "Total Reviews",
+     "Listing Age",
+     "Total Favorites",
+     "Total Views",
+     "Conversion Rate",
+     "Shop Age",
+     "Total Shop Sales",
+     "Tags",
+     "URL",
+     "Category"
+    ]
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_listings",
+   "input": {
+    "params": {
+     "search_term": "reading journal digital",
+     "listing_type": "download",
+     "order_by": "est_total_sales",
+     "order_direction": "desc"
+    },
+    "columns": [
+     "Product",
+     "Shop Name",
+     "Price",
+     "Sales",
+     "Revenue",
+     "Total Sales",
+     "Total Reviews",
+     "Listing Age",
+     "Total Favorites",
+     "Total Views",
+     "Conversion Rate",
+     "Shop Age",
+     "Total Shop Sales",
+     "Tags",
+     "URL",
+     "Category"
+    ]
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_listings",
+   "input": {
+    "params": {
+     "search_term": "reading journal digital",
+     "listing_type": "download",
+     "order_by": "est_total_sales",
+     "order_direction": "desc",
+     "page": 2
+    },
+    "columns": [
+     "Product",
+     "Shop Name",
+     "Price",
+     "Sales",
+     "Revenue",
+     "Total Sales",
+     "Total Reviews",
+     "Listing Age",
+     "Total Favorites",
+     "Total Views",
+     "Conversion Rate",
+     "Shop Age",
+     "Total Shop Sales",
+     "Tags",
+     "URL",
+     "Category"
+    ]
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_tag_patterns",
+   "input": {
+    "params": {
+     "search_term": "reading journal digital",
+     "listing_type": "download",
+     "order_by": "est_total_sales",
+     "order_direction": "desc",
+     "per_page": 20
+    }
+   }
+  }
+ ]
+}
