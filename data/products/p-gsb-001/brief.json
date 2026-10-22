@@ -1,0 +1,690 @@
+{
+ "brief_id": "b-gsb-001",
+ "product_id": "p-gsb-001",
+ "type_id": "google-sheets-budget",
+ "line": "spreadsheet",
+ "created_at": "2026-10-22T15:35:00+08:00",
+ "positioning": "For first-time and returning budgeters who want a budget that works on day one: a real .xlsx file that opens in Google Sheets or Excel with no view-only link and no access request, a Start here tab whose live Ready check tells you what is done and catches the mistakes that make other templates' formulas 'break', and only the tabs a budget needs (Setup, 12 months, Dashboard, plus four optional extras). Top sellers compete on 'ultimate' feature counts, while their buyers' biggest complaints are hard to use, could not get access, and confusing setup, so this one wins by working first time and staying simple.",
+ "must_haves": [
+  {
+   "id": "mh_apps",
+   "what": "One .xlsx workbook that opens in Google Sheets (upload to Drive, open with Google Sheets) and in Excel (Microsoft 365, Excel 2019 or newer, or the free Excel for the web). Named in the title, first photo and description.",
+   "evidence": [
+    "feature:google_sheets",
+    "feature:excel",
+    "wish:w_excel",
+    "keyword:google sheets budget",
+    "keyword:budget tracker excel"
+   ]
+  },
+  {
+   "id": "mh_monthly",
+   "what": "Twelve month tabs: income for the month, a 4-column spending log (date, what, category dropdown, amount) and budget vs actual per category with a progress bar and over-budget warning. Undated tab names (January to December) so any start month works.",
+   "evidence": [
+    "feature:monthly",
+    "feature:expense",
+    "keyword:monthly budget",
+    "keyword:expense tracker",
+    "praise:p_automated",
+    "complaint:c_not_useful"
+   ]
+  },
+  {
+   "id": "mh_dashboard",
+   "what": "A Dashboard tab with the year by month (income, spent, left over, saved), savings rate, spending by category for the whole year, a bar chart and a pie chart. Months with nothing logged stay empty so totals are right for mid-year starters.",
+   "evidence": [
+    "feature:annual",
+    "feature:dashboard",
+    "praise:p_insight",
+    "wish:w_yearly_totals",
+    "keyword:annual budget"
+   ]
+  },
+  {
+   "id": "mh_paycheck",
+   "what": "A Paycheck plan tab for people paid weekly, every two weeks or twice a month: each payday in the year, which bills fall due before the next payday, and what is left from that paycheck.",
+   "evidence": [
+    "feature:paycheck",
+    "keyword:paycheck budget",
+    "keyword:biweekly budget",
+    "keyword:budget by paycheck",
+    "listing:1619225413"
+   ]
+  },
+  {
+   "id": "mh_extras",
+   "what": "Bills (due day, amount, autopay, a paid mark per month), Debt payoff (snowball or avalanche, payoff order, months and interest at the minimum) and Savings goals (progress bar, save per month to hit the date).",
+   "evidence": [
+    "feature:bills",
+    "feature:debt",
+    "feature:savings",
+    "wish:w_due_dates",
+    "keyword:debt tracker",
+    "keyword:savings tracker",
+    "praise:p_complete"
+   ]
+  },
+  {
+   "id": "mh_guide",
+   "what": "Instructions inside the workbook (Start here tab and a one-line subtitle on every tab saying what to do there), not only in a separate PDF.",
+   "evidence": [
+    "praise:p_guide",
+    "praise:p_easy",
+    "feature:instructions_inside"
+   ]
+  },
+  {
+   "id": "mh_look",
+   "what": "A finished, consistent look: one font (Arial), one header colour, one input shade, generous column widths and frozen headers.",
+   "evidence": [
+    "praise:p_look"
+   ]
+  }
+ ],
+ "fixes": [
+  {
+   "id": "f_hard",
+   "complaint": "complaint:c_hard",
+   "how": "One rule across every tab: shaded cells are for typing, plain cells calculate (the colour key is on Start here). Logging is 4 columns with a category dropdown, so there is nothing to learn beyond Setup. January ships with an example month so the buyer sees the math work before typing anything, and the Ready check on Start here says in plain words what is done and what to do next.",
+   "evidence": [
+    "complaint:c_hard",
+    "praise:p_easy",
+    "feature:sample_data"
+   ],
+   "modules": [
+    "start_check",
+    "setup",
+    "months"
+   ]
+  },
+  {
+   "id": "f_access",
+   "complaint": "complaint:c_access",
+   "how": "The download is the workbook itself (.xlsx), not a PDF with a copy link, so there is no view-only file, no 'request edit access', and no need for the Etsy email to match a Google account. Start here step 1 and listing photo 2 (how it works) give the exact route: download from Etsy.com Purchases on a computer, then Google Drive > New > File upload > Open with Google Sheets, or double-click to open in Excel. The listing FAQ adds: the Etsy phone app cannot download files; do not open the .xlsx in a browser preview.",
+   "evidence": [
+    "complaint:c_access",
+    "complaint:c_app",
+    "feature:excel",
+    "wish:w_excel"
+   ],
+   "modules": [
+    "start_check"
+   ]
+  },
+  {
+   "id": "f_not_useful",
+   "complaint": "complaint:c_not_useful",
+   "how": "A separate tab for every month (the top complaint quote asked for exactly that), 30 category rows the buyer names, 80 log rows a month, and a Paycheck plan for people not paid monthly. The listing has a 'Made for / Not for' box: made for a personal or household budget in one currency; not for business bookkeeping, bank syncing or automatic imports.",
+   "evidence": [
+    "complaint:c_not_useful",
+    "feature:paycheck",
+    "wish:w_more_categories",
+    "praise:p_complete"
+   ],
+   "modules": [
+    "months",
+    "setup",
+    "paycheck"
+   ]
+  },
+  {
+   "id": "f_setup",
+   "complaint": "complaint:c_setup",
+   "how": "Start here is the first tab and the file opens on it: 5 numbered steps, then the live Ready check (income entered, every dollar budgeted, every category grouped, spending matches categories, no amounts without a category, example cleared), then a jump row to all 12 months. The steps cover a buyer starting before January (set Year to 2026 for November and December, re-download a fresh copy for 2027) and one starting mid-year (jump to this month; empty months stay out of totals).",
+   "evidence": [
+    "complaint:c_setup",
+    "praise:p_guide",
+    "feature:instructions_inside"
+   ],
+   "modules": [
+    "start_check"
+   ]
+  },
+  {
+   "id": "f_support",
+   "complaint": "complaint:c_support",
+   "how": "Most support threads in the reviews are 'it does not work' or 'categories do not flow to the breakdown'. The answers are in the file: the Ready check names the exact problem (for example '3 entries in March use a category that is not in Setup') and how to fix it, and Start here has an 'If something looks wrong' list. The listing FAQ covers the top five questions (download, which app, Google vs Excel, how to change a category, how to unprotect). Reply speed is shop-level and handled in Darren's Etsy inbox; the file promises no service level.",
+   "evidence": [
+    "complaint:c_support",
+    "complaint:c_formulas",
+    "praise:p_support"
+   ],
+   "modules": [
+    "start_check"
+   ]
+  },
+  {
+   "id": "f_app",
+   "complaint": "complaint:c_app",
+   "how": "Works in two apps, so nobody is forced into Google: Excel users (including the free Excel for the web) never need a Google account. Only functions both apps support (SUMIFS, SUMPRODUCT, COUNTIFS, NPER, DATEDIF) and Arial. The listing has a 'Works with / Not for' box: Google Sheets and Excel on a computer for setup; not Apple Numbers or LibreOffice (not tested), not a phone-only setup.",
+   "evidence": [
+    "complaint:c_app",
+    "feature:excel",
+    "feature:google_sheets",
+    "wish:w_excel"
+   ],
+   "modules": [
+    "setup",
+    "months"
+   ]
+  },
+  {
+   "id": "f_misleading",
+   "complaint": "complaint:c_misleading",
+   "how": "Every listing photo is a screenshot of the built file captioned with its tab name, no mockup shows anything the file lacks. The description lists every tab with the build's tab count, says the file is an .xlsx (not a Google link), shows amounts in US dollars ($) with the way to change the number format after unprotecting, and says there is no video and no bank syncing.",
+   "evidence": [
+    "complaint:c_misleading",
+    "complaint:c_currency",
+    "praise:p_as_described"
+   ],
+   "modules": [
+    "start_check"
+   ]
+  },
+  {
+   "id": "f_formulas",
+   "complaint": "complaint:c_formulas",
+   "how": "Every formula cell is locked by sheet protection with no password, so buyers type only in shaded cells and cannot overwrite a formula in Excel. Month summaries pull categories straight from Setup, so renaming a category flows everywhere, and the Ready check flags log entries whose category no longer exists instead of silently dropping them. The build recalculates every tab and fails on any #REF!, #VALUE! or #NAME? error.",
+   "evidence": [
+    "complaint:c_formulas",
+    "feature:protected_formulas",
+    "praise:p_automated",
+    "complaint:c_quality"
+   ],
+   "modules": [
+    "setup",
+    "months",
+    "start_check"
+   ]
+  },
+  {
+   "id": "f_customize",
+   "complaint": "complaint:c_customize",
+   "how": "Locking only covers formulas: category names, groups, budgets, income lines, bills, debts, goals and every log cell are open to type in. Tabs can be renamed and formulas follow. For deeper changes the protection has no password: Start here's tip shows Review > Unprotect Sheet in Excel and Data > Protect sheets and ranges in Google Sheets. The listing says so, so 'it is locked' is never a surprise.",
+   "evidence": [
+    "complaint:c_customize",
+    "feature:customizable",
+    "praise:p_flexible"
+   ],
+   "modules": [
+    "setup",
+    "start_check"
+   ]
+  },
+  {
+   "id": "f_overwhelm",
+   "complaint": "complaint:c_overwhelm",
+   "how": "The core path is three tabs: Setup once, this month's tab, Dashboard. Bills, Paycheck plan, Debt and Savings are labelled extras on Start here ('use them when you want them'). Each tab does one job with a one-line subtitle and no instruction walls; 19 tabs in total, 12 of them the same month layout. No separate trackers for things the month log already covers (subscriptions, groceries, spending categories are just categories).",
+   "evidence": [
+    "complaint:c_overwhelm",
+    "complaint:c_hard",
+    "praise:p_easy"
+   ],
+   "modules": [
+    "start_check",
+    "months",
+    "dashboard"
+   ]
+  },
+  {
+   "id": "f_value",
+   "complaint": "complaint:c_value",
+   "how": "Priced at $16, under the $18 to $33 band where top earners sit, for a full year of month tabs, a dashboard, paycheck plan, bills, debt and savings in one file with no upsell, survey or second purchase to get the file. Monthly tabs answer the 'expenses sheet is only for the full year' complaint quoted in this cluster.",
+   "evidence": [
+    "complaint:c_value",
+    "price:top10_by_revenue_median",
+    "praise:p_value",
+    "complaint:c_upsell"
+   ],
+   "modules": [
+    "months",
+    "dashboard"
+   ]
+  }
+ ],
+ "unique": [
+  {
+   "id": "u_ready_check",
+   "name": "Live Ready check",
+   "what": "A box on Start here with a Done / To do status for each setup step that recalculates as you type: income entered, every dollar budgeted, every category grouped, spending that matches your categories, no amounts without a category, example cleared, plus your Needs / Wants / Savings and debt split next to the 50/30/20 guide. Each To do says exactly what to fix and where.",
+   "why": "Setup confusion, 'hard to use' and 'formulas broke' are 101 of the coded complaints, and several 'broken formula' quotes are really categories that no longer match. A check that names the problem turns a 1-star review or a support message into a 10-second fix. No top seller title mentions anything like it (titles only; photos not checked yet).",
+   "evidence": [
+    "complaint:c_setup",
+    "complaint:c_hard",
+    "complaint:c_formulas",
+    "complaint:c_support",
+    "feature:instructions_inside"
+   ],
+   "modules": [
+    "start_check"
+   ],
+   "verified_absent": false
+  },
+  {
+   "id": "u_example_month",
+   "name": "Example month you clear in one step",
+   "what": "January ships filled with ten realistic entries against the sample categories, so every summary, warning, progress bar and Dashboard chart shows working numbers on first open. Step 2 and the Ready check show how to clear it with one Delete.",
+   "why": "'Can be hard for a super newbie' and 'I didn't have any experience with Google Sheets so I messed it up' are top quotes; seeing it work before typing is the cheapest teacher. Sample data is not visible in any top seller title.",
+   "evidence": [
+    "feature:sample_data",
+    "complaint:c_hard",
+    "praise:p_automated"
+   ],
+   "modules": [
+    "months",
+    "start_check"
+   ],
+   "verified_absent": false
+  },
+  {
+   "id": "u_zero_based",
+   "name": "Every dollar has a job, built in",
+   "what": "Setup shows Left to budget (income minus all category budgets) and turns red when over; the Ready check repeats it in words and shows the 50/30/20 split of the buyer's own groups. The sample budget is balanced to exactly 0 so the method is visible from the first screen.",
+   "why": "Zero-based and 50/30/20 are named in top seller keywords but the feature is not visible in titles; one buyer asked to choose their own budgeting rule. It works with any method without a separate method tab.",
+   "evidence": [
+    "feature:zero_based",
+    "wish:w_budget_method",
+    "keyword:zero based budget"
+   ],
+   "modules": [
+    "setup",
+    "start_check"
+   ],
+   "verified_absent": false
+  }
+ ],
+ "waived": [],
+ "look": {
+  "direction": "Calm and money-confident: deep ink-navy headers, an evergreen accent for links, progress bars and step numbers, and a pale green input shade on white. No pastels, no clipart, no rainbow category fills: colour only means 'type here', 'header' or 'over budget'. Light paper so it prints and screenshots cleanly; the listing photos sit on the same navy and white, which reads well in a dark room or a bright one.",
+  "theme": {
+   "base": "slate",
+   "header": "#1F2A44",
+   "accent": "#2F6F5E",
+   "soft": "#E3EFE8",
+   "ink": "#1F2A44",
+   "muted": "#5E6B78",
+   "paper": "#FFFFFF",
+   "warn": "#C2410C",
+   "font": "Arial"
+  },
+  "avoid": [
+   "blush pink and pastel palettes (common across low-price top sellers)",
+   "rainbow fills per category or per month",
+   "dark-mode as the default sheet",
+   "decorative headers, clipart and script fonts",
+   "dense instruction text on the working tabs"
+  ],
+  "evidence": [
+   "praise:p_look",
+   "complaint:c_overwhelm",
+   "complaint:c_look",
+   "look:Dark mode",
+   "listing:1344426956"
+  ]
+ },
+ "price": {
+  "amount": 16,
+  "why": "The best-earning band is $18 to $33 and the top 10 by revenue sit at a median of $18.24, but those listings carry thousands of reviews; a brand-new shop with none asking $20 to $25 has nothing to back the price. The $2 to $3 listings win on volume and old review counts we cannot match. $16 sits just under the band, near ComputedPlanning's $13 listing and Priori's $16.84 listing that both earn well, and still reads as a complete product rather than a cheap one. Raise to $19 to $22 (inside the band) after about 15 reviews.",
+  "evidence": [
+   "price:best_band",
+   "price:top10_by_revenue_median",
+   "price:median",
+   "price:revenue_weighted_median",
+   "listing:4368511100",
+   "listing:4334780570",
+   "market:new_sellers_in_top_pct"
+  ]
+ },
+ "seo": {
+  "title": "Budget Spreadsheet Google Sheets and Excel, Monthly Budget Planner, Paycheck Budget, Expense Tracker, Bill and Debt Tracker for Beginners",
+  "tags": [
+   "budget spreadsheet",
+   "monthly budget",
+   "budget planner",
+   "expense tracker",
+   "google sheets budget",
+   "paycheck budget",
+   "financial planner",
+   "biweekly budget",
+   "beginner budget",
+   "debt tracker",
+   "budget tracker excel",
+   "savings tracker",
+   "zero based budget"
+  ]
+ },
+ "photos": [
+  {
+   "id": "hero",
+   "shows": "The Dashboard on a laptop: the year by month, spending by category, bar and pie charts with the example month filled in. Label: Google Sheets and Excel.",
+   "proves": "praise:p_insight, feature:dashboard, feature:annual",
+   "pages": [
+    "dashboard"
+   ]
+  },
+  {
+   "id": "how_open",
+   "shows": "How it works in 3 steps: 1 Download the .xlsx from Etsy on a computer. 2 Open it in Google Sheets (upload to Drive) or Excel. 3 Follow Start here. Caption: no link, no access request.",
+   "proves": "complaint:c_access, complaint:c_app, wish:w_excel",
+   "pages": [
+    "start"
+   ]
+  },
+  {
+   "id": "start",
+   "shows": "Start here tab: the 5 steps and the live Ready check with Done / To do statuses and the month jump row.",
+   "proves": "complaint:c_setup, complaint:c_hard, complaint:c_support",
+   "pages": [
+    "start"
+   ]
+  },
+  {
+   "id": "setup",
+   "shows": "Setup tab: income lines, categories with group and budget, Left to budget at 0. Points: name your own categories, every tab follows.",
+   "proves": "complaint:c_customize, feature:zero_based, feature:customizable",
+   "pages": [
+    "setup"
+   ]
+  },
+  {
+   "id": "month",
+   "shows": "January with the example month: the 4-column log with a category dropdown and the budget vs actual summary with progress bars and an over-budget warning. Points: shaded = type here, plain = formulas locked.",
+   "proves": "complaint:c_formulas, praise:p_automated, feature:sample_data, feature:monthly",
+   "pages": [
+    "m01"
+   ]
+  },
+  {
+   "id": "paycheck",
+   "shows": "Paycheck plan tab: each payday, the bills due before the next one, and what is left from that paycheck.",
+   "proves": "feature:paycheck, keyword:paycheck budget",
+   "pages": [
+    "paycheck"
+   ]
+  },
+  {
+   "id": "extras",
+   "shows": "Optional extras as captioned cards: Bills, Debt payoff, Savings goals. Headline says they are optional.",
+   "proves": "feature:bills, feature:debt, feature:savings, complaint:c_overwhelm",
+   "pages": [
+    "bills",
+    "debt",
+    "savings"
+   ]
+  },
+  {
+   "id": "inside",
+   "shows": "Exactly what is in the file: the tab list with the build's tab count, Works with (Google Sheets, Excel 2019 or newer, Microsoft 365, Excel for the web) / Not for (Apple Numbers, bank syncing, business bookkeeping), amounts in US dollars ($).",
+   "proves": "complaint:c_misleading, complaint:c_not_useful, complaint:c_currency",
+   "pages": [
+    "start",
+    "setup",
+    "m01",
+    "dashboard"
+   ]
+  }
+ ],
+ "spec": {
+  "title": "Clear Budget",
+  "subtitle": "Monthly budget, paycheck plan, bills, debt and savings for Google Sheets and Excel",
+  "brand": "Kairos Design Studio",
+  "currency": "$",
+  "year": null,
+  "theme": {
+   "base": "slate",
+   "header": "#1F2A44",
+   "accent": "#2F6F5E",
+   "soft": "#E3EFE8",
+   "ink": "#1F2A44",
+   "muted": "#5E6B78",
+   "paper": "#FFFFFF",
+   "warn": "#C2410C",
+   "font": "Arial"
+  },
+  "categories": [
+   {
+    "name": "Rent or mortgage",
+    "group": "Needs",
+    "budget": 1400
+   },
+   {
+    "name": "Utilities",
+    "group": "Needs",
+    "budget": 180
+   },
+   {
+    "name": "Groceries",
+    "group": "Needs",
+    "budget": 500
+   },
+   {
+    "name": "Transport",
+    "group": "Needs",
+    "budget": 220
+   },
+   {
+    "name": "Insurance",
+    "group": "Needs",
+    "budget": 160
+   },
+   {
+    "name": "Phone and internet",
+    "group": "Needs",
+    "budget": 95
+   },
+   {
+    "name": "Medical",
+    "group": "Needs",
+    "budget": 60
+   },
+   {
+    "name": "Eating out",
+    "group": "Wants",
+    "budget": 150
+   },
+   {
+    "name": "Shopping",
+    "group": "Wants",
+    "budget": 120
+   },
+   {
+    "name": "Subscriptions",
+    "group": "Wants",
+    "budget": 45
+   },
+   {
+    "name": "Fun",
+    "group": "Wants",
+    "budget": 100
+   },
+   {
+    "name": "Gifts",
+    "group": "Wants",
+    "budget": 40
+   },
+   {
+    "name": "Personal care",
+    "group": "Wants",
+    "budget": 50
+   },
+   {
+    "name": "Emergency fund",
+    "group": "Savings",
+    "budget": 200
+   },
+   {
+    "name": "Sinking funds",
+    "group": "Savings",
+    "budget": 100
+   },
+   {
+    "name": "Retirement",
+    "group": "Savings",
+    "budget": 150
+   },
+   {
+    "name": "Credit card",
+    "group": "Debt",
+    "budget": 150
+   },
+   {
+    "name": "Student loan",
+    "group": "Debt",
+    "budget": 180
+   }
+  ],
+  "income": [
+   {
+    "name": "Paycheck",
+    "amount": 3600
+   },
+   {
+    "name": "Side income",
+    "amount": 300
+   }
+  ],
+  "sample_data": true,
+  "sections": [
+   {
+    "module": "start_check",
+    "label": "Start here",
+    "steps": [
+     [
+      "Open it in your app",
+      "Google Sheets: on drive.google.com choose New > File upload, pick the .xlsx, then open it with Google Sheets (File > Save as Google Sheets keeps a Sheets copy). Excel: double-click the file. There is no link to request and no access to wait for."
+     ],
+     [
+      "Look at January, then clear it",
+      "January holds an example month so you can see the math work. Select the shaded Date to Amount cells in January's log and press Delete. The Ready check below shows Done when it is gone."
+     ],
+     [
+      "Fill in Setup once",
+      "Type your take-home pay, then name your own categories, pick a group for each and give each a monthly budget. Aim for Left to budget = 0. Change or add categories any time; every tab follows."
+     ],
+     [
+      "Log spending in this month",
+      "Pick this month in the jump row below. Starting mid-year? Empty months stay out of your totals. Starting before January? Set the Year in Setup to 2026 for November and December, then download a fresh copy from your Etsy Purchases for 2027."
+     ],
+     [
+      "Check your Dashboard",
+      "See the year by month and where the money went. Bills, Paycheck plan, Debt and Savings are extras: use them when you want them, skip them if you do not."
+     ]
+    ],
+    "tip": "Shaded cells are for typing. Plain cells hold formulas. In Excel they are locked; to change one use Review > Unprotect Sheet (there is no password). In Google Sheets, if you type over a formula, Edit > Undo or File > Version history brings it back.",
+    "checks": [
+     {
+      "id": "income",
+      "label": "Income entered",
+      "ok": "Setup expected income is more than 0",
+      "fix": "Add your take-home pay in Setup"
+     },
+     {
+      "id": "balanced",
+      "label": "Every dollar has a job",
+      "ok": "Setup Left to budget = 0",
+      "fix": "Shows 'You have $X not budgeted yet' or 'Over by $X: lower a budget'"
+     },
+     {
+      "id": "groups",
+      "label": "Every category has a group",
+      "ok": "no Setup category row has a name but no group",
+      "fix": "Pick Needs, Wants, Savings or Debt for each category"
+     },
+     {
+      "id": "orphans",
+      "label": "Spending matches your categories",
+      "ok": "no logged amount in any month has a category missing from Setup (for example after a rename)",
+      "fix": "Shows how many entries and the first month; re-pick their category from the dropdown"
+     },
+     {
+      "id": "blanks",
+      "label": "No amounts without a category",
+      "ok": "no log row in any month has an amount but an empty category",
+      "fix": "Shows the count; those amounts are not counted until a category is picked"
+     },
+     {
+      "id": "example",
+      "label": "Example cleared",
+      "ok": "none of the example line items remain in January's log",
+      "fix": "Clear January's example (step 2)"
+     },
+     {
+      "id": "split",
+      "label": "Your split (info, not pass or fail)",
+      "ok": "Needs, Wants, and Savings plus Debt as % of the total budget, next to the 50/30/20 guide",
+      "fix": ""
+     }
+    ],
+    "month_jump": true,
+    "if_wrong": [
+     "A month total looks too low: check the Ready check for amounts without a category or with a category not in Setup.",
+     "A category is missing from the dropdown: add it in Setup (any empty row); it appears in every month.",
+     "I typed over a formula: Edit > Undo, or File > Version history in Google Sheets.",
+     "Amounts show $ but I use another currency: unprotect the tab (no password) and change the number format."
+    ]
+   },
+   {
+    "module": "setup",
+    "rows": 30
+   },
+   {
+    "module": "months",
+    "log_rows": 80
+   },
+   {
+    "module": "dashboard"
+   },
+   {
+    "module": "bills",
+    "rows": 25
+   },
+   {
+    "module": "paycheck",
+    "label": "Paycheck plan",
+    "rows": 27
+   },
+   {
+    "module": "debt",
+    "rows": 10
+   },
+   {
+    "module": "savings",
+    "rows": 10
+   }
+  ]
+ },
+ "new_modules": [
+  {
+   "name": "start_check",
+   "what": "The Start here tab (anchor 'start', replaces start_here in this spec and must stay the first tab and nav item 'Start here' inserted at position 0). Same layout as start_here: title and subtitle, numbered steps from `steps`, the colour key (Type here / Calculated), and `tip`. Then a 'Ready check' box: one row per item in `checks` with columns Check | Status | What to do. Status is a formula showing 'Done' (accent fill) or 'To do' (warn colour), What to do shows the `fix` text, with the amount or count spliced in where it helps (for example =\"You have \"&TEXT(Setup!G41,\"$#,##0\")&\" not budgeted yet\"). Check formulas, built from the Setup and month layouts the line already defines: income = Setup expected income > 0; balanced = Setup Left to budget = 0 (three states: 0, >0, <0); groups = COUNTIFS(Setup!E10:E39,\"<>\",Setup!F10:F39,\"\") = 0; orphans = across the 12 month logs, the number of rows with an amount whose category is not blank and COUNTIF(Categories, category)=0 (SUMPRODUCT per month, summed), and the first month with one; blanks = rows with an amount and an empty category, summed over months; example = none of the sample_data 'What' texts remain in January C7:C86 (only when sample_data is true, otherwise the row is omitted); split = Needs, Wants, Savings+Debt budget as % of total budget with the text '50/30/20 guide'. Then 'Jump to a month': 12 hyperlinks January to December in a 6 x 2 grid, then the `if_wrong` list under the heading 'If something looks wrong'. Protect the sheet like other tabs. Month and Setup sheet titles are known before those tabs exist (MONTHS, setup label), so formulas can be written up front or filled in at save.",
+   "params": {
+    "anchor": "start (fixed)",
+    "label": "str, tab name, default 'Start here'",
+    "steps": "list of [title, text]",
+    "tip": "str",
+    "checks": "list of {id, label, ok, fix}; ids: income, balanced, groups, orphans, blanks, example, split",
+    "month_jump": "bool, default true",
+    "if_wrong": "list of str"
+   },
+   "why": "The biggest complaint cluster is getting started and keeping it working (complaint:c_hard 58, complaint:c_setup 27, complaint:c_formulas 16, complaint:c_support 26). The existing start_here prints static steps; a live check that names the exact problem is what turns those into self-service fixes, and it lives on the tab buyers already open first, so it adds no tab (complaint:c_overwhelm)."
+  },
+  {
+   "name": "paycheck",
+   "what": "A 'Paycheck plan' tab (anchor 'paycheck', nav item 'Paycheck' appended after Bills). Inputs at the top: Next payday (date), How often (dropdown: Weekly, Every 2 weeks, Twice a month, Monthly), Usual paycheck (money, take-home). Table: one row per payday from the Next payday to the end of the Setup Year (rows param caps it; 27 covers every-2-weeks for a year): Payday (formula: first payday + 7 or 14 days; Twice a month uses the 1st and 15th; Monthly adds a month) | Paycheck (input, prefilled with =Usual paycheck so a different amount can be typed over) | Bills due before next payday (SUMPRODUCT over the Bills tab rows: a bill counts when its next due date on or after this payday, DATE(YEAR(p),MONTH(p)+(DAY(p)>due),due), is before the next payday) | Left from this paycheck (paycheck minus bills, warn colour when negative) | Bills covered (names, TEXTJOIN; include only if it evaluates in both Excel 2019+ and Google Sheets, otherwise drop the column). Subtitle: 'Paid weekly or every two weeks? See which bills each paycheck covers. Paid monthly? Skip this tab.' Must be built after bills and read its rows. Protect like other tabs.",
+   "params": {
+    "anchor": "paycheck (fixed)",
+    "label": "str, default 'Paycheck plan'",
+    "rows": "int, number of payday rows (default 27)",
+    "frequency": "str default 'Every 2 weeks'"
+   },
+   "why": "Budget by paycheck is in 40% of top seller titles (feature:paycheck) and three of the top keywords (keyword:paycheck budget 12, keyword:biweekly budget 9, keyword:budget by paycheck 5); the best-selling listing by total sales leads with it (listing:1619225413). Monthly-only budgets do not fit people paid every two weeks (complaint:c_not_useful). The line cannot build it today, and without it the listing cannot honestly use the paycheck keywords (style rule r003). It is date-based, so it works for a buyer starting in November or mid-year."
+  }
+ ],
+ "build_notes": [
+  "Google Sheets and sheet protection: confirm on a real upload whether the xlsx protection survives conversion to Google Sheets. If it does not, keep the Start here tip as written (it already tells Sheets users how to undo) and the listing must not claim formulas are locked in Google Sheets; say 'locked in Excel, colour-coded in both'.",
+  "Tab order and nav: Start here, Dashboard, Setup, January to December, Bills, Paycheck plan, Debt payoff, Savings goals (19 tabs). Nav row: Start here, Dashboard, Setup, Months, Bills, Paycheck, Debt, Savings (8, under the 9-link cap). Every tab is reachable from Start here (nav row plus month jump row) for style rule r001.",
+  "Optional small line change: give the four extra tabs (Bills, Paycheck plan, Debt payoff, Savings goals) the muted tab colour and the core tabs the accent, so the core path is visible in the tab strip.",
+  "Phone logging: the month log is the first four columns and may work well in the Google Sheets phone app. Do not put this in the listing until it has been tried on a phone.",
+  "Year is null so Setup defaults to the build year + 1 (2027) and sample dates fall in January 2027. Listing copy and photo text must use the build's real tab count (r003)."
+ ]
+}

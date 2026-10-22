@@ -1,0 +1,95 @@
+{
+ "pass": true,
+ "problems": [],
+ "needs_module": [
+  "start_check",
+  "paycheck"
+ ],
+ "coverage": [
+  {
+   "ref": "complaint:c_hard",
+   "theme": "Hard to use day to day",
+   "count": 58,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_access",
+   "theme": "Couldn't open the file or get access to the sheet",
+   "count": 39,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_not_useful",
+   "theme": "Not useful for my needs",
+   "count": 37,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_setup",
+   "theme": "Confusing setup or unclear instructions",
+   "count": 27,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_support",
+   "theme": "Seller didn't help or reply",
+   "count": 26,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_app",
+   "theme": "Doesn't work in my app or device",
+   "count": 20,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_misleading",
+   "theme": "Not as described or pictured",
+   "count": 16,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_formulas",
+   "theme": "Formulas broke or showed errors",
+   "count": 16,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_customize",
+   "theme": "Can't change categories or layout",
+   "count": 14,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_overwhelm",
+   "theme": "Too much, overwhelming",
+   "count": 14,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_value",
+   "theme": "Not worth the price",
+   "count": 12,
+   "state": "fixed"
+  },
+  {
+   "ref": "feature:google_sheets",
+   "theme": "Works in Google Sheets",
+   "share": 0.967,
+   "state": "included"
+  },
+  {
+   "ref": "feature:monthly",
+   "theme": "Monthly budget tabs",
+   "share": 0.667,
+   "state": "included"
+  }
+ ],
+ "summary": {
+  "fixed": 11,
+  "included": 2,
+  "waived": 0,
+  "missing": 0,
+  "unique": 3
+ }
+}

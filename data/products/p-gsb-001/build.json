@@ -1,0 +1,175 @@
+{
+ "files": [
+  {
+   "name": "Clear-Budget.xlsx",
+   "mb": 0.09,
+   "tabs": 19
+  }
+ ],
+ "tabs": [
+  "Start here",
+  "Dashboard",
+  "Setup",
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+  "Bills",
+  "Paycheck plan",
+  "Debt payoff",
+  "Savings goals"
+ ],
+ "page_modules": [
+  [
+   "start",
+   "start_check"
+  ],
+  [
+   "setup",
+   "setup"
+  ],
+  [
+   "m01",
+   "months"
+  ],
+  [
+   "m02",
+   "months"
+  ],
+  [
+   "m03",
+   "months"
+  ],
+  [
+   "m04",
+   "months"
+  ],
+  [
+   "m05",
+   "months"
+  ],
+  [
+   "m06",
+   "months"
+  ],
+  [
+   "m07",
+   "months"
+  ],
+  [
+   "m08",
+   "months"
+  ],
+  [
+   "m09",
+   "months"
+  ],
+  [
+   "m10",
+   "months"
+  ],
+  [
+   "m11",
+   "months"
+  ],
+  [
+   "m12",
+   "months"
+  ],
+  [
+   "dashboard",
+   "dashboard"
+  ],
+  [
+   "bills",
+   "bills"
+  ],
+  [
+   "paycheck",
+   "paycheck"
+  ],
+  [
+   "debt",
+   "debt"
+  ],
+  [
+   "savings",
+   "savings"
+  ]
+ ],
+ "nav": [
+  [
+   "Start here",
+   "Start here"
+  ],
+  [
+   "Dashboard",
+   "Dashboard"
+  ],
+  [
+   "Setup",
+   "Setup"
+  ],
+  [
+   "Months",
+   "January"
+  ],
+  [
+   "Bills",
+   "Bills"
+  ],
+  [
+   "Paycheck",
+   "Paycheck plan"
+  ],
+  [
+   "Debt",
+   "Debt payoff"
+  ],
+  [
+   "Savings",
+   "Savings goals"
+  ]
+ ],
+ "formula_errors": [],
+ "export_pages": 19,
+ "shots": [
+  "start.png",
+  "dashboard.png",
+  "setup.png",
+  "m01.png",
+  "m02.png",
+  "m03.png",
+  "m04.png",
+  "m05.png",
+  "m06.png",
+  "m07.png",
+  "m08.png",
+  "m09.png",
+  "m10.png",
+  "m11.png",
+  "m12.png",
+  "bills.png",
+  "paycheck.png",
+  "debt.png",
+  "savings.png"
+ ],
+ "overflow": [],
+ "links": 152,
+ "size_px": [
+  1650,
+  1275
+ ],
+ "product_id": "p-gsb-001",
+ "brief_id": "b-gsb-001",
+ "built_at": "2026-10-22T07:40:12Z",
+ "line": "spreadsheet"
+}
