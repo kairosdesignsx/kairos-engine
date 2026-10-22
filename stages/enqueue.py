@@ -10,6 +10,10 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'lib'))
 import store
 
 LINE_NAMES = {'planner': 'Digital planners', 'spreadsheet': 'Spreadsheets'}
+DEVICE_TEST = {
+    'planner': "Before approving: open the PDF in Goodnotes (or your tablet app), tap a few month tabs and dates, and write on one page. The listing names apps we have not tested on a real device yet.",
+    'spreadsheet': "Before approving: upload the .xlsx to Google Drive and open it with Google Sheets, then open it in Excel. Check the charts, the dropdowns, the Ready check, and whether the formulas stay locked in Sheets (the listing only promises locked in Excel).",
+}
 
 
 def _rounds(d):
@@ -115,7 +119,7 @@ def run(pid):
            "images": list(files), "status": "queued" if check['pass'] else "needs_help", "created": int(time.time() * 1000),
            "listing": {"title": listing['title'], "tags": listing['tags'], "description": listing['description']},
            "files": build['files'], "evidence": evidence, "brief": brief_full, "research": research, "engine": {"brief_id": brief['brief_id'], "product_id": pid},
-           "claude_note": ' '.join(check.get('notes', []) + ["Before approving: open the PDF in Goodnotes (or your tablet app), tap a few month tabs and dates, and write on one page. The listing names apps we have not tested on a real device yet."])}
+           "claude_note": ' '.join(check.get('notes', []) + [DEVICE_TEST.get(brief['line'], DEVICE_TEST['planner'])])}
     store.write(os.path.join(d, 'queue.json'), {"doc": doc, "files": files})
     return {"ok": True, "images": len(files), "queue": os.path.join(d, 'queue.json')}
 

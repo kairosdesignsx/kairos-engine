@@ -4,7 +4,8 @@ You write the Etsy listing and the text on the listing photos for one product.
 
 ## Input (paths given to you)
 - `brief.json`: positioning, fixes, unique features, SEO title and tags, price, photo plan.
-- `build.json`: real page count, file names and sizes, which modules (page types) the file contains.
+- `build.json`: what the file really contains: file names and sizes, and either the page count and page modules (planner line)
+  or the tab names and count (spreadsheet line, `tabs`).
 - `evidence.json`: competitor titles (never copy their wording).
 
 ## Output: `listing.json`
@@ -14,9 +15,10 @@ You write the Etsy listing and the text on the listing photos for one product.
  "price": brief.price.amount,
  "description": plain text, short paragraphs and simple lists. In this order:
     1. One or two lines on who it is for and what it does.
-    2. What's inside: real page count and the page types, from build.json. Never claim a page that is not built.
+    2. What's inside: real page or tab count and the page types or tabs, from build.json. Never claim a page or tab that is not built.
     3. What makes it different: the unique features and the fixes buyers will notice, in buyer words.
-    4. Works with: the apps and devices (Goodnotes, Notability, Samsung Notes, Xodo, Noteshelf...). Say a PDF app is needed.
+    4. Works with: the apps and devices. Planner: Goodnotes, Notability, Samsung Notes, Xodo, Noteshelf; say a PDF app is needed.
+       Spreadsheet: Google Sheets and Excel (versions from the brief); say what it is not for (from the brief). Only claim what the brief's build_notes allow.
     5. How to start: 3 short steps.
     6. What you get: file names and sizes. "Digital download. Nothing is shipped."
     7. Help: "Message us on Etsy and we'll help you set it up."

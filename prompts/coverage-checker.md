@@ -8,7 +8,10 @@ A promise counts only if you can SEE it in a page screenshot or READ it in the l
 - `shots`: page screenshots (PNG paths) with the module each page belongs to. Open them with the Read tool.
 - `photos`: the listing photos (JPG paths). Open them too.
 - `listing`: path to listing.json (title, description, photo copy).
-- `page_modules`: every page anchor in the PDF and its module, so you know what exists beyond the screenshots.
+- `page_modules`: every page or tab anchor in the file and its module, so you know what exists beyond the screenshots.
+- `line` and `files`: the product line (planner = hyperlinked PDF, spreadsheet = .xlsx workbook) and the delivered files.
+  For a spreadsheet, each shot is one tab of the real file after LibreOffice recalculated it (the numbers are real formula results).
+  You may open the .xlsx with python3 and openpyxl to confirm formulas, dropdowns (data validation) and links.
 
 ## Also check
 - The rules in /home/claude/kairos-engine/data/learn/style-rules.json.
