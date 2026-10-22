@@ -118,13 +118,13 @@
   ]
  ],
  "alt": {
-  "hero": "The Clear Budget Dashboard on a laptop, showing the year by month table with income, spent, left over and saved and debt paid for the example January, the year totals, a 9% share to savings and debt, and the top of the spending by group section.",
+  "hero": "The Clear Budget Dashboard in a browser window, showing the year by month table with income, spent, left over and saved and debt paid for the example January, the year totals, a 9% share to savings and debt, the spending by group table with its pie chart, and spending by category.",
   "how_open": "Three numbered steps: save the .xlsx from Etsy.com on a computer without opening a browser preview, open it in Google Sheets or Excel, then follow the Start here tab.",
-  "start": "The Start here tab on a laptop with five numbered steps: open it in your app, look at January then clear it, fill in Setup once, log spending in this month, and check your Dashboard.",
-  "setup": "The Setup tab on a laptop with the year 2027, two example income lines adding up to $3,900.00 of expected income, and the start of the category list.",
-  "month": "The January tab on a laptop with 11 example entries in a four-column log of date, what, category and amount, and the start of the monthly summary and category list on the right.",
-  "paycheck": "The Paycheck plan tab on a laptop for pay every 2 weeks from Jan 1, 2027, listing each payday through October with the bills due before the next payday and what is left, with one short paycheck in red.",
-  "extras": "Three cards: the Bills tab with four example bills and their due day, amount and autopay, the Debt payoff tab set to Snowball with $100 extra each month above its column headers, and the Savings goals tab with an emergency fund 24% saved.",
-  "inside": "A list of the 19 tabs, the apps it works with, what it is not for and that amounts are in U.S. dollars, next to small views of the Start here, Setup, January and Dashboard tabs."
+  "start": "The Start here tab in a browser window with five numbered steps, the Ready check showing Done and To do for each item, and links to jump to any month.",
+  "setup": "The Setup tab in a browser window with the year 2027, two example income lines adding up to $3,900.00, example categories with their group and monthly budget, and Left to budget at $0.00.",
+  "month": "The January tab on a laptop with example entries in a four-column log of date, what, category and amount, and the monthly summary with budget, spent, left and a progress bar per category, Fun shown over budget in red.",
+  "paycheck": "The Paycheck plan tab in a browser window for pay every 2 weeks from Jan 1, 2027, listing each payday with the bills due before the next payday and what is left, with short paychecks in red.",
+  "extras": "Three example tabs: Bills with six bills and their due day, amount and autopay; Debt payoff with four debts, Snowball order and $100 extra each month; and Savings goals with three goals, progress and save per month.",
+  "inside": "A list of all 19 tabs, grouped into 15 main tabs (Start here, Dashboard, Setup and 12 month tabs) and 4 optional extras, next to the apps it works with, what it is not for, and that amounts are in U.S. dollars."
  }
 }

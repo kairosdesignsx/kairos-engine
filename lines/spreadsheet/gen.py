@@ -329,7 +329,7 @@ def m_months(B, sec):
 def m_dashboard(B, sec):
     S = B.setup; ws = B.sheet('dashboard', sec.get('label', 'Dashboard'))
     B.title(ws, sec.get('label', 'Dashboard'), 'Your year at a glance. Nothing to type here.')
-    B.head(ws, 6, 2, ['Month', 'Income', 'Spent', 'Left over', 'Saved and debt paid'], [14, 14, 14, 14, 16])
+    B.head(ws, 6, 2, ['Month', 'Income', 'Spent', 'Left over', 'Saved and debt paid'], [14, 14, 14, 14, 21])
     for i, M in enumerate(B.month_sheets):
         r = 7 + i
         ws.cell(r, 2, MONTHS[i]); link(ws.cell(r, 2), M['title']); ws.cell(r, 2).font = B.font(11, color=B.th['accent'])
@@ -396,7 +396,7 @@ def m_bills(B, sec):
     dv = DataValidation(type='list', formula1='"✓"', allow_blank=True); ws.add_data_validation(dv)
     yn = DataValidation(type='list', formula1='"Yes,No"', allow_blank=True); ws.add_data_validation(yn)
     for r in range(7, 7 + sec.get('rows', 25)):
-        B.inp(ws.cell(r, 2)); B.inp(ws.cell(r, 3), None, '0'); B.inp(ws.cell(r, 4), None, B.money); a = ws.cell(r, 5); B.inp(a); yn.add(a)
+        B.inp(ws.cell(r, 2)); B.inp(ws.cell(r, 3), None, '0'); B.inp(ws.cell(r, 4), None, B.money); a = ws.cell(r, 5); B.inp(a); a.alignment = Alignment(horizontal='center'); yn.add(a)
         for m in range(12):
             c = ws.cell(r, 6 + m); B.inp(c); dv.add(c); c.alignment = Alignment(horizontal='center')
     last = 6 + sec.get('rows', 25)
@@ -628,7 +628,7 @@ def sample_data(B):
             ws_b.cell(r, 2).value = name; ws_b.cell(r, 3).value = day; ws_b.cell(r, 4).value = amt; ws_b.cell(r, 5).value = auto
     if 'debt' in B.wb.sheetnames or any(m == 'debt' for _, _, m in B.sheets):
         ws_d = B.wb[[t for _, t, m in B.sheets if m == 'debt'][0]]
-        for i, (name, bal, rate, mn) in enumerate([('Medical bill', 600, 0, 50), ('Credit card', 2400, 0.2299, 75), ('Car loan', 8200, 0.069, 210), ('Student loan', 14500, 0.055, 180)]):
+        for i, (name, bal, rate, mn) in enumerate([('Store card', 600, 0.1999, 40), ('Credit card', 2400, 0.2499, 75), ('Car loan', 8200, 0.069, 210), ('Student loan', 14500, 0.055, 180)]):
             r = 10 + i
             ws_d.cell(r, 2).value = name; ws_d.cell(r, 3).value = bal; ws_d.cell(r, 4).value = rate; ws_d.cell(r, 5).value = mn
     if any(m == 'savings' for _, _, m in B.sheets):

@@ -1,0 +1,323 @@
+{
+ "product_id": "p-gsb-001",
+ "at": "2026-10-22T08:20:02Z",
+ "tech": [
+  {
+   "name": "file size",
+   "pass": true,
+   "detail": "Clear-Budget.xlsx: 0.1 MB"
+  },
+  {
+   "name": "no formula errors after recalculation",
+   "pass": true,
+   "detail": "0 errors"
+  },
+  {
+   "name": "one screenshot per tab",
+   "pass": true,
+   "detail": "19 tabs, 19 export pages, 19 shots"
+  },
+  {
+   "name": "every tab link works",
+   "pass": true,
+   "detail": "all link targets exist"
+  },
+  {
+   "name": "formulas protected",
+   "pass": true,
+   "detail": "unprotected tabs [], unlocked formulas []"
+  },
+  {
+   "name": "fonts work in Google Sheets and Excel",
+   "pass": true,
+   "detail": "fonts: ['Arial', 'Calibri']"
+  },
+  {
+   "name": "tab claims match the file",
+   "pass": true,
+   "detail": "claims [19, 19], file has 19 tabs"
+  },
+  {
+   "name": "listing photos",
+   "pass": true,
+   "detail": "8 photos, sizes [(2700, 2025)]"
+  },
+  {
+   "name": "title",
+   "pass": true,
+   "detail": "137 chars"
+  },
+  {
+   "name": "13 tags, max 20 chars",
+   "pass": true,
+   "detail": "13 tags"
+  },
+  {
+   "name": "no em dashes or emojis",
+   "pass": true,
+   "detail": "checked title and description"
+  },
+  {
+   "name": "says digital download",
+   "pass": true,
+   "detail": "download and nothing-shipped note"
+  }
+ ],
+ "coverage": [
+  {
+   "item": "must:mh_apps",
+   "kind": "must",
+   "found": true,
+   "where": "listing.title, photo-01-hero.jpg label, listing.description 'Works with', files/Clear-Budget.xlsx",
+   "note": "One .xlsx; title and hero label say Google Sheets and Excel; description gives the Drive upload route and Excel 2019/365/web."
+  },
+  {
+   "item": "must:mh_monthly",
+   "kind": "must",
+   "found": true,
+   "where": "m01..m12",
+   "note": "12 undated month tabs: income cell, 4-column log B7:E86 with =Categories dropdown, budget vs actual with block-character bar, red negative Left and orange bar over 100% (Fun -$20.00, 120%). Row 11 height fixed; an 'over 80 rows' note now sits under the log."
+  },
+  {
+   "item": "must:mh_dashboard",
+   "kind": "must",
+   "found": true,
+   "where": "dashboard",
+   "note": "Year by month (income, spent, left over, saved and debt paid), share 9%, category totals for the year, pie by group and bar by month; Feb-Dec blank (COUNT test). Recalc test: October-only entries show only in October."
+  },
+  {
+   "item": "must:mh_paycheck",
+   "kind": "must",
+   "found": true,
+   "where": "paycheck B11:F64",
+   "note": "54 payday rows, list stops at Dec 31 of Setup Year; Weekly / Every 2 weeks / Twice a month / Monthly. Bills-due sums checked by hand for 2027 biweekly and by recalc for weekly from Oct 23 2026 and twice a month from May 15 2027: all correct."
+  },
+  {
+   "item": "must:mh_extras",
+   "kind": "must",
+   "found": true,
+   "where": "bills, debt, savings",
+   "note": "Bills: due day, amount, Yes/No autopay, a check-mark dropdown per month. Debt: snowball/avalanche (recalc: Avalanche reorders to Credit card, Car, Student, Medical and shows $850 saved), months and interest at minimum. Savings: labelled bar column and save per month."
+  },
+  {
+   "item": "must:mh_guide",
+   "kind": "must",
+   "found": true,
+   "where": "start + row 3 of every tab",
+   "note": "Start here: 5 steps, Ready check, jump grid, 'If something looks wrong', colour key, tip; every tab has a one-line subtitle."
+  },
+  {
+   "item": "must:mh_look",
+   "kind": "must",
+   "found": true,
+   "where": "all tabs, chart1.xml, chart2.xml",
+   "note": "Both charts now set Arial (round-2 fail fixed) and Start here freezes rows 1-4, so all 19 tabs have frozen headers. One navy header, one pale green input shade. Only Calibri left is in hidden helper columns T:W on Start here."
+  },
+  {
+   "item": "fix:f_hard",
+   "kind": "fix",
+   "found": true,
+   "where": "start C13:E20, m01, start D7",
+   "note": "One shading rule, 4-column log, example January and Ready check present. Shaded cells that hold default formulas remain (see visual, low)."
+  },
+  {
+   "item": "fix:f_access",
+   "kind": "fix",
+   "found": true,
+   "where": "start D6, photo-02-how_open.jpg, listing 'How to start' and FAQ",
+   "note": "Etsy.com Purchases on a computer, Drive upload route, double-click for Excel, no browser preview, phone app warning: all present."
+  },
+  {
+   "item": "fix:f_not_useful",
+   "kind": "fix",
+   "found": true,
+   "where": "m01..m12, setup E10:E39, paycheck, listing description",
+   "note": "Tab per month, 30 category rows, 80 log rows, Paycheck plan; 'Made for a personal or household budget in one currency' and 'Not for' list present."
+  },
+  {
+   "item": "fix:f_setup",
+   "kind": "fix",
+   "found": true,
+   "where": "start",
+   "note": "First and active tab; 5 steps; six-item live Ready check; jump grid. Step 4 covers Oct-Dec (Year = this year, fresh download in January) and mid-year."
+  },
+  {
+   "item": "fix:f_support",
+   "kind": "fix",
+   "found": true,
+   "where": "start E15:E19, start rows 28-32, listing FAQ",
+   "note": "Ready check names counts and first month (recalc: '1 entries use a category not in Setup (first in May)'). Help line promises no service level."
+  },
+  {
+   "item": "fix:f_app",
+   "kind": "fix",
+   "found": true,
+   "where": "formulas, links, listing 'Works with'",
+   "note": "Shared functions only; text bars; internal links; defined name renamed to BudgetYear so it no longer shadows YEAR(). Sheets import not tested here (on Darren's checklist)."
+  },
+  {
+   "item": "fix:f_misleading",
+   "kind": "fix",
+   "found": true,
+   "where": "listing.description, photos 01-08, listing.alt",
+   "note": "Description matches the file (19 tabs, .xlsx, $, 0.1 MB, no video, no syncing); photos show the real tabs and captions are now tab names. Alt text for photos 7 and 8 is stale (see visual)."
+  },
+  {
+   "item": "fix:f_formulas",
+   "kind": "fix",
+   "found": true,
+   "where": "check-tech, all tabs",
+   "note": "All 19 tabs protected with no password, inputs unlocked, formulas locked, 0 errors after recalc; scenario recalcs (Avalanche, Oct 2026, May 2027) also error-free."
+  },
+  {
+   "item": "fix:f_customize",
+   "kind": "fix",
+   "found": true,
+   "where": "unlocked inputs, start tip, listing",
+   "note": "Names, groups, budgets, income, bills, debts, goals and log cells open; tip gives Review > Unprotect Sheet; listing says protection has no password."
+  },
+  {
+   "item": "fix:f_overwhelm",
+   "kind": "fix",
+   "found": true,
+   "where": "start D10, listing",
+   "note": "Core path Setup, month, Dashboard; extras labelled 'use them when you want them'; 19 tabs, 12 identical month layouts."
+  },
+  {
+   "item": "fix:f_value",
+   "kind": "fix",
+   "found": true,
+   "where": "listing.price",
+   "note": "$16, one file, no upsell."
+  },
+  {
+   "item": "unique:u_ready_check",
+   "kind": "unique",
+   "found": true,
+   "where": "start C13:E20",
+   "note": "Six Done/To do checks plus 67/13/20 split next to 50/30/20. Recalc: clearing January flips 'Example cleared' to Done; a bad category in May flips 'Spending matches' to To do with the month named."
+  },
+  {
+   "item": "unique:u_example_month",
+   "kind": "unique",
+   "found": true,
+   "where": "m01, dashboard, start D7",
+   "note": "January ships with 11 entries driving totals, bars, the Fun over-budget line and both charts; step 2 says select Date to Amount and press Delete."
+  },
+  {
+   "item": "unique:u_zero_based",
+   "kind": "unique",
+   "found": true,
+   "where": "setup, start D15:E15, E20",
+   "note": "Left to budget $0.00 with the sample; Ready check says amount not budgeted or over; split shown."
+  },
+  {
+   "item": "look",
+   "kind": "look",
+   "found": true,
+   "where": "all tabs, all photos",
+   "note": "Navy headers, evergreen steps and bars, pale green inputs on white, no pastels; photos alternate navy and off-white. Link colour in renders is LibreOffice's own (environment limit)."
+  }
+ ],
+ "clone": {
+  "max_text_sim": 0.276,
+  "text": {
+   "max": 0.276,
+   "closest": "Annual & Monthly Budget for Couples Spreadsheet Google Sheets and Excel | Dual Income Planner, Shared Bills, Savings and Debt Tracker",
+   "closest_shop": "MyProductiveLifeCo"
+  },
+  "max_image_sim": null,
+  "image": {
+   "status": "pending",
+   "max": null,
+   "note": "competitor photos not fetched yet (laptop worker)"
+  },
+  "pass": true
+ },
+ "visual": [
+  {
+   "issue": "Debt payoff sample now shows the $100 'Extra each month' saving $0.00: Snowball (the default) puts the new 0% Medical bill first, so the only row with extra results reads 4 months / Interest saved $0.00 and the other three rows are blank. On photo 7 a buyer sees the extra-payment feature apparently do nothing. Give the medical bill a small rate, or show the extra rolling to the next debt, so the default view shows a saving (Avalanche already shows $850).",
+   "where": "debt I10:J13, photo-07-extras.jpg",
+   "severity": "medium"
+  },
+  {
+   "issue": "Alt text is stale after the photo rework: photo 8's alt describes 'small views of the Start here, Setup, January and Dashboard tabs' that are no longer in the photo; photo 7's says 'four example bills' (six are shown); photos 1, 3, 4 and 6 say 'on a laptop' but show a browser window (breaks r013).",
+   "where": "listing.alt.inside, listing.alt.extras, listing.alt.hero/start/setup/paycheck",
+   "severity": "medium"
+  },
+  {
+   "issue": "Dashboard 'Saved and debt paid' header wraps to two lines in a one-line header band; 'paid' is clipped at the bottom edge. Also visible on the hero photo.",
+   "where": "dashboard F6, photo-01-hero.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "Pie chart sits flush against the Group table (the 'Spent this year' header touches the chart border), and there is an empty band of about 4 rows between the pie and the bar chart.",
+   "where": "dashboard C23, chart anchors",
+   "severity": "low"
+  },
+  {
+   "issue": "Dashboard category list still has a gap before Credit card because that row shares the tall Group header row (row 23, 34pt).",
+   "where": "dashboard H23",
+   "severity": "low"
+  },
+  {
+   "issue": "Bills: Amount (right-aligned) and Autopay (left-aligned) run together ('$1,400.00Yes'). Also visible on photo 7.",
+   "where": "bills D7:E31, photo-07-extras.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "Interest at minimum is rounded-up months x minimum minus balance, so it overstates by up to one payment (Credit card shows $1,425, true is about $1,354); Interest saved inherits the same rounding.",
+   "where": "debt H10:H19, J10:J19",
+   "severity": "low"
+  },
+  {
+   "issue": "Still open from round 2: shaded 'type over' cells hold default formulas (month H6, Paycheck C6, C8, C11:C64) and the shaded Paycheck cells below the last payday (rows 38-64 for every 2 weeks) feed nothing and look like empty inputs.",
+   "where": "m01..m12 H6, paycheck C6, C8, C11:C64",
+   "severity": "low"
+  },
+  {
+   "issue": "Still open: Twice a month is modelled as the 15th and the 1st, not the common 15th and last day.",
+   "where": "paycheck F11:F64",
+   "severity": "low"
+  },
+  {
+   "issue": "Still open: Bills Autopay and the monthly paid marks feed no result (no unpaid count or total), which breaks the letter of r010; fine as a record.",
+   "where": "bills E7:Q31",
+   "severity": "low"
+  },
+  {
+   "issue": "Still open: savings and month progress-bar block glyphs show seams between blocks.",
+   "where": "savings H7:H16, m01..m12 L12:L41",
+   "severity": "low"
+  },
+  {
+   "issue": "Still open: Start here nav has a large gap between Setup and Months (column E is 60 wide), and step 3's text sits higher than the other steps' text. The photo crops of Start here, Setup and Savings cut the nav row, so those photos show only part of the tab links.",
+   "where": "start row 4, row 8; photo-03, photo-04, photo-07",
+   "severity": "low"
+  },
+  {
+   "issue": "Photo 8 labels 'THE CORE: 15 TABS' while the description says 'The core is three tabs: Setup once, this month, Dashboard'.",
+   "where": "photo-08-inside.jpg, listing.description",
+   "severity": "low"
+  },
+  {
+   "issue": "Ready check grammar: '1 entries use a category not in Setup' and '1 amounts have no category' for a count of one.",
+   "where": "start E17, E18",
+   "severity": "low"
+  },
+  {
+   "issue": "How-it-works photo still has an empty top quarter and bottom quarter around the three cards.",
+   "where": "photo-02-how_open.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "Month photo is the smallest text in the set (log and summary at about 16px on the 2700px image, the 'Type over this' note about 11px); readable when zoomed but the useful part is not shown large, and the lower third of the laptop screen is empty log rows.",
+   "where": "photo-05-month.jpg",
+   "severity": "low"
+  }
+ ],
+ "pass": true,
+ "notes": [
+  "Image clone check pending: competitor photos come from the laptop worker."
+ ]
+}

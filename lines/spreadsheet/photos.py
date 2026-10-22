@@ -143,7 +143,7 @@ def scenes(brief, listing, build, shots_dir, out_dir):
             S[key] = B_(f'''<div style="position:absolute;left:150px;top:0;bottom:0;width:900px;display:flex;flex-direction:column;justify-content:center;gap:34px">
               {label}<p class="h" style="font-size:118px">{head}</p>{pts}</div>
               <div style="position:absolute;left:1180px;right:130px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;gap:24px">
-                <p class="k">The core: {len(core)} tabs</p><div>{''.join(chip(t, True) for t in core_names)}{chip(f"{len(months)} month tabs: {months[0]} to {months[-1]}", True) if months else ''}</div>
+                <p class="k">Main tabs: {len(core)}</p><div>{''.join(chip(t, True) for t in core_names)}{chip(f"{len(months)} month tabs: {months[0]} to {months[-1]}", True) if months else ''}</div>
                 <p class="k" style="margin-top:30px">Optional extras: {len(extra)} tabs</p><div>{''.join(chip(t, False) for t in extra)}</div></div>''')
         elif len(pg) == 3:
             cells = ''.join(card(P(a, fx), esc(tab_name(a))) for a in pg)
