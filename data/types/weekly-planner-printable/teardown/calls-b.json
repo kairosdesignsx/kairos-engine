@@ -1,0 +1,355 @@
+{
+ "type_id": "weekly-planner-printable",
+ "made": "2026-10-22T14:44:08Z",
+ "shops": [
+  "PaperPlansx",
+  "EvoPrintables",
+  "FreshFolioPrintables",
+  "ThePrintablePlans",
+  "MyLifePlans",
+  "PlanRightCo",
+  "FutureADHD",
+  "lovingmondays",
+  "toplifeplanners",
+  "PineberryPlanner",
+  "FeelingCozyOfficial",
+  "EverythingPrintable1"
+ ],
+ "calls": [
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PaperPlansx",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PaperPlansx",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PaperPlansx",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "EvoPrintables",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "EvoPrintables",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "EvoPrintables",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "FreshFolioPrintables",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "FreshFolioPrintables",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "FreshFolioPrintables",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "ThePrintablePlans",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "ThePrintablePlans",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "ThePrintablePlans",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "MyLifePlans",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "MyLifePlans",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "MyLifePlans",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PlanRightCo",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PlanRightCo",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PlanRightCo",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "FutureADHD",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "FutureADHD",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "FutureADHD",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "lovingmondays",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "lovingmondays",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "lovingmondays",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "toplifeplanners",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "toplifeplanners",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "toplifeplanners",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PineberryPlanner",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PineberryPlanner",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PineberryPlanner",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "FeelingCozyOfficial",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "FeelingCozyOfficial",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "FeelingCozyOfficial",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "EverythingPrintable1",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "EverythingPrintable1",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "EverythingPrintable1",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "PaperPlansx"
+   },
+   "optional": true
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "EvoPrintables"
+   },
+   "optional": true
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "FreshFolioPrintables"
+   },
+   "optional": true
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "ThePrintablePlans"
+   },
+   "optional": true
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "MyLifePlans"
+   },
+   "optional": true
+  }
+ ]
+}

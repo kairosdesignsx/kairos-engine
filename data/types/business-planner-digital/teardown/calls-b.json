@@ -1,0 +1,355 @@
+{
+ "type_id": "business-planner-digital",
+ "made": "2026-10-22T14:44:08Z",
+ "shops": [
+  "SmartFinanceCore",
+  "AttentionGetting",
+  "BoldBloomPrintables",
+  "DigitizedPlanner",
+  "PlanRightCo",
+  "YepLooksGood",
+  "CreativeJamCo",
+  "PLANcontent",
+  "thesipandplan",
+  "HappyDownloads",
+  "PrintablesByPlanners",
+  "LiliesDaily"
+ ],
+ "calls": [
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "SmartFinanceCore",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "SmartFinanceCore",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "SmartFinanceCore",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "AttentionGetting",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "AttentionGetting",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "AttentionGetting",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "BoldBloomPrintables",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "BoldBloomPrintables",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "BoldBloomPrintables",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "DigitizedPlanner",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "DigitizedPlanner",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "DigitizedPlanner",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PlanRightCo",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PlanRightCo",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PlanRightCo",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "YepLooksGood",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "YepLooksGood",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "YepLooksGood",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "CreativeJamCo",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "CreativeJamCo",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "CreativeJamCo",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PLANcontent",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PLANcontent",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PLANcontent",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "thesipandplan",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "thesipandplan",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "thesipandplan",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "HappyDownloads",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "HappyDownloads",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "HappyDownloads",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PrintablesByPlanners",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PrintablesByPlanners",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "PrintablesByPlanners",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "LiliesDaily",
+    "sort_by": "rating",
+    "sort_order": "asc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "LiliesDaily",
+    "sort_by": "rating",
+    "sort_order": "asc",
+    "page": 2
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_shop_reviews",
+   "input": {
+    "shop_name": "LiliesDaily",
+    "sort_by": "created_at",
+    "sort_order": "desc"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "SmartFinanceCore"
+   },
+   "optional": true
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "AttentionGetting"
+   },
+   "optional": true
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "BoldBloomPrintables"
+   },
+   "optional": true
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "DigitizedPlanner"
+   },
+   "optional": true
+  },
+  {
+   "tool": "mcp__EverBee__analyze_shop",
+   "input": {
+    "shop_name": "PlanRightCo"
+   },
+   "optional": true
+  }
+ ]
+}

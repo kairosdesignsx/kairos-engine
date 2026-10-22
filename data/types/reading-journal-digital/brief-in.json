@@ -1,0 +1,1441 @@
+{
+ "type_id": "reading-journal-digital",
+ "product_type": "Reading journal digital",
+ "format": "Digital journal PDF",
+ "line": "planner",
+ "rules": {
+  "significant_complaint_count": 10,
+  "min_unique": 2,
+  "evidence_ref_kinds": [
+   "complaint:<id>",
+   "praise:<id>",
+   "wish:<id>",
+   "feature:<id>",
+   "price:<field>",
+   "keyword:<tag>",
+   "listing:<listing_id>",
+   "market:<field>",
+   "look:<style>"
+  ]
+ },
+ "basis": {
+  "listings": 30,
+  "reviews": 504,
+  "reviews_coded": 442,
+  "off_type_dropped": 81,
+  "negative_reviews": 254,
+  "feature_sources": [
+   "titles"
+  ],
+  "photos": "pending"
+ },
+ "market": {
+  "opportunity_score": 39.0,
+  "monthly_searches": 990.0,
+  "competing_listings": 20555.0,
+  "top_seller_revenue": 4260.0,
+  "new_sellers_in_top_pct": 40.0,
+  "summary": "Too niche. ~990 monthly searches, competition crowded (20,555 listings), and 40% of top sellers are under 6 months old. Top seller earns ~$4,260/mo; the best-earning price band is $7–23.",
+  "best_price_band": "$7-23"
+ },
+ "must_address": [
+  {
+   "ref": "complaint:c_download",
+   "theme": "Couldn't download or open the file",
+   "count": 64,
+   "quotes": [
+    {
+     "text": "wont work only showing download here, download it only showing bookcover nothing else like it shows when you buy ,",
+     "stars": 1
+    },
+    {
+     "text": "It’s not downloading the reading journal but instead an abstract digital planner",
+     "stars": 1
+    },
+    {
+     "text": "The stickers did not import for me but the rest of the template is great.",
+     "stars": 3
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_setup",
+   "theme": "Confusing setup or unclear instructions",
+   "count": 36,
+   "quotes": [
+    {
+     "text": "I love this download! I’m still trying to figure out how to use it, but I’m very happy with the purchase!",
+     "stars": 5
+    },
+    {
+     "text": "This was great, I just didn't understand it and my brain couldn't quite process the instructions. Probably just me though.",
+     "stars": 2
+    },
+    {
+     "text": "once I worked out how it worked I found it easy to use. Now I will have place for all my books I owe on my PC as well. Thanks",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_not_useful",
+   "theme": "Not useful for my needs",
+   "count": 34,
+   "quotes": [
+    {
+     "text": "I wish it wasn’t so expensive. I only needed a few pages out of the entire packet and I feel like I wasted my money.",
+     "stars": 1
+    },
+    {
+     "text": "Nothing about the explanation states that this thing is for one week only.  You keep no history; you don't plan forward.",
+     "stars": 1
+    },
+    {
+     "text": "I thought this tracker would be exactly what I'm looking for, but it's not. And it's too difficult to edit it into what I want",
+     "stars": 2
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_hard",
+   "theme": "Hard to use day to day",
+   "count": 33,
+   "quotes": [
+    {
+     "text": "Can’t seem to figure out the best way to use it, but that’s a user problem. Nothing wrong with the product itself.",
+     "stars": 3
+    },
+    {
+     "text": "I found it bit difficult to use at first but when I asked my Daughter about it I was able to  use it.",
+     "stars": 4
+    },
+    {
+     "text": "Not an easy program to use.",
+     "stars": 2
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_device",
+   "theme": "Doesn't work on my app or device",
+   "count": 24,
+   "quotes": [
+    {
+     "text": "Parts of the spreadsheet doesn’t function properly once you export to an excel sheet.",
+     "stars": 2
+    },
+    {
+     "text": "It didn’t work on the app recommended and others",
+     "stars": 1
+    },
+    {
+     "text": "Won’t let me import it into good notes",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_quality",
+   "theme": "Errors, typos or low quality",
+   "count": 22,
+   "quotes": [
+    {
+     "text": "Download very glitchy. The links don’t work and keeps deleting itself",
+     "stars": 1
+    },
+    {
+     "text": "Great quality product. Som editing issues but overall good.",
+     "stars": 4
+    },
+    {
+     "text": "I use this all the time! I love the colors on it! There are a few spelling errors that I had to correct myself, but it wasn't a big deal!",
+     "stars": 4
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_misleading",
+   "theme": "Not as described or pictured",
+   "count": 20,
+   "quotes": [
+    {
+     "text": "It’s not downloading the reading journal but instead an abstract digital planner",
+     "stars": 1
+    },
+    {
+     "text": "Did not know this wasn't able to be printed out and seller \"CAN'T \" refund even though she knows I can't use it.",
+     "stars": 1
+    },
+    {
+     "text": "This template doesn't work with my notes app. I was under the impression that it did. Not a fan at all",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_value",
+   "theme": "Not worth the price",
+   "count": 17,
+   "quotes": [
+    {
+     "text": "I wish it wasn’t so expensive. I only needed a few pages out of the entire packet and I feel like I wasted my money.",
+     "stars": 1
+    },
+    {
+     "text": "Doesn't load correctly.....you get what you pay for! Thank goodness I'm only out of a few bucks.",
+     "stars": 1
+    },
+    {
+     "text": "Too difficult to understand. Money wasted. Went with an easier program to use.",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_edit",
+   "theme": "Can't edit, type or customize",
+   "count": 17,
+   "quotes": [
+    {
+     "text": "Hard to navigate and can’t change the font it’s alright but could be better",
+     "stars": 3
+    },
+    {
+     "text": "File troppo complesso e con poca personalizzazione. Ha anche problemi con le date e il fuso orario. \nSconsiglio l’acquisto.",
+     "stars": 1
+    },
+    {
+     "text": "I thought this tracker would be exactly what I'm looking for, but it's not. And it's too difficult to edit it into what I want",
+     "stars": 2
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_broken",
+   "theme": "Doesn't work (no detail)",
+   "count": 15,
+   "quotes": [
+    {
+     "text": "I didnt even use it because it doesn't work as instructed and I cannot firgure it out",
+     "stars": 1
+    },
+    {
+     "text": "would never open and work",
+     "stars": 1
+    },
+    {
+     "text": "Doesn’t work for me sadly",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_support",
+   "theme": "Seller didn't help or reply",
+   "count": 15,
+   "quotes": [
+    {
+     "text": "I never got access to it and didn't get a response back from the seller.",
+     "stars": 1
+    },
+    {
+     "text": "I am not able to use this. I have asked for assistance,  but no response from seller. I'm disappointed 😞",
+     "stars": 1
+    },
+    {
+     "text": "I did not receive an email with a pdf of the download like I usually do with etsy digital products. And when I tried to download from the site it didn't work. Contacted seller with no response. N",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_missing",
+   "theme": "Missing pages or less than expected",
+   "count": 11,
+   "quotes": [
+    {
+     "text": "They stole from me—the file is empty. I’m asking for the money back, but they aren’t doing anything. Be careful.",
+     "stars": 1
+    },
+    {
+     "text": "Very difficult to find stickers and covers as stated it comes with, purchased a bare planner 👎🏻",
+     "stars": 1
+    },
+    {
+     "text": "There are no stickers or much with this.. in comparison to other e-journal packages available.",
+     "stars": 2
+    }
+   ]
+  }
+ ],
+ "other_complaints": [
+  {
+   "ref": "complaint:c_extra_app",
+   "theme": "Needed an app or subscription that wasn't clear",
+   "count": 9
+  },
+  {
+   "ref": "complaint:c_lag",
+   "theme": "Slow, laggy or file too big",
+   "count": 8
+  },
+  {
+   "ref": "complaint:c_nav",
+   "theme": "Hard to navigate or find pages",
+   "count": 8
+  },
+  {
+   "ref": "complaint:c_links",
+   "theme": "Links broken or go to the wrong page",
+   "count": 7
+  },
+  {
+   "ref": "complaint:c_overwhelm",
+   "theme": "Too much, overwhelming",
+   "count": 6
+  },
+  {
+   "ref": "complaint:c_refund",
+   "theme": "Refund refused",
+   "count": 5
+  },
+  {
+   "ref": "complaint:c_language",
+   "theme": "Only in English",
+   "count": 4
+  },
+  {
+   "ref": "complaint:c_dates",
+   "theme": "Wrong or missing dates, calendar errors",
+   "count": 4
+  },
+  {
+   "ref": "complaint:c_basic",
+   "theme": "Too basic or boring",
+   "count": 4
+  },
+  {
+   "ref": "complaint:c_plagiarism",
+   "theme": "Design copied from other creators",
+   "count": 4
+  },
+  {
+   "ref": "complaint:c_security",
+   "theme": "Spam, privacy or virus worries",
+   "count": 4
+  },
+  {
+   "ref": "complaint:c_upsell",
+   "theme": "Pushes paid add-ons or sign-ups",
+   "count": 3
+  },
+  {
+   "ref": "complaint:c_review_nag",
+   "theme": "Nagged for a review",
+   "count": 2
+  },
+  {
+   "ref": "complaint:c_look",
+   "theme": "Didn't like the look",
+   "count": 2
+  },
+  {
+   "ref": "complaint:c_flat",
+   "theme": "Just a flat PDF, not interactive",
+   "count": 2
+  }
+ ],
+ "praise": [
+  {
+   "ref": "praise:p_easy",
+   "theme": "Easy to set up and use",
+   "count": 57,
+   "quotes": [
+    {
+     "text": "Super easy to use and has plenty of space to write in, has everything I could need for a reading journal",
+     "stars": 5
+    },
+    {
+     "text": "once I worked out how it worked I found it easy to use. Now I will have place for all my books I owe on my PC as well. Thanks",
+     "stars": 5
+    },
+    {
+     "text": "I'm new to digital journaling and this has been a learning experience but this file is easily understood and I enjoy the many pages to enjoy and build on.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_fits_needs",
+   "theme": "Useful, fits my needs",
+   "count": 49,
+   "quotes": [
+    {
+     "text": "I’m still learning how to use the effectively, but it looks like it will be very helpful once I master it.",
+     "stars": 5
+    },
+    {
+     "text": "I love it !!!! , just what i needed ! super well made !!!  \r\n100% recommend.",
+     "stars": 5
+    },
+    {
+     "text": "Love all the detail, exactly what I was looking for.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_look",
+   "theme": "Beautiful design",
+   "count": 44,
+   "quotes": [
+    {
+     "text": "This is my 3rd purchase from this seller. I love the design, it's fun and vibrant without being overwhelming. The quality is great. The instructions are clear and simple to follow.",
+     "stars": 5
+    },
+    {
+     "text": "Très mauvais pour Android , peu importe le programme qu'on a pour annoté sa ne fonctionne pas super bien . C'est dommage parce que les pages sont belles et ont l'air très intéressant",
+     "stars": 2
+    },
+    {
+     "text": "Very pretty layout love it",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_quality",
+   "theme": "High quality",
+   "count": 22,
+   "quotes": [
+    {
+     "text": "This planner is wonderfully put together and incredibly easy to navigate. Would definitely recommend!",
+     "stars": 5
+    },
+    {
+     "text": "I love it !!!! , just what i needed ! super well made !!!  \r\n100% recommend.",
+     "stars": 5
+    },
+    {
+     "text": "The stickers did not import for me but the rest of the template is great.",
+     "stars": 3
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_complete",
+   "theme": "Has everything I need",
+   "count": 20,
+   "quotes": [
+    {
+     "text": "Super easy to use and has plenty of space to write in, has everything I could need for a reading journal",
+     "stars": 5
+    },
+    {
+     "text": "I am obsessed with this tracker. It helps so much to be able to keep everything in one place.",
+     "stars": 5
+    },
+    {
+     "text": "Great digital reading planner that had plenty of pages to go through!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_support",
+   "theme": "Seller was helpful",
+   "count": 18,
+   "quotes": [
+    {
+     "text": "Wonderful customer service and this tracker is so amazing and helpful.",
+     "stars": 5
+    },
+    {
+     "text": "Exactly what I needed!  Love the immediate download, and customer service was super responsive to questions!!  Thanks!",
+     "stars": 5
+    },
+    {
+     "text": "they reply really fast in case something happen, easy to work with and update. thank you so much.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_repeat",
+   "theme": "Repeat buyer",
+   "count": 13,
+   "quotes": [
+    {
+     "text": "The quality is AMAZING!!! I just wish it held more books. But totally keeping my eye on this store because when she makes one for more books I’m buying it!!!",
+     "stars": 4
+    },
+    {
+     "text": "This is my 3rd purchase from this seller. I love the design, it's fun and vibrant without being overwhelming. The quality is great. The instructions are clear and simple to follow.",
+     "stars": 5
+    },
+    {
+     "text": "I can always count on happy downloads to deliver. Great digital planning items.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_as_described",
+   "theme": "Exactly as described",
+   "count": 12,
+   "quotes": [
+    {
+     "text": "it took sometime to get it to work but when I did it was as good as advertised",
+     "stars": 4
+    },
+    {
+     "text": "ita exactly as advertised",
+     "stars": 5
+    },
+    {
+     "text": "The product is exactly as described. No shipping needed as it’s a virtual product. Super helpful and exactly what I was looking for (:",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_adhd",
+   "theme": "Helps me stay on track",
+   "count": 8,
+   "quotes": [
+    {
+     "text": "I am obsessed with this tracker. It helps so much to be able to keep everything in one place.",
+     "stars": 5
+    },
+    {
+     "text": "Easy to understand. I like the colors and I’m excited to use this to keep me on track.",
+     "stars": 5
+    },
+    {
+     "text": "So many pages and the design is so simple you can actually decorate it as you like while printed ❤️ perfect to keep everything organized.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_flexible",
+   "theme": "Flexible or customizable",
+   "count": 5,
+   "quotes": [
+    {
+     "text": "So many pages and the design is so simple you can actually decorate it as you like while printed ❤️ perfect to keep everything organized.",
+     "stars": 5
+    },
+    {
+     "text": "A great journal that one can customise as one wishes.",
+     "stars": 5
+    },
+    {
+     "text": "very easy to use and edit!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_nav",
+   "theme": "Links work, easy to navigate",
+   "count": 5,
+   "quotes": [
+    {
+     "text": "This planner is wonderfully put together and incredibly easy to navigate. Would definitely recommend!",
+     "stars": 5
+    },
+    {
+     "text": "Everything is well put together including all hyperlinks",
+     "stars": 3
+    },
+    {
+     "text": "Planner is easy to navigate and love the aesthetic!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_device",
+   "theme": "Works on my device",
+   "count": 4,
+   "quotes": [
+    {
+     "text": "It even works on my Kobo ereader!",
+     "stars": 5
+    },
+    {
+     "text": "This was good for an iPad .",
+     "stars": 4
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_value",
+   "theme": "Great value",
+   "count": 4,
+   "quotes": [
+    {
+     "text": "Perfect! Easy to navigate, great price, just what I was looking for!",
+     "stars": 5
+    },
+    {
+     "text": "Great product and value. I am very pleased.",
+     "stars": 5
+    },
+    {
+     "text": "Makkelijk in gebruik en zeker de moeite",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_guide",
+   "theme": "Clear instructions or tutorials",
+   "count": 3,
+   "quotes": [
+    {
+     "text": "This is my 3rd purchase from this seller. I love the design, it's fun and vibrant without being overwhelming. The quality is great. The instructions are clear and simple to follow.",
+     "stars": 5
+    },
+    {
+     "text": "I am new to rights planning,  and I'm excited to be using this Planner! Love all of her tutorial videos.",
+     "stars": 5
+    },
+    {
+     "text": "The videos that come with the download are great, it made it easier to understand how to use it. My issues comes from the links. At the very top of the page there are links that are just not nice to l",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_daily",
+   "theme": "I use it every day",
+   "count": 3,
+   "quotes": [
+    {
+     "text": "Love it use it all the time",
+     "stars": 4
+    },
+    {
+     "text": "I use this all the time! I love the colors on it! There are a few spelling errors that I had to correct myself, but it wasn't a big deal!",
+     "stars": 4
+    },
+    {
+     "text": "I use this every single day to help me stay organized at work- I’m a nurse and I have to make notes constantly! All my coworkers see me using it and think it’s so cool- and it is! Thank you so much!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_extras",
+   "theme": "Love the stickers and extras",
+   "count": 2,
+   "quotes": []
+  }
+ ],
+ "wishes": [
+  {
+   "ref": "wish:w_listing_info",
+   "theme": "Listing should say which apps are needed",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_autofill",
+   "theme": "Auto-fill book details",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_migrate",
+   "theme": "Easy move to a newer version",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_cheaper",
+   "theme": "Cheaper or smaller option",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_capacity",
+   "theme": "Room for more books",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_ready_elements",
+   "theme": "Ready-made fill-in elements",
+   "count": 1
+  }
+ ],
+ "features": [
+  {
+   "ref": "feature:journal",
+   "name": "Journal or notebook pages",
+   "tier": "standard",
+   "share": 0.967,
+   "revenue_share": 0.96
+  },
+  {
+   "ref": "feature:goodnotes",
+   "name": "Says Goodnotes",
+   "tier": "standard",
+   "share": 0.633,
+   "revenue_share": 0.288
+  },
+  {
+   "ref": "feature:notability",
+   "name": "Says Notability",
+   "tier": "rare",
+   "share": 0.167,
+   "revenue_share": 0.167
+  },
+  {
+   "ref": "feature:android",
+   "name": "Android or Samsung support",
+   "tier": "rare",
+   "share": 0.167,
+   "revenue_share": 0.172
+  },
+  {
+   "ref": "feature:all_in_one",
+   "name": "All-in-one life planner",
+   "tier": "rare",
+   "share": 0.133,
+   "revenue_share": 0.301
+  },
+  {
+   "ref": "feature:stickers",
+   "name": "Digital stickers included",
+   "tier": "rare",
+   "share": 0.1,
+   "revenue_share": 0.005
+  },
+  {
+   "ref": "feature:colorful",
+   "name": "Colorful or aesthetic look",
+   "tier": "rare",
+   "share": 0.067,
+   "revenue_share": 0.039
+  },
+  {
+   "ref": "feature:hyperlinked",
+   "name": "Hyperlinked tabs and dates",
+   "tier": "rare",
+   "share": 0.033,
+   "revenue_share": 0.001
+  },
+  {
+   "ref": "feature:adhd_specific",
+   "name": "Built for ADHD",
+   "tier": "rare",
+   "share": 0.033,
+   "revenue_share": 0.029
+  },
+  {
+   "ref": "feature:habit_tracker",
+   "name": "Habit tracker",
+   "tier": "rare",
+   "share": 0.033,
+   "revenue_share": 0.04
+  },
+  {
+   "ref": "feature:goals",
+   "name": "Goal setting",
+   "tier": "rare",
+   "share": 0.033,
+   "revenue_share": 0.115
+  },
+  {
+   "ref": "feature:dark_mode",
+   "name": "Dark mode",
+   "tier": "rare",
+   "share": 0.033,
+   "revenue_share": 0.208
+  },
+  {
+   "ref": "feature:eink",
+   "name": "E-ink tablets (reMarkable, Boox, Kindle Scribe)",
+   "tier": "rare",
+   "share": 0.033,
+   "revenue_share": 0.024
+  },
+  {
+   "ref": "feature:portrait",
+   "name": "Portrait layout",
+   "tier": "rare",
+   "share": 0.033,
+   "revenue_share": 0.003
+  },
+  {
+   "ref": "feature:minimalist",
+   "name": "Minimalist look",
+   "tier": "rare",
+   "share": 0.033,
+   "revenue_share": 0.01
+  },
+  {
+   "ref": "feature:undated",
+   "name": "Undated version",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:dated",
+   "name": "Dated for the year",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:multi_year",
+   "name": "Covers more than one year",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:self_care",
+   "name": "Self-care, mood or wellness pages",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:budget",
+   "name": "Budget or finance pages",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:meal",
+   "name": "Meal planning",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:time_blocking",
+   "name": "Time blocking or hourly schedule",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:landscape",
+   "name": "Landscape layout",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:bundle",
+   "name": "Bundle of several products",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:student",
+   "name": "Student or academic",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:work",
+   "name": "Work or productivity focus",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:custom",
+   "name": "Customizable or personalized",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:brain_dump",
+   "name": "Brain dump pages",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:routines",
+   "name": "Routine builder",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:dopamine_menu",
+   "name": "Dopamine menu",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:priority_matrix",
+   "name": "Priority matrix or top 3",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:quick_start",
+   "name": "Quick start or setup guide",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:test_page",
+   "name": "Link test or setup check page",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  }
+ ],
+ "standard_features": [
+  "feature:journal",
+  "feature:goodnotes"
+ ],
+ "price": {
+  "p25": 7.39,
+  "median": 12.62,
+  "p75": 15.77,
+  "top10_by_revenue_median": 14.63,
+  "revenue_weighted_median": 14.63,
+  "best_band": "$7-23"
+ },
+ "keywords": [
+  {
+   "tag": "reading tracker",
+   "used_by_top": 26,
+   "volume": null
+  },
+  {
+   "tag": "reading journal",
+   "used_by_top": 26,
+   "volume": 1589.0
+  },
+  {
+   "tag": "reading planner",
+   "used_by_top": 22,
+   "volume": null
+  },
+  {
+   "tag": "book tracker",
+   "used_by_top": 21,
+   "volume": null
+  },
+  {
+   "tag": "reading log",
+   "used_by_top": 19,
+   "volume": null
+  },
+  {
+   "tag": "book review",
+   "used_by_top": 18,
+   "volume": null
+  },
+  {
+   "tag": "digital journal",
+   "used_by_top": 14,
+   "volume": null
+  },
+  {
+   "tag": "book journal",
+   "used_by_top": 12,
+   "volume": null
+  },
+  {
+   "tag": "digital planner",
+   "used_by_top": 11,
+   "volume": null
+  },
+  {
+   "tag": "digital book tracker",
+   "used_by_top": 10,
+   "volume": null
+  },
+  {
+   "tag": "goodnotes journal",
+   "used_by_top": 10,
+   "volume": null
+  },
+  {
+   "tag": "book journal digital",
+   "used_by_top": 8,
+   "volume": null
+  },
+  {
+   "tag": "book log",
+   "used_by_top": 8,
+   "volume": null
+  },
+  {
+   "tag": "reading list",
+   "used_by_top": 8,
+   "volume": null
+  },
+  {
+   "tag": "book spreadsheet",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "book lover gift",
+   "used_by_top": 6,
+   "volume": null
+  },
+  {
+   "tag": "digital reading",
+   "used_by_top": 6,
+   "volume": null
+  },
+  {
+   "tag": "digital book journal",
+   "used_by_top": 6,
+   "volume": null
+  },
+  {
+   "tag": "spreadsheet template",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "digital notebook",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "book collection",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "digital book",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "goodnotes reading",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "google sheet",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "digital bookshelf",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "book shelf",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "reading spreadsheet",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "digital reading log",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "goodnotes planner",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "ipad planner",
+   "used_by_top": 3,
+   "volume": null
+  }
+ ],
+ "looks": [
+  {
+   "ref": "look:Colorful or aesthetic look",
+   "share": 0.067
+  },
+  {
+   "ref": "look:Dark mode",
+   "share": 0.033
+  },
+  {
+   "ref": "look:Portrait layout",
+   "share": 0.033
+  },
+  {
+   "ref": "look:Minimalist look",
+   "share": 0.033
+  },
+  {
+   "ref": "look:Landscape layout",
+   "share": 0.0
+  }
+ ],
+ "top_listings": [
+  {
+   "ref": "listing:4429928067",
+   "title": "Book Tracker Reading List Planner Google Sheets Excel Dark Mode Reading Tracker Book Review Spreadsheet Book Journal Gif",
+   "shop": "HeyMorning",
+   "price": 19.18,
+   "mo_revenue": 2743.0,
+   "total_sales": 2239.0
+  },
+  {
+   "ref": "listing:1049154117",
+   "title": "Digital Reading Journal, Digital Reading Planner, Digital Journal, Goodnotes Journal, Book Review, Reading Log, Reading ",
+   "shop": "TheFlowPlanner",
+   "price": 21.37,
+   "mo_revenue": 0.0,
+   "total_sales": 14990.0
+  },
+  {
+   "ref": "listing:4533582716",
+   "title": "The Ultimate Book Tracker, Google Sheets, Personal Digital Library, Reading Journal Spreadsheet template, Reading List, ",
+   "shop": "Evelibrary",
+   "price": 14.63,
+   "mo_revenue": 2439.0,
+   "total_sales": 392.0
+  },
+  {
+   "ref": "listing:1693089288",
+   "title": "Digital Reading Journal | Classic Paper Texture Reading Planner for iPad | GoodNotes Reading Tracker | Android Reading J",
+   "shop": "NestForYourPlans",
+   "price": 6.5,
+   "mo_revenue": 390.0,
+   "total_sales": 14342.0
+  },
+  {
+   "ref": "listing:1669644555",
+   "title": "Reading Journal Digital Planner for iPad & Android Gift for Book Lover Reading Log Record Reviews Track Goals Notability",
+   "shop": "LetsPlanPlanners",
+   "price": 9.97,
+   "mo_revenue": 1513.0,
+   "total_sales": 5689.0
+  },
+  {
+   "ref": "listing:1296487306",
+   "title": "Digital Reading Journal for Goodnotes: Book Tracker with Stickers (PDF Download",
+   "shop": "LiveLovePlanners",
+   "price": 6.6,
+   "mo_revenue": 60.0,
+   "total_sales": 12794.0
+  },
+  {
+   "ref": "listing:4413959912",
+   "title": "Book Tracker Spreadsheet Reading Tracker Digital Reading Log TBR Journal Template Book Library List Book Lover Planner R",
+   "shop": "ExclusiveDesignLab",
+   "price": 14.98,
+   "mo_revenue": 674.0,
+   "total_sales": 1428.0
+  },
+  {
+   "ref": "listing:1293484479",
+   "title": "Digital Reading Journal, Digital Reading Planner, Reading Digital Planner, Goodnotes, Reading Tracker, Reading Log, Book",
+   "shop": "HappyDownloads",
+   "price": 24.23,
+   "mo_revenue": 97.0,
+   "total_sales": 11061.0
+  },
+  {
+   "ref": "listing:4435746402",
+   "title": "The Ultimate Book Tracker Google Sheets, Personal Digital Library, Reading Journal Spreadsheet, Book Lovers, Collection ",
+   "shop": "Evelibrary",
+   "price": 14.63,
+   "mo_revenue": 669.0,
+   "total_sales": 823.0
+  },
+  {
+   "ref": "listing:1201610712",
+   "title": "Digital Reading Journal, Digital Reading Planner, Reading Tracker, Digital planner, Book Review, Book Shelf, Reading Log",
+   "shop": "ThrivingPlanners",
+   "price": 6.55,
+   "mo_revenue": 0.0,
+   "total_sales": 10930.0
+  },
+  {
+   "ref": "listing:1454699914",
+   "title": "Book Tracker Spreadsheet Google Sheets & Excel | Reading List, TBR Log, Book Series Tracker, Digital Reading Planner, Re",
+   "shop": "MyProductiveLifeCo",
+   "price": 14.31,
+   "mo_revenue": 529.0,
+   "total_sales": 4736.0
+  },
+  {
+   "ref": "listing:1418707654",
+   "title": "Digital Reading Journal: Minimalist Boho Book Review Planner & Journal (PDF) - for GoodNotes, Notability",
+   "shop": "PlannedSplendor",
+   "price": 5.99,
+   "mo_revenue": 132.0,
+   "total_sales": 8185.0
+  },
+  {
+   "ref": "listing:4544327550",
+   "title": "The Ultimate Book Tracker, Google Sheets, Personal Digital Library, Reading Journal Spreadsheet template, Reading List, ",
+   "shop": "Evelibrary",
+   "price": 14.63,
+   "mo_revenue": 506.0,
+   "total_sales": 51.0
+  },
+  {
+   "ref": "listing:1561628891",
+   "title": "Digital Reading Journal, Reading Log, Book Tracker, Goodnotes, Notability Journal,  Booktok Review Planner, Reading Plan",
+   "shop": "NyxiaJournals",
+   "price": 8.66,
+   "mo_revenue": 156.0,
+   "total_sales": 7840.0
+  },
+  {
+   "ref": "listing:4421819708",
+   "title": "Digital Reading Journal for Goodnotes, Book Tracker, Booktok Review Planner, Reading Journal Template,  Reading Journal ",
+   "shop": "NyxiaJournals",
+   "price": 11.32,
+   "mo_revenue": 396.0,
+   "total_sales": 162.0
+  }
+ ],
+ "capabilities": {
+  "modules": {
+   "cover": {
+    "desc": "Cover page with title, subtitle and an Open planner button",
+    "params": {}
+   },
+   "index": {
+    "desc": "Contents page: a card for every section plus all months",
+    "params": {}
+   },
+   "year": {
+    "desc": "Year at a glance: 12 mini calendars, every date links to its day (dated) or month (undated)",
+    "params": {}
+   },
+   "lined": {
+    "desc": "Lined or dot-grid writing pages (notes, goals, brain dump). label, kicker, pages, dots, anchor",
+    "params": {
+     "label": "str",
+     "kicker": "str",
+     "pages": "int",
+     "dots": "bool",
+     "anchor": "str"
+    }
+   },
+   "checklist": {
+    "desc": "Checklist page in columns. label, kicker, groups: [[title, [items]]], anchor",
+    "params": {
+     "label": "str",
+     "kicker": "str",
+     "groups": "list",
+     "anchor": "str"
+    }
+   },
+   "table": {
+    "desc": "Table page. label, kicker, headers, rows, first_column (pre-filled), anchor",
+    "params": {
+     "label": "str",
+     "headers": "list",
+     "rows": "int",
+     "first_column": "list",
+     "anchor": "str"
+    }
+   },
+   "year_pixels": {
+    "desc": "Year in pixels: color one square per day for mood or energy. label, keys",
+    "params": {
+     "label": "str",
+     "keys": "list"
+    }
+   },
+   "guide": {
+    "desc": "Printed guide page with numbered steps (how to start, how to import, how links work). label, kicker, steps: [[title, text]], tip, anchor",
+    "params": {
+     "label": "str",
+     "kicker": "str",
+     "steps": "list",
+     "tip": "str",
+     "anchor": "str"
+    }
+   },
+   "link_test": {
+    "desc": "Setup check page: buttons that jump to a test page and back, so buyers confirm links work before planning. label, anchor",
+    "params": {}
+   },
+   "calendar": {
+    "desc": "The dated or undated calendar: month pages, optional habit page per month, week pages and day pages, all cross-linked. month: {side: [labels]}, habits: bool, week: {preset | side: [blocks]}, day: {preset | left: [blocks], right: [blocks]}, days: bool",
+    "params": {
+     "month": "dict",
+     "habits": "bool",
+     "week": "dict",
+     "day": "dict",
+     "days": "bool"
+    }
+   },
+   "head_start": {
+    "desc": "Lead-in months before the main dated year (for example Nov and Dec 2026 in a 2027 planner): month pages whose dates link to lead-in week pages, Monday-start week pages titled by date range, optional lead-in day pages. Anchors use their own prefix. The last week links days that fall in the main year to their day pages and offers Continue to the main year. label, kicker, anchor (prefix, default hs), from YYYY-MM, to YYYY-MM, days bool, month {side}, week {preset|side}, day {preset|left,right}, continue_to (default m01)",
+    "params": {
+     "label": "str",
+     "kicker": "str",
+     "anchor": "str",
+     "from": "YYYY-MM",
+     "to": "YYYY-MM",
+     "days": "bool",
+     "month": "dict",
+     "week": "dict",
+     "day": "dict",
+     "continue_to": "str"
+    }
+   }
+  },
+  "blocks": {
+   "checklist": "Checkbox list. label, rows, items (pre-filled), fill, grow",
+   "lines": "Lined writing box. label, grow (default true) or height",
+   "dots": "Dot-grid box. label, grow or height",
+   "water": "Water tracker drops. label, count",
+   "scale": "Circles 1 to max to rate energy, mood or focus. label, max",
+   "hours": "Hourly schedule. label, from, to, row (px)",
+   "pair": "Two blocks side by side. items: [block, block]",
+   "text": "Short printed tip or instruction. label, text"
+  },
+  "day_presets": [
+   "default",
+   "adhd"
+  ],
+  "week_presets": [
+   "default",
+   "adhd"
+  ],
+  "themes": [
+   "sage",
+   "neutral",
+   "pastel",
+   "navy",
+   "blush",
+   "night"
+  ],
+  "orientations": [
+   "landscape",
+   "portrait"
+  ],
+  "dating": [
+   "dated (year)",
+   "undated"
+  ],
+  "fonts": [
+   "Corm",
+   "Jost",
+   "Fraunces",
+   "Manrope",
+   "Quicksand",
+   "Nunito",
+   "DMSerif",
+   "Outfit",
+   "Baskerville",
+   "Script"
+  ],
+  "type_scale": "number, 1.0 default; 1.15 for larger text"
+ },
+ "style_rules": [
+  {
+   "id": "r001",
+   "rule": "Every page must be reachable by links from the first page. Groups of pages that only link to each other count as unreachable.",
+   "enforced": "build (automatic)",
+   "from": "p-adhd-001 check round 2"
+  },
+  {
+   "id": "r002",
+   "rule": "Setup steps must work for a buyer on any purchase date in the selling window, for example before the dated year starts. Walk through day one for an early buyer and a mid-year buyer.",
+   "enforced": "brief writer and coverage checker",
+   "from": "p-adhd-001 check round 3"
+  },
+  {
+   "id": "r003",
+   "rule": "Every number or fact in the listing (pages, file size, what is and isn't included) must match the built file. Rebuilds change counts; update the copy.",
+   "enforced": "check tech (page counts automatic)",
+   "from": "p-adhd-001 rebuilds"
+  },
+  {
+   "id": "r004",
+   "rule": "Use only glyphs the embedded fonts contain. Draw arrows and icons as SVG, otherwise a non-licensed fallback font gets embedded.",
+   "enforced": "check tech + line test (automatic)",
+   "from": "p-adhd-001 check tech"
+  },
+  {
+   "id": "r005",
+   "rule": "A listing photo must show what its copy and alt text claim. A small multi-page grid needs captions and readable pages (2x2 beats 4 in a row).",
+   "enforced": "coverage checker",
+   "from": "p-adhd-001 check rounds 1 to 3"
+  },
+  {
+   "id": "r006",
+   "rule": "No half-empty pages. Fill spare space with something a buyer uses (a map of the top bar, a month jump grid, a pen test area), never decoration.",
+   "enforced": "coverage checker",
+   "from": "p-adhd-001 check rounds 1 to 3"
+  },
+  {
+   "id": "r007",
+   "rule": "Never promise service levels in the product (for example 'we reply fast'). Say what the buyer can do instead.",
+   "enforced": "coverage checker",
+   "from": "p-adhd-001 check round 1"
+  },
+  {
+   "id": "r008",
+   "rule": "A week that spans two months is built once, under the month that holds its Thursday; day pages name their own month in the trail.",
+   "enforced": "planner line (automatic)",
+   "from": "brief writer found it"
+  },
+  {
+   "id": "r009",
+   "rule": "Spreadsheets: never rely on a feature Google Sheets drops on import (data bars, Excel-only functions, external-style '#Sheet' links). Use text bars, functions both apps share, and internal tab links.",
+   "enforced": "spreadsheet line (automatic) + coverage checker",
+   "from": "coverage check, Clear Budget round 1"
+  },
+  {
+   "id": "r010",
+   "rule": "Every input cell must change at least one result. An input that nothing reads is a broken promise.",
+   "enforced": "coverage checker",
+   "from": "coverage check, Clear Budget round 1 (Debt 'Extra each month')"
+  },
+  {
+   "id": "r011",
+   "rule": "Size every list for the worst real case (weekly pay has 53 paydays a year; a month can hold 80+ purchases), or say plainly where it stops.",
+   "enforced": "brief writer + coverage checker",
+   "from": "coverage check, Clear Budget round 1"
+  },
+  {
+   "id": "r012",
+   "rule": "Only input cells are shaded. Labels, totals and formulas are never shaded like inputs.",
+   "enforced": "spreadsheet line (automatic)",
+   "from": "coverage check, Clear Budget round 1"
+  },
+  {
+   "id": "r013",
+   "rule": "Listing photos must be readable at Etsy's zoom: show the useful part of a page or tab, large, never a whole page shrunk to fit. Alt text and points describe only what is in frame.",
+   "enforced": "photos stage (photo views) + coverage checker",
+   "from": "coverage check, Clear Budget round 1"
+  },
+  {
+   "id": "r014",
+   "rule": "Start-up steps cover a buyer who buys before the product's year starts (Oct to Dec) as well as one who buys mid-year.",
+   "enforced": "brief writer + coverage checker",
+   "from": "coverage check, Clear Budget round 1"
+  },
+  {
+   "id": "r015",
+   "rule": "Price inside the market's best-earning range, never under it: at least the revenue-weighted median price (what buyers actually pay, weighted by sales). A low price makes a good product look cheap. While the shop has few reviews, launch with a time-limited Etsy sale (25% off for 30 days) on the full price instead of a low price.",
+   "enforced": "brief check (automatic) + brief writer",
+   "from": "Darren and Colynne, Oct 22 2026 (Canva course advice, confirmed by our price data)"
+  }
+ ],
+ "past_briefs": []
+}

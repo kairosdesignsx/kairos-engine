@@ -1,0 +1,102 @@
+{
+ "pass": true,
+ "problems": [],
+ "needs_module": [
+  "books",
+  "reading_year",
+  "reading_month"
+ ],
+ "coverage": [
+  {
+   "ref": "complaint:c_download",
+   "theme": "Couldn't download or open the file",
+   "count": 64,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_setup",
+   "theme": "Confusing setup or unclear instructions",
+   "count": 36,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_not_useful",
+   "theme": "Not useful for my needs",
+   "count": 34,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_hard",
+   "theme": "Hard to use day to day",
+   "count": 33,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_device",
+   "theme": "Doesn't work on my app or device",
+   "count": 24,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_quality",
+   "theme": "Errors, typos or low quality",
+   "count": 22,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_misleading",
+   "theme": "Not as described or pictured",
+   "count": 20,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_value",
+   "theme": "Not worth the price",
+   "count": 17,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_edit",
+   "theme": "Can't edit, type or customize",
+   "count": 17,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_broken",
+   "theme": "Doesn't work (no detail)",
+   "count": 15,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_support",
+   "theme": "Seller didn't help or reply",
+   "count": 15,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_missing",
+   "theme": "Missing pages or less than expected",
+   "count": 11,
+   "state": "fixed"
+  },
+  {
+   "ref": "feature:journal",
+   "theme": "Journal or notebook pages",
+   "share": 0.967,
+   "state": "included"
+  },
+  {
+   "ref": "feature:goodnotes",
+   "theme": "Says Goodnotes",
+   "share": 0.633,
+   "state": "included"
+  }
+ ],
+ "summary": {
+  "fixed": 12,
+  "included": 2,
+  "waived": 0,
+  "missing": 0,
+  "unique": 3
+ }
+}

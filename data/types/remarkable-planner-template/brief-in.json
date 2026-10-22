@@ -1,0 +1,1481 @@
+{
+ "type_id": "remarkable-planner-template",
+ "product_type": "Remarkable planner template",
+ "format": "Planner templates for e-ink tablets (PDF)",
+ "line": "planner",
+ "rules": {
+  "significant_complaint_count": 12,
+  "min_unique": 2,
+  "evidence_ref_kinds": [
+   "complaint:<id>",
+   "praise:<id>",
+   "wish:<id>",
+   "feature:<id>",
+   "price:<field>",
+   "keyword:<tag>",
+   "listing:<listing_id>",
+   "market:<field>",
+   "look:<style>"
+  ]
+ },
+ "basis": {
+  "listings": 30,
+  "reviews": 610,
+  "reviews_coded": 564,
+  "off_type_dropped": 29,
+  "negative_reviews": 230,
+  "feature_sources": [
+   "titles"
+  ],
+  "photos": "pending"
+ },
+ "market": {
+  "opportunity_score": 39.0,
+  "monthly_searches": 597.0,
+  "competing_listings": 7461.0,
+  "top_seller_revenue": 15199.0,
+  "new_sellers_in_top_pct": 30.0,
+  "summary": "Too niche. ~597 monthly searches, competition moderate (7,461 listings), and 30% of top sellers are under 6 months old. Top seller earns ~$15,199/mo; the best-earning price band is $56–73.",
+  "best_price_band": "$56-73"
+ },
+ "must_address": [
+  {
+   "ref": "complaint:c_not_useful",
+   "theme": "Not useful for my needs",
+   "count": 40,
+   "quotes": [
+    {
+     "text": "Alles wie beschrieben, einfacher Download. Im Ende benutze ich nichtviel davon. Doch nicht so hilfreich, wie ich dachte.",
+     "stars": 3
+    },
+    {
+     "text": "Doesn't actually help very much. At best a minor tweak.",
+     "stars": 2
+    },
+    {
+     "text": "This is not for me.  I need a weekly planner.",
+     "stars": 3
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_device",
+   "theme": "Doesn't work on my app or device",
+   "count": 36,
+   "quotes": [
+    {
+     "text": "This planner is not usable.  It has no links and the scale of the day planner is off and only fills 2/3 of my screen.",
+     "stars": 1
+    },
+    {
+     "text": "Not fully compatible with Remarkable 2.  Pen does not work well with template.",
+     "stars": 1
+    },
+    {
+     "text": "Can’t download in Etsy app. Link just takes you back through app. Ridiculous.",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_download",
+   "theme": "Couldn't download or open the file",
+   "count": 34,
+   "quotes": [
+    {
+     "text": "the program is worthless as I cannot get it downloaded to the remarkable tablet",
+     "stars": 1
+    },
+    {
+     "text": "Can’t download in Etsy app. Link just takes you back through app. Ridiculous.",
+     "stars": 1
+    },
+    {
+     "text": "Had a problem downloading the journals, reached out to the seller and they replied promptly with full instructions. Nice journals and great customer service.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_misleading",
+   "theme": "Not as described or pictured",
+   "count": 26,
+   "quotes": [
+    {
+     "text": "The product works well but is not the all in one integrated product it appears to be.",
+     "stars": 3
+    },
+    {
+     "text": "Didn't live up to description, can't convert to text",
+     "stars": 3
+    },
+    {
+     "text": "Does not work DO NOT BUY - this is a SCAM",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_links",
+   "theme": "Links broken or go to the wrong page",
+   "count": 24,
+   "quotes": [
+    {
+     "text": "This planner is not usable.  It has no links and the scale of the day planner is off and only fills 2/3 of my screen.",
+     "stars": 1
+    },
+    {
+     "text": "Links didn’t work properly, so unable to skip through weekly or monthly tabs.",
+     "stars": 1
+    },
+    {
+     "text": "The hyperlinks for the Icons do not work.I thought I was getting a separate section for notes and meetings but it is just for the day. It is not intuitive that you have to select the number of day in ",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_setup",
+   "theme": "Confusing setup or unclear instructions",
+   "count": 23,
+   "quotes": [
+    {
+     "text": "not easy to integrate on my device.",
+     "stars": 3
+    },
+    {
+     "text": "It is very difficult to apply to your Remarkable. The customer service response was very quick, but I took a loss.",
+     "stars": 1
+    },
+    {
+     "text": "I would like help setting this product up. I purchase an apple tablet to get the most out of this product.",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_missing",
+   "theme": "Missing pages or less than expected",
+   "count": 17,
+   "quotes": [
+    {
+     "text": "doesn't hyperlink well\ntoo complex for what I need\nonly one page for daily notes",
+     "stars": 1
+    },
+    {
+     "text": "Not 1000 templates, a lot more covers or unnecessary things than actual templates. Also has a lot of duplicate templates. I reached out and pretty much kept getting the same response and they wouldn't",
+     "stars": 1
+    },
+    {
+     "text": "This is NOT A TEMPLATE.  The download is a PDF file that literally gives you hundreds of pages for a calendar as if you're reading a book.  There are no hyperlinks or shortcuts—just a whole lot of cra",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_value",
+   "theme": "Not worth the price",
+   "count": 15,
+   "quotes": [
+    {
+     "text": "Article sans grand intérêt finalement et fort cher, malgré la promo, car ce sont pas des notebooks mais des pdf. En plus, ils ne sont pas aussi rapide et « responsive » que les notebook de base. Je ne",
+     "stars": 2
+    },
+    {
+     "text": "It is very difficult to apply to your Remarkable. The customer service response was very quick, but I took a loss.",
+     "stars": 1
+    },
+    {
+     "text": "Didn't download instantly.\nFlow was lacking \nquick links missing\npurchase another for under four dollars..flow much better",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_nav",
+   "theme": "Hard to navigate or find pages",
+   "count": 15,
+   "quotes": [
+    {
+     "text": "Links didn’t work properly, so unable to skip through weekly or monthly tabs.",
+     "stars": 1
+    },
+    {
+     "text": "Poor design no back to index",
+     "stars": 2
+    },
+    {
+     "text": "The file was easy to download and get onto my ReMarkable, I didn't like that it won't navigate from the monthly calendar view, to a specific day, by touching that day.  Otherwise, it was a good packag",
+     "stars": 3
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_quality",
+   "theme": "Errors, typos or low quality",
+   "count": 13,
+   "quotes": [
+    {
+     "text": "Tags dos not work on the individual page. a tag just finds the dokument",
+     "stars": 3
+    },
+    {
+     "text": "No good, bad focus, no recommended",
+     "stars": 1
+    },
+    {
+     "text": "Fraud! The pictures are stolen from another seller (called \"fashion templates\"). You will NOT get, what you see here, but a cheap childish version of a daily planer. And it's not customizable.",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_support",
+   "theme": "Seller didn't help or reply",
+   "count": 12,
+   "quotes": [
+    {
+     "text": "It is not working on my RM2. There is no support",
+     "stars": 1
+    },
+    {
+     "text": "Not 1000 templates, a lot more covers or unnecessary things than actual templates. Also has a lot of duplicate templates. I reached out and pretty much kept getting the same response and they wouldn't",
+     "stars": 1
+    },
+    {
+     "text": "Non mi fornite assistenza per SCARICARE il Daily Planner 2925 - 2026 sul mio Kindle scribe!",
+     "stars": 1
+    }
+   ]
+  }
+ ],
+ "other_complaints": [
+  {
+   "ref": "complaint:c_edit",
+   "theme": "Can't edit, type or customize",
+   "count": 11
+  },
+  {
+   "ref": "complaint:c_broken",
+   "theme": "Doesn't work (no detail)",
+   "count": 11
+  },
+  {
+   "ref": "complaint:c_hard",
+   "theme": "Hard to use day to day",
+   "count": 11
+  },
+  {
+   "ref": "complaint:c_overwhelm",
+   "theme": "Too much, overwhelming",
+   "count": 7
+  },
+  {
+   "ref": "complaint:c_basic",
+   "theme": "Too basic or boring",
+   "count": 7
+  },
+  {
+   "ref": "complaint:c_space",
+   "theme": "Too little writing space",
+   "count": 7
+  },
+  {
+   "ref": "complaint:c_readability",
+   "theme": "Text too small or hard to read",
+   "count": 7
+  },
+  {
+   "ref": "complaint:c_refund",
+   "theme": "Refund refused",
+   "count": 6
+  },
+  {
+   "ref": "complaint:c_extra_app",
+   "theme": "Needed an app or subscription that wasn't clear",
+   "count": 6
+  },
+  {
+   "ref": "complaint:c_look",
+   "theme": "Didn't like the look",
+   "count": 6
+  },
+  {
+   "ref": "complaint:c_pdf_not_template",
+   "theme": "Just a PDF, not a native device template",
+   "count": 6
+  },
+  {
+   "ref": "complaint:c_lag",
+   "theme": "Slow, laggy or file too big",
+   "count": 6
+  },
+  {
+   "ref": "complaint:c_dates",
+   "theme": "Wrong or missing dates, calendar errors",
+   "count": 4
+  },
+  {
+   "ref": "complaint:c_language",
+   "theme": "Only in English",
+   "count": 2
+  },
+  {
+   "ref": "complaint:c_review_gate",
+   "theme": "Forced to leave a review",
+   "count": 2
+  },
+  {
+   "ref": "complaint:c_time_format",
+   "theme": "Unwanted time format",
+   "count": 1
+  }
+ ],
+ "praise": [
+  {
+   "ref": "praise:p_fits_needs",
+   "theme": "Useful, fits my needs",
+   "count": 91,
+   "quotes": [
+    {
+     "text": "Exactly what i was looking for and the customisation makes it 10 times better",
+     "stars": 5
+    },
+    {
+     "text": "Exactly what I was looking for. Easy to navigate, edit, and utilize.",
+     "stars": 5
+    },
+    {
+     "text": "2nd time purchasing from this store.  It's just what I wanted.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_quality",
+   "theme": "High quality",
+   "count": 78,
+   "quotes": [
+    {
+     "text": "An excellent planner that is well-linked, clear, and has lots of space for all kinds of notes.  Really classy stuff.",
+     "stars": 5
+    },
+    {
+     "text": "Had a problem downloading the journals, reached out to the seller and they replied promptly with full instructions. Nice journals and great customer service.",
+     "stars": 5
+    },
+    {
+     "text": "Great quality, would recommend and purchase from seller again.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_easy",
+   "theme": "Easy to set up and use",
+   "count": 65,
+   "quotes": [
+    {
+     "text": "Alles wie beschrieben, einfacher Download. Im Ende benutze ich nichtviel davon. Doch nicht so hilfreich, wie ich dachte.",
+     "stars": 3
+    },
+    {
+     "text": "Exactly what I was looking for. Easy to navigate, edit, and utilize.",
+     "stars": 5
+    },
+    {
+     "text": "Comprehensive system, easy to use! Great customer service!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_look",
+   "theme": "Beautiful design",
+   "count": 61,
+   "quotes": [
+    {
+     "text": "fantastisch... super strak en mooie elementen die je erin hebt verwerkt.. top",
+     "stars": 5
+    },
+    {
+     "text": "Great templates that cover several of my interests with good layouts and colours.  I have added many to my Move already and they all worked perfectly.",
+     "stars": 5
+    },
+    {
+     "text": "Just as described. Really lovely. 🥰",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_support",
+   "theme": "Seller was helpful",
+   "count": 56,
+   "quotes": [
+    {
+     "text": "Had a problem downloading the journals, reached out to the seller and they replied promptly with full instructions. Nice journals and great customer service.",
+     "stars": 5
+    },
+    {
+     "text": "Comprehensive system, easy to use! Great customer service!",
+     "stars": 5
+    },
+    {
+     "text": "Customer service was amazing and I recommend them!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_device",
+   "theme": "Works on my device",
+   "count": 54,
+   "quotes": [
+    {
+     "text": "This is. a really good thoughtful planner for the move. Highly recommended.",
+     "stars": 4
+    },
+    {
+     "text": "Great templates that cover several of my interests with good layouts and colours.  I have added many to my Move already and they all worked perfectly.",
+     "stars": 5
+    },
+    {
+     "text": "Item exactly as described and seamless download process with customization options provided as indicated. Easily uploaded to my remarkable 2 and all the linked pages work!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_as_described",
+   "theme": "Exactly as described",
+   "count": 34,
+   "quotes": [
+    {
+     "text": "Alles wie beschrieben, einfacher Download. Im Ende benutze ich nichtviel davon. Doch nicht so hilfreich, wie ich dachte.",
+     "stars": 3
+    },
+    {
+     "text": "Item exactly as described and seamless download process with customization options provided as indicated. Easily uploaded to my remarkable 2 and all the linked pages work!",
+     "stars": 5
+    },
+    {
+     "text": "product as advertised and shipping was fast.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_complete",
+   "theme": "Has everything I need",
+   "count": 32,
+   "quotes": [
+    {
+     "text": "I *love* this planner for my remarkable.  It's got enough, but not too much..",
+     "stars": 5
+    },
+    {
+     "text": "Great templates that cover several of my interests with good layouts and colours.  I have added many to my Move already and they all worked perfectly.",
+     "stars": 5
+    },
+    {
+     "text": "Comprehensive system, easy to use! Great customer service!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_repeat",
+   "theme": "Repeat buyer",
+   "count": 29,
+   "quotes": [
+    {
+     "text": "Great quality, would recommend and purchase from seller again.",
+     "stars": 5
+    },
+    {
+     "text": "2nd time purchasing from this store.  It's just what I wanted.",
+     "stars": 5
+    },
+    {
+     "text": "Every year I am ordering this planer and is perfect",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_nav",
+   "theme": "Links work, easy to navigate",
+   "count": 24,
+   "quotes": [
+    {
+     "text": "An excellent planner that is well-linked, clear, and has lots of space for all kinds of notes.  Really classy stuff.",
+     "stars": 5
+    },
+    {
+     "text": "Exactly what I was looking for. Easy to navigate, edit, and utilize.",
+     "stars": 5
+    },
+    {
+     "text": "Simple, attractive and straight-forward, they're notebooks with linked sections.  Priced very fairly compared to others.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_flexible",
+   "theme": "Flexible or customizable",
+   "count": 24,
+   "quotes": [
+    {
+     "text": "Exactly what i was looking for and the customisation makes it 10 times better",
+     "stars": 5
+    },
+    {
+     "text": "Exactly what I was looking for. Easy to navigate, edit, and utilize.",
+     "stars": 5
+    },
+    {
+     "text": "The ability to customize to your own preferences is awesome.",
+     "stars": 4
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_daily",
+   "theme": "I use it every day",
+   "count": 13,
+   "quotes": [
+    {
+     "text": "Fantastic, high quality template. I've been using it daily for about a month now and would recommend it to everyone. Thank you",
+     "stars": 5
+    },
+    {
+     "text": "Jerel, I appreciate the dialogue we had and I must say the I really am impressed with this. This will be used daily in my workflow.",
+     "stars": 5
+    },
+    {
+     "text": "The first habit tracker I have actually used every day! Thank you!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_value",
+   "theme": "Great value",
+   "count": 12,
+   "quotes": [
+    {
+     "text": "it's a very basic version of a planner, you need to do a lot of duplicating in order to make this work. But the price does reflect this...",
+     "stars": 3
+    },
+    {
+     "text": "Simple, attractive and straight-forward, they're notebooks with linked sections.  Priced very fairly compared to others.",
+     "stars": 5
+    },
+    {
+     "text": "The Daily Planner has a very nice design and is super easy to navigate. Very fair price too! I will find this helpful in keeping myself organised!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_adhd",
+   "theme": "Helps me stay on track",
+   "count": 9,
+   "quotes": [
+    {
+     "text": "Very customizable, has kept me on task very well for college",
+     "stars": 5
+    },
+    {
+     "text": "Aesthetically pleasing, and the prompts help me organise my mind. It does take some time to load because of the file size, though.",
+     "stars": 3
+    },
+    {
+     "text": "The Daily Planner has a very nice design and is super easy to navigate. Very fair price too! I will find this helpful in keeping myself organised!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_space",
+   "theme": "Plenty of writing space",
+   "count": 2,
+   "quotes": [
+    {
+     "text": "An excellent planner that is well-linked, clear, and has lots of space for all kinds of notes.  Really classy stuff.",
+     "stars": 5
+    },
+    {
+     "text": "Great little planner for the new size. Plenty of notes space and flows nicely. The only thing that I would change is to have a week overview as well. It's lacking that one view for me. But otherwise a",
+     "stars": 4
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_guide",
+   "theme": "Clear instructions or tutorials",
+   "count": 2,
+   "quotes": [
+    {
+     "text": "Fantastic.  Lots of page choices.  Easy to follow instructions.",
+     "stars": 5
+    },
+    {
+     "text": "Very helpful with instructions to solve my issues!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_extras",
+   "theme": "Love the stickers and extras",
+   "count": 2,
+   "quotes": [
+    {
+     "text": "Excellent \"stickers\" -- great variety and consistent look and feel. Super helpful for a calendar, or whatever.",
+     "stars": 5
+    },
+    {
+     "text": "Helpful and responsive seller.  Good value for the bundle, the workbooks are intuitive, the layouts are minimalist in the best sense and aesthetically pleasing. The assessment pages are a great add to",
+     "stars": 4
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_fast",
+   "theme": "Fast and responsive",
+   "count": 1,
+   "quotes": [
+    {
+     "text": "Great template- works really fast and it's easy to use!",
+     "stars": 5
+    }
+   ]
+  }
+ ],
+ "wishes": [
+  {
+   "ref": "wish:w_page_types",
+   "theme": "More page types included",
+   "count": 7
+  },
+  {
+   "ref": "wish:w_customize",
+   "theme": "More ways to customize",
+   "count": 5
+  },
+  {
+   "ref": "wish:w_listing_info",
+   "theme": "Listing should say which apps are needed",
+   "count": 3
+  },
+  {
+   "ref": "wish:w_time_range",
+   "theme": "Wider daily time range",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_language",
+   "theme": "Other languages",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_easy_delivery",
+   "theme": "Easier way to receive the files",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_tutorial",
+   "theme": "A video showing how it works",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_prefilled",
+   "theme": "Times or details pre-filled on pages",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_side_tabs",
+   "theme": "Side tabs for faster navigation",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_order",
+   "theme": "Pages in a logical order",
+   "count": 1
+  }
+ ],
+ "features": [
+  {
+   "ref": "feature:eink",
+   "name": "E-ink tablets (reMarkable, Boox, Kindle Scribe)",
+   "tier": "standard",
+   "share": 0.967,
+   "revenue_share": 1.0
+  },
+  {
+   "ref": "feature:dated",
+   "name": "Dated for the year",
+   "tier": "common",
+   "share": 0.533,
+   "revenue_share": 0.408
+  },
+  {
+   "ref": "feature:journal",
+   "name": "Journal or notebook pages",
+   "tier": "common",
+   "share": 0.533,
+   "revenue_share": 0.661
+  },
+  {
+   "ref": "feature:bundle",
+   "name": "Bundle of several products",
+   "tier": "common",
+   "share": 0.467,
+   "revenue_share": 0.623
+  },
+  {
+   "ref": "feature:multi_year",
+   "name": "Covers more than one year",
+   "tier": "common",
+   "share": 0.333,
+   "revenue_share": 0.19
+  },
+  {
+   "ref": "feature:work",
+   "name": "Work or productivity focus",
+   "tier": "common",
+   "share": 0.333,
+   "revenue_share": 0.371
+  },
+  {
+   "ref": "feature:hyperlinked",
+   "name": "Hyperlinked tabs and dates",
+   "tier": "rare",
+   "share": 0.233,
+   "revenue_share": 0.121
+  },
+  {
+   "ref": "feature:all_in_one",
+   "name": "All-in-one life planner",
+   "tier": "rare",
+   "share": 0.133,
+   "revenue_share": 0.23
+  },
+  {
+   "ref": "feature:minimalist",
+   "name": "Minimalist look",
+   "tier": "rare",
+   "share": 0.1,
+   "revenue_share": 0.11
+  },
+  {
+   "ref": "feature:custom",
+   "name": "Customizable or personalized",
+   "tier": "rare",
+   "share": 0.067,
+   "revenue_share": 0.12
+  },
+  {
+   "ref": "feature:goals",
+   "name": "Goal setting",
+   "tier": "rare",
+   "share": 0.033,
+   "revenue_share": 0.041
+  },
+  {
+   "ref": "feature:stickers",
+   "name": "Digital stickers included",
+   "tier": "rare",
+   "share": 0.033,
+   "revenue_share": 0.034
+  },
+  {
+   "ref": "feature:undated",
+   "name": "Undated version",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:adhd_specific",
+   "name": "Built for ADHD",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:habit_tracker",
+   "name": "Habit tracker",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:self_care",
+   "name": "Self-care, mood or wellness pages",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:budget",
+   "name": "Budget or finance pages",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:meal",
+   "name": "Meal planning",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:time_blocking",
+   "name": "Time blocking or hourly schedule",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:dark_mode",
+   "name": "Dark mode",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:goodnotes",
+   "name": "Says Goodnotes",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:notability",
+   "name": "Says Notability",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:android",
+   "name": "Android or Samsung support",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:landscape",
+   "name": "Landscape layout",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:portrait",
+   "name": "Portrait layout",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:colorful",
+   "name": "Colorful or aesthetic look",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:student",
+   "name": "Student or academic",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:brain_dump",
+   "name": "Brain dump pages",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:routines",
+   "name": "Routine builder",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:dopamine_menu",
+   "name": "Dopamine menu",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:priority_matrix",
+   "name": "Priority matrix or top 3",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:quick_start",
+   "name": "Quick start or setup guide",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:test_page",
+   "name": "Link test or setup check page",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  }
+ ],
+ "standard_features": [
+  "feature:eink"
+ ],
+ "price": {
+  "p25": 17.16,
+  "median": 46.79,
+  "p75": 68.31,
+  "top10_by_revenue_median": 68.03,
+  "revenue_weighted_median": 68.6,
+  "best_band": "$56-73"
+ },
+ "keywords": [
+  {
+   "tag": "remarkable templates",
+   "used_by_top": 17,
+   "volume": 628.0
+  },
+  {
+   "tag": "remarkable planner",
+   "used_by_top": 13,
+   "volume": null
+  },
+  {
+   "tag": "remarkable calendar",
+   "used_by_top": 12,
+   "volume": null
+  },
+  {
+   "tag": "remarkable paper pro",
+   "used_by_top": 10,
+   "volume": null
+  },
+  {
+   "tag": "remarkable template",
+   "used_by_top": 9,
+   "volume": null
+  },
+  {
+   "tag": "remarkable 2",
+   "used_by_top": 8,
+   "volume": null
+  },
+  {
+   "tag": "digital planner",
+   "used_by_top": 8,
+   "volume": null
+  },
+  {
+   "tag": "productivity bundle",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "remarkable notebook",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "remarkable journal",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "remarkable 2 planner",
+   "used_by_top": 6,
+   "volume": null
+  },
+  {
+   "tag": "remarkable pro",
+   "used_by_top": 6,
+   "volume": null
+  },
+  {
+   "tag": "remarkable bundle",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "remarkable move",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "planner",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "remarkable",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "paper pro move",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "remarkable pure",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "calendar",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "2026 planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "paper pro planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "daily planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "template bundle",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "daily",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "2025",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "remarkable pro move",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "paper pure planner",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "remarkable 2027",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "hyperlinked pdf",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "minimalist planner",
+   "used_by_top": 3,
+   "volume": null
+  }
+ ],
+ "looks": [
+  {
+   "ref": "look:Minimalist look",
+   "share": 0.1
+  },
+  {
+   "ref": "look:Dark mode",
+   "share": 0.0
+  },
+  {
+   "ref": "look:Landscape layout",
+   "share": 0.0
+  },
+  {
+   "ref": "look:Portrait layout",
+   "share": 0.0
+  },
+  {
+   "ref": "look:Colorful or aesthetic look",
+   "share": 0.0
+  }
+ ],
+ "top_listings": [
+  {
+   "ref": "listing:4372441364",
+   "title": "Full Shop Access for reMarkable Paper Pro Move Collection: All-In-One Bundle With Calendars, Planners, Notebooks, Tracke",
+   "shop": "StudioPiksels",
+   "price": 95.55,
+   "mo_revenue": 4204.0,
+   "total_sales": 520.0
+  },
+  {
+   "ref": "listing:917935842",
+   "title": "Templates for Remarkable 2 and Remarkable Paper Pure: planner, journal, meetings, notebook, projects, calendar, to do li",
+   "shop": "ePaperTemplates",
+   "price": 57.6,
+   "mo_revenue": 0.0,
+   "total_sales": 15683.0
+  },
+  {
+   "ref": "listing:1054473758",
+   "title": "Templates for Remarkable Paper Pro, Remarkable 2 and Paper Pro Move: planner, journal, meetings, notebook, projects, cal",
+   "shop": "ePaperTemplates",
+   "price": 68.6,
+   "mo_revenue": 3567.0,
+   "total_sales": 13597.0
+  },
+  {
+   "ref": "listing:4458010957",
+   "title": "Templates for reMarkable Paper Pro Move, Bundle with Planners, Notebooks, Covers, Puzzles, Coloring Pages",
+   "shop": "ePlanneryStudio",
+   "price": 75.92,
+   "mo_revenue": 2429.0,
+   "total_sales": 64.0
+  },
+  {
+   "ref": "listing:1462960790",
+   "title": "Remarkable 2 & Paper Pure Tablet Templates Productivity Bundle | Daily Planner, Journal, Meeting Notes (2026-2027)",
+   "shop": "TabletTemplates",
+   "price": 21.37,
+   "mo_revenue": 0.0,
+   "total_sales": 5419.0
+  },
+  {
+   "ref": "listing:4500560977",
+   "title": "Full Shop Access to reMarkable Paper Pure Collection: Productivity Templates for reMarkable Paper Pure, Planner, Noteboo",
+   "shop": "StudioPiksels",
+   "price": 67.45,
+   "mo_revenue": 2428.0,
+   "total_sales": 60.0
+  },
+  {
+   "ref": "listing:954561803",
+   "title": "Digital Planner 2027 & 2026 for Remarkable Paper Pro Move",
+   "shop": "SmartTemplatesStudio",
+   "price": 15.75,
+   "mo_revenue": 0.0,
+   "total_sales": 5170.0
+  },
+  {
+   "ref": "listing:4432249026",
+   "title": "Digital Planner for reMarkable Paper Pro Move — Movenichi PRO 2026 | Hyperlinked Minimalist reMarkable Planner Template,",
+   "shop": "novaMarkable",
+   "price": 40.29,
+   "mo_revenue": 2216.0,
+   "total_sales": 431.0
+  },
+  {
+   "ref": "listing:888014056",
+   "title": "Weekly Planner for Remarkable tablets, eInk templates, hyperlinked PDF, calendar, agenda",
+   "shop": "ePaperTemplates",
+   "price": 14.8,
+   "mo_revenue": 0.0,
+   "total_sales": 4155.0
+  },
+  {
+   "ref": "listing:4520841266",
+   "title": "Daily Weekly Planner Builder reMarkable Paper Pro, 2026, 2027, 2028, Customizable PDF Digital Download",
+   "shop": "ePlanneryStudio",
+   "price": 52.43,
+   "mo_revenue": 1887.0,
+   "total_sales": 80.0
+  },
+  {
+   "ref": "listing:865642017",
+   "title": "Smart Notebook for Remarkable 2 tablets, eInk templates, hyperlinked PDF, to do list, cornell",
+   "shop": "ePaperTemplates",
+   "price": 12.4,
+   "mo_revenue": 0.0,
+   "total_sales": 3944.0
+  },
+  {
+   "ref": "listing:4520897436",
+   "title": "Daily Weekly Planner Builder reMarkable Paper Pure, 2026, 2027, 2028, Customizable PDF Digital Download",
+   "shop": "ePlanneryStudio",
+   "price": 52.43,
+   "mo_revenue": 1730.0,
+   "total_sales": 48.0
+  },
+  {
+   "ref": "listing:1436271295",
+   "title": "Remarkable 2 and Paper Pure Daily Planner 2026-2027, Hyperlinked PDF Template",
+   "shop": "TabletTemplates",
+   "price": 14.06,
+   "mo_revenue": 0.0,
+   "total_sales": 3555.0
+  },
+  {
+   "ref": "listing:4564461389",
+   "title": "Lifetime Full Shop Bundle for reMarkable Paper Pro Move - Planners, Productivity, Journals, Notebooks, Trackers, Puzzles",
+   "shop": "WrittenThinking",
+   "price": 72.59,
+   "mo_revenue": 1579.0,
+   "total_sales": 21.0
+  },
+  {
+   "ref": "listing:790153633",
+   "title": "Monthly Calendar for Remarkable tablets, eInk templates, hyperlinked PDF, calendar, agenda",
+   "shop": "ePaperTemplates",
+   "price": 7.2,
+   "mo_revenue": 0.0,
+   "total_sales": 3137.0
+  }
+ ],
+ "capabilities": {
+  "modules": {
+   "cover": {
+    "desc": "Cover page with title, subtitle and an Open planner button",
+    "params": {}
+   },
+   "index": {
+    "desc": "Contents page: a card for every section plus all months",
+    "params": {}
+   },
+   "year": {
+    "desc": "Year at a glance: 12 mini calendars, every date links to its day (dated) or month (undated)",
+    "params": {}
+   },
+   "lined": {
+    "desc": "Lined or dot-grid writing pages (notes, goals, brain dump). label, kicker, pages, dots, anchor",
+    "params": {
+     "label": "str",
+     "kicker": "str",
+     "pages": "int",
+     "dots": "bool",
+     "anchor": "str"
+    }
+   },
+   "checklist": {
+    "desc": "Checklist page in columns. label, kicker, groups: [[title, [items]]], anchor",
+    "params": {
+     "label": "str",
+     "kicker": "str",
+     "groups": "list",
+     "anchor": "str"
+    }
+   },
+   "table": {
+    "desc": "Table page. label, kicker, headers, rows, first_column (pre-filled), anchor",
+    "params": {
+     "label": "str",
+     "headers": "list",
+     "rows": "int",
+     "first_column": "list",
+     "anchor": "str"
+    }
+   },
+   "year_pixels": {
+    "desc": "Year in pixels: color one square per day for mood or energy. label, keys",
+    "params": {
+     "label": "str",
+     "keys": "list"
+    }
+   },
+   "guide": {
+    "desc": "Printed guide page with numbered steps (how to start, how to import, how links work). label, kicker, steps: [[title, text]], tip, anchor",
+    "params": {
+     "label": "str",
+     "kicker": "str",
+     "steps": "list",
+     "tip": "str",
+     "anchor": "str"
+    }
+   },
+   "link_test": {
+    "desc": "Setup check page: buttons that jump to a test page and back, so buyers confirm links work before planning. label, anchor",
+    "params": {}
+   },
+   "calendar": {
+    "desc": "The dated or undated calendar: month pages, optional habit page per month, week pages and day pages, all cross-linked. month: {side: [labels]}, habits: bool, week: {preset | side: [blocks]}, day: {preset | left: [blocks], right: [blocks]}, days: bool",
+    "params": {
+     "month": "dict",
+     "habits": "bool",
+     "week": "dict",
+     "day": "dict",
+     "days": "bool"
+    }
+   },
+   "head_start": {
+    "desc": "Lead-in months before the main dated year (for example Nov and Dec 2026 in a 2027 planner): month pages whose dates link to lead-in week pages, Monday-start week pages titled by date range, optional lead-in day pages. Anchors use their own prefix. The last week links days that fall in the main year to their day pages and offers Continue to the main year. label, kicker, anchor (prefix, default hs), from YYYY-MM, to YYYY-MM, days bool, month {side}, week {preset|side}, day {preset|left,right}, continue_to (default m01)",
+    "params": {
+     "label": "str",
+     "kicker": "str",
+     "anchor": "str",
+     "from": "YYYY-MM",
+     "to": "YYYY-MM",
+     "days": "bool",
+     "month": "dict",
+     "week": "dict",
+     "day": "dict",
+     "continue_to": "str"
+    }
+   }
+  },
+  "blocks": {
+   "checklist": "Checkbox list. label, rows, items (pre-filled), fill, grow",
+   "lines": "Lined writing box. label, grow (default true) or height",
+   "dots": "Dot-grid box. label, grow or height",
+   "water": "Water tracker drops. label, count",
+   "scale": "Circles 1 to max to rate energy, mood or focus. label, max",
+   "hours": "Hourly schedule. label, from, to, row (px)",
+   "pair": "Two blocks side by side. items: [block, block]",
+   "text": "Short printed tip or instruction. label, text"
+  },
+  "day_presets": [
+   "default",
+   "adhd"
+  ],
+  "week_presets": [
+   "default",
+   "adhd"
+  ],
+  "themes": [
+   "sage",
+   "neutral",
+   "pastel",
+   "navy",
+   "blush",
+   "night"
+  ],
+  "orientations": [
+   "landscape",
+   "portrait"
+  ],
+  "dating": [
+   "dated (year)",
+   "undated"
+  ],
+  "fonts": [
+   "Corm",
+   "Jost",
+   "Fraunces",
+   "Manrope",
+   "Quicksand",
+   "Nunito",
+   "DMSerif",
+   "Outfit",
+   "Baskerville",
+   "Script"
+  ],
+  "type_scale": "number, 1.0 default; 1.15 for larger text"
+ },
+ "style_rules": [
+  {
+   "id": "r001",
+   "rule": "Every page must be reachable by links from the first page. Groups of pages that only link to each other count as unreachable.",
+   "enforced": "build (automatic)",
+   "from": "p-adhd-001 check round 2"
+  },
+  {
+   "id": "r002",
+   "rule": "Setup steps must work for a buyer on any purchase date in the selling window, for example before the dated year starts. Walk through day one for an early buyer and a mid-year buyer.",
+   "enforced": "brief writer and coverage checker",
+   "from": "p-adhd-001 check round 3"
+  },
+  {
+   "id": "r003",
+   "rule": "Every number or fact in the listing (pages, file size, what is and isn't included) must match the built file. Rebuilds change counts; update the copy.",
+   "enforced": "check tech (page counts automatic)",
+   "from": "p-adhd-001 rebuilds"
+  },
+  {
+   "id": "r004",
+   "rule": "Use only glyphs the embedded fonts contain. Draw arrows and icons as SVG, otherwise a non-licensed fallback font gets embedded.",
+   "enforced": "check tech + line test (automatic)",
+   "from": "p-adhd-001 check tech"
+  },
+  {
+   "id": "r005",
+   "rule": "A listing photo must show what its copy and alt text claim. A small multi-page grid needs captions and readable pages (2x2 beats 4 in a row).",
+   "enforced": "coverage checker",
+   "from": "p-adhd-001 check rounds 1 to 3"
+  },
+  {
+   "id": "r006",
+   "rule": "No half-empty pages. Fill spare space with something a buyer uses (a map of the top bar, a month jump grid, a pen test area), never decoration.",
+   "enforced": "coverage checker",
+   "from": "p-adhd-001 check rounds 1 to 3"
+  },
+  {
+   "id": "r007",
+   "rule": "Never promise service levels in the product (for example 'we reply fast'). Say what the buyer can do instead.",
+   "enforced": "coverage checker",
+   "from": "p-adhd-001 check round 1"
+  },
+  {
+   "id": "r008",
+   "rule": "A week that spans two months is built once, under the month that holds its Thursday; day pages name their own month in the trail.",
+   "enforced": "planner line (automatic)",
+   "from": "brief writer found it"
+  },
+  {
+   "id": "r009",
+   "rule": "Spreadsheets: never rely on a feature Google Sheets drops on import (data bars, Excel-only functions, external-style '#Sheet' links). Use text bars, functions both apps share, and internal tab links.",
+   "enforced": "spreadsheet line (automatic) + coverage checker",
+   "from": "coverage check, Clear Budget round 1"
+  },
+  {
+   "id": "r010",
+   "rule": "Every input cell must change at least one result. An input that nothing reads is a broken promise.",
+   "enforced": "coverage checker",
+   "from": "coverage check, Clear Budget round 1 (Debt 'Extra each month')"
+  },
+  {
+   "id": "r011",
+   "rule": "Size every list for the worst real case (weekly pay has 53 paydays a year; a month can hold 80+ purchases), or say plainly where it stops.",
+   "enforced": "brief writer + coverage checker",
+   "from": "coverage check, Clear Budget round 1"
+  },
+  {
+   "id": "r012",
+   "rule": "Only input cells are shaded. Labels, totals and formulas are never shaded like inputs.",
+   "enforced": "spreadsheet line (automatic)",
+   "from": "coverage check, Clear Budget round 1"
+  },
+  {
+   "id": "r013",
+   "rule": "Listing photos must be readable at Etsy's zoom: show the useful part of a page or tab, large, never a whole page shrunk to fit. Alt text and points describe only what is in frame.",
+   "enforced": "photos stage (photo views) + coverage checker",
+   "from": "coverage check, Clear Budget round 1"
+  },
+  {
+   "id": "r014",
+   "rule": "Start-up steps cover a buyer who buys before the product's year starts (Oct to Dec) as well as one who buys mid-year.",
+   "enforced": "brief writer + coverage checker",
+   "from": "coverage check, Clear Budget round 1"
+  },
+  {
+   "id": "r015",
+   "rule": "Price inside the market's best-earning range, never under it: at least the revenue-weighted median price (what buyers actually pay, weighted by sales). A low price makes a good product look cheap. While the shop has few reviews, launch with a time-limited Etsy sale (25% off for 30 days) on the full price instead of a low price.",
+   "enforced": "brief check (automatic) + brief writer",
+   "from": "Darren and Colynne, Oct 22 2026 (Canva course advice, confirmed by our price data)"
+  }
+ ],
+ "past_briefs": []
+}

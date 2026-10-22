@@ -1,0 +1,606 @@
+{
+ "brief_id": "b-rjd-001",
+ "product_id": "p-rjd-001",
+ "type_id": "reading-journal-digital",
+ "line": "planner",
+ "created_at": "2026-10-22T10:00:00+08:00",
+ "positioning": "For readers who want one place on their tablet for every book they finish: an undated, portrait reading journal for Goodnotes and Android note apps with a 100-book Library where every line opens that book's own review page and back. Top sellers win on pretty pages, but their buyers' biggest complaints are files that would not open, confusing setup and pages they could not find, so this one wins on working in five minutes, one review page layout to learn, and links that go everywhere.",
+ "must_haves": [
+  {
+   "id": "mh_journal",
+   "what": "Real journal pages for books: a review page per book with title, author, dates, format, star rating, thoughts, a favorite quote and a one-line verdict, plus quote and notes pages.",
+   "evidence": [
+    "feature:journal",
+    "keyword:reading journal",
+    "keyword:book review",
+    "praise:p_complete"
+   ]
+  },
+  {
+   "id": "mh_apps",
+   "what": "One PDF that works in Goodnotes (named first in the title and listing), Notability, Samsung Notes, Xodo and Noteshelf on iPad, Android and Windows tablets.",
+   "evidence": [
+    "feature:goodnotes",
+    "feature:notability",
+    "feature:android",
+    "keyword:goodnotes journal",
+    "praise:p_device"
+   ]
+  },
+  {
+   "id": "mh_tracker",
+   "what": "The tracking set reading buyers search for: a book log (the Library), a to-be-read list, monthly reading pages and a yearly reading goal page.",
+   "evidence": [
+    "keyword:reading tracker",
+    "keyword:book tracker",
+    "keyword:reading log",
+    "keyword:reading list",
+    "praise:p_fits_needs"
+   ]
+  },
+  {
+   "id": "mh_nav",
+   "what": "Fully hyperlinked: Contents page, month tabs on every page, a top bar (Home, Library, TBR, Quotes), and previous and next arrows on every book page.",
+   "evidence": [
+    "praise:p_nav",
+    "feature:hyperlinked",
+    "complaint:c_nav"
+   ]
+  },
+  {
+   "id": "mh_look",
+   "what": "A finished, designed look with real typography and consistent spacing; design is the third biggest praise driver.",
+   "evidence": [
+    "praise:p_look",
+    "praise:p_quality"
+   ]
+  },
+  {
+   "id": "mh_guide",
+   "what": "Instructions printed inside the file (Start here and Setup check pages), not only in a separate PDF or video.",
+   "evidence": [
+    "praise:p_guide",
+    "praise:p_easy"
+   ]
+  }
+ ],
+ "fixes": [
+  {
+   "id": "f_download",
+   "complaint": "complaint:c_download",
+   "how": "Ships as one PDF, not a zip, with no sticker files that can fail to import. Listing copy and photo 4 give the download in 3 steps: buy, download from Etsy in a web browser (the Etsy app cannot download digital files), open the PDF in a note app. The Start here page repeats the steps for anyone who opened it on a computer first. The cover title matches the listing title exactly, so buyers know they got the right file.",
+   "evidence": [
+    "complaint:c_download",
+    "complaint:c_misleading",
+    "wish:w_listing_info"
+   ],
+   "modules": [
+    "guide",
+    "cover"
+   ]
+  },
+  {
+   "id": "f_setup",
+   "complaint": "complaint:c_setup",
+   "how": "The cover's Open journal button lands on Start here: 4 numbered steps (open it in a note app, check the links, add your first book, start in any month), each with a Go there button. The Setup check page is next. Both are the first two cards on Contents.",
+   "evidence": [
+    "complaint:c_setup",
+    "praise:p_guide",
+    "feature:quick_start"
+   ],
+   "modules": [
+    "guide",
+    "link_test",
+    "index",
+    "cover"
+   ]
+  },
+  {
+   "id": "f_not_useful",
+   "complaint": "complaint:c_not_useful",
+   "how": "It keeps history and plans forward, the two things a 1-star buyer missed: 100 numbered book pages that stay filled in, a 12-month set of reading pages and a TBR list for what comes next. Undated, so it starts the day you buy it and nothing is wasted. The listing lists every page type with counts so buyers who need only a few pages can see that before buying.",
+   "evidence": [
+    "complaint:c_not_useful",
+    "wish:w_capacity",
+    "feature:undated",
+    "praise:p_fits_needs"
+   ],
+   "modules": [
+    "books",
+    "reading_month",
+    "table"
+   ]
+  },
+  {
+   "id": "f_hard",
+   "complaint": "complaint:c_hard",
+   "how": "One review page layout for every book, so there is one page to learn. The Library is the only starting point a reader needs: write the title on a line, tap its number, fill in the book page, tap Library in the trail to go back. Start here step 3 walks through exactly this.",
+   "evidence": [
+    "complaint:c_hard",
+    "praise:p_easy",
+    "complaint:c_overwhelm"
+   ],
+   "modules": [
+    "books",
+    "guide"
+   ]
+  },
+  {
+   "id": "f_device",
+   "complaint": "complaint:c_device",
+   "how": "Portrait pages at 768 x 1024 (the iPad's own shape held upright, like a book), and every link is a plain PDF link that all major note apps follow. The listing has a Works with / Not for box: works in Goodnotes, Notability, Samsung Notes, Xodo and Noteshelf on iPad, Android and Windows tablets; not made for phones, not a spreadsheet, not a fillable form. The Setup check page proves it on the buyer's own device in one minute.",
+   "evidence": [
+    "complaint:c_device",
+    "complaint:c_extra_app",
+    "feature:android",
+    "feature:portrait",
+    "wish:w_listing_info"
+   ],
+   "modules": [
+    "link_test"
+   ]
+  },
+  {
+   "id": "f_quality",
+   "complaint": "complaint:c_quality",
+   "how": "Every printed word on every page type is spell-checked before publishing, and the build checks 0 broken links, no unreachable pages and no overflowing text. All text is vector so it stays crisp at any zoom. Book pages run in number order, 1 to 100, each exactly once.",
+   "evidence": [
+    "complaint:c_quality",
+    "complaint:c_links",
+    "praise:p_quality"
+   ],
+   "modules": [
+    "books"
+   ]
+  },
+  {
+   "id": "f_misleading",
+   "complaint": "complaint:c_misleading",
+   "how": "Every listing photo is a screenshot of the built file captioned with the page name; nothing is shown that the file lacks. The description says plainly: digital PDF for note apps, also printable at home (the Print step is checked on letter and A4 before publishing), portrait only, undated, no stickers, handwrite or use the app's text tool.",
+   "evidence": [
+    "complaint:c_misleading",
+    "praise:p_as_described"
+   ],
+   "modules": [
+    "index"
+   ]
+  },
+  {
+   "id": "f_value",
+   "complaint": "complaint:c_value",
+   "how": "Room for 100 books (the capacity a repeat buyer asked for), each with its own full page, plus 12 monthly pages, a yearly goal page, TBR, quotes and notes. Photo 2 shows a book page at real size so buyers can judge the writing space before buying. The listing gives the exact page count.",
+   "evidence": [
+    "complaint:c_value",
+    "wish:w_capacity",
+    "praise:p_value",
+    "price:revenue_weighted_median"
+   ],
+   "modules": [
+    "books"
+   ]
+  },
+  {
+   "id": "f_edit",
+   "complaint": "complaint:c_edit",
+   "how": "Nothing is locked into the reader's choices: the Library has a blank Shelf column for the reader's own genres or shelves, the book page's Genre and Format are write-in, and months are undated. The Start here tip and listing say how to type instead of handwrite (the app's text tool, any font the app has). The listing says it is not a fillable form, so nobody expects drop-downs.",
+   "evidence": [
+    "complaint:c_edit",
+    "praise:p_flexible"
+   ],
+   "modules": [
+    "books",
+    "guide"
+   ]
+  },
+  {
+   "id": "f_broken",
+   "complaint": "complaint:c_broken",
+   "how": "The Setup check page: tap three buttons, and if one does not jump, a four-item fix list right there (pen off, open in a note app, re-import as PDF, then message the shop).",
+   "evidence": [
+    "complaint:c_broken",
+    "feature:test_page"
+   ],
+   "modules": [
+    "link_test"
+   ]
+  },
+  {
+   "id": "f_support",
+   "complaint": "complaint:c_support",
+   "how": "Most messages are 'it does not work' questions, so the answers are in the file and the listing: the Setup check fix list, the Start here steps, and a listing FAQ with the top five problems (Etsy app download, which app, links not tapping, how to type, portrait only). How fast the shop replies is shop-level (Darren's Etsy inbox), not something the file can fix, and the file promises no reply times (style rule r007).",
+   "evidence": [
+    "complaint:c_support",
+    "praise:p_support"
+   ],
+   "modules": [
+    "link_test",
+    "guide"
+   ]
+  },
+  {
+   "id": "f_missing",
+   "complaint": "complaint:c_missing",
+   "how": "No promised extras that can go missing: no stickers or covers are advertised, and the listing lists each page type with its count (from the built file, style rule r003). The Contents page shows every section on one screen so nothing is hard to find.",
+   "evidence": [
+    "complaint:c_missing",
+    "feature:stickers"
+   ],
+   "modules": [
+    "index"
+   ]
+  }
+ ],
+ "unique": [
+  {
+   "id": "u_library",
+   "name": "100-book linked Library",
+   "what": "Four Library pages with 25 numbered lines each (title, author, finished, stars, shelf). Tap a line's number to open that book's own review page; the page's trail goes back to the right Library page, and arrows step to the previous and next book.",
+   "why": "Hyperlinked tabs are shown by 3% of top sellers, a repeat buyer wished for room for more books, and hard-to-find pages is a complaint. A library that links both ways makes 100 books as easy to find as 5.",
+   "evidence": [
+    "feature:hyperlinked",
+    "wish:w_capacity",
+    "complaint:c_nav",
+    "praise:p_nav"
+   ],
+   "modules": [
+    "books"
+   ],
+   "verified_absent": false
+  },
+  {
+   "id": "u_start",
+   "name": "Five-minute start and setup check",
+   "what": "Start here is page 3 and Setup check is page 4: four numbered steps with Go there buttons, then buttons that jump and return, with a fix list if they do not. The cover's Open journal button lands on Start here.",
+   "why": "The biggest complaint cluster is buyers who could not get the file working: could not download or open (64), confusing setup (36), hard to use (33), wrong device or app (24), does not work (15). No top seller shows a quick start or a link test in their titles.",
+   "evidence": [
+    "feature:quick_start",
+    "feature:test_page",
+    "complaint:c_download",
+    "complaint:c_setup",
+    "complaint:c_hard",
+    "complaint:c_broken"
+   ],
+   "modules": [
+    "guide",
+    "link_test",
+    "cover"
+   ],
+   "verified_absent": false
+  },
+  {
+   "id": "u_year",
+   "name": "Reading year goal page",
+   "what": "One page: set a goal in books, color one square per finished book in a row for each month (each month name links to its page), tally formats and fiction or nonfiction, and list a top 5 of the year.",
+   "why": "Goal setting is rare in top sellers (3% of titles) yet carries 12% of revenue, and buyers praise trackers that keep them on track. It turns the log into progress you can see.",
+   "evidence": [
+    "feature:goals",
+    "praise:p_adhd",
+    "praise:p_complete"
+   ],
+   "modules": [
+    "reading_year"
+   ],
+   "verified_absent": false
+  }
+ ],
+ "waived": [
+  {
+   "ref": "feature:stickers",
+   "reason": "No sticker file: the planner line builds one PDF, and sticker imports are a named download complaint ('the stickers did not import'). The listing says there are no stickers, so nobody goes looking for them."
+  },
+  {
+   "ref": "wish:w_autofill",
+   "reason": "A PDF cannot look up book details; that needs a spreadsheet or an app. One review asked for it, and the listing says the journal is written by hand or with the app's text tool."
+  },
+  {
+   "ref": "wish:w_migrate",
+   "reason": "First edition, so there is no older version to move from. Undated pages mean the same file keeps working next year."
+  }
+ ],
+ "look": {
+  "direction": "A quiet library, not boho beige and not old paper texture. Warm ivory paper (not white, so it glows less in a dark room) with deep ink-blue text at about 12:1 contrast so it stays sharp in daylight; muted text stays above 4.5:1. One oxblood accent for buttons and star outlines, with a small brass detail on the Contents and guide pages. Month tabs run from dusty clay to soft blue with dark ink labels. Baskerville headings feel bookish; Manrope body text is clean and easy to read at 1.1 scale. Plain ruled decoration (motif 'lines'): no florals, no clip-art book stacks, no script fonts.",
+  "theme": {
+   "base": "navy",
+   "paper": "#FBF7EF",
+   "ink": "#22304A",
+   "muted": "#5E6576",
+   "line": "#DCD2C2",
+   "accent": "#8C3B3B",
+   "soft": "#F1EAE0",
+   "warm": "#C29A52",
+   "tabs": [
+    "#D29C8C",
+    "#9FB4CF"
+   ],
+   "display": "Baskerville",
+   "body": "Manrope",
+   "motif": "lines"
+  },
+  "avoid": [
+   "boho minimalist beige with arches and dried flowers",
+   "classic old-paper texture backgrounds",
+   "rainbow pastel book spines on every page",
+   "dark-mode-only pages",
+   "script fonts and clip-art on every page"
+  ],
+  "evidence": [
+   "look:Minimalist look",
+   "look:Colorful or aesthetic look",
+   "look:Dark mode",
+   "praise:p_look"
+  ]
+ },
+ "price": {
+  "amount": 15,
+  "why": "Buyers pay a sales-weighted $14.63 and the top earners sit at $14.63, inside the $7 to $23 best-earning band; $15 prices it with them for a 100-book journal with a full page per book. While the shop is new, a 25% launch sale for 30 days shows $11.25 with $15 crossed out (style rule r015), instead of a low price.",
+  "evidence": [
+   "price:revenue_weighted_median",
+   "price:top10_by_revenue_median",
+   "price:median",
+   "price:p75",
+   "market:best_price_band"
+  ],
+  "launch_sale": {
+   "percent": 25,
+   "days": 30,
+   "sale_price": 11.25
+  }
+ },
+ "seo": {
+  "title": "Digital Reading Journal for Goodnotes, Book Tracker with 100 Linked Book Review Pages, Reading Log and TBR, iPad and Android, Undated",
+  "tags": [
+   "reading journal",
+   "reading tracker",
+   "reading planner",
+   "book tracker",
+   "reading log",
+   "book review",
+   "digital journal",
+   "book journal",
+   "goodnotes journal",
+   "digital book journal",
+   "book log",
+   "reading list",
+   "book lover gift"
+  ]
+ },
+ "photos": [
+  {
+   "id": "ph1_hero",
+   "shows": "Cover and a filled-in-looking Book 1 page side by side in portrait, line: 'A page for every book, linked from your Library'.",
+   "proves": "praise:p_look, feature:journal",
+   "pages": [
+    "cover",
+    "b001"
+   ]
+  },
+  {
+   "id": "ph2_book",
+   "shows": "Book page at real size, top half large, with callouts on Title and Author, Format, Stars, Favorite quote and One-line review.",
+   "proves": "feature:journal, complaint:c_value, complaint:c_hard",
+   "pages": [
+    "b001"
+   ]
+  },
+  {
+   "id": "ph3_library",
+   "shows": "Library page 1 top rows large, an arrow from line 1's number to the Book 1 page, line: 'Tap a number, open the book'.",
+   "proves": "feature:hyperlinked, wish:w_capacity, complaint:c_nav",
+   "pages": [
+    "library",
+    "b001"
+   ]
+  },
+  {
+   "id": "ph4_apps",
+   "shows": "Plain text panel over a faded Start here page: Works with Goodnotes, Notability, Samsung Notes, Xodo, Noteshelf on iPad, Android and Windows tablets. Download in a web browser, not the Etsy app. Not for phones. Not a fillable form.",
+   "proves": "complaint:c_download, complaint:c_device, wish:w_listing_info, complaint:c_extra_app",
+   "pages": [
+    "start"
+   ]
+  },
+  {
+   "id": "ph5_start",
+   "shows": "Start here and Setup check pages, 2 up with captions, line: 'Working in five minutes, and you can check it yourself'.",
+   "proves": "complaint:c_setup, complaint:c_broken, feature:quick_start, feature:test_page",
+   "pages": [
+    "start",
+    "linktest"
+   ]
+  },
+  {
+   "id": "ph6_year_month",
+   "shows": "Reading year page (goal and month bars) and the January reading page (books finished, reading days).",
+   "proves": "feature:goals, praise:p_adhd",
+   "pages": [
+    "year",
+    "m01"
+   ]
+  },
+  {
+   "id": "ph7_tbr_quotes",
+   "shows": "To be read list and Favorite quotes page, 2 up with captions.",
+   "proves": "keyword:reading list, praise:p_complete",
+   "pages": [
+    "tbr",
+    "quotes"
+   ]
+  },
+  {
+   "id": "ph8_contents",
+   "shows": "Contents page with a plain list of what is inside and page counts from the built file: 100 book pages, 4 Library pages, 12 monthly pages, Reading year, TBR, 2 quote pages, 2 notes pages, Start here, Setup check. Portrait, undated, no stickers.",
+   "proves": "complaint:c_misleading, complaint:c_missing, praise:p_as_described",
+   "pages": [
+    "index"
+   ]
+  }
+ ],
+ "spec": {
+  "title": "Shelf Life",
+  "subtitle": "A linked reading journal. 100 books, one page each, start any month.",
+  "kicker": "Digital reading journal",
+  "brand": "Kairos Design Studio",
+  "orientation": "portrait",
+  "dating": {
+   "mode": "undated"
+  },
+  "theme": {
+   "base": "navy",
+   "paper": "#FBF7EF",
+   "ink": "#22304A",
+   "muted": "#5E6576",
+   "line": "#DCD2C2",
+   "accent": "#8C3B3B",
+   "soft": "#F1EAE0",
+   "warm": "#C29A52",
+   "tabs": [
+    "#D29C8C",
+    "#9FB4CF"
+   ],
+   "display": "Baskerville",
+   "body": "Manrope",
+   "motif": "lines"
+  },
+  "type_scale": 1.1,
+  "index_tip": "Tap a card above, a month below, or a month tab on the right. Every book page has a Library link at the top to go back. Follow links with the pen off (read mode); turn the pen on to write.",
+  "sections": [
+   {
+    "module": "cover",
+    "start": "start",
+    "button": "Open journal"
+   },
+   {
+    "module": "index"
+   },
+   {
+    "module": "guide",
+    "label": "Start here",
+    "kicker": "Five minutes",
+    "anchor": "start",
+    "nav": false,
+    "steps": [
+     [
+      "Open it in a note app",
+      "Download from Etsy in a web browser (the Etsy app cannot download files). Import the PDF into Goodnotes, Notability, Samsung Notes, Xodo or Noteshelf. Files and Photos show pages but do not follow links."
+     ],
+     [
+      "Check the links",
+      "Tap the Setup check page and try its buttons with the pen off. If they jump, you are ready. If not, the fix list is on that page.",
+      "linktest"
+     ],
+     [
+      "Add your first book",
+      "Open the Library and write a title on line 1. Tap its number to open Book 1 and fill it in as you read. Tap Library at the top to go back.",
+      "library"
+     ],
+     [
+      "Start in any month",
+      "Pages are undated. Tap this month's tab on the right edge and write the year, then set your goal on the Reading year page.",
+      "year"
+     ]
+    ],
+    "tip": "Pen off to tap a link, pen on to write. Prefer typing? Use your app's text tool and any font it has.",
+    "map": true
+   },
+   {
+    "module": "link_test",
+    "label": "Setup check",
+    "anchor": "linktest",
+    "nav": false
+   },
+   {
+    "module": "books",
+    "label": "Library",
+    "kicker": "Book log",
+    "anchor": "library",
+    "book_anchor": "b",
+    "count": 100,
+    "per_log_page": 25
+   },
+   {
+    "module": "table",
+    "label": "To be read",
+    "kicker": "Up next",
+    "anchor": "tbr",
+    "nav_label": "TBR",
+    "headers": [
+     "Title",
+     "Author",
+     "Heard about it from",
+     "Got it"
+    ],
+    "rows": 26
+   },
+   {
+    "module": "lined",
+    "label": "Favorite quotes",
+    "kicker": "Collect",
+    "anchor": "quotes",
+    "nav_label": "Quotes",
+    "pages": 2
+   },
+   {
+    "module": "reading_year",
+    "label": "Reading year",
+    "kicker": "Goal",
+    "anchor": "year",
+    "nav": false
+   },
+   {
+    "module": "reading_month",
+    "label": "Reading months",
+    "index": false,
+    "nav": false
+   },
+   {
+    "module": "lined",
+    "label": "Notes",
+    "kicker": "Anything",
+    "anchor": "notes",
+    "pages": 2,
+    "dots": true,
+    "nav": false
+   }
+  ]
+ },
+ "new_modules": [
+  {
+   "name": "books",
+   "what": "The Library plus one review page per book, cross-linked. Library pages (anchor 'library', then 'library2', 'library3', 'library4'): per_log_page numbered lines with columns No., Title, Author, Finished, Stars (5 star outlines drawn as SVG, style rule r004), Shelf (blank, the reader names it). Each No. is a link to that book's page; a strip at the top links all Library pages ('1 to 25', '26 to 50', ...), plus previous and next arrows. Book pages (anchors b001 to b100), titled 'Book 7' with the same layout every time: Title and Author lines; Genre and Format (Print, Ebook, Audio as three tick circles); Started, Finished, Pages; Stars (5 SVG outlines) and 'Would I reread? Yes / Maybe / No'; boxes for Why I picked it up (short), My thoughts (lined, grows to fill), Favorite quote (with a page number field), Favorite character, One-line review. Top-right previous and next arrows to the neighbouring book; trail 'Library / Book 7' where Library links to the Library page holding that book's line. Registers one Contents card and one top-bar item (label). Book pages have no month (rail shows all months, none active). Fill the page fully at portrait size (style rule r006).",
+   "params": {
+    "label": "str, Contents and top-bar name (Library)",
+    "kicker": "str",
+    "anchor": "str, first Library page anchor, default 'library'",
+    "book_anchor": "str prefix for book pages, default 'b' (b001)",
+    "count": "int, number of book pages (100)",
+    "per_log_page": "int, Library lines per page (25)"
+   },
+   "why": "The line has no book log or book review page, and these are the core of the product (feature:journal, keyword:book review, keyword:reading log). Two-way links between the log and each page are the unique feature that answers wish:w_capacity and complaint:c_nav. 100 single book pages plus 4 log pages is about 104 pages, well inside the size budget."
+  },
+  {
+   "name": "reading_month",
+   "what": "Twelve undated monthly reading pages with anchors m01 to m12 (exactly these, because the month rail on every page, the Contents month grid and the Setup check page already link to them). Each page: kicker 'Month · year ____', month name as title, the page's month tab active. Content: Books finished this month (8 lines: title, 5 SVG stars), Reading days (31 numbered circles to color in), Pages or hours read, Book of the month, Up next (3 checkbox lines), Notes (lined, grows to fill). Trail 'Reading year / January' linking to 'year'. Registers nothing on Contents or the top bar (the month grid and rail cover it).",
+   "params": {
+    "label": "str (not shown, for logs)",
+    "index": "bool, default false",
+    "nav": "bool, default false"
+   },
+   "why": "Every page's month rail links to m01 to m12, so the journal needs month pages; the existing calendar module would add 52 undated week pages a reading journal does not use (complaint:c_overwhelm, file size). Monthly pages give buyers a way to track over time and plan forward, which a 1-star review (complaint:c_not_useful) said was missing."
+  },
+  {
+   "name": "reading_year",
+   "what": "One undated page with anchor 'year' (the Setup check page's 'The year' button links to 'year'). Content: My goal: ____ books this year (write-in, with a year field); Month by month: 12 rows, each a month name linking to m01 to m12 followed by 10 small squares to color one per finished book; Tallies: Fiction, Nonfiction, Print, Ebook, Audio boxes to tally in; Top 5 of the year (5 numbered lines); Best quote of the year (lined, fills the rest). Registers a Contents card (label, kicker) and, when nav is not false, a top-bar item.",
+   "params": {
+    "label": "str (Reading year)",
+    "kicker": "str",
+    "anchor": "str, must be 'year'",
+    "nav": "bool"
+   },
+   "why": "Goal setting is rare in top sellers' titles yet carries 12% of revenue (feature:goals), and buyers praise trackers that keep them on track (praise:p_adhd). The existing 'year' module is a 12-calendar grid with no reading use; this page replaces it under the same anchor so the Setup check links still work."
+  }
+ ],
+ "build_notes": [
+  "cover: the spec passes button 'Open journal'; the cover module currently hard-codes 'Open planner'. Read sec.get('button', 'Open planner') so this journal's cover does not call itself a planner (complaint:c_misleading).",
+  "Only books, reading_month and reading_year are new. TBR uses table, quotes and notes use lined; the year and calendar modules are deliberately not used."
+ ]
+}

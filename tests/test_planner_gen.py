@@ -1,5 +1,5 @@
 """Smoke test: every planner module builds, links resolve, pages render without overflow."""
-import json, os, subprocess, sys, time
+import json, os, re, subprocess, sys, time
 sys.path.insert(0, 'lines/planner')
 import gen
 
@@ -40,7 +40,97 @@ def run(spec, name):
     print(name, r['pages'], 'pages', r['links'], 'links', f"{os.path.getsize(pdf)/1e6:.1f} MB raw", 'overflow:', over, f'{time.time()-t:.0f}s', out.stderr[:200])
     return r, over
 
+# Reading journal: books (library + book pages), reading_month, reading_year, cover button
+JOURNAL = {
+ "title": "Test Journal", "subtitle": "Books", "kicker": "Digital reading journal", "brand": "Kairos test",
+ "orientation": "portrait", "dating": {"mode": "undated"}, "theme": {"base": "navy", "display": "Baskerville", "body": "Manrope"}, "type_scale": 1.1,
+ "sections": [
+  {"module": "cover", "start": "start", "button": "Open journal"},
+  {"module": "index"},
+  {"module": "guide", "label": "Start here", "anchor": "start", "nav": False, "steps": [["Import", "Open it.", "linktest"], ["Library", "Write a title.", "library"], ["Year", "Set a goal.", "year"], ["Months", "Tap a tab."]], "map": True},
+  {"module": "link_test", "label": "Setup check", "anchor": "linktest", "nav": False},
+  {"module": "books", "label": "Library", "kicker": "Book log", "anchor": "library", "book_anchor": "b", "count": 30, "per_log_page": 12},
+  {"module": "reading_year", "label": "Reading year", "kicker": "Goal", "anchor": "year", "nav": False},
+  {"module": "reading_month", "label": "Reading months", "index": False, "nav": False},
+  {"module": "lined", "label": "Notes", "anchor": "notes", "pages": 1}
+ ]}
+
+# E-ink (reMarkable) format: gutter, vector rules, grayscale, week rows, link test wording
+GRAY = {"base": "neutral", "paper": "#FFFFFF", "ink": "#111111", "muted": "#4D4D4D", "line": "#9E9E9E", "accent": "#2B2B2B", "soft": "#EBEBEB", "warm": "#6B6B6B", "tabs": ["#DADADA", "#B5B5B5"], "display": "Outfit", "body": "Manrope", "motif": "none"}
+EINK = {
+ "title": "Test Eink", "subtitle": "Gray", "brand": "Kairos test", "orientation": "portrait", "dating": {"mode": "dated", "year": 2027}, "theme": GRAY, "type_scale": 1.15,
+ "sections": [
+  {"module": "eink_format", "left_gutter": 64, "vector_rules": True, "grayscale": True, "week_layout": "rows",
+   "link_test_fixes": ["Tap with your finger", "Open the uploaded PDF", "Update the tablet", "Send us a message"], "pen_label": "Pen test here"},
+  {"module": "cover"}, {"module": "index"},
+  {"module": "link_test", "anchor": "linktest"},
+  {"module": "year", "links": [["Head start", "hs11"]]},
+  {"module": "lined", "label": "Grid", "pages": 1, "dots": True, "anchor": "grid"},
+  {"module": "head_start", "label": "Head start", "from": "2026-11", "to": "2026-12", "days": True, "nav": False,
+   "day": {"left": [{"kind": "checklist", "label": "Top 3", "rows": 3}, {"kind": "lines", "label": "Notes"}], "right": [{"kind": "hours", "label": "Time blocks", "from": 6, "to": 22, "row": 30}, {"kind": "lines", "label": "Done today"}]}},
+  {"module": "calendar", "habits": True, "days": True, "week": {"side": [{"kind": "checklist", "label": "Top 3", "rows": 3, "fill": True}, {"kind": "lines", "label": "Notes"}]}}
+ ]}
+
+
+def test_journal():
+    r, over = run(JOURNAL, 'journal')
+    assert not over, over
+    ids = [a for a, _ in r['page_modules']]
+    assert ['library', 'library2', 'library3'] == [a for a in ids if a.startswith('library')]
+    assert [f'b{i:03d}' for i in range(1, 31)] == [a for a in ids if re.fullmatch(r'b\d{3}', a)]
+    assert [f'm{i:02d}' for i in range(1, 13)] == [a for a in ids if re.fullmatch(r'm\d{2}', a)]
+    assert ids.count('year') == 1
+    pages = dict(re.findall(r'<section class="pg" id="([^"]+)"(.*?)</section>', r['html'], flags=re.S))
+    assert 'Open journal' in pages['cover'] and 'Open planner' not in pages['cover']
+    assert 'your journal is set up' in pages['linktest']
+    # library line 13 opens book 13; book 13 links back to the library page holding it, and to books 12 and 14
+    assert 'href="#b013"' in pages['library2'] and 'href="#library2">Library</a> / Book 13' in pages['b013']
+    assert 'href="#b012"' in pages['b013'] and 'href="#b014"' in pages['b013'] and 'href="#b031"' not in pages['b030']
+    for p in ('library', 'library2', 'library3'):
+        assert all(f'href="#{q}"' in pages[p] for q in ('library', 'library2', 'library3'))
+    assert all(f'href="#m{i:02d}"' in pages['year'] for i in range(1, 13)) and 'href="#year">Reading year</a> / March' in pages['m03']
+    assert 'class="on"' not in pages['b005'].split('class="rail"')[1].split('</div>')[0], 'book pages: no active month'
+    assert 'class="on"' in pages['m05'].split('class="rail"')[1].split('</div>')[0]
+    # Contents: Library and Reading year cards; reading months register nothing; top bar has Library but not Reading year
+    idx = pages['index']
+    assert 'href="#library"' in idx and 'href="#year" class="box"' in idx
+    assert '>Library</a>' in pages['b001'].split('class="crumb"')[0] and 'Reading year</a>' not in pages['b001'].split('class="crumb"')[0]
+    assert '\u2014' not in r['html'], 'no em dashes'
+
+
+def test_eink():
+    assert gen.validate_spec(dict(EINK, theme=dict(GRAY, accent='#8C3B3B')))[0], 'grayscale must refuse a colored theme'
+    assert gen.validate_spec(EINK) == ([], [])
+    r, over = run(EINK, 'eink')
+    assert not over, over
+    html = r['html']
+    pages = dict(re.findall(r'<section class="pg" id="([^"]+)"(.*?)</section>', html, flags=re.S))
+    assert 'eink_format' not in [m for _, m in r['page_modules']], 'eink_format prints no page'
+    assert '.nav{position:absolute;left:64px' in html and '.body{position:absolute;left:64px' in html
+    css = html.split('</style>')[0]
+    assert 'background:none!important' in css and "querySelectorAll('.lines,.dots')" in html and 'repeating-linear-gradient' not in css.split('background:none!important')[1]
+    assert 'grid-auto-flow:column' in pages['w10'] and 'wkside' in pages['w10'] and 'wkside' in pages['hsw01']
+    assert 'Tap with your finger' in pages['linktest'] and 'Pen test here' in pages['linktest'] and 'Goodnotes' not in pages['linktest']
+    assert 'Where things are' in pages['linktest']
+    assert not re.search(r'#[0-9A-Fa-f]{6}(22|55|cc)\b', html.split('</style>')[1]), 'no color tints in grayscale'
+    # the built PDF draws lines and dots as vector paths: no gradient patterns, shadings or images
+    import pypdf
+    rd = pypdf.PdfReader(os.path.abspath('tests/out/eink.pdf'))
+    for pg in rd.pages:
+        res = pg.get('/Resources') or {}
+        assert not res.get('/Pattern') and not res.get('/Shading'), 'pattern or shading fill in an e-ink page'
+        assert not any(x.get_object().get('/Subtype') == '/Image' for x in (res.get('/XObject') or {}).values()), 'image in an e-ink page'
+    grid = rd.pages[[a for a, _ in r['page_modules']].index('grid')].get_contents().get_data()
+    assert grid.count(b' l') > 500, 'dot grid page draws its dots as vector strokes'
+    # without eink_format nothing changes: gradients, 4 x 2 week grid, default link test wording
+    plain = gen.build(dict(EINK, sections=EINK['sections'][1:]))['html']
+    assert 'repeating-linear-gradient' in plain and 'wkside' not in plain and 'Turn the pen off' in plain and 'left:40px' in plain
+
+
 if __name__ == '__main__':
+    import re
+    test_journal()
+    test_eink()
     r, over = run(SPEC, 'dated')
     und = dict(SPEC, dating={"mode": "undated"}, theme="sage", orientation="portrait")
     r2, over2 = run(und, 'undated')

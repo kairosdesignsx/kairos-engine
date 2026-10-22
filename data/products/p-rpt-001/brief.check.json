@@ -1,0 +1,88 @@
+{
+ "pass": true,
+ "problems": [],
+ "needs_module": [
+  "eink_format"
+ ],
+ "coverage": [
+  {
+   "ref": "complaint:c_not_useful",
+   "theme": "Not useful for my needs",
+   "count": 40,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_device",
+   "theme": "Doesn't work on my app or device",
+   "count": 36,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_download",
+   "theme": "Couldn't download or open the file",
+   "count": 34,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_misleading",
+   "theme": "Not as described or pictured",
+   "count": 26,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_links",
+   "theme": "Links broken or go to the wrong page",
+   "count": 24,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_setup",
+   "theme": "Confusing setup or unclear instructions",
+   "count": 23,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_missing",
+   "theme": "Missing pages or less than expected",
+   "count": 17,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_value",
+   "theme": "Not worth the price",
+   "count": 15,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_nav",
+   "theme": "Hard to navigate or find pages",
+   "count": 15,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_quality",
+   "theme": "Errors, typos or low quality",
+   "count": 13,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_support",
+   "theme": "Seller didn't help or reply",
+   "count": 12,
+   "state": "fixed"
+  },
+  {
+   "ref": "feature:eink",
+   "theme": "E-ink tablets (reMarkable, Boox, Kindle Scribe)",
+   "share": 0.967,
+   "state": "included"
+  }
+ ],
+ "summary": {
+  "fixed": 11,
+  "included": 1,
+  "waived": 0,
+  "missing": 0,
+  "unique": 4
+ }
+}
