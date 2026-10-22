@@ -317,7 +317,7 @@ def m_dashboard(B, sec):
     ws.cell(19, 2, 'Year').font = B.font(11, True)
     for j in range(4):
         B.calc(ws.cell(19, 3 + j), f'=SUM({COL(3 + j)}7:{COL(3 + j)}18)', B.money, True)
-    ws.cell(20, 2, 'Share to savings and debt').font = B.font(11, True)
+    ws.cell(20, 2, 'Share to savings and debt').font = B.font(11, True); ws.column_dimensions['B'].width = 25
     B.calc(ws.cell(20, 3), '=IF(C19=0,"",F19/C19)', '0%', True)
     # category totals for the year
     B.head(ws, 6, 8, ['Category', 'Spent this year'], [24, 16])

@@ -34,7 +34,8 @@ def crop(shots_dir, out_dir, a, focus=None):
     W, H = im.size
     im = im.crop((int(x0 * W), int(y0 * H), int(x1 * W), int(y1 * H)))
     os.makedirs(out_dir, exist_ok=True)
-    path = os.path.join(out_dir, f'crop-{a}.png'); im.save(path)
+    tag = '-'.join(f'{v:g}' for v in (x0, y0, x1, y1)).replace('.', '')
+    path = os.path.join(out_dir, f'crop-{a}-{tag}.png'); im.save(path)  # one file per crop: two photos can crop the same tab differently
     return 'file://' + path
 
 

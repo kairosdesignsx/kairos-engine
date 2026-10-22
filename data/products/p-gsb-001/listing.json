@@ -16,14 +16,14 @@
   "zero based budget"
  ],
  "price": 16,
- "description": "A simple monthly budget spreadsheet for Google Sheets and Excel, made for first-time and returning budgeters. Set up your money once, log what you spend each month, and see your whole year on one Dashboard.\n\nWhat's inside: 19 tabs\n- Start here: 5 short steps, a live Ready check and links to every month\n- Dashboard: the year by month (income, spent, left over, saved), your savings rate, spending by category for the year, a bar chart by month and a pie chart by group (Needs, Wants, Savings, Debt)\n- Setup: your income lines and up to 30 categories, each with a group and a monthly budget\n- January to December: 12 month tabs, each with an 80-row spending log and budget vs actual for every category, with a progress bar and an over-budget warning\n- Bills: due day, amount, autopay and a paid mark for each month\n- Paycheck plan: each payday, the bills due before the next one, and what is left from that paycheck\n- Debt payoff: snowball or avalanche, your payoff order, and months and interest at the minimum\n- Savings goals: a progress bar and how much to save each month to reach your date\n\nThe core is three tabs: Setup once, this month, Dashboard. Bills, Paycheck plan, Debt payoff and Savings goals are extras. Use them when you want them, skip them if you do not.\n\nWhat makes it different\n- A real file, not a link. You download the .xlsx workbook itself, so there is no view-only copy, no access to request, and your Etsy email does not have to match a Google account.\n- A Ready check that tells you what is left. Each setup item shows Done or To do as you type: income entered, every dollar budgeted, every category grouped, spending that matches your categories, no amounts without a category, example cleared. Each To do says what to fix and where.\n- See it work before you type. January comes filled in as an example month, so every total, bar and chart shows real numbers on first open. The example bills, debts and savings goals are there to show the math too. Clear or type over them when you are ready.\n- Every dollar has a job. Setup shows Left to budget, and the Ready check shows your Needs, Wants and Savings plus debt split next to the 50/30/20 guide. It works for zero-based budgeting or 50/30/20.\n- Budget by paycheck. Paid weekly, every 2 weeks, twice a month or monthly? The Paycheck plan lists each payday, the bills due before the next one, and what is left.\n- Hard to break. Shaded cells are for typing, plain cells calculate. Formulas are locked in Excel and color-coded in both apps. Rename a category in Setup and every month follows. The protection has no password, so you can still change anything.\n- Start any month. Month tabs are not dated, and months with nothing logged stay out of your totals, so starting mid-year works. Starting this November or December? Set the Year in Setup to 2026, then download a fresh copy for 2027.\n- Instructions live inside the file: the Start here tab plus a one-line note at the top of every tab. There is no video.\n\nWorks with\n- Google Sheets: upload the file to Google Drive, then open it with Google Sheets\n- Excel 2019 or newer, Microsoft 365, and the free Excel for the web\n- Set it up on a computer\nMade for a personal or household budget in one currency. Amounts show in U.S. dollars ($); for another currency, unprotect the tab (no password) and change the number format.\nNot for: Apple Numbers or LibreOffice (not tested), bank syncing or automatic imports, business bookkeeping.\n\nHow to start\n1. Download the .xlsx from Etsy.com > Purchases on a computer. The Etsy phone app cannot download files.\n2. Open it. Google Sheets: on drive.google.com choose New > File upload, then open the file with Google Sheets. Excel: double-click the file.\n3. Follow the Start here tab. It is the first tab, with 5 steps and the Ready check.\n\nWhat you get\n- Clear-Budget.xlsx (0.09 megabytes), one workbook with 19 tabs\nDigital download. Nothing is shipped.\n\nHelp\nMessage us on Etsy and we'll help you set it up.",
+ "description": "A simple monthly budget spreadsheet for Google Sheets and Excel, made for first-time and returning budgeters. Set up your money once, log what you spend each month, and see your whole year on one Dashboard.\n\nWhat's inside: 19 tabs\n- Start here: 5 short steps, a live Ready check and links to every month\n- Dashboard: the year by month (income, spent, left over, saved and debt paid), your share to savings and debt, spending by category for the year, a bar chart by month and a pie chart by group (Needs, Wants, Savings, Debt)\n- Setup: your income lines and up to 30 categories, each with a group and a monthly budget\n- January to December: 12 month tabs, each with an 80-row spending log and budget vs actual for every category, with a progress bar that turns orange over 100% and the amount over shown in red\n- Bills: due day, amount, autopay and a paid mark for each month\n- Paycheck plan: every payday in the year, the bills due before the next one, and what is left from that paycheck\n- Debt payoff: snowball or avalanche, your pay order, months and interest at the minimum, and an extra amount each month that goes to the first debt in pay order, with months with extra and interest saved\n- Savings goals: a progress bar and how much to save each month to reach your date\n\nThe core is three tabs: Setup once, this month, Dashboard. Bills, Paycheck plan, Debt payoff and Savings goals are extras. Use them when you want them, skip them if you do not.\n\nWhat makes it different\n- A real file, not a link. You download the .xlsx workbook itself, so there is no view-only copy, no access to request, and your Etsy email does not have to match a Google account.\n- A Ready check that tells you what is left. Each setup item shows Done or To do as you type: income entered, every dollar budgeted, every category grouped, spending that matches your categories, no amounts without a category, example cleared. Each To do says what to fix and where.\n- See it work before you type. January comes filled in as an example month, so every total, bar and chart shows real numbers on first open, including one category over budget (Fun) shown in red. The example bills, debts and savings goals are there to show the math too. Clear or type over them when you are ready.\n- Every dollar has a job. Setup shows Left to budget, and the Ready check shows your Needs, Wants and Savings plus debt split next to the 50/30/20 guide. It works for zero-based budgeting or 50/30/20.\n- Budget by paycheck. Paid weekly, every 2 weeks or twice a month? The Paycheck plan lists every payday in the year, the bills due before the next one, and what is left. Paid monthly? You can skip this tab.\n- Progress bars that look the same in both apps. The bars are made of filled blocks, so Google Sheets and Excel show the same thing.\n- Hard to break. Shaded cells are for typing, plain cells calculate. Formulas are locked in Excel, color-coded in both. Rename a category in Setup and every month follows. The protection has no password, so you can still change anything. A savings goal shows Reached or Date passed: pick a new one, not an error.\n- Start any month. Month tabs are not dated, and months with nothing logged stay out of your totals, so starting mid-year works. Starting in October, November or December? Set the Year in Setup to this year (2026) and use those months. In January, keep that copy as last year's record and start the new year in a fresh download, copying your Setup categories across.\n- Instructions live inside the file: the Start here tab plus a one-line note at the top of every tab. There is no video.\n\nWorks with\n- Google Sheets: upload the file to Google Drive, then open it with Google Sheets\n- Excel 2019 or newer, Microsoft 365, and the free Excel for the web\n- Set it up on a computer\nMade for a personal or household budget in one currency. Amounts show in U.S. dollars ($); for another currency, unprotect the tab (no password) and change the number format.\nNot for: Apple Numbers or LibreOffice (not tested), bank syncing or automatic imports, business bookkeeping.\n\nHow to start\n1. Download the .xlsx from Etsy.com > Purchases on a computer and save it. Do not open it in a browser preview.\n2. Open it. Google Sheets: on drive.google.com choose New > File upload, then open the file with Google Sheets. Excel: double-click the file.\n3. Follow the Start here tab. It is the first tab, with 5 steps and the Ready check.\n\nQuestions buyers ask\nCan I download it in the Etsy phone app?\nNo. The Etsy phone app cannot download files. Sign in at Etsy.com on a computer and go to Purchases.\nThe file opened in my browser and looks wrong. What now?\nThat is a browser preview, not the spreadsheet. Save the .xlsx to your computer first, then upload it to Google Drive and open it with Google Sheets, or double-click it to open in Excel.\nDo I need to ask for access?\nNo. There is no link and no access request. The .xlsx is yours.\n\nWhat you get\n- Clear-Budget.xlsx (0.1 megabytes), one workbook with 19 tabs\nDigital download. Nothing is shipped.\n\nHelp\nQuestions? Message us on Etsy.",
  "photo_copy": {
   "hero": {
    "headline": "Your whole year on one page",
    "points": [
-    "Year by month: income, spent, left over, saved",
-    "Spending by category and a pie by group",
-    "Shown with the example month filled in"
+    "Year by month: income, spent, left over",
+    "Saved and debt paid, and its share of income",
+    "Shown with the example January filled in"
    ],
    "label": "Google Sheets and Excel"
   },
@@ -36,7 +36,7 @@
    "steps": [
     [
      "Download on a computer",
-     "Get the .xlsx from Etsy.com > Purchases. The Etsy phone app cannot download files."
+     "Save the .xlsx from Etsy.com > Purchases. Do not open it in a browser preview. The Etsy phone app cannot download files."
     ],
     [
      "Open it in your app",
@@ -49,49 +49,49 @@
    ]
   },
   "start": {
-   "headline": "It tells you what is left",
+   "headline": "Five steps on the first tab",
    "points": [
-    "Five numbered steps on the first tab",
-    "Ready check turns to Done as you type",
-    "Each To do says what to fix"
+    "Open it, then clear the example January",
+    "Fill in Setup once, then log this month",
+    "Check your Dashboard"
    ],
    "label": "Start here tab"
   },
   "setup": {
    "headline": "Fill in Setup once",
    "points": [
-    "Name your own categories, up to 30",
-    "Left to budget at $0: every dollar has a job",
-    "Every month tab follows your changes"
+    "Your income lines add up for you",
+    "Type your own category names",
+    "Every other tab updates from here"
    ],
    "label": "Setup tab"
   },
   "month": {
    "headline": "Log spending in four columns",
    "points": [
-    "Date, what, category dropdown, amount",
-    "Budget vs actual with a bar per category",
-    "Shaded cells: type here. Formulas locked in Excel"
+    "Date, what, category, amount",
+    "Shaded cells are where you type",
+    "The summary on the right updates itself"
    ],
    "label": "January, example month"
   },
   "paycheck": {
    "headline": "Budget by paycheck, not month",
    "points": [
-    "Weekly, every 2 weeks, twice a month or monthly",
+    "Paid weekly or every 2 weeks",
     "Bills due before your next payday",
-    "What is left from each paycheck"
+    "What is left, a short paycheck in red"
    ],
    "label": "Paycheck plan tab"
   },
   "extras": {
    "headline": "Optional extras, use when ready",
    "points": [
-    "Bills: due day, autopay, paid mark each month",
-    "Debt payoff: snowball or avalanche order",
-    "Savings goals: progress bar, save per month"
+    "Bills: due day, amount, autopay, month columns",
+    "Debt payoff: snowball, plus extra each month",
+    "Savings goals: target, saved, progress"
    ],
-   "label": "Optional tabs, example data"
+   "label": "Optional tabs"
   },
   "inside": {
    "headline": "Exactly what is in the file",
@@ -106,7 +106,7 @@
  "how_steps": [
   [
    "Download on a computer",
-   "Get the .xlsx from Etsy.com > Purchases. The Etsy phone app cannot download files."
+   "Save the .xlsx from Etsy.com > Purchases. Do not open it in a browser preview. The Etsy phone app cannot download files."
   ],
   [
    "Open it in your app",
@@ -118,13 +118,13 @@
   ]
  ],
  "alt": {
-  "hero": "The Clear Budget Dashboard on a laptop, showing income, spending, left over and saved by month, spending by category, a bar chart by month and a pie chart by group with the example January filled in.",
-  "how_open": "Three numbered steps: download the .xlsx from Etsy on a computer, open it in Google Sheets or Excel, then follow the Start here tab.",
-  "start": "The Start here tab with five numbered setup steps, a Ready check listing each item as Done or To do, and links to jump to each month.",
-  "setup": "The Setup tab with two income lines, example categories each with a group and monthly budget, and Left to budget showing $0.00.",
-  "month": "The January tab with an example spending log of date, what, category and amount, next to a budget vs actual table with progress bars for each category.",
-  "paycheck": "The Paycheck plan tab listing every payday paid every two weeks, the bills due before the next payday, and what is left from each paycheck.",
-  "extras": "Three cards showing the Bills, Debt payoff and Savings goals tabs filled with example bills, debts and goals.",
-  "inside": "A summary card listing the 19 tabs in the file, the apps it works with, what it is not for, and that amounts are in U.S. dollars."
+  "hero": "The Clear Budget Dashboard on a laptop, showing the year by month table with income, spent, left over and saved and debt paid for the example January, the year totals, a 9% share to savings and debt, and the top of the spending by group section.",
+  "how_open": "Three numbered steps: save the .xlsx from Etsy.com on a computer without opening a browser preview, open it in Google Sheets or Excel, then follow the Start here tab.",
+  "start": "The Start here tab on a laptop with five numbered steps: open it in your app, look at January then clear it, fill in Setup once, log spending in this month, and check your Dashboard.",
+  "setup": "The Setup tab on a laptop with the year 2027, two example income lines adding up to $3,900.00 of expected income, and the start of the category list.",
+  "month": "The January tab on a laptop with 11 example entries in a four-column log of date, what, category and amount, and the start of the monthly summary and category list on the right.",
+  "paycheck": "The Paycheck plan tab on a laptop for pay every 2 weeks from Jan 1, 2027, listing each payday through October with the bills due before the next payday and what is left, with one short paycheck in red.",
+  "extras": "Three cards: the Bills tab with four example bills and their due day, amount and autopay, the Debt payoff tab set to Snowball with $100 extra each month above its column headers, and the Savings goals tab with an emergency fund 24% saved.",
+  "inside": "A list of the 19 tabs, the apps it works with, what it is not for and that amounts are in U.S. dollars, next to small views of the Start here, Setup, January and Dashboard tabs."
  }
 }
