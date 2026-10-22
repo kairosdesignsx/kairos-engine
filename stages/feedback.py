@@ -54,7 +54,10 @@ def process():
             d = store.product_dir(eng)
             build = store.read(os.path.join(d, 'build.json')) or {}
             listing = store.read(os.path.join(d, 'listing.json')) or p.get('listing', {})
-            photos = sorted(f for f in os.listdir(os.path.join(d, 'photos')) if f.startswith('photo-')) if os.path.isdir(os.path.join(d, 'photos')) else []
+            # photo names come from photos.json (kept in git): the photos folder itself only exists on the laptop and the build session
+            photos = sorted((store.read(os.path.join(d, 'photos.json')) or {}).get('photos', []))
+            if not photos or not build.get('files'):
+                actions.append(f'NOT published {eng}: photos.json or build.json missing, rebuild needed'); continue
             job = {"job": "publish", "product_id": eng, "state": PUBLISH_AS,
                    "listing": {"title": listing['title'], "description": listing['description'], "tags": listing['tags'], "price": listing['price']},
                    "files": [f"data/products/{eng}/files/{f['name']}" for f in build.get('files', [])],
