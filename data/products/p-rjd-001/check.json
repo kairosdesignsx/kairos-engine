@@ -1,6 +1,6 @@
 {
  "product_id": "p-rjd-001",
- "at": "2026-10-22T15:47:04Z",
+ "at": "2026-10-22T16:03:36Z",
  "tech": [
   {
    "name": "file size",
@@ -63,155 +63,155 @@
    "item": "must:mh_journal",
    "kind": "must",
    "found": true,
-   "where": "b001 (pages 9-108), quotes, quotes2, notes, notes2",
-   "note": "Book 1 page shows title, author, genre, format, started, finished, pages, stars, would I reread, why I picked it up, my thoughts, favorite quote with page, favorite character, one-line review; quotes page is a full ruled page; notes pages exist in page_modules (not screenshotted)."
+   "where": "b001, quotes, notes (page_modules)",
+   "note": "Book 1 has title, author, genre, format, started, finished, pages, stars, reread, why I picked it up, my thoughts, favorite quote with page, favorite character and one-line review. Quotes page screenshotted; notes and notes2 exist in page_modules but have no screenshot."
   },
   {
    "item": "must:mh_apps",
    "kind": "must",
    "found": true,
-   "where": "listing title + Works with section; PDF link annotations",
-   "note": "Title says 'for Goodnotes' first; Works with lists Goodnotes, Notability, Samsung Notes, Xodo, Noteshelf on iPad, Android, Windows tablets; all links are plain internal GoTo links (not tested inside the apps)."
+   "where": "listing.title, listing.description Works with, photo-04",
+   "note": "The title opens 'Shelf Life Digital Reading Journal for Goodnotes'. Works with names Goodnotes, Notability, Samsung Notes, Xodo and Noteshelf on iPad, Android and Windows tablets. One PDF with plain GoTo links."
   },
   {
    "item": "must:mh_tracker",
    "kind": "must",
    "found": true,
    "where": "library, tbr, m01, m07, year",
-   "note": "Library (4 pages x 25), To be read (26 rows), 12 month pages, Reading year goal page all seen or confirmed in the PDF."
+   "note": "There are 4 Library pages of 25 lines, a TBR table, 12 month pages (m01 to m12) and the Reading year goal page."
   },
   {
    "item": "must:mh_nav",
    "kind": "must",
    "found": true,
-   "where": "index, every page (PDF links checked)",
-   "note": "Contents page; all 126 pages carry the full 12 month-tab links; pages 2-126 all have Home/Library/TBR/Quotes; every book page has prev/next arrows (Book 1 next only, Book 100 prev only); all 126 pages reachable from the cover."
+   "where": "index, every shot; PDF link scan",
+   "note": "There is a Contents page. Month tabs are on every page. The Home, Library, TBR and Quotes bar is on every inner page. Book pages have previous and next arrows (b001 has next only, b100 previous only). 0 broken links and 0 unreachable pages."
   },
   {
    "item": "must:mh_look",
    "kind": "must",
    "found": true,
-   "where": "all screenshots",
-   "note": "Consistent margins, cards and type scale on every page; Libre Baskerville headings with Manrope body, embedded."
+   "where": "all shots",
+   "note": "Libre Baskerville headings and Manrope body are embedded. The page uses consistent rounded cards and a regular gutter and spacing. It looks finished, not like a template."
   },
   {
    "item": "must:mh_guide",
    "kind": "must",
    "found": true,
    "where": "start (page 3), linktest (page 4)",
-   "note": "Start here with 4 numbered steps and Setup check with buttons and a fix list are printed inside the PDF."
+   "note": "The Start here and Setup check instructions are printed inside the PDF."
   },
   {
    "item": "fix:f_download",
    "kind": "fix",
    "found": true,
-   "where": "files, listing How to start, photo-04, start",
-   "note": "One PDF (2.88 MB, 126 pages), no zip or stickers; listing and photo 4 give 3 download steps incl. the Etsy app warning; Start here step 1 repeats it. Cover reads 'Digital Reading Journal / Shelf Life', which matches the listing's name and first words, not the full SEO title."
+   "where": "files, listing.description How to start, photo-04, start step 1, cover",
+   "note": "The product is a single file, Shelf-Life.pdf, 2.88 MB with no zip and no stickers. The listing and photo 4 give the 3 browser download steps, and Start here step 1 repeats them. The cover reads 'Shelf Life / Digital reading journal', which matches the first words of the listing title but not the full SEO title."
   },
   {
    "item": "fix:f_setup",
    "kind": "fix",
    "found": true,
-   "where": "cover, start, linktest, index",
-   "note": "Cover Open journal links to page 3 Start here; 4 numbered steps each with Go there; Setup check is page 4; both are the first two Contents cards."
+   "where": "cover link -> page 3, start, index",
+   "note": "The Open journal link targets Start here. Start here has 4 numbered steps, each with a Go there button. Setup check is the next page. Start here and Setup check are the first two Contents cards."
   },
   {
    "item": "fix:f_not_useful",
    "kind": "fix",
    "found": true,
-   "where": "b001-b100, m01-m12, tbr, listing What's inside",
-   "note": "100 numbered book pages, 12 undated month pages, TBR; listing lists every page type with counts."
+   "where": "b001..b100, m01..m12, tbr, listing What's inside",
+   "note": "There are 100 numbered book pages, 12 undated month pages and a TBR list. The listing gives every page type with its count."
   },
   {
    "item": "fix:f_hard",
    "kind": "fix",
    "found": true,
    "where": "b001, library, start step 3",
-   "note": "One book page layout; trail 'Library / Book 1' links back to the right Library page (Book 26 goes to Library 2); Start here step 3 describes this exact flow."
+   "note": "All book pages share one layout. Library numbers link to the books, and the trail links back to the right Library page (b026 goes to library2, b100 to library4). Start here step 3 walks through this loop."
   },
   {
    "item": "fix:f_device",
    "kind": "fix",
    "found": true,
-   "where": "PDF page size, listing Works with / Not for, linktest",
-   "note": "576 x 768 pt pages (3:4 portrait, = 768 x 1024 px); listing has Works with and Not for (phones, file viewers, spreadsheet/fillable form); Setup check page tests links."
+   "where": "PDF 576x768 pt, listing Works with / Not for",
+   "note": "Pages are 3:4 portrait (768x1024 px at 96 dpi). All links are internal GoTo links. Not for covers phones, file viewers, spreadsheets and fillable forms. The Setup check page tests the links."
   },
   {
    "item": "fix:f_quality",
    "kind": "fix",
    "found": true,
-   "where": "PDF check, all screenshots",
-   "note": "0 broken links, 126/126 pages reachable, book pages 1-100 in order on pages 9-108, text is vector; no typos seen on any screenshot."
+   "where": "PDF scan, all shots",
+   "note": "The link scan found 0 broken links and 0 unreachable pages. All fonts are embedded and text is vector. Book pages run in order, b001 at index 8 to b100 at index 107. Extracted words have no typos, and no overflowing text is visible."
   },
   {
    "item": "fix:f_misleading",
    "kind": "fix",
    "found": true,
-   "where": "photos 1-8, listing Good to know",
-   "note": "Every photo shows the built pages with a caption naming the page; description says digital PDF, portrait only, undated, no stickers, handwrite or use text tool. Photo 7's TBR crop is badly framed (see visual)."
+   "where": "photos 01-08, listing 'Good to know'",
+   "note": "Every photo is a render of the built pages with a page-name caption. The description says digital PDF, portrait only, undated, no stickers, and pen or text tool."
   },
   {
    "item": "fix:f_value",
    "kind": "fix",
    "found": true,
-   "where": "photo-02, listing What's inside",
-   "note": "Photo 2 shows the top of Book 1 large and readable; listing gives 126 pages and per-type counts; 100 books, 12 months, year, TBR, quotes, notes all present."
+   "where": "listing What's inside, photo-02, photo-08",
+   "note": "The file has 100 books plus 12 months, year, TBR, 2 quotes and 2 notes pages. Photo 2 shows the top of Book 1 large. The page count of 126 matches the PDF."
   },
   {
    "item": "fix:f_edit",
    "kind": "fix",
    "found": true,
-   "where": "library, b001, start Tip, listing FAQ",
-   "note": "Blank Shelf column, write-in Genre, Format Print/Ebook/Audio plus a blank option, undated months; Start here tip and listing explain the text tool; listing says not a fillable form."
+   "where": "library Shelf column, b001 Genre/Format, start Tip, listing FAQ",
+   "note": "The Shelf column is blank, Genre is a write-in line, and Format has Print, Ebook and Audio plus a blank option. Month pages show YEAR ____. The Start here tip and the listing explain the text tool and say it is not a fillable form."
   },
   {
    "item": "fix:f_broken",
    "kind": "fix",
    "found": true,
    "where": "linktest",
-   "note": "Three jump buttons (month page, year, Contents) and a 4-item 'Nothing happened?' fix list: pen off, open in note app, re-import PDF, message the shop."
+   "note": "Setup check has three jump buttons (month, year, Contents) and a four-item Nothing happened? fix list ending with messaging the shop."
   },
   {
    "item": "fix:f_support",
    "kind": "fix",
    "found": true,
-   "where": "listing Questions buyers ask, linktest, start",
-   "note": "FAQ covers Etsy app download, which app, links not tapping, typing, landscape/portrait; no reply-time promise anywhere (r007 respected)."
+   "where": "linktest, start, listing 'Questions buyers ask'",
+   "note": "The listing FAQ answers five questions: Etsy app download, which app, links not tapping, typing and landscape. Neither the file nor the listing promises reply times."
   },
   {
    "item": "fix:f_missing",
    "kind": "fix",
    "found": true,
-   "where": "listing What's inside, index",
-   "note": "No stickers or covers advertised; counts per page type match the PDF (126 pages); Contents shows all sections and 12 months on one screen."
+   "where": "listing, index",
+   "note": "No stickers or covers are advertised. Page counts match the built file. Contents shows all 7 sections and 12 months on one screen."
   },
   {
    "item": "unique:u_library",
    "kind": "unique",
    "found": true,
-   "where": "library, library2-4, b001",
-   "note": "4 Library pages with 25 numbered lines (title, author, finished, stars, shelf); line numbers link to pages 9-108 in order; trail goes to the right Library page; prev/next arrows on book pages."
+   "where": "library, library2-4 (page_modules), b001, b026 link scan",
+   "note": "Each Library page has 25 numbered lines with title, author, finished, stars and shelf. Each number links to its book. The book trail returns to the right Library page, and the arrows step between books."
   },
   {
    "item": "unique:u_start",
    "kind": "unique",
    "found": true,
-   "where": "start (page 3), linktest (page 4), cover",
-   "note": "Start here is page 3, Setup check page 4; 4 steps with Go there; jump buttons plus fix list; cover button lands on page 3."
+   "where": "start = PDF page 3, linktest = PDF page 4, cover link",
+   "note": "The page positions are confirmed in the PDF. The Go there buttons point to Contents, Setup check, Library and Reading year. Setup check has jump buttons and a fix list."
   },
   {
    "item": "unique:u_year",
    "kind": "unique",
    "found": true,
    "where": "year",
-   "note": "Goal line, 10 squares per month row with each month name linking to its page, fiction/nonfiction/print/ebook/audio tallies, top 5 of the year, plus best quote."
+   "note": "The year page has a goal line, 10 squares per month (tally past 10) with each month name linked to its page, fiction, nonfiction, print, ebook and audio tallies, a top 5 and a best quote."
   },
   {
    "item": "look",
    "kind": "look",
    "found": true,
-   "where": "all screenshots and photos",
-   "note": "Warm ivory paper, deep ink-blue text, oxblood buttons and star outlines, brass bar on cover/Contents/Start here, month tabs clay to soft blue with dark labels, Baskerville + Manrope, plain rules, no florals or script. Brass detail is missing on the Setup check guide page."
+   "where": "all shots, pixel sample",
+   "note": "Ivory paper #FBF7EF with ink #22304A at 12.4:1 contrast and muted text at 5.5:1. The oxblood #8C3B3B accent is on buttons and star outlines. Tabs run clay to blue with dark labels, headings are Baskerville and body is Manrope, with no florals or script. The brass bar appears on the cover, Contents and Start here but not on Setup check."
   }
  ],
  "clone": {
@@ -231,68 +231,78 @@
  },
  "visual": [
   {
-   "issue": "TBR crop is badly framed: a stray glyph fragment at top left, the Title column is gone and 'AUTHOR' is cut to 'THOR', no top bar or heading, an unlabeled tab stripe on the right. Alt text promises the Author column.",
-   "where": "photo-07-ph7_tbr_quotes.jpg (left panel)",
+   "issue": "Photo 5's point 'Start here: 4 short steps' is not what the photo shows: the Start here crop shows only steps 1 and 2. This breaks r013 (points describe only what is in frame).",
+   "where": "photo-05-ph5_start.jpg",
    "severity": "medium"
   },
   {
-   "issue": "Crops cut words mid-word at the frame edge ('Chec', 'GO TH', 'Start mon', 'TEST THE PEN: T', 'books thi', 'BOOK (', 'PAGES', 'Colo', 'Ebo'), so the pages look broken rather than zoomed.",
-   "where": "photo-05-ph5_start.jpg, photo-06-ph6_year_month.jpg, photo-03-ph3_library.jpg",
-   "severity": "medium"
-  },
-  {
-   "issue": "Start here shown as a whole page shrunk onto a tablet: the step text and the tip are too small to read at Etsy zoom (r013).",
-   "where": "photo-04-ph4_apps.jpg",
-   "severity": "medium"
-  },
-  {
-   "issue": "Contents shown as a whole page shrunk onto a tablet; the 'How the links work' text is tiny (r013). The cards are still readable.",
-   "where": "photo-08-ph8_contents.jpg",
+   "issue": "Photo 6's point says '12 undated month pages', but only January is in frame.",
+   "where": "photo-06-ph6_year_month.jpg",
    "severity": "low"
   },
   {
-   "issue": "Cover is mostly empty: about the top 35% and bottom 35% are blank ivory, and a lone brass bar floats on the top edge.",
-   "where": "cover",
-   "severity": "low"
-  },
-  {
-   "issue": "The big serif 'J' in the month heading hangs left past the content margin that every other element lines up on.",
-   "where": "m01 (January), m07 (July)",
-   "severity": "low"
-  },
-  {
-   "issue": "Eyebrow 'SETUP CHECK' repeats the title 'Setup check' word for word; every other page uses a different eyebrow.",
-   "where": "linktest",
-   "severity": "low"
-  },
-  {
-   "issue": "The 'Where things are: the top bar' rows have uneven, oversized gaps, and the Start here top-bar map leaves out HOME.",
-   "where": "linktest, start",
-   "severity": "low"
-  },
-  {
-   "issue": "Spare blank space: the bottom quarter of Start here cards 3 and 4 is empty, the Notes card sits alone in a row on Contents, and there is an empty band under the last TBR row.",
-   "where": "start, index, tbr",
-   "severity": "low"
-  },
-  {
-   "issue": "Setup check has no brass detail, while the other guide page and Contents do.",
-   "where": "linktest",
-   "severity": "low"
-  },
-  {
-   "issue": "Hero bullet 'Goodnotes, Notability and Android' mixes app names with a platform.",
+   "issue": "The hero point 'Goodnotes, Notability and Android' mixes two apps with a platform. It leaves out iPad, Samsung Notes, Xodo and Noteshelf.",
    "where": "photo-01-ph1_hero.jpg",
    "severity": "low"
   },
   {
-   "issue": "'BEFORE YOU BUY' eyebrow sits over steps whose first step is 'Buy, then download'.",
-   "where": "photo-04-ph4_apps.jpg",
+   "issue": "The back tablet in the hero shows a Book 1 page that is mostly hidden behind the cover and has no caption.",
+   "where": "photo-01-ph1_hero.jpg",
    "severity": "low"
   },
   {
-   "issue": "Day one: an Oct-Dec buyer can start at once (undated, step 4 says tap this month and write the year), but the single Reading year page runs Jan-Dec under one 'Year', so a late-year start only gets 1-3 rows before the page has to be reused. A mid-year buyer has no problem.",
-   "where": "year, start step 4",
+   "issue": "Start here cards 2 and 4 are about 40% empty below their Go there buttons, and the bottom of cards 1 and 3 is empty too.",
+   "where": "start",
+   "severity": "low"
+  },
+  {
+   "issue": "Step 1 'Open it in a note app' has a Go there button that only opens Contents. A buyer cannot tell why the button is in that step.",
+   "where": "start",
+   "severity": "low"
+  },
+  {
+   "issue": "The eyebrow 'SETUP CHECK' repeats the title 'Setup check'. The 'Where things are' panel has large gaps between its 4 rows.",
+   "where": "linktest",
+   "severity": "low"
+  },
+  {
+   "issue": "The Notes card sits alone in the third row of Contents, leaving two empty card slots.",
+   "where": "index",
+   "severity": "low"
+  },
+  {
+   "issue": "The cover is about 70% empty paper above and below the title block.",
+   "where": "cover",
+   "severity": "low"
+  },
+  {
+   "issue": "The 'J' in the January and July titles hangs past the left text margin.",
+   "where": "m01, m07",
+   "severity": "low"
+  },
+  {
+   "issue": "An empty band of about 100 px sits below the last TBR row inside the card.",
+   "where": "tbr",
+   "severity": "low"
+  },
+  {
+   "issue": "Quotes page 2 and Notes page 2 have no previous arrow back to page 1, while book and month pages have both arrows.",
+   "where": "quotes2, notes2 (PDF link scan)",
+   "severity": "low"
+  },
+  {
+   "issue": "The Reading year page runs January to December. A buyer starting in October to December cannot track a 12-month year from their start month on one page.",
+   "where": "year",
+   "severity": "low"
+  },
+  {
+   "issue": "The brass detail is on Start here but missing on Setup check, the other guide page.",
+   "where": "linktest",
+   "severity": "low"
+  },
+  {
+   "issue": "The bottom row is sliced by the crop edge in the Library and TBR crops.",
+   "where": "photo-03-ph3_library.jpg, photo-07-ph7_tbr_quotes.jpg",
    "severity": "low"
   }
  ],
