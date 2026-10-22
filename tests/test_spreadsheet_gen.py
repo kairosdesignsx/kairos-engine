@@ -22,7 +22,7 @@ def main():
     assert n == len(tabs) == len(shots), (n, len(tabs), len(shots))
     wb = load_workbook(calc, data_only=True)
     d = wb['Dashboard']
-    assert d['C7'].value == 3000 and abs(d['D7'].value - 1992.09) < 0.01, (d['C7'].value, d['D7'].value)
+    assert d['C7'].value == 3000 and abs(d['D7'].value - 2112.09) < 0.01, (d['C7'].value, d['D7'].value)
     assert d['C8'].value in (None, ''), 'months with nothing logged must stay empty'
     errors = []
     sys.path.insert(0, os.path.join(HERE, '..', 'lines', 'spreadsheet'))

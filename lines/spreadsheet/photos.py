@@ -2,7 +2,7 @@
 Scenes follow the brief's photo plan ('pages' are tab anchors: start, setup, dashboard, m01..m12, bills, debt, savings)
 and the listing's photo copy. The first photo is the hero; a photo whose id starts with 'how' is the 3-step how-to."""
 import os, sys
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'planner'))
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'planner'))  # fonts only; this line's gen must win
 from fonts import faces
 from gen import resolve_theme, esc, MONTHS
 

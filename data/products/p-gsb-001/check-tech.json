@@ -1,0 +1,62 @@
+[
+ {
+  "name": "file size",
+  "pass": true,
+  "detail": "Clear-Budget.xlsx: 0.09 MB"
+ },
+ {
+  "name": "no formula errors after recalculation",
+  "pass": true,
+  "detail": "0 errors"
+ },
+ {
+  "name": "one screenshot per tab",
+  "pass": true,
+  "detail": "19 tabs, 19 export pages, 19 shots"
+ },
+ {
+  "name": "every tab link works",
+  "pass": true,
+  "detail": "all link targets exist"
+ },
+ {
+  "name": "formulas protected",
+  "pass": true,
+  "detail": "unprotected tabs [], unlocked formulas []"
+ },
+ {
+  "name": "fonts work in Google Sheets and Excel",
+  "pass": true,
+  "detail": "fonts: ['Arial', 'Calibri']"
+ },
+ {
+  "name": "tab claims match the file",
+  "pass": true,
+  "detail": "claims [19, 19], file has 19 tabs"
+ },
+ {
+  "name": "listing photos",
+  "pass": true,
+  "detail": "8 photos, sizes [(2700, 2025)]"
+ },
+ {
+  "name": "title",
+  "pass": true,
+  "detail": "137 chars"
+ },
+ {
+  "name": "13 tags, max 20 chars",
+  "pass": true,
+  "detail": "13 tags"
+ },
+ {
+  "name": "no em dashes or emojis",
+  "pass": true,
+  "detail": "checked title and description"
+ },
+ {
+  "name": "says digital download",
+  "pass": true,
+  "detail": "download and nothing-shipped note"
+ }
+]

@@ -1,0 +1,305 @@
+{
+ "product_id": "p-gsb-001",
+ "items": [
+  {
+   "key": "must:mh_apps",
+   "kind": "must_have",
+   "text": "One .xlsx workbook that opens in Google Sheets (upload to Drive, open with Google Sheets) and in Excel (Microsoft 365, Excel 2019 or newer, or the free Excel for the web). Named in the title, first photo and description."
+  },
+  {
+   "key": "must:mh_monthly",
+   "kind": "must_have",
+   "text": "Twelve month tabs: income for the month, a 4-column spending log (date, what, category dropdown, amount) and budget vs actual per category with a progress bar and over-budget warning. Undated tab names (January to December) so any start month works."
+  },
+  {
+   "key": "must:mh_dashboard",
+   "kind": "must_have",
+   "text": "A Dashboard tab with the year by month (income, spent, left over, saved), savings rate, spending by category for the whole year, a bar chart and a pie chart. Months with nothing logged stay empty so totals are right for mid-year starters."
+  },
+  {
+   "key": "must:mh_paycheck",
+   "kind": "must_have",
+   "text": "A Paycheck plan tab for people paid weekly, every two weeks or twice a month: each payday in the year, which bills fall due before the next payday, and what is left from that paycheck."
+  },
+  {
+   "key": "must:mh_extras",
+   "kind": "must_have",
+   "text": "Bills (due day, amount, autopay, a paid mark per month), Debt payoff (snowball or avalanche, payoff order, months and interest at the minimum) and Savings goals (progress bar, save per month to hit the date)."
+  },
+  {
+   "key": "must:mh_guide",
+   "kind": "must_have",
+   "text": "Instructions inside the workbook (Start here tab and a one-line subtitle on every tab saying what to do there), not only in a separate PDF."
+  },
+  {
+   "key": "must:mh_look",
+   "kind": "must_have",
+   "text": "A finished, consistent look: one font (Arial), one header colour, one input shade, generous column widths and frozen headers."
+  },
+  {
+   "key": "fix:f_hard",
+   "kind": "fix",
+   "text": "complaint:c_hard: One rule across every tab: shaded cells are for typing, plain cells calculate (the colour key is on Start here). Logging is 4 columns with a category dropdown, so there is nothing to learn beyond Setup. January ships with an example month so the buyer sees the math work before typing anything, and the Ready check on Start here says in plain words what is done and what to do next."
+  },
+  {
+   "key": "fix:f_access",
+   "kind": "fix",
+   "text": "complaint:c_access: The download is the workbook itself (.xlsx), not a PDF with a copy link, so there is no view-only file, no 'request edit access', and no need for the Etsy email to match a Google account. Start here step 1 and listing photo 2 (how it works) give the exact route: download from Etsy.com Purchases on a computer, then Google Drive > New > File upload > Open with Google Sheets, or double-click to open in Excel. The listing FAQ adds: the Etsy phone app cannot download files; do not open the .xlsx in a browser preview."
+  },
+  {
+   "key": "fix:f_not_useful",
+   "kind": "fix",
+   "text": "complaint:c_not_useful: A separate tab for every month (the top complaint quote asked for exactly that), 30 category rows the buyer names, 80 log rows a month, and a Paycheck plan for people not paid monthly. The listing has a 'Made for / Not for' box: made for a personal or household budget in one currency; not for business bookkeeping, bank syncing or automatic imports."
+  },
+  {
+   "key": "fix:f_setup",
+   "kind": "fix",
+   "text": "complaint:c_setup: Start here is the first tab and the file opens on it: 5 numbered steps, then the live Ready check (income entered, every dollar budgeted, every category grouped, spending matches categories, no amounts without a category, example cleared), then a jump row to all 12 months. The steps cover a buyer starting before January (set Year to 2026 for November and December, re-download a fresh copy for 2027) and one starting mid-year (jump to this month; empty months stay out of totals)."
+  },
+  {
+   "key": "fix:f_support",
+   "kind": "fix",
+   "text": "complaint:c_support: Most support threads in the reviews are 'it does not work' or 'categories do not flow to the breakdown'. The answers are in the file: the Ready check names the exact problem (for example '3 entries in March use a category that is not in Setup') and how to fix it, and Start here has an 'If something looks wrong' list. The listing FAQ covers the top five questions (download, which app, Google vs Excel, how to change a category, how to unprotect). Reply speed is shop-level and handled in Darren's Etsy inbox; the file promises no service level."
+  },
+  {
+   "key": "fix:f_app",
+   "kind": "fix",
+   "text": "complaint:c_app: Works in two apps, so nobody is forced into Google: Excel users (including the free Excel for the web) never need a Google account. Only functions both apps support (SUMIFS, SUMPRODUCT, COUNTIFS, NPER, DATEDIF) and Arial. The listing has a 'Works with / Not for' box: Google Sheets and Excel on a computer for setup; not Apple Numbers or LibreOffice (not tested), not a phone-only setup."
+  },
+  {
+   "key": "fix:f_misleading",
+   "kind": "fix",
+   "text": "complaint:c_misleading: Every listing photo is a screenshot of the built file captioned with its tab name, no mockup shows anything the file lacks. The description lists every tab with the build's tab count, says the file is an .xlsx (not a Google link), shows amounts in US dollars ($) with the way to change the number format after unprotecting, and says there is no video and no bank syncing."
+  },
+  {
+   "key": "fix:f_formulas",
+   "kind": "fix",
+   "text": "complaint:c_formulas: Every formula cell is locked by sheet protection with no password, so buyers type only in shaded cells and cannot overwrite a formula in Excel. Month summaries pull categories straight from Setup, so renaming a category flows everywhere, and the Ready check flags log entries whose category no longer exists instead of silently dropping them. The build recalculates every tab and fails on any #REF!, #VALUE! or #NAME? error."
+  },
+  {
+   "key": "fix:f_customize",
+   "kind": "fix",
+   "text": "complaint:c_customize: Locking only covers formulas: category names, groups, budgets, income lines, bills, debts, goals and every log cell are open to type in. Tabs can be renamed and formulas follow. For deeper changes the protection has no password: Start here's tip shows Review > Unprotect Sheet in Excel and Data > Protect sheets and ranges in Google Sheets. The listing says so, so 'it is locked' is never a surprise."
+  },
+  {
+   "key": "fix:f_overwhelm",
+   "kind": "fix",
+   "text": "complaint:c_overwhelm: The core path is three tabs: Setup once, this month's tab, Dashboard. Bills, Paycheck plan, Debt and Savings are labelled extras on Start here ('use them when you want them'). Each tab does one job with a one-line subtitle and no instruction walls; 19 tabs in total, 12 of them the same month layout. No separate trackers for things the month log already covers (subscriptions, groceries, spending categories are just categories)."
+  },
+  {
+   "key": "fix:f_value",
+   "kind": "fix",
+   "text": "complaint:c_value: Priced at $16, under the $18 to $33 band where top earners sit, for a full year of month tabs, a dashboard, paycheck plan, bills, debt and savings in one file with no upsell, survey or second purchase to get the file. Monthly tabs answer the 'expenses sheet is only for the full year' complaint quoted in this cluster."
+  },
+  {
+   "key": "unique:u_ready_check",
+   "kind": "unique",
+   "text": "Live Ready check: A box on Start here with a Done / To do status for each setup step that recalculates as you type: income entered, every dollar budgeted, every category grouped, spending that matches your categories, no amounts without a category, example cleared, plus your Needs / Wants / Savings and debt split next to the 50/30/20 guide. Each To do says exactly what to fix and where."
+  },
+  {
+   "key": "unique:u_example_month",
+   "kind": "unique",
+   "text": "Example month you clear in one step: January ships filled with ten realistic entries against the sample categories, so every summary, warning, progress bar and Dashboard chart shows working numbers on first open. Step 2 and the Ready check show how to clear it with one Delete."
+  },
+  {
+   "key": "unique:u_zero_based",
+   "kind": "unique",
+   "text": "Every dollar has a job, built in: Setup shows Left to budget (income minus all category budgets) and turns red when over; the Ready check repeats it in words and shows the 50/30/20 split of the buyer's own groups. The sample budget is balanced to exactly 0 so the method is visible from the first screen."
+  },
+  {
+   "key": "look",
+   "kind": "look",
+   "text": "Calm and money-confident: deep ink-navy headers, an evergreen accent for links, progress bars and step numbers, and a pale green input shade on white. No pastels, no clipart, no rainbow category fills: colour only means 'type here', 'header' or 'over budget'. Light paper so it prints and screenshots cleanly; the listing photos sit on the same navy and white, which reads well in a dark room or a bright one."
+  }
+ ],
+ "shots": [
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-gsb-001/shots/start.png",
+   "anchor": "start",
+   "module": "start_check"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-gsb-001/shots/dashboard.png",
+   "anchor": "dashboard",
+   "module": "dashboard"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-gsb-001/shots/setup.png",
+   "anchor": "setup",
+   "module": "setup"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-gsb-001/shots/m01.png",
+   "anchor": "m01",
+   "module": "months"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-gsb-001/shots/m02.png",
+   "anchor": "m02",
+   "module": "months"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-gsb-001/shots/m03.png",
+   "anchor": "m03",
+   "module": "months"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-gsb-001/shots/m04.png",
+   "anchor": "m04",
+   "module": "months"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-gsb-001/shots/m05.png",
+   "anchor": "m05",
+   "module": "months"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-gsb-001/shots/m06.png",
+   "anchor": "m06",
+   "module": "months"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-gsb-001/shots/m07.png",
+   "anchor": "m07",
+   "module": "months"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-gsb-001/shots/m08.png",
+   "anchor": "m08",
+   "module": "months"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-gsb-001/shots/m09.png",
+   "anchor": "m09",
+   "module": "months"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-gsb-001/shots/m10.png",
+   "anchor": "m10",
+   "module": "months"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-gsb-001/shots/m11.png",
+   "anchor": "m11",
+   "module": "months"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-gsb-001/shots/m12.png",
+   "anchor": "m12",
+   "module": "months"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-gsb-001/shots/bills.png",
+   "anchor": "bills",
+   "module": "bills"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-gsb-001/shots/paycheck.png",
+   "anchor": "paycheck",
+   "module": "paycheck"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-gsb-001/shots/debt.png",
+   "anchor": "debt",
+   "module": "debt"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-gsb-001/shots/savings.png",
+   "anchor": "savings",
+   "module": "savings"
+  }
+ ],
+ "photos": [
+  "/home/claude/kairos-engine/data/products/p-gsb-001/photos/photo-01-hero.jpg",
+  "/home/claude/kairos-engine/data/products/p-gsb-001/photos/photo-02-how_open.jpg",
+  "/home/claude/kairos-engine/data/products/p-gsb-001/photos/photo-03-start.jpg",
+  "/home/claude/kairos-engine/data/products/p-gsb-001/photos/photo-04-setup.jpg",
+  "/home/claude/kairos-engine/data/products/p-gsb-001/photos/photo-05-month.jpg",
+  "/home/claude/kairos-engine/data/products/p-gsb-001/photos/photo-06-paycheck.jpg",
+  "/home/claude/kairos-engine/data/products/p-gsb-001/photos/photo-07-extras.jpg",
+  "/home/claude/kairos-engine/data/products/p-gsb-001/photos/photo-08-inside.jpg"
+ ],
+ "listing": "/home/claude/kairos-engine/data/products/p-gsb-001/listing.json",
+ "page_modules": [
+  [
+   "start",
+   "start_check"
+  ],
+  [
+   "setup",
+   "setup"
+  ],
+  [
+   "m01",
+   "months"
+  ],
+  [
+   "m02",
+   "months"
+  ],
+  [
+   "m03",
+   "months"
+  ],
+  [
+   "m04",
+   "months"
+  ],
+  [
+   "m05",
+   "months"
+  ],
+  [
+   "m06",
+   "months"
+  ],
+  [
+   "m07",
+   "months"
+  ],
+  [
+   "m08",
+   "months"
+  ],
+  [
+   "m09",
+   "months"
+  ],
+  [
+   "m10",
+   "months"
+  ],
+  [
+   "m11",
+   "months"
+  ],
+  [
+   "m12",
+   "months"
+  ],
+  [
+   "dashboard",
+   "dashboard"
+  ],
+  [
+   "bills",
+   "bills"
+  ],
+  [
+   "paycheck",
+   "paycheck"
+  ],
+  [
+   "debt",
+   "debt"
+  ],
+  [
+   "savings",
+   "savings"
+  ]
+ ],
+ "line": "spreadsheet",
+ "files": [
+  "/home/claude/kairos-engine/data/products/p-gsb-001/files/Clear-Budget.xlsx"
+ ]
+}

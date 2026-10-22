@@ -544,7 +544,7 @@ def m_paycheck(B, sec):
 # ---------------- build ----------------
 SAMPLE_ROWS = [(3, 'Rent', 'Rent or mortgage', 1200), (4, 'Weekly shop', 'Groceries', 112.4), (6, 'Bus pass', 'Transport', 60),
                (9, 'Pizza night', 'Eating out', 38.5), (11, 'Weekly shop', 'Groceries', 96.2), (14, 'Phone bill', 'Phone and internet', 55),
-               (15, 'To emergency fund', 'Emergency fund', 200), (18, 'Streaming', 'Subscriptions', 15.99), (21, 'Card payment', 'Credit card', 150), (25, 'Shoes', 'Shopping', 64)]
+               (15, 'To emergency fund', 'Emergency fund', 200), (18, 'Streaming', 'Subscriptions', 15.99), (21, 'Card payment', 'Credit card', 150), (24, 'Concert tickets', 'Fun', 120), (25, 'Shoes', 'Shopping', 64)]
 
 
 def sample_data(B):
