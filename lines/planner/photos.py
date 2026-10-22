@@ -81,7 +81,7 @@ def scenes(brief, listing, build, shots_dir, out_dir):
             if few:  # 2x2 beside the headline so pages stay readable
                 S[key] = base(th, f'''<div style="position:absolute;left:150px;top:0;bottom:0;width:760px;display:flex;flex-direction:column;justify-content:center;gap:34px">
                   {label or '<p class="k">What\'s inside</p>'}<p class="h" style="font-size:120px">{head}</p>{pts}</div>
-                  <div style="position:absolute;left:1000px;right:120px;top:120px;bottom:100px;display:grid;grid-template-columns:1fr 1fr;gap:40px 50px;align-content:center">{cells}</div>''')
+                  <div style="position:absolute;left:1000px;right:120px;top:120px;bottom:100px;display:grid;grid-template-columns:{'repeat(2,600px)' if portrait else '1fr 1fr'};justify-content:center;gap:40px 50px;align-content:center">{cells}</div>''')
                 continue
             S[key] = base(th, f'''<div style="position:absolute;inset:0;padding:110px 150px;display:flex;flex-direction:column;align-items:center;gap:60px">
               <div style="text-align:center">{label or '<p class="k">What\'s inside</p>'}<p class="h" style="font-size:130px;margin-top:20px">{head}</p></div>

@@ -31,7 +31,9 @@
     "sort_by": "rating",
     "sort_order": "asc",
     "page": 2
-   }
+   },
+   "optional": true,
+   "note": "shop has fewer than 20 reviews, page 2 is empty"
   },
   {
    "tool": "mcp__EverBee__view_shop_reviews",
@@ -81,7 +83,9 @@
     "sort_by": "rating",
     "sort_order": "asc",
     "page": 2
-   }
+   },
+   "optional": true,
+   "note": "shop has fewer than 20 reviews, page 2 is empty"
   },
   {
    "tool": "mcp__EverBee__view_shop_reviews",

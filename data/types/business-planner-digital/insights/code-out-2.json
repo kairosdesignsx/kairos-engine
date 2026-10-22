@@ -1,0 +1,913 @@
+{
+ "new_themes": [
+  {
+   "id": "c_paid_update",
+   "theme": "Had to pay again for fixes or updates",
+   "use_for": "Seller released a fixed or updated version and charged existing buyers for it.",
+   "kind": "complaints"
+  },
+  {
+   "id": "c_billing",
+   "theme": "Charged the wrong amount",
+   "use_for": "Buyer was charged more than once or more than the price shown.",
+   "kind": "complaints"
+  }
+ ],
+ "codes": [
+  {
+   "id": "r132",
+   "off_type": false,
+   "themes": [
+    "c_quality",
+    "c_dates",
+    "c_support"
+   ]
+  },
+  {
+   "id": "r134",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r135",
+   "off_type": false,
+   "themes": [
+    "p_quality",
+    "p_complete",
+    "p_value",
+    "c_edit",
+    "w_easy_delivery",
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r137",
+   "off_type": false,
+   "themes": [
+    "c_quality",
+    "c_paid_update"
+   ]
+  },
+  {
+   "id": "r138",
+   "off_type": false,
+   "themes": [
+    "c_look"
+   ]
+  },
+  {
+   "id": "r139",
+   "off_type": false,
+   "themes": [
+    "c_misleading",
+    "c_download"
+   ]
+  },
+  {
+   "id": "r140",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r141",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs",
+    "p_support"
+   ]
+  },
+  {
+   "id": "r142",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r143",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r144",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs",
+    "p_quality"
+   ]
+  },
+  {
+   "id": "r145",
+   "off_type": false,
+   "themes": [
+    "c_download",
+    "p_support"
+   ]
+  },
+  {
+   "id": "r146",
+   "off_type": false,
+   "themes": [
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r147",
+   "off_type": false,
+   "themes": [
+    "c_readability"
+   ]
+  },
+  {
+   "id": "r148",
+   "off_type": false,
+   "themes": [
+    "p_value",
+    "p_adhd"
+   ]
+  },
+  {
+   "id": "r149",
+   "off_type": false,
+   "themes": [
+    "p_value",
+    "p_quality",
+    "p_look",
+    "p_easy",
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r150",
+   "off_type": false,
+   "themes": [
+    "p_value",
+    "p_quality",
+    "p_look",
+    "p_easy",
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r151",
+   "off_type": false,
+   "themes": [
+    "p_value",
+    "p_quality",
+    "p_look",
+    "p_easy",
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r152",
+   "off_type": false,
+   "themes": [
+    "c_misleading",
+    "c_hard",
+    "c_device"
+   ]
+  },
+  {
+   "id": "r153",
+   "off_type": false,
+   "themes": [
+    "p_complete",
+    "p_fits_needs",
+    "p_quality"
+   ]
+  },
+  {
+   "id": "r154",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r155",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r156",
+   "off_type": false,
+   "themes": [
+    "p_look",
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r157",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r158",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r159",
+   "off_type": false,
+   "themes": [
+    "c_missing"
+   ]
+  },
+  {
+   "id": "r160",
+   "off_type": false,
+   "themes": [
+    "c_basic",
+    "c_value"
+   ]
+  },
+  {
+   "id": "r161",
+   "off_type": false,
+   "themes": [
+    "c_missing",
+    "c_support"
+   ]
+  },
+  {
+   "id": "r162",
+   "off_type": false,
+   "themes": [
+    "c_misleading",
+    "c_basic"
+   ]
+  },
+  {
+   "id": "r163",
+   "off_type": false,
+   "themes": [
+    "c_basic"
+   ]
+  },
+  {
+   "id": "r164",
+   "off_type": true,
+   "themes": [
+    "c_support",
+    "c_refund"
+   ]
+  },
+  {
+   "id": "r165",
+   "off_type": true,
+   "themes": [
+    "c_support"
+   ]
+  },
+  {
+   "id": "r166",
+   "off_type": false,
+   "themes": [
+    "p_support"
+   ]
+  },
+  {
+   "id": "r167",
+   "off_type": true,
+   "themes": [
+    "c_quality"
+   ]
+  },
+  {
+   "id": "r168",
+   "off_type": true,
+   "themes": [
+    "c_quality",
+    "c_value"
+   ]
+  },
+  {
+   "id": "r169",
+   "off_type": true,
+   "themes": [
+    "p_support",
+    "p_flexible"
+   ]
+  },
+  {
+   "id": "r170",
+   "off_type": false,
+   "themes": [
+    "c_basic"
+   ]
+  },
+  {
+   "id": "r171",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r172",
+   "off_type": false,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r173",
+   "off_type": false,
+   "themes": [
+    "p_as_described"
+   ]
+  },
+  {
+   "id": "r174",
+   "off_type": true,
+   "themes": [
+    "p_support"
+   ]
+  },
+  {
+   "id": "r175",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r176",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r177",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r179",
+   "off_type": true,
+   "themes": [
+    "p_repeat",
+    "p_quality"
+   ]
+  },
+  {
+   "id": "r180",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r181",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r183",
+   "off_type": false,
+   "themes": [
+    "p_quality",
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r184",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r185",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r186",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r187",
+   "off_type": false,
+   "themes": [
+    "p_quality"
+   ]
+  },
+  {
+   "id": "r188",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r189",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r190",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r191",
+   "off_type": false,
+   "themes": [
+    "p_support"
+   ]
+  },
+  {
+   "id": "r192",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r193",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r194",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r196",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r197",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r198",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r199",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r200",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r201",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r202",
+   "off_type": true,
+   "themes": [
+    "c_quality"
+   ]
+  },
+  {
+   "id": "r203",
+   "off_type": false,
+   "themes": [
+    "p_repeat"
+   ]
+  },
+  {
+   "id": "r204",
+   "off_type": false,
+   "themes": [
+    "p_support"
+   ]
+  },
+  {
+   "id": "r205",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r206",
+   "off_type": false,
+   "themes": [
+    "p_support"
+   ]
+  },
+  {
+   "id": "r207",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r208",
+   "off_type": false,
+   "themes": [
+    "p_support",
+    "p_repeat"
+   ]
+  },
+  {
+   "id": "r209",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r210",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r211",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r212",
+   "off_type": false,
+   "themes": [
+    "p_look",
+    "c_hard",
+    "c_support"
+   ]
+  },
+  {
+   "id": "r213",
+   "off_type": false,
+   "themes": [
+    "c_broken"
+   ]
+  },
+  {
+   "id": "r214",
+   "off_type": false,
+   "themes": [
+    "c_edit"
+   ]
+  },
+  {
+   "id": "r216",
+   "off_type": true,
+   "themes": [
+    "c_space"
+   ]
+  },
+  {
+   "id": "r217",
+   "off_type": false,
+   "themes": [
+    "c_quality"
+   ]
+  },
+  {
+   "id": "r220",
+   "off_type": false,
+   "themes": [
+    "c_device",
+    "c_extra_app",
+    "c_download"
+   ]
+  },
+  {
+   "id": "r221",
+   "off_type": false,
+   "themes": [
+    "c_look",
+    "c_value"
+   ]
+  },
+  {
+   "id": "r224",
+   "off_type": false,
+   "themes": [
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r226",
+   "off_type": false,
+   "themes": [
+    "c_misleading"
+   ]
+  },
+  {
+   "id": "r229",
+   "off_type": false,
+   "themes": [
+    "c_quality"
+   ]
+  },
+  {
+   "id": "r230",
+   "off_type": false,
+   "themes": [
+    "c_download"
+   ]
+  },
+  {
+   "id": "r232",
+   "off_type": true,
+   "themes": [
+    "c_setup",
+    "c_hard",
+    "c_missing"
+   ]
+  },
+  {
+   "id": "r233",
+   "off_type": true,
+   "themes": [
+    "p_look",
+    "c_quality",
+    "c_not_useful",
+    "c_readability",
+    "c_refund"
+   ]
+  },
+  {
+   "id": "r234",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r235",
+   "off_type": false,
+   "themes": [
+    "p_complete",
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r236",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_look",
+    "p_quality"
+   ]
+  },
+  {
+   "id": "r237",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r238",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r239",
+   "off_type": true,
+   "themes": [
+    "p_easy",
+    "p_extras",
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r240",
+   "off_type": false,
+   "themes": [
+    "p_as_described",
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r241",
+   "off_type": false,
+   "themes": [
+    "c_device"
+   ]
+  },
+  {
+   "id": "r242",
+   "off_type": false,
+   "themes": [
+    "p_flexible"
+   ]
+  },
+  {
+   "id": "r243",
+   "off_type": false,
+   "themes": [
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r244",
+   "off_type": false,
+   "themes": [
+    "c_download"
+   ]
+  },
+  {
+   "id": "r245",
+   "off_type": false,
+   "themes": [
+    "p_as_described"
+   ]
+  },
+  {
+   "id": "r246",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r247",
+   "off_type": false,
+   "themes": [
+    "p_complete",
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r248",
+   "off_type": false,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r249",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r250",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r251",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r253",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r254",
+   "off_type": false,
+   "themes": [
+    "c_download"
+   ]
+  },
+  {
+   "id": "r255",
+   "off_type": false,
+   "themes": [
+    "p_value",
+    "c_basic"
+   ]
+  },
+  {
+   "id": "r257",
+   "off_type": false,
+   "themes": [
+    "c_misleading",
+    "c_missing"
+   ]
+  },
+  {
+   "id": "r258",
+   "off_type": false,
+   "themes": [
+    "c_support",
+    "c_refund",
+    "c_hard",
+    "w_file_format"
+   ]
+  },
+  {
+   "id": "r259",
+   "off_type": false,
+   "themes": [
+    "c_basic"
+   ]
+  },
+  {
+   "id": "r261",
+   "off_type": false,
+   "themes": [
+    "c_download"
+   ]
+  },
+  {
+   "id": "r264",
+   "off_type": false,
+   "themes": [
+    "c_broken",
+    "c_refund"
+   ]
+  },
+  {
+   "id": "r265",
+   "off_type": false,
+   "themes": [
+    "c_download"
+   ]
+  },
+  {
+   "id": "r266",
+   "off_type": false,
+   "themes": [
+    "c_billing"
+   ]
+  },
+  {
+   "id": "r267",
+   "off_type": false,
+   "themes": [
+    "p_look",
+    "c_misleading",
+    "c_hard",
+    "c_nav",
+    "c_value"
+   ]
+  },
+  {
+   "id": "r268",
+   "off_type": false,
+   "themes": [
+    "c_download"
+   ]
+  },
+  {
+   "id": "r270",
+   "off_type": false,
+   "themes": [
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r271",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+[
+ {
+  "id": "c_print",
+  "theme": "Prints wrong or hard to print",
+  "use_for": "Printing problems: wrong size, cut-off pages, can't work out how to print.",
+  "count": 4
+ },
+ {
+  "id": "c_delivery_delay",
+  "theme": "Slow or no delivery of files",
+  "use_for": "Took a long time to get access, still waiting, or never received the files.",
+  "count": 4
+ },
+ {
+  "id": "c_repetitive",
+  "theme": "Repetitive or duplicate pages",
+  "use_for": "Many pages are copies or near-copies of each other, padding the page count.",
+  "count": 3
+ },
+ {
+  "id": "c_ai_art",
+  "theme": "AI-generated artwork",
+  "use_for": "Buyer objects that covers, images or stickers are AI-generated rather than hand-made.",
+  "count": 1
+ },
+ {
+  "id": "c_paid_update",
+  "theme": "Had to pay again for fixes or updates",
+  "use_for": "Seller released a fixed or updated version and charged existing buyers for it.",
+  "count": 1
+ },
+ {
+  "id": "c_billing",
+  "theme": "Charged the wrong amount",
+  "use_for": "Buyer was charged more than once or more than the price shown.",
+  "count": 1
+ },
+ {
+  "id": "c_wrong_item",
+  "theme": "Received the wrong item",
+  "use_for": "Buyer got a different product or file than the one ordered.",
+  "count": 1
+ },
+ {
+  "id": "w_typeable",
+  "theme": "Pages you can type on",
+  "use_for": "Wants fillable or typeable pages instead of handwriting only.",
+  "count": 1
+ },
+ {
+  "id": "w_separate_pages",
+  "theme": "Pages as separate files",
+  "use_for": "Wants each sheet or page as its own file instead of one long PDF to scroll through.",
+  "count": 1
+ }
+]
