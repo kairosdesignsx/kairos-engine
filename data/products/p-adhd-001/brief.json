@@ -4,7 +4,7 @@
  "type_id": "adhd-digital-planner",
  "line": "planner",
  "created_at": "2026-10-21T20:37:00+08:00",
- "positioning": "For adults with ADHD who have bought pretty planners before and stopped using them: a dated 2027 planner for Goodnotes, Notability and Android tablets that starts with a Nov to Dec 2026 head start, works in the first five minutes (Start here page plus a Setup check page), keeps every day to one calm page, and has a no-guilt Restart page for coming back. Top sellers compete on how much is inside, while their buyers' biggest complaints are that they could not get it working or it was too much, so this one wins on working first time and being easy to return to.",
+ "positioning": "For adults with ADHD who have bought pretty planners before and stopped using them: a dated 2027 planner for Goodnotes, Notability and Android tablets that starts with a head start from Monday, October 26, 2026, works in the first five minutes (Start here page plus a Setup check page), keeps every day to one calm page, and has a no-guilt Restart page for coming back. Top sellers compete on how much is inside, while their buyers' biggest complaints are that they could not get it working or it was too much, so this one wins on working first time and being easy to return to.",
  "must_haves": [
   {
    "id": "mh_dated",
@@ -18,7 +18,7 @@
   },
   {
    "id": "mh_multi_year",
-   "what": "Covers two years: Nov and Dec 2026 head-start month and week pages before the full 2027 year (14 months in all), so a buyer in late October can start this week instead of waiting for January.",
+   "what": "Covers two years: a head start from Monday, October 26, 2026 with month, week and day pages before the full 2027 year, so a buyer in late October can start this week instead of waiting for January.",
    "evidence": [
     "feature:multi_year",
     "keyword:2026 digital planner",
@@ -108,7 +108,7 @@
   {
    "id": "f_misleading",
    "complaint": "complaint:c_misleading",
-   "how": "Every listing photo is a screenshot of the built file, captioned with the page name; no mockup shows anything the file lacks. The description lists each page type with counts and says plainly: landscape only, Monday-start weeks, Nov to Dec 2026 has month and week pages (no day pages), no stickers, handwrite or use the app's text tool (not a fillable form). Photo 10 repeats this next to the Contents page.",
+   "how": "Every listing photo is a screenshot of the built file, captioned with the page name; no mockup shows anything the file lacks. The description lists each page type with counts and says plainly: landscape only, Monday-start weeks, the head start from October 26, 2026 has month, week and day pages, no stickers, handwrite or use the app's text tool (not a fillable form). Photo 10 repeats this next to the Contents page.",
    "evidence": [
     "complaint:c_misleading",
     "praise:p_as_described",
@@ -167,7 +167,7 @@
   {
    "id": "f_quality",
    "complaint": "complaint:c_quality",
-   "how": "Pages run in strict date order: Nov to Dec 2026 head start, then each 2027 month followed by its weeks and their days, and each week and day page appears exactly once (the line currently prints the 8 weeks that span two months twice; see build_notes). The build checks 0 broken links and no overflowing text, and all text is vector so it stays crisp at any zoom.",
+   "how": "Pages run in strict date order: the head start from October 26, 2026, then each 2027 month followed by its weeks and their days, and each week and day page appears exactly once (the line currently prints the 8 weeks that span two months twice; see build_notes). The build checks 0 broken links and no overflowing text, and all text is vector so it stays crisp at any zoom.",
    "evidence": [
     "complaint:c_quality",
     "complaint:c_links",
@@ -974,6 +974,11 @@
    "at": "2026-10-21",
    "by": "session",
    "why": "coverage check round 6: Start here fits, Contents and Restart list 2026 months first, photo 7 shows two readable pages"
+  },
+  {
+   "at": "2026-10-22",
+   "by": "session",
+   "why": "brief text brought in line with the built product (head start from Oct 26 with day pages)"
   }
  ]
 }

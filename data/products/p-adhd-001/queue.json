@@ -39,7 +39,7 @@
    "p/p-adhd-001/32.jpg"
   ],
   "status": "queued",
-  "created": 1792593906283,
+  "created": 1792653193321,
   "listing": {
    "title": "ADHD Planner 2027 Digital, Goodnotes Planner for iPad and Android, Daily Weekly Monthly, Time Blocking, Starts Oct 2026, Hyperlinked",
    "tags": [
@@ -67,7 +67,7 @@
    }
   ],
   "evidence": {
-   "positioning": "For adults with ADHD who have bought pretty planners before and stopped using them: a dated 2027 planner for Goodnotes, Notability and Android tablets that starts with a Nov to Dec 2026 head start, works in the first five minutes (Start here page plus a Setup check page), keeps every day to one calm page, and has a no-guilt Restart page for coming back. Top sellers compete on how much is inside, while their buyers' biggest complaints are that they could not get it working or it was too much, so this one wins on working first time and being easy to return to.",
+   "positioning": "For adults with ADHD who have bought pretty planners before and stopped using them: a dated 2027 planner for Goodnotes, Notability and Android tablets that starts with a head start from Monday, October 26, 2026, works in the first five minutes (Start here page plus a Setup check page), keeps every day to one calm page, and has a no-guilt Restart page for coming back. Top sellers compete on how much is inside, while their buyers' biggest complaints are that they could not get it working or it was too much, so this one wins on working first time and being easy to return to.",
    "basis": {
     "listings": 30,
     "reviews": 511,
@@ -191,7 +191,7 @@
      "theme": "Not as described or pictured",
      "count": 23,
      "state": "fixed",
-     "how": "Every listing photo is a screenshot of the built file, captioned with the page name; no mockup shows anything the file lacks. The description lists each page type with counts and says plainly: landscape only, Monday-start weeks, Nov to Dec 2026 has month and week pages (no day pages), no stickers, handwrite or use the app's text tool (not a fillable form). Photo 10 repeats this next to the Contents page.",
+     "how": "Every listing photo is a screenshot of the built file, captioned with the page name; no mockup shows anything the file lacks. The description lists each page type with counts and says plainly: landscape only, Monday-start weeks, the head start from October 26, 2026 has month, week and day pages, no stickers, handwrite or use the app's text tool (not a fillable form). Photo 10 repeats this next to the Contents page.",
      "quote": "Ich habe es gekauft, weil es in der Beschreibung hiess, das hochkant möglich ist, doch weder in Goodnotes, noch in Notability funktioniert hochkant!"
     },
     {
@@ -219,7 +219,7 @@
      "theme": "Errors, typos or low quality",
      "count": 15,
      "state": "fixed",
-     "how": "Pages run in strict date order: Nov to Dec 2026 head start, then each 2027 month followed by its weeks and their days, and each week and day page appears exactly once (the line currently prints the 8 weeks that span two months twice; see build_notes). The build checks 0 broken links and no overflowing text, and all text is vector so it stays crisp at any zoom.",
+     "how": "Pages run in strict date order: the head start from October 26, 2026, then each 2027 month followed by its weeks and their days, and each week and day page appears exactly once (the line currently prints the 8 weeks that span two months twice; see build_notes). The build checks 0 broken links and no overflowing text, and all text is vector so it stays crisp at any zoom.",
      "quote": "This product was very hard to use and I couldn't download it to use on my iPad or computer with having issues seeing part of the planning pages."
     },
     {
@@ -276,7 +276,7 @@
      "name": "Covers more than one year",
      "share": 0.867,
      "state": "included",
-     "how": "Covers two years: Nov and Dec 2026 head-start month and week pages before the full 2027 year (14 months in all), so a buyer in late October can start this week instead of waiting for January."
+     "how": "Covers two years: a head start from Monday, October 26, 2026 with month, week and day pages before the full 2027 year, so a buyer in late October can start this week instead of waiting for January."
     },
     {
      "name": "Says Goodnotes",
@@ -375,6 +375,1558 @@
      "mo_revenue": 0.0,
      "total_sales": 12332.0,
      "img": "https://i.etsystatic.com/52384318/r/il/986bf8/7951016040/il_570xN.7951016040_ansh.jpg"
+    }
+   ]
+  },
+  "brief": {
+   "positioning": "For adults with ADHD who have bought pretty planners before and stopped using them: a dated 2027 planner for Goodnotes, Notability and Android tablets that starts with a head start from Monday, October 26, 2026, works in the first five minutes (Start here page plus a Setup check page), keeps every day to one calm page, and has a no-guilt Restart page for coming back. Top sellers compete on how much is inside, while their buyers' biggest complaints are that they could not get it working or it was too much, so this one wins on working first time and being easy to return to.",
+   "must_haves": [
+    {
+     "what": "Dated 2027, Monday-start, every date linked: year page to month, month to its weeks, week to each day, day to the next and previous day.",
+     "evidence": [
+      "feature:dated",
+      "feature:hyperlinked",
+      "keyword:2027 digital planner",
+      "praise:p_nav"
+     ]
+    },
+    {
+     "what": "Covers two years: a head start from Monday, October 26, 2026 with month, week and day pages before the full 2027 year, so a buyer in late October can start this week instead of waiting for January.",
+     "evidence": [
+      "feature:multi_year",
+      "keyword:2026 digital planner",
+      "listing:1282376971",
+      "listing:4332596790"
+     ]
+    },
+    {
+     "what": "One landscape PDF that works in Goodnotes (named first in title and listing), Notability, Samsung Notes, Xodo and Noteshelf on iPad, Android and Windows tablets.",
+     "evidence": [
+      "feature:goodnotes",
+      "feature:notability",
+      "feature:android",
+      "keyword:goodnotes planner",
+      "keyword:notability planner",
+      "keyword:ipad planner"
+     ]
+    },
+    {
+     "what": "ADHD-specific on the page, not only in the title: every day has Today's top 3, time blocks, a brain dump box, an energy rating and one win.",
+     "evidence": [
+      "feature:adhd_specific",
+      "praise:p_adhd",
+      "keyword:adhd planner",
+      "keyword:adhd planner adult"
+     ]
+    },
+    {
+     "what": "The core set buyers praise and use daily: year at a glance, 12 month pages with side tabs, every week, every day, a habit tracker per month, an energy map for the year, brain dump and notes pages.",
+     "evidence": [
+      "praise:p_complete",
+      "praise:p_daily",
+      "feature:journal",
+      "feature:habit_tracker",
+      "feature:self_care"
+     ]
+    },
+    {
+     "what": "A finished, designed look with real typography and consistent spacing; design is the single biggest praise driver.",
+     "evidence": [
+      "praise:p_look",
+      "praise:p_quality"
+     ]
+    },
+    {
+     "what": "Instructions printed inside the file, not only in a video or a separate PDF.",
+     "evidence": [
+      "praise:p_guide",
+      "praise:p_easy"
+     ]
+    }
+   ],
+   "fixes": [
+    {
+     "complaint": "Hard to use day to day",
+     "count": 42,
+     "how": "Every day page has the same seven boxes in the same places (Today's top 3, Time blocks 7am to 9pm, Brain dump, Energy 1 to 5 with Basics, One win today, Dopamine break), so there is one page to learn. The cover's Open planner button lands on the 4-step Start here page, and every page carries Home, the month tabs and a Month / Week breadcrumb."
+    },
+    {
+     "complaint": "Couldn't download or open the file",
+     "count": 41,
+     "how": "Listing copy and photo 4 give the download in 3 steps: buy, download from Etsy in a web browser (the Etsy app cannot download digital files), open the PDF in a planner app. It ships as one PDF, not a zip, under 19.5 MB so it downloads and imports quickly. The Start here page repeats the steps for anyone who opened it on a computer first."
+    },
+    {
+     "complaint": "Not as described or pictured",
+     "count": 23,
+     "how": "Every listing photo is a screenshot of the built file, captioned with the page name; no mockup shows anything the file lacks. The description lists each page type with counts and says plainly: landscape only, Monday-start weeks, the head start from October 26, 2026 has month, week and day pages, no stickers, handwrite or use the app's text tool (not a fillable form). Photo 10 repeats this next to the Contents page."
+    },
+    {
+     "complaint": "Doesn't work on my app or device",
+     "count": 22,
+     "how": "Pages are 1024 x 768 landscape (4:3, the iPad's own shape) so there are no big empty margins, and all tabs and dates are plain PDF links. The listing has a Works with / Not for box: works in Goodnotes, Notability, Samsung Notes, Xodo and Noteshelf on iPad, Android and Windows tablets; not made for phones, e-ink tablets, or viewing in Files, Photos or Google Drive preview. The Setup check page proves it on the buyer's own device in one minute."
+    },
+    {
+     "complaint": "Not useful for my needs",
+     "count": 21,
+     "how": "Month tabs run down the right edge of every page (answering 'there are no monthly tabs so you are swiping through the pages'), and year, month, week and day pages are all linked to each other. It is dated, so there is nothing to set up: open today and write. The Contents page shows every section and month on one screen."
+    },
+    {
+     "complaint": "Confusing setup or unclear instructions",
+     "count": 19,
+     "how": "Start here (4 numbered steps: open it in a planner app, check the links, pen off to tap and on to write, plan one day) and Setup check are the first two cards on the Contents page and the pages right after it. 'Where are the stickers?' cannot happen: there are none, and the listing says so."
+    },
+    {
+     "complaint": "Errors, typos or low quality",
+     "count": 15,
+     "how": "Pages run in strict date order: the head start from October 26, 2026, then each 2027 month followed by its weeks and their days, and each week and day page appears exactly once (the line currently prints the 8 weeks that span two months twice; see build_notes). The build checks 0 broken links and no overflowing text, and all text is vector so it stays crisp at any zoom."
+    },
+    {
+     "complaint": "Seller didn't help or reply",
+     "count": 15,
+     "how": "Most support messages are 'it does not work' questions, so the answers are in the file and the listing: the Setup check page's 'Nothing happened?' list (pen off, open in a planner app, import as PDF, then message us), the Start here steps, and a listing FAQ with the top five problems (Etsy app download, which app, links not tapping, how to type, landscape only). How fast the shop replies is shop-level (Darren's Etsy inbox), not something the file can fix."
+    },
+    {
+     "complaint": "Not worth the price",
+     "count": 14,
+     "how": "Priced at $14, well under the $22 median, for a full dated 2027 with day pages plus a 2026 head start. Writing space, the thing a $14 buyer said was missing, is generous: half of each day page is open writing (brain dump, time blocks), each weekday gets its own lined box on the week page, and text is set at 1.1 scale. Photo 2 shows a day page at real size so buyers can judge the space before buying."
+    },
+    {
+     "complaint": "Hard to navigate or find pages",
+     "count": 13,
+     "how": "Three ways to move on every month, week and day page: month tabs down the right edge, a top bar (Home, Year, Restart, Dopamine, Energy, Brain dump, Notes), and a breadcrumb (January / Week 3) that works as a back button. Day pages add previous and next arrows, every date on the year page jumps to its day, and the Contents page links every section and month."
+    },
+    {
+     "complaint": "Too much, overwhelming",
+     "count": 11,
+     "how": "Short on purpose: nine page types (year, month, habit tracker, week, day, dopamine menu, routines, energy map, brain dump and notes) instead of dozens of templates, seven boxes per day page, and a Contents page that fits on one screen. Start here says 'plan one day' and the Restart page says 'do not catch up'. The listing says: not 50 templates, just the pages you will use every day."
+    },
+    {
+     "complaint": "Can't edit, type or customize",
+     "count": 10,
+     "how": "The Start here page says how to write and type: pen on to write, pen off to tap links, the app's text tool to type. Anything personal is left blank to fill in (habit names, the month's one goal, about half of each dopamine menu and routine column), so buyers customize by writing, not by editing the PDF. The listing says it is not a fillable form."
+    },
+    {
+     "complaint": "Doesn't work (no detail)",
+     "count": 10,
+     "how": "The Setup check page has three buttons (a month, the year, Contents) that jump and come back, plus the 'Nothing happened?' fix list. Every link in the file is checked at build (0 broken links allowed)."
+    }
+   ],
+   "unique": [
+    {
+     "name": "Five-minute start and setup check",
+     "what": "Page 3 is a 4-step Start here guide and page 4 is a Setup check page with buttons that jump and return, plus a fix list if they do not. The cover's Open planner button lands on Start here.",
+     "why": "The biggest complaint cluster is buyers who could not get the file working: hard to use (42), could not download or open (41), wrong device or app (22), confusing setup (19), does not work (10). No top seller shows a quick start or a link test in their titles.",
+     "evidence": [
+      "feature:quick_start",
+      "feature:test_page",
+      "complaint:c_hard",
+      "complaint:c_download",
+      "complaint:c_setup",
+      "complaint:c_broken",
+      "praise:p_guide"
+     ]
+    },
+    {
+     "name": "One calm ADHD day page",
+     "what": "The same seven boxes every day: Today's top 3, Time blocks 7am to 9pm, Brain dump, Energy 1 to 5 with Basics (meds, water, a real meal), One win today and Dopamine break. The week page mirrors it with This week's top 3, a Weekly reset and Not this week.",
+     "why": "Time blocking and a top-3 priority list are not seen in any top seller's title and brain dump pages appear in 3%, yet overwhelm and 'no idea where to start' are recurring complaints. A fixed short layout answers both.",
+     "evidence": [
+      "feature:time_blocking",
+      "feature:priority_matrix",
+      "feature:brain_dump",
+      "complaint:c_overwhelm",
+      "complaint:c_hard"
+     ]
+    },
+    {
+     "name": "Fell off? Start again page",
+     "what": "A one-page, no-guilt way back in, in the top bar as Restart: skip the gap and do not catch up, jump to today in two taps, write one thing in Today's top 3, empty your head into the brain dump. Its tip points to the weekly reset for longer breaks.",
+     "why": "Overwhelmed buyers say they had 'no idea where to start', and buyers who could not keep up called the planner not useful. Missed weeks are the normal ADHD planner failure; giving people a door back in keeps them using it, which drives the 'I use it every day' and repeat-buyer praise.",
+     "evidence": [
+      "complaint:c_overwhelm",
+      "complaint:c_not_useful",
+      "praise:p_adhd",
+      "praise:p_daily"
+     ]
+    },
+    {
+     "name": "Dopamine menu and routines",
+     "what": "A Dopamine menu page (Quick 5 min, Medium 20 min, Big rewards, Costs you later) and a Routines page (Morning, Leaving the house, Evening wind-down), each column part pre-filled and part blank to make your own. The day page's Dopamine break box is where you note the one you picked.",
+     "why": "Dopamine menus and routine builders are not seen in any top seller's title, and buyers ask for more ways to customize. Both are single pages, so they add tools without adding overwhelm.",
+     "evidence": [
+      "feature:dopamine_menu",
+      "feature:routines",
+      "wish:w_customize",
+      "praise:p_adhd"
+     ]
+    }
+   ],
+   "waived": [
+    {
+     "ref": "wish:w_portrait",
+     "reason": "Landscape only. The day and week layouts are two-column and need the width, and the 1-star review about a false portrait claim shows that promising an orientation that does not work costs more than not offering it. The listing and photo 10 say landscape only."
+    },
+    {
+     "ref": "feature:stickers",
+     "reason": "No sticker file: the planner line builds one PDF. The listing says there are no stickers so nobody goes looking for them (a 1-star setup review asked where the stickers were). A sticker pack could be a later, separate listing."
+    },
+    {
+     "ref": "feature:undated",
+     "reason": "Dated is on 97% of top sellers and only dated pages can link every date. An undated edition would need a second full build and would not fit in the same file under the size limit, so it would be a separate listing."
+    },
+    {
+     "ref": "wish:w_sunday_start",
+     "reason": "The line builds Monday-start weeks only and one review asked for Sunday. The listing says Monday-start so nobody is surprised."
+    }
+   ],
+   "look": {
+    "direction": "Calm and clear, not cute and not beige. Warm cream paper (not white, so it glows less in a dark room) with deep slate ink at 13:1 contrast so it stays sharp in daylight; muted text is still 5.3:1. Structure is soft teal (filled boxes like Today's top 3 are pale teal), with one small coral accent bar on the Contents and guide pages. Month tabs run from teal to periwinkle, a cool, quiet range rather than a rainbow, with dark ink labels on every tab. Fraunces headings add warmth; Outfit body text is wide and easy to read at 1.1 scale. Square, plain decoration (motif 'lines'): no florals, no clip-art.",
+    "avoid": [
+     "beige and greige minimalism (the most common look in top sellers)",
+     "rainbow or sunset pastel palettes used by colorful ADHD planners",
+     "dark-mode-only pages",
+     "pure white pages with thin grey text",
+     "script fonts, florals and clip-art on every page"
+    ],
+    "palette": {
+     "paper": "#FAF6EE",
+     "ink": "#1F2D3A",
+     "muted": "#5B6874",
+     "line": "#CFC7B8",
+     "accent": "#2C7A74",
+     "soft": "#E6F0EC",
+     "warm": "#E07A5F"
+    },
+    "fonts": [
+     "Fraunces",
+     "Outfit"
+    ]
+   },
+   "price": {
+    "amount": 14,
+    "why": "Under the $22 median and right at the median of the 10 highest-earning listings ($15): a new shop with no reviews has to win on clarity and value, and buyers paying around $14 judge hard when a planner does not work or lacks space. The best-selling ADHD-specific listing in the set earns about $599 a month at $9.99, while the $24 ADHD planners sell less now. $14 leaves room for a 20% launch sale that stays above the $7 lower quartile.",
+    "evidence": [
+     "price:median",
+     "price:top10_by_revenue_median",
+     "price:revenue_weighted_median",
+     "price:p25",
+     "complaint:c_value",
+     "listing:4332596790",
+     "listing:1282376971"
+    ]
+   },
+   "seo": {
+    "title": "ADHD Planner 2027 Digital, Goodnotes Planner for iPad and Android, Daily Weekly Monthly, Time Blocking, Starts Oct 2026, Hyperlinked",
+    "tags": [
+     "adhd planner",
+     "adhd digital planner",
+     "goodnotes planner",
+     "ipad planner",
+     "digital planner",
+     "2027 digital planner",
+     "daily planner",
+     "weekly planner",
+     "monthly planner",
+     "notability planner",
+     "adhd planner adult",
+     "android planner",
+     "time blocking"
+    ]
+   },
+   "photos": [
+    {
+     "shows": "Cover and the January 11 day page side by side on a tablet frame, line: 'One calm page a day, linked from the year to the hour'.",
+     "proves": "praise:p_look, feature:adhd_specific"
+    },
+    {
+     "shows": "Day page at real size with six labelled callouts (Today's top 3, Time blocks, Brain dump, Energy and Basics, One win, Dopamine break), line: 'The same seven boxes every day'.",
+     "proves": "feature:time_blocking, feature:priority_matrix, complaint:c_overwhelm, complaint:c_value"
+    },
+    {
+     "shows": "Start here and Setup check pages, line: 'Working in five minutes, and you can check it yourself'.",
+     "proves": "complaint:c_setup, complaint:c_broken, feature:quick_start, feature:test_page"
+    },
+    {
+     "shows": "Plain text panel over a faded Start here page: Works with Goodnotes, Notability, Samsung Notes, Xodo, Noteshelf on iPad, Android and Windows tablets. Download in a web browser, not the Etsy app. Not for phones or e-ink.",
+     "proves": "complaint:c_download, complaint:c_device, wish:w_listing_info, complaint:c_extra_app"
+    },
+    {
+     "shows": "How to move: Year page, then January, Week 3 and Jan 11 with arrows between them; month tabs, Home and the breadcrumb circled.",
+     "proves": "complaint:c_nav, wish:w_side_tabs, wish:w_back_button, feature:hyperlinked"
+    },
+    {
+     "shows": "January month page (dated grid, One goal this month, week links) and Week 3 page (seven lined day boxes, This week's top 3, Weekly reset).",
+     "proves": "praise:p_complete, feature:goals, feature:dated"
+    },
+    {
+     "shows": "Dopamine menu, Routines and Fell off? Start again pages.",
+     "proves": "feature:dopamine_menu, feature:routines, complaint:c_overwhelm"
+    },
+    {
+     "shows": "January habit tracker and the Energy map year page.",
+     "proves": "feature:habit_tracker, feature:self_care"
+    },
+    {
+     "shows": "November 2026 head-start month and one head-start week, line: 'Start this week, not in January'.",
+     "proves": "feature:multi_year"
+    },
+    {
+     "shows": "Contents page next to a plain list: exact page count, every page type, landscape only, Monday-start, no stickers, not a fillable form.",
+     "proves": "complaint:c_misleading, praise:p_as_described"
+    }
+   ],
+   "sections": [
+    "Cover",
+    "Contents",
+    "Start here",
+    "Setup check",
+    "Year at a glance",
+    "Fell off? Start again",
+    "Dopamine menu",
+    "Routines",
+    "Energy map",
+    "Brain dump",
+    "Notes",
+    "Head start: Oct 26 to Dec 2026",
+    "Months, weeks and days"
+   ],
+   "revisions": [
+    {
+     "at": "2026-10-21",
+     "by": "session",
+     "why": "coverage check round 2: Start here step 2 now links to Setup check; Contents tip made accurate"
+    },
+    {
+     "at": "2026-10-21",
+     "by": "session",
+     "why": "coverage check round 3: buyers before Jan 2027 hit a dead end; head start now has day pages, Year page links to it, setup steps cover Nov and Dec 2026; guide pages get a top bar map and a month grid"
+    },
+    {
+     "at": "2026-10-21",
+     "by": "session",
+     "why": "coverage check round 4: late-October buyers; head start days begin Mon Oct 26 and 2026 pages use their own month tabs"
+    },
+    {
+     "at": "2026-10-21",
+     "by": "session",
+     "why": "coverage check round 5: one start date everywhere (Oct 26, 2026); top bar map no longer overflows; head start weeks under their Thursday's month"
+    },
+    {
+     "at": "2026-10-21",
+     "by": "session",
+     "why": "coverage check round 6: Start here fits, Contents and Restart list 2026 months first, photo 7 shows two readable pages"
+    },
+    {
+     "at": "2026-10-22",
+     "by": "session",
+     "why": "brief text brought in line with the built product (head start from Oct 26 with day pages)"
+    }
+   ],
+   "check_rounds": [
+    {
+     "round": 1,
+     "found": 22,
+     "of": 25,
+     "high": 1,
+     "medium": 4,
+     "low": 9,
+     "main": "Photo 5 looks broken. Four tiny page thumbnails sit in one strip under the headline, and the bottom ~60% of the image is empty background. None of its three photo-copy points (month tabs, Home and back trail, prev/next a"
+    },
+    {
+     "round": 2,
+     "found": 23,
+     "of": 25,
+     "high": 1,
+     "medium": 3,
+     "low": 12,
+     "main": "December 2026 cannot be reached by any link. hs12 (December month) and hsw07-09 only link to each other. Contents' Head start card, the November page and the Nov 30 week (hsw06) never link to December. The 'Head start / "
+    },
+    {
+     "round": 3,
+     "found": 25,
+     "of": 25,
+     "high": 1,
+     "medium": 2,
+     "low": 11,
+     "main": "The start-up steps dead-end for anyone who buys before 2027, which is the launch window the listing targets ('start this week'). Start here step 4, listing 'How to start' step 3 and photo 4 step 3 all say 'Tap Year, then"
+    },
+    {
+     "round": 4,
+     "found": 25,
+     "of": 25,
+     "high": 1,
+     "medium": 2,
+     "low": 11,
+     "main": "An October 25, 2026 buyer can't start on day one. No page covers Oct 19-25. Start here step 4, listing 'How to start' step 3 and photo 4 cover only 2027 and 'November or December 2026', so 'tap today's date' has no targe"
+    },
+    {
+     "round": 5,
+     "found": 24,
+     "of": 25,
+     "high": 1,
+     "medium": 4,
+     "low": 12,
+     "main": "On Start here, the 'The top bar, on every page' table overflows its box. The box's bottom border runs through the NOTES / Notes row and that row's rule sits outside the box. The HOME row has no description and sits highe"
+    },
+    {
+     "round": 6,
+     "found": 24,
+     "of": 25,
+     "high": 0,
+     "medium": 3,
+     "low": 14,
+     "main": "Start here is overfull. Its content is about 17px taller than the page body, and flex shrink hides it. The FIVE MINUTES kicker is pushed up against the top bar (1px overlap; other pages have a 16px gap). The Tip box lose"
+    },
+    {
+     "round": 7,
+     "found": 25,
+     "of": 25,
+     "high": 0,
+     "medium": 3,
+     "low": 13,
+     "main": "2026 buyers can land in 2027. The NOV and DEC tabs open November and December 2027 from all 21 non-calendar pages (Contents, Start here, Setup check, Year, Restart, Dopamine, Routines, Energy, Brain dump, Notes), and Con"
+    }
+   ]
+  },
+  "research": {
+   "query": "adhd digital planner",
+   "refreshed": "2026-10-21T12:15:38Z",
+   "basis": {
+    "listings": 30,
+    "reviews": 511,
+    "reviews_coded": 437,
+    "off_type_dropped": 56,
+    "negative_reviews": 227,
+    "feature_sources": [
+     "titles"
+    ],
+    "photos": "pending"
+   },
+   "market": {
+    "opportunity_score": 58.0,
+    "monthly_searches": 2800.0,
+    "competing_listings": 40773.0,
+    "top_seller_revenue": 13634.0,
+    "new_sellers_in_top_pct": 35.0,
+    "summary": "Proceed with caution. ~2,800 monthly searches, competition crowded (40,773 listings), and 35% of top sellers are under 6 months old. Top seller earns ~$13,634/mo; the best-earning price band is $4–32.",
+    "best_price_band": "$4-32"
+   },
+   "listings": [
+    {
+     "rank": 1,
+     "title": "All-in-One Digital Planner 2026, 2027, 2028 Digital Planner, Digital Journal, Digital Goodnotes Template, Weekly, Daily Planner, Notability",
+     "shop": "phenixdigital",
+     "price": 3.96,
+     "mo_revenue": 2911.0,
+     "total_sales": 39759.0,
+     "reviews": 3624.0,
+     "age_months": 25.0,
+     "url": "https://www.etsy.com/listing/1784469516/all-in-one-digital-planner-2026-2027"
+    },
+    {
+     "rank": 2,
+     "title": "Digital Planner 2026 2027 Undated Digital Planners Goodnotes Planner iPad Planner Daily Planner Weekly Planner Digital Journal ADHD Planner",
+     "shop": "HappyDownloads",
+     "price": 29.13,
+     "mo_revenue": 1398.0,
+     "total_sales": 44860.0,
+     "reviews": 5729.0,
+     "age_months": 95.0,
+     "url": "https://www.etsy.com/listing/661944197/digital-planner-2026-2027-undated"
+    },
+    {
+     "rank": 3,
+     "title": "Digital Planner, Undated iPad & Android Planner Bundle, GoodNotes Calendar, Daily Weekly Monthly Journal with Stickers, Notebooks 2026 2027",
+     "shop": "BrighterPlans",
+     "price": 6.72,
+     "mo_revenue": 2717.0,
+     "total_sales": 1915.0,
+     "reviews": 110.0,
+     "age_months": 7.0,
+     "url": "https://www.etsy.com/listing/4466031892/digital-planner-undated-ipad-android"
+    },
+    {
+     "rank": 4,
+     "title": "Digital Planner Whole Shop Bundle, GoodNotes Calendar, iPad & Android Digital Notebooks, Journals, ADHD Planner, Digital Stickers, 2025 2026",
+     "shop": "BrighterPlans",
+     "price": 28.01,
+     "mo_revenue": 2323.0,
+     "total_sales": 1270.0,
+     "reviews": 74.0,
+     "age_months": 15.0,
+     "url": "https://www.etsy.com/listing/4340822313/digital-planner-whole-shop-bundle"
+    },
+    {
+     "rank": 5,
+     "title": "All-in-One Digital Planner 2026, Undated Digital Planner, Digital Journal, Digital Goodnotes Template, Notability, Daily Planner",
+     "shop": "AuraPlannersCo",
+     "price": 3.7,
+     "mo_revenue": 56.0,
+     "total_sales": 27025.0,
+     "reviews": 1798.0,
+     "age_months": 32.0,
+     "url": "https://www.etsy.com/listing/1661820574/all-in-one-digital-planner-2026-undated"
+    },
+    {
+     "rank": 6,
+     "title": "2026 + 2027 ADHD Digital Planner (Rainbow): Self-Care and Habit Tracker (Goodnotes/Android) (Digital Download)",
+     "shop": "FutureADHD",
+     "price": 24.33,
+     "mo_revenue": 148.0,
+     "total_sales": 20694.0,
+     "reviews": 2573.0,
+     "age_months": 50.0,
+     "url": "https://www.etsy.com/listing/1282376971/2026-adhd-digital-planner-rainbow-self"
+    },
+    {
+     "rank": 7,
+     "title": "Digital Planner 2026 2027 2028 | GoodNotes Planner | All In One Digital Planner | iPad Planner | Hyperlinked Planner | Digital Journal",
+     "shop": "WBaiStudio",
+     "price": 4.64,
+     "mo_revenue": 923.0,
+     "total_sales": 197.0,
+     "reviews": 19.0,
+     "age_months": 1.0,
+     "url": "https://www.etsy.com/listing/4568300822/digital-planner-2026-2027-2028-goodnotes"
+    },
+    {
+     "rank": 8,
+     "title": "All-in-One Digital Planner 2027 2028 2029, Hyperlink Digital Planner, Daily Weekly Monthly Journal, Goodnotes Planner, Apple Google Calendar",
+     "shop": "RachyTreasures",
+     "price": 2.81,
+     "mo_revenue": 0.0,
+     "total_sales": 12332.0,
+     "reviews": 1012.0,
+     "age_months": 21.0,
+     "url": "https://www.etsy.com/listing/1867253627/all-in-one-digital-planner-2026-2027"
+    },
+    {
+     "rank": 9,
+     "title": "Custom Digital Planner Bundle 2026 2027 2028 & Undated, All-in-One Digital Planner for iPad and Tablet, Goodnotes Planner, Aesthetic Planner",
+     "shop": "TheMAMdesign",
+     "price": 35.0,
+     "mo_revenue": 875.0,
+     "total_sales": 1368.0,
+     "reviews": 72.0,
+     "age_months": 22.0,
+     "url": "https://www.etsy.com/listing/1833235300/digital-planner-bundle-2026-2027-undated"
+    },
+    {
+     "rank": 10,
+     "title": "Digital Planner 2026 2027 Undated Goodnotes Planner iPad Planner Daily Weekly Planner Digital Journal ADHD Planner Goodnotes Template",
+     "shop": "HappyDownloads",
+     "price": 29.13,
+     "mo_revenue": 233.0,
+     "total_sales": 11665.0,
+     "reviews": 1480.0,
+     "age_months": 76.0,
+     "url": "https://www.etsy.com/listing/809907874/digital-planner-2026-2027-undated"
+    },
+    {
+     "rank": 11,
+     "title": "2026-2027 Mid Year Digital Planner, Portrait Layout, Aesthetic Digital Planner for Goodnotes, Notability, Samsung Notes",
+     "shop": "TheMAMdesign",
+     "price": 20.0,
+     "mo_revenue": 760.0,
+     "total_sales": 38.0,
+     "reviews": 2.0,
+     "age_months": 4.0,
+     "url": "https://www.etsy.com/listing/4519060359/2026-2027-mid-year-digital-planner"
+    },
+    {
+     "rank": 12,
+     "title": "2026 2027 Digital Planner | iPad & Samsung Tablet | Minimalist Modern Horizontal | Dated",
+     "shop": "BytheBrookDesign",
+     "price": 15.0,
+     "mo_revenue": 0.0,
+     "total_sales": 8336.0,
+     "reviews": 657.0,
+     "age_months": 47.0,
+     "url": "https://www.etsy.com/listing/1345063957/2026-goodnotes-digital-planner"
+    },
+    {
+     "rank": 13,
+     "title": "For reMarkable Paper Pro Planner All In One Digital Planner, 2026, 2027, 2028 Digital Journal, Daily Planner, Weekly Digital Journal Monthly",
+     "shop": "PrintMagicStudioX",
+     "price": 25.23,
+     "mo_revenue": 757.0,
+     "total_sales": 1960.0,
+     "reviews": 152.0,
+     "age_months": 20.0,
+     "url": "https://www.etsy.com/listing/1873095379/for-remarkable-paper-pro-planner-all-in"
+    },
+    {
+     "rank": 14,
+     "title": "2026 + 2027 ADHD Digital Planner (Sunset): Habit and Self-Care Tracker (Goodnotes/Android)",
+     "shop": "FutureADHD",
+     "price": 24.33,
+     "mo_revenue": 33.0,
+     "total_sales": 7575.0,
+     "reviews": 877.0,
+     "age_months": 51.0,
+     "url": "https://www.etsy.com/listing/1259249004/2026-adhd-digital-planner-sunset-habit"
+    },
+    {
+     "rank": 15,
+     "title": "ADHD Planner 2026-2027, ADHD Digital Planner, Goodnotes Planner, iPad Planner, Daily Weekly Monthly Planner, Productivity, Self Care Planner",
+     "shop": "Manifestable",
+     "price": 9.99,
+     "mo_revenue": 599.0,
+     "total_sales": 2610.0,
+     "reviews": 221.0,
+     "age_months": 15.0,
+     "url": "https://www.etsy.com/listing/4332596790/2026-adhd-planner-adhd-digital-planner"
+    },
+    {
+     "rank": 16,
+     "title": "Dark Mode ADHD Digital Planner (2026-2027), Self-Care Tracker (Digital Download)",
+     "shop": "FutureADHD",
+     "price": 24.33,
+     "mo_revenue": 16.0,
+     "total_sales": 7039.0,
+     "reviews": 895.0,
+     "age_months": 47.0,
+     "url": "https://www.etsy.com/listing/1345375335/2026-adhd-digital-planner-dark-mode"
+    },
+    {
+     "rank": 17,
+     "title": "Digital Planner Undated, iPad & Android Planner, GoodNotes Calendar, Daily Weekly Monthly Journal with Stickers, iPad Planner for 2025 2026",
+     "shop": "BrighterPlans",
+     "price": 2.24,
+     "mo_revenue": 584.0,
+     "total_sales": 6966.0,
+     "reviews": 488.0,
+     "age_months": 15.0,
+     "url": "https://www.etsy.com/listing/4329390689/digital-planner-undated-ipad-android"
+    },
+    {
+     "rank": 18,
+     "title": "Academic Digital Planner 2026-2027 | ADHD Landscape Planner for Students & Teachers, Japanese Minimalist Goodnotes Notability",
+     "shop": "NozomuNoto",
+     "price": 19.87,
+     "mo_revenue": 579.0,
+     "total_sales": 438.0,
+     "reviews": 47.0,
+     "age_months": 35.0,
+     "url": "https://www.etsy.com/listing/1612147749/digital-planner-academic-2025-2026"
+    },
+    {
+     "rank": 19,
+     "title": "2027 Digital Daily Planner, Dated Landscape, Minimalist Elegant Weekly Monthly Journal Notebook, iPad Android Samsung Notability Goodnotes",
+     "shop": "SnazzyPixels",
+     "price": 13.98,
+     "mo_revenue": 42.0,
+     "total_sales": 6712.0,
+     "reviews": 692.0,
+     "age_months": 44.0,
+     "url": "https://www.etsy.com/listing/1409095152/2026-digital-daily-planner-all-in-one"
+    },
+    {
+     "rank": 20,
+     "title": "2026 Digital Planner | GoodNotes Planner & Notability Planner for iPad | Minimalist Daily Weekly Monthly Planner for Productivity",
+     "shop": "GoodHabitsPlanner",
+     "price": 30.0,
+     "mo_revenue": 579.0,
+     "total_sales": 1014.0,
+     "reviews": 69.0,
+     "age_months": 13.0,
+     "url": "https://www.etsy.com/listing/4371064864/2026-digital-planner-goodnotes-planner"
+    },
+    {
+     "rank": 21,
+     "title": "Digital Planner 2026 2027 Undated iPad Planner Goodnotes Planner Daily Planner Weekly Planner Digital Journal Digital Notebook ADHD Planner",
+     "shop": "HappyDownloads",
+     "price": 29.13,
+     "mo_revenue": 146.0,
+     "total_sales": 6103.0,
+     "reviews": 768.0,
+     "age_months": 91.0,
+     "url": "https://www.etsy.com/listing/688838603/digital-planner-2026-2027-undated-ipad"
+    },
+    {
+     "rank": 22,
+     "title": "2026 & 2027 ADHD Digital Planner (Dark Rainbow): Self-Care and Habit Tracker (iPad, Android)",
+     "shop": "FutureADHD",
+     "price": 24.33,
+     "mo_revenue": 556.0,
+     "total_sales": 3605.0,
+     "reviews": 354.0,
+     "age_months": 34.0,
+     "url": "https://www.etsy.com/listing/1620103130/2026-adhd-digital-planner-dark-rainbow"
+    },
+    {
+     "rank": 23,
+     "title": "Undated Digital Planner, Goodnotes Planner, iPad Planner, Productivity, Minimalist Planner, Daily Planner, Weekly Planner, Monthly Planner",
+     "shop": "Manifestable",
+     "price": 3.99,
+     "mo_revenue": 48.0,
+     "total_sales": 5987.0,
+     "reviews": 511.0,
+     "age_months": 44.0,
+     "url": "https://www.etsy.com/listing/1416628451/digital-planner-ipad-planner-goodnotes"
+    },
+    {
+     "rank": 24,
+     "title": "Academic Digital Planner 2026-2027 | ADHD Portrait Planner for Students & Teachers, Japanese Minimalist Goodnotes Notability",
+     "shop": "NozomuNoto",
+     "price": 19.87,
+     "mo_revenue": 539.0,
+     "total_sales": 264.0,
+     "reviews": 27.0,
+     "age_months": 35.0,
+     "url": "https://www.etsy.com/listing/1599669312/digital-planner-academic-portrait-2025"
+    },
+    {
+     "rank": 25,
+     "title": "Digital Planner 2026 2027 Undated Digital Planners iPad Planner Goodnotes Planner Digital Journal Daily Planner Weekly Planner ADHD Planner",
+     "shop": "HappyDownloads",
+     "price": 29.13,
+     "mo_revenue": 0.0,
+     "total_sales": 5929.0,
+     "reviews": 746.0,
+     "age_months": 76.0,
+     "url": "https://www.etsy.com/listing/809732784/digital-planner-2026-2027-undated"
+    },
+    {
+     "rank": 26,
+     "title": "Dark ADHD Life Planner 2026 2027, GoodNotes iPad Android Notability, Undated, Lifetime, Brain Dump, Self Care Journal, Custom Month + Hour",
+     "shop": "DigitizedPlanner",
+     "price": 37.45,
+     "mo_revenue": 524.0,
+     "total_sales": 77.0,
+     "reviews": 11.0,
+     "age_months": 23.0,
+     "url": "https://www.etsy.com/listing/1827825727/adhd-dark-digital-planner-2026-undated"
+    },
+    {
+     "rank": 27,
+     "title": "ADHD Planner 2026, 2027 Digital Planner, 2026 2027 ADHD Digital Planner, Daily Planner, Weekly Monthly Life Planner Goodnotes iPad Android",
+     "shop": "LiveLovePlanners",
+     "price": 9.25,
+     "mo_revenue": 460.0,
+     "total_sales": 5661.0,
+     "reviews": 411.0,
+     "age_months": 36.0,
+     "url": "https://www.etsy.com/listing/1579580933/adhd-planner-2026-2026-digital-planner"
+    },
+    {
+     "rank": 28,
+     "title": "All-in-One Digital Planner 2027 2028 2029, Hyperlink Digital Planner, Daily Weekly Monthly Journal, Goodnotes Planner, Apple Google Calendar",
+     "shop": "RachyTreasures",
+     "price": 2.81,
+     "mo_revenue": 506.0,
+     "total_sales": 817.0,
+     "reviews": 70.0,
+     "age_months": 17.0,
+     "url": "https://www.etsy.com/listing/4312876640/all-in-one-digital-planner-2026-2027"
+    },
+    {
+     "rank": 29,
+     "title": "Dark Mode Digital Planner 2026 2027 Undated iPad Planner Goodnotes Planner Daily Planner Digital Journal ADHD Digital Planner BLACK PAPER",
+     "shop": "HappyDownloads",
+     "price": 29.13,
+     "mo_revenue": 0.0,
+     "total_sales": 5307.0,
+     "reviews": 665.0,
+     "age_months": 83.0,
+     "url": "https://www.etsy.com/listing/741671282/dark-mode-digital-planner-2026-2027"
+    },
+    {
+     "rank": 30,
+     "title": "Interactive Digital Life Planner Kawaii Cute Cozy Undated iPad Android Tablet Organizer 2025 2026 Calendar All-in-One Daily Weekly Monthly",
+     "shop": "DigitalCapybara",
+     "price": 33.56,
+     "mo_revenue": 470.0,
+     "total_sales": 112.0,
+     "reviews": 8.0,
+     "age_months": 14.0,
+     "url": "https://www.etsy.com/listing/4348036784/interactive-digital-life-planner-kawaii"
+    }
+   ],
+   "complaints": [
+    {
+     "theme": "Hard to use day to day",
+     "count": 42,
+     "quotes": [
+      "Worst download ever, save your money.  Hard to download and impossible to use.",
+      "This product was very hard to use and I couldn't download it to use on my iPad or computer with having issues seeing part of the planning pages.",
+      "Can't work out how to use it"
+     ]
+    },
+    {
+     "theme": "Couldn't download or open the file",
+     "count": 41,
+     "quotes": [
+      "Worst download ever, save your money.  Hard to download and impossible to use.",
+      "This product was very hard to use and I couldn't download it to use on my iPad or computer with having issues seeing part of the planning pages.",
+      "If your looking for sumthing to purchase and just instantly download this was not the product. Process took awhile to finally get purchase downloaded I reached out to seller who said she would get back to me and I never "
+     ]
+    },
+    {
+     "theme": "Not as described or pictured",
+     "count": 23,
+     "quotes": [
+      "Ich habe es gekauft, weil es in der Beschreibung hiess, das hochkant möglich ist, doch weder in Goodnotes, noch in Notability funktioniert hochkant!",
+      "Until today I have not been able to use it, what you show in the video is so easy but in reality, it is complicated",
+      "produkt jest niezgodny z opisem i zawiera coś zupełnie innego niż jest zaprezentowane na zdjęciach 😒"
+     ]
+    },
+    {
+     "theme": "Doesn't work on my app or device",
+     "count": 22,
+     "quotes": [
+      "Unable to use on a Samsung tablet S.  Seller tried to help, but after doing research, it's not compatible with this style tablet.",
+      "Not comparable with new iPad. It will not work properly",
+      "The size doesn’t fit iPad Pro, too much margin and not much actual writing space on some pages, fonts alignment incoherency, to name a few"
+     ]
+    },
+    {
+     "theme": "Not useful for my needs",
+     "count": 21,
+     "quotes": [
+      "Just wasn’t a very impressive or practical item.",
+      "This planner isn’t helpful, there are no monthly tabs so you are swiping through 5he pages to get through month to month",
+      "This was more work than I anticipated to set up. Lovely for those who can make it work. Beautiful design, just not for me."
+     ]
+    },
+    {
+     "theme": "Confusing setup or unclear instructions",
+     "count": 19,
+     "quotes": [
+      "I was not sure how to edit this file I followed the instructions and it still didn’t turn out right.",
+      "Great planner. Took a couple of tries before I got it right for me",
+      "Where are the stickers located?"
+     ]
+    },
+    {
+     "theme": "Errors, typos or low quality",
+     "count": 15,
+     "quotes": [
+      "This product was very hard to use and I couldn't download it to use on my iPad or computer with having issues seeing part of the planning pages.",
+      "The design of the planner itself is really nice. However, it is extremely out of order in some places and the pages for certain things skip all around without it being consecutive with the corresponding months. Needs bet",
+      "some of the items were not as crisp and clear as the others. A little blurry."
+     ]
+    },
+    {
+     "theme": "Seller didn't help or reply",
+     "count": 15,
+     "quotes": [
+      "How to download too many apps just to make their main app work plus it took days for their customer service to reach back",
+      "Geen reactie op email helaas",
+      "If your looking for sumthing to purchase and just instantly download this was not the product. Process took awhile to finally get purchase downloaded I reached out to seller who said she would get back to me and I never "
+     ]
+    },
+    {
+     "theme": "Not worth the price",
+     "count": 14,
+     "quotes": [
+      "I did not feel the spacing for writing in the calendar was sufficient for my needs.  Sucks wasted $14 and I have already deleted.",
+      "Worst download ever, save your money.  Hard to download and impossible to use.",
+      "The hyperlinks never worked complete waste of money"
+     ]
+    },
+    {
+     "theme": "Hard to navigate or find pages",
+     "count": 13,
+     "quotes": [
+      "It’s very difficult to navigate, too many options but not satisfied with the after import navigation.",
+      "Layout was very busy and hard for me to navigate",
+      "This planner isn’t helpful, there are no monthly tabs so you are swiping through 5he pages to get through month to month"
+     ]
+    },
+    {
+     "theme": "Too much, overwhelming",
+     "count": 11,
+     "quotes": [
+      "It was overwhelming, I sat and tried to read through as much of it as possible, but I had no idea where to start.",
+      "It’s very difficult to navigate, too many options but not satisfied with the after import navigation.",
+      "First of all this product cannot be edited, I reached out to the seller still not very helpful.It has so many unnecessary information."
+     ]
+    },
+    {
+     "theme": "Can't edit, type or customize",
+     "count": 10,
+     "quotes": [
+      "I was not sure how to edit this file I followed the instructions and it still didn’t turn out right.",
+      "Not usable. It’s pretty, but you can’t enter text in it.",
+      "Too complicated. The tags switch before you can label them. A lot of jumping back and forth"
+     ]
+    },
+    {
+     "theme": "Doesn't work (no detail)",
+     "count": 10,
+     "quotes": [
+      "so confusing. does not work",
+      "I can't make it work no matter how many times I've read see and re do all the instructions.",
+      "Does not work well.  It's really like a refund."
+     ]
+    },
+    {
+     "theme": "Too basic or boring",
+     "count": 8,
+     "quotes": [
+      "While i do love this i did expect a little more from it. Still amazing though.",
+      "Very boring and difficult to use.I would rather spend more for a better one.",
+      "Not easy to use, you basically make your own journal"
+     ]
+    },
+    {
+     "theme": "Didn't like the look",
+     "count": 7,
+     "quotes": [
+      "Layout was very busy and hard for me to navigate",
+      "Did not enjoy the layout. It is hard to use and follow",
+      "Very poor design . Waste of time"
+     ]
+    },
+    {
+     "theme": "Missing pages or less than expected",
+     "count": 6,
+     "quotes": [
+      "There were not 70 planners their were 7 to 10 planners with variations that became 70. ut overall planners were perfect.",
+      "I didn't realize this one didn't include pages so I had to purchase a second listing. Oh well!",
+      "I cannot find the download to the actual planner after purchasing. The purchase only included the guide on how to set up the planner"
+     ]
+    },
+    {
+     "theme": "Needed an app or subscription that wasn't clear",
+     "count": 6,
+     "quotes": [
+      "How to download too many apps just to make their main app work plus it took days for their customer service to reach back",
+      "Dubbel betalen met extra app die je nodig hebt.",
+      "File requires Adobe program"
+     ]
+    },
+    {
+     "theme": "Links broken or go to the wrong page",
+     "count": 5,
+     "quotes": [
+      "The hyperlinks never worked complete waste of money",
+      "Top, ogni tanto non funzionano i link ma ok",
+      "Looks nice but unable to actually click on individual tabs like other planners. Wish I could return."
+     ]
+    },
+    {
+     "theme": "Refund refused",
+     "count": 5,
+     "quotes": [
+      "They would not solve my problem.  I filed a case to get a refund.",
+      "No portrait mode. Seller refused to refund.",
+      "This item is incompatible with OneNote and the seller stands by stating that since this item is not a physical returnable item, it cannot be returned. I do not recommend this seller."
+     ]
+    },
+    {
+     "theme": "Too little writing space",
+     "count": 4,
+     "quotes": [
+      "I did not feel the spacing for writing in the calendar was sufficient for my needs.  Sucks wasted $14 and I have already deleted.",
+      "The size doesn’t fit iPad Pro, too much margin and not much actual writing space on some pages, fonts alignment incoherency, to name a few",
+      "I was hoping for a journal that I could add blank lined sheets in between dates but wasn’t able to. There also wasn’t enough space on each day for everything I wanted to log."
+     ]
+    },
+    {
+     "theme": "Only in English",
+     "count": 3,
+     "quotes": [
+      "L’agenda devait être en français mais il est en anglais . Pour m’apercevoir que c’est moi qui n’a pas bien lu. Étsy a été super , mon rembourser mon achat que je puisse en trouver un en français . Merci Etsy",
+      "pas de traduction française",
+      "Moi qui ne comprends pas l'anglais c'est trop compliquer à comprendre même avec certaines bases. Trop compliqué dommage"
+     ]
+    },
+    {
+     "theme": "Slow, laggy or file too big",
+     "count": 3,
+     "quotes": [
+      "switching tabs is crazy slow, its not possible to use this when in an active work meeting trying to organize notes",
+      "its just a huge useless PDF",
+      "You have to buy the monthly subscription to goodnotes to use this file. The file is too large to work with the free version of goodnotes. It would have been nice if that info was in the item description🙄"
+     ]
+    },
+    {
+     "theme": "Forced to leave a review",
+     "count": 3,
+     "quotes": [
+      "Shop owner has been harassing me for a review after I already reviewed the item previously.",
+      "Why is a rating needed before accessing the file?! Terrible!",
+      "Me obligaron a dejar una reseña;)"
+     ]
+    },
+    {
+     "theme": "Wrong or missing dates, calendar errors",
+     "count": 3,
+     "quotes": [
+      "The design of the planner itself is really nice. However, it is extremely out of order in some places and the pages for certain things skip all around without it being consecutive with the corresponding months. Needs bet",
+      "It is kind of out of order."
+     ]
+    },
+    {
+     "theme": "Pushes paid add-ons or sign-ups",
+     "count": 2,
+     "quotes": [
+      "This only took me to a freebie link where I'm forced to subscribe to things I don't want.  Completely disappointed."
+     ]
+    },
+    {
+     "theme": "Spam, privacy or virus worries",
+     "count": 2,
+     "quotes": [
+      "Fine planner but i think they sell your info. Since i bought this I have had non-stop spam calls and phishing emails. Not worth a cheap planner.",
+      "Had a virus attached to the planner"
+     ]
+    },
+    {
+     "theme": "Text too small or hard to read",
+     "count": 2,
+     "quotes": [
+      "The calendar is great as far as all that it offers and the ease in using it. However the lettering and numbers are not nearly dark enough and it’s really hard to read."
+     ]
+    }
+   ],
+   "praise": [
+    {
+     "theme": "Beautiful design",
+     "count": 50,
+     "quotes": [
+      "Beautiful, easy-to-use planner! The minimalist layout looks lovely on my iPad and works well in GoodNotes.",
+      "Great product! The planner is beautiful, useful, and just as described. Very happy with my purchase!",
+      "Beautiful templates, loved the different choices, options, fonts, designs and colors!"
+     ]
+    },
+    {
+     "theme": "Easy to set up and use",
+     "count": 39,
+     "quotes": [
+      "Beautiful, easy-to-use planner! The minimalist layout looks lovely on my iPad and works well in GoodNotes.",
+      "This is truly amazing, I love all the hyper-links and how it incorporates wellbeing, the coloring, etc. Tons of templates and super easy to use.",
+      "I am very satisfied. Cute design, downloads perfectly, and the digital files are easy to use. I highly recommend it to everyone! Thank you very much for the product!"
+     ]
+    },
+    {
+     "theme": "Has everything I need",
+     "count": 28,
+     "quotes": [
+      "This is truly amazing, I love all the hyper-links and how it incorporates wellbeing, the coloring, etc. Tons of templates and super easy to use.",
+      "Great resources! Full of fun ways to stay organized, digitally!",
+      "The planner has everything you could need"
+     ]
+    },
+    {
+     "theme": "Seller was helpful",
+     "count": 22,
+     "quotes": [
+      "Unable to use on a Samsung tablet S.  Seller tried to help, but after doing research, it's not compatible with this style tablet.",
+      "I love this planner. It’s exactly what I need. The builder is also really neat. Great customer service. Highly recommend and will purchase again.",
+      "Good after sales service as well, thanks."
+     ]
+    },
+    {
+     "theme": "Flexible or customizable",
+     "count": 20,
+     "quotes": [
+      "Beautiful templates, loved the different choices, options, fonts, designs and colors!",
+      "I love this planner. It’s exactly what I need. The builder is also really neat. Great customer service. Highly recommend and will purchase again.",
+      "Great product, easy to customize and use."
+     ]
+    },
+    {
+     "theme": "Helps me stay on track",
+     "count": 20,
+     "quotes": [
+      "Really love this planner. It makes it so much easier to stick to organising everything.",
+      "Artikel von dem Verkäufer begleiten mich scheon ein paar Jahre und sie gestalten meinen Alltag einfacher. Kann ich für Spectrum- Ponies nur empfehlen!",
+      "Item is as described. Much needed in helping to manage my schedule."
+     ]
+    },
+    {
+     "theme": "High quality",
+     "count": 19,
+     "quotes": [
+      "Exceptional product, onboarding experience, and support",
+      "Muito bom, bem organizado a agenda.",
+      "Great product, well designed file"
+     ]
+    },
+    {
+     "theme": "Repeat buyer",
+     "count": 16,
+     "quotes": [
+      "I love this planner. It’s exactly what I need. The builder is also really neat. Great customer service. Highly recommend and will purchase again.",
+      "Artikel von dem Verkäufer begleiten mich scheon ein paar Jahre und sie gestalten meinen Alltag einfacher. Kann ich für Spectrum- Ponies nur empfehlen!",
+      "Awesome awesome product! Looking to purchase more from this seller."
+     ]
+    },
+    {
+     "theme": "Exactly as described",
+     "count": 15,
+     "quotes": [
+      "Great product! The planner is beautiful, useful, and just as described. Very happy with my purchase!",
+      "Item is as described. Much needed in helping to manage my schedule.",
+      "Not the fault of the seller - this is exactly what it purports to be.  It's just so MUCH that it's overwhelming and I won't be able to use it effectively."
+     ]
+    },
+    {
+     "theme": "I use it every day",
+     "count": 13,
+     "quotes": [
+      "Obsessed! I've had since May & I am so happy I made this purchase",
+      "I got the all-in-one digital planner and I’m absolutely obsessed with it. As a type-a girl this is my new hobby, my new personality, and my primary source of dopamine.",
+      "This is perfect for school and daily activities."
+     ]
+    },
+    {
+     "theme": "Clear instructions or tutorials",
+     "count": 10,
+     "quotes": [
+      "I am new to rights planning,  and I'm excited to be using this Planner! Love all of her tutorial videos.",
+      "Great for keeping organised and easy to understand instructions.",
+      "Exceptional product, onboarding experience, and support"
+     ]
+    },
+    {
+     "theme": "Great value",
+     "count": 8,
+     "quotes": [
+      "I love how affordable, easy to manage, and pretty this digital planner is. Also, a special shoutout to the company for reaching out personally to make sure that my experience was good.",
+      "This planner has helped me so much. So much care and thought has been put into it, and it shows. Well worth the money. Highly recommend.",
+      "Incredible quality and value for the price!"
+     ]
+    },
+    {
+     "theme": "Useful, fits my needs",
+     "count": 7,
+     "quotes": [
+      "Great product! The planner is beautiful, useful, and just as described. Very happy with my purchase!",
+      "Great product! Definitely recommend. Exactly what I was looking for.",
+      "Love it!  Exactly what I was looking for."
+     ]
+    },
+    {
+     "theme": "Links work, easy to navigate",
+     "count": 7,
+     "quotes": [
+      "This is truly amazing, I love all the hyper-links and how it incorporates wellbeing, the coloring, etc. Tons of templates and super easy to use.",
+      "Exactly what I was looking for. The tabs make organizing modules and chapters really easy. The perfect notebook for my needs.",
+      "Everything is laid out well, hyperlinks work perfectly, additional pages are thoughtfully made, and the color scheme is so pretty. I really enjoy using it!"
+     ]
+    },
+    {
+     "theme": "Love the stickers and extras",
+     "count": 7,
+     "quotes": [
+      "great templates, easy to use, beautifully designed and with great instructions and extras like icons",
+      "Good Assortment of Stickers. Thank you for your product!",
+      "Very cute stickers, easy to use"
+     ]
+    },
+    {
+     "theme": "Works on my device",
+     "count": 3,
+     "quotes": [
+      "Ottima agenda. Funziona benissimo con noteshelf 3. Complimenti.",
+      "Wonderful monochrome look! Works beautifully with Kindle Scribe!"
+     ]
+    }
+   ],
+   "wishes": [
+    {
+     "theme": "Listing should say which apps are needed",
+     "count": 4
+    },
+    {
+     "theme": "More ways to customize",
+     "count": 3
+    },
+    {
+     "theme": "Side tabs for faster navigation",
+     "count": 2
+    },
+    {
+     "theme": "Portrait version",
+     "count": 2
+    },
+    {
+     "theme": "A back button",
+     "count": 1
+    },
+    {
+     "theme": "Pages in a logical order",
+     "count": 1
+    },
+    {
+     "theme": "Sunday-start weeks",
+     "count": 1
+    },
+    {
+     "theme": "More page types included",
+     "count": 1
+    }
+   ],
+   "features": [
+    {
+     "name": "Dated for the year",
+     "tier": "standard",
+     "share": 0.967,
+     "revenue_share": 0.997
+    },
+    {
+     "name": "Covers more than one year",
+     "tier": "standard",
+     "share": 0.867,
+     "revenue_share": 0.961
+    },
+    {
+     "name": "Says Goodnotes",
+     "tier": "standard",
+     "share": 0.833,
+     "revenue_share": 0.904
+    },
+    {
+     "name": "Journal or notebook pages",
+     "tier": "common",
+     "share": 0.533,
+     "revenue_share": 0.699
+    },
+    {
+     "name": "Built for ADHD",
+     "tier": "common",
+     "share": 0.5,
+     "revenue_share": 0.402
+    },
+    {
+     "name": "Undated version",
+     "tier": "common",
+     "share": 0.4,
+     "revenue_share": 0.375
+    },
+    {
+     "name": "Android or Samsung support",
+     "tier": "common",
+     "share": 0.4,
+     "revenue_share": 0.459
+    },
+    {
+     "name": "All-in-one life planner",
+     "tier": "common",
+     "share": 0.333,
+     "revenue_share": 0.398
+    },
+    {
+     "name": "Says Notability",
+     "tier": "rare",
+     "share": 0.267,
+     "revenue_share": 0.319
+    },
+    {
+     "name": "Self-care, mood or wellness pages",
+     "tier": "rare",
+     "share": 0.2,
+     "revenue_share": 0.1
+    },
+    {
+     "name": "Minimalist look",
+     "tier": "rare",
+     "share": 0.2,
+     "revenue_share": 0.095
+    },
+    {
+     "name": "Colorful or aesthetic look",
+     "tier": "rare",
+     "share": 0.167,
+     "revenue_share": 0.126
+    },
+    {
+     "name": "Dark mode",
+     "tier": "rare",
+     "share": 0.133,
+     "revenue_share": 0.058
+    },
+    {
+     "name": "Hyperlinked tabs and dates",
+     "tier": "rare",
+     "share": 0.1,
+     "revenue_share": 0.076
+    },
+    {
+     "name": "Habit tracker",
+     "tier": "rare",
+     "share": 0.1,
+     "revenue_share": 0.039
+    },
+    {
+     "name": "Digital stickers included",
+     "tier": "rare",
+     "share": 0.1,
+     "revenue_share": 0.299
+    },
+    {
+     "name": "Landscape layout",
+     "tier": "rare",
+     "share": 0.1,
+     "revenue_share": 0.033
+    },
+    {
+     "name": "Bundle of several products",
+     "tier": "rare",
+     "share": 0.1,
+     "revenue_share": 0.315
+    },
+    {
+     "name": "Work or productivity focus",
+     "tier": "rare",
+     "share": 0.1,
+     "revenue_share": 0.065
+    },
+    {
+     "name": "Portrait layout",
+     "tier": "rare",
+     "share": 0.067,
+     "revenue_share": 0.069
+    },
+    {
+     "name": "Student or academic",
+     "tier": "rare",
+     "share": 0.067,
+     "revenue_share": 0.06
+    },
+    {
+     "name": "Customizable or personalized",
+     "tier": "rare",
+     "share": 0.067,
+     "revenue_share": 0.074
+    },
+    {
+     "name": "E-ink tablets (reMarkable, Boox, Kindle Scribe)",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.04
+    },
+    {
+     "name": "Brain dump pages",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.028
+    },
+    {
+     "name": "Budget or finance pages",
+     "tier": "not_seen",
+     "share": 0.0,
+     "revenue_share": 0.0
+    },
+    {
+     "name": "Meal planning",
+     "tier": "not_seen",
+     "share": 0.0,
+     "revenue_share": 0.0
+    },
+    {
+     "name": "Goal setting",
+     "tier": "not_seen",
+     "share": 0.0,
+     "revenue_share": 0.0
+    },
+    {
+     "name": "Time blocking or hourly schedule",
+     "tier": "not_seen",
+     "share": 0.0,
+     "revenue_share": 0.0
+    },
+    {
+     "name": "Routine builder",
+     "tier": "not_seen",
+     "share": 0.0,
+     "revenue_share": 0.0
+    },
+    {
+     "name": "Dopamine menu",
+     "tier": "not_seen",
+     "share": 0.0,
+     "revenue_share": 0.0
+    },
+    {
+     "name": "Priority matrix or top 3",
+     "tier": "not_seen",
+     "share": 0.0,
+     "revenue_share": 0.0
+    },
+    {
+     "name": "Quick start or setup guide",
+     "tier": "not_seen",
+     "share": 0.0,
+     "revenue_share": 0.0
+    },
+    {
+     "name": "Link test or setup check page",
+     "tier": "not_seen",
+     "share": 0.0,
+     "revenue_share": 0.0
+    }
+   ],
+   "price": {
+    "p25": 7.35,
+    "median": 22.16,
+    "p75": 29.13,
+    "top10_by_revenue_median": 15.0,
+    "revenue_weighted_median": 19.87,
+    "best_band": "$4-32"
+   },
+   "keywords": [
+    {
+     "tag": "adhd planner",
+     "used_by_top": 23
+    },
+    {
+     "tag": "goodnotes planner",
+     "used_by_top": 19
+    },
+    {
+     "tag": "ipad planner",
+     "used_by_top": 18
+    },
+    {
+     "tag": "daily planner",
+     "used_by_top": 14
+    },
+    {
+     "tag": "digital planner",
+     "used_by_top": 14
+    },
+    {
+     "tag": "goodnotes template",
+     "used_by_top": 12
+    },
+    {
+     "tag": "weekly planner",
+     "used_by_top": 12
+    },
+    {
+     "tag": "undated planner",
+     "used_by_top": 10
+    },
+    {
+     "tag": "digital journal",
+     "used_by_top": 10
+    },
+    {
+     "tag": "monthly planner",
+     "used_by_top": 9
+    },
+    {
+     "tag": "notability planner",
+     "used_by_top": 9
+    },
+    {
+     "tag": "2026 digital planner",
+     "used_by_top": 9
+    },
+    {
+     "tag": "adhd digital planner",
+     "used_by_top": 8
+    },
+    {
+     "tag": "digital notebook",
+     "used_by_top": 7
+    },
+    {
+     "tag": "adhd planner adult",
+     "used_by_top": 5
+    },
+    {
+     "tag": "aesthetic planner",
+     "used_by_top": 5
+    },
+    {
+     "tag": "2027 digital planner",
+     "used_by_top": 5
+    },
+    {
+     "tag": "digital planners",
+     "used_by_top": 4
+    },
+    {
+     "tag": "adhd journal",
+     "used_by_top": 4
+    },
+    {
+     "tag": "adhd organizer",
+     "used_by_top": 4
+    },
+    {
+     "tag": "adhd workbook",
+     "used_by_top": 4
+    },
+    {
+     "tag": "adhd work planner",
+     "used_by_top": 4
+    },
+    {
+     "tag": "adhd goal setting",
+     "used_by_top": 4
+    },
+    {
+     "tag": "adhd resources",
+     "used_by_top": 4
+    }
+   ],
+   "shops": [
+    {
+     "shop": "phenixdigital",
+     "rating": 4.75,
+     "reviews": 9673.0
+    },
+    {
+     "shop": "HappyDownloads",
+     "rating": 4.87,
+     "reviews": 29379.0
+    },
+    {
+     "shop": "BrighterPlans",
+     "rating": 4.73,
+     "reviews": 6503.0
+    },
+    {
+     "shop": "AuraPlannersCo",
+     "rating": 4.73,
+     "reviews": 4129.0
+    },
+    {
+     "shop": "FutureADHD",
+     "rating": 4.8,
+     "reviews": 7006.0
+    },
+    {
+     "shop": "WBaiStudio",
+     "rating": 4.49,
+     "reviews": 815.0
+    },
+    {
+     "shop": "RachyTreasures",
+     "rating": 4.6,
+     "reviews": 4731.0
+    },
+    {
+     "shop": "TheMAMdesign",
+     "rating": 4.85,
+     "reviews": 984.0
+    },
+    {
+     "shop": "BytheBrookDesign",
+     "rating": 4.87,
+     "reviews": 3309.0
+    },
+    {
+     "shop": "PrintMagicStudioX",
+     "rating": 4.61,
+     "reviews": 3846.0
+    },
+    {
+     "shop": "Manifestable",
+     "rating": 4.83,
+     "reviews": 10524.0
+    },
+    {
+     "shop": "NozomuNoto",
+     "rating": 4.95,
+     "reviews": 1972.0
     }
    ]
   },

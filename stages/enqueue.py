@@ -12,6 +12,22 @@ import store
 LINE_NAMES = {'planner': 'Digital planners'}
 
 
+def _rounds(d):
+    """One line per independent check round: promises found and issues by severity."""
+    import re as _re
+    files = sorted((int(_re.search(r'round(\d+)', f).group(1)), f) for f in os.listdir(d) if _re.fullmatch(r'coverage-out\.round\d+\.json', f))
+    files.append((len(files) + 1, 'coverage-out.json'))
+    out = []
+    for n, f in files:
+        c = store.read(os.path.join(d, f)) or {}
+        items = c.get('items', []); vis = c.get('visual', [])
+        sev = {k: sum(1 for v in vis if v.get('severity') == k) for k in ('high', 'medium', 'low')}
+        top = (next((v['issue'] for v in vis if v.get('severity') == 'high'), None) or next((v['issue'] for v in vis if v.get('severity') == 'medium'), None)
+               or next((i['note'] for i in items if not i.get('found')), ''))
+        out.append({"round": n, "found": sum(1 for i in items if i.get('found')), "of": len(items), **sev, "main": top[:220]})
+    return out
+
+
 def run(pid):
     from PIL import Image
     d = store.product_dir(pid)
@@ -61,11 +77,44 @@ def run(pid):
                    "text_sim": check['clone']['max_text_sim'], "closest": check['clone']['text']['closest'],
                    "img_sim": check['clone']['max_image_sim'], "visual": check.get('visual', [])},
         "complaints": complaints, "standard": standard, "unique": unique, "competitors": comps}
+    # full brief and research, readable on the review page
+    sec_names = []
+    for sec in brief['spec'].get('sections', []):
+        sec_names.append(sec.get('label') or {'cover': 'Cover', 'index': 'Contents', 'year': 'Year at a glance', 'calendar': 'Months, weeks and days'}.get(sec['module'], sec['module']))
+    brief_full = {
+        "positioning": brief['positioning'],
+        "must_haves": [{"what": m['what'], "evidence": m['evidence']} for m in brief['must_haves']],
+        "fixes": [{"complaint": comp_by_id.get(f['complaint'].split(':', 1)[-1], {}).get('theme', f['complaint']),
+                   "count": comp_by_id.get(f['complaint'].split(':', 1)[-1], {}).get('count'), "how": f['how']} for f in brief['fixes']],
+        "unique": [{"name": u['name'], "what": u['what'], "why": u['why'], "evidence": u['evidence']} for u in brief['unique']],
+        "waived": brief.get('waived', []),
+        "look": {"direction": brief['look']['direction'], "avoid": brief['look'].get('avoid', []),
+                 "palette": {k: v for k, v in (brief['look']['theme'] if isinstance(brief['look']['theme'], dict) else {}).items() if isinstance(v, str) and v.startswith('#')},
+                 "fonts": [x for x in ((brief['look']['theme'] or {}).get('display') if isinstance(brief['look']['theme'], dict) else None, (brief['look']['theme'] or {}).get('body') if isinstance(brief['look']['theme'], dict) else None) if x]},
+        "price": brief['price'], "seo": brief['seo'],
+        "photos": [{"shows": ph['shows'], "proves": ph.get('proves', '')} for ph in brief['photos']],
+        "sections": sec_names,
+        "revisions": brief.get('revisions', []),
+        "check_rounds": _rounds(d),
+    }
+    ev_listings = sorted(ev['listings'], key=lambda L: L.get('rank') or 99)
+    research = {
+        "query": ev['query'], "refreshed": ev['refreshed_at'], "basis": ins['basis'], "market": ev['market'],
+        "listings": [{"rank": L.get('rank'), "title": L['title'][:140], "shop": L['shop'], "price": L['price'], "mo_revenue": L['mo_revenue'],
+                      "total_sales": L['total_sales'], "reviews": L.get('reviews'), "age_months": L.get('age_months'), "url": L.get('url', '')} for L in ev_listings],
+        "complaints": [{"theme": c['theme'], "count": c['count'], "quotes": [q['text'][:220] for q in c['quotes']]} for c in ins['complaints']],
+        "praise": [{"theme": c['theme'], "count": c['count'], "quotes": [q['text'][:220] for q in c['quotes']]} for c in ins['praise']],
+        "wishes": [{"theme": c['theme'], "count": c['count']} for c in ins['wishes']],
+        "features": [{"name": f['name'], "tier": f['tier'], "share": f['share'], "revenue_share": f.get('revenue_share')} for f in ins['features']],
+        "price": ins['price'],
+        "keywords": [{"tag": k['tag'], "used_by_top": k['used_by_top']} for k in ins['keywords'][:24]],
+        "shops": [{"shop": s_['shop'], "rating": s_.get('rating_avg'), "reviews": s_.get('review_count')} for s_ in ev['shops']],
+    }
     doc = {"title": brief['spec']['title'] if not listing else listing.get('hero_title') or brief['spec']['title'],
            "line": LINE_NAMES.get(brief['line'], brief['line']), "lane": brief['type_id'], "price": listing['price'],
            "images": list(files), "status": "queued" if check['pass'] else "needs_help", "created": int(time.time() * 1000),
            "listing": {"title": listing['title'], "tags": listing['tags'], "description": listing['description']},
-           "files": build['files'], "evidence": evidence, "engine": {"brief_id": brief['brief_id'], "product_id": pid},
+           "files": build['files'], "evidence": evidence, "brief": brief_full, "research": research, "engine": {"brief_id": brief['brief_id'], "product_id": pid},
            "claude_note": ' '.join(check.get('notes', []) + ["Before approving: open the PDF in Goodnotes (or your tablet app), tap a few month tabs and dates, and write on one page. The listing names apps we have not tested on a real device yet."])}
     store.write(os.path.join(d, 'queue.json'), {"doc": doc, "files": files})
     return {"ok": True, "images": len(files), "queue": os.path.join(d, 'queue.json')}
