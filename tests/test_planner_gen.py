@@ -69,7 +69,7 @@ EINK = {
   {"module": "lined", "label": "Grid", "pages": 1, "dots": True, "anchor": "grid"},
   {"module": "head_start", "label": "Head start", "from": "2026-11", "to": "2026-12", "days": True, "nav": False, "main_links": True,
    "day": {"left": [{"kind": "checklist", "label": "Top 3", "rows": 3}, {"kind": "lines", "label": "Notes"}], "right": [{"kind": "hours", "label": "Time blocks", "from": 6, "to": 22, "row": 30}, {"kind": "lines", "label": "Done today"}]}},
-  {"module": "calendar", "habits": True, "days": True, "week": {"side": [{"kind": "checklist", "label": "Top 3", "rows": 3, "fill": True}, {"kind": "lines", "label": "Notes"}]}}
+  {"module": "calendar", "habits": True, "days": True, "iso_weeks": True, "week": {"side": [{"kind": "checklist", "label": "Top 3", "rows": 3, "fill": True}, {"kind": "lines", "label": "Notes"}]}}
  ]}
 
 
@@ -119,10 +119,14 @@ def test_eink():
     assert 'Where things are' in pages['linktest']
     # main_links: head-start tabs open the 2027 months, no tab lit; last head-start week -> Week 1 -> back
     rail = lambda a: pages[a].split('class="rail"')[1].split('</div>')[0]
-    assert 'href="#m11"' in rail('hs11') and 'href="#hs11"' not in rail('hs11') and 'class="on"' not in rail('hsw01')
     last = max(a for a in pages if re.fullmatch(r'hsw\d\d', a))
     assert 'href="#w01"' in pages[last] and f'href="#{last}"' in pages['w01']
     assert 'white-space:nowrap' in pages['year']
+    # iso_weeks: Week 1 is Jan 4 to 10 2027, 52 weeks, Dec 28 to Jan 3 is the last head-start week; Jan 1 to 3 trail to it
+    assert 'Jan 4 to Jan 10' in pages['w01'] and 'w52' in pages and 'w53' not in pages and 'w00' not in pages
+    assert f'href="#{last}">Dec 28 to Jan 3</a>' in pages['d0101'] and 'href="#d0101"' in pages[last]
+    assert 'Week 2</a>' in pages['d0111'].split('class="crumb"')[1][:400]
+    assert '>NOV 2026<' in rail('hs11') and 'class="on"' in rail('hs11') and '>NOV<' in rail('w10')
     assert 'background:#FFFFFF' in pages['cover'] and 'background:#EBEBEB' not in pages['cover'], 'e-ink cover is pure white'
     assert 'background:#111111;color:#FFFFFF' not in pages['index'], 'e-ink Contents: no solid black month tiles'
     assert not re.search(r'#[0-9A-Fa-f]{6}(22|55|cc)\b', html.split('</style>')[1]), 'no color tints in grayscale'

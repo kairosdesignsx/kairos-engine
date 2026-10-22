@@ -727,7 +727,8 @@
        "label": "Done today"
       }
      ]
-    }
+    },
+    "iso_weeks": true
    }
   ]
  },

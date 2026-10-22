@@ -42,10 +42,10 @@
     {
      "page": "b001",
      "x": [
-      0.03,
-      0.93
+      0.04,
+      0.92
      ],
-     "y": 0.004
+     "y": 0
     }
    ],
    "height": 1450
@@ -63,18 +63,18 @@
     {
      "page": "library",
      "x": [
-      0.03,
-      0.66
+      0.04,
+      0.92
      ],
-     "y": 0.004
+     "y": 0
     },
     {
      "page": "b001",
      "x": [
-      0.03,
-      0.66
+      0.04,
+      0.92
      ],
-     "y": 0.004
+     "y": 0
     }
    ]
   },
@@ -107,7 +107,17 @@
      "phones. Not a fillable form."
     ]
    ],
-   "width": 1300
+   "width": 1300,
+   "zoom": [
+    {
+     "page": "start",
+     "x": [
+      0.04,
+      0.92
+     ],
+     "y": 0
+    }
+   ]
   },
   "ph5_start": {
    "headline": "Working in five minutes",
@@ -122,18 +132,18 @@
     {
      "page": "start",
      "x": [
-      0.03,
-      0.66
+      0.04,
+      0.92
      ],
-     "y": 0.004
+     "y": 0
     },
     {
      "page": "linktest",
      "x": [
-      0.03,
-      0.66
+      0.04,
+      0.92
      ],
-     "y": 0.004
+     "y": 0
     }
    ]
   },
@@ -150,18 +160,18 @@
     {
      "page": "year",
      "x": [
-      0.03,
-      0.66
+      0.04,
+      0.92
      ],
-     "y": 0.004
+     "y": 0
     },
     {
      "page": "m01",
      "x": [
-      0.03,
-      0.66
+      0.04,
+      0.92
      ],
-     "y": 0.004
+     "y": 0
     }
    ]
   },
@@ -177,18 +187,18 @@
     {
      "page": "tbr",
      "x": [
-      0.355,
-      0.96
+      0.04,
+      0.92
      ],
-     "y": 0.1
+     "y": 0
     },
     {
      "page": "quotes",
      "x": [
-      0.03,
-      0.66
+      0.04,
+      0.92
      ],
-     "y": 0.004
+     "y": 0
     }
    ]
   },
@@ -220,12 +230,17 @@
  ],
  "alt": {
   "ph1_hero": "The Shelf Life journal cover in front of a Book 1 review page on two tablets, in warm ivory and ink blue with oxblood buttons.",
-  "ph2_book": "Close-up of the top half of the Book 1 review page: top bar, title, author, genre, format choices, started, finished, pages, stars, would I reread, why I picked it up and the start of my thoughts.",
-  "ph3_library": "Close-ups of the left part of Library page 1 with numbered book lines and the page strip, and of the top left of the Book 1 review page.",
-  "ph4_apps": "The Start here page shown large on a tablet beside a Works with and Not for box and three numbered download steps.",
-  "ph5_start": "Close-ups of the top left of the Start here page, showing step 1 with its Go there button, and of the Setup check page with its jump buttons and fix list.",
-  "ph6_year_month": "Close-ups of the Reading year page with the goal line and month rows of squares, and of the January reading page with eight books finished lines and stars.",
-  "ph7_tbr_quotes": "Close-ups of the To be read table's Author, Heard about it from and Got it columns with tick boxes, and of the top of the Favorite quotes page.",
+  "ph2_book": "Close-up of the top of the Book 1 review page: top bar, title, author, genre, format choices, started, finished, pages, stars, would I reread, why I picked it up and the my thoughts box.",
+  "ph3_library": "Close-ups of the top of Library page 1, with the page strip and numbered lines 1 to 18 with stars, and of the top of the Book 1 review page.",
+  "ph4_apps": "Close-up of the Start here page's four numbered steps with Go there buttons, beside a Works with and Not for box and three numbered download steps.",
+  "ph5_start": "Close-ups of the top of the Start here page, showing steps 1 and 2 with their Go there buttons, and of the Setup check page with its jump buttons, fix list and pen test area.",
+  "ph6_year_month": "Close-ups of the Reading year page with the goal line, month rows of squares, tallies and top 5, and of the January reading page with eight books finished lines, book of the month and reading days.",
+  "ph7_tbr_quotes": "Close-ups of the To be read table with title, author, heard about it from and Got it columns with tick boxes, and of the Favorite quotes page.",
   "ph8_contents": "The Contents page shown large on a tablet beside a list of the page count, page types, portrait and undated, no stickers."
+ },
+ "launch_sale": {
+  "percent": 25,
+  "days": 30,
+  "sale_price": 11.25
  }
 }

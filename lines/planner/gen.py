@@ -114,6 +114,8 @@ class Planner:
         self.gutter = int(self.eink.get('left_gutter', 40)) if self.eink else 40
         self.gray = bool(self.eink.get('grayscale'))
         self.btn = self.th.get('button', self.th['ink'])  # buttons (Open, Go there): theme token 'button', default ink
+        # iso_weeks (calendar option): Week 1 is the week holding January 4 (ISO 8601), so days before it sit in week 0
+        self.iso = any(x.get('module') == 'calendar' and x.get('iso_weeks') for x in spec.get('sections', []))
         self.noun = 'planner'   # what the file calls itself in printed help ('journal' when the cover button says so)
 
     def fs(self, px):
@@ -191,21 +193,21 @@ a{{color:inherit;text-decoration:none}}
     def nav_links(self, active):
         return ''.join(f'<a href="#{a}" class="{"on" if a == active else ""}">{esc(l)}</a>' for l, a in self.nav_items[:7 if self.W > self.HT else 4])
 
-    def rail(self, month=None, rail_map=None):
+    def rail(self, month=None, rail_map=None, rail_labels=None):
         out = []
         for i in range(12):
             c = self.tabs[i]; on = month == i + 1
             target = (rail_map or {}).get(i + 1, f'm{i + 1:02d}')
-            out.append(f'<a href="#{target}" class="{"on" if on else ""}" style="background:{c}{"" if (on or self.gray) else "cc"}">{MONTHS[i][:3].upper()}</a>')
+            out.append(f'<a href="#{target}" class="{"on" if on else ""}" style="background:{c}{"" if (on or self.gray) else "cc"}">{(rail_labels or {}).get(i + 1, MONTHS[i][:3].upper())}</a>')
         return f'<div class="rail">{"".join(out)}</div>'
 
-    def page(self, anchor, inner, active=None, month=None, crumb='', deco=False, raw=False, style='', rail_map=None):
+    def page(self, anchor, inner, active=None, month=None, crumb='', deco=False, raw=False, style='', rail_map=None, rail_labels=None):
         self.seed += 3
         m = (motif(self.th, 'tr', self.seed) + motif(self.th, 'bl', self.seed + 1)) if deco else ''
         if raw:
             self.pages.append(f'<section class="pg" id="{anchor}" style="{style}">{inner}</section>')
         else:
-            self.pages.append(f'<section class="pg" id="{anchor}" style="{style}">{m}{self.nav(active, crumb)}{self.rail(month, rail_map)}<div class="body">{inner}</div><p class="foot">{esc(self.s.get("brand", ""))}</p></section>')
+            self.pages.append(f'<section class="pg" id="{anchor}" style="{style}">{m}{self.nav(active, crumb)}{self.rail(month, rail_map, rail_labels)}<div class="body">{inner}</div><p class="foot">{esc(self.s.get("brand", ""))}</p></section>')
         self.page_modules.append((anchor, self.current))
 
     def head(self, kicker, title, size=44, right=''):
@@ -216,13 +218,15 @@ a{{color:inherit;text-decoration:none}}
     def did(d):
         return f'd{d.month:02d}{d.day:02d}'
 
+    def _week1(self):
+        first = datetime.date(self.year, 1, 4 if self.iso else 1)
+        return first - datetime.timedelta(days=first.weekday())
+
     def week_of(self, d):
-        first = datetime.date(self.year, 1, 1); start = first - datetime.timedelta(days=first.weekday())
-        return (d - start).days // 7 + 1
+        return (d - self._week1()).days // 7 + 1
 
     def week_start(self, n):
-        first = datetime.date(self.year, 1, 1); start = first - datetime.timedelta(days=first.weekday())
-        return start + datetime.timedelta(days=7 * (n - 1))
+        return self._week1() + datetime.timedelta(days=7 * (n - 1))
 
     def nweeks(self):
         return self.week_of(datetime.date(self.year, 12, 31))
@@ -506,7 +510,7 @@ def m_link_test(P, sec):
 
 
 @module('calendar', 'The dated or undated calendar: month pages, optional habit page per month, week pages and day pages, all cross-linked. month: {side: [labels]}, habits: bool, week: {preset | side: [blocks]}, day: {preset | left: [blocks], right: [blocks]}, days: bool',
-        params={'month': 'dict', 'habits': 'bool', 'week': 'dict', 'day': 'dict', 'days': 'bool'})
+        params={'month': 'dict', 'habits': 'bool', 'week': 'dict', 'day': 'dict', 'days': 'bool', 'iso_weeks': 'bool: ISO 8601 week numbers (Week 1 holds January 4); needs a head_start covering the days before it'})
 def m_calendar(P, sec):
     th = P.th
     msec = sec.get('month', {}); wsec = sec.get('week', {}); dsec = sec.get('day', {})
@@ -522,6 +526,7 @@ def m_calendar(P, sec):
             weeks = [w for w in weeks if w <= 52]
         else:
             weeks = sorted({P.week_of(d) for d in calendar.Calendar(0).itermonthdates(P.year, m) if d.month == m})
+        w0 = [w for w in weeks if w < 1]; weeks = [w for w in weeks if w >= 1]  # iso_weeks: week 0 belongs to the year before
         wl = ''.join(f'<a href="#w{w:02d}" style="display:inline-flex;align-items:center;line-height:1;padding:6px 9px;border-radius:{P.rpill}px;background:{th["soft"]};font:600 10.5px \'{th["body"]}\'">Week {w}</a>' for w in weeks)
         side = ''.join(f'<div class="box" style="flex:1"><span class="k">{esc(x)}</span><div class="lines"></div></div>' for x in side_labels)
         habit = f'<a href="#m{m:02d}h" class="k" style="color:{th["ink"]};padding:6px 10px;border-radius:99px;border:1.3px solid {th["line"]}">Habit tracker</a>' if sec.get('habits') else ''
@@ -538,6 +543,10 @@ def m_calendar(P, sec):
             hrows = ''.join(f'<div style="display:flex;align-items:center;border-bottom:1px solid {th["line"]};flex:1"><span style="width:150px;flex:none;border-right:1px solid {th["line"]};height:100%"></span><svg width="{gw}" height="30" viewBox="0 0 {gw} 30">{circ}</svg></div>' for _ in range(14))
             P.page(f'm{m:02d}h', P.head(MONTHS[m - 1], 'Habit tracker', right='<span class="k">One habit per line, fill a dot each day</span>') +
                    f'<div style="display:grid;grid-template-columns:150px repeat({days},1fr);padding-bottom:4px"><span class="k">Habit</span>{head}</div><div style="flex:1;display:flex;flex-direction:column">{hrows}</div>', month=m, crumb=f'<a href="#m{m:02d}">{MONTHS[m - 1]}</a> / Habits')
+        for n in w0:  # its days in this year (e.g. Jan 1 to 3) still get day pages; their trail opens the head-start week
+            for i, d in enumerate(P.week_start(n) + datetime.timedelta(days=k) for k in range(7)):
+                if d.year == P.year and sec.get('days', True):
+                    _day(P, d, n, m, i, dlay)
         for n in weeks:
             if not P.undated:
                 thu = P.week_start(n) + datetime.timedelta(days=3)
@@ -612,11 +621,12 @@ def _day(P, d, n, m, i, lay):
     right = ''.join(block(P, b) for b in lay['right'])
     inner = f'{P.head(kicker, title, right=f"<span class=k style=font-size:16px>{arrows}</span>")}<div class="row" style="flex:1"><div class="col" style="flex:1">{left}</div><div class="col" style="flex:1.15">{right}</div></div>'
     mm = d.month if d else m
-    P.page(anchor, inner, month=mm, crumb=f'<a href="#m{mm:02d}">{MONTHS[mm - 1]}</a> / <a href="#w{n:02d}">Week {n}</a>')
+    wk = (f'<a href="#{P.w0[0]}">{esc(P.w0[1])}</a>' if getattr(P, 'w0', None) else f'Week {n}') if (n < 1 and d) else f'<a href="#w{n:02d}">Week {n}</a>'
+    P.page(anchor, inner, month=mm, crumb=f'<a href="#m{mm:02d}">{MONTHS[mm - 1]}</a> / {wk}')
 
 
 @module('head_start', 'Lead-in months before the main dated year (for example Nov and Dec 2026 in a 2027 planner): month pages whose dates link to lead-in week pages, Monday-start week pages titled by date range, optional lead-in day pages. Anchors use their own prefix. The last week links days that fall in the main year to their day pages and offers Continue to the main year. label, kicker, anchor (prefix, default hs), from YYYY-MM, to YYYY-MM, days bool, month {side}, week {preset|side}, day {preset|left,right}, continue_to (default m01)',
-        params={'label': 'str', 'kicker': 'str', 'anchor': 'str', 'from': 'YYYY-MM', 'to': 'YYYY-MM', 'days': 'bool', 'month': 'dict', 'week': 'dict', 'day': 'dict', 'continue_to': 'str', 'main_links': 'bool: month tabs on head-start pages open the main year months (no head-start tab lit), the last head-start week arrow opens main Week 1 and Week 1 gets a back arrow'})
+        params={'label': 'str', 'kicker': 'str', 'anchor': 'str', 'from': 'YYYY-MM', 'to': 'YYYY-MM', 'days': 'bool', 'month': 'dict', 'week': 'dict', 'day': 'dict', 'continue_to': 'str', 'main_links': 'bool: on head-start pages the head-start month tabs say their year (NOV 2026) so one label has one target, the last head-start week arrow opens main Week 1 and Week 1 gets a back arrow'})
 def m_head_start(P, sec):
     th = P.th; pre = sec.get('anchor', 'hs'); cont = sec.get('continue_to', 'm01')
     mainl = bool(sec.get('main_links'))  # one meaning per month tab: tabs always open the main year's months
@@ -641,7 +651,7 @@ def m_head_start(P, sec):
         return next(i + 1 for i, w in enumerate(weeks) if w[0] <= d <= w[6])
     with_days = sec.get('days', False)
     # a lead-in week that reaches into the main year IS the main year's week 1: link there instead of printing it twice
-    overlaps = lambda w: (not P.undated) and any(d.year == P.year for d in w)
+    overlaps = lambda w: (not P.undated) and any(d.year == P.year for d in w) and not (P.iso and P.week_of(w[0]) < 1)
     main_week = lambda d: f'w{P.week_of(d):02d}'
     wside = (sec.get('week') or {}).get('side') or WEEK_PRESETS[(sec.get('week') or {}).get('preset', 'default')]
     dsec = sec.get('day') or {}
@@ -656,10 +666,11 @@ def m_head_start(P, sec):
         nxt = day_anchor(nd) if in_lead(nd) else (P.did(nd) if in_main(nd) else None)
         arrows = (f'<a href="#{day_anchor(pd)}">{arrow("l")}</a>' if in_lead(pd) else '') + (f' <a href="#{nxt}">{arrow("r")}</a>' if nxt else '')
         left = ''.join(block(P, b) for b in dlay['left']); rightb = ''.join(block(P, b) for b in dlay['right'])
-        P.page(day_anchor(d), month=None if mainl else (d.month if (d.year, d.month) in months else None), rail_map=rail_map, inner=f'{P.head(d.strftime("%A") + f" · {d.year}", f"{MONTHS[d.month - 1]} {d.day}", right=f"<span class=k style=font-size:16px>{arrows}</span>")}<div class="row" style="flex:1"><div class="col" style="flex:1">{left}</div><div class="col" style="flex:1.15">{rightb}</div></div>',
+        P.page(day_anchor(d), month=d.month if (d.year, d.month) in months else None, rail_map=rail_map, rail_labels=rail_labels, inner=f'{P.head(d.strftime("%A") + f" · {d.year}", f"{MONTHS[d.month - 1]} {d.day}", right=f"<span class=k style=font-size:16px>{arrows}</span>")}<div class="row" style="flex:1"><div class="col" style="flex:1">{left}</div><div class="col" style="flex:1.15">{rightb}</div></div>',
                crumb=f'<a href="#{pre}{(d.month if (d.year, d.month) in months else m0):02d}">{MONTHS[d.month - 1]} {d.year}</a> / <a href="#{week_anchor}">{week_title}</a>')
 
-    rail_map = None if mainl else {m2: f'{pre}{m2:02d}' for y2, m2 in months}
+    rail_map = {m2: f'{pre}{m2:02d}' for y2, m2 in months}
+    rail_labels = {m2: f'{MONTHS[m2 - 1][:3].upper()} {y2}' for y2, m2 in months} if mainl else None  # one label, one target
     P.head_start_links = [(f'{MONTHS[m2 - 1]} {y2}', f'{pre}{m2:02d}') for y2, m2 in months]
     done = set()
     for (yy, mm) in months:
@@ -686,7 +697,7 @@ def m_head_start(P, sec):
         inner = f'''<div class="row" style="align-items:flex-end;justify-content:space-between"><div><p class="k">{esc(sec.get("kicker", "Head start"))} · {yy}</p><p class="h" style="font-size:52px">{MONTHS[mm - 1]}</p></div><div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;max-width:560px">{wl}{extra}</div></div>
           <div class="row" style="flex:1"><div class="cal" style="flex:3;grid-template-rows:auto repeat({len(cal)},1fr);border-bottom:1px solid {th["line"]}">{cells}</div><div class="col" style="flex:1.1">{side}</div></div>'''
         trail = ' · '.join(f'<a href="#{pre}{m2:02d}">{MONTHS[m2 - 1][:3]} {y2}</a>' for y2, m2 in months)
-        P.page(f'{pre}{mm:02d}', inner, crumb=f'Head start: {trail}', month=None if mainl else mm, rail_map=rail_map)
+        P.page(f'{pre}{mm:02d}', inner, crumb=f'Head start: {trail}', month=mm, rail_map=rail_map, rail_labels=rail_labels)
         for w in ws:
             thu = weeks[w - 1][3]
             home = (thu.year, thu.month) if (thu.year, thu.month) in months else (months[0] if thu < first else months[-1])
@@ -712,13 +723,16 @@ def m_head_start(P, sec):
             pos = lead_weeks.index(w)
             prev_w = f'<a href="#{wk_anchor(lead_weeks[pos - 1])}">{arrow("l")}</a>' if pos > 0 else ''
             next_w = f' <a href="#{wk_anchor(lead_weeks[pos + 1])}">{arrow("r")}</a>' if pos + 1 < len(lead_weeks) else ''
-            if mainl and not next_w and w < len(weeks) and overlaps(weeks[w]):
-                next_w = f' <a href="#{main_week(weeks[w][6])}">{arrow("r")}</a>'  # last head-start week: arrow to main Week 1
+            if mainl and not next_w and not P.undated:  # last head-start week: arrow to main Week 1
+                nxt = main_week(weeks[w][6]) if (w < len(weeks) and overlaps(weeks[w])) else 'w01'
+                next_w = f' <a href="#{nxt}">{arrow("r")}</a>'
                 P.hs_last_week = wk_anchor(w)
+            if any(in_main(d) for d in days):
+                P.w0 = (wk_anchor(w), title)  # iso_weeks: Jan 1 to 3 day pages trail back to this head-start week
             right = f'<span class="k" style="font-size:16px">{prev_w}{next_w}</span>' + (contlink if pos + 1 == len(lead_weeks) else '')
             inner = f'''{P.head(f"Head start · week {pos + 1} of {len(lead_weeks)}", title, right=right)}
               {_week_grid(P, cols, sideb)}'''
-            P.page(wk_anchor(w), inner, crumb=f'<a href="#{pre}{mm:02d}">{MONTHS[mm - 1]} {yy}</a> / {title}', month=None if mainl else mm, rail_map=rail_map)
+            P.page(wk_anchor(w), inner, crumb=f'<a href="#{pre}{mm:02d}">{MONTHS[mm - 1]} {yy}</a> / {title}', month=mm, rail_map=rail_map, rail_labels=rail_labels)
             if with_days:
                 for d in days:
                     if in_lead(d):

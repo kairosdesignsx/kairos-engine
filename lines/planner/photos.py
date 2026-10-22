@@ -74,31 +74,79 @@ def crop_scene(th, c, pg, P, N, W, H, frame, head, pts, label):
             f'<div style="display:flex;gap:60px;flex-wrap:wrap">{"".join(f"<p class=pt><b>&#9679;</b><span>{esc(x)}</span></p>" for x in c.get("points", [])[:3])}</div></div>' + devs)
 
 
-def zoom_card(src, z, x, y, cw, ch, W, H, frame):
-    """A zoomed region of one page (style rule r013): the region starts at page fraction (x0, y0), spans x0..x1 of the
-    page width, and runs as far down as the card height allows. Rounded card, so it reads as a close-up, not a device."""
-    x0, x1 = z['x']; y0 = z.get('y', 0)
-    iw = cw / (x1 - x0); ih = iw * H / W
+def page_blocks(html_path, anchors, W, H):
+    """Atomic pieces on each page (boxes, text, svg, calendar cells, tabs): a crop edge may never cross one."""
+    import json as _j, subprocess as _sp
+    r = _sp.run(['node', os.path.join(os.path.dirname(os.path.abspath(__file__)), 'blocks.js'), html_path, ','.join(sorted(set(anchors))), str(W), str(H)],
+                capture_output=True, text=True, timeout=300, check=True)
+    return _j.loads(r.stdout)
+
+
+def crop_region(z, pieces, W, H, max_h):
+    """Region in page px for a zoom: x from z['x'] (fractions), top z['y'] (fraction), bottom z['y1'] (fraction) or the lowest
+    safe cut that fits max_h. Raises if any edge would slice a piece (style rule r013: whole blocks, never sliced text)."""
+    x0, x1 = z['x'][0] * W, z['x'][1] * W; y0 = z.get('y', 0) * H
+    # big containers (a table, a lined page, a month grid) may be cut between their rows; cards, text, cells and tabs may not
+    pieces = [q for q in pieces if not ((q[4] == 'box' and q[3] - q[1] > .4 * H) or (q[4] == 'svg' and q[3] - q[1] > 200))]
+    inx = lambda q: q[2] > x0 + .5 and q[0] < x1 - .5
+    cuts_y = lambda y: [q for q in pieces if inx(q) and q[1] < y - .5 and q[3] > y + .5]
+    if z.get('y1') is not None:
+        y1 = z['y1'] * H
+    else:
+        cands = [y0 + 2 + k for k in range(int(min(H, y0 + max_h) - y0 - 2))] + ([H] if H <= y0 + max_h else [])
+        safe = [c for c in cands if not cuts_y(c)]
+        if not safe:
+            raise ValueError(f"no safe bottom cut for {z['page']} within {max_h:.0f}px")
+        y1 = max(safe)
+    iny = lambda q: q[3] > y0 + .5 and q[1] < y1 - .5
+    bad = [q for q in pieces if iny(q) and ((q[0] < x0 - .5 and q[2] > x0 + .5) or (q[0] < x1 - .5 and q[2] > x1 + .5))]
+    bad += cuts_y(y0) + cuts_y(y1)
+    if bad:
+        raise ValueError(f"crop of {z['page']} slices: " + '; '.join(f'{q[4]} "{q[5]}"' for q in bad[:6]))
+    return x0, y0, x1, y1
+
+
+def zoom_card(src, reg, x, y, cw, W, H, frame):
+    """A whole-block region of one page, shown large on a rounded card (a close-up, not a device)."""
+    x0, y0, x1, y1 = reg
+    k = cw / (x1 - x0); ch = (y1 - y0) * k
     bd = '#c4c4bf' if frame == 'eink' else '#d8cfc0'
-    return (f'<div style="position:absolute;left:{x}px;top:{y}px;width:{cw}px;height:{ch}px;overflow:hidden;border-radius:34px;border:3px solid {bd};'
+    return (f'<div style="position:absolute;left:{x}px;top:{y:.0f}px;width:{cw}px;height:{ch:.0f}px;overflow:hidden;border-radius:30px;border:3px solid {bd};'
             f'box-shadow:0 30px 60px rgba(30,25,40,.16),0 6px 14px rgba(30,25,40,.10);background:#fff">'
-            f'<img src="{src}" style="position:absolute;left:{-x0 * iw:.0f}px;top:{-y0 * ih:.0f}px;width:{iw:.0f}px;height:{ih:.0f}px"></div>')
+            f'<img src="{src}" style="position:absolute;left:{-x0 * k:.0f}px;top:{-y0 * k:.0f}px;width:{W * k:.0f}px;height:{H * k:.0f}px"></div>'), ch
 
 
-def zoom_scene(th, c, P, N, W, H, frame, head, pts, label, have):
+def zoom_scene(th, c, P, N, W, H, frame, head, pts, label, have, blocks):
     zs = [z for z in c['zoom'] if z['page'] in have]
-    cap = lambda txt, x, y, w: f'<p style="position:absolute;left:{x}px;top:{y}px;width:{w}px;text-align:center;font:600 38px var(--b);letter-spacing:.06em;text-transform:uppercase;opacity:.8">{txt}</p>'
+    cap = lambda txt, x, y, w: f'<p style="position:absolute;left:{x}px;top:{y:.0f}px;width:{w}px;text-align:center;font:600 38px var(--b);letter-spacing:.06em;text-transform:uppercase;opacity:.8">{txt}</p>'
     name = lambda z: esc(z['caption']) if z.get('caption') else N(z['page'])
     if len(zs) == 1:
-        z = zs[0]; cw = int(c.get('width', 1500)); ch = int(c.get('height', 1560)); left = c.get('side', 'left') == 'left'
-        x = 150 if left else 2700 - 150 - cw; y = (2025 - ch) // 2 + 30
+        z = zs[0]; cw = int(c.get('width', 1500)); left = c.get('side', 'left') == 'left'
+        x0, x1 = z['x'][0] * W, z['x'][1] * W
+        reg = crop_region(z, blocks[z['page']], W, H, 1720 * (x1 - x0) / cw)
+        x = 150 if left else 2700 - 150 - cw
+        card, ch = zoom_card(P(z['page']), reg, x, 0, cw, W, H, frame)
+        y = (2025 - ch) / 2 + 35
+        card = card.replace('top:0px', f'top:{y:.0f}px', 1)
         tx = x + cw + 120 if left else 150; tw = 2700 - 150 - tx if left else x - 120 - 150
-        return (zoom_card(P(z['page']), z, x, y, cw, ch, W, H, frame) + cap(name(z), x, y - 70, cw) +
-                f'<div style="position:absolute;left:{tx}px;top:0;bottom:0;width:{tw}px;display:flex;flex-direction:column;justify-content:center;gap:34px">{label}<p class="h" style="font-size:{c.get("size", 110)}px">{head}</p>{pts}</div>')
-    cw = 1150; gap = 2700 - 300 - 2 * cw; y = 560; ch = 2025 - y - 90
-    cards = ''.join(zoom_card(P(z['page']), z, 150 + k * (cw + gap), y, cw, ch, W, H, frame) + cap(name(z), 150 + k * (cw + gap), y - 66, cw) for k, z in enumerate(zs[:2]))
+        extra = ''
+        if c.get('panel'):
+            extra += f'<div style="border:3px solid {th["line"]};border-radius:30px;padding:34px 40px;display:flex;flex-direction:column;gap:14px;background:{th["paper"]}">' + ''.join(f'<p style="font-size:44px;line-height:1.3"><b>{esc(k)}</b> {esc(v)}</p>' for k, v in c['panel']) + '</div>'
+        if c.get('steps'):
+            extra += f'<div style="display:flex;flex-direction:column;gap:30px;margin-top:10px">{steps_html(th, c["steps"])}</div>'
+        return (card + cap(name(z), x, y - 70, cw) +
+                f'<div style="position:absolute;left:{tx}px;top:0;bottom:0;width:{tw}px;display:flex;flex-direction:column;justify-content:center;gap:34px">{label}<p class="h" style="font-size:{c.get("size", 110)}px">{head}</p>{pts}{extra}</div>')
+    ws = [int(z.get('width', c.get('width', 1220))) for z in zs[:2]]
+    gap = 2700 - 200 - sum(ws) if not any('width' in z for z in zs) else 100
+    xs = [(2700 - sum(ws) - gap) // 2]; xs.append(xs[0] + ws[0] + gap)
+    y = 560; out = ''
+    for k, z in enumerate(zs[:2]):
+        cw = ws[k]; x0, x1 = z['x'][0] * W, z['x'][1] * W
+        reg = crop_region(z, blocks[z['page']], W, H, (2025 - y - 50) * (x1 - x0) / cw)
+        card, ch = zoom_card(P(z['page']), reg, xs[k], y, cw, W, H, frame)
+        out += card + cap(name(z), xs[k], y - 66, cw)
     return (f'<div style="position:absolute;left:150px;right:150px;top:80px;display:flex;flex-direction:column;gap:20px">{label}<p class="h" style="font-size:110px">{head}</p>'
-            f'<div style="display:flex;gap:60px;flex-wrap:wrap">{"".join(f"<p class=pt><b>&#9679;</b><span>{esc(x)}</span></p>" for x in c.get("points", [])[:3])}</div></div>' + cards)
+            f'<div style="display:flex;gap:60px;flex-wrap:wrap">{"".join(f"<p class=pt><b>&#9679;</b><span>{esc(x)}</span></p>" for x in c.get("points", [])[:3])}</div></div>' + out)
 
 
 def base(th, body):
@@ -126,7 +174,7 @@ def scenes(brief, listing, build, shots_dir, out_dir):
     N = lambda a: esc(page_name(a, names))
     frame = 'eink' if any(x.get('module') == 'eink_format' for x in brief['spec'].get('sections', [])) else 'dark'
     T = lambda *a, **k: tablet(*a, frame=frame, **k)
-    S = {}
+    S = {}; blocks = None
     for i, ph in enumerate(brief['photos']):
         c = copy.get(ph['id'], {})
         pg = [a for a in (c.get('pages') or ph.get('pages', [])) if a in have]
@@ -136,7 +184,10 @@ def scenes(brief, listing, build, shots_dir, out_dir):
         key = f'{i + 1:02d}-{ph["id"]}'
         if c.get('zoom') and i > 0:
             Nc = lambda a, _c=c.get('captions', {}): esc(_c[a]) if a in _c else N(a)
-            S[key] = base(th, zoom_scene(th, c, P, Nc, W, H, frame, head, pts, label, have))
+            if blocks is None:
+                zpages = [z['page'] for ph2 in brief['photos'] for z in copy.get(ph2['id'], {}).get('zoom', []) if z['page'] in have]
+                blocks = page_blocks(os.path.join(os.path.dirname(os.path.abspath(shots_dir)), 'product.html'), zpages, W, H)
+            S[key] = base(th, zoom_scene(th, c, P, Nc, W, H, frame, head, pts, label, have, blocks))
             continue
         if c.get('view') == 'crop' and pg and i > 0:
             Nc = lambda a, _c=c.get('captions', {}): esc(_c[a]) if a in _c else N(a)  # listing can name a page more exactly

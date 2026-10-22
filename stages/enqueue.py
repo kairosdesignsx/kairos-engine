@@ -115,7 +115,7 @@ def run(pid):
         "shops": [{"shop": s_['shop'], "rating": s_.get('rating_avg'), "reviews": s_.get('review_count')} for s_ in ev['shops']],
     }
     doc = {"title": brief['spec']['title'] if not listing else listing.get('hero_title') or brief['spec']['title'],
-           "line": LINE_NAMES.get(brief['line'], brief['line']), "lane": brief['type_id'], "price": listing['price'], "launch_sale": brief['price'].get('launch_sale'),
+           "line": LINE_NAMES.get(brief['line'], brief['line']), "lane": brief['type_id'], "price": listing['price'], "launch_sale": listing.get('launch_sale') or brief['price'].get('launch_sale'),
            "images": list(files), "status": "queued" if check['pass'] else "needs_help", "created": int(time.time() * 1000),
            "listing": {"title": listing['title'], "tags": listing['tags'], "description": listing['description']},
            "files": build['files'], "evidence": evidence, "brief": brief_full, "research": research, "engine": {"brief_id": brief['brief_id'], "product_id": pid},
@@ -140,7 +140,7 @@ def _handoff(pid, d, listing, build):
     shutil.copy(os.path.join(d, 'listing.json'), os.path.join(out, 'listing.json'))
     alt = listing.get('alt') or {}
     b = store.read(os.path.join(d, 'brief.json')) or {}
-    sale = (b.get('price') or {}).get('launch_sale')
+    sale = listing.get('launch_sale') or (b.get('price') or {}).get('launch_sale')  # listing.json carries it; older listings fall back to the brief
     price_lines = ['PRICE', f"${listing['price']}"]
     if sale:
         price_lines += ['', 'LAUNCH SALE (set up by hand: Etsy cannot do this from the API)',
