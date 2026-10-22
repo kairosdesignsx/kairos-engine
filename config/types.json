@@ -133,5 +133,54 @@
   ],
   "added_by": "picker",
   "added_at": "2026-10-22T14:18:00Z"
+ },
+ "weekly-planner-printable": {
+  "name": "Weekly planner printable",
+  "query": "weekly planner printable",
+  "line": "planner",
+  "group": "Printable planners",
+  "format": "Printable planner PDF (Letter and A4)",
+  "include_any": [
+   "planner",
+   "printable"
+  ],
+  "exclude_any": [
+   "physical",
+   "notion",
+   "plr",
+   "mrr",
+   "goodnotes",
+   "sticker"
+  ],
+  "focus_any": [
+   "weekly",
+   "planner"
+  ],
+  "added_by": "picker",
+  "added_at": "2026-10-22T14:38:28Z"
+ },
+ "business-planner-digital": {
+  "name": "Business planner digital",
+  "query": "business planner digital",
+  "line": "planner",
+  "group": "Audience planners",
+  "format": "Digital planner for a specific audience (PDF)",
+  "include_any": [
+   "planner"
+  ],
+  "exclude_any": [
+   "physical",
+   "notion",
+   "plr",
+   "mrr",
+   "sticker",
+   "canva"
+  ],
+  "focus_any": [
+   "business",
+   "planner"
+  ],
+  "added_by": "picker",
+  "added_at": "2026-10-22T14:38:28Z"
  }
 }

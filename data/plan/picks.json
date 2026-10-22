@@ -1,24 +1,7 @@
 {
- "made": "2026-10-22T14:18:00Z",
+ "made": "2026-10-22T14:38:28Z",
  "source": "data/market/opportunities.json",
  "picks": [
-  {
-   "idea": "reading journal digital",
-   "group": "Journals",
-   "line": "planner",
-   "score": 63.8,
-   "market": 75,
-   "call": "Go",
-   "type_id": "reading-journal-digital",
-   "why": [
-    "market 75 (Go)",
-    "990 searches a month",
-    "20,470 listings",
-    "top-10 median $1,996/mo at $18.49",
-    "line planner needs: needs journal modules (book log, ratings, quotes)"
-   ],
-   "rank": 1
-  },
   {
    "idea": "weekly planner printable",
    "group": "Printable planners",
@@ -35,7 +18,7 @@
     "line planner needs: needs print mode (Letter and A4, no tabs, ink-light)",
     "Same #1 listing as 3 other types"
    ],
-   "rank": 2
+   "rank": 1
   },
   {
    "idea": "business planner digital",
@@ -52,7 +35,7 @@
     "top-10 median $1,258/mo at $44.89",
     "line planner needs: needs audience modules (business: goals, clients, content; student: classes, assignments)"
    ],
-   "rank": 3
+   "rank": 2
   },
   {
    "idea": "daily planner printable",
@@ -70,7 +53,7 @@
     "line planner needs: needs print mode (Letter and A4, no tabs, ink-light)",
     "Same #1 listing as 3 other types"
    ],
-   "rank": 4
+   "rank": 3
   },
   {
    "idea": "fitness planner digital",
@@ -87,7 +70,7 @@
     "top-10 median $452/mo at $18.91",
     "line planner needs: needs tracker modules (workouts, meals, measurements)"
    ],
-   "rank": 5
+   "rank": 4
   },
   {
    "idea": "student planner digital 2026 2027",
@@ -105,7 +88,7 @@
     "line planner needs: needs audience modules (business: goals, clients, content; student: classes, assignments)",
     "No search data"
    ],
-   "rank": 6
+   "rank": 5
   },
   {
    "idea": "self care planner",
@@ -122,7 +105,7 @@
     "top-10 median $594/mo at $19.66",
     "line planner needs: needs tracker modules (workouts, meals, measurements)"
    ],
-   "rank": 7
+   "rank": 6
   },
   {
    "idea": "meal planner printable",
@@ -139,7 +122,7 @@
     "top-10 median $726/mo at $14.48",
     "line planner needs: needs tracker modules (workouts, meals, measurements)"
    ],
-   "rank": 8
+   "rank": 7
   },
   {
    "idea": "goodnotes planner",
@@ -157,7 +140,7 @@
     "overlaps a type we already make (digital-planner)",
     "Same #1 listing as 3 other types"
    ],
-   "rank": 9
+   "rank": 8
   },
   {
    "idea": "teacher planner digital",
@@ -174,7 +157,7 @@
     "top-10 median $508/mo at $16.91",
     "line planner needs: needs audience modules (business: goals, clients, content; student: classes, assignments)"
    ],
-   "rank": 10
+   "rank": 9
   },
   {
    "idea": "digital planner",
@@ -192,7 +175,7 @@
     "overlaps a type we already make (digital-planner)",
     "Same #1 listing as 2 other types"
    ],
-   "rank": 11
+   "rank": 10
   },
   {
    "idea": "2027 digital planner",
@@ -210,7 +193,7 @@
     "overlaps a type we already make (digital-planner)",
     "Same #1 listing as 2 other types"
    ],
-   "rank": 12
+   "rank": 11
   },
   {
    "idea": "2027 printable planner",
@@ -228,7 +211,7 @@
     "overlaps a type we already make (digital-planner)",
     "Same #1 listing as 2 other types; No search data"
    ],
-   "rank": 13
+   "rank": 12
   },
   {
    "idea": "android digital planner",
@@ -246,7 +229,7 @@
     "overlaps a type we already make (digital-planner)",
     "Same #1 listing as 3 other types"
    ],
-   "rank": 14
+   "rank": 13
   },
   {
    "idea": "budget tracker spreadsheet",
@@ -264,7 +247,7 @@
     "overlaps a type we already make (money-sheet)",
     "Same #1 listing as 6 other types; Held by old shops"
    ],
-   "rank": 15
+   "rank": 14
   },
   {
    "idea": "budget planner spreadsheet",
@@ -282,7 +265,7 @@
     "overlaps a type we already make (money-sheet)",
     "Same #1 listing as 6 other types; Held by old shops"
    ],
-   "rank": 16
+   "rank": 15
   },
   {
    "idea": "monthly budget spreadsheet",
@@ -300,7 +283,7 @@
     "overlaps a type we already make (money-sheet)",
     "Same #1 listing as 6 other types"
    ],
-   "rank": 17
+   "rank": 16
   },
   {
    "idea": "adhd printable planner",
@@ -318,7 +301,7 @@
     "overlaps a type we already make (digital-planner)",
     "Same #1 listing as 3 other types"
    ],
-   "rank": 18
+   "rank": 17
   },
   {
    "idea": "annual budget spreadsheet",
@@ -336,7 +319,7 @@
     "overlaps a type we already make (money-sheet)",
     "Same #1 listing as 6 other types"
    ],
-   "rank": 19
+   "rank": 18
   },
   {
    "idea": "adhd cleaning checklist",
@@ -353,7 +336,7 @@
     "top-10 median $732/mo at $13.34",
     "overlaps a type we already make (digital-planner)"
    ],
-   "rank": 20
+   "rank": 19
   },
   {
    "idea": "paycheck budget template",
@@ -371,7 +354,7 @@
     "overlaps a type we already make (money-sheet)",
     "Same #1 listing as 1 other type"
    ],
-   "rank": 21
+   "rank": 20
   },
   {
    "idea": "budget spreadsheet excel",
@@ -389,24 +372,7 @@
     "overlaps a type we already make (money-sheet)",
     "Same #1 listing as 6 other types"
    ],
-   "rank": 22
-  },
-  {
-   "idea": "gratitude journal digital",
-   "group": "Journals",
-   "line": "planner",
-   "score": 35.7,
-   "market": 42,
-   "call": "Test",
-   "type_id": "gratitude-journal-digital",
-   "why": [
-    "market 42 (Test)",
-    "303 searches a month",
-    "22,488 listings",
-    "top-10 median $217/mo at $13.54",
-    "line planner needs: needs journal modules (book log, ratings, quotes)"
-   ],
-   "rank": 23
+   "rank": 21
   },
   {
    "idea": "debt payoff tracker spreadsheet",
@@ -423,7 +389,7 @@
     "top-10 median $1,204/mo at $20.07",
     "overlaps a type we already make (money-sheet)"
    ],
-   "rank": 24
+   "rank": 22
   },
   {
    "idea": "couples budget spreadsheet",
@@ -441,7 +407,7 @@
     "overlaps a type we already make (money-sheet)",
     "Same #1 listing as 6 other types"
    ],
-   "rank": 25
+   "rank": 23
   },
   {
    "idea": "kindle scribe template",
@@ -459,7 +425,7 @@
     "line planner needs: needs e-ink format (device page sizes, grayscale, thin lines)",
     "overlaps a type we already make (e-ink)"
    ],
-   "rank": 26
+   "rank": 24
   },
   {
    "idea": "undated digital planner",
@@ -476,7 +442,7 @@
     "top-10 median $1,918/mo at $29.41",
     "overlaps a type we already make (digital-planner)"
    ],
-   "rank": 27
+   "rank": 25
   },
   {
    "idea": "sinking funds tracker",
@@ -494,7 +460,7 @@
     "overlaps a type we already make (money-sheet)",
     "Same #1 listing as 1 other type"
    ],
-   "rank": 28
+   "rank": 26
   },
   {
    "idea": "debt snowball tracker",
@@ -512,7 +478,7 @@
     "overlaps a type we already make (money-sheet)",
     "Same #1 listing as 1 other type"
    ],
-   "rank": 29
+   "rank": 27
   },
   {
    "idea": "savings challenge printable",
@@ -530,7 +496,7 @@
     "overlaps a type we already make (money-sheet)",
     "Same #1 listing as 1 other type"
    ],
-   "rank": 30
+   "rank": 28
   },
   {
    "idea": "adhd chore chart adults",
@@ -547,7 +513,7 @@
     "top-10 median $210/mo at $11.24",
     "overlaps a type we already make (digital-planner)"
    ],
-   "rank": 31
+   "rank": 29
   },
   {
    "idea": "boox planner template",
@@ -566,7 +532,7 @@
     "overlaps a type we already make (e-ink)",
     "Same #1 listing as 3 other types"
    ],
-   "rank": 32
+   "rank": 30
   },
   {
    "idea": "net worth tracker spreadsheet",
@@ -583,7 +549,7 @@
     "top-10 median $364/mo at $13.48",
     "overlaps a type we already make (money-sheet)"
    ],
-   "rank": 33
+   "rank": 31
   },
   {
    "idea": "2027 calendar printable",
@@ -600,7 +566,7 @@
     "top-10 median $408/mo at $21.48",
     "overlaps a type we already make (digital-planner)"
    ],
-   "rank": 34
+   "rank": 32
   },
   {
    "idea": "50 30 20 budget spreadsheet",
@@ -617,7 +583,25 @@
     "top-10 median $173/mo at $18.77",
     "overlaps a type we already make (money-sheet)"
    ],
-   "rank": 35
+   "rank": 33
+  },
+  {
+   "idea": "gratitude journal digital",
+   "group": "Journals",
+   "line": "planner",
+   "score": 19.6,
+   "market": 42,
+   "call": "Test",
+   "type_id": "gratitude-journal-digital",
+   "why": [
+    "market 42 (Test)",
+    "303 searches a month",
+    "22,488 listings",
+    "top-10 median $217/mo at $13.54",
+    "line planner needs: needs journal modules (book log, ratings, quotes)",
+    "overlaps a type we already make (journal)"
+   ],
+   "rank": 34
   }
  ],
  "needs_line": [

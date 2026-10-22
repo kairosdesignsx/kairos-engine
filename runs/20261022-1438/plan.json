@@ -1,0 +1,57 @@
+{
+ "run": "20261022-1438",
+ "made": "2026-10-22T14:38:28Z",
+ "new_types": [
+  {
+   "type_id": "weekly-planner-printable",
+   "idea": "weekly planner printable",
+   "score": 62.9,
+   "why": [
+    "market 74 (Go)",
+    "1,473 searches a month",
+    "153,792 listings",
+    "top-10 median $1,812/mo at $35.78",
+    "line planner needs: needs print mode (Letter and A4, no tabs, ink-light)",
+    "Same #1 listing as 3 other types"
+   ]
+  },
+  {
+   "type_id": "business-planner-digital",
+   "idea": "business planner digital",
+   "score": 61.2,
+   "why": [
+    "market 72 (Go)",
+    "542 searches a month",
+    "41,278 listings",
+    "top-10 median $1,258/mo at $44.89",
+    "line planner needs: needs audience modules (business: goals, clients, content; student: classes, assignments)"
+   ]
+  }
+ ],
+ "teardowns": [
+  {
+   "type_id": "weekly-planner-printable",
+   "reason": "no evidence yet"
+  },
+  {
+   "type_id": "business-planner-digital",
+   "reason": "no evidence yet"
+  }
+ ],
+ "fixes": [],
+ "continue": [],
+ "new_products": [
+  {
+   "type_id": "remarkable-planner-template",
+   "product_id": "p-rpt-001"
+  },
+  {
+   "type_id": "reading-journal-digital",
+   "product_id": "p-rjd-001"
+  },
+  {
+   "type_id": "remarkable-planner-template",
+   "product_id": "p-rpt-002"
+  }
+ ]
+}
