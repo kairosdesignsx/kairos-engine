@@ -106,7 +106,14 @@ def report():
     if failing:
         lines += ["", "Stuck, needs a look:"] + [f"- {r['product_id']}: {r['stage']}" for r in failing]
     if plan_.get('teardowns'):
-        lines += ["", "Research refreshed: " + ', '.join(t['type_id'] for t in plan_['teardowns'])]
+        done_ = [t['type_id'] for t in plan_['teardowns'] if store.read(os.path.join(store.type_dir(t['type_id']), 'insights.json'))]
+        todo_ = [t['type_id'] for t in plan_['teardowns'] if t['type_id'] not in done_]
+        if done_:
+            lines += ["", "Research done: " + ', '.join(done_)]
+        if todo_:
+            lines += ["", "Research not finished: " + ', '.join(todo_)]
+    if plan_.get('new_types'):
+        lines += ["", "New product types picked: " + ', '.join(f"{t['idea']} (score {t['score']})" for t in plan_['new_types'])]
     if plan_.get('fixes'):
         lines += ["", f"Fixes worked on: {len(plan_['fixes'])}"]
     log = os.path.join(run.dir, 'log.jsonl')
