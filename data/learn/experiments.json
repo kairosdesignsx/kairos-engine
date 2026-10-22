@@ -1,0 +1,29 @@
+[
+ {
+  "id": "exp-001",
+  "question": "Does a deeper launch sale sell more, per view and in dollars, for a new shop with no reviews?",
+  "arms": [
+   {
+    "product_id": "p-adhd-001",
+    "sale_percent": 25,
+    "full_price": 24
+   },
+   {
+    "product_id": "p-gsb-001",
+    "sale_percent": 40,
+    "full_price": 22
+   }
+  ],
+  "metrics": [
+   "sales per 100 views",
+   "revenue per 100 views",
+   "favorites per 100 views"
+  ],
+  "start": "when both listings are live (the date each launch sale starts)",
+  "decide_after_days": 21,
+  "caveat": "Different product types, so this is a first signal, not proof. Repeat on the next pair of products before making it a rule.",
+  "status": "waiting for both listings to go live",
+  "decided": null,
+  "by": "Darren, Oct 22 2026"
+ }
+]

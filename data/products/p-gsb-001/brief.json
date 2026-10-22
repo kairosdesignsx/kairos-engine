@@ -324,7 +324,7 @@
  },
  "price": {
   "amount": 22,
-  "why": "Inside the best-earning range ($18 to $33): buyers pay a sales-weighted $19.65 and the #1 seller earns about $17,400 a month at $19.65. Under that, a complete 19-tab workbook reads as cheap next to the $2 to $3 templates. While the shop is new, a 25% launch sale for 30 days shows $16.50 with the $22 price crossed out (style rule r015).",
+  "why": "Inside the best-earning range ($18 to $33): buyers pay a sales-weighted $19.65 and the #1 seller earns about $17,400 a month at $19.65. Under that, a complete 19-tab workbook reads as cheap next to the $2 to $3 templates. While the shop is new, a 40% launch sale for 30 days shows $13.20 with the $22 price crossed out (discount test exp-001 against Just Today at 25%) (style rule r015).",
   "evidence": [
    "listing:4334780570",
    "listing:4368511100",
@@ -335,9 +335,9 @@
    "price:top10_by_revenue_median"
   ],
   "launch_sale": {
-   "percent": 25,
+   "percent": 40,
    "days": 30,
-   "sale_price": 16.5
+   "sale_price": 13.2
   }
  },
  "seo": {
@@ -703,6 +703,11 @@
    "at": "2026-10-22T19:11:57",
    "by": "Darren and Colynne",
    "what": "Price $16 to $22, with a 25% launch sale for 30 days ($16.5). New pricing rule r015: never under what buyers actually pay."
+  },
+  {
+   "at": "2026-10-22T19:27:53",
+   "by": "Darren",
+   "what": "Launch sale 40% (was 25%) as the second arm of discount test exp-001."
   }
  ]
 }

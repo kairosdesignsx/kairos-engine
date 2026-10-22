@@ -87,6 +87,8 @@ def plan():
         while any(x['product_id'] == pid for x in new):
             pid = pid[:-3] + f'{int(pid[-3:]) + 1:03d}'
         new.append({"type_id": t, "product_id": pid})
+    # nightly shop stats from Etsy (views, favorites, sales per listing): the laptop worker fetches them
+    store.write(os.path.join(store.DATA, 'jobs', 'outbox', f"stats-{now.strftime('%Y%m%d')}.json"), {"job": "stats"})
     p = {"run": run.id, "made": store.now(), "new_types": added, "teardowns": teardowns, "fixes": fixes, "continue": in_flight, "new_products": new}
     store.write(os.path.join(run.dir, 'plan.json'), p)
     run.stage('plan', 'done', teardowns=len(teardowns), fixes=len(fixes), new=len(new), continuing=len(in_flight))
@@ -112,6 +114,9 @@ def report():
             lines += ["", "Research done: " + ', '.join(done_)]
         if todo_:
             lines += ["", "Research not finished: " + ', '.join(todo_)]
+    for e in store.read(os.path.join(store.DATA, 'learn', 'experiments.json'), []) or []:
+        if not e.get('decided'):
+            lines += ["", f"Test {e['id']}: {e['question']} Status: {e['status']}."]
     if plan_.get('new_types'):
         lines += ["", "New product types picked: " + ', '.join(f"{t['idea']} (score {t['score']})" for t in plan_['new_types'])]
     if plan_.get('fixes'):

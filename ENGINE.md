@@ -81,6 +81,11 @@ Paths below are relative to the repo root (where this file is). Run `./setup.sh`
 4. Jobs for the laptop (data/jobs/outbox/*.json) go to Kairos\jobs\outbox\ with device_commit_files, and finished
    product files (PDF, photos) go to Kairos\data\products\<pid>\ so the laptop can publish them.
 
+## Stage 8b. Experiments
+data/learn/experiments.json lists running tests (for example launch-sale depth). With the stats in data/stats/, update each
+test's status. When a test has run its days, compare the arms on its metrics, write the result into `decided`, and only turn it
+into a style rule if the caveat is met (usually: the same result on a second pair of products).
+
 ## Stage 9. Morning report
 `python3 run.py report` -> what was made, what failed and why, what is waiting for Darren. Send it with
 SendUserMessage and put it on the Review Queue page.
