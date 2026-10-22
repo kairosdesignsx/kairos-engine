@@ -107,5 +107,31 @@
   ],
   "added_by": "picker",
   "added_at": "2026-10-22T10:17:26Z"
+ },
+ "reading-journal-digital": {
+  "name": "Reading journal digital",
+  "query": "reading journal digital",
+  "line": "planner",
+  "group": "Journals",
+  "format": "Digital journal PDF",
+  "include_any": [
+   "journal",
+   "log",
+   "tracker"
+  ],
+  "exclude_any": [
+   "physical",
+   "notion",
+   "plr",
+   "mrr",
+   "sticker",
+   "printable"
+  ],
+  "focus_any": [
+   "reading",
+   "journal"
+  ],
+  "added_by": "picker",
+  "added_at": "2026-10-22T14:18:00Z"
  }
 }

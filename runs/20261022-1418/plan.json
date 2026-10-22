@@ -1,0 +1,31 @@
+{
+ "run": "20261022-1418",
+ "made": "2026-10-22T14:18:00Z",
+ "new_types": [
+  {
+   "type_id": "reading-journal-digital",
+   "idea": "reading journal digital",
+   "score": 63.8,
+   "why": [
+    "market 75 (Go)",
+    "990 searches a month",
+    "20,470 listings",
+    "top-10 median $1,996/mo at $18.49",
+    "line planner needs: needs journal modules (book log, ratings, quotes)"
+   ]
+  }
+ ],
+ "teardowns": [
+  {
+   "type_id": "remarkable-planner-template",
+   "reason": "no evidence yet"
+  },
+  {
+   "type_id": "reading-journal-digital",
+   "reason": "no evidence yet"
+  }
+ ],
+ "fixes": [],
+ "continue": [],
+ "new_products": []
+}
