@@ -50,6 +50,9 @@ def results():
             d = store.product_dir(res['product_id'])
             store.write(os.path.join(d, 'published.json'), res)
             out.append({"job": name, "published": res})
+        elif r['kind'] in ('inspect', 'fix_listing'):
+            store.write(os.path.join(store.DATA, 'etsy', f"{r['kind']}-{store.now()[:10]}.json"), res)
+            out.append({"job": name, r['kind']: True})
         elif r['kind'] == 'stats':
             store.write(os.path.join(store.DATA, 'stats', f"{store.now()[:10]}.json"), res)
             out.append({"job": name, "stats_listings": len(res['listings'])})
