@@ -1,0 +1,947 @@
+{
+ "new_themes": [
+  {
+   "id": "w_autofill",
+   "theme": "Auto-fill book details",
+   "use_for": "Wants book info and cover filled in automatically, e.g. from the ISBN.",
+   "kind": "wishes"
+  },
+  {
+   "id": "w_migrate",
+   "theme": "Easy move to a newer version",
+   "use_for": "Wants to carry existing entries over when upgrading to a new edition.",
+   "kind": "wishes"
+  },
+  {
+   "id": "w_cheaper",
+   "theme": "Cheaper or smaller option",
+   "use_for": "Wants a lower price or to buy only the pages they need.",
+   "kind": "wishes"
+  },
+  {
+   "id": "c_stolen",
+   "theme": "Copied or stolen design",
+   "use_for": "Buyer says the product is plagiarized or stolen from another creator.",
+   "kind": "complaints"
+  }
+ ],
+ "codes": [
+  {
+   "id": "r131",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r132",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r133",
+   "off_type": false,
+   "themes": [
+    "p_support",
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r134",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_support"
+   ]
+  },
+  {
+   "id": "r135",
+   "off_type": true,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r136",
+   "off_type": false,
+   "themes": [
+    "p_support",
+    "p_easy",
+    "p_adhd",
+    "p_complete",
+    "p_look"
+   ]
+  },
+  {
+   "id": "r137",
+   "off_type": true,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r138",
+   "off_type": false,
+   "themes": [
+    "p_repeat",
+    "p_look",
+    "p_quality",
+    "p_guide"
+   ]
+  },
+  {
+   "id": "r139",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r140",
+   "off_type": true,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r141",
+   "off_type": false,
+   "themes": [
+    "p_repeat",
+    "p_look",
+    "p_easy",
+    "w_autofill",
+    "w_migrate"
+   ]
+  },
+  {
+   "id": "r142",
+   "off_type": false,
+   "themes": [
+    "p_quality",
+    "c_quality"
+   ]
+  },
+  {
+   "id": "r143",
+   "off_type": false,
+   "themes": [
+    "c_setup",
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r144",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r145",
+   "off_type": false,
+   "themes": [
+    "p_adhd",
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r146",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r147",
+   "off_type": false,
+   "themes": [
+    "c_misleading"
+   ]
+  },
+  {
+   "id": "r148",
+   "off_type": false,
+   "themes": [
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r149",
+   "off_type": false,
+   "themes": [
+    "c_device",
+    "c_lag"
+   ]
+  },
+  {
+   "id": "r150",
+   "off_type": false,
+   "themes": [
+    "c_extra_app",
+    "c_misleading"
+   ]
+  },
+  {
+   "id": "r152",
+   "off_type": false,
+   "themes": [
+    "c_broken"
+   ]
+  },
+  {
+   "id": "r153",
+   "off_type": false,
+   "themes": [
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r154",
+   "off_type": false,
+   "themes": [
+    "c_security"
+   ]
+  },
+  {
+   "id": "r155",
+   "off_type": false,
+   "themes": [
+    "c_lag",
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r157",
+   "off_type": false,
+   "themes": [
+    "c_broken"
+   ]
+  },
+  {
+   "id": "r158",
+   "off_type": true,
+   "themes": [
+    "c_device"
+   ]
+  },
+  {
+   "id": "r159",
+   "off_type": false,
+   "themes": [
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r160",
+   "off_type": false,
+   "themes": [
+    "c_misleading",
+    "c_refund"
+   ]
+  },
+  {
+   "id": "r161",
+   "off_type": true,
+   "themes": [
+    "c_language",
+    "c_support",
+    "c_refund",
+    "p_quality"
+   ]
+  },
+  {
+   "id": "r163",
+   "off_type": false,
+   "themes": [
+    "c_misleading"
+   ]
+  },
+  {
+   "id": "r164",
+   "off_type": true,
+   "themes": [
+    "c_look"
+   ]
+  },
+  {
+   "id": "r165",
+   "off_type": false,
+   "themes": [
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r166",
+   "off_type": false,
+   "themes": [
+    "c_device",
+    "c_download"
+   ]
+  },
+  {
+   "id": "r167",
+   "off_type": false,
+   "themes": [
+    "c_download",
+    "c_edit"
+   ]
+  },
+  {
+   "id": "r168",
+   "off_type": false,
+   "themes": [
+    "c_security",
+    "c_download"
+   ]
+  },
+  {
+   "id": "r169",
+   "off_type": false,
+   "themes": [
+    "c_links"
+   ]
+  },
+  {
+   "id": "r170",
+   "off_type": false,
+   "themes": [
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r171",
+   "off_type": false,
+   "themes": [
+    "c_broken"
+   ]
+  },
+  {
+   "id": "r172",
+   "off_type": false,
+   "themes": [
+    "c_links"
+   ]
+  },
+  {
+   "id": "r173",
+   "off_type": false,
+   "themes": [
+    "c_download",
+    "c_extra_app",
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r174",
+   "off_type": false,
+   "themes": [
+    "c_lag",
+    "c_download"
+   ]
+  },
+  {
+   "id": "r176",
+   "off_type": false,
+   "themes": [
+    "c_download"
+   ]
+  },
+  {
+   "id": "r177",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r178",
+   "off_type": false,
+   "themes": [
+    "p_extras",
+    "c_download",
+    "c_device",
+    "c_extra_app"
+   ]
+  },
+  {
+   "id": "r180",
+   "off_type": false,
+   "themes": [
+    "c_download",
+    "c_extra_app"
+   ]
+  },
+  {
+   "id": "r181",
+   "off_type": true,
+   "themes": [
+    "p_look",
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r182",
+   "off_type": false,
+   "themes": [
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r183",
+   "off_type": true,
+   "themes": [
+    "p_look",
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r184",
+   "off_type": true,
+   "themes": [
+    "p_look",
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r185",
+   "off_type": false,
+   "themes": [
+    "p_repeat"
+   ]
+  },
+  {
+   "id": "r186",
+   "off_type": false,
+   "themes": [
+    "p_device",
+    "p_flexible",
+    "p_value"
+   ]
+  },
+  {
+   "id": "r187",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r188",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r189",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r190",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r191",
+   "off_type": false,
+   "themes": [
+    "p_look",
+    "p_adhd"
+   ]
+  },
+  {
+   "id": "r192",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r193",
+   "off_type": false,
+   "themes": [
+    "p_repeat",
+    "p_easy",
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r195",
+   "off_type": false,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r196",
+   "off_type": false,
+   "themes": [
+    "p_quality"
+   ]
+  },
+  {
+   "id": "r197",
+   "off_type": true,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r198",
+   "off_type": false,
+   "themes": [
+    "p_look",
+    "c_nav"
+   ]
+  },
+  {
+   "id": "r199",
+   "off_type": false,
+   "themes": [
+    "p_complete",
+    "p_flexible",
+    "p_adhd"
+   ]
+  },
+  {
+   "id": "r200",
+   "off_type": false,
+   "themes": [
+    "p_look",
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r202",
+   "off_type": false,
+   "themes": [
+    "c_setup",
+    "c_support",
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r203",
+   "off_type": false,
+   "themes": [
+    "c_hard",
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r205",
+   "off_type": false,
+   "themes": [
+    "c_download"
+   ]
+  },
+  {
+   "id": "r206",
+   "off_type": false,
+   "themes": [
+    "c_stolen"
+   ]
+  },
+  {
+   "id": "r207",
+   "off_type": true,
+   "themes": [
+    "c_download"
+   ]
+  },
+  {
+   "id": "r208",
+   "off_type": false,
+   "themes": [
+    "c_download",
+    "c_value"
+   ]
+  },
+  {
+   "id": "r209",
+   "off_type": false,
+   "themes": [
+    "p_support"
+   ]
+  },
+  {
+   "id": "r210",
+   "off_type": false,
+   "themes": [
+    "c_download"
+   ]
+  },
+  {
+   "id": "r211",
+   "off_type": false,
+   "themes": [
+    "c_hard",
+    "c_value"
+   ]
+  },
+  {
+   "id": "r215",
+   "off_type": false,
+   "themes": [
+    "c_misleading"
+   ]
+  },
+  {
+   "id": "r216",
+   "off_type": false,
+   "themes": [
+    "c_download"
+   ]
+  },
+  {
+   "id": "r217",
+   "off_type": false,
+   "themes": [
+    "c_download"
+   ]
+  },
+  {
+   "id": "r218",
+   "off_type": false,
+   "themes": [
+    "p_support",
+    "p_extras",
+    "p_look",
+    "p_complete",
+    "c_download"
+   ]
+  },
+  {
+   "id": "r219",
+   "off_type": false,
+   "themes": [
+    "c_lag",
+    "c_device",
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r220",
+   "off_type": false,
+   "themes": [
+    "p_look",
+    "c_device"
+   ]
+  },
+  {
+   "id": "r221",
+   "off_type": false,
+   "themes": [
+    "c_broken"
+   ]
+  },
+  {
+   "id": "r222",
+   "off_type": false,
+   "themes": [
+    "c_setup",
+    "c_misleading",
+    "c_language",
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r223",
+   "off_type": false,
+   "themes": [
+    "c_broken",
+    "c_download"
+   ]
+  },
+  {
+   "id": "r224",
+   "off_type": false,
+   "themes": [
+    "c_broken"
+   ]
+  },
+  {
+   "id": "r225",
+   "off_type": false,
+   "themes": [
+    "c_quality",
+    "c_dates",
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r226",
+   "off_type": false,
+   "themes": [
+    "c_hard",
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r227",
+   "off_type": false,
+   "themes": [
+    "c_nav"
+   ]
+  },
+  {
+   "id": "r228",
+   "off_type": false,
+   "themes": [
+    "c_download",
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r229",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs",
+    "p_support",
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r230",
+   "off_type": false,
+   "themes": [
+    "c_not_useful",
+    "c_missing"
+   ]
+  },
+  {
+   "id": "r231",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r232",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r233",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r234",
+   "off_type": false,
+   "themes": [
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r235",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_nav"
+   ]
+  },
+  {
+   "id": "r236",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r237",
+   "off_type": false,
+   "themes": [
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r238",
+   "off_type": false,
+   "themes": [
+    "p_quality",
+    "p_nav"
+   ]
+  },
+  {
+   "id": "r239",
+   "off_type": false,
+   "themes": [
+    "p_nav",
+    "p_value",
+    "p_fits_needs"
+   ]
+  },
+  {
+   "id": "r240",
+   "off_type": false,
+   "themes": [
+    "p_look",
+    "p_quality",
+    "p_support"
+   ]
+  },
+  {
+   "id": "r241",
+   "off_type": false,
+   "themes": [
+    "p_device"
+   ]
+  },
+  {
+   "id": "r242",
+   "off_type": false,
+   "themes": [
+    "c_device",
+    "c_extra_app",
+    "c_lag",
+    "c_misleading",
+    "c_value"
+   ]
+  },
+  {
+   "id": "r243",
+   "off_type": false,
+   "themes": [
+    "p_look",
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r244",
+   "off_type": true,
+   "themes": [
+    "p_look",
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r245",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r246",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r247",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r248",
+   "off_type": false,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r249",
+   "off_type": false,
+   "themes": [
+    "c_setup",
+    "c_device"
+   ]
+  },
+  {
+   "id": "r251",
+   "off_type": false,
+   "themes": [
+    "c_value",
+    "c_not_useful",
+    "w_cheaper"
+   ]
+  },
+  {
+   "id": "r252",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r253",
+   "off_type": false,
+   "themes": [
+    "c_download"
+   ]
+  },
+  {
+   "id": "r254",
+   "off_type": false,
+   "themes": [
+    "c_download"
+   ]
+  },
+  {
+   "id": "r255",
+   "off_type": false,
+   "themes": [
+    "c_download",
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r257",
+   "off_type": false,
+   "themes": [
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r258",
+   "off_type": false,
+   "themes": [
+    "c_setup",
+    "c_download"
+   ]
+  },
+  {
+   "id": "r261",
+   "off_type": false,
+   "themes": [
+    "c_download"
+   ]
+  },
+  {
+   "id": "r262",
+   "off_type": false,
+   "themes": [
+    "p_quality",
+    "p_look",
+    "c_hard",
+    "c_extra_app",
+    "c_value"
+   ]
+  },
+  {
+   "id": "r263",
+   "off_type": false,
+   "themes": [
+    "c_download",
+    "c_device"
+   ]
+  },
+  {
+   "id": "r264",
+   "off_type": false,
+   "themes": [
+    "c_download"
+   ]
+  },
+  {
+   "id": "r266",
+   "off_type": false,
+   "themes": [
+    "c_download",
+    "c_device"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,878 @@
+{
+ "product_type": "Remarkable planner template (Planner templates for e-ink tablets (PDF))",
+ "codebook": {
+  "complaints": [
+   {
+    "id": "c_download",
+    "theme": "Couldn't download or open the file",
+    "use_for": "Download failed, file won't open, can't find the file after buying."
+   },
+   {
+    "id": "c_setup",
+    "theme": "Confusing setup or unclear instructions",
+    "use_for": "Didn't know how to import, set up or start; instructions or videos unclear."
+   },
+   {
+    "id": "c_hard",
+    "theme": "Hard to use day to day",
+    "use_for": "General 'hard to use', 'not user friendly', 'not intuitive' with no specific cause."
+   },
+   {
+    "id": "c_nav",
+    "theme": "Hard to navigate or find pages",
+    "use_for": "Can't find pages, tabs or buttons awkward, wants faster ways around."
+   },
+   {
+    "id": "c_links",
+    "theme": "Links broken or go to the wrong page",
+    "use_for": "Specific hyperlink failures."
+   },
+   {
+    "id": "c_device",
+    "theme": "Doesn't work on my app or device",
+    "use_for": "Android, Samsung, reMarkable, OneNote, Kindle, Windows, app glitches."
+   },
+   {
+    "id": "c_extra_app",
+    "theme": "Needed an app or subscription that wasn't clear",
+    "use_for": "Had to buy Goodnotes or another app to use it."
+   },
+   {
+    "id": "c_lag",
+    "theme": "Slow, laggy or file too big",
+    "use_for": "Performance and file size."
+   },
+   {
+    "id": "c_dates",
+    "theme": "Wrong or missing dates, calendar errors",
+    "use_for": "Dates, weekdays or calendar order wrong."
+   },
+   {
+    "id": "c_missing",
+    "theme": "Missing pages or less than expected",
+    "use_for": "Fewer pages, sections or items than promised."
+   },
+   {
+    "id": "c_space",
+    "theme": "Too little writing space",
+    "use_for": "Boxes, calendar cells or lines too small to write in."
+   },
+   {
+    "id": "c_readability",
+    "theme": "Text too small or hard to read",
+    "use_for": "Font size, contrast, legibility."
+   },
+   {
+    "id": "c_edit",
+    "theme": "Can't edit, type or customize",
+    "use_for": "Wanted to type, edit text, change colors or tabs and couldn't."
+   },
+   {
+    "id": "c_overwhelm",
+    "theme": "Too much, overwhelming",
+    "use_for": "So many pages or sections that the buyer didn't know where to start."
+   },
+   {
+    "id": "c_basic",
+    "theme": "Too basic or boring",
+    "use_for": "Too simple, not enough to it."
+   },
+   {
+    "id": "c_look",
+    "theme": "Didn't like the look",
+    "use_for": "Colors, style or design disliked."
+   },
+   {
+    "id": "c_misleading",
+    "theme": "Not as described or pictured",
+    "use_for": "Product differs from photos or description, misleading listing."
+   },
+   {
+    "id": "c_not_useful",
+    "theme": "Not useful for my needs",
+    "use_for": "Didn't fit how the buyer plans, no specific defect."
+   },
+   {
+    "id": "c_quality",
+    "theme": "Errors, typos or low quality",
+    "use_for": "Mistakes, sloppy pages, blurry images, broken elements."
+   },
+   {
+    "id": "c_broken",
+    "theme": "Doesn't work (no detail)",
+    "use_for": "'Doesn't work' with no further detail."
+   },
+   {
+    "id": "c_value",
+    "theme": "Not worth the price",
+    "use_for": "Price or value complaints."
+   },
+   {
+    "id": "c_support",
+    "theme": "Seller didn't help or reply",
+    "use_for": "Slow or unhelpful support."
+   },
+   {
+    "id": "c_refund",
+    "theme": "Refund refused",
+    "use_for": "Seller refused refund or exchange."
+   },
+   {
+    "id": "c_language",
+    "theme": "Only in English",
+    "use_for": "Wanted another language."
+   },
+   {
+    "id": "c_upsell",
+    "theme": "Pushes paid add-ons or sign-ups",
+    "use_for": "Links or pages inside the product lead to extra purchases, paywalls or forced email/subscription sign-ups."
+   },
+   {
+    "id": "c_security",
+    "theme": "Spam, privacy or virus worries",
+    "use_for": "Buyer links the purchase to spam, sold personal data, a virus or other security problems."
+   },
+   {
+    "id": "c_review_gate",
+    "theme": "Forced to leave a review",
+    "use_for": "Seller required a rating or review before giving access to the file."
+   }
+  ],
+  "praise": [
+   {
+    "id": "p_look",
+    "theme": "Beautiful design",
+    "use_for": "Pretty, aesthetic, love the colors."
+   },
+   {
+    "id": "p_easy",
+    "theme": "Easy to set up and use",
+    "use_for": "Easy, simple, user friendly."
+   },
+   {
+    "id": "p_nav",
+    "theme": "Links work, easy to navigate",
+    "use_for": "Praise for hyperlinks and moving around."
+   },
+   {
+    "id": "p_complete",
+    "theme": "Has everything I need",
+    "use_for": "Comprehensive, lots of pages, all in one."
+   },
+   {
+    "id": "p_adhd",
+    "theme": "Helps me stay on track",
+    "use_for": "Helps with ADHD, focus, staying organized."
+   },
+   {
+    "id": "p_daily",
+    "theme": "I use it every day",
+    "use_for": "Daily use, habit, hooked."
+   },
+   {
+    "id": "p_flexible",
+    "theme": "Flexible or customizable",
+    "use_for": "Can adapt it, undated, choose pages."
+   },
+   {
+    "id": "p_extras",
+    "theme": "Love the stickers and extras",
+    "use_for": "Stickers, bonus files."
+   },
+   {
+    "id": "p_device",
+    "theme": "Works on my device",
+    "use_for": "Works on Android, Samsung, Kindle, other apps."
+   },
+   {
+    "id": "p_guide",
+    "theme": "Clear instructions or tutorials",
+    "use_for": "Helpful guide, video, instructions."
+   },
+   {
+    "id": "p_as_described",
+    "theme": "Exactly as described",
+    "use_for": "Matches the listing."
+   },
+   {
+    "id": "p_quality",
+    "theme": "High quality",
+    "use_for": "Well made, professional."
+   },
+   {
+    "id": "p_value",
+    "theme": "Great value",
+    "use_for": "Good price for what you get."
+   },
+   {
+    "id": "p_support",
+    "theme": "Seller was helpful",
+    "use_for": "Good support."
+   },
+   {
+    "id": "p_repeat",
+    "theme": "Repeat buyer",
+    "use_for": "Bought before, will buy again, favorite shop."
+   },
+   {
+    "id": "p_fits_needs",
+    "theme": "Useful, fits my needs",
+    "use_for": "Useful, helpful, exactly what I needed or was looking for; suits how the buyer plans."
+   }
+  ],
+  "wishes": [
+   {
+    "id": "w_customize",
+    "theme": "More ways to customize",
+    "use_for": "Edit tabs, change colors, add pages."
+   },
+   {
+    "id": "w_side_tabs",
+    "theme": "Side tabs for faster navigation",
+    "use_for": "Wants tabs instead of buttons."
+   },
+   {
+    "id": "w_back_button",
+    "theme": "A back button",
+    "use_for": "Return to previous page."
+   },
+   {
+    "id": "w_portrait",
+    "theme": "Portrait version",
+    "use_for": "Wants portrait orientation."
+   },
+   {
+    "id": "w_sunday_start",
+    "theme": "Sunday-start weeks",
+    "use_for": "Calendar starting on Sunday."
+   },
+   {
+    "id": "w_listing_info",
+    "theme": "Listing should say which apps are needed",
+    "use_for": "Clarity before buying."
+   },
+   {
+    "id": "w_file_format",
+    "theme": "Other file formats (Google Docs, Word, Pages)",
+    "use_for": "Wants the product in another file format or editor, such as Google Docs, Word or Apple Pages."
+   },
+   {
+    "id": "w_order",
+    "theme": "Pages in a logical order",
+    "use_for": "Wants pages or sections arranged in a sensible order so things are quick to find."
+   },
+   {
+    "id": "w_page_types",
+    "theme": "More page types included",
+    "use_for": "Wants a specific kind of page added to the product, such as to-do lists."
+   },
+   {
+    "id": "w_sharper_images",
+    "theme": "Larger, sharper image files",
+    "use_for": "Wants higher-resolution stickers or images that stay sharp when enlarged."
+   }
+  ]
+ },
+ "reviews": [
+  {
+   "id": "r257",
+   "stars": 5,
+   "text": "After purchasing the larger variant (using it on the Supernote Manta), and liking it so much, I decided to purchase a Remarkable Paper Pro Move and this planner specifically for it. I used to use the Move when it first released, but sold it shortly after. Now I know this planner is the thing I was missing to make the Move fit my workflow. Thanks to the seller/designer!"
+  },
+  {
+   "id": "r258",
+   "stars": 5,
+   "text": "I use this constantly on the Supernote Manta. It looks great and is pretty responsive for the size and device. I had a nice conversation with the developer/seller, and they helped me out even though they didn't need to."
+  },
+  {
+   "id": "r259",
+   "stars": 5,
+   "text": "Absolutely great! They have created a custom planner for me for the last few years. I can't function with out it. Great work, prompt reply and creation. thank  you so much"
+  },
+  {
+   "id": "r260",
+   "stars": 5,
+   "text": "Alles super tolle Qualität gerne wieder"
+  },
+  {
+   "id": "r261",
+   "stars": 5,
+   "text": "Very easy to use on the Remarkable.  Recommended."
+  },
+  {
+   "id": "r262",
+   "stars": 5,
+   "text": "good quality and easy to use. love the links to get me everywhere I need to go to."
+  },
+  {
+   "id": "r263",
+   "stars": 5,
+   "text": "I've purchased several digital planners and this one is hand's down the best. It is laid out in a way that is easy to work with. I like that it is simple and minimal, my brain loves that! I am anxiously awaiting 2027 planners and I keep checking back to see if there's been any updates. I will definitely purchase 2027 once it comes out."
+  },
+  {
+   "id": "r264",
+   "stars": 3,
+   "text": "The size does not fit ok"
+  },
+  {
+   "id": "r265",
+   "stars": 3,
+   "text": "This notebook has been created by the same folks who made the Planner for the move which. is really good. This is also ok to use."
+  },
+  {
+   "id": "r266",
+   "stars": 4,
+   "text": "Great planner, will use it in 2026!"
+  },
+  {
+   "id": "r267",
+   "stars": 4,
+   "text": "Great graphic design, very useful"
+  },
+  {
+   "id": "r268",
+   "stars": 4,
+   "text": "Auf deutsch und ohne chinesische Zeichen wäre klasse"
+  },
+  {
+   "id": "r269",
+   "stars": 4,
+   "text": "Preis und Leistung sind fast okay."
+  },
+  {
+   "id": "r270",
+   "stars": 4,
+   "text": "Good template, three more words"
+  },
+  {
+   "id": "r271",
+   "stars": 4,
+   "text": "This is. a really good thoughtful planner for the move. Highly recommended."
+  },
+  {
+   "id": "r272",
+   "stars": 4,
+   "text": "Good planner, looks very nice."
+  },
+  {
+   "id": "r273",
+   "stars": 4,
+   "text": "Nice planner. Works with Remarkable well."
+  },
+  {
+   "id": "r274",
+   "stars": 5,
+   "text": "perfect for the remarkable move"
+  },
+  {
+   "id": "r275",
+   "stars": 5,
+   "text": "Very well thought out and designed template of the Hobonichi for the Move! Adds immediate value and is the only planner you’ll need!"
+  },
+  {
+   "id": "r276",
+   "stars": 5,
+   "text": "Excellent planner that combines style and functionality perfectly."
+  },
+  {
+   "id": "r278",
+   "stars": 5,
+   "text": "Great template for my Remarkable tablets!"
+  },
+  {
+   "id": "r279",
+   "stars": 5,
+   "text": "Really great planner. Fantastic response time. Excellent support."
+  },
+  {
+   "id": "r280",
+   "stars": 5,
+   "text": "Fabulous item and great customer service.  This planner looks fantastic on the Remarkable paperpro move."
+  },
+  {
+   "id": "r281",
+   "stars": 5,
+   "text": "Amazing quality and great expirience"
+  },
+  {
+   "id": "r282",
+   "stars": 5,
+   "text": "This planner is outstanding and has truly made my Remarkable Pro Move so much more functional! Really brilliant and useful. Thank yu!!!"
+  },
+  {
+   "id": "r283",
+   "stars": 5,
+   "text": "The format is simple and easy to use. Thank you very much."
+  },
+  {
+   "id": "r284",
+   "stars": 5,
+   "text": "Nice, intuitive design. Looks great with a well thought out UI. happy with my purchase."
+  },
+  {
+   "id": "r285",
+   "stars": 5,
+   "text": "Just purchase the other day and already received an update. Just like the planner, I like the minimalistic design sense. Works well as a project template for me. Great work. Cheers."
+  },
+  {
+   "id": "r286",
+   "stars": 5,
+   "text": "Just what I was looking for.  Thank you for a great product."
+  },
+  {
+   "id": "r287",
+   "stars": 5,
+   "text": "Love this planner! It's so similar to the paper version"
+  },
+  {
+   "id": "r288",
+   "stars": 5,
+   "text": "Fantastic, high quality template. I've been using it daily for about a month now and would recommend it to everyone. Thank you"
+  },
+  {
+   "id": "r289",
+   "stars": 5,
+   "text": "Exactly what I was looking for."
+  },
+  {
+   "id": "r290",
+   "stars": 5,
+   "text": "Thank you so much. Greatly appreciated!"
+  },
+  {
+   "id": "r291",
+   "stars": 5,
+   "text": "Loved using this planner for 2025. Excited to use the new Pro version in 2026. Highly recommend this planner. Excellent seller."
+  },
+  {
+   "id": "r292",
+   "stars": 5,
+   "text": "Clean, elegant and versatile. Just what I needed for my Move👌"
+  },
+  {
+   "id": "r293",
+   "stars": 5,
+   "text": "I’ve purchased all the Move templates and they’re a pleasure to use. I think the weekly planner and notebook templates will be the ones for my workflow. Both are minimal, well designed, and highly functional. Recommended!"
+  },
+  {
+   "id": "r294",
+   "stars": 5,
+   "text": "Really happy with this product."
+  },
+  {
+   "id": "r295",
+   "stars": 5,
+   "text": "Great planner!  Just what I was looking for!  Has given me a reason to use my Move!!"
+  },
+  {
+   "id": "r296",
+   "stars": 5,
+   "text": "This is the best looking Planner for the remarkable Move !!! I've tried a bunch of them and this one stands out in usability and design. thank you so much for creating such a great planner ❤️"
+  },
+  {
+   "id": "r297",
+   "stars": 5,
+   "text": "Super produit, très utile et bon rapport qualité / prix"
+  },
+  {
+   "id": "r298",
+   "stars": 5,
+   "text": "Fantastic experience! I have been using the Move planner and the MoveNote for a couple weeks now and love them. Very easy to use and when I did have a question the seller was quick to respond with an answer."
+  },
+  {
+   "id": "r299",
+   "stars": 5,
+   "text": "Great template! Works on the move perfectly."
+  },
+  {
+   "id": "r300",
+   "stars": 5,
+   "text": "Great Notebook for the Move and very useful."
+  },
+  {
+   "id": "r301",
+   "stars": 5,
+   "text": "Really beautiful and well-designed calendar. It’s clean, and makes planning feel effortless. I love how it combines elegance and minimalism.  A real productivity value. It’s one of those layouts you actually want to use every day."
+  },
+  {
+   "id": "r302",
+   "stars": 5,
+   "text": "Vielen Dank, gern wieder mal"
+  },
+  {
+   "id": "r303",
+   "stars": 5,
+   "text": "got it and it works so well!"
+  },
+  {
+   "id": "r304",
+   "stars": 5,
+   "text": "Customer service was amazing and I recommend them!"
+  },
+  {
+   "id": "r305",
+   "stars": 5,
+   "text": "The calendar is great, very well planned and has nice, thoughtful details."
+  },
+  {
+   "id": "r307",
+   "stars": 5,
+   "text": "Wonderfully thought out, everything I need"
+  },
+  {
+   "id": "r308",
+   "stars": 5,
+   "text": "Wonderfully thought out, everything I need"
+  },
+  {
+   "id": "r309",
+   "stars": 5,
+   "text": "Wonderfully thought out, everything I need"
+  },
+  {
+   "id": "r310",
+   "stars": 5,
+   "text": "It's very good to use"
+  },
+  {
+   "id": "r312",
+   "stars": 5,
+   "text": "it's great, very well put together"
+  },
+  {
+   "id": "r313",
+   "stars": 5,
+   "text": "Can't wait to use this of course!"
+  },
+  {
+   "id": "r314",
+   "stars": 5,
+   "text": "good template. it's so nice"
+  },
+  {
+   "id": "r315",
+   "stars": 5,
+   "text": "Perfect templates BuJo and the Remarkable Paper Pro Move"
+  },
+  {
+   "id": "r316",
+   "stars": 5,
+   "text": "Compared to this, using the free and similar templates provided by Remarkable is like drinking instant coffee in a paper cup, whereas Hobonichi Move is like drinking a nice espresso in a porcelain cup. Both get the job done, but one is so much nicer; a little luxury that I can treat myself. This template beautifully complements the RM Move device, matching its colors and the external metallic sides, elevating the RM Move!"
+  },
+  {
+   "id": "r317",
+   "stars": 5,
+   "text": "Exactly what I needed for work!"
+  },
+  {
+   "id": "r318",
+   "stars": 5,
+   "text": "This is exactly what I what I wanted and more! I have a reMarkable Paper Pro, but I couldn't find anything planner templates that had everything I was looking for. I resized the pdf so it scales correctly in my RMPP and it is perfect."
+  },
+  {
+   "id": "r319",
+   "stars": 5,
+   "text": "Just as described. Really lovely. 🥰"
+  },
+  {
+   "id": "r320",
+   "stars": 5,
+   "text": "An excellent planner that is well-linked, clear, and has lots of space for all kinds of notes.  Really classy stuff."
+  },
+  {
+   "id": "r322",
+   "stars": 2,
+   "text": "I found this clunky to work with and the links to lag (but this could be my impatience :-)"
+  },
+  {
+   "id": "r323",
+   "stars": 3,
+   "text": "does work well w the move"
+  },
+  {
+   "id": "r324",
+   "stars": 3,
+   "text": "Too many documents and difficult to use Diary"
+  },
+  {
+   "id": "r325",
+   "stars": 3,
+   "text": "Works great on remarkable 2"
+  },
+  {
+   "id": "r326",
+   "stars": 3,
+   "text": "Not what I require it for"
+  },
+  {
+   "id": "r327",
+   "stars": 3,
+   "text": "Did not suit my particular requirements"
+  },
+  {
+   "id": "r328",
+   "stars": 4,
+   "text": "Comprehensive solution for scheduling and notes"
+  },
+  {
+   "id": "r329",
+   "stars": 4,
+   "text": "Good, fast, cheap, useful,  works"
+  },
+  {
+   "id": "r331",
+   "stars": 4,
+   "text": "very good product would purchase again."
+  },
+  {
+   "id": "r332",
+   "stars": 4,
+   "text": "Does what it says on the tin."
+  },
+  {
+   "id": "r333",
+   "stars": 4,
+   "text": "Der Artikel passt optimal zu Remarkable Paper Pro Move. Top!"
+  },
+  {
+   "id": "r334",
+   "stars": 4,
+   "text": "This is a great template.  Very intuitive and well thought-out"
+  },
+  {
+   "id": "r335",
+   "stars": 4,
+   "text": "Nicely matched to the PP Machine Move"
+  },
+  {
+   "id": "r336",
+   "stars": 4,
+   "text": "Parfaitement conforme à ce que je voulais"
+  },
+  {
+   "id": "r337",
+   "stars": 4,
+   "text": "Only one thing is missing, if there is a WEEK VIEW then it'll be PERFECT!!"
+  },
+  {
+   "id": "r338",
+   "stars": 4,
+   "text": "Excellent template and very accurate when it comes to capturing daily plan"
+  },
+  {
+   "id": "r339",
+   "stars": 4,
+   "text": "Very good quality pdf, good for my type of meetings!"
+  },
+  {
+   "id": "r340",
+   "stars": 4,
+   "text": "Great little planner for the new size. Plenty of notes space and flows nicely. The only thing that I would change is to have a week overview as well. It's lacking that one view for me. But otherwise a good planner."
+  },
+  {
+   "id": "r341",
+   "stars": 4,
+   "text": "Jddj hfyu kfc jfsh jfui"
+  },
+  {
+   "id": "r342",
+   "stars": 4,
+   "text": "A really good design. My only little quibble is that you need to make two steps to get back to the list of notes in any particular section from your currently note. The guide could have had a bit more detail."
+  },
+  {
+   "id": "r343",
+   "stars": 4,
+   "text": "The owner of the shop was very helpful in explaining to me how to maneuver around his digital planner template"
+  },
+  {
+   "id": "r344",
+   "stars": 5,
+   "text": "Exactly what I was looking for and nicely organized."
+  },
+  {
+   "id": "r345",
+   "stars": 5,
+   "text": "Thank you Tom! This is everything I wanted in a notes template. Tom even went to the effort of customising this for me, so its perfect!! Super impressed with his response time and eagerness to help."
+  },
+  {
+   "id": "r346",
+   "stars": 5,
+   "text": "Perfect for my new remarkable pro."
+  },
+  {
+   "id": "r347",
+   "stars": 5,
+   "text": "The first habit tracker I have actually used every day! Thank you!"
+  },
+  {
+   "id": "r348",
+   "stars": 5,
+   "text": "Works great, exactly as advertised"
+  },
+  {
+   "id": "r349",
+   "stars": 5,
+   "text": "Just what I needed. Thanks."
+  },
+  {
+   "id": "r350",
+   "stars": 5,
+   "text": "This template is beautiful. The book Atomic Habits plus this template make a good combination. The color palette is very nice also. The seller answers questions right away, too. Recommended!"
+  },
+  {
+   "id": "r351",
+   "stars": 5,
+   "text": "Second purchase from this seller. His templates are very high quality. Good customer service, too. Recommended!"
+  },
+  {
+   "id": "r352",
+   "stars": 5,
+   "text": "Great product. Didnt love the way the purple looked so emailed the shop owner and he replied almost instantly and immediately gave me a different color w/o question. Great service, great shop"
+  },
+  {
+   "id": "r353",
+   "stars": 5,
+   "text": "excellent, does exactly what i wanted it to do, i would definitely buy from this shop again"
+  },
+  {
+   "id": "r354",
+   "stars": 5,
+   "text": "Superbe and adapted to mu needs thanks 😊 lot"
+  },
+  {
+   "id": "r355",
+   "stars": 5,
+   "text": "Nice, sturdy and fun to use daily."
+  },
+  {
+   "id": "r356",
+   "stars": 5,
+   "text": "Very good planner"
+  },
+  {
+   "id": "r357",
+   "stars": 5,
+   "text": "Mega gutes Handling und einfache Bedienung. Alles drinnen was man so braucht"
+  },
+  {
+   "id": "r358",
+   "stars": 5,
+   "text": "this product is great and keeping on track in my day to day life"
+  },
+  {
+   "id": "r359",
+   "stars": 5,
+   "text": "Item received as described. Highly recommended."
+  },
+  {
+   "id": "r360",
+   "stars": 5,
+   "text": "Second year in a row using the Hobonichi inspired planner for the Paper Pro Move and couldn’t be happier. Tried several similar planners and none come close to the deep hyperlinks, ease of use and flexible layout."
+  },
+  {
+   "id": "r361",
+   "stars": 5,
+   "text": "Love the To Do List"
+  },
+  {
+   "id": "r362",
+   "stars": 5,
+   "text": "Great planner to use on my remarkable. I love the weekly layout and it has everything I need"
+  },
+  {
+   "id": "r363",
+   "stars": 5,
+   "text": "Nice tool. Easy to use."
+  },
+  {
+   "id": "r364",
+   "stars": 5,
+   "text": "Very helpful with instructions to solve my issues!"
+  },
+  {
+   "id": "r365",
+   "stars": 5,
+   "text": "See my other review on this same template.  5 stars on all fronts!  Thanks Thomas, well done."
+  },
+  {
+   "id": "r366",
+   "stars": 5,
+   "text": "I bought the Premium Daily Planner for my reMarkable Paper Pro and Paper Move (I bought the Move specifically because of this template being available for it).   This might sound a bit odd, but the Premium Daily Planner templates make the reMarkable tablets what they should be.  \r\n\r\nPerhaps I'm simple, but I've used the basic templates available since V1.  I've never looked at a template and thought \"Yeah, that would make my daily use better.\"   \r\n\r\nBut, what a quality of life upgrade!  It has changed my day to day, quite a bit.  It fits my daily flow so well.   One click for the next day.  Notes, meetings, to-dos are just a click away.  \r\n\r\nMany thanks to Thomas, well done!..   Great templates and great service."
+  },
+  {
+   "id": "r367",
+   "stars": 5,
+   "text": "Amazing customer support, fast response, and productive, customizable features that really set this company apart from their competition.  This organizer perfectly supports my personal and professional needs and has helped me stay on track.  I strongly recommend and am very happy with my purchase, thank you Thomas!"
+  },
+  {
+   "id": "r368",
+   "stars": 5,
+   "text": "I'm scared because I'm afraid they'll suddenly stop making these someday. Tried all types of planners and productivity app and nothing has stuck until I found this one. The navigation is so intuitive this even beats all the apps I could get on my phone or laptop."
+  },
+  {
+   "id": "r369",
+   "stars": 5,
+   "text": "Absolutely phenomenal product and customer service!\n\nI have purchased a number of Remarkable  templates from various Etsy vendors, but this shop and the associated planner absolutely went above and beyond my expectations.\n\n1. The customized Daynichi planner provides so much functionality. I especially love how easy it is to navigate to all of the sections of the planner, no matter where I am within the document. It is by far the most well designed template I have used for the Remarkable Paper Pro Move. \n\n2. I have to rave about the customer service. Every question I had was answered in less than 24 hours, and all requests to modify the planner to suit my specific needs were graciously accommodated and delivered quickly.\n\nI recommend this shop wholeheartedly and will certainly make additional purchases in the future!"
+  },
+  {
+   "id": "r370",
+   "stars": 5,
+   "text": "This is amazing! I love using it"
+  },
+  {
+   "id": "r371",
+   "stars": 5,
+   "text": "works good on my remarkable"
+  },
+  {
+   "id": "r372",
+   "stars": 5,
+   "text": "goog look, smooth feel"
+  },
+  {
+   "id": "r373",
+   "stars": 5,
+   "text": "No issues with the delivery nor the installation"
+  },
+  {
+   "id": "r374",
+   "stars": 5,
+   "text": "Amazing planners that I use in all my devices!  Customer service was prompt and professional.  Highly recommend all the planners and templates!"
+  },
+  {
+   "id": "r375",
+   "stars": 1,
+   "text": "very disappointed with planner. It is in military time so too confusing to use"
+  },
+  {
+   "id": "r376",
+   "stars": 1,
+   "text": "I have not been able to download it."
+  },
+  {
+   "id": "r377",
+   "stars": 1,
+   "text": "Couldn't get it to download properly."
+  },
+  {
+   "id": "r378",
+   "stars": 1,
+   "text": "App does not work well on my remarkable pqper pro."
+  },
+  {
+   "id": "r379",
+   "stars": 1,
+   "text": "this product has way to many pages"
+  },
+  {
+   "id": "r380",
+   "stars": 1,
+   "text": "Not installed yet but will continue after installing the software. Okay after spending about 4 hrs I could not install this planner on my remarkable2, meaning it was wast of time and money (regardless how cheap or expensive it is) if you don't get help then simply the product is useless in my personal opinion, as everyone is not expert in everything! Though I have not claimed my money, I would not recommend to buy from this seller simply because he is not willing to help."
+  },
+  {
+   "id": "r381",
+   "stars": 1,
+   "text": "Can't open it on the remarkable 2"
+  }
+ ]
+}

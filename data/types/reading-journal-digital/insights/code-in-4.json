@@ -1,0 +1,878 @@
+{
+ "product_type": "Reading journal digital (Digital journal PDF)",
+ "codebook": {
+  "complaints": [
+   {
+    "id": "c_download",
+    "theme": "Couldn't download or open the file",
+    "use_for": "Download failed, file won't open, can't find the file after buying."
+   },
+   {
+    "id": "c_setup",
+    "theme": "Confusing setup or unclear instructions",
+    "use_for": "Didn't know how to import, set up or start; instructions or videos unclear."
+   },
+   {
+    "id": "c_hard",
+    "theme": "Hard to use day to day",
+    "use_for": "General 'hard to use', 'not user friendly', 'not intuitive' with no specific cause."
+   },
+   {
+    "id": "c_nav",
+    "theme": "Hard to navigate or find pages",
+    "use_for": "Can't find pages, tabs or buttons awkward, wants faster ways around."
+   },
+   {
+    "id": "c_links",
+    "theme": "Links broken or go to the wrong page",
+    "use_for": "Specific hyperlink failures."
+   },
+   {
+    "id": "c_device",
+    "theme": "Doesn't work on my app or device",
+    "use_for": "Android, Samsung, reMarkable, OneNote, Kindle, Windows, app glitches."
+   },
+   {
+    "id": "c_extra_app",
+    "theme": "Needed an app or subscription that wasn't clear",
+    "use_for": "Had to buy Goodnotes or another app to use it."
+   },
+   {
+    "id": "c_lag",
+    "theme": "Slow, laggy or file too big",
+    "use_for": "Performance and file size."
+   },
+   {
+    "id": "c_dates",
+    "theme": "Wrong or missing dates, calendar errors",
+    "use_for": "Dates, weekdays or calendar order wrong."
+   },
+   {
+    "id": "c_missing",
+    "theme": "Missing pages or less than expected",
+    "use_for": "Fewer pages, sections or items than promised."
+   },
+   {
+    "id": "c_space",
+    "theme": "Too little writing space",
+    "use_for": "Boxes, calendar cells or lines too small to write in."
+   },
+   {
+    "id": "c_readability",
+    "theme": "Text too small or hard to read",
+    "use_for": "Font size, contrast, legibility."
+   },
+   {
+    "id": "c_edit",
+    "theme": "Can't edit, type or customize",
+    "use_for": "Wanted to type, edit text, change colors or tabs and couldn't."
+   },
+   {
+    "id": "c_overwhelm",
+    "theme": "Too much, overwhelming",
+    "use_for": "So many pages or sections that the buyer didn't know where to start."
+   },
+   {
+    "id": "c_basic",
+    "theme": "Too basic or boring",
+    "use_for": "Too simple, not enough to it."
+   },
+   {
+    "id": "c_look",
+    "theme": "Didn't like the look",
+    "use_for": "Colors, style or design disliked."
+   },
+   {
+    "id": "c_misleading",
+    "theme": "Not as described or pictured",
+    "use_for": "Product differs from photos or description, misleading listing."
+   },
+   {
+    "id": "c_not_useful",
+    "theme": "Not useful for my needs",
+    "use_for": "Didn't fit how the buyer plans, no specific defect."
+   },
+   {
+    "id": "c_quality",
+    "theme": "Errors, typos or low quality",
+    "use_for": "Mistakes, sloppy pages, blurry images, broken elements."
+   },
+   {
+    "id": "c_broken",
+    "theme": "Doesn't work (no detail)",
+    "use_for": "'Doesn't work' with no further detail."
+   },
+   {
+    "id": "c_value",
+    "theme": "Not worth the price",
+    "use_for": "Price or value complaints."
+   },
+   {
+    "id": "c_support",
+    "theme": "Seller didn't help or reply",
+    "use_for": "Slow or unhelpful support."
+   },
+   {
+    "id": "c_refund",
+    "theme": "Refund refused",
+    "use_for": "Seller refused refund or exchange."
+   },
+   {
+    "id": "c_language",
+    "theme": "Only in English",
+    "use_for": "Wanted another language."
+   },
+   {
+    "id": "c_upsell",
+    "theme": "Pushes paid add-ons or sign-ups",
+    "use_for": "Links or pages inside the product lead to extra purchases, paywalls or forced email/subscription sign-ups."
+   },
+   {
+    "id": "c_security",
+    "theme": "Spam, privacy or virus worries",
+    "use_for": "Buyer links the purchase to spam, sold personal data, a virus or other security problems."
+   },
+   {
+    "id": "c_review_gate",
+    "theme": "Forced to leave a review",
+    "use_for": "Seller required a rating or review before giving access to the file."
+   }
+  ],
+  "praise": [
+   {
+    "id": "p_look",
+    "theme": "Beautiful design",
+    "use_for": "Pretty, aesthetic, love the colors."
+   },
+   {
+    "id": "p_easy",
+    "theme": "Easy to set up and use",
+    "use_for": "Easy, simple, user friendly."
+   },
+   {
+    "id": "p_nav",
+    "theme": "Links work, easy to navigate",
+    "use_for": "Praise for hyperlinks and moving around."
+   },
+   {
+    "id": "p_complete",
+    "theme": "Has everything I need",
+    "use_for": "Comprehensive, lots of pages, all in one."
+   },
+   {
+    "id": "p_adhd",
+    "theme": "Helps me stay on track",
+    "use_for": "Helps with ADHD, focus, staying organized."
+   },
+   {
+    "id": "p_daily",
+    "theme": "I use it every day",
+    "use_for": "Daily use, habit, hooked."
+   },
+   {
+    "id": "p_flexible",
+    "theme": "Flexible or customizable",
+    "use_for": "Can adapt it, undated, choose pages."
+   },
+   {
+    "id": "p_extras",
+    "theme": "Love the stickers and extras",
+    "use_for": "Stickers, bonus files."
+   },
+   {
+    "id": "p_device",
+    "theme": "Works on my device",
+    "use_for": "Works on Android, Samsung, Kindle, other apps."
+   },
+   {
+    "id": "p_guide",
+    "theme": "Clear instructions or tutorials",
+    "use_for": "Helpful guide, video, instructions."
+   },
+   {
+    "id": "p_as_described",
+    "theme": "Exactly as described",
+    "use_for": "Matches the listing."
+   },
+   {
+    "id": "p_quality",
+    "theme": "High quality",
+    "use_for": "Well made, professional."
+   },
+   {
+    "id": "p_value",
+    "theme": "Great value",
+    "use_for": "Good price for what you get."
+   },
+   {
+    "id": "p_support",
+    "theme": "Seller was helpful",
+    "use_for": "Good support."
+   },
+   {
+    "id": "p_repeat",
+    "theme": "Repeat buyer",
+    "use_for": "Bought before, will buy again, favorite shop."
+   },
+   {
+    "id": "p_fits_needs",
+    "theme": "Useful, fits my needs",
+    "use_for": "Useful, helpful, exactly what I needed or was looking for; suits how the buyer plans."
+   }
+  ],
+  "wishes": [
+   {
+    "id": "w_customize",
+    "theme": "More ways to customize",
+    "use_for": "Edit tabs, change colors, add pages."
+   },
+   {
+    "id": "w_side_tabs",
+    "theme": "Side tabs for faster navigation",
+    "use_for": "Wants tabs instead of buttons."
+   },
+   {
+    "id": "w_back_button",
+    "theme": "A back button",
+    "use_for": "Return to previous page."
+   },
+   {
+    "id": "w_portrait",
+    "theme": "Portrait version",
+    "use_for": "Wants portrait orientation."
+   },
+   {
+    "id": "w_sunday_start",
+    "theme": "Sunday-start weeks",
+    "use_for": "Calendar starting on Sunday."
+   },
+   {
+    "id": "w_listing_info",
+    "theme": "Listing should say which apps are needed",
+    "use_for": "Clarity before buying."
+   },
+   {
+    "id": "w_file_format",
+    "theme": "Other file formats (Google Docs, Word, Pages)",
+    "use_for": "Wants the product in another file format or editor, such as Google Docs, Word or Apple Pages."
+   },
+   {
+    "id": "w_order",
+    "theme": "Pages in a logical order",
+    "use_for": "Wants pages or sections arranged in a sensible order so things are quick to find."
+   },
+   {
+    "id": "w_page_types",
+    "theme": "More page types included",
+    "use_for": "Wants a specific kind of page added to the product, such as to-do lists."
+   },
+   {
+    "id": "w_sharper_images",
+    "theme": "Larger, sharper image files",
+    "use_for": "Wants higher-resolution stickers or images that stay sharp when enlarged."
+   }
+  ]
+ },
+ "reviews": [
+  {
+   "id": "r402",
+   "stars": 1,
+   "text": "Cant find the download."
+  },
+  {
+   "id": "r403",
+   "stars": 1,
+   "text": "this planner looked so cute. Unfortunately it wouldn’t download at all. I tried for 2-3 hours trying to download and import it on my iPad . I contacted the seller and she was nice, but gave the same instructions included. \n\nI had to buy another one from a different vender and it worked/downloaded immediately. Maybe I just got a broken link?"
+  },
+  {
+   "id": "r404",
+   "stars": 1,
+   "text": "No lo puedo utilizar. No sé si es bueno o no."
+  },
+  {
+   "id": "r406",
+   "stars": 1,
+   "text": "Undated planner days does not work."
+  },
+  {
+   "id": "r407",
+   "stars": 1,
+   "text": "not Opening at all\nJust see one page"
+  },
+  {
+   "id": "r408",
+   "stars": 1,
+   "text": "Cannot download.  No help. Would never buy from here again"
+  },
+  {
+   "id": "r409",
+   "stars": 1,
+   "text": "Hard to download and expected more"
+  },
+  {
+   "id": "r410",
+   "stars": 1,
+   "text": "Not worth it. A pain in the ass."
+  },
+  {
+   "id": "r411",
+   "stars": 5,
+   "text": "Fantastic purchase! The digital download was available immediately and super easy to access. Everything was exactly as described, and the quality exceeded my expectations. The files were well-organized and simple to use, which made the whole experience smooth and stress-free. You can really tell a lot of effort went into creating this. I’m very happy with my purchase and would definitely recommend this shop!"
+  },
+  {
+   "id": "r412",
+   "stars": 4,
+   "text": "Great product, would buy again"
+  },
+  {
+   "id": "r413",
+   "stars": 5,
+   "text": "i love this  fabulous product!"
+  },
+  {
+   "id": "r414",
+   "stars": 5,
+   "text": "Very nice layout. Easy to use."
+  },
+  {
+   "id": "r415",
+   "stars": 5,
+   "text": "Very easy to use. Functional replacement for physical recipes. Makes it easy when cooking and baking too"
+  },
+  {
+   "id": "r416",
+   "stars": 5,
+   "text": "I liked this product, thank you"
+  },
+  {
+   "id": "r417",
+   "stars": 5,
+   "text": "Great experience and I'd recommend"
+  },
+  {
+   "id": "r418",
+   "stars": 4,
+   "text": "I use this all the time! I love the colors on it! There are a few spelling errors that I had to correct myself, but it wasn't a big deal!"
+  },
+  {
+   "id": "r419",
+   "stars": 5,
+   "text": "Great and easy to use"
+  },
+  {
+   "id": "r420",
+   "stars": 5,
+   "text": "great work, really love it!"
+  },
+  {
+   "id": "r421",
+   "stars": 5,
+   "text": "amazing planner, and very cute!"
+  },
+  {
+   "id": "r422",
+   "stars": 5,
+   "text": "Love this planner, just the pages I’m looking for , simple and easy to decorate, thank you."
+  },
+  {
+   "id": "r423",
+   "stars": 5,
+   "text": "Makkelijk in gebruik en zeker de moeite"
+  },
+  {
+   "id": "r424",
+   "stars": 5,
+   "text": "Looks amazing and works perfectly fine. I love the variety of colour options :)"
+  },
+  {
+   "id": "r425",
+   "stars": 5,
+   "text": "Overall the app can be difficult to use but this template made things so easy"
+  },
+  {
+   "id": "r426",
+   "stars": 5,
+   "text": "Very simple but at the same time very useful daily planner 👍🏻"
+  },
+  {
+   "id": "r427",
+   "stars": 5,
+   "text": "Very pretty templates that look great"
+  },
+  {
+   "id": "r428",
+   "stars": 5,
+   "text": "Lo recomiendo es un gran reading journal"
+  },
+  {
+   "id": "r429",
+   "stars": 5,
+   "text": "Very cute and easy to use"
+  },
+  {
+   "id": "r430",
+   "stars": 5,
+   "text": "Perfect, just what I needed."
+  },
+  {
+   "id": "r431",
+   "stars": 1,
+   "text": "the quality of the item"
+  },
+  {
+   "id": "r432",
+   "stars": 1,
+   "text": "This spreadsheet comes pre-populated with numbers and anytime you try to edit with your own numbers it won't let you bc it says you can't edit. Pretty disappointed"
+  },
+  {
+   "id": "r433",
+   "stars": 1,
+   "text": "Very disappointed with this spreadsheet."
+  },
+  {
+   "id": "r436",
+   "stars": 1,
+   "text": "I cannot recommend for Excel users. The Excel spreadsheet is clunky, numbers overlap, $ values do not fit in the calendar cells #### and cannot be corrected despite unprotecting the sheet as instructed.  The calendar visual does not display as shown in the listing. Can only assume this was created in Google Sheets then converted to an Excel file and the formatting did not fully translate. I am using Office 365 on a MacBook Air. Not working for me."
+  },
+  {
+   "id": "r439",
+   "stars": 1,
+   "text": "The product doesn't work with Excel 2016. It doesn't say that in the description so buyer beware. I found the seller to be quick to respond but was rude in how she responded to me....very curt, no apology for the issue etc."
+  },
+  {
+   "id": "r442",
+   "stars": 1,
+   "text": "I can see why this is on sale 50%.  I have Office 21.  It doesn't look as nice as I expected. Not easy to use."
+  },
+  {
+   "id": "r443",
+   "stars": 1,
+   "text": "Too confusing to put on and reas thru."
+  },
+  {
+   "id": "r444",
+   "stars": 1,
+   "text": "There is an error populating, not sure why - I think it might be due to the number of entries on one day?"
+  },
+  {
+   "id": "r445",
+   "stars": 1,
+   "text": "Certain fields if you’d put numbers in doesn’t work properly, I wouldn’t purchase this again because you can’t go back and change it. I wish they could be fixed. I just can’t get it to work when I download it there’s no safety protection. You can override it now you can’t go back and fix it."
+  },
+  {
+   "id": "r446",
+   "stars": 1,
+   "text": "Easy to use! Your sale was perfect timing, my small business has a very very small budget and this is just what I needed. Thank you SO much you made my day!"
+  },
+  {
+   "id": "r447",
+   "stars": 1,
+   "text": "Plik mimo, że otwarty w najnowszej wersji MS Office nie wyświetla wszystkiego prawidłowo."
+  },
+  {
+   "id": "r448",
+   "stars": 1,
+   "text": "It was going great but then it just stopped working won’t do any calculations on the snowball spreadsheet which is the main reason I got this. Also the calendar keeps giving errors. Frustrated"
+  },
+  {
+   "id": "r449",
+   "stars": 1,
+   "text": "Item does not calculate properly,  way off. Be great if it calculated right.  Extremely disappointed."
+  },
+  {
+   "id": "r450",
+   "stars": 1,
+   "text": "The file does actually work properly as advertised and its super frustrating to pay for something that does not work. I have downloaded all the different in hopes that it may work how its designed but its not."
+  },
+  {
+   "id": "r452",
+   "stars": 1,
+   "text": "Hate it. Why can I not hide the columns I do not want. I do not have 6 fridges!!"
+  },
+  {
+   "id": "r453",
+   "stars": 1,
+   "text": "Maybe I just need to get use to it but I don’t find myself editing on it very well."
+  },
+  {
+   "id": "r454",
+   "stars": 1,
+   "text": "I have office home and student 2021 and when I go to make edits, it messes up the functions on the expense breakdown table and transaction tracker. For example, I add (or change the name of a preexisting category) to something like TV subscriptions, and the category drop down in the transaction tracker table doesn’t list any categories and the expense breakdown table has the #NAME error. The other features of this budget is nice, but because I can’t change any category names, it’s become uncustomizable to my needs."
+  },
+  {
+   "id": "r455",
+   "stars": 5,
+   "text": "Great design and really useful!"
+  },
+  {
+   "id": "r456",
+   "stars": 5,
+   "text": "This is the spreadsheet I've been trying to create, but you did a great job making my creation easier."
+  },
+  {
+   "id": "r457",
+   "stars": 5,
+   "text": "Recommending to my team for purchase! Management loves it!"
+  },
+  {
+   "id": "r458",
+   "stars": 5,
+   "text": "Good product and fast delivery"
+  },
+  {
+   "id": "r459",
+   "stars": 5,
+   "text": "This Google Sheet is single handedly helping me get out of debt!"
+  },
+  {
+   "id": "r460",
+   "stars": 5,
+   "text": "This is helping my weekly budget so much!"
+  },
+  {
+   "id": "r461",
+   "stars": 5,
+   "text": "Love this storefront and all the trackers!"
+  },
+  {
+   "id": "r462",
+   "stars": 5,
+   "text": "Easy to use very helpful"
+  },
+  {
+   "id": "r463",
+   "stars": 5,
+   "text": "Exactly what I was looking for to get back on track."
+  },
+  {
+   "id": "r464",
+   "stars": 5,
+   "text": "Lots of help organizing debt"
+  },
+  {
+   "id": "r465",
+   "stars": 5,
+   "text": "Great product and exactly what I needed!"
+  },
+  {
+   "id": "r466",
+   "stars": 1,
+   "text": "NOT LIKE IT AND MASSY"
+  },
+  {
+   "id": "r467",
+   "stars": 4,
+   "text": "I'm not very good at spreadsheets so this is very helpful!"
+  },
+  {
+   "id": "r468",
+   "stars": 4,
+   "text": "Excellent spreadsheet and well worth it. However, I would a way to change the payment amounts monthly without changing the initial debt information."
+  },
+  {
+   "id": "r469",
+   "stars": 5,
+   "text": "This spreadsheet was very helpful"
+  },
+  {
+   "id": "r470",
+   "stars": 5,
+   "text": "Great spreadsheet! Wish you could check off when you pay per month but otherwise its overall great value!"
+  },
+  {
+   "id": "r471",
+   "stars": 5,
+   "text": "Honestly, this has been helping me so much as I am slowly planning my wedding!"
+  },
+  {
+   "id": "r472",
+   "stars": 5,
+   "text": "so easy  and cute"
+  },
+  {
+   "id": "r473",
+   "stars": 5,
+   "text": "works as stated. easy to use"
+  },
+  {
+   "id": "r474",
+   "stars": 2,
+   "text": "Not an easy program to use."
+  },
+  {
+   "id": "r475",
+   "stars": 1,
+   "text": "I wasted my money on this item"
+  },
+  {
+   "id": "r476",
+   "stars": 1,
+   "text": "Do Not Purchase!! \nVery confusing, way too many pages and just disorganized. She doesn’t offer refunds either!"
+  },
+  {
+   "id": "r477",
+   "stars": 1,
+   "text": "It doesn't work on Android 😞"
+  },
+  {
+   "id": "r478",
+   "stars": 1,
+   "text": "Hola solo me descarga un pdf, lo abrí con Goodnotes y es cómo importar una foto"
+  },
+  {
+   "id": "r480",
+   "stars": 1,
+   "text": "The layout and information given is good, but it doesn't work. The hyperlinks won't work, it's all over the shop."
+  },
+  {
+   "id": "r481",
+   "stars": 1,
+   "text": "No me gustó, pero no pasa nada"
+  },
+  {
+   "id": "r482",
+   "stars": 1,
+   "text": "This template doesn't work with my notes app. I was under the impression that it did. Not a fan at all"
+  },
+  {
+   "id": "r483",
+   "stars": 1,
+   "text": "Not what I was looking for"
+  },
+  {
+   "id": "r484",
+   "stars": 1,
+   "text": "Could not open up the link advised the seller and she stated she would send the link never did. Did not help.  Terrible customer service."
+  },
+  {
+   "id": "r485",
+   "stars": 1,
+   "text": "You are purchasing a book to review this with good notes. This journal is not digitized for Good Notes and very much misrepresent the option you have with using the file. You get the same thing whether  you open in Goodnotes or just view as a PDF\n\nThis product is not worth the hassle and i can understand why it was on sale of the price i paid for it.\n\nYou get what you pay for and it was not quality or customer service"
+  },
+  {
+   "id": "r486",
+   "stars": 1,
+   "text": "I never got access to it and didn't get a response back from the seller."
+  },
+  {
+   "id": "r488",
+   "stars": 1,
+   "text": "This planner is awesome! I am looking forward to getting organized"
+  },
+  {
+   "id": "r489",
+   "stars": 2,
+   "text": "I just couldn’t really get into it. But I’m sure it works for someone else!"
+  },
+  {
+   "id": "r492",
+   "stars": 2,
+   "text": "Très mauvais pour Android , peu importe le programme qu'on a pour annoté sa ne fonctionne pas super bien . C'est dommage parce que les pages sont belles et ont l'air très intéressant"
+  },
+  {
+   "id": "r493",
+   "stars": 2,
+   "text": "There are no stickers or much with this.. in comparison to other e-journal packages available."
+  },
+  {
+   "id": "r494",
+   "stars": 3,
+   "text": "Carit figure out how to download"
+  },
+  {
+   "id": "r495",
+   "stars": 3,
+   "text": "Not the year I thought"
+  },
+  {
+   "id": "r496",
+   "stars": 3,
+   "text": "I like this item, it has definitely met my expectations. Good product"
+  },
+  {
+   "id": "r497",
+   "stars": 3,
+   "text": "It's a great product! Love it!!"
+  },
+  {
+   "id": "r498",
+   "stars": 3,
+   "text": "Está bonito,gracias le estoy sacando provecho"
+  },
+  {
+   "id": "r499",
+   "stars": 3,
+   "text": "Good item I like it"
+  },
+  {
+   "id": "r500",
+   "stars": 3,
+   "text": "Can’t seem to figure out the best way to use it, but that’s a user problem. Nothing wrong with the product itself."
+  },
+  {
+   "id": "r501",
+   "stars": 3,
+   "text": "Good, easy to understand, love it"
+  },
+  {
+   "id": "r502",
+   "stars": 3,
+   "text": "Prompts are great and the design is perfect for what I want and need."
+  },
+  {
+   "id": "r504",
+   "stars": 3,
+   "text": "planner est correct mais on s'y perd vite."
+  },
+  {
+   "id": "r505",
+   "stars": 3,
+   "text": "Struggling with getting pictures added"
+  },
+  {
+   "id": "r506",
+   "stars": 3,
+   "text": "Hard to navigate and can’t change the font it’s alright but could be better"
+  },
+  {
+   "id": "r509",
+   "stars": 3,
+   "text": "Hard to use if you have a small iPad and no pen"
+  },
+  {
+   "id": "r510",
+   "stars": 3,
+   "text": "The stickers did not import for me but the rest of the template is great."
+  },
+  {
+   "id": "r511",
+   "stars": 3,
+   "text": "A lot of sheets to use and play with."
+  },
+  {
+   "id": "r512",
+   "stars": 3,
+   "text": "I won’t use this product I didn’t realize you have to pay to have another app to use this product."
+  },
+  {
+   "id": "r513",
+   "stars": 5,
+   "text": "Great item, quick download and easy to use"
+  },
+  {
+   "id": "r514",
+   "stars": 5,
+   "text": "Best purchase I have ever made."
+  },
+  {
+   "id": "r515",
+   "stars": 5,
+   "text": "ita exactly as advertised"
+  },
+  {
+   "id": "r516",
+   "stars": 5,
+   "text": "My new favorite book review journal :)"
+  },
+  {
+   "id": "r517",
+   "stars": 5,
+   "text": "A great journal that one can customise as one wishes."
+  },
+  {
+   "id": "r518",
+   "stars": 5,
+   "text": "Very lovely notebook design with an uncomplicated way of using it. Really happy with this purchase!"
+  },
+  {
+   "id": "r519",
+   "stars": 5,
+   "text": "Lovely gratitude journal for whole year.  Beautiful design, Thank you!"
+  },
+  {
+   "id": "r520",
+   "stars": 4,
+   "text": "I didn't have it shipped. It took me a while to download."
+  },
+  {
+   "id": "r521",
+   "stars": 5,
+   "text": "Soo prettyyy"
+  },
+  {
+   "id": "r522",
+   "stars": 5,
+   "text": "I use this every single day to help me stay organized at work- I’m a nurse and I have to make notes constantly! All my coworkers see me using it and think it’s so cool- and it is! Thank you so much!"
+  },
+  {
+   "id": "r523",
+   "stars": 5,
+   "text": "I love this download! I’m still trying to figure out how to use it, but I’m very happy with the purchase!"
+  },
+  {
+   "id": "r524",
+   "stars": 5,
+   "text": "it is an overall fantastic journal, has all the sections i could want and is easy to use with no errors from what I've seem"
+  },
+  {
+   "id": "r525",
+   "stars": 5,
+   "text": "Love all the detail, exactly what I was looking for."
+  },
+  {
+   "id": "r526",
+   "stars": 5,
+   "text": "Paper texture journal and inspiring prompts"
+  },
+  {
+   "id": "r527",
+   "stars": 5,
+   "text": "Notebook is easy to use and I would recommend it."
+  },
+  {
+   "id": "r528",
+   "stars": 5,
+   "text": "Nice product. this is great"
+  },
+  {
+   "id": "r529",
+   "stars": 5,
+   "text": "Beautiful  journal, easy to use."
+  },
+  {
+   "id": "r530",
+   "stars": 5,
+   "text": "Loved this product works well!"
+  },
+  {
+   "id": "r531",
+   "stars": 5,
+   "text": "My favorite book tracker! Love the TBR section!"
+  },
+  {
+   "id": "r532",
+   "stars": 5,
+   "text": "Easy to use, and very well though out!"
+  },
+  {
+   "id": "r533",
+   "stars": 1,
+   "text": "They stole from me—the file is empty. I’m asking for the money back, but they aren’t doing anything. Be careful."
+  },
+  {
+   "id": "r535",
+   "stars": 1,
+   "text": "I didnt even use it because it doesn't work as instructed and I cannot firgure it out"
+  },
+  {
+   "id": "r536",
+   "stars": 1,
+   "text": "I did not like the product very much and I did not open it and did not return it."
+  },
+  {
+   "id": "r538",
+   "stars": 1,
+   "text": "It didn’t work on the app recommended and others"
+  }
+ ]
+}

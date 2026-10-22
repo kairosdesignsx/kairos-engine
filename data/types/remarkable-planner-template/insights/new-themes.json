@@ -1,0 +1,62 @@
+[
+ {
+  "id": "c_pdf_not_template",
+  "theme": "Just a PDF, not a native device template",
+  "use_for": "Loads as a plain PDF or document instead of a notebook template on the device; buyer expected native templates.",
+  "count": 6
+ },
+ {
+  "id": "p_space",
+  "theme": "Plenty of writing space",
+  "use_for": "Praise for roomy boxes, lines or note space.",
+  "count": 2
+ },
+ {
+  "id": "w_easy_stickers",
+  "theme": "Stickers ready to copy and paste",
+  "use_for": "Wants stickers or images that can be placed directly without tracing or extra steps.",
+  "count": 1
+ },
+ {
+  "id": "p_fast",
+  "theme": "Fast and responsive",
+  "use_for": "Praise that the file runs quickly with no lag on the device.",
+  "count": 1
+ },
+ {
+  "id": "w_time_range",
+  "theme": "Wider daily time range",
+  "use_for": "Wants the daily schedule to start earlier or end later.",
+  "count": 1
+ },
+ {
+  "id": "w_language",
+  "theme": "Other languages",
+  "use_for": "Wants the product in a language other than English, or without foreign-language text.",
+  "count": 1
+ },
+ {
+  "id": "c_time_format",
+  "theme": "Unwanted time format",
+  "use_for": "Time slots in 24-hour (military) or other format the buyer finds confusing.",
+  "count": 1
+ },
+ {
+  "id": "w_easy_delivery",
+  "theme": "Easier way to receive the files",
+  "use_for": "Wishes the files were simpler to receive or download after buying.",
+  "count": 1
+ },
+ {
+  "id": "w_tutorial",
+  "theme": "A video showing how it works",
+  "use_for": "Wants a demo or video tutorial showing how to use the product.",
+  "count": 1
+ },
+ {
+  "id": "w_prefilled",
+  "theme": "Times or details pre-filled on pages",
+  "use_for": "Wants hours, dates or other fixed details already printed on pages so they need not be written each time.",
+  "count": 1
+ }
+]

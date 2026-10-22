@@ -1,0 +1,74 @@
+[
+ {
+  "id": "c_plagiarism",
+  "theme": "Design copied from other creators",
+  "use_for": "Buyer says the product or shop uses stolen or plagiarized work.",
+  "count": 3
+ },
+ {
+  "id": "c_review_nag",
+  "theme": "Nagged for a review",
+  "use_for": "Annoyed by repeated review requests or notifications asking for a rating.",
+  "count": 2
+ },
+ {
+  "id": "c_flat",
+  "theme": "Just a flat PDF, not interactive",
+  "use_for": "File acts like a plain image or PDF with no working digital features (no links, not set up for the note app).",
+  "count": 2
+ },
+ {
+  "id": "w_next_year",
+  "theme": "New edition for upcoming years",
+  "use_for": "Wants the product released again for next year or every year.",
+  "count": 1
+ },
+ {
+  "id": "w_autofill",
+  "theme": "Auto-fill book details",
+  "use_for": "Wants book info and cover filled in automatically, e.g. from the ISBN.",
+  "count": 1
+ },
+ {
+  "id": "w_migrate",
+  "theme": "Easy move to a newer version",
+  "use_for": "Wants to carry existing entries over when upgrading to a new edition.",
+  "count": 1
+ },
+ {
+  "id": "w_cheaper",
+  "theme": "Cheaper or smaller option",
+  "use_for": "Wants a lower price or to buy only the pages they need.",
+  "count": 1
+ },
+ {
+  "id": "c_stolen",
+  "theme": "Copied or stolen design",
+  "use_for": "Buyer says the product is plagiarized or stolen from another creator.",
+  "count": 1
+ },
+ {
+  "id": "c_offensive",
+  "theme": "Offensive or biased content",
+  "use_for": "Images or text the buyer finds sexist, racist or otherwise offensive.",
+  "count": 1
+ },
+ {
+  "id": "w_checkoff",
+  "theme": "A way to check items off",
+  "use_for": "Wants checkboxes or a way to mark items done or paid each period.",
+  "count": 1
+ },
+ {
+  "id": "w_capacity",
+  "theme": "Room for more books",
+  "use_for": "Wants the journal to hold more book entries or review pages.",
+  "count": 1
+ },
+ {
+  "id": "w_ready_elements",
+  "theme": "Ready-made fill-in elements",
+  "use_for": "Wants pre-made stickers or elements (such as filled-in star ratings) to drop in instead of drawing them.",
+  "count": 1
+ }
+]

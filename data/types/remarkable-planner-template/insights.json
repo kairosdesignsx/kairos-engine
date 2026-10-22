@@ -1,0 +1,3305 @@
+{
+ "type_id": "remarkable-planner-template",
+ "built_at": "2026-10-22T14:37:27Z",
+ "basis": {
+  "listings": 30,
+  "reviews": 610,
+  "reviews_coded": 564,
+  "off_type_dropped": 29,
+  "negative_reviews": 230,
+  "feature_sources": [
+   "titles"
+  ],
+  "photos": "pending"
+ },
+ "features": [
+  {
+   "id": "eink",
+   "name": "E-ink tablets (reMarkable, Boox, Kindle Scribe)",
+   "have": [
+    "4372441364",
+    "917935842",
+    "1054473758",
+    "4458010957",
+    "1462960790",
+    "4500560977",
+    "954561803",
+    "4432249026",
+    "888014056",
+    "4520841266",
+    "865642017",
+    "4520897436",
+    "1436271295",
+    "4564461389",
+    "790153633",
+    "4561036692",
+    "4310825773",
+    "1804744629",
+    "4404138923",
+    "1873095379",
+    "1874121854",
+    "1109169852",
+    "4561970094",
+    "4400522706",
+    "1791093957",
+    "1890506507",
+    "1882174270",
+    "4328612879",
+    "1506292241"
+   ],
+   "share": 0.967,
+   "revenue_share": 1.0,
+   "sales_share": 0.966,
+   "tier": "standard"
+  },
+  {
+   "id": "dated",
+   "name": "Dated for the year",
+   "have": [
+    "1462960790",
+    "954561803",
+    "4432249026",
+    "4520841266",
+    "4520897436",
+    "1436271295",
+    "4310825773",
+    "1804744629",
+    "1873095379",
+    "4561970094",
+    "4400522706",
+    "1791093957",
+    "1890506507",
+    "1882174270",
+    "4328612879",
+    "1506292241"
+   ],
+   "share": 0.533,
+   "revenue_share": 0.408,
+   "sales_share": 0.344,
+   "tier": "common"
+  },
+  {
+   "id": "journal",
+   "name": "Journal or notebook pages",
+   "have": [
+    "4372441364",
+    "917935842",
+    "1054473758",
+    "4458010957",
+    "1462960790",
+    "4500560977",
+    "865642017",
+    "4564461389",
+    "4561036692",
+    "1804744629",
+    "4404138923",
+    "1873095379",
+    "1874121854",
+    "1791093957",
+    "1890506507",
+    "1506292241"
+   ],
+   "share": 0.533,
+   "revenue_share": 0.661,
+   "sales_share": 0.678,
+   "tier": "common"
+  },
+  {
+   "id": "bundle",
+   "name": "Bundle of several products",
+   "have": [
+    "4372441364",
+    "4458010957",
+    "1462960790",
+    "4500560977",
+    "4564461389",
+    "4561036692",
+    "4310825773",
+    "1804744629",
+    "4404138923",
+    "1874121854",
+    "4400522706",
+    "1890506507",
+    "4328612879",
+    "1506292241"
+   ],
+   "share": 0.467,
+   "revenue_share": 0.623,
+   "sales_share": 0.182,
+   "tier": "common"
+  },
+  {
+   "id": "multi_year",
+   "name": "Covers more than one year",
+   "have": [
+    "1462960790",
+    "954561803",
+    "4520841266",
+    "4520897436",
+    "1436271295",
+    "1804744629",
+    "1873095379",
+    "1882174270",
+    "4328612879",
+    "1506292241"
+   ],
+   "share": 0.333,
+   "revenue_share": 0.19,
+   "sales_share": 0.294,
+   "tier": "common"
+  },
+  {
+   "id": "work",
+   "name": "Work or productivity focus",
+   "have": [
+    "1462960790",
+    "4500560977",
+    "4564461389",
+    "4561036692",
+    "4310825773",
+    "1804744629",
+    "4404138923",
+    "1874121854",
+    "4400522706",
+    "1890506507"
+   ],
+   "share": 0.333,
+   "revenue_share": 0.371,
+   "sales_share": 0.153,
+   "tier": "common"
+  },
+  {
+   "id": "hyperlinked",
+   "name": "Hyperlinked tabs and dates",
+   "have": [
+    "4432249026",
+    "888014056",
+    "865642017",
+    "1436271295",
+    "790153633",
+    "1804744629",
+    "4561970094"
+   ],
+   "share": 0.233,
+   "revenue_share": 0.121,
+   "sales_share": 0.243,
+   "tier": "rare"
+  },
+  {
+   "id": "all_in_one",
+   "name": "All-in-one life planner",
+   "have": [
+    "4372441364",
+    "1873095379",
+    "1890506507",
+    "4328612879"
+   ],
+   "share": 0.133,
+   "revenue_share": 0.23,
+   "sales_share": 0.055,
+   "tier": "rare"
+  },
+  {
+   "id": "minimalist",
+   "name": "Minimalist look",
+   "have": [
+    "4432249026",
+    "4561970094",
+    "1506292241"
+   ],
+   "share": 0.1,
+   "revenue_share": 0.11,
+   "sales_share": 0.023,
+   "tier": "rare"
+  },
+  {
+   "id": "custom",
+   "name": "Customizable or personalized",
+   "have": [
+    "4520841266",
+    "4520897436"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.12,
+   "sales_share": 0.002,
+   "tier": "rare"
+  },
+  {
+   "id": "goals",
+   "name": "Goal setting",
+   "have": [
+    "4310825773"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.041,
+   "sales_share": 0.004,
+   "tier": "rare"
+  },
+  {
+   "id": "stickers",
+   "name": "Digital stickers included",
+   "have": [
+    "4400522706"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.034,
+   "sales_share": 0.005,
+   "tier": "rare"
+  },
+  {
+   "id": "undated",
+   "name": "Undated version",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "adhd_specific",
+   "name": "Built for ADHD",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "habit_tracker",
+   "name": "Habit tracker",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "self_care",
+   "name": "Self-care, mood or wellness pages",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "budget",
+   "name": "Budget or finance pages",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "meal",
+   "name": "Meal planning",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "time_blocking",
+   "name": "Time blocking or hourly schedule",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "dark_mode",
+   "name": "Dark mode",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "goodnotes",
+   "name": "Says Goodnotes",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "notability",
+   "name": "Says Notability",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "android",
+   "name": "Android or Samsung support",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "landscape",
+   "name": "Landscape layout",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "portrait",
+   "name": "Portrait layout",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "colorful",
+   "name": "Colorful or aesthetic look",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "student",
+   "name": "Student or academic",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "brain_dump",
+   "name": "Brain dump pages",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "routines",
+   "name": "Routine builder",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "dopamine_menu",
+   "name": "Dopamine menu",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "priority_matrix",
+   "name": "Priority matrix or top 3",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "quick_start",
+   "name": "Quick start or setup guide",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "test_page",
+   "name": "Link test or setup check page",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  }
+ ],
+ "complaints": [
+  {
+   "id": "c_not_useful",
+   "theme": "Not useful for my needs",
+   "count": 40,
+   "on_top_listings": 9,
+   "quotes": [
+    {
+     "text": "Alles wie beschrieben, einfacher Download. Im Ende benutze ich nichtviel davon. Doch nicht so hilfreich, wie ich dachte.",
+     "shop": "eNotebook",
+     "stars": 3,
+     "review_id": "r598"
+    },
+    {
+     "text": "Doesn't actually help very much. At best a minor tweak.",
+     "shop": "ePaperTemplates",
+     "stars": 2,
+     "review_id": "r80"
+    },
+    {
+     "text": "This is not for me.  I need a weekly planner.",
+     "shop": "TabletTemplates",
+     "stars": 3,
+     "review_id": "r184"
+    }
+   ],
+   "review_ids": [
+    "r8",
+    "r10",
+    "r16",
+    "r17",
+    "r24",
+    "r56",
+    "r80",
+    "r96",
+    "r97",
+    "r98",
+    "r100",
+    "r161",
+    "r164",
+    "r172",
+    "r174",
+    "r184",
+    "r224",
+    "r326",
+    "r327",
+    "r390",
+    "r436",
+    "r439",
+    "r441",
+    "r443",
+    "r449",
+    "r451",
+    "r459",
+    "r462",
+    "r490",
+    "r494",
+    "r496",
+    "r504",
+    "r507",
+    "r561",
+    "r564",
+    "r590",
+    "r594",
+    "r598",
+    "r603",
+    "r604"
+   ]
+  },
+  {
+   "id": "c_device",
+   "theme": "Doesn't work on my app or device",
+   "count": 36,
+   "on_top_listings": 12,
+   "quotes": [
+    {
+     "text": "This planner is not usable.  It has no links and the scale of the day planner is off and only fills 2/3 of my screen.",
+     "shop": "ePaperTemplates",
+     "stars": 1,
+     "review_id": "r63"
+    },
+    {
+     "text": "Not fully compatible with Remarkable 2.  Pen does not work well with template.",
+     "shop": "SmartTemplatesStudio",
+     "stars": 1,
+     "review_id": "r209"
+    },
+    {
+     "text": "Can’t download in Etsy app. Link just takes you back through app. Ridiculous.",
+     "shop": "TabletTemplates",
+     "stars": 1,
+     "review_id": "r151"
+    }
+   ],
+   "review_ids": [
+    "r4",
+    "r5",
+    "r6",
+    "r10",
+    "r21",
+    "r47",
+    "r49",
+    "r52",
+    "r63",
+    "r65",
+    "r95",
+    "r151",
+    "r152",
+    "r153",
+    "r154",
+    "r157",
+    "r165",
+    "r168",
+    "r170",
+    "r171",
+    "r175",
+    "r209",
+    "r232",
+    "r240",
+    "r264",
+    "r318",
+    "r378",
+    "r380",
+    "r381",
+    "r387",
+    "r414",
+    "r467",
+    "r487",
+    "r564",
+    "r588",
+    "r605"
+   ]
+  },
+  {
+   "id": "c_download",
+   "theme": "Couldn't download or open the file",
+   "count": 34,
+   "on_top_listings": 10,
+   "quotes": [
+    {
+     "text": "the program is worthless as I cannot get it downloaded to the remarkable tablet",
+     "shop": "ePaperTemplates",
+     "stars": 1,
+     "review_id": "r52"
+    },
+    {
+     "text": "Can’t download in Etsy app. Link just takes you back through app. Ridiculous.",
+     "shop": "TabletTemplates",
+     "stars": 1,
+     "review_id": "r151"
+    },
+    {
+     "text": "Had a problem downloading the journals, reached out to the seller and they replied promptly with full instructions. Nice journals and great customer service.",
+     "shop": "Pathfounder",
+     "stars": 5,
+     "review_id": "r525"
+    }
+   ],
+   "review_ids": [
+    "r20",
+    "r51",
+    "r52",
+    "r54",
+    "r57",
+    "r62",
+    "r67",
+    "r69",
+    "r70",
+    "r71",
+    "r94",
+    "r103",
+    "r151",
+    "r157",
+    "r161",
+    "r165",
+    "r169",
+    "r218",
+    "r376",
+    "r377",
+    "r381",
+    "r414",
+    "r437",
+    "r450",
+    "r488",
+    "r499",
+    "r525",
+    "r543",
+    "r544",
+    "r546",
+    "r547",
+    "r551",
+    "r553",
+    "r608"
+   ]
+  },
+  {
+   "id": "c_misleading",
+   "theme": "Not as described or pictured",
+   "count": 26,
+   "on_top_listings": 12,
+   "quotes": [
+    {
+     "text": "The product works well but is not the all in one integrated product it appears to be.",
+     "shop": "TabletTemplates",
+     "stars": 3,
+     "review_id": "r178"
+    },
+    {
+     "text": "Didn't live up to description, can't convert to text",
+     "shop": "SmartTemplatesStudio",
+     "stars": 3,
+     "review_id": "r232"
+    },
+    {
+     "text": "Does not work DO NOT BUY - this is a SCAM",
+     "shop": "ePaperTemplates",
+     "stars": 1,
+     "review_id": "r48"
+    }
+   ],
+   "review_ids": [
+    "r3",
+    "r16",
+    "r19",
+    "r48",
+    "r53",
+    "r59",
+    "r68",
+    "r71",
+    "r96",
+    "r162",
+    "r164",
+    "r170",
+    "r174",
+    "r178",
+    "r205",
+    "r212",
+    "r216",
+    "r232",
+    "r453",
+    "r460",
+    "r488",
+    "r489",
+    "r541",
+    "r550",
+    "r585",
+    "r595"
+   ]
+  },
+  {
+   "id": "c_links",
+   "theme": "Links broken or go to the wrong page",
+   "count": 24,
+   "on_top_listings": 6,
+   "quotes": [
+    {
+     "text": "This planner is not usable.  It has no links and the scale of the day planner is off and only fills 2/3 of my screen.",
+     "shop": "ePaperTemplates",
+     "stars": 1,
+     "review_id": "r63"
+    },
+    {
+     "text": "Links didn’t work properly, so unable to skip through weekly or monthly tabs.",
+     "shop": "TabletTemplates",
+     "stars": 1,
+     "review_id": "r163"
+    },
+    {
+     "text": "The hyperlinks for the Icons do not work.I thought I was getting a separate section for notes and meetings but it is just for the day. It is not intuitive that you have to select the number of day in main calendar to go to that day.",
+     "shop": "SmartTemplatesStudio",
+     "stars": 1,
+     "review_id": "r205"
+    }
+   ],
+   "review_ids": [
+    "r4",
+    "r5",
+    "r9",
+    "r18",
+    "r47",
+    "r49",
+    "r51",
+    "r57",
+    "r63",
+    "r64",
+    "r154",
+    "r163",
+    "r171",
+    "r205",
+    "r207",
+    "r213",
+    "r215",
+    "r216",
+    "r241",
+    "r242",
+    "r243",
+    "r385",
+    "r458",
+    "r495"
+   ]
+  },
+  {
+   "id": "c_setup",
+   "theme": "Confusing setup or unclear instructions",
+   "count": 23,
+   "on_top_listings": 4,
+   "quotes": [
+    {
+     "text": "not easy to integrate on my device.",
+     "shop": "eNotebook",
+     "stars": 3,
+     "review_id": "r605"
+    },
+    {
+     "text": "It is very difficult to apply to your Remarkable. The customer service response was very quick, but I took a loss.",
+     "shop": "SmartTemplatesStudio",
+     "stars": 1,
+     "review_id": "r208"
+    },
+    {
+     "text": "I would like help setting this product up. I purchase an apple tablet to get the most out of this product.",
+     "shop": "PrintMagicStudioX",
+     "stars": 1,
+     "review_id": "r563"
+    }
+   ],
+   "review_ids": [
+    "r12",
+    "r20",
+    "r39",
+    "r45",
+    "r208",
+    "r211",
+    "r214",
+    "r216",
+    "r221",
+    "r222",
+    "r227",
+    "r233",
+    "r237",
+    "r342",
+    "r380",
+    "r432",
+    "r447",
+    "r488",
+    "r552",
+    "r560",
+    "r563",
+    "r570",
+    "r605"
+   ]
+  },
+  {
+   "id": "c_missing",
+   "theme": "Missing pages or less than expected",
+   "count": 17,
+   "on_top_listings": 3,
+   "quotes": [
+    {
+     "text": "doesn't hyperlink well\ntoo complex for what I need\nonly one page for daily notes",
+     "shop": "ePaperTemplates",
+     "stars": 1,
+     "review_id": "r64"
+    },
+    {
+     "text": "Not 1000 templates, a lot more covers or unnecessary things than actual templates. Also has a lot of duplicate templates. I reached out and pretty much kept getting the same response and they wouldn't refund.",
+     "shop": "StudioPiksels",
+     "stars": 1,
+     "review_id": "r19"
+    },
+    {
+     "text": "This is NOT A TEMPLATE.  The download is a PDF file that literally gives you hundreds of pages for a calendar as if you're reading a book.  There are no hyperlinks or shortcuts—just a whole lot of crappy images. \n\nSave your money.",
+     "shop": "TabletTemplates",
+     "stars": 1,
+     "review_id": "r167"
+    }
+   ],
+   "review_ids": [
+    "r13",
+    "r17",
+    "r19",
+    "r26",
+    "r64",
+    "r68",
+    "r99",
+    "r167",
+    "r212",
+    "r238",
+    "r241",
+    "r243",
+    "r384",
+    "r388",
+    "r453",
+    "r500",
+    "r547"
+   ]
+  },
+  {
+   "id": "c_value",
+   "theme": "Not worth the price",
+   "count": 15,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "Article sans grand intérêt finalement et fort cher, malgré la promo, car ce sont pas des notebooks mais des pdf. En plus, ils ne sont pas aussi rapide et « responsive » que les notebook de base. Je ne recommande donc pas",
+     "shop": "TabletTemplates",
+     "stars": 2,
+     "review_id": "r172"
+    },
+    {
+     "text": "It is very difficult to apply to your Remarkable. The customer service response was very quick, but I took a loss.",
+     "shop": "SmartTemplatesStudio",
+     "stars": 1,
+     "review_id": "r208"
+    },
+    {
+     "text": "Didn't download instantly.\nFlow was lacking \nquick links missing\npurchase another for under four dollars..flow much better",
+     "shop": "ePaperTemplates",
+     "stars": 1,
+     "review_id": "r51"
+    }
+   ],
+   "review_ids": [
+    "r3",
+    "r10",
+    "r51",
+    "r59",
+    "r93",
+    "r167",
+    "r172",
+    "r174",
+    "r208",
+    "r215",
+    "r238",
+    "r269",
+    "r444",
+    "r594",
+    "r596"
+   ]
+  },
+  {
+   "id": "c_nav",
+   "theme": "Hard to navigate or find pages",
+   "count": 15,
+   "on_top_listings": 4,
+   "quotes": [
+    {
+     "text": "Links didn’t work properly, so unable to skip through weekly or monthly tabs.",
+     "shop": "TabletTemplates",
+     "stars": 1,
+     "review_id": "r163"
+    },
+    {
+     "text": "Poor design no back to index",
+     "shop": "SmartTemplatesStudio",
+     "stars": 2,
+     "review_id": "r223"
+    },
+    {
+     "text": "The file was easy to download and get onto my ReMarkable, I didn't like that it won't navigate from the monthly calendar view, to a specific day, by touching that day.  Otherwise, it was a good package",
+     "shop": "InkyDeal",
+     "stars": 3,
+     "review_id": "r396"
+    }
+   ],
+   "review_ids": [
+    "r51",
+    "r163",
+    "r170",
+    "r205",
+    "r220",
+    "r223",
+    "r235",
+    "r238",
+    "r242",
+    "r342",
+    "r396",
+    "r449",
+    "r497",
+    "r533",
+    "r557"
+   ]
+  },
+  {
+   "id": "c_quality",
+   "theme": "Errors, typos or low quality",
+   "count": 13,
+   "on_top_listings": 6,
+   "quotes": [
+    {
+     "text": "Tags dos not work on the individual page. a tag just finds the dokument",
+     "shop": "InkyDeal",
+     "stars": 3,
+     "review_id": "r399"
+    },
+    {
+     "text": "No good, bad focus, no recommended",
+     "shop": "TabletTemplates",
+     "stars": 1,
+     "review_id": "r156"
+    },
+    {
+     "text": "Fraud! The pictures are stolen from another seller (called \"fashion templates\"). You will NOT get, what you see here, but a cheap childish version of a daily planer. And it's not customizable.",
+     "shop": "ePaperTemplates",
+     "stars": 1,
+     "review_id": "r53"
+    }
+   ],
+   "review_ids": [
+    "r17",
+    "r18",
+    "r19",
+    "r53",
+    "r61",
+    "r66",
+    "r156",
+    "r167",
+    "r212",
+    "r382",
+    "r399",
+    "r551",
+    "r586"
+   ]
+  },
+  {
+   "id": "c_support",
+   "theme": "Seller didn't help or reply",
+   "count": 12,
+   "on_top_listings": 6,
+   "quotes": [
+    {
+     "text": "It is not working on my RM2. There is no support",
+     "shop": "ePaperTemplates",
+     "stars": 1,
+     "review_id": "r65"
+    },
+    {
+     "text": "Not 1000 templates, a lot more covers or unnecessary things than actual templates. Also has a lot of duplicate templates. I reached out and pretty much kept getting the same response and they wouldn't refund.",
+     "shop": "StudioPiksels",
+     "stars": 1,
+     "review_id": "r19"
+    },
+    {
+     "text": "Non mi fornite assistenza per SCARICARE il Daily Planner 2925 - 2026 sul mio Kindle scribe!",
+     "shop": "TabletTemplates",
+     "stars": 1,
+     "review_id": "r157"
+    }
+   ],
+   "review_ids": [
+    "r19",
+    "r65",
+    "r71",
+    "r78",
+    "r157",
+    "r170",
+    "r214",
+    "r380",
+    "r414",
+    "r495",
+    "r550",
+    "r573"
+   ]
+  },
+  {
+   "id": "c_edit",
+   "theme": "Can't edit, type or customize",
+   "count": 11,
+   "on_top_listings": 3,
+   "quotes": [
+    {
+     "text": "Toolkit is only available in the Remarkable as a single file, you cannot save individual pages as a separate file. Brendon explained this and is helpful in the correspondence.",
+     "shop": "eNotebook",
+     "stars": 4,
+     "review_id": "r615"
+    },
+    {
+     "text": "Fraud! The pictures are stolen from another seller (called \"fashion templates\"). You will NOT get, what you see here, but a cheap childish version of a daily planer. And it's not customizable.",
+     "shop": "ePaperTemplates",
+     "stars": 1,
+     "review_id": "r53"
+    },
+    {
+     "text": "This seller is NUMBER 1!  I was disappointed that I couldn't edit the times on the template and just messaged her to let her know and she rectified this for me!  Wonderful customer service!!!!",
+     "shop": "ePlanneryStudio",
+     "stars": 5,
+     "review_id": "r148"
+    }
+   ],
+   "review_ids": [
+    "r1",
+    "r24",
+    "r53",
+    "r148",
+    "r231",
+    "r235",
+    "r383",
+    "r433",
+    "r440",
+    "r461",
+    "r615"
+   ]
+  },
+  {
+   "id": "c_broken",
+   "theme": "Doesn't work (no detail)",
+   "count": 11,
+   "on_top_listings": 5,
+   "quotes": [
+    {
+     "text": "None of the PDF templates work on my Remarkable 2. No links work. The PDF just works as an image with no functionality of the template.",
+     "shop": "ePaperTemplates",
+     "stars": 1,
+     "review_id": "r47"
+    },
+    {
+     "text": "Buy just what you need, not the whole package because half the package doesnt work.",
+     "shop": "DesignersKitCo",
+     "stars": 1,
+     "review_id": "r435"
+    },
+    {
+     "text": "Item doesn't work as stated",
+     "shop": "eNotebook",
+     "stars": 2,
+     "review_id": "r595"
+    }
+   ],
+   "review_ids": [
+    "r21",
+    "r47",
+    "r48",
+    "r58",
+    "r227",
+    "r393",
+    "r434",
+    "r435",
+    "r438",
+    "r562",
+    "r595"
+   ]
+  },
+  {
+   "id": "c_hard",
+   "theme": "Hard to use day to day",
+   "count": 11,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "very disappointed with planner. It is in military time so too confusing to use",
+     "shop": "InkyDeal",
+     "stars": 1,
+     "review_id": "r375"
+    },
+    {
+     "text": "Zeer onhandig in gebruik op de remarkable 2",
+     "shop": "eNotebook",
+     "stars": 1,
+     "review_id": "r589"
+    },
+    {
+     "text": "I found this clunky to work with and the links to lag (but this could be my impatience :-)",
+     "shop": "WrittenThinking",
+     "stars": 2,
+     "review_id": "r322"
+    }
+   ],
+   "review_ids": [
+    "r22",
+    "r100",
+    "r220",
+    "r322",
+    "r324",
+    "r375",
+    "r498",
+    "r570",
+    "r589",
+    "r596",
+    "r600"
+   ]
+  },
+  {
+   "id": "c_overwhelm",
+   "theme": "Too much, overwhelming",
+   "count": 7,
+   "on_top_listings": 3,
+   "quotes": [
+    {
+     "text": "doesn't hyperlink well\ntoo complex for what I need\nonly one page for daily notes",
+     "shop": "ePaperTemplates",
+     "stars": 1,
+     "review_id": "r64"
+    },
+    {
+     "text": "so unorganized too many useless stuff",
+     "shop": "StudioPiksels",
+     "stars": 1,
+     "review_id": "r8"
+    },
+    {
+     "text": "Too many documents and difficult to use Diary",
+     "shop": "WrittenThinking",
+     "stars": 3,
+     "review_id": "r324"
+    }
+   ],
+   "review_ids": [
+    "r8",
+    "r22",
+    "r56",
+    "r64",
+    "r229",
+    "r324",
+    "r379"
+   ]
+  },
+  {
+   "id": "c_basic",
+   "theme": "Too basic or boring",
+   "count": 7,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "it's a very basic version of a planner, you need to do a lot of duplicating in order to make this work. But the price does reflect this...",
+     "shop": "eNotebook",
+     "stars": 3,
+     "review_id": "r599"
+    },
+    {
+     "text": "only a one pager, can't add additional pages must keep deleting to use product.",
+     "shop": "DesignersKitCo",
+     "stars": 1,
+     "review_id": "r440"
+    },
+    {
+     "text": "zonde van je geld, dit is absoluut geen agenda \nmaar gwn een pdf sheet.",
+     "shop": "ePaperTemplates",
+     "stars": 1,
+     "review_id": "r59"
+    }
+   ],
+   "review_ids": [
+    "r59",
+    "r96",
+    "r440",
+    "r442",
+    "r594",
+    "r599",
+    "r617"
+   ]
+  },
+  {
+   "id": "c_space",
+   "theme": "Too little writing space",
+   "count": 7,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "zeer klein en ik dacht dat er bij iedere dag een pagina zou zitten voor extra notes maar dat is niet het geval.",
+     "shop": "ePlanneryStudio",
+     "stars": 2,
+     "review_id": "r99"
+    },
+    {
+     "text": "The meetings notes are small and they do not offer any way to add more pages.",
+     "shop": "DesignersKitCo",
+     "stars": 1,
+     "review_id": "r433"
+    },
+    {
+     "text": "line spaces were too small.  made it difficult to write.",
+     "shop": "InkyDeal",
+     "stars": 3,
+     "review_id": "r402"
+    }
+   ],
+   "review_ids": [
+    "r99",
+    "r228",
+    "r234",
+    "r402",
+    "r433",
+    "r462",
+    "r620"
+   ]
+  },
+  {
+   "id": "c_readability",
+   "theme": "Text too small or hard to read",
+   "count": 7,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "I purchased this item and the color of line and number were too clear (grey). Not easy and comfortable to use. The owner told me he will send a better version, received but I'm not using anymore since I purchased another one.",
+     "shop": "InkyDeal",
+     "stars": 3,
+     "review_id": "r395"
+    },
+    {
+     "text": "The calendar is great as far as all that it offers and the ease in using it. However the lettering and numbers are not nearly dark enough and it’s really hard to read.",
+     "shop": "PrintMagicStudioX",
+     "stars": 2,
+     "review_id": "r583"
+    },
+    {
+     "text": "Lijnen slecht te zien op ReMarkable paper pro.",
+     "shop": "Pathfounder",
+     "stars": 1,
+     "review_id": "r492"
+    }
+   ],
+   "review_ids": [
+    "r389",
+    "r395",
+    "r398",
+    "r400",
+    "r492",
+    "r583",
+    "r620"
+   ]
+  },
+  {
+   "id": "c_refund",
+   "theme": "Refund refused",
+   "count": 6,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "Not 1000 templates, a lot more covers or unnecessary things than actual templates. Also has a lot of duplicate templates. I reached out and pretty much kept getting the same response and they wouldn't refund.",
+     "shop": "StudioPiksels",
+     "stars": 1,
+     "review_id": "r19"
+    },
+    {
+     "text": "Couldn't use the product because I returned my Remarkable tablet. Even with offering to provide proof the seller refused to offer a refund.",
+     "shop": "Pathfounder",
+     "stars": 1,
+     "review_id": "r491"
+    },
+    {
+     "text": "I’ve been ripped off and I can’t get a refund. Avoid run takeoff be scared.",
+     "shop": "ePlanneryStudio",
+     "stars": 1,
+     "review_id": "r93"
+    }
+   ],
+   "review_ids": [
+    "r6",
+    "r19",
+    "r93",
+    "r434",
+    "r491",
+    "r493"
+   ]
+  },
+  {
+   "id": "c_extra_app",
+   "theme": "Needed an app or subscription that wasn't clear",
+   "count": 6,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "I would like help setting this product up. I purchase an apple tablet to get the most out of this product.",
+     "shop": "PrintMagicStudioX",
+     "stars": 1,
+     "review_id": "r563"
+    },
+    {
+     "text": "I wish it was clear that you need to download a third party app in order to use. The third party apps are not free. Will not be able to use.",
+     "shop": "StudioPiksels",
+     "stars": 1,
+     "review_id": "r15"
+    },
+    {
+     "text": "I can’t get the item to upload unless I go through a 3rd party. A little confused on how to go about doing that. I can’t really give a review until I can see it.",
+     "shop": "StudioPiksels",
+     "stars": 1,
+     "review_id": "r12"
+    }
+   ],
+   "review_ids": [
+    "r11",
+    "r12",
+    "r15",
+    "r432",
+    "r555",
+    "r563"
+   ]
+  },
+  {
+   "id": "c_look",
+   "theme": "Didn't like the look",
+   "count": 6,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "Fraud! The pictures are stolen from another seller (called \"fashion templates\"). You will NOT get, what you see here, but a cheap childish version of a daily planer. And it's not customizable.",
+     "shop": "ePaperTemplates",
+     "stars": 1,
+     "review_id": "r53"
+    },
+    {
+     "text": "Poor design no back to index",
+     "shop": "SmartTemplatesStudio",
+     "stars": 2,
+     "review_id": "r223"
+    },
+    {
+     "text": "Well-thought-out product. The dots could be smaller; otherwise, top quality.",
+     "shop": "eNotebook",
+     "stars": 4,
+     "review_id": "r627"
+    }
+   ],
+   "review_ids": [
+    "r53",
+    "r96",
+    "r223",
+    "r352",
+    "r490",
+    "r627"
+   ]
+  },
+  {
+   "id": "c_pdf_not_template",
+   "theme": "Just a PDF, not a native device template",
+   "count": 6,
+   "on_top_listings": 3,
+   "quotes": [
+    {
+     "text": "Article sans grand intérêt finalement et fort cher, malgré la promo, car ce sont pas des notebooks mais des pdf. En plus, ils ne sont pas aussi rapide et « responsive » que les notebook de base. Je ne recommande donc pas",
+     "shop": "TabletTemplates",
+     "stars": 2,
+     "review_id": "r172"
+    },
+    {
+     "text": "This is NOT A TEMPLATE.  The download is a PDF file that literally gives you hundreds of pages for a calendar as if you're reading a book.  There are no hyperlinks or shortcuts—just a whole lot of crappy images. \n\nSave your money.",
+     "shop": "TabletTemplates",
+     "stars": 1,
+     "review_id": "r167"
+    },
+    {
+     "text": "Implies it is a bundle of templates for Boox, it is not is is simply some pdfs and the productivity value is zero. Waste of money.",
+     "shop": "TabletTemplates",
+     "stars": 2,
+     "review_id": "r174"
+    }
+   ],
+   "review_ids": [
+    "r166",
+    "r167",
+    "r170",
+    "r172",
+    "r174",
+    "r214"
+   ]
+  },
+  {
+   "id": "c_lag",
+   "theme": "Slow, laggy or file too big",
+   "count": 6,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "Article sans grand intérêt finalement et fort cher, malgré la promo, car ce sont pas des notebooks mais des pdf. En plus, ils ne sont pas aussi rapide et « responsive » que les notebook de base. Je ne recommande donc pas",
+     "shop": "TabletTemplates",
+     "stars": 2,
+     "review_id": "r172"
+    },
+    {
+     "text": "I found this clunky to work with and the links to lag (but this could be my impatience :-)",
+     "shop": "WrittenThinking",
+     "stars": 2,
+     "review_id": "r322"
+    },
+    {
+     "text": "Aesthetically pleasing, and the prompts help me organise my mind. It does take some time to load because of the file size, though.",
+     "shop": "Pathfounder",
+     "stars": 3,
+     "review_id": "r502"
+    }
+   ],
+   "review_ids": [
+    "r172",
+    "r220",
+    "r228",
+    "r229",
+    "r322",
+    "r502"
+   ]
+  },
+  {
+   "id": "c_dates",
+   "theme": "Wrong or missing dates, calendar errors",
+   "count": 4,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "I did not want years 24 - 25 I would like to return the product for credit I want years 25 -26",
+     "shop": "TabletTemplates",
+     "stars": 1,
+     "review_id": "r159"
+    },
+    {
+     "text": "Leider keine Verlinkungen und auch kein Datum an den jeweiligen Tagen in der Wochenübersicht",
+     "shop": "StudioPiksels",
+     "stars": 1,
+     "review_id": "r9"
+    },
+    {
+     "text": "Ho acquistato l'agenda 2024 - 2025, purtroppo dell'anno 2025 sul file che ho ricevuto non c'è traccia. Il prodotto in sè è buono ma io non me ne faccio nulla di un agenda di un anno che si sta concludendo. Molto dispiaciuto!",
+     "shop": "ePaperTemplates",
+     "stars": 1,
+     "review_id": "r68"
+    }
+   ],
+   "review_ids": [
+    "r9",
+    "r68",
+    "r159",
+    "r160"
+   ]
+  },
+  {
+   "id": "c_language",
+   "theme": "Only in English",
+   "count": 2,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "Auf deutsch und ohne chinesische Zeichen wäre klasse",
+     "shop": "novaMarkable",
+     "stars": 4,
+     "review_id": "r268"
+    }
+   ],
+   "review_ids": [
+    "r180",
+    "r268"
+   ]
+  },
+  {
+   "id": "c_review_gate",
+   "theme": "Forced to leave a review",
+   "count": 2,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "diese Daueraufforderung zum Berieten ist nur noch nervig !",
+     "shop": "TabletTemplates",
+     "stars": 3,
+     "review_id": "r181"
+    },
+    {
+     "text": "I want to see my receipt - not rate at this time!",
+     "shop": "TabletTemplates",
+     "stars": 1,
+     "review_id": "r189"
+    }
+   ],
+   "review_ids": [
+    "r181",
+    "r189"
+   ]
+  },
+  {
+   "id": "c_time_format",
+   "theme": "Unwanted time format",
+   "count": 1,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "very disappointed with planner. It is in military time so too confusing to use",
+     "shop": "InkyDeal",
+     "stars": 1,
+     "review_id": "r375"
+    }
+   ],
+   "review_ids": [
+    "r375"
+   ]
+  }
+ ],
+ "praise": [
+  {
+   "id": "p_fits_needs",
+   "theme": "Useful, fits my needs",
+   "count": 91,
+   "on_top_listings": 13,
+   "quotes": [
+    {
+     "text": "Exactly what i was looking for and the customisation makes it 10 times better",
+     "shop": "ePaperTemplates",
+     "stars": 5,
+     "review_id": "r81"
+    },
+    {
+     "text": "Exactly what I was looking for. Easy to navigate, edit, and utilize.",
+     "shop": "InkyDeal",
+     "stars": 5,
+     "review_id": "r413"
+    },
+    {
+     "text": "2nd time purchasing from this store.  It's just what I wanted.",
+     "shop": "TabletTemplates",
+     "stars": 5,
+     "review_id": "r200"
+    }
+   ],
+   "review_ids": [
+    "r31",
+    "r32",
+    "r33",
+    "r44",
+    "r72",
+    "r74",
+    "r81",
+    "r82",
+    "r88",
+    "r104",
+    "r107",
+    "r112",
+    "r114",
+    "r118",
+    "r120",
+    "r121",
+    "r122",
+    "r124",
+    "r130",
+    "r133",
+    "r140",
+    "r141",
+    "r143",
+    "r149",
+    "r186",
+    "r190",
+    "r194",
+    "r200",
+    "r245",
+    "r248",
+    "r252",
+    "r257",
+    "r267",
+    "r274",
+    "r282",
+    "r285",
+    "r286",
+    "r289",
+    "r292",
+    "r293",
+    "r295",
+    "r297",
+    "r300",
+    "r303",
+    "r315",
+    "r317",
+    "r318",
+    "r329",
+    "r336",
+    "r338",
+    "r339",
+    "r344",
+    "r349",
+    "r353",
+    "r354",
+    "r361",
+    "r366",
+    "r367",
+    "r368",
+    "r404",
+    "r405",
+    "r406",
+    "r408",
+    "r410",
+    "r413",
+    "r422",
+    "r429",
+    "r430",
+    "r468",
+    "r477",
+    "r478",
+    "r479",
+    "r481",
+    "r510",
+    "r513",
+    "r516",
+    "r519",
+    "r522",
+    "r529",
+    "r530",
+    "r531",
+    "r532",
+    "r536",
+    "r537",
+    "r538",
+    "r568",
+    "r571",
+    "r608",
+    "r629",
+    "r631",
+    "r636"
+   ]
+  },
+  {
+   "id": "p_quality",
+   "theme": "High quality",
+   "count": 78,
+   "on_top_listings": 16,
+   "quotes": [
+    {
+     "text": "An excellent planner that is well-linked, clear, and has lots of space for all kinds of notes.  Really classy stuff.",
+     "shop": "novaMarkable",
+     "stars": 5,
+     "review_id": "r320"
+    },
+    {
+     "text": "Had a problem downloading the journals, reached out to the seller and they replied promptly with full instructions. Nice journals and great customer service.",
+     "shop": "Pathfounder",
+     "stars": 5,
+     "review_id": "r525"
+    },
+    {
+     "text": "Great quality, would recommend and purchase from seller again.",
+     "shop": "ePaperTemplates",
+     "stars": 5,
+     "review_id": "r84"
+    }
+   ],
+   "review_ids": [
+    "r30",
+    "r37",
+    "r42",
+    "r44",
+    "r75",
+    "r84",
+    "r85",
+    "r86",
+    "r98",
+    "r140",
+    "r185",
+    "r186",
+    "r259",
+    "r260",
+    "r262",
+    "r263",
+    "r271",
+    "r275",
+    "r276",
+    "r281",
+    "r282",
+    "r284",
+    "r288",
+    "r293",
+    "r297",
+    "r305",
+    "r307",
+    "r308",
+    "r309",
+    "r312",
+    "r316",
+    "r320",
+    "r331",
+    "r334",
+    "r339",
+    "r344",
+    "r351",
+    "r355",
+    "r365",
+    "r366",
+    "r369",
+    "r398",
+    "r409",
+    "r414",
+    "r421",
+    "r424",
+    "r460",
+    "r473",
+    "r475",
+    "r481",
+    "r504",
+    "r505",
+    "r508",
+    "r511",
+    "r514",
+    "r515",
+    "r518",
+    "r520",
+    "r525",
+    "r532",
+    "r533",
+    "r537",
+    "r538",
+    "r545",
+    "r564",
+    "r566",
+    "r576",
+    "r579",
+    "r584",
+    "r622",
+    "r623",
+    "r624",
+    "r626",
+    "r627",
+    "r628",
+    "r632",
+    "r638",
+    "r639"
+   ]
+  },
+  {
+   "id": "p_easy",
+   "theme": "Easy to set up and use",
+   "count": 65,
+   "on_top_listings": 15,
+   "quotes": [
+    {
+     "text": "Alles wie beschrieben, einfacher Download. Im Ende benutze ich nichtviel davon. Doch nicht so hilfreich, wie ich dachte.",
+     "shop": "eNotebook",
+     "stars": 3,
+     "review_id": "r598"
+    },
+    {
+     "text": "Exactly what I was looking for. Easy to navigate, edit, and utilize.",
+     "shop": "InkyDeal",
+     "stars": 5,
+     "review_id": "r413"
+    },
+    {
+     "text": "Comprehensive system, easy to use! Great customer service!",
+     "shop": "ePaperTemplates",
+     "stars": 5,
+     "review_id": "r77"
+    }
+   ],
+   "review_ids": [
+    "r28",
+    "r29",
+    "r33",
+    "r44",
+    "r76",
+    "r77",
+    "r79",
+    "r85",
+    "r87",
+    "r88",
+    "r90",
+    "r110",
+    "r114",
+    "r122",
+    "r123",
+    "r129",
+    "r136",
+    "r142",
+    "r145",
+    "r197",
+    "r199",
+    "r245",
+    "r261",
+    "r262",
+    "r263",
+    "r283",
+    "r284",
+    "r296",
+    "r298",
+    "r301",
+    "r310",
+    "r334",
+    "r357",
+    "r360",
+    "r363",
+    "r368",
+    "r373",
+    "r396",
+    "r405",
+    "r407",
+    "r411",
+    "r412",
+    "r413",
+    "r420",
+    "r423",
+    "r431",
+    "r468",
+    "r475",
+    "r476",
+    "r483",
+    "r512",
+    "r520",
+    "r526",
+    "r529",
+    "r530",
+    "r531",
+    "r536",
+    "r539",
+    "r574",
+    "r575",
+    "r583",
+    "r598",
+    "r612",
+    "r614",
+    "r636"
+   ]
+  },
+  {
+   "id": "p_look",
+   "theme": "Beautiful design",
+   "count": 61,
+   "on_top_listings": 6,
+   "quotes": [
+    {
+     "text": "fantastisch... super strak en mooie elementen die je erin hebt verwerkt.. top",
+     "shop": "InkyDeal",
+     "stars": 5,
+     "review_id": "r416"
+    },
+    {
+     "text": "Great templates that cover several of my interests with good layouts and colours.  I have added many to my Move already and they all worked perfectly.",
+     "shop": "ePlanneryStudio",
+     "stars": 5,
+     "review_id": "r147"
+    },
+    {
+     "text": "Just as described. Really lovely. 🥰",
+     "shop": "novaMarkable",
+     "stars": 5,
+     "review_id": "r319"
+    }
+   ],
+   "review_ids": [
+    "r29",
+    "r111",
+    "r112",
+    "r115",
+    "r122",
+    "r124",
+    "r142",
+    "r147",
+    "r229",
+    "r233",
+    "r242",
+    "r247",
+    "r249",
+    "r258",
+    "r263",
+    "r267",
+    "r272",
+    "r276",
+    "r280",
+    "r284",
+    "r285",
+    "r287",
+    "r292",
+    "r293",
+    "r296",
+    "r301",
+    "r316",
+    "r319",
+    "r342",
+    "r350",
+    "r372",
+    "r385",
+    "r400",
+    "r409",
+    "r412",
+    "r415",
+    "r416",
+    "r422",
+    "r428",
+    "r461",
+    "r470",
+    "r471",
+    "r472",
+    "r476",
+    "r497",
+    "r502",
+    "r506",
+    "r512",
+    "r513",
+    "r517",
+    "r522",
+    "r524",
+    "r532",
+    "r534",
+    "r539",
+    "r540",
+    "r564",
+    "r567",
+    "r574",
+    "r580",
+    "r637"
+   ]
+  },
+  {
+   "id": "p_support",
+   "theme": "Seller was helpful",
+   "count": 56,
+   "on_top_listings": 10,
+   "quotes": [
+    {
+     "text": "Had a problem downloading the journals, reached out to the seller and they replied promptly with full instructions. Nice journals and great customer service.",
+     "shop": "Pathfounder",
+     "stars": 5,
+     "review_id": "r525"
+    },
+    {
+     "text": "Comprehensive system, easy to use! Great customer service!",
+     "shop": "ePaperTemplates",
+     "stars": 5,
+     "review_id": "r77"
+    },
+    {
+     "text": "Customer service was amazing and I recommend them!",
+     "shop": "novaMarkable",
+     "stars": 5,
+     "review_id": "r304"
+    }
+   ],
+   "review_ids": [
+    "r10",
+    "r27",
+    "r37",
+    "r45",
+    "r73",
+    "r77",
+    "r86",
+    "r87",
+    "r88",
+    "r89",
+    "r114",
+    "r148",
+    "r158",
+    "r208",
+    "r258",
+    "r259",
+    "r279",
+    "r280",
+    "r285",
+    "r291",
+    "r298",
+    "r304",
+    "r343",
+    "r345",
+    "r350",
+    "r351",
+    "r352",
+    "r364",
+    "r366",
+    "r367",
+    "r369",
+    "r374",
+    "r395",
+    "r421",
+    "r429",
+    "r437",
+    "r447",
+    "r474",
+    "r487",
+    "r505",
+    "r509",
+    "r512",
+    "r518",
+    "r520",
+    "r521",
+    "r523",
+    "r525",
+    "r534",
+    "r576",
+    "r581",
+    "r615",
+    "r623",
+    "r624",
+    "r625",
+    "r630",
+    "r632"
+   ]
+  },
+  {
+   "id": "p_device",
+   "theme": "Works on my device",
+   "count": 54,
+   "on_top_listings": 8,
+   "quotes": [
+    {
+     "text": "This is. a really good thoughtful planner for the move. Highly recommended.",
+     "shop": "novaMarkable",
+     "stars": 4,
+     "review_id": "r271"
+    },
+    {
+     "text": "Great templates that cover several of my interests with good layouts and colours.  I have added many to my Move already and they all worked perfectly.",
+     "shop": "ePlanneryStudio",
+     "stars": 5,
+     "review_id": "r147"
+    },
+    {
+     "text": "Item exactly as described and seamless download process with customization options provided as indicated. Easily uploaded to my remarkable 2 and all the linked pages work!",
+     "shop": "InkyDeal",
+     "stars": 5,
+     "review_id": "r431"
+    }
+   ],
+   "review_ids": [
+    "r34",
+    "r44",
+    "r72",
+    "r87",
+    "r88",
+    "r90",
+    "r126",
+    "r147",
+    "r249",
+    "r255",
+    "r257",
+    "r258",
+    "r261",
+    "r271",
+    "r273",
+    "r274",
+    "r275",
+    "r278",
+    "r280",
+    "r282",
+    "r292",
+    "r295",
+    "r296",
+    "r298",
+    "r299",
+    "r300",
+    "r315",
+    "r316",
+    "r323",
+    "r325",
+    "r333",
+    "r335",
+    "r340",
+    "r346",
+    "r360",
+    "r362",
+    "r366",
+    "r369",
+    "r371",
+    "r374",
+    "r385",
+    "r396",
+    "r422",
+    "r425",
+    "r431",
+    "r470",
+    "r471",
+    "r472",
+    "r520",
+    "r524",
+    "r528",
+    "r631",
+    "r634",
+    "r637"
+   ]
+  },
+  {
+   "id": "p_as_described",
+   "theme": "Exactly as described",
+   "count": 34,
+   "on_top_listings": 7,
+   "quotes": [
+    {
+     "text": "Alles wie beschrieben, einfacher Download. Im Ende benutze ich nichtviel davon. Doch nicht so hilfreich, wie ich dachte.",
+     "shop": "eNotebook",
+     "stars": 3,
+     "review_id": "r598"
+    },
+    {
+     "text": "Item exactly as described and seamless download process with customization options provided as indicated. Easily uploaded to my remarkable 2 and all the linked pages work!",
+     "shop": "InkyDeal",
+     "stars": 5,
+     "review_id": "r431"
+    },
+    {
+     "text": "product as advertised and shipping was fast.",
+     "shop": "ePaperTemplates",
+     "stars": 5,
+     "review_id": "r91"
+    }
+   ],
+   "review_ids": [
+    "r35",
+    "r36",
+    "r42",
+    "r75",
+    "r91",
+    "r116",
+    "r134",
+    "r143",
+    "r145",
+    "r193",
+    "r196",
+    "r226",
+    "r249",
+    "r256",
+    "r319",
+    "r332",
+    "r348",
+    "r359",
+    "r394",
+    "r422",
+    "r423",
+    "r431",
+    "r470",
+    "r471",
+    "r472",
+    "r475",
+    "r507",
+    "r575",
+    "r579",
+    "r598",
+    "r621",
+    "r626",
+    "r638",
+    "r639"
+   ]
+  },
+  {
+   "id": "p_complete",
+   "theme": "Has everything I need",
+   "count": 32,
+   "on_top_listings": 9,
+   "quotes": [
+    {
+     "text": "I *love* this planner for my remarkable.  It's got enough, but not too much..",
+     "shop": "SmartTemplatesStudio",
+     "stars": 5,
+     "review_id": "r246"
+    },
+    {
+     "text": "Great templates that cover several of my interests with good layouts and colours.  I have added many to my Move already and they all worked perfectly.",
+     "shop": "ePlanneryStudio",
+     "stars": 5,
+     "review_id": "r147"
+    },
+    {
+     "text": "Comprehensive system, easy to use! Great customer service!",
+     "shop": "ePaperTemplates",
+     "stars": 5,
+     "review_id": "r77"
+    }
+   ],
+   "review_ids": [
+    "r30",
+    "r33",
+    "r77",
+    "r96",
+    "r108",
+    "r111",
+    "r115",
+    "r117",
+    "r118",
+    "r119",
+    "r124",
+    "r125",
+    "r127",
+    "r138",
+    "r147",
+    "r186",
+    "r246",
+    "r275",
+    "r307",
+    "r308",
+    "r309",
+    "r318",
+    "r328",
+    "r357",
+    "r362",
+    "r519",
+    "r522",
+    "r524",
+    "r535",
+    "r569",
+    "r583",
+    "r614"
+   ]
+  },
+  {
+   "id": "p_repeat",
+   "theme": "Repeat buyer",
+   "count": 29,
+   "on_top_listings": 7,
+   "quotes": [
+    {
+     "text": "Great quality, would recommend and purchase from seller again.",
+     "shop": "ePaperTemplates",
+     "stars": 5,
+     "review_id": "r84"
+    },
+    {
+     "text": "2nd time purchasing from this store.  It's just what I wanted.",
+     "shop": "TabletTemplates",
+     "stars": 5,
+     "review_id": "r200"
+    },
+    {
+     "text": "Every year I am ordering this planer and is perfect",
+     "shop": "SmartTemplatesStudio",
+     "stars": 5,
+     "review_id": "r254"
+    }
+   ],
+   "review_ids": [
+    "r44",
+    "r73",
+    "r83",
+    "r84",
+    "r87",
+    "r89",
+    "r90",
+    "r185",
+    "r195",
+    "r198",
+    "r200",
+    "r244",
+    "r245",
+    "r253",
+    "r254",
+    "r257",
+    "r259",
+    "r260",
+    "r263",
+    "r291",
+    "r293",
+    "r302",
+    "r331",
+    "r351",
+    "r353",
+    "r360",
+    "r369",
+    "r509",
+    "r566"
+   ]
+  },
+  {
+   "id": "p_nav",
+   "theme": "Links work, easy to navigate",
+   "count": 24,
+   "on_top_listings": 5,
+   "quotes": [
+    {
+     "text": "An excellent planner that is well-linked, clear, and has lots of space for all kinds of notes.  Really classy stuff.",
+     "shop": "novaMarkable",
+     "stars": 5,
+     "review_id": "r320"
+    },
+    {
+     "text": "Exactly what I was looking for. Easy to navigate, edit, and utilize.",
+     "shop": "InkyDeal",
+     "stars": 5,
+     "review_id": "r413"
+    },
+    {
+     "text": "Simple, attractive and straight-forward, they're notebooks with linked sections.  Priced very fairly compared to others.",
+     "shop": "Pathfounder",
+     "stars": 5,
+     "review_id": "r539"
+    }
+   ],
+   "review_ids": [
+    "r28",
+    "r186",
+    "r193",
+    "r199",
+    "r204",
+    "r229",
+    "r239",
+    "r262",
+    "r320",
+    "r360",
+    "r366",
+    "r368",
+    "r369",
+    "r400",
+    "r404",
+    "r407",
+    "r413",
+    "r415",
+    "r427",
+    "r428",
+    "r431",
+    "r513",
+    "r539",
+    "r568"
+   ]
+  },
+  {
+   "id": "p_flexible",
+   "theme": "Flexible or customizable",
+   "count": 24,
+   "on_top_listings": 11,
+   "quotes": [
+    {
+     "text": "Exactly what i was looking for and the customisation makes it 10 times better",
+     "shop": "ePaperTemplates",
+     "stars": 5,
+     "review_id": "r81"
+    },
+    {
+     "text": "Exactly what I was looking for. Easy to navigate, edit, and utilize.",
+     "shop": "InkyDeal",
+     "stars": 5,
+     "review_id": "r413"
+    },
+    {
+     "text": "The ability to customize to your own preferences is awesome.",
+     "shop": "ePlanneryStudio",
+     "stars": 4,
+     "review_id": "r101"
+    }
+   ],
+   "review_ids": [
+    "r72",
+    "r73",
+    "r74",
+    "r79",
+    "r81",
+    "r82",
+    "r87",
+    "r88",
+    "r101",
+    "r114",
+    "r136",
+    "r138",
+    "r149",
+    "r150",
+    "r186",
+    "r292",
+    "r345",
+    "r360",
+    "r367",
+    "r369",
+    "r413",
+    "r431",
+    "r630",
+    "r632"
+   ]
+  },
+  {
+   "id": "p_daily",
+   "theme": "I use it every day",
+   "count": 13,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "Fantastic, high quality template. I've been using it daily for about a month now and would recommend it to everyone. Thank you",
+     "shop": "novaMarkable",
+     "stars": 5,
+     "review_id": "r288"
+    },
+    {
+     "text": "Jerel, I appreciate the dialogue we had and I must say the I really am impressed with this. This will be used daily in my workflow.",
+     "shop": "Pathfounder",
+     "stars": 5,
+     "review_id": "r521"
+    },
+    {
+     "text": "The first habit tracker I have actually used every day! Thank you!",
+     "shop": "WrittenThinking",
+     "stars": 5,
+     "review_id": "r347"
+    }
+   ],
+   "review_ids": [
+    "r258",
+    "r259",
+    "r288",
+    "r301",
+    "r347",
+    "r355",
+    "r366",
+    "r521",
+    "r523",
+    "r534",
+    "r571",
+    "r610",
+    "r633"
+   ]
+  },
+  {
+   "id": "p_value",
+   "theme": "Great value",
+   "count": 12,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "it's a very basic version of a planner, you need to do a lot of duplicating in order to make this work. But the price does reflect this...",
+     "shop": "eNotebook",
+     "stars": 3,
+     "review_id": "r599"
+    },
+    {
+     "text": "Simple, attractive and straight-forward, they're notebooks with linked sections.  Priced very fairly compared to others.",
+     "shop": "Pathfounder",
+     "stars": 5,
+     "review_id": "r539"
+    },
+    {
+     "text": "The Daily Planner has a very nice design and is super easy to navigate. Very fair price too! I will find this helpful in keeping myself organised!",
+     "shop": "InkyDeal",
+     "stars": 5,
+     "review_id": "r415"
+    }
+   ],
+   "review_ids": [
+    "r87",
+    "r88",
+    "r297",
+    "r329",
+    "r406",
+    "r415",
+    "r458",
+    "r512",
+    "r539",
+    "r584",
+    "r599",
+    "r632"
+   ]
+  },
+  {
+   "id": "p_adhd",
+   "theme": "Helps me stay on track",
+   "count": 9,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "Very customizable, has kept me on task very well for college",
+     "shop": "ePlanneryStudio",
+     "stars": 5,
+     "review_id": "r150"
+    },
+    {
+     "text": "Aesthetically pleasing, and the prompts help me organise my mind. It does take some time to load because of the file size, though.",
+     "shop": "Pathfounder",
+     "stars": 3,
+     "review_id": "r502"
+    },
+    {
+     "text": "The Daily Planner has a very nice design and is super easy to navigate. Very fair price too! I will find this helpful in keeping myself organised!",
+     "shop": "InkyDeal",
+     "stars": 5,
+     "review_id": "r415"
+    }
+   ],
+   "review_ids": [
+    "r109",
+    "r142",
+    "r150",
+    "r247",
+    "r347",
+    "r358",
+    "r367",
+    "r415",
+    "r502"
+   ]
+  },
+  {
+   "id": "p_space",
+   "theme": "Plenty of writing space",
+   "count": 2,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "An excellent planner that is well-linked, clear, and has lots of space for all kinds of notes.  Really classy stuff.",
+     "shop": "novaMarkable",
+     "stars": 5,
+     "review_id": "r320"
+    },
+    {
+     "text": "Great little planner for the new size. Plenty of notes space and flows nicely. The only thing that I would change is to have a week overview as well. It's lacking that one view for me. But otherwise a good planner.",
+     "shop": "WrittenThinking",
+     "stars": 4,
+     "review_id": "r340"
+    }
+   ],
+   "review_ids": [
+    "r320",
+    "r340"
+   ]
+  },
+  {
+   "id": "p_guide",
+   "theme": "Clear instructions or tutorials",
+   "count": 2,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "Fantastic.  Lots of page choices.  Easy to follow instructions.",
+     "shop": "PrintMagicStudioX",
+     "stars": 5,
+     "review_id": "r569"
+    },
+    {
+     "text": "Very helpful with instructions to solve my issues!",
+     "shop": "WrittenThinking",
+     "stars": 5,
+     "review_id": "r364"
+    }
+   ],
+   "review_ids": [
+    "r364",
+    "r569"
+   ]
+  },
+  {
+   "id": "p_extras",
+   "theme": "Love the stickers and extras",
+   "count": 2,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "Excellent \"stickers\" -- great variety and consistent look and feel. Super helpful for a calendar, or whatever.",
+     "shop": "Pathfounder",
+     "stars": 5,
+     "review_id": "r540"
+    },
+    {
+     "text": "Helpful and responsive seller.  Good value for the bundle, the workbooks are intuitive, the layouts are minimalist in the best sense and aesthetically pleasing. The assessment pages are a great add to the planner.",
+     "shop": "Pathfounder",
+     "stars": 4,
+     "review_id": "r512"
+    }
+   ],
+   "review_ids": [
+    "r512",
+    "r540"
+   ]
+  },
+  {
+   "id": "p_fast",
+   "theme": "Fast and responsive",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "Great template- works really fast and it's easy to use!",
+     "shop": "TabletTemplates",
+     "stars": 5,
+     "review_id": "r197"
+    }
+   ],
+   "review_ids": [
+    "r197"
+   ]
+  }
+ ],
+ "wishes": [
+  {
+   "id": "w_page_types",
+   "theme": "More page types included",
+   "count": 7,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "zeer klein en ik dacht dat er bij iedere dag een pagina zou zitten voor extra notes maar dat is niet het geval.",
+     "shop": "ePlanneryStudio",
+     "stars": 2,
+     "review_id": "r99"
+    },
+    {
+     "text": "There’s not workout log only a workout plan template. I want to track my fitness.",
+     "shop": "StudioPiksels",
+     "stars": 1,
+     "review_id": "r13"
+    },
+    {
+     "text": "Only one thing is missing, if there is a WEEK VIEW then it'll be PERFECT!!",
+     "shop": "WrittenThinking",
+     "stars": 4,
+     "review_id": "r337"
+    }
+   ],
+   "review_ids": [
+    "r13",
+    "r99",
+    "r238",
+    "r337",
+    "r340",
+    "r408",
+    "r410"
+   ]
+  },
+  {
+   "id": "w_customize",
+   "theme": "More ways to customize",
+   "count": 5,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "Love how you can jump from list to list. Need more pages within notes, lists, meetings",
+     "shop": "SmartTemplatesStudio",
+     "stars": 3,
+     "review_id": "r239"
+    },
+    {
+     "text": "almost perfect for my needs, I would love an opportunity to customise, yet I understand fully the limitations and what it would mean for the author. Pricing is fair, and I could almost 5 star this one considering this point.",
+     "shop": "InkyDeal",
+     "stars": 4,
+     "review_id": "r406"
+    }
+   ],
+   "review_ids": [
+    "r87",
+    "r88",
+    "r239",
+    "r406",
+    "r498"
+   ]
+  },
+  {
+   "id": "w_listing_info",
+   "theme": "Listing should say which apps are needed",
+   "count": 3,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "I wish it was clear that you need to download a third party app in order to use. The third party apps are not free. Will not be able to use.",
+     "shop": "StudioPiksels",
+     "stars": 1,
+     "review_id": "r15"
+    },
+    {
+     "text": "Need 3rd party app, not clear in text.",
+     "shop": "StudioPiksels",
+     "stars": 1,
+     "review_id": "r11"
+    }
+   ],
+   "review_ids": [
+    "r11",
+    "r15",
+    "r564"
+   ]
+  },
+  {
+   "id": "w_time_range",
+   "theme": "Wider daily time range",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [],
+   "review_ids": [
+    "r229"
+   ]
+  },
+  {
+   "id": "w_language",
+   "theme": "Other languages",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "Auf deutsch und ohne chinesische Zeichen wäre klasse",
+     "shop": "novaMarkable",
+     "stars": 4,
+     "review_id": "r268"
+    }
+   ],
+   "review_ids": [
+    "r268"
+   ]
+  },
+  {
+   "id": "w_easy_delivery",
+   "theme": "Easier way to receive the files",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "I wish it was easier to receive the electronic documents.",
+     "shop": "InkyDeal",
+     "stars": 4,
+     "review_id": "r417"
+    }
+   ],
+   "review_ids": [
+    "r417"
+   ]
+  },
+  {
+   "id": "w_tutorial",
+   "theme": "A video showing how it works",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [],
+   "review_ids": [
+    "r447"
+   ]
+  },
+  {
+   "id": "w_prefilled",
+   "theme": "Times or details pre-filled on pages",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [],
+   "review_ids": [
+    "r533"
+   ]
+  },
+  {
+   "id": "w_side_tabs",
+   "theme": "Side tabs for faster navigation",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [],
+   "review_ids": [
+    "r533"
+   ]
+  },
+  {
+   "id": "w_order",
+   "theme": "Pages in a logical order",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "i wish they was in order and cause it took forever to find something that i needed",
+     "shop": "PrintMagicStudioX",
+     "stars": 1,
+     "review_id": "r557"
+    }
+   ],
+   "review_ids": [
+    "r557"
+   ]
+  }
+ ],
+ "price": {
+  "p25": 17.16,
+  "median": 46.79,
+  "p75": 68.31,
+  "top10_by_revenue_median": 68.03,
+  "revenue_weighted_median": 68.6,
+  "best_band": "$56-73"
+ },
+ "looks": [
+  {
+   "style": "Minimalist look",
+   "share": 0.1,
+   "have": [
+    "4432249026",
+    "4561970094",
+    "1506292241"
+   ]
+  },
+  {
+   "style": "Dark mode",
+   "share": 0.0,
+   "have": []
+  },
+  {
+   "style": "Landscape layout",
+   "share": 0.0,
+   "have": []
+  },
+  {
+   "style": "Portrait layout",
+   "share": 0.0,
+   "have": []
+  },
+  {
+   "style": "Colorful or aesthetic look",
+   "share": 0.0,
+   "have": []
+  }
+ ],
+ "keywords": [
+  {
+   "tag": "remarkable templates",
+   "used_by_top": 17,
+   "volume": 628.0
+  },
+  {
+   "tag": "remarkable planner",
+   "used_by_top": 13,
+   "volume": null
+  },
+  {
+   "tag": "remarkable calendar",
+   "used_by_top": 12,
+   "volume": null
+  },
+  {
+   "tag": "remarkable paper pro",
+   "used_by_top": 10,
+   "volume": null
+  },
+  {
+   "tag": "remarkable template",
+   "used_by_top": 9,
+   "volume": null
+  },
+  {
+   "tag": "remarkable 2",
+   "used_by_top": 8,
+   "volume": null
+  },
+  {
+   "tag": "digital planner",
+   "used_by_top": 8,
+   "volume": null
+  },
+  {
+   "tag": "productivity bundle",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "remarkable notebook",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "remarkable journal",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "remarkable 2 planner",
+   "used_by_top": 6,
+   "volume": null
+  },
+  {
+   "tag": "remarkable pro",
+   "used_by_top": 6,
+   "volume": null
+  },
+  {
+   "tag": "remarkable bundle",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "remarkable move",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "planner",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "remarkable",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "paper pro move",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "remarkable pure",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "calendar",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "2026 planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "paper pro planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "daily planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "template bundle",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "daily",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "2025",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "remarkable pro move",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "paper pure planner",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "remarkable 2027",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "hyperlinked pdf",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "minimalist planner",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "paper pro daily",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "paper pro templates",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "project planner",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "sleep screen",
+   "used_by_top": 2,
+   "volume": null
+  },
+  {
+   "tag": "notebook cover",
+   "used_by_top": 2,
+   "volume": null
+  },
+  {
+   "tag": "remarkable 2 journal",
+   "used_by_top": 2,
+   "volume": null
+  },
+  {
+   "tag": "remarkable 2 meeting",
+   "used_by_top": 2,
+   "volume": null
+  },
+  {
+   "tag": "agenda",
+   "used_by_top": 2,
+   "volume": null
+  },
+  {
+   "tag": "pdf",
+   "used_by_top": 2,
+   "volume": null
+  },
+  {
+   "tag": "journal",
+   "used_by_top": 2,
+   "volume": null
+  }
+ ],
+ "gaps": [
+  {
+   "kind": "fix",
+   "complaint": "c_not_useful",
+   "theme": "Not useful for my needs",
+   "count": 40,
+   "features_that_fix": []
+  },
+  {
+   "kind": "fix",
+   "complaint": "c_device",
+   "theme": "Doesn't work on my app or device",
+   "count": 36,
+   "features_that_fix": [
+    "android",
+    "eink",
+    "app_guides"
+   ]
+  },
+  {
+   "kind": "fix",
+   "complaint": "c_download",
+   "theme": "Couldn't download or open the file",
+   "count": 34,
+   "features_that_fix": [
+    "quick_start",
+    "download_help_photo"
+   ]
+  },
+  {
+   "kind": "fix",
+   "complaint": "c_misleading",
+   "theme": "Not as described or pictured",
+   "count": 26,
+   "features_that_fix": []
+  },
+  {
+   "kind": "fix",
+   "complaint": "c_links",
+   "theme": "Links broken or go to the wrong page",
+   "count": 24,
+   "features_that_fix": [
+    "hyperlinked",
+    "link_check_automated"
+   ]
+  },
+  {
+   "kind": "fix",
+   "complaint": "c_setup",
+   "theme": "Confusing setup or unclear instructions",
+   "count": 23,
+   "features_that_fix": [
+    "quick_start",
+    "test_page"
+   ]
+  },
+  {
+   "kind": "fix",
+   "complaint": "c_missing",
+   "theme": "Missing pages or less than expected",
+   "count": 17,
+   "features_that_fix": [
+    "page_list_in_listing"
+   ]
+  },
+  {
+   "kind": "fix",
+   "complaint": "c_value",
+   "theme": "Not worth the price",
+   "count": 15,
+   "features_that_fix": [
+    "price_position"
+   ]
+  },
+  {
+   "kind": "open_feature",
+   "feature": "hyperlinked",
+   "name": "Hyperlinked tabs and dates",
+   "share": 0.233
+  },
+  {
+   "kind": "open_feature",
+   "feature": "all_in_one",
+   "name": "All-in-one life planner",
+   "share": 0.133
+  },
+  {
+   "kind": "open_feature",
+   "feature": "minimalist",
+   "name": "Minimalist look",
+   "share": 0.1
+  },
+  {
+   "kind": "open_feature",
+   "feature": "custom",
+   "name": "Customizable or personalized",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "goals",
+   "name": "Goal setting",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "stickers",
+   "name": "Digital stickers included",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "undated",
+   "name": "Undated version",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "adhd_specific",
+   "name": "Built for ADHD",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "habit_tracker",
+   "name": "Habit tracker",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "self_care",
+   "name": "Self-care, mood or wellness pages",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "budget",
+   "name": "Budget or finance pages",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "meal",
+   "name": "Meal planning",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "time_blocking",
+   "name": "Time blocking or hourly schedule",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "dark_mode",
+   "name": "Dark mode",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "goodnotes",
+   "name": "Says Goodnotes",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "notability",
+   "name": "Says Notability",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "android",
+   "name": "Android or Samsung support",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "landscape",
+   "name": "Landscape layout",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "portrait",
+   "name": "Portrait layout",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "colorful",
+   "name": "Colorful or aesthetic look",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "student",
+   "name": "Student or academic",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "brain_dump",
+   "name": "Brain dump pages",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "routines",
+   "name": "Routine builder",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "dopamine_menu",
+   "name": "Dopamine menu",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "priority_matrix",
+   "name": "Priority matrix or top 3",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "quick_start",
+   "name": "Quick start or setup guide",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "test_page",
+   "name": "Link test or setup check page",
+   "share": 0.0
+  },
+  {
+   "kind": "wish",
+   "wish": "w_page_types",
+   "theme": "More page types included",
+   "count": 7
+  },
+  {
+   "kind": "wish",
+   "wish": "w_customize",
+   "theme": "More ways to customize",
+   "count": 5
+  },
+  {
+   "kind": "wish",
+   "wish": "w_listing_info",
+   "theme": "Listing should say which apps are needed",
+   "count": 3
+  },
+  {
+   "kind": "wish",
+   "wish": "w_time_range",
+   "theme": "Wider daily time range",
+   "count": 1
+  },
+  {
+   "kind": "wish",
+   "wish": "w_language",
+   "theme": "Other languages",
+   "count": 1
+  },
+  {
+   "kind": "wish",
+   "wish": "w_easy_delivery",
+   "theme": "Easier way to receive the files",
+   "count": 1
+  },
+  {
+   "kind": "wish",
+   "wish": "w_tutorial",
+   "theme": "A video showing how it works",
+   "count": 1
+  },
+  {
+   "kind": "wish",
+   "wish": "w_prefilled",
+   "theme": "Times or details pre-filled on pages",
+   "count": 1
+  },
+  {
+   "kind": "wish",
+   "wish": "w_side_tabs",
+   "theme": "Side tabs for faster navigation",
+   "count": 1
+  },
+  {
+   "kind": "wish",
+   "wish": "w_order",
+   "theme": "Pages in a logical order",
+   "count": 1
+  }
+ ]
+}

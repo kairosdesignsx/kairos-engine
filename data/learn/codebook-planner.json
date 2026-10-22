@@ -4,6 +4,16 @@
    "id": "p_fits_needs",
    "theme": "Useful, fits my needs",
    "use_for": "Useful, helpful, exactly what I needed or was looking for; suits how the buyer plans."
+  },
+  {
+   "id": "p_fast",
+   "theme": "Fast and responsive",
+   "use_for": "Praise that the file runs quickly with no lag on the device."
+  },
+  {
+   "id": "p_space",
+   "theme": "Plenty of writing space",
+   "use_for": "Praise for roomy boxes, lines or note space."
   }
  ],
  "complaints": [
@@ -21,6 +31,36 @@
    "id": "c_review_gate",
    "theme": "Forced to leave a review",
    "use_for": "Seller required a rating or review before giving access to the file."
+  },
+  {
+   "id": "c_pdf_not_template",
+   "theme": "Just a PDF, not a native device template",
+   "use_for": "Loads as a plain PDF or document instead of a notebook template on the device; buyer expected native templates."
+  },
+  {
+   "id": "c_time_format",
+   "theme": "Unwanted time format",
+   "use_for": "Time slots in 24-hour (military) or other format the buyer finds confusing."
+  },
+  {
+   "id": "c_review_nag",
+   "theme": "Nagged for a review",
+   "use_for": "Annoyed by repeated review requests or notifications asking for a rating."
+  },
+  {
+   "id": "c_plagiarism",
+   "theme": "Design copied from other creators",
+   "use_for": "Buyer says the product or shop uses stolen or plagiarized work."
+  },
+  {
+   "id": "c_offensive",
+   "theme": "Offensive or biased content",
+   "use_for": "Images or text the buyer finds sexist, racist or otherwise offensive."
+  },
+  {
+   "id": "c_flat",
+   "theme": "Just a flat PDF, not interactive",
+   "use_for": "File acts like a plain image or PDF with no working digital features (no links, not set up for the note app)."
   }
  ],
  "wishes": [
@@ -43,6 +83,71 @@
    "id": "w_sharper_images",
    "theme": "Larger, sharper image files",
    "use_for": "Wants higher-resolution stickers or images that stay sharp when enlarged."
+  },
+  {
+   "id": "w_easy_stickers",
+   "theme": "Stickers ready to copy and paste",
+   "use_for": "Wants stickers or images that can be placed directly without tracing or extra steps."
+  },
+  {
+   "id": "w_time_range",
+   "theme": "Wider daily time range",
+   "use_for": "Wants the daily schedule to start earlier or end later."
+  },
+  {
+   "id": "w_language",
+   "theme": "Other languages",
+   "use_for": "Wants the product in a language other than English, or without foreign-language text."
+  },
+  {
+   "id": "w_easy_delivery",
+   "theme": "Easier way to receive the files",
+   "use_for": "Wishes the files were simpler to receive or download after buying."
+  },
+  {
+   "id": "w_tutorial",
+   "theme": "A video showing how it works",
+   "use_for": "Wants a demo or video tutorial showing how to use the product."
+  },
+  {
+   "id": "w_prefilled",
+   "theme": "Times or details pre-filled on pages",
+   "use_for": "Wants hours, dates or other fixed details already printed on pages so they need not be written each time."
+  },
+  {
+   "id": "w_next_year",
+   "theme": "New edition for upcoming years",
+   "use_for": "Wants the product released again for next year or every year."
+  },
+  {
+   "id": "w_autofill",
+   "theme": "Auto-fill book details",
+   "use_for": "Wants book info and cover filled in automatically, e.g. from the ISBN."
+  },
+  {
+   "id": "w_migrate",
+   "theme": "Easy move to a newer version",
+   "use_for": "Wants to carry existing entries over when upgrading to a new edition."
+  },
+  {
+   "id": "w_cheaper",
+   "theme": "Cheaper or smaller option",
+   "use_for": "Wants a lower price or to buy only the pages they need."
+  },
+  {
+   "id": "w_checkoff",
+   "theme": "A way to check items off",
+   "use_for": "Wants checkboxes or a way to mark items done or paid each period."
+  },
+  {
+   "id": "w_capacity",
+   "theme": "Room for more books",
+   "use_for": "Wants the journal to hold more book entries or review pages."
+  },
+  {
+   "id": "w_ready_elements",
+   "theme": "Ready-made fill-in elements",
+   "use_for": "Wants pre-made stickers or elements (such as filled-in star ratings) to drop in instead of drawing them."
   }
  ]
 }

@@ -1,0 +1,878 @@
+{
+ "product_type": "Remarkable planner template (Planner templates for e-ink tablets (PDF))",
+ "codebook": {
+  "complaints": [
+   {
+    "id": "c_download",
+    "theme": "Couldn't download or open the file",
+    "use_for": "Download failed, file won't open, can't find the file after buying."
+   },
+   {
+    "id": "c_setup",
+    "theme": "Confusing setup or unclear instructions",
+    "use_for": "Didn't know how to import, set up or start; instructions or videos unclear."
+   },
+   {
+    "id": "c_hard",
+    "theme": "Hard to use day to day",
+    "use_for": "General 'hard to use', 'not user friendly', 'not intuitive' with no specific cause."
+   },
+   {
+    "id": "c_nav",
+    "theme": "Hard to navigate or find pages",
+    "use_for": "Can't find pages, tabs or buttons awkward, wants faster ways around."
+   },
+   {
+    "id": "c_links",
+    "theme": "Links broken or go to the wrong page",
+    "use_for": "Specific hyperlink failures."
+   },
+   {
+    "id": "c_device",
+    "theme": "Doesn't work on my app or device",
+    "use_for": "Android, Samsung, reMarkable, OneNote, Kindle, Windows, app glitches."
+   },
+   {
+    "id": "c_extra_app",
+    "theme": "Needed an app or subscription that wasn't clear",
+    "use_for": "Had to buy Goodnotes or another app to use it."
+   },
+   {
+    "id": "c_lag",
+    "theme": "Slow, laggy or file too big",
+    "use_for": "Performance and file size."
+   },
+   {
+    "id": "c_dates",
+    "theme": "Wrong or missing dates, calendar errors",
+    "use_for": "Dates, weekdays or calendar order wrong."
+   },
+   {
+    "id": "c_missing",
+    "theme": "Missing pages or less than expected",
+    "use_for": "Fewer pages, sections or items than promised."
+   },
+   {
+    "id": "c_space",
+    "theme": "Too little writing space",
+    "use_for": "Boxes, calendar cells or lines too small to write in."
+   },
+   {
+    "id": "c_readability",
+    "theme": "Text too small or hard to read",
+    "use_for": "Font size, contrast, legibility."
+   },
+   {
+    "id": "c_edit",
+    "theme": "Can't edit, type or customize",
+    "use_for": "Wanted to type, edit text, change colors or tabs and couldn't."
+   },
+   {
+    "id": "c_overwhelm",
+    "theme": "Too much, overwhelming",
+    "use_for": "So many pages or sections that the buyer didn't know where to start."
+   },
+   {
+    "id": "c_basic",
+    "theme": "Too basic or boring",
+    "use_for": "Too simple, not enough to it."
+   },
+   {
+    "id": "c_look",
+    "theme": "Didn't like the look",
+    "use_for": "Colors, style or design disliked."
+   },
+   {
+    "id": "c_misleading",
+    "theme": "Not as described or pictured",
+    "use_for": "Product differs from photos or description, misleading listing."
+   },
+   {
+    "id": "c_not_useful",
+    "theme": "Not useful for my needs",
+    "use_for": "Didn't fit how the buyer plans, no specific defect."
+   },
+   {
+    "id": "c_quality",
+    "theme": "Errors, typos or low quality",
+    "use_for": "Mistakes, sloppy pages, blurry images, broken elements."
+   },
+   {
+    "id": "c_broken",
+    "theme": "Doesn't work (no detail)",
+    "use_for": "'Doesn't work' with no further detail."
+   },
+   {
+    "id": "c_value",
+    "theme": "Not worth the price",
+    "use_for": "Price or value complaints."
+   },
+   {
+    "id": "c_support",
+    "theme": "Seller didn't help or reply",
+    "use_for": "Slow or unhelpful support."
+   },
+   {
+    "id": "c_refund",
+    "theme": "Refund refused",
+    "use_for": "Seller refused refund or exchange."
+   },
+   {
+    "id": "c_language",
+    "theme": "Only in English",
+    "use_for": "Wanted another language."
+   },
+   {
+    "id": "c_upsell",
+    "theme": "Pushes paid add-ons or sign-ups",
+    "use_for": "Links or pages inside the product lead to extra purchases, paywalls or forced email/subscription sign-ups."
+   },
+   {
+    "id": "c_security",
+    "theme": "Spam, privacy or virus worries",
+    "use_for": "Buyer links the purchase to spam, sold personal data, a virus or other security problems."
+   },
+   {
+    "id": "c_review_gate",
+    "theme": "Forced to leave a review",
+    "use_for": "Seller required a rating or review before giving access to the file."
+   }
+  ],
+  "praise": [
+   {
+    "id": "p_look",
+    "theme": "Beautiful design",
+    "use_for": "Pretty, aesthetic, love the colors."
+   },
+   {
+    "id": "p_easy",
+    "theme": "Easy to set up and use",
+    "use_for": "Easy, simple, user friendly."
+   },
+   {
+    "id": "p_nav",
+    "theme": "Links work, easy to navigate",
+    "use_for": "Praise for hyperlinks and moving around."
+   },
+   {
+    "id": "p_complete",
+    "theme": "Has everything I need",
+    "use_for": "Comprehensive, lots of pages, all in one."
+   },
+   {
+    "id": "p_adhd",
+    "theme": "Helps me stay on track",
+    "use_for": "Helps with ADHD, focus, staying organized."
+   },
+   {
+    "id": "p_daily",
+    "theme": "I use it every day",
+    "use_for": "Daily use, habit, hooked."
+   },
+   {
+    "id": "p_flexible",
+    "theme": "Flexible or customizable",
+    "use_for": "Can adapt it, undated, choose pages."
+   },
+   {
+    "id": "p_extras",
+    "theme": "Love the stickers and extras",
+    "use_for": "Stickers, bonus files."
+   },
+   {
+    "id": "p_device",
+    "theme": "Works on my device",
+    "use_for": "Works on Android, Samsung, Kindle, other apps."
+   },
+   {
+    "id": "p_guide",
+    "theme": "Clear instructions or tutorials",
+    "use_for": "Helpful guide, video, instructions."
+   },
+   {
+    "id": "p_as_described",
+    "theme": "Exactly as described",
+    "use_for": "Matches the listing."
+   },
+   {
+    "id": "p_quality",
+    "theme": "High quality",
+    "use_for": "Well made, professional."
+   },
+   {
+    "id": "p_value",
+    "theme": "Great value",
+    "use_for": "Good price for what you get."
+   },
+   {
+    "id": "p_support",
+    "theme": "Seller was helpful",
+    "use_for": "Good support."
+   },
+   {
+    "id": "p_repeat",
+    "theme": "Repeat buyer",
+    "use_for": "Bought before, will buy again, favorite shop."
+   },
+   {
+    "id": "p_fits_needs",
+    "theme": "Useful, fits my needs",
+    "use_for": "Useful, helpful, exactly what I needed or was looking for; suits how the buyer plans."
+   }
+  ],
+  "wishes": [
+   {
+    "id": "w_customize",
+    "theme": "More ways to customize",
+    "use_for": "Edit tabs, change colors, add pages."
+   },
+   {
+    "id": "w_side_tabs",
+    "theme": "Side tabs for faster navigation",
+    "use_for": "Wants tabs instead of buttons."
+   },
+   {
+    "id": "w_back_button",
+    "theme": "A back button",
+    "use_for": "Return to previous page."
+   },
+   {
+    "id": "w_portrait",
+    "theme": "Portrait version",
+    "use_for": "Wants portrait orientation."
+   },
+   {
+    "id": "w_sunday_start",
+    "theme": "Sunday-start weeks",
+    "use_for": "Calendar starting on Sunday."
+   },
+   {
+    "id": "w_listing_info",
+    "theme": "Listing should say which apps are needed",
+    "use_for": "Clarity before buying."
+   },
+   {
+    "id": "w_file_format",
+    "theme": "Other file formats (Google Docs, Word, Pages)",
+    "use_for": "Wants the product in another file format or editor, such as Google Docs, Word or Apple Pages."
+   },
+   {
+    "id": "w_order",
+    "theme": "Pages in a logical order",
+    "use_for": "Wants pages or sections arranged in a sensible order so things are quick to find."
+   },
+   {
+    "id": "w_page_types",
+    "theme": "More page types included",
+    "use_for": "Wants a specific kind of page added to the product, such as to-do lists."
+   },
+   {
+    "id": "w_sharper_images",
+    "theme": "Larger, sharper image files",
+    "use_for": "Wants higher-resolution stickers or images that stay sharp when enlarged."
+   }
+  ]
+ },
+ "reviews": [
+  {
+   "id": "r382",
+   "stars": 1,
+   "text": "no good quality, need to be ,ore prof"
+  },
+  {
+   "id": "r383",
+   "stars": 2,
+   "text": "No customization in this porduct"
+  },
+  {
+   "id": "r384",
+   "stars": 2,
+   "text": "Manca la sezione weekly planner"
+  },
+  {
+   "id": "r385",
+   "stars": 2,
+   "text": "La mise en page est très belle et les dimensions sont parfaites pour mon Onyx Boox Go 10.3 (même si ces fichiers sont faits pour la remarkable 2) mais hélas la plupart des liens depuis le calendrier ne fonctionnent pas et renvoient un message « lien illicite échec de l’ouverture ». J’espère que ça fonctionne pour les autres utilisateurs. Pour moi c’est juste inexploitable. Dommage."
+  },
+  {
+   "id": "r387",
+   "stars": 2,
+   "text": "Can not add the planer to my remarkable so it is useless 🥲"
+  },
+  {
+   "id": "r388",
+   "stars": 2,
+   "text": "Incomplete planner just 60 pages, only got january 2025 templates, the other months templates are missing"
+  },
+  {
+   "id": "r389",
+   "stars": 3,
+   "text": "If you have bad eyesight, this is a terrible planner! The monthly dates are TINY and are in grey, so you can barely see them! I haven't paid much attention to the other dates/numbers, since this layout is what I primarily need, but I honestly don't know think I'll be able to use this planner!"
+  },
+  {
+   "id": "r390",
+   "stars": 3,
+   "text": "Leider nicht das, was ich gesucht hatte. Wollte einen Kalender in dem alle Jahre untereinander stehen... das ist dieser leider nicht..."
+  },
+  {
+   "id": "r391",
+   "stars": 3,
+   "text": "It ok I think  but it good"
+  },
+  {
+   "id": "r392",
+   "stars": 3,
+   "text": "Aanrader. Wel ruimte voor aantal verbeteringen, maar ik dat men dit continu aan het verbeteren is. Ik ben benieuwd naar de volgende versies"
+  },
+  {
+   "id": "r393",
+   "stars": 3,
+   "text": "Brak opini bo nie mogę uruchomić"
+  },
+  {
+   "id": "r394",
+   "stars": 3,
+   "text": "This works as described.  Thank you"
+  },
+  {
+   "id": "r395",
+   "stars": 3,
+   "text": "I purchased this item and the color of line and number were too clear (grey). Not easy and comfortable to use. The owner told me he will send a better version, received but I'm not using anymore since I purchased another one."
+  },
+  {
+   "id": "r396",
+   "stars": 3,
+   "text": "The file was easy to download and get onto my ReMarkable, I didn't like that it won't navigate from the monthly calendar view, to a specific day, by touching that day.  Otherwise, it was a good package"
+  },
+  {
+   "id": "r397",
+   "stars": 3,
+   "text": "5 words 5words 5 words"
+  },
+  {
+   "id": "r398",
+   "stars": 3,
+   "text": "Die Agenda ist wirklich gut gemacht, aber auf dem Remarkable 2 sind die Linien und die Schrift so hellgrau und dünn dargestellt, dass ich sie schwer lesen kann. Das kann ein technisches Manko des/meines Remarkable sein oder mit meiner Sehkraft zu tun haben - so oder so, kann ich die Vorlage leider nicht verwenden. Ich vermute aber, dass andere keine Probleme damit haben."
+  },
+  {
+   "id": "r399",
+   "stars": 3,
+   "text": "Tags dos not work on the individual page. a tag just finds the dokument"
+  },
+  {
+   "id": "r400",
+   "stars": 3,
+   "text": "I like the clean layout and the hyperlinks work. Unfortunately though, I found the files unusable due to the use of grey text and lines which had insufficient contrast with the Remarkable's greyish background. The numbers on the monthly pages are also fairly small and in a fine font. Between that and the grey it was too hard to read dates at a glance."
+  },
+  {
+   "id": "r402",
+   "stars": 3,
+   "text": "line spaces were too small.  made it difficult to write."
+  },
+  {
+   "id": "r404",
+   "stars": 4,
+   "text": "Très pratique, facile à naviguer !"
+  },
+  {
+   "id": "r405",
+   "stars": 4,
+   "text": "facile caricamento. Buona organizzazione delle pagine.Molto utile."
+  },
+  {
+   "id": "r406",
+   "stars": 4,
+   "text": "almost perfect for my needs, I would love an opportunity to customise, yet I understand fully the limitations and what it would mean for the author. Pricing is fair, and I could almost 5 star this one considering this point."
+  },
+  {
+   "id": "r407",
+   "stars": 4,
+   "text": "Easy to download and easy to navigate."
+  },
+  {
+   "id": "r408",
+   "stars": 4,
+   "text": "This is great; almost exactly what I was looking for. \n\nI just wish the daily page didn't have the schedule on it, or minimized it, and there was more lined area for to dos. My schedule is definitely digital (in Outlook, Gcal) so it doesn't make sense to write it down."
+  },
+  {
+   "id": "r409",
+   "stars": 4,
+   "text": "This item is excellent and beautiful."
+  },
+  {
+   "id": "r410",
+   "stars": 4,
+   "text": "Perfetto proprio quello che volevo, avrei anche apprezzato una pagina in più di note più ampia per ogni giorno, ma a parte questo ottimo prodotto. :)"
+  },
+  {
+   "id": "r411",
+   "stars": 4,
+   "text": "Easy to download and use"
+  },
+  {
+   "id": "r412",
+   "stars": 5,
+   "text": "nice design and very easy to use"
+  },
+  {
+   "id": "r413",
+   "stars": 5,
+   "text": "Exactly what I was looking for. Easy to navigate, edit, and utilize."
+  },
+  {
+   "id": "r414",
+   "stars": 3,
+   "text": "The set up is great, but 3 major drawbacks: 1) this format is not suitable for Remarkable 2 (margins are too wide, toolbar falls over the text), 2) seller was not responsive to this request and basically told me I was wrong (though picture says enough), 3) seller deleted the files after a while, so if you don’t download and save all the files at once you won’t be able to use the other years later (and have to buy it again)"
+  },
+  {
+   "id": "r415",
+   "stars": 5,
+   "text": "The Daily Planner has a very nice design and is super easy to navigate. Very fair price too! I will find this helpful in keeping myself organised!"
+  },
+  {
+   "id": "r416",
+   "stars": 5,
+   "text": "fantastisch... super strak en mooie elementen die je erin hebt verwerkt.. top"
+  },
+  {
+   "id": "r417",
+   "stars": 4,
+   "text": "I wish it was easier to receive the electronic documents."
+  },
+  {
+   "id": "r418",
+   "stars": 5,
+   "text": "Plenty of puzzles to work on.  Matches description. Great value with options for different skill levels. Easy to add to my Remarkable Paper Pro."
+  },
+  {
+   "id": "r419",
+   "stars": 5,
+   "text": "Awesome collection, this will keep my mind occupied for a while. I love word search puzzles, thank you for sharing your items with myself and everyone. Please create more and I can't wait to see what else you have in store for the paper pro."
+  },
+  {
+   "id": "r420",
+   "stars": 5,
+   "text": "Works as it should, download easily"
+  },
+  {
+   "id": "r421",
+   "stars": 5,
+   "text": "Gran plantilla, mejor atención! Lo recomiendo."
+  },
+  {
+   "id": "r422",
+   "stars": 5,
+   "text": "Excellent Journal for my reMarkable Paper Pro. Works exactly as I expected. I really like the graphical touches which make it interesting to look at and fun to use. It is perfect for me. Thanks."
+  },
+  {
+   "id": "r423",
+   "stars": 5,
+   "text": "As advertised works great, easy to download."
+  },
+  {
+   "id": "r424",
+   "stars": 4,
+   "text": "Thanks for the Really Nice Pdf.🙏👍"
+  },
+  {
+   "id": "r425",
+   "stars": 5,
+   "text": "This worked perfectly with my Remarkable."
+  },
+  {
+   "id": "r427",
+   "stars": 5,
+   "text": "Love diary and the fact you can jump to right section"
+  },
+  {
+   "id": "r428",
+   "stars": 5,
+   "text": "I prefer this to the templates available from the subscription. Every page is linked and the colors are fun!"
+  },
+  {
+   "id": "r429",
+   "stars": 5,
+   "text": "Very helpful and great customer service"
+  },
+  {
+   "id": "r430",
+   "stars": 5,
+   "text": "Item is amazing & very helpful. Highly recommend."
+  },
+  {
+   "id": "r431",
+   "stars": 5,
+   "text": "Item exactly as described and seamless download process with customization options provided as indicated. Easily uploaded to my remarkable 2 and all the linked pages work!"
+  },
+  {
+   "id": "r432",
+   "stars": 1,
+   "text": "Extremely disappointed with this product. File does not come in PDF format, therefore unable to import into remarkable. Seller lists instructions in help guide for converting to PDF, but then includes bonus content already in PDF format? Knowing PDF is needed, why not sell the file that way? I shouldn’t have to jump through hoops, download Adobe, reformat the file, and hope it saves/imports correctly. It should already come that way. Shame on you for selling products that inconvenience customers. I won’t use this Etsy shop again."
+  },
+  {
+   "id": "r433",
+   "stars": 1,
+   "text": "The meetings notes are small and they do not offer any way to add more pages."
+  },
+  {
+   "id": "r434",
+   "stars": 1,
+   "text": "This never worked and she won't refund"
+  },
+  {
+   "id": "r435",
+   "stars": 1,
+   "text": "Buy just what you need, not the whole package because half the package doesnt work."
+  },
+  {
+   "id": "r436",
+   "stars": 1,
+   "text": "I bought this templates but after trying it I didn't need it"
+  },
+  {
+   "id": "r437",
+   "stars": 1,
+   "text": "Ça ne marche pas…. Le téléchargement ne fonctionne pas malgré les propositions du vendeur qui je reconnais ait réactif…."
+  },
+  {
+   "id": "r438",
+   "stars": 1,
+   "text": "It's not possible to use it"
+  },
+  {
+   "id": "r439",
+   "stars": 1,
+   "text": "Product simply didn't work for my needs. Might be just fine for others so don't let my review discourage your interest in the product."
+  },
+  {
+   "id": "r440",
+   "stars": 1,
+   "text": "only a one pager, can't add additional pages must keep deleting to use product."
+  },
+  {
+   "id": "r441",
+   "stars": 1,
+   "text": "didnt care for this template"
+  },
+  {
+   "id": "r442",
+   "stars": 1,
+   "text": "nothing have to say it's really simple"
+  },
+  {
+   "id": "r443",
+   "stars": 1,
+   "text": "The templates are all on separate pages so you just end up having a ton of one page templates. These are not combined. Disappointing. I deleted the templates so my remarkable doesn’t look so messy."
+  },
+  {
+   "id": "r444",
+   "stars": 1,
+   "text": "Bof ne vaut pas ce prix"
+  },
+  {
+   "id": "r445",
+   "stars": 1,
+   "text": "Can’t copy and paste on RM2 waste of money \nTook a while to revive after payment sent message to seller no reply still haven’t had a reply \nCan’t be used as sticky notes"
+  },
+  {
+   "id": "r446",
+   "stars": 1,
+   "text": "The sticky notes would have been great to use if they were not too light!"
+  },
+  {
+   "id": "r447",
+   "stars": 1,
+   "text": "Purchased.  Wasn't able to use as intended.  Customer service was prompt so no fault there.  Even with assistance was not able to utilize.  Could be user error.  I am usually tech savvy not able to make this work and for the price point didnt want to spend a lot of time trying.  A video showing functionality would be helpful."
+  },
+  {
+   "id": "r448",
+   "stars": 1,
+   "text": "Hat nicht geklappt, die sticky notes zu kopieren!"
+  },
+  {
+   "id": "r449",
+   "stars": 1,
+   "text": "I don’t like the format of this hard to navigate being the hyperlinks . Review and reading pages are split up. Just doesn’t do it for me."
+  },
+  {
+   "id": "r450",
+   "stars": 1,
+   "text": "I have NOT RECEIVED THIS !"
+  },
+  {
+   "id": "r451",
+   "stars": 1,
+   "text": "achat nul et sans intérêt"
+  },
+  {
+   "id": "r452",
+   "stars": 1,
+   "text": "I am disappointed in the transaction(s) that I have experienced."
+  },
+  {
+   "id": "r453",
+   "stars": 1,
+   "text": "estafa de que viene 5 bonus  y viene solo 2"
+  },
+  {
+   "id": "r454",
+   "stars": 2,
+   "text": "Wasn't what I thought it was...but the pictures display it perfectly, I just misunderstood. This review is more a \"I purchased the wrong thing\" than a \"this is garbage\". It wasn't made clear until post purchase that this doesn't function very well on a remarkable 2, but the stickynotes don't work like they do on other devices. They are stuck on the page, you cannot move them. Apparently some devices allow this, remarkable 2 is not one of them."
+  },
+  {
+   "id": "r455",
+   "stars": 2,
+   "text": "I didn't read the title and I thought it was a copy and paste but it's tracing and I don't like the tracing.  I find it to difficult to figure out and there wasn't a demonstration on how to use it.  So I wasn't't very happy with this purchase."
+  },
+  {
+   "id": "r456",
+   "stars": 2,
+   "text": "This did not work. The copy and paste didn't work at all, so now I have a bunch of useless sticky notes that I can't move around. Nice concept though"
+  },
+  {
+   "id": "r457",
+   "stars": 2,
+   "text": "I didn’t realize you had to trace them essentially to use them - that is not convenient for me to work."
+  },
+  {
+   "id": "r458",
+   "stars": 3,
+   "text": "Great price, but bonus items are not linked."
+  },
+  {
+   "id": "r459",
+   "stars": 3,
+   "text": "I am not so sure of the usefulness of this."
+  },
+  {
+   "id": "r460",
+   "stars": 3,
+   "text": "Item was on sale but wasn't what I was expecting. Looked like a hyperlinked PDF for each call. Still a great template though"
+  },
+  {
+   "id": "r461",
+   "stars": 3,
+   "text": "The cover pages are beautiful, but there is not much you can customize inside."
+  },
+  {
+   "id": "r462",
+   "stars": 3,
+   "text": "Did not quite do what I wanted.  Feels a bit cramped."
+  },
+  {
+   "id": "r463",
+   "stars": 3,
+   "text": "Clear and well made tools. Good compatibility with rMPP.\nThe objects are very specialised (business terminology) and not generic enough for what I was looking for. I found the Doodle Sticker set from the same seller much more useful - go check them out! \nThe seller was really helpful throughout 😁"
+  },
+  {
+   "id": "r464",
+   "stars": 3,
+   "text": "Very slow to copy/paste, so frustrating to use. Nice idea and I look forward to receiving the improved and updated version. Very rapid and friendly after sales service"
+  },
+  {
+   "id": "r465",
+   "stars": 3,
+   "text": "nog niet gebruikt. Probeer het op mijn remarkable te zetten"
+  },
+  {
+   "id": "r466",
+   "stars": 3,
+   "text": "There's not much room to take notes. Post-its are nice, but nobody writes that small when you're taking quick notes."
+  },
+  {
+   "id": "r467",
+   "stars": 3,
+   "text": "Kindle Scribe isn't really suited to this product. These import as 'books' not notes."
+  },
+  {
+   "id": "r468",
+   "stars": 5,
+   "text": "An easy way to save and organize Passwords! Simple."
+  },
+  {
+   "id": "r469",
+   "stars": 5,
+   "text": "I really loved my purchase!!!!"
+  },
+  {
+   "id": "r470",
+   "stars": 5,
+   "text": "As advertised looks great on my remarkable"
+  },
+  {
+   "id": "r471",
+   "stars": 5,
+   "text": "As advertised looks great on my remarkable"
+  },
+  {
+   "id": "r472",
+   "stars": 5,
+   "text": "As advertised looks great on my remarkable"
+  },
+  {
+   "id": "r473",
+   "stars": 5,
+   "text": "Nicely executed product and well received"
+  },
+  {
+   "id": "r474",
+   "stars": 5,
+   "text": "Despite I didn’t need any customer service the owner of the shop was friendly enough to reach out anyway 👍🏻"
+  },
+  {
+   "id": "r475",
+   "stars": 5,
+   "text": "So easy to work with and makes daily operations so much fun and quick to manage. Thank you for the quality product received just as advertised."
+  },
+  {
+   "id": "r476",
+   "stars": 5,
+   "text": "easy download and great designs"
+  },
+  {
+   "id": "r477",
+   "stars": 5,
+   "text": "Exactly what I needed!"
+  },
+  {
+   "id": "r478",
+   "stars": 5,
+   "text": "Really great for project management! Thank you"
+  },
+  {
+   "id": "r479",
+   "stars": 4,
+   "text": "This is a very useful resource"
+  },
+  {
+   "id": "r480",
+   "stars": 5,
+   "text": "Awesome product! Thank you very much!"
+  },
+  {
+   "id": "r481",
+   "stars": 5,
+   "text": "Excellent templates, just what I needed for work."
+  },
+  {
+   "id": "r482",
+   "stars": 5,
+   "text": "Thank you for the purchase."
+  },
+  {
+   "id": "r483",
+   "stars": 5,
+   "text": "Nice and easy to download templates."
+  },
+  {
+   "id": "r484",
+   "stars": 5,
+   "text": "The most important part about"
+  },
+  {
+   "id": "r485",
+   "stars": 5,
+   "text": "I have no idea how"
+  },
+  {
+   "id": "r486",
+   "stars": 5,
+   "text": "The most common type of"
+  },
+  {
+   "id": "r487",
+   "stars": 5,
+   "text": "I purchased an item from Kate and it was giving me hassle in the way that it uploaded to my kindle scribe colorsoft. After talking it through, she helped me manage to get it to do as it should've done the first time I sent it to my kindle email. \r\n\r\nShe's was also very helpful and understanding. I appreciate her being able to work with me on another matter. It might not have had the end result I needed or wanted at the moment, but her help and understanding was still very much appreciated."
+  },
+  {
+   "id": "r488",
+   "stars": 1,
+   "text": "Incredibly hard to download, unlike any other template I’ve downloaded previously. Zip files within zip files unorganized and needs work around to get it on to the actual device. Would not have purchased if this was made clear on the listing before purchasing"
+  },
+  {
+   "id": "r489",
+   "stars": 1,
+   "text": "Notebook wasn't what was shown"
+  },
+  {
+   "id": "r490",
+   "stars": 1,
+   "text": "Es ist einfach hässlich und nicht zu gebrauchen.Ich habe es gelöscht."
+  },
+  {
+   "id": "r491",
+   "stars": 1,
+   "text": "Couldn't use the product because I returned my Remarkable tablet. Even with offering to provide proof the seller refused to offer a refund."
+  },
+  {
+   "id": "r492",
+   "stars": 1,
+   "text": "Lijnen slecht te zien op ReMarkable paper pro."
+  },
+  {
+   "id": "r493",
+   "stars": 1,
+   "text": "Couldn't use the product because I returned my Remarkable tablet. Even with offering to provide proof the seller refused to offer a refund."
+  },
+  {
+   "id": "r494",
+   "stars": 1,
+   "text": "It does not allow for handwriting conversion to text"
+  },
+  {
+   "id": "r495",
+   "stars": 1,
+   "text": "Seller sold 2024-2025 planner unusable. No hyperlinks are working in the digital planner. Requested for a replacement for the 2025-2026 planner. Have not heard from seller."
+  },
+  {
+   "id": "r496",
+   "stars": 2,
+   "text": "Great for what it is but was looking for something to use as a daily, monthly planner. This is not it for me."
+  },
+  {
+   "id": "r497",
+   "stars": 2,
+   "text": "This planner looks great. The navigation is where it falls apart, unless I’m severely missing something.  For example, it takes 6 loooong steps to get from the daily page to the month view. Also fairly unresponsive with small touch inputs. There doesn’t seem to be a clear way to move between ANY of the views. I guess you are just supposed to keep pressing the Back button or swiping. This looks really nice, but is absolutely not usable as a planner for me. I’m not sure how anyone could."
+  },
+  {
+   "id": "r498",
+   "stars": 2,
+   "text": "I'm not sure this is for me. It has an interesting take on planning, and project management. However, it uses some fancy terminology, like “endeavors” and similar posh terms, which I find I always have to stop, pause a second, translate internally inside my head, and then understand what I'm trying to do. This introduces sufficient friction that it makes the whole process difficult for me. Maybe it's good for somebody else. Just not for me.\n\nIf there was a way for example to replace “endeavors” with “projects”, etc. Simpler, easier to grasp terms, I can see how this could become a nice method of streamlining conception, planning, execution, and retrospective review of a lot of things."
+  },
+  {
+   "id": "r499",
+   "stars": 3,
+   "text": "too hard to download"
+  },
+  {
+   "id": "r500",
+   "stars": 3,
+   "text": "Their is not an annual budget page."
+  },
+  {
+   "id": "r501",
+   "stars": 3,
+   "text": "here are my five words"
+  },
+  {
+   "id": "r502",
+   "stars": 3,
+   "text": "Aesthetically pleasing, and the prompts help me organise my mind. It does take some time to load because of the file size, though."
+  },
+  {
+   "id": "r503",
+   "stars": 4,
+   "text": "Thank you so much. Greatly appreciated!"
+  },
+  {
+   "id": "r504",
+   "stars": 4,
+   "text": "Very good planner however the remarkable move isn’t for me"
+  },
+  {
+   "id": "r505",
+   "stars": 4,
+   "text": "Good selller. Good product. Thank you"
+  }
+ ]
+}
