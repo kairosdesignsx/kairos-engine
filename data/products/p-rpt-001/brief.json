@@ -669,7 +669,8 @@
        "label": "Done today"
       }
      ]
-    }
+    },
+    "main_links": true
    },
    {
     "module": "calendar",

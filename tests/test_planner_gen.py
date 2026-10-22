@@ -67,7 +67,7 @@ EINK = {
   {"module": "link_test", "anchor": "linktest"},
   {"module": "year", "links": [["Head start", "hs11"]]},
   {"module": "lined", "label": "Grid", "pages": 1, "dots": True, "anchor": "grid"},
-  {"module": "head_start", "label": "Head start", "from": "2026-11", "to": "2026-12", "days": True, "nav": False,
+  {"module": "head_start", "label": "Head start", "from": "2026-11", "to": "2026-12", "days": True, "nav": False, "main_links": True,
    "day": {"left": [{"kind": "checklist", "label": "Top 3", "rows": 3}, {"kind": "lines", "label": "Notes"}], "right": [{"kind": "hours", "label": "Time blocks", "from": 6, "to": 22, "row": 30}, {"kind": "lines", "label": "Done today"}]}},
   {"module": "calendar", "habits": True, "days": True, "week": {"side": [{"kind": "checklist", "label": "Top 3", "rows": 3, "fill": True}, {"kind": "lines", "label": "Notes"}]}}
  ]}
@@ -117,6 +117,12 @@ def test_eink():
     assert 'grid-auto-flow:column' in pages['w10'] and 'wkside' in pages['w10'] and 'wkside' in pages['hsw01']
     assert 'Tap with your finger' in pages['linktest'] and 'Pen test here' in pages['linktest'] and 'Goodnotes' not in pages['linktest']
     assert 'Where things are' in pages['linktest']
+    # main_links: head-start tabs open the 2027 months, no tab lit; last head-start week -> Week 1 -> back
+    rail = lambda a: pages[a].split('class="rail"')[1].split('</div>')[0]
+    assert 'href="#m11"' in rail('hs11') and 'href="#hs11"' not in rail('hs11') and 'class="on"' not in rail('hsw01')
+    last = max(a for a in pages if re.fullmatch(r'hsw\d\d', a))
+    assert 'href="#w01"' in pages[last] and f'href="#{last}"' in pages['w01']
+    assert 'white-space:nowrap' in pages['year']
     assert 'background:#FFFFFF' in pages['cover'] and 'background:#EBEBEB' not in pages['cover'], 'e-ink cover is pure white'
     assert 'background:#111111;color:#FFFFFF' not in pages['index'], 'e-ink Contents: no solid black month tiles'
     assert not re.search(r'#[0-9A-Fa-f]{6}(22|55|cc)\b', html.split('</style>')[1]), 'no color tints in grayscale'

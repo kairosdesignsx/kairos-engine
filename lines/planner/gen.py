@@ -415,7 +415,13 @@ def m_year(P, sec):
     title = 'Year at a glance' if P.undated else f'{P.year} at a glance'
     _register(P, sec, 'Year', 'year', 'Calendar')
     chips = ''.join(f'<a href="#{a_}" style="display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:{P.rpill}px;{(f'background:{th["paper"]};color:{th["ink"]};box-shadow:inset 0 0 0 1.5px {th["ink"]}') if P.gray else (f'background:{th["ink"]};color:{th["paper"]}')};font:600 11px \'{th["body"]}\';letter-spacing:.06em;text-transform:uppercase">{esc(l_)} {arrow("r", 12)}</a>' for l_, a_ in sec.get('links', []))
-    P.page('year', P.head('Overview', title, right=f'<div style="display:flex;gap:12px;align-items:center">{chips}<span class="k">{"Tap a month" if P.undated else "Tap any date"}</span></div>') + f'<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px 22px;flex:1">{blocks}</div>', active='year')
+    hint = f'<div style="display:flex;gap:12px;align-items:center">{chips}<span class="k">{"Tap a month" if P.undated else "Tap any date"}</span></div>'
+    if P.HT > P.W and chips:  # portrait: the chips and hint get their own row under the title, so neither wraps
+        hint = hint.replace('text-transform:uppercase">', 'text-transform:uppercase;white-space:nowrap">').replace('<span class="k">', '<span class="k" style="white-space:nowrap">')
+        head = P.head('Overview', title) + f'<div style="display:flex;justify-content:space-between;align-items:center">{hint}</div>'
+    else:
+        head = P.head('Overview', title, right=hint)
+    P.page('year', head + f'<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px 22px;flex:1">{blocks}</div>', active='year')
 
 
 @module('lined', 'Lined or dot-grid writing pages (notes, goals, brain dump). label, kicker, pages, dots, anchor',
@@ -571,7 +577,8 @@ def _week(P, n, m, side_blocks, day_layout, with_days):
             head = f'<div style="display:flex;justify-content:space-between;opacity:.4"><span class="k">{DOW[d.weekday()]}</span><span class="h" style="font-size:22px">{d.day}</span></div>'
         cols += f'<div class="box" style="flex:1">{head}<div class="lines"></div></div>'
     side = ''.join(block(P, b) for b in side_blocks)
-    nav_w = (f'<a href="#w{n - 1:02d}">{arrow("l")}</a>' if n > 1 else '') + (f' <a href="#w{n + 1:02d}">{arrow("r")}</a>' if n < (52 if P.undated else P.nweeks()) else '')
+    back1 = getattr(P, 'hs_last_week', None) if (n == 1 and not P.undated) else None  # Week 1 back to the last head-start week
+    nav_w = (f'<a href="#w{n - 1:02d}">{arrow("l")}</a>' if n > 1 else (f'<a href="#{back1}">{arrow("l")}</a>' if back1 else '')) + (f' <a href="#w{n + 1:02d}">{arrow("r")}</a>' if n < (52 if P.undated else P.nweeks()) else '')
     rng = 'Write the dates' if P.undated else f'{MONTHS[days[0].month - 1][:3]} {days[0].day} to {MONTHS[days[6].month - 1][:3]} {days[6].day}'
     inner = f'''{P.head(rng, f"Week {n}")}
       {_week_grid(P, cols, side)}'''
@@ -609,9 +616,10 @@ def _day(P, d, n, m, i, lay):
 
 
 @module('head_start', 'Lead-in months before the main dated year (for example Nov and Dec 2026 in a 2027 planner): month pages whose dates link to lead-in week pages, Monday-start week pages titled by date range, optional lead-in day pages. Anchors use their own prefix. The last week links days that fall in the main year to their day pages and offers Continue to the main year. label, kicker, anchor (prefix, default hs), from YYYY-MM, to YYYY-MM, days bool, month {side}, week {preset|side}, day {preset|left,right}, continue_to (default m01)',
-        params={'label': 'str', 'kicker': 'str', 'anchor': 'str', 'from': 'YYYY-MM', 'to': 'YYYY-MM', 'days': 'bool', 'month': 'dict', 'week': 'dict', 'day': 'dict', 'continue_to': 'str'})
+        params={'label': 'str', 'kicker': 'str', 'anchor': 'str', 'from': 'YYYY-MM', 'to': 'YYYY-MM', 'days': 'bool', 'month': 'dict', 'week': 'dict', 'day': 'dict', 'continue_to': 'str', 'main_links': 'bool: month tabs on head-start pages open the main year months (no head-start tab lit), the last head-start week arrow opens main Week 1 and Week 1 gets a back arrow'})
 def m_head_start(P, sec):
     th = P.th; pre = sec.get('anchor', 'hs'); cont = sec.get('continue_to', 'm01')
+    mainl = bool(sec.get('main_links'))  # one meaning per month tab: tabs always open the main year's months
     y0, m0 = map(int, sec['from'].split('-')); y1, m1 = map(int, sec['to'].split('-'))
     months = []
     y, m = y0, m0
@@ -648,10 +656,10 @@ def m_head_start(P, sec):
         nxt = day_anchor(nd) if in_lead(nd) else (P.did(nd) if in_main(nd) else None)
         arrows = (f'<a href="#{day_anchor(pd)}">{arrow("l")}</a>' if in_lead(pd) else '') + (f' <a href="#{nxt}">{arrow("r")}</a>' if nxt else '')
         left = ''.join(block(P, b) for b in dlay['left']); rightb = ''.join(block(P, b) for b in dlay['right'])
-        P.page(day_anchor(d), month=d.month if (d.year, d.month) in months else None, rail_map=rail_map, inner=f'{P.head(d.strftime("%A") + f" · {d.year}", f"{MONTHS[d.month - 1]} {d.day}", right=f"<span class=k style=font-size:16px>{arrows}</span>")}<div class="row" style="flex:1"><div class="col" style="flex:1">{left}</div><div class="col" style="flex:1.15">{rightb}</div></div>',
+        P.page(day_anchor(d), month=None if mainl else (d.month if (d.year, d.month) in months else None), rail_map=rail_map, inner=f'{P.head(d.strftime("%A") + f" · {d.year}", f"{MONTHS[d.month - 1]} {d.day}", right=f"<span class=k style=font-size:16px>{arrows}</span>")}<div class="row" style="flex:1"><div class="col" style="flex:1">{left}</div><div class="col" style="flex:1.15">{rightb}</div></div>',
                crumb=f'<a href="#{pre}{(d.month if (d.year, d.month) in months else m0):02d}">{MONTHS[d.month - 1]} {d.year}</a> / <a href="#{week_anchor}">{week_title}</a>')
 
-    rail_map = {m2: f'{pre}{m2:02d}' for y2, m2 in months}
+    rail_map = None if mainl else {m2: f'{pre}{m2:02d}' for y2, m2 in months}
     P.head_start_links = [(f'{MONTHS[m2 - 1]} {y2}', f'{pre}{m2:02d}') for y2, m2 in months]
     done = set()
     for (yy, mm) in months:
@@ -678,7 +686,7 @@ def m_head_start(P, sec):
         inner = f'''<div class="row" style="align-items:flex-end;justify-content:space-between"><div><p class="k">{esc(sec.get("kicker", "Head start"))} · {yy}</p><p class="h" style="font-size:52px">{MONTHS[mm - 1]}</p></div><div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;max-width:560px">{wl}{extra}</div></div>
           <div class="row" style="flex:1"><div class="cal" style="flex:3;grid-template-rows:auto repeat({len(cal)},1fr);border-bottom:1px solid {th["line"]}">{cells}</div><div class="col" style="flex:1.1">{side}</div></div>'''
         trail = ' · '.join(f'<a href="#{pre}{m2:02d}">{MONTHS[m2 - 1][:3]} {y2}</a>' for y2, m2 in months)
-        P.page(f'{pre}{mm:02d}', inner, crumb=f'Head start: {trail}', month=mm, rail_map=rail_map)
+        P.page(f'{pre}{mm:02d}', inner, crumb=f'Head start: {trail}', month=None if mainl else mm, rail_map=rail_map)
         for w in ws:
             thu = weeks[w - 1][3]
             home = (thu.year, thu.month) if (thu.year, thu.month) in months else (months[0] if thu < first else months[-1])
@@ -704,10 +712,13 @@ def m_head_start(P, sec):
             pos = lead_weeks.index(w)
             prev_w = f'<a href="#{wk_anchor(lead_weeks[pos - 1])}">{arrow("l")}</a>' if pos > 0 else ''
             next_w = f' <a href="#{wk_anchor(lead_weeks[pos + 1])}">{arrow("r")}</a>' if pos + 1 < len(lead_weeks) else ''
+            if mainl and not next_w and w < len(weeks) and overlaps(weeks[w]):
+                next_w = f' <a href="#{main_week(weeks[w][6])}">{arrow("r")}</a>'  # last head-start week: arrow to main Week 1
+                P.hs_last_week = wk_anchor(w)
             right = f'<span class="k" style="font-size:16px">{prev_w}{next_w}</span>' + (contlink if pos + 1 == len(lead_weeks) else '')
             inner = f'''{P.head(f"Head start · week {pos + 1} of {len(lead_weeks)}", title, right=right)}
               {_week_grid(P, cols, sideb)}'''
-            P.page(wk_anchor(w), inner, crumb=f'<a href="#{pre}{mm:02d}">{MONTHS[mm - 1]} {yy}</a> / {title}', month=mm, rail_map=rail_map)
+            P.page(wk_anchor(w), inner, crumb=f'<a href="#{pre}{mm:02d}">{MONTHS[mm - 1]} {yy}</a> / {title}', month=None if mainl else mm, rail_map=rail_map)
             if with_days:
                 for d in days:
                     if in_lead(d):
@@ -828,7 +839,7 @@ def m_reading_month(P, sec):
     for m in range(1, 13):
         inner = (P.head('Month · year ____', MONTHS[m - 1], right=_arrows(f'm{m - 1:02d}' if m > 1 else None, f'm{m + 1:02d}' if m < 12 else None)) +
                  f'''<div class="row" style="flex:1.4">
-                   <div class="box" style="flex:1.45"><span class="k">Books finished this month</span><div style="flex:1;display:flex;flex-direction:column">{finished}</div></div>
+                   <div class="box" style="flex:1.45"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:8px"><span class="k">Books finished this month</span><span style="font-size:{P.fs(11)};color:{th["muted"]}">More than 8? Add them in Notes</span></div><div style="flex:1;display:flex;flex-direction:column">{finished}</div></div>
                    <div class="col" style="flex:1">
                      <div class="box" style="gap:10px"><span class="k">Book of the month</span><span style="border-bottom:1.2px solid {th["line"]};height:{26 * P.scale:.0f}px"></span><span style="border-bottom:1.2px solid {th["line"]};height:{26 * P.scale:.0f}px"></span></div>
                      <div class="box" style="gap:10px"><span class="k">Pages or hours read</span><span style="border-bottom:1.2px solid {th["line"]};height:{26 * P.scale:.0f}px"></span></div>
@@ -854,7 +865,7 @@ def m_reading_year(P, sec):
             f'<span style="width:70px;border-bottom:1.5px solid {th["ink"]};height:24px"></span><span class="h" style="font-size:{21 * P.scale:.0f}px">books this year</span></div>')
     inner = (P.head(sec.get('kicker', 'Goal'), label, right=f'<div style="display:flex;align-items:flex-end;gap:8px;width:170px"><span class="k">Year</span><span style="flex:1;border-bottom:1.5px solid {th["ink"]};height:24px"></span></div>') + goal +
              f'''<div class="row" style="flex:1.6">
-               <div class="box" style="flex:1.25"><div style="display:flex;justify-content:space-between"><span class="k">Month by month</span><span style="font-size:{P.fs(11)};color:{th["muted"]}">One square per book</span></div><div style="flex:1;display:flex;flex-direction:column">{months}</div></div>
+               <div class="box" style="flex:1.25"><div style="display:flex;justify-content:space-between"><span class="k">Month by month</span><span style="font-size:{P.fs(11)};color:{th["muted"]}">One square per book (tally past 10)</span></div><div style="flex:1;display:flex;flex-direction:column">{months}</div></div>
                <div class="col" style="flex:1">
                  <div class="box"><div style="display:flex;justify-content:space-between"><span class="k">Tallies</span><span style="font-size:{P.fs(11)};color:{th["muted"]}">One mark per book</span></div><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">{tallies}<span style="display:flex;align-items:center;justify-content:center;text-align:center;font-size:{P.fs(11)};color:{th["muted"]};line-height:1.35">Five marks,<br>then a line across</span></div></div>
                  <div class="box" style="flex:1"><span class="k">Top 5 of the year</span><div style="flex:1;display:flex;flex-direction:column">{top5}</div></div>

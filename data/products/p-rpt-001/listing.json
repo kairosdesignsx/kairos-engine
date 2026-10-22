@@ -25,7 +25,7 @@
    "points": [
     "Fits reMarkable 2, Paper Pro, Paper Pure",
     "Dated 2027, starts Oct 26, 2026",
-    "Linked from the year to the hour"
+    "Linked from the year to each day"
    ],
    "label": "reMarkable planner"
   },
@@ -34,7 +34,7 @@
    "points": [
     "Top 3 and an 8-line to-do list",
     "Time blocks from 6am to 10pm",
-    "Notes and Done today on every page"
+    "Same layout on every day page"
    ],
    "label": "Day page, close up",
    "view": "crop",
@@ -45,7 +45,18 @@
     "m01h": "January habit tracker",
     "hs11": "November 2026",
     "hsw01": "Head start week 1"
-   }
+   },
+   "zoom": [
+    {
+     "page": "d0111",
+     "x": [
+      0.06,
+      0.94
+     ],
+     "y": 0.004
+    }
+   ],
+   "height": 1450
   },
   "ph3_start": {
    "headline": "Working in five minutes",
@@ -63,7 +74,25 @@
     "m01h": "January habit tracker",
     "hs11": "November 2026",
     "hsw01": "Head start week 1"
-   }
+   },
+   "zoom": [
+    {
+     "page": "start",
+     "x": [
+      0.06,
+      0.68
+     ],
+     "y": 0.004
+    },
+    {
+     "page": "linktest",
+     "x": [
+      0.06,
+      0.68
+     ],
+     "y": 0.004
+    }
+   ]
   },
   "ph4_fit": {
    "headline": "Made to fit your tablet",
@@ -124,7 +153,25 @@
     "m01h": "January habit tracker",
     "hs11": "November 2026",
     "hsw01": "Head start week 1"
-   }
+   },
+   "zoom": [
+    {
+     "page": "year",
+     "x": [
+      0.03,
+      0.66
+     ],
+     "y": 0.004
+    },
+    {
+     "page": "d0111",
+     "x": [
+      0.38,
+      1.0
+     ],
+     "y": 0.004
+    }
+   ]
   },
   "ph6_week": {
    "headline": "See your whole week",
@@ -133,7 +180,7 @@
     "This week's top 3",
     "Notes for the week"
    ],
-   "label": "Week page, close up",
+   "label": "Week page",
    "view": "crop",
    "side": "right",
    "captions": {
@@ -149,8 +196,8 @@
    "headline": "Plan the month, track habits",
    "points": [
     "Every date opens its day",
-    "This month's focus",
-    "A habit tracker per 2027 month"
+    "Habit tracker and week buttons",
+    "One tracker per 2027 month"
    ],
    "label": "Month and habits",
    "view": "crop",
@@ -161,14 +208,32 @@
     "m01h": "January habit tracker",
     "hs11": "November 2026",
     "hsw01": "Head start week 1"
-   }
+   },
+   "zoom": [
+    {
+     "page": "m01",
+     "x": [
+      0.06,
+      0.68
+     ],
+     "y": 0.004
+    },
+    {
+     "page": "m01h",
+     "x": [
+      0.06,
+      0.68
+     ],
+     "y": 0.004
+    }
+   ]
   },
   "ph8_headstart": {
    "headline": "Start in October, not January",
    "points": [
     "First page: Mon, Oct 26, 2026",
-    "Month, week and day pages",
-    "Leads into January 2027"
+    "November 2026 month page",
+    "Head start week 1 of 9"
    ],
    "label": "Head start",
    "view": "crop",
@@ -179,14 +244,32 @@
     "m01h": "January habit tracker",
     "hs11": "November 2026",
     "hsw01": "Head start week 1"
-   }
+   },
+   "zoom": [
+    {
+     "page": "hs11",
+     "x": [
+      0.06,
+      0.68
+     ],
+     "y": 0.004
+    },
+    {
+     "page": "hsw01",
+     "x": [
+      0.06,
+      0.68
+     ],
+     "y": 0.004
+    }
+   ]
   },
   "ph9_work": {
    "headline": "Room for projects and ideas",
    "points": [
-    "Projects page: next step, due, done",
-    "10 lined notes pages",
-    "6 dot grid pages"
+    "Projects: next step, due, done",
+    "A box to tick when it's done",
+    "Dot grid for sketches and lists"
    ],
    "label": "Work and notes",
    "view": "crop",
@@ -197,7 +280,25 @@
     "m01h": "January habit tracker",
     "hs11": "November 2026",
     "hsw01": "Head start week 1"
-   }
+   },
+   "zoom": [
+    {
+     "page": "projects",
+     "x": [
+      0.32,
+      0.94
+     ],
+     "y": 0.004
+    },
+    {
+     "page": "grid",
+     "x": [
+      0.06,
+      0.68
+     ],
+     "y": 0.004
+    }
+   ]
   },
   "ph10_inside": {
    "headline": "Exactly what is inside",
@@ -240,14 +341,14 @@
  ],
  "alt": {
   "ph1_hero": "The Plain Ink 2027 cover on a light gray e-ink style tablet, in front of a second tablet showing the top of the January 11, 2027 day page, in black, white and gray.",
-  "ph2_day": "The January 11, 2027 day page shown large on a tablet: Top 3, an 8-line To do list, Notes, Time blocks from 6am to 10pm and Done today.",
-  "ph3_start": "Close-ups of the Start here page with four numbered reMarkable steps and the Setup check page with its jump buttons, fix list and pen test area.",
+  "ph2_day": "Close-up of the top of the January 11, 2027 day page: top bar, Month / Week trail, Top 3, the 8-line To do list and time blocks from 6am to 7pm.",
+  "ph3_start": "Close-ups of the top left of the Start here page, with step 1 for getting the PDF onto a reMarkable, and of the Setup check page with its jump buttons and the start of the fix list.",
   "ph4_fit": "The Start here page shown large on a tablet beside a box saying it works on reMarkable 2, Paper Pro and Paper Pure and is not sized for the Paper Pro Move, phones or iPad apps, and three numbered download steps.",
-  "ph5_nav": "Close-ups of the 2027 year at a glance page and the January 11, 2027 day page, showing the top bar with Home, the month tabs on the right edge and the January / Week 3 trail.",
+  "ph5_nav": "Close-ups of the top of the 2027 year at a glance page, with the top bar, the Head start button and January to March, and of the January 11, 2027 day page, with the January / Week 3 trail, arrows, time blocks and the month tabs on the right edge.",
   "ph6_week": "The Week 3 page shown large on a tablet: seven day boxes, a dotted Notes box, This week's top 3 and a lined Notes box.",
-  "ph7_month": "Close-ups of the January 2027 month page with its dated grid, week chips and This month's focus box, and the January habit tracker.",
-  "ph8_headstart": "Close-ups of the November 2026 head start month page, starting on Monday, October 26, and the first head start week page, October 26 to November 1.",
-  "ph9_work": "Close-ups of the Projects page with Project, Next step, Due and Done columns and tick boxes, and a dot grid page.",
+  "ph7_month": "Close-ups of the January 2027 month page with its Habit tracker button, Week 1 button and the first weeks of the dated grid, and of the January habit tracker with day numbers and a row of circles per habit.",
+  "ph8_headstart": "Close-ups of the November 2026 head start month page, whose grid starts on Monday, October 26, and of head start week 1 of 9, October 26 to November 1.",
+  "ph9_work": "Close-ups of the Projects table's Next step, Due and Done columns with tick boxes, and of the top of a dot grid page.",
   "ph10_inside": "The Contents page shown large on a tablet beside the page count, the tablets it fits and a box listing what is not included, such as handwriting-to-text."
  }
 }

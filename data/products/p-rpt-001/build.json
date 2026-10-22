@@ -6,7 +6,7 @@
    "pages": 542
   }
  ],
- "links": 11982,
+ "links": 11984,
  "overflow": [],
  "lean": false,
  "attempts": [
@@ -2214,6 +2214,6 @@
  ],
  "product_id": "p-rpt-001",
  "brief_id": "b-rpt-001",
- "built_at": "2026-10-22T15:20:59Z",
+ "built_at": "2026-10-22T15:38:34Z",
  "line": "planner"
 }
