@@ -1,0 +1,104 @@
+[
+ {
+  "id": "p_fast_delivery",
+  "theme": "Quick, easy download",
+  "use_for": "Instant access, fast or easy download/delivery with no problems.",
+  "count": 8
+ },
+ {
+  "id": "w_feature",
+  "theme": "Wants a specific extra tracker or feature",
+  "use_for": "Names a feature/tab to add (no-spend days, check register, total debt, per-card amounts, monthly expense sheets, transactions log, separate sheets).",
+  "count": 7
+ },
+ {
+  "id": "c_upsell",
+  "theme": "Forced survey or upsell to get the file",
+  "use_for": "Had to fill a questionnaire or got pushed to a paid service before receiving the download.",
+  "count": 4
+ },
+ {
+  "id": "p_shared",
+  "theme": "Good for budgeting with a partner",
+  "use_for": "Easy to share or plan together with a spouse, partner or family.",
+  "count": 4
+ },
+ {
+  "id": "c_manual",
+  "theme": "Too much manual entry",
+  "use_for": "Has to type, copy-paste or re-enter totals by hand instead of it being automatic.",
+  "count": 4
+ },
+ {
+  "id": "c_balances",
+  "theme": "Doesn't track account balances or transfers well",
+  "use_for": "Can't see running cash/account balances; transfers between accounts or debit/credit mix throw off numbers.",
+  "count": 3
+ },
+ {
+  "id": "w_more_trackers",
+  "theme": "Extra specialized tracker tabs",
+  "use_for": "Wants an added tab or tracker, e.g. quarterly taxes or money paid back.",
+  "count": 2
+ },
+ {
+  "id": "c_slow",
+  "theme": "Sheet is slow or laggy",
+  "use_for": "Long loading, lag or freezing when editing; poor performance.",
+  "count": 1
+ },
+ {
+  "id": "w_budget_method",
+  "theme": "Choose my own budgeting rule",
+  "use_for": "Wants to change the built-in split or method (e.g. 50/30/20 to another ratio).",
+  "count": 1
+ },
+ {
+  "id": "w_yearly_totals",
+  "theme": "Yearly totals or annual summary",
+  "use_for": "Wants yearly totals or a full-year overview of spending.",
+  "count": 1
+ },
+ {
+  "id": "w_due_dates",
+  "theme": "Bill due dates",
+  "use_for": "Wants bill due dates or payment reminders built in.",
+  "count": 1
+ },
+ {
+  "id": "c_privacy",
+  "theme": "Privacy or security worries",
+  "use_for": "Uneasy about storing finances in Google or online.",
+  "count": 1
+ },
+ {
+  "id": "c_old_version",
+  "theme": "Got an outdated version",
+  "use_for": "Received an older version than the current one the seller offers.",
+  "count": 1
+ },
+ {
+  "id": "c_sharing",
+  "theme": "Can't share with family or partner",
+  "use_for": "Lock or permissions stop sharing the sheet with others.",
+  "count": 1
+ },
+ {
+  "id": "p_private",
+  "theme": "Keeps my data private",
+  "use_for": "Likes that data stays on own computer instead of an app.",
+  "count": 1
+ },
+ {
+  "id": "p_compatible",
+  "theme": "Works in my app",
+  "use_for": "Praises that it opened fine in Excel, Numbers or another app.",
+  "count": 1
+ },
+ {
+  "id": "w_currency",
+  "theme": "Choose or type own currency",
+  "use_for": "Wants a currency option or custom currency symbol.",
+  "count": 1
+ }
+]

@@ -1,0 +1,773 @@
+{
+ "product_type": "Google Sheets budget template (Spreadsheet budget template for Google Sheets and Excel (digital download))",
+ "codebook": {
+  "complaints": [
+   {
+    "id": "c_access",
+    "theme": "Couldn't open the file or get access to the sheet",
+    "use_for": "Request-access prompts, broken copy link, download failed."
+   },
+   {
+    "id": "c_setup",
+    "theme": "Confusing setup or unclear instructions",
+    "use_for": "Didn't know how to start, copy, or fill it in."
+   },
+   {
+    "id": "c_hard",
+    "theme": "Hard to use day to day",
+    "use_for": "General 'not user friendly' with no specific cause."
+   },
+   {
+    "id": "c_formulas",
+    "theme": "Formulas broke or showed errors",
+    "use_for": "#REF!, wrong totals, calculations stopped working."
+   },
+   {
+    "id": "c_app",
+    "theme": "Doesn't work in my app or device",
+    "use_for": "Excel, Numbers, phone app, offline problems."
+   },
+   {
+    "id": "c_customize",
+    "theme": "Can't change categories or layout",
+    "use_for": "Locked, can't rename or add categories."
+   },
+   {
+    "id": "c_overwhelm",
+    "theme": "Too much, overwhelming",
+    "use_for": "Too many tabs or fields."
+   },
+   {
+    "id": "c_basic",
+    "theme": "Too basic",
+    "use_for": "Not enough features."
+   },
+   {
+    "id": "c_missing",
+    "theme": "Missing features or tabs promised",
+    "use_for": "Less than described."
+   },
+   {
+    "id": "c_misleading",
+    "theme": "Not as described or pictured",
+    "use_for": "Differs from photos or listing."
+   },
+   {
+    "id": "c_dates",
+    "theme": "Dates or year problems",
+    "use_for": "Wrong year, dates don't roll over, stuck to one year."
+   },
+   {
+    "id": "c_currency",
+    "theme": "Currency or region problems",
+    "use_for": "Dollar sign only, date formats."
+   },
+   {
+    "id": "c_look",
+    "theme": "Didn't like the look",
+    "use_for": "Colors, style."
+   },
+   {
+    "id": "c_quality",
+    "theme": "Errors, typos or sloppy work",
+    "use_for": "Mistakes in labels or layout."
+   },
+   {
+    "id": "c_support",
+    "theme": "Seller didn't help or reply",
+    "use_for": "Support complaints."
+   },
+   {
+    "id": "c_value",
+    "theme": "Not worth the price",
+    "use_for": "Price complaints."
+   },
+   {
+    "id": "c_not_useful",
+    "theme": "Not useful for my needs",
+    "use_for": "Didn't fit how they budget."
+   }
+  ],
+  "praise": [
+   {
+    "id": "p_easy",
+    "theme": "Easy to set up and use",
+    "use_for": "Easy, simple."
+   },
+   {
+    "id": "p_look",
+    "theme": "Beautiful design",
+    "use_for": "Pretty, colors."
+   },
+   {
+    "id": "p_automated",
+    "theme": "Does the math for me",
+    "use_for": "Automatic calculations, formulas."
+   },
+   {
+    "id": "p_insight",
+    "theme": "Helps me see where my money goes",
+    "use_for": "Clarity, awareness, control."
+   },
+   {
+    "id": "p_life",
+    "theme": "Changed my finances",
+    "use_for": "Saved money, paid off debt, less stress."
+   },
+   {
+    "id": "p_complete",
+    "theme": "Has everything I need",
+    "use_for": "Comprehensive."
+   },
+   {
+    "id": "p_guide",
+    "theme": "Clear instructions or tutorial",
+    "use_for": "Instructions, videos."
+   },
+   {
+    "id": "p_flexible",
+    "theme": "Customizable",
+    "use_for": "Easy to change categories."
+   },
+   {
+    "id": "p_support",
+    "theme": "Seller was helpful",
+    "use_for": "Support."
+   },
+   {
+    "id": "p_value",
+    "theme": "Great value",
+    "use_for": "Price."
+   },
+   {
+    "id": "p_as_described",
+    "theme": "Exactly as described",
+    "use_for": "Matches listing."
+   },
+   {
+    "id": "p_repeat",
+    "theme": "Repeat buyer",
+    "use_for": "Bought before."
+   }
+  ],
+  "wishes": [
+   {
+    "id": "w_mobile",
+    "theme": "Better on phone",
+    "use_for": "Wants a mobile-friendly version."
+   },
+   {
+    "id": "w_excel",
+    "theme": "Excel version",
+    "use_for": "Wants Excel support."
+   },
+   {
+    "id": "w_more_categories",
+    "theme": "More categories or rows",
+    "use_for": "Needs more space."
+   }
+  ]
+ },
+ "reviews": [
+  {
+   "id": "r253",
+   "stars": 5,
+   "text": "Great to do business with!"
+  },
+  {
+   "id": "r254",
+   "stars": 5,
+   "text": "Very user friendly and easy to understand"
+  },
+  {
+   "id": "r255",
+   "stars": 5,
+   "text": "Very user friendly and easy to understand"
+  },
+  {
+   "id": "r256",
+   "stars": 5,
+   "text": "So easy and intuitive to use!"
+  },
+  {
+   "id": "r257",
+   "stars": 5,
+   "text": "So easy and intuitive to use!"
+  },
+  {
+   "id": "r258",
+   "stars": 5,
+   "text": "I was skeptical at first, but once I set up the Google Sheets template, I was blown away. Thank you for making budgeting easy and accessible!"
+  },
+  {
+   "id": "r259",
+   "stars": 5,
+   "text": "Really great tool, I love the ability to zoom out with the annual breakdowns. The instructional video was really helpful."
+  },
+  {
+   "id": "r260",
+   "stars": 5,
+   "text": "Great budgeting breakdown and very helpful instructional video."
+  },
+  {
+   "id": "r261",
+   "stars": 5,
+   "text": "This has been super helpful planning out my new budget!"
+  },
+  {
+   "id": "r262",
+   "stars": 5,
+   "text": "As described, thank you :)"
+  },
+  {
+   "id": "r263",
+   "stars": 5,
+   "text": "Great spreadsheet. Easy to understand"
+  },
+  {
+   "id": "r264",
+   "stars": 5,
+   "text": "Super in depth and insanely helpful"
+  },
+  {
+   "id": "r265",
+   "stars": 4,
+   "text": "I've only  just purchased this and begin going thru the set up process for next year. It's already an improvement from the Excel file I've been using which cost me $40 (outside of Etsy). That one only allows a certain of customizable account lines, with over 40 pre-programmed accounts which are not applicable to our small business. This workbook allows 40 account categories (could use maybe 10 more-I switched from a much more expensive software which had become faaaar to expensive for our business which is winding down to my  husband's retirement), but they are all completely customizable. No data entry yet, but hopefully it will suffice for our needs. Still need to see how reconciling bank accounts will be...if it's built in. So far, I can recommend."
+  },
+  {
+   "id": "r266",
+   "stars": 5,
+   "text": "Excellent product, and the explanation is easy to follow. Highly recommended!"
+  },
+  {
+   "id": "r267",
+   "stars": 5,
+   "text": "Great easy to use budget planner that tracks where all your money goes."
+  },
+  {
+   "id": "r268",
+   "stars": 5,
+   "text": "Fantastic product, i love it"
+  },
+  {
+   "id": "r269",
+   "stars": 5,
+   "text": "Esta todo muy bien explicado me va genial!"
+  },
+  {
+   "id": "r270",
+   "stars": 5,
+   "text": "It's a great budgeting tool and works very well 😊"
+  },
+  {
+   "id": "r271",
+   "stars": 4,
+   "text": "youtube tutorials are helpful in putting it right place"
+  },
+  {
+   "id": "r272",
+   "stars": 3,
+   "text": "not so impressive, formulas not working"
+  },
+  {
+   "id": "r273",
+   "stars": 1,
+   "text": "Never for access to the file I downloaded it Multiple times"
+  },
+  {
+   "id": "r274",
+   "stars": 1,
+   "text": "Never received, I guess.  I don’t recall ordering it."
+  },
+  {
+   "id": "r275",
+   "stars": 1,
+   "text": "You need google spread sheets unless your Etsy email and google email you need permission"
+  },
+  {
+   "id": "r279",
+   "stars": 1,
+   "text": "NOT REALLY INTERESSING BUT OK ACCORDING TO DESCRIPTION"
+  },
+  {
+   "id": "r280",
+   "stars": 1,
+   "text": "For some unknown reason it does not work… I entered all my expenses and it doesn’t show up on the “actual” cells…"
+  },
+  {
+   "id": "r282",
+   "stars": 1,
+   "text": "Product has a lock so I can’t share with my family"
+  },
+  {
+   "id": "r284",
+   "stars": 1,
+   "text": "Im sure it is fine, I was unable to download. please give refund"
+  },
+  {
+   "id": "r285",
+   "stars": 1,
+   "text": "It's not working, I am not able to change the months in the spreadsheet. so a waste of money."
+  },
+  {
+   "id": "r286",
+   "stars": 1,
+   "text": "J’avais mal lu la description du produit mais il me semblait compatible avec EXCEL. Le vendeur met même dans sa vidéo de présentation une vidéo de sa page de budget en train d’être modifié par excel. et grande surprise : compatible avec google sheets"
+  },
+  {
+   "id": "r288",
+   "stars": 1,
+   "text": "ok ok ok ok ok"
+  },
+  {
+   "id": "r290",
+   "stars": 1,
+   "text": "so it is very complicated to work on"
+  },
+  {
+   "id": "r291",
+   "stars": 1,
+   "text": "This was a confusing spreadsheet.  Very small and could not find the other pages or tabs. Zooming in and out was arduous and it wasn’t fluid enough for me to use every day."
+  },
+  {
+   "id": "r292",
+   "stars": 1,
+   "text": "I have been unable to use this digital download, despite re-reading the instructions multiple times."
+  },
+  {
+   "id": "r293",
+   "stars": 1,
+   "text": "can't be used for multi year"
+  },
+  {
+   "id": "r295",
+   "stars": 1,
+   "text": "The description did not mention that this is more suited to dollars than pounds so was a waste of money."
+  },
+  {
+   "id": "r297",
+   "stars": 1,
+   "text": "It doesn't look like the picture that is listed.\nIts a little hard figure out how does it work."
+  },
+  {
+   "id": "r298",
+   "stars": 1,
+   "text": "Spreadsheet doesn't work as advertised, formula didn't pull through the ingredients list correctly after using it once. I contacted the seller and they just blamed Google sheets and said this happens in 1% of spreadsheets sold and they 'wish there was something they could do'."
+  },
+  {
+   "id": "r299",
+   "stars": 3,
+   "text": "I think the form is great! I didn’t like the survey and sell as part of the journey to download the doc. I bought it didn’t want to then be resold too, great excel though."
+  },
+  {
+   "id": "r301",
+   "stars": 5,
+   "text": "Crazy value for the price. And a quality spreadsheet too. Thank you!"
+  },
+  {
+   "id": "r302",
+   "stars": 5,
+   "text": "Great product, i will recommand"
+  },
+  {
+   "id": "r303",
+   "stars": 2,
+   "text": "not happy that it directs you to a pay for service after paying etsy first to be directed to use."
+  },
+  {
+   "id": "r304",
+   "stars": 1,
+   "text": "never received the spreadsheet's after completing questionaries"
+  },
+  {
+   "id": "r305",
+   "stars": 5,
+   "text": "Great!!! So helpful and love the pink!"
+  },
+  {
+   "id": "r306",
+   "stars": 4,
+   "text": "It is good digital prodoct"
+  },
+  {
+   "id": "r307",
+   "stars": 4,
+   "text": "I like using it. I wish there was an option to track what people pay you back and directly be able to add it as a plus to the category you logged the spending in. But maybe that's too particular. \r\nThere's an inaccuarte currency sign for Swiss Francs. We use Fr. or CHF here. :-) Maybe a drop-down option \"type your own\" would solve this, especially if other currencies happen to be inaccurate as well."
+  },
+  {
+   "id": "r308",
+   "stars": 5,
+   "text": "I love the product, Please try"
+  },
+  {
+   "id": "r309",
+   "stars": 5,
+   "text": "🌺 LOVE IT!🌺THANK YOU!!!🌺PERFECT!!🌺GREAT ETSY SELLER!!🌺A+A+A+A+A+🌺"
+  },
+  {
+   "id": "r310",
+   "stars": 5,
+   "text": "Very useful template for keeping my work tasks organized and on track. Easy to download, customize, and put to use right away!"
+  },
+  {
+   "id": "r311",
+   "stars": 5,
+   "text": "This is a great shreadsheet."
+  },
+  {
+   "id": "r312",
+   "stars": 4,
+   "text": "Great resource! I only wish there was a tab included for tracking estimated quarterly taxes."
+  },
+  {
+   "id": "r313",
+   "stars": 5,
+   "text": "Very Good Easy to use"
+  },
+  {
+   "id": "r314",
+   "stars": 2,
+   "text": "Esa encuesta que hacen con que finalidad ?terrible ya con solo ese hecho engorroso no vuelvo a comprar mas ."
+  },
+  {
+   "id": "r315",
+   "stars": 5,
+   "text": "Very helpful and easy to use"
+  },
+  {
+   "id": "r316",
+   "stars": 1,
+   "text": "I paid for the weight loss tracker. When I downloaded the Google Sheet, it was a budget planner. On top of that, I saw a message saying that \"some formals used is trying to access information from third party\""
+  },
+  {
+   "id": "r317",
+   "stars": 5,
+   "text": "Well organized and super helpful"
+  },
+  {
+   "id": "r318",
+   "stars": 1,
+   "text": "Spreadsheet does not work, the formulas came back as invalid and is super confusing. Even the instructions was very confusing to follow. I could not do anything!"
+  },
+  {
+   "id": "r319",
+   "stars": 4,
+   "text": "Be sure to read the washing instructions! And don't let your husband wash it lol it's very delicate but so adorable!"
+  },
+  {
+   "id": "r320",
+   "stars": 4,
+   "text": "very good does as expected"
+  },
+  {
+   "id": "r321",
+   "stars": 4,
+   "text": "I like it! Me and Mt BF enjoyed writing this together but it has some UI issues..."
+  },
+  {
+   "id": "r322",
+   "stars": 4,
+   "text": "Very cute! Pleased with the product and the turn around time."
+  },
+  {
+   "id": "r323",
+   "stars": 4,
+   "text": "Very cute outfit bought as a baby shower gift."
+  },
+  {
+   "id": "r324",
+   "stars": 4,
+   "text": "VERY ORGANIZED AND KEEPS UP WITH EVERYTHING I NEED"
+  },
+  {
+   "id": "r325",
+   "stars": 5,
+   "text": "Love the outfit!! Super Cute :) Very fast shipping!"
+  },
+  {
+   "id": "r326",
+   "stars": 5,
+   "text": "This outfit is beyond cute. It arrived ontime and in great condition."
+  },
+  {
+   "id": "r327",
+   "stars": 5,
+   "text": "This little onesie is perfect!! Cant wait for him to get here to try it on! :) ohhh those first pics are going to be adorable. Thanks for sending so promptly too"
+  },
+  {
+   "id": "r328",
+   "stars": 5,
+   "text": "This gown and hat outfit is absolutely adorable.  It is so beautifully made with attention to detail.  The picture does not do it justice.  The seller shipped this quickly after it was ordered.  I couldn't be happier with this experience and I highly recommend this shop."
+  },
+  {
+   "id": "r329",
+   "stars": 5,
+   "text": "Love it:) thank you so much!"
+  },
+  {
+   "id": "r330",
+   "stars": 5,
+   "text": "It was a gift and they loved it! Thank you!!"
+  },
+  {
+   "id": "r331",
+   "stars": 5,
+   "text": "made a very cute baby gift thank you"
+  },
+  {
+   "id": "r332",
+   "stars": 5,
+   "text": "beautiful and my friend loved the gift!"
+  },
+  {
+   "id": "r333",
+   "stars": 5,
+   "text": "Absolutely gorgeous!! Thank you soo much!!"
+  },
+  {
+   "id": "r334",
+   "stars": 5,
+   "text": "Shipped on time and absolutely adorable! Just as pictured and described."
+  },
+  {
+   "id": "r335",
+   "stars": 5,
+   "text": "Love it and have gotten quite a few compliments on the outfit!! So CUTE!!!"
+  },
+  {
+   "id": "r336",
+   "stars": 5,
+   "text": "Super cute. Great pricing. Fast shipping. Will order from again!!! :)"
+  },
+  {
+   "id": "r337",
+   "stars": 5,
+   "text": "Love this outfit! Can't wait to use it for pictures :)"
+  },
+  {
+   "id": "r338",
+   "stars": 5,
+   "text": "Nice spreadsheet for what i needed."
+  },
+  {
+   "id": "r339",
+   "stars": 5,
+   "text": "Love this budget template! It lays out all the common expenses and leaves notes for any miscellaneous or extra items spent during the month. It also helps keep track of all different areas of savings and income. On my Macbook I did not have excel but when I went to download the product it worked well with the Numbers app through apple, so i didn't need to download anything new which was a huge plus. I'm excited to use this to stay organized month to month!"
+  },
+  {
+   "id": "r340",
+   "stars": 5,
+   "text": "PERFECT! I was looking for something that was simple to use and a great communication tool for me and my spouse to plan for our future. This was the perfect tool for us! Thank you ComputedPlanning!"
+  },
+  {
+   "id": "r341",
+   "stars": 5,
+   "text": "Worth every penny and incredibly helpful! This budget tracker exceeded my expectations. It offers insightful breakdowns and helps us stay on top of spending. The directions made it very easy to follow the user-friendly design. I like how it highlights trends over time and provides a clean layout that is a great communication tool for me and my husband to review our finances. Lastly, since it's a download to my own computer, it's much more secure than putting all my data into an app."
+  },
+  {
+   "id": "r342",
+   "stars": 5,
+   "text": "Very handy! The hard part is sticking to it. ;p"
+  },
+  {
+   "id": "r343",
+   "stars": 5,
+   "text": "Great Product! Excellent for self use."
+  },
+  {
+   "id": "r345",
+   "stars": 5,
+   "text": "Super clear, very easy to use"
+  },
+  {
+   "id": "r346",
+   "stars": 5,
+   "text": "Great help with my finances"
+  },
+  {
+   "id": "r347",
+   "stars": 5,
+   "text": "Works wonderful for our needs."
+  },
+  {
+   "id": "r348",
+   "stars": 5,
+   "text": "I love this spreadsheet, super easy to get started and get your budget in gear! I love that I have everything all in one. I can track my bills, budget, spending, debt pay off, and multiple savings trackers."
+  },
+  {
+   "id": "r349",
+   "stars": 5,
+   "text": "Great price and product. Easy to use"
+  },
+  {
+   "id": "r350",
+   "stars": 5,
+   "text": "Lovely product, scratches all of the OCD spots in my brain, easy to share and use with Husband through google sheets. K responded super quickly when I had a Q about the product. <3"
+  },
+  {
+   "id": "r351",
+   "stars": 5,
+   "text": "Very good file. Just what I needed. Thank you!"
+  },
+  {
+   "id": "r352",
+   "stars": 5,
+   "text": "Great spreadsheet with clear instructions"
+  },
+  {
+   "id": "r353",
+   "stars": 5,
+   "text": "These spreadsheets are great. Every category and formula is in and it’s easy to use. This comes with instructions for getting started which helps. Ten spreadsheets are included but the instructions makes it not as overwhelming as I imagined it would be. Thanks!"
+  },
+  {
+   "id": "r354",
+   "stars": 5,
+   "text": "Such a CUTE outfit! :) Great quality and stupendous deal! Thanks!"
+  },
+  {
+   "id": "r355",
+   "stars": 5,
+   "text": "Great! I'm excited to dive deeper into it!"
+  },
+  {
+   "id": "r356",
+   "stars": 5,
+   "text": "These are the perfect budgeting sheets I was looking for."
+  },
+  {
+   "id": "r357",
+   "stars": 5,
+   "text": "has helped me so much and seller is very quick for response!!"
+  },
+  {
+   "id": "r358",
+   "stars": 5,
+   "text": "It's amazing"
+  },
+  {
+   "id": "r360",
+   "stars": 5,
+   "text": "It has a very nice layout."
+  },
+  {
+   "id": "r361",
+   "stars": 5,
+   "text": "Great item and easy to use."
+  },
+  {
+   "id": "r362",
+   "stars": 5,
+   "text": "This is exactly what I was looking for! I love how clear the instructions are and that it's not confusing to use. This will be so helpful in keeping myself organized"
+  },
+  {
+   "id": "r363",
+   "stars": 5,
+   "text": "Easy to access and use! Would recommend."
+  },
+  {
+   "id": "r364",
+   "stars": 5,
+   "text": "It's easy to use and really helpful to budget/keep an eye on debts."
+  },
+  {
+   "id": "r365",
+   "stars": 5,
+   "text": "Wonderful instructions. Still pretty new with it but it's working my bills situation."
+  },
+  {
+   "id": "r366",
+   "stars": 5,
+   "text": "So many helpful tools on how to use the spreadsheet, made it super easy, its helped me so much thank you"
+  },
+  {
+   "id": "r367",
+   "stars": 5,
+   "text": "Awesome ! Easy to use"
+  },
+  {
+   "id": "r368",
+   "stars": 5,
+   "text": "What a great resource!!"
+  },
+  {
+   "id": "r369",
+   "stars": 5,
+   "text": "Perfect! Simple layout and minimal colors. Thank you!"
+  },
+  {
+   "id": "r370",
+   "stars": 5,
+   "text": "This so far has been exactly what I have been looking for! Not only can you set a budget but then it pulls that infor into your monthly breakdown. Also has an awesome calendar that listed all your bills due based on your data! LOVE IT!"
+  },
+  {
+   "id": "r371",
+   "stars": 5,
+   "text": "Easy to use, and set up!"
+  },
+  {
+   "id": "r372",
+   "stars": 5,
+   "text": "LOVE this!!! Very easy to use and keep track of EVERYTHING!!!"
+  },
+  {
+   "id": "r373",
+   "stars": 5,
+   "text": "thank you for this it was vey helpful"
+  },
+  {
+   "id": "r374",
+   "stars": 5,
+   "text": "This is a giant spreadsheet that includes a lot! I probably won’t use all the sheets, but the ones I have started using are great. There are instructions to help you along, which is perfect."
+  },
+  {
+   "id": "r375",
+   "stars": 1,
+   "text": "The font ain’t it.. should’ve realised before buying. Also American date and impossible to change.."
+  },
+  {
+   "id": "r377",
+   "stars": 1,
+   "text": "Expensive for a download you have to print yourself. You could get this for free online."
+  },
+  {
+   "id": "r378",
+   "stars": 1,
+   "text": "Product never arrived at our home."
+  },
+  {
+   "id": "r379",
+   "stars": 1,
+   "text": "When i go to review my order it says the order has expired. I am unable to review an order i have paid for."
+  },
+  {
+   "id": "r380",
+   "stars": 1,
+   "text": "I NEVER RECEIVED THIS ITEM!!!! Cannot get in touch with seller!!!!"
+  },
+  {
+   "id": "r381",
+   "stars": 1,
+   "text": "Did Nor Ever receive the pdf file to print it off after requesting it to be sent to my email more then once!"
+  },
+  {
+   "id": "r382",
+   "stars": 1,
+   "text": "Nothing is locked in place. I’ve tired 12 times I’m done this sucks!"
+  },
+  {
+   "id": "r384",
+   "stars": 1,
+   "text": "The watermark cannot be removed (where it says: edit your text here)"
+  },
+  {
+   "id": "r385",
+   "stars": 1,
+   "text": "Extremely disappointed with this. The instruction sheet contained too many instructions and frankly not user friendly. It was a waste of money and time."
+  },
+  {
+   "id": "r386",
+   "stars": 1,
+   "text": "The color was too pale when you print it and I can see the pixels too"
+  }
+ ]
+}

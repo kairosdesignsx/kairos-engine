@@ -4,8 +4,79 @@
   "query": "adhd digital planner",
   "line": "planner",
   "format": "Hyperlinked PDF planner for tablets (Goodnotes, Notability, Samsung Notes, Xodo)",
-  "include_any": ["goodnotes", "notability", "ipad", "digital planner", "android", "tablet", "hyperlink", "samsung", "remarkable", "digital journal", "pdf planner"],
-  "exclude_any": ["notion", "google sheets", "sheets", "excel", "spreadsheet", "plr", "mrr", "resell", "canva", "planner app", "wallpaper", "printable", "cleaning", "budget planner", "paycheck"],
-  "focus_any": ["adhd", "neurodivergent", "executive function", "add "]
+  "include_any": [
+   "goodnotes",
+   "notability",
+   "ipad",
+   "digital planner",
+   "android",
+   "tablet",
+   "hyperlink",
+   "samsung",
+   "remarkable",
+   "digital journal",
+   "pdf planner"
+  ],
+  "exclude_any": [
+   "notion",
+   "google sheets",
+   "sheets",
+   "excel",
+   "spreadsheet",
+   "plr",
+   "mrr",
+   "resell",
+   "canva",
+   "planner app",
+   "wallpaper",
+   "printable",
+   "cleaning",
+   "budget planner",
+   "paycheck"
+  ],
+  "focus_any": [
+   "adhd",
+   "neurodivergent",
+   "executive function",
+   "add "
+  ]
+ },
+ "google-sheets-budget": {
+  "name": "Google Sheets budget template",
+  "query": "google sheets budget template",
+  "line": "spreadsheet",
+  "format": "Spreadsheet budget template for Google Sheets and Excel (digital download)",
+  "include_any": [
+   "google sheets",
+   "spreadsheet",
+   "excel",
+   "sheets",
+   "budget template",
+   "budget tracker",
+   "budget planner",
+   "budget spreadsheet"
+  ],
+  "exclude_any": [
+   "notion",
+   "goodnotes",
+   "printable",
+   "canva",
+   "plr",
+   "mrr",
+   "resell",
+   "binder",
+   "ipad",
+   "pdf planner",
+   "physical"
+  ],
+  "focus_any": [
+   "budget",
+   "paycheck",
+   "expense",
+   "finance",
+   "money",
+   "savings",
+   "debt"
+  ]
  }
 }

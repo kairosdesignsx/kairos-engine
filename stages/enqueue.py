@@ -9,7 +9,7 @@ import json, os, shutil, sys, time
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'lib'))
 import store
 
-LINE_NAMES = {'planner': 'Digital planners'}
+LINE_NAMES = {'planner': 'Digital planners', 'spreadsheet': 'Spreadsheets'}
 
 
 def _rounds(d):

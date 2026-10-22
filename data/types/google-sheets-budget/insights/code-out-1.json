@@ -1,0 +1,859 @@
+{
+ "new_themes": [
+  {
+   "id": "c_slow",
+   "theme": "Sheet is slow or laggy",
+   "use_for": "Long loading, lag or freezing when editing; poor performance.",
+   "kind": "complaints"
+  },
+  {
+   "id": "w_budget_method",
+   "theme": "Choose my own budgeting rule",
+   "use_for": "Wants to change the built-in split or method (e.g. 50/30/20 to another ratio).",
+   "kind": "wishes"
+  }
+ ],
+ "codes": [
+  {
+   "id": "r1",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r2",
+   "off_type": false,
+   "themes": [
+    "c_quality",
+    "c_support"
+   ]
+  },
+  {
+   "id": "r3",
+   "off_type": false,
+   "themes": [
+    "c_customize",
+    "c_app"
+   ]
+  },
+  {
+   "id": "r4",
+   "off_type": false,
+   "themes": [
+    "c_overwhelm"
+   ]
+  },
+  {
+   "id": "r5",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r6",
+   "off_type": false,
+   "themes": [
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r7",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r8",
+   "off_type": true,
+   "themes": [
+    "c_formulas",
+    "c_value"
+   ]
+  },
+  {
+   "id": "r9",
+   "off_type": false,
+   "themes": [
+    "c_basic",
+    "c_not_useful",
+    "c_value",
+    "c_support"
+   ]
+  },
+  {
+   "id": "r10",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r11",
+   "off_type": false,
+   "themes": [
+    "c_misleading"
+   ]
+  },
+  {
+   "id": "r12",
+   "off_type": false,
+   "themes": [
+    "c_support",
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r13",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r14",
+   "off_type": false,
+   "themes": [
+    "c_app"
+   ]
+  },
+  {
+   "id": "r15",
+   "off_type": false,
+   "themes": [
+    "c_overwhelm"
+   ]
+  },
+  {
+   "id": "r16",
+   "off_type": false,
+   "themes": [
+    "c_basic",
+    "c_value"
+   ]
+  },
+  {
+   "id": "r17",
+   "off_type": false,
+   "themes": [
+    "c_formulas"
+   ]
+  },
+  {
+   "id": "r18",
+   "off_type": false,
+   "themes": [
+    "c_misleading",
+    "c_not_useful",
+    "p_look"
+   ]
+  },
+  {
+   "id": "r19",
+   "off_type": false,
+   "themes": [
+    "c_misleading"
+   ]
+  },
+  {
+   "id": "r20",
+   "off_type": false,
+   "themes": [
+    "c_quality",
+    "c_support"
+   ]
+  },
+  {
+   "id": "r21",
+   "off_type": false,
+   "themes": [
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r22",
+   "off_type": false,
+   "themes": [
+    "c_misleading"
+   ]
+  },
+  {
+   "id": "r23",
+   "off_type": true,
+   "themes": [
+    "c_slow",
+    "p_look"
+   ]
+  },
+  {
+   "id": "r24",
+   "off_type": false,
+   "themes": [
+    "c_not_useful",
+    "c_value"
+   ]
+  },
+  {
+   "id": "r25",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r26",
+   "off_type": false,
+   "themes": [
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r27",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r28",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r29",
+   "off_type": true,
+   "themes": []
+  },
+  {
+   "id": "r30",
+   "off_type": false,
+   "themes": [
+    "p_insight"
+   ]
+  },
+  {
+   "id": "r31",
+   "off_type": false,
+   "themes": [
+    "c_overwhelm"
+   ]
+  },
+  {
+   "id": "r32",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r33",
+   "off_type": false,
+   "themes": [
+    "p_as_described"
+   ]
+  },
+  {
+   "id": "r34",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r35",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r36",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r37",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r38",
+   "off_type": false,
+   "themes": [
+    "c_hard",
+    "c_basic",
+    "c_formulas"
+   ]
+  },
+  {
+   "id": "r39",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r40",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r41",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r42",
+   "off_type": false,
+   "themes": [
+    "p_as_described",
+    "p_guide"
+   ]
+  },
+  {
+   "id": "r43",
+   "off_type": false,
+   "themes": [
+    "p_complete",
+    "p_automated",
+    "p_insight",
+    "w_budget_method"
+   ]
+  },
+  {
+   "id": "r44",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r45",
+   "off_type": false,
+   "themes": [
+    "c_hard",
+    "c_app",
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r46",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r47",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r48",
+   "off_type": false,
+   "themes": [
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r49",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r50",
+   "off_type": false,
+   "themes": [
+    "c_formulas"
+   ]
+  },
+  {
+   "id": "r51",
+   "off_type": false,
+   "themes": [
+    "c_access",
+    "c_customize",
+    "c_support"
+   ]
+  },
+  {
+   "id": "r52",
+   "off_type": true,
+   "themes": [
+    "c_missing"
+   ]
+  },
+  {
+   "id": "r53",
+   "off_type": false,
+   "themes": [
+    "c_currency",
+    "c_misleading"
+   ]
+  },
+  {
+   "id": "r54",
+   "off_type": false,
+   "themes": [
+    "c_customize"
+   ]
+  },
+  {
+   "id": "r55",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r56",
+   "off_type": true,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r57",
+   "off_type": true,
+   "themes": [
+    "c_look"
+   ]
+  },
+  {
+   "id": "r58",
+   "off_type": false,
+   "themes": [
+    "c_currency"
+   ]
+  },
+  {
+   "id": "r59",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r60",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r61",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r62",
+   "off_type": true,
+   "themes": [
+    "c_misleading",
+    "c_access"
+   ]
+  },
+  {
+   "id": "r63",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r64",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r65",
+   "off_type": false,
+   "themes": [
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r66",
+   "off_type": false,
+   "themes": [
+    "c_app"
+   ]
+  },
+  {
+   "id": "r67",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r68",
+   "off_type": false,
+   "themes": [
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r69",
+   "off_type": false,
+   "themes": [
+    "c_app"
+   ]
+  },
+  {
+   "id": "r70",
+   "off_type": false,
+   "themes": [
+    "c_app"
+   ]
+  },
+  {
+   "id": "r71",
+   "off_type": true,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r72",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_look"
+   ]
+  },
+  {
+   "id": "r73",
+   "off_type": true,
+   "themes": []
+  },
+  {
+   "id": "r74",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r75",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r76",
+   "off_type": false,
+   "themes": [
+    "p_repeat"
+   ]
+  },
+  {
+   "id": "r77",
+   "off_type": false,
+   "themes": [
+    "p_support"
+   ]
+  },
+  {
+   "id": "r78",
+   "off_type": false,
+   "themes": [
+    "p_repeat"
+   ]
+  },
+  {
+   "id": "r79",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_as_described"
+   ]
+  },
+  {
+   "id": "r80",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r81",
+   "off_type": false,
+   "themes": [
+    "p_repeat"
+   ]
+  },
+  {
+   "id": "r82",
+   "off_type": false,
+   "themes": [
+    "p_repeat"
+   ]
+  },
+  {
+   "id": "r83",
+   "off_type": false,
+   "themes": [
+    "p_repeat"
+   ]
+  },
+  {
+   "id": "r84",
+   "off_type": false,
+   "themes": [
+    "p_repeat"
+   ]
+  },
+  {
+   "id": "r85",
+   "off_type": false,
+   "themes": [
+    "p_repeat"
+   ]
+  },
+  {
+   "id": "r86",
+   "off_type": false,
+   "themes": [
+    "p_repeat"
+   ]
+  },
+  {
+   "id": "r87",
+   "off_type": false,
+   "themes": [
+    "p_repeat"
+   ]
+  },
+  {
+   "id": "r88",
+   "off_type": false,
+   "themes": [
+    "p_repeat"
+   ]
+  },
+  {
+   "id": "r89",
+   "off_type": false,
+   "themes": [
+    "p_repeat"
+   ]
+  },
+  {
+   "id": "r90",
+   "off_type": false,
+   "themes": [
+    "p_repeat"
+   ]
+  },
+  {
+   "id": "r91",
+   "off_type": false,
+   "themes": [
+    "c_customize",
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r92",
+   "off_type": false,
+   "themes": [
+    "c_access",
+    "c_support"
+   ]
+  },
+  {
+   "id": "r94",
+   "off_type": false,
+   "themes": [
+    "c_customize"
+   ]
+  },
+  {
+   "id": "r95",
+   "off_type": false,
+   "themes": [
+    "c_basic"
+   ]
+  },
+  {
+   "id": "r96",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r97",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r99",
+   "off_type": false,
+   "themes": [
+    "c_formulas",
+    "c_support",
+    "c_value"
+   ]
+  },
+  {
+   "id": "r101",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r102",
+   "off_type": false,
+   "themes": [
+    "c_customize"
+   ]
+  },
+  {
+   "id": "r105",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r106",
+   "off_type": false,
+   "themes": [
+    "c_misleading",
+    "c_support",
+    "c_value"
+   ]
+  },
+  {
+   "id": "r107",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r108",
+   "off_type": false,
+   "themes": [
+    "c_support"
+   ]
+  },
+  {
+   "id": "r109",
+   "off_type": false,
+   "themes": [
+    "c_support"
+   ]
+  },
+  {
+   "id": "r110",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r111",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r112",
+   "off_type": false,
+   "themes": [
+    "c_app",
+    "c_value"
+   ]
+  },
+  {
+   "id": "r113",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r114",
+   "off_type": false,
+   "themes": [
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r115",
+   "off_type": false,
+   "themes": [
+    "c_app",
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r116",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_life"
+   ]
+  },
+  {
+   "id": "r117",
+   "off_type": false,
+   "themes": [
+    "p_as_described",
+    "p_look",
+    "p_complete",
+    "p_easy",
+    "p_support"
+   ]
+  },
+  {
+   "id": "r118",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_guide",
+    "p_support"
+   ]
+  },
+  {
+   "id": "r119",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r120",
+   "off_type": false,
+   "themes": [
+    "p_insight",
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r121",
+   "off_type": false,
+   "themes": [
+    "p_as_described",
+    "p_insight",
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r122",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_life"
+   ]
+  },
+  {
+   "id": "r123",
+   "off_type": false,
+   "themes": [
+    "p_repeat"
+   ]
+  },
+  {
+   "id": "r124",
+   "off_type": false,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r125",
+   "off_type": false,
+   "themes": [
+    "p_support"
+   ]
+  }
+ ]
+}

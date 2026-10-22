@@ -1,8 +1,4 @@
 {
- "product_id": "p-adhd-001",
- "brief_id": "b-adhd-001",
- "built_at": "2026-10-21T14:35:59Z",
- "line": "planner",
  "files": [
   {
    "name": "Just-Today.pdf",
@@ -2213,5 +2209,9 @@
  "size_px": [
   1024,
   768
- ]
+ ],
+ "product_id": "p-adhd-001",
+ "brief_id": "b-adhd-001",
+ "built_at": "2026-10-22T07:21:09Z",
+ "line": "planner"
 }

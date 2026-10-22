@@ -10,9 +10,6 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'lib'))
 import store
 
 CHK = store.CONFIG['check']
-FONT_FAMILIES = {'Cormorant': 'Corm', 'Jost': 'Jost', 'PinyonScript': 'Script', 'Fraunces': 'Fraunces', 'Manrope': 'Manrope',
-                 'Quicksand': 'Quicksand', 'Nunito': 'Nunito', 'DMSerif': 'DMSerif', 'Outfit': 'Outfit', 'LibreBaskerville': 'Baskerville',
-                 'Corm': 'Corm', 'Script': 'Script', 'Baskerville': 'Baskerville'}
 
 
 def _load(pid):
@@ -21,40 +18,23 @@ def _load(pid):
 
 
 def tech(pid):
-    import pypdf
+    """Common listing checks here; file checks come from lines/<line>/checks.py (each line knows its own format)."""
     from PIL import Image
     d, x = _load(pid)
     out = []
     add = lambda name, ok, detail: out.append({"name": name, "pass": bool(ok), "detail": detail})
-    b = x['build']
-    for f in b['files']:
-        add('file size', f['mb'] <= CHK['max_pdf_mb'], f"{f['name']}: {f['mb']} MB (limit {CHK['max_pdf_mb']}, Etsy 20)")
-    add('no text overflow', not b['overflow'], f"{len(b['overflow'])} pages overflow" if b['overflow'] else 'none')
-    pdf = os.path.join(d, 'files', b['files'][0]['name'])
-    r = pypdf.PdfReader(pdf)
-    n = len(r.pages)
-    add('page count', n == b['files'][0]['pages'], f'{n} pages in PDF')
-    annots = sum(len(p.get('/Annots') or []) for p in r.pages)
-    add('links present in PDF', annots >= 0.9 * b['links'], f'{annots} link annotations for {b["links"]} links in the source')
-    fonts = set()
-    for p in r.pages[:: max(1, n // 40)]:
-        for f in ((p.get('/Resources') or {}).get('/Font') or {}).values():
-            bf = str(f.get_object().get('/BaseFont', ''))
-            fonts.add(re.sub(r'^/?[A-Z]{6}\+', '', bf).lstrip('/'))
-    unknown = sorted(f for f in fonts if not any(f.replace('-', '').startswith(k) for k in FONT_FAMILIES))
-    add('fonts licensed (OFL list only)', not unknown, f'fonts: {sorted(fonts)}' + (f'; NOT ALLOWED: {unknown}' if unknown else ''))
+    L = x['listing'] or {}
+    sys.path.insert(0, os.path.join(store.ROOT, 'stages'))
+    from build import line_mod
+    line_mod(x['brief']['line'], 'checks').file_checks(d, x['brief'], x['build'], L, add, CHK)
     ph = x['photos'] or {'photos': []}
     sizes = [Image.open(os.path.join(d, 'photos', f)).size for f in ph['photos']]
     add('listing photos', 5 <= len(sizes) <= 10 and all(s == (2700, 2025) for s in sizes), f'{len(sizes)} photos, sizes {sorted(set(sizes))}')
-    L = x['listing'] or {}
     tags = L.get('tags', [])
     add('title', 0 < len(L.get('title', '')) <= 140, f"{len(L.get('title', ''))} chars")
     add('13 tags, max 20 chars', len(tags) == 13 and all(len(t) <= 20 for t in tags), f'{len(tags)} tags')
     desc = L.get('description', '')
-    add('no em dashes or emojis', not re.search('[—\U0001F300-\U0001FAFF]', desc + L.get('title', '')), 'checked title and description')
-    claims = [int(m) for m in re.findall(r'(\d{2,4})\+?\s*(?:hyperlinked\s+|linked\s+)?pages', desc)]
-    claims = [c for c in claims if not 2020 <= c <= 2039]  # years ("Nov and Dec 2026 pages") are not page counts
-    add('page claims match the file', all(c <= n for c in claims), f'claims {claims}, file has {n}')
+    add('no em dashes or emojis', not re.search('[\u2014\U0001F300-\U0001FAFF]', desc + L.get('title', '')), 'checked title and description')
     add('says digital download', 'digital' in desc.lower() and 'shipped' in desc.lower(), 'download and nothing-shipped note')
     store.write(os.path.join(d, 'check-tech.json'), out)
     return out
@@ -103,11 +83,11 @@ def coverage_prep(pid):
     items += [{"key": f"fix:{f['id']}", "kind": "fix", "text": f"{f['complaint']}: {f['how']}"} for f in b['fixes']]
     items += [{"key": f"unique:{u['id']}", "kind": "unique", "text": f"{u['name']}: {u['what']}"} for u in b['unique']]
     items.append({"key": "look", "kind": "look", "text": b['look']['direction']})
-    mods = dict(x['build']['page_modules'])
+    mods = dict(x['build'].get('page_modules') or [])
     shots = [{"path": os.path.join(d, 'shots', s), "anchor": s[:-4], "module": mods.get(s[:-4])} for s in x['build']['shots']]
     task = {"product_id": pid, "items": items, "shots": shots,
             "photos": [os.path.join(d, 'photos', p) for p in x['photos']['photos']],
-            "listing": os.path.join(d, 'listing.json'), "page_modules": x['build']['page_modules']}
+            "listing": os.path.join(d, 'listing.json'), "page_modules": x['build'].get('page_modules'), "line": b['line'], "files": [os.path.join(d, 'files', f['name']) for f in x['build']['files']]}
     path = store.write(os.path.join(d, 'coverage-in.json'), task)
     return {"coverage_in": path, "coverage_out": os.path.join(d, 'coverage-out.json'), "items": len(items), "shots": len(shots)}
 

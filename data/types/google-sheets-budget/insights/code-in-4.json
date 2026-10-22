@@ -1,0 +1,773 @@
+{
+ "product_type": "Google Sheets budget template (Spreadsheet budget template for Google Sheets and Excel (digital download))",
+ "codebook": {
+  "complaints": [
+   {
+    "id": "c_access",
+    "theme": "Couldn't open the file or get access to the sheet",
+    "use_for": "Request-access prompts, broken copy link, download failed."
+   },
+   {
+    "id": "c_setup",
+    "theme": "Confusing setup or unclear instructions",
+    "use_for": "Didn't know how to start, copy, or fill it in."
+   },
+   {
+    "id": "c_hard",
+    "theme": "Hard to use day to day",
+    "use_for": "General 'not user friendly' with no specific cause."
+   },
+   {
+    "id": "c_formulas",
+    "theme": "Formulas broke or showed errors",
+    "use_for": "#REF!, wrong totals, calculations stopped working."
+   },
+   {
+    "id": "c_app",
+    "theme": "Doesn't work in my app or device",
+    "use_for": "Excel, Numbers, phone app, offline problems."
+   },
+   {
+    "id": "c_customize",
+    "theme": "Can't change categories or layout",
+    "use_for": "Locked, can't rename or add categories."
+   },
+   {
+    "id": "c_overwhelm",
+    "theme": "Too much, overwhelming",
+    "use_for": "Too many tabs or fields."
+   },
+   {
+    "id": "c_basic",
+    "theme": "Too basic",
+    "use_for": "Not enough features."
+   },
+   {
+    "id": "c_missing",
+    "theme": "Missing features or tabs promised",
+    "use_for": "Less than described."
+   },
+   {
+    "id": "c_misleading",
+    "theme": "Not as described or pictured",
+    "use_for": "Differs from photos or listing."
+   },
+   {
+    "id": "c_dates",
+    "theme": "Dates or year problems",
+    "use_for": "Wrong year, dates don't roll over, stuck to one year."
+   },
+   {
+    "id": "c_currency",
+    "theme": "Currency or region problems",
+    "use_for": "Dollar sign only, date formats."
+   },
+   {
+    "id": "c_look",
+    "theme": "Didn't like the look",
+    "use_for": "Colors, style."
+   },
+   {
+    "id": "c_quality",
+    "theme": "Errors, typos or sloppy work",
+    "use_for": "Mistakes in labels or layout."
+   },
+   {
+    "id": "c_support",
+    "theme": "Seller didn't help or reply",
+    "use_for": "Support complaints."
+   },
+   {
+    "id": "c_value",
+    "theme": "Not worth the price",
+    "use_for": "Price complaints."
+   },
+   {
+    "id": "c_not_useful",
+    "theme": "Not useful for my needs",
+    "use_for": "Didn't fit how they budget."
+   }
+  ],
+  "praise": [
+   {
+    "id": "p_easy",
+    "theme": "Easy to set up and use",
+    "use_for": "Easy, simple."
+   },
+   {
+    "id": "p_look",
+    "theme": "Beautiful design",
+    "use_for": "Pretty, colors."
+   },
+   {
+    "id": "p_automated",
+    "theme": "Does the math for me",
+    "use_for": "Automatic calculations, formulas."
+   },
+   {
+    "id": "p_insight",
+    "theme": "Helps me see where my money goes",
+    "use_for": "Clarity, awareness, control."
+   },
+   {
+    "id": "p_life",
+    "theme": "Changed my finances",
+    "use_for": "Saved money, paid off debt, less stress."
+   },
+   {
+    "id": "p_complete",
+    "theme": "Has everything I need",
+    "use_for": "Comprehensive."
+   },
+   {
+    "id": "p_guide",
+    "theme": "Clear instructions or tutorial",
+    "use_for": "Instructions, videos."
+   },
+   {
+    "id": "p_flexible",
+    "theme": "Customizable",
+    "use_for": "Easy to change categories."
+   },
+   {
+    "id": "p_support",
+    "theme": "Seller was helpful",
+    "use_for": "Support."
+   },
+   {
+    "id": "p_value",
+    "theme": "Great value",
+    "use_for": "Price."
+   },
+   {
+    "id": "p_as_described",
+    "theme": "Exactly as described",
+    "use_for": "Matches listing."
+   },
+   {
+    "id": "p_repeat",
+    "theme": "Repeat buyer",
+    "use_for": "Bought before."
+   }
+  ],
+  "wishes": [
+   {
+    "id": "w_mobile",
+    "theme": "Better on phone",
+    "use_for": "Wants a mobile-friendly version."
+   },
+   {
+    "id": "w_excel",
+    "theme": "Excel version",
+    "use_for": "Wants Excel support."
+   },
+   {
+    "id": "w_more_categories",
+    "theme": "More categories or rows",
+    "use_for": "Needs more space."
+   }
+  ]
+ },
+ "reviews": [
+  {
+   "id": "r388",
+   "stars": 1,
+   "text": "Very difficult to work with"
+  },
+  {
+   "id": "r389",
+   "stars": 1,
+   "text": "small size-for more Than one kid to play."
+  },
+  {
+   "id": "r390",
+   "stars": 1,
+   "text": "Non semplice trovare il download"
+  },
+  {
+   "id": "r391",
+   "stars": 1,
+   "text": "Have contacted seller for help and no reply."
+  },
+  {
+   "id": "r393",
+   "stars": 1,
+   "text": "These sheets are not editable."
+  },
+  {
+   "id": "r395",
+   "stars": 1,
+   "text": "Editing was not easy at all!"
+  },
+  {
+   "id": "r396",
+   "stars": 1,
+   "text": "Nunca recibí el archivo para descargar"
+  },
+  {
+   "id": "r397",
+   "stars": 1,
+   "text": "Editing App are not user friendly."
+  },
+  {
+   "id": "r398",
+   "stars": 1,
+   "text": "Clearly an American produced quiz with amounts in dollars and cents which is no good for UK"
+  },
+  {
+   "id": "r400",
+   "stars": 5,
+   "text": "Turned out absolutely perfectly!!!  Love it."
+  },
+  {
+   "id": "r401",
+   "stars": 5,
+   "text": "Great product and easy to use"
+  },
+  {
+   "id": "r402",
+   "stars": 5,
+   "text": "It really came out nice."
+  },
+  {
+   "id": "r403",
+   "stars": 5,
+   "text": "helped to keep expenses tracked for our baby shower. helped to keep track of everything i still needed to do and make sure i stayed on budget"
+  },
+  {
+   "id": "r404",
+   "stars": 5,
+   "text": "Efficient and easy to use"
+  },
+  {
+   "id": "r405",
+   "stars": 5,
+   "text": "My daughter has level 2 Autism and relies heavily on a planned schedule. I have been searching for months for the right visual schedule. I am so excited to implement these! I'm glad that I'm able to edit the text to fit what we call the activity."
+  },
+  {
+   "id": "r406",
+   "stars": 5,
+   "text": "The games are perfect! My dad’s 80th is going to be so fun! The ability to download and access the Canva template to make personalizations is amazing!! 10/10!"
+  },
+  {
+   "id": "r407",
+   "stars": 5,
+   "text": "It's very easy to edit"
+  },
+  {
+   "id": "r408",
+   "stars": 5,
+   "text": "Awesome design and content!\r\nThank you :)"
+  },
+  {
+   "id": "r409",
+   "stars": 5,
+   "text": "Super helpful to help plan my sister's bridal events"
+  },
+  {
+   "id": "r410",
+   "stars": 5,
+   "text": "Super helpful to help plan my sister's bridal events"
+  },
+  {
+   "id": "r411",
+   "stars": 5,
+   "text": "Arrived via email. Easy to customize. Lots of fun"
+  },
+  {
+   "id": "r412",
+   "stars": 4,
+   "text": "Hit the ground running with one. Could use better description/instructions. People will want to tweak it to better meet their needs."
+  },
+  {
+   "id": "r413",
+   "stars": 5,
+   "text": "Instant access to product download"
+  },
+  {
+   "id": "r414",
+   "stars": 5,
+   "text": "This was a great purchase.  Many game options to select from."
+  },
+  {
+   "id": "r415",
+   "stars": 5,
+   "text": "Received the games very quickly. Print quality of the games was nice. Everyone loved these paper games!"
+  },
+  {
+   "id": "r416",
+   "stars": 1,
+   "text": "The contestant cards should be Blank!"
+  },
+  {
+   "id": "r417",
+   "stars": 5,
+   "text": "Very helpful and great product. Thank you!"
+  },
+  {
+   "id": "r418",
+   "stars": 5,
+   "text": "Good amount of different games, great value for the money"
+  },
+  {
+   "id": "r419",
+   "stars": 5,
+   "text": "I love how nice the images are and how easy they are to edit. Great product!"
+  },
+  {
+   "id": "r420",
+   "stars": 1,
+   "text": "Had trouble at first but it was resolved right away. Tysm!! I definitely recommend:) 10/10 customer service."
+  },
+  {
+   "id": "r421",
+   "stars": 1,
+   "text": "I have been requesting edit access (as allowable) to the document with no assistance so I essentially paid for a document I can't use."
+  },
+  {
+   "id": "r422",
+   "stars": 1,
+   "text": "The point of me getting this was to consolidate my different Google sheets, give me an overall overview of my finances, be able to check in on progress, etc. This is not it. My current spreadsheet is messy and not very aesthetic but at least lets me track what my account balances will be after every bill so not to overdraft. This does not give you a realistic look at what your cash account balances are at any given point especially if you pay for things with both debit and credit. It’s not always intuitive in understanding where values are pulling from. It doesn’t allow you to track your pretax retirement contributions coming out of your paycheck (it will remove from your net pay even though this is taken from gross)."
+  },
+  {
+   "id": "r423",
+   "stars": 1,
+   "text": "JUST GAVE ME PDF VERSION WITH NO ACCESS TO EXCEL OR GOOGLE SHEET"
+  },
+  {
+   "id": "r424",
+   "stars": 1,
+   "text": "It is very confusing and complicated."
+  },
+  {
+   "id": "r425",
+   "stars": 1,
+   "text": "The spreadsheet had many errors and did not update properly as stated in the description."
+  },
+  {
+   "id": "r426",
+   "stars": 1,
+   "text": "Very bad impression \r\nPlease replace this file from other file \r\nThanks"
+  },
+  {
+   "id": "r427",
+   "stars": 2,
+   "text": "This is for the user that does not have a lot of subscriptions. It was a waste of money for me."
+  },
+  {
+   "id": "r428",
+   "stars": 2,
+   "text": "It was a very helpful tool."
+  },
+  {
+   "id": "r429",
+   "stars": 2,
+   "text": "A budget spreadsheet where you can’t see your cash balances doesn’t work very well. Good in many other ways but not very practical."
+  },
+  {
+   "id": "r430",
+   "stars": 2,
+   "text": "There is no guide on how to use the product."
+  },
+  {
+   "id": "r431",
+   "stars": 2,
+   "text": "A bit difficult to set up mid-year. Not very intuitive just to jump into, even with video follow-along. Beautiful template though, maybe next year!"
+  },
+  {
+   "id": "r432",
+   "stars": 3,
+   "text": "I prefer Excel. Overall, I like the organization of everything. But am not a google docs-person and have made some mistakes and still trying to get the hang of this."
+  },
+  {
+   "id": "r433",
+   "stars": 3,
+   "text": "This item was not useful for me"
+  },
+  {
+   "id": "r434",
+   "stars": 4,
+   "text": "Really great I like the colors and the tabs are helpful. The only thing is that it gets confused with transferring money between accounts and messes up the stats unless I’m doing something wrong haha."
+  },
+  {
+   "id": "r435",
+   "stars": 4,
+   "text": "It's good but I would like more answers to my questions! Like what do I do when my pension is already taken from my pay automatically (UK based), and how to correctly enter all the values and expenses back and forth from my cash wallets/envelopes. It's a bit tricky. Also what/where do I enter interest I earn on all my ISAs etc? I'm a bit unsure."
+  },
+  {
+   "id": "r436",
+   "stars": 4,
+   "text": "Was watching Carter Sullivans videos on YouTube and she uses this tracker so I decided to give it a try"
+  },
+  {
+   "id": "r437",
+   "stars": 4,
+   "text": "Love it, it will work really well with what I need."
+  },
+  {
+   "id": "r438",
+   "stars": 4,
+   "text": "easy to work with and use"
+  },
+  {
+   "id": "r439",
+   "stars": 4,
+   "text": "Detailed finance tracking doc. It's not a perfect fit for me but I appreciate how much layered thought went into crafting it."
+  },
+  {
+   "id": "r440",
+   "stars": 4,
+   "text": "I think it is a great budget tracker. It is really well thought and designed, with a lot of data that helps you understand your finances. The colors chosen are beautiful, and I love that you can track investments and savings as different categories.\r\nI can’t say anything bad about the product, I think it’s really worth the price."
+  },
+  {
+   "id": "r441",
+   "stars": 4,
+   "text": "It could be improved — I don’t like how a warning box pops up whenever you try to edit something. Overall, though, it's not a bad template."
+  },
+  {
+   "id": "r442",
+   "stars": 4,
+   "text": "It is a very good budget template"
+  },
+  {
+   "id": "r443",
+   "stars": 4,
+   "text": "It is a well thought out product."
+  },
+  {
+   "id": "r444",
+   "stars": 4,
+   "text": "It does take quite a bit of navigating and trial and error to use. I found it wasn't completely conducive to my own method of budgeting."
+  },
+  {
+   "id": "r445",
+   "stars": 4,
+   "text": "There’s a bit of a learning curve, but solid product!"
+  },
+  {
+   "id": "r446",
+   "stars": 4,
+   "text": "Very nice, it is well made!"
+  },
+  {
+   "id": "r447",
+   "stars": 4,
+   "text": "Lots of minor mistakes, but a nice template overall"
+  },
+  {
+   "id": "r448",
+   "stars": 4,
+   "text": "Great spreadsheet. The savings/sinking funds tab does not completely work as I would like it to, but I really like all the goals tabs and the CC features."
+  },
+  {
+   "id": "r449",
+   "stars": 4,
+   "text": "Très facile à utiliser et joli!"
+  },
+  {
+   "id": "r450",
+   "stars": 4,
+   "text": "As described. Learning how to properly use 😊"
+  },
+  {
+   "id": "r451",
+   "stars": 4,
+   "text": "I love the colors and the layout. It told me sometime to figure it out how to use it and I think the instructions could’ve been a bit better. The only thing I would add is a no spend day tracker! I’ve had with another tracker I used and I love to see the days of the month I didn’t spend money!"
+  },
+  {
+   "id": "r452",
+   "stars": 4,
+   "text": "Super in depth and a little overwhelming at first but I cant wait to see just how useful this will be for my new year financial goals."
+  },
+  {
+   "id": "r453",
+   "stars": 5,
+   "text": "excelente artigo e otimo programa de facil usabilidade parabens aos criadores"
+  },
+  {
+   "id": "r454",
+   "stars": 5,
+   "text": "Love it, make tracking and budgeting simple"
+  },
+  {
+   "id": "r455",
+   "stars": 5,
+   "text": "Super helpful with all the little features a lot of other trackers don't have!"
+  },
+  {
+   "id": "r456",
+   "stars": 5,
+   "text": "Really nice product and love having the accounts view on the top of page I am working on."
+  },
+  {
+   "id": "r457",
+   "stars": 5,
+   "text": "Great product.Helped me organize finances"
+  },
+  {
+   "id": "r459",
+   "stars": 4,
+   "text": "The template is nice but I am not sure it will work for me right now."
+  },
+  {
+   "id": "r460",
+   "stars": 5,
+   "text": "Perfect! I love it so much"
+  },
+  {
+   "id": "r461",
+   "stars": 5,
+   "text": "I can't wait to use this to track my net worth and growth !"
+  },
+  {
+   "id": "r462",
+   "stars": 5,
+   "text": "Very thorough budgeting template and super easy to use."
+  },
+  {
+   "id": "r463",
+   "stars": 5,
+   "text": "After watching the thorough tutorial/walkthrough on the youtube video, I genuinely felt a weight off my shoulders. I primarily use it in tandem with my own budget spreadsheet to create a summarized and cohesive overview. \r\n\r\nNo complaints so far."
+  },
+  {
+   "id": "r464",
+   "stars": 5,
+   "text": "Great product! Was easy to convert into mine."
+  },
+  {
+   "id": "r465",
+   "stars": 5,
+   "text": "great! super useful and intuitive"
+  },
+  {
+   "id": "r466",
+   "stars": 5,
+   "text": "the most comprehensive and intuitive budget and goal tracker! I love this!"
+  },
+  {
+   "id": "r467",
+   "stars": 4,
+   "text": "takes a minutes to figure out, but overall the best budget spreadsheet I've found on etsy. I love that you can track expenses based on card, especially if you use your credit card for most expenses. Also love that you can pull money out of your savings so everything stays accurate."
+  },
+  {
+   "id": "r468",
+   "stars": 5,
+   "text": "I love this tracker. The set out is so clever and intuitive, the automated processes make it brainless and easy, and it’s so motivating to see my numbers improve!"
+  },
+  {
+   "id": "r469",
+   "stars": 5,
+   "text": "Great product, looking forward to using it!"
+  },
+  {
+   "id": "r470",
+   "stars": 5,
+   "text": "Amazing and very detailed tracker. It has everything anyone could possibly need to help them get their finances in order and to build wealth."
+  },
+  {
+   "id": "r471",
+   "stars": 5,
+   "text": "I am still learning how to use the budget tracker well and to understand how everything is talking to each other but I am hopeful!"
+  },
+  {
+   "id": "r472",
+   "stars": 5,
+   "text": "Loving the tracker so far.  Takes some time to set up as expected, but great to track all spending and keep me on track to meet my financial goals.  The hardest part was decided what colour to buy!"
+  },
+  {
+   "id": "r473",
+   "stars": 1,
+   "text": "I didn't get my pdf excel sheet"
+  },
+  {
+   "id": "r474",
+   "stars": 1,
+   "text": "Not quite what I was looking for - very disappointed"
+  },
+  {
+   "id": "r475",
+   "stars": 1,
+   "text": "Not as user friendly as I was hoping for"
+  },
+  {
+   "id": "r476",
+   "stars": 1,
+   "text": "Its functionality didnt work well or easily for me."
+  },
+  {
+   "id": "r477",
+   "stars": 1,
+   "text": "Complicated and heavy I would like to have seperated sheets not all in one something with importange"
+  },
+  {
+   "id": "r478",
+   "stars": 1,
+   "text": "I Can’t download my purchase."
+  },
+  {
+   "id": "r479",
+   "stars": 1,
+   "text": "it did'nt have the snow ball"
+  },
+  {
+   "id": "r480",
+   "stars": 1,
+   "text": "Direction from template to editable version is horrible. Have no idea if this product is any good. Can't get to B from A to determine."
+  },
+  {
+   "id": "r481",
+   "stars": 1,
+   "text": "Expenses sheet is for the full year. Would be better if it was for each month. Not satisfied at all that I just wasted $20..."
+  },
+  {
+   "id": "r482",
+   "stars": 1,
+   "text": "First experience not a good one"
+  },
+  {
+   "id": "r483",
+   "stars": 1,
+   "text": "This item is not user friendly."
+  },
+  {
+   "id": "r484",
+   "stars": 1,
+   "text": "Customer Service isnt the best. I'm not able to edit the sheets, to much manual transactions. Not worth buying."
+  },
+  {
+   "id": "r485",
+   "stars": 1,
+   "text": "NEVER but NEVER buy this item."
+  },
+  {
+   "id": "r486",
+   "stars": 2,
+   "text": "would have like to have had a tab to use for a check register"
+  },
+  {
+   "id": "r487",
+   "stars": 2,
+   "text": "It was too hard to navigate"
+  },
+  {
+   "id": "r488",
+   "stars": 2,
+   "text": "The visual and idea is great, but I don't like that you can't put the total amount of debt you owe so you can see what you're paying off. It would be nice if at minimum you could input the full amount of the debt instead of just seeing it add up what you've paid on the debt over the year."
+  },
+  {
+   "id": "r489",
+   "stars": 2,
+   "text": "Extremely beautiful spreadsheet and great on the eye visually. A little disappointing that the spreadsheet is not available to download locally on to your PC but can only be used on GoogleDocs."
+  },
+  {
+   "id": "r491",
+   "stars": 2,
+   "text": "To complicated for me needed something more simple"
+  },
+  {
+   "id": "r492",
+   "stars": 2,
+   "text": "Works well with Only Office"
+  },
+  {
+   "id": "r493",
+   "stars": 3,
+   "text": "Just a well put together as it seems"
+  },
+  {
+   "id": "r494",
+   "stars": 3,
+   "text": "Just not fit for my liking and time I have available to actual go through all the copying and pasting"
+  },
+  {
+   "id": "r495",
+   "stars": 3,
+   "text": "This is a great tool but once I used it realized it wasn’t exactly what I needed."
+  },
+  {
+   "id": "r496",
+   "stars": 3,
+   "text": "the files are great product"
+  },
+  {
+   "id": "r497",
+   "stars": 3,
+   "text": "This sheet is a little hard to navigate, you mess one thing up and all the formulas go awry. I love the look of it, its just a little difficult for me to have all my finances in. I ended up just going back to the \"homemade\" sheet I made for myself."
+  },
+  {
+   "id": "r499",
+   "stars": 3,
+   "text": "Stunning style. However, I dislike how Actual Income, Debt Payoff, and Savings are tracked. It would be better if the 'Expenses' tab was 'Transactions' with a type for 'Income, Debt, Expense, or Savings' that logs them on the dashboards. Right now, you have to manually calculate totals and enter them. The budgeting is intuitive and easy to use. Overall, it's just okay—the lack of automation lowered my rating, though some might find it perfect. Sadly, I won't be using or recommending it unless updated to include automation for more than just expenses. It feels unfinished to me."
+  },
+  {
+   "id": "r500",
+   "stars": 3,
+   "text": "Good product but did not meet my personal needs in a way I hoped."
+  },
+  {
+   "id": "r503",
+   "stars": 3,
+   "text": "I wish I realised the template only accounts for monthly bills - lots of mine are weekly, fortnightly, even quarterly or bi-monthly. I'm not tech savvy enough to figure out how to make this work for me and multiplying or dividing bills to make them monthly kind of defeats the purpose for me (as does pretending they're variable). Otherwise it looks great and I'm sure it functions well!"
+  },
+  {
+   "id": "r504",
+   "stars": 3,
+   "text": "< not really ' anon to AST8d"
+  },
+  {
+   "id": "r505",
+   "stars": 3,
+   "text": "Awesome Budget sheet but does not work for me. Only works if your using every dollar."
+  },
+  {
+   "id": "r506",
+   "stars": 3,
+   "text": "It was ok, not exactly what I was looking for. A little hard to use"
+  },
+  {
+   "id": "r507",
+   "stars": 3,
+   "text": "GOOD AND VERY USEFUL PROGRAM"
+  },
+  {
+   "id": "r508",
+   "stars": 3,
+   "text": "Great product. thank you for it."
+  },
+  {
+   "id": "r510",
+   "stars": 3,
+   "text": "Utile, ma mancano diverse funzioni"
+  },
+  {
+   "id": "r511",
+   "stars": 3,
+   "text": "Does exactly what it says. Quick download. No problems."
+  },
+  {
+   "id": "r512",
+   "stars": 5,
+   "text": "This product is very helpful"
+  },
+  {
+   "id": "r513",
+   "stars": 5,
+   "text": "Worked great for what I needed!"
+  },
+  {
+   "id": "r514",
+   "stars": 5,
+   "text": "perfecto realmente me ayudo mucho a organizar mi budget, muy fácil de entender y de usar."
+  },
+  {
+   "id": "r515",
+   "stars": 4,
+   "text": "Great on the computer a little harder to use on a tablet"
+  },
+  {
+   "id": "r516",
+   "stars": 5,
+   "text": "Great budgeting tool and easy to use"
+  }
+ ]
+}

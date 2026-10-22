@@ -1,0 +1,887 @@
+{
+ "new_themes": [
+  {
+   "id": "w_yearly_totals",
+   "theme": "Yearly totals or annual summary",
+   "use_for": "Wants yearly totals or a full-year overview of spending.",
+   "kind": "wishes"
+  },
+  {
+   "id": "w_due_dates",
+   "theme": "Bill due dates",
+   "use_for": "Wants bill due dates or payment reminders built in.",
+   "kind": "wishes"
+  },
+  {
+   "id": "c_privacy",
+   "theme": "Privacy or security worries",
+   "use_for": "Uneasy about storing finances in Google or online.",
+   "kind": "complaints"
+  },
+  {
+   "id": "c_old_version",
+   "theme": "Got an outdated version",
+   "use_for": "Received an older version than the current one the seller offers.",
+   "kind": "complaints"
+  }
+ ],
+ "codes": [
+  {
+   "id": "r126",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r127",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_look"
+   ]
+  },
+  {
+   "id": "r128",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r129",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r130",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r131",
+   "off_type": false,
+   "themes": [
+    "p_as_described"
+   ]
+  },
+  {
+   "id": "r132",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r133",
+   "off_type": false,
+   "themes": [
+    "p_look",
+    "p_insight",
+    "p_life"
+   ]
+  },
+  {
+   "id": "r134",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r135",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r136",
+   "off_type": false,
+   "themes": [
+    "c_quality"
+   ]
+  },
+  {
+   "id": "r137",
+   "off_type": true,
+   "themes": [
+    "p_look",
+    "c_basic"
+   ]
+  },
+  {
+   "id": "r138",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r139",
+   "off_type": false,
+   "themes": [
+    "c_access",
+    "c_support"
+   ]
+  },
+  {
+   "id": "r140",
+   "off_type": false,
+   "themes": [
+    "c_hard",
+    "c_app",
+    "w_excel"
+   ]
+  },
+  {
+   "id": "r141",
+   "off_type": false,
+   "themes": [
+    "c_dates",
+    "c_support"
+   ]
+  },
+  {
+   "id": "r142",
+   "off_type": false,
+   "themes": [
+    "c_access",
+    "c_setup",
+    "p_look",
+    "c_formulas"
+   ]
+  },
+  {
+   "id": "r143",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r144",
+   "off_type": false,
+   "themes": [
+    "w_yearly_totals"
+   ]
+  },
+  {
+   "id": "r145",
+   "off_type": false,
+   "themes": [
+    "p_insight"
+   ]
+  },
+  {
+   "id": "r146",
+   "off_type": false,
+   "themes": [
+    "p_life"
+   ]
+  },
+  {
+   "id": "r147",
+   "off_type": false,
+   "themes": [
+    "c_dates"
+   ]
+  },
+  {
+   "id": "r148",
+   "off_type": false,
+   "themes": [
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r149",
+   "off_type": false,
+   "themes": [
+    "p_complete",
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r150",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r151",
+   "off_type": false,
+   "themes": [
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r152",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r153",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "c_dates"
+   ]
+  },
+  {
+   "id": "r154",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r155",
+   "off_type": false,
+   "themes": [
+    "w_due_dates"
+   ]
+  },
+  {
+   "id": "r156",
+   "off_type": false,
+   "themes": [
+    "p_complete",
+    "c_overwhelm"
+   ]
+  },
+  {
+   "id": "r157",
+   "off_type": false,
+   "themes": [
+    "c_app"
+   ]
+  },
+  {
+   "id": "r158",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r159",
+   "off_type": false,
+   "themes": [
+    "p_insight"
+   ]
+  },
+  {
+   "id": "r160",
+   "off_type": true,
+   "themes": [
+    "p_look",
+    "p_complete",
+    "w_more_categories"
+   ]
+  },
+  {
+   "id": "r161",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r162",
+   "off_type": false,
+   "themes": [
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r163",
+   "off_type": false,
+   "themes": [
+    "c_formulas",
+    "p_insight"
+   ]
+  },
+  {
+   "id": "r164",
+   "off_type": false,
+   "themes": [
+    "c_basic"
+   ]
+  },
+  {
+   "id": "r165",
+   "off_type": false,
+   "themes": [
+    "p_guide",
+    "c_hard",
+    "c_overwhelm"
+   ]
+  },
+  {
+   "id": "r166",
+   "off_type": false,
+   "themes": [
+    "p_insight"
+   ]
+  },
+  {
+   "id": "r167",
+   "off_type": false,
+   "themes": [
+    "p_insight",
+    "p_life",
+    "p_guide",
+    "p_support"
+   ]
+  },
+  {
+   "id": "r168",
+   "off_type": false,
+   "themes": [
+    "p_complete",
+    "p_life"
+   ]
+  },
+  {
+   "id": "r169",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r170",
+   "off_type": false,
+   "themes": [
+    "p_as_described"
+   ]
+  },
+  {
+   "id": "r171",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r172",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r173",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r174",
+   "off_type": false,
+   "themes": [
+    "p_look",
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r175",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r176",
+   "off_type": false,
+   "themes": [
+    "p_insight"
+   ]
+  },
+  {
+   "id": "r177",
+   "off_type": false,
+   "themes": [
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r178",
+   "off_type": false,
+   "themes": [
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r179",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r180",
+   "off_type": false,
+   "themes": [
+    "p_guide",
+    "p_easy",
+    "p_look",
+    "p_support"
+   ]
+  },
+  {
+   "id": "r181",
+   "off_type": false,
+   "themes": [
+    "p_insight"
+   ]
+  },
+  {
+   "id": "r182",
+   "off_type": false,
+   "themes": [
+    "p_repeat"
+   ]
+  },
+  {
+   "id": "r183",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r184",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_life"
+   ]
+  },
+  {
+   "id": "r185",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r186",
+   "off_type": false,
+   "themes": [
+    "c_hard",
+    "c_privacy"
+   ]
+  },
+  {
+   "id": "r187",
+   "off_type": false,
+   "themes": [
+    "c_quality",
+    "c_hard",
+    "c_value"
+   ]
+  },
+  {
+   "id": "r188",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r189",
+   "off_type": false,
+   "themes": [
+    "c_support"
+   ]
+  },
+  {
+   "id": "r190",
+   "off_type": false,
+   "themes": [
+    "c_app",
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r191",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r192",
+   "off_type": false,
+   "themes": [
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r193",
+   "off_type": false,
+   "themes": [
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r194",
+   "off_type": false,
+   "themes": [
+    "c_hard",
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r195",
+   "off_type": false,
+   "themes": [
+    "c_missing",
+    "c_formulas"
+   ]
+  },
+  {
+   "id": "r196",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r197",
+   "off_type": false,
+   "themes": [
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r198",
+   "off_type": false,
+   "themes": [
+    "c_support",
+    "c_look"
+   ]
+  },
+  {
+   "id": "r199",
+   "off_type": false,
+   "themes": [
+    "c_overwhelm",
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r200",
+   "off_type": false,
+   "themes": [
+    "c_misleading",
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r201",
+   "off_type": false,
+   "themes": [
+    "c_app"
+   ]
+  },
+  {
+   "id": "r202",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r203",
+   "off_type": true,
+   "themes": [
+    "c_misleading"
+   ]
+  },
+  {
+   "id": "r204",
+   "off_type": false,
+   "themes": [
+    "c_overwhelm"
+   ]
+  },
+  {
+   "id": "r205",
+   "off_type": false,
+   "themes": [
+    "c_hard",
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r206",
+   "off_type": false,
+   "themes": [
+    "c_hard",
+    "c_misleading",
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r207",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r208",
+   "off_type": false,
+   "themes": [
+    "c_app",
+    "w_excel"
+   ]
+  },
+  {
+   "id": "r209",
+   "off_type": false,
+   "themes": [
+    "c_formulas",
+    "c_support"
+   ]
+  },
+  {
+   "id": "r210",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r211",
+   "off_type": false,
+   "themes": [
+    "p_complete",
+    "c_formulas"
+   ]
+  },
+  {
+   "id": "r212",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_look"
+   ]
+  },
+  {
+   "id": "r213",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r214",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r215",
+   "off_type": false,
+   "themes": [
+    "p_complete",
+    "c_overwhelm",
+    "c_currency"
+   ]
+  },
+  {
+   "id": "r216",
+   "off_type": false,
+   "themes": [
+    "c_old_version"
+   ]
+  },
+  {
+   "id": "r217",
+   "off_type": false,
+   "themes": [
+    "p_complete",
+    "c_overwhelm"
+   ]
+  },
+  {
+   "id": "r218",
+   "off_type": false,
+   "themes": [
+    "p_support"
+   ]
+  },
+  {
+   "id": "r219",
+   "off_type": false,
+   "themes": [
+    "p_support"
+   ]
+  },
+  {
+   "id": "r220",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r221",
+   "off_type": false,
+   "themes": [
+    "p_life"
+   ]
+  },
+  {
+   "id": "r222",
+   "off_type": false,
+   "themes": [
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r223",
+   "off_type": true,
+   "themes": []
+  },
+  {
+   "id": "r224",
+   "off_type": false,
+   "themes": [
+    "c_dates",
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r225",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r226",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r227",
+   "off_type": false,
+   "themes": [
+    "p_automated",
+    "p_guide"
+   ]
+  },
+  {
+   "id": "r228",
+   "off_type": false,
+   "themes": [
+    "p_repeat"
+   ]
+  },
+  {
+   "id": "r229",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r230",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r231",
+   "off_type": true,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r232",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r233",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r234",
+   "off_type": false,
+   "themes": [
+    "c_missing",
+    "c_formulas"
+   ]
+  },
+  {
+   "id": "r236",
+   "off_type": false,
+   "themes": [
+    "c_missing"
+   ]
+  },
+  {
+   "id": "r238",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r240",
+   "off_type": false,
+   "themes": [
+    "c_value"
+   ]
+  },
+  {
+   "id": "r244",
+   "off_type": false,
+   "themes": [
+    "c_hard",
+    "c_currency"
+   ]
+  },
+  {
+   "id": "r245",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r246",
+   "off_type": false,
+   "themes": [
+    "c_customize"
+   ]
+  },
+  {
+   "id": "r247",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r248",
+   "off_type": false,
+   "themes": [
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r249",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r250",
+   "off_type": false,
+   "themes": [
+    "c_app",
+    "c_access",
+    "c_misleading",
+    "c_hard",
+    "p_support"
+   ]
+  },
+  {
+   "id": "r251",
+   "off_type": false,
+   "themes": [
+    "c_customize"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,885 @@
+{
+ "new_themes": [
+  {
+   "id": "c_upsell",
+   "theme": "Forced survey or upsell to get the file",
+   "use_for": "Had to fill a questionnaire or got pushed to a paid service before receiving the download.",
+   "kind": "complaints"
+  },
+  {
+   "id": "c_sharing",
+   "theme": "Can't share with family or partner",
+   "use_for": "Lock or permissions stop sharing the sheet with others.",
+   "kind": "complaints"
+  },
+  {
+   "id": "p_shared",
+   "theme": "Good for budgeting with a partner",
+   "use_for": "Easy to share or plan together with a spouse, partner or family.",
+   "kind": "praise"
+  },
+  {
+   "id": "p_private",
+   "theme": "Keeps my data private",
+   "use_for": "Likes that data stays on own computer instead of an app.",
+   "kind": "praise"
+  },
+  {
+   "id": "p_compatible",
+   "theme": "Works in my app",
+   "use_for": "Praises that it opened fine in Excel, Numbers or another app.",
+   "kind": "praise"
+  },
+  {
+   "id": "w_more_trackers",
+   "theme": "Extra specialized tracker tabs",
+   "use_for": "Wants an added tab or tracker, e.g. quarterly taxes or money paid back.",
+   "kind": "wishes"
+  },
+  {
+   "id": "w_currency",
+   "theme": "Choose or type own currency",
+   "use_for": "Wants a currency option or custom currency symbol.",
+   "kind": "wishes"
+  }
+ ],
+ "codes": [
+  {
+   "id": "r253",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r254",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r255",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r256",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r257",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r258",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r259",
+   "off_type": false,
+   "themes": [
+    "p_insight",
+    "p_guide"
+   ]
+  },
+  {
+   "id": "r260",
+   "off_type": false,
+   "themes": [
+    "p_insight",
+    "p_guide"
+   ]
+  },
+  {
+   "id": "r261",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r262",
+   "off_type": false,
+   "themes": [
+    "p_as_described"
+   ]
+  },
+  {
+   "id": "r263",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r264",
+   "off_type": false,
+   "themes": [
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r265",
+   "off_type": false,
+   "themes": [
+    "p_flexible",
+    "p_value",
+    "w_more_categories"
+   ]
+  },
+  {
+   "id": "r266",
+   "off_type": false,
+   "themes": [
+    "p_guide"
+   ]
+  },
+  {
+   "id": "r267",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_insight"
+   ]
+  },
+  {
+   "id": "r268",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r269",
+   "off_type": false,
+   "themes": [
+    "p_guide"
+   ]
+  },
+  {
+   "id": "r270",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r271",
+   "off_type": false,
+   "themes": [
+    "p_guide"
+   ]
+  },
+  {
+   "id": "r272",
+   "off_type": false,
+   "themes": [
+    "c_formulas"
+   ]
+  },
+  {
+   "id": "r273",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r274",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r275",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r279",
+   "off_type": false,
+   "themes": [
+    "p_as_described",
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r280",
+   "off_type": false,
+   "themes": [
+    "c_formulas"
+   ]
+  },
+  {
+   "id": "r282",
+   "off_type": false,
+   "themes": [
+    "c_sharing"
+   ]
+  },
+  {
+   "id": "r284",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r285",
+   "off_type": false,
+   "themes": [
+    "c_dates"
+   ]
+  },
+  {
+   "id": "r286",
+   "off_type": false,
+   "themes": [
+    "c_app",
+    "c_misleading"
+   ]
+  },
+  {
+   "id": "r288",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r290",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r291",
+   "off_type": false,
+   "themes": [
+    "c_hard",
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r292",
+   "off_type": false,
+   "themes": [
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r293",
+   "off_type": false,
+   "themes": [
+    "c_dates"
+   ]
+  },
+  {
+   "id": "r295",
+   "off_type": false,
+   "themes": [
+    "c_currency",
+    "c_misleading"
+   ]
+  },
+  {
+   "id": "r297",
+   "off_type": false,
+   "themes": [
+    "c_misleading",
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r298",
+   "off_type": true,
+   "themes": [
+    "c_formulas",
+    "c_support"
+   ]
+  },
+  {
+   "id": "r299",
+   "off_type": false,
+   "themes": [
+    "c_upsell"
+   ]
+  },
+  {
+   "id": "r301",
+   "off_type": false,
+   "themes": [
+    "p_value"
+   ]
+  },
+  {
+   "id": "r302",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r303",
+   "off_type": false,
+   "themes": [
+    "c_upsell"
+   ]
+  },
+  {
+   "id": "r304",
+   "off_type": false,
+   "themes": [
+    "c_access",
+    "c_upsell"
+   ]
+  },
+  {
+   "id": "r305",
+   "off_type": false,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r306",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r307",
+   "off_type": false,
+   "themes": [
+    "c_currency",
+    "w_more_trackers",
+    "w_currency"
+   ]
+  },
+  {
+   "id": "r308",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r309",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r310",
+   "off_type": true,
+   "themes": [
+    "p_easy",
+    "p_flexible"
+   ]
+  },
+  {
+   "id": "r311",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r312",
+   "off_type": false,
+   "themes": [
+    "w_more_trackers"
+   ]
+  },
+  {
+   "id": "r313",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r314",
+   "off_type": false,
+   "themes": [
+    "c_upsell"
+   ]
+  },
+  {
+   "id": "r315",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r316",
+   "off_type": true,
+   "themes": [
+    "c_misleading"
+   ]
+  },
+  {
+   "id": "r317",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r318",
+   "off_type": false,
+   "themes": [
+    "c_formulas",
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r319",
+   "off_type": true,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r320",
+   "off_type": false,
+   "themes": [
+    "p_as_described"
+   ]
+  },
+  {
+   "id": "r321",
+   "off_type": false,
+   "themes": [
+    "c_hard",
+    "p_shared"
+   ]
+  },
+  {
+   "id": "r322",
+   "off_type": false,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r323",
+   "off_type": true,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r324",
+   "off_type": false,
+   "themes": [
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r325",
+   "off_type": true,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r326",
+   "off_type": true,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r327",
+   "off_type": true,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r328",
+   "off_type": true,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r329",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r330",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r331",
+   "off_type": true,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r332",
+   "off_type": false,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r333",
+   "off_type": false,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r334",
+   "off_type": true,
+   "themes": [
+    "p_look",
+    "p_as_described"
+   ]
+  },
+  {
+   "id": "r335",
+   "off_type": true,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r336",
+   "off_type": true,
+   "themes": [
+    "p_look",
+    "p_value"
+   ]
+  },
+  {
+   "id": "r337",
+   "off_type": true,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r338",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r339",
+   "off_type": false,
+   "themes": [
+    "p_complete",
+    "p_compatible"
+   ]
+  },
+  {
+   "id": "r340",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_shared"
+   ]
+  },
+  {
+   "id": "r341",
+   "off_type": false,
+   "themes": [
+    "p_value",
+    "p_insight",
+    "p_guide",
+    "p_easy",
+    "p_look",
+    "p_shared",
+    "p_private"
+   ]
+  },
+  {
+   "id": "r342",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r343",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r345",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r346",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r347",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r348",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r349",
+   "off_type": false,
+   "themes": [
+    "p_value",
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r350",
+   "off_type": false,
+   "themes": [
+    "p_shared",
+    "p_support",
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r351",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r352",
+   "off_type": false,
+   "themes": [
+    "p_guide"
+   ]
+  },
+  {
+   "id": "r353",
+   "off_type": false,
+   "themes": [
+    "p_complete",
+    "p_automated",
+    "p_easy",
+    "p_guide"
+   ]
+  },
+  {
+   "id": "r354",
+   "off_type": true,
+   "themes": [
+    "p_look",
+    "p_value"
+   ]
+  },
+  {
+   "id": "r355",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r356",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r357",
+   "off_type": false,
+   "themes": [
+    "p_support"
+   ]
+  },
+  {
+   "id": "r358",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r360",
+   "off_type": false,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r361",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r362",
+   "off_type": false,
+   "themes": [
+    "p_guide",
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r363",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r364",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_insight"
+   ]
+  },
+  {
+   "id": "r365",
+   "off_type": false,
+   "themes": [
+    "p_guide"
+   ]
+  },
+  {
+   "id": "r366",
+   "off_type": false,
+   "themes": [
+    "p_guide",
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r367",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r368",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r369",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_look"
+   ]
+  },
+  {
+   "id": "r370",
+   "off_type": false,
+   "themes": [
+    "p_automated"
+   ]
+  },
+  {
+   "id": "r371",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r372",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r373",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r374",
+   "off_type": false,
+   "themes": [
+    "p_complete",
+    "p_guide"
+   ]
+  },
+  {
+   "id": "r375",
+   "off_type": false,
+   "themes": [
+    "c_look",
+    "c_currency"
+   ]
+  },
+  {
+   "id": "r377",
+   "off_type": true,
+   "themes": [
+    "c_value"
+   ]
+  },
+  {
+   "id": "r378",
+   "off_type": true,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r379",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r380",
+   "off_type": false,
+   "themes": [
+    "c_access",
+    "c_support"
+   ]
+  },
+  {
+   "id": "r381",
+   "off_type": true,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r382",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r384",
+   "off_type": true,
+   "themes": [
+    "c_quality"
+   ]
+  },
+  {
+   "id": "r385",
+   "off_type": false,
+   "themes": [
+    "c_setup",
+    "c_overwhelm",
+    "c_hard",
+    "c_value"
+   ]
+  },
+  {
+   "id": "r386",
+   "off_type": true,
+   "themes": [
+    "c_look",
+    "c_quality"
+   ]
+  }
+ ]
+}

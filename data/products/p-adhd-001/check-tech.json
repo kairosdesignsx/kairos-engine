@@ -25,6 +25,11 @@
   "detail": "fonts: ['Fraunces-SemiBold', 'OutfitThin-Medium', 'OutfitThin-Regular', 'OutfitThin-SemiBold']"
  },
  {
+  "name": "page claims match the file",
+  "pass": true,
+  "detail": "claims [541, 541], file has 541"
+ },
+ {
   "name": "listing photos",
   "pass": true,
   "detail": "10 photos, sizes [(2700, 2025)]"
@@ -43,11 +48,6 @@
   "name": "no em dashes or emojis",
   "pass": true,
   "detail": "checked title and description"
- },
- {
-  "name": "page claims match the file",
-  "pass": true,
-  "detail": "claims [541, 541], file has 541"
  },
  {
   "name": "says digital download",

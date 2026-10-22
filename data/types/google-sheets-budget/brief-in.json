@@ -1,0 +1,1199 @@
+{
+ "type_id": "google-sheets-budget",
+ "product_type": "Google Sheets budget template",
+ "format": "Spreadsheet budget template for Google Sheets and Excel (digital download)",
+ "line": "spreadsheet",
+ "rules": {
+  "significant_complaint_count": 11,
+  "min_unique": 2,
+  "evidence_ref_kinds": [
+   "complaint:<id>",
+   "praise:<id>",
+   "wish:<id>",
+   "feature:<id>",
+   "price:<field>",
+   "keyword:<tag>",
+   "listing:<listing_id>",
+   "market:<field>",
+   "look:<style>"
+  ]
+ },
+ "basis": {
+  "listings": 30,
+  "reviews": 543,
+  "reviews_coded": 504,
+  "off_type_dropped": 43,
+  "negative_reviews": 230,
+  "feature_sources": [
+   "titles"
+  ],
+  "photos": "pending"
+ },
+ "market": {
+  "opportunity_score": 39.0,
+  "monthly_searches": 1746.0,
+  "competing_listings": 27714.0,
+  "top_seller_revenue": 16625.0,
+  "new_sellers_in_top_pct": 15.0,
+  "summary": "Oversaturated. ~1,746 monthly searches, competition crowded (27,714 listings), and 15% of top sellers are under 6 months old. Top seller earns ~$16,625/mo; the best-earning price band is $18–33.",
+  "best_price_band": "$18-33"
+ },
+ "must_address": [
+  {
+   "ref": "complaint:c_hard",
+   "theme": "Hard to use day to day",
+   "count": 58,
+   "quotes": [
+    {
+     "text": "Great template. Can be hard for a super newbie to understand, but the videos help. Sometimes just basic would be good.",
+     "stars": 4
+    },
+    {
+     "text": "Complicated and heavy I would like to have seperated sheets not all in one something with importange",
+     "stars": 1
+    },
+    {
+     "text": "This is set up\nWell but I didn’t really have any experience with Google Sheets so I messed it up!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_access",
+   "theme": "Couldn't open the file or get access to the sheet",
+   "count": 39,
+   "quotes": [
+    {
+     "text": "Not compatible with multiple search engines, safari, microsoft, etc. Kept getting an error when i tried opening it. Doesn’t work.",
+     "stars": 1
+    },
+    {
+     "text": "You need google spread sheets unless your Etsy email and google email you need permission",
+     "stars": 1
+    },
+    {
+     "text": "I have been requesting edit access (as allowable) to the document with no assistance so I essentially paid for a document I can't use.",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_not_useful",
+   "theme": "Not useful for my needs",
+   "count": 37,
+   "quotes": [
+    {
+     "text": "This is for the user that does not have a lot of subscriptions. It was a waste of money for me.",
+     "stars": 2
+    },
+    {
+     "text": "Expenses sheet is for the full year. Would be better if it was for each month. Not satisfied at all that I just wasted $20...",
+     "stars": 1
+    },
+    {
+     "text": "No era lo que esperaba. Pero falla mía por no haber investigado mejor",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_setup",
+   "theme": "Confusing setup or unclear instructions",
+   "count": 27,
+   "quotes": [
+    {
+     "text": "I am still trying to learn to use it and get all of my info into it but it seems great!",
+     "stars": 4
+    },
+    {
+     "text": "Direction from template to editable version is horrible. Have no idea if this product is any good. Can't get to B from A to determine.",
+     "stars": 1
+    },
+    {
+     "text": "Spreadsheet does not work, the formulas came back as invalid and is super confusing. Even the instructions was very confusing to follow. I could not do anything!",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_support",
+   "theme": "Seller didn't help or reply",
+   "count": 26,
+   "quotes": [
+    {
+     "text": "I have been requesting edit access (as allowable) to the document with no assistance so I essentially paid for a document I can't use.",
+     "stars": 1
+    },
+    {
+     "text": "Horrible Customer Service. Would not recommend",
+     "stars": 1
+    },
+    {
+     "text": "categories do not flow to the breakdown area\neven after adding categories to drop down.  \ntried to click to contact seller thru my email receipt and it keeps saying page no longer exists.  \nWasted mon",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_app",
+   "theme": "Doesn't work in my app or device",
+   "count": 20,
+   "quotes": [
+    {
+     "text": "Not compatible with multiple search engines, safari, microsoft, etc. Kept getting an error when i tried opening it. Doesn’t work.",
+     "stars": 1
+    },
+    {
+     "text": "I did not like that this was only available as a google doc, as google is very finicky",
+     "stars": 1
+    },
+    {
+     "text": "you have make a google acct it not user friendly",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_misleading",
+   "theme": "Not as described or pictured",
+   "count": 16,
+   "quotes": [
+    {
+     "text": "Not at all as expected. Low quality.",
+     "stars": 1
+    },
+    {
+     "text": "NOT WHAT I EXPECTED.  I ASKED FOR A REFUND, AND THEY CANT.  WASTED OF MONEY.  BE CAREFUL WITH WHAT YOU PURCHASE.",
+     "stars": 1
+    },
+    {
+     "text": "The description did not mention that this is more suited to dollars than pounds so was a waste of money.",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_formulas",
+   "theme": "Formulas broke or showed errors",
+   "count": 16,
+   "quotes": [
+    {
+     "text": "It is a little difficult to use and it did not automate everything and had errors",
+     "stars": 4
+    },
+    {
+     "text": "Calendar does not show any amount for bills or paychecks. you log the amounts but your income does not convert to the calendar and neither does dollar amounts.",
+     "stars": 1
+    },
+    {
+     "text": "Spreadsheet does not work, the formulas came back as invalid and is super confusing. Even the instructions was very confusing to follow. I could not do anything!",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_customize",
+   "theme": "Can't change categories or layout",
+   "count": 14,
+   "quotes": [
+    {
+     "text": "Archivo no editable, colores feos, celdas sin utilización, fuente fea e instrucciones no en español",
+     "stars": 1
+    },
+    {
+     "text": "The item is still locked upon purchase making it useless to me.",
+     "stars": 1
+    },
+    {
+     "text": "could not edit after download",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_overwhelm",
+   "theme": "Too much, overwhelming",
+   "count": 14,
+   "quotes": [
+    {
+     "text": "Muy profesional, es un poco engorroso completar todo, me gusta un poco mas simple, pero igual es un muy buen trabajo!!",
+     "stars": 5
+    },
+    {
+     "text": "Great template. Can be hard for a super newbie to understand, but the videos help. Sometimes just basic would be good.",
+     "stars": 4
+    },
+    {
+     "text": "Complicated and heavy I would like to have seperated sheets not all in one something with importange",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_value",
+   "theme": "Not worth the price",
+   "count": 12,
+   "quotes": [
+    {
+     "text": "This is for the user that does not have a lot of subscriptions. It was a waste of money for me.",
+     "stars": 2
+    },
+    {
+     "text": "Expenses sheet is for the full year. Would be better if it was for each month. Not satisfied at all that I just wasted $20...",
+     "stars": 1
+    },
+    {
+     "text": "Do not waste your money on this.",
+     "stars": 1
+    }
+   ]
+  }
+ ],
+ "other_complaints": [
+  {
+   "ref": "complaint:c_currency",
+   "theme": "Currency or region problems",
+   "count": 9
+  },
+  {
+   "ref": "complaint:c_dates",
+   "theme": "Dates or year problems",
+   "count": 9
+  },
+  {
+   "ref": "complaint:c_quality",
+   "theme": "Errors, typos or sloppy work",
+   "count": 8
+  },
+  {
+   "ref": "complaint:c_basic",
+   "theme": "Too basic",
+   "count": 7
+  },
+  {
+   "ref": "complaint:c_missing",
+   "theme": "Missing features or tabs promised",
+   "count": 4
+  },
+  {
+   "ref": "complaint:c_upsell",
+   "theme": "Forced survey or upsell to get the file",
+   "count": 4
+  },
+  {
+   "ref": "complaint:c_manual",
+   "theme": "Too much manual entry",
+   "count": 4
+  },
+  {
+   "ref": "complaint:c_look",
+   "theme": "Didn't like the look",
+   "count": 3
+  },
+  {
+   "ref": "complaint:c_balances",
+   "theme": "Doesn't track account balances or transfers well",
+   "count": 3
+  },
+  {
+   "ref": "complaint:c_privacy",
+   "theme": "Privacy or security worries",
+   "count": 1
+  },
+  {
+   "ref": "complaint:c_sharing",
+   "theme": "Can't share with family or partner",
+   "count": 1
+  }
+ ],
+ "praise": [
+  {
+   "ref": "praise:p_easy",
+   "theme": "Easy to set up and use",
+   "count": 75,
+   "quotes": [
+    {
+     "text": "So many helpful tools on how to use the spreadsheet, made it super easy, its helped me so much thank you",
+     "stars": 5
+    },
+    {
+     "text": "This has been extremely helpful in identifying where my money is and where it's going.  Comprehensive and easy to use.",
+     "stars": 5
+    },
+    {
+     "text": "Easy to understand. I like the colors and I’m excited to use this to keep me on track.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_look",
+   "theme": "Beautiful design",
+   "count": 38,
+   "quotes": [
+    {
+     "text": "Easy to understand. I like the colors and I’m excited to use this to keep me on track.",
+     "stars": 5
+    },
+    {
+     "text": "Instant delivery, an amazing well thought out instructive video, an additional link for help if needed, wel designed and user friendly.",
+     "stars": 5
+    },
+    {
+     "text": "It's still hard for me!! I like design but it's made me confused",
+     "stars": 3
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_complete",
+   "theme": "Has everything I need",
+   "count": 33,
+   "quotes": [
+    {
+     "text": "This has been extremely helpful in identifying where my money is and where it's going.  Comprehensive and easy to use.",
+     "stars": 5
+    },
+    {
+     "text": "Very nice and detailed. A lot to learn and hard to do manually with living life to! But I like it and would buy it again.",
+     "stars": 4
+    },
+    {
+     "text": "Amazing and very detailed tracker. It has everything anyone could possibly need to help them get their finances in order and to build wealth.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_insight",
+   "theme": "Helps me see where my money goes",
+   "count": 30,
+   "quotes": [
+    {
+     "text": "This has been extremely helpful in identifying where my money is and where it's going.  Comprehensive and easy to use.",
+     "stars": 5
+    },
+    {
+     "text": "Really nice product and love having the accounts view on the top of page I am working on.",
+     "stars": 5
+    },
+    {
+     "text": "I'll be retiring in a few years and want to track my spending. This worksheet will help me get rid of unnecessary spending. Love it!!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_guide",
+   "theme": "Clear instructions or tutorial",
+   "count": 19,
+   "quotes": [
+    {
+     "text": "So many helpful tools on how to use the spreadsheet, made it super easy, its helped me so much thank you",
+     "stars": 5
+    },
+    {
+     "text": "Great template. Can be hard for a super newbie to understand, but the videos help. Sometimes just basic would be good.",
+     "stars": 4
+    },
+    {
+     "text": "Great budgeting breakdown and very helpful instructional video.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_repeat",
+   "theme": "Repeat buyer",
+   "count": 16,
+   "quotes": [
+    {
+     "text": "Bisher komme ich super mit dem Planer aus :)\r\nHab ihn einmal für 2025 heruntergeladen und alle Daten nachgetragen und jetzt eben einmal für dieses Jahr.",
+     "stars": 5
+    },
+    {
+     "text": "I absolutely love these planners! I purchased most of them.",
+     "stars": 5
+    },
+    {
+     "text": "Great product! Well purchase more in the future!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_as_described",
+   "theme": "Exactly as described",
+   "count": 14,
+   "quotes": [
+    {
+     "text": "Perfect! Thank you, it is exact what I was looking for.",
+     "stars": 5
+    },
+    {
+     "text": "Does exactly what it says. Quick download. No problems.",
+     "stars": 3
+    },
+    {
+     "text": "NOT REALLY INTERESSING BUT OK ACCORDING TO DESCRIPTION",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_support",
+   "theme": "Seller was helpful",
+   "count": 13,
+   "quotes": [
+    {
+     "text": "Instant delivery, an amazing well thought out instructive video, an additional link for help if needed, wel designed and user friendly.",
+     "stars": 5
+    },
+    {
+     "text": "This product is great! The customer service is even better!!!",
+     "stars": 5
+    },
+    {
+     "text": "has helped me so much and seller is very quick for response!!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_life",
+   "theme": "Changed my finances",
+   "count": 10,
+   "quotes": [
+    {
+     "text": "Incredible! Definitely user-friendly and is helping me get my finances in order!",
+     "stars": 5
+    },
+    {
+     "text": "So intricate and exactly what I needed to get my budgeting back under control.",
+     "stars": 5
+    },
+    {
+     "text": "This has been a life saver!!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_fast_delivery",
+   "theme": "Quick, easy download",
+   "count": 7,
+   "quotes": [
+    {
+     "text": "easy to download, good spreadsheet, wasnt exactly what i wanted.",
+     "stars": 2
+    },
+    {
+     "text": "Does exactly what it says. Quick download. No problems.",
+     "stars": 3
+    },
+    {
+     "text": "Arrived via email. Easy to customize. Lots of fun",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_automated",
+   "theme": "Does the math for me",
+   "count": 5,
+   "quotes": [
+    {
+     "text": "Love these templates, so helpful and takes away the stress of fiddling around with formulas yourself for hours on end. The tutorial videos are excellent too.",
+     "stars": 5
+    },
+    {
+     "text": "I love this tracker. The set out is so clever and intuitive, the automated processes make it brainless and easy, and it’s so motivating to see my numbers improve!",
+     "stars": 5
+    },
+    {
+     "text": "This so far has been exactly what I have been looking for! Not only can you set a budget but then it pulls that infor into your monthly breakdown. Also has an awesome calendar that listed all your bil",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_value",
+   "theme": "Great value",
+   "count": 5,
+   "quotes": [
+    {
+     "text": "Great price and product. Easy to use",
+     "stars": 5
+    },
+    {
+     "text": "Crazy value for the price. And a quality spreadsheet too. Thank you!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_flexible",
+   "theme": "Customizable",
+   "count": 5,
+   "quotes": [
+    {
+     "text": "I love how nice the images are and how easy they are to edit. Great product!",
+     "stars": 5
+    },
+    {
+     "text": "Great product! Was easy to convert into mine.",
+     "stars": 5
+    },
+    {
+     "text": "Arrived via email. Easy to customize. Lots of fun",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_shared",
+   "theme": "Good for budgeting with a partner",
+   "count": 4,
+   "quotes": [
+    {
+     "text": "I like it! Me and Mt BF enjoyed writing this together but it has some UI issues...",
+     "stars": 4
+    },
+    {
+     "text": "Lovely product, scratches all of the OCD spots in my brain, easy to share and use with Husband through google sheets. K responded super quickly when I had a Q about the product. <3",
+     "stars": 5
+    },
+    {
+     "text": "PERFECT! I was looking for something that was simple to use and a great communication tool for me and my spouse to plan for our future. This was the perfect tool for us! Thank you ComputedPlanning!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_compatible",
+   "theme": "Works in my app",
+   "count": 1,
+   "quotes": []
+  },
+  {
+   "ref": "praise:p_private",
+   "theme": "Keeps my data private",
+   "count": 1,
+   "quotes": []
+  }
+ ],
+ "wishes": [
+  {
+   "ref": "wish:w_feature",
+   "theme": "Wants a specific extra tracker or feature",
+   "count": 9
+  },
+  {
+   "ref": "wish:w_excel",
+   "theme": "Excel version",
+   "count": 3
+  },
+  {
+   "ref": "wish:w_budget_method",
+   "theme": "Choose my own budgeting rule",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_yearly_totals",
+   "theme": "Yearly totals or annual summary",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_due_dates",
+   "theme": "Bill due dates",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_more_categories",
+   "theme": "More categories or rows",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_currency",
+   "theme": "Choose or type own currency",
+   "count": 1
+  }
+ ],
+ "features": [
+  {
+   "ref": "feature:google_sheets",
+   "name": "Works in Google Sheets",
+   "tier": "standard",
+   "share": 0.967,
+   "revenue_share": 0.997
+  },
+  {
+   "ref": "feature:monthly",
+   "name": "Monthly budget tabs",
+   "tier": "standard",
+   "share": 0.667,
+   "revenue_share": 0.708
+  },
+  {
+   "ref": "feature:excel",
+   "name": "Works in Excel",
+   "tier": "common",
+   "share": 0.567,
+   "revenue_share": 0.699
+  },
+  {
+   "ref": "feature:paycheck",
+   "name": "Budget by paycheck (weekly or biweekly)",
+   "tier": "common",
+   "share": 0.4,
+   "revenue_share": 0.286
+  },
+  {
+   "ref": "feature:expense",
+   "name": "Expense or spending tracker",
+   "tier": "common",
+   "share": 0.4,
+   "revenue_share": 0.175
+  },
+  {
+   "ref": "feature:debt",
+   "name": "Debt payoff tracker or snowball calculator",
+   "tier": "common",
+   "share": 0.367,
+   "revenue_share": 0.64
+  },
+  {
+   "ref": "feature:bills",
+   "name": "Bill tracker or bill calendar",
+   "tier": "common",
+   "share": 0.3,
+   "revenue_share": 0.566
+  },
+  {
+   "ref": "feature:annual",
+   "name": "Annual or yearly view",
+   "tier": "rare",
+   "share": 0.267,
+   "revenue_share": 0.558
+  },
+  {
+   "ref": "feature:savings",
+   "name": "Savings goals or sinking funds",
+   "tier": "rare",
+   "share": 0.233,
+   "revenue_share": 0.149
+  },
+  {
+   "ref": "feature:couples",
+   "name": "Couples or family budget",
+   "tier": "rare",
+   "share": 0.1,
+   "revenue_share": 0.055
+  },
+  {
+   "ref": "feature:credit_card",
+   "name": "Credit card tracking",
+   "tier": "rare",
+   "share": 0.1,
+   "revenue_share": 0.083
+  },
+  {
+   "ref": "feature:dark_mode",
+   "name": "Dark mode",
+   "tier": "rare",
+   "share": 0.1,
+   "revenue_share": 0.05
+  },
+  {
+   "ref": "feature:dashboard",
+   "name": "Dashboard with charts",
+   "tier": "rare",
+   "share": 0.067,
+   "revenue_share": 0.108
+  },
+  {
+   "ref": "feature:net_worth",
+   "name": "Net worth tracker",
+   "tier": "rare",
+   "share": 0.033,
+   "revenue_share": 0.015
+  },
+  {
+   "ref": "feature:automated",
+   "name": "Automated, does the math",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:zero_based",
+   "name": "Zero-based or 50/30/20 method",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:business",
+   "name": "Small business or side hustle",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:customizable",
+   "name": "Customizable categories",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:video_tutorial",
+   "name": "Video tutorial",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:mobile",
+   "name": "Works on phone",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:multi_year",
+   "name": "Multi-year or undated",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:instructions_inside",
+   "name": "Instructions inside the sheet",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:protected_formulas",
+   "name": "Protected formulas (hard to break)",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:sample_data",
+   "name": "Comes with sample data",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  }
+ ],
+ "standard_features": [
+  "feature:google_sheets",
+  "feature:monthly"
+ ],
+ "price": {
+  "p25": 3.27,
+  "median": 9.41,
+  "p75": 20.71,
+  "top10_by_revenue_median": 18.24,
+  "revenue_weighted_median": 19.65,
+  "best_band": "$18-33"
+ },
+ "keywords": [
+  {
+   "tag": "budget spreadsheet",
+   "used_by_top": 26,
+   "volume": null
+  },
+  {
+   "tag": "monthly budget",
+   "used_by_top": 19,
+   "volume": null
+  },
+  {
+   "tag": "budget planner",
+   "used_by_top": 18,
+   "volume": null
+  },
+  {
+   "tag": "expense tracker",
+   "used_by_top": 17,
+   "volume": null
+  },
+  {
+   "tag": "financial planner",
+   "used_by_top": 15,
+   "volume": null
+  },
+  {
+   "tag": "google sheets budget",
+   "used_by_top": 13,
+   "volume": null
+  },
+  {
+   "tag": "paycheck budget",
+   "used_by_top": 12,
+   "volume": null
+  },
+  {
+   "tag": "savings tracker",
+   "used_by_top": 10,
+   "volume": null
+  },
+  {
+   "tag": "annual budget",
+   "used_by_top": 9,
+   "volume": null
+  },
+  {
+   "tag": "biweekly budget",
+   "used_by_top": 9,
+   "volume": null
+  },
+  {
+   "tag": "budget template",
+   "used_by_top": 9,
+   "volume": null
+  },
+  {
+   "tag": "budget google sheets",
+   "used_by_top": 8,
+   "volume": null
+  },
+  {
+   "tag": "personal finance",
+   "used_by_top": 8,
+   "volume": null
+  },
+  {
+   "tag": "debt tracker",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "beginner budget",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "budget tracker",
+   "used_by_top": 6,
+   "volume": null
+  },
+  {
+   "tag": "budgeting template",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "zero based budget",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "budget by paycheck",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "excel template",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "budget tracker excel",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "couple budget",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "spending tracker",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "simple budget",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "debt payoff tracker",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "couples budget",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "google sheets",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "weekly budget",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "bill tracker excel",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "weekly budgeting",
+   "used_by_top": 3,
+   "volume": null
+  }
+ ],
+ "looks": [
+  {
+   "ref": "look:Dark mode",
+   "share": 0.1
+  }
+ ],
+ "top_listings": [
+  {
+   "ref": "listing:1807934295",
+   "title": "Ultimate Annual Budget Spreadsheet Excel Google Sheets Budget Template Monthly Budget Tracker Financial Planner Bill Tra",
+   "shop": "PrioriDigitalStudio",
+   "price": 19.65,
+   "mo_revenue": 17406.0,
+   "total_sales": 29774.0
+  },
+  {
+   "ref": "listing:1619225413",
+   "title": "Budget Planner Google Sheet Monthly Budget Spreadsheet Paycheck Budget Template Simple Weekly Financial Planner Beginner",
+   "shop": "ExclusiveDesignLab",
+   "price": 1.98,
+   "mo_revenue": 4503.0,
+   "total_sales": 56581.0
+  },
+  {
+   "ref": "listing:1473595073",
+   "title": "Budget Planner Google Sheets: Monthly, Weekly & Biweekly Budget Spreadsheet with Expense Tracker",
+   "shop": "HayeCreativesCo",
+   "price": 2.69,
+   "mo_revenue": 132.0,
+   "total_sales": 37352.0
+  },
+  {
+   "ref": "listing:4316143583",
+   "title": "Ultimate Finance Dashboard: Annual Budget Spreadsheet for Google Sheets (Digital Download)",
+   "shop": "AbbyOrganizes",
+   "price": 24.0,
+   "mo_revenue": 4032.0,
+   "total_sales": 3512.0
+  },
+  {
+   "ref": "listing:1652486880",
+   "title": "Biweekly Paycheck Budget Spreadsheet Bill Calendar Weekly Monthly Budget Planner Expense Savings Debt Tracker Google She",
+   "shop": "JrenDigital",
+   "price": 21.07,
+   "mo_revenue": 3139.0,
+   "total_sales": 4919.0
+  },
+  {
+   "ref": "listing:1413307252",
+   "title": "Budget Planner Google Sheets Monthly Budget Spreadsheet Excel Weekly Paycheck Budget Template Biweekly Budgeting by Payc",
+   "shop": "TheWeeklyCrew",
+   "price": 2.79,
+   "mo_revenue": 455.0,
+   "total_sales": 21279.0
+  },
+  {
+   "ref": "listing:1639267175",
+   "title": "Ultimate Annual & Monthly Budget Spreadsheet Excel Google Sheets Budget Template Budget Tracker Financial Planner Bill T",
+   "shop": "JrenDigital",
+   "price": 25.28,
+   "mo_revenue": 2048.0,
+   "total_sales": 8608.0
+  },
+  {
+   "ref": "listing:1344426956",
+   "title": "Monthly Budget Spreadsheet | Blush Pink Palette | Simple Annual Budget | Personal Finances | Easy Google Sheets | Financ",
+   "shop": "SimplyOrganizedPro",
+   "price": 2.5,
+   "mo_revenue": 120.0,
+   "total_sales": 20567.0
+  },
+  {
+   "ref": "listing:4368511100",
+   "title": "Paycheck Budget Planner Debt Spreadsheet Excel Template Google Sheets Debt Payoff Tracker Loan Repayment Calculator Pers",
+   "shop": "ComputedPlanning",
+   "price": 13.0,
+   "mo_revenue": 1794.0,
+   "total_sales": 980.0
+  },
+  {
+   "ref": "listing:1797614603",
+   "title": "Budget Spreadsheet Budget Planner Budget Template Monthly Budget Tracker Simple Budget Google Sheets Budgeting Personal ",
+   "shop": "ExclusiveHouse",
+   "price": 1.98,
+   "mo_revenue": 81.0,
+   "total_sales": 14840.0
+  },
+  {
+   "ref": "listing:1762787854",
+   "title": "Debt Payoff Tracker, Snowball Avalanche Calculator, Credit Card Tracker, Home Loan, Student Loan, Debt-Free Planner (Goo",
+   "shop": "JrenDigital",
+   "price": 9.83,
+   "mo_revenue": 1779.0,
+   "total_sales": 9689.0
+  },
+  {
+   "ref": "listing:1807214506",
+   "title": "Budget Planner Excel Google Sheets Budget Spreadsheet Monthly Paycheck Budget Tracker Weekly Expense Budgeting Finance S",
+   "shop": "TheWeeklyCrew",
+   "price": 2.79,
+   "mo_revenue": 728.0,
+   "total_sales": 13182.0
+  },
+  {
+   "ref": "listing:4334780570",
+   "title": "Annual Budget Spreadsheet Excel Google Sheets Budget Template Monthly Budget Tracker Bill Debt Tracker Financial Planner",
+   "shop": "PrioriDigitalStudio",
+   "price": 16.84,
+   "mo_revenue": 1670.0,
+   "total_sales": 1998.0
+  },
+  {
+   "ref": "listing:1236921528",
+   "title": "Excel Monthly Budget Template Google Sheets Budget Planner Template Finance Tracker Budget Spreadsheet Financial Planner",
+   "shop": "TheWeeklyCrew",
+   "price": 5.93,
+   "mo_revenue": 12.0,
+   "total_sales": 11528.0
+  },
+  {
+   "ref": "listing:4427109751",
+   "title": "2026 Blue Budget & Goal Tracker: Credit Card and Debit/Cash User Google Sheets Template (Digital Download)",
+   "shop": "MintedMoney",
+   "price": 25.34,
+   "mo_revenue": 1444.0,
+   "total_sales": 563.0
+  }
+ ],
+ "capabilities": {
+  "modules": {
+   "start_here": {
+    "desc": "Start here tab: numbered steps, how to copy into Google Sheets or open in Excel, what the colors mean, links to every tab. steps: [[title, text]], tip",
+    "params": {
+     "steps": "list",
+     "tip": "str"
+    }
+   },
+   "setup": {
+    "desc": "Setup tab: year, currency note, income sources and spending categories with group (Needs, Wants, Savings, Debt) and monthly budget. Every other tab reads from here. rows: number of category rows (default 30)",
+    "params": {
+     "rows": "int"
+    }
+   },
+   "months": {
+    "desc": "Twelve month tabs: income received, a spending log with a category dropdown, and budget vs actual per category with progress and over-budget warnings. log_rows (default 80)",
+    "params": {
+     "log_rows": "int"
+    }
+   },
+   "dashboard": {
+    "desc": "Dashboard tab: the year by month (income, spent, left over, saved) and spending by category for the year, with a bar chart and a pie chart. Needs months.",
+    "params": {}
+   },
+   "bills": {
+    "desc": "Bill tracker: each bill with due day, amount, autopay, and a paid mark for every month. rows (default 25)",
+    "params": {
+     "rows": "int"
+    }
+   },
+   "debt": {
+    "desc": "Debt payoff: each debt with balance, interest rate and minimum; choose Snowball or Avalanche and an extra monthly amount; shows payoff order and months to pay off at the minimum. rows (default 10)",
+    "params": {
+     "rows": "int"
+    }
+   },
+   "savings": {
+    "desc": "Savings goals: goal, target, saved so far, progress bar, target date and how much to save per month. rows (default 10)",
+    "params": {
+     "rows": "int"
+    }
+   }
+  },
+  "themes": [
+   "sage",
+   "slate",
+   "blush",
+   "night"
+  ],
+  "spec_fields": [
+   "title",
+   "subtitle",
+   "brand",
+   "currency",
+   "year",
+   "theme",
+   "categories",
+   "income",
+   "sample_data",
+   "sections"
+  ],
+  "notes": "Delivered as .xlsx (opens in Excel and in Google Sheets via File > Import or a copy link). Fonts: use fonts that exist in both Google Sheets and Excel (Arial, Calibri fallback)."
+ },
+ "style_rules": [
+  {
+   "id": "r001",
+   "rule": "Every page must be reachable by links from the first page. Groups of pages that only link to each other count as unreachable.",
+   "enforced": "build (automatic)",
+   "from": "p-adhd-001 check round 2"
+  },
+  {
+   "id": "r002",
+   "rule": "Setup steps must work for a buyer on any purchase date in the selling window, for example before the dated year starts. Walk through day one for an early buyer and a mid-year buyer.",
+   "enforced": "brief writer and coverage checker",
+   "from": "p-adhd-001 check round 3"
+  },
+  {
+   "id": "r003",
+   "rule": "Every number or fact in the listing (pages, file size, what is and isn't included) must match the built file. Rebuilds change counts; update the copy.",
+   "enforced": "check tech (page counts automatic)",
+   "from": "p-adhd-001 rebuilds"
+  },
+  {
+   "id": "r004",
+   "rule": "Use only glyphs the embedded fonts contain. Draw arrows and icons as SVG, otherwise a non-licensed fallback font gets embedded.",
+   "enforced": "check tech + line test (automatic)",
+   "from": "p-adhd-001 check tech"
+  },
+  {
+   "id": "r005",
+   "rule": "A listing photo must show what its copy and alt text claim. A small multi-page grid needs captions and readable pages (2x2 beats 4 in a row).",
+   "enforced": "coverage checker",
+   "from": "p-adhd-001 check rounds 1 to 3"
+  },
+  {
+   "id": "r006",
+   "rule": "No half-empty pages. Fill spare space with something a buyer uses (a map of the top bar, a month jump grid, a pen test area), never decoration.",
+   "enforced": "coverage checker",
+   "from": "p-adhd-001 check rounds 1 to 3"
+  },
+  {
+   "id": "r007",
+   "rule": "Never promise service levels in the product (for example 'we reply fast'). Say what the buyer can do instead.",
+   "enforced": "coverage checker",
+   "from": "p-adhd-001 check round 1"
+  },
+  {
+   "id": "r008",
+   "rule": "A week that spans two months is built once, under the month that holds its Thursday; day pages name their own month in the trail.",
+   "enforced": "planner line (automatic)",
+   "from": "brief writer found it"
+  }
+ ],
+ "past_briefs": []
+}

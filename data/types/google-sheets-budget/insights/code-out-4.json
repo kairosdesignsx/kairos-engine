@@ -1,0 +1,881 @@
+{
+ "new_themes": [
+  {
+   "id": "p_fast_delivery",
+   "theme": "Quick, easy download",
+   "use_for": "Instant access, fast or easy download/delivery with no problems.",
+   "kind": "praise"
+  },
+  {
+   "id": "c_balances",
+   "theme": "Doesn't track account balances or transfers well",
+   "use_for": "Can't see running cash/account balances; transfers between accounts or debit/credit mix throw off numbers.",
+   "kind": "complaints"
+  },
+  {
+   "id": "c_manual",
+   "theme": "Too much manual entry",
+   "use_for": "Has to type, copy-paste or re-enter totals by hand instead of it being automatic.",
+   "kind": "complaints"
+  },
+  {
+   "id": "w_feature",
+   "theme": "Wants a specific extra tracker or feature",
+   "use_for": "Names a feature/tab to add (no-spend days, check register, total debt, per-card amounts, monthly expense sheets, transactions log, separate sheets).",
+   "kind": "wishes"
+  }
+ ],
+ "codes": [
+  {
+   "id": "r388",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r389",
+   "off_type": true,
+   "themes": [
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r390",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r391",
+   "off_type": false,
+   "themes": [
+    "c_support"
+   ]
+  },
+  {
+   "id": "r393",
+   "off_type": false,
+   "themes": [
+    "c_customize"
+   ]
+  },
+  {
+   "id": "r395",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r396",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r397",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r398",
+   "off_type": true,
+   "themes": [
+    "c_currency"
+   ]
+  },
+  {
+   "id": "r400",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r401",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r402",
+   "off_type": false,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r403",
+   "off_type": false,
+   "themes": [
+    "p_insight"
+   ]
+  },
+  {
+   "id": "r404",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r405",
+   "off_type": true,
+   "themes": [
+    "p_flexible"
+   ]
+  },
+  {
+   "id": "r406",
+   "off_type": true,
+   "themes": [
+    "p_flexible"
+   ]
+  },
+  {
+   "id": "r407",
+   "off_type": false,
+   "themes": [
+    "p_flexible"
+   ]
+  },
+  {
+   "id": "r408",
+   "off_type": false,
+   "themes": [
+    "p_look"
+   ]
+  },
+  {
+   "id": "r409",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r410",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r411",
+   "off_type": false,
+   "themes": [
+    "p_fast_delivery",
+    "p_flexible"
+   ]
+  },
+  {
+   "id": "r412",
+   "off_type": false,
+   "themes": [
+    "c_setup",
+    "c_customize"
+   ]
+  },
+  {
+   "id": "r413",
+   "off_type": false,
+   "themes": [
+    "p_fast_delivery"
+   ]
+  },
+  {
+   "id": "r414",
+   "off_type": true,
+   "themes": [
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r415",
+   "off_type": true,
+   "themes": [
+    "p_fast_delivery",
+    "p_look"
+   ]
+  },
+  {
+   "id": "r416",
+   "off_type": true,
+   "themes": [
+    "c_customize"
+   ]
+  },
+  {
+   "id": "r417",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r418",
+   "off_type": true,
+   "themes": [
+    "p_complete",
+    "p_value"
+   ]
+  },
+  {
+   "id": "r419",
+   "off_type": false,
+   "themes": [
+    "p_look",
+    "p_flexible"
+   ]
+  },
+  {
+   "id": "r420",
+   "off_type": false,
+   "themes": [
+    "p_support"
+   ]
+  },
+  {
+   "id": "r421",
+   "off_type": false,
+   "themes": [
+    "c_access",
+    "c_support"
+   ]
+  },
+  {
+   "id": "r422",
+   "off_type": false,
+   "themes": [
+    "c_balances",
+    "c_hard",
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r423",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r424",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r425",
+   "off_type": false,
+   "themes": [
+    "c_formulas",
+    "c_misleading"
+   ]
+  },
+  {
+   "id": "r426",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r427",
+   "off_type": false,
+   "themes": [
+    "c_not_useful",
+    "c_value"
+   ]
+  },
+  {
+   "id": "r428",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r429",
+   "off_type": false,
+   "themes": [
+    "c_balances",
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r430",
+   "off_type": false,
+   "themes": [
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r431",
+   "off_type": false,
+   "themes": [
+    "c_setup",
+    "c_dates",
+    "c_hard",
+    "p_look"
+   ]
+  },
+  {
+   "id": "r432",
+   "off_type": false,
+   "themes": [
+    "w_excel",
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r433",
+   "off_type": false,
+   "themes": [
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r434",
+   "off_type": false,
+   "themes": [
+    "p_look",
+    "c_balances"
+   ]
+  },
+  {
+   "id": "r435",
+   "off_type": false,
+   "themes": [
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r436",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r437",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r438",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r439",
+   "off_type": false,
+   "themes": [
+    "p_complete",
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r440",
+   "off_type": false,
+   "themes": [
+    "p_insight",
+    "p_look",
+    "p_complete",
+    "p_value"
+   ]
+  },
+  {
+   "id": "r441",
+   "off_type": false,
+   "themes": [
+    "c_customize"
+   ]
+  },
+  {
+   "id": "r442",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r443",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r444",
+   "off_type": false,
+   "themes": [
+    "c_hard",
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r445",
+   "off_type": false,
+   "themes": [
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r446",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r447",
+   "off_type": false,
+   "themes": [
+    "c_quality"
+   ]
+  },
+  {
+   "id": "r448",
+   "off_type": false,
+   "themes": [
+    "c_not_useful",
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r449",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_look"
+   ]
+  },
+  {
+   "id": "r450",
+   "off_type": false,
+   "themes": [
+    "p_as_described"
+   ]
+  },
+  {
+   "id": "r451",
+   "off_type": false,
+   "themes": [
+    "p_look",
+    "c_setup",
+    "w_feature"
+   ]
+  },
+  {
+   "id": "r452",
+   "off_type": false,
+   "themes": [
+    "p_complete",
+    "c_overwhelm"
+   ]
+  },
+  {
+   "id": "r453",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r454",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r455",
+   "off_type": false,
+   "themes": [
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r456",
+   "off_type": false,
+   "themes": [
+    "p_insight"
+   ]
+  },
+  {
+   "id": "r457",
+   "off_type": false,
+   "themes": [
+    "p_insight"
+   ]
+  },
+  {
+   "id": "r459",
+   "off_type": false,
+   "themes": [
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r460",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r461",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r462",
+   "off_type": false,
+   "themes": [
+    "p_complete",
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r463",
+   "off_type": false,
+   "themes": [
+    "p_guide",
+    "p_life",
+    "p_insight"
+   ]
+  },
+  {
+   "id": "r464",
+   "off_type": false,
+   "themes": [
+    "p_flexible"
+   ]
+  },
+  {
+   "id": "r465",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r466",
+   "off_type": false,
+   "themes": [
+    "p_complete",
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r467",
+   "off_type": false,
+   "themes": [
+    "c_setup",
+    "p_complete",
+    "p_insight"
+   ]
+  },
+  {
+   "id": "r468",
+   "off_type": false,
+   "themes": [
+    "p_easy",
+    "p_automated",
+    "p_life"
+   ]
+  },
+  {
+   "id": "r469",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r470",
+   "off_type": false,
+   "themes": [
+    "p_complete"
+   ]
+  },
+  {
+   "id": "r471",
+   "off_type": false,
+   "themes": [
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r472",
+   "off_type": false,
+   "themes": [
+    "c_setup",
+    "p_insight",
+    "p_look"
+   ]
+  },
+  {
+   "id": "r473",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r474",
+   "off_type": false,
+   "themes": [
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r475",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r476",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r477",
+   "off_type": false,
+   "themes": [
+    "c_overwhelm",
+    "c_hard",
+    "w_feature"
+   ]
+  },
+  {
+   "id": "r478",
+   "off_type": false,
+   "themes": [
+    "c_access"
+   ]
+  },
+  {
+   "id": "r479",
+   "off_type": false,
+   "themes": [
+    "c_missing"
+   ]
+  },
+  {
+   "id": "r480",
+   "off_type": false,
+   "themes": [
+    "c_setup"
+   ]
+  },
+  {
+   "id": "r481",
+   "off_type": false,
+   "themes": [
+    "c_not_useful",
+    "c_value",
+    "w_feature"
+   ]
+  },
+  {
+   "id": "r482",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r483",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r484",
+   "off_type": false,
+   "themes": [
+    "c_support",
+    "c_customize",
+    "c_manual",
+    "c_value"
+   ]
+  },
+  {
+   "id": "r485",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r486",
+   "off_type": false,
+   "themes": [
+    "w_feature"
+   ]
+  },
+  {
+   "id": "r487",
+   "off_type": false,
+   "themes": [
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r488",
+   "off_type": false,
+   "themes": [
+    "p_look",
+    "w_feature"
+   ]
+  },
+  {
+   "id": "r489",
+   "off_type": false,
+   "themes": [
+    "p_look",
+    "c_app"
+   ]
+  },
+  {
+   "id": "r491",
+   "off_type": false,
+   "themes": [
+    "c_hard",
+    "c_overwhelm"
+   ]
+  },
+  {
+   "id": "r492",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r493",
+   "off_type": false,
+   "themes": [
+    "p_as_described"
+   ]
+  },
+  {
+   "id": "r494",
+   "off_type": false,
+   "themes": [
+    "c_not_useful",
+    "c_manual"
+   ]
+  },
+  {
+   "id": "r495",
+   "off_type": false,
+   "themes": [
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r496",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r497",
+   "off_type": false,
+   "themes": [
+    "c_hard",
+    "c_formulas",
+    "p_look"
+   ]
+  },
+  {
+   "id": "r499",
+   "off_type": false,
+   "themes": [
+    "p_look",
+    "p_easy",
+    "c_manual",
+    "w_feature"
+   ]
+  },
+  {
+   "id": "r500",
+   "off_type": false,
+   "themes": [
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r503",
+   "off_type": false,
+   "themes": [
+    "c_not_useful",
+    "c_hard",
+    "p_look"
+   ]
+  },
+  {
+   "id": "r504",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r505",
+   "off_type": false,
+   "themes": [
+    "c_not_useful"
+   ]
+  },
+  {
+   "id": "r506",
+   "off_type": false,
+   "themes": [
+    "c_not_useful",
+    "c_hard"
+   ]
+  },
+  {
+   "id": "r507",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r508",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r510",
+   "off_type": false,
+   "themes": [
+    "c_basic"
+   ]
+  },
+  {
+   "id": "r511",
+   "off_type": false,
+   "themes": [
+    "p_as_described",
+    "p_fast_delivery"
+   ]
+  },
+  {
+   "id": "r512",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r513",
+   "off_type": false,
+   "themes": []
+  },
+  {
+   "id": "r514",
+   "off_type": false,
+   "themes": [
+    "p_insight",
+    "p_easy"
+   ]
+  },
+  {
+   "id": "r515",
+   "off_type": false,
+   "themes": [
+    "c_app"
+   ]
+  },
+  {
+   "id": "r516",
+   "off_type": false,
+   "themes": [
+    "p_easy"
+   ]
+  }
+ ]
+}

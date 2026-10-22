@@ -1,0 +1,83 @@
+{
+ "complaints": [
+  {
+   "id": "c_slow",
+   "theme": "Sheet is slow or laggy",
+   "use_for": "Long loading, lag or freezing when editing; poor performance."
+  },
+  {
+   "id": "c_privacy",
+   "theme": "Privacy or security worries",
+   "use_for": "Uneasy about storing finances in Google or online."
+  },
+  {
+   "id": "c_upsell",
+   "theme": "Forced survey or upsell to get the file",
+   "use_for": "Had to fill a questionnaire or got pushed to a paid service before receiving the download."
+  },
+  {
+   "id": "c_sharing",
+   "theme": "Can't share with family or partner",
+   "use_for": "Lock or permissions stop sharing the sheet with others."
+  },
+  {
+   "id": "c_balances",
+   "theme": "Doesn't track account balances or transfers well",
+   "use_for": "Can't see running cash/account balances; transfers between accounts or debit/credit mix throw off numbers."
+  },
+  {
+   "id": "c_manual",
+   "theme": "Too much manual entry",
+   "use_for": "Has to type, copy-paste or re-enter totals by hand instead of it being automatic."
+  }
+ ],
+ "wishes": [
+  {
+   "id": "w_budget_method",
+   "theme": "Choose my own budgeting rule",
+   "use_for": "Wants to change the built-in split or method (e.g. 50/30/20 to another ratio)."
+  },
+  {
+   "id": "w_yearly_totals",
+   "theme": "Yearly totals or annual summary",
+   "use_for": "Wants yearly totals or a full-year overview of spending."
+  },
+  {
+   "id": "w_due_dates",
+   "theme": "Bill due dates",
+   "use_for": "Wants bill due dates or payment reminders built in."
+  },
+  {
+   "id": "w_currency",
+   "theme": "Choose or type own currency",
+   "use_for": "Wants a currency option or custom currency symbol."
+  },
+  {
+   "id": "w_feature",
+   "theme": "Wants a specific extra tracker or feature",
+   "use_for": "Names a feature/tab to add (no-spend days, check register, total debt, per-card amounts, monthly expense sheets, transactions log, separate sheets)."
+  }
+ ],
+ "praise": [
+  {
+   "id": "p_shared",
+   "theme": "Good for budgeting with a partner",
+   "use_for": "Easy to share or plan together with a spouse, partner or family."
+  },
+  {
+   "id": "p_private",
+   "theme": "Keeps my data private",
+   "use_for": "Likes that data stays on own computer instead of an app."
+  },
+  {
+   "id": "p_compatible",
+   "theme": "Works in my app",
+   "use_for": "Praises that it opened fine in Excel, Numbers or another app."
+  },
+  {
+   "id": "p_fast_delivery",
+   "theme": "Quick, easy download",
+   "use_for": "Instant access, fast or easy download/delivery with no problems."
+  }
+ ]
+}

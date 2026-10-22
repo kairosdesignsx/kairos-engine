@@ -1,0 +1,406 @@
+{
+ "line": "spreadsheet",
+ "features": [
+  {
+   "id": "google_sheets",
+   "name": "Works in Google Sheets",
+   "match": [
+    "google sheet",
+    "google sheets",
+    "gsheet"
+   ]
+  },
+  {
+   "id": "excel",
+   "name": "Works in Excel",
+   "match": [
+    "excel",
+    "xlsx"
+   ]
+  },
+  {
+   "id": "annual",
+   "name": "Annual or yearly view",
+   "match": [
+    "annual",
+    "yearly",
+    "year"
+   ]
+  },
+  {
+   "id": "monthly",
+   "name": "Monthly budget tabs",
+   "match": [
+    "monthly",
+    "month"
+   ]
+  },
+  {
+   "id": "paycheck",
+   "name": "Budget by paycheck (weekly or biweekly)",
+   "match": [
+    "paycheck",
+    "biweekly",
+    "bi-weekly",
+    "weekly pay"
+   ]
+  },
+  {
+   "id": "dashboard",
+   "name": "Dashboard with charts",
+   "match": [
+    "dashboard",
+    "chart",
+    "graph",
+    "visual"
+   ]
+  },
+  {
+   "id": "debt",
+   "name": "Debt payoff tracker or snowball calculator",
+   "match": [
+    "debt",
+    "snowball",
+    "avalanche",
+    "loan"
+   ]
+  },
+  {
+   "id": "savings",
+   "name": "Savings goals or sinking funds",
+   "match": [
+    "saving",
+    "sinking fund",
+    "goal"
+   ]
+  },
+  {
+   "id": "bills",
+   "name": "Bill tracker or bill calendar",
+   "match": [
+    "bill"
+   ]
+  },
+  {
+   "id": "expense",
+   "name": "Expense or spending tracker",
+   "match": [
+    "expense",
+    "spending",
+    "transaction"
+   ]
+  },
+  {
+   "id": "net_worth",
+   "name": "Net worth tracker",
+   "match": [
+    "net worth"
+   ]
+  },
+  {
+   "id": "couples",
+   "name": "Couples or family budget",
+   "match": [
+    "couple",
+    "family",
+    "household"
+   ]
+  },
+  {
+   "id": "credit_card",
+   "name": "Credit card tracking",
+   "match": [
+    "credit card"
+   ]
+  },
+  {
+   "id": "automated",
+   "name": "Automated, does the math",
+   "match": [
+    "automat",
+    "auto ",
+    "formulas"
+   ]
+  },
+  {
+   "id": "dark_mode",
+   "name": "Dark mode",
+   "match": [
+    "dark mode",
+    "dark"
+   ]
+  },
+  {
+   "id": "zero_based",
+   "name": "Zero-based or 50/30/20 method",
+   "match": [
+    "zero based",
+    "zero-based",
+    "50/30/20",
+    "503020"
+   ]
+  },
+  {
+   "id": "business",
+   "name": "Small business or side hustle",
+   "match": [
+    "business",
+    "side hustle",
+    "freelance"
+   ]
+  },
+  {
+   "id": "customizable",
+   "name": "Customizable categories",
+   "match": [
+    "custom",
+    "editable"
+   ]
+  },
+  {
+   "id": "video_tutorial",
+   "name": "Video tutorial",
+   "match": [
+    "video",
+    "tutorial"
+   ]
+  },
+  {
+   "id": "mobile",
+   "name": "Works on phone",
+   "match": [
+    "mobile",
+    "phone",
+    "app"
+   ]
+  },
+  {
+   "id": "multi_year",
+   "name": "Multi-year or undated",
+   "match": [
+    "undated",
+    "any year",
+    "multi year",
+    "reusable"
+   ]
+  },
+  {
+   "id": "instructions_inside",
+   "name": "Instructions inside the sheet",
+   "match": [
+    "instructions",
+    "how to use",
+    "guide"
+   ]
+  },
+  {
+   "id": "protected_formulas",
+   "name": "Protected formulas (hard to break)",
+   "match": [
+    "protected",
+    "locked"
+   ]
+  },
+  {
+   "id": "sample_data",
+   "name": "Comes with sample data",
+   "match": [
+    "sample",
+    "example data"
+   ]
+  }
+ ],
+ "codebook": {
+  "complaints": [
+   {
+    "id": "c_access",
+    "theme": "Couldn't open the file or get access to the sheet",
+    "use_for": "Request-access prompts, broken copy link, download failed."
+   },
+   {
+    "id": "c_setup",
+    "theme": "Confusing setup or unclear instructions",
+    "use_for": "Didn't know how to start, copy, or fill it in."
+   },
+   {
+    "id": "c_hard",
+    "theme": "Hard to use day to day",
+    "use_for": "General 'not user friendly' with no specific cause."
+   },
+   {
+    "id": "c_formulas",
+    "theme": "Formulas broke or showed errors",
+    "use_for": "#REF!, wrong totals, calculations stopped working."
+   },
+   {
+    "id": "c_app",
+    "theme": "Doesn't work in my app or device",
+    "use_for": "Excel, Numbers, phone app, offline problems."
+   },
+   {
+    "id": "c_customize",
+    "theme": "Can't change categories or layout",
+    "use_for": "Locked, can't rename or add categories."
+   },
+   {
+    "id": "c_overwhelm",
+    "theme": "Too much, overwhelming",
+    "use_for": "Too many tabs or fields."
+   },
+   {
+    "id": "c_basic",
+    "theme": "Too basic",
+    "use_for": "Not enough features."
+   },
+   {
+    "id": "c_missing",
+    "theme": "Missing features or tabs promised",
+    "use_for": "Less than described."
+   },
+   {
+    "id": "c_misleading",
+    "theme": "Not as described or pictured",
+    "use_for": "Differs from photos or listing."
+   },
+   {
+    "id": "c_dates",
+    "theme": "Dates or year problems",
+    "use_for": "Wrong year, dates don't roll over, stuck to one year."
+   },
+   {
+    "id": "c_currency",
+    "theme": "Currency or region problems",
+    "use_for": "Dollar sign only, date formats."
+   },
+   {
+    "id": "c_look",
+    "theme": "Didn't like the look",
+    "use_for": "Colors, style."
+   },
+   {
+    "id": "c_quality",
+    "theme": "Errors, typos or sloppy work",
+    "use_for": "Mistakes in labels or layout."
+   },
+   {
+    "id": "c_support",
+    "theme": "Seller didn't help or reply",
+    "use_for": "Support complaints."
+   },
+   {
+    "id": "c_value",
+    "theme": "Not worth the price",
+    "use_for": "Price complaints."
+   },
+   {
+    "id": "c_not_useful",
+    "theme": "Not useful for my needs",
+    "use_for": "Didn't fit how they budget."
+   }
+  ],
+  "praise": [
+   {
+    "id": "p_easy",
+    "theme": "Easy to set up and use",
+    "use_for": "Easy, simple."
+   },
+   {
+    "id": "p_look",
+    "theme": "Beautiful design",
+    "use_for": "Pretty, colors."
+   },
+   {
+    "id": "p_automated",
+    "theme": "Does the math for me",
+    "use_for": "Automatic calculations, formulas."
+   },
+   {
+    "id": "p_insight",
+    "theme": "Helps me see where my money goes",
+    "use_for": "Clarity, awareness, control."
+   },
+   {
+    "id": "p_life",
+    "theme": "Changed my finances",
+    "use_for": "Saved money, paid off debt, less stress."
+   },
+   {
+    "id": "p_complete",
+    "theme": "Has everything I need",
+    "use_for": "Comprehensive."
+   },
+   {
+    "id": "p_guide",
+    "theme": "Clear instructions or tutorial",
+    "use_for": "Instructions, videos."
+   },
+   {
+    "id": "p_flexible",
+    "theme": "Customizable",
+    "use_for": "Easy to change categories."
+   },
+   {
+    "id": "p_support",
+    "theme": "Seller was helpful",
+    "use_for": "Support."
+   },
+   {
+    "id": "p_value",
+    "theme": "Great value",
+    "use_for": "Price."
+   },
+   {
+    "id": "p_as_described",
+    "theme": "Exactly as described",
+    "use_for": "Matches listing."
+   },
+   {
+    "id": "p_repeat",
+    "theme": "Repeat buyer",
+    "use_for": "Bought before."
+   }
+  ],
+  "wishes": [
+   {
+    "id": "w_mobile",
+    "theme": "Better on phone",
+    "use_for": "Wants a mobile-friendly version."
+   },
+   {
+    "id": "w_excel",
+    "theme": "Excel version",
+    "use_for": "Wants Excel support."
+   },
+   {
+    "id": "w_more_categories",
+    "theme": "More categories or rows",
+    "use_for": "Needs more space."
+   }
+  ]
+ },
+ "fix_map": {
+  "c_access": [
+   "copy_link_tested",
+   "xlsx_included"
+  ],
+  "c_setup": [
+   "start_here_tab",
+   "setup_tab"
+  ],
+  "c_formulas": [
+   "protected_formulas"
+  ],
+  "c_app": [
+   "xlsx_included"
+  ],
+  "c_customize": [
+   "setup_tab"
+  ],
+  "c_dates": [
+   "any_year"
+  ],
+  "c_currency": [
+   "currency_setting"
+  ]
+ }
+}
