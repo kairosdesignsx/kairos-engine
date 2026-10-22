@@ -82,5 +82,11 @@
   "rule": "Start-up steps cover a buyer who buys before the product's year starts (Oct to Dec) as well as one who buys mid-year.",
   "enforced": "brief writer + coverage checker",
   "from": "coverage check, Clear Budget round 1"
+ },
+ {
+  "id": "r015",
+  "rule": "Price inside the market's best-earning range, never under it: at least the revenue-weighted median price (what buyers actually pay, weighted by sales). A low price makes a good product look cheap. While the shop has few reviews, launch with a time-limited Etsy sale (25% off for 30 days) on the full price instead of a low price.",
+  "enforced": "brief check (automatic) + brief writer",
+  "from": "Darren and Colynne, Oct 22 2026 (Canva course advice, confirmed by our price data)"
  }
 ]

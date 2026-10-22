@@ -323,17 +323,22 @@
   ]
  },
  "price": {
-  "amount": 16,
-  "why": "The best-earning band is $18 to $33 and the top 10 by revenue sit at a median of $18.24, but those listings carry thousands of reviews; a brand-new shop with none asking $20 to $25 has nothing to back the price. The $2 to $3 listings win on volume and old review counts we cannot match. $16 sits just under the band, near ComputedPlanning's $13 listing and Priori's $16.84 listing that both earn well, and still reads as a complete product rather than a cheap one. Raise to $19 to $22 (inside the band) after about 15 reviews.",
+  "amount": 22,
+  "why": "Inside the best-earning range ($18 to $33): buyers pay a sales-weighted $19.65 and the #1 seller earns about $17,400 a month at $19.65. Under that, a complete 19-tab workbook reads as cheap next to the $2 to $3 templates. While the shop is new, a 25% launch sale for 30 days shows $16.50 with the $22 price crossed out (style rule r015).",
   "evidence": [
+   "listing:4334780570",
+   "listing:4368511100",
+   "market:new_sellers_in_top_pct",
    "price:best_band",
-   "price:top10_by_revenue_median",
    "price:median",
    "price:revenue_weighted_median",
-   "listing:4368511100",
-   "listing:4334780570",
-   "market:new_sellers_in_top_pct"
-  ]
+   "price:top10_by_revenue_median"
+  ],
+  "launch_sale": {
+   "percent": 25,
+   "days": 30,
+   "sale_price": 16.5
+  }
  },
  "seo": {
   "title": "Budget Spreadsheet Google Sheets and Excel, Monthly Budget Planner, Paycheck Budget, Expense Tracker, Bill and Debt Tracker for Beginners",
@@ -693,6 +698,11 @@
    "at": "2026-10-22T15:51:31",
    "by": "engine (coverage round 1)",
    "what": "Step 1 says download on a computer and never open in a browser preview; step 4 covers buyers starting October to December; paycheck plan 54 rows (weekly all year); listing photos on navy and white per the look."
+  },
+  {
+   "at": "2026-10-22T19:11:57",
+   "by": "Darren and Colynne",
+   "what": "Price $16 to $22, with a 25% launch sale for 30 days ($16.5). New pricing rule r015: never under what buyers actually pay."
   }
  ]
 }

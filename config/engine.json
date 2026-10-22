@@ -46,5 +46,14 @@
   "root": "C:\\Users\\darre\\Documents\\Kairos",
   "mirror": "/mnt/user-data/uploads/Kairos"
  },
- "publish_as": "draft"
+ "publish_as": "draft",
+ "pricing": {
+  "floor": "revenue_weighted_median",
+  "launch_sale": {
+   "percent": 25,
+   "days": 30,
+   "until_reviews": 15
+  },
+  "_how": "Brief check refuses a price under the floor (from insights.price). Etsy's API cannot create sales, so the launch sale is set up by hand in Shop Manager > Marketing > Sales and discounts; listing.txt says how."
+ }
 }

@@ -26,7 +26,9 @@ Write JSON to the brief path you were given, following /home/claude/engine/schem
 - `look`: `{direction, theme, avoid, evidence}`. `theme` is a name from capabilities.themes or an object
   `{"base": name, ...token overrides, "display": font, "body": font, "motif": "sprig|dots|arch|lines|none"}`.
   Colors are hex. `avoid` lists the looks most top sellers already use. Must read well in light and in dark rooms.
-- `price`: `{amount, why, evidence}` within the market spread unless you justify otherwise.
+- `price`: `{amount, why, evidence, launch_sale}`. Price at or above `price.revenue_weighted_median` (what buyers actually
+  pay, weighted by sales), inside the best-earning range: never under it to make up for having no reviews (style rule r015).
+  For a new shop add `launch_sale: {percent: 25, days: 30, sale_price}`: a genuine time-limited Etsy sale on the full price.
 - `seo`: `{title (max 140 chars, buyer's words first), tags: exactly 13, each max 20 chars, letters numbers spaces only}`.
   Use high-share keywords from the data. Never copy a competitor's title.
 - `photos`: 6 to 10 listing photos, each `{id, shows, proves, pages: [page anchors to show]}`; `proves` names

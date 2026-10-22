@@ -393,17 +393,22 @@
   ]
  },
  "price": {
-  "amount": 14,
-  "why": "Under the $22 median and right at the median of the 10 highest-earning listings ($15): a new shop with no reviews has to win on clarity and value, and buyers paying around $14 judge hard when a planner does not work or lacks space. The best-selling ADHD-specific listing in the set earns about $599 a month at $9.99, while the $24 ADHD planners sell less now. $14 leaves room for a 20% launch sale that stays above the $7 lower quartile.",
+  "amount": 24,
+  "why": "Full 541-page planner priced with the full planners ($20 to $35), not the $3 to $7 volume sellers: buyers pay a sales-weighted $19.87. While the shop is new, a 25% launch sale for 30 days shows $18 with the $24 price crossed out (style rule r015).",
   "evidence": [
-   "price:median",
-   "price:top10_by_revenue_median",
-   "price:revenue_weighted_median",
-   "price:p25",
    "complaint:c_value",
+   "listing:1282376971",
    "listing:4332596790",
-   "listing:1282376971"
-  ]
+   "price:median",
+   "price:p25",
+   "price:revenue_weighted_median",
+   "price:top10_by_revenue_median"
+  ],
+  "launch_sale": {
+   "percent": 25,
+   "days": 30,
+   "sale_price": 18
+  }
  },
  "seo": {
   "title": "ADHD Planner 2027 Digital, Goodnotes Planner for iPad and Android, Daily Weekly Monthly, Time Blocking, Starts Oct 2026, Hyperlinked",
@@ -518,7 +523,7 @@
  "spec": {
   "title": "Just Today",
   "subtitle": "A calm, linked ADHD planner. Plan one day, skip the guilt, start again any time. October 26, 2026 to December 2027.",
-  "kicker": "ADHD digital planner · 2027",
+  "kicker": "ADHD digital planner \u00b7 2027",
   "brand": "Kairos Design Studio",
   "orientation": "landscape",
   "dating": {
@@ -979,6 +984,11 @@
    "at": "2026-10-22",
    "by": "session",
    "why": "brief text brought in line with the built product (head start from Oct 26 with day pages)"
+  },
+  {
+   "at": "2026-10-22T19:11:57",
+   "by": "Darren and Colynne",
+   "what": "Price $14 to $24, with a 25% launch sale for 30 days ($18). New pricing rule r015: never under what buyers actually pay."
   }
  ]
 }

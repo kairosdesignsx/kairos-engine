@@ -140,6 +140,10 @@ def check(brief_path):
     if len(b['seo']['title']) > 140:
         problems.append('title over 140 characters')
     pr = ins['price']
+    floor = pr.get(store.CONFIG.get('pricing', {}).get('floor', 'revenue_weighted_median')) or 0
+    if b['price']['amount'] < floor * 0.95:
+        problems.append(f"price {b['price']['amount']} is under the market floor ({floor:.2f}, what buyers actually pay weighted by sales); "
+                        f"price at or above it and use price.launch_sale for a new shop (style rule r015)")
     if not (pr['p25'] * 0.5 <= b['price']['amount'] <= pr['p75'] * 1.5):
         problems.append(f"price {b['price']['amount']} far outside the market ({pr['p25']} to {pr['p75']}); justify or change")
 

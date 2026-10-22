@@ -115,7 +115,7 @@ def run(pid):
         "shops": [{"shop": s_['shop'], "rating": s_.get('rating_avg'), "reviews": s_.get('review_count')} for s_ in ev['shops']],
     }
     doc = {"title": brief['spec']['title'] if not listing else listing.get('hero_title') or brief['spec']['title'],
-           "line": LINE_NAMES.get(brief['line'], brief['line']), "lane": brief['type_id'], "price": listing['price'],
+           "line": LINE_NAMES.get(brief['line'], brief['line']), "lane": brief['type_id'], "price": listing['price'], "launch_sale": brief['price'].get('launch_sale'),
            "images": list(files), "status": "queued" if check['pass'] else "needs_help", "created": int(time.time() * 1000),
            "listing": {"title": listing['title'], "tags": listing['tags'], "description": listing['description']},
            "files": build['files'], "evidence": evidence, "brief": brief_full, "research": research, "engine": {"brief_id": brief['brief_id'], "product_id": pid},
@@ -139,7 +139,15 @@ def _handoff(pid, d, listing, build):
         shutil.copy(os.path.join(d, 'photos', f), os.path.join(out, 'photos', f))
     shutil.copy(os.path.join(d, 'listing.json'), os.path.join(out, 'listing.json'))
     alt = listing.get('alt') or {}
-    lines = ['TITLE', listing['title'], '', 'PRICE', f"${listing['price']}", '', 'TAGS', ', '.join(listing['tags']), '',
+    b = store.read(os.path.join(d, 'brief.json')) or {}
+    sale = (b.get('price') or {}).get('launch_sale')
+    price_lines = ['PRICE', f"${listing['price']}"]
+    if sale:
+        price_lines += ['', 'LAUNCH SALE (set up by hand: Etsy cannot do this from the API)',
+                        f"{sale['percent']}% off for {sale['days']} days, so buyers see ${float(sale.get('sale_price') or 0):.2f} with ${listing['price']} crossed out.",
+                        'Shop Manager > Marketing > Sales and discounts > New special offer > Run a sale > percentage off,',
+                        f"{sale['percent']}%, {sale['days']} days, select this listing only."]
+    lines = ['TITLE', listing['title'], ''] + price_lines + ['', 'TAGS', ', '.join(listing['tags']), '',
              'DESCRIPTION', listing['description'], '', 'PHOTOS (upload in this order, with this alt text)']
     for f in photos:
         lines.append(f"{f}: {alt.get(f[len('photo-00-'):-4], '')}")
