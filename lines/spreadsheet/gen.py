@@ -244,30 +244,31 @@ def m_months(B, sec):
         for r in range(7, 7 + n_log):
             B.inp(ws.cell(r, 2), None, 'mmm d'); B.inp(ws.cell(r, 3)); c = ws.cell(r, 4); B.inp(c); dv.add(c); B.inp(ws.cell(r, 5), None, B.money)
         logl = 6 + n_log
-        # summary
-        B.head(ws, 6, 7, ['Category', 'Budget', 'Spent', 'Left', 'Used'], [22, 13, 13, 13, 10])
+        # month totals at the top right, so the answer to "how am I doing" is the first thing on the tab
+        t = 6
+        rows = [('Income this month', f"={S['income_total']}"), ('Spent', f'=SUM(E7:E{logl})'), ('Left over', f'=H{t}-H{t + 1}'),
+                ('Saved and debt paid', f"=SUMPRODUCT(SUMIFS($E$7:$E${logl},$D$7:$D${logl},'{S['title']}'!$E${S['cat_first']}:$E${S['cat_last']})*(('{S['title']}'!$F${S['cat_first']}:$F${S['cat_last']}=\"Savings\")+('{S['title']}'!$F${S['cat_first']}:$F${S['cat_last']}=\"Debt\")))")]
+        for k, (lab, f) in enumerate(rows):
+            lc = ws.cell(t + k, 7, lab); lc.font = B.font(11, True); lc.fill = B.fill(B.th['soft'] if k != 0 else B.th['paper'])
+            if k == 0:  # income: starts as the expected income from Setup, buyers can type over it
+                B.inp(ws.cell(t, 8), f, B.money); ws.cell(t, 8).font = B.font(12, True)
+                ws.cell(t, 9, 'Type over this if your income was different').font = B.font(9, italic=True, color=B.th['muted'])
+            else:
+                B.calc(ws.cell(t + k, 8), f, B.money, True); ws.cell(t + k, 8).font = B.font(12, True)
+        ws.conditional_formatting.add(f'H{t + 2}', CellIsRule(operator='lessThan', formula=['0'], font=Font(color=hexc(B.th['warn']), bold=True)))
+        # budget vs actual by category
+        h = 11
+        B.head(ws, h, 7, ['Category', 'Budget', 'Spent', 'Left', 'Used'], [22, 13, 13, 13, 10])
         for i in range(ncat):
-            r = 7 + i; sr = S['cat_first'] + i
+            r = h + 1 + i; sr = S['cat_first'] + i
             B.calc(ws.cell(r, 7), f"=IF('{S['title']}'!E{sr}=\"\",\"\",'{S['title']}'!E{sr})")
             B.calc(ws.cell(r, 8), f"=IF(G{r}=\"\",\"\",'{S['title']}'!G{sr})", B.money)
             B.calc(ws.cell(r, 9), f'=IF(G{r}="","",SUMIFS($E$7:$E${logl},$D$7:$D${logl},G{r}))', B.money)
             B.calc(ws.cell(r, 10), f'=IF(G{r}="","",H{r}-I{r})', B.money)
             B.calc(ws.cell(r, 11), f'=IF(OR(G{r}="",H{r}=0),"",I{r}/H{r})', '0%')
-        last = 6 + ncat
-        ws.conditional_formatting.add(f'J7:J{last}', CellIsRule(operator='lessThan', formula=['0'], font=Font(color=hexc(B.th['warn']), bold=True)))
-        ws.conditional_formatting.add(f'K7:K{last}', DataBarRule(start_type='num', start_value=0, end_type='num', end_value=1, color=hexc(B.th['accent'])))
-        # totals
-        t = last + 2
-        rows = [('Income this month', f"={S['income_total']}"), ('Spent', f'=SUM(E7:E{logl})'), ('Left over', f'=H{t}-H{t + 1}'),
-                ('Saved and debt paid', f"=SUMPRODUCT(SUMIFS($E$7:$E${logl},$D$7:$D${logl},'{S['title']}'!$E${S['cat_first']}:$E${S['cat_last']})*(('{S['title']}'!$F${S['cat_first']}:$F${S['cat_last']}=\"Savings\")+('{S['title']}'!$F${S['cat_first']}:$F${S['cat_last']}=\"Debt\")))")]
-        for k, (lab, f) in enumerate(rows):
-            ws.cell(t + k, 7, lab).font = B.font(11, True)
-            if k == 0:  # income: starts as the expected income from Setup, buyers can type over it
-                B.inp(ws.cell(t, 8), f, B.money); ws.cell(t, 8).font = B.font(11, True)
-                ws.cell(t, 9, 'Type over this if your income was different').font = B.font(9, italic=True, color=B.th['muted'])
-            else:
-                B.calc(ws.cell(t + k, 8), f, B.money, True)
-        ws.conditional_formatting.add(f'H{t + 2}', CellIsRule(operator='lessThan', formula=['0'], font=Font(color=hexc(B.th['warn']), bold=True)))
+        last = h + ncat
+        ws.conditional_formatting.add(f'J{h + 1}:J{last}', CellIsRule(operator='lessThan', formula=['0'], font=Font(color=hexc(B.th['warn']), bold=True)))
+        ws.conditional_formatting.add(f'K{h + 1}:K{last}', DataBarRule(start_type='num', start_value=0, end_type='num', end_value=1, color=hexc(B.th['accent'])))
         ws.freeze_panes = 'A7'
         B.month_sheets.append({'title': ws.title, 'income': f'H{t}', 'spent': f'H{t + 1}', 'left': f'H{t + 2}', 'saved': f'H{t + 3}',
                                'log': (7, logl)})
