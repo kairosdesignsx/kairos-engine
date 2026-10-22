@@ -1,0 +1,15 @@
+{
+ "max_text_sim": 0.221,
+ "text": {
+  "max": 0.221,
+  "closest": "Reading Journal, Book Tracker, Reading Log, Book Stickers, Hyperlinked, Digital Download, For Goodnotes Notability iPad and Android",
+  "closest_shop": "LiveLovePlanners"
+ },
+ "max_image_sim": null,
+ "image": {
+  "status": "pending",
+  "max": null,
+  "note": "competitor photos not fetched yet (laptop worker)"
+ },
+ "pass": true
+}

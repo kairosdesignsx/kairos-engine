@@ -2,7 +2,7 @@
  "files": [
   {
    "name": "Plain-Ink-2027.pdf",
-   "mb": 10.82,
+   "mb": 10.83,
    "pages": 542
   }
  ],
@@ -12,7 +12,7 @@
  "attempts": [
   {
    "lean": false,
-   "mb": 10.82,
+   "mb": 10.83,
    "pages": 542
   }
  ],
@@ -2214,6 +2214,6 @@
  ],
  "product_id": "p-rpt-001",
  "brief_id": "b-rpt-001",
- "built_at": "2026-10-22T15:03:29Z",
+ "built_at": "2026-10-22T15:20:59Z",
  "line": "planner"
 }

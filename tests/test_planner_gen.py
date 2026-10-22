@@ -43,7 +43,7 @@ def run(spec, name):
 # Reading journal: books (library + book pages), reading_month, reading_year, cover button
 JOURNAL = {
  "title": "Test Journal", "subtitle": "Books", "kicker": "Digital reading journal", "brand": "Kairos test",
- "orientation": "portrait", "dating": {"mode": "undated"}, "theme": {"base": "navy", "display": "Baskerville", "body": "Manrope"}, "type_scale": 1.1,
+ "orientation": "portrait", "dating": {"mode": "undated"}, "theme": {"base": "navy", "display": "Baskerville", "body": "Manrope", "accent": "#8C3B3B", "button": "#8C3B3B"}, "type_scale": 1.1,
  "sections": [
   {"module": "cover", "start": "start", "button": "Open journal"},
   {"module": "index"},
@@ -52,6 +52,7 @@ JOURNAL = {
   {"module": "books", "label": "Library", "kicker": "Book log", "anchor": "library", "book_anchor": "b", "count": 30, "per_log_page": 12},
   {"module": "reading_year", "label": "Reading year", "kicker": "Goal", "anchor": "year", "nav": False},
   {"module": "reading_month", "label": "Reading months", "index": False, "nav": False},
+  {"module": "table", "label": "To be read", "anchor": "tbr", "headers": ["Title", "Author", "Got it"], "rows": 10, "check_columns": ["Got it"], "dividers": True},
   {"module": "lined", "label": "Notes", "anchor": "notes", "pages": 1}
  ]}
 
@@ -96,6 +97,10 @@ def test_journal():
     assert 'href="#library"' in idx and 'href="#year" class="box"' in idx
     assert '>Library</a>' in pages['b001'].split('class="crumb"')[0] and 'Reading year</a>' not in pages['b001'].split('class="crumb"')[0]
     assert '\u2014' not in r['html'], 'no em dashes'
+    # theme button token: Go there and cover buttons use it; stars use the accent; check column draws boxes, dividers
+    assert 'background:#8C3B3B;color' in pages['start'] and 'background:#8C3B3B;color' in pages['cover']
+    assert 'stroke="#8C3B3B"' in pages['b001'] and 'note app, not Files' in pages['linktest']
+    assert pages['tbr'].count('<i style="width:15px') == 10 and 'border-left:1px solid' in pages['tbr']
 
 
 def test_eink():
@@ -112,6 +117,8 @@ def test_eink():
     assert 'grid-auto-flow:column' in pages['w10'] and 'wkside' in pages['w10'] and 'wkside' in pages['hsw01']
     assert 'Tap with your finger' in pages['linktest'] and 'Pen test here' in pages['linktest'] and 'Goodnotes' not in pages['linktest']
     assert 'Where things are' in pages['linktest']
+    assert 'background:#FFFFFF' in pages['cover'] and 'background:#EBEBEB' not in pages['cover'], 'e-ink cover is pure white'
+    assert 'background:#111111;color:#FFFFFF' not in pages['index'], 'e-ink Contents: no solid black month tiles'
     assert not re.search(r'#[0-9A-Fa-f]{6}(22|55|cc)\b', html.split('</style>')[1]), 'no color tints in grayscale'
     # the built PDF draws lines and dots as vector paths: no gradient patterns, shadings or images
     import pypdf

@@ -1,0 +1,311 @@
+{
+ "product_id": "p-rpt-001",
+ "at": "2026-10-22T15:14:56Z",
+ "tech": [
+  {
+   "name": "file size",
+   "pass": true,
+   "detail": "Plain-Ink-2027.pdf: 10.82 MB (limit 19.5, Etsy 20)"
+  },
+  {
+   "name": "no text overflow",
+   "pass": true,
+   "detail": "none"
+  },
+  {
+   "name": "page count",
+   "pass": true,
+   "detail": "542 pages in PDF"
+  },
+  {
+   "name": "links present in PDF",
+   "pass": true,
+   "detail": "12978 link annotations for 11982 links in the source"
+  },
+  {
+   "name": "fonts licensed (OFL list only)",
+   "pass": true,
+   "detail": "fonts: ['ManropeExtraLight-Bold', 'ManropeExtraLight-Medium', 'ManropeExtraLight-Regular', 'OutfitThin-SemiBold']"
+  },
+  {
+   "name": "page claims match the file",
+   "pass": true,
+   "detail": "claims [542, 542], file has 542"
+  },
+  {
+   "name": "listing photos",
+   "pass": true,
+   "detail": "10 photos, sizes [(2700, 2025)]"
+  },
+  {
+   "name": "title",
+   "pass": true,
+   "detail": "136 chars"
+  },
+  {
+   "name": "13 tags, max 20 chars",
+   "pass": true,
+   "detail": "13 tags"
+  },
+  {
+   "name": "no em dashes or emojis",
+   "pass": true,
+   "detail": "checked title and description"
+  },
+  {
+   "name": "says digital download",
+   "pass": true,
+   "detail": "download and nothing-shipped note"
+  }
+ ],
+ "coverage": [
+  {
+   "item": "must:mh_eink",
+   "kind": "must",
+   "found": true,
+   "where": "PDF page size; listing title, tags, description",
+   "note": "All 542 pages are 576 x 768 pt (exact 3:4 portrait, not literally 768 x 1024 but the same shape); title, tags and the Works with box name reMarkable 2, Paper Pro and Paper Pure."
+  },
+  {
+   "item": "must:mh_dated",
+   "kind": "must",
+   "found": true,
+   "where": "year, m01, m07, w01, w03, d0101, hs11, hsw01",
+   "note": "Monday-start 2027; year dates open day pages, month pages link to habit tracker, week chips and every in-month date, week boxes open days, day pages have prev/next (Jan 1 back to Dec 31, 2026); head start from Mon Oct 26, 2026 verified in the PDF links."
+  },
+  {
+   "item": "must:mh_core",
+   "kind": "must",
+   "found": true,
+   "where": "year, m01, m01h, w03, d0111, projects, notes, grid",
+   "note": "Year at a glance, 12 months with This month's focus, 12 monthly habit trackers, 53 weeks, 365 time-blocked days, projects, 10 lined notes and 6 dot grid pages all present."
+  },
+  {
+   "item": "must:mh_look",
+   "kind": "must",
+   "found": true,
+   "where": "all screenshots",
+   "note": "Clean Outfit/Manrope type, consistent boxes and spacing, grays only, no ornament; exceptions are the gray-tinted cover and two solid black month tiles on Contents (see visual)."
+  },
+  {
+   "item": "must:mh_guide",
+   "kind": "must",
+   "found": true,
+   "where": "start, linktest",
+   "note": "Start here page inside the file gives reMarkable steps (browser download, desktop app / my.remarkable.com / USB web interface, tap with finger, write with pen)."
+  },
+  {
+   "item": "fix:f_device",
+   "kind": "fix",
+   "found": true,
+   "where": "PDF pages; listing description Works with / Not for; linktest",
+   "note": "3:4 pages, PDF colors are only grays (0, .07, .30, .62, .92, 1), thin vector strokes; Works with / Not for (Paper Pro Move, phones, iPad apps) is in the description; Setup check page exists. Left margin is the normal 48 pt, not visibly wider than elsewhere."
+  },
+  {
+   "item": "fix:f_download",
+   "kind": "fix",
+   "found": true,
+   "where": "files, listing description, photo-04, start",
+   "note": "One PDF, 10.8 MB (10,824,126 bytes), not a zip; browser download, desktop app / my.remarkable.com / USB route and 'No Connect subscription is needed' are in the listing, photo 4 steps and Start here."
+  },
+  {
+   "item": "fix:f_misleading",
+   "kind": "fix",
+   "found": false,
+   "where": "photos 02, 03, 04, 05, 10 and listing alt text",
+   "note": "Description covers it all, but the photos break the promise: most show whole pages shrunk into a tablet frame (photo 5's year page is unreadable), alt text for photos 2, 4 and 5 describes callouts, circles and a Works with panel that are not in the image, and photo 10 does not mention which tablets it fits or no handwriting-to-text."
+  },
+  {
+   "item": "fix:f_links",
+   "kind": "fix",
+   "found": true,
+   "where": "PDF link check; linktest",
+   "note": "Parsed every link annotation: 0 broken, all 542 pages reachable from the cover; Setup check buttons go to January, Year and Contents, and the page says how to come back (Home, then Setup check)."
+  },
+  {
+   "item": "fix:f_nav",
+   "kind": "fix",
+   "found": true,
+   "where": "index, m01, w03, d0111, d0502",
+   "note": "Month tabs on the right, Home/Year/Projects/Notes top bar, Month / Week trail on calendar pages, every in-month date on month pages opens its day, prev/next arrows on days, Contents links every section and month."
+  },
+  {
+   "item": "fix:f_setup",
+   "kind": "fix",
+   "found": true,
+   "where": "cover, start, linktest, index",
+   "note": "Cover Open planner links to page 3 Start here (4 steps written for reMarkable); Setup check is page 4; both are the first two cards on Contents."
+  },
+  {
+   "item": "fix:f_not_useful",
+   "kind": "fix",
+   "found": true,
+   "where": "year, m01, w03, d0111, photo-02, photo-06",
+   "note": "One dated planner with linked year/month/week/day; photo 2 shows a day page and photo 6 a week page (whole page in a frame, not literally real size)."
+  },
+  {
+   "item": "fix:f_missing",
+   "kind": "fix",
+   "found": true,
+   "where": "listing description; PDF page count",
+   "note": "Listed counts add up to 542 and match the file (12+12+53+365 + 2 months, 9 weeks, 67 days head start + 6 front/work pages + 10 notes + 6 dot grid); every day page has Notes and Done today."
+  },
+  {
+   "item": "fix:f_value",
+   "kind": "fix",
+   "found": true,
+   "where": "listing price; d0101",
+   "note": "Price 69; complete dated 2027 plus head start in one file; day pages have 6am-10pm blocks, 8-line to-do, notes. The 25% launch sale is a shop setting and is not visible in listing.json."
+  },
+  {
+   "item": "fix:f_quality",
+   "kind": "fix",
+   "found": true,
+   "where": "page_modules order; PDF link check",
+   "note": "Strict date order (head start, then each month, its habit tracker, weeks and days), each week and day once, 0 broken links, all text is embedded vector fonts; no photos used."
+  },
+  {
+   "item": "fix:f_support",
+   "kind": "fix",
+   "found": true,
+   "where": "linktest, start, listing Questions buyers ask",
+   "note": "Nothing happened? list (finger, uploaded PDF, update software, Etsy message with tablet model), Start here steps and a five-question listing FAQ; no reply-speed promise in the file."
+  },
+  {
+   "item": "unique:u_eink",
+   "kind": "unique",
+   "found": true,
+   "where": "PDF colors and page size; all screenshots",
+   "note": "Exact 3:4 page, grays only, mid-gray 1px lines; calendar pages are pure white, but the cover background is light gray (#EBEBEB)."
+  },
+  {
+   "item": "unique:u_start",
+   "kind": "unique",
+   "found": true,
+   "where": "start (page 3), linktest (page 4), cover",
+   "note": "Page 3 Start here with 4 steps, page 4 Setup check with jump buttons, a pen test area and the fix list; cover button lands on Start here."
+  },
+  {
+   "item": "unique:u_timeblock",
+   "kind": "unique",
+   "found": true,
+   "where": "d0101, d0111, d0502, d0831, w03",
+   "note": "Top 3, 8-line To do, 6am-10pm time blocks, Notes and Done today in identical positions on every day shot; week page has This week's top 3."
+  },
+  {
+   "item": "unique:u_head_start",
+   "kind": "unique",
+   "found": true,
+   "where": "hs11, hsw01, year, index",
+   "note": "Head start month, week and day pages from Mon Oct 26 to Dec 31, 2026; linked from the Year page button and two places on Contents; Dec 31 arrow leads to Jan 1, 2027."
+  },
+  {
+   "item": "look",
+   "kind": "look",
+   "found": true,
+   "where": "all screenshots; PDF colors",
+   "note": "Near-black #111 text (about 18:1), dark gray #4D4D4D secondary (about 8:1), #9E9E9E lines, light gray filled Top 3, tabs stepping light to mid gray with black labels, Outfit headings and Manrope body; deviations are the tinted cover and solid black tiles on Contents and the Year page."
+  }
+ ],
+ "clone": {
+  "max_text_sim": 0.284,
+  "text": {
+   "max": 0.284,
+   "closest": "Remarkable 2 and Paper Pure Daily Planner 2026-2027, Hyperlinked PDF Template",
+   "closest_shop": "TabletTemplates"
+  },
+  "max_image_sim": null,
+  "image": {
+   "status": "pending",
+   "max": null,
+   "note": "competitor photos not fetched yet (laptop worker)"
+  },
+  "pass": true
+ },
+ "visual": [
+  {
+   "issue": "Alt text and photo copy describe things not in the frames: photo 2 'top half ... with callouts' shows the whole page with no callouts; photo 5 says tabs, Home and trail are 'circled' but nothing is circled; photo 4 alt and points promise a Works with / not for Paper Pro Move panel that the image does not show (it shows the download steps instead).",
+   "where": "photo-02-ph2_day.jpg, photo-04-ph4_fit.jpg, photo-05-ph5_nav.jpg, listing alt",
+   "severity": "medium"
+  },
+  {
+   "issue": "Whole pages shrunk into a 2x2 grid; the year-at-a-glance and month thumbnails are too small to read at Etsy zoom (rule r013).",
+   "where": "photo-05-ph5_nav.jpg",
+   "severity": "medium"
+  },
+  {
+   "issue": "Photos 2 and 6 are captioned 'real size' but show the full page reduced inside a tablet frame; photos 3, 7, 8, 9 also show whole pages small instead of a readable crop.",
+   "where": "photo-02, photo-06, photo-03, photo-07, photo-08, photo-09",
+   "severity": "medium"
+  },
+  {
+   "issue": "Every mockup uses a black-bezel generic tablet that reads as an iPad, on a listing that says it is not for iPad apps; no frame looks like a reMarkable.",
+   "where": "all photos",
+   "severity": "medium"
+  },
+  {
+   "issue": "Two large solid black tiles (November and December 2026) on Contents, against the brief's own rule that large dark areas ghost on e-ink.",
+   "where": "index; photo-10",
+   "severity": "medium"
+  },
+  {
+   "issue": "Cover background is light gray (#EBEBEB) instead of pure white; the brief says any tint dithers into gray dots on e-ink, and photo 1 shows it.",
+   "where": "cover; photo-01",
+   "severity": "medium"
+  },
+  {
+   "issue": "Before Monday Oct 26, 2026 there is no page for today: a buyer on Oct 22-25 follows 'tap Head start, then today's date' and finds the planner starts next Monday, while the listing says 'begin this week'.",
+   "where": "start step 4; listing description; hs11",
+   "severity": "medium"
+  },
+  {
+   "issue": "Week page has two boxes both titled NOTES (dot grid and lined), and the Top 3 box is half empty.",
+   "where": "w01, w03, w27, hsw01; photo-06",
+   "severity": "low"
+  },
+  {
+   "issue": "Week chips wrap onto a second line (Week 5 alone under the others).",
+   "where": "m01; photo-07",
+   "severity": "low"
+  },
+  {
+   "issue": "Year page title wraps to '2027 at a / glance' and 'TAP ANY DATE' and the Head start button text break across two lines.",
+   "where": "year; photo-05",
+   "severity": "low"
+  },
+  {
+   "issue": "Start here 'top bar' box lists Year, Projects and Notes but leaves out Home, leaving an empty cell; Setup check repeats 'SETUP CHECK' as eyebrow and title.",
+   "where": "start, linktest",
+   "severity": "low"
+  },
+  {
+   "issue": "NOV and DEC tabs mean November/December 2026 on head start pages but 2027 everywhere else, without a label.",
+   "where": "hs11, hsw01",
+   "severity": "low"
+  },
+  {
+   "issue": "Week 1 and head start week 1 have only a forward arrow; Week 1 of 2027 has no arrow back to the last head start week.",
+   "where": "w01, hsw01",
+   "severity": "low"
+  },
+  {
+   "issue": "Projects table has column headings but no column dividers, so Next step / Due / Done have no guides.",
+   "where": "projects; photo-09",
+   "severity": "low"
+  },
+  {
+   "issue": "Large empty gap between the two tablets, with the third bullet dropping onto its own line.",
+   "where": "photo-03, photo-07, photo-08, photo-09",
+   "severity": "low"
+  },
+  {
+   "issue": "Listing ends 'we'll help you set it up', which edges toward a service promise (rule r007).",
+   "where": "listing description, Help",
+   "severity": "low"
+  }
+ ],
+ "pass": false,
+ "notes": [
+  "Image clone check pending: competitor photos come from the laptop worker."
+ ]
+}

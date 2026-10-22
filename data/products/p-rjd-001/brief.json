@@ -156,7 +156,7 @@
   {
    "id": "f_misleading",
    "complaint": "complaint:c_misleading",
-   "how": "Every listing photo is a screenshot of the built file captioned with the page name; nothing is shown that the file lacks. The description says plainly: digital PDF for note apps, also printable at home (the Print step is checked on letter and A4 before publishing), portrait only, undated, no stickers, handwrite or use the app's text tool.",
+   "how": "Every listing photo is a screenshot of the built file captioned with the page name; nothing is shown that the file lacks. The description says plainly: digital PDF for note apps, portrait only, undated, no stickers, handwrite or use the app's text tool.",
    "evidence": [
     "complaint:c_misleading",
     "praise:p_as_described"
@@ -168,7 +168,7 @@
   {
    "id": "f_value",
    "complaint": "complaint:c_value",
-   "how": "Room for 100 books (the capacity a repeat buyer asked for), each with its own full page, plus 12 monthly pages, a yearly goal page, TBR, quotes and notes. Photo 2 shows a book page at real size so buyers can judge the writing space before buying. The listing gives the exact page count.",
+   "how": "Room for 100 books (the capacity a repeat buyer asked for), each with its own full page, plus 12 monthly pages, a yearly goal page, TBR, quotes and notes. Photo 2 shows the top of a book page close up, at reading size, so buyers can judge the writing space before buying. The listing gives the exact page count.",
    "evidence": [
     "complaint:c_value",
     "wish:w_capacity",
@@ -182,7 +182,7 @@
   {
    "id": "f_edit",
    "complaint": "complaint:c_edit",
-   "how": "Nothing is locked into the reader's choices: the Library has a blank Shelf column for the reader's own genres or shelves, the book page's Genre and Format are write-in, and months are undated. The Start here tip and listing say how to type instead of handwrite (the app's text tool, any font the app has). The listing says it is not a fillable form, so nobody expects drop-downs.",
+   "how": "Nothing is locked into the reader's choices: the Library has a blank Shelf column for the reader's own genres or shelves, the book page's Genre is write-in and Format has Print, Ebook and Audio to tick plus a blank to write any other format, and months are undated. The Start here tip and listing say how to type instead of handwrite (the app's text tool, any font the app has). The listing says it is not a fillable form, so nobody expects drop-downs.",
    "evidence": [
     "complaint:c_edit",
     "praise:p_flexible"
@@ -295,6 +295,10 @@
   {
    "ref": "wish:w_migrate",
    "reason": "First edition, so there is no older version to move from. Undated pages mean the same file keeps working next year."
+  },
+  {
+   "ref": "promise:print_at_home",
+   "reason": "Printing on letter and A4 has not been tested on a real printer, so the listing must not claim it. It stays a digital PDF for note apps; printing can be added to the listing once a test print is checked."
   }
  ],
  "look": {
@@ -314,7 +318,8 @@
    ],
    "display": "Baskerville",
    "body": "Manrope",
-   "motif": "lines"
+   "motif": "lines",
+   "button": "#8C3B3B"
   },
   "avoid": [
    "boho minimalist beige with arches and dried flowers",
@@ -459,7 +464,8 @@
    ],
    "display": "Baskerville",
    "body": "Manrope",
-   "motif": "lines"
+   "motif": "lines",
+   "button": "#8C3B3B"
   },
   "type_scale": 1.1,
   "index_tip": "Tap a card above, a month below, or a month tab on the right. Every book page has a Library link at the top to go back. Follow links with the pen off (read mode); turn the pen on to write.",
@@ -481,7 +487,8 @@
     "steps": [
      [
       "Open it in a note app",
-      "Download from Etsy in a web browser (the Etsy app cannot download files). Import the PDF into Goodnotes, Notability, Samsung Notes, Xodo or Noteshelf. Files and Photos show pages but do not follow links."
+      "Download from Etsy in a web browser (the Etsy app cannot download files). Import the PDF into Goodnotes, Notability, Samsung Notes, Xodo or Noteshelf, not Files or Photos. This button opens Contents.",
+      "index"
      ],
      [
       "Check the links",
@@ -529,7 +536,11 @@
      "Heard about it from",
      "Got it"
     ],
-    "rows": 26
+    "rows": 26,
+    "check_columns": [
+     "Got it"
+    ],
+    "dividers": true
    },
    {
     "module": "lined",

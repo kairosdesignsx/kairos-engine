@@ -1,9 +1,7 @@
 {
  "pass": true,
  "problems": [],
- "needs_module": [
-  "eink_format"
- ],
+ "needs_module": [],
  "coverage": [
   {
    "ref": "complaint:c_not_useful",

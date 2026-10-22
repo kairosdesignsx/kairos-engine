@@ -2,17 +2,17 @@
  "files": [
   {
    "name": "Shelf-Life.pdf",
-   "mb": 2.86,
+   "mb": 2.88,
    "pages": 126
   }
  ],
- "links": 2513,
+ "links": 2514,
  "overflow": [],
  "lean": false,
  "attempts": [
   {
    "lean": false,
-   "mb": 2.86,
+   "mb": 2.88,
    "pages": 126
   }
  ],
@@ -541,6 +541,6 @@
  ],
  "product_id": "p-rjd-001",
  "brief_id": "b-rjd-001",
- "built_at": "2026-10-22T15:02:37Z",
+ "built_at": "2026-10-22T15:23:57Z",
  "line": "planner"
 }

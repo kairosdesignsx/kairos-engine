@@ -2,7 +2,7 @@
 screenshotted by shoot.js. Scenes: hero, grid (what's inside), page (one page with headline and points), how (3 steps)."""
 import os
 from fonts import faces
-from gen import resolve_theme, motif, esc
+from gen import resolve_theme, motif, esc, MONTHS
 
 
 def page_names(brief):
@@ -10,6 +10,8 @@ def page_names(brief):
     for sec in brief['spec'].get('sections', []):
         if sec.get('anchor') and sec.get('label'):
             names[sec['anchor']] = sec['label']
+        if sec.get('module') == 'reading_month':
+            names.update({f'm{i + 1:02d}': m for i, m in enumerate(MONTHS)})
     return names
 
 
@@ -17,6 +19,8 @@ def page_name(a, names):
     import re as _re
     if a in names:
         return names[a]
+    if _re.fullmatch(r'b\d{3}', a): return f'Book {int(a[1:])}'
+    if _re.fullmatch(r'[a-z]+\d', a) and a[:-1] in names: return f'{names[a[:-1]]} page {a[-1]}'
     if _re.fullmatch(r'd\d{4}|u\d{3}', a): return 'Day page'
     if _re.fullmatch(r'm\d{2}h', a): return 'Habit tracker'
     if _re.fullmatch(r'm\d{2}', a): return 'Month'
@@ -27,12 +31,47 @@ def page_name(a, names):
     return a
 
 
-def tablet(src, w, x, y, ratio, rot=0, z=1, caption=''):
-    pad = w * .032
+FRAMES = {  # device frame: 'dark' (generic tablet) or 'eink' (light gray e-ink tablet, for reMarkable files)
+    'dark': dict(bg='#1c1c21', pad=.032, shadow='0 40px 80px rgba(30,25,40,.28),0 8px 18px rgba(30,25,40,.18)', edge=''),
+    'eink': dict(bg='#d9d9d5', pad=.05, shadow='0 30px 60px rgba(0,0,0,.16),0 6px 14px rgba(0,0,0,.10)', edge='border:2px solid #c4c4bf;'),
+}
+
+
+def tablet(src, w, x, y, ratio, rot=0, z=1, caption='', frame='dark'):
+    f = FRAMES[frame]
+    pad = w * f['pad']
     cap = f'<div style="position:absolute;left:50%;bottom:-74px;transform:translateX(-50%);white-space:nowrap;font:600 36px var(--b);letter-spacing:.06em;text-transform:uppercase;opacity:.75">{caption}</div>' if caption else ''
     return (f'<div style="position:absolute;left:{x}px;top:{y}px;width:{w}px;transform:rotate({rot}deg);z-index:{z};'
-            f'background:#1c1c21;border-radius:{w * .045:.0f}px;padding:{pad:.0f}px;box-shadow:0 40px 80px rgba(30,25,40,.28),0 8px 18px rgba(30,25,40,.18)">'
+            f'background:{f["bg"]};{f["edge"]}border-radius:{w * .045:.0f}px;padding:{pad:.0f}px;box-shadow:{f["shadow"]}">'
             f'<img src="{src}" style="width:100%;display:block;border-radius:{w * .01:.0f}px;aspect-ratio:{ratio}">{cap}</div>')
+
+
+def steps_html(th, steps):
+    return ''.join(f'<div style="display:flex;gap:26px;align-items:flex-start"><span style="flex:none;width:74px;height:74px;border-radius:50%;background:{th["ink"]};color:{th["paper"]};display:flex;align-items:center;justify-content:center;font:700 40px var(--b)">{n + 1}</span><div><p class="h" style="font-size:58px">{esc(a)}</p><p style="font-size:42px;color:{th["muted"]};line-height:1.3;margin-top:8px">{esc(b)}</p></div></div>' for n, (a, b) in enumerate(steps[:3]))
+
+
+def crop_scene(th, c, pg, P, N, W, H, frame, head, pts, label):
+    """Close-up view (style rule r013): pages shown large in a device that runs off the bottom edge of the photo, so the
+    top of each page is readable at Etsy's zoom. One page: device on one side, copy on the other. Two pages: side by side
+    under the headline. The caption names the page and sits above its device."""
+    f = FRAMES[frame]
+    cap = lambda a, x, y, w: f'<p style="position:absolute;left:{x}px;top:{y}px;width:{w}px;text-align:center;font:600 38px var(--b);letter-spacing:.06em;text-transform:uppercase;opacity:.8">{N(a)}</p>'
+    if len(pg) == 1:
+        tw = int(c.get('width', 1380)); tx = 150 if c.get('side', 'left') == 'left' else 2700 - 150 - tw
+        dev = tablet(P(pg[0]), tw, tx, 200, f'{W}/{H}', 0, 1, '', frame)
+        text_x = tx + tw + 130 if tx == 150 else 150
+        tw_text = 2700 - 150 - text_x if tx == 150 else tx - 130 - 150
+        extra = ''
+        if c.get('steps'):
+            extra = f'<div style="display:flex;flex-direction:column;gap:30px;margin-top:10px">{steps_html(th, c["steps"])}</div>'
+        if c.get('panel'):
+            extra = f'<div style="border:3px solid {th["line"]};border-radius:30px;padding:34px 40px;display:flex;flex-direction:column;gap:14px;background:{th["paper"]}">' + ''.join(f'<p style="font-size:44px;line-height:1.3"><b>{esc(k)}</b> {esc(v)}</p>' for k, v in c['panel']) + '</div>' + extra
+        return (dev + cap(pg[0], tx, 120, tw) +
+                f'<div style="position:absolute;left:{text_x}px;top:0;bottom:0;width:{tw_text}px;display:flex;flex-direction:column;justify-content:center;gap:34px">{label}<p class="h" style="font-size:{c.get("size", 110)}px">{head}</p>{pts}{extra}</div>')
+    tw = 1150; gap = 2700 - 300 - 2 * tw
+    devs = ''.join(tablet(P(a), tw, 150 + k * (tw + gap), 600, f'{W}/{H}', 0, 1, '', frame) + cap(a, 150 + k * (tw + gap), 520, tw) for k, a in enumerate(pg[:2]))
+    return (f'<div style="position:absolute;left:150px;right:150px;top:90px;display:flex;flex-direction:column;gap:22px">{label}<p class="h" style="font-size:110px">{head}</p>'
+            f'<div style="display:flex;gap:60px;flex-wrap:wrap">{"".join(f"<p class=pt><b>&#9679;</b><span>{esc(x)}</span></p>" for x in c.get("points", [])[:3])}</div></div>' + devs)
 
 
 def base(th, body):
@@ -58,18 +97,24 @@ def scenes(brief, listing, build, shots_dir, out_dir):
     pages = build['files'][0]['pages']
     names = page_names(brief)
     N = lambda a: esc(page_name(a, names))
+    frame = 'eink' if any(x.get('module') == 'eink_format' for x in brief['spec'].get('sections', [])) else 'dark'
+    T = lambda *a, **k: tablet(*a, frame=frame, **k)
     S = {}
     for i, ph in enumerate(brief['photos']):
         c = copy.get(ph['id'], {})
-        pg = [a for a in ph.get('pages', []) if a in have]
+        pg = [a for a in (c.get('pages') or ph.get('pages', [])) if a in have]
         head = esc(c.get('headline', ph['shows'][:40]))
         pts = ''.join(f'<p class="pt"><b>&#9679;</b><span>{esc(x)}</span></p>' for x in c.get('points', [])[:3])
         label = f'<p class="k">{esc(c["label"])}</p>' if c.get('label') else ''
         key = f'{i + 1:02d}-{ph["id"]}'
+        if c.get('view') == 'crop' and pg and i > 0:
+            Nc = lambda a, _c=c.get('captions', {}): esc(_c[a]) if a in _c else N(a)  # listing can name a page more exactly
+            S[key] = base(th, crop_scene(th, c, pg, P, Nc, W, H, frame, head, pts, label))
+            continue
         if i == 0:
             tw = 1050 if portrait else 1350
-            t1 = tablet(P(pg[1]), tw, 1300 if portrait else 1250, 160, ratio, 4, 1) if len(pg) > 1 else ''
-            t2 = tablet(P(pg[0]), tw, 1180 if portrait else 1180, 480 if not portrait else 300, ratio, -3, 2, N(pg[0])) if pg else ''
+            t1 = T(P(pg[1]), tw, 1300 if portrait else 1250, 160, ratio, 4, 1) if len(pg) > 1 else ''
+            t2 = T(P(pg[0]), tw, 1180 if portrait else 1180, 480 if not portrait else 300, ratio, -3, 2, N(pg[0])) if pg else ''
             S[key] = base(th, (motif(th, 'tr', 3, 520) if th.get('motif') not in ('lines', None) else '') + f'''<div style="position:absolute;left:150px;top:0;bottom:0;width:1000px;display:flex;flex-direction:column;justify-content:center;gap:40px">
               {label or '<p class="k">Digital planner</p>'}<p class="h" style="font-size:170px">{esc(listing.get("hero_title") or brief["spec"]["title"])}</p>
               <p style="font-size:60px;color:{th["muted"]};line-height:1.25">{head}</p>{pts}
@@ -92,7 +137,7 @@ def scenes(brief, listing, build, shots_dir, out_dir):
             gap = 2700 - 300 - tw * n
             th_ = tw * (H / W) + tw * .064  # tablet height incl. frame
             top_ = 560 + max(0, (2025 - 560 - 90 - th_) / 2)  # centred in the space under the headline, room for captions
-            tabs = ''.join(tablet(P(a), tw, 150 + k * (tw + gap // max(1, n - 1)), int(top_), ratio, 0, 1, N(a)) for k, a in enumerate(pg))
+            tabs = ''.join(T(P(a), tw, 150 + k * (tw + gap // max(1, n - 1)), int(top_), ratio, 0, 1, N(a)) for k, a in enumerate(pg))
             S[key] = base(th, f'''<div style="position:absolute;left:150px;right:150px;top:110px;display:flex;flex-direction:column;gap:26px">
               {label}<p class="h" style="font-size:120px">{head}</p><div style="display:flex;gap:60px;flex-wrap:wrap">{''.join(f'<p class="pt"><b>&#9679;</b><span>{esc(x)}</span></p>' for x in c.get('points', [])[:3])}</div></div>''' + tabs)
         elif ph['id'].startswith('how') or 'how it works' in ph['shows'].lower():
@@ -104,7 +149,7 @@ def scenes(brief, listing, build, shots_dir, out_dir):
             left = i % 2 == 1
             tw = 1100 if portrait else 1650
             tx = (150 if left else 2700 - 150 - tw) if not portrait else (220 if left else 2700 - 220 - tw)
-            tab = tablet(P(pg[0]), tw, tx, 160 if portrait else 300, ratio, 0, 1, N(pg[0])) if pg else ''
+            tab = T(P(pg[0]), tw, tx, 160 if portrait else 300, ratio, 0, 1, N(pg[0])) if pg else ''
             if c.get('steps'):
                 pts = ''.join(f'<div style="display:flex;gap:26px;align-items:flex-start"><span style="flex:none;width:74px;height:74px;border-radius:50%;background:{th["ink"]};color:{th["paper"]};display:flex;align-items:center;justify-content:center;font:700 40px var(--b)">{n + 1}</span><div><p class="h" style="font-size:58px">{esc(a)}</p><p style="font-size:42px;color:{th["muted"]};line-height:1.3;margin-top:8px">{esc(b)}</p></div></div>' for n, (a, b) in enumerate(c['steps'][:3]))
             text_x = f'right:150px' if left else 'left:150px'

@@ -1,0 +1,15 @@
+{
+ "max_text_sim": 0.226,
+ "text": {
+  "max": 0.226,
+  "closest": "Remarkable 2 and Paper Pure Daily Planner 2026-2027, Hyperlinked PDF Template",
+  "closest_shop": "TabletTemplates"
+ },
+ "max_image_sim": null,
+ "image": {
+  "status": "pending",
+  "max": null,
+  "note": "competitor photos not fetched yet (laptop worker)"
+ },
+ "pass": true
+}

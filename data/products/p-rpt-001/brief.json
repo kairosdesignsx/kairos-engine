@@ -157,7 +157,7 @@
   {
    "id": "f_not_useful",
    "complaint": "complaint:c_not_useful",
-   "how": "One focused planner instead of a pile of loose templates: year, month, week and day pages that link to each other, so it works as a weekly planner and a daily planner at once ('I need a weekly planner'). It is dated, so there is nothing to set up: tap today and write. Photo 2 shows a day page and photo 6 a week page at real size so buyers can judge fit before buying.",
+   "how": "One focused planner instead of a pile of loose templates: year, month, week and day pages that link to each other, so it works as a weekly planner and a daily planner at once ('I need a weekly planner'). It is dated, so there is nothing to set up: tap today and write. Photo 2 shows a day page and photo 6 a week page close up, at reading size, so buyers can judge fit before buying.",
    "evidence": [
     "complaint:c_not_useful",
     "praise:p_fits_needs",
@@ -554,7 +554,7 @@
      ],
      [
       "Plan one day",
-      "Tap Year, then today's date. Starting before January 2027? Tap Head start on the Year page instead. Fill your Top 3 and one time block. That is today done."
+      "Tap Year, then today's date. Before 2027? Tap Head start on the Year page: the first page is Monday, October 26, 2026. Fill your Top 3 and one time block. That is today done."
      ]
     ],
     "tip": "Missed a few days? Leave them blank and jump straight to today. A planner works from whatever day you come back.",
@@ -586,7 +586,11 @@
      "Due",
      "Done"
     ],
-    "rows": 26
+    "rows": 26,
+    "check_columns": [
+     "Done"
+    ],
+    "dividers": true
    },
    {
     "module": "lined",

@@ -1,11 +1,7 @@
 {
  "pass": true,
  "problems": [],
- "needs_module": [
-  "books",
-  "reading_year",
-  "reading_month"
- ],
+ "needs_module": [],
  "coverage": [
   {
    "ref": "complaint:c_download",

@@ -1,0 +1,333 @@
+{
+ "product_id": "p-rjd-001",
+ "at": "2026-10-22T15:14:56Z",
+ "tech": [
+  {
+   "name": "file size",
+   "pass": true,
+   "detail": "Shelf-Life.pdf: 2.86 MB (limit 19.5, Etsy 20)"
+  },
+  {
+   "name": "no text overflow",
+   "pass": true,
+   "detail": "none"
+  },
+  {
+   "name": "page count",
+   "pass": true,
+   "detail": "126 pages in PDF"
+  },
+  {
+   "name": "links present in PDF",
+   "pass": true,
+   "detail": "2741 link annotations for 2513 links in the source"
+  },
+  {
+   "name": "fonts licensed (OFL list only)",
+   "pass": true,
+   "detail": "fonts: ['LibreBaskerville-Bold', 'ManropeExtraLight-Bold', 'ManropeExtraLight-Medium', 'ManropeExtraLight-Regular']"
+  },
+  {
+   "name": "page claims match the file",
+   "pass": true,
+   "detail": "claims [126], file has 126"
+  },
+  {
+   "name": "listing photos",
+   "pass": true,
+   "detail": "8 photos, sizes [(2700, 2025)]"
+  },
+  {
+   "name": "title",
+   "pass": true,
+   "detail": "138 chars"
+  },
+  {
+   "name": "13 tags, max 20 chars",
+   "pass": true,
+   "detail": "13 tags"
+  },
+  {
+   "name": "no em dashes or emojis",
+   "pass": true,
+   "detail": "checked title and description"
+  },
+  {
+   "name": "says digital download",
+   "pass": true,
+   "detail": "download and nothing-shipped note"
+  }
+ ],
+ "coverage": [
+  {
+   "item": "must:mh_journal",
+   "kind": "must",
+   "found": true,
+   "where": "b001, quotes, notes (page_modules)",
+   "note": "Book page has title, author, genre, format, started/finished, pages, stars, reread, why, thoughts, favorite quote + page, character, one-line review; quotes page seen; notes pages exist in page_modules only (not screenshotted)."
+  },
+  {
+   "item": "must:mh_apps",
+   "kind": "must",
+   "found": true,
+   "where": "listing.title, listing.description 'Works with', start",
+   "note": "Title names Goodnotes as the first app; description and Start here list Goodnotes, Notability, Samsung Notes, Xodo, Noteshelf on iPad, Android and Windows tablets; one PDF."
+  },
+  {
+   "item": "must:mh_tracker",
+   "kind": "must",
+   "found": true,
+   "where": "library, tbr, m01, m07, year",
+   "note": "Library book log, TBR list, 12 monthly pages and Reading year goal page all present."
+  },
+  {
+   "item": "must:mh_nav",
+   "kind": "must",
+   "found": true,
+   "where": "index, all pages (PDF link scan)",
+   "note": "Contents page, 12 month tabs and Home/Library/TBR/Quotes bar link on every page; b002-b099 have prev+next arrows, b001 next only, b100 prev only; 0 broken links, 0 unreachable pages."
+  },
+  {
+   "item": "must:mh_look",
+   "kind": "must",
+   "found": true,
+   "where": "all shots",
+   "note": "Consistent cards, spacing and Baskerville/Manrope type throughout; looks finished."
+  },
+  {
+   "item": "must:mh_guide",
+   "kind": "must",
+   "found": true,
+   "where": "start, linktest",
+   "note": "Start here (4 steps, tip) and Setup check (buttons, fix list) are printed in the file."
+  },
+  {
+   "item": "fix:f_download",
+   "kind": "fix",
+   "found": false,
+   "where": "cover, listing.title, photo-04",
+   "note": "One PDF (no zip, no stickers) and photo 4 + description give the 3 download steps, Start here repeats them; BUT the cover title 'Shelf Life' does not appear anywhere in the listing title, so cover and listing title do not match."
+  },
+  {
+   "item": "fix:f_setup",
+   "kind": "fix",
+   "found": false,
+   "where": "cover, start, index",
+   "note": "Open journal links to Start here (p3), Setup check is p4 and both are the first Contents cards; but step 1 has no Go there button (only steps 2-4 do), so not 'each with a Go there button'."
+  },
+  {
+   "item": "fix:f_device",
+   "kind": "fix",
+   "found": false,
+   "where": "PDF pdfinfo, listing.description",
+   "note": "Pages 576x768 pt (768x1024 px) portrait, plain GoTo links, Works with list, not for phones, not a fillable form, Setup check present; but no 'not a spreadsheet' line and no distinct Works with / Not for box."
+  },
+  {
+   "item": "fix:f_not_useful",
+   "kind": "fix",
+   "found": true,
+   "where": "page_modules, listing.description",
+   "note": "100 numbered book pages, 12 undated months, TBR; description lists each page type with counts."
+  },
+  {
+   "item": "fix:f_hard",
+   "kind": "fix",
+   "found": true,
+   "where": "library, b001, start step 3",
+   "note": "One book layout; Library numbers link to b001-b100, trail 'Library' returns to the right Library page; Start here step 3 describes exactly this."
+  },
+  {
+   "item": "fix:f_quality",
+   "kind": "fix",
+   "found": true,
+   "where": "PDF text + link scan",
+   "note": "No misspellings in extracted text, 0 broken links, 0 unreachable pages, no overflow seen, text is vector (extractable), book pages 1-100 in order once each."
+  },
+  {
+   "item": "fix:f_misleading",
+   "kind": "fix",
+   "found": false,
+   "where": "photo-01..04, listing.description",
+   "note": "Photos 2 and 3 are captioned 'B001' (internal id, not a page name); photo 4 alt/points claim an apps/tablets/not-for-phones panel that is not in the image; description never says it is printable at home."
+  },
+  {
+   "item": "fix:f_value",
+   "kind": "fix",
+   "found": false,
+   "where": "photo-02, listing.description",
+   "note": "100 books, 12 months, year, TBR, quotes, notes and 126-page count are all there; but photo 2 ('Book page, real size') shows the whole page shrunk to about half the photo height, not real size."
+  },
+  {
+   "item": "fix:f_edit",
+   "kind": "fix",
+   "found": false,
+   "where": "b001, library, start tip, listing.description",
+   "note": "Blank Shelf column, write-in Genre, undated months, typing tip and not-a-fillable-form are present; but Format is a fixed Print/Ebook/Audio choice, not write-in, while the listing says format is written in by you."
+  },
+  {
+   "item": "fix:f_broken",
+   "kind": "fix",
+   "found": true,
+   "where": "linktest",
+   "note": "Three buttons (month page, year, Contents) and a 4-item fix list: pen off, open in an app not Files/Photos, re-import as PDF, message the shop."
+  },
+  {
+   "item": "fix:f_support",
+   "kind": "fix",
+   "found": false,
+   "where": "listing.description 'Questions buyers ask'",
+   "note": "FAQ covers Etsy app download, which app, links not tapping, how to type; the fifth answer is 'look up my books', not 'portrait only' (portrait is only in Good to know). No reply-time promises (r007 ok)."
+  },
+  {
+   "item": "fix:f_missing",
+   "kind": "fix",
+   "found": true,
+   "where": "listing.description, index, pdfinfo",
+   "note": "No stickers or covers advertised; counts match the file (126 pages, 2.86 MB = 2,864,836 bytes); Contents shows every section on one screen."
+  },
+  {
+   "item": "unique:u_library",
+   "kind": "unique",
+   "found": true,
+   "where": "library, b001, b100 (PDF link scan)",
+   "note": "4 Library pages x 25 numbered lines with title/author/finished/stars/shelf; numbers link to book pages, trail returns to the matching Library page (b100 -> library4), arrows step prev/next."
+  },
+  {
+   "item": "unique:u_start",
+   "kind": "unique",
+   "found": true,
+   "where": "cover, start (p3), linktest (p4)",
+   "note": "Start here is page 3, Setup check page 4, cover button lands on Start here, buttons jump with return instructions and a fix list; note step 1 has no Go there button."
+  },
+  {
+   "item": "unique:u_year",
+   "kind": "unique",
+   "found": true,
+   "where": "year",
+   "note": "Goal line, 12 month rows of squares with each month name linked to its page, fiction/nonfiction and print/ebook/audio tallies, top 5 of the year."
+  },
+  {
+   "item": "look",
+   "kind": "look",
+   "found": false,
+   "where": "all shots",
+   "note": "Ivory paper, ink-blue text, brass strip, clay-to-blue month tabs with dark labels, Libre Baskerville + Manrope, ruled lines, no florals all present; but there is no oxblood accent in the file: buttons and star outlines are ink navy."
+  }
+ ],
+ "clone": {
+  "max_text_sim": 0.222,
+  "text": {
+   "max": 0.222,
+   "closest": "Reading Journal, Book Tracker, Reading Log, Book Stickers, Hyperlinked, Digital Download, For Goodnotes Notability iPad and Android",
+   "closest_shop": "LiveLovePlanners"
+  },
+  "max_image_sim": null,
+  "image": {
+   "status": "pending",
+   "max": null,
+   "note": "competitor photos not fetched yet (laptop worker)"
+  },
+  "pass": true
+ },
+ "visual": [
+  {
+   "issue": "Listing says genre and format are written in by you, but the book page has fixed Print / Ebook / Audio choices for format.",
+   "where": "b001, listing.description",
+   "severity": "medium"
+  },
+  {
+   "issue": "Photo 4 alt text and points describe a panel of note apps, tablets and 'Not for phones. Not a fillable form', but the photo shows only the Start here page and 3 download steps (r005).",
+   "where": "photo-04-ph4_apps.jpg",
+   "severity": "medium"
+  },
+  {
+   "issue": "TBR 'Got it' column has no boxes and the table has no column dividers, so it is just ruled lines; the listing promises a Got it box.",
+   "where": "tbr, photo-07",
+   "severity": "medium"
+  },
+  {
+   "issue": "Cover title 'Shelf Life' does not appear in the listing title, so a buyer cannot match the file to what they bought.",
+   "where": "cover, listing.title",
+   "severity": "medium"
+  },
+  {
+   "issue": "Photos 2, 3, 5, 6 and 7 show whole pages shrunk to fit, so field labels are tiny at Etsy's zoom (r013); photo 2 is labelled 'real size' but is not.",
+   "where": "photo-02, photo-03, photo-05, photo-06, photo-07",
+   "severity": "medium"
+  },
+  {
+   "issue": "Photos 2 and 3 caption the book page 'B001', an internal anchor id rather than a page name.",
+   "where": "photo-02, photo-03",
+   "severity": "medium"
+  },
+  {
+   "issue": "Start here step 1 has no Go there button, and all four step cards leave a large empty lower half.",
+   "where": "start",
+   "severity": "low"
+  },
+  {
+   "issue": "No oxblood accent anywhere in the file; buttons and stars are navy, so the look is flatter than the brief.",
+   "where": "all pages",
+   "severity": "low"
+  },
+  {
+   "issue": "Brass strip sits flush at the top edge of the cover, Contents and Start here, so it looks clipped or misplaced.",
+   "where": "cover, index, start",
+   "severity": "low"
+  },
+  {
+   "issue": "Cover's lower half is empty.",
+   "where": "cover",
+   "severity": "low"
+  },
+  {
+   "issue": "The Contents Notes card sits alone, leaving two empty card slots in the grid.",
+   "where": "index",
+   "severity": "low"
+  },
+  {
+   "issue": "The eyebrow 'SETUP CHECK' repeats the title 'Setup check'.",
+   "where": "linktest",
+   "severity": "low"
+  },
+  {
+   "issue": "Setup check fix list says 'PDF planner app' while everywhere else says note app; Start here top-bar map omits HOME.",
+   "where": "linktest, start",
+   "severity": "low"
+  },
+  {
+   "issue": "The J of January and July hangs past the left text margin.",
+   "where": "m01, m07",
+   "severity": "low"
+  },
+  {
+   "issue": "Year page has only 10 squares a month and month pages 8 book lines, which caps heavy readers with no note on where it stops (r011).",
+   "where": "year, m01",
+   "severity": "low"
+  },
+  {
+   "issue": "The Quotes and TBR pages are almost entirely blank ruled lines, with no fields for book or page number.",
+   "where": "quotes, tbr",
+   "severity": "low"
+  },
+  {
+   "issue": "In photo 1 the back tablet shows clipped fragments of Book 1 ('dio', 'lo'), and the only caption is 'COVER'.",
+   "where": "photo-01-ph1_hero.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "The two-tablet photos leave a large empty gap in the middle; in photo 6 the third bullet wraps to its own row.",
+   "where": "photo-03, photo-05, photo-06, photo-07",
+   "severity": "low"
+  },
+  {
+   "issue": "The description never says the file is printable at home, though the brief promised it would.",
+   "where": "listing.description",
+   "severity": "low"
+  }
+ ],
+ "pass": false,
+ "notes": [
+  "Image clone check pending: competitor photos come from the laptop worker."
+ ]
+}

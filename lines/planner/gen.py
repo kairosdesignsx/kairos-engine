@@ -113,6 +113,7 @@ class Planner:
         self.eink = next((x for x in spec.get('sections', []) if x.get('module') == 'eink_format'), None) or {}
         self.gutter = int(self.eink.get('left_gutter', 40)) if self.eink else 40
         self.gray = bool(self.eink.get('grayscale'))
+        self.btn = self.th.get('button', self.th['ink'])  # buttons (Open, Go there): theme token 'button', default ink
         self.noun = 'planner'   # what the file calls itself in printed help ('journal' when the cover button says so)
 
     def fs(self, px):
@@ -338,8 +339,8 @@ def m_cover(P, sec):
     inner = f'''<div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 120px 0 90px;gap:18px">
       <p class="k" style="font-size:13px">{esc(s.get("kicker", "Digital planner"))}</p><p class="h" style="font-size:{sec.get("size", 92)}px;line-height:.95">{esc(s["title"])}</p>
       <p style="font-size:20px;color:{th["muted"]};max-width:560px;line-height:1.4">{esc(s.get("subtitle", ""))}</p>
-      <div style="display:flex;gap:10px;margin-top:14px"><a href="#{sec.get("start", "index")}" style="padding:10px 22px;border-radius:99px;background:{th["ink"]};color:{th["paper"]};font:600 13px '{th["body"]}';letter-spacing:.14em;text-transform:uppercase">{esc(button)}</a></div></div>'''
-    P.page('cover', motif(th, 'tr', 5, 260) + motif(th, 'bl', 9, 220) + inner + P.rail(), raw=True, style=f'background:{th["soft"]}')
+      <div style="display:flex;gap:10px;margin-top:14px"><a href="#{sec.get("start", "index")}" style="padding:10px 22px;border-radius:99px;background:{P.btn};color:{th["paper"]};font:600 13px '{th["body"]}';letter-spacing:.14em;text-transform:uppercase">{esc(button)}</a></div></div>'''
+    P.page('cover', motif(th, 'tr', 5, 260) + motif(th, 'bl', 9, 220) + inner + P.rail(), raw=True, style=f'background:{th["paper"] if P.gray else th["soft"]}')  # e-ink: pure white, a tint dithers
 
 
 @module('index', 'Contents page: a card for every section plus all months', nav='Home')
@@ -354,7 +355,8 @@ def _fill_index(P):
     th = P.th
     cards = ''.join(f'<a href="#{a}" class="box" style="justify-content:space-between;min-height:76px;background:{th["paper"] if P.gray else c + "22"};border-color:{th["line"] if P.gray else c}"><span class="k">{esc(k)}</span><span class="h" style="font-size:22px">{esc(l)}</span></a>'
                     for (l, a, k), c in zip(P.index_items[:12], P.tabs * 3))
-    months = ''.join(f'<a href="#{an}" style="padding:8px 0;text-align:center;border-radius:8px;background:{th["ink"]};color:{th["paper"]};font:600 12px \'{th["body"]}\'">{esc(lb)}</a>' for lb, an in getattr(P, 'head_start_links', []))
+    hs_style = f'background:{th["paper"]};color:{th["ink"]};box-shadow:inset 0 0 0 2px {th["ink"]}' if P.gray else f'background:{th["ink"]};color:{th["paper"]}'  # e-ink: no large dark blocks (they ghost)
+    months = ''.join(f'<a href="#{an}" style="padding:8px 0;text-align:center;border-radius:8px;{hs_style};font:600 12px \'{th["body"]}\'">{esc(lb)}</a>' for lb, an in getattr(P, 'head_start_links', []))
     months += ''.join(f'<a href="#m{i + 1:02d}" style="padding:8px 0;text-align:center;border-radius:8px;background:{P.tint(i, "55")};font:600 12px \'{th["body"]}\'">{MONTHS[i]}{"" if P.undated or not getattr(P, "head_start_links", None) else " " + str(P.year)}</a>' for i in range(12))
     tip = P.s.get('index_tip', 'Tap a month tab on the right, any section above, or any date to jump there. Home on the top bar brings you back here, and calendar pages show where you are at the top right. Follow links in read mode (Goodnotes: turn the pen off).')
     if P.HT > P.W:  # portrait: wider cards, and a months grid that fills the page with big tap targets
@@ -391,7 +393,8 @@ def _fill_guides(P):
             items = ''.join(f'<a href="#{an}" style="display:flex;gap:10px;align-items:baseline;padding:5px 0;border-bottom:1px solid {th["line"]}"><b style="min-width:110px;font:700 12px \'{th["body"]}\';text-transform:uppercase;letter-spacing:.08em">{esc(l)}</b><span style="font-size:{P.fs(13.5)};color:{th["muted"]}">{esc(next((k for (l2, a2, k) in P.index_items if a2 == an), ""))}</span></a>' for l, an in P.nav_items[:7 if P.W > P.HT else 4] if next((k for (l2, a2, k) in P.index_items if a2 == an), ""))
             extra += f'<div class="box" style="flex:none"><span class="k">{esc(sec.get("map_label", "The top bar, on every page"))}</span><div style="display:grid;grid-template-columns:1fr 1fr;gap:0 28px">{items}</div></div>'
         if sec.get('months'):
-            ms = ''.join(f'<a href="#{an}" style="display:flex;align-items:center;justify-content:center;border-radius:12px;background:{th["ink"]};color:{th["paper"]};font:600 15px \'{th["body"]}\'">{esc(lb)}</a>' for lb, an in getattr(P, 'head_start_links', []))
+            hs_style = f'background:{th["paper"]};color:{th["ink"]};box-shadow:inset 0 0 0 2px {th["ink"]}' if P.gray else f'background:{th["ink"]};color:{th["paper"]}'
+            ms = ''.join(f'<a href="#{an}" style="display:flex;align-items:center;justify-content:center;border-radius:12px;{hs_style};font:600 15px \'{th["body"]}\'">{esc(lb)}</a>' for lb, an in getattr(P, 'head_start_links', []))
             ms += ''.join(f'<a href="#m{i + 1:02d}" style="display:flex;align-items:center;justify-content:center;border-radius:12px;background:{P.tint(i, "55")};font:600 15px \'{th["body"]}\'">{MONTHS[i]}{"" if P.undated else " " + str(P.year)}</a>' for i in range(12))
             extra += f'<div class="box" style="flex:1"><span class="k">{esc(sec.get("months_label", "Jump back in: tap this month"))}</span><div style="flex:1;display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:1fr;gap:10px">{ms}</div></div>'
         if not extra:
@@ -411,7 +414,7 @@ def m_year(P, sec):
         blocks += f'<div style="display:flex;flex-direction:column;gap:4px"><a href="#m{m:02d}" class="k" style="color:{th["ink"]};font-size:11px">{MONTHS[m - 1]}</a><div class="cal" style="font-size:9px">{cells}</div></div>'
     title = 'Year at a glance' if P.undated else f'{P.year} at a glance'
     _register(P, sec, 'Year', 'year', 'Calendar')
-    chips = ''.join(f'<a href="#{a_}" style="display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:{P.rpill}px;background:{th["ink"]};color:{th["paper"]};font:600 11px \'{th["body"]}\';letter-spacing:.06em;text-transform:uppercase">{esc(l_)} {arrow("r", 12)}</a>' for l_, a_ in sec.get('links', []))
+    chips = ''.join(f'<a href="#{a_}" style="display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:{P.rpill}px;{(f'background:{th["paper"]};color:{th["ink"]};box-shadow:inset 0 0 0 1.5px {th["ink"]}') if P.gray else (f'background:{th["ink"]};color:{th["paper"]}')};font:600 11px \'{th["body"]}\';letter-spacing:.06em;text-transform:uppercase">{esc(l_)} {arrow("r", 12)}</a>' for l_, a_ in sec.get('links', []))
     P.page('year', P.head('Overview', title, right=f'<div style="display:flex;gap:12px;align-items:center">{chips}<span class="k">{"Tap a month" if P.undated else "Tap any date"}</span></div>') + f'<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px 22px;flex:1">{blocks}</div>', active='year')
 
 
@@ -438,16 +441,21 @@ def m_checklist(P, sec):
     P.page(a, P.head(sec.get('kicker', ''), sec['label']) + f'<div class="row" style="flex:1">{cols}</div>', active=a)
 
 
-@module('table', 'Table page. label, kicker, headers, rows, first_column (pre-filled), anchor',
-        params={'label': 'str', 'headers': 'list', 'rows': 'int', 'first_column': 'list', 'anchor': 'str'})
+@module('table', 'Table page. label, kicker, headers, rows, first_column (pre-filled), anchor, check_columns (headers drawn as a narrow column of tick boxes), dividers (column rules)',
+        params={'label': 'str', 'headers': 'list', 'rows': 'int', 'first_column': 'list', 'anchor': 'str', 'check_columns': 'list of header names', 'dividers': 'bool'})
 def m_table(P, sec):
     th = P.th; a = sec.get('anchor') or re.sub(r'[^a-z0-9]', '', sec['label'].lower())[:12]
     hd = sec['headers']; n = len(hd); first = sec.get('first_column')
-    head = ''.join(f'<span class="k" style="padding:6px 8px">{esc(h)}</span>' for h in hd)
-    body = ''.join(f'<div style="display:grid;grid-template-columns:repeat({n},1fr);border-bottom:1px solid {th["line"]};height:30px;align-items:center">' +
-                   ''.join(f'<span style="padding:0 8px;font-size:12px;font-weight:600">{esc(first[r]) if (first and j == 0 and r < len(first)) else ""}</span>' for j in range(n)) + '</div>' for r in range(sec.get('rows', 15)))
+    checks = set(sec.get('check_columns') or []); div = sec.get('dividers', False)
+    cols = ' '.join(f'{68 * P.scale:.0f}px' if h in checks else '1fr' for h in hd) if (checks or div) else f'repeat({n},1fr)'
+    sep = lambda j: f'border-left:1px solid {th["line"]};' if (div and j > 0) else ''
+    box = f'<i style="width:15px;height:15px;border:1.4px solid {th["muted"]};border-radius:3px;display:block;margin:auto"></i>'
+    head = ''.join(f'<span class="k" style="padding:6px 8px;{"text-align:center;" if h in checks else ""}">{esc(h)}</span>' for h in hd)
+    cell = lambda r, j: (box if hd[j] in checks else (esc(first[r]) if (first and j == 0 and r < len(first)) else ''))
+    body = ''.join(f'<div style="display:grid;grid-template-columns:{cols};border-bottom:1px solid {th["line"]};height:30px;align-items:{"stretch" if div else "center"}">' +
+                   ''.join(f'<span style="padding:0 8px;font-size:12px;font-weight:600;{sep(j)}{"display:flex;align-items:center" if div else ""}">{cell(r, j)}</span>' for j in range(n)) + '</div>' for r in range(sec.get('rows', 15)))
     _register(P, sec, sec['label'], a, sec.get('kicker', 'Tracker'))
-    P.page(a, P.head(sec.get('kicker', ''), sec['label']) + f'<div class="box" style="flex:1;gap:0"><div style="display:grid;grid-template-columns:repeat({n},1fr);border-bottom:1.5px solid {th["ink"]}">{head}</div>{body}</div>', active=a)
+    P.page(a, P.head(sec.get('kicker', ''), sec['label']) + f'<div class="box" style="flex:1;gap:0"><div style="display:grid;grid-template-columns:{cols};border-bottom:1.5px solid {th["ink"]}">{head}</div>{body}</div>', active=a)
 
 
 @module('year_pixels', 'Year in pixels: color one square per day for mood or energy. label, keys', params={'label': 'str', 'keys': 'list'})
@@ -465,7 +473,7 @@ def m_pixels(P, sec):
         params={'label': 'str', 'kicker': 'str', 'steps': 'list', 'tip': 'str', 'anchor': 'str'})
 def m_guide(P, sec):
     a = sec.get('anchor') or re.sub(r'[^a-z0-9]', '', sec['label'].lower())[:12]
-    steps = ''.join(f'<div class="box step" style="padding:18px 20px;gap:14px;flex-direction:row"><b style="width:36px;height:36px;font-size:16px">{i}</b><div style="display:flex;flex-direction:column;gap:8px;flex:1"><p class="h" style="font-size:24px">{esc(st[0])}</p><p style="font-size:{P.fs(14.5)};line-height:1.5;color:{P.th["muted"]}">{esc(st[1])}</p>{(f'<a href="#{st[2]}" style="align-self:flex-start;margin-top:auto;padding:8px 16px;border-radius:{P.rpill}px;background:{P.th["ink"]};color:{P.th["paper"]};font:600 12px \'{P.th["body"]}\';letter-spacing:.08em;text-transform:uppercase">Go there {arrow("r")}</a>') if len(st) > 2 and st[2] else ''}</div></div>' for i, st in enumerate(sec['steps'], 1))
+    steps = ''.join(f'<div class="box step" style="padding:18px 20px;gap:14px;flex-direction:row"><b style="width:36px;height:36px;font-size:16px">{i}</b><div style="display:flex;flex-direction:column;gap:8px;flex:1"><p class="h" style="font-size:24px">{esc(st[0])}</p><p style="font-size:{P.fs(14.5)};line-height:1.5;color:{P.th["muted"]}">{esc(st[1])}</p>{(f'<a href="#{st[2]}" style="align-self:flex-start;margin-top:auto;padding:8px 16px;border-radius:{P.rpill}px;background:{P.btn};color:{P.th["paper"]};font:600 12px \'{P.th["body"]}\';letter-spacing:.08em;text-transform:uppercase">Go there {arrow("r")}</a>') if len(st) > 2 and st[2] else ''}</div></div>' for i, st in enumerate(sec['steps'], 1))
     tip = f'<div class="box fill" style="margin-top:auto"><span class="k">Tip</span><span style="font-size:13px;line-height:1.45">{esc(sec["tip"])}</span></div>' if sec.get('tip') else ''
     _register(P, sec, sec['label'], a, sec.get('kicker', 'Start here'))
     P.page(a, P.head(sec.get('kicker', 'Start here'), sec['label']) + f'<div style="display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:1fr;gap:14px;flex:1">{steps}</div>%%GUIDE_EXTRA:{a}%%{tip}', active=a, deco=True)
@@ -478,7 +486,7 @@ def m_link_test(P, sec):
     th = P.th; a = sec.get('anchor', 'linktest')
     targets = [('A month page', 'm01'), ('The year', 'year'), ('Contents', 'index')]
     btns = ''.join(f'<a href="#{t}" style="padding:16px 22px;border-radius:14px;background:{th["soft"]};font:600 17px \'{th["body"]}\';display:flex;justify-content:space-between;align-items:center"><span>{esc(l)}</span><span>{arrow('r')}</span></a>' for l, t in targets)
-    fixes = _chk(4, P.eink.get('link_test_fixes') or ["Turn the pen off (read or view mode)", "Open the file in a PDF planner app, not Files or Photos", "Re-import the PDF, do not convert it", "Still stuck? Message us on Etsy and we will help"])
+    fixes = _chk(4, P.eink.get('link_test_fixes') or ["Turn the pen off (read or view mode)", f"Open the file in a {'note' if P.noun == 'journal' else 'PDF planner'} app, not Files or Photos", "Re-import the PDF, do not convert it", "Still stuck? Send the shop an Etsy message" if P.noun == 'journal' else "Still stuck? Message us on Etsy and we will help"])
     pen = P.eink.get('pen_label', 'Test the pen: turn it on and write your name here')
     ltmap = '%%LT_MAP%%' if P.HT > P.W else ''  # portrait: the tall left column gets a map of the top bar (no half-empty page)
     inner = P.head('Setup check', sec.get('label', 'Do your links work?')) + f'''
@@ -740,7 +748,7 @@ def star_row(P, n=5, size=15, gap=4):
         pts.append(f'{7.5 + r * math.cos(ang):.2f},{7.8 + r * math.sin(ang):.2f}')
     star = ' '.join(pts)
     w = n * size + (n - 1) * gap
-    body = ''.join(f'<polygon transform="translate({i * (size + gap)} 0) scale({size / 15:.3f})" points="{star}" fill="none" stroke="{P.th["muted"]}" stroke-width="1.2" stroke-linejoin="round"/>' for i in range(n))
+    body = ''.join(f'<polygon transform="translate({i * (size + gap)} 0) scale({size / 15:.3f})" points="{star}" fill="none" stroke="{P.th["accent"]}" stroke-width="1.2" stroke-linejoin="round"/>' for i in range(n))
     return f'<svg width="{w}" height="{size}" viewBox="0 0 {w} {size}" style="flex:none">{body}</svg>'
 
 
@@ -794,7 +802,7 @@ def m_books(P, sec):
     for i in range(1, n + 1):
         details = (f'<div class="box" style="gap:12px;padding:12px 14px">'
                    f'{field(P, "Title")}{field(P, "Author")}'
-                   f'<div class="row" style="align-items:flex-end;gap:22px">{field(P, "Genre")}<div style="display:flex;gap:12px;align-items:center;flex:none"><span class="k">Format</span>{tick_options(P, ["Print", "Ebook", "Audio"])}</div></div>'
+                   f'<div class="row" style="align-items:flex-end;gap:22px">{field(P, "Genre")}<div style="display:flex;gap:12px;align-items:center;flex:none"><span class="k">Format</span>{tick_options(P, ["Print", "Ebook", "Audio"])}{tick_options(P, [""])}<span style="width:{56 * P.scale:.0f}px;margin-left:-6px;border-bottom:1.2px solid {th["line"]};height:{18 * P.scale:.0f}px"></span></div></div>'
                    f'<div class="row" style="gap:22px">{field(P, "Started")}{field(P, "Finished")}{field(P, "Pages", "flex:.7")}</div>'
                    f'<div class="row" style="align-items:center;justify-content:space-between;gap:22px"><div style="display:flex;gap:12px;align-items:center"><span class="k">Stars</span>{star_row(P, size=20, gap=6)}</div>'
                    f'<div style="display:flex;gap:12px;align-items:center"><span class="k">Would I reread?</span>{tick_options(P, ["Yes", "Maybe", "No"])}</div></div></div>')
