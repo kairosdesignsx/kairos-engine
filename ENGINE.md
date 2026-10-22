@@ -61,8 +61,10 @@ Paths below are relative to the repo root (where this file is). Run `./setup.sh`
    config `check.max_build_retries` times. Still failing: queue it marked "needs help" with the reasons.
 
 ## Stage 7. Queue
-`python3 stages/enqueue.py <pid>` prepares the review payload; publish it to the Review Queue artifact
-(images as files, product and evidence rows in its database).
+1. `python3 stages/enqueue.py <pid>` prepares the review payload and data/handoff/<pid>/ (files, photos, listing.json, listing.txt).
+2. Publish it to the Review Queue artifact (images as files, product and evidence rows in its database).
+3. Copy data/handoff/<pid>/ to the laptop at Kairos\data\products\<pid>\ with device_commit_files, in the same step.
+   Darren reviews the real file there, and an approval must find everything the laptop needs to list it.
 
 ## Stage 8. Feedback, laptop results, stats (start of each night, before Stage 1)
 1. Review Queue rows to files: ArtifactData `list` collection `reviews` and `products` with

@@ -121,7 +121,31 @@ def run(pid):
            "files": build['files'], "evidence": evidence, "brief": brief_full, "research": research, "engine": {"brief_id": brief['brief_id'], "product_id": pid},
            "claude_note": ' '.join(check.get('notes', []) + [DEVICE_TEST.get(brief['line'], DEVICE_TEST['planner'])])}
     store.write(os.path.join(d, 'queue.json'), {"doc": doc, "files": files})
+    _handoff(pid, d, listing, build)
     return {"ok": True, "images": len(files), "queue": os.path.join(d, 'queue.json')}
+
+
+def _handoff(pid, d, listing, build):
+    """Everything the laptop needs to review and list the product, mirroring Kairos\\data\\products\\<pid>\\:
+    files/ (what the buyer downloads), photos/ (listing photos in order), listing.json and listing.txt (copy-paste ready)."""
+    import shutil
+    out = os.path.join(store.DATA, 'handoff', pid)
+    shutil.rmtree(out, ignore_errors=True)
+    os.makedirs(os.path.join(out, 'files')); os.makedirs(os.path.join(out, 'photos'))
+    for f in build['files']:
+        shutil.copy(os.path.join(d, 'files', f['name']), os.path.join(out, 'files', f['name']))
+    photos = sorted(f for f in os.listdir(os.path.join(d, 'photos')) if f.startswith('photo-') and f.endswith('.jpg'))
+    for f in photos:
+        shutil.copy(os.path.join(d, 'photos', f), os.path.join(out, 'photos', f))
+    shutil.copy(os.path.join(d, 'listing.json'), os.path.join(out, 'listing.json'))
+    alt = listing.get('alt') or {}
+    lines = ['TITLE', listing['title'], '', 'PRICE', f"${listing['price']}", '', 'TAGS', ', '.join(listing['tags']), '',
+             'DESCRIPTION', listing['description'], '', 'PHOTOS (upload in this order, with this alt text)']
+    for f in photos:
+        lines.append(f"{f}: {alt.get(f[len('photo-00-'):-4], '')}")
+    lines += ['', 'DIGITAL FILES', *[f['name'] for f in build['files']]]
+    open(os.path.join(out, 'listing.txt'), 'w').write('\n'.join(lines) + '\n')
+    return out
 
 
 if __name__ == '__main__':

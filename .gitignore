@@ -14,3 +14,4 @@ data/jobs/
 laptop/.env
 laptop/tokens.json
 *.env
+data/handoff/

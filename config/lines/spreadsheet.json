@@ -402,5 +402,9 @@
   "c_currency": [
    "currency_setting"
   ]
- }
+ },
+ "etsy_taxonomy": [
+  "Templates",
+  "Calendars & Planners"
+ ]
 }

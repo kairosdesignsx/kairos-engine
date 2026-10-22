@@ -174,18 +174,20 @@ def job_competitor_photos(job):
 
 
 def taxonomy_id(name_parts=('Calendars & Planners',)):
+    """Etsy category id for the first name in name_parts that exists (names are tried in order of preference)."""
     cache = os.path.join(HERE, 'taxonomy.json')
     if os.path.exists(cache):
         nodes = json.load(open(cache))
     else:
         nodes = call('GET', '/seller-taxonomy/nodes').get('results', [])
         json.dump(nodes, open(cache, 'w'))
-    stack = list(nodes)
-    while stack:
-        n = stack.pop()
-        if n.get('name') in name_parts:
-            return n['id']
-        stack += n.get('children', [])
+    for want in name_parts:
+        stack = list(nodes)
+        while stack:
+            n = stack.pop(0)
+            if n.get('name') == want:
+                return n['id']
+            stack += n.get('children', [])
     raise RuntimeError('taxonomy not found: ' + str(name_parts))
 
 
@@ -200,7 +202,9 @@ def job_publish(job):
     log('publish', job['product_id'], 'draft listing', lid)
     for rank, rel in enumerate(job['photos'], 1):
         p = os.path.join(KAIROS, rel)
-        call('POST', f'/shops/{shop}/listings/{lid}/images', form={'rank': rank}, files={'image': (os.path.basename(p), open(p, 'rb').read())}, auth=True)
+        alt = (job.get('alt') or [])[rank - 1] if rank <= len(job.get('alt') or []) else ''
+        call('POST', f'/shops/{shop}/listings/{lid}/images', form={'rank': rank, 'alt_text': alt[:500]} if alt else {'rank': rank},
+             files={'image': (os.path.basename(p), open(p, 'rb').read())}, auth=True)
     for rank, rel in enumerate(job['files'], 1):
         p = os.path.join(KAIROS, rel)
         call('POST', f'/shops/{shop}/listings/{lid}/files', form={'name': os.path.basename(p), 'rank': rank},
