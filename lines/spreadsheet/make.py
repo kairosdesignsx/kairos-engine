@@ -93,7 +93,7 @@ def build(brief, pdir, files_dir, shots_dir, max_mb):
     shots(vcalc, tabs, anchors, vdir, os.path.join(vwork, 'calc'))
     mb = os.path.getsize(path) / 1e6
     rec = {"files": [{"name": name, "mb": round(mb, 2), "tabs": len(tabs)}], "tabs": tabs,
-           "page_modules": [[a, m] for a, t, m in res['sheets']], "nav": res['nav'], "formula_errors": errs[:50],
+           "page_modules": [[a, m] for a, t, m in res['sheets']], "tab_titles": {a: t for a, t, m in res['sheets']}, "nav": res['nav'], "formula_errors": errs[:50],
            "export_pages": n_pages, "shots": shot_files, "overflow": [], "links": len(res['nav']) * len(tabs),
            "size_px": [1650, 1275]}
     ok = mb <= max_mb and not errs and n_pages == len(tabs)

@@ -14,7 +14,12 @@ FOCUS = {'start': (0, 0, 1, .66), 'setup': (0, 0, 1, 1), 'dashboard': (0, 0, 1, 
 NAMES = {'start': 'Start here', 'setup': 'Setup', 'dashboard': 'Dashboard', 'bills': 'Bill tracker', 'debt': 'Debt payoff', 'savings': 'Savings goals'}
 
 
+TITLES = {}
+
+
 def tab_name(a):
+    if a in TITLES:
+        return TITLES[a]
     if a.startswith('m') and a[1:].isdigit():
         return MONTHS[int(a[1:]) - 1]
     return NAMES.get(a, a)
@@ -49,9 +54,32 @@ def laptop(src, w, x, y, caption='', z=1):
             f'<div style="height:{w * .028:.0f}px;margin:0 -{w * .06:.0f}px;background:linear-gradient(#d9dade,#a9abb1);border-radius:0 0 {w * .03:.0f}px {w * .03:.0f}px;box-shadow:0 40px 70px rgba(20,25,35,.28)"></div>{cap}</div>')
 
 
+def window(src, x, y, max_w, max_h, caption=''):
+    """A browser-style window sized to the tab view, for tabs taller than a laptop screen."""
+    from PIL import Image
+    w0, h0 = Image.open(src[7:]).size
+    bar = 46
+    scale = min(max_w / w0, (max_h - bar) / h0)
+    w, h = int(w0 * scale), int(h0 * scale)
+    cap = f'<div style="position:absolute;left:50%;bottom:-80px;transform:translateX(-50%);white-space:nowrap;font:600 36px var(--b);letter-spacing:.06em;text-transform:uppercase;opacity:.75">{caption}</div>' if caption else ''
+    return (f'<div style="position:absolute;left:{x}px;top:{y + (max_h - h - bar) // 2}px;width:{w}px">'
+            f'<div style="height:{bar}px;background:#e9ecef;border-radius:18px 18px 0 0;display:flex;gap:14px;align-items:center;padding-left:24px">'
+            f'<span style="width:16px;height:16px;border-radius:50%;background:#f28b82"></span><span style="width:16px;height:16px;border-radius:50%;background:#fdd663"></span><span style="width:16px;height:16px;border-radius:50%;background:#81c995"></span></div>'
+            f'<img src="{src}" style="width:{w}px;height:{h}px;display:block;background:#fff;border-radius:0 0 18px 18px;box-shadow:0 40px 70px rgba(20,25,35,.28)">{cap}</div>')
+
+
+def screen(src, x, y, w, caption, left_side=True):
+    """Laptop for wide tab views, window for tall ones, so the text stays as large as possible."""
+    from PIL import Image
+    w0, h0 = Image.open(src[7:]).size
+    if w0 / h0 >= 1.35:
+        return laptop(src, w, x, y, caption)
+    return window(src, x, 110, w, 1760, caption)
+
+
 def card(src, caption):
-    return (f'<div style="display:flex;flex-direction:column;gap:16px;align-items:center"><div style="width:100%;aspect-ratio:16/10;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 18px 36px rgba(20,25,35,.16)">'
-            f'<img src="{src}" style="width:100%;height:100%;object-fit:contain;object-position:center top;background:#fff"></div><p style="font:600 36px var(--b);letter-spacing:.06em;text-transform:uppercase;opacity:.75">{caption}</p></div>')
+    return (f'<div style="display:flex;flex-direction:column;gap:16px;align-items:center"><div style="width:100%;background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 18px 36px rgba(20,25,35,.16)">'
+            f'<img src="{src}" style="width:100%;display:block;background:#fff"></div><p style="font:600 36px var(--b);letter-spacing:.06em;text-transform:uppercase;opacity:.75">{caption}</p></div>')
 
 
 def base(th, body, dark=False):
@@ -77,6 +105,7 @@ body{{--b:'{Bf}';width:2700px;height:2025px;overflow:hidden;position:relative;fo
 
 def scenes(brief, listing, build, shots_dir, out_dir):
     th = resolve_theme(brief['spec'].get('theme', 'slate'))
+    TITLES.clear(); TITLES.update(build.get('tab_titles') or {})
     P = lambda a, f=None: crop(shots_dir, out_dir, a, f)
     have = {f[:-4] for f in os.listdir(shots_dir) if f.endswith('.png')}
     copy = listing.get('photo_copy', {})
@@ -94,7 +123,7 @@ def scenes(brief, listing, build, shots_dir, out_dir):
         B_ = lambda body: base(th, body, dark)
         T = dict(th, muted='#C9D3DE') if dark else th
         if i == 0:
-            lap = laptop(P(pg[0], fx), 1420, 1180, 330, tab_name(pg[0])) if pg else ''
+            lap = screen(P(pg[0], fx), 1180, 330, 1420, esc(tab_name(pg[0]))) if pg else ''
             S[key] = B_(f'''<div style="position:absolute;left:150px;top:0;bottom:0;width:960px;display:flex;flex-direction:column;justify-content:center;gap:40px">
               {label or '<p class="k">Google Sheets and Excel</p>'}<p class="h" style="font-size:150px">{esc(listing.get("hero_title") or brief["spec"]["title"])}</p>
               <p style="font-size:58px;color:{T["muted"]};line-height:1.25">{head}</p>{pts}
@@ -104,16 +133,28 @@ def scenes(brief, listing, build, shots_dir, out_dir):
             S[key] = B_(f'''<div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:90px">
               <div style="text-align:center">{label or '<p class="k">How it works</p>'}<p class="h" style="font-size:140px;margin-top:24px">{head}</p></div>
               <div style="display:grid;grid-template-columns:repeat(3,700px);gap:70px">{''.join(f'<div style="background:#fff;color:{th["header"]};border-radius:40px;padding:70px 60px;box-shadow:0 20px 40px rgba(20,25,35,.1);text-align:center"><p style="font:600 46px var(--b);color:#5E6B78;letter-spacing:.2em">{n + 1}</p><p class="h" style="font-size:88px;margin:16px 0 26px">{esc(a)}</p><p style="font-size:46px;color:#5E6B78;line-height:1.35">{esc(b)}</p></div>' for n, (a, b) in enumerate(steps[:3]))}</div></div>''')
-        elif len(pg) >= 3:
-            cells = ''.join(card(P(a, fx or (0, 0, .62, .62)), esc(tab_name(a))) for a in pg[:4])  # cards are small: zoom into the top-left of each tab
-            S[key] = B_(f'''<div style="position:absolute;left:150px;top:0;bottom:0;width:780px;display:flex;flex-direction:column;justify-content:center;gap:34px">
+        elif len(pg) >= 4:  # "what's inside": every tab by name, large and readable, core tabs first
+            tabs = build['tabs']
+            core = [t for t in tabs if t not in [TITLES.get(a) for a in ('bills', 'paycheck', 'debt', 'savings')]]
+            extra = [t for t in tabs if t not in core]
+            months = [t for t in core if t in MONTHS]
+            core_names = [t for t in core if t not in MONTHS]
+            chip = lambda t, solid: f'<span style="display:inline-block;font:600 46px var(--b);padding:20px 38px;margin:0 18px 22px 0;border-radius:22px;background:{th["accent"] if solid else "#fff"};color:{"#fff" if solid else th["header"]};border:3px solid {th["accent"]}">{esc(t)}</span>'
+            S[key] = B_(f'''<div style="position:absolute;left:150px;top:0;bottom:0;width:900px;display:flex;flex-direction:column;justify-content:center;gap:34px">
+              {label}<p class="h" style="font-size:118px">{head}</p>{pts}</div>
+              <div style="position:absolute;left:1180px;right:130px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;gap:24px">
+                <p class="k">The core: {len(core)} tabs</p><div>{''.join(chip(t, True) for t in core_names)}{chip(f"{len(months)} month tabs: {months[0]} to {months[-1]}", True) if months else ''}</div>
+                <p class="k" style="margin-top:30px">Optional extras: {len(extra)} tabs</p><div>{''.join(chip(t, False) for t in extra)}</div></div>''')
+        elif len(pg) == 3:
+            cells = ''.join(card(P(a, fx), esc(tab_name(a))) for a in pg)
+            S[key] = B_(f'''<div style="position:absolute;left:150px;top:0;bottom:0;width:760px;display:flex;flex-direction:column;justify-content:center;gap:34px">
               {label or '<p class="k">What\'s inside</p>'}<p class="h" style="font-size:118px">{head}</p>{pts}</div>
-              <div style="position:absolute;left:1020px;right:120px;top:0;bottom:0;display:grid;grid-template-columns:1fr 1fr;gap:60px 50px;align-content:center">{cells}</div>''')
+              <div style="position:absolute;left:1000px;right:110px;top:0;bottom:0;display:flex;flex-direction:column;justify-content:center;gap:90px">{cells}</div>''')
         else:
             left = i % 2 == 1
             w = 1560
             lx = 130 if left else 2700 - 130 - w
-            lap = laptop(P(pg[0], fx), w, lx, 330, tab_name(pg[0])) if pg else ''
+            lap = screen(P(pg[0], fx), lx, 330, w, esc(tab_name(pg[0]))) if pg else ''
             if c.get('steps'):
                 pts = ''.join(f'<div style="display:flex;gap:26px;align-items:flex-start"><span style="flex:none;width:74px;height:74px;border-radius:50%;background:{th["accent"]};color:#fff;display:flex;align-items:center;justify-content:center;font:700 40px var(--b)">{n + 1}</span><div><p class="h" style="font-size:56px">{esc(a)}</p><p style="font-size:42px;color:{T["muted"]};line-height:1.3;margin-top:8px">{esc(b)}</p></div></div>' for n, (a, b) in enumerate(c['steps'][:3]))
             tx = 'right:130px' if left else 'left:150px'

@@ -15,6 +15,8 @@ import datetime, json, re
 from openpyxl import Workbook
 from openpyxl.chart import BarChart, PieChart, Reference
 from openpyxl.chart.label import DataLabelList
+from openpyxl.chart.text import RichText
+from openpyxl.drawing.text import CharacterProperties, Font as DFont, Paragraph, ParagraphProperties
 from openpyxl.formatting.rule import CellIsRule, FormulaRule
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Protection, Side
 from openpyxl.utils import get_column_letter as COL
@@ -68,6 +70,23 @@ def resolve_theme(t):
 
 def motif(th, where, seed=1, size=150):
     return ''
+
+
+def chart_font(chart, font, size=900):
+    """Axis, legend, label and title text in the workbook font (charts otherwise fall back to Calibri)."""
+    rich = lambda sz, b=False: RichText(p=[Paragraph(pPr=ParagraphProperties(defRPr=CharacterProperties(latin=DFont(typeface=font), sz=sz, b=b)), endParaRPr=CharacterProperties())])
+    for ax in (getattr(chart, 'x_axis', None), getattr(chart, 'y_axis', None)):
+        if ax is not None:
+            ax.txPr = rich(size)
+    if chart.legend is not None:
+        chart.legend.txPr = rich(size)
+    if getattr(chart, 'dataLabels', None) is not None:
+        chart.dataLabels.txPr = rich(size)
+    if chart.title is not None and chart.title.tx is not None and chart.title.tx.rich is not None:
+        for para in chart.title.tx.rich.p:
+            para.pPr = ParagraphProperties(defRPr=CharacterProperties(latin=DFont(typeface=font), sz=1300, b=True))
+            for run in (para.r or []):
+                run.rPr = CharacterProperties(latin=DFont(typeface=font), sz=1300, b=True)
 
 
 def hexc(c):
@@ -134,7 +153,7 @@ class Book:
             if widths and i < len(widths) and widths[i]:
                 ws.column_dimensions[COL(c + i)].width = widths[i]
         wraps = any(len(str(l)) > (ws.column_dimensions[COL(c + i)].width or 13) * 0.95 for i, l in enumerate(labels))
-        ws.row_dimensions[r].height = 34 if wraps else 22
+        ws.row_dimensions[r].height = 34 if wraps else 20
 
     def inp(self, cell, value=None, fmt=None):
         """An input cell: unlocked, soft fill, so buyers know where to type."""
@@ -223,7 +242,7 @@ def m_setup(B, sec):
     B.title(ws, 'Setup', 'Fill this in once. Every other tab updates from here.')
     ws.cell(6, 2, 'Year').font = B.font(11, True); B.inp(ws.cell(6, 3), B.year or datetime.date.today().year + 1, '0')
     ws.cell(7, 2, 'Currency').font = B.font(11, True); ws.cell(7, 3, B.cur).font = B.font(11)
-    B.wb.defined_names['Year'] = DefinedName('Year', attr_text=f"'{ws.title}'!$C$6")
+    B.wb.defined_names['BudgetYear'] = DefinedName('BudgetYear', attr_text=f"'{ws.title}'!$C$6")
     # income
     B.head(ws, 9, 2, ['Income source', 'Monthly amount'], [28, 16])
     for i in range(8):
@@ -268,6 +287,10 @@ def m_months(B, sec):
         for r in range(7, 7 + n_log):
             B.inp(ws.cell(r, 2), None, 'mmm d'); ws.cell(r, 2).alignment = Alignment(horizontal='center'); B.inp(ws.cell(r, 3)); ws.cell(r, 3).alignment = Alignment(indent=1); c = ws.cell(r, 4); B.inp(c); dv.add(c); B.inp(ws.cell(r, 5), None, B.money)
         logl = 6 + n_log
+        for rr in range(7, logl + 1):
+            ws.row_dimensions[rr].height = 20
+        nt = ws.cell(logl + 1, 2, f'Need more than {n_log} rows? Review > Unprotect Sheet (no password), then insert rows above the last one.')
+        nt.font = B.font(9, italic=True, color=B.th['muted'])
         # month totals at the top right, so the answer to "how am I doing" is the first thing on the tab
         t = 6
         rows = [('Income this month', f"={S['income_total']}"), ('Spent', f'=SUM(E7:E{logl})'), ('Left over', f'=H{t}-H{t + 1}'),
@@ -332,6 +355,8 @@ def m_dashboard(B, sec):
         r = 7 + i; sr = S['cat_first'] + i
         B.calc(ws.cell(r, 10), f"=IF(H{r}=\"\",\"\",'{S['title']}'!F{sr})")
     ws.column_dimensions['J'].hidden = True
+    for rr in range(7, 7 + ncat):
+        ws.row_dimensions[rr].height = 20
     g0 = 23
     B.head(ws, g0, 2, ['Group', 'Spent this year'])
     for k, grp in enumerate(GROUPS):
@@ -345,6 +370,7 @@ def m_dashboard(B, sec):
     for ser, col in zip(bar.series, [B.th['accent'], B.th['header']]):
         ser.graphicalProperties.solidFill = hexc(col); ser.graphicalProperties.line.solidFill = hexc(col)
     bar.y_axis.numFmt = '"' + B.cur + '"#,##0'; bar.y_axis.number_format = '"' + B.cur + '"#,##0'
+    chart_font(bar, B.th['font'])
     ws.add_chart(bar, f'B{top}')
     ws.freeze_panes = 'A5'
     pie = PieChart(); pie.title = 'Where the money went'; pie.height = 7.5; pie.width = 11
@@ -355,8 +381,9 @@ def m_dashboard(B, sec):
     from openpyxl.chart.series import DataPoint
     for k, col in enumerate([B.th['header'], B.th['accent'], '#8FB8A8', B.th['warn']]):
         pt = DataPoint(idx=k); pt.graphicalProperties.solidFill = hexc(col); pie.series[0].dPt.append(pt)
+    chart_font(pie, B.th['font'])
     ws.add_chart(pie, f'D{g0 - 1}')
-    B.views[ws.title] = f'B2:I{max(g0 + 14, 7 + min(ncat, len(B.cats)))}'
+    B.views[ws.title] = f'B2:I{max(g0 + 12, 7 + min(ncat, len(B.cats)))}'
     B.nav.insert(1 if B.nav and B.nav[0][0] == 'Start here' else 0, ('Dashboard', ws.title))
     B.protect(ws)
 
@@ -390,7 +417,7 @@ def m_debt(B, sec):
     m = ws.cell(6, 3); B.inp(m, 'Snowball'); dv = DataValidation(type='list', formula1='"Snowball,Avalanche"'); ws.add_data_validation(dv); dv.add(m)
     ws.cell(7, 2, 'Extra each month').font = B.font(11, True); B.inp(ws.cell(7, 3), 100, B.money)
     ws.cell(7, 4, 'Goes to the debt that is first in pay order.').font = B.font(9, italic=True, color=B.th['muted'])
-    B.head(ws, 9, 2, ['Debt', 'Balance', 'Rate (APR)', 'Minimum', 'Pay order', 'Months at minimum', 'Interest at minimum', 'Months with extra', 'Interest saved'], [24, 14, 12, 12, 11, 16, 18, 16, 16])
+    B.head(ws, 9, 2, ['Debt', 'Balance', 'Rate (APR)', 'Minimum', 'Pay order', 'Months at minimum', 'Interest at minimum', 'Months with extra', 'Interest saved'], [24, 14, 12, 12, 11, 18, 21, 19, 16])
     n = sec.get('rows', 10)
     for r in range(10, 10 + n):
         B.inp(ws.cell(r, 2)); B.inp(ws.cell(r, 3), None, B.money); B.inp(ws.cell(r, 4), None, '0.0%'); B.inp(ws.cell(r, 5), None, B.money)
@@ -413,14 +440,14 @@ def m_debt(B, sec):
 def m_savings(B, sec):
     ws = B.sheet('savings', sec.get('label', 'Savings goals'))
     B.title(ws, sec.get('label', 'Savings goals'), 'One line per goal. The bar fills as you save.')
-    B.head(ws, 6, 2, ['Goal', 'Target', 'Saved', 'Progress', 'Target date', 'Save per month', ''], [24, 14, 14, 10, 14, 16, 14])
+    B.head(ws, 6, 2, ['Goal', 'Target', 'Saved', 'Progress', 'Target date', 'Save per month', 'Progress bar'], [24, 14, 14, 10, 14, 16, 14])
     n = sec.get('rows', 10)
     for r in range(7, 7 + n):
         B.inp(ws.cell(r, 2)); B.inp(ws.cell(r, 3), None, B.money); B.inp(ws.cell(r, 4), None, B.money)
         B.calc(ws.cell(r, 5), f'=IF(OR(C{r}="",C{r}=0),"",MIN(1,D{r}/C{r}))', '0%')
         B.inp(ws.cell(r, 6), None, 'mmm yyyy')
         months = f'((YEAR(F{r})-YEAR(TODAY()))*12+MONTH(F{r})-MONTH(TODAY()))'
-        B.calc(ws.cell(r, 7), f'=IF(OR(C{r}="",F{r}=""),"",IF(D{r}>=C{r},"Reached",IF({months}<1,"Date passed: pick a new one",(C{r}-D{r})/{months})))', B.money)
+        B.calc(ws.cell(r, 7), f'=IF(OR(C{r}="",F{r}=""),"",IF(D{r}>=C{r},"Reached",IF({months}<0,"Date passed: pick a new one",(C{r}-D{r})/MAX(1,{months}))))', B.money)
         B.calc(ws.cell(r, 8), '=' + bar(f'E{r}')); ws.cell(r, 8).font = Font(name=B.th['font'], size=9, color=hexc(B.th['accent']))
     ws.freeze_panes = 'A7'
     B.views[ws.title] = 'B2:H12'
@@ -478,6 +505,7 @@ def m_start_check(B, sec):
         tx = ws.cell(r, 4, sec['tip']); ws.merge_cells(start_row=r, start_column=4, end_row=r, end_column=5)
         tx.font = B.font(10); tx.alignment = Alignment(wrap_text=True, vertical='center'); ws.row_dimensions[r].height = 15 * (len(sec['tip']) // 70 + 1)
     B.nav.insert(0, ('Start here', ws.title))
+    ws.freeze_panes = 'A5'
     B.protect(ws)
 
     def fill():
@@ -543,10 +571,10 @@ def m_paycheck(B, sec):
     if not getattr(B, 'bills', None):
         raise ValueError('paycheck needs a bills section before it')
     ws = B.sheet('paycheck', sec.get('label', 'Paycheck plan'))
-    B.title(ws, sec.get('label', 'Paycheck plan'), 'Paid weekly or every two weeks? See which bills each paycheck covers. Paid monthly? Skip this tab.')
+    B.title(ws, sec.get('label', 'Paycheck plan'), 'Paid weekly, every two weeks or twice a month? See which bills each paycheck covers. Paid monthly? Skip this tab.')
     FREQ = ['Weekly', 'Every 2 weeks', 'Twice a month', 'Monthly']
     ws.cell(6, 2, 'Next payday').font = B.font(11, True)
-    B.inp(ws.cell(6, 3), '=DATE(Year,1,1)+MOD(6-WEEKDAY(DATE(Year,1,1)),7)', 'mmm d, yyyy')
+    B.inp(ws.cell(6, 3), '=DATE(BudgetYear,1,1)+MOD(6-WEEKDAY(DATE(BudgetYear,1,1)),7)', 'mmm d, yyyy')
     ws.cell(7, 2, 'How often').font = B.font(11, True)
     fq = ws.cell(7, 3); B.inp(fq, sec.get('frequency', 'Every 2 weeks'))
     dv = DataValidation(type='list', formula1='"' + ','.join(FREQ) + '"'); ws.add_data_validation(dv); dv.add(fq)
@@ -563,7 +591,7 @@ def m_paycheck(B, sec):
         if i == 0:
             B.calc(ws.cell(r, 2), '=$C$6', 'ddd mmm d')
         else:
-            B.calc(ws.cell(r, 2), f'=IF(F{r - 1}="","",IF(F{r - 1}>DATE(Year,12,31),"",F{r - 1}))', 'ddd mmm d')
+            B.calc(ws.cell(r, 2), f'=IF(F{r - 1}="","",IF(F{r - 1}>DATE(BudgetYear,12,31),"",F{r - 1}))', 'ddd mmm d')
         B.inp(ws.cell(r, 3), f'=IF(B{r}="","",$C$8)', B.money)
         B.calc(ws.cell(r, 6), f'=IF(B{r}="","",{nxt(f"B{r}")})', 'mmm d')
         due = f"'{bl['title']}'!$C${bl['first']}:$C${bl['last']}"
@@ -571,7 +599,7 @@ def m_paycheck(B, sec):
         B.calc(ws.cell(r, 4), f'=IF(B{r}="","",SUMPRODUCT(({due}<>"")*(DATE(YEAR(B{r}),MONTH(B{r})+(DAY(B{r})>{due}),{due})<F{r})*{amt}))', B.money)
         B.calc(ws.cell(r, 5), f'=IF(B{r}="","",C{r}-D{r})', B.money, True)
     ws.conditional_formatting.add(f'E11:E{10 + n}', CellIsRule(operator='lessThan', formula=['0'], font=Font(color=hexc(B.th['warn']), bold=True)))
-    B.views[ws.title] = 'B2:F32'
+    B.views[ws.title] = 'B2:H32'
     B.nav.append(('Paycheck', ws.title))
     ws.freeze_panes = 'A11'
     B.protect(ws)
@@ -600,7 +628,7 @@ def sample_data(B):
             ws_b.cell(r, 2).value = name; ws_b.cell(r, 3).value = day; ws_b.cell(r, 4).value = amt; ws_b.cell(r, 5).value = auto
     if 'debt' in B.wb.sheetnames or any(m == 'debt' for _, _, m in B.sheets):
         ws_d = B.wb[[t for _, t, m in B.sheets if m == 'debt'][0]]
-        for i, (name, bal, rate, mn) in enumerate([('Credit card', 2400, 0.2299, 75), ('Car loan', 8200, 0.069, 210), ('Student loan', 14500, 0.055, 180)]):
+        for i, (name, bal, rate, mn) in enumerate([('Medical bill', 600, 0, 50), ('Credit card', 2400, 0.2299, 75), ('Car loan', 8200, 0.069, 210), ('Student loan', 14500, 0.055, 180)]):
             r = 10 + i
             ws_d.cell(r, 2).value = name; ws_d.cell(r, 3).value = bal; ws_d.cell(r, 4).value = rate; ws_d.cell(r, 5).value = mn
     if any(m == 'savings' for _, _, m in B.sheets):
@@ -658,8 +686,15 @@ def build(spec, path, photo_view=False):
     order = [t for a, t, m in B.sheets]
     B.wb._sheets.sort(key=lambda ws: (0 if ws.title == order[0] else 1 if any(t == ws.title and m == 'dashboard' for a, t, m in B.sheets) else 2, order.index(ws.title)))
     if photo_view:  # listing-photo render only: print just the useful range of each tab, so it fills the page
+        from openpyxl.utils import column_index_from_string as CI
         for t, rng in B.views.items():
-            B.wb[t].print_area = rng
+            ws = B.wb[t]
+            a, b = rng.split(':')
+            c1 = CI(re.match(r'[A-Z]+', b).group()); r1 = int(re.search(r'\d+', b).group())
+            longest = max((len(str(ws.cell(rr, 2).value or '')) for rr in (2, 3)), default=0) * 1.15
+            while sum((ws.column_dimensions[COL(c)].width or 13) for c in range(2, c1 + 1)) < longest:
+                c1 += 1
+            ws.print_area = f'{a}:{COL(c1)}{r1}'
     B.save(path)
     return {'tabs': [t for t in B.wb.sheetnames], 'sheets': B.sheets, 'nav': B.nav}
 
