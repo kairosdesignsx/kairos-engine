@@ -67,7 +67,8 @@ def process():
                    "files": [f"data/products/{eng}/files/{f['name']}" for f in build.get('files', [])],
                    "photos": [f"data/products/{eng}/photos/{f}" for f in photos],
                    "alt": [(listing.get('alt') or {}).get(f[len('photo-00-'):-4], '') for f in photos],
-                   "taxonomy": (store.read(os.path.join(store.ROOT, 'config', 'lines', f"{(store.read(os.path.join(d, 'brief.json')) or {}).get('line', 'planner')}.json")) or {}).get('etsy_taxonomy', ['Calendars & Planners'])}
+                   "taxonomy": (store.read(os.path.join(store.ROOT, 'config', 'lines', f"{(store.read(os.path.join(d, 'brief.json')) or {}).get('line', 'planner')}.json")) or {}).get('etsy_taxonomy', ['Calendars & Planners']),
+                   "taxonomy_id": (store.read(os.path.join(store.ROOT, 'config', 'lines', f"{(store.read(os.path.join(d, 'brief.json')) or {}).get('line', 'planner')}.json")) or {}).get('etsy_taxonomy_id')}
             store.write(os.path.join(store.DATA, 'jobs', 'outbox', f'publish-{eng}.json'), job)
             actions.append(f'publish job for {eng}')
         elif r.get('decision') == 'fix':

@@ -218,9 +218,10 @@ def taxonomy_id(name_parts=('Calendars & Planners',)):
 def job_publish(job):
     shop = shop_id()
     L = job['listing']
+    tax = job.get('taxonomy_id') or taxonomy_id(tuple(job.get('taxonomy', ['Calendars & Planners'])))
     form = {'quantity': 999, 'title': L['title'], 'description': L['description'], 'price': L['price'],
-            'who_made': 'i_did', 'when_made': 'made_to_order', 'taxonomy_id': taxonomy_id(tuple(job.get('taxonomy', ['Calendars & Planners']))),
-            'type': 'download', 'is_supply': 'false', 'tags': L['tags']}
+            'who_made': 'i_did', 'when_made': 'made_to_order', 'taxonomy_id': tax,
+            'type': 'download', 'is_supply': 'false', 'should_auto_renew': 'true', 'tags': L['tags']}
     created = call('POST', f'/shops/{shop}/listings', form=form, auth=True)
     lid = created['listing_id']
     log('publish', job['product_id'], 'draft listing', lid)
@@ -263,7 +264,44 @@ def job_stats(job):
     return {'at': time.time(), 'listings': rows}
 
 
-JOBS = {'competitor_photos': job_competitor_photos, 'publish': job_publish, 'stats': job_stats}
+def job_fix_listing(job):
+    """Change fields on one of OUR listings (for example category or auto-renew). Never touches other shops."""
+    shop = shop_id()
+    form = {k: v for k, v in job['fields'].items()}
+    r = call('PATCH', f"/shops/{shop}/listings/{job['listing_id']}", form=form, auth=True)
+    return {'listing_id': job['listing_id'], 'changed': list(form), 'now': {k: r.get(k) for k in list(form) + ['taxonomy_id', 'should_auto_renew', 'state']}}
+
+
+def job_inspect(job):
+    """Read-only: our own listings in full (to see every field Etsy exposes), and the category and attributes top competitors use."""
+    out = {'own': [], 'competitors': []}
+    shop = shop_id()
+    for lid in job.get('own', []):
+        rec = {'listing_id': lid}
+        try:
+            rec['listing'] = call('GET', f'/listings/{lid}', auth=True)
+            rec['properties'] = call('GET', f"/shops/{shop}/listings/{lid}/properties", auth=True).get('results', [])
+        except Exception as e:
+            rec['error'] = str(e)[:300]
+        out['own'].append(rec)
+    for lid in job.get('competitors', []):
+        rec = {'listing_id': str(lid)}
+        try:
+            info = call('GET', f'/listings/{lid}')
+            rec.update({k: info.get(k) for k in ('taxonomy_id', 'shop_id', 'who_made', 'when_made', 'should_auto_renew', 'is_customizable', 'is_personalizable', 'listing_type', 'style')})
+            try:
+                rec['properties'] = [{'name': x.get('property_name'), 'values': x.get('values')} for x in call('GET', f"/shops/{info['shop_id']}/listings/{lid}/properties").get('results', [])]
+            except Exception as e:
+                rec['properties_error'] = str(e)[:200]
+            time.sleep(0.3)
+        except Exception as e:
+            rec['error'] = str(e)[:300]
+        out['competitors'].append(rec)
+        log('inspect', lid, rec.get('taxonomy_id'), rec.get('error', ''))
+    return out
+
+
+JOBS = {'competitor_photos': job_competitor_photos, 'publish': job_publish, 'stats': job_stats, 'fix_listing': job_fix_listing, 'inspect': job_inspect}
 
 
 def once():
