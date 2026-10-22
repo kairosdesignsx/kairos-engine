@@ -439,7 +439,8 @@
    "muted": "#5E6B78",
    "paper": "#FFFFFF",
    "warn": "#C2410C",
-   "font": "Arial"
+   "font": "Arial",
+   "photo_bg": "navy_white"
   },
   "categories": [
    {
@@ -551,7 +552,7 @@
     "steps": [
      [
       "Open it in your app",
-      "Google Sheets: on drive.google.com choose New > File upload, pick the .xlsx, then open it with Google Sheets (File > Save as Google Sheets keeps a Sheets copy). Excel: double-click the file. There is no link to request and no access to wait for."
+      "Download the file from Etsy.com > Purchases on a computer (the Etsy phone app cannot download files) and save it; do not open it in a browser preview. Google Sheets: on drive.google.com choose New > File upload, pick the .xlsx, then open it with Google Sheets. Excel: double-click the file. There is no link to request and no access to wait for."
      ],
      [
       "Look at January, then clear it",
@@ -563,7 +564,7 @@
      ],
      [
       "Log spending in this month",
-      "Pick this month in the jump row below. Starting mid-year? Empty months stay out of your totals. Starting before January? Set the Year in Setup to 2026 for November and December, then download a fresh copy from your Etsy Purchases for 2027."
+      "Pick this month in the jump row below. Starting mid-year? Empty months stay out of your totals. Starting now, before the new year? Set the Year in Setup to this year and use October, November and December; in January keep that copy as last year's record and start this year in a fresh download, copying your Setup categories across."
      ],
      [
       "Check your Dashboard",
@@ -641,7 +642,7 @@
    {
     "module": "paycheck",
     "label": "Paycheck plan",
-    "rows": 27
+    "rows": 54
    },
    {
     "module": "debt",
@@ -686,5 +687,12 @@
   "Optional small line change: give the four extra tabs (Bills, Paycheck plan, Debt payoff, Savings goals) the muted tab colour and the core tabs the accent, so the core path is visible in the tab strip.",
   "Phone logging: the month log is the first four columns and may work well in the Google Sheets phone app. Do not put this in the listing until it has been tried on a phone.",
   "Year is null so Setup defaults to the build year + 1 (2027) and sample dates fall in January 2027. Listing copy and photo text must use the build's real tab count (r003)."
+ ],
+ "revisions": [
+  {
+   "at": "2026-10-22T15:51:31",
+   "by": "engine (coverage round 1)",
+   "what": "Step 1 says download on a computer and never open in a browser preview; step 4 covers buyers starting October to December; paycheck plan 54 rows (weekly all year); listing photos on navy and white per the look."
+  }
  ]
 }

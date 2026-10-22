@@ -20,8 +20,9 @@ def file_checks(d, brief, b, L, add, CHK):
             unprotected.append(ws.title)
         for row in ws.iter_rows():
             for c in row:
-                if c.hyperlink and c.hyperlink.location is None and str(c.hyperlink.target or '').startswith('#'):
-                    t = re.match(r"#'?(.+?)'?!", c.hyperlink.target)
+                if c.hyperlink:
+                    # tab links must be internal (a location); "#Sheet!A1" stored as an external target may not survive Google Sheets
+                    t = re.match(r"'?(.+?)'?!", c.hyperlink.location or '')
                     if not t or t.group(1) not in titles:
                         bad.append(f'{ws.title}!{c.coordinate}')
                 if c.value is not None and c.font and c.font.name:

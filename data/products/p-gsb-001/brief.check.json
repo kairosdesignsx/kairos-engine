@@ -1,10 +1,7 @@
 {
  "pass": true,
  "problems": [],
- "needs_module": [
-  "start_check",
-  "paycheck"
- ],
+ "needs_module": [],
  "coverage": [
   {
    "ref": "complaint:c_hard",

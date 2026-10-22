@@ -15,11 +15,22 @@ import datetime, json, re
 from openpyxl import Workbook
 from openpyxl.chart import BarChart, PieChart, Reference
 from openpyxl.chart.label import DataLabelList
-from openpyxl.formatting.rule import CellIsRule, DataBarRule, FormulaRule
+from openpyxl.formatting.rule import CellIsRule, FormulaRule
 from openpyxl.styles import Alignment, Border, Font, PatternFill, Protection, Side
 from openpyxl.utils import get_column_letter as COL
 from openpyxl.workbook.defined_name import DefinedName
 from openpyxl.worksheet.datavalidation import DataValidation
+from openpyxl.worksheet.hyperlink import Hyperlink
+
+
+def link(cell, sheet_title):
+    """An internal link to another tab (stored as a location, not an external URL)."""
+    cell.hyperlink = Hyperlink(ref=cell.coordinate, location=f"'{sheet_title}'!A1", display=str(cell.value or ''))
+
+
+def bar(pct_ref):
+    """A text progress bar that looks the same in Google Sheets and Excel (data bars do not carry over to Sheets)."""
+    return f'IF({pct_ref}="","",REPT("█",ROUND(MIN(1,MAX(0,{pct_ref}))*10,0))&REPT("░",10-ROUND(MIN(1,MAX(0,{pct_ref}))*10,0)))'
 
 MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 GROUPS = ['Needs', 'Wants', 'Savings', 'Debt']
@@ -79,6 +90,7 @@ class Book:
         self.month_titles = [m[:3] for m in MONTHS]
         self.current = None
         self.after = []         # callbacks run once every tab exists (for tabs that read later tabs)
+        self.views = {}         # sheet title -> cell range worth showing in a listing photo (used only for photo renders)
 
     # ---- styles ----
     def font(self, size=11, bold=False, color=None, italic=False):
@@ -121,7 +133,8 @@ class Book:
             cell.alignment = Alignment(horizontal='center', vertical='center', wrap_text=True)
             if widths and i < len(widths) and widths[i]:
                 ws.column_dimensions[COL(c + i)].width = widths[i]
-        ws.row_dimensions[r].height = 22
+        wraps = any(len(str(l)) > (ws.column_dimensions[COL(c + i)].width or 13) * 0.95 for i, l in enumerate(labels))
+        ws.row_dimensions[r].height = 34 if wraps else 22
 
     def inp(self, cell, value=None, fmt=None):
         """An input cell: unlocked, soft fill, so buyers know where to type."""
@@ -155,10 +168,14 @@ class Book:
             c0 = 2
             while (ws.column_dimensions[COL(c0)].width or 14) < 10:
                 c0 += 1
-            for i, (label, target) in enumerate(self.nav[:9]):
-                c = ws.cell(4, c0 + i, label)
-                c.hyperlink = f"#'{target}'!A1"
-                c.font = self.font(9, True, color=self.th['accent'])
+            col = c0
+            for label, target in self.nav[:9]:
+                c = ws.cell(4, col, label)
+                link(c, target)
+                need, have = len(label) * 1.1 + 2, 0
+                while have < need:
+                    have += ws.column_dimensions[COL(col)].width or 13; col += 1
+                c.font = Font(name=self.th['font'], size=9, bold=True, underline='single', color=hexc(self.th['accent']))
                 c.alignment = Alignment(horizontal='left')
         from openpyxl.workbook.properties import CalcProperties
         self.wb.calculation = CalcProperties(fullCalcOnLoad=True)  # Excel recalculates on open; Google Sheets always does
@@ -195,6 +212,7 @@ def m_start(B, sec):
         tcell = ws.cell(r, 3, 'Tip'); tcell.font = B.font(12, True)
         tx = ws.cell(r, 4, sec['tip']); tx.font = B.font(11); tx.alignment = Alignment(wrap_text=True); ws.row_dimensions[r].height = 40
     B.nav.insert(0, ('Start here', ws.title))
+    ws.freeze_panes = 'A5'
     B.protect(ws)
 
 
@@ -227,6 +245,7 @@ def m_setup(B, sec):
     ws.cell(last + 2, 5, 'Left to budget').font = B.font(11, True)
     B.calc(ws.cell(last + 2, 7), f'=C18-G{last + 1}', B.money, True)
     ws.conditional_formatting.add(f'G{last + 2}', CellIsRule(operator='lessThan', formula=['0'], font=Font(color=hexc(B.th['warn']), bold=True)))
+    B.views[ws.title] = f'B2:G{last + 2}'
     B.wb.defined_names['Categories'] = DefinedName('Categories', attr_text=f"'{ws.title}'!$E$10:$E${last}")
     B.setup = {'title': ws.title, 'cat_first': 10, 'cat_last': last, 'income_total': f"'{ws.title}'!$C$18"}
     B.nav.append(('Setup', ws.title))
@@ -247,14 +266,14 @@ def m_months(B, sec):
         B.head(ws, 6, 2, ['Date', 'What', 'Category', 'Amount'], [12, 26, 22, 14])
         dv = DataValidation(type='list', formula1='=Categories', allow_blank=True); ws.add_data_validation(dv)
         for r in range(7, 7 + n_log):
-            B.inp(ws.cell(r, 2), None, 'mmm d'); B.inp(ws.cell(r, 3)); c = ws.cell(r, 4); B.inp(c); dv.add(c); B.inp(ws.cell(r, 5), None, B.money)
+            B.inp(ws.cell(r, 2), None, 'mmm d'); ws.cell(r, 2).alignment = Alignment(horizontal='center'); B.inp(ws.cell(r, 3)); ws.cell(r, 3).alignment = Alignment(indent=1); c = ws.cell(r, 4); B.inp(c); dv.add(c); B.inp(ws.cell(r, 5), None, B.money)
         logl = 6 + n_log
         # month totals at the top right, so the answer to "how am I doing" is the first thing on the tab
         t = 6
         rows = [('Income this month', f"={S['income_total']}"), ('Spent', f'=SUM(E7:E{logl})'), ('Left over', f'=H{t}-H{t + 1}'),
                 ('Saved and debt paid', f"=SUMPRODUCT(SUMIFS($E$7:$E${logl},$D$7:$D${logl},'{S['title']}'!$E${S['cat_first']}:$E${S['cat_last']})*(('{S['title']}'!$F${S['cat_first']}:$F${S['cat_last']}=\"Savings\")+('{S['title']}'!$F${S['cat_first']}:$F${S['cat_last']}=\"Debt\")))")]
         for k, (lab, f) in enumerate(rows):
-            lc = ws.cell(t + k, 7, lab); lc.font = B.font(11, True); lc.fill = B.fill(B.th['soft'] if k != 0 else B.th['paper'])
+            lc = ws.cell(t + k, 7, lab); lc.font = B.font(11, True)
             if k == 0:  # income: starts as the expected income from Setup, buyers can type over it
                 B.inp(ws.cell(t, 8), f, B.money); ws.cell(t, 8).font = B.font(12, True)
                 ws.cell(t, 9, 'Type over this if your income was different').font = B.font(9, italic=True, color=B.th['muted'])
@@ -263,7 +282,7 @@ def m_months(B, sec):
         ws.conditional_formatting.add(f'H{t + 2}', CellIsRule(operator='lessThan', formula=['0'], font=Font(color=hexc(B.th['warn']), bold=True)))
         # budget vs actual by category
         h = 11
-        B.head(ws, h, 7, ['Category', 'Budget', 'Spent', 'Left', 'Used'], [22, 13, 13, 13, 10])
+        B.head(ws, h, 7, ['Category', 'Budget', 'Spent', 'Left', 'Used', ''], [22, 13, 13, 13, 9, 14])
         for i in range(ncat):
             r = h + 1 + i; sr = S['cat_first'] + i
             B.calc(ws.cell(r, 7), f"=IF('{S['title']}'!E{sr}=\"\",\"\",'{S['title']}'!E{sr})")
@@ -271,9 +290,11 @@ def m_months(B, sec):
             B.calc(ws.cell(r, 9), f'=IF(G{r}="","",SUMIFS($E$7:$E${logl},$D$7:$D${logl},G{r}))', B.money)
             B.calc(ws.cell(r, 10), f'=IF(G{r}="","",H{r}-I{r})', B.money)
             B.calc(ws.cell(r, 11), f'=IF(OR(G{r}="",H{r}=0),"",I{r}/H{r})', '0%')
+            B.calc(ws.cell(r, 12), '=' + bar(f'K{r}')); ws.cell(r, 12).font = Font(name=B.th['font'], size=9, color=hexc(B.th['accent']))
         last = h + ncat
+        B.views[ws.title] = f'B2:L{h + min(ncat, len(B.cats)) + 1}'
         ws.conditional_formatting.add(f'J{h + 1}:J{last}', CellIsRule(operator='lessThan', formula=['0'], font=Font(color=hexc(B.th['warn']), bold=True)))
-        ws.conditional_formatting.add(f'K{h + 1}:K{last}', DataBarRule(start_type='num', start_value=0, end_type='num', end_value=1, color=hexc(B.th['accent'])))
+        ws.conditional_formatting.add(f'L{h + 1}:L{last}', FormulaRule(formula=[f'K{h + 1}>1'], font=Font(color=hexc(B.th['warn']))))
         ws.freeze_panes = 'A7'
         B.month_sheets.append({'title': ws.title, 'income': f'H{t}', 'spent': f'H{t + 1}', 'left': f'H{t + 2}', 'saved': f'H{t + 3}',
                                'log': (7, logl)})
@@ -285,10 +306,10 @@ def m_months(B, sec):
 def m_dashboard(B, sec):
     S = B.setup; ws = B.sheet('dashboard', sec.get('label', 'Dashboard'))
     B.title(ws, sec.get('label', 'Dashboard'), 'Your year at a glance. Nothing to type here.')
-    B.head(ws, 6, 2, ['Month', 'Income', 'Spent', 'Left over', 'Saved'], [14, 14, 14, 14, 14])
+    B.head(ws, 6, 2, ['Month', 'Income', 'Spent', 'Left over', 'Saved and debt paid'], [14, 14, 14, 14, 16])
     for i, M in enumerate(B.month_sheets):
         r = 7 + i
-        ws.cell(r, 2, MONTHS[i]).hyperlink = f"#'{M['title']}'!A1"; ws.cell(r, 2).font = B.font(11, color=B.th['accent'])
+        ws.cell(r, 2, MONTHS[i]); link(ws.cell(r, 2), M['title']); ws.cell(r, 2).font = B.font(11, color=B.th['accent'])
         active = f"COUNT('{M['title']}'!$E${M['log'][0]}:$E${M['log'][1]})>0"
         for j, key in enumerate(['income', 'spent', 'left', 'saved']):
             # months with nothing logged yet stay empty so the year totals only count months in use
@@ -296,7 +317,7 @@ def m_dashboard(B, sec):
     ws.cell(19, 2, 'Year').font = B.font(11, True)
     for j in range(4):
         B.calc(ws.cell(19, 3 + j), f'=SUM({COL(3 + j)}7:{COL(3 + j)}18)', B.money, True)
-    ws.cell(20, 2, 'Savings rate').font = B.font(11, True)
+    ws.cell(20, 2, 'Share to savings and debt').font = B.font(11, True)
     B.calc(ws.cell(20, 3), '=IF(C19=0,"",F19/C19)', '0%', True)
     # category totals for the year
     B.head(ws, 6, 8, ['Category', 'Spent this year'], [24, 16])
@@ -323,7 +344,9 @@ def m_dashboard(B, sec):
     bar.set_categories(Reference(ws, min_col=2, min_row=7, max_row=18))
     for ser, col in zip(bar.series, [B.th['accent'], B.th['header']]):
         ser.graphicalProperties.solidFill = hexc(col); ser.graphicalProperties.line.solidFill = hexc(col)
+    bar.y_axis.numFmt = '"' + B.cur + '"#,##0'; bar.y_axis.number_format = '"' + B.cur + '"#,##0'
     ws.add_chart(bar, f'B{top}')
+    ws.freeze_panes = 'A5'
     pie = PieChart(); pie.title = 'Where the money went'; pie.height = 7.5; pie.width = 11
     pie.add_data(Reference(ws, min_col=3, min_row=g0, max_row=g0 + 4), titles_from_data=True)
     pie.set_categories(Reference(ws, min_col=2, min_row=g0 + 1, max_row=g0 + 4))
@@ -333,6 +356,7 @@ def m_dashboard(B, sec):
     for k, col in enumerate([B.th['header'], B.th['accent'], '#8FB8A8', B.th['warn']]):
         pt = DataPoint(idx=k); pt.graphicalProperties.solidFill = hexc(col); pie.series[0].dPt.append(pt)
     ws.add_chart(pie, f'D{g0 - 1}')
+    B.views[ws.title] = f'B2:I{max(g0 + 14, 7 + min(ncat, len(B.cats)))}'
     B.nav.insert(1 if B.nav and B.nav[0][0] == 'Start here' else 0, ('Dashboard', ws.title))
     B.protect(ws)
 
@@ -350,6 +374,7 @@ def m_bills(B, sec):
             c = ws.cell(r, 6 + m); B.inp(c); dv.add(c); c.alignment = Alignment(horizontal='center')
     last = 6 + sec.get('rows', 25)
     B.bills = {'title': ws.title, 'first': 7, 'last': last}
+    B.views[ws.title] = 'B2:Q16'
     ws.cell(last + 1, 2, 'Total per month').font = B.font(11, True)
     B.calc(ws.cell(last + 1, 4), f'=SUM(D7:D{last})', B.money, True)
     B.nav.append(('Bills', ws.title))
@@ -364,7 +389,8 @@ def m_debt(B, sec):
     ws.cell(6, 2, 'Method').font = B.font(11, True)
     m = ws.cell(6, 3); B.inp(m, 'Snowball'); dv = DataValidation(type='list', formula1='"Snowball,Avalanche"'); ws.add_data_validation(dv); dv.add(m)
     ws.cell(7, 2, 'Extra each month').font = B.font(11, True); B.inp(ws.cell(7, 3), 100, B.money)
-    B.head(ws, 9, 2, ['Debt', 'Balance', 'Rate (APR)', 'Minimum', 'Pay order', 'Months at minimum', 'Interest at minimum'], [24, 14, 12, 12, 11, 16, 18])
+    ws.cell(7, 4, 'Goes to the debt that is first in pay order.').font = B.font(9, italic=True, color=B.th['muted'])
+    B.head(ws, 9, 2, ['Debt', 'Balance', 'Rate (APR)', 'Minimum', 'Pay order', 'Months at minimum', 'Interest at minimum', 'Months with extra', 'Interest saved'], [24, 14, 12, 12, 11, 16, 18, 16, 16])
     n = sec.get('rows', 10)
     for r in range(10, 10 + n):
         B.inp(ws.cell(r, 2)); B.inp(ws.cell(r, 3), None, B.money); B.inp(ws.cell(r, 4), None, '0.0%'); B.inp(ws.cell(r, 5), None, B.money)
@@ -372,9 +398,13 @@ def m_debt(B, sec):
         B.calc(ws.cell(r, 6), f'=IF(C{r}="","",IF($C$6="Snowball",COUNTIFS($C$10:$C${last},"<"&C{r},$C$10:$C${last},"<>")+1,COUNTIFS($D$10:$D${last},">"&D{r},$C$10:$C${last},"<>")+1))', '0')
         B.calc(ws.cell(r, 7), f'=IF(OR(C{r}="",E{r}=""),"",IFERROR(ROUNDUP(NPER(D{r}/12,-E{r},C{r}),0),"never: raise the minimum"))', '0')
         B.calc(ws.cell(r, 8), f'=IF(OR(C{r}="",E{r}="",NOT(ISNUMBER(G{r}))),"",G{r}*E{r}-C{r})', B.money)
+        B.calc(ws.cell(r, 9), f'=IF(OR(C{r}="",E{r}="",F{r}<>1),"",IFERROR(ROUNDUP(NPER(D{r}/12,-(E{r}+$C$7),C{r}),0),""))', '0')
+        B.calc(ws.cell(r, 10), f'=IF(OR(I{r}="",NOT(ISNUMBER(H{r}))),"",MAX(0,H{r}-(I{r}*(E{r}+$C$7)-C{r})))', B.money)
     last = 9 + n
     ws.cell(last + 1, 2, 'Total').font = B.font(11, True)
     B.calc(ws.cell(last + 1, 3), f'=SUM(C10:C{last})', B.money, True); B.calc(ws.cell(last + 1, 5), f'=SUM(E10:E{last})', B.money, True)
+    ws.freeze_panes = 'A10'
+    B.views[ws.title] = 'B2:J15'
     B.nav.append(('Debt', ws.title))
     B.protect(ws)
 
@@ -383,14 +413,17 @@ def m_debt(B, sec):
 def m_savings(B, sec):
     ws = B.sheet('savings', sec.get('label', 'Savings goals'))
     B.title(ws, sec.get('label', 'Savings goals'), 'One line per goal. The bar fills as you save.')
-    B.head(ws, 6, 2, ['Goal', 'Target', 'Saved', 'Progress', 'Target date', 'Save per month'], [24, 14, 14, 12, 14, 16])
+    B.head(ws, 6, 2, ['Goal', 'Target', 'Saved', 'Progress', 'Target date', 'Save per month', ''], [24, 14, 14, 10, 14, 16, 14])
     n = sec.get('rows', 10)
     for r in range(7, 7 + n):
         B.inp(ws.cell(r, 2)); B.inp(ws.cell(r, 3), None, B.money); B.inp(ws.cell(r, 4), None, B.money)
         B.calc(ws.cell(r, 5), f'=IF(OR(C{r}="",C{r}=0),"",MIN(1,D{r}/C{r}))', '0%')
         B.inp(ws.cell(r, 6), None, 'mmm yyyy')
-        B.calc(ws.cell(r, 7), f'=IF(OR(C{r}="",F{r}=""),"",MAX(0,(C{r}-D{r})/MAX(1,DATEDIF(TODAY(),F{r},"m"))))', B.money)
-    ws.conditional_formatting.add(f'E7:E{6 + n}', DataBarRule(start_type='num', start_value=0, end_type='num', end_value=1, color=hexc(B.th['accent'])))
+        months = f'((YEAR(F{r})-YEAR(TODAY()))*12+MONTH(F{r})-MONTH(TODAY()))'
+        B.calc(ws.cell(r, 7), f'=IF(OR(C{r}="",F{r}=""),"",IF(D{r}>=C{r},"Reached",IF({months}<1,"Date passed: pick a new one",(C{r}-D{r})/{months})))', B.money)
+        B.calc(ws.cell(r, 8), '=' + bar(f'E{r}')); ws.cell(r, 8).font = Font(name=B.th['font'], size=9, color=hexc(B.th['accent']))
+    ws.freeze_panes = 'A7'
+    B.views[ws.title] = 'B2:H12'
     B.nav.append(('Savings', ws.title))
     B.protect(ws)
 
@@ -427,6 +460,7 @@ def m_start_check(B, sec):
         ws.cell(r, 3, 'Jump to a month').font = B.font(12, True); r += 1
         r += 5  # 4 rows of 3 month links (filled once the month tabs exist) and a gap
     wrong_r = r
+    B.views[ws.title] = f'B2:E{jump + 4}'
     if sec.get('if_wrong'):
         ws.cell(r, 3, 'If something looks wrong').font = B.font(12, True); r += 1
         for line in sec['if_wrong']:
@@ -476,8 +510,9 @@ def m_start_check(B, sec):
                        f"=IF(SUM({HB}{h0}:{HB}{h1})=0,\"\",SUM({HB}{h0}:{HB}{h1})&\" amounts have no category, so they are not counted yet\")")
         if months and B.s.get('sample_data'):
             j = months[0]; a0, a1 = j['log']
-            texts = ','.join(f'"{_q(t)}"' for _, t, c, _ in SAMPLE_ROWS)
-            cnt = f"SUMPRODUCT(COUNTIF('{j['title']}'!$C${a0}:$C${a1},{{{texts}}}))"
+            y = B.year or datetime.date.today().year + 1
+            jt = j['title']
+            cnt = '(' + '+'.join(f"COUNTIFS('{jt}'!$B${a0}:$B${a1},DATE({y},1,{d}),'{jt}'!$C${a0}:$C${a1},\"{_q(t)}\",'{jt}'!$E${a0}:$E${a1},{a})" for d, t, c, a in SAMPLE_ROWS) + ')'
             F['example'] = (f'=IF({cnt}=0,"Done","To do")', f'=IF({cnt}=0,"","Clear the example in {j["title"]} (step 2)")')
         g = lambda grp: f"SUMIF('{st}'!$F${f0}:$F${f1},\"{grp}\",'{st}'!$G${f0}:$G${f1})"
         F['split'] = ('Info', f"=IF({T}=0,\"\",TEXT({g('Needs')}/{T},\"0%\")&\" needs, \"&TEXT({g('Wants')}/{T},\"0%\")&\" wants, \"&TEXT(({g('Savings')}+{g('Debt')})/{T},\"0%\")&\" savings and debt (50/30/20 guide)\")")
@@ -493,7 +528,7 @@ def m_start_check(B, sec):
         if sec.get('month_jump', True):
             for i, M in enumerate(months):
                 c = ws.cell(jump + 1 + i // 3, 3 + (i % 3) if i % 3 < 2 else 5, M['title'])
-                c.hyperlink = f"#'{M['title']}'!A1"; c.font = B.font(11, True, color=B.th['accent'])
+                link(c, M['title']); c.font = B.font(11, True, color=B.th['accent'])
     B.after.append(fill)
 
 
@@ -520,7 +555,7 @@ def m_paycheck(B, sec):
     ws.cell(8, 4, 'Starts from your first income line in Setup. Type your real take-home pay.').font = B.font(9, italic=True, color=B.th['muted'])
     B.head(ws, 10, 2, ['Payday', 'Paycheck', 'Bills due before next payday', 'Left from this paycheck', 'Next payday'], [16, 14, 18, 18, 14])
     bl = B.bills
-    n = sec.get('rows', 27)
+    n = max(sec.get('rows', 54), 54)  # weekly pay needs up to 53 paydays in a year
     idx = 'MATCH($C$7,{"Weekly","Every 2 weeks","Twice a month","Monthly"},0)'
     nxt = lambda p: f'CHOOSE({idx},{p}+7,{p}+14,IF(DAY({p})<15,DATE(YEAR({p}),MONTH({p}),15),DATE(YEAR({p}),MONTH({p})+1,1)),EDATE({p},1))'
     for i in range(n):
@@ -536,6 +571,7 @@ def m_paycheck(B, sec):
         B.calc(ws.cell(r, 4), f'=IF(B{r}="","",SUMPRODUCT(({due}<>"")*(DATE(YEAR(B{r}),MONTH(B{r})+(DAY(B{r})>{due}),{due})<F{r})*{amt}))', B.money)
         B.calc(ws.cell(r, 5), f'=IF(B{r}="","",C{r}-D{r})', B.money, True)
     ws.conditional_formatting.add(f'E11:E{10 + n}', CellIsRule(operator='lessThan', formula=['0'], font=Font(color=hexc(B.th['warn']), bold=True)))
+    B.views[ws.title] = 'B2:F32'
     B.nav.append(('Paycheck', ws.title))
     ws.freeze_panes = 'A11'
     B.protect(ws)
@@ -606,7 +642,7 @@ def validate_spec(spec):
     return problems, needs
 
 
-def build(spec, path):
+def build(spec, path, photo_view=False):
     problems, needs = validate_spec(spec)
     if problems or needs:
         raise ValueError(f'spec problems: {problems}; needs_module: {needs}')
@@ -621,6 +657,9 @@ def build(spec, path):
     # put the dashboard tab right after Start here in the tab order
     order = [t for a, t, m in B.sheets]
     B.wb._sheets.sort(key=lambda ws: (0 if ws.title == order[0] else 1 if any(t == ws.title and m == 'dashboard' for a, t, m in B.sheets) else 2, order.index(ws.title)))
+    if photo_view:  # listing-photo render only: print just the useful range of each tab, so it fills the page
+        for t, rng in B.views.items():
+            B.wb[t].print_area = rng
     B.save(path)
     return {'tabs': [t for t in B.wb.sheetnames], 'sheets': B.sheets, 'nav': B.nav}
 

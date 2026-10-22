@@ -46,5 +46,41 @@
   "rule": "A week that spans two months is built once, under the month that holds its Thursday; day pages name their own month in the trail.",
   "enforced": "planner line (automatic)",
   "from": "brief writer found it"
+ },
+ {
+  "id": "r009",
+  "rule": "Spreadsheets: never rely on a feature Google Sheets drops on import (data bars, Excel-only functions, external-style '#Sheet' links). Use text bars, functions both apps share, and internal tab links.",
+  "enforced": "spreadsheet line (automatic) + coverage checker",
+  "from": "coverage check, Clear Budget round 1"
+ },
+ {
+  "id": "r010",
+  "rule": "Every input cell must change at least one result. An input that nothing reads is a broken promise.",
+  "enforced": "coverage checker",
+  "from": "coverage check, Clear Budget round 1 (Debt 'Extra each month')"
+ },
+ {
+  "id": "r011",
+  "rule": "Size every list for the worst real case (weekly pay has 53 paydays a year; a month can hold 80+ purchases), or say plainly where it stops.",
+  "enforced": "brief writer + coverage checker",
+  "from": "coverage check, Clear Budget round 1"
+ },
+ {
+  "id": "r012",
+  "rule": "Only input cells are shaded. Labels, totals and formulas are never shaded like inputs.",
+  "enforced": "spreadsheet line (automatic)",
+  "from": "coverage check, Clear Budget round 1"
+ },
+ {
+  "id": "r013",
+  "rule": "Listing photos must be readable at Etsy's zoom: show the useful part of a page or tab, large, never a whole page shrunk to fit. Alt text and points describe only what is in frame.",
+  "enforced": "photos stage (photo views) + coverage checker",
+  "from": "coverage check, Clear Budget round 1"
+ },
+ {
+  "id": "r014",
+  "rule": "Start-up steps cover a buyer who buys before the product's year starts (Oct to Dec) as well as one who buys mid-year.",
+  "enforced": "brief writer + coverage checker",
+  "from": "coverage check, Clear Budget round 1"
  }
 ]

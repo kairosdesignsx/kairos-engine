@@ -55,7 +55,7 @@ def shots(calc_path, tabs, anchors, shots_dir, work):
     os.makedirs(shots_dir, exist_ok=True)
     for f in os.listdir(shots_dir):
         os.remove(os.path.join(shots_dir, f))
-    subprocess.run(['pdftoppm', '-r', '150', '-png', pdf, os.path.join(work, 'pg')], capture_output=True, timeout=300)
+    subprocess.run(['pdftoppm', '-r', '300', '-png', pdf, os.path.join(work, 'pg')], capture_output=True, timeout=300)
     pages = sorted(f for f in os.listdir(work) if f.startswith('pg') and f.endswith('.png'))
     names = []
     for tab, page in zip(tabs, pages):
@@ -84,6 +84,13 @@ def build(brief, pdir, files_dir, shots_dir, max_mb):
     errs, tabs = scan(calc)
     anchors = {t: a for a, t, m in res['sheets']}
     n_pages, shot_files = shots(calc, tabs, anchors, shots_dir, work)
+    # photo views: the same workbook with print areas on the useful range of each tab (big, readable text for listing photos)
+    vwork = os.path.join(work, 'views'); os.makedirs(vwork, exist_ok=True)
+    vpath = os.path.join(vwork, name)
+    gen.build(spec, vpath, photo_view=True)
+    vcalc = recalc(vpath, os.path.join(vwork, 'calc'))
+    vdir = os.path.join(pdir, 'views')
+    shots(vcalc, tabs, anchors, vdir, os.path.join(vwork, 'calc'))
     mb = os.path.getsize(path) / 1e6
     rec = {"files": [{"name": name, "mb": round(mb, 2), "tabs": len(tabs)}], "tabs": tabs,
            "page_modules": [[a, m] for a, t, m in res['sheets']], "nav": res['nav'], "formula_errors": errs[:50],
