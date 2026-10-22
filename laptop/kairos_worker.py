@@ -118,14 +118,22 @@ def call(method, path, params=None, form=None, files=None, auth=False, raw_url=N
                     return json.loads(body) if body else {}
             except urllib.error.HTTPError as e:
                 msg = e.read()[:500].decode('utf-8', 'ignore')
+                if '<html' in msg.lower():  # Etsy's server error pages are HTML: keep the log to one line
+                    msg = 'server error page'
                 last = f'{e.code} {msg}'
-                if e.code == 429:
+                if e.code == 429 or (e.code >= 500 and method == 'GET'):  # rate limit, or an outage on a read: wait and retry
+                    # (never retry a create or upload after a server error: it may have gone through, and a retry would duplicate it)
                     time.sleep(5 * (attempt + 1)); continue
                 if e.code in (401, 403) and 'api key' in msg.lower():
                     break  # try the other key format
                 if e.code == 401 and auth and attempt == 0:
                     refresh(); continue
                 raise RuntimeError(f'{method} {path}: {last}')
+            except (urllib.error.URLError, TimeoutError) as e:
+                last = f'network {e}'
+                if method != 'GET':
+                    raise RuntimeError(f'{method} {path}: {last} (not retried: it may have gone through)')
+                time.sleep(5 * (attempt + 1)); continue
     raise RuntimeError(f'{method} {path}: {last}')
 
 
@@ -150,7 +158,20 @@ def shop_id():
 def job_competitor_photos(job):
     out = {'type_id': job['type_id'], 'listings': []}
     base = os.path.join(DATA, 'types', job['type_id'], 'photos')
-    for L in job['listings']:
+    first = _competitor_pass(job['listings'], base)
+    failed = [L for L, rec in zip(job['listings'], first) if rec.get('error')]
+    if failed:  # Etsy has short outages: one more try for the ones that failed, a minute later
+        log('competitor retry', len(failed), 'listings in 60s')
+        time.sleep(60)
+        again = {r['listing_id']: r for r in _competitor_pass(failed, base)}
+        first = [again.get(r['listing_id'], r) if r.get('error') else r for r in first]
+    out['listings'] = first
+    return out
+
+
+def _competitor_pass(listings, base):
+    recs = []
+    for L in listings:
         lid = str(L['listing_id'])
         rec = {'listing_id': lid, 'rank': L.get('rank')}
         try:
@@ -168,9 +189,9 @@ def job_competitor_photos(job):
             time.sleep(0.3)
         except Exception as e:
             rec['error'] = str(e)[:300]
-        out['listings'].append(rec)
+        recs.append(rec)
         log('competitor', lid, len(rec.get('photos', [])), 'photos', rec.get('error', ''))
-    return out
+    return recs
 
 
 def taxonomy_id(name_parts=('Calendars & Planners',)):
