@@ -1,6 +1,17 @@
 {
- "pass": true,
- "problems": [],
+ "pass": false,
+ "problems": [
+  "standard feature budget (97% of top sellers) is neither included nor waived",
+  "standard feature goals (97% of top sellers) is neither included nor waived",
+  "standard feature work (93% of top sellers) is neither included nor waived",
+  "standard feature meal (90% of top sellers) is neither included nor waived",
+  "standard feature custom (87% of top sellers) is neither included nor waived",
+  "standard feature all_in_one (80% of top sellers) is neither included nor waived",
+  "standard feature colorful (77% of top sellers) is neither included nor waived",
+  "standard feature landscape (73% of top sellers) is neither included nor waived",
+  "standard feature minimalist (63% of top sellers) is neither included nor waived",
+  "standard feature portrait (60% of top sellers) is neither included nor waived"
+ ],
  "needs_module": [],
  "coverage": [
   {
@@ -82,29 +93,155 @@
    "state": "fixed"
   },
   {
+   "ref": "feature:hyperlinked",
+   "theme": "Hyperlinked tabs and dates",
+   "share": 1.0,
+   "state": "included"
+  },
+  {
    "ref": "feature:dated",
    "theme": "Dated for the year",
    "share": 0.967,
    "state": "included"
   },
   {
-   "ref": "feature:multi_year",
-   "theme": "Covers more than one year",
-   "share": 0.867,
+   "ref": "feature:self_care",
+   "theme": "Self-care, mood or wellness pages",
+   "share": 0.967,
+   "state": "included"
+  },
+  {
+   "ref": "feature:budget",
+   "theme": "Budget or finance pages",
+   "share": 0.967,
+   "state": "MISSING"
+  },
+  {
+   "ref": "feature:goals",
+   "theme": "Goal setting",
+   "share": 0.967,
+   "state": "MISSING"
+  },
+  {
+   "ref": "feature:time_blocking",
+   "theme": "Time blocking or hourly schedule",
+   "share": 0.967,
    "state": "included"
   },
   {
    "ref": "feature:goodnotes",
    "theme": "Says Goodnotes",
-   "share": 0.833,
+   "share": 0.967,
+   "state": "included"
+  },
+  {
+   "ref": "feature:habit_tracker",
+   "theme": "Habit tracker",
+   "share": 0.933,
+   "state": "included"
+  },
+  {
+   "ref": "feature:stickers",
+   "theme": "Digital stickers included",
+   "share": 0.933,
+   "state": "waived"
+  },
+  {
+   "ref": "feature:android",
+   "theme": "Android or Samsung support",
+   "share": 0.933,
+   "state": "included"
+  },
+  {
+   "ref": "feature:work",
+   "theme": "Work or productivity focus",
+   "share": 0.933,
+   "state": "MISSING"
+  },
+  {
+   "ref": "feature:priority_matrix",
+   "theme": "Priority matrix or top 3",
+   "share": 0.933,
+   "state": "included"
+  },
+  {
+   "ref": "feature:multi_year",
+   "theme": "Covers more than one year",
+   "share": 0.9,
+   "state": "included"
+  },
+  {
+   "ref": "feature:meal",
+   "theme": "Meal planning",
+   "share": 0.9,
+   "state": "MISSING"
+  },
+  {
+   "ref": "feature:journal",
+   "theme": "Journal or notebook pages",
+   "share": 0.867,
+   "state": "included"
+  },
+  {
+   "ref": "feature:custom",
+   "theme": "Customizable or personalized",
+   "share": 0.867,
+   "state": "MISSING"
+  },
+  {
+   "ref": "feature:all_in_one",
+   "theme": "All-in-one life planner",
+   "share": 0.8,
+   "state": "MISSING"
+  },
+  {
+   "ref": "feature:notability",
+   "theme": "Says Notability",
+   "share": 0.8,
+   "state": "included"
+  },
+  {
+   "ref": "feature:colorful",
+   "theme": "Colorful or aesthetic look",
+   "share": 0.767,
+   "state": "MISSING"
+  },
+  {
+   "ref": "feature:routines",
+   "theme": "Routine builder",
+   "share": 0.767,
+   "state": "included"
+  },
+  {
+   "ref": "feature:landscape",
+   "theme": "Landscape layout",
+   "share": 0.733,
+   "state": "MISSING"
+  },
+  {
+   "ref": "feature:minimalist",
+   "theme": "Minimalist look",
+   "share": 0.633,
+   "state": "MISSING"
+  },
+  {
+   "ref": "feature:portrait",
+   "theme": "Portrait layout",
+   "share": 0.6,
+   "state": "MISSING"
+  },
+  {
+   "ref": "feature:quick_start",
+   "theme": "Quick start or setup guide",
+   "share": 0.6,
    "state": "included"
   }
  ],
  "summary": {
   "fixed": 13,
-  "included": 3,
-  "waived": 0,
-  "missing": 0,
+  "included": 13,
+  "waived": 1,
+  "missing": 10,
   "unique": 4
  }
 }

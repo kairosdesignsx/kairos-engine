@@ -1,6 +1,6 @@
 {
  "type_id": "fitness-planner-digital",
- "built_at": "2026-10-23T14:15:13Z",
+ "built_at": "2026-10-23T14:59:08Z",
  "basis": {
   "listings": 30,
   "reviews": 532,
@@ -2566,7 +2566,7 @@
   "median": 7.98,
   "p75": 20.7,
   "top10_by_revenue_median": 22.45,
-  "revenue_weighted_median": 23.02,
+  "revenue_weighted_median": 22.43,
   "best_band": "$3-13"
  },
  "looks": [

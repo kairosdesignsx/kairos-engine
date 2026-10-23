@@ -1,0 +1,737 @@
+{
+ "brief_id": "b-p-wpp-001",
+ "product_id": "p-wpp-001",
+ "type_id": "weekly-planner-printable",
+ "line": "planner",
+ "created_at": "2026-10-23T14:58:19Z",
+ "positioning": "For people who print and bind a paper planner and only want a good week: a dated two-page weekly spread for every week from October 26, 2026 to January 2, 2028, in true Letter and A4 files. It wins against 600 to 1300 page bundles because it prints right the first time (print check sheet, safe margins, page ranges per month) and holds exactly the weekly layout their buyers say they could not find.",
+ "must_haves": [
+  {
+   "id": "mh_weekly_spread",
+   "what": "A dated two-page spread for every week (Monday start, vertical day columns, a weekly focus list), the layout buyers came for.",
+   "evidence": [
+    "complaint:c_not_useful",
+    "praise:p_fits_needs",
+    "feature:dated",
+    "keyword:weekly planner",
+    "keyword:week at a glance"
+   ]
+  },
+  {
+   "id": "mh_months_year",
+   "what": "Month spreads with a full calendar grid, goals, important dates and bills, plus a 2027 year at a glance and a Dates to remember page, so the weekly planner is complete without being a bundle.",
+   "evidence": [
+    "praise:p_complete",
+    "keyword:monthly planner",
+    "complaint:c_basic"
+   ]
+  },
+  {
+   "id": "mh_print",
+   "what": "True Letter (8.5 x 11 in) and A4 files that print cleanly on a home printer at Actual size, with white paper and nothing printed near the edge.",
+   "evidence": [
+    "praise:p_print",
+    "complaint:c_print",
+    "keyword:printable planner",
+    "keyword:planner printable"
+   ]
+  },
+  {
+   "id": "mh_guide",
+   "what": "A printed Start here page with the four steps from download to binding.",
+   "evidence": [
+    "praise:p_guide",
+    "praise:p_easy",
+    "complaint:c_setup"
+   ]
+  },
+  {
+   "id": "mh_look",
+   "what": "A calm, well-made two-font design with consistent alignment on every page.",
+   "evidence": [
+    "praise:p_look",
+    "praise:p_quality",
+    "feature:minimalist",
+    "keyword:minimalist planner"
+   ]
+  },
+  {
+   "id": "mh_habits",
+   "what": "A small weekly habit strip on each week's right page (five habits by seven days), instead of separate tracker pages.",
+   "evidence": [
+    "feature:habit_tracker",
+    "keyword:habit tracker",
+    "praise:p_adhd"
+   ]
+  }
+ ],
+ "fixes": [
+  {
+   "id": "f_download",
+   "complaint": "complaint:c_download",
+   "how": "Two files only, one per paper size (Open-Week-2027-Letter.pdf and Open-Week-2027-A4.pdf), each a single small PDF with no zip. Listing copy and the Start here page say exactly where to download (Etsy, You, Purchases, Download files, in a web browser, because the Etsy app cannot download files) and that any PDF reader opens them. Listing copy states each file size from the build (r003).",
+   "evidence": [
+    "complaint:c_download",
+    "complaint:c_split_files",
+    "wish:w_easy_delivery",
+    "praise:p_easy"
+   ],
+   "modules": [
+    "guide"
+   ]
+  },
+  {
+   "id": "f_not_useful",
+   "complaint": "complaint:c_not_useful",
+   "how": "The core of the product is the thing these buyers could not find: a two-page weekly spread for all 53 weeks of 2027 plus 9 head-start weeks, Mon to Wed on the left and Thu to Sun on the right in vertical columns. Photo 1 shows the open spread, and the listing's first line says 'two pages for every week'.",
+   "evidence": [
+    "complaint:c_not_useful",
+    "complaint:c_overwhelm",
+    "feature:dated",
+    "keyword:weekly planner"
+   ],
+   "modules": [
+    "print_format",
+    "calendar",
+    "head_start"
+   ]
+  },
+  {
+   "id": "f_print",
+   "complaint": "complaint:c_print",
+   "how": "print_format builds true-size Letter and A4 pages with a 0.5 in safe margin on every edge, a mirrored 0.375 in binding margin, white paper and no edge tabs, so nothing is cut off and nothing needs Fit to page. The Print check sheet (pages 3 to 4) has rulers at real size, four corner marks and a fix list. Listing copy says plainly: Letter and A4 only, no A5 or Classic Happy Planner size, and the Letter file fits Big Happy Planner discs and standard binders.",
+   "evidence": [
+    "complaint:c_print",
+    "wish:w_crop_marks",
+    "wish:w_print_layout",
+    "feature:test_page"
+   ],
+   "modules": [
+    "print_format",
+    "print_check"
+   ]
+  },
+  {
+   "id": "f_quality",
+   "complaint": "complaint:c_quality",
+   "how": "Every page comes from one layout per page type, so alignment is identical on all pages and in both sizes; every date is generated from the calendar, not typed; lines are vector strokes that print crisp; the build fails on any overflowing box, broken link or spread on the wrong side of the sheet. Listing photos are crops of the real built pages.",
+   "evidence": [
+    "complaint:c_quality",
+    "complaint:c_dates",
+    "praise:p_quality"
+   ],
+   "modules": [
+    "print_format",
+    "calendar"
+   ]
+  },
+  {
+   "id": "f_misleading",
+   "complaint": "complaint:c_misleading",
+   "how": "Listing copy states exactly what is dated and what is not: dated weeks from Monday, October 26, 2026 to Sunday, January 2, 2028, Monday start; one undated spare week spread; no daily pages; Letter and A4 only; page count from the build (r003). Every photo is a real page with its name in the caption, and the Print map photo shows the full page list.",
+   "evidence": [
+    "complaint:c_misleading",
+    "praise:p_as_described",
+    "wish:w_previews",
+    "wish:w_listing_info"
+   ],
+   "modules": [
+    "print_map"
+   ]
+  },
+  {
+   "id": "f_support",
+   "complaint": "complaint:c_support",
+   "how": "The buyer can fix the common problems without waiting for a reply: the back of the Print check lists the fix for each of the five usual print problems and the settings that work, and the listing FAQ repeats them. No reply-time promise anywhere in the product or listing (r007); the last line of the fix list says what the buyer can do next: send the shop an Etsy message with a photo of the Print check sheet.",
+   "evidence": [
+    "complaint:c_support",
+    "praise:p_support"
+   ],
+   "modules": [
+    "print_check"
+   ]
+  },
+  {
+   "id": "f_value",
+   "complaint": "complaint:c_value",
+   "how": "One purchase holds both paper sizes, 14 months of dated pages and a spare undated week, and the files can be reprinted any time (a ruined week or a second copy costs one sheet). Listing copy lists exactly this, and the Print map shows the sheets per month so the buyer sees the paper cost before printing.",
+   "evidence": [
+    "complaint:c_value",
+    "praise:p_value",
+    "feature:multi_year"
+   ],
+   "modules": [
+    "print_map",
+    "spare_week"
+   ]
+  },
+  {
+   "id": "f_hard",
+   "complaint": "complaint:c_hard",
+   "how": "No platform, app or account: a plain PDF printed on paper. The Print map turns the file into one small print job per month (about 12 pages), and every week lies open as a spread in the binder.",
+   "evidence": [
+    "complaint:c_hard",
+    "complaint:c_extra_app",
+    "complaint:c_nav"
+   ],
+   "modules": [
+    "print_map"
+   ]
+  },
+  {
+   "id": "f_basic",
+   "complaint": "complaint:c_basic",
+   "how": "Month right pages carry Goals this month, Important dates, Bills and payments and Notes, and each week has a focus list, habit strip and to do list, so the common pages a buyer expects are there in place. The design uses an editorial Cormorant Garamond and Jost pairing with italic labels, not plain outlines.",
+   "evidence": [
+    "complaint:c_basic",
+    "complaint:c_look",
+    "feature:budget"
+   ],
+   "modules": [
+    "print_format",
+    "calendar"
+   ]
+  },
+  {
+   "id": "f_setup",
+   "complaint": "complaint:c_setup",
+   "how": "The Start here page (page 2) gives four numbered steps with Go there links: download, print the check sheet, print one month, punch and bind. Each step covers a buyer starting in October to December 2026 (Head start, first week Monday, October 26) and one starting mid-2027 (print the current month's row).",
+   "evidence": [
+    "complaint:c_setup",
+    "praise:p_guide",
+    "feature:quick_start"
+   ],
+   "modules": [
+    "guide",
+    "print_check",
+    "print_map"
+   ]
+  }
+ ],
+ "unique": [
+  {
+   "id": "u_print_check",
+   "name": "Print check sheet",
+   "what": "Pages 3 to 4, one sheet printed double-sided before anything else: true-size inch and centimetre rulers, four corner marks, binding-edge hole guides, a line and tone sample, a pen bleed test, and on the back the front-to-back alignment check, a fix list and the settings that work.",
+   "why": "The biggest problem cluster after downloading is printing (complaint:c_print 33, c_setup 12, c_support 22 when sellers do not help), and no top listing shows a test page. It turns 'it printed wrong' into a two-minute check with the fix printed on the same sheet.",
+   "evidence": [
+    "feature:test_page",
+    "complaint:c_print",
+    "complaint:c_setup",
+    "complaint:c_support",
+    "wish:w_crop_marks"
+   ],
+   "modules": [
+    "print_check"
+   ],
+   "verified_absent": false
+  },
+  {
+   "id": "u_print_map",
+   "name": "Print map: pages by month",
+   "what": "A page listing the exact page range and number of sheets for every month, the front pages and the spare week, with a tick box per row and two start paths (before 2027, and later in 2027).",
+   "why": "Bundles make buyers hunt through hundreds of pages (complaint:c_misleading, c_nav, c_overwhelm). Exact ranges let a buyer on any purchase date print only what they need, one month at a time.",
+   "evidence": [
+    "complaint:c_nav",
+    "complaint:c_overwhelm",
+    "complaint:c_misleading",
+    "feature:quick_start",
+    "wish:w_order"
+   ],
+   "modules": [
+    "print_map"
+   ],
+   "verified_absent": false
+  },
+  {
+   "id": "u_head_start",
+   "name": "Head start plus a spare undated week",
+   "what": "Dated head-start months for November and December 2026 with week spreads from Monday, October 26, so a buyer in the selling window starts this week, and one undated spare week spread to reprint for extra weeks or after January 2, 2028.",
+   "why": "Covering more than one year is rare (feature:multi_year 23%) and undated pages are rare (feature:undated 10%) while buyers ask for both (wish:w_undated, wish:w_next_year).",
+   "evidence": [
+    "feature:multi_year",
+    "feature:undated",
+    "wish:w_undated",
+    "wish:w_next_year"
+   ],
+   "modules": [
+    "head_start",
+    "spare_week"
+   ],
+   "verified_absent": false
+  }
+ ],
+ "waived": [
+  {
+   "ref": "feature:bundle",
+   "reason": "A bundle is deliberately not offered: complaint:c_not_useful and complaint:c_overwhelm show bundle buyers could not find a usable weekly layout. One focused weekly planner in two paper sizes is the product."
+  },
+  {
+   "ref": "feature:journal",
+   "reason": "Journal page sets are out of scope for a weekly planner; two Notes pages and the writing space in each week cover note taking without padding the page count (complaint:c_overwhelm)."
+  },
+  {
+   "ref": "wish:w_file_format",
+   "reason": "Google Docs, Word or Pages versions would need a different product line; this is a print PDF, and the listing says so in its first lines."
+  }
+ ],
+ "look": {
+  "direction": "Ink and rust on white paper, made for a home printer. Pure white pages (a tint would print with a white frame where the printer cannot reach and wastes ink), deep blue-charcoal ink #1F2A33 at about 14.6:1 contrast, muted text #55606B at about 6.4:1 so small labels stay readable on paper and in dim light, and light gray-blue 1px writing lines that are clear but quiet under handwriting. One rust accent (#A8492B, 5.8:1) for date numbers and small markers; filled boxes such as This week's focus use a pale warm tint that costs little ink and still reads in grayscale. Two font families only (r016): Cormorant Garamond for headings and, in italic, for every label (theme labels: italic), and Jost for body text and numbers, with bold for links and weekday heads. No letter-spaced capitals, no motif, no florals, no script, no edge tabs. The result is editorial and calm, different from beige minimalism and from pastel rainbow bundles, and every page also prints well in black and white.",
+  "theme": {
+   "base": "sage",
+   "paper": "#FFFFFF",
+   "ink": "#1F2A33",
+   "muted": "#55606B",
+   "line": "#C3C9CF",
+   "accent": "#A8492B",
+   "soft": "#F5EFEA",
+   "warm": "#D9A58B",
+   "tabs": [
+    "#D9A58B",
+    "#9FB1BF"
+   ],
+   "display": "Corm",
+   "body": "Jost",
+   "motif": "none",
+   "button": "#1F2A33",
+   "labels": "italic"
+  },
+  "avoid": [
+   "beige and greige minimalism with arches (the most common top-seller look)",
+   "pastel rainbow tabs and colorful aesthetic bundles",
+   "tinted or full-bleed page backgrounds that print with a white frame",
+   "dark mode pages (heavy ink on paper)",
+   "script fonts, florals and clip-art stickers",
+   "more than two font families or tracked all-caps labels"
+  ],
+  "evidence": [
+   "look:Minimalist look",
+   "look:Colorful or aesthetic look",
+   "look:Dark mode",
+   "praise:p_look",
+   "complaint:c_look",
+   "complaint:c_readability"
+  ]
+ },
+ "price": {
+  "amount": 37.0,
+  "why": "At the revenue-weighted median ($36.75, what buyers actually pay weighted by sales) and inside the best-earning band ($30 to 53), as style rule r015 requires; the top earner sells at $36.75. Value is carried by two paper sizes, 14 months of dated spreads, reprinting forever and the print tools, not by page count. A 30-day 25% launch sale on the full price covers the period with no reviews.",
+  "evidence": [
+   "price:revenue_weighted_median",
+   "price:best_band",
+   "price:top10_by_revenue_median",
+   "listing:4372874625",
+   "complaint:c_value"
+  ],
+  "launch_sale": {
+   "percent": 25,
+   "days": 30,
+   "sale_price": 27.75
+  }
+ },
+ "seo": {
+  "title": "Weekly Planner Printable 2027, Two Page Weekly Spread, Dated Letter and A4, Monthly Calendar, Habit Tracker, Starts Oct 2026",
+  "tags": [
+   "weekly planner",
+   "printable planner",
+   "2027 planner",
+   "week at a glance",
+   "weekly schedule",
+   "monthly planner",
+   "planner printable",
+   "minimalist planner",
+   "habit tracker",
+   "weekly to do list",
+   "big happy planner",
+   "2027 weekly planner",
+   "planner inserts"
+  ]
+ },
+ "photos": [
+  {
+   "id": "ph1_spread",
+   "shows": "The open week spread for Week 12 (Mar 15 to Mar 21, 2027): left page Mon to Wed with This week's focus, right page Thu to Sun with the habit strip and to do list, side by side as in a binder.",
+   "proves": "complaint:c_not_useful handled: a real two-page weekly spread",
+   "pages": [
+    "w12",
+    "w12b"
+   ]
+  },
+  {
+   "id": "ph2_detail",
+   "shows": "Close crop of the right page: Thursday and Friday columns, the Sat over Sun column and the Habits this week strip, large enough to read the labels.",
+   "proves": "praise:p_look and complaint:c_basic: two-font design and useful blocks, readable at Etsy zoom (r013)",
+   "pages": [
+    "w12b"
+   ]
+  },
+  {
+   "id": "ph3_month",
+   "shows": "The March 2027 month spread: full calendar grid on the left, Goals this month, Important dates, Bills and payments and Notes on the right.",
+   "proves": "praise:p_complete and complaint:c_basic: month planning included",
+   "pages": [
+    "m03",
+    "m03b"
+   ]
+  },
+  {
+   "id": "ph4_print_check",
+   "shows": "Crop of the Print check front: the inch and centimetre rulers, a corner mark and the binding-edge hole guides, with the caption 'Print this sheet first'.",
+   "proves": "complaint:c_print and complaint:c_setup: print settings checked on paper before printing",
+   "pages": [
+    "printcheck"
+   ]
+  },
+  {
+   "id": "ph5_fixes",
+   "shows": "Crop of the Print check back: the 'Something looks wrong?' fix list and the Settings that work table.",
+   "proves": "complaint:c_support: the buyer can fix print problems without waiting for a reply",
+   "pages": [
+    "printcheckb"
+   ]
+  },
+  {
+   "id": "ph6_print_map",
+   "shows": "The Print map: page ranges and sheets for each month, with the two start paths underneath.",
+   "proves": "complaint:c_nav and complaint:c_overwhelm: print one month at a time on any purchase date",
+   "pages": [
+    "printmap"
+   ]
+  },
+  {
+   "id": "ph7_head_start",
+   "shows": "Head start November 2026 month page next to its first week spread, which begins Monday, October 26, 2026.",
+   "proves": "r014 and feature:multi_year: a buyer in October to December 2026 starts now",
+   "pages": [
+    "hs11",
+    "hsw01"
+   ]
+  },
+  {
+   "id": "ph8_whats_inside",
+   "shows": "Cover and Start here page, with a caption panel listing what is included: Letter and A4 PDFs, dates covered, page count, Monday start, one spare undated week, no daily pages, no app needed.",
+   "proves": "complaint:c_misleading and complaint:c_download: exactly what the buyer gets and how to download it",
+   "pages": [
+    "cover",
+    "start"
+   ]
+  },
+  {
+   "id": "ph9_year_spare",
+   "shows": "2027 year at a glance beside the undated Spare week left page.",
+   "proves": "wish:w_undated and praise:p_complete: year overview plus reprintable undated week",
+   "pages": [
+    "year",
+    "spare"
+   ]
+  }
+ ],
+ "spec": {
+  "title": "Open Week 2027",
+  "subtitle": "A printable weekly planner with two pages for every week. October 26, 2026 to January 2, 2028. Letter and A4.",
+  "kicker": "Printable weekly planner",
+  "brand": "Kairos Design Studio",
+  "orientation": "portrait",
+  "dating": {
+   "mode": "dated",
+   "year": 2027
+  },
+  "theme": {
+   "base": "sage",
+   "paper": "#FFFFFF",
+   "ink": "#1F2A33",
+   "muted": "#55606B",
+   "line": "#C3C9CF",
+   "accent": "#A8492B",
+   "soft": "#F5EFEA",
+   "warm": "#D9A58B",
+   "tabs": [
+    "#D9A58B",
+    "#9FB1BF"
+   ],
+   "display": "Corm",
+   "body": "Jost",
+   "motif": "none",
+   "button": "#1F2A33",
+   "labels": "italic"
+  },
+  "type_scale": 1.1,
+  "sections": [
+   {
+    "module": "print_format",
+    "sizes": [
+     "letter",
+     "a4"
+    ],
+    "margin_in": 0.5,
+    "binding_in": 0.375,
+    "duplex": true,
+    "hide_nav": true,
+    "page_numbers": true,
+    "vector_rules": true,
+    "week_spread": {
+     "left_top": [
+      {
+       "kind": "checklist",
+       "label": "This week's focus",
+       "rows": 3,
+       "fill": true
+      }
+     ],
+     "day_rows": 3,
+     "weekend": "stacked",
+     "right_bottom": [
+      {
+       "kind": "pair",
+       "items": [
+        {
+         "kind": "habits",
+         "label": "Habits this week",
+         "rows": 5
+        },
+        {
+         "kind": "checklist",
+         "label": "To do",
+         "rows": 5
+        }
+       ]
+      }
+     ]
+    },
+    "month_spread": {
+     "right": [
+      {
+       "kind": "checklist",
+       "label": "Goals this month",
+       "rows": 3,
+       "fill": true
+      },
+      {
+       "kind": "pair",
+       "items": [
+        {
+         "kind": "lines",
+         "label": "Important dates"
+        },
+        {
+         "kind": "checklist",
+         "label": "Bills and payments",
+         "rows": 7
+        }
+       ]
+      },
+      {
+       "kind": "lines",
+       "label": "Notes"
+      }
+     ]
+    }
+   },
+   {
+    "module": "cover",
+    "start": "start",
+    "button": "Start here"
+   },
+   {
+    "module": "guide",
+    "label": "Start here",
+    "kicker": "Before you print",
+    "anchor": "start",
+    "nav": false,
+    "map": false,
+    "steps": [
+     [
+      "Download on a computer",
+      "On Etsy, open You, then Purchases, then Download files, in a web browser (the Etsy app cannot download files). You get two PDFs: Letter for US paper and A4 for the rest of the world. Open them in any PDF reader, such as Adobe Acrobat Reader, Preview or Chrome. No app, account or subscription is needed."
+     ],
+     [
+      "Print the check sheet first",
+      "Print pages 3 to 4 on one sheet, double-sided, with Scale set to Actual size or 100% and paper size matching the file. Measure the ruler and look at the four corner marks. The back of the sheet lists the fix for each problem.",
+      "printcheck"
+     ],
+     [
+      "Print one month at a time",
+      "The Print map lists the pages for every month. Print pages 1 to 7 once. Buying in October to December 2026? Print Head start November next; its first week begins Monday, October 26. Buying later? Print the current month's row and start this week.",
+      "printmap"
+     ],
+     [
+      "Punch and bind",
+      "Every month and every week opens as a two-page spread when printed double-sided. The binding edge is the wide margin: use a 3-hole punch, a disc punch or a binder clip. No double-sided printer? Print odd pages, put the stack back in the tray, then print even pages."
+     ]
+    ],
+    "tip": "Missed a week? Skip it and print this one. Need more weeks or a fresh copy? Print the same pages again, or the spare undated week, as often as you like."
+   },
+   {
+    "module": "print_check",
+    "label": "Print check",
+    "anchor": "printcheck",
+    "nav": false,
+    "fixes": [
+     "Ruler too short or pages shrunk: set Scale to Actual size or 100% and turn off Fit to page",
+     "A corner mark is missing: set paper size to match the file (Letter or A4)",
+     "Back side upside down: choose Flip on long edge",
+     "No double-sided printer: print odd pages, put the stack back in the tray, then print even pages",
+     "Too much ink: print in grayscale or draft; every page works in black and white",
+     "Still not right? Send the shop an Etsy message with a photo of this sheet"
+    ]
+   },
+   {
+    "module": "print_map",
+    "label": "Print map",
+    "kicker": "Pages by month",
+    "anchor": "printmap",
+    "nav": false
+   },
+   {
+    "module": "year",
+    "nav": false,
+    "links": [
+     [
+      "Starting in 2026? Head start",
+      "hs11"
+     ]
+    ]
+   },
+   {
+    "module": "table",
+    "label": "Dates to remember",
+    "kicker": "Birthdays and more",
+    "anchor": "dates",
+    "nav": false,
+    "headers": [
+     "Date",
+     "Occasion",
+     "Plan or gift",
+     "Done"
+    ],
+    "rows": 24,
+    "check_columns": [
+     "Done"
+    ],
+    "dividers": true
+   },
+   {
+    "module": "head_start",
+    "label": "Head start: Oct 26 to Dec 2026",
+    "kicker": "Start now",
+    "anchor": "hs",
+    "nav": false,
+    "from": "2026-11",
+    "to": "2026-12",
+    "days": false,
+    "continue_to": "m01",
+    "main_links": true,
+    "month": {
+     "side": [
+      "Goals this month",
+      "Notes"
+     ]
+    },
+    "week": {
+     "side": [
+      {
+       "kind": "checklist",
+       "label": "This week's focus",
+       "rows": 3,
+       "fill": true
+      },
+      {
+       "kind": "lines",
+       "label": "Notes"
+      }
+     ]
+    }
+   },
+   {
+    "module": "calendar",
+    "habits": false,
+    "days": false,
+    "month": {
+     "side": [
+      "Goals this month",
+      "Notes"
+     ]
+    },
+    "week": {
+     "side": [
+      {
+       "kind": "checklist",
+       "label": "This week's focus",
+       "rows": 3,
+       "fill": true
+      },
+      {
+       "kind": "lines",
+       "label": "Notes"
+      }
+     ]
+    }
+   },
+   {
+    "module": "spare_week",
+    "label": "Spare week",
+    "kicker": "Undated, print as many as you need",
+    "anchor": "spare",
+    "count": 1,
+    "nav": false
+   },
+   {
+    "module": "lined",
+    "label": "Notes",
+    "kicker": "Notes",
+    "pages": 2,
+    "anchor": "notes",
+    "nav": false
+   }
+  ]
+ },
+ "new_modules": [
+  {
+   "name": "print_format",
+   "what": "Format switch for home-printed planners: prints no page. Put it first in sections; it applies to the whole file wherever it sits (read in Planner.__init__ like eink_format). (1) Sizes: one build per entry in sizes, portrait only: 'letter' = 8.5 x 11 in (816 x 1056 px at 96 px per inch), 'a4' = 210 x 297 mm (794 x 1123 px). @page size is written in in or mm so printers see the true paper size. The build stage writes one PDF per size, named '<title>-Letter.pdf' and '<title>-A4.pdf', with the same page order and page count in both (fail the build if the counts differ). Layout reflows with flex; nothing is laid out for one size only. (2) Safe area: nothing (text, rules, tints, tabs, decoration) is drawn within margin_in of any paper edge, because home printers cannot print the outer 0.2 to 0.25 in. On top of that the binding edge gets binding_in extra. With duplex true, odd pages (sheet fronts, right-hand pages) have the binding margin on the left and even pages (sheet backs, left-hand pages) on the right; with duplex false it is always on the left. (3) Spreads and parity: with duplex true, every month spread and week spread must start on an even PDF page (page 1 is the cover, a sheet front). Do not insert filler pages silently: fail the build and list the anchors that landed on an odd page. (4) Paper and ink: refuse (validate_spec problem) a theme whose paper is not #FFFFFF, because a tinted page prints with a white frame where the printer cannot reach. The cover background is white too (no soft fill). Filled boxes keep the soft token (a light tint). No month tints, no colored card backgrounds, no motif. (5) hide_nav true: no top-bar pills and no month rail on the page edge (an edge rail would be cut off by the printer). The trail stays, as plain small muted text in the header row, and keeps its links, as do the header arrows, so the PDF still navigates on screen. (6) page_numbers true: a small page number (body font, muted, 10px) at the outer bottom corner of each page inside the safe area, equal to the PDF page index, so the Print map and printed numbers match. Brand text moves to the inner bottom corner. (7) vector_rules true: writing lines and dot grids drawn as vector strokes (reuse the eink_format vector_script), 1px in the line color, so they print crisp instead of as blurry gradient patterns. (8) No day pages: when calendar days is false (and head_start days is false), every date on the year, month and head-start month pages links to the left page of the week holding that date (main year wNN, head start hswNN; dates in main Week 1 that fall in December 2026 link to w01), never to a missing day page. (9) month_spread {right: [blocks]}: each month of calendar and head_start becomes two pages. Left (anchor mNN, head start hsMM): kicker year, month title, week chips linking to each week's left page, then the Monday-start month grid filling the rest of the page width and height (5 or 6 rows), date cells linked as in (8). Right (anchor mNNb, head start hsMMb): head with kicker 'This month' and the month name, then the right blocks stacked to fill the page, plus prev and next month arrows. month.side is ignored. (10) week_spread {left_top: [blocks], day_rows: int, weekend: 'stacked', right_bottom: [blocks]}: each week of calendar, head_start and spare_week becomes two pages. Left (anchor wNN, head start hswNN): kicker 'Week N' plus year (head start: 'Head start, week N of 9'), title as the date range ('Mar 15 to Mar 21'), a small link 'Thursday to Sunday' to the right page, previous week arrow; then left_top blocks across the full width; then three equal vertical day columns Mon, Tue, Wed filling the rest. Right (anchor wNNb, hswNNb): kicker 'Week N', title 'Thursday to Sunday', next week arrow (last head-start week: to w01; Week 53: none); three columns Thu, Fri and a third column with Sat above Sun at half height each; right_bottom blocks across the full width underneath. Each day column is a box: day name as the label (italic with theme labels italic), the date number in the display font at about 26px, day_rows checkbox rows, then writing lines to the bottom of the box. Dates outside the dated range are faded and written but not linked, as on the current week pages. week.side is ignored. The week built once under the month holding its Thursday (r008) is unchanged. (11) New block kind 'habits' (label, rows), usable in any blocks list: a header row of seven day initials M T W T F S S over seven circle columns, and rows lines, each with a ruled write-in habit name (about 40% of the width) and seven empty SVG circles (r004), one per day.",
+   "params": {
+    "sizes": "list of 'letter' | 'a4' (one PDF per size)",
+    "margin_in": "number, safe margin on every edge in inches (0.5)",
+    "binding_in": "number, extra binding-edge margin in inches (0.375)",
+    "duplex": "bool, mirrored binding margins and even-page spreads",
+    "hide_nav": "bool, no top bar and no edge rail; trail and arrows kept",
+    "page_numbers": "bool, printed page number at the outer bottom corner",
+    "vector_rules": "bool, writing lines and dots as vector strokes",
+    "month_spread": "dict {right: [blocks]}",
+    "week_spread": "dict {left_top: [blocks], day_rows: int, weekend: 'stacked', right_bottom: [blocks]}"
+   },
+   "why": "The line only builds tablet-sized screen pages (1024 x 768). complaint:c_print (33 reviews) is about pages printing at the wrong size or cut off, complaint:c_not_useful (34) names the missing two-page weekly planner, and complaint:c_quality (30) names misalignments; a printable needs real paper sizes, a safe area, mirrored binding margins and spreads that line up when printed double-sided."
+  },
+  {
+   "name": "print_check",
+   "what": "A one-sheet print test: two pages, anchor printcheck (front) and printcheckb (back). With print_format duplex true, printcheck must land on an odd page so both sides are one sheet (fail the build otherwise). Front: head 'Print check' with kicker 'Front of the sheet'; a ruler box with an inch ruler 6 in long (1/8 in ticks, numbers 0 to 6) and a centimetre ruler 15 cm long (mm ticks, numbers every cm), both drawn as SVG at true physical size (CSS in and cm units) with the text 'Hold a real ruler to the 5 inch and 12 cm marks. If they match, the scale is right.'; four L-shaped corner marks at the corners of the safe area, each labelled 'All four corners showing means nothing is cut off'; a binding-edge strip along the binding margin with hole guides (Letter: 3 holes at 4.25 in spacing, centred; A4: 2 holes 80 mm apart, centred) and the label 'Binding edge: punch here'; a tone row showing a writing line, a dot grid and a filled box, labelled 'Lines should be light but clear'; a lined 'Pen test: write here to check your pen does not bleed' box filling the rest (r006). A link 'Turn over' to the back. Back: head 'Print check' with kicker 'Back of the sheet'; text 'This side should read the same way up as the front. Hold the sheet to the light: the corner marks should sit on top of the front ones.'; the same four corner marks mirrored to the front's positions; a 'Something looks wrong?' checklist with the fixes list; a 'Settings that work' table (Paper size: same as the file, Letter or A4; Scale: Actual size or 100%; Double-sided: Flip on long edge; Color: color or grayscale, both work); links back to Start here and on to the Print map. Registers a Print map row (front pages group) and no top-bar item.",
+   "params": {
+    "label": "str (Print check)",
+    "anchor": "str, default 'printcheck' (back is anchor + 'b')",
+    "fixes": "list of up to 6 str"
+   },
+   "why": "feature:test_page is not seen in any top listing, and complaint:c_print (33), complaint:c_setup (12) and complaint:c_support (22) are buyers who could not get pages to print right and got no help; the line's Setup check proves links work on a tablet, this proves the printer settings on paper before a buyer prints 160 pages."
+  },
+  {
+   "name": "print_map",
+   "what": "One page, anchor printmap: a table of what to print, filled at the end of the build from the final page order (placeholder like %%INDEX%%). Columns: What (links to the first page of the group), Pages ('8 to 19'), Sheets (double-sided sheets, pages divided by 2 rounded up), and a narrow Printed tick-box column. Rows, in file order: 'Start here, Print check, Print map, Year, Dates to remember' (the front pages, 1 to 7 here), one row per head-start month ('November 2026', 'December 2026': the month spread plus the weeks built under it), one row per main month ('January 2027' to 'December 2027', likewise), 'Spare week (undated)', 'Notes'. Under the table, two filled text boxes side by side: 'Starting before 2027' (Print pages 1 to N once, then Head start November; the first week begins Monday, October 26, 2026) and 'Starting later in 2027' (Print pages 1 to N once, then the current month's row; print each month a few days before it begins). N is the last front page, filled in by the build. Page numbers equal the printed page_numbers of print_format and are the same in the Letter and A4 files. Registers no top-bar item.",
+   "params": {
+    "label": "str (Print map)",
+    "kicker": "str",
+    "anchor": "str, default 'printmap'"
+   },
+   "why": "complaint:c_misleading quotes a buyer who found it 'very hard to go through these printables and find the one you need', complaint:c_nav (10) and complaint:c_overwhelm (10) say the same; with exact page ranges a buyer on any date (October 2026 or mid-2027, rules r002 and r014) prints only the month in front of them instead of the whole file."
+  },
+  {
+   "name": "spare_week",
+   "what": "count undated week spreads at the end of the dated planner, in the same print_format week_spread layout: anchors spare and spareb (then spare2, spare2b, and so on). Left page kicker 'Spare week, print as many as you need', title 'Week of' followed by a write-in rule; each day column shows its day name and a short blank rule for the date instead of a number. Right page as the dated right page with a blank date rule per day. Arrows link left and right pages to each other. Registers a Print map row and no top-bar item. With duplex true the first page must land on an even page.",
+   "params": {
+    "label": "str (Spare week)",
+    "kicker": "str",
+    "anchor": "str, default 'spare'",
+    "count": "int, number of spreads (1)"
+   },
+   "why": "wish:w_undated and wish:w_next_year ask for undated pages and later years, and feature:undated is rare (10% of top sellers); a reprintable undated spread lets a buyer add extra weeks or keep going past January 2, 2028 without buying an undated product."
+  }
+ ]
+}

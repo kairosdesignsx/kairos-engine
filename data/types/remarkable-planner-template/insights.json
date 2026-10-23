@@ -1,6 +1,6 @@
 {
  "type_id": "remarkable-planner-template",
- "built_at": "2026-10-22T14:37:27Z",
+ "built_at": "2026-10-23T14:59:09Z",
  "basis": {
   "listings": 30,
   "reviews": 610,
@@ -2727,8 +2727,8 @@
    ]
   },
   {
-   "id": "w_prefilled",
-   "theme": "Times or details pre-filled on pages",
+   "id": "w_side_tabs",
+   "theme": "Side tabs for faster navigation",
    "count": 1,
    "on_top_listings": 0,
    "quotes": [],
@@ -2737,8 +2737,8 @@
    ]
   },
   {
-   "id": "w_side_tabs",
-   "theme": "Side tabs for faster navigation",
+   "id": "w_prefilled",
+   "theme": "Times or details pre-filled on pages",
    "count": 1,
    "on_top_listings": 0,
    "quotes": [],
@@ -3285,14 +3285,14 @@
   },
   {
    "kind": "wish",
-   "wish": "w_prefilled",
-   "theme": "Times or details pre-filled on pages",
+   "wish": "w_side_tabs",
+   "theme": "Side tabs for faster navigation",
    "count": 1
   },
   {
    "kind": "wish",
-   "wish": "w_side_tabs",
-   "theme": "Side tabs for faster navigation",
+   "wish": "w_prefilled",
+   "theme": "Times or details pre-filled on pages",
    "count": 1
   },
   {

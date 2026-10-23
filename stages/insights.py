@@ -165,8 +165,9 @@ def build(type_id):
     prices = [L['price'] for L in listings if L['price']]
     top10 = sorted(listings, key=lambda L: -(L['mo_revenue'] or 0))[:10]
     weighted = []
+    cap = 3 * _pct(prices, .5) if prices else None  # one custom or made-to-order listing at 10x the market must not set the price floor
     for L in listings:
-        if L['price'] and L['mo_revenue']:
+        if L['price'] and L['mo_revenue'] and (cap is None or L['price'] <= cap):
             weighted += [L['price']] * max(1, int(L['mo_revenue'] // 50))
     price = {"p25": _pct(prices, .25), "median": _pct(prices, .5), "p75": _pct(prices, .75),
              "top10_by_revenue_median": _pct([L['price'] for L in top10], .5),

@@ -1,0 +1,79 @@
+{
+ "pass": true,
+ "problems": [],
+ "needs_module": [
+  "print_format",
+  "print_check",
+  "print_map",
+  "spare_week"
+ ],
+ "coverage": [
+  {
+   "ref": "complaint:c_download",
+   "theme": "Couldn't download or open the file",
+   "count": 44,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_not_useful",
+   "theme": "Not useful for my needs",
+   "count": 34,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_print",
+   "theme": "Hard to print correctly",
+   "count": 33,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_quality",
+   "theme": "Errors, typos or low quality",
+   "count": 30,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_misleading",
+   "theme": "Not as described or pictured",
+   "count": 29,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_support",
+   "theme": "Seller didn't help or reply",
+   "count": 22,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_value",
+   "theme": "Not worth the price",
+   "count": 19,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_hard",
+   "theme": "Hard to use day to day",
+   "count": 15,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_basic",
+   "theme": "Too basic or boring",
+   "count": 13,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_setup",
+   "theme": "Confusing setup or unclear instructions",
+   "count": 12,
+   "state": "fixed"
+  }
+ ],
+ "summary": {
+  "fixed": 10,
+  "included": 0,
+  "waived": 0,
+  "missing": 0,
+  "unique": 3
+ }
+}

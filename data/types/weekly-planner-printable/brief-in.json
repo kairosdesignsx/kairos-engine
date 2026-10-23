@@ -1,0 +1,1617 @@
+{
+ "type_id": "weekly-planner-printable",
+ "product_type": "Weekly planner printable",
+ "format": "Printable planner PDF (Letter and A4)",
+ "line": "planner",
+ "rules": {
+  "significant_complaint_count": 12,
+  "min_unique": 2,
+  "evidence_ref_kinds": [
+   "complaint:<id>",
+   "praise:<id>",
+   "wish:<id>",
+   "feature:<id>",
+   "price:<field>",
+   "keyword:<tag>",
+   "listing:<listing_id>",
+   "market:<field>",
+   "look:<style>"
+  ]
+ },
+ "basis": {
+  "listings": 30,
+  "reviews": 614,
+  "reviews_coded": 544,
+  "off_type_dropped": 14,
+  "negative_reviews": 235,
+  "feature_sources": [
+   "titles"
+  ],
+  "photos": "pending"
+ },
+ "market": {
+  "opportunity_score": 58.0,
+  "monthly_searches": 1473.0,
+  "competing_listings": 154324.0,
+  "top_seller_revenue": 3313.0,
+  "new_sellers_in_top_pct": 40.0,
+  "summary": "Proceed with caution. ~1,473 monthly searches, competition crowded (154,324 listings), and 40% of top sellers are under 6 months old. Top seller earns ~$3,313/mo; the best-earning price band is $30–53.",
+  "best_price_band": "$30-53"
+ },
+ "must_address": [
+  {
+   "ref": "complaint:c_download",
+   "theme": "Couldn't download or open the file",
+   "count": 44,
+   "quotes": [
+    {
+     "text": "Very difficult to download and I haven’t got everything yer",
+     "stars": 2
+    },
+    {
+     "text": "This will not download even after restarting my computer",
+     "stars": 2
+    },
+    {
+     "text": "Can't print or download what I bought",
+     "stars": 2
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_not_useful",
+   "theme": "Not useful for my needs",
+   "count": 34,
+   "quotes": [
+    {
+     "text": "Wasn’t what I was expecting. Tons of templates but none of what I was looking for. No two page weekly planners.",
+     "stars": 1
+    },
+    {
+     "text": "Did not provide weekly plans as most “planners” have. The options are immense but focus more on developing plans, checklist…..",
+     "stars": 2
+    },
+    {
+     "text": "It wasn't what I was looking for. There are a lot of trackers in this bundle, which are very helpful but the weekly layouts did not work for me.",
+     "stars": 3
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_print",
+   "theme": "Hard to print correctly",
+   "count": 33,
+   "quotes": [
+    {
+     "text": "It is hard to print it out correctly on A5, I would pay money to have the item send to me instead.",
+     "stars": 2
+    },
+    {
+     "text": "I can't print the product off I tried to reach out to the people and they're very little help.",
+     "stars": 1
+    },
+    {
+     "text": "I could not get the pages to print in A5.  Everything came out 8 1/2 X 11.",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_quality",
+   "theme": "Errors, typos or low quality",
+   "count": 30,
+   "quotes": [
+    {
+     "text": "this is so amature - not at all professional looking",
+     "stars": 1
+    },
+    {
+     "text": "A4 bundle opened - spent 3 hours with 1 of the 3 files fixing all the errors and misalignments for the pages I wanted to use. Not worth paying for it to have to fix everything.",
+     "stars": 1
+    },
+    {
+     "text": "The pages are out of date and awful",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_misleading",
+   "theme": "Not as described or pictured",
+   "count": 29,
+   "quotes": [
+    {
+     "text": "Sorry - not a fan.  The description says 2026 and 2027 but the pages I need (vertical) are blank, NOT dated.  Very disappointed.",
+     "stars": 2
+    },
+    {
+     "text": "Very hard to go through these printable and find the one you need. Isn’t as well organized as I would like. Pictures looked better of them, have had to find better quality from another seller.",
+     "stars": 1
+    },
+    {
+     "text": "Not what I was expecting.",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_support",
+   "theme": "Seller didn't help or reply",
+   "count": 22,
+   "quotes": [
+    {
+     "text": "I can't print the product off I tried to reach out to the people and they're very little help.",
+     "stars": 1
+    },
+    {
+     "text": "email with questions and was never acknowledged. Waste of money if you can't get a response. Bought from vendor because ad stated quick response.",
+     "stars": 1
+    },
+    {
+     "text": "I have message this person on here and facebook. They have seen my message and no respond. BAD COMMUNICATION and DOESNT PRINT LIKE IT SHOULD! WASTE OF TIME AND MONEY. DONT BOTHER",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_value",
+   "theme": "Not worth the price",
+   "count": 19,
+   "quotes": [
+    {
+     "text": "email with questions and was never acknowledged. Waste of money if you can't get a response. Bought from vendor because ad stated quick response.",
+     "stars": 1
+    },
+    {
+     "text": "A4 bundle opened - spent 3 hours with 1 of the 3 files fixing all the errors and misalignments for the pages I wanted to use. Not worth paying for it to have to fix everything.",
+     "stars": 1
+    },
+    {
+     "text": "Es gibt viel Auswahl aber vieles auch sehr einfach. Ich würde empfehlen das Produkt zu kaufen wenn es im Angebot ist. 40 € finde ich ein bisschen sehr viel. Aber dennoch sehr süß und kann wiederverwen",
+     "stars": 4
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_hard",
+   "theme": "Hard to use day to day",
+   "count": 15,
+   "quotes": [
+    {
+     "text": "did not enjoy the platform i had to use to access the pages to print them not user friendly like my other downloads",
+     "stars": 1
+    },
+    {
+     "text": "It was great! Only thing I didn’t like was how hard it is to keep track of the circle habit tracker but that’s a me problem!",
+     "stars": 4
+    },
+    {
+     "text": "Aun no he podido imprimirlo. Se me ha dificultado mucho.",
+     "stars": 2
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_basic",
+   "theme": "Too basic or boring",
+   "count": 13,
+   "quotes": [
+    {
+     "text": "The one thing I'm glad about is that I did not pay full price! These printables do not contain even the most common pages such as cleaning checklists or anything to do with finances.",
+     "stars": 1
+    },
+    {
+     "text": "Very ugly outlines very nasic",
+     "stars": 1
+    },
+    {
+     "text": "Es gibt viel Auswahl aber vieles auch sehr einfach. Ich würde empfehlen das Produkt zu kaufen wenn es im Angebot ist. 40 € finde ich ein bisschen sehr viel. Aber dennoch sehr süß und kann wiederverwen",
+     "stars": 4
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_setup",
+   "theme": "Confusing setup or unclear instructions",
+   "count": 12,
+   "quotes": [
+    {
+     "text": "This does not print like it is suppose to and little to no instructions.",
+     "stars": 1
+    },
+    {
+     "text": "Lots of layouts for different categories, not all inserts customizable - customization is a small learning curve. Overall a good product to personalize your planner with inserts you want and need.",
+     "stars": 4
+    },
+    {
+     "text": "I was not sure how to edit this file I followed the instructions and it still didn’t turn out right.",
+     "stars": 1
+    }
+   ]
+  }
+ ],
+ "other_complaints": [
+  {
+   "ref": "complaint:c_look",
+   "theme": "Didn't like the look",
+   "count": 11
+  },
+  {
+   "ref": "complaint:c_nav",
+   "theme": "Hard to navigate or find pages",
+   "count": 10
+  },
+  {
+   "ref": "complaint:c_device",
+   "theme": "Doesn't work on my app or device",
+   "count": 10
+  },
+  {
+   "ref": "complaint:c_overwhelm",
+   "theme": "Too much, overwhelming",
+   "count": 10
+  },
+  {
+   "ref": "complaint:c_edit",
+   "theme": "Can't edit, type or customize",
+   "count": 9
+  },
+  {
+   "ref": "complaint:c_extra_app",
+   "theme": "Needed an app or subscription that wasn't clear",
+   "count": 8
+  },
+  {
+   "ref": "complaint:c_missing",
+   "theme": "Missing pages or less than expected",
+   "count": 8
+  },
+  {
+   "ref": "complaint:c_readability",
+   "theme": "Text too small or hard to read",
+   "count": 6
+  },
+  {
+   "ref": "complaint:c_repetitive",
+   "theme": "Repetitive or duplicate pages",
+   "count": 6
+  },
+  {
+   "ref": "complaint:c_refund",
+   "theme": "Refund refused",
+   "count": 6
+  },
+  {
+   "ref": "complaint:c_dates",
+   "theme": "Wrong or missing dates, calendar errors",
+   "count": 5
+  },
+  {
+   "ref": "complaint:c_lag",
+   "theme": "Slow, laggy or file too big",
+   "count": 5
+  },
+  {
+   "ref": "complaint:c_links",
+   "theme": "Links broken or go to the wrong page",
+   "count": 4
+  },
+  {
+   "ref": "complaint:c_upsell",
+   "theme": "Pushes paid add-ons or sign-ups",
+   "count": 3
+  },
+  {
+   "ref": "complaint:c_shipping",
+   "theme": "Physical order slow or never arrived",
+   "count": 3
+  },
+  {
+   "ref": "complaint:c_split_files",
+   "theme": "Split into many separate files",
+   "count": 3
+  },
+  {
+   "ref": "complaint:c_security",
+   "theme": "Spam, privacy or virus worries",
+   "count": 2
+  },
+  {
+   "ref": "complaint:c_fake_reviews",
+   "theme": "Reviews seem fake or bought",
+   "count": 2
+  },
+  {
+   "ref": "complaint:c_plagiarism",
+   "theme": "Design copied from other creators",
+   "count": 2
+  },
+  {
+   "ref": "complaint:c_not_physical",
+   "theme": "Expected a physical product",
+   "count": 2
+  },
+  {
+   "ref": "complaint:c_review_nag",
+   "theme": "Nagged for a review",
+   "count": 1
+  },
+  {
+   "ref": "complaint:c_broken",
+   "theme": "Doesn't work (no detail)",
+   "count": 1
+  },
+  {
+   "ref": "complaint:c_paid_update",
+   "theme": "Charged for updates or fixes",
+   "count": 1
+  },
+  {
+   "ref": "complaint:c_space",
+   "theme": "Too little writing space",
+   "count": 1
+  },
+  {
+   "ref": "complaint:c_flat",
+   "theme": "Just a flat PDF, not interactive",
+   "count": 1
+  },
+  {
+   "ref": "complaint:c_language",
+   "theme": "Only in English",
+   "count": 1
+  }
+ ],
+ "praise": [
+  {
+   "ref": "praise:p_fits_needs",
+   "theme": "Useful, fits my needs",
+   "count": 98,
+   "quotes": [
+    {
+     "text": "Exactly what i was searching for and i'm excited for the possibilities it hold for planning",
+     "stars": 5
+    },
+    {
+     "text": "The owner of this company is a honest person and her products are very useful.",
+     "stars": 5
+    },
+    {
+     "text": "It was exactly what I was looking for",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_look",
+   "theme": "Beautiful design",
+   "count": 80,
+   "quotes": [
+    {
+     "text": "Every page was designed beautifully. It was a quick download and each page printed out beautifully. Highly recommended.",
+     "stars": 5
+    },
+    {
+     "text": "The templates are well designed and the number of templates for the price is fantastic.",
+     "stars": 5
+    },
+    {
+     "text": "Very cute planner set. Excited to try it out. Printing seems a little tricky tho.",
+     "stars": 4
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_complete",
+   "theme": "Has everything I need",
+   "count": 60,
+   "quotes": [
+    {
+     "text": "My order was printable and had more than one topic to pick and several different setups for that topic I liked that.",
+     "stars": 4
+    },
+    {
+     "text": "There's so many files to look through and choose for the perfect journaling experience. Thank you!",
+     "stars": 5
+    },
+    {
+     "text": "very impressed with the variety and the setups. after purchasing there were pages I didn't realize originally were included.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_easy",
+   "theme": "Easy to set up and use",
+   "count": 59,
+   "quotes": [
+    {
+     "text": "great product. easy to download and print. Just bought a few other pages to supplement the perfect planner set up",
+     "stars": 5
+    },
+    {
+     "text": "In my search to add pages to my planner, I found this bundle. It's very well made and easy to use. It has everything I needed. Thank you. 🙂",
+     "stars": 5
+    },
+    {
+     "text": "Die zahlreichen Dateien sind super leicht für den Download bereitgestellt und können somit ganz einfach ausgedruckt oder Digital verwendet werden.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_quality",
+   "theme": "High quality",
+   "count": 45,
+   "quotes": [
+    {
+     "text": "The templates are well designed and the number of templates for the price is fantastic.",
+     "stars": 5
+    },
+    {
+     "text": "Delivered to my inbox as promised. The quality and quantity of this package is great!",
+     "stars": 5
+    },
+    {
+     "text": "I had so much fun exploring this collection and making my planner! I love every page!! Super lovely seller, and it shows in the planners, there are so many meaningful details and designs!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_adhd",
+   "theme": "Helps me stay on track",
+   "count": 32,
+   "quotes": [
+    {
+     "text": "A must have if you want to stay organized!",
+     "stars": 5
+    },
+    {
+     "text": "This will really help me keep on track.",
+     "stars": 5
+    },
+    {
+     "text": "Awesome, just what I needed to thrive in a world that is not designed for the ADHD Hunters & Gatherers.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_flexible",
+   "theme": "Flexible or customizable",
+   "count": 24,
+   "quotes": [
+    {
+     "text": "My order was printable and had more than one topic to pick and several different setups for that topic I liked that.",
+     "stars": 4
+    },
+    {
+     "text": "Die zahlreichen Dateien sind super leicht für den Download bereitgestellt und können somit ganz einfach ausgedruckt oder Digital verwendet werden.",
+     "stars": 5
+    },
+    {
+     "text": "So wie erwartet wirklich ein toller Artikel mit vielen Möglichkeiten",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_support",
+   "theme": "Seller was helpful",
+   "count": 23,
+   "quotes": [
+    {
+     "text": "I'm excited to use this planner! This shop also has excellent  customer service.",
+     "stars": 5
+    },
+    {
+     "text": "I had so much fun exploring this collection and making my planner! I love every page!! Super lovely seller, and it shows in the planners, there are so many meaningful details and designs!",
+     "stars": 5
+    },
+    {
+     "text": "Unable to use on a Samsung tablet S.  Seller tried to help, but after doing research, it's not compatible with this style tablet.",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_as_described",
+   "theme": "Exactly as described",
+   "count": 14,
+   "quotes": [
+    {
+     "text": "Delivered to my inbox as promised. The quality and quantity of this package is great!",
+     "stars": 5
+    },
+    {
+     "text": "The item was exactly as described and easy to use!",
+     "stars": 5
+    },
+    {
+     "text": "Exactly as described no issues",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_value",
+   "theme": "Great value",
+   "count": 13,
+   "quotes": [
+    {
+     "text": "The templates are well designed and the number of templates for the price is fantastic.",
+     "stars": 5
+    },
+    {
+     "text": "Great value for the money!",
+     "stars": 5
+    },
+    {
+     "text": "Fair price for nice notebooks; they make me more motivated to work on my projects and do not take up space on my shelf.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_repeat",
+   "theme": "Repeat buyer",
+   "count": 13,
+   "quotes": [
+    {
+     "text": "great product. easy to download and print. Just bought a few other pages to supplement the perfect planner set up",
+     "stars": 5
+    },
+    {
+     "text": "There are many products I like from this shop. I truly enjoy the clean and simple look.",
+     "stars": 5
+    },
+    {
+     "text": "This is my 3rd year using this planner and notebooks.  I love how they are editable to what I need.  Thank you for such a great designed tool!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_print",
+   "theme": "Prints easily and cleanly",
+   "count": 8,
+   "quotes": [
+    {
+     "text": "great product. easy to download and print. Just bought a few other pages to supplement the perfect planner set up",
+     "stars": 5
+    },
+    {
+     "text": "Perfect printable template for 8\"x11\" sheets to build your own planner. I used it for my disc planner for 2027, thank you so much!",
+     "stars": 5
+    },
+    {
+     "text": "Super Produkt, nutze es sehr gerne. Ausdrucken ging auch ohne Probleme! Danke :)",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_daily",
+   "theme": "I use it every day",
+   "count": 8,
+   "quotes": [
+    {
+     "text": "I'm using this to plan my every day schedule and my son is using it to plan his classroom work",
+     "stars": 5
+    },
+    {
+     "text": "Very useful thing, daily use. It has everything i need. Recommend.",
+     "stars": 5
+    },
+    {
+     "text": "I love it...It makes me to want to look and write in it everyday.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_guide",
+   "theme": "Clear instructions or tutorials",
+   "count": 7,
+   "quotes": [
+    {
+     "text": "The file shipped immediately. Easy to follow instructions for downloading. Fantastic array of designs, planners for everything, trackers for everything, even some .png files. Friendly shop owner. Exce",
+     "stars": 5
+    },
+    {
+     "text": "This digital checklist was exactly what we needed!  Easy to use with great instructions.",
+     "stars": 5
+    },
+    {
+     "text": "First things first; read the dowloaded pdf & all will be fine :p A hundred thanks for this incredible COMPLETE work AND the tutorials!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_device",
+   "theme": "Works on my device",
+   "count": 5,
+   "quotes": [
+    {
+     "text": "Wonderful monochrome look! Works beautifully with Kindle Scribe!",
+     "stars": 5
+    },
+    {
+     "text": "I love these planners. I've been using the Ultimate Planner for my ReMarkable2 for about 3 years now. They're easy to customize and work great for me. I highly recommend them.",
+     "stars": 5
+    },
+    {
+     "text": "cute adorable like on my iPad",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_nav",
+   "theme": "Links work, easy to navigate",
+   "count": 4,
+   "quotes": [
+    {
+     "text": "Easy to navigate and make personal edits",
+     "stars": 5
+    },
+    {
+     "text": "I love how comprehensive and easy to navigate this planner is! Thank you for making this :)",
+     "stars": 5
+    },
+    {
+     "text": "Hyperlinked, yes. Yet unusable on my Android. Cannot write on it all all. I got the digital version but I feel like the only way I'll be able to use it is if I print it out. Not what I was looking for",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_extras",
+   "theme": "Love the stickers and extras",
+   "count": 3,
+   "quotes": [
+    {
+     "text": "The file shipped immediately. Easy to follow instructions for downloading. Fantastic array of designs, planners for everything, trackers for everything, even some .png files. Friendly shop owner. Exce",
+     "stars": 5
+    },
+    {
+     "text": "Very comprehensive packet and free item a plus",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_space",
+   "theme": "Plenty of writing space",
+   "count": 2,
+   "quotes": [
+    {
+     "text": "A4縦見開き・日付が大きくなくて書けるスペースが多い・NOTESが右側にある・日曜始まり　と、\r\nまさに希望通りの、ずっと探していたものがここにありました。　\r\n次回は罫線入りのものを買いたいと思っています。\r\n2027年版も期待しています。\r\nThank you very much ！",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_updates",
+   "theme": "Free updates",
+   "count": 1,
+   "quotes": []
+  }
+ ],
+ "wishes": [
+  {
+   "ref": "wish:w_file_format",
+   "theme": "Other file formats (Google Docs, Word, Pages)",
+   "count": 4
+  },
+  {
+   "ref": "wish:w_page_types",
+   "theme": "More page types included",
+   "count": 4
+  },
+  {
+   "ref": "wish:w_undated",
+   "theme": "Undated version",
+   "count": 2
+  },
+  {
+   "ref": "wish:w_next_year",
+   "theme": "New edition for upcoming years",
+   "count": 2
+  },
+  {
+   "ref": "wish:w_printed",
+   "theme": "Option to buy it printed",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_crop_marks",
+   "theme": "Crop or trim marks for printing",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_sync",
+   "theme": "App and PDF versions that match",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_easy_delivery",
+   "theme": "Easier way to receive the files",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_print_layout",
+   "theme": "Print layouts for smaller sizes",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_prefilled",
+   "theme": "Times or details pre-filled on pages",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_side_tabs",
+   "theme": "Side tabs for faster navigation",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_previews",
+   "theme": "Page previews before buying",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_customize",
+   "theme": "More ways to customize",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_themes",
+   "theme": "More design themes",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_tutorial",
+   "theme": "A video showing how it works",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_listing_info",
+   "theme": "Listing should say which apps are needed",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_order",
+   "theme": "Pages in a logical order",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_links",
+   "theme": "Hyperlinked pages",
+   "count": 1
+  }
+ ],
+ "features": [
+  {
+   "ref": "feature:bundle",
+   "name": "Bundle of several products",
+   "tier": "common",
+   "share": 0.533,
+   "revenue_share": 0.848
+  },
+  {
+   "ref": "feature:dated",
+   "name": "Dated for the year",
+   "tier": "common",
+   "share": 0.433,
+   "revenue_share": 0.537
+  },
+  {
+   "ref": "feature:journal",
+   "name": "Journal or notebook pages",
+   "tier": "common",
+   "share": 0.333,
+   "revenue_share": 0.572
+  },
+  {
+   "ref": "feature:all_in_one",
+   "name": "All-in-one life planner",
+   "tier": "rare",
+   "share": 0.267,
+   "revenue_share": 0.43
+  },
+  {
+   "ref": "feature:multi_year",
+   "name": "Covers more than one year",
+   "tier": "rare",
+   "share": 0.233,
+   "revenue_share": 0.277
+  },
+  {
+   "ref": "feature:adhd_specific",
+   "name": "Built for ADHD",
+   "tier": "rare",
+   "share": 0.133,
+   "revenue_share": 0.052
+  },
+  {
+   "ref": "feature:self_care",
+   "name": "Self-care, mood or wellness pages",
+   "tier": "rare",
+   "share": 0.133,
+   "revenue_share": 0.189
+  },
+  {
+   "ref": "feature:goals",
+   "name": "Goal setting",
+   "tier": "rare",
+   "share": 0.133,
+   "revenue_share": 0.05
+  },
+  {
+   "ref": "feature:time_blocking",
+   "name": "Time blocking or hourly schedule",
+   "tier": "rare",
+   "share": 0.133,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:undated",
+   "name": "Undated version",
+   "tier": "rare",
+   "share": 0.1,
+   "revenue_share": 0.039
+  },
+  {
+   "ref": "feature:habit_tracker",
+   "name": "Habit tracker",
+   "tier": "rare",
+   "share": 0.1,
+   "revenue_share": 0.187
+  },
+  {
+   "ref": "feature:minimalist",
+   "name": "Minimalist look",
+   "tier": "rare",
+   "share": 0.1,
+   "revenue_share": 0.203
+  },
+  {
+   "ref": "feature:work",
+   "name": "Work or productivity focus",
+   "tier": "rare",
+   "share": 0.1,
+   "revenue_share": 0.025
+  },
+  {
+   "ref": "feature:budget",
+   "name": "Budget or finance pages",
+   "tier": "rare",
+   "share": 0.067,
+   "revenue_share": 0.026
+  },
+  {
+   "ref": "feature:landscape",
+   "name": "Landscape layout",
+   "tier": "rare",
+   "share": 0.067,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:colorful",
+   "name": "Colorful or aesthetic look",
+   "tier": "rare",
+   "share": 0.067,
+   "revenue_share": 0.002
+  },
+  {
+   "ref": "feature:hyperlinked",
+   "name": "Hyperlinked tabs and dates",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:meal",
+   "name": "Meal planning",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:stickers",
+   "name": "Digital stickers included",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:dark_mode",
+   "name": "Dark mode",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:goodnotes",
+   "name": "Says Goodnotes",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:notability",
+   "name": "Says Notability",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:android",
+   "name": "Android or Samsung support",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:eink",
+   "name": "E-ink tablets (reMarkable, Boox, Kindle Scribe)",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:portrait",
+   "name": "Portrait layout",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:student",
+   "name": "Student or academic",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:custom",
+   "name": "Customizable or personalized",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:brain_dump",
+   "name": "Brain dump pages",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:routines",
+   "name": "Routine builder",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:dopamine_menu",
+   "name": "Dopamine menu",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:priority_matrix",
+   "name": "Priority matrix or top 3",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:quick_start",
+   "name": "Quick start or setup guide",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:test_page",
+   "name": "Link test or setup check page",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  }
+ ],
+ "standard_features": [],
+ "price": {
+  "p25": 6.49,
+  "median": 21.29,
+  "p75": 38.26,
+  "top10_by_revenue_median": 30.93,
+  "revenue_weighted_median": 36.75,
+  "best_band": "$30-53"
+ },
+ "keywords": [
+  {
+   "tag": "printable planner",
+   "used_by_top": 18,
+   "volume": null
+  },
+  {
+   "tag": "weekly planner",
+   "used_by_top": 12,
+   "volume": null
+  },
+  {
+   "tag": "happy planner insert",
+   "used_by_top": 9,
+   "volume": null
+  },
+  {
+   "tag": "daily planner",
+   "used_by_top": 8,
+   "volume": null
+  },
+  {
+   "tag": "monthly planner",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "happy planner",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "planner printable",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "big happy planner",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "minimalist planner",
+   "used_by_top": 6,
+   "volume": null
+  },
+  {
+   "tag": "planner template",
+   "used_by_top": 6,
+   "volume": null
+  },
+  {
+   "tag": "bullet journal",
+   "used_by_top": 6,
+   "volume": null
+  },
+  {
+   "tag": "mood tracker",
+   "used_by_top": 6,
+   "volume": null
+  },
+  {
+   "tag": "habit tracker",
+   "used_by_top": 6,
+   "volume": null
+  },
+  {
+   "tag": "happy planner refill",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "2027 planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "planner inserts",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "printable journal",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "digital planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "2027 journal",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "2027 journal bundle",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "adhd planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "happy planner 2026",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "happy planner pages",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "planner bundle",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "life planner bundle",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "reading journal",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "fitness planner",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "weekly schedule",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "weekly to do list",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "week at a glance",
+   "used_by_top": 3,
+   "volume": null
+  }
+ ],
+ "looks": [
+  {
+   "ref": "look:Minimalist look",
+   "share": 0.1
+  },
+  {
+   "ref": "look:Landscape layout",
+   "share": 0.067
+  },
+  {
+   "ref": "look:Colorful or aesthetic look",
+   "share": 0.067
+  },
+  {
+   "ref": "look:Dark mode",
+   "share": 0.0
+  },
+  {
+   "ref": "look:Portrait layout",
+   "share": 0.0
+  }
+ ],
+ "top_listings": [
+  {
+   "ref": "listing:4372874625",
+   "title": "Ultimate Life Planner Bundle: 600+ Printable Pages, Daily, Weekly, Yearly, Minimalist Templates, 2027 / 2026 Journal (A4",
+   "shop": "PaperPlansx",
+   "price": 36.75,
+   "mo_revenue": 2683.0,
+   "total_sales": 1000.0
+  },
+  {
+   "ref": "listing:868166703",
+   "title": "1000+ Happy Planner Templates, Printable and Digital, HP Inserts & Covers 2026-2027",
+   "shop": "EvoPrintables",
+   "price": 29.86,
+   "mo_revenue": 0.0,
+   "total_sales": 15520.0
+  },
+  {
+   "ref": "listing:4539223391",
+   "title": "Japan Journal Bundle - 200+ Printable planner Pages, Habit & Mood Trackers, Yearly Trackers, Reading Logs, Digital Plann",
+   "shop": "FreshFolioPrintables",
+   "price": 18.99,
+   "mo_revenue": 2127.0,
+   "total_sales": 168.0
+  },
+  {
+   "ref": "listing:1294731713",
+   "title": "Printable planner, Personal planner bundle, daily weekly monthly planner, Goal, Health, Productivity, Finance, POMODORO ",
+   "shop": "ThePrintablePlans",
+   "price": 5.99,
+   "mo_revenue": 0.0,
+   "total_sales": 7632.0
+  },
+  {
+   "ref": "listing:4574328844",
+   "title": "2027 Journal Bundle - Storybook Collection, Printable Journal Pages, 2027 Journal, Digital Planner, Digital Download, Si",
+   "shop": "FreshFolioPrintables",
+   "price": 23.59,
+   "mo_revenue": 1864.0,
+   "total_sales": 79.0
+  },
+  {
+   "ref": "listing:957552332",
+   "title": "Hourly Weekly Schedule Landscape, Printable Weekly Planner, Week At a Glance, Weekly Agenda, Desk Planner, Weekly To Do ",
+   "shop": "MyLifePlans",
+   "price": 2.25,
+   "mo_revenue": 0.0,
+   "total_sales": 4821.0
+  },
+  {
+   "ref": "listing:4418140359",
+   "title": "Ultimate Printable Planner Whole Shop Bundle | Daily Weekly Monthly Inserts | A4 A5 Letter Half Letter Classic HP | Life",
+   "shop": "PlanRightCo",
+   "price": 40.0,
+   "mo_revenue": 1760.0,
+   "total_sales": 209.0
+  },
+  {
+   "ref": "listing:1257544669",
+   "title": "2026 + 2027 ADHD Printable Planner (Sunset) Adult Daily Journal, Self-Care (PDF)",
+   "shop": "FutureADHD",
+   "price": 24.33,
+   "mo_revenue": 33.0,
+   "total_sales": 4819.0
+  },
+  {
+   "ref": "listing:4307942111",
+   "title": "A4, A5, Letter & Half Letter Planners Bundle - Daily Planners, Weekly Planners, Monthly Planners, Yearly Planners and Mo",
+   "shop": "MyLifePlans",
+   "price": 77.64,
+   "mo_revenue": 1087.0,
+   "total_sales": 144.0
+  },
+  {
+   "ref": "listing:729202822",
+   "title": "Printable Planner Bundle - All printable planners in the shop ~ Make important life changes ~ Plan your next steps ~ Get",
+   "shop": "lovingmondays",
+   "price": 39.8,
+   "mo_revenue": 0.0,
+   "total_sales": 4344.0
+  },
+  {
+   "ref": "listing:4332058462",
+   "title": "1300+ Printable Planner Pages Bundle, Daily, Weekly, Monthly Personal Templates, A4, A5",
+   "shop": "toplifeplanners",
+   "price": 59.8,
+   "mo_revenue": 1017.0,
+   "total_sales": 494.0
+  },
+  {
+   "ref": "listing:801957121",
+   "title": "Bullet Planner Printables, Dot Grid Journal Bundle, Bujo Trackers, Weekly Spread Templates (A4 A5 Letter HP Classic) (Di",
+   "shop": "PineberryPlanner",
+   "price": 9.99,
+   "mo_revenue": 0.0,
+   "total_sales": 4311.0
+  },
+  {
+   "ref": "listing:1757285496",
+   "title": "Ulitmate Happy Planner Inserts | 500+ Big & Classic Planner Covers, Calendars, Templates, Brain-Dump | Printable Pages",
+   "shop": "FeelingCozyOfficial",
+   "price": 38.26,
+   "mo_revenue": 689.0,
+   "total_sales": 2360.0
+  },
+  {
+   "ref": "listing:940853811",
+   "title": "Ultimate Life Planner: 155 Page Household Organizer (PDF)",
+   "shop": "EverythingPrintable1",
+   "price": 8.0,
+   "mo_revenue": 0.0,
+   "total_sales": 3948.0
+  },
+  {
+   "ref": "listing:4552679672",
+   "title": "Ultimate Life Planner Bundle Printable, 1000+ Pages, A5 A4 US Letter, Daily Weekly Monthly Yearly Planner, 2027 Journal,",
+   "shop": "calmandpaperxx",
+   "price": 25.1,
+   "mo_revenue": 602.0,
+   "total_sales": 32.0
+  }
+ ],
+ "capabilities": {
+  "modules": {
+   "cover": {
+    "desc": "Cover page with title, subtitle and an Open button. start (anchor the button opens, default index), button (default Open planner; \"Open journal\" also makes printed help say journal), size (title px)",
+    "params": {
+     "start": "str",
+     "button": "str, default \"Open planner\"",
+     "size": "int"
+    }
+   },
+   "index": {
+    "desc": "Contents page: a card for every section plus all months",
+    "params": {}
+   },
+   "year": {
+    "desc": "Year at a glance: 12 mini calendars, every date links to its day (dated) or month (undated)",
+    "params": {}
+   },
+   "lined": {
+    "desc": "Lined or dot-grid writing pages (notes, goals, brain dump). label, kicker, pages, dots, anchor",
+    "params": {
+     "label": "str",
+     "kicker": "str",
+     "pages": "int",
+     "dots": "bool",
+     "anchor": "str"
+    }
+   },
+   "checklist": {
+    "desc": "Checklist page in columns. label, kicker, groups: [[title, [items]]], anchor",
+    "params": {
+     "label": "str",
+     "kicker": "str",
+     "groups": "list",
+     "anchor": "str"
+    }
+   },
+   "table": {
+    "desc": "Table page. label, kicker, headers, rows, first_column (pre-filled), anchor, check_columns (headers drawn as a narrow column of tick boxes), dividers (column rules)",
+    "params": {
+     "label": "str",
+     "headers": "list",
+     "rows": "int",
+     "first_column": "list",
+     "anchor": "str",
+     "check_columns": "list of header names",
+     "dividers": "bool"
+    }
+   },
+   "year_pixels": {
+    "desc": "Year in pixels: color one square per day for mood or energy. label, keys",
+    "params": {
+     "label": "str",
+     "keys": "list"
+    }
+   },
+   "guide": {
+    "desc": "Printed guide page with numbered steps (how to start, how to import, how links work). label, kicker, steps: [[title, text]], tip, anchor",
+    "params": {
+     "label": "str",
+     "kicker": "str",
+     "steps": "list",
+     "tip": "str",
+     "anchor": "str"
+    }
+   },
+   "link_test": {
+    "desc": "Setup check page: buttons that jump to a test page and back, so buyers confirm links work before planning. label, anchor",
+    "params": {}
+   },
+   "calendar": {
+    "desc": "The dated or undated calendar: month pages, optional habit page per month, week pages and day pages, all cross-linked. month: {side: [labels]}, habits: bool, week: {preset | side: [blocks]}, day: {preset | left: [blocks], right: [blocks]}, days: bool",
+    "params": {
+     "month": "dict",
+     "habits": "bool",
+     "week": "dict",
+     "day": "dict",
+     "days": "bool",
+     "iso_weeks": "bool: ISO 8601 week numbers (Week 1 holds January 4); needs a head_start covering the days before it"
+    }
+   },
+   "head_start": {
+    "desc": "Lead-in months before the main dated year (for example Nov and Dec 2026 in a 2027 planner): month pages whose dates link to lead-in week pages, Monday-start week pages titled by date range, optional lead-in day pages. Anchors use their own prefix. The last week links days that fall in the main year to their day pages and offers Continue to the main year. label, kicker, anchor (prefix, default hs), from YYYY-MM, to YYYY-MM, days bool, month {side}, week {preset|side}, day {preset|left,right}, continue_to (default m01)",
+    "params": {
+     "label": "str",
+     "kicker": "str",
+     "anchor": "str",
+     "from": "YYYY-MM",
+     "to": "YYYY-MM",
+     "days": "bool",
+     "month": "dict",
+     "week": "dict",
+     "day": "dict",
+     "continue_to": "str",
+     "main_links": "bool: on head-start pages the head-start month tabs say their year (NOV 2026) so one label has one target, the last head-start week arrow opens main Week 1 and Week 1 gets a back arrow"
+    }
+   },
+   "eink_format": {
+    "desc": "Format switch for e-ink tablets (reMarkable): prints no page. Put it first in sections. Widens the left gutter to left_gutter px (clears the toolbar), draws writing lines and dot grids as vector strokes instead of gradient patterns (vector_rules), refuses a theme with any color when grayscale is true and drops the month and card tints, lays portrait week pages (calendar and head start) out as two columns of day boxes with the side blocks underneath (week_layout rows), and replaces the Setup check fix list and pen test label (link_test_fixes, pen_label). In portrait the Setup check also gets a map of the top bar under the pen test.",
+    "params": {
+     "left_gutter": "int px, default 40",
+     "vector_rules": "bool",
+     "grayscale": "bool",
+     "week_layout": "'grid' (default) | 'rows'",
+     "link_test_fixes": "list of 4 str",
+     "pen_label": "str"
+    }
+   },
+   "books": {
+    "desc": "Book log (Library) plus one review page per book, cross-linked both ways. Library pages (anchor, then anchor2, anchor3...): per_log_page numbered lines (No., Title, Author, Finished, Stars, Shelf); each number opens that book; a strip links all Library pages. Book pages (book_anchor + 001...): title, author, genre, format, dates, pages, stars, reread, why I picked it up, thoughts (fills the page), favorite quote with page, favorite character, one-line review; previous and next book arrows; trail back to the Library page holding its line. One Contents card and one top-bar item. label, kicker, anchor, book_anchor, count, per_log_page",
+    "params": {
+     "label": "str (Library)",
+     "kicker": "str",
+     "anchor": "str, default 'library'",
+     "book_anchor": "str, default 'b' (b001)",
+     "count": "int (100)",
+     "per_log_page": "int (25)"
+    }
+   },
+   "reading_month": {
+    "desc": "Twelve undated monthly reading pages, anchors m01 to m12 (the month rail and Contents month grid link to them): books finished this month with stars, 31 reading-day circles, pages or hours read, book of the month, up next, notes. Trail Reading year / Month. Registers nothing unless index or nav is true. label, index, nav",
+    "params": {
+     "label": "str (not shown)",
+     "index": "bool, default false",
+     "nav": "bool, default false"
+    }
+   },
+   "reading_year": {
+    "desc": "One undated reading-year page (anchor 'year'): yearly book goal with a year field, month by month rows (each month links to m01 to m12) with 10 squares to color per finished book, tallies (Fiction, Nonfiction, Print, Ebook, Audio), top 5 of the year, best quote of the year. Registers a Contents card and, unless nav is false, a top-bar item. label, kicker, anchor, nav",
+    "params": {
+     "label": "str (Reading year)",
+     "kicker": "str",
+     "anchor": "str, must be 'year'",
+     "nav": "bool"
+    }
+   }
+  },
+  "blocks": {
+   "checklist": "Checkbox list. label, rows, items (pre-filled), fill, grow",
+   "lines": "Lined writing box. label, grow (default true) or height",
+   "dots": "Dot-grid box. label, grow or height",
+   "water": "Water tracker drops. label, count",
+   "scale": "Circles 1 to max to rate energy, mood or focus. label, max",
+   "hours": "Hourly schedule. label, from, to, row (px)",
+   "pair": "Two blocks side by side. items: [block, block]",
+   "text": "Short printed tip or instruction. label, text"
+  },
+  "day_presets": [
+   "default",
+   "adhd"
+  ],
+  "week_presets": [
+   "default",
+   "adhd"
+  ],
+  "themes": [
+   "sage",
+   "neutral",
+   "pastel",
+   "navy",
+   "blush",
+   "night"
+  ],
+  "orientations": [
+   "landscape",
+   "portrait"
+  ],
+  "dating": [
+   "dated (year)",
+   "undated"
+  ],
+  "fonts": [
+   "Corm",
+   "Jost",
+   "Fraunces",
+   "Manrope",
+   "Quicksand",
+   "Nunito",
+   "DMSerif",
+   "Outfit",
+   "Baskerville",
+   "Script"
+  ],
+  "type_scale": "number, 1.0 default; 1.15 for larger text"
+ },
+ "style_rules": [
+  {
+   "id": "r001",
+   "rule": "Every page must be reachable by links from the first page. Groups of pages that only link to each other count as unreachable.",
+   "enforced": "build (automatic)",
+   "from": "p-adhd-001 check round 2"
+  },
+  {
+   "id": "r002",
+   "rule": "Setup steps must work for a buyer on any purchase date in the selling window, for example before the dated year starts. Walk through day one for an early buyer and a mid-year buyer.",
+   "enforced": "brief writer and coverage checker",
+   "from": "p-adhd-001 check round 3"
+  },
+  {
+   "id": "r003",
+   "rule": "Every number or fact in the listing (pages, file size, what is and isn't included) must match the built file. Rebuilds change counts; update the copy.",
+   "enforced": "check tech (page counts automatic)",
+   "from": "p-adhd-001 rebuilds"
+  },
+  {
+   "id": "r004",
+   "rule": "Use only glyphs the embedded fonts contain. Draw arrows and icons as SVG, otherwise a non-licensed fallback font gets embedded.",
+   "enforced": "check tech + line test (automatic)",
+   "from": "p-adhd-001 check tech"
+  },
+  {
+   "id": "r005",
+   "rule": "A listing photo must show what its copy and alt text claim. A small multi-page grid needs captions and readable pages (2x2 beats 4 in a row).",
+   "enforced": "coverage checker",
+   "from": "p-adhd-001 check rounds 1 to 3"
+  },
+  {
+   "id": "r006",
+   "rule": "No half-empty pages. Fill spare space with something a buyer uses (a map of the top bar, a month jump grid, a pen test area), never decoration.",
+   "enforced": "coverage checker",
+   "from": "p-adhd-001 check rounds 1 to 3"
+  },
+  {
+   "id": "r007",
+   "rule": "Never promise service levels in the product (for example 'we reply fast'). Say what the buyer can do instead.",
+   "enforced": "coverage checker",
+   "from": "p-adhd-001 check round 1"
+  },
+  {
+   "id": "r008",
+   "rule": "A week that spans two months is built once, under the month that holds its Thursday; day pages name their own month in the trail.",
+   "enforced": "planner line (automatic)",
+   "from": "brief writer found it"
+  },
+  {
+   "id": "r009",
+   "rule": "Spreadsheets: never rely on a feature Google Sheets drops on import (data bars, Excel-only functions, external-style '#Sheet' links). Use text bars, functions both apps share, and internal tab links.",
+   "enforced": "spreadsheet line (automatic) + coverage checker",
+   "from": "coverage check, Clear Budget round 1"
+  },
+  {
+   "id": "r010",
+   "rule": "Every input cell must change at least one result. An input that nothing reads is a broken promise.",
+   "enforced": "coverage checker",
+   "from": "coverage check, Clear Budget round 1 (Debt 'Extra each month')"
+  },
+  {
+   "id": "r011",
+   "rule": "Size every list for the worst real case (weekly pay has 53 paydays a year; a month can hold 80+ purchases), or say plainly where it stops.",
+   "enforced": "brief writer + coverage checker",
+   "from": "coverage check, Clear Budget round 1"
+  },
+  {
+   "id": "r012",
+   "rule": "Only input cells are shaded. Labels, totals and formulas are never shaded like inputs.",
+   "enforced": "spreadsheet line (automatic)",
+   "from": "coverage check, Clear Budget round 1"
+  },
+  {
+   "id": "r013",
+   "rule": "Listing photos must be readable at Etsy's zoom: show the useful part of a page or tab, large, never a whole page shrunk to fit. Alt text and points describe only what is in frame.",
+   "enforced": "photos stage (photo views) + coverage checker",
+   "from": "coverage check, Clear Budget round 1"
+  },
+  {
+   "id": "r014",
+   "rule": "Start-up steps cover a buyer who buys before the product's year starts (Oct to Dec) as well as one who buys mid-year.",
+   "enforced": "brief writer + coverage checker",
+   "from": "coverage check, Clear Budget round 1"
+  },
+  {
+   "id": "r015",
+   "rule": "Price inside the market's best-earning range, never under it: at least the revenue-weighted median price (what buyers actually pay, weighted by sales). A low price makes a good product look cheap. While the shop has few reviews, launch with a time-limited Etsy sale (25% off for 30 days) on the full price instead of a low price.",
+   "enforced": "brief check (automatic) + brief writer",
+   "from": "Darren and Colynne, Oct 22 2026 (Canva course advice, confirmed by our price data)"
+  },
+  {
+   "id": "r016",
+   "rule": "At most two font families per product: one for headings, one for body. Build hierarchy with weight, size and italic, not extra typefaces. Too many fonts tires the eyes.",
+   "enforced": "brief writer + coverage checker",
+   "from": "Colynne's review of p-rjd-001, Oct 23 2026 (fix: fonts)"
+  }
+ ],
+ "past_briefs": []
+}

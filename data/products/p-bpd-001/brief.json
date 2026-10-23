@@ -1,0 +1,836 @@
+{
+ "brief_id": "b-p-bpd-001",
+ "product_id": "p-bpd-001",
+ "type_id": "business-planner-digital",
+ "line": "planner",
+ "created_at": "2026-10-23T12:00:00Z",
+ "positioning": "For people who run a business on their own (makers, Etsy and online sellers, service providers) who want one linked 2027 planner instead of a generic diary plus loose templates. It wins by pairing a full dated calendar with the three business pages solo owners use every month (Money month, content slots, Year plan) and by working the first time, with a Start here page, a Setup check and a head start that begins this week.",
+ "must_haves": [
+  {
+   "id": "mh_business",
+   "what": "Built for running a business, not a general life planner: every week page has Content to post and Follow up, every day page has Calls and emails and Orders to send, plus Year plan, Price check, Business routines and Money month pages.",
+   "evidence": [
+    "feature:work",
+    "praise:p_fits_needs",
+    "keyword:business planner",
+    "keyword:small business"
+   ]
+  },
+  {
+   "id": "mh_calendar",
+   "what": "Full dated 2027 calendar: year, 12 months, 52 weeks and 365 day pages, every date, tab and trail linked, so it replaces a diary as well as the business templates.",
+   "evidence": [
+    "feature:dated",
+    "praise:p_complete",
+    "keyword:digital planner",
+    "keyword:2026 digital planner"
+   ]
+  },
+  {
+   "id": "mh_apps",
+   "what": "One hyperlinked PDF that works in Goodnotes, Notability, Noteshelf, Samsung Notes, Xodo and Adobe Acrobat Reader; the listing names these apps and says no subscription is needed.",
+   "evidence": [
+    "feature:goodnotes",
+    "feature:notability",
+    "feature:android",
+    "keyword:goodnotes planner",
+    "keyword:ipad planner",
+    "wish:w_listing_info"
+   ]
+  },
+  {
+   "id": "mh_look",
+   "what": "Calm, uncluttered pages with clear hierarchy and plenty of writing room; two font families only, sharp vector text at any zoom.",
+   "evidence": [
+    "praise:p_look",
+    "praise:p_quality",
+    "praise:p_space"
+   ]
+  },
+  {
+   "id": "mh_easy",
+   "what": "Easy to start and the same layout every week: Start here page with four steps, Setup check, Contents with every section and month.",
+   "evidence": [
+    "praise:p_easy",
+    "praise:p_guide",
+    "praise:p_as_described"
+   ]
+  },
+  {
+   "id": "mh_content",
+   "what": "Content planning built into the calendar (Launches and content on every month page, Content to post on every week page, Content ideas pages), because social media and content planners are a large share of what this market sells.",
+   "evidence": [
+    "keyword:social media planner",
+    "keyword:content planner",
+    "keyword:content calendar",
+    "listing:1774093834"
+   ]
+  }
+ ],
+ "fixes": [
+  {
+   "id": "fx_not_useful",
+   "complaint": "complaint:c_not_useful",
+   "how": "Aimed at one clear buyer, the one-person business, with pages for what that buyer does every week: Money month (money in by source, money out by cost type, profit, orders, best seller), Price check (cost, fees, time, price, profit per product), Content to post and Follow up on every week page. The listing's first lines say who it is for and what it is not (not a business plan workbook, not a printable, not made to order), so buyers with other needs do not buy it.",
+   "evidence": [
+    "complaint:c_not_useful",
+    "complaint:c_basic",
+    "keyword:small business owner",
+    "keyword:etsy shop planner"
+   ],
+   "modules": [
+    "money_month",
+    "table",
+    "calendar"
+   ]
+  },
+  {
+   "id": "fx_misleading",
+   "complaint": "complaint:c_misleading",
+   "how": "Listing copy states the exact page count and file size of the built file (r003), what each page type is and how many there are (52 week pages, 365 day pages, 12 Money months, and so on), that it is one landscape PDF, dated Oct 26, 2026 to Dec 2027, Monday start. No page is counted twice. Photo ph10 shows the Contents page so the buyer sees every section before buying.",
+   "evidence": [
+    "complaint:c_misleading",
+    "complaint:c_missing",
+    "complaint:c_repetitive",
+    "praise:p_as_described"
+   ],
+   "modules": [
+    "index"
+   ]
+  },
+  {
+   "id": "fx_download",
+   "complaint": "complaint:c_download",
+   "how": "One PDF delivered as a direct Etsy download (no zip, no outside link, no sign-up). The listing's first FAQ line and step 1 of the Start here page say: download in a web browser, not the Etsy app, then open the PDF in a named app. File size is stated in the listing so buyers on slow connections know what to expect.",
+   "evidence": [
+    "complaint:c_download",
+    "complaint:c_delivery_delay",
+    "wish:w_easy_delivery",
+    "complaint:c_upsell"
+   ],
+   "modules": [
+    "guide"
+   ]
+  },
+  {
+   "id": "fx_basic",
+   "complaint": "complaint:c_basic",
+   "how": "Business depth on top of the calendar: Money month for each month (plus Nov and Dec 2026), a Year plan with quarter tick boxes, Price check, Business routines (daily, weekly, monthly, quarterly), a business habit tracker for every month, and content slots on month and week pages. Photos ph3 and ph5 show these pages close up.",
+   "evidence": [
+    "complaint:c_basic",
+    "wish:w_page_types",
+    "feature:budget",
+    "feature:goals"
+   ],
+   "modules": [
+    "money_month",
+    "table",
+    "checklist",
+    "calendar"
+   ]
+  },
+  {
+   "id": "fx_value",
+   "complaint": "complaint:c_value",
+   "how": "A complete working year, not a few templates: about 480 linked pages (exact count from the build in the listing) covering Oct 26, 2026 to Dec 31, 2027, with business pages that a spreadsheet does not give you in one place (week plan, content, follow ups and month money side by side). Every link is tested by the build (r001) so nothing in the price is broken.",
+   "evidence": [
+    "complaint:c_value",
+    "complaint:c_links",
+    "praise:p_value",
+    "praise:p_complete"
+   ],
+   "modules": [
+    "calendar",
+    "head_start",
+    "money_month"
+   ]
+  },
+  {
+   "id": "fx_quality",
+   "complaint": "complaint:c_quality",
+   "how": "Vector PDF: all text and lines are drawn as vectors with embedded OFL fonts, so pages stay sharp at any zoom (no blurry raster pages). Pages are 1024 x 768 (iPad landscape) with every element inside the page margins, checked by the build's overflow check. Photo ph10 includes a zoomed crop of small text to show it is sharp. The listing says the pages are sized for a screen, not for letter or A4 paper.",
+   "evidence": [
+    "complaint:c_quality",
+    "complaint:c_print",
+    "praise:p_quality"
+   ],
+   "modules": [
+    "cover"
+   ]
+  },
+  {
+   "id": "fx_edit",
+   "complaint": "complaint:c_edit",
+   "how": "Start here step 3 says how to type: every line and table row is tall enough for the app's text box tool (Goodnotes, Notability, Xodo, Acrobat Reader), so keyboard users can type on any page; table rows are 30 px or more. The listing says plainly: write with a stylus or type with your app's text tool; there are no fill-in form fields and it is not a Word or Canva template.",
+   "evidence": [
+    "complaint:c_edit",
+    "wish:w_typeable",
+    "wish:w_customize"
+   ],
+   "modules": [
+    "guide",
+    "table"
+   ]
+  },
+  {
+   "id": "fx_hard",
+   "complaint": "complaint:c_hard",
+   "how": "Two habits run the planner: the week page every Monday and the Money month at month end (the Start here tip says so). The Start here page gives four numbered steps; the Setup check confirms links before planning; the same week and day layout repeats all year so there is nothing new to learn after week one. Photo ph7 shows the Start here and Setup check pages.",
+   "evidence": [
+    "complaint:c_hard",
+    "complaint:c_setup",
+    "complaint:c_overwhelm",
+    "praise:p_easy"
+   ],
+   "modules": [
+    "guide",
+    "link_test"
+   ]
+  },
+  {
+   "id": "fx_support",
+   "complaint": "complaint:c_support",
+   "how": "Help is printed in the file, so a buyer does not have to wait for a reply: the Setup check page lists the four fixes for links that do not jump, and the Start here page covers download, apps, writing and typing. The listing has the same answers as an FAQ. No reply-time promises anywhere (r007); the buyer is told they can send the shop an Etsy message.",
+   "evidence": [
+    "complaint:c_support",
+    "praise:p_support",
+    "complaint:c_broken"
+   ],
+   "modules": [
+    "link_test",
+    "guide"
+   ]
+  },
+  {
+   "id": "fx_nav",
+   "complaint": "complaint:c_nav",
+   "how": "Every page has the top bar (Home, Year, Goals, Prices, Content, Notes, Money) and the month tabs on the right edge; calendar pages show a tappable Year / Month / Week trail; the Contents page has a card for every section and all months; the Start here page maps the top bar. No scrolling: every page is reachable in two taps from Contents (r001).",
+   "evidence": [
+    "complaint:c_nav",
+    "complaint:c_links",
+    "wish:w_order",
+    "wish:w_separate_pages",
+    "feature:hyperlinked"
+   ],
+   "modules": [
+    "index",
+    "guide",
+    "calendar"
+   ]
+  },
+  {
+   "id": "fx_device",
+   "complaint": "complaint:c_device",
+   "how": "The listing has a Works with line naming the apps by device (iPad: Goodnotes, Notability, Noteshelf; Android: Samsung Notes, Xodo; Chromebook, Windows and Mac: Xodo or Adobe Acrobat Reader) and says it needs no Microsoft Word and no subscription. Landscape pages fit laptop screens as well as tablets. Start here step 1 repeats the app list.",
+   "evidence": [
+    "complaint:c_device",
+    "complaint:c_extra_app",
+    "wish:w_listing_info",
+    "feature:android"
+   ],
+   "modules": [
+    "guide"
+   ]
+  }
+ ],
+ "unique": [
+  {
+   "id": "u_money_month",
+   "name": "Money month",
+   "what": "A one-page money check for every month of 2027 plus Nov and Dec 2026, linked from each month page: money in by source and money out by cost type (planned and actual), totals and profit, orders or clients, best seller, what worked and one change for next month.",
+   "why": "Budget pages are rare in top business planners (17% of listings, none with sales revenue) while the biggest complaints are 'not useful for my needs' and 'too basic'. A month-end money page is the page a one-person business actually needs and a generic planner never has.",
+   "evidence": [
+    "feature:budget",
+    "complaint:c_not_useful",
+    "complaint:c_basic",
+    "wish:w_page_types"
+   ],
+   "modules": [
+    "money_month"
+   ],
+   "verified_absent": false
+  },
+  {
+   "id": "u_start_check",
+   "name": "Start here, Setup check and a head start this week",
+   "what": "A four-step Start here page (download in a browser, which app, pen off to tap, where to start for an Oct to Dec 2026 buyer and a 2027 buyer), a Setup check page whose buttons prove the links work, and Nov to Dec 2026 month and week pages starting Monday Oct 26, so a buyer can plan from the day they buy.",
+   "why": "Download, device and setup problems together are about 60 complaints, and no top seller shows a setup check or quick start. A buyer in the selling window (Oct to Dec) would otherwise wait up to ten weeks to use a 2027 planner.",
+   "evidence": [
+    "feature:test_page",
+    "feature:quick_start",
+    "complaint:c_download",
+    "complaint:c_device",
+    "complaint:c_hard",
+    "complaint:c_setup",
+    "feature:multi_year"
+   ],
+   "modules": [
+    "guide",
+    "link_test",
+    "head_start"
+   ],
+   "verified_absent": false
+  },
+  {
+   "id": "u_routines",
+   "name": "Business routines and habit tracker",
+   "what": "A Business routines checklist (every day, week, month and quarter: send orders, batch content, pay fees, put tax money aside, review prices) and a habit tracker page for every month, linked from the month page, for the business habits the owner picks (post daily, answer messages, log money).",
+   "why": "Habit trackers and routine builders are not seen in any top business planner title; they turn the planner from a place to write into a system the owner repeats, which answers 'hard to use day to day'.",
+   "evidence": [
+    "feature:habit_tracker",
+    "feature:routines",
+    "complaint:c_hard"
+   ],
+   "modules": [
+    "checklist",
+    "calendar"
+   ],
+   "verified_absent": false
+  },
+  {
+   "id": "u_year_plan",
+   "name": "Year plan with quarter ticks and Price check",
+   "what": "A Year plan table (goal, why it matters, first step, a tick box for each quarter) and a Price check table (cost to make, fees and shipping, your time, price, profit each) for up to 18 products or services.",
+   "why": "Goal setting is on only 6% of top sellers' titles, and buyers say generic planners are not geared to their business. Knowing profit per product is the question a solo seller asks before every price change.",
+   "evidence": [
+    "feature:goals",
+    "complaint:c_not_useful",
+    "keyword:etsy seller planner"
+   ],
+   "modules": [
+    "table"
+   ],
+   "verified_absent": false
+  }
+ ],
+ "waived": [
+  {
+   "ref": "feature:undated",
+   "reason": "Dated pages let every date link to its day page, and the selling window is for 2027. An undated edition would be a second full build that does not fit in the same file under the size limit, so it would be a separate listing. The listing says dated Oct 26, 2026 to Dec 2027."
+  },
+  {
+   "ref": "wish:w_file_format",
+   "reason": "The planner line builds one hyperlinked PDF; Word, Google Docs or Pages versions would lose the links. One review asked. The listing says PDF only and names the apps that open it, including free Xodo and Acrobat Reader for computers."
+  },
+  {
+   "ref": "feature:custom",
+   "reason": "Made-to-order personalization (one listing at $128) is a service with a waiting time, not an instant download. Instead the trackers use plain categories and blank rows any business can fill, and the listing says it is not personalized."
+  },
+  {
+   "ref": "complaint:c_print",
+   "reason": "This is a digital planner with screen-sized landscape pages (4 reviews mention printing). Fitting letter and A4 paper would need a second layout. The listing says the pages are sized for tablets and screens, so print buyers are not misled."
+  }
+ ],
+ "look": {
+  "direction": "Quiet studio stationery: warm ivory paper (not white, so it glows less in a dark room) with charcoal ink at about 14:1 contrast so it stays sharp in daylight; secondary text in warm gray-brown at 6.4:1. The reviewer's two colors carry the palette: sand #C8B89A for the short ruled bar on the Contents and guide pages and as the first month tab, and warm taupe #7A7368 as the structure accent (habit circles, small graphics, never body text, since it is only 4.4:1 on the paper). Month tabs step from sand to a lighter taupe (#9C958B) so every tab label in charcoal stays above 5:1. Buttons are solid charcoal. Two font families only (r016): Libre Baskerville for headings and, in italic, for field labels; Jost for body, with bold for buttons and tabs. No letter-spaced all-caps labels (theme labels: italic). Plain ruled decoration (motif lines): no florals, no gold foil, no marble, no photos, no script fonts.",
+  "theme": {
+   "base": "neutral",
+   "paper": "#FAF7F1",
+   "ink": "#24262B",
+   "muted": "#5F5A52",
+   "line": "#DED6C8",
+   "accent": "#7A7368",
+   "soft": "#F0EBE1",
+   "warm": "#C8B89A",
+   "tabs": [
+    "#C8B89A",
+    "#9C958B"
+   ],
+   "display": "Baskerville",
+   "body": "Jost",
+   "motif": "lines",
+   "button": "#24262B",
+   "labels": "italic"
+  },
+  "avoid": [
+   "pink, gold foil and marble 'girl boss' business planners",
+   "loud rainbow or neon social media planner palettes",
+   "dark mode only pages",
+   "pure white pages with thin pale gray text",
+   "script fonts, florals and clip-art on every page",
+   "spreadsheet-style grids that look like a printed Excel sheet"
+  ],
+  "evidence": [
+   "praise:p_look",
+   "praise:p_value",
+   "look:Minimalist look",
+   "look:Colorful or aesthetic look",
+   "look:Dark mode",
+   "complaint:c_look",
+   "complaint:c_readability"
+  ]
+ },
+ "price": {
+  "amount": 26,
+  "why": "Buyers pay a sales-weighted $12.15 and the best-earning band runs $5 to $34; $26 sits well above that floor and inside the band (style rule r015), priced with the full dated business planners ($29 to $39) rather than the $3 to $8 single templates, because this is a complete linked year of about 481 pages with business pages built in. While the shop is new, a 25% Etsy sale for 30 days shows $19.50 with $26 crossed out, instead of a low list price.",
+  "evidence": [
+   "price:revenue_weighted_median",
+   "listing:1868290404",
+   "listing:772897479",
+   "listing:741760733",
+   "market:best_price_band",
+   "price:p75",
+   "complaint:c_value"
+  ],
+  "launch_sale": {
+   "percent": 25,
+   "days": 30,
+   "sale_price": 19.5
+  }
+ },
+ "seo": {
+  "title": "Business Planner 2027 Digital, Small Business Planner, Goodnotes iPad Android, Hyperlinked, Money Tracker, Content Planner, Oct 2026 Start",
+  "tags": [
+   "business planner",
+   "small business",
+   "digital planner",
+   "goodnotes planner",
+   "2027 digital planner",
+   "content planner",
+   "social media planner",
+   "etsy shop planner",
+   "side hustle planner",
+   "ipad planner",
+   "small business owner",
+   "business organizer",
+   "notability planner"
+  ]
+ },
+ "photos": [
+  {
+   "id": "ph1_hero",
+   "shows": "Cover and the week of January 11 to 17, 2027 side by side on a tablet frame, line: 'Plan the week, keep the content going, see the money'.",
+   "proves": "praise:p_look, feature:work, mh_business",
+   "pages": [
+    "cover",
+    "w03"
+   ]
+  },
+  {
+   "id": "ph2_week",
+   "shows": "Week page close-up, large: seven day boxes with This week's top 3, Content to post and Follow up callouts, line: 'Every week: top 3, content, follow ups'.",
+   "proves": "keyword:content planner, complaint:c_basic, complaint:c_hard",
+   "pages": [
+    "w03"
+   ]
+  },
+  {
+   "id": "ph3_money",
+   "shows": "Money month for January close-up: money in by source, money out by cost type, profit, best seller, one change for next month, line: 'A money check at every month end'.",
+   "proves": "feature:budget, complaint:c_not_useful, complaint:c_basic",
+   "pages": [
+    "mm01"
+   ]
+  },
+  {
+   "id": "ph4_day",
+   "shows": "Day page close-up (Monday January 11): Today's top 3, To do, Calls and emails, Orders to send, Schedule 8am to 7pm.",
+   "proves": "feature:time_blocking, complaint:c_hard, complaint:c_value",
+   "pages": [
+    "d0111"
+   ]
+  },
+  {
+   "id": "ph5_plan",
+   "shows": "Year plan and Price check in a 2-up with captions, the useful top part of each page large.",
+   "proves": "feature:goals, complaint:c_not_useful, complaint:c_basic",
+   "pages": [
+    "goals",
+    "prices"
+   ]
+  },
+  {
+   "id": "ph6_links",
+   "shows": "Contents page and the Year page with tap arrows: card to section, month tab to month, date to day, trail back.",
+   "proves": "complaint:c_nav, feature:hyperlinked",
+   "pages": [
+    "index",
+    "year"
+   ]
+  },
+  {
+   "id": "ph7_start",
+   "shows": "Start here steps and the Setup check page with its fix list, line: 'Works the first time: four steps and a link check'.",
+   "proves": "feature:test_page, feature:quick_start, complaint:c_download, complaint:c_hard, complaint:c_support",
+   "pages": [
+    "start",
+    "linktest"
+   ]
+  },
+  {
+   "id": "ph8_headstart",
+   "shows": "November 2026 head start month page and its first week page (Oct 26 to Nov 1), line: 'Start this week, not in January'.",
+   "proves": "feature:multi_year, complaint:c_setup",
+   "pages": [
+    "hs11",
+    "hsw01"
+   ]
+  },
+  {
+   "id": "ph9_habits",
+   "shows": "Business routines page and the January habit tracker in a 2-up, top halves large.",
+   "proves": "feature:habit_tracker, feature:routines",
+   "pages": [
+    "routines",
+    "m01h"
+   ]
+  },
+  {
+   "id": "ph10_inside",
+   "shows": "What is inside: the Contents page beside a text panel with the exact page count and file size, one landscape PDF, Monday start, Works with apps by device, write or type, not a printable, plus a zoomed crop of small label text showing it is sharp.",
+   "proves": "complaint:c_misleading, complaint:c_device, complaint:c_quality, complaint:c_edit, wish:w_listing_info",
+   "pages": [
+    "index"
+   ]
+  }
+ ],
+ "spec": {
+  "title": "Open Hours 2027",
+  "subtitle": "A linked planner for one-person businesses. Plan the week, keep the content going, see the month's money. October 26, 2026 to December 2027.",
+  "kicker": "Small business planner · 2027",
+  "brand": "Kairos Design Studio",
+  "orientation": "landscape",
+  "dating": {
+   "mode": "dated",
+   "year": 2027
+  },
+  "theme": {
+   "base": "neutral",
+   "paper": "#FAF7F1",
+   "ink": "#24262B",
+   "muted": "#5F5A52",
+   "line": "#DED6C8",
+   "accent": "#7A7368",
+   "soft": "#F0EBE1",
+   "warm": "#C8B89A",
+   "tabs": [
+    "#C8B89A",
+    "#9C958B"
+   ],
+   "display": "Baskerville",
+   "body": "Jost",
+   "motif": "lines",
+   "button": "#24262B",
+   "labels": "italic"
+  },
+  "type_scale": 1.1,
+  "index_tip": "Tap a card above, a month below, or a month tab on the right. Home on the top bar brings you back here, and calendar pages show a Month / Week trail to go back. Follow links with the pen off (read mode); turn the pen on to write.",
+  "sections": [
+   {
+    "module": "cover",
+    "start": "start",
+    "button": "Open planner"
+   },
+   {
+    "module": "index"
+   },
+   {
+    "module": "guide",
+    "label": "Start here",
+    "kicker": "Five minutes",
+    "anchor": "start",
+    "nav": false,
+    "map": true,
+    "map_label": "The top bar, on every page",
+    "steps": [
+     [
+      "Download and open it",
+      "Download from Etsy in a web browser, not the Etsy app (the app cannot download files). You get one PDF. Open it in Goodnotes, Notability or Noteshelf on iPad, Samsung Notes or Xodo on Android, or Xodo or Adobe Acrobat Reader on a Chromebook, Windows or Mac computer. Import it as a PDF, do not convert it."
+     ],
+     [
+      "Check the links",
+      "Go to the Setup check page and tap the buttons. If they jump, you are ready. If not, the fix list is on that page.",
+      "linktest"
+     ],
+     [
+      "Write or type",
+      "Links work with the pen off (read or view mode). To write, turn the pen on. To type with a keyboard, use your app's text box tool on any line or table row."
+     ],
+     [
+      "Start today",
+      "Buying in October to December 2026? Tap Year, then Starting in 2026, and plan from this week. Buying in 2027? Tap Year, then today's date. Then fill the Year plan from this quarter on, and the Money month from this month on. Earlier pages can stay blank."
+     ]
+    ],
+    "tip": "Use one week page every Monday and one Money month at each month end. Everything else is there when you need it."
+   },
+   {
+    "module": "link_test",
+    "label": "Setup check",
+    "anchor": "linktest",
+    "nav": false
+   },
+   {
+    "module": "year",
+    "links": [
+     [
+      "Starting in 2026? Head start",
+      "hs11"
+     ]
+    ]
+   },
+   {
+    "module": "table",
+    "label": "Year plan",
+    "kicker": "Goals for 2027",
+    "anchor": "goals",
+    "nav_label": "Goals",
+    "headers": [
+     "Goal",
+     "Why it matters",
+     "First step",
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4"
+    ],
+    "check_columns": [
+     "Q1",
+     "Q2",
+     "Q3",
+     "Q4"
+    ],
+    "dividers": true,
+    "rows": 16
+   },
+   {
+    "module": "table",
+    "label": "Price check",
+    "kicker": "Know your profit",
+    "anchor": "prices",
+    "nav_label": "Prices",
+    "headers": [
+     "Product or service",
+     "Cost to make",
+     "Fees and shipping",
+     "Your time",
+     "Price",
+     "Profit each"
+    ],
+    "dividers": true,
+    "rows": 18
+   },
+   {
+    "module": "checklist",
+    "label": "Business routines",
+    "kicker": "Less to remember",
+    "anchor": "routines",
+    "nav": false,
+    "groups": [
+     [
+      "Every day",
+      [
+       "Answer messages",
+       "Send today's orders",
+       "Post or reply for 15 minutes",
+       "Note money in and out"
+      ]
+     ],
+     [
+      "Every week",
+      [
+       "Fill this week's top 3",
+       "Batch next week's content",
+       "Follow up leads and quotes",
+       "Order supplies",
+       "Back up your files"
+      ]
+     ],
+     [
+      "Every month",
+      [
+       "Fill in the Money month",
+       "Pay bills and fees",
+       "Check best sellers",
+       "Set next month's focus"
+      ]
+     ],
+     [
+      "Every quarter",
+      [
+       "Tick the Year plan",
+       "Put tax money aside",
+       "Review your prices",
+       "Clear old stock"
+      ]
+     ]
+    ]
+   },
+   {
+    "module": "lined",
+    "label": "Content ideas",
+    "kicker": "Posts, launches, emails",
+    "pages": 2,
+    "anchor": "content",
+    "nav_label": "Content"
+   },
+   {
+    "module": "lined",
+    "label": "Notes",
+    "kicker": "Notes",
+    "pages": 4,
+    "anchor": "notes"
+   },
+   {
+    "module": "head_start",
+    "label": "Head start: Oct 26 to Dec 2026",
+    "kicker": "Start now",
+    "anchor": "hs",
+    "nav": false,
+    "from": "2026-11",
+    "to": "2026-12",
+    "days": false,
+    "continue_to": "m01",
+    "main_links": true,
+    "month": {
+     "side": [
+      "This month's focus",
+      "Launches and content"
+     ]
+    },
+    "week": {
+     "side": [
+      {
+       "kind": "checklist",
+       "label": "This week's top 3",
+       "rows": 3,
+       "fill": true
+      },
+      {
+       "kind": "checklist",
+       "label": "Content to post",
+       "rows": 4
+      },
+      {
+       "kind": "checklist",
+       "label": "Follow up",
+       "rows": 4
+      }
+     ]
+    }
+   },
+   {
+    "module": "calendar",
+    "habits": true,
+    "days": true,
+    "month": {
+     "side": [
+      "This month's focus",
+      "Launches and content"
+     ]
+    },
+    "week": {
+     "side": [
+      {
+       "kind": "checklist",
+       "label": "This week's top 3",
+       "rows": 3,
+       "fill": true
+      },
+      {
+       "kind": "checklist",
+       "label": "Content to post",
+       "rows": 4
+      },
+      {
+       "kind": "checklist",
+       "label": "Follow up",
+       "rows": 4
+      }
+     ]
+    },
+    "day": {
+     "left": [
+      {
+       "kind": "checklist",
+       "label": "Today's top 3",
+       "rows": 3,
+       "fill": true
+      },
+      {
+       "kind": "checklist",
+       "label": "To do",
+       "rows": 7,
+       "grow": true
+      },
+      {
+       "kind": "pair",
+       "items": [
+        {
+         "kind": "checklist",
+         "label": "Calls and emails",
+         "rows": 3
+        },
+        {
+         "kind": "checklist",
+         "label": "Orders to send",
+         "rows": 3
+        }
+       ]
+      }
+     ],
+     "right": [
+      {
+       "kind": "hours",
+       "label": "Schedule",
+       "from": 8,
+       "to": 19,
+       "row": 27
+      },
+      {
+       "kind": "lines",
+       "label": "Notes and ideas",
+       "grow": false,
+       "height": 84
+      }
+     ]
+    }
+   },
+   {
+    "module": "money_month",
+    "label": "Money month",
+    "kicker": "Month end",
+    "anchor": "mm",
+    "nav_label": "Money",
+    "head_start": true,
+    "income": [
+     "Product sales",
+     "Services or client work",
+     "Other income"
+    ],
+    "expenses": [
+     "Materials and stock",
+     "Platform and payment fees",
+     "Shipping and packaging",
+     "Ads and marketing",
+     "Software and subscriptions",
+     "Other costs"
+    ],
+    "fields": [
+     "Orders or clients this month",
+     "Best seller",
+     "What worked",
+     "One change for next month"
+    ]
+   }
+  ]
+ },
+ "new_modules": [
+  {
+   "name": "money_month",
+   "what": "One Money month page per month of the main dated year (anchors mm01 to mm12, from the anchor prefix), plus, when head_start is true, one per head-start month (mmhs11, mmhs12 for a Nov to Dec 2026 head start). Landscape layout: left two thirds holds two tables stacked, 'Money in' (rows = income labels, pre-filled in the first column) and 'Money out' (rows = expenses labels), each with columns Category, Planned, Actual and a 'Total' row at the bottom; right third is a column of boxes: 'This month' with three ruled fields Money in, Money out, Profit (in minus out), then one lined box per item in fields (Orders or clients this month, Best seller, What worked, One change for next month), the last one growing to fill the page (r006). All rows at least 30 px tall so the text box tool fits (typing). Title is the month name with the year as kicker (for example kicker '2027', title 'January'); heading reads 'Money month' in the kicker line in italic per theme labels. Links: each calendar month page (and each head-start month page) gets a 'Money month' chip in the chip row beside 'Habit tracker', opening that month's page; each Money month page has a trail 'Year / January / Money' whose month links back to m01 (or hs11), a 12-month strip of small pills along the bottom of the right column (plus the head-start months first) to jump between Money months, and the normal top bar and month rail. Registers one Contents card (label, kicker) opening the first main-year page mm01 and one top-bar item (nav_label) opening mm01. Only uses glyphs in the embedded fonts; arrows are SVG (r004). Printed numbers are only labels; nothing calculates (it is a PDF).",
+   "params": {
+    "label": "str, Contents card and page label (Money month)",
+    "kicker": "str, Contents card kicker (Month end)",
+    "anchor": "str prefix, default 'mm' (mm01 to mm12; head-start pages mmhs11, mmhs12)",
+    "nav_label": "str, top-bar label (Money)",
+    "head_start": "bool, also build pages for the head_start months and link them from those month pages (default false)",
+    "income": "list of str, pre-filled Money in rows (3 to 5)",
+    "expenses": "list of str, pre-filled Money out rows (4 to 8)",
+    "fields": "list of str, lined boxes in the right column; the last grows to fill",
+    "index": "bool, default true",
+    "nav": "bool, default true"
+   },
+   "why": "Budget or finance pages are rare among top business planners (feature:budget, 17%, no revenue) and the largest complaint clusters are 'not useful for my needs' and 'too basic'. A single table page (the table module) cannot repeat per month or link from the month pages, and twelve separate table sections would each need a Contents card and would be unreachable from their months (r001). Costs 14 pages (about 0.5 MB)."
+  }
+ ]
+}

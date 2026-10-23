@@ -1,6 +1,6 @@
 {
  "type_id": "google-sheets-budget",
- "built_at": "2026-10-23T13:41:39Z",
+ "built_at": "2026-10-23T14:59:09Z",
  "basis": {
   "listings": 30,
   "reviews": 543,
@@ -3828,6 +3828,33 @@
    ]
   },
   {
+   "id": "p_value",
+   "theme": "Great value",
+   "count": 5,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "Great price and product. Easy to use",
+     "shop": "ComputedPlanning",
+     "stars": 5,
+     "review_id": "r349"
+    },
+    {
+     "text": "Crazy value for the price. And a quality spreadsheet too. Thank you!",
+     "shop": "SimplyOrganizedPro",
+     "stars": 5,
+     "review_id": "r301"
+    }
+   ],
+   "review_ids": [
+    "r265",
+    "r301",
+    "r341",
+    "r349",
+    "r440"
+   ]
+  },
+  {
    "id": "p_flexible",
    "theme": "Customizable",
    "count": 5,
@@ -3858,33 +3885,6 @@
     "r411",
     "r419",
     "r464"
-   ]
-  },
-  {
-   "id": "p_value",
-   "theme": "Great value",
-   "count": 5,
-   "on_top_listings": 2,
-   "quotes": [
-    {
-     "text": "Great price and product. Easy to use",
-     "shop": "ComputedPlanning",
-     "stars": 5,
-     "review_id": "r349"
-    },
-    {
-     "text": "Crazy value for the price. And a quality spreadsheet too. Thank you!",
-     "shop": "SimplyOrganizedPro",
-     "stars": 5,
-     "review_id": "r301"
-    }
-   ],
-   "review_ids": [
-    "r265",
-    "r301",
-    "r341",
-    "r349",
-    "r440"
    ]
   },
   {

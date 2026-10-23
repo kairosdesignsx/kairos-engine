@@ -1,6 +1,6 @@
 {
  "type_id": "weekly-planner-printable",
- "built_at": "2026-10-22T15:08:29Z",
+ "built_at": "2026-10-23T14:59:10Z",
  "basis": {
   "listings": 30,
   "reviews": 614,
@@ -987,44 +987,6 @@
    ]
   },
   {
-   "id": "c_nav",
-   "theme": "Hard to navigate or find pages",
-   "count": 10,
-   "on_top_listings": 1,
-   "quotes": [
-    {
-     "text": "Very hard to go through these printable and find the one you need. Isn’t as well organized as I would like. Pictures looked better of them, have had to find better quality from another seller.",
-     "shop": "ThePrintablePlans",
-     "stars": 1,
-     "review_id": "r180"
-    },
-    {
-     "text": "It took many attempts to load in to Good Notes and when finally that worked I am unable to click on links, I can't navigate the journal. It is also very slow. Such a shame.",
-     "shop": "PlanRightCo",
-     "stars": 1,
-     "review_id": "r263"
-    },
-    {
-     "text": "Layout was very busy and hard for me to navigate",
-     "shop": "FutureADHD",
-     "stars": 1,
-     "review_id": "r314"
-    }
-   ],
-   "review_ids": [
-    "r91",
-    "r168",
-    "r180",
-    "r187",
-    "r263",
-    "r305",
-    "r314",
-    "r364",
-    "r372",
-    "r410"
-   ]
-  },
-  {
    "id": "c_device",
    "theme": "Doesn't work on my app or device",
    "count": 10,
@@ -1060,6 +1022,44 @@
     "r533",
     "r578",
     "r595"
+   ]
+  },
+  {
+   "id": "c_nav",
+   "theme": "Hard to navigate or find pages",
+   "count": 10,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "Very hard to go through these printable and find the one you need. Isn’t as well organized as I would like. Pictures looked better of them, have had to find better quality from another seller.",
+     "shop": "ThePrintablePlans",
+     "stars": 1,
+     "review_id": "r180"
+    },
+    {
+     "text": "It took many attempts to load in to Good Notes and when finally that worked I am unable to click on links, I can't navigate the journal. It is also very slow. Such a shame.",
+     "shop": "PlanRightCo",
+     "stars": 1,
+     "review_id": "r263"
+    },
+    {
+     "text": "Layout was very busy and hard for me to navigate",
+     "shop": "FutureADHD",
+     "stars": 1,
+     "review_id": "r314"
+    }
+   ],
+   "review_ids": [
+    "r91",
+    "r168",
+    "r180",
+    "r187",
+    "r263",
+    "r305",
+    "r314",
+    "r364",
+    "r372",
+    "r410"
    ]
   },
   {
@@ -2839,8 +2839,8 @@
    ]
   },
   {
-   "id": "w_customize",
-   "theme": "More ways to customize",
+   "id": "w_themes",
+   "theme": "More design themes",
    "count": 1,
    "on_top_listings": 1,
    "quotes": [],
@@ -2849,8 +2849,8 @@
    ]
   },
   {
-   "id": "w_themes",
-   "theme": "More design themes",
+   "id": "w_customize",
+   "theme": "More ways to customize",
    "count": 1,
    "on_top_listings": 1,
    "quotes": [],
@@ -3487,14 +3487,14 @@
   },
   {
    "kind": "wish",
-   "wish": "w_customize",
-   "theme": "More ways to customize",
+   "wish": "w_themes",
+   "theme": "More design themes",
    "count": 1
   },
   {
    "kind": "wish",
-   "wish": "w_themes",
-   "theme": "More design themes",
+   "wish": "w_customize",
+   "theme": "More ways to customize",
    "count": 1
   },
   {
