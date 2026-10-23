@@ -1,0 +1,87 @@
+{
+ "run": "20261023-1342",
+ "made": "2026-10-23T13:42:04Z",
+ "new_types": [
+  {
+   "type_id": "fitness-planner-digital",
+   "idea": "fitness planner digital",
+   "score": 52.7,
+   "why": [
+    "market 62 (Go)",
+    "747 searches a month",
+    "23,223 listings",
+    "top-10 median $452/mo at $18.91",
+    "line planner needs: needs tracker modules (workouts, meals, measurements)"
+   ]
+  },
+  {
+   "type_id": "self-care-planner",
+   "idea": "self care planner",
+   "score": 49.3,
+   "why": [
+    "market 58 (Test)",
+    "1,412 searches a month",
+    "109,738 listings",
+    "top-10 median $594/mo at $19.66",
+    "line planner needs: needs tracker modules (workouts, meals, measurements)"
+   ]
+  }
+ ],
+ "teardowns": [
+  {
+   "type_id": "fitness-planner-digital",
+   "reason": "no evidence yet"
+  },
+  {
+   "type_id": "self-care-planner",
+   "reason": "no evidence yet"
+  }
+ ],
+ "fixes": [
+  {
+   "product_id": "p-rjd-001",
+   "reasons": [
+    "fonts"
+   ],
+   "note": "just make it 2 fonts only kasi masakit sa mata tapos gumamit ka ng bold, italic mga ganyan",
+   "owner": false,
+   "at": 1792759248938,
+   "status": "open"
+  },
+  {
+   "product_id": "p-gsb-001",
+   "reasons": [
+    "colors"
+   ],
+   "note": "make the bg color #e2e2e2",
+   "owner": false,
+   "at": 1792759890736,
+   "status": "open"
+  },
+  {
+   "product_id": "business-2027-navy",
+   "reasons": [
+    "colors"
+   ],
+   "note": "make the color c8b89a and 7a7368 or add that to the color theme",
+   "owner": false,
+   "at": 1792760657783,
+   "status": "open"
+  }
+ ],
+ "continue": [],
+ "new_products": [
+  {
+   "type_id": "weekly-planner-printable",
+   "product_id": "p-wpp-001"
+  },
+  {
+   "type_id": "business-planner-digital",
+   "product_id": "p-bpd-001"
+  },
+  {
+   "type_id": "weekly-planner-printable",
+   "product_id": "p-wpp-002"
+  }
+ ]
+}

@@ -24,6 +24,16 @@
    "id": "p_updates",
    "theme": "Free updates",
    "use_for": "Praise for free updates or new yearly editions at no extra cost."
+  },
+  {
+   "id": "p_delivery",
+   "theme": "Fast, easy download",
+   "use_for": "Praise that the files arrived quickly or were easy to download or access after buying."
+  },
+  {
+   "id": "p_fun",
+   "theme": "Fun to use",
+   "use_for": "Buyer says it is fun or enjoyable to fill in or use."
   }
  ],
  "complaints": [
@@ -126,6 +136,16 @@
    "id": "c_delivery_delay",
    "theme": "Slow or no delivery of files",
    "use_for": "Took a long time to get access, still waiting, or never received the files."
+  },
+  {
+   "id": "c_share",
+   "theme": "Locked, can't share with others",
+   "use_for": "File is locked or restricted so the buyer can't share it with family or other users."
+  },
+  {
+   "id": "c_manual_pages",
+   "theme": "Have to duplicate or add pages yourself",
+   "use_for": "Only one copy of each page or no repeating dated pages, so the buyer must duplicate or build pages before using it."
   }
  ],
  "wishes": [
@@ -263,6 +283,26 @@
    "id": "w_separate_pages",
    "theme": "Pages as separate files",
    "use_for": "Wants each sheet or page as its own file instead of one long PDF to scroll through."
+  },
+  {
+   "id": "w_rewards",
+   "theme": "More game-like rewards",
+   "use_for": "Wants more rewards, effects or features for gamified progress such as levelling up."
+  },
+  {
+   "id": "w_explanations",
+   "theme": "Clearer explanations of topics",
+   "use_for": "Wants concepts, diagrams or sections explained more clearly or in more depth."
+  },
+  {
+   "id": "w_nav_links",
+   "theme": "More links between views",
+   "use_for": "Wants extra hyperlinks between views (e.g. daily back to weekly, month to week) for quicker navigation."
+  },
+  {
+   "id": "w_gamify",
+   "theme": "More game-style rewards",
+   "use_for": "Wants more happening in gamified features, such as rewards or changes when leveling up."
   }
  ]
 }

@@ -1,0 +1,20 @@
+[
+ {
+  "id": "c_manual_pages",
+  "theme": "Have to duplicate or add pages yourself",
+  "use_for": "Only one copy of each page or no repeating dated pages, so the buyer must duplicate or build pages before using it.",
+  "count": 7
+ },
+ {
+  "id": "c_share",
+  "theme": "Locked, can't share with others",
+  "use_for": "File is locked or restricted so the buyer can't share it with family or other users.",
+  "count": 1
+ },
+ {
+  "id": "w_rewards",
+  "theme": "More game-like rewards",
+  "use_for": "Wants more rewards, effects or features for gamified progress such as levelling up.",
+  "count": 1
+ }
+]

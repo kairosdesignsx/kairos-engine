@@ -1,0 +1,3424 @@
+{
+ "type_id": "self-care-planner",
+ "built_at": "2026-10-23T14:15:14Z",
+ "basis": {
+  "listings": 30,
+  "reviews": 580,
+  "reviews_coded": 500,
+  "off_type_dropped": 33,
+  "negative_reviews": 217,
+  "feature_sources": [
+   "titles"
+  ],
+  "photos": "pending"
+ },
+ "features": [
+  {
+   "id": "self_care",
+   "name": "Self-care, mood or wellness pages",
+   "have": [
+    "1282376971",
+    "4550934368",
+    "1259249004",
+    "4332596790",
+    "1345375335",
+    "1620103130",
+    "1827825727",
+    "1322182653",
+    "4418917488",
+    "1257544669",
+    "1489157910",
+    "4316435473",
+    "1094713506",
+    "1673285970",
+    "1150247261",
+    "1252947242",
+    "1432025066",
+    "1863194445",
+    "1147940986",
+    "4335921642",
+    "1484138616"
+   ],
+   "share": 0.7,
+   "revenue_share": 0.651,
+   "sales_share": 0.809,
+   "tier": "standard"
+  },
+  {
+   "id": "dated",
+   "name": "Dated for the year",
+   "have": [
+    "1587562177",
+    "1282376971",
+    "1259249004",
+    "4332596790",
+    "1345375335",
+    "1620103130",
+    "1827825727",
+    "1257544669",
+    "4316435473",
+    "1673285970",
+    "1798340627",
+    "1248582352",
+    "4562475959",
+    "1863194445",
+    "1147940986",
+    "1385893557"
+   ],
+   "share": 0.533,
+   "revenue_share": 0.616,
+   "sales_share": 0.671,
+   "tier": "common"
+  },
+  {
+   "id": "multi_year",
+   "name": "Covers more than one year",
+   "have": [
+    "1587562177",
+    "1282376971",
+    "1259249004",
+    "4332596790",
+    "1345375335",
+    "1620103130",
+    "1827825727",
+    "1257544669",
+    "4316435473",
+    "1798340627",
+    "1248582352",
+    "4562475959"
+   ],
+   "share": 0.4,
+   "revenue_share": 0.524,
+   "sales_share": 0.585,
+   "tier": "common"
+  },
+  {
+   "id": "journal",
+   "name": "Journal or notebook pages",
+   "have": [
+    "1827825727",
+    "1257544669",
+    "4316435473",
+    "1094713506",
+    "1150247261",
+    "1873819712",
+    "1252947242",
+    "4562475959",
+    "1432025066",
+    "1863194445",
+    "1147940986",
+    "4335921642"
+   ],
+   "share": 0.4,
+   "revenue_share": 0.309,
+   "sales_share": 0.261,
+   "tier": "common"
+  },
+  {
+   "id": "adhd_specific",
+   "name": "Built for ADHD",
+   "have": [
+    "1282376971",
+    "1259249004",
+    "4332596790",
+    "1345375335",
+    "1620103130",
+    "1827825727",
+    "1257544669",
+    "1673285970",
+    "1248582352",
+    "1821197191",
+    "1432025066"
+   ],
+   "share": 0.367,
+   "revenue_share": 0.352,
+   "sales_share": 0.558,
+   "tier": "common"
+  },
+  {
+   "id": "goodnotes",
+   "name": "Says Goodnotes",
+   "have": [
+    "1587562177",
+    "1282376971",
+    "1259249004",
+    "4332596790",
+    "1827825727",
+    "1322182653",
+    "1873819712",
+    "1252947242",
+    "1798340627",
+    "1484138616"
+   ],
+   "share": 0.333,
+   "revenue_share": 0.377,
+   "sales_share": 0.511,
+   "tier": "common"
+  },
+  {
+   "id": "colorful",
+   "name": "Colorful or aesthetic look",
+   "have": [
+    "1587562177",
+    "1282376971",
+    "1259249004",
+    "1620103130",
+    "1257544669",
+    "1798340627",
+    "1248582352"
+   ],
+   "share": 0.233,
+   "revenue_share": 0.267,
+   "sales_share": 0.48,
+   "tier": "rare"
+  },
+  {
+   "id": "bundle",
+   "name": "Bundle of several products",
+   "have": [
+    "1489157910",
+    "729202822",
+    "4316435473",
+    "1094713506",
+    "1821197191",
+    "4562475959",
+    "1396701421"
+   ],
+   "share": 0.233,
+   "revenue_share": 0.257,
+   "sales_share": 0.127,
+   "tier": "rare"
+  },
+  {
+   "id": "habit_tracker",
+   "name": "Habit tracker",
+   "have": [
+    "1282376971",
+    "1259249004",
+    "1620103130",
+    "4316435473",
+    "1094713506",
+    "1385893557"
+   ],
+   "share": 0.2,
+   "revenue_share": 0.159,
+   "sales_share": 0.406,
+   "tier": "rare"
+  },
+  {
+   "id": "android",
+   "name": "Android or Samsung support",
+   "have": [
+    "1587562177",
+    "1282376971",
+    "1259249004",
+    "1620103130",
+    "1827825727",
+    "1873819712"
+   ],
+   "share": 0.2,
+   "revenue_share": 0.322,
+   "sales_share": 0.388,
+   "tier": "rare"
+  },
+  {
+   "id": "all_in_one",
+   "name": "All-in-one life planner",
+   "have": [
+    "1827825727",
+    "1873819712",
+    "1821197191",
+    "4562475959"
+   ],
+   "share": 0.133,
+   "revenue_share": 0.213,
+   "sales_share": 0.006,
+   "tier": "rare"
+  },
+  {
+   "id": "goals",
+   "name": "Goal setting",
+   "have": [
+    "1094713506",
+    "1821197191",
+    "1863194445"
+   ],
+   "share": 0.1,
+   "revenue_share": 0.088,
+   "sales_share": 0.055,
+   "tier": "rare"
+  },
+  {
+   "id": "dark_mode",
+   "name": "Dark mode",
+   "have": [
+    "1345375335",
+    "1620103130",
+    "1827825727"
+   ],
+   "share": 0.1,
+   "revenue_share": 0.14,
+   "sales_share": 0.109,
+   "tier": "rare"
+  },
+  {
+   "id": "notability",
+   "name": "Says Notability",
+   "have": [
+    "1587562177",
+    "1827825727",
+    "1798340627"
+   ],
+   "share": 0.1,
+   "revenue_share": 0.228,
+   "sales_share": 0.069,
+   "tier": "rare"
+  },
+  {
+   "id": "work",
+   "name": "Work or productivity focus",
+   "have": [
+    "4332596790",
+    "1673285970",
+    "1821197191"
+   ],
+   "share": 0.1,
+   "revenue_share": 0.177,
+   "sales_share": 0.038,
+   "tier": "rare"
+  },
+  {
+   "id": "undated",
+   "name": "Undated version",
+   "have": [
+    "1827825727",
+    "1873819712"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.117,
+   "sales_share": 0.003,
+   "tier": "rare"
+  },
+  {
+   "id": "portrait",
+   "name": "Portrait layout",
+   "have": [
+    "1587562177",
+    "1798340627"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.161,
+   "sales_share": 0.068,
+   "tier": "rare"
+  },
+  {
+   "id": "minimalist",
+   "name": "Minimalist look",
+   "have": [
+    "1587562177",
+    "1798340627"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.161,
+   "sales_share": 0.068,
+   "tier": "rare"
+  },
+  {
+   "id": "custom",
+   "name": "Customizable or personalized",
+   "have": [
+    "1827825727",
+    "4418917488"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.132,
+   "sales_share": 0.004,
+   "tier": "rare"
+  },
+  {
+   "id": "hyperlinked",
+   "name": "Hyperlinked tabs and dates",
+   "have": [
+    "1873819712"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.05,
+   "sales_share": 0.003,
+   "tier": "rare"
+  },
+  {
+   "id": "budget",
+   "name": "Budget or finance pages",
+   "have": [
+    "1863194445"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.039,
+   "sales_share": 0.01,
+   "tier": "rare"
+  },
+  {
+   "id": "meal",
+   "name": "Meal planning",
+   "have": [
+    "1094713506"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.0,
+   "sales_share": 0.043,
+   "tier": "rare"
+  },
+  {
+   "id": "brain_dump",
+   "name": "Brain dump pages",
+   "have": [
+    "1827825727"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.067,
+   "sales_share": 0.001,
+   "tier": "rare"
+  },
+  {
+   "id": "time_blocking",
+   "name": "Time blocking or hourly schedule",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "stickers",
+   "name": "Digital stickers included",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "eink",
+   "name": "E-ink tablets (reMarkable, Boox, Kindle Scribe)",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "landscape",
+   "name": "Landscape layout",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "student",
+   "name": "Student or academic",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "routines",
+   "name": "Routine builder",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "dopamine_menu",
+   "name": "Dopamine menu",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "priority_matrix",
+   "name": "Priority matrix or top 3",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "quick_start",
+   "name": "Quick start or setup guide",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "test_page",
+   "name": "Link test or setup check page",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  }
+ ],
+ "complaints": [
+  {
+   "id": "c_download",
+   "theme": "Couldn't download or open the file",
+   "count": 33,
+   "on_top_listings": 11,
+   "quotes": [
+    {
+     "text": "I cannot find the download to the actual planner after purchasing. The purchase only included the guide on how to set up the planner",
+     "shop": "BytheBrookDesign",
+     "stars": 1,
+     "review_id": "r1"
+    },
+    {
+     "text": "This product was very hard to use and I couldn't download it to use on my iPad or computer with having issues seeing part of the planning pages.",
+     "shop": "FutureADHD",
+     "stars": 1,
+     "review_id": "r80"
+    },
+    {
+     "text": "Very difficult to download and I haven’t got everything yer",
+     "shop": "lovingmondays",
+     "stars": 2,
+     "review_id": "r326"
+    }
+   ],
+   "review_ids": [
+    "r1",
+    "r62",
+    "r70",
+    "r80",
+    "r101",
+    "r137",
+    "r171",
+    "r175",
+    "r219",
+    "r229",
+    "r270",
+    "r278",
+    "r279",
+    "r282",
+    "r284",
+    "r306",
+    "r310",
+    "r318",
+    "r320",
+    "r326",
+    "r342",
+    "r364",
+    "r367",
+    "r377",
+    "r428",
+    "r438",
+    "r452",
+    "r513",
+    "r520",
+    "r524",
+    "r527",
+    "r561",
+    "r574"
+   ]
+  },
+  {
+   "id": "c_not_useful",
+   "theme": "Not useful for my needs",
+   "count": 29,
+   "on_top_listings": 10,
+   "quotes": [
+    {
+     "text": "Did not provide weekly plans as most “planners” have. The options are immense but focus more on developing plans, checklist…..",
+     "shop": "lovingmondays",
+     "stars": 2,
+     "review_id": "r328"
+    },
+    {
+     "text": "Wasnt what i was looking for amd a bit confusing tbh",
+     "shop": "DigitizedPlanner",
+     "stars": 2,
+     "review_id": "r217"
+    },
+    {
+     "text": "It wasn't for me. Too hard for me to figure out.",
+     "shop": "BytheBrookDesign",
+     "stars": 1,
+     "review_id": "r3"
+    }
+   ],
+   "review_ids": [
+    "r3",
+    "r20",
+    "r21",
+    "r34",
+    "r36",
+    "r58",
+    "r125",
+    "r159",
+    "r174",
+    "r217",
+    "r218",
+    "r297",
+    "r309",
+    "r315",
+    "r322",
+    "r325",
+    "r327",
+    "r328",
+    "r337",
+    "r339",
+    "r392",
+    "r463",
+    "r473",
+    "r481",
+    "r485",
+    "r529",
+    "r534",
+    "r535",
+    "r607"
+   ]
+  },
+  {
+   "id": "c_value",
+   "theme": "Not worth the price",
+   "count": 28,
+   "on_top_listings": 7,
+   "quotes": [
+    {
+     "text": "I did not feel the spacing for writing in the calendar was sufficient for my needs.  Sucks wasted $14 and I have already deleted.",
+     "shop": "FutureADHD",
+     "stars": 1,
+     "review_id": "r63"
+    },
+    {
+     "text": "Use caution! You actually don't get a workbook. You get a single page in two formats, A4 and letter. I paid way too much for one piece of paper that I had to print.",
+     "shop": "PaperoxStd",
+     "stars": 2,
+     "review_id": "r114"
+    },
+    {
+     "text": "While it is nice it isnt what I wanted I just want a simple planner with the month, and day sections with some notes. I just wasted my money on something I'll never use",
+     "shop": "lovingmondays",
+     "stars": 1,
+     "review_id": "r309"
+    }
+   ],
+   "review_ids": [
+    "r2",
+    "r12",
+    "r63",
+    "r111",
+    "r114",
+    "r116",
+    "r183",
+    "r210",
+    "r275",
+    "r308",
+    "r309",
+    "r311",
+    "r312",
+    "r313",
+    "r316",
+    "r330",
+    "r362",
+    "r366",
+    "r368",
+    "r371",
+    "r381",
+    "r429",
+    "r536",
+    "r561",
+    "r562",
+    "r564",
+    "r566",
+    "r571"
+   ]
+  },
+  {
+   "id": "c_hard",
+   "theme": "Hard to use day to day",
+   "count": 25,
+   "on_top_listings": 8,
+   "quotes": [
+    {
+     "text": "This product was very hard to use and I couldn't download it to use on my iPad or computer with having issues seeing part of the planning pages.",
+     "shop": "FutureADHD",
+     "stars": 1,
+     "review_id": "r80"
+    },
+    {
+     "text": "Not easy to use, you basically make your own journal",
+     "shop": "BytheBrookDesign",
+     "stars": 2,
+     "review_id": "r23"
+    },
+    {
+     "text": "Wasnt what i was looking for amd a bit confusing tbh",
+     "shop": "DigitizedPlanner",
+     "stars": 2,
+     "review_id": "r217"
+    }
+   ],
+   "review_ids": [
+    "r3",
+    "r5",
+    "r6",
+    "r8",
+    "r23",
+    "r25",
+    "r29",
+    "r31",
+    "r58",
+    "r66",
+    "r71",
+    "r80",
+    "r109",
+    "r163",
+    "r166",
+    "r213",
+    "r217",
+    "r232",
+    "r382",
+    "r420",
+    "r517",
+    "r557",
+    "r561",
+    "r563",
+    "r566"
+   ]
+  },
+  {
+   "id": "c_quality",
+   "theme": "Errors, typos or low quality",
+   "count": 22,
+   "on_top_listings": 3,
+   "quotes": [
+    {
+     "text": "The icons for ebook and audiobook are swapped throughout. Otherwise a good package with lots of options.",
+     "shop": "FreshFolioPrintables",
+     "stars": 3,
+     "review_id": "r378"
+    },
+    {
+     "text": "I love it except there’s a typo or two",
+     "shop": "DailyFocusClub",
+     "stars": 4,
+     "review_id": "r487"
+    },
+    {
+     "text": "Customisation & concept is great but all pages are pixelated & off centre on the multiple downloads I have done.",
+     "shop": "DigitizedPlanner",
+     "stars": 2,
+     "review_id": "r215"
+    }
+   ],
+   "review_ids": [
+    "r12",
+    "r16",
+    "r28",
+    "r33",
+    "r108",
+    "r115",
+    "r206",
+    "r215",
+    "r216",
+    "r231",
+    "r276",
+    "r330",
+    "r362",
+    "r369",
+    "r373",
+    "r375",
+    "r378",
+    "r380",
+    "r425",
+    "r464",
+    "r487",
+    "r567"
+   ]
+  },
+  {
+   "id": "c_device",
+   "theme": "Doesn't work on my app or device",
+   "count": 22,
+   "on_top_listings": 6,
+   "quotes": [
+    {
+     "text": "Unable to use on a Samsung tablet S.  Seller tried to help, but after doing research, it's not compatible with this style tablet.",
+     "shop": "FutureADHD",
+     "stars": 1,
+     "review_id": "r65"
+    },
+    {
+     "text": "Sadly this isn't great when you are trying to write with a text function, it keeps reverting to pen after each word and it does the same with font size after each word. Given up with it within the hour of downloading",
+     "shop": "DigitalCapybara",
+     "stars": 1,
+     "review_id": "r559"
+    },
+    {
+     "text": "I wasn't able to download and use this template. I have a chromebook. Do not waste them money unless you have access to Microsoft Word",
+     "shop": "CreativeJamCo",
+     "stars": 1,
+     "review_id": "r428"
+    }
+   ],
+   "review_ids": [
+    "r18",
+    "r22",
+    "r28",
+    "r31",
+    "r58",
+    "r60",
+    "r65",
+    "r75",
+    "r80",
+    "r165",
+    "r167",
+    "r212",
+    "r367",
+    "r428",
+    "r449",
+    "r470",
+    "r475",
+    "r481",
+    "r483",
+    "r559",
+    "r560",
+    "r563"
+   ]
+  },
+  {
+   "id": "c_misleading",
+   "theme": "Not as described or pictured",
+   "count": 20,
+   "on_top_listings": 4,
+   "quotes": [
+    {
+     "text": "Use caution! You actually don't get a workbook. You get a single page in two formats, A4 and letter. I paid way too much for one piece of paper that I had to print.",
+     "shop": "PaperoxStd",
+     "stars": 2,
+     "review_id": "r114"
+    },
+    {
+     "text": "Terrible advertising. \n\n40 pages repeated is not a 300 pager. False advertising at its best.",
+     "shop": "PLANcontent",
+     "stars": 1,
+     "review_id": "r516"
+    },
+    {
+     "text": "No tiene nada que ver , con lo que crees!! Que estas comprando lastima sentirse engañado.",
+     "shop": "CreativeJamCo",
+     "stars": 1,
+     "review_id": "r434"
+    }
+   ],
+   "review_ids": [
+    "r7",
+    "r14",
+    "r111",
+    "r114",
+    "r124",
+    "r167",
+    "r178",
+    "r210",
+    "r213",
+    "r224",
+    "r226",
+    "r311",
+    "r312",
+    "r313",
+    "r316",
+    "r318",
+    "r365",
+    "r434",
+    "r516",
+    "r546"
+   ]
+  },
+  {
+   "id": "c_basic",
+   "theme": "Too basic or boring",
+   "count": 18,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "Not easy to use, you basically make your own journal",
+     "shop": "BytheBrookDesign",
+     "stars": 2,
+     "review_id": "r23"
+    },
+    {
+     "text": "Very affordable but not the greatest. I spend more money on one with more pages and detail to the planner.",
+     "shop": "PLANcontent",
+     "stars": 1,
+     "review_id": "r514"
+    },
+    {
+     "text": "I thought that this was more informative other than a \nBlatant attempt at copying another person’s work.",
+     "shop": "PaperoxStd",
+     "stars": 1,
+     "review_id": "r104"
+    }
+   ],
+   "review_ids": [
+    "r23",
+    "r104",
+    "r118",
+    "r213",
+    "r220",
+    "r222",
+    "r275",
+    "r297",
+    "r311",
+    "r338",
+    "r371",
+    "r514",
+    "r518",
+    "r533",
+    "r534",
+    "r566",
+    "r569",
+    "r576"
+   ]
+  },
+  {
+   "id": "c_missing",
+   "theme": "Missing pages or less than expected",
+   "count": 17,
+   "on_top_listings": 5,
+   "quotes": [
+    {
+     "text": "Did not provide weekly plans as most “planners” have. The options are immense but focus more on developing plans, checklist…..",
+     "shop": "lovingmondays",
+     "stars": 2,
+     "review_id": "r328"
+    },
+    {
+     "text": "I cannot find the download to the actual planner after purchasing. The purchase only included the guide on how to set up the planner",
+     "shop": "BytheBrookDesign",
+     "stars": 1,
+     "review_id": "r1"
+    },
+    {
+     "text": "Use caution! You actually don't get a workbook. You get a single page in two formats, A4 and letter. I paid way too much for one piece of paper that I had to print.",
+     "shop": "PaperoxStd",
+     "stars": 2,
+     "review_id": "r114"
+    }
+   ],
+   "review_ids": [
+    "r1",
+    "r111",
+    "r114",
+    "r182",
+    "r308",
+    "r322",
+    "r328",
+    "r365",
+    "r476",
+    "r516",
+    "r546",
+    "r554",
+    "r557",
+    "r562",
+    "r565",
+    "r568",
+    "r571"
+   ]
+  },
+  {
+   "id": "c_overwhelm",
+   "theme": "Too much, overwhelming",
+   "count": 16,
+   "on_top_listings": 8,
+   "quotes": [
+    {
+     "text": "It was overwhelming, I sat and tried to read through as much of it as possible, but I had no idea where to start.",
+     "shop": "FutureADHD",
+     "stars": 1,
+     "review_id": "r79"
+    },
+    {
+     "text": "It’s a lot of pages and not easy to navigate",
+     "shop": "DailyFocusClub",
+     "stars": 3,
+     "review_id": "r472"
+    },
+    {
+     "text": "To much for my ocd …overwhelming",
+     "shop": "lovingmondays",
+     "stars": 2,
+     "review_id": "r329"
+    }
+   ],
+   "review_ids": [
+    "r6",
+    "r61",
+    "r67",
+    "r79",
+    "r86",
+    "r185",
+    "r194",
+    "r204",
+    "r329",
+    "r463",
+    "r466",
+    "r469",
+    "r472",
+    "r481",
+    "r560",
+    "r561"
+   ]
+  },
+  {
+   "id": "c_setup",
+   "theme": "Confusing setup or unclear instructions",
+   "count": 16,
+   "on_top_listings": 5,
+   "quotes": [
+    {
+     "text": "I was not sure how to edit this file I followed the instructions and it still didn’t turn out right.",
+     "shop": "FutureADHD",
+     "stars": 1,
+     "review_id": "r78"
+    },
+    {
+     "text": "Het lukt me niet hem makkelijk gebruiksklaar te krijgen op mijn iPad.",
+     "shop": "DailyFocusClub",
+     "stars": 3,
+     "review_id": "r474"
+    },
+    {
+     "text": "Bought this and tried to follow instructions but given up, I found instructions not clear and very time consuming",
+     "shop": "CreativeJamCo",
+     "stars": 1,
+     "review_id": "r432"
+    }
+   ],
+   "review_ids": [
+    "r9",
+    "r22",
+    "r78",
+    "r109",
+    "r206",
+    "r213",
+    "r432",
+    "r463",
+    "r465",
+    "r471",
+    "r474",
+    "r483",
+    "r511",
+    "r565",
+    "r566",
+    "r581"
+   ]
+  },
+  {
+   "id": "c_nav",
+   "theme": "Hard to navigate or find pages",
+   "count": 13,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "Layout was very busy and hard for me to navigate",
+     "shop": "FutureADHD",
+     "stars": 1,
+     "review_id": "r67"
+    },
+    {
+     "text": "It’s a lot of pages and not easy to navigate",
+     "shop": "DailyFocusClub",
+     "stars": 3,
+     "review_id": "r472"
+    },
+    {
+     "text": "The planner does not work properly the links are broken, not that organized and its hard to get around",
+     "shop": "DigitizedPlanner",
+     "stars": 2,
+     "review_id": "r211"
+    }
+   ],
+   "review_ids": [
+    "r58",
+    "r67",
+    "r173",
+    "r206",
+    "r211",
+    "r222",
+    "r322",
+    "r330",
+    "r469",
+    "r472",
+    "r488",
+    "r561",
+    "r562"
+   ]
+  },
+  {
+   "id": "c_support",
+   "theme": "Seller didn't help or reply",
+   "count": 12,
+   "on_top_listings": 4,
+   "quotes": [
+    {
+     "text": "How to download too many apps just to make their main app work plus it took days for their customer service to reach back",
+     "shop": "FutureADHD",
+     "stars": 1,
+     "review_id": "r68"
+    },
+    {
+     "text": "I was unable to download my purchase, I tried everything on the autoreply email from seller. No support, no download. Find another seller who actually manages their business.",
+     "shop": "lovingmondays",
+     "stars": 1,
+     "review_id": "r310"
+    },
+    {
+     "text": "I have message this person on here and facebook. They have seen my message and no respond. BAD COMMUNICATION and DOESNT PRINT LIKE IT SHOULD! WASTE OF TIME AND MONEY. DONT BOTHER",
+     "shop": "FreshFolioPrintables",
+     "stars": 1,
+     "review_id": "r366"
+    }
+   ],
+   "review_ids": [
+    "r22",
+    "r68",
+    "r182",
+    "r310",
+    "r348",
+    "r366",
+    "r420",
+    "r463",
+    "r517",
+    "r532",
+    "r558",
+    "r561"
+   ]
+  },
+  {
+   "id": "c_edit",
+   "theme": "Can't edit, type or customize",
+   "count": 12,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "I was not sure how to edit this file I followed the instructions and it still didn’t turn out right.",
+     "shop": "FutureADHD",
+     "stars": 1,
+     "review_id": "r78"
+    },
+    {
+     "text": "Sadly this isn't great when you are trying to write with a text function, it keeps reverting to pen after each word and it does the same with font size after each word. Given up with it within the hour of downloading",
+     "shop": "DigitalCapybara",
+     "stars": 1,
+     "review_id": "r559"
+    },
+    {
+     "text": "The item says “fillable”.  Most of the blank spaces are but the filled Spaces cannot be changed to reflect the actual subjects the children are taking.",
+     "shop": "PaperoxStd",
+     "stars": 3,
+     "review_id": "r119"
+    }
+   ],
+   "review_ids": [
+    "r78",
+    "r102",
+    "r119",
+    "r176",
+    "r205",
+    "r210",
+    "r222",
+    "r223",
+    "r368",
+    "r422",
+    "r469",
+    "r559"
+   ]
+  },
+  {
+   "id": "c_refund",
+   "theme": "Refund refused",
+   "count": 11,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "Was sent thru an app that I cannot open ((tried several different ways to open)). I asked for a refund due to inability to open and was denied.",
+     "shop": "CounsellorCronan",
+     "stars": 1,
+     "review_id": "r278"
+    },
+    {
+     "text": "This would not print over 4 pages, I asked for a refund and was told this never happens, no refund…\nI ordered from another shop and it all printed just fine.",
+     "shop": "PLANcontent",
+     "stars": 1,
+     "review_id": "r523"
+    },
+    {
+     "text": "No portrait mode. Seller refused to refund.",
+     "shop": "Manifestable",
+     "stars": 1,
+     "review_id": "r160"
+    }
+   ],
+   "review_ids": [
+    "r12",
+    "r75",
+    "r160",
+    "r174",
+    "r182",
+    "r205",
+    "r268",
+    "r278",
+    "r316",
+    "r517",
+    "r523"
+   ]
+  },
+  {
+   "id": "c_print",
+   "theme": "Hard to print correctly",
+   "count": 8,
+   "on_top_listings": 3,
+   "quotes": [
+    {
+     "text": "The outer rings are a little small/blurred to read when printed.",
+     "shop": "PaperoxStd",
+     "stars": 3,
+     "review_id": "r121"
+    },
+    {
+     "text": "Aun no he podido imprimirlo. Se me ha dificultado mucho.",
+     "shop": "lovingmondays",
+     "stars": 2,
+     "review_id": "r332"
+    },
+    {
+     "text": "Just needed to learn to adjust printing on my side",
+     "shop": "FreshFolioPrintables",
+     "stars": 4,
+     "review_id": "r398"
+    }
+   ],
+   "review_ids": [
+    "r106",
+    "r121",
+    "r332",
+    "r366",
+    "r398",
+    "r437",
+    "r523",
+    "r532"
+   ]
+  },
+  {
+   "id": "c_links",
+   "theme": "Links broken or go to the wrong page",
+   "count": 8,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "i opened a page but linkn doesnt work to get the download.",
+     "shop": "FreshFolioPrintables",
+     "stars": 1,
+     "review_id": "r364"
+    },
+    {
+     "text": "awesome planner, only thing I can't seem to do is the link to the calendar and I am sure I have just forgotten to do something.  Regardless its a great planner! Has lots of useful stuff.",
+     "shop": "DailyFocusClub",
+     "stars": 5,
+     "review_id": "r499"
+    },
+    {
+     "text": "The planner does not work properly the links are broken, not that organized and its hard to get around",
+     "shop": "DigitizedPlanner",
+     "stars": 2,
+     "review_id": "r211"
+    }
+   ],
+   "review_ids": [
+    "r179",
+    "r211",
+    "r212",
+    "r364",
+    "r469",
+    "r475",
+    "r481",
+    "r499"
+   ]
+  },
+  {
+   "id": "c_repetitive",
+   "theme": "Repetitive or duplicate pages",
+   "count": 8,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "just felt like a bunch of pages that repeated themselves, i was hoping for more diversity within the options for the price",
+     "shop": "FreshFolioPrintables",
+     "stars": 3,
+     "review_id": "r381"
+    },
+    {
+     "text": "Terrible advertising. \n\n40 pages repeated is not a 300 pager. False advertising at its best.",
+     "shop": "PLANcontent",
+     "stars": 1,
+     "review_id": "r516"
+    },
+    {
+     "text": "Sorry, but this just doesn’t justify the cost. The images are of poor quality, the life planner is copied and pasted from other sources, difficult to navigate the notebooks and lots of repetition. Not happy with this at all.",
+     "shop": "lovingmondays",
+     "stars": 2,
+     "review_id": "r330"
+    }
+   ],
+   "review_ids": [
+    "r330",
+    "r370",
+    "r375",
+    "r381",
+    "r387",
+    "r516",
+    "r535",
+    "r546"
+   ]
+  },
+  {
+   "id": "c_extra_app",
+   "theme": "Needed an app or subscription that wasn't clear",
+   "count": 7,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "How to download too many apps just to make their main app work plus it took days for their customer service to reach back",
+     "shop": "FutureADHD",
+     "stars": 1,
+     "review_id": "r68"
+    },
+    {
+     "text": "I wasn't able to download and use this template. I have a chromebook. Do not waste them money unless you have access to Microsoft Word",
+     "shop": "CreativeJamCo",
+     "stars": 1,
+     "review_id": "r428"
+    },
+    {
+     "text": "Dubbel betalen met extra app die je nodig hebt.",
+     "shop": "BytheBrookDesign",
+     "stars": 1,
+     "review_id": "r2"
+    }
+   ],
+   "review_ids": [
+    "r2",
+    "r12",
+    "r68",
+    "r212",
+    "r367",
+    "r428",
+    "r470"
+   ]
+  },
+  {
+   "id": "c_look",
+   "theme": "Didn't like the look",
+   "count": 7,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "Awful design and layout. Warning all the positive reviews are because she offers a freebie if they leave a positive review.",
+     "shop": "lovingmondays",
+     "stars": 1,
+     "review_id": "r314"
+    },
+    {
+     "text": "there was a filter on the app covers that was a little more blue then i expected",
+     "shop": "BytheBrookDesign",
+     "stars": 2,
+     "review_id": "r32"
+    },
+    {
+     "text": "The fonts and line weights are mismatched between sections and pages. Definitely not a well designed set of printables and I won’t be using them for that reason.",
+     "shop": "FreshFolioPrintables",
+     "stars": 3,
+     "review_id": "r373"
+    }
+   ],
+   "review_ids": [
+    "r32",
+    "r159",
+    "r314",
+    "r322",
+    "r373",
+    "r429",
+    "r571"
+   ]
+  },
+  {
+   "id": "c_delivery_delay",
+   "theme": "Slow or no delivery of files",
+   "count": 6,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "Very difficult to download and I haven’t got everything yer",
+     "shop": "lovingmondays",
+     "stars": 2,
+     "review_id": "r326"
+    },
+    {
+     "text": "This seller cannot fulfill my paid order and says he can customize but cannot get it done correctly \nVery dissatisfied",
+     "shop": "PaperoxStd",
+     "stars": 1,
+     "review_id": "r108"
+    },
+    {
+     "text": "Worked well, took a bit to get digitally delivered to me but works great!",
+     "shop": "CreativeJamCo",
+     "stars": 5,
+     "review_id": "r457"
+    }
+   ],
+   "review_ids": [
+    "r17",
+    "r19",
+    "r108",
+    "r268",
+    "r326",
+    "r457"
+   ]
+  },
+  {
+   "id": "c_broken",
+   "theme": "Doesn't work (no detail)",
+   "count": 5,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "It was very good when I started using it by now it doesn’t work for me anymore",
+     "shop": "DigitalCapybara",
+     "stars": 4,
+     "review_id": "r577"
+    },
+    {
+     "text": "so confusing. does not work",
+     "shop": "BytheBrookDesign",
+     "stars": 1,
+     "review_id": "r8"
+    },
+    {
+     "text": "It doesn't work. Only GIFS",
+     "shop": "PLANcontent",
+     "stars": 1,
+     "review_id": "r531"
+    }
+   ],
+   "review_ids": [
+    "r8",
+    "r30",
+    "r421",
+    "r531",
+    "r577"
+   ]
+  },
+  {
+   "id": "c_readability",
+   "theme": "Text too small or hard to read",
+   "count": 5,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "The outer rings are a little small/blurred to read when printed.",
+     "shop": "PaperoxStd",
+     "stars": 3,
+     "review_id": "r121"
+    },
+    {
+     "text": "There’s a lot in this planner, and it’s pretty much as described. The only slight downside is it’s fairly hard to see the icons etc.",
+     "shop": "DailyFocusClub",
+     "stars": 4,
+     "review_id": "r478"
+    },
+    {
+     "text": "Beautiful, colorful planner. Some graphics could be improved for the new small remarkable (move) and even for the normal ones. More definition and contrast in characters would be great.",
+     "shop": "DailyFocusClub",
+     "stars": 4,
+     "review_id": "r484"
+    }
+   ],
+   "review_ids": [
+    "r48",
+    "r121",
+    "r478",
+    "r484",
+    "r571"
+   ]
+  },
+  {
+   "id": "c_space",
+   "theme": "Too little writing space",
+   "count": 4,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "I did not feel the spacing for writing in the calendar was sufficient for my needs.  Sucks wasted $14 and I have already deleted.",
+     "shop": "FutureADHD",
+     "stars": 1,
+     "review_id": "r63"
+    },
+    {
+     "text": "The size doesn’t fit iPad Pro, too much margin and not much actual writing space on some pages, fonts alignment incoherency, to name a few",
+     "shop": "BytheBrookDesign",
+     "stars": 2,
+     "review_id": "r28"
+    },
+    {
+     "text": "I was hoping for a journal that I could add blank lined sheets in between dates but wasn’t able to. There also wasn’t enough space on each day for everything I wanted to log.",
+     "shop": "Manifestable",
+     "stars": 1,
+     "review_id": "r176"
+    }
+   ],
+   "review_ids": [
+    "r28",
+    "r48",
+    "r63",
+    "r176"
+   ]
+  },
+  {
+   "id": "c_dates",
+   "theme": "Wrong or missing dates, calendar errors",
+   "count": 3,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "The design of the planner itself is really nice. However, it is extremely out of order in some places and the pages for certain things skip all around without it being consecutive with the corresponding months. Needs better quality control.",
+     "shop": "BytheBrookDesign",
+     "stars": 2,
+     "review_id": "r33"
+    }
+   ],
+   "review_ids": [
+    "r33",
+    "r182",
+    "r546"
+   ]
+  },
+  {
+   "id": "c_lag",
+   "theme": "Slow, laggy or file too big",
+   "count": 3,
+   "on_top_listings": 0,
+   "quotes": [],
+   "review_ids": [
+    "r101",
+    "r216",
+    "r234"
+   ]
+  },
+  {
+   "id": "c_plagiarism",
+   "theme": "Design copied from other creators",
+   "count": 2,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "I thought that this was more informative other than a \nBlatant attempt at copying another person’s work.",
+     "shop": "PaperoxStd",
+     "stars": 1,
+     "review_id": "r104"
+    },
+    {
+     "text": "Sorry, but this just doesn’t justify the cost. The images are of poor quality, the life planner is copied and pasted from other sources, difficult to navigate the notebooks and lots of repetition. Not happy with this at all.",
+     "shop": "lovingmondays",
+     "stars": 2,
+     "review_id": "r330"
+    }
+   ],
+   "review_ids": [
+    "r104",
+    "r330"
+   ]
+  },
+  {
+   "id": "c_ai_art",
+   "theme": "AI-generated artwork",
+   "count": 2,
+   "on_top_listings": 0,
+   "quotes": [],
+   "review_ids": [
+    "r115",
+    "r234"
+   ]
+  },
+  {
+   "id": "c_split_files",
+   "theme": "Split into many separate files",
+   "count": 2,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "It wasn’t what I was looking for everything is separate not in 1 planner.",
+     "shop": "lovingmondays",
+     "stars": 1,
+     "review_id": "r315"
+    }
+   ],
+   "review_ids": [
+    "r315",
+    "r322"
+   ]
+  },
+  {
+   "id": "c_wrong_item",
+   "theme": "Received the wrong item",
+   "count": 2,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "I did not get my download for declutter.  I got something else.",
+     "shop": "lovingmondays",
+     "stars": 2,
+     "review_id": "r331"
+    },
+    {
+     "text": "I received a recipe planner cover",
+     "shop": "PLANcontent",
+     "stars": 1,
+     "review_id": "r555"
+    }
+   ],
+   "review_ids": [
+    "r331",
+    "r555"
+   ]
+  },
+  {
+   "id": "c_review_gate",
+   "theme": "Forced to leave a review",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "Why is a rating needed before accessing the file?! Terrible!",
+     "shop": "Manifestable",
+     "stars": 1,
+     "review_id": "r170"
+    }
+   ],
+   "review_ids": [
+    "r170"
+   ]
+  },
+  {
+   "id": "c_fake_reviews",
+   "theme": "Reviews seem fake or bought",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "Awful design and layout. Warning all the positive reviews are because she offers a freebie if they leave a positive review.",
+     "shop": "lovingmondays",
+     "stars": 1,
+     "review_id": "r314"
+    }
+   ],
+   "review_ids": [
+    "r314"
+   ]
+  },
+  {
+   "id": "c_review_nag",
+   "theme": "Nagged for a review",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "product is good, I hate etsy making me write a review for everything.",
+     "shop": "FreshFolioPrintables",
+     "stars": 3,
+     "review_id": "r374"
+    }
+   ],
+   "review_ids": [
+    "r374"
+   ]
+  },
+  {
+   "id": "c_billing",
+   "theme": "Charged the wrong amount",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "I was charged for three of the planters on my card and I only purchased one",
+     "shop": "PLANcontent",
+     "stars": 1,
+     "review_id": "r525"
+    }
+   ],
+   "review_ids": [
+    "r525"
+   ]
+  }
+ ],
+ "praise": [
+  {
+   "id": "p_look",
+   "theme": "Beautiful design",
+   "count": 78,
+   "on_top_listings": 22,
+   "quotes": [
+    {
+     "text": "Very cute planner! It had a lot of activity’s to keep you on schedule and accountable.",
+     "shop": "DailyFocusClub",
+     "stars": 5,
+     "review_id": "r491"
+    },
+    {
+     "text": "This is truly amazing, I love all the hyper-links and how it incorporates wellbeing, the coloring, etc. Tons of templates and super easy to use.",
+     "shop": "FutureADHD",
+     "stars": 5,
+     "review_id": "r90"
+    },
+    {
+     "text": "Everything is laid out well, hyperlinks work perfectly, additional pages are thoughtfully made, and the color scheme is so pretty. I really enjoy using it!",
+     "shop": "BytheBrookDesign",
+     "stars": 5,
+     "review_id": "r41"
+    }
+   ],
+   "review_ids": [
+    "r33",
+    "r34",
+    "r35",
+    "r37",
+    "r38",
+    "r39",
+    "r41",
+    "r45",
+    "r48",
+    "r49",
+    "r50",
+    "r51",
+    "r56",
+    "r81",
+    "r83",
+    "r84",
+    "r88",
+    "r90",
+    "r95",
+    "r96",
+    "r97",
+    "r179",
+    "r184",
+    "r191",
+    "r194",
+    "r224",
+    "r227",
+    "r233",
+    "r236",
+    "r250",
+    "r252",
+    "r254",
+    "r256",
+    "r258",
+    "r259",
+    "r260",
+    "r290",
+    "r291",
+    "r293",
+    "r327",
+    "r396",
+    "r397",
+    "r410",
+    "r418",
+    "r420",
+    "r444",
+    "r456",
+    "r481",
+    "r484",
+    "r491",
+    "r492",
+    "r494",
+    "r496",
+    "r500",
+    "r503",
+    "r511",
+    "r540",
+    "r554",
+    "r557",
+    "r566",
+    "r570",
+    "r576",
+    "r579",
+    "r580",
+    "r581",
+    "r586",
+    "r588",
+    "r589",
+    "r590",
+    "r593",
+    "r594",
+    "r595",
+    "r596",
+    "r597",
+    "r599",
+    "r604",
+    "r609",
+    "r613"
+   ]
+  },
+  {
+   "id": "p_fits_needs",
+   "theme": "Useful, fits my needs",
+   "count": 76,
+   "on_top_listings": 15,
+   "quotes": [
+    {
+     "text": "The owner of this company is a honest person and her products are very useful.",
+     "shop": "lovingmondays",
+     "stars": 5,
+     "review_id": "r350"
+    },
+    {
+     "text": "Working through the pages helped me organise my emotions and build healthier habits. They are gentle, practical tools for personal development.",
+     "shop": "CounsellorCronan",
+     "stars": 5,
+     "review_id": "r302"
+    },
+    {
+     "text": "convenient, pretty, useful, worked out great for me",
+     "shop": "FreshFolioPrintables",
+     "stars": 4,
+     "review_id": "r397"
+    }
+   ],
+   "review_ids": [
+    "r38",
+    "r40",
+    "r54",
+    "r82",
+    "r85",
+    "r91",
+    "r94",
+    "r96",
+    "r117",
+    "r123",
+    "r126",
+    "r127",
+    "r131",
+    "r141",
+    "r145",
+    "r152",
+    "r198",
+    "r241",
+    "r242",
+    "r246",
+    "r248",
+    "r249",
+    "r251",
+    "r255",
+    "r290",
+    "r292",
+    "r294",
+    "r296",
+    "r302",
+    "r303",
+    "r304",
+    "r305",
+    "r347",
+    "r350",
+    "r351",
+    "r353",
+    "r354",
+    "r355",
+    "r376",
+    "r379",
+    "r388",
+    "r391",
+    "r397",
+    "r403",
+    "r405",
+    "r408",
+    "r412",
+    "r416",
+    "r417",
+    "r442",
+    "r445",
+    "r446",
+    "r455",
+    "r458",
+    "r459",
+    "r461",
+    "r467",
+    "r477",
+    "r479",
+    "r480",
+    "r492",
+    "r508",
+    "r530",
+    "r537",
+    "r540",
+    "r543",
+    "r547",
+    "r550",
+    "r551",
+    "r553",
+    "r556",
+    "r585",
+    "r587",
+    "r593",
+    "r612",
+    "r613"
+   ]
+  },
+  {
+   "id": "p_complete",
+   "theme": "Has everything I need",
+   "count": 46,
+   "on_top_listings": 15,
+   "quotes": [
+    {
+     "text": "The icons for ebook and audiobook are swapped throughout. Otherwise a good package with lots of options.",
+     "shop": "FreshFolioPrintables",
+     "stars": 3,
+     "review_id": "r378"
+    },
+    {
+     "text": "This is truly amazing, I love all the hyper-links and how it incorporates wellbeing, the coloring, etc. Tons of templates and super easy to use.",
+     "shop": "FutureADHD",
+     "stars": 5,
+     "review_id": "r90"
+    },
+    {
+     "text": "Great resources! Full of fun ways to stay organized, digitally!",
+     "shop": "Manifestable",
+     "stars": 5,
+     "review_id": "r197"
+    }
+   ],
+   "review_ids": [
+    "r37",
+    "r38",
+    "r39",
+    "r42",
+    "r45",
+    "r48",
+    "r56",
+    "r84",
+    "r90",
+    "r95",
+    "r100",
+    "r197",
+    "r201",
+    "r203",
+    "r231",
+    "r238",
+    "r243",
+    "r244",
+    "r260",
+    "r336",
+    "r356",
+    "r357",
+    "r378",
+    "r380",
+    "r384",
+    "r385",
+    "r390",
+    "r402",
+    "r410",
+    "r443",
+    "r451",
+    "r455",
+    "r478",
+    "r480",
+    "r485",
+    "r488",
+    "r499",
+    "r502",
+    "r503",
+    "r508",
+    "r539",
+    "r549",
+    "r552",
+    "r575",
+    "r585",
+    "r610"
+   ]
+  },
+  {
+   "id": "p_easy",
+   "theme": "Easy to set up and use",
+   "count": 32,
+   "on_top_listings": 4,
+   "quotes": [
+    {
+     "text": "This is truly amazing, I love all the hyper-links and how it incorporates wellbeing, the coloring, etc. Tons of templates and super easy to use.",
+     "shop": "FutureADHD",
+     "stars": 5,
+     "review_id": "r90"
+    },
+    {
+     "text": "very easy to download and start creating :)",
+     "shop": "FreshFolioPrintables",
+     "stars": 5,
+     "review_id": "r411"
+    },
+    {
+     "text": "A very comprehensive kit. Love that it comes in multiple sizes. Really easy to download and access. Thank you.",
+     "shop": "PLANcontent",
+     "stars": 5,
+     "review_id": "r539"
+    }
+   ],
+   "review_ids": [
+    "r38",
+    "r44",
+    "r53",
+    "r85",
+    "r90",
+    "r97",
+    "r122",
+    "r128",
+    "r136",
+    "r142",
+    "r156",
+    "r191",
+    "r291",
+    "r292",
+    "r345",
+    "r346",
+    "r357",
+    "r385",
+    "r409",
+    "r411",
+    "r443",
+    "r444",
+    "r447",
+    "r454",
+    "r461",
+    "r512",
+    "r539",
+    "r544",
+    "r550",
+    "r594",
+    "r602",
+    "r604"
+   ]
+  },
+  {
+   "id": "p_quality",
+   "theme": "High quality",
+   "count": 31,
+   "on_top_listings": 11,
+   "quotes": [
+    {
+     "text": "Great planner. A little overwhelming at first, but love it so far!",
+     "shop": "FutureADHD",
+     "stars": 5,
+     "review_id": "r86"
+    },
+    {
+     "text": "Everything is laid out well, hyperlinks work perfectly, additional pages are thoughtfully made, and the color scheme is so pretty. I really enjoy using it!",
+     "shop": "BytheBrookDesign",
+     "stars": 5,
+     "review_id": "r41"
+    },
+    {
+     "text": "Quality was amazing. \nMatched Description. \nMet Expectations.",
+     "shop": "DailyFocusClub",
+     "stars": 5,
+     "review_id": "r497"
+    }
+   ],
+   "review_ids": [
+    "r41",
+    "r43",
+    "r46",
+    "r48",
+    "r86",
+    "r87",
+    "r91",
+    "r99",
+    "r124",
+    "r132",
+    "r135",
+    "r190",
+    "r196",
+    "r213",
+    "r243",
+    "r244",
+    "r295",
+    "r316",
+    "r345",
+    "r349",
+    "r356",
+    "r389",
+    "r444",
+    "r489",
+    "r497",
+    "r498",
+    "r506",
+    "r550",
+    "r583",
+    "r590",
+    "r605"
+   ]
+  },
+  {
+   "id": "p_adhd",
+   "theme": "Helps me stay on track",
+   "count": 28,
+   "on_top_listings": 15,
+   "quotes": [
+    {
+     "text": "Very cute planner! It had a lot of activity’s to keep you on schedule and accountable.",
+     "shop": "DailyFocusClub",
+     "stars": 5,
+     "review_id": "r491"
+    },
+    {
+     "text": "Working through the pages helped me organise my emotions and build healthier habits. They are gentle, practical tools for personal development.",
+     "shop": "CounsellorCronan",
+     "stars": 5,
+     "review_id": "r302"
+    },
+    {
+     "text": "Artikel von dem Verkäufer begleiten mich scheon ein paar Jahre und sie gestalten meinen Alltag einfacher. Kann ich für Spectrum- Ponies nur empfehlen!",
+     "shop": "FutureADHD",
+     "stars": 5,
+     "review_id": "r92"
+    }
+   ],
+   "review_ids": [
+    "r89",
+    "r92",
+    "r94",
+    "r95",
+    "r96",
+    "r98",
+    "r195",
+    "r197",
+    "r199",
+    "r200",
+    "r201",
+    "r256",
+    "r258",
+    "r260",
+    "r302",
+    "r360",
+    "r361",
+    "r409",
+    "r482",
+    "r491",
+    "r494",
+    "r500",
+    "r503",
+    "r508",
+    "r511",
+    "r512",
+    "r587",
+    "r610"
+   ]
+  },
+  {
+   "id": "p_support",
+   "theme": "Seller was helpful",
+   "count": 24,
+   "on_top_listings": 4,
+   "quotes": [
+    {
+     "text": "Unable to use on a Samsung tablet S.  Seller tried to help, but after doing research, it's not compatible with this style tablet.",
+     "shop": "FutureADHD",
+     "stars": 1,
+     "review_id": "r65"
+    },
+    {
+     "text": "Beautiful planner! And helpful seller w the details!",
+     "shop": "BytheBrookDesign",
+     "stars": 2,
+     "review_id": "r35"
+    },
+    {
+     "text": "Quick to respond. Very sweet.",
+     "shop": "Manifestable",
+     "stars": 4,
+     "review_id": "r186"
+    }
+   ],
+   "review_ids": [
+    "r35",
+    "r45",
+    "r46",
+    "r65",
+    "r186",
+    "r192",
+    "r212",
+    "r221",
+    "r229",
+    "r323",
+    "r337",
+    "r358",
+    "r404",
+    "r464",
+    "r470",
+    "r483",
+    "r507",
+    "r511",
+    "r537",
+    "r538",
+    "r549",
+    "r581",
+    "r583",
+    "r605"
+   ]
+  },
+  {
+   "id": "p_flexible",
+   "theme": "Flexible or customizable",
+   "count": 20,
+   "on_top_listings": 3,
+   "quotes": [
+    {
+     "text": "Very fun and plenty of options to curate to individual needs.",
+     "shop": "DailyFocusClub",
+     "stars": 5,
+     "review_id": "r501"
+    },
+    {
+     "text": "This planner really does have everything. There are tons of custom pages and all sorts of trackers that you can include throughout your planner. I seriously can't believe how much I got for this price! Plus, the layout is beautiful!",
+     "shop": "BytheBrookDesign",
+     "stars": 5,
+     "review_id": "r56"
+    },
+    {
+     "text": "A very comprehensive kit. Love that it comes in multiple sizes. Really easy to download and access. Thank you.",
+     "shop": "PLANcontent",
+     "stars": 5,
+     "review_id": "r539"
+    }
+   ],
+   "review_ids": [
+    "r37",
+    "r38",
+    "r39",
+    "r56",
+    "r184",
+    "r194",
+    "r215",
+    "r232",
+    "r254",
+    "r346",
+    "r375",
+    "r383",
+    "r384",
+    "r401",
+    "r450",
+    "r501",
+    "r503",
+    "r511",
+    "r539",
+    "r596"
+   ]
+  },
+  {
+   "id": "p_as_described",
+   "theme": "Exactly as described",
+   "count": 18,
+   "on_top_listings": 5,
+   "quotes": [
+    {
+     "text": "High quality explanation & instructions. Matched the description, & exceeded my expectation. Thank you so much. 💖",
+     "shop": "DailyFocusClub",
+     "stars": 5,
+     "review_id": "r505"
+    },
+    {
+     "text": "Not the fault of the seller - this is exactly what it purports to be.  It's just so MUCH that it's overwhelming and I won't be able to use it effectively.",
+     "shop": "FutureADHD",
+     "stars": 1,
+     "review_id": "r61"
+    },
+    {
+     "text": "The product was exactly as advertised.  It was an easy download and print.",
+     "shop": "PaperoxStd",
+     "stars": 4,
+     "review_id": "r122"
+    }
+   ],
+   "review_ids": [
+    "r53",
+    "r55",
+    "r61",
+    "r122",
+    "r134",
+    "r345",
+    "r392",
+    "r407",
+    "r448",
+    "r453",
+    "r478",
+    "r495",
+    "r497",
+    "r505",
+    "r510",
+    "r541",
+    "r573",
+    "r603"
+   ]
+  },
+  {
+   "id": "p_nav",
+   "theme": "Links work, easy to navigate",
+   "count": 9,
+   "on_top_listings": 3,
+   "quotes": [
+    {
+     "text": "This is truly amazing, I love all the hyper-links and how it incorporates wellbeing, the coloring, etc. Tons of templates and super easy to use.",
+     "shop": "FutureADHD",
+     "stars": 5,
+     "review_id": "r90"
+    },
+    {
+     "text": "Everything is laid out well, hyperlinks work perfectly, additional pages are thoughtfully made, and the color scheme is so pretty. I really enjoy using it!",
+     "shop": "BytheBrookDesign",
+     "stars": 5,
+     "review_id": "r41"
+    },
+    {
+     "text": "I really like the way this planner navigated, having a homenspace and then branching out",
+     "shop": "DigitalCapybara",
+     "stars": 5,
+     "review_id": "r600"
+    }
+   ],
+   "review_ids": [
+    "r41",
+    "r90",
+    "r100",
+    "r496",
+    "r503",
+    "r512",
+    "r573",
+    "r582",
+    "r600"
+   ]
+  },
+  {
+   "id": "p_value",
+   "theme": "Great value",
+   "count": 9,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "This planner really does have everything. There are tons of custom pages and all sorts of trackers that you can include throughout your planner. I seriously can't believe how much I got for this price! Plus, the layout is beautiful!",
+     "shop": "BytheBrookDesign",
+     "stars": 5,
+     "review_id": "r56"
+    },
+    {
+     "text": "I love this planner! This is how all planners should be done. So much fun- exactly what I need and how I need it. Worth it!!!",
+     "shop": "DigitizedPlanner",
+     "stars": 5,
+     "review_id": "r242"
+    },
+    {
+     "text": "This planner has helped me so much. So much care and thought has been put into it, and it shows. Well worth the money. Highly recommend.",
+     "shop": "FutureADHD",
+     "stars": 5,
+     "review_id": "r91"
+    }
+   ],
+   "review_ids": [
+    "r56",
+    "r91",
+    "r190",
+    "r242",
+    "r412",
+    "r416",
+    "r496",
+    "r549",
+    "r552"
+   ]
+  },
+  {
+   "id": "p_repeat",
+   "theme": "Repeat buyer",
+   "count": 8,
+   "on_top_listings": 3,
+   "quotes": [
+    {
+     "text": "Artikel von dem Verkäufer begleiten mich scheon ein paar Jahre und sie gestalten meinen Alltag einfacher. Kann ich für Spectrum- Ponies nur empfehlen!",
+     "shop": "FutureADHD",
+     "stars": 5,
+     "review_id": "r92"
+    },
+    {
+     "text": "Great setup. Going to have to get one for 2025",
+     "shop": "DailyFocusClub",
+     "stars": 5,
+     "review_id": "r489"
+    },
+    {
+     "text": "I repurchased for this year because I loved it so much. Plenty of page formatting options and special features! 10/10 recommend",
+     "shop": "BytheBrookDesign",
+     "stars": 5,
+     "review_id": "r42"
+    }
+   ],
+   "review_ids": [
+    "r39",
+    "r42",
+    "r50",
+    "r92",
+    "r194",
+    "r295",
+    "r299",
+    "r489"
+   ]
+  },
+  {
+   "id": "p_guide",
+   "theme": "Clear instructions or tutorials",
+   "count": 7,
+   "on_top_listings": 5,
+   "quotes": [
+    {
+     "text": "High quality explanation & instructions. Matched the description, & exceeded my expectation. Thank you so much. 💖",
+     "shop": "DailyFocusClub",
+     "stars": 5,
+     "review_id": "r505"
+    },
+    {
+     "text": "Great for keeping organised and easy to understand instructions.",
+     "shop": "Manifestable",
+     "stars": 4,
+     "review_id": "r199"
+    },
+    {
+     "text": "The planner is everything I’ve ever wanted in a digital planner, plus it’s so cute!! The video tutorials are very thorough and really help you understand how to use the planner right away.",
+     "shop": "FutureADHD",
+     "stars": 5,
+     "review_id": "r84"
+    }
+   ],
+   "review_ids": [
+    "r39",
+    "r84",
+    "r184",
+    "r199",
+    "r348",
+    "r505",
+    "r544"
+   ]
+  },
+  {
+   "id": "p_print",
+   "theme": "Prints easily and cleanly",
+   "count": 7,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "great product. easy to download and print. Just bought a few other pages to supplement the perfect planner set up",
+     "shop": "FreshFolioPrintables",
+     "stars": 5,
+     "review_id": "r415"
+    },
+    {
+     "text": "The product was exactly as advertised.  It was an easy download and print.",
+     "shop": "PaperoxStd",
+     "stars": 4,
+     "review_id": "r122"
+    },
+    {
+     "text": "Easy to access and print out. I haven't finished it, but so far love it.",
+     "shop": "CounsellorCronan",
+     "stars": 5,
+     "review_id": "r301"
+    }
+   ],
+   "review_ids": [
+    "r122",
+    "r301",
+    "r383",
+    "r396",
+    "r414",
+    "r415",
+    "r418"
+   ]
+  },
+  {
+   "id": "p_delivery",
+   "theme": "Fast, easy download",
+   "count": 7,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "very easy to download and start creating :)",
+     "shop": "FreshFolioPrintables",
+     "stars": 5,
+     "review_id": "r411"
+    },
+    {
+     "text": "Easy to access and print out. I haven't finished it, but so far love it.",
+     "shop": "CounsellorCronan",
+     "stars": 5,
+     "review_id": "r301"
+    },
+    {
+     "text": "great product. easy to download and print. Just bought a few other pages to supplement the perfect planner set up",
+     "shop": "FreshFolioPrintables",
+     "stars": 5,
+     "review_id": "r415"
+    }
+   ],
+   "review_ids": [
+    "r293",
+    "r301",
+    "r345",
+    "r389",
+    "r411",
+    "r415",
+    "r418"
+   ]
+  },
+  {
+   "id": "p_device",
+   "theme": "Works on my device",
+   "count": 6,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "Helpful and useful on phone and iPad",
+     "shop": "DailyFocusClub",
+     "stars": 2,
+     "review_id": "r467"
+    },
+    {
+     "text": "works with my journaling app, i don't use all of them which sucks because they're very cute",
+     "shop": "DigitizedPlanner",
+     "stars": 4,
+     "review_id": "r236"
+    },
+    {
+     "text": "Wonderful monochrome look! Works beautifully with Kindle Scribe!",
+     "shop": "FutureADHD",
+     "stars": 5,
+     "review_id": "r83"
+    }
+   ],
+   "review_ids": [
+    "r83",
+    "r236",
+    "r467",
+    "r488",
+    "r509",
+    "r572"
+   ]
+  },
+  {
+   "id": "p_extras",
+   "theme": "Love the stickers and extras",
+   "count": 4,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "My second year purchasing a planner from Brooklynn’s shop, and it won’t be my last! I adore the new color schemes and the covers that come with it, I love switching up the covers every month :)",
+     "shop": "BytheBrookDesign",
+     "stars": 5,
+     "review_id": "r50"
+    },
+    {
+     "text": "Love this journal! I’m just in the beginning of my tarot journey and this journal makes it so easy to record your draws and interpretations. It even has cheat sheets if you need a refresher on the meanings of the cards. Highly recommend!",
+     "shop": "CreativeJamCo",
+     "stars": 5,
+     "review_id": "r447"
+    }
+   ],
+   "review_ids": [
+    "r50",
+    "r234",
+    "r357",
+    "r447"
+   ]
+  },
+  {
+   "id": "p_daily",
+   "theme": "I use it every day",
+   "count": 3,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "I love it! Use it everyday.",
+     "shop": "BytheBrookDesign",
+     "stars": 5,
+     "review_id": "r52"
+    },
+    {
+     "text": "I use this daily for work!",
+     "shop": "BytheBrookDesign",
+     "stars": 5,
+     "review_id": "r47"
+    }
+   ],
+   "review_ids": [
+    "r47",
+    "r52",
+    "r201"
+   ]
+  },
+  {
+   "id": "p_fun",
+   "theme": "Fun to use",
+   "count": 3,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "Very fun and plenty of options to curate to individual needs.",
+     "shop": "DailyFocusClub",
+     "stars": 5,
+     "review_id": "r501"
+    },
+    {
+     "text": "It was fun, i really enjoyed getting to colour it all in.",
+     "shop": "FreshFolioPrintables",
+     "stars": 5,
+     "review_id": "r419"
+    },
+    {
+     "text": "Great, as described. Fun tool for my business",
+     "shop": "CreativeJamCo",
+     "stars": 5,
+     "review_id": "r448"
+    }
+   ],
+   "review_ids": [
+    "r419",
+    "r448",
+    "r501"
+   ]
+  },
+  {
+   "id": "p_space",
+   "theme": "Plenty of writing space",
+   "count": 2,
+   "on_top_listings": 1,
+   "quotes": [],
+   "review_ids": [
+    "r184",
+    "r254"
+   ]
+  },
+  {
+   "id": "p_updates",
+   "theme": "Free updates",
+   "count": 1,
+   "on_top_listings": 1,
+   "quotes": [],
+   "review_ids": [
+    "r97"
+   ]
+  }
+ ],
+ "wishes": [
+  {
+   "id": "w_page_types",
+   "theme": "More page types included",
+   "count": 5,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "I wish the monthly planner was in a week view",
+     "shop": "DigitalCapybara",
+     "stars": 4,
+     "review_id": "r578"
+    },
+    {
+     "text": "The planner is great but its missing any other pages such as goal tracker./weight tracker sort of stuff. If u just want a daily planner to just organise tasks, it'll work.",
+     "shop": "DailyFocusClub",
+     "stars": 3,
+     "review_id": "r476"
+    }
+   ],
+   "review_ids": [
+    "r234",
+    "r336",
+    "r476",
+    "r578",
+    "r579"
+   ]
+  },
+  {
+   "id": "w_customize",
+   "theme": "More ways to customize",
+   "count": 2,
+   "on_top_listings": 1,
+   "quotes": [],
+   "review_ids": [
+    "r234",
+    "r336"
+   ]
+  },
+  {
+   "id": "w_next_year",
+   "theme": "New edition for upcoming years",
+   "count": 2,
+   "on_top_listings": 1,
+   "quotes": [],
+   "review_ids": [
+    "r372",
+    "r508"
+   ]
+  },
+  {
+   "id": "w_nav_links",
+   "theme": "More links between views",
+   "count": 2,
+   "on_top_listings": 1,
+   "quotes": [],
+   "review_ids": [
+    "r488",
+    "r496"
+   ]
+  },
+  {
+   "id": "w_back_button",
+   "theme": "A back button",
+   "count": 1,
+   "on_top_listings": 1,
+   "quotes": [],
+   "review_ids": [
+    "r48"
+   ]
+  },
+  {
+   "id": "w_side_tabs",
+   "theme": "Side tabs for faster navigation",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [],
+   "review_ids": [
+    "r58"
+   ]
+  },
+  {
+   "id": "w_easy_delivery",
+   "theme": "Easier way to receive the files",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [],
+   "review_ids": [
+    "r101"
+   ]
+  },
+  {
+   "id": "w_portrait",
+   "theme": "Portrait version",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "No portrait mode. Seller refused to refund.",
+     "shop": "Manifestable",
+     "stars": 1,
+     "review_id": "r160"
+    }
+   ],
+   "review_ids": [
+    "r160"
+   ]
+  },
+  {
+   "id": "w_sunday_start",
+   "theme": "Sunday-start weeks",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "Unfortunately, the calendars start on a Monday, and I will not be able to use this at all. If you are looking for a calendar to start on Sunday, this is not for you.",
+     "shop": "Manifestable",
+     "stars": 1,
+     "review_id": "r164"
+    }
+   ],
+   "review_ids": [
+    "r164"
+   ]
+  },
+  {
+   "id": "w_listing_info",
+   "theme": "Listing should say which apps are needed",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [],
+   "review_ids": [
+    "r212"
+   ]
+  },
+  {
+   "id": "w_previews",
+   "theme": "Page previews before buying",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "really kinda dissappointed i spent 30 dollars on this and it really wasnt wat i expected at all so i wont be using it. def wish it had page previews",
+     "shop": "lovingmondays",
+     "stars": 1,
+     "review_id": "r312"
+    }
+   ],
+   "review_ids": [
+    "r312"
+   ]
+  },
+  {
+   "id": "w_themes",
+   "theme": "More design themes",
+   "count": 1,
+   "on_top_listings": 1,
+   "quotes": [],
+   "review_ids": [
+    "r336"
+   ]
+  },
+  {
+   "id": "w_file_format",
+   "theme": "Other file formats (Google Docs, Word, Pages)",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "Seller does not respond and the way the sheet is sent is awful. How in the world does one need to type all 50 or letters? Come on now. Just send a pdf. I will not but for this seller every again. And she wouldn't even return my 3.00 I paid.",
+     "shop": "PLANcontent",
+     "stars": 1,
+     "review_id": "r517"
+    }
+   ],
+   "review_ids": [
+    "r517"
+   ]
+  },
+  {
+   "id": "w_typeable",
+   "theme": "Pages you can type on",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "I wish the planning book was more in-depth. I also wish you would be able to type on it online.",
+     "shop": "PLANcontent",
+     "stars": 1,
+     "review_id": "r533"
+    }
+   ],
+   "review_ids": [
+    "r533"
+   ]
+  },
+  {
+   "id": "w_gamify",
+   "theme": "More game-style rewards",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "A very fun book with extensive fantasy themed productivity journal things :) would have liked a little more things happening when you level up",
+     "shop": "DigitalCapybara",
+     "stars": 4,
+     "review_id": "r575"
+    }
+   ],
+   "review_ids": [
+    "r575"
+   ]
+  }
+ ],
+ "price": {
+  "p25": 8.41,
+  "median": 15.0,
+  "p75": 24.33,
+  "top10_by_revenue_median": 18.04,
+  "revenue_weighted_median": 15.0,
+  "best_band": "$20-28"
+ },
+ "looks": [
+  {
+   "style": "Colorful or aesthetic look",
+   "share": 0.233,
+   "have": [
+    "1587562177",
+    "1282376971",
+    "1259249004",
+    "1620103130",
+    "1257544669",
+    "1798340627",
+    "1248582352"
+   ]
+  },
+  {
+   "style": "Dark mode",
+   "share": 0.1,
+   "have": [
+    "1345375335",
+    "1620103130",
+    "1827825727"
+   ]
+  },
+  {
+   "style": "Portrait layout",
+   "share": 0.067,
+   "have": [
+    "1587562177",
+    "1798340627"
+   ]
+  },
+  {
+   "style": "Minimalist look",
+   "share": 0.067,
+   "have": [
+    "1587562177",
+    "1798340627"
+   ]
+  },
+  {
+   "style": "Landscape layout",
+   "share": 0.0,
+   "have": []
+  }
+ ],
+ "keywords": [
+  {
+   "tag": "ipad planner",
+   "used_by_top": 11,
+   "volume": null
+  },
+  {
+   "tag": "adhd planner",
+   "used_by_top": 11,
+   "volume": null
+  },
+  {
+   "tag": "self care planner",
+   "used_by_top": 9,
+   "volume": null
+  },
+  {
+   "tag": "adhd resources",
+   "used_by_top": 8,
+   "volume": null
+  },
+  {
+   "tag": "adhd digital planner",
+   "used_by_top": 8,
+   "volume": null
+  },
+  {
+   "tag": "adhd journal",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "adhd organizer",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "adhd workbook",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "adhd work planner",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "adhd goal setting",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "adhd planner adult",
+   "used_by_top": 6,
+   "volume": null
+  },
+  {
+   "tag": "digital planner",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "adhd goodnotes",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "digital notebook",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "digital journal",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "goodnotes planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "productivity planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "self care",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "neurodivergent",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "self care journal",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "printable planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "fitness planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "wellness planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "weekly planner",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "daily planner",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "mental health",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "gratitude journal",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "adhd to do list",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "weight loss tracker",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "weight loss journal",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "fitness tracker",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "workout planner",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "health planner",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "workout tracker",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "goodnote planner",
+   "used_by_top": 2,
+   "volume": null
+  },
+  {
+   "tag": "vertical planner",
+   "used_by_top": 2,
+   "volume": null
+  },
+  {
+   "tag": "elegant planner",
+   "used_by_top": 2,
+   "volume": null
+  },
+  {
+   "tag": "noteshelf planner",
+   "used_by_top": 2,
+   "volume": null
+  },
+  {
+   "tag": "android planner",
+   "used_by_top": 2,
+   "volume": null
+  },
+  {
+   "tag": "samsung planner",
+   "used_by_top": 2,
+   "volume": null
+  }
+ ],
+ "gaps": [
+  {
+   "kind": "fix",
+   "complaint": "c_download",
+   "theme": "Couldn't download or open the file",
+   "count": 33,
+   "features_that_fix": [
+    "quick_start",
+    "download_help_photo"
+   ]
+  },
+  {
+   "kind": "fix",
+   "complaint": "c_not_useful",
+   "theme": "Not useful for my needs",
+   "count": 29,
+   "features_that_fix": []
+  },
+  {
+   "kind": "fix",
+   "complaint": "c_value",
+   "theme": "Not worth the price",
+   "count": 28,
+   "features_that_fix": [
+    "price_position"
+   ]
+  },
+  {
+   "kind": "fix",
+   "complaint": "c_hard",
+   "theme": "Hard to use day to day",
+   "count": 25,
+   "features_that_fix": []
+  },
+  {
+   "kind": "fix",
+   "complaint": "c_quality",
+   "theme": "Errors, typos or low quality",
+   "count": 22,
+   "features_that_fix": [
+    "automated_checks"
+   ]
+  },
+  {
+   "kind": "fix",
+   "complaint": "c_device",
+   "theme": "Doesn't work on my app or device",
+   "count": 22,
+   "features_that_fix": [
+    "android",
+    "eink",
+    "app_guides"
+   ]
+  },
+  {
+   "kind": "fix",
+   "complaint": "c_misleading",
+   "theme": "Not as described or pictured",
+   "count": 20,
+   "features_that_fix": []
+  },
+  {
+   "kind": "fix",
+   "complaint": "c_basic",
+   "theme": "Too basic or boring",
+   "count": 18,
+   "features_that_fix": []
+  },
+  {
+   "kind": "open_feature",
+   "feature": "colorful",
+   "name": "Colorful or aesthetic look",
+   "share": 0.233
+  },
+  {
+   "kind": "open_feature",
+   "feature": "bundle",
+   "name": "Bundle of several products",
+   "share": 0.233
+  },
+  {
+   "kind": "open_feature",
+   "feature": "habit_tracker",
+   "name": "Habit tracker",
+   "share": 0.2
+  },
+  {
+   "kind": "open_feature",
+   "feature": "android",
+   "name": "Android or Samsung support",
+   "share": 0.2
+  },
+  {
+   "kind": "open_feature",
+   "feature": "all_in_one",
+   "name": "All-in-one life planner",
+   "share": 0.133
+  },
+  {
+   "kind": "open_feature",
+   "feature": "goals",
+   "name": "Goal setting",
+   "share": 0.1
+  },
+  {
+   "kind": "open_feature",
+   "feature": "dark_mode",
+   "name": "Dark mode",
+   "share": 0.1
+  },
+  {
+   "kind": "open_feature",
+   "feature": "notability",
+   "name": "Says Notability",
+   "share": 0.1
+  },
+  {
+   "kind": "open_feature",
+   "feature": "work",
+   "name": "Work or productivity focus",
+   "share": 0.1
+  },
+  {
+   "kind": "open_feature",
+   "feature": "undated",
+   "name": "Undated version",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "portrait",
+   "name": "Portrait layout",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "minimalist",
+   "name": "Minimalist look",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "custom",
+   "name": "Customizable or personalized",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "hyperlinked",
+   "name": "Hyperlinked tabs and dates",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "budget",
+   "name": "Budget or finance pages",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "meal",
+   "name": "Meal planning",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "brain_dump",
+   "name": "Brain dump pages",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "time_blocking",
+   "name": "Time blocking or hourly schedule",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "stickers",
+   "name": "Digital stickers included",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "eink",
+   "name": "E-ink tablets (reMarkable, Boox, Kindle Scribe)",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "landscape",
+   "name": "Landscape layout",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "student",
+   "name": "Student or academic",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "routines",
+   "name": "Routine builder",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "dopamine_menu",
+   "name": "Dopamine menu",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "priority_matrix",
+   "name": "Priority matrix or top 3",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "quick_start",
+   "name": "Quick start or setup guide",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "test_page",
+   "name": "Link test or setup check page",
+   "share": 0.0
+  },
+  {
+   "kind": "wish",
+   "wish": "w_page_types",
+   "theme": "More page types included",
+   "count": 5
+  },
+  {
+   "kind": "wish",
+   "wish": "w_customize",
+   "theme": "More ways to customize",
+   "count": 2
+  },
+  {
+   "kind": "wish",
+   "wish": "w_next_year",
+   "theme": "New edition for upcoming years",
+   "count": 2
+  },
+  {
+   "kind": "wish",
+   "wish": "w_nav_links",
+   "theme": "More links between views",
+   "count": 2
+  },
+  {
+   "kind": "wish",
+   "wish": "w_back_button",
+   "theme": "A back button",
+   "count": 1
+  },
+  {
+   "kind": "wish",
+   "wish": "w_side_tabs",
+   "theme": "Side tabs for faster navigation",
+   "count": 1
+  },
+  {
+   "kind": "wish",
+   "wish": "w_easy_delivery",
+   "theme": "Easier way to receive the files",
+   "count": 1
+  },
+  {
+   "kind": "wish",
+   "wish": "w_portrait",
+   "theme": "Portrait version",
+   "count": 1
+  },
+  {
+   "kind": "wish",
+   "wish": "w_sunday_start",
+   "theme": "Sunday-start weeks",
+   "count": 1
+  },
+  {
+   "kind": "wish",
+   "wish": "w_listing_info",
+   "theme": "Listing should say which apps are needed",
+   "count": 1
+  },
+  {
+   "kind": "wish",
+   "wish": "w_previews",
+   "theme": "Page previews before buying",
+   "count": 1
+  },
+  {
+   "kind": "wish",
+   "wish": "w_themes",
+   "theme": "More design themes",
+   "count": 1
+  },
+  {
+   "kind": "wish",
+   "wish": "w_file_format",
+   "theme": "Other file formats (Google Docs, Word, Pages)",
+   "count": 1
+  },
+  {
+   "kind": "wish",
+   "wish": "w_typeable",
+   "theme": "Pages you can type on",
+   "count": 1
+  },
+  {
+   "kind": "wish",
+   "wish": "w_gamify",
+   "theme": "More game-style rewards",
+   "count": 1
+  }
+ ]
+}

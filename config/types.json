@@ -182,5 +182,56 @@
   ],
   "added_by": "picker",
   "added_at": "2026-10-22T14:38:28Z"
+ },
+ "fitness-planner-digital": {
+  "name": "Fitness planner digital",
+  "query": "fitness planner digital",
+  "line": "planner",
+  "group": "Life planners",
+  "format": "Digital life or fitness planner (PDF)",
+  "include_any": [
+   "journal",
+   "planner",
+   "tracker"
+  ],
+  "exclude_any": [
+   "physical",
+   "notion",
+   "plr",
+   "mrr",
+   "sticker"
+  ],
+  "focus_any": [
+   "fitness",
+   "planner"
+  ],
+  "added_by": "picker",
+  "added_at": "2026-10-23T13:42:04Z"
+ },
+ "self-care-planner": {
+  "name": "Self care planner",
+  "query": "self care planner",
+  "line": "planner",
+  "group": "Life planners",
+  "format": "Digital life or fitness planner (PDF)",
+  "include_any": [
+   "journal",
+   "planner",
+   "tracker"
+  ],
+  "exclude_any": [
+   "physical",
+   "notion",
+   "plr",
+   "mrr",
+   "sticker"
+  ],
+  "focus_any": [
+   "self",
+   "care",
+   "planner"
+  ],
+  "added_by": "picker",
+  "added_at": "2026-10-23T13:42:04Z"
  }
 }

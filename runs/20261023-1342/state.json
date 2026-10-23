@@ -1,0 +1,15 @@
+{
+ "run": "20261023-1342",
+ "started": "2026-10-23T13:42:04Z",
+ "started_epoch": 1792762924.0651734,
+ "stages": {
+  "plan": {
+   "status": "done",
+   "at": "2026-10-23T13:42:04Z",
+   "teardowns": 2,
+   "fixes": 3,
+   "new": 3,
+   "continuing": 0
+  }
+ }
+}

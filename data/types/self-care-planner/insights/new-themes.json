@@ -1,0 +1,32 @@
+[
+ {
+  "id": "p_delivery",
+  "theme": "Fast, easy download",
+  "use_for": "Praise that the files arrived quickly or were easy to download or access after buying.",
+  "count": 7
+ },
+ {
+  "id": "p_fun",
+  "theme": "Fun to use",
+  "use_for": "Buyer says it is fun or enjoyable to fill in or use.",
+  "count": 3
+ },
+ {
+  "id": "w_nav_links",
+  "theme": "More links between views",
+  "use_for": "Wants extra hyperlinks between views (e.g. daily back to weekly, month to week) for quicker navigation.",
+  "count": 2
+ },
+ {
+  "id": "w_explanations",
+  "theme": "Clearer explanations of topics",
+  "use_for": "Wants concepts, diagrams or sections explained more clearly or in more depth.",
+  "count": 1
+ },
+ {
+  "id": "w_gamify",
+  "theme": "More game-style rewards",
+  "use_for": "Wants more happening in gamified features, such as rewards or changes when leveling up.",
+  "count": 1
+ }
+]
