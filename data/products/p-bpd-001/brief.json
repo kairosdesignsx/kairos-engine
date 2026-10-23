@@ -87,7 +87,7 @@
   {
    "id": "fx_misleading",
    "complaint": "complaint:c_misleading",
-   "how": "Listing copy states the exact page count and file size of the built file (r003), what each page type is and how many there are (52 week pages, 365 day pages, 12 Money months, and so on), that it is one landscape PDF, dated Oct 26, 2026 to Dec 2027, Monday start. No page is counted twice. Photo ph10 shows the Contents page so the buyer sees every section before buying.",
+   "how": "Listing copy states the exact page count and file size of the built file (r003), what each page type is and how many there are (53 week pages, 365 day pages, 12 Money months, and so on), that it is one landscape PDF, dated Oct 26, 2026 to Dec 2027, Monday start. No page is counted twice. Photo ph10 shows the Contents page so the buyer sees every section before buying.",
    "evidence": [
     "complaint:c_misleading",
     "complaint:c_missing",
@@ -115,7 +115,7 @@
   {
    "id": "fx_basic",
    "complaint": "complaint:c_basic",
-   "how": "Business depth on top of the calendar: Money month for each month (plus Nov and Dec 2026), a Year plan with quarter tick boxes, Price check, Business routines (daily, weekly, monthly, quarterly), a business habit tracker for every month, and content slots on month and week pages. Photos ph3 and ph5 show these pages close up.",
+   "how": "Business depth on top of the calendar: Money month for each month (plus Nov and Dec 2026), a Year plan with quarter tick boxes, Price check, Business routines (daily, weekly, monthly, quarterly), a business habit tracker for every 2027 month, and content slots on month and week pages. Photos ph3 and ph5 show these pages close up.",
    "evidence": [
     "complaint:c_basic",
     "wish:w_page_types",
@@ -839,6 +839,9 @@
   },
   {
    "why": "Check round 2: Setup check now in photo 7, photo 10 adds a large close-up of a day page, Week 1 days Dec 28 to 31 printed unfaded (head-start days), cover title line height so letters do not touch."
+  },
+  {
+   "why": "Check round 3: photo 10 shows Contents plus a day-page close-up, photo 3 is a large close-up of the money tables, brief text says 53 week pages and habit trackers for every 2027 month (what the file has)."
   }
  ]
 }
