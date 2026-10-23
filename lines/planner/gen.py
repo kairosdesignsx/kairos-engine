@@ -328,6 +328,16 @@ WEEK_PRESETS = {
 }
 
 
+
+def _mm(P):
+    """The money_month section of this spec, if any (month pages built earlier link forward to it)."""
+    return next((x for x in P.s.get('sections', []) if x.get('module') == 'money_month'), None)
+
+
+def _mm_chip(P, anchor):
+    th = P.th
+    return f'<a href="#{anchor}" class="k" style="color:{th["ink"]};padding:6px 10px;border-radius:99px;border:1.3px solid {th["line"]}">{esc((_mm(P) or {}).get("label", "Money month"))}</a>'
+
 # ---------- modules ----------
 MODULES = {}
 
@@ -543,6 +553,9 @@ def m_calendar(P, sec):
         wl = ''.join(f'<a href="#w{w:02d}" style="display:inline-flex;align-items:center;line-height:1;padding:6px 9px;border-radius:{P.rpill}px;background:{th["soft"]};font:600 10.5px \'{th["body"]}\'">Week {w}</a>' for w in weeks)
         side = ''.join(f'<div class="box" style="flex:1"><span class="k">{esc(x)}</span><div class="lines"></div></div>' for x in side_labels)
         habit = f'<a href="#m{m:02d}h" class="k" style="color:{th["ink"]};padding:6px 10px;border-radius:99px;border:1.3px solid {th["line"]}">Habit tracker</a>' if sec.get('habits') else ''
+        mm_sec = _mm(P)
+        if mm_sec:
+            habit += _mm_chip(P, f'{mm_sec.get("anchor", "mm")}{m:02d}')
         title_k = 'Month' if P.undated else str(P.year)
         inner = f'''<div class="row" style="align-items:flex-end;justify-content:space-between"><div><p class="k">{title_k}</p><p class="h" style="font-size:52px">{MONTHS[m - 1]}</p></div><div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;max-width:520px">{habit}{wl}</div></div>
           <div class="row" style="flex:1"><div class="cal" style="flex:3;grid-template-rows:auto repeat({rows},1fr);border-bottom:1px solid {th["line"]}">{cells}</div><div class="col" style="flex:1.1">{side}</div></div>'''
@@ -707,6 +720,9 @@ def m_head_start(P, sec):
         prevm = f'<a href="#{pre}{months[k_ - 1][1]:02d}" style="display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:{P.rpill}px;border:1.3px solid {th["line"]};font:600 10.5px \'{th["body"]}\'">{arrow("l", 12)} {MONTHS[months[k_ - 1][1] - 1]}</a>' if k_ > 0 else ''
         nextm = f'<a href="#{pre}{months[k_ + 1][1]:02d}" style="display:inline-flex;align-items:center;gap:4px;padding:6px 10px;border-radius:{P.rpill}px;background:{th["ink"]};color:{th["paper"]};font:600 10.5px \'{th["body"]}\'">{MONTHS[months[k_ + 1][1] - 1]} {arrow("r", 12)}</a>' if k_ + 1 < len(months) else contlink
         extra = prevm + nextm
+        mm_sec = _mm(P)
+        if mm_sec and mm_sec.get('head_start'):
+            wl = _mm_chip(P, f'{mm_sec.get("anchor", "mm")}{pre}{mm:02d}') + wl
         inner = f'''<div class="row" style="align-items:flex-end;justify-content:space-between"><div><p class="k">{esc(sec.get("kicker", "Head start"))} · {yy}</p><p class="h" style="font-size:52px">{MONTHS[mm - 1]}</p></div><div style="display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;max-width:560px">{wl}{extra}</div></div>
           <div class="row" style="flex:1"><div class="cal" style="flex:3;grid-template-rows:auto repeat({len(cal)},1fr);border-bottom:1px solid {th["line"]}">{cells}</div><div class="col" style="flex:1.1">{side}</div></div>'''
         trail = ' · '.join(f'<a href="#{pre}{m2:02d}">{MONTHS[m2 - 1][:3]} {y2}</a>' for y2, m2 in months)
@@ -757,6 +773,55 @@ def m_head_start(P, sec):
                 for d in weeks[w - 1]:
                     if in_lead(d):
                         lead_day(d, main_week(weeks[w - 1][6]), f'Week {P.week_of(weeks[w - 1][6])}')
+
+
+@module('money_month', 'One month-end money page per month (anchors mm01 to mm12; with head_start also mmhs11, mmhs12 for the head-start months), each linked from its month page by a chip. Two tables (Money in, Money out: Category, Planned, Actual, Total row), a This month box (Money in, Money out, Profit), lined boxes for fields (the last fills the page) and a strip of pills to every Money month. One Contents card and one top-bar item. label, kicker, anchor, nav_label, head_start, income, expenses, fields',
+        params={'label': 'str (Money month)', 'kicker': 'str (Month end)', 'anchor': "str prefix, default 'mm'", 'nav_label': 'str (Money)',
+                'head_start': 'bool: also pages for the head_start months', 'income': 'list of str (3 to 5)', 'expenses': 'list of str (4 to 8)',
+                'fields': 'list of str: lined boxes, the last grows', 'index': 'bool', 'nav': 'bool'})
+def m_money_month(P, sec):
+    th = P.th; pre = sec.get('anchor', 'mm'); label = sec.get('label', 'Money month')
+    income = sec.get('income') or ['Sales', 'Other income']; expenses = sec.get('expenses') or ['Stock', 'Fees', 'Marketing', 'Other']
+    fields = sec.get('fields') or ['What worked', 'One change for next month']
+    hs = []  # (anchor, month, year, month page anchor, rail_map, rail_labels)
+    hs_sec = next((x for x in P.s.get('sections', []) if x.get('module') == 'head_start'), None)
+    if sec.get('head_start') and hs_sec:
+        hpre = hs_sec.get('anchor', 'hs')
+        for name, a in getattr(P, 'head_start_links', []):
+            mon = int(a[len(hpre):]); yr = int(name.split()[-1])
+            hs.append((f'{pre}{hpre}{mon:02d}', mon, yr, a))
+    main = [(f'{pre}{m:02d}', m, None if P.undated else P.year, f'm{m:02d}') for m in range(1, 13)]
+    allp = hs + main
+    _register(P, sec, label, f'{pre}01', sec.get('kicker', 'Month end'))
+    row_h = max(30, round(30 * P.scale))
+
+    def table(title, rows, grow=False):
+        head = ''.join(f'<span class="k" style="padding:6px 8px{";text-align:right" if i else ""}">{h}</span>' for i, h in enumerate(['Category', 'Planned', 'Actual']))
+        body = ''.join(f'<div style="display:grid;grid-template-columns:2fr 1fr 1fr;border-bottom:1px solid {th["line"]};height:{row_h}px;align-items:center"><span style="padding:0 8px;font-size:{P.fs(12)};font-weight:600">{esc(r)}</span><span></span><span></span></div>' for r in rows + [''])
+        total = f'<div style="display:grid;grid-template-columns:2fr 1fr 1fr;border-top:1.5px solid {th["ink"]};height:{row_h}px;align-items:center"><span style="padding:0 8px;font-size:{P.fs(12)};font-weight:700">Total</span><span></span><span></span></div>'
+        fill = '<div class="lines" style="flex:1;min-height:0"></div>' if grow else ''  # extra write-in rows fill the column (r006)
+        return f'<div class="box" style="gap:0{";flex:1" if grow else ""}"><span class="k" style="padding-bottom:6px">{esc(title)}</span><div style="display:grid;grid-template-columns:2fr 1fr 1fr;border-bottom:1.5px solid {th["ink"]}">{head}</div>{body}{fill}{total}</div>'
+
+    for i, (a, mon, yr, mpage) in enumerate(allp):
+        strip = ''.join(f'<a href="#{a2}" style="display:inline-flex;align-items:center;padding:4px 8px;border-radius:{P.rpill}px;{"background:" + th["ink"] + ";color:" + th["paper"] if a2 == a else "background:" + th["soft"]};font:600 10px \'{th["body"]}\'">{MONTHS[m2 - 1][:3]}{" " + str(y2)[2:] if (y2 and y2 != P.year) else ""}</a>' for a2, m2, y2, _ in allp)
+        this = (f'<div class="box fill"><span class="k">This month</span>' + field(P, 'Money in', 'flex:none') + field(P, 'Money out', 'flex:none') + field(P, 'Profit', 'flex:none') +
+                f'<span style="font-size:{P.fs(10.5)};color:{th["muted"]}">Profit is money in minus money out.</span></div>')
+        short = 1 if P.W > P.HT else 2  # landscape: one writing line per box so the last box still has room
+        boxes = ''.join(lines_box(P, f, rows=None if j == len(fields) - 1 else short) for j, f in enumerate(fields))
+        right = f'<div class="col" style="flex:1;gap:10px">{this}{boxes}<div style="display:flex;flex-wrap:wrap;gap:4px">{strip}</div></div>'
+        left = f'<div class="col" style="flex:1.9;gap:10px">{table("Money in", income)}{table("Money out", expenses, grow=True)}</div>'
+        kick = f'{label} · {yr}' if yr else label
+        prev_a = allp[i - 1][0] if i > 0 else None; next_a = allp[i + 1][0] if i + 1 < len(allp) else None
+        inner = P.head(kick, MONTHS[mon - 1], size=44, right=_arrows(prev_a, next_a)) + f'<div class="row" style="flex:1">{left}{right}</div>'
+        is_hs = i < len(hs)
+        if is_hs:
+            hmonths = [(x[2], x[1]) for x in hs]
+            rail_map = {m2: f'{hs_sec.get("anchor", "hs")}{m2:02d}' for y2, m2 in hmonths}
+            rail_labels = {m2: f'{MONTHS[m2 - 1][:3].upper()} {y2}' for y2, m2 in hmonths} if hs_sec.get('main_links') else None
+            P.page(a, inner, active=f'{pre}01', month=mon, rail_map=rail_map, rail_labels=rail_labels,
+                   crumb=f'<a href="#{mpage}">{MONTHS[mon - 1]} {yr}</a> / Money')
+        else:
+            P.page(a, inner, active=f'{pre}01', month=mon, crumb=f'<a href="#year">Year</a> / <a href="#{mpage}">{MONTHS[mon - 1]}</a> / Money')
 
 
 # ---------- e-ink format ----------

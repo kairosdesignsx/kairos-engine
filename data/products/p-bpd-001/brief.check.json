@@ -1,9 +1,7 @@
 {
  "pass": true,
  "problems": [],
- "needs_module": [
-  "money_month"
- ],
+ "needs_module": [],
  "coverage": [
   {
    "ref": "complaint:c_not_useful",

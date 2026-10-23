@@ -535,7 +535,7 @@
     "steps": [
      [
       "Download and open it",
-      "Download from Etsy in a web browser, not the Etsy app (the app cannot download files). You get one PDF. Open it in Goodnotes, Notability or Noteshelf on iPad, Samsung Notes or Xodo on Android, or Xodo or Adobe Acrobat Reader on a Chromebook, Windows or Mac computer. Import it as a PDF, do not convert it."
+      "Download from Etsy in a web browser (the Etsy app cannot download files). Import the PDF, unconverted, into Goodnotes, Notability or Noteshelf on iPad, Samsung Notes or Xodo on Android, or Xodo or Acrobat Reader on a computer."
      ],
      [
       "Check the links",
@@ -548,10 +548,10 @@
      ],
      [
       "Start today",
-      "Buying in October to December 2026? Tap Year, then Starting in 2026, and plan from this week. Buying in 2027? Tap Year, then today's date. Then fill the Year plan from this quarter on, and the Money month from this month on. Earlier pages can stay blank."
+      "Buying in Oct to Dec 2026? Tap Year, then Starting in 2026, and plan from this week. Buying in 2027? Tap Year, then today's date. Fill the Year plan and Money month from now on; earlier pages can stay blank."
      ]
     ],
-    "tip": "Use one week page every Monday and one Money month at each month end. Everything else is there when you need it."
+    "tip": "Each Monday, one week page. Each month end, one Money month."
    },
    {
     "module": "link_test",

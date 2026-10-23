@@ -18,6 +18,7 @@ SPEC = {
   {"module": "year_pixels", "label": "Year in moods"},
   {"module": "head_start", "label": "Head start", "from": "2026-11", "to": "2026-12", "days": True, "week": {"preset": "adhd"}, "day": {"preset": "adhd"}},
   {"module": "calendar", "habits": True, "week": {"preset": "adhd"}, "day": {"preset": "adhd"}},
+  {"module": "money_month", "head_start": True, "income": ["Product sales", "Services"], "expenses": ["Stock", "Fees", "Ads"], "fields": ["Best seller", "One change"]},
   {"module": "lined", "label": "Notes", "pages": 3}
  ]}
 
@@ -30,7 +31,7 @@ def run(spec, name):
     html = os.path.abspath(f'tests/out/{name}.html'); open(html, 'w').write(r['html'])
     pdf = os.path.abspath(f'tests/out/{name}.pdf')
     W, H = r['size']
-    out = subprocess.run(['node', 'lines/planner/render.js', html, pdf, os.path.abspath('tests/out'), 'd0115,w03,start,linktest', str(W), str(H)], capture_output=True, text=True)
+    out = subprocess.run(['node', 'lines/planner/render.js', html, pdf, os.path.abspath('tests/out'), 'd0115,w03,start,linktest,mm01,mmhs11', str(W), str(H)], capture_output=True, text=True)
     over = json.loads(out.stdout.split('overflow', 1)[1].strip().splitlines()[0]) if 'overflow' in out.stdout else None
     import pypdf
     rd = pypdf.PdfReader(pdf)
