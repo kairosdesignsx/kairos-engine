@@ -1,4 +1,54 @@
 {
- "reasons": {},
- "notes": []
+ "reasons": {
+  "love": {
+   "count": 1,
+   "by_decision": {
+    "approve": 1
+   }
+  },
+  "fonts": {
+   "count": 1,
+   "by_decision": {
+    "fix": 1
+   }
+  },
+  "colors": {
+   "count": 2,
+   "by_decision": {
+    "fix": 2
+   }
+  }
+ },
+ "notes": [
+  {
+   "product": "p-rjd-001",
+   "decision": "fix",
+   "reasons": [
+    "fonts"
+   ],
+   "note": "just make it 2 fonts only kasi masakit sa mata tapos gumamit ka ng bold, italic mga ganyan",
+   "owner": false,
+   "at": 1792759248938
+  },
+  {
+   "product": "p-gsb-001",
+   "decision": "fix",
+   "reasons": [
+    "colors"
+   ],
+   "note": "make the bg color #e2e2e2",
+   "owner": false,
+   "at": 1792759890736
+  },
+  {
+   "product": "business-2027-navy",
+   "decision": "fix",
+   "reasons": [
+    "colors"
+   ],
+   "note": "make the color c8b89a and 7a7368 or add that to the color theme",
+   "owner": false,
+   "at": 1792760657783
+  }
+ ]
 }

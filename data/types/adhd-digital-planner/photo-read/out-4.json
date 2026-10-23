@@ -1,0 +1,97 @@
+{
+ "listings": [
+  {
+   "listing_id": "1409095152",
+   "features": {"hyperlinked": true, "dated": true, "all_in_one": true, "habit_tracker": true, "self_care": true, "budget": true, "meal": true, "goals": true, "time_blocking": true, "stickers": true, "journal": true, "goodnotes": true, "notability": true, "android": true, "landscape": true, "colorful": true, "minimalist": true, "custom": true, "routines": true, "priority_matrix": true, "work": true, "student": true},
+   "new_features": [
+    {"id": "calendar_links", "name": "Apple Calendar, Reminders and Google Calendar links", "evidence": "photo 1 / photo 3 / description"},
+    {"id": "color_themes", "name": "Several color themes to choose from", "evidence": "photo 4"},
+    {"id": "cover_pack", "name": "Large bonus cover pack", "evidence": "photo 2 / description"},
+    {"id": "custom_sections", "name": "Blank custom sections to fill or import into", "evidence": "photo 3"},
+    {"id": "hex_codes", "name": "Hex codes for matching pen colors", "evidence": "photo 3"},
+    {"id": "multiple_daily_layouts", "name": "Choice of daily layouts", "evidence": "photo 1 / description"}
+   ],
+   "page_types": ["yearly", "year at a glance", "quarterly", "monthly", "weekly", "daily", "home dashboard", "notes", "finance", "wellness", "fitness", "nutrition", "productivity"],
+   "look": {"palette": ["#9B8CC4", "#AB7087", "#E9BCB2", "#FFFFFF", "#1A1A1A"], "style": "modern pastel boho", "orientation": "landscape"},
+   "photo_tactics": ["device mockup with pencil", "stacked tablets showing color variants", "calendar app icons", "feature checklist slide", "annotated navigation callouts", "color options grid", "honest note that calendar links do not sync"]
+  },
+  {
+   "listing_id": "4371064864",
+   "features": {"hyperlinked": true, "dated": true, "all_in_one": true, "habit_tracker": true, "self_care": true, "budget": true, "meal": true, "goals": true, "time_blocking": true, "stickers": true, "journal": true, "goodnotes": true, "notability": true, "portrait": true, "minimalist": true, "work": true, "student": true, "custom": true, "routines": true, "priority_matrix": true, "quick_start": true},
+   "new_features": [
+    {"id": "calendar_links", "name": "Apple Calendar, Reminders and Google Calendar links", "evidence": "photo 1 / photo 4"},
+    {"id": "sticker_widgets", "name": "Functional widget stickers (habit, water, to do boxes)", "evidence": "photo 3"},
+    {"id": "tab_colors", "name": "Choice of tab colors", "evidence": "photo 2"},
+    {"id": "cover_pack", "name": "Bonus cover designs", "evidence": "photo 1 / photo 3"}
+   ],
+   "page_types": ["daily", "weekly", "monthly", "yearly", "to do", "top priorities", "notes", "finance", "wellness", "organization"],
+   "look": {"palette": ["#F3EEE8", "#A89078", "#B5AE9C", "#E6CFC6", "#2B2B2B"], "style": "neutral beige minimal", "orientation": "portrait"},
+   "photo_tactics": ["filled-in sample daily page", "hand with pencil illustration", "page count badge", "feature pill badges", "calendar app icons and popup demo", "app compatibility banner", "cover and sticker showcase"]
+  },
+  {
+   "listing_id": "688838603",
+   "features": {"hyperlinked": true, "dated": true, "undated": true, "multi_year": true, "adhd_specific": true, "all_in_one": true, "habit_tracker": true, "self_care": true, "budget": true, "meal": true, "goals": true, "time_blocking": true, "stickers": true, "journal": true, "goodnotes": true, "android": true, "landscape": true, "colorful": true, "custom": true, "routines": true, "priority_matrix": true, "work": true},
+   "new_features": [
+    {"id": "calendar_links", "name": "Tap time slot to open Google or Apple Calendar event", "evidence": "photo 1 / photo 4"},
+    {"id": "planner_builder", "name": "Online planner builder with any hex colors", "evidence": "photo 2 / description"},
+    {"id": "image_background_upload", "name": "Upload any image as page background", "evidence": "photo 1 / photo 2"},
+    {"id": "custom_start_month", "name": "Choose any start month", "evidence": "photo 2"},
+    {"id": "custom_day_start_time", "name": "Choose daily start time", "evidence": "photo 4"},
+    {"id": "app_link_tabs", "name": "Side tabs that open apps and websites", "evidence": "photo 3"},
+    {"id": "layout_choices", "name": "Many daily and weekly layout options", "evidence": "photo 2"}
+   ],
+   "page_types": ["monthly", "weekly", "daily", "yearly calendar", "hourly schedule", "meal plan", "notes", "goals", "projects"],
+   "look": {"palette": ["#F7C6D9", "#C9B8F0", "#A8E0D0", "#FFF1A8", "#C8102E"], "style": "cute pastel sticker", "orientation": "landscape"},
+   "photo_tactics": ["heavily decorated sample spreads with stickers", "big number claims (planners, stickers)", "color wheel graphic", "calendar app icons", "app icon row", "zoom-in callout circles", "feature list with bullets"]
+  },
+  {
+   "listing_id": "1620103130",
+   "features": {"hyperlinked": true, "dated": true, "multi_year": true, "adhd_specific": true, "habit_tracker": true, "self_care": true, "budget": true, "goals": true, "time_blocking": true, "stickers": true, "goodnotes": true, "notability": true, "android": true, "eink": true, "dark_mode": true, "colorful": true, "portrait": true, "landscape": true, "custom": true, "brain_dump": true, "quick_start": true, "test_page": true},
+   "new_features": [
+    {"id": "reward_after_tasks", "name": "Reward to myself after boring tasks box", "evidence": "photo 1 / photo 4"},
+    {"id": "boring_tasks_list", "name": "Boring but necessary tasks list", "evidence": "photo 1"},
+    {"id": "self_care_icon_checkboxes", "name": "Tap-to-check self-care icon row (meds, teeth, water)", "evidence": "photo 1"},
+    {"id": "divergent_convergent_planning", "name": "Divergent and convergent thinking planner with time limit", "evidence": "photo 2"},
+    {"id": "people_to_respond", "name": "People to respond to list", "evidence": "photo 4"},
+    {"id": "lifetime_updates", "name": "Lifetime updates to future years", "evidence": "photo 1 / photo 3"},
+    {"id": "community_and_videos", "name": "User community and video tutorials", "evidence": "photo 2 / photo 3"},
+    {"id": "windows_support", "name": "Windows device support", "evidence": "photo 3"}
+   ],
+   "page_types": ["daily focus", "monthly", "brain dump", "time blocking", "project planning", "habit goal"],
+   "look": {"palette": ["#0B1E33", "#2A2D3A", "#F3A6F0", "#A8F0D0", "#7FD6F5"], "style": "dark rainbow neurodivergent", "orientation": "both"},
+   "photo_tactics": ["#1 bestseller claim banner", "social proof number (100K+ people)", "made by AuDHD creator badge", "science based badge", "empathy headline about past planner failure", "hand writing on device", "compatibility app logos", "real desk lifestyle mockup"]
+  },
+  {
+   "listing_id": "1416628451",
+   "features": {"hyperlinked": true, "undated": true, "minimalist": true, "portrait": true, "goodnotes": true, "notability": true, "time_blocking": true, "habit_tracker": true, "goals": true, "priority_matrix": true, "journal": true, "quick_start": true, "work": true},
+   "new_features": [
+    {"id": "daily_intention_affirmation", "name": "Daily intention and affirmation boxes", "evidence": "photo 3"},
+    {"id": "non_negotiables", "name": "Non-negotiable tasks list", "evidence": "photo 3"},
+    {"id": "reflection_questions", "name": "Monthly and yearly reflection questions", "evidence": "description"},
+    {"id": "linen_cover", "name": "Textured linen cover", "evidence": "photo 1 / photo 2"}
+   ],
+   "page_types": ["daily", "weekly", "monthly", "notes"],
+   "look": {"palette": ["#D9CFC8", "#7A5A4A", "#F4F1EC", "#C9C3BC", "#1A1A1A"], "style": "neutral linen minimal", "orientation": "portrait"},
+   "photo_tactics": ["filled-in daily page with mood photos", "cover plus page mockup", "plain text feature list", "annotated hyperlink callouts with zoom circles", "page count claim", "brand logo on every photo"]
+  },
+  {
+   "listing_id": "1599669312",
+   "features": {"hyperlinked": true, "dated": true, "multi_year": true, "adhd_specific": true, "student": true, "work": true, "all_in_one": true, "portrait": true, "minimalist": true, "goodnotes": true, "notability": true, "android": true, "custom": true, "goals": true, "habit_tracker": true, "journal": true, "brain_dump": true, "time_blocking": true, "routines": true, "budget": true, "quick_start": true},
+   "new_features": [
+    {"id": "academic_year", "name": "Academic year July to June", "evidence": "photo 1 / description"},
+    {"id": "planner_builder", "name": "Builder to choose color scheme, paper, covers, daily pages", "evidence": "photo 3"},
+    {"id": "calendar_links", "name": "Google Calendar and Apple shortcut links", "evidence": "photo 1 / photo 3"},
+    {"id": "distraction_list", "name": "Distraction list page", "evidence": "photo 4"},
+    {"id": "reward_ideas", "name": "Reward ideas page", "evidence": "photo 4"},
+    {"id": "kanban_board", "name": "Kanban board", "evidence": "photo 4 / description"},
+    {"id": "life_planner", "name": "Life planner section (vision, skills, future self)", "evidence": "photo 4"},
+    {"id": "hidden_sections", "name": "Hidden private sections", "evidence": "photo 2"},
+    {"id": "paper_color_choice", "name": "Paper color choice (beige to reduce eyestrain)", "evidence": "photo 3"},
+    {"id": "illustrated_covers", "name": "Hand-illustrated covers", "evidence": "photo 1 / photo 2"}
+   ],
+   "page_types": ["monthly", "weekly", "daily", "yearly", "goals", "life planner", "travel research", "challenges", "distraction list", "reward ideas", "notes"],
+   "look": {"palette": ["#B5555C", "#F3EFE8", "#8FA98A", "#7FA3B8", "#D9B27C"], "style": "Japanese minimalist muted", "orientation": "portrait"},
+   "photo_tactics": ["best seller seal", "classroom background for student angle", "Japanese text branding", "decorated sample spreads with stickers", "cover lineup", "builder UI screenshots", "what's new list", "made by ADHD mom claim", "long app compatibility list"]
+  }
+ ]
+}

@@ -1,0 +1,110 @@
+{
+ "listings": [
+  {
+   "listing_id": "809732784",
+   "features": {"hyperlinked": true, "undated": true, "dated": true, "multi_year": true, "all_in_one": true, "habit_tracker": true, "self_care": true, "budget": true, "meal": true, "goals": true, "time_blocking": true, "stickers": true, "journal": true, "goodnotes": true, "android": true, "landscape": true, "colorful": true, "bundle": true, "work": true, "custom": true, "routines": true, "priority_matrix": true},
+   "new_features": [
+    {"id": "calendar_links", "name": "Tap a time slot to open Google or Apple Calendar / Reminders", "evidence": "photo 1, photo 4 / description"},
+    {"id": "app_links", "name": "Side tabs that open apps and websites", "evidence": "photo 3 / description"},
+    {"id": "planner_builder", "name": "Online planner builder to generate your own version", "evidence": "photo 2 / description"},
+    {"id": "custom_start_month", "name": "Choose the start month", "evidence": "photo 1, photo 2"},
+    {"id": "custom_daily_start_time", "name": "Choose the hour the daily schedule starts", "evidence": "photo 4"},
+    {"id": "upload_background", "name": "Upload any image as the planner background", "evidence": "photo 1, photo 2"},
+    {"id": "hex_colors", "name": "Pick any HEX color for planner, paper, tabs, headers", "evidence": "photo 2 / description"},
+    {"id": "ring_binder_look", "name": "Realistic ring-binder design with gold/silver/rose gold rings", "evidence": "photo 1, photo 2"},
+    {"id": "covers", "name": "Hundreds of cover designs", "evidence": "description"}
+   ],
+   "page_types": ["monthly", "weekly", "daily", "yearly calendar", "hourly schedule", "top priorities", "meal plan", "goals", "projects", "trackers", "notes"],
+   "look": {"palette": ["#E8C6D9", "#C9B6E4", "#F7F3F5", "#D4A373", "#F06AA6"], "style": "pastel kawaii ring binder", "orientation": "landscape"},
+   "photo_tactics": ["filled-in sample pages with cute stickers", "gold ribbon banner listing key numbers (1,000,000 planners, 50,000 stickers)", "color wheel icon for customization", "app icon badges for Google/Apple calendar", "callout lines linking tabs to pages", "screenshot of app popup on iPad mockup", "builder options checklist"]
+  },
+  {
+   "listing_id": "1827825727",
+   "features": {"hyperlinked": true, "undated": true, "dated": true, "multi_year": true, "adhd_specific": true, "self_care": true, "meal": true, "goals": true, "time_blocking": true, "stickers": true, "journal": true, "dark_mode": true, "goodnotes": true, "android": true, "portrait": true, "minimalist": true, "custom": true, "priority_matrix": true},
+   "new_features": [
+    {"id": "planner_builder", "name": "Online planner generator with live preview", "evidence": "photo 2, photo 3, photo 4"},
+    {"id": "anxiety_focus", "name": "Built for ADHD and anxiety", "evidence": "photo 1 / description"},
+    {"id": "lifetime_updates", "name": "Lifetime yearly updates (new years added free)", "evidence": "photo 1, photo 3"},
+    {"id": "custom_duration", "name": "Choose planner length from 1 month to 1 year", "evidence": "photo 1, photo 2, photo 3"},
+    {"id": "calendar_links", "name": "Links to Google/Apple Calendar and other apps", "evidence": "photo 1, photo 2 / description"},
+    {"id": "upload_background", "name": "Upload your own background image", "evidence": "photo 1, photo 2, photo 3"},
+    {"id": "color_recolor_tool", "name": "Recolor backgrounds, decor, tabs and templates (colorize / hue rotation)", "evidence": "photo 4"},
+    {"id": "self_care_icon_check", "name": "Daily self-care icon checklist and mood scale", "evidence": "photo 1"},
+    {"id": "task_reward", "name": "To-do done, reward for myself box", "evidence": "photo 1"},
+    {"id": "focus_training", "name": "Focus training activities, guided meditation audio", "evidence": "photo 1 / description"},
+    {"id": "custom_layout_requests", "name": "Seller makes custom layouts on request", "evidence": "photo 3"},
+    {"id": "covers", "name": "400 to 600+ covers", "evidence": "photo 1, photo 3"}
+   ],
+   "page_types": ["daily", "weekly", "monthly", "index", "hourly schedule", "self-care check", "mood", "monthly overview", "monthly goal", "end-of-month review", "notes"],
+   "look": {"palette": ["#1E1E1E", "#3A0F1E", "#E91E7A", "#F5F5F5", "#1B1B3A"], "style": "dark moody chalkboard", "orientation": "portrait"},
+   "photo_tactics": ["big claim '1 billion+ ways to customize'", "two iPad mockups, filled vs blank", "red badge with layout counts", "step-by-step customization infographic (1-2-3)", "screenshots of the generator UI", "before/after recolor examples", "icon list of everything included", "compatible app icons row", "seller logo"]
+  },
+  {
+   "listing_id": "1579580933",
+   "features": {"hyperlinked": true, "dated": true, "multi_year": true, "adhd_specific": true, "habit_tracker": true, "self_care": true, "budget": true, "goals": true, "time_blocking": true, "stickers": true, "journal": true, "dark_mode": true, "goodnotes": true, "notability": true, "android": true, "portrait": true, "colorful": true, "brain_dump": true, "routines": true, "priority_matrix": true},
+   "new_features": [
+    {"id": "calendar_links", "name": "Tap time slot to open Apple or Google Calendar / Reminders", "evidence": "photo 1 / description"},
+    {"id": "cannot_forget_list", "name": "'Absolutely cannot forget' and 'For tomorrow' boxes on daily page", "evidence": "photo 1, photo 2"},
+    {"id": "year_reset", "name": "Year reset and vision board pages", "evidence": "photo 4"},
+    {"id": "cleaning_tools", "name": "ADHD cleaning schedules broken into steps", "evidence": "description"},
+    {"id": "custom_sections", "name": "Custom sections on index linking to blank templates", "evidence": "photo 3"},
+    {"id": "free_sample", "name": "Free sample before buying", "evidence": "description"},
+    {"id": "social_proof_customers", "name": "Over 100,000 customers claim", "evidence": "photo 2"}
+   ],
+   "page_types": ["daily", "weekly", "monthly", "index", "year at a glance", "year spread", "year reset", "vision board", "finances", "monthly reflection", "brain dump", "notes"],
+   "look": {"palette": ["#1C1C1C", "#F4EFEC", "#F06AB0", "#A98BEA", "#9ED9B4"], "style": "dark neon pastel", "orientation": "portrait"},
+   "photo_tactics": ["DARK MODE circle badge", "iPad + Apple Pencil mockup on soft shadow background", "checkmark benefit list", "theme color swatch circles (10 themes)", "fanned stack of all color versions", "app icons for calendar links", "social proof '100,000 customers'"]
+  },
+  {
+   "listing_id": "4312876640",
+   "features": {"hyperlinked": true, "dated": true, "multi_year": true, "all_in_one": true, "habit_tracker": true, "self_care": true, "budget": true, "meal": true, "goals": true, "time_blocking": true, "stickers": true, "journal": true, "dark_mode": true, "goodnotes": true, "notability": true, "landscape": true, "minimalist": true, "colorful": true, "student": true, "work": true, "custom": true, "brain_dump": true, "routines": true, "priority_matrix": true},
+   "new_features": [
+    {"id": "calendar_links", "name": "Dates and tasks linked to Google/Apple Calendar and Reminders", "evidence": "photo 1, photo 3 / description"},
+    {"id": "cleaning_section", "name": "Big cleaning section (deep cleaning by room, declutter challenge)", "evidence": "photo 2, photo 4 / description"},
+    {"id": "fitness_section", "name": "Fitness section (gym planner, running log, measurements)", "evidence": "photo 2, photo 4"},
+    {"id": "free_yearly_update", "name": "Free yearly update", "evidence": "photo 1"},
+    {"id": "rainbow_theme", "name": "Rainbow theme plus several color themes", "evidence": "photo 1, photo 3 / description"},
+    {"id": "page_count_badge", "name": "1040+ pages, 230+ templates", "evidence": "photo 1, photo 2"},
+    {"id": "covers", "name": "200+ cover pages", "evidence": "photo 1"},
+    {"id": "free_note_pages", "name": "180+ free blank and note pages", "evidence": "photo 2"}
+   ],
+   "page_types": ["daily", "weekly", "monthly", "month at a glance", "index", "yearly", "trackers", "meal", "cleaning", "finance", "fitness", "wellness", "notes"],
+   "look": {"palette": ["#E7A6D9", "#F8C8D8", "#C9B6F0", "#F5E7A3", "#1A1A1A"], "style": "pink glitter girly", "orientation": "landscape"},
+   "photo_tactics": ["number badges (pages, templates, covers, stickers)", "BEST SELLER gold seal", "round side badges (years, themes, Sunday/Monday)", "labelled callouts on every tab", "zoom circle on calendar link icons", "full tracker list wall", "grid of template thumbnails", "spiral-bound iPad mockup"]
+  },
+  {
+   "listing_id": "741671282",
+   "features": {"hyperlinked": true, "undated": true, "dated": true, "multi_year": true, "all_in_one": true, "habit_tracker": true, "self_care": true, "budget": true, "meal": true, "goals": true, "time_blocking": true, "stickers": true, "journal": true, "dark_mode": true, "goodnotes": true, "android": true, "landscape": true, "bundle": true, "work": true, "custom": true, "routines": true, "priority_matrix": true},
+   "new_features": [
+    {"id": "calendar_links", "name": "Tap a time slot to open Google or Apple Calendar / Reminders", "evidence": "photo 1, photo 4 / description"},
+    {"id": "app_links", "name": "Side tabs that open apps and websites", "evidence": "photo 3 / description"},
+    {"id": "planner_builder", "name": "Online planner builder to generate your own version", "evidence": "photo 2 / description"},
+    {"id": "custom_start_month", "name": "Choose the start month", "evidence": "photo 1, photo 2"},
+    {"id": "custom_daily_start_time", "name": "Choose the hour the daily schedule starts", "evidence": "photo 4"},
+    {"id": "upload_background", "name": "Upload any image as the planner background", "evidence": "photo 1, photo 2"},
+    {"id": "hex_colors", "name": "Pick any HEX color for planner, paper, tabs, headers", "evidence": "photo 2 / description"},
+    {"id": "black_paper", "name": "Black paper or colored paper option", "evidence": "photo 2"},
+    {"id": "covers", "name": "Hundreds of cover designs", "evidence": "description"}
+   ],
+   "page_types": ["monthly", "weekly", "daily", "yearly calendar", "hourly schedule", "top priorities", "meal plan", "goals", "projects", "trackers", "notes"],
+   "look": {"palette": ["#1E1E1E", "#2B2B2B", "#F7B6D2", "#F06AA6", "#5A3D7A"], "style": "dark kawaii stitched binder", "orientation": "landscape"},
+   "photo_tactics": ["same template set as the seller's light version, recolored dark", "DARK MODE PLANNER black banner with key numbers", "filled-in sample pages with cute stickers", "color wheel icon for customization", "app icon badges for Google/Apple calendar", "galaxy image upload before/after", "callout lines linking tabs to pages", "iPad mockup with app popup"]
+  },
+  {
+   "listing_id": "4348036784",
+   "features": {"hyperlinked": true, "undated": true, "all_in_one": true, "habit_tracker": true, "self_care": true, "budget": true, "journal": true, "goodnotes": true, "notability": true, "android": true, "portrait": true, "colorful": true, "student": true},
+   "new_features": [
+    {"id": "monthly_dashboards", "name": "Illustrated monthly dashboards with shelf icons linking to finance, health, mental health, lifestyle, notebook, reflection", "evidence": "photo 1, photo 3, photo 4"},
+    {"id": "health_trackers", "name": "Health pages: symptom, medication, supplements, period, weight, doctor visits", "evidence": "photo 1, photo 3 / description"},
+    {"id": "anxiety_journal", "name": "Anxiety journal", "evidence": "photo 3 / description"},
+    {"id": "notes_templates", "name": "52 note templates", "evidence": "photo 3 / description"},
+    {"id": "water_mood_daily", "name": "Water and mood trackers on daily page", "evidence": "photo 4"},
+    {"id": "hand_drawn_art", "name": "Hand-drawn kawaii illustrations", "evidence": "photo 4 / description"},
+    {"id": "colored_month_buttons", "name": "Colored month buttons show where you are", "evidence": "photo 4"}
+   ],
+   "page_types": ["daily", "weekly", "monthly dashboard", "templates index", "notes", "trackers", "finance", "health"],
+   "look": {"palette": ["#7B6FE8", "#C9B6F5", "#F7A9C9", "#FFB37A", "#4B3A8C"], "style": "kawaii retro window cozy", "orientation": "portrait"},
+   "photo_tactics": ["three-iPad hero with labelled boxes", "page count and hyperlink count badges (~1,000 pages, 13,000+ links)", "UNDATED 365+ daily pages badge", "compatible app logos", "12-month grid showing each month's color", "arrows showing click paths between pages", "hand-drawn speech-box callouts"]
+  }
+ ]
+}

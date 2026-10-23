@@ -1,0 +1,103 @@
+{
+ "listings": [
+  {
+   "listing_id": "1807934295",
+   "features": {"google_sheets": true, "excel": true, "annual": true, "monthly": true, "paycheck": true, "dashboard": true, "debt": true, "savings": true, "bills": true, "expense": true, "net_worth": true, "credit_card": true, "automated": true, "zero_based": true, "customizable": true, "video_tutorial": true, "multi_year": true},
+   "new_features": [
+    {"id": "recurring_transactions", "name": "Recurring transactions set once, auto-filled (weekly to every 6 months)", "evidence": "photo 1, photo 2"},
+    {"id": "no_spend_challenge", "name": "No-spend challenge / days without spending tracker", "evidence": "photo 1, photo 3"},
+    {"id": "investment_forecast", "name": "Investment forecast tab", "evidence": "photo 3 / description"},
+    {"id": "bank_accounts", "name": "Bank account balances tab", "evidence": "photo 3 / description"},
+    {"id": "any_currency", "name": "Works with any currency", "evidence": "photo 1 / description"},
+    {"id": "nav_menu", "name": "Side menu for tab navigation", "evidence": "photo 3"},
+    {"id": "needs_wants_threshold", "name": "Monthly needs/wants vs threshold charts", "evidence": "photo 1"}
+   ],
+   "page_types": ["dashboard", "annual totals", "monthly", "paycheck dashboard", "bill calendar", "recurring transactions", "variable transactions", "50/30/20", "sinking funds", "debt calculator", "net worth", "investment forecast", "no-spend challenge", "bank accounts", "setup"],
+   "look": {"palette": ["#E8E0D5", "#6F8A6E", "#D9B3A8", "#F5F1EA", "#1A1A1A"], "style": "sage and blush neutral", "orientation": "landscape"},
+   "photo_tactics": ["multi-device mockup (laptop, tablet, phone)", "tab count badge (28 tabs)", "YouTube tutorial badge", "Excel + Google Sheets logos", "updated version badge", "customer review screenshots", "social proof count (160,000+ customers)", "dropdown close-up with red callout", "flow diagram showing auto sync between tabs", "full feature checklist slide"]
+  },
+  {
+   "listing_id": "1619225413",
+   "features": {"google_sheets": true, "excel": true, "monthly": true, "paycheck": true, "dashboard": true, "debt": true, "savings": true, "bills": true, "expense": true, "automated": true, "customizable": true, "video_tutorial": true, "mobile": true, "multi_year": true, "sample_data": true},
+   "new_features": [
+    {"id": "one_tab", "name": "Single-tab budget, duplicate for each period", "evidence": "photo 2 / description"},
+    {"id": "any_currency", "name": "Change currency in one cell", "evidence": "photo 4"},
+    {"id": "days_left", "name": "Days-left countdown for budget period", "evidence": "photo 1, photo 3"},
+    {"id": "paid_checkboxes", "name": "Checkboxes to mark bills/debts/savings paid", "evidence": "photo 3 / description"},
+    {"id": "start_balance", "name": "Starting balance carry-over", "evidence": "photo 4"},
+    {"id": "personalized_name", "name": "Personalize dashboard with your name", "evidence": "photo 4"},
+    {"id": "bonus_savings_debt_tracker", "name": "Bonus savings and debt tracker template", "evidence": "description"}
+   ],
+   "page_types": ["budget dashboard", "cash flow", "budget vs actual", "income", "bills", "expenses", "debt", "savings"],
+   "look": {"palette": ["#E6E5E2", "#DDE3FA", "#FADADD", "#FDF6C8", "#D8F2DA"], "style": "soft pastel minimal", "orientation": "landscape"},
+   "photo_tactics": ["laptop mockup", "3-step how-it-works slide", "YouTube tutorial banner", "annotated callouts on dashboard", "zoomed close-up of one feature (currency cell)", "Google Sheets + Excel logos"]
+  },
+  {
+   "listing_id": "1473595073",
+   "features": {"google_sheets": true, "monthly": true, "paycheck": true, "dashboard": true, "debt": true, "savings": true, "bills": true, "expense": true, "automated": true, "customizable": true, "video_tutorial": true, "multi_year": true, "sample_data": true},
+   "new_features": [
+    {"id": "one_tab", "name": "Single-tab budget, duplicate for each period", "evidence": "photo 1, photo 3"},
+    {"id": "any_currency", "name": "Change currency symbol once", "evidence": "photo 4"},
+    {"id": "paid_checkboxes", "name": "Checkboxes to mark bills/debts paid", "evidence": "photo 1"},
+    {"id": "left_to_spend_ring", "name": "Left-to-spend ring chart", "evidence": "photo 1"},
+    {"id": "start_balance", "name": "Starting balance", "evidence": "photo 1 / description"}
+   ],
+   "page_types": ["budget dashboard", "cash flow", "budget vs actual", "income", "bills", "expenses", "debt", "savings"],
+   "look": {"palette": ["#F3EFE9", "#D9CCEB", "#F2C6D8", "#F7D3BF", "#C9E3EA"], "style": "pastel editorial serif", "orientation": "landscape"},
+   "photo_tactics": ["laptop mockup", "before/after split (overwhelmed vs organized)", "YouTube tutorial badge with QR code", "3-step how-it-works slide", "icon benefit cards", "feature badges row (1 tab only, automatic calculations, easy to use)", "watermark on screenshots"]
+  },
+  {
+   "listing_id": "4316143583",
+   "features": {"google_sheets": true, "annual": true, "monthly": true, "dashboard": true, "debt": true, "savings": true, "bills": true, "expense": true, "net_worth": true, "automated": true, "customizable": true, "video_tutorial": true, "mobile": true},
+   "new_features": [
+    {"id": "two_color_schemes", "name": "Two color themes included", "evidence": "photo 2 / description"},
+    {"id": "any_currency", "name": "Change currency for whole sheet", "evidence": "photo 3"},
+    {"id": "non_monthly_bills", "name": "Non-monthly (irregular) bills planner", "evidence": "photo 3"},
+    {"id": "top_expenses", "name": "Top 25 expenses / spending breakdown ranking", "evidence": "photo 1, photo 4"},
+    {"id": "daily_spending_chart", "name": "Daily spending chart", "evidence": "photo 4"},
+    {"id": "transaction_log", "name": "Transaction log with sub-categories and accounts", "evidence": "photo 4 / description"},
+    {"id": "account_balances", "name": "Account balance tracker", "evidence": "description"},
+    {"id": "cash_flow_worksheet", "name": "Cash flow worksheet for any time period", "evidence": "description"},
+    {"id": "debt_snowball_avalanche", "name": "Snowball or avalanche debt payoff plan", "evidence": "description"},
+    {"id": "notes_section", "name": "Notes box on monthly tab", "evidence": "photo 4"}
+   ],
+   "page_types": ["setup", "annual dashboard", "monthly", "transaction log", "calendar", "account balances", "sinking funds", "debt payoff", "debt dashboard", "net worth", "cash flow worksheet"],
+   "look": {"palette": ["#6B2F6E", "#EE6FA3", "#6CC5B6", "#B98AC0", "#F1E4F0"], "style": "bright pink purple teal", "orientation": "landscape"},
+   "photo_tactics": ["lifestyle laptop photo in a real room", "phone + tablet mockup", "video tutorial badge", "annotated callout banners with arrows", "benefit list with icons", "per-tab showcase slides"]
+  },
+  {
+   "listing_id": "1652486880",
+   "features": {"google_sheets": true, "excel": true, "annual": true, "monthly": true, "paycheck": true, "dashboard": true, "debt": true, "savings": true, "bills": true, "expense": true, "net_worth": true, "couples": true, "credit_card": true, "automated": true, "zero_based": true, "customizable": true, "video_tutorial": true, "instructions_inside": true},
+   "new_features": [
+    {"id": "recurring_transactions", "name": "Recurring transactions set once, auto-filled (weekly to annual)", "evidence": "photo 1, photo 2"},
+    {"id": "payer_split", "name": "Assign payer per transaction, auto split between partners", "evidence": "photo 2"},
+    {"id": "subscriptions_tracker", "name": "Subscriptions tracker", "evidence": "photo 1, photo 2"},
+    {"id": "irregular_income", "name": "Works with irregular/variable paychecks and multiple incomes", "evidence": "photo 2 / description"},
+    {"id": "money_transfers", "name": "Money transfers between accounts", "evidence": "photo 2"},
+    {"id": "debt_auto_schedule", "name": "Debt payoff schedule auto-logged to transactions", "evidence": "photo 2 / description"},
+    {"id": "paid_checkboxes", "name": "Paid checkboxes by date", "evidence": "photo 1"},
+    {"id": "multi_currency_files", "name": "Includes $, £ and € versions", "evidence": "description"},
+    {"id": "hide_tabs", "name": "Hide/unhide tabs", "evidence": "description"}
+   ],
+   "page_types": ["setup", "paycheck dashboard", "monthly dashboard", "payments", "manual log", "accounts", "calendar", "annual tracker", "distribution", "partner dashboards", "sinking funds", "debt payoff", "net worth", "50/30/20", "instructions"],
+   "look": {"palette": ["#F7D3E0", "#C9B6DC", "#9C86AE", "#E8434A", "#1A1A1A"], "style": "pink lavender gradient bold", "orientation": "landscape"},
+   "photo_tactics": ["multi-device mockup (laptop, tablet, phone)", "tab count badge (18 tabs)", "updated version badge", "gradient feature circles", "Google Sheets + Excel logos", "dropdown close-up with red callout", "checklist of automations", "NEW tag on latest feature"]
+  },
+  {
+   "listing_id": "1413307252",
+   "features": {"google_sheets": true, "excel": true, "monthly": true, "paycheck": true, "dashboard": true, "debt": true, "savings": true, "bills": true, "expense": true, "automated": true, "customizable": true, "video_tutorial": true, "mobile": true, "multi_year": true, "instructions_inside": true, "sample_data": true},
+   "new_features": [
+    {"id": "one_tab", "name": "Single-tab budget, duplicate for each period", "evidence": "photo 1 / description"},
+    {"id": "overspend_highlight", "name": "Progress % per category with overspending highlighted", "evidence": "photo 4"},
+    {"id": "investment_tracker", "name": "Savings and investment tracker (stocks, funds)", "evidence": "photo 4"},
+    {"id": "goal_tracker", "name": "Bonus goal tracker (weekly, monthly, yearly goals)", "evidence": "description"},
+    {"id": "any_currency", "name": "Set currency in one cell", "evidence": "photo 1 / description"},
+    {"id": "rollover", "name": "Rollover of leftover money", "evidence": "photo 1"},
+    {"id": "custom_date_range", "name": "Any custom budget date range", "evidence": "photo 2, photo 3"}
+   ],
+   "page_types": ["budget dashboard", "cash flow summary", "income summary", "expense summary", "bill tracker", "debt payment tracker", "savings and investment tracker", "goal tracker"],
+   "look": {"palette": ["#D6EDCF", "#5E8B6E", "#E8B4AE", "#F7C3BA", "#FBF5F0"], "style": "sage blush elegant serif", "orientation": "landscape"},
+   "photo_tactics": ["laptop mockup", "beginner-friendly and one-tab badges", "video tutorial badge", "Google Sheets + Excel logos", "icon benefit list", "annotated callouts with dotted arrows", "zoomed table close-ups with circled overspend"]
+  }
+ ]
+}

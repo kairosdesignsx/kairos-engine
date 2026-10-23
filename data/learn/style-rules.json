@@ -88,5 +88,11 @@
   "rule": "Price inside the market's best-earning range, never under it: at least the revenue-weighted median price (what buyers actually pay, weighted by sales). A low price makes a good product look cheap. While the shop has few reviews, launch with a time-limited Etsy sale (25% off for 30 days) on the full price instead of a low price.",
   "enforced": "brief check (automatic) + brief writer",
   "from": "Darren and Colynne, Oct 22 2026 (Canva course advice, confirmed by our price data)"
+ },
+ {
+  "id": "r016",
+  "rule": "At most two font families per product: one for headings, one for body. Build hierarchy with weight, size and italic, not extra typefaces. Too many fonts tires the eyes.",
+  "enforced": "brief writer + coverage checker",
+  "from": "Colynne's review of p-rjd-001, Oct 23 2026 (fix: fonts)"
  }
 ]

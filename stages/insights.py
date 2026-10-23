@@ -97,6 +97,8 @@ def build(type_id):
     aliases = store.read(os.path.join(idir(type_id), 'aliases.json'), {})  # duplicate theme id -> canonical id (reconcile step)
     for b in batches:
         out = store.read(b['out'])
+        if out is None:  # batches.json written in an older clone path: look next to it
+            out = store.read(os.path.join(idir(type_id), os.path.basename(b['out'])))
         if out is None:
             raise SystemExit(f"missing review codes: {b['out']}")
         for c in out.get('codes', []):

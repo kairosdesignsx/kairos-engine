@@ -1,6 +1,6 @@
 {
  "type_id": "google-sheets-budget",
- "built_at": "2026-10-22T07:25:22Z",
+ "built_at": "2026-10-23T13:41:39Z",
  "basis": {
   "listings": 30,
   "reviews": 543,
@@ -8,9 +8,10 @@
   "off_type_dropped": 43,
   "negative_reviews": 230,
   "feature_sources": [
-   "titles"
+   "titles",
+   "descriptions_or_photos"
   ],
-  "photos": "pending"
+  "photos": "read"
  },
  "features": [
   {
@@ -34,6 +35,286 @@
     "4427109751",
     "1452757848",
     "4316136064",
+    "1727883971",
+    "4504937980",
+    "1663318416",
+    "1681362279",
+    "1883689740",
+    "1767199175",
+    "4316669223",
+    "1632843695",
+    "4427145920",
+    "1749721281",
+    "4417954320",
+    "1783515050",
+    "1887706545"
+   ],
+   "share": 1.0,
+   "revenue_share": 1.0,
+   "sales_share": 1.0,
+   "tier": "standard"
+  },
+  {
+   "id": "excel",
+   "name": "Works in Excel",
+   "have": [
+    "1807934295",
+    "1619225413",
+    "1473595073",
+    "4316143583",
+    "1652486880",
+    "1413307252",
+    "1639267175",
+    "1344426956",
+    "4368511100",
+    "1797614603",
+    "1762787854",
+    "1807214506",
+    "4334780570",
+    "1236921528",
+    "4427109751",
+    "1452757848",
+    "4316136064",
+    "1727883971",
+    "4504937980",
+    "1663318416",
+    "1681362279",
+    "1883689740",
+    "1767199175",
+    "4316669223",
+    "1632843695",
+    "4427145920",
+    "1749721281",
+    "4417954320",
+    "1783515050",
+    "1887706545"
+   ],
+   "share": 1.0,
+   "revenue_share": 1.0,
+   "sales_share": 1.0,
+   "tier": "standard"
+  },
+  {
+   "id": "monthly",
+   "name": "Monthly budget tabs",
+   "have": [
+    "1807934295",
+    "1619225413",
+    "1473595073",
+    "4316143583",
+    "1652486880",
+    "1413307252",
+    "1639267175",
+    "1344426956",
+    "4368511100",
+    "1797614603",
+    "1762787854",
+    "1807214506",
+    "4334780570",
+    "1236921528",
+    "4427109751",
+    "1452757848",
+    "4316136064",
+    "1727883971",
+    "4504937980",
+    "1663318416",
+    "1681362279",
+    "1883689740",
+    "1767199175",
+    "4316669223",
+    "1632843695",
+    "4427145920",
+    "1749721281",
+    "4417954320",
+    "1783515050",
+    "1887706545"
+   ],
+   "share": 1.0,
+   "revenue_share": 1.0,
+   "sales_share": 1.0,
+   "tier": "standard"
+  },
+  {
+   "id": "dashboard",
+   "name": "Dashboard with charts",
+   "have": [
+    "1807934295",
+    "1619225413",
+    "1473595073",
+    "4316143583",
+    "1652486880",
+    "1413307252",
+    "1639267175",
+    "1344426956",
+    "4368511100",
+    "1797614603",
+    "1762787854",
+    "1807214506",
+    "4334780570",
+    "1236921528",
+    "4427109751",
+    "1452757848",
+    "4316136064",
+    "1727883971",
+    "4504937980",
+    "1663318416",
+    "1681362279",
+    "1883689740",
+    "1767199175",
+    "4316669223",
+    "1632843695",
+    "4427145920",
+    "1749721281",
+    "4417954320",
+    "1783515050",
+    "1887706545"
+   ],
+   "share": 1.0,
+   "revenue_share": 1.0,
+   "sales_share": 1.0,
+   "tier": "standard"
+  },
+  {
+   "id": "debt",
+   "name": "Debt payoff tracker or snowball calculator",
+   "have": [
+    "1807934295",
+    "1619225413",
+    "1473595073",
+    "4316143583",
+    "1652486880",
+    "1413307252",
+    "1639267175",
+    "1344426956",
+    "4368511100",
+    "1797614603",
+    "1762787854",
+    "1807214506",
+    "4334780570",
+    "1236921528",
+    "4427109751",
+    "1452757848",
+    "4316136064",
+    "1727883971",
+    "4504937980",
+    "1663318416",
+    "1681362279",
+    "1883689740",
+    "1767199175",
+    "4316669223",
+    "1632843695",
+    "4427145920",
+    "1749721281",
+    "4417954320",
+    "1783515050",
+    "1887706545"
+   ],
+   "share": 1.0,
+   "revenue_share": 1.0,
+   "sales_share": 1.0,
+   "tier": "standard"
+  },
+  {
+   "id": "automated",
+   "name": "Automated, does the math",
+   "have": [
+    "1807934295",
+    "1619225413",
+    "1473595073",
+    "4316143583",
+    "1652486880",
+    "1413307252",
+    "1639267175",
+    "1344426956",
+    "4368511100",
+    "1797614603",
+    "1762787854",
+    "1807214506",
+    "4334780570",
+    "1236921528",
+    "4427109751",
+    "1452757848",
+    "4316136064",
+    "1727883971",
+    "4504937980",
+    "1663318416",
+    "1681362279",
+    "1883689740",
+    "1767199175",
+    "4316669223",
+    "1632843695",
+    "4427145920",
+    "1749721281",
+    "4417954320",
+    "1783515050",
+    "1887706545"
+   ],
+   "share": 1.0,
+   "revenue_share": 1.0,
+   "sales_share": 1.0,
+   "tier": "standard"
+  },
+  {
+   "id": "customizable",
+   "name": "Customizable categories",
+   "have": [
+    "1807934295",
+    "1619225413",
+    "1473595073",
+    "4316143583",
+    "1652486880",
+    "1413307252",
+    "1639267175",
+    "1344426956",
+    "4368511100",
+    "1797614603",
+    "1762787854",
+    "1807214506",
+    "4334780570",
+    "1236921528",
+    "4427109751",
+    "1452757848",
+    "4316136064",
+    "1727883971",
+    "4504937980",
+    "1663318416",
+    "1681362279",
+    "1883689740",
+    "1767199175",
+    "4316669223",
+    "1632843695",
+    "4427145920",
+    "1749721281",
+    "4417954320",
+    "1783515050",
+    "1887706545"
+   ],
+   "share": 1.0,
+   "revenue_share": 1.0,
+   "sales_share": 1.0,
+   "tier": "standard"
+  },
+  {
+   "id": "savings",
+   "name": "Savings goals or sinking funds",
+   "have": [
+    "1807934295",
+    "1619225413",
+    "1473595073",
+    "4316143583",
+    "1652486880",
+    "1413307252",
+    "1639267175",
+    "1344426956",
+    "4368511100",
+    "1797614603",
+    "1807214506",
+    "4334780570",
+    "1236921528",
+    "4427109751",
+    "1452757848",
+    "4316136064",
+    "1727883971",
     "4504937980",
     "1663318416",
     "1681362279",
@@ -48,240 +329,1924 @@
     "1887706545"
    ],
    "share": 0.967,
-   "revenue_share": 0.997,
+   "revenue_share": 0.963,
    "sales_share": 0.969,
    "tier": "standard"
-  },
-  {
-   "id": "monthly",
-   "name": "Monthly budget tabs",
-   "have": [
-    "1807934295",
-    "1619225413",
-    "1473595073",
-    "1652486880",
-    "1413307252",
-    "1639267175",
-    "1344426956",
-    "1797614603",
-    "1807214506",
-    "4334780570",
-    "1236921528",
-    "1452757848",
-    "1727883971",
-    "4504937980",
-    "1681362279",
-    "1767199175",
-    "4316669223",
-    "1632843695",
-    "1749721281",
-    "4417954320"
-   ],
-   "share": 0.667,
-   "revenue_share": 0.708,
-   "sales_share": 0.904,
-   "tier": "standard"
-  },
-  {
-   "id": "excel",
-   "name": "Works in Excel",
-   "have": [
-    "1807934295",
-    "1652486880",
-    "1413307252",
-    "1639267175",
-    "4368511100",
-    "1762787854",
-    "1807214506",
-    "4334780570",
-    "1236921528",
-    "1727883971",
-    "1663318416",
-    "1681362279",
-    "1883689740",
-    "4316669223",
-    "4417954320",
-    "1783515050",
-    "1887706545"
-   ],
-   "share": 0.567,
-   "revenue_share": 0.699,
-   "sales_share": 0.437,
-   "tier": "common"
-  },
-  {
-   "id": "paycheck",
-   "name": "Budget by paycheck (weekly or biweekly)",
-   "have": [
-    "1619225413",
-    "1473595073",
-    "1652486880",
-    "1413307252",
-    "4368511100",
-    "1807214506",
-    "1727883971",
-    "4504937980",
-    "1681362279",
-    "1883689740",
-    "1767199175",
-    "1749721281"
-   ],
-   "share": 0.4,
-   "revenue_share": 0.286,
-   "sales_share": 0.561,
-   "tier": "common"
   },
   {
    "id": "expense",
    "name": "Expense or spending tracker",
    "have": [
+    "1807934295",
+    "1619225413",
     "1473595073",
+    "4316143583",
     "1652486880",
     "1413307252",
+    "1639267175",
+    "1344426956",
+    "4368511100",
+    "1797614603",
     "1807214506",
+    "4334780570",
     "1236921528",
+    "4427109751",
+    "1452757848",
+    "4316136064",
     "1727883971",
     "4504937980",
     "1663318416",
-    "1767199175",
-    "1632843695",
-    "1749721281",
-    "1887706545"
-   ],
-   "share": 0.4,
-   "revenue_share": 0.175,
-   "sales_share": 0.421,
-   "tier": "common"
-  },
-  {
-   "id": "debt",
-   "name": "Debt payoff tracker or snowball calculator",
-   "have": [
-    "1807934295",
-    "1652486880",
-    "1639267175",
-    "4368511100",
-    "1762787854",
-    "4334780570",
-    "1727883971",
-    "1663318416",
+    "1681362279",
+    "1883689740",
     "1767199175",
     "4316669223",
-    "4417954320"
+    "1632843695",
+    "4427145920",
+    "1749721281",
+    "4417954320",
+    "1783515050",
+    "1887706545"
    ],
-   "share": 0.367,
-   "revenue_share": 0.64,
-   "sales_share": 0.257,
-   "tier": "common"
+   "share": 0.967,
+   "revenue_share": 0.963,
+   "sales_share": 0.969,
+   "tier": "standard"
   },
   {
    "id": "bills",
    "name": "Bill tracker or bill calendar",
    "have": [
     "1807934295",
+    "1619225413",
+    "1473595073",
+    "4316143583",
     "1652486880",
+    "1413307252",
     "1639267175",
+    "1344426956",
+    "4368511100",
+    "1797614603",
+    "1807214506",
     "4334780570",
+    "1236921528",
+    "4427109751",
+    "4316136064",
     "1727883971",
+    "4504937980",
     "1663318416",
+    "1681362279",
+    "1883689740",
     "1767199175",
     "4316669223",
+    "1632843695",
+    "4427145920",
+    "1749721281",
+    "4417954320",
+    "1783515050",
+    "1887706545"
+   ],
+   "share": 0.933,
+   "revenue_share": 0.963,
+   "sales_share": 0.937,
+   "tier": "standard"
+  },
+  {
+   "id": "instructions_inside",
+   "name": "Instructions inside the sheet",
+   "have": [
+    "1807934295",
+    "1619225413",
+    "4316143583",
+    "1652486880",
+    "1413307252",
+    "1639267175",
+    "1344426956",
+    "4368511100",
+    "1797614603",
+    "1762787854",
+    "1807214506",
+    "4334780570",
+    "1236921528",
+    "4427109751",
+    "1452757848",
+    "4316136064",
+    "1727883971",
+    "1663318416",
+    "1681362279",
+    "1883689740",
+    "1767199175",
+    "4316669223",
+    "1632843695",
+    "4427145920",
+    "1749721281",
+    "4417954320",
+    "1887706545"
+   ],
+   "share": 0.9,
+   "revenue_share": 0.97,
+   "sales_share": 0.848,
+   "tier": "standard"
+  },
+  {
+   "id": "sample_data",
+   "name": "Comes with sample data",
+   "have": [
+    "1807934295",
+    "1619225413",
+    "1473595073",
+    "1413307252",
+    "1639267175",
+    "1344426956",
+    "4368511100",
+    "1797614603",
+    "1762787854",
+    "1807214506",
+    "4334780570",
+    "1236921528",
+    "4427109751",
+    "1452757848",
+    "1727883971",
+    "4504937980",
+    "1663318416",
+    "1681362279",
+    "1883689740",
+    "1767199175",
+    "4316669223",
+    "1632843695",
+    "4427145920",
+    "1749721281",
+    "4417954320",
+    "1783515050",
+    "1887706545"
+   ],
+   "share": 0.9,
+   "revenue_share": 0.821,
+   "sales_share": 0.968,
+   "tier": "standard"
+  },
+  {
+   "id": "paycheck",
+   "name": "Budget by paycheck (weekly or biweekly)",
+   "have": [
+    "1807934295",
+    "1619225413",
+    "1473595073",
+    "1652486880",
+    "1413307252",
+    "1639267175",
+    "4368511100",
+    "1797614603",
+    "1762787854",
+    "1807214506",
+    "4334780570",
+    "1236921528",
+    "1727883971",
+    "4504937980",
+    "1663318416",
+    "1681362279",
+    "1883689740",
+    "1767199175",
+    "1632843695",
+    "4427145920",
+    "1749721281",
+    "4417954320",
+    "1783515050",
+    "1887706545"
+   ],
+   "share": 0.8,
+   "revenue_share": 0.837,
+   "sales_share": 0.883,
+   "tier": "standard"
+  },
+  {
+   "id": "video_tutorial",
+   "name": "Video tutorial",
+   "have": [
+    "1807934295",
+    "1619225413",
+    "1473595073",
+    "4316143583",
+    "1652486880",
+    "1413307252",
+    "1639267175",
+    "1797614603",
+    "1762787854",
+    "1807214506",
+    "4334780570",
+    "1236921528",
+    "4427109751",
+    "1452757848",
+    "4316136064",
+    "4504937980",
+    "1663318416",
+    "1681362279",
+    "1767199175",
+    "4316669223",
+    "1632843695",
+    "4427145920",
     "4417954320"
    ],
-   "share": 0.3,
-   "revenue_share": 0.566,
-   "sales_share": 0.222,
-   "tier": "common"
+   "share": 0.767,
+   "revenue_share": 0.912,
+   "sales_share": 0.838,
+   "tier": "standard"
+  },
+  {
+   "id": "mobile",
+   "name": "Works on phone",
+   "have": [
+    "1807934295",
+    "1619225413",
+    "4316143583",
+    "1413307252",
+    "1344426956",
+    "4368511100",
+    "1797614603",
+    "1807214506",
+    "4334780570",
+    "1236921528",
+    "4427109751",
+    "1452757848",
+    "4316136064",
+    "1727883971",
+    "1663318416",
+    "1681362279",
+    "1883689740",
+    "1767199175",
+    "4316669223",
+    "4427145920",
+    "1749721281",
+    "4417954320",
+    "1887706545"
+   ],
+   "share": 0.767,
+   "revenue_share": 0.823,
+   "sales_share": 0.743,
+   "tier": "standard"
+  },
+  {
+   "id": "multi_year",
+   "name": "Multi-year or undated",
+   "have": [
+    "1807934295",
+    "1619225413",
+    "1473595073",
+    "1413307252",
+    "1639267175",
+    "1344426956",
+    "4368511100",
+    "1797614603",
+    "1762787854",
+    "1807214506",
+    "4334780570",
+    "4427109751",
+    "1452757848",
+    "4504937980",
+    "1681362279",
+    "1883689740",
+    "1767199175",
+    "4316669223",
+    "4427145920",
+    "1749721281",
+    "1887706545"
+   ],
+   "share": 0.7,
+   "revenue_share": 0.776,
+   "sales_share": 0.828,
+   "tier": "standard"
   },
   {
    "id": "annual",
    "name": "Annual or yearly view",
    "have": [
     "1807934295",
+    "1473595073",
     "4316143583",
+    "1652486880",
+    "1413307252",
     "1639267175",
     "1344426956",
+    "4368511100",
+    "1807214506",
     "4334780570",
-    "1452757848",
-    "4316669223",
-    "4417954320"
-   ],
-   "share": 0.267,
-   "revenue_share": 0.558,
-   "sales_share": 0.244,
-   "tier": "rare"
-  },
-  {
-   "id": "savings",
-   "name": "Savings goals or sinking funds",
-   "have": [
-    "1652486880",
+    "1236921528",
     "4427109751",
-    "1727883971",
-    "1767199175",
+    "1452757848",
+    "1663318416",
+    "1883689740",
     "4316669223",
     "4427145920",
-    "4417954320"
-   ],
-   "share": 0.233,
-   "revenue_share": 0.149,
-   "sales_share": 0.086,
-   "tier": "rare"
-  },
-  {
-   "id": "couples",
-   "name": "Couples or family budget",
-   "have": [
-    "1663318416",
-    "4316669223",
+    "1749721281",
+    "4417954320",
     "1887706545"
    ],
-   "share": 0.1,
-   "revenue_share": 0.055,
-   "sales_share": 0.012,
-   "tier": "rare"
+   "share": 0.667,
+   "revenue_share": 0.802,
+   "sales_share": 0.579,
+   "tier": "standard"
+  },
+  {
+   "id": "any_currency",
+   "name": "Works with any currency",
+   "have": [
+    "1807934295",
+    "1619225413",
+    "1473595073",
+    "4316143583",
+    "1413307252",
+    "4334780570",
+    "1236921528",
+    "1452757848",
+    "4316136064",
+    "1727883971",
+    "4504937980",
+    "1681362279",
+    "1883689740",
+    "1767199175",
+    "4316669223",
+    "1632843695",
+    "1749721281",
+    "1783515050",
+    "1887706545"
+   ],
+   "share": 0.633,
+   "revenue_share": 0.713,
+   "sales_share": 0.748,
+   "tier": "standard"
   },
   {
    "id": "credit_card",
    "name": "Credit card tracking",
    "have": [
+    "1807934295",
+    "1652486880",
+    "1639267175",
+    "4368511100",
+    "1797614603",
     "1762787854",
+    "4334780570",
     "4427109751",
+    "1663318416",
+    "1681362279",
+    "1767199175",
+    "4316669223",
     "4427145920"
    ],
-   "share": 0.1,
-   "revenue_share": 0.083,
-   "sales_share": 0.035,
-   "tier": "rare"
+   "share": 0.433,
+   "revenue_share": 0.671,
+   "sales_share": 0.304,
+   "tier": "common"
+  },
+  {
+   "id": "zero_based",
+   "name": "Zero-based or 50/30/20 method",
+   "have": [
+    "1807934295",
+    "1652486880",
+    "1639267175",
+    "4368511100",
+    "4334780570",
+    "4427109751",
+    "1452757848",
+    "1663318416",
+    "1883689740",
+    "4316669223",
+    "4427145920",
+    "4417954320",
+    "1887706545"
+   ],
+   "share": 0.433,
+   "revenue_share": 0.678,
+   "sales_share": 0.202,
+   "tier": "common"
+  },
+  {
+   "id": "net_worth",
+   "name": "Net worth tracker",
+   "have": [
+    "1807934295",
+    "4316143583",
+    "1652486880",
+    "1639267175",
+    "4334780570",
+    "1236921528",
+    "4427109751",
+    "1663318416",
+    "4316669223",
+    "4427145920",
+    "4417954320"
+   ],
+   "share": 0.367,
+   "revenue_share": 0.691,
+   "sales_share": 0.212,
+   "tier": "common"
+  },
+  {
+   "id": "couples",
+   "name": "Couples or family budget",
+   "have": [
+    "1807934295",
+    "1652486880",
+    "1639267175",
+    "4368511100",
+    "4334780570",
+    "1452757848",
+    "1663318416",
+    "1883689740",
+    "4316669223",
+    "4417954320",
+    "1887706545"
+   ],
+   "share": 0.367,
+   "revenue_share": 0.631,
+   "sales_share": 0.198,
+   "tier": "common"
+  },
+  {
+   "id": "rollover",
+   "name": "Rollover of leftover money",
+   "have": [
+    "1413307252",
+    "4368511100",
+    "1807214506",
+    "1236921528",
+    "4316136064",
+    "1727883971",
+    "1883689740",
+    "1767199175",
+    "4316669223",
+    "1749721281",
+    "1887706545"
+   ],
+   "share": 0.367,
+   "revenue_share": 0.157,
+   "sales_share": 0.253,
+   "tier": "common"
   },
   {
    "id": "dark_mode",
    "name": "Dark mode",
    "have": [
+    "1413307252",
+    "1639267175",
     "1807214506",
     "4334780570",
-    "1452757848"
+    "1452757848",
+    "1663318416",
+    "1783515050"
    ],
-   "share": 0.1,
-   "revenue_share": 0.05,
-   "sales_share": 0.081,
+   "share": 0.233,
+   "revenue_share": 0.126,
+   "sales_share": 0.215,
    "tier": "rare"
   },
   {
-   "id": "dashboard",
-   "name": "Dashboard with charts",
+   "id": "one_tab",
+   "name": "Single-tab budget, duplicate for each period",
+   "have": [
+    "1619225413",
+    "1473595073",
+    "1413307252",
+    "1797614603",
+    "1807214506",
+    "1727883971"
+   ],
+   "share": 0.2,
+   "revenue_share": 0.126,
+   "sales_share": 0.495,
+   "tier": "rare"
+  },
+  {
+   "id": "subscription_tracker",
+   "name": "Subscription tracker with dashboard",
+   "have": [
+    "4368511100",
+    "1236921528",
+    "1883689740",
+    "4316669223",
+    "1749721281",
+    "1887706545"
+   ],
+   "share": 0.2,
+   "revenue_share": 0.098,
+   "sales_share": 0.074,
+   "tier": "rare"
+  },
+  {
+   "id": "paid_checkboxes",
+   "name": "Checkboxes to mark bills/debts/savings paid",
+   "have": [
+    "1619225413",
+    "1473595073",
+    "1652486880",
+    "1797614603",
+    "1681362279"
+   ],
+   "share": 0.167,
+   "revenue_share": 0.165,
+   "sales_share": 0.399,
+   "tier": "rare"
+  },
+  {
+   "id": "smart_calendar",
+   "name": "Calendar with daily and weekly running balance",
+   "have": [
+    "1639267175",
+    "4368511100",
+    "1236921528",
+    "1883689740",
+    "1767199175"
+   ],
+   "share": 0.167,
+   "revenue_share": 0.101,
+   "sales_share": 0.1,
+   "tier": "rare"
+  },
+  {
+   "id": "multi_currency",
+   "name": "Multiple currencies included",
+   "have": [
+    "1639267175",
+    "1344426956",
+    "4368511100",
+    "1797614603",
+    "1807214506"
+   ],
+   "share": 0.167,
+   "revenue_share": 0.099,
+   "sales_share": 0.188,
+   "tier": "rare"
+  },
+  {
+   "id": "business",
+   "name": "Small business or side hustle",
+   "have": [
+    "1413307252",
+    "1807214506",
+    "1727883971",
+    "4417954320"
+   ],
+   "share": 0.133,
+   "revenue_share": 0.043,
+   "sales_share": 0.146,
+   "tier": "rare"
+  },
+  {
+   "id": "nav_menu",
+   "name": "Side menu for tab navigation",
+   "have": [
+    "1807934295",
+    "4368511100",
+    "1883689740",
+    "1887706545"
+   ],
+   "share": 0.133,
+   "revenue_share": 0.433,
+   "sales_share": 0.103,
+   "tier": "rare"
+  },
+  {
+   "id": "start_balance",
+   "name": "Starting balance carry-over",
+   "have": [
+    "1619225413",
+    "1473595073",
+    "1797614603",
+    "4504937980"
+   ],
+   "share": 0.133,
+   "revenue_share": 0.125,
+   "sales_share": 0.354,
+   "tier": "rare"
+  },
+  {
+   "id": "investment_tracker",
+   "name": "Savings and investment tracker (stocks, funds)",
+   "have": [
+    "1413307252",
+    "1236921528",
+    "4427109751",
+    "4427145920"
+   ],
+   "share": 0.133,
+   "revenue_share": 0.056,
+   "sales_share": 0.11,
+   "tier": "rare"
+  },
+  {
+   "id": "recurring_automation",
+   "name": "Set recurring payments once, auto-filled every month (no copy paste)",
+   "have": [
+    "1639267175",
+    "1663318416",
+    "4316669223",
+    "4417954320"
+   ],
+   "share": 0.133,
+   "revenue_share": 0.098,
+   "sales_share": 0.041,
+   "tier": "rare"
+  },
+  {
+   "id": "single_tab",
+   "name": "Whole budget on one tab",
+   "have": [
+    "4504937980",
+    "1681362279",
+    "1632843695",
+    "1783515050"
+   ],
+   "share": 0.133,
+   "revenue_share": 0.031,
+   "sales_share": 0.092,
+   "tier": "rare"
+  },
+  {
+   "id": "protected_formulas",
+   "name": "Protected formulas (hard to break)",
+   "have": [
+    "1413307252",
+    "1807214506",
+    "4417954320"
+   ],
+   "share": 0.1,
+   "revenue_share": 0.04,
+   "sales_share": 0.115,
+   "tier": "rare"
+  },
+  {
+   "id": "recurring_transactions",
+   "name": "Recurring transactions set once, auto-filled (weekly to every 6 months)",
+   "have": [
+    "1807934295",
+    "1652486880",
+    "4334780570"
+   ],
+   "share": 0.1,
+   "revenue_share": 0.462,
+   "sales_share": 0.119,
+   "tier": "rare"
+  },
+  {
+   "id": "account_balances",
+   "name": "Account balance tracker",
    "have": [
     "4316143583",
+    "4427109751",
+    "4427145920"
+   ],
+   "share": 0.1,
+   "revenue_share": 0.13,
+   "sales_share": 0.015,
+   "tier": "rare"
+  },
+  {
+   "id": "accounts_tracker",
+   "name": "Accounts tracker (pay from account/card)",
+   "have": [
+    "1639267175",
+    "1663318416",
+    "4316669223"
+   ],
+   "share": 0.1,
+   "revenue_share": 0.083,
+   "sales_share": 0.038,
+   "tier": "rare"
+  },
+  {
+   "id": "smart_bill_calendar",
+   "name": "Smart calendar auto-filled from payments, Monday or Sunday start",
+   "have": [
+    "1749721281",
+    "4417954320",
+    "1887706545"
+   ],
+   "share": 0.1,
+   "revenue_share": 0.04,
+   "sales_share": 0.035,
+   "tier": "rare"
+  },
+  {
+   "id": "no_spend_challenge",
+   "name": "No-spend challenge / days without spending tracker",
+   "have": [
+    "1807934295",
+    "4334780570"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.397,
+   "sales_share": 0.103,
+   "tier": "rare"
+  },
+  {
+   "id": "investment_forecast",
+   "name": "Investment forecast tab",
+   "have": [
+    "1807934295",
+    "4334780570"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.397,
+   "sales_share": 0.103,
+   "tier": "rare"
+  },
+  {
+   "id": "days_left",
+   "name": "Days-left countdown for budget period",
+   "have": [
+    "1619225413",
+    "1797614603"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.095,
+   "sales_share": 0.231,
+   "tier": "rare"
+  },
+  {
+   "id": "personalized_name",
+   "name": "Personalize dashboard with your name",
+   "have": [
+    "1619225413",
+    "1767199175"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.096,
+   "sales_share": 0.214,
+   "tier": "rare"
+  },
+  {
+   "id": "daily_spending_chart",
+   "name": "Daily spending chart",
+   "have": [
+    "4316143583",
+    "1783515050"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.085,
+   "sales_share": 0.04,
+   "tier": "rare"
+  },
+  {
+   "id": "irregular_income",
+   "name": "Works with irregular/variable paychecks and multiple incomes",
+   "have": [
+    "1652486880",
+    "4417954320"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.08,
+   "sales_share": 0.019,
+   "tier": "rare"
+  },
+  {
+   "id": "multi_currency_files",
+   "name": "Includes $, £ and € versions",
+   "have": [
+    "1652486880",
     "1663318416"
    ],
    "share": 0.067,
-   "revenue_share": 0.108,
-   "sales_share": 0.021,
+   "revenue_share": 0.089,
+   "sales_share": 0.025,
    "tier": "rare"
   },
   {
-   "id": "net_worth",
-   "name": "Net worth tracker",
+   "id": "hide_tabs",
+   "name": "Hide/unhide tabs",
+   "have": [
+    "1652486880",
+    "1639267175"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.108,
+   "sales_share": 0.044,
+   "tier": "rare"
+  },
+  {
+   "id": "goal_tracker",
+   "name": "Bonus goal tracker (weekly, monthly, yearly goals)",
+   "have": [
+    "1413307252",
+    "1807214506"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.025,
+   "sales_share": 0.111,
+   "tier": "rare"
+  },
+  {
+   "id": "custom_date_range",
+   "name": "Any custom budget date range",
+   "have": [
+    "1413307252",
+    "1749721281"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.02,
+   "sales_share": 0.098,
+   "tier": "rare"
+  },
+  {
+   "id": "custom_period",
+   "name": "Custom budgeting period, start any month",
+   "have": [
+    "4368511100",
+    "1807214506"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.052,
+   "sales_share": 0.046,
+   "tier": "rare"
+  },
+  {
+   "id": "debt_methods",
+   "name": "Snowball, avalanche or custom debt strategy, up to 20 debts",
+   "have": [
+    "4368511100",
+    "1762787854"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.074,
+   "sales_share": 0.035,
+   "tier": "rare"
+  },
+  {
+   "id": "income_breakdown_chart",
+   "name": "Income summary donut chart",
+   "have": [
+    "1797614603",
+    "1807214506"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.017,
+   "sales_share": 0.091,
+   "tier": "rare"
+  },
+  {
+   "id": "goal_sheets",
+   "name": "Annual and monthly goal sheets",
+   "have": [
+    "4427109751",
+    "4427145920"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.046,
+   "sales_share": 0.004,
+   "tier": "rare"
+  },
+  {
+   "id": "fixed_vs_variable",
+   "name": "Fixed vs variable expense tracking",
+   "have": [
+    "4427109751",
+    "4427145920"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.046,
+   "sales_share": 0.004,
+   "tier": "rare"
+  },
+  {
+   "id": "color_options",
+   "name": "Sold in 4 colorways",
+   "have": [
+    "4427109751",
+    "4316136064"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.059,
+   "sales_share": 0.007,
+   "tier": "rare"
+  },
+  {
+   "id": "bill_calendar_tab",
+   "name": "Calendar of bills, debt, subscriptions and income",
+   "have": [
+    "1663318416",
+    "4316669223"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.041,
+   "sales_share": 0.01,
+   "tier": "rare"
+  },
+  {
+   "id": "free_demo_link",
+   "name": "Free read-only demo link",
+   "have": [
+    "1883689740",
+    "1887706545"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.033,
+   "sales_share": 0.003,
+   "tier": "rare"
+  },
+  {
+   "id": "bonus_pdf_guide",
+   "name": "Bonus personal finance guide PDF and checklist",
+   "have": [
+    "1883689740",
+    "1887706545"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.033,
+   "sales_share": 0.003,
+   "tier": "rare"
+  },
+  {
+   "id": "bank_accounts",
+   "name": "Bank account balances tab",
+   "have": [
+    "1807934295"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.362,
+   "sales_share": 0.096,
+   "tier": "rare"
+  },
+  {
+   "id": "needs_wants_threshold",
+   "name": "Monthly needs/wants vs threshold charts",
+   "have": [
+    "1807934295"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.362,
+   "sales_share": 0.096,
+   "tier": "rare"
+  },
+  {
+   "id": "bonus_savings_debt_tracker",
+   "name": "Bonus savings and debt tracker template",
+   "have": [
+    "1619225413"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.094,
+   "sales_share": 0.183,
+   "tier": "rare"
+  },
+  {
+   "id": "left_to_spend_ring",
+   "name": "Left-to-spend ring chart",
+   "have": [
+    "1473595073"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.003,
+   "sales_share": 0.121,
+   "tier": "rare"
+  },
+  {
+   "id": "two_color_schemes",
+   "name": "Two color themes included",
+   "have": [
+    "4316143583"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.084,
+   "sales_share": 0.011,
+   "tier": "rare"
+  },
+  {
+   "id": "non_monthly_bills",
+   "name": "Non-monthly (irregular) bills planner",
+   "have": [
+    "4316143583"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.084,
+   "sales_share": 0.011,
+   "tier": "rare"
+  },
+  {
+   "id": "top_expenses",
+   "name": "Top 25 expenses / spending breakdown ranking",
+   "have": [
+    "4316143583"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.084,
+   "sales_share": 0.011,
+   "tier": "rare"
+  },
+  {
+   "id": "transaction_log",
+   "name": "Transaction log with sub-categories and accounts",
+   "have": [
+    "4316143583"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.084,
+   "sales_share": 0.011,
+   "tier": "rare"
+  },
+  {
+   "id": "cash_flow_worksheet",
+   "name": "Cash flow worksheet for any time period",
+   "have": [
+    "4316143583"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.084,
+   "sales_share": 0.011,
+   "tier": "rare"
+  },
+  {
+   "id": "debt_snowball_avalanche",
+   "name": "Snowball or avalanche debt payoff plan",
+   "have": [
+    "4316143583"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.084,
+   "sales_share": 0.011,
+   "tier": "rare"
+  },
+  {
+   "id": "notes_section",
+   "name": "Notes box on monthly tab",
+   "have": [
+    "4316143583"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.084,
+   "sales_share": 0.011,
+   "tier": "rare"
+  },
+  {
+   "id": "payer_split",
+   "name": "Assign payer per transaction, auto split between partners",
+   "have": [
+    "1652486880"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.065,
+   "sales_share": 0.016,
+   "tier": "rare"
+  },
+  {
+   "id": "subscriptions_tracker",
+   "name": "Subscriptions tracker",
+   "have": [
+    "1652486880"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.065,
+   "sales_share": 0.016,
+   "tier": "rare"
+  },
+  {
+   "id": "money_transfers",
+   "name": "Money transfers between accounts",
+   "have": [
+    "1652486880"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.065,
+   "sales_share": 0.016,
+   "tier": "rare"
+  },
+  {
+   "id": "debt_auto_schedule",
+   "name": "Debt payoff schedule auto-logged to transactions",
+   "have": [
+    "1652486880"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.065,
+   "sales_share": 0.016,
+   "tier": "rare"
+  },
+  {
+   "id": "overspend_highlight",
+   "name": "Progress % per category with overspending highlighted",
+   "have": [
+    "1413307252"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.009,
+   "sales_share": 0.069,
+   "tier": "rare"
+  },
+  {
+   "id": "frequency_dropdown",
+   "name": "Per-item frequency dropdown (weekly, biweekly, 4-weekly, quarterly, annual)",
+   "have": [
+    "1639267175"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.043,
+   "sales_share": 0.028,
+   "tier": "rare"
+  },
+  {
+   "id": "quarterly_dashboard",
+   "name": "Quarterly dashboard",
+   "have": [
+    "1639267175"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.043,
+   "sales_share": 0.028,
+   "tier": "rare"
+  },
+  {
+   "id": "forecast_12mo",
+   "name": "12-month projection / forecast",
+   "have": [
+    "1639267175"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.043,
+   "sales_share": 0.028,
+   "tier": "rare"
+  },
+  {
+   "id": "credit_score_focus",
+   "name": "Credit score focus debt method and credit utilization rate",
+   "have": [
+    "1639267175"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.043,
+   "sales_share": 0.028,
+   "tier": "rare"
+  },
+  {
+   "id": "free_extra_color",
+   "name": "Extra color theme free on request",
+   "have": [
+    "1639267175"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.043,
+   "sales_share": 0.028,
+   "tier": "rare"
+  },
+  {
+   "id": "plan_vs_actual",
+   "name": "Planned vs actual comparison chart",
+   "have": [
+    "1344426956"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.002,
+   "sales_share": 0.067,
+   "tier": "rare"
+  },
+  {
+   "id": "spending_priority",
+   "name": "Rank bills and expenses by priority (very important to not important)",
+   "have": [
+    "1344426956"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.002,
+   "sales_share": 0.067,
+   "tier": "rare"
+  },
+  {
+   "id": "month_picker",
+   "name": "Pick year and month dropdown on one reusable sheet",
+   "have": [
+    "1344426956"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.002,
+   "sales_share": 0.067,
+   "tier": "rare"
+  },
+  {
+   "id": "money_back_guarantee",
+   "name": "Money back guarantee",
+   "have": [
+    "1344426956"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.002,
+   "sales_share": 0.067,
+   "tier": "rare"
+  },
+  {
+   "id": "assign_person",
+   "name": "Assign each bill to a person (who pays)",
+   "have": [
+    "4368511100"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.037,
+   "sales_share": 0.003,
+   "tier": "rare"
+  },
+  {
+   "id": "finance_guide_pdf",
+   "name": "Bonus PDF personal finance guide and checklist",
+   "have": [
+    "4368511100"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.037,
+   "sales_share": 0.003,
+   "tier": "rare"
+  },
+  {
+   "id": "free_demo",
+   "name": "Free read-only demo link",
+   "have": [
+    "4368511100"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.037,
+   "sales_share": 0.003,
+   "tier": "rare"
+  },
+  {
+   "id": "personalize_name",
+   "name": "Personalize with your name",
+   "have": [
+    "1797614603"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.002,
+   "sales_share": 0.048,
+   "tier": "rare"
+  },
+  {
+   "id": "duplicate_tab",
+   "name": "Duplicate tab for each new period",
+   "have": [
+    "1797614603"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.002,
+   "sales_share": 0.048,
+   "tier": "rare"
+  },
+  {
+   "id": "strategy_picker",
+   "name": "Pick your priority and get the best-fit strategy with pros and cons",
+   "have": [
+    "1762787854"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.037,
+   "sales_share": 0.031,
+   "tier": "rare"
+  },
+  {
+   "id": "debt_free_date",
+   "name": "Debt-free date and total interest",
+   "have": [
+    "1762787854"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.037,
+   "sales_share": 0.031,
+   "tier": "rare"
+  },
+  {
+   "id": "credit_utilization",
+   "name": "Credit utilization rate per card",
+   "have": [
+    "1762787854"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.037,
+   "sales_share": 0.031,
+   "tier": "rare"
+  },
+  {
+   "id": "payment_schedule",
+   "name": "Payment schedule with completed months auto-marked",
+   "have": [
+    "1762787854"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.037,
+   "sales_share": 0.031,
+   "tier": "rare"
+  },
+  {
+   "id": "paid_greyed",
+   "name": "Paid-off debts greyed out automatically",
+   "have": [
+    "1762787854"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.037,
+   "sales_share": 0.031,
+   "tier": "rare"
+  },
+  {
+   "id": "add_reduce_payment",
+   "name": "Add or reduce extra payment any month",
+   "have": [
+    "1762787854"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.037,
+   "sales_share": 0.031,
+   "tier": "rare"
+  },
+  {
+   "id": "debt_capacity",
+   "name": "Up to 50 debts over 30 years",
+   "have": [
+    "1762787854"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.037,
+   "sales_share": 0.031,
+   "tier": "rare"
+  },
+  {
+   "id": "bonus_budget",
+   "name": "Free bonus simple budget",
+   "have": [
+    "1762787854"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.037,
+   "sales_share": 0.031,
+   "tier": "rare"
+  },
+  {
+   "id": "overspend_flag",
+   "name": "Progress percent with overspending highlighted",
+   "have": [
+    "1807214506"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.015,
+   "sales_share": 0.043,
+   "tier": "rare"
+  },
+  {
+   "id": "quick_start_guide",
+   "name": "Quick start guide",
+   "have": [
+    "1807214506"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.015,
+   "sales_share": 0.043,
+   "tier": "rare"
+  },
+  {
+   "id": "menu_navigation",
+   "name": "Side menu linking to every tab",
+   "have": [
+    "4334780570"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.035,
+   "sales_share": 0.006,
+   "tier": "rare"
+  },
+  {
+   "id": "color_coded_inputs",
+   "name": "Color coding separates input cells from calculated cells",
+   "have": [
+    "4334780570"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.035,
+   "sales_share": 0.006,
+   "tier": "rare"
+  },
+  {
+   "id": "multi_earner",
+   "name": "Earner column to split income by person",
+   "have": [
+    "4334780570"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.035,
+   "sales_share": 0.006,
+   "tier": "rare"
+  },
+  {
+   "id": "goal_tracker_bonus",
+   "name": "Bonus goal tracker (weekly, monthly, yearly)",
+   "have": [
+    "1236921528"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.0,
+   "sales_share": 0.037,
+   "tier": "rare"
+  },
+  {
+   "id": "older_excel_support",
+   "name": "Works without Microsoft 365 (Excel 2016+)",
+   "have": [
+    "1236921528"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.0,
+   "sales_share": 0.037,
+   "tier": "rare"
+  },
+  {
+   "id": "credit_debit_toggle",
+   "name": "Toggle for credit-card spender vs debit/cash spender",
+   "have": [
+    "4427109751"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.03,
+   "sales_share": 0.002,
+   "tier": "rare"
+  },
+  {
+   "id": "debt_interest_projection",
+   "name": "Debt interest, principal and projected payoff date",
+   "have": [
+    "4427109751"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.03,
+   "sales_share": 0.002,
+   "tier": "rare"
+  },
+  {
+   "id": "category_icons",
+   "name": "80+ icons to label categories",
+   "have": [
+    "1452757848"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.0,
+   "sales_share": 0.032,
+   "tier": "rare"
+  },
+  {
+   "id": "needs_vs_wants",
+   "name": "Need vs want split on expenses",
+   "have": [
+    "1452757848"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.0,
+   "sales_share": 0.032,
+   "tier": "rare"
+  },
+  {
+   "id": "active_passive_income",
+   "name": "Active vs passive income breakdown",
+   "have": [
+    "1452757848"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.0,
+   "sales_share": 0.032,
+   "tier": "rare"
+  },
+  {
+   "id": "debt_priority_flag",
+   "name": "High-priority flag on debts",
+   "have": [
+    "1452757848"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.0,
+   "sales_share": 0.032,
+   "tier": "rare"
+  },
+  {
+   "id": "short_long_savings",
+   "name": "Short and long term savings goals",
+   "have": [
+    "1452757848"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.0,
+   "sales_share": 0.032,
+   "tier": "rare"
+  },
+  {
+   "id": "subscription_tracking",
+   "name": "Subscription tracking",
+   "have": [
+    "1452757848"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.0,
+   "sales_share": 0.032,
+   "tier": "rare"
+  },
+  {
+   "id": "spending_breakdown",
+   "name": "Spending breakdown by percent of budget",
+   "have": [
+    "4316136064"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.029,
+   "sales_share": 0.005,
+   "tier": "rare"
+  },
+  {
+   "id": "left_to_budget",
+   "name": "Left to budget and left to spend boxes",
+   "have": [
+    "4316136064"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.029,
+   "sales_share": 0.005,
+   "tier": "rare"
+  },
+  {
+   "id": "payment_checkboxes",
+   "name": "Checkboxes to tick off paid bills and debts",
+   "have": [
+    "1727883971"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.003,
+   "sales_share": 0.031,
+   "tier": "rare"
+  },
+  {
+   "id": "duplicate_sheet",
+   "name": "Duplicate the sheet for each new week or month",
+   "have": [
+    "1727883971"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.003,
+   "sales_share": 0.031,
+   "tier": "rare"
+  },
+  {
+   "id": "bonus_printables",
+   "name": "Bonus art prints and daily/weekly planners",
+   "have": [
+    "1727883971"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.003,
+   "sales_share": 0.031,
+   "tier": "rare"
+  },
+  {
+   "id": "planned_end_balance_graph",
+   "name": "Projected balance line graph over the period",
+   "have": [
+    "4504937980"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.027,
+   "sales_share": 0.003,
+   "tier": "rare"
+  },
+  {
+   "id": "progress_bars",
+   "name": "Per-category progress bars",
+   "have": [
+    "4504937980"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.027,
+   "sales_share": 0.003,
+   "tier": "rare"
+  },
+  {
+   "id": "translatable_categories",
+   "name": "Option to translate categories",
+   "have": [
+    "4504937980"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.027,
+   "sales_share": 0.003,
+   "tier": "rare"
+  },
+  {
+   "id": "adhd_friendly",
+   "name": "Marketed as ADHD-friendly budget",
+   "have": [
+    "4504937980"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.027,
+   "sales_share": 0.003,
+   "tier": "rare"
+  },
+  {
+   "id": "bill_split",
+   "name": "Bill split ratio between partners",
+   "have": [
+    "1663318416"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.024,
+   "sales_share": 0.009,
+   "tier": "rare"
+  },
+  {
+   "id": "partner_dashboards",
+   "name": "Separate partner 1, partner 2 and combined dashboards",
+   "have": [
+    "1663318416"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.024,
+   "sales_share": 0.009,
+   "tier": "rare"
+  },
+  {
+   "id": "distribution_dashboard",
+   "name": "Who-owes-whom transfer / distribution dashboard",
+   "have": [
+    "1663318416"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.024,
+   "sales_share": 0.009,
+   "tier": "rare"
+  },
+  {
+   "id": "debt_methods_4",
+   "name": "Debt payoff with 4 methods (snowball, avalanche, custom, credit score)",
+   "have": [
+    "1663318416"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.024,
+   "sales_share": 0.009,
+   "tier": "rare"
+  },
+  {
+   "id": "subscriptions_tracking",
+   "name": "Subscriptions section",
+   "have": [
+    "1663318416"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.024,
+   "sales_share": 0.009,
+   "tier": "rare"
+  },
+  {
+   "id": "group_category",
+   "name": "Bonus group category tab",
+   "have": [
+    "1663318416"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.024,
+   "sales_share": 0.009,
+   "tier": "rare"
+  },
+  {
+   "id": "budget_on_track_status",
+   "name": "'Budget on track' status with amount left to spend",
+   "have": [
+    "1681362279"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.001,
+   "sales_share": 0.031,
+   "tier": "rare"
+  },
+  {
+   "id": "investments_section",
+   "name": "Savings & investments section (stocks, 401K)",
+   "have": [
+    "1681362279"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.001,
+   "sales_share": 0.031,
+   "tier": "rare"
+  },
+  {
+   "id": "bill_owner",
+   "name": "Assign who pays each bill",
+   "have": [
+    "1883689740"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.019,
+   "sales_share": 0.001,
+   "tier": "rare"
+  },
+  {
+   "id": "highest_expense_kpis",
+   "name": "Highest bill and highest variable expense callouts",
+   "have": [
+    "1883689740"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.019,
+   "sales_share": 0.001,
+   "tier": "rare"
+  },
+  {
+   "id": "savings_goals_20",
+   "name": "Up to 20 savings goals with progress rings",
+   "have": [
+    "1883689740"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.019,
+   "sales_share": 0.001,
+   "tier": "rare"
+  },
+  {
+   "id": "days_left_counter",
+   "name": "Days left in period counter",
+   "have": [
+    "1767199175"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.002,
+   "sales_share": 0.031,
+   "tier": "rare"
+  },
+  {
+   "id": "due_dates",
+   "name": "Due date column for bills and debts",
+   "have": [
+    "1767199175"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.002,
+   "sales_share": 0.031,
+   "tier": "rare"
+  },
+  {
+   "id": "income_summary_chart",
+   "name": "Income sources donut chart",
+   "have": [
+    "1767199175"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.002,
+   "sales_share": 0.031,
+   "tier": "rare"
+  },
+  {
+   "id": "change_colors",
+   "name": "Change colors",
+   "have": [
+    "1767199175"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.002,
+   "sales_share": 0.031,
+   "tier": "rare"
+  },
+  {
+   "id": "over_budget_red",
+   "name": "Over-budget differences shown in red",
+   "have": [
+    "4316669223"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.017,
+   "sales_share": 0.001,
+   "tier": "rare"
+  },
+  {
+   "id": "balance_trend_chart",
+   "name": "Daily balance trend line chart",
+   "have": [
+    "4316669223"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.017,
+   "sales_share": 0.001,
+   "tier": "rare"
+  },
+  {
+   "id": "transaction_tracker_same_tab",
+   "name": "Transaction and recurring trackers on the same tab as the budget",
+   "have": [
+    "4316669223"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.017,
+   "sales_share": 0.001,
+   "tier": "rare"
+  },
+  {
+   "id": "couples_breakdown",
+   "name": "Per-person and combined breakdown of income and spending",
+   "have": [
+    "4316669223"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.017,
+   "sales_share": 0.001,
+   "tier": "rare"
+  },
+  {
+   "id": "bonus_debt_snowball",
+   "name": "Bonus debt snowball / avalanche calculator",
+   "have": [
+    "4316669223"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.017,
+   "sales_share": 0.001,
+   "tier": "rare"
+  },
+  {
+   "id": "bill_checkboxes",
+   "name": "Bill paid checkboxes with due dates",
+   "have": [
+    "1632843695"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.002,
+   "sales_share": 0.03,
+   "tier": "rare"
+  },
+  {
+   "id": "left_to_spend_cards",
+   "name": "Left to budget and left to spend summary cards",
+   "have": [
+    "1632843695"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.002,
+   "sales_share": 0.03,
+   "tier": "rare"
+  },
+  {
+   "id": "transaction_log_dropdown",
+   "name": "Transaction log with category dropdowns",
+   "have": [
+    "1632843695"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.002,
+   "sales_share": 0.03,
+   "tier": "rare"
+  },
+  {
+   "id": "credit_vs_debit_toggle",
+   "name": "Toggle for credit-card spender vs debit or cash spender",
+   "have": [
+    "4427145920"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.016,
+   "sales_share": 0.002,
+   "tier": "rare"
+  },
+  {
+   "id": "bill_calendar_events",
+   "name": "Calendar view with bill deadlines and custom events",
+   "have": [
+    "4427145920"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.016,
+   "sales_share": 0.002,
+   "tier": "rare"
+  },
+  {
+   "id": "color_variants",
+   "name": "Multiple color ways sold separately",
+   "have": [
+    "4427145920"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.016,
+   "sales_share": 0.002,
+   "tier": "rare"
+  },
+  {
+   "id": "setup_tab",
+   "name": "Central setup tab that auto-populates all months",
+   "have": [
+    "4427145920"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.016,
+   "sales_share": 0.002,
+   "tier": "rare"
+  },
+  {
+   "id": "free_bonus_gifts",
+   "name": "Free bonus gifts (art prints, daily and weekly planner, habit tracker)",
+   "have": [
+    "1749721281"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.01,
+   "sales_share": 0.03,
+   "tier": "rare"
+  },
+  {
+   "id": "bank_accounts_tracker",
+   "name": "Bank accounts tracker with from/to account transfers",
    "have": [
     "4417954320"
    ],
@@ -291,94 +2256,92 @@
    "tier": "rare"
   },
   {
-   "id": "automated",
-   "name": "Automated, does the math",
-   "have": [],
-   "share": 0.0,
-   "revenue_share": 0.0,
-   "sales_share": 0.0,
-   "tier": "not_seen"
+   "id": "planned_vs_actual_annual",
+   "name": "Annual planned vs actual breakdown",
+   "have": [
+    "4417954320"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.015,
+   "sales_share": 0.004,
+   "tier": "rare"
   },
   {
-   "id": "zero_based",
-   "name": "Zero-based or 50/30/20 method",
-   "have": [],
-   "share": 0.0,
-   "revenue_share": 0.0,
-   "sales_share": 0.0,
-   "tier": "not_seen"
+   "id": "spender_distribution",
+   "name": "Distribution dashboard (spending by person)",
+   "have": [
+    "4417954320"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.015,
+   "sales_share": 0.004,
+   "tier": "rare"
   },
   {
-   "id": "business",
-   "name": "Small business or side hustle",
-   "have": [],
-   "share": 0.0,
-   "revenue_share": 0.0,
-   "sales_share": 0.0,
-   "tier": "not_seen"
+   "id": "flexible_date_range",
+   "name": "Custom 12-month date range start",
+   "have": [
+    "4417954320"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.015,
+   "sales_share": 0.004,
+   "tier": "rare"
   },
   {
-   "id": "customizable",
-   "name": "Customizable categories",
-   "have": [],
-   "share": 0.0,
-   "revenue_share": 0.0,
-   "sales_share": 0.0,
-   "tier": "not_seen"
+   "id": "balance_over_time",
+   "name": "Running balance line chart through the month",
+   "have": [
+    "1783515050"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.001,
+   "sales_share": 0.028,
+   "tier": "rare"
   },
   {
-   "id": "video_tutorial",
-   "name": "Video tutorial",
-   "have": [],
-   "share": 0.0,
-   "revenue_share": 0.0,
-   "sales_share": 0.0,
-   "tier": "not_seen"
+   "id": "debt_vs_savings_chart",
+   "name": "Debt vs savings comparison chart",
+   "have": [
+    "1783515050"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.001,
+   "sales_share": 0.028,
+   "tier": "rare"
   },
   {
-   "id": "mobile",
-   "name": "Works on phone",
-   "have": [],
-   "share": 0.0,
-   "revenue_share": 0.0,
-   "sales_share": 0.0,
-   "tier": "not_seen"
+   "id": "starting_balance",
+   "name": "Starting balance input",
+   "have": [
+    "1783515050"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.001,
+   "sales_share": 0.028,
+   "tier": "rare"
   },
   {
-   "id": "multi_year",
-   "name": "Multi-year or undated",
-   "have": [],
-   "share": 0.0,
-   "revenue_share": 0.0,
-   "sales_share": 0.0,
-   "tier": "not_seen"
+   "id": "person_assignment",
+   "name": "Assign each bill or paycheck to a person",
+   "have": [
+    "1887706545"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.014,
+   "sales_share": 0.002,
+   "tier": "rare"
   },
   {
-   "id": "instructions_inside",
-   "name": "Instructions inside the sheet",
-   "have": [],
-   "share": 0.0,
-   "revenue_share": 0.0,
-   "sales_share": 0.0,
-   "tier": "not_seen"
-  },
-  {
-   "id": "protected_formulas",
-   "name": "Protected formulas (hard to break)",
-   "have": [],
-   "share": 0.0,
-   "revenue_share": 0.0,
-   "sales_share": 0.0,
-   "tier": "not_seen"
-  },
-  {
-   "id": "sample_data",
-   "name": "Comes with sample data",
-   "have": [],
-   "share": 0.0,
-   "revenue_share": 0.0,
-   "sales_share": 0.0,
-   "tier": "not_seen"
+   "id": "extra_debt_payments",
+   "name": "Extra debt payments tracking",
+   "have": [
+    "1887706545"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.014,
+   "sales_share": 0.002,
+   "tier": "rare"
   }
  ],
  "complaints": [
@@ -1865,33 +3828,6 @@
    ]
   },
   {
-   "id": "p_value",
-   "theme": "Great value",
-   "count": 5,
-   "on_top_listings": 2,
-   "quotes": [
-    {
-     "text": "Great price and product. Easy to use",
-     "shop": "ComputedPlanning",
-     "stars": 5,
-     "review_id": "r349"
-    },
-    {
-     "text": "Crazy value for the price. And a quality spreadsheet too. Thank you!",
-     "shop": "SimplyOrganizedPro",
-     "stars": 5,
-     "review_id": "r301"
-    }
-   ],
-   "review_ids": [
-    "r265",
-    "r301",
-    "r341",
-    "r349",
-    "r440"
-   ]
-  },
-  {
    "id": "p_flexible",
    "theme": "Customizable",
    "count": 5,
@@ -1922,6 +3858,33 @@
     "r411",
     "r419",
     "r464"
+   ]
+  },
+  {
+   "id": "p_value",
+   "theme": "Great value",
+   "count": 5,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "Great price and product. Easy to use",
+     "shop": "ComputedPlanning",
+     "stars": 5,
+     "review_id": "r349"
+    },
+    {
+     "text": "Crazy value for the price. And a quality spreadsheet too. Thank you!",
+     "shop": "SimplyOrganizedPro",
+     "stars": 5,
+     "review_id": "r301"
+    }
+   ],
+   "review_ids": [
+    "r265",
+    "r301",
+    "r341",
+    "r349",
+    "r440"
    ]
   },
   {
@@ -2116,11 +4079,15 @@
  "looks": [
   {
    "style": "Dark mode",
-   "share": 0.1,
+   "share": 0.233,
    "have": [
+    "1413307252",
+    "1639267175",
     "1807214506",
     "4334780570",
-    "1452757848"
+    "1452757848",
+    "1663318416",
+    "1783515050"
    ]
   }
  ],
@@ -2395,105 +4362,813 @@
   },
   {
    "kind": "open_feature",
-   "feature": "annual",
-   "name": "Annual or yearly view",
-   "share": 0.267
-  },
-  {
-   "kind": "open_feature",
-   "feature": "savings",
-   "name": "Savings goals or sinking funds",
+   "feature": "dark_mode",
+   "name": "Dark mode",
    "share": 0.233
   },
   {
    "kind": "open_feature",
-   "feature": "couples",
-   "name": "Couples or family budget",
-   "share": 0.1
+   "feature": "one_tab",
+   "name": "Single-tab budget, duplicate for each period",
+   "share": 0.2
   },
   {
    "kind": "open_feature",
-   "feature": "credit_card",
-   "name": "Credit card tracking",
-   "share": 0.1
+   "feature": "subscription_tracker",
+   "name": "Subscription tracker with dashboard",
+   "share": 0.2
   },
   {
    "kind": "open_feature",
-   "feature": "dark_mode",
-   "name": "Dark mode",
-   "share": 0.1
+   "feature": "paid_checkboxes",
+   "name": "Checkboxes to mark bills/debts/savings paid",
+   "share": 0.167
   },
   {
    "kind": "open_feature",
-   "feature": "dashboard",
-   "name": "Dashboard with charts",
-   "share": 0.067
+   "feature": "smart_calendar",
+   "name": "Calendar with daily and weekly running balance",
+   "share": 0.167
   },
   {
    "kind": "open_feature",
-   "feature": "net_worth",
-   "name": "Net worth tracker",
-   "share": 0.033
-  },
-  {
-   "kind": "open_feature",
-   "feature": "automated",
-   "name": "Automated, does the math",
-   "share": 0.0
-  },
-  {
-   "kind": "open_feature",
-   "feature": "zero_based",
-   "name": "Zero-based or 50/30/20 method",
-   "share": 0.0
+   "feature": "multi_currency",
+   "name": "Multiple currencies included",
+   "share": 0.167
   },
   {
    "kind": "open_feature",
    "feature": "business",
    "name": "Small business or side hustle",
-   "share": 0.0
+   "share": 0.133
   },
   {
    "kind": "open_feature",
-   "feature": "customizable",
-   "name": "Customizable categories",
-   "share": 0.0
+   "feature": "nav_menu",
+   "name": "Side menu for tab navigation",
+   "share": 0.133
   },
   {
    "kind": "open_feature",
-   "feature": "video_tutorial",
-   "name": "Video tutorial",
-   "share": 0.0
+   "feature": "start_balance",
+   "name": "Starting balance carry-over",
+   "share": 0.133
   },
   {
    "kind": "open_feature",
-   "feature": "mobile",
-   "name": "Works on phone",
-   "share": 0.0
+   "feature": "investment_tracker",
+   "name": "Savings and investment tracker (stocks, funds)",
+   "share": 0.133
   },
   {
    "kind": "open_feature",
-   "feature": "multi_year",
-   "name": "Multi-year or undated",
-   "share": 0.0
+   "feature": "recurring_automation",
+   "name": "Set recurring payments once, auto-filled every month (no copy paste)",
+   "share": 0.133
   },
   {
    "kind": "open_feature",
-   "feature": "instructions_inside",
-   "name": "Instructions inside the sheet",
-   "share": 0.0
+   "feature": "single_tab",
+   "name": "Whole budget on one tab",
+   "share": 0.133
   },
   {
    "kind": "open_feature",
    "feature": "protected_formulas",
    "name": "Protected formulas (hard to break)",
-   "share": 0.0
+   "share": 0.1
   },
   {
    "kind": "open_feature",
-   "feature": "sample_data",
-   "name": "Comes with sample data",
-   "share": 0.0
+   "feature": "recurring_transactions",
+   "name": "Recurring transactions set once, auto-filled (weekly to every 6 months)",
+   "share": 0.1
+  },
+  {
+   "kind": "open_feature",
+   "feature": "account_balances",
+   "name": "Account balance tracker",
+   "share": 0.1
+  },
+  {
+   "kind": "open_feature",
+   "feature": "accounts_tracker",
+   "name": "Accounts tracker (pay from account/card)",
+   "share": 0.1
+  },
+  {
+   "kind": "open_feature",
+   "feature": "smart_bill_calendar",
+   "name": "Smart calendar auto-filled from payments, Monday or Sunday start",
+   "share": 0.1
+  },
+  {
+   "kind": "open_feature",
+   "feature": "no_spend_challenge",
+   "name": "No-spend challenge / days without spending tracker",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "investment_forecast",
+   "name": "Investment forecast tab",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "days_left",
+   "name": "Days-left countdown for budget period",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "personalized_name",
+   "name": "Personalize dashboard with your name",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "daily_spending_chart",
+   "name": "Daily spending chart",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "irregular_income",
+   "name": "Works with irregular/variable paychecks and multiple incomes",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "multi_currency_files",
+   "name": "Includes $, £ and € versions",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "hide_tabs",
+   "name": "Hide/unhide tabs",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "goal_tracker",
+   "name": "Bonus goal tracker (weekly, monthly, yearly goals)",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "custom_date_range",
+   "name": "Any custom budget date range",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "custom_period",
+   "name": "Custom budgeting period, start any month",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "debt_methods",
+   "name": "Snowball, avalanche or custom debt strategy, up to 20 debts",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "income_breakdown_chart",
+   "name": "Income summary donut chart",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "goal_sheets",
+   "name": "Annual and monthly goal sheets",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "fixed_vs_variable",
+   "name": "Fixed vs variable expense tracking",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "color_options",
+   "name": "Sold in 4 colorways",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "bill_calendar_tab",
+   "name": "Calendar of bills, debt, subscriptions and income",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "free_demo_link",
+   "name": "Free read-only demo link",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "bonus_pdf_guide",
+   "name": "Bonus personal finance guide PDF and checklist",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "bank_accounts",
+   "name": "Bank account balances tab",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "needs_wants_threshold",
+   "name": "Monthly needs/wants vs threshold charts",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "bonus_savings_debt_tracker",
+   "name": "Bonus savings and debt tracker template",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "left_to_spend_ring",
+   "name": "Left-to-spend ring chart",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "two_color_schemes",
+   "name": "Two color themes included",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "non_monthly_bills",
+   "name": "Non-monthly (irregular) bills planner",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "top_expenses",
+   "name": "Top 25 expenses / spending breakdown ranking",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "transaction_log",
+   "name": "Transaction log with sub-categories and accounts",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "cash_flow_worksheet",
+   "name": "Cash flow worksheet for any time period",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "debt_snowball_avalanche",
+   "name": "Snowball or avalanche debt payoff plan",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "notes_section",
+   "name": "Notes box on monthly tab",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "payer_split",
+   "name": "Assign payer per transaction, auto split between partners",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "subscriptions_tracker",
+   "name": "Subscriptions tracker",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "money_transfers",
+   "name": "Money transfers between accounts",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "debt_auto_schedule",
+   "name": "Debt payoff schedule auto-logged to transactions",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "overspend_highlight",
+   "name": "Progress % per category with overspending highlighted",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "frequency_dropdown",
+   "name": "Per-item frequency dropdown (weekly, biweekly, 4-weekly, quarterly, annual)",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "quarterly_dashboard",
+   "name": "Quarterly dashboard",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "forecast_12mo",
+   "name": "12-month projection / forecast",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "credit_score_focus",
+   "name": "Credit score focus debt method and credit utilization rate",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "free_extra_color",
+   "name": "Extra color theme free on request",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "plan_vs_actual",
+   "name": "Planned vs actual comparison chart",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "spending_priority",
+   "name": "Rank bills and expenses by priority (very important to not important)",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "month_picker",
+   "name": "Pick year and month dropdown on one reusable sheet",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "money_back_guarantee",
+   "name": "Money back guarantee",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "assign_person",
+   "name": "Assign each bill to a person (who pays)",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "finance_guide_pdf",
+   "name": "Bonus PDF personal finance guide and checklist",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "free_demo",
+   "name": "Free read-only demo link",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "personalize_name",
+   "name": "Personalize with your name",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "duplicate_tab",
+   "name": "Duplicate tab for each new period",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "strategy_picker",
+   "name": "Pick your priority and get the best-fit strategy with pros and cons",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "debt_free_date",
+   "name": "Debt-free date and total interest",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "credit_utilization",
+   "name": "Credit utilization rate per card",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "payment_schedule",
+   "name": "Payment schedule with completed months auto-marked",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "paid_greyed",
+   "name": "Paid-off debts greyed out automatically",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "add_reduce_payment",
+   "name": "Add or reduce extra payment any month",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "debt_capacity",
+   "name": "Up to 50 debts over 30 years",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "bonus_budget",
+   "name": "Free bonus simple budget",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "overspend_flag",
+   "name": "Progress percent with overspending highlighted",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "quick_start_guide",
+   "name": "Quick start guide",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "menu_navigation",
+   "name": "Side menu linking to every tab",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "color_coded_inputs",
+   "name": "Color coding separates input cells from calculated cells",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "multi_earner",
+   "name": "Earner column to split income by person",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "goal_tracker_bonus",
+   "name": "Bonus goal tracker (weekly, monthly, yearly)",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "older_excel_support",
+   "name": "Works without Microsoft 365 (Excel 2016+)",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "credit_debit_toggle",
+   "name": "Toggle for credit-card spender vs debit/cash spender",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "debt_interest_projection",
+   "name": "Debt interest, principal and projected payoff date",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "category_icons",
+   "name": "80+ icons to label categories",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "needs_vs_wants",
+   "name": "Need vs want split on expenses",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "active_passive_income",
+   "name": "Active vs passive income breakdown",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "debt_priority_flag",
+   "name": "High-priority flag on debts",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "short_long_savings",
+   "name": "Short and long term savings goals",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "subscription_tracking",
+   "name": "Subscription tracking",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "spending_breakdown",
+   "name": "Spending breakdown by percent of budget",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "left_to_budget",
+   "name": "Left to budget and left to spend boxes",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "payment_checkboxes",
+   "name": "Checkboxes to tick off paid bills and debts",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "duplicate_sheet",
+   "name": "Duplicate the sheet for each new week or month",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "bonus_printables",
+   "name": "Bonus art prints and daily/weekly planners",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "planned_end_balance_graph",
+   "name": "Projected balance line graph over the period",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "progress_bars",
+   "name": "Per-category progress bars",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "translatable_categories",
+   "name": "Option to translate categories",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "adhd_friendly",
+   "name": "Marketed as ADHD-friendly budget",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "bill_split",
+   "name": "Bill split ratio between partners",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "partner_dashboards",
+   "name": "Separate partner 1, partner 2 and combined dashboards",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "distribution_dashboard",
+   "name": "Who-owes-whom transfer / distribution dashboard",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "debt_methods_4",
+   "name": "Debt payoff with 4 methods (snowball, avalanche, custom, credit score)",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "subscriptions_tracking",
+   "name": "Subscriptions section",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "group_category",
+   "name": "Bonus group category tab",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "budget_on_track_status",
+   "name": "'Budget on track' status with amount left to spend",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "investments_section",
+   "name": "Savings & investments section (stocks, 401K)",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "bill_owner",
+   "name": "Assign who pays each bill",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "highest_expense_kpis",
+   "name": "Highest bill and highest variable expense callouts",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "savings_goals_20",
+   "name": "Up to 20 savings goals with progress rings",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "days_left_counter",
+   "name": "Days left in period counter",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "due_dates",
+   "name": "Due date column for bills and debts",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "income_summary_chart",
+   "name": "Income sources donut chart",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "change_colors",
+   "name": "Change colors",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "over_budget_red",
+   "name": "Over-budget differences shown in red",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "balance_trend_chart",
+   "name": "Daily balance trend line chart",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "transaction_tracker_same_tab",
+   "name": "Transaction and recurring trackers on the same tab as the budget",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "couples_breakdown",
+   "name": "Per-person and combined breakdown of income and spending",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "bonus_debt_snowball",
+   "name": "Bonus debt snowball / avalanche calculator",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "bill_checkboxes",
+   "name": "Bill paid checkboxes with due dates",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "left_to_spend_cards",
+   "name": "Left to budget and left to spend summary cards",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "transaction_log_dropdown",
+   "name": "Transaction log with category dropdowns",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "credit_vs_debit_toggle",
+   "name": "Toggle for credit-card spender vs debit or cash spender",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "bill_calendar_events",
+   "name": "Calendar view with bill deadlines and custom events",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "color_variants",
+   "name": "Multiple color ways sold separately",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "setup_tab",
+   "name": "Central setup tab that auto-populates all months",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "free_bonus_gifts",
+   "name": "Free bonus gifts (art prints, daily and weekly planner, habit tracker)",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "bank_accounts_tracker",
+   "name": "Bank accounts tracker with from/to account transfers",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "planned_vs_actual_annual",
+   "name": "Annual planned vs actual breakdown",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "spender_distribution",
+   "name": "Distribution dashboard (spending by person)",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "flexible_date_range",
+   "name": "Custom 12-month date range start",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "balance_over_time",
+   "name": "Running balance line chart through the month",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "debt_vs_savings_chart",
+   "name": "Debt vs savings comparison chart",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "starting_balance",
+   "name": "Starting balance input",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "person_assignment",
+   "name": "Assign each bill or paycheck to a person",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "extra_debt_payments",
+   "name": "Extra debt payments tracking",
+   "share": 0.033
   },
   {
    "kind": "wish",

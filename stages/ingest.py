@@ -33,7 +33,8 @@ def results():
                 x = by.get(L['listing_id'])
                 if not x:
                     continue
-                L['description'] = x.get('description', '')
+                if x.get('description') or not L.get('description'):
+                    L['description'] = x.get('description', '')
                 if x.get('full_price') is not None:  # full price in the seller's currency: with EverBee's USD price it shows who runs a sale
                     L['full_price'] = x['full_price']; L['currency'] = x.get('currency')
                 local = []
@@ -42,7 +43,8 @@ def results():
                     if os.path.exists(src):
                         dst = os.path.join(store.type_dir(tid), 'photos', L['listing_id'], os.path.basename(src))
                         os.makedirs(os.path.dirname(dst), exist_ok=True); shutil.copy(src, dst); local.append(dst)
-                L['photos'] = local
+                if local or not L.get('photos'):  # a later result with no photos (base run after a retry) must not wipe photos we have
+                    L['photos'] = local
             ev['photo_status'] = 'fetched'
             store.write(evp, ev)
             out.append({"job": name, "type_id": tid, "listings": len(by), "photos": sum(len(L.get('photos', [])) for L in ev['listings'])})

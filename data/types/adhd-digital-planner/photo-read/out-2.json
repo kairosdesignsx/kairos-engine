@@ -1,0 +1,100 @@
+{
+ "listings": [
+  {
+   "listing_id": "4568300822",
+   "features": {"hyperlinked": true, "dated": true, "multi_year": true, "all_in_one": true, "habit_tracker": true, "self_care": true, "budget": true, "meal": true, "goals": true, "time_blocking": true, "stickers": true, "journal": true, "goodnotes": true, "notability": true, "android": true, "landscape": true, "portrait": true, "colorful": true, "bundle": true, "student": true, "work": true, "custom": true, "priority_matrix": true},
+   "new_features": [
+    {"id": "multiple_weekly_layouts", "name": "Several weekly layout versions to choose from", "evidence": "photo 3"},
+    {"id": "monthly_review", "name": "Monthly review and reflection page", "evidence": "photo 4"},
+    {"id": "weekly_review", "name": "Linked weekly review page", "evidence": "photo 3"},
+    {"id": "monday_sunday_start", "name": "Monday and Sunday start versions", "evidence": "photo 1 / description"},
+    {"id": "lifetime_updates", "name": "Free future or lifetime updates", "evidence": "photo 1 / description"},
+    {"id": "water_tracker", "name": "Water tracker on dashboard", "evidence": "photo 1"}
+   ],
+   "page_types": ["dashboard", "daily", "weekly", "monthly", "monthly budget", "monthly overview", "monthly review", "goal planning", "daily journal", "finance tracker", "meal plan", "weekly review", "habit tracker"],
+   "look": {"palette": ["#F4D9D4", "#E58A93", "#2B2321", "#C9A46A", "#FBF4EE"], "style": "warm pink glam", "orientation": "both"},
+   "photo_tactics": ["lifestyle desk scene with iPad mockup", "count badges (stickers, covers, templates, pages)", "icon row of benefits", "cover and theme swatch strip", "layout version comparison", "page close-ups linked to main page", "multi-year badge"]
+  },
+  {
+   "listing_id": "1867253627",
+   "features": {"hyperlinked": true, "dated": true, "multi_year": true, "all_in_one": true, "habit_tracker": true, "self_care": true, "budget": true, "meal": true, "goals": true, "time_blocking": true, "stickers": true, "journal": true, "dark_mode": true, "goodnotes": true, "notability": true, "landscape": true, "minimalist": true, "colorful": true, "student": true, "work": true, "custom": true, "brain_dump": true, "routines": true, "priority_matrix": true},
+   "new_features": [
+    {"id": "calendar_integration", "name": "Links to Google Calendar, Apple Calendar and Reminders", "evidence": "photo 1 / photo 3 / description"},
+    {"id": "cleaning_section", "name": "Dedicated cleaning and chores section", "evidence": "photo 2 / photo 4"},
+    {"id": "color_themes", "name": "Several color themes including rainbow", "evidence": "photo 1 / description"},
+    {"id": "challenges", "name": "30-day challenge pages (eating, declutter, wellness)", "evidence": "photo 1 / photo 4"},
+    {"id": "fitness_section", "name": "Fitness and workout trackers", "evidence": "photo 4"},
+    {"id": "monday_sunday_start", "name": "Monday and Sunday start versions", "evidence": "photo 1"}
+   ],
+   "page_types": ["index", "daily", "weekly", "monthly", "month at a glance", "chore chart", "laundry schedule", "meal planner", "30-day challenge", "progress tracker", "gym planner", "running log", "debt snowball", "no spend tracker", "reading list", "packing list"],
+   "look": {"palette": ["#F7C6D9", "#E3D4F2", "#F6E58D", "#A8D8E8", "#111111"], "style": "rainbow pastel busy", "orientation": "landscape"},
+   "photo_tactics": ["count badges (pages, templates, covers, stickers)", "bestseller seal", "app icon logos for integrations", "annotated tab callouts", "zoom-in circle on feature", "full template list wall", "collage of many pages", "free yearly update badge"]
+  },
+  {
+   "listing_id": "1833235300",
+   "features": {"hyperlinked": true, "undated": true, "dated": true, "multi_year": true, "all_in_one": true, "habit_tracker": true, "self_care": true, "budget": true, "meal": true, "goals": true, "time_blocking": true, "stickers": true, "journal": true, "goodnotes": true, "notability": true, "android": true, "landscape": true, "colorful": true, "bundle": true, "student": true, "work": true, "custom": true, "brain_dump": true, "routines": true, "priority_matrix": true, "quick_start": true},
+   "new_features": [
+    {"id": "calendar_integration", "name": "Links to Google/Apple Calendar, Reminders, Mail and ChatGPT", "evidence": "photo 1 / photo 2 / description"},
+    {"id": "planner_builder", "name": "Online planner builder to pick year, integration and layouts", "evidence": "photo 1 / photo 2 / description"},
+    {"id": "video_tutorials", "name": "YouTube planner tutorials", "evidence": "photo 1 / description"},
+    {"id": "yearly_review", "name": "Yearly goals, yearly planner and yearly review pages", "evidence": "photo 4"},
+    {"id": "multiple_daily_layouts", "name": "Choice of 4 daily and 4 weekly layouts", "evidence": "photo 1 / photo 2"},
+    {"id": "daily_wellness_trackers", "name": "Mood, water, sleep and meals on the daily page", "evidence": "photo 1"},
+    {"id": "tab_colors", "name": "12 tab color options", "evidence": "photo 1 / description"}
+   ],
+   "page_types": ["daily", "weekly", "monthly", "yearly calendar", "yearly plan", "yearly goals", "yearly review", "index", "brain dump", "notes paper", "custom notes"],
+   "look": {"palette": ["#F7C9CF", "#F06A8E", "#F5C26B", "#FFFFFF", "#2B2B2B"], "style": "clean pink gradient", "orientation": "landscape"},
+   "photo_tactics": ["iPad mockup with filled-in example pages", "number one medal badge", "integration app icon strip", "planner builder screenshots", "annotated callouts on index and tabs", "dated plus undated year selector", "version badge (V5)", "sticker count badge"]
+  },
+  {
+   "listing_id": "809907874",
+   "features": {"hyperlinked": true, "dated": true, "undated": true, "multi_year": true, "all_in_one": true, "habit_tracker": true, "self_care": true, "budget": true, "meal": true, "goals": true, "time_blocking": true, "stickers": true, "journal": true, "goodnotes": true, "android": true, "landscape": true, "colorful": true, "bundle": true, "work": true, "custom": true, "routines": true, "priority_matrix": true},
+   "new_features": [
+    {"id": "custom_hex_colors", "name": "Pick any HEX color for planner, paper, tabs and headings", "evidence": "photo 2 / description"},
+    {"id": "image_background_upload", "name": "Upload any image as the planner background", "evidence": "photo 1 / photo 2 / description"},
+    {"id": "custom_start_month", "name": "Choose any start month", "evidence": "photo 1 / photo 2 / description"},
+    {"id": "custom_daily_start_time", "name": "Choose daily start time for hourly schedule", "evidence": "photo 4 / description"},
+    {"id": "app_link_tabs", "name": "Custom side tabs that open apps and websites", "evidence": "photo 3 / description"},
+    {"id": "calendar_integration", "name": "Tap a time slot to create a Google/Apple Calendar event or reminder", "evidence": "photo 4 / description"},
+    {"id": "projects_section", "name": "Projects dashboard linked to project pages", "evidence": "photo 1 / description"},
+    {"id": "refund_guarantee", "name": "30 day money back guarantee", "evidence": "description"}
+   ],
+   "page_types": ["monthly", "weekly", "daily hourly", "yearly calendar", "meal plan", "top priorities", "to do"],
+   "look": {"palette": ["#F9D5E5", "#FFF3B0", "#C8F0D8", "#CDE7FA", "#D9C8F5"], "style": "kawaii pastel rainbow", "orientation": "landscape"},
+   "photo_tactics": ["filled example pages with cute stickers", "color wheel to signal customization", "large number claims (50,000 stickers, 1,000,000 planners)", "app logo row", "zoom-in circle callouts", "real calendar app screenshot showing integration", "variation grid of planner versions"]
+  },
+  {
+   "listing_id": "4519060359",
+   "features": {"hyperlinked": true, "dated": true, "all_in_one": true, "habit_tracker": true, "self_care": true, "budget": true, "meal": true, "goals": true, "time_blocking": true, "stickers": true, "journal": true, "goodnotes": true, "notability": true, "android": true, "portrait": true, "colorful": true, "student": true, "work": true, "custom": true, "brain_dump": true, "routines": true, "priority_matrix": true, "quick_start": true},
+   "new_features": [
+    {"id": "mid_year_start", "name": "Mid-year dating, July to June", "evidence": "photo 1 / description"},
+    {"id": "calendar_integration", "name": "Shortcuts to ChatGPT, Google/Apple Calendar, Reminders, Alarm and Mail", "evidence": "photo 1 / photo 4 / description"},
+    {"id": "apple_shortcut", "name": "Apple Shortcut with install guide", "evidence": "photo 4"},
+    {"id": "tab_colors", "name": "12 tab color options", "evidence": "photo 2 / description"},
+    {"id": "daily_wellness_trackers", "name": "Mood, water, energy, sleep and meals on the daily page", "evidence": "photo 1"},
+    {"id": "custom_notes_sections", "name": "12 custom notes sections and many note paper types", "evidence": "photo 3 / description"},
+    {"id": "quarterly_view", "name": "Quarter pages and yearly review", "evidence": "photo 3"}
+   ],
+   "page_types": ["daily", "weekly", "monthly", "index", "yearly calendar", "yearly goals", "yearly review", "monthly vision board", "monthly review", "notes paper", "custom notes"],
+   "look": {"palette": ["#F9D3D8", "#F06A8E", "#F5C26B", "#FFFFFF", "#1F1F1F"], "style": "clean pink modern", "orientation": "portrait"},
+   "photo_tactics": ["portrait iPad mockup with filled daily page", "cover mockups beside device", "integration app icon strip", "tab color variant grid", "annotated callouts on index", "screenshots of shortcut popups", "feature bar along bottom"]
+  },
+  {
+   "listing_id": "1345063957",
+   "features": {"hyperlinked": true, "dated": true, "multi_year": true, "all_in_one": true, "habit_tracker": true, "self_care": true, "budget": true, "meal": true, "goals": true, "time_blocking": true, "stickers": true, "journal": true, "goodnotes": true, "notability": true, "android": true, "landscape": true, "minimalist": true, "student": true, "work": true, "custom": true, "brain_dump": true, "routines": true, "priority_matrix": true, "quick_start": true},
+   "new_features": [
+    {"id": "planner_builder", "name": "Planner builder to pick device ratio, week start and daily template", "evidence": "photo 2 / description"},
+    {"id": "samsung_ratio", "name": "Samsung tablet screen ratio version", "evidence": "photo 2 / description"},
+    {"id": "calendar_integration", "name": "Optional Google/Apple Calendar and Reminders shortcuts", "evidence": "photo 2 / photo 3 / description"},
+    {"id": "multiple_daily_layouts", "name": "Four daily templates (original, minimalist, journal, detailed)", "evidence": "photo 3"},
+    {"id": "monthly_check_in", "name": "Monthly check-in reflection page", "evidence": "photo 4 / description"},
+    {"id": "canva_stickers", "name": "Editable Canva stickers", "evidence": "photo 2 / description"},
+    {"id": "theme_hex_pens", "name": "HEX values to match pen and highlighter colors", "evidence": "description"},
+    {"id": "template_how_to", "name": "Some templates come with how-to guide and example", "evidence": "description"}
+   ],
+   "page_types": ["dashboard", "year at a glance", "yearly planner", "yearly goals", "monthly calendar", "monthly overview", "monthly check-in", "weekly", "daily", "daily journal"],
+   "look": {"palette": ["#E8E3D9", "#E0C2A8", "#B5B3A8", "#7E8A8A", "#424B57"], "style": "muted elegant neutral", "orientation": "landscape"},
+   "photo_tactics": ["editorial serif typography", "moody shadowed backdrop", "theme swatch circles", "named layout comparison grid", "annotated callouts on navigation", "theme name badge"]
+  }
+ ]
+}

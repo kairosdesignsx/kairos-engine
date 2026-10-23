@@ -1,0 +1,1794 @@
+{
+  "brief": {
+    "check_rounds": [
+      {
+        "found": 14,
+        "high": 0,
+        "low": 13,
+        "main": "Listing says genre and format are written in by you, but the book page has fixed Print / Ebook / Audio choices for format.",
+        "medium": 6,
+        "of": 22,
+        "round": 1
+      },
+      {
+        "found": 21,
+        "high": 0,
+        "low": 10,
+        "main": "Photo 2 is captioned 'Book page, close up' but shows the whole page shrunk on a tablet; field labels are tiny at Etsy zoom and the brief promised the top of the page at reading size (r013).",
+        "medium": 2,
+        "of": 22,
+        "round": 2
+      },
+      {
+        "found": 22,
+        "high": 0,
+        "low": 10,
+        "main": "TBR crop is badly framed: a stray glyph fragment at top left, the Title column is gone and 'AUTHOR' is cut to 'THOR', no top bar or heading, an unlabeled tab stripe on the right. Alt text promises the Author column.",
+        "medium": 3,
+        "of": 22,
+        "round": 3
+      },
+      {
+        "found": 22,
+        "high": 0,
+        "low": 14,
+        "main": "Photo 5's point 'Start here: 4 short steps' is not what the photo shows: the Start here crop shows only steps 1 and 2. This breaks r013 (points describe only what is in frame).",
+        "medium": 1,
+        "of": 22,
+        "round": 4
+      }
+    ],
+    "fixes": [
+      {
+        "complaint": "Couldn't download or open the file",
+        "count": 64,
+        "how": "Ships as one PDF, not a zip, with no sticker files that can fail to import. Listing copy and photo 4 give the download in 3 steps: buy, download from Etsy in a web browser (the Etsy app cannot download digital files), open the PDF in a note app. The Start here page repeats the steps for anyone who opened it on a computer first. The cover title matches the listing title exactly, so buyers know they got the right file."
+      },
+      {
+        "complaint": "Confusing setup or unclear instructions",
+        "count": 36,
+        "how": "The cover's Open journal button lands on Start here: 4 numbered steps (open it in a note app, check the links, add your first book, start in any month), each with a Go there button. The Setup check page is next. Both are the first two cards on Contents."
+      },
+      {
+        "complaint": "Not useful for my needs",
+        "count": 34,
+        "how": "It keeps history and plans forward, the two things a 1-star buyer missed: 100 numbered book pages that stay filled in, a 12-month set of reading pages and a TBR list for what comes next. Undated, so it starts the day you buy it and nothing is wasted. The listing lists every page type with counts so buyers who need only a few pages can see that before buying."
+      },
+      {
+        "complaint": "Hard to use day to day",
+        "count": 33,
+        "how": "One review page layout for every book, so there is one page to learn. The Library is the only starting point a reader needs: write the title on a line, tap its number, fill in the book page, tap Library in the trail to go back. Start here step 3 walks through exactly this."
+      },
+      {
+        "complaint": "Doesn't work on my app or device",
+        "count": 24,
+        "how": "Portrait pages at 768 x 1024 (the iPad's own shape held upright, like a book), and every link is a plain PDF link that all major note apps follow. The listing has a Works with / Not for box: works in Goodnotes, Notability, Samsung Notes, Xodo and Noteshelf on iPad, Android and Windows tablets; not made for phones, not a spreadsheet, not a fillable form. The Setup check page proves it on the buyer's own device in one minute."
+      },
+      {
+        "complaint": "Errors, typos or low quality",
+        "count": 22,
+        "how": "Every printed word on every page type is spell-checked before publishing, and the build checks 0 broken links, no unreachable pages and no overflowing text. All text is vector so it stays crisp at any zoom. Book pages run in number order, 1 to 100, each exactly once."
+      },
+      {
+        "complaint": "Not as described or pictured",
+        "count": 20,
+        "how": "Every listing photo is a screenshot of the built file captioned with the page name; nothing is shown that the file lacks. The description says plainly: digital PDF for note apps, portrait only, undated, no stickers, handwrite or use the app's text tool."
+      },
+      {
+        "complaint": "Not worth the price",
+        "count": 17,
+        "how": "Room for 100 books (the capacity a repeat buyer asked for), each with its own full page, plus 12 monthly pages, a yearly goal page, TBR, quotes and notes. Photo 2 shows the top of a book page close up, at reading size, so buyers can judge the writing space before buying. The listing gives the exact page count."
+      },
+      {
+        "complaint": "Can't edit, type or customize",
+        "count": 17,
+        "how": "Nothing is locked into the reader's choices: the Library has a blank Shelf column for the reader's own genres or shelves, the book page's Genre is write-in and Format has Print, Ebook and Audio to tick plus a blank to write any other format, and months are undated. The Start here tip and listing say how to type instead of handwrite (the app's text tool, any font the app has). The listing says it is not a fillable form, so nobody expects drop-downs."
+      },
+      {
+        "complaint": "Doesn't work (no detail)",
+        "count": 15,
+        "how": "The Setup check page: tap three buttons, and if one does not jump, a four-item fix list right there (pen off, open in a note app, re-import as PDF, then message the shop)."
+      },
+      {
+        "complaint": "Seller didn't help or reply",
+        "count": 15,
+        "how": "Most messages are 'it does not work' questions, so the answers are in the file and the listing: the Setup check fix list, the Start here steps, and a listing FAQ with the top five problems (Etsy app download, which app, links not tapping, how to type, portrait only). How fast the shop replies is shop-level (Darren's Etsy inbox), not something the file can fix, and the file promises no reply times (style rule r007)."
+      },
+      {
+        "complaint": "Missing pages or less than expected",
+        "count": 11,
+        "how": "No promised extras that can go missing: no stickers or covers are advertised, and the listing lists each page type with its count (from the built file, style rule r003). The Contents page shows every section on one screen so nothing is hard to find."
+      }
+    ],
+    "look": {
+      "avoid": [
+        "boho minimalist beige with arches and dried flowers",
+        "classic old-paper texture backgrounds",
+        "rainbow pastel book spines on every page",
+        "dark-mode-only pages",
+        "script fonts and clip-art on every page"
+      ],
+      "direction": "A quiet library, not boho beige and not old paper texture. Warm ivory paper (not white, so it glows less in a dark room) with deep ink-blue text at about 12:1 contrast so it stays sharp in daylight; muted text stays above 4.5:1. One oxblood accent for buttons and star outlines, with a small brass detail on the Contents and guide pages. Month tabs run from dusty clay to soft blue with dark ink labels. Baskerville headings feel bookish; Manrope body text is clean and easy to read at 1.1 scale. Plain ruled decoration (motif 'lines'): no florals, no clip-art book stacks, no script fonts.",
+      "fonts": [
+        "Baskerville",
+        "Manrope"
+      ],
+      "palette": {
+        "accent": "#8C3B3B",
+        "button": "#8C3B3B",
+        "ink": "#22304A",
+        "line": "#DCD2C2",
+        "muted": "#5E6576",
+        "paper": "#FBF7EF",
+        "soft": "#F1EAE0",
+        "warm": "#C29A52"
+      }
+    },
+    "must_haves": [
+      {
+        "evidence": [
+          "feature:journal",
+          "keyword:reading journal",
+          "keyword:book review",
+          "praise:p_complete"
+        ],
+        "what": "Real journal pages for books: a review page per book with title, author, dates, format, star rating, thoughts, a favorite quote and a one-line verdict, plus quote and notes pages."
+      },
+      {
+        "evidence": [
+          "feature:goodnotes",
+          "feature:notability",
+          "feature:android",
+          "keyword:goodnotes journal",
+          "praise:p_device"
+        ],
+        "what": "One PDF that works in Goodnotes (named first in the title and listing), Notability, Samsung Notes, Xodo and Noteshelf on iPad, Android and Windows tablets."
+      },
+      {
+        "evidence": [
+          "keyword:reading tracker",
+          "keyword:book tracker",
+          "keyword:reading log",
+          "keyword:reading list",
+          "praise:p_fits_needs"
+        ],
+        "what": "The tracking set reading buyers search for: a book log (the Library), a to-be-read list, monthly reading pages and a yearly reading goal page."
+      },
+      {
+        "evidence": [
+          "praise:p_nav",
+          "feature:hyperlinked",
+          "complaint:c_nav"
+        ],
+        "what": "Fully hyperlinked: Contents page, month tabs on every page, a top bar (Home, Library, TBR, Quotes), and previous and next arrows on every book page."
+      },
+      {
+        "evidence": [
+          "praise:p_look",
+          "praise:p_quality"
+        ],
+        "what": "A finished, designed look with real typography and consistent spacing; design is the third biggest praise driver."
+      },
+      {
+        "evidence": [
+          "praise:p_guide",
+          "praise:p_easy"
+        ],
+        "what": "Instructions printed inside the file (Start here and Setup check pages), not only in a separate PDF or video."
+      }
+    ],
+    "photos": [
+      {
+        "proves": "praise:p_look, feature:journal",
+        "shows": "Cover and a filled-in-looking Book 1 page side by side in portrait, line: 'A page for every book, linked from your Library'."
+      },
+      {
+        "proves": "feature:journal, complaint:c_value, complaint:c_hard",
+        "shows": "Book page at real size, top half large, with callouts on Title and Author, Format, Stars, Favorite quote and One-line review."
+      },
+      {
+        "proves": "feature:hyperlinked, wish:w_capacity, complaint:c_nav",
+        "shows": "Library page 1 top rows large, an arrow from line 1's number to the Book 1 page, line: 'Tap a number, open the book'."
+      },
+      {
+        "proves": "complaint:c_download, complaint:c_device, wish:w_listing_info, complaint:c_extra_app",
+        "shows": "Plain text panel over a faded Start here page: Works with Goodnotes, Notability, Samsung Notes, Xodo, Noteshelf on iPad, Android and Windows tablets. Download in a web browser, not the Etsy app. Not for phones. Not a fillable form."
+      },
+      {
+        "proves": "complaint:c_setup, complaint:c_broken, feature:quick_start, feature:test_page",
+        "shows": "Start here and Setup check pages, 2 up with captions, line: 'Working in five minutes, and you can check it yourself'."
+      },
+      {
+        "proves": "feature:goals, praise:p_adhd",
+        "shows": "Reading year page (goal and month bars) and the January reading page (books finished, reading days)."
+      },
+      {
+        "proves": "keyword:reading list, praise:p_complete",
+        "shows": "To be read list and Favorite quotes page, 2 up with captions."
+      },
+      {
+        "proves": "complaint:c_misleading, complaint:c_missing, praise:p_as_described",
+        "shows": "Contents page with a plain list of what is inside and page counts from the built file: 100 book pages, 4 Library pages, 12 monthly pages, Reading year, TBR, 2 quote pages, 2 notes pages, Start here, Setup check. Portrait, undated, no stickers."
+      }
+    ],
+    "positioning": "For readers who want one place on their tablet for every book they finish: an undated, portrait reading journal for Goodnotes and Android note apps with a 100-book Library where every line opens that book's own review page and back. Top sellers win on pretty pages, but their buyers' biggest complaints are files that would not open, confusing setup and pages they could not find, so this one wins on working in five minutes, one review page layout to learn, and links that go everywhere.",
+    "price": {
+      "amount": 15,
+      "evidence": [
+        "price:revenue_weighted_median",
+        "price:top10_by_revenue_median",
+        "price:median",
+        "price:p75",
+        "market:best_price_band"
+      ],
+      "launch_sale": {
+        "days": 30,
+        "percent": 25,
+        "sale_price": 11.25
+      },
+      "why": "Buyers pay a sales-weighted $14.63 and the top earners sit at $14.63, inside the $7 to $23 best-earning band; $15 prices it with them for a 100-book journal with a full page per book. While the shop is new, a 25% launch sale for 30 days shows $11.25 with $15 crossed out (style rule r015), instead of a low price."
+    },
+    "revisions": [],
+    "sections": [
+      "Cover",
+      "Contents",
+      "Start here",
+      "Setup check",
+      "Library",
+      "To be read",
+      "Favorite quotes",
+      "Reading year",
+      "Reading months",
+      "Notes"
+    ],
+    "seo": {
+      "tags": [
+        "reading journal",
+        "reading tracker",
+        "reading planner",
+        "book tracker",
+        "reading log",
+        "book review",
+        "digital journal",
+        "book journal",
+        "goodnotes journal",
+        "digital book journal",
+        "book log",
+        "reading list",
+        "book lover gift"
+      ],
+      "title": "Digital Reading Journal for Goodnotes, Book Tracker with 100 Linked Book Review Pages, Reading Log and TBR, iPad and Android, Undated"
+    },
+    "unique": [
+      {
+        "evidence": [
+          "feature:hyperlinked",
+          "wish:w_capacity",
+          "complaint:c_nav",
+          "praise:p_nav"
+        ],
+        "name": "100-book linked Library",
+        "what": "Four Library pages with 25 numbered lines each (title, author, finished, stars, shelf). Tap a line's number to open that book's own review page; the page's trail goes back to the right Library page, and arrows step to the previous and next book.",
+        "why": "Hyperlinked tabs are shown by 3% of top sellers, a repeat buyer wished for room for more books, and hard-to-find pages is a complaint. A library that links both ways makes 100 books as easy to find as 5."
+      },
+      {
+        "evidence": [
+          "feature:quick_start",
+          "feature:test_page",
+          "complaint:c_download",
+          "complaint:c_setup",
+          "complaint:c_hard",
+          "complaint:c_broken"
+        ],
+        "name": "Five-minute start and setup check",
+        "what": "Start here is page 3 and Setup check is page 4: four numbered steps with Go there buttons, then buttons that jump and return, with a fix list if they do not. The cover's Open journal button lands on Start here.",
+        "why": "The biggest complaint cluster is buyers who could not get the file working: could not download or open (64), confusing setup (36), hard to use (33), wrong device or app (24), does not work (15). No top seller shows a quick start or a link test in their titles."
+      },
+      {
+        "evidence": [
+          "feature:goals",
+          "praise:p_adhd",
+          "praise:p_complete"
+        ],
+        "name": "Reading year goal page",
+        "what": "One page: set a goal in books, color one square per finished book in a row for each month (each month name links to its page), tally formats and fiction or nonfiction, and list a top 5 of the year.",
+        "why": "Goal setting is rare in top sellers (3% of titles) yet carries 12% of revenue, and buyers praise trackers that keep them on track. It turns the log into progress you can see."
+      }
+    ],
+    "waived": [
+      {
+        "reason": "No sticker file: the planner line builds one PDF, and sticker imports are a named download complaint ('the stickers did not import'). The listing says there are no stickers, so nobody goes looking for them.",
+        "ref": "feature:stickers"
+      },
+      {
+        "reason": "A PDF cannot look up book details; that needs a spreadsheet or an app. One review asked for it, and the listing says the journal is written by hand or with the app's text tool.",
+        "ref": "wish:w_autofill"
+      },
+      {
+        "reason": "First edition, so there is no older version to move from. Undated pages mean the same file keeps working next year.",
+        "ref": "wish:w_migrate"
+      },
+      {
+        "reason": "Printing on letter and A4 has not been tested on a real printer, so the listing must not claim it. It stays a digital PDF for note apps; printing can be added to the listing once a test print is checked.",
+        "ref": "promise:print_at_home"
+      }
+    ]
+  },
+  "claude_note": "Passed 4 independent check rounds (22/22 promises, no high issues). Left open (medium): photo 5 bullet says 4 short steps but the close-up shows steps 1 and 2. Image clone check pending: competitor photos come from the laptop worker. Printing is not claimed (not tested). Before approving: open the PDF in Goodnotes or your tablet app, tap Library numbers and a few month tabs, and write on one page.",
+  "created": 1792685030125,
+  "engine": {
+    "brief_id": "b-rjd-001",
+    "product_id": "p-rjd-001"
+  },
+  "evidence": {
+    "basis": {
+      "feature_sources": [
+        "titles"
+      ],
+      "listings": 30,
+      "refreshed": "2026-10-22T14:35:17Z",
+      "reviews": 504,
+      "shops": 12
+    },
+    "checks": {
+      "closest": "Reading Journal, Book Tracker, Reading Log, Book Stickers, Hyperlinked, Digital Download, For Goodnotes Notability iPad and Android",
+      "coverage": "22/22",
+      "coverage_ok": true,
+      "img_sim": null,
+      "pass": true,
+      "text_sim": 0.221,
+      "visual": [
+        {
+          "issue": "Photo 5's point 'Start here: 4 short steps' is not what the photo shows: the Start here crop shows only steps 1 and 2. This breaks r013 (points describe only what is in frame).",
+          "severity": "medium",
+          "where": "photo-05-ph5_start.jpg"
+        },
+        {
+          "issue": "Photo 6's point says '12 undated month pages', but only January is in frame.",
+          "severity": "low",
+          "where": "photo-06-ph6_year_month.jpg"
+        },
+        {
+          "issue": "The hero point 'Goodnotes, Notability and Android' mixes two apps with a platform. It leaves out iPad, Samsung Notes, Xodo and Noteshelf.",
+          "severity": "low",
+          "where": "photo-01-ph1_hero.jpg"
+        },
+        {
+          "issue": "The back tablet in the hero shows a Book 1 page that is mostly hidden behind the cover and has no caption.",
+          "severity": "low",
+          "where": "photo-01-ph1_hero.jpg"
+        },
+        {
+          "issue": "Start here cards 2 and 4 are about 40% empty below their Go there buttons, and the bottom of cards 1 and 3 is empty too.",
+          "severity": "low",
+          "where": "start"
+        },
+        {
+          "issue": "Step 1 'Open it in a note app' has a Go there button that only opens Contents. A buyer cannot tell why the button is in that step.",
+          "severity": "low",
+          "where": "start"
+        },
+        {
+          "issue": "The eyebrow 'SETUP CHECK' repeats the title 'Setup check'. The 'Where things are' panel has large gaps between its 4 rows.",
+          "severity": "low",
+          "where": "linktest"
+        },
+        {
+          "issue": "The Notes card sits alone in the third row of Contents, leaving two empty card slots.",
+          "severity": "low",
+          "where": "index"
+        },
+        {
+          "issue": "The cover is about 70% empty paper above and below the title block.",
+          "severity": "low",
+          "where": "cover"
+        },
+        {
+          "issue": "The 'J' in the January and July titles hangs past the left text margin.",
+          "severity": "low",
+          "where": "m01, m07"
+        },
+        {
+          "issue": "An empty band of about 100 px sits below the last TBR row inside the card.",
+          "severity": "low",
+          "where": "tbr"
+        },
+        {
+          "issue": "Quotes page 2 and Notes page 2 have no previous arrow back to page 1, while book and month pages have both arrows.",
+          "severity": "low",
+          "where": "quotes2, notes2 (PDF link scan)"
+        },
+        {
+          "issue": "The Reading year page runs January to December. A buyer starting in October to December cannot track a 12-month year from their start month on one page.",
+          "severity": "low",
+          "where": "year"
+        },
+        {
+          "issue": "The brass detail is on Start here but missing on Setup check, the other guide page.",
+          "severity": "low",
+          "where": "linktest"
+        },
+        {
+          "issue": "The bottom row is sliced by the crop edge in the Library and TBR crops.",
+          "severity": "low",
+          "where": "photo-03-ph3_library.jpg, photo-07-ph7_tbr_quotes.jpg"
+        }
+      ]
+    },
+    "competitors": [
+      {
+        "img": "https://i.etsystatic.com/51455136/r/il/6b6e6c/8553792056/il_570xN.8553792056_e33j.jpg",
+        "mo_revenue": 2743,
+        "price": 19.18,
+        "shop": "HeyMorning",
+        "title": "Book Tracker Reading List Planner Google Sheets Excel Dark Mode Reading Tracker Book Review Spreadsheet Book J",
+        "total_sales": 2239
+      },
+      {
+        "img": "https://i.etsystatic.com/23846357/r/il/344168/5984182019/il_570xN.5984182019_2ztf.jpg",
+        "mo_revenue": 0,
+        "price": 21.37,
+        "shop": "TheFlowPlanner",
+        "title": "Digital Reading Journal, Digital Reading Planner, Digital Journal, Goodnotes Journal, Book Review, Reading Log",
+        "total_sales": 14990
+      },
+      {
+        "img": "https://i.etsystatic.com/38796569/r/il/db9fbf/8557100582/il_570xN.8557100582_fim9.jpg",
+        "mo_revenue": 2439,
+        "price": 14.63,
+        "shop": "Evelibrary",
+        "title": "The Ultimate Book Tracker, Google Sheets, Personal Digital Library, Reading Journal Spreadsheet template, Read",
+        "total_sales": 392
+      },
+      {
+        "img": "https://i.etsystatic.com/25177767/r/il/e45229/5942845875/il_570xN.5942845875_d2yc.jpg",
+        "mo_revenue": 390,
+        "price": 6.5,
+        "shop": "NestForYourPlans",
+        "title": "Digital Reading Journal | Classic Paper Texture Reading Planner for iPad | GoodNotes Reading Tracker | Android",
+        "total_sales": 14342
+      },
+      {
+        "img": "https://i.etsystatic.com/30633662/r/il/212e0f/7294357084/il_570xN.7294357084_ssqw.jpg",
+        "mo_revenue": 1513,
+        "price": 9.97,
+        "shop": "LetsPlanPlanners",
+        "title": "Reading Journal Digital Planner for iPad & Android Gift for Book Lover Reading Log Record Reviews Track Goals ",
+        "total_sales": 5689
+      },
+      {
+        "img": "https://i.etsystatic.com/27653539/r/il/62c97b/7837619367/il_570xN.7837619367_7jgd.jpg",
+        "mo_revenue": 60,
+        "price": 6.6,
+        "shop": "LiveLovePlanners",
+        "title": "Digital Reading Journal for Goodnotes: Book Tracker with Stickers (PDF Download",
+        "total_sales": 12794
+      },
+      {
+        "img": "https://i.etsystatic.com/38856492/r/il/57dde8/7653703696/il_570xN.7653703696_cac5.jpg",
+        "mo_revenue": 674,
+        "price": 14.98,
+        "shop": "ExclusiveDesignLab",
+        "title": "Book Tracker Spreadsheet Reading Tracker Digital Reading Log TBR Journal Template Book Library List Book Lover",
+        "total_sales": 1428
+      },
+      {
+        "img": "https://i.etsystatic.com/8752191/r/il/01161d/5599921180/il_570xN.5599921180_dmw1.jpg",
+        "mo_revenue": 97,
+        "price": 24.23,
+        "shop": "HappyDownloads",
+        "title": "Digital Reading Journal, Digital Reading Planner, Reading Digital Planner, Goodnotes, Reading Tracker, Reading",
+        "total_sales": 11061
+      }
+    ],
+    "complaints": [
+      {
+        "count": 64,
+        "how": "Ships as one PDF, not a zip, with no sticker files that can fail to import. Listing copy and photo 4 give the download in 3 steps: buy, download from Etsy in a web browser (the Etsy app cannot download digital files), open the PDF in a note app. The Start here page repeats the steps for anyone who opened it on a computer first. The cover title matches the listing title exactly, so buyers know they got the right file.",
+        "quote": "wont work only showing download here, download it only showing bookcover nothing else like it shows when you buy ,",
+        "state": "fixed",
+        "theme": "Couldn't download or open the file"
+      },
+      {
+        "count": 36,
+        "how": "The cover's Open journal button lands on Start here: 4 numbered steps (open it in a note app, check the links, add your first book, start in any month), each with a Go there button. The Setup check page is next. Both are the first two cards on Contents.",
+        "quote": "I love this download! I’m still trying to figure out how to use it, but I’m very happy with the purchase!",
+        "state": "fixed",
+        "theme": "Confusing setup or unclear instructions"
+      },
+      {
+        "count": 34,
+        "how": "It keeps history and plans forward, the two things a 1-star buyer missed: 100 numbered book pages that stay filled in, a 12-month set of reading pages and a TBR list for what comes next. Undated, so it starts the day you buy it and nothing is wasted. The listing lists every page type with counts so buyers who need only a few pages can see that before buying.",
+        "quote": "I wish it wasn’t so expensive. I only needed a few pages out of the entire packet and I feel like I wasted my money.",
+        "state": "fixed",
+        "theme": "Not useful for my needs"
+      },
+      {
+        "count": 33,
+        "how": "One review page layout for every book, so there is one page to learn. The Library is the only starting point a reader needs: write the title on a line, tap its number, fill in the book page, tap Library in the trail to go back. Start here step 3 walks through exactly this.",
+        "quote": "Can’t seem to figure out the best way to use it, but that’s a user problem. Nothing wrong with the product itself.",
+        "state": "fixed",
+        "theme": "Hard to use day to day"
+      },
+      {
+        "count": 24,
+        "how": "Portrait pages at 768 x 1024 (the iPad's own shape held upright, like a book), and every link is a plain PDF link that all major note apps follow. The listing has a Works with / Not for box: works in Goodnotes, Notability, Samsung Notes, Xodo and Noteshelf on iPad, Android and Windows tablets; not made for phones, not a spreadsheet, not a fillable form. The Setup check page proves it on the buyer's own device in one minute.",
+        "quote": "Parts of the spreadsheet doesn’t function properly once you export to an excel sheet.",
+        "state": "fixed",
+        "theme": "Doesn't work on my app or device"
+      },
+      {
+        "count": 22,
+        "how": "Every printed word on every page type is spell-checked before publishing, and the build checks 0 broken links, no unreachable pages and no overflowing text. All text is vector so it stays crisp at any zoom. Book pages run in number order, 1 to 100, each exactly once.",
+        "quote": "Download very glitchy. The links don’t work and keeps deleting itself",
+        "state": "fixed",
+        "theme": "Errors, typos or low quality"
+      },
+      {
+        "count": 20,
+        "how": "Every listing photo is a screenshot of the built file captioned with the page name; nothing is shown that the file lacks. The description says plainly: digital PDF for note apps, portrait only, undated, no stickers, handwrite or use the app's text tool.",
+        "quote": "It’s not downloading the reading journal but instead an abstract digital planner",
+        "state": "fixed",
+        "theme": "Not as described or pictured"
+      },
+      {
+        "count": 17,
+        "how": "Room for 100 books (the capacity a repeat buyer asked for), each with its own full page, plus 12 monthly pages, a yearly goal page, TBR, quotes and notes. Photo 2 shows the top of a book page close up, at reading size, so buyers can judge the writing space before buying. The listing gives the exact page count.",
+        "quote": "I wish it wasn’t so expensive. I only needed a few pages out of the entire packet and I feel like I wasted my money.",
+        "state": "fixed",
+        "theme": "Not worth the price"
+      },
+      {
+        "count": 17,
+        "how": "Nothing is locked into the reader's choices: the Library has a blank Shelf column for the reader's own genres or shelves, the book page's Genre is write-in and Format has Print, Ebook and Audio to tick plus a blank to write any other format, and months are undated. The Start here tip and listing say how to type instead of handwrite (the app's text tool, any font the app has). The listing says it is not a fillable form, so nobody expects drop-downs.",
+        "quote": "Hard to navigate and can’t change the font it’s alright but could be better",
+        "state": "fixed",
+        "theme": "Can't edit, type or customize"
+      },
+      {
+        "count": 15,
+        "how": "The Setup check page: tap three buttons, and if one does not jump, a four-item fix list right there (pen off, open in a note app, re-import as PDF, then message the shop).",
+        "quote": "I didnt even use it because it doesn't work as instructed and I cannot firgure it out",
+        "state": "fixed",
+        "theme": "Doesn't work (no detail)"
+      },
+      {
+        "count": 15,
+        "how": "Most messages are 'it does not work' questions, so the answers are in the file and the listing: the Setup check fix list, the Start here steps, and a listing FAQ with the top five problems (Etsy app download, which app, links not tapping, how to type, portrait only). How fast the shop replies is shop-level (Darren's Etsy inbox), not something the file can fix, and the file promises no reply times (style rule r007).",
+        "quote": "I never got access to it and didn't get a response back from the seller.",
+        "state": "fixed",
+        "theme": "Seller didn't help or reply"
+      },
+      {
+        "count": 11,
+        "how": "No promised extras that can go missing: no stickers or covers are advertised, and the listing lists each page type with its count (from the built file, style rule r003). The Contents page shows every section on one screen so nothing is hard to find.",
+        "quote": "They stole from me—the file is empty. I’m asking for the money back, but they aren’t doing anything. Be careful.",
+        "state": "fixed",
+        "theme": "Missing pages or less than expected"
+      }
+    ],
+    "market": {
+      "best_price_band": "$7-23",
+      "competing_listings": 20555,
+      "monthly_searches": 990
+    },
+    "positioning": "For readers who want one place on their tablet for every book they finish: an undated, portrait reading journal for Goodnotes and Android note apps with a 100-book Library where every line opens that book's own review page and back. Top sellers win on pretty pages, but their buyers' biggest complaints are files that would not open, confusing setup and pages they could not find, so this one wins on working in five minutes, one review page layout to learn, and links that go everywhere.",
+    "standard": [
+      {
+        "how": "Real journal pages for books: a review page per book with title, author, dates, format, star rating, thoughts, a favorite quote and a one-line verdict, plus quote and notes pages.",
+        "name": "Journal or notebook pages",
+        "share": 0.967,
+        "state": "included"
+      },
+      {
+        "how": "One PDF that works in Goodnotes (named first in the title and listing), Notability, Samsung Notes, Xodo and Noteshelf on iPad, Android and Windows tablets.",
+        "name": "Says Goodnotes",
+        "share": 0.633,
+        "state": "included"
+      }
+    ],
+    "unique": [
+      {
+        "name": "100-book linked Library",
+        "verified_absent": false,
+        "what": "Four Library pages with 25 numbered lines each (title, author, finished, stars, shelf). Tap a line's number to open that book's own review page; the page's trail goes back to the right Library page, and arrows step to the previous and next book.",
+        "why": "Hyperlinked tabs are shown by 3% of top sellers, a repeat buyer wished for room for more books, and hard-to-find pages is a complaint. A library that links both ways makes 100 books as easy to find as 5."
+      },
+      {
+        "name": "Five-minute start and setup check",
+        "verified_absent": false,
+        "what": "Start here is page 3 and Setup check is page 4: four numbered steps with Go there buttons, then buttons that jump and return, with a fix list if they do not. The cover's Open journal button lands on Start here.",
+        "why": "The biggest complaint cluster is buyers who could not get the file working: could not download or open (64), confusing setup (36), hard to use (33), wrong device or app (24), does not work (15). No top seller shows a quick start or a link test in their titles."
+      },
+      {
+        "name": "Reading year goal page",
+        "verified_absent": false,
+        "what": "One page: set a goal in books, color one square per finished book in a row for each month (each month name links to its page), tally formats and fiction or nonfiction, and list a top 5 of the year.",
+        "why": "Goal setting is rare in top sellers (3% of titles) yet carries 12% of revenue, and buyers praise trackers that keep them on track. It turns the log into progress you can see."
+      }
+    ]
+  },
+  "files": [
+    {
+      "mb": 2.88,
+      "name": "Shelf-Life.pdf",
+      "pages": 126
+    }
+  ],
+  "images": [
+    "p/p-rjd-001/01.jpg",
+    "p/p-rjd-001/02.jpg",
+    "p/p-rjd-001/03.jpg",
+    "p/p-rjd-001/04.jpg",
+    "p/p-rjd-001/05.jpg",
+    "p/p-rjd-001/06.jpg",
+    "p/p-rjd-001/07.jpg",
+    "p/p-rjd-001/08.jpg",
+    "p/p-rjd-001/09.jpg",
+    "p/p-rjd-001/10.jpg",
+    "p/p-rjd-001/11.jpg",
+    "p/p-rjd-001/12.jpg",
+    "p/p-rjd-001/13.jpg",
+    "p/p-rjd-001/14.jpg",
+    "p/p-rjd-001/15.jpg",
+    "p/p-rjd-001/16.jpg",
+    "p/p-rjd-001/17.jpg",
+    "p/p-rjd-001/18.jpg",
+    "p/p-rjd-001/19.jpg"
+  ],
+  "lane": "reading-journal-digital",
+  "launch_sale": {
+    "days": 30,
+    "percent": 25,
+    "sale_price": 11.25
+  },
+  "line": "Digital planners",
+  "listing": {
+    "description": "Shelf Life is an undated digital reading journal for readers who want one place on their tablet for every book they finish. Write a title in the Library, tap its number, and that book's own review page opens. Start in any month, the day you buy it.\n\nWhat's inside: 126 portrait pages in one PDF\n- Cover and a Contents page that shows every section on one screen\n- Start here: 4 numbered steps, each with a Go there button\n- Setup check: tap the buttons to test the links on your own device, with a fix list if one does not jump\n- Library: 4 pages with 25 numbered lines each (title, author, finished, stars and a blank Shelf column you name yourself)\n- 100 book review pages, one per book, numbered 1 to 100, each linked from its Library line\n- To be read list: 26 lines for title, author, where you heard about it and a Got it box\n- 2 favorite quotes pages\n- Reading year: your goal, a row of 10 squares for each month (tally past 10), tallies and your top 5 of the year\n- 12 undated monthly reading pages, each with 8 lines for books finished (more go in that month's Notes)\n- 2 notes pages\n\nGood to know: a digital PDF for note apps. Portrait only and undated. No stickers. It is not a fillable form: write with your pen or type with your app's text tool.\n\nWhat makes it different\n- 100 books, all linked both ways. Tap a number in the Library to open that book's page. Tap Library at the top of the book page to go back to the right Library page, or use the arrows to step to the previous or next book.\n- One page layout to learn. Every book page is the same: title and author, genre, format (tick print, ebook or audio, or write another in the blank), started and finished dates, pages, stars, would I reread, why I picked it up, my thoughts, a favorite quote with its page number, a favorite character and a one-line review.\n- Working in five minutes. The cover's Open journal button takes you to Start here, and the Setup check page shows the links work on your device before you write anything.\n- See your reading year. Set a goal, color one square per finished book in each month's row and tap any month name to open its page.\n- Monthly pages to look back and plan ahead: books finished with stars, 31 reading days to color in, pages or hours read, book of the month and what is up next.\n- Easy to get around. Month tabs on every page, a top bar for Home, Library, TBR and Quotes, and a trail that works as a back button.\n- Yours to set up. The Shelf column and genre are written in by you, and format has a blank for anything that is not print, ebook or audio, so it fits any kind of reader.\n- A quiet library look: warm ivory paper, deep ink blue text and one oxblood accent, with text that stays crisp at any zoom.\n- Help inside the file. The instructions are printed on the pages, not only in a separate guide.\n\nWorks with\n- Goodnotes, Notability, Samsung Notes, Xodo and Noteshelf\n- on iPad, Android tablets and Windows tablets\nYou need a PDF note app like one of these to tap the links and write on the pages.\n\nNot for\n- Phones: the pages are tablet size\n- Files, Photos and other file viewers: they show the pages but do not follow the links\n- Anyone who wants a spreadsheet or a fillable form: this is a PDF you write on by hand or with your app's text tool\n\nLinks not tapping? Turn the pen off to follow a link and back on to write.\n\nHow to start\n1. Download the file from Etsy in a web browser. The Etsy app cannot download digital files.\n2. Open the PDF in your note app and import it as a PDF.\n3. Tap the Setup check buttons, then open the Library, write your first title on line 1 and tap its number.\n\nQuestions buyers ask\n- The Etsy app won't download it. Use a web browser (Safari, Chrome) and go to Purchases. The Etsy app cannot download digital files.\n- Which app do I need? A PDF note app: Goodnotes, Notability, Samsung Notes, Xodo or Noteshelf.\n- The links don't tap. Turn the pen off (read or view mode). The Setup check page tests this in seconds.\n- Can I type in it? Yes, with your app's text tool and any font your app has. It isn't a fillable form, so there are no typing boxes.\n- Can I turn it to landscape? No. It is portrait only, like a book held upright, and every page is laid out for that.\n\nWhat you get\n- Shelf-Life.pdf (2.88 MB, 126 pages, portrait)\nOne PDF, not a zip, so it downloads and imports quickly.\nDigital download. Nothing is shipped.\n\nHelp\nThe Setup check page has a fix list. Still stuck? Send a message through Etsy and name your app and device.",
+    "tags": [
+      "reading journal",
+      "reading tracker",
+      "reading planner",
+      "book tracker",
+      "reading log",
+      "book review",
+      "digital journal",
+      "book journal",
+      "goodnotes journal",
+      "digital book journal",
+      "book log",
+      "reading list",
+      "book lover gift"
+    ],
+    "title": "Shelf Life Digital Reading Journal for Goodnotes, 100 Linked Book Review Pages, Book Tracker, Reading Log and TBR, iPad and Android, Undated"
+  },
+  "price": 15,
+  "research": {
+    "basis": {
+      "feature_sources": [
+        "titles"
+      ],
+      "listings": 30,
+      "negative_reviews": 254,
+      "off_type_dropped": 81,
+      "photos": "pending",
+      "reviews": 504,
+      "reviews_coded": 442
+    },
+    "complaints": [
+      {
+        "count": 64,
+        "quotes": [
+          "wont work only showing download here, download it only showing bookcover nothing else like it shows when you buy ,",
+          "It’s not downloading the reading journal but instead an abstract digital planner",
+          "The stickers did not import for me but the rest of the template is great."
+        ],
+        "theme": "Couldn't download or open the file"
+      },
+      {
+        "count": 36,
+        "quotes": [
+          "I love this download! I’m still trying to figure out how to use it, but I’m very happy with the purchase!",
+          "This was great, I just didn't understand it and my brain couldn't quite process the instructions. Probably just me though.",
+          "once I worked out how it worked I found it easy to use. Now I will have place for all my books I owe on my PC as well. Thanks"
+        ],
+        "theme": "Confusing setup or unclear instructions"
+      },
+      {
+        "count": 34,
+        "quotes": [
+          "I wish it wasn’t so expensive. I only needed a few pages out of the entire packet and I feel like I wasted my money.",
+          "Nothing about the explanation states that this thing is for one week only.  You keep no history; you don't plan forward.",
+          "I thought this tracker would be exactly what I'm looking for, but it's not. And it's too difficult to edit it into what I want"
+        ],
+        "theme": "Not useful for my needs"
+      },
+      {
+        "count": 33,
+        "quotes": [
+          "Can’t seem to figure out the best way to use it, but that’s a user problem. Nothing wrong with the product itself.",
+          "I found it bit difficult to use at first but when I asked my Daughter about it I was able to  use it.",
+          "Not an easy program to use."
+        ],
+        "theme": "Hard to use day to day"
+      },
+      {
+        "count": 24,
+        "quotes": [
+          "Parts of the spreadsheet doesn’t function properly once you export to an excel sheet.",
+          "It didn’t work on the app recommended and others",
+          "Won’t let me import it into good notes"
+        ],
+        "theme": "Doesn't work on my app or device"
+      },
+      {
+        "count": 22,
+        "quotes": [
+          "Download very glitchy. The links don’t work and keeps deleting itself",
+          "Great quality product. Som editing issues but overall good.",
+          "I use this all the time! I love the colors on it! There are a few spelling errors that I had to correct myself, but it wasn't a big deal!"
+        ],
+        "theme": "Errors, typos or low quality"
+      },
+      {
+        "count": 20,
+        "quotes": [
+          "It’s not downloading the reading journal but instead an abstract digital planner",
+          "Did not know this wasn't able to be printed out and seller \"CAN'T \" refund even though she knows I can't use it.",
+          "This template doesn't work with my notes app. I was under the impression that it did. Not a fan at all"
+        ],
+        "theme": "Not as described or pictured"
+      },
+      {
+        "count": 17,
+        "quotes": [
+          "I wish it wasn’t so expensive. I only needed a few pages out of the entire packet and I feel like I wasted my money.",
+          "Doesn't load correctly.....you get what you pay for! Thank goodness I'm only out of a few bucks.",
+          "Too difficult to understand. Money wasted. Went with an easier program to use."
+        ],
+        "theme": "Not worth the price"
+      },
+      {
+        "count": 17,
+        "quotes": [
+          "Hard to navigate and can’t change the font it’s alright but could be better",
+          "File troppo complesso e con poca personalizzazione. Ha anche problemi con le date e il fuso orario. \nSconsiglio l’acquisto.",
+          "I thought this tracker would be exactly what I'm looking for, but it's not. And it's too difficult to edit it into what I want"
+        ],
+        "theme": "Can't edit, type or customize"
+      },
+      {
+        "count": 15,
+        "quotes": [
+          "I didnt even use it because it doesn't work as instructed and I cannot firgure it out",
+          "would never open and work",
+          "Doesn’t work for me sadly"
+        ],
+        "theme": "Doesn't work (no detail)"
+      },
+      {
+        "count": 15,
+        "quotes": [
+          "I never got access to it and didn't get a response back from the seller.",
+          "I am not able to use this. I have asked for assistance,  but no response from seller. I'm disappointed 😞",
+          "I did not receive an email with a pdf of the download like I usually do with etsy digital products. And when I tried to download from the site it didn't work. Contacted seller with no response. N"
+        ],
+        "theme": "Seller didn't help or reply"
+      },
+      {
+        "count": 11,
+        "quotes": [
+          "They stole from me—the file is empty. I’m asking for the money back, but they aren’t doing anything. Be careful.",
+          "Very difficult to find stickers and covers as stated it comes with, purchased a bare planner 👎🏻",
+          "There are no stickers or much with this.. in comparison to other e-journal packages available."
+        ],
+        "theme": "Missing pages or less than expected"
+      },
+      {
+        "count": 9,
+        "quotes": [
+          "The only issue that I have with this is that I needed to edit the file before I could upload it since I don’t have the whole thing on Goodnotes",
+          "I can’t even actually review this the way I want to just bc I can’t open it I open it and I can’t do anything with it so I need an extra app for me to be able to open it and use it please help I’ll change my review after",
+          "I'm sorry to find out that you have to have a paid subscription for Goodnotes, Evernotes, etc. I have their free versions, as I rarely use them, you can write that clearly in the description. I can now not use it as I ha"
+        ],
+        "theme": "Needed an app or subscription that wasn't clear"
+      },
+      {
+        "count": 8,
+        "quotes": [
+          "File is too large to even load!",
+          "Does not work with very large data sets",
+          "Me bloquea el Kobo, no se puede pasar bien de página a página, se queda bloqueado y no me sirve."
+        ],
+        "theme": "Slow, laggy or file too big"
+      },
+      {
+        "count": 8,
+        "quotes": [
+          "Hard to navigate and can’t change the font it’s alright but could be better",
+          "Good product once you learn how to navigate it!",
+          "It’s very difficult to navigate, too many options but not satisfied with the after import navigation."
+        ],
+        "theme": "Hard to navigate or find pages"
+      },
+      {
+        "count": 7,
+        "quotes": [
+          "Download very glitchy. The links don’t work and keeps deleting itself",
+          "My only issue with this is it’s hyperlinked. So if you duplicate a page because you have more than 120 books it messes up the hyperlink with the review pages",
+          "Most of the tabs are not linked"
+        ],
+        "theme": "Links broken or go to the wrong page"
+      },
+      {
+        "count": 6,
+        "quotes": [
+          "The only reason why I rate it 3 stars is only because this is a very high maintenance reading journal that I am not able to keep up with.",
+          "Do Not Purchase!! \nVery confusing, way too many pages and just disorganized. She doesn’t offer refunds either!",
+          "It’s very difficult to navigate, too many options but not satisfied with the after import navigation."
+        ],
+        "theme": "Too much, overwhelming"
+      },
+      {
+        "count": 5,
+        "quotes": [
+          "They stole from me—the file is empty. I’m asking for the money back, but they aren’t doing anything. Be careful.",
+          "Do Not Purchase!! \nVery confusing, way too many pages and just disorganized. She doesn’t offer refunds either!",
+          "Did not know this wasn't able to be printed out and seller \"CAN'T \" refund even though she knows I can't use it."
+        ],
+        "theme": "Refund refused"
+      },
+      {
+        "count": 4,
+        "quotes": [
+          "Not clear that it would be US language",
+          "Nur in Englisch und nicht auf Deutsch nutzbar. Kompliziert in der Anleitung, ausgefülltes Beispiel Video viel zu schnell. Teure 9 Euro für ein Produkt was für den deutschen Markt nicht funktioniert.",
+          "Entsprach nicht meinen Vorstellungen und Wünschen ,komplizierte Installierung und sehr irreführend für deutsche Kunden da beim Kauf alles auf Deutsch die Sprache im Nachgang aber  komplett auf Englisch."
+        ],
+        "theme": "Only in English"
+      },
+      {
+        "count": 4,
+        "quotes": [
+          "File troppo complesso e con poca personalizzazione. Ha anche problemi con le date e il fuso orario. \nSconsiglio l’acquisto."
+        ],
+        "theme": "Wrong or missing dates, calendar errors"
+      },
+      {
+        "count": 4,
+        "quotes": [
+          "Basic stuff really.  Also fiddly to get the download. I can’t even find the download link anymore.",
+          "It doesn’t auto streamline categories or episodes type or anything. Everything is manual. Nothing you cant create in a word doc. I am disappointed by it for sure.",
+          "Very generic and redundant materials"
+        ],
+        "theme": "Too basic or boring"
+      },
+      {
+        "count": 4,
+        "quotes": [
+          "I really liked this planner but I’ve since been made aware some of the elements are plagarized which is unacceptable for me.",
+          "THIS IS A STOLEN PLANNER.  \nDO NOT BUY THIS",
+          "Unfortunately it’s been brought to my attention that this shop is using stolen work as their own. Buyers beware, try “ThissPlanner” and “goodmondayspaper” instead."
+        ],
+        "theme": "Design copied from other creators"
+      },
+      {
+        "count": 4,
+        "quotes": [
+          "Not a good product, and it said it will cause viruses if I download it did not meet my expectations at all.",
+          "poorly thought out, useless. really disappointing. some sections such as adding your credit card numbers and details are even dangerous. i dont advise purchasing this planner."
+        ],
+        "theme": "Spam, privacy or virus worries"
+      },
+      {
+        "count": 3,
+        "quotes": [
+          "This only took me to a freebie link where I'm forced to subscribe to things I don't want.  Completely disappointed."
+        ],
+        "theme": "Pushes paid add-ons or sign-ups"
+      },
+      {
+        "count": 2,
+        "quotes": [
+          "I love the download. Asking for a review and not being able to remove from notifications, is annoying.",
+          "Nothing to say just want this off my notifications"
+        ],
+        "theme": "Nagged for a review"
+      },
+      {
+        "count": 2,
+        "quotes": [
+          "The videos that come with the download are great, it made it easier to understand how to use it. My issues comes from the links. At the very top of the page there are links that are just not nice to look at. It throws th"
+        ],
+        "theme": "Didn't like the look"
+      },
+      {
+        "count": 2,
+        "quotes": [
+          "Hola solo me descarga un pdf, lo abrí con Goodnotes y es cómo importar una foto"
+        ],
+        "theme": "Just a flat PDF, not interactive"
+      }
+    ],
+    "features": [
+      {
+        "name": "Journal or notebook pages",
+        "revenue_share": 0.96,
+        "share": 0.967,
+        "tier": "standard"
+      },
+      {
+        "name": "Says Goodnotes",
+        "revenue_share": 0.288,
+        "share": 0.633,
+        "tier": "standard"
+      },
+      {
+        "name": "Says Notability",
+        "revenue_share": 0.167,
+        "share": 0.167,
+        "tier": "rare"
+      },
+      {
+        "name": "Android or Samsung support",
+        "revenue_share": 0.172,
+        "share": 0.167,
+        "tier": "rare"
+      },
+      {
+        "name": "All-in-one life planner",
+        "revenue_share": 0.301,
+        "share": 0.133,
+        "tier": "rare"
+      },
+      {
+        "name": "Digital stickers included",
+        "revenue_share": 0.005,
+        "share": 0.1,
+        "tier": "rare"
+      },
+      {
+        "name": "Colorful or aesthetic look",
+        "revenue_share": 0.039,
+        "share": 0.067,
+        "tier": "rare"
+      },
+      {
+        "name": "Hyperlinked tabs and dates",
+        "revenue_share": 0.001,
+        "share": 0.033,
+        "tier": "rare"
+      },
+      {
+        "name": "Built for ADHD",
+        "revenue_share": 0.029,
+        "share": 0.033,
+        "tier": "rare"
+      },
+      {
+        "name": "Habit tracker",
+        "revenue_share": 0.04,
+        "share": 0.033,
+        "tier": "rare"
+      },
+      {
+        "name": "Goal setting",
+        "revenue_share": 0.115,
+        "share": 0.033,
+        "tier": "rare"
+      },
+      {
+        "name": "Dark mode",
+        "revenue_share": 0.208,
+        "share": 0.033,
+        "tier": "rare"
+      },
+      {
+        "name": "E-ink tablets (reMarkable, Boox, Kindle Scribe)",
+        "revenue_share": 0.024,
+        "share": 0.033,
+        "tier": "rare"
+      },
+      {
+        "name": "Portrait layout",
+        "revenue_share": 0.003,
+        "share": 0.033,
+        "tier": "rare"
+      },
+      {
+        "name": "Minimalist look",
+        "revenue_share": 0.01,
+        "share": 0.033,
+        "tier": "rare"
+      },
+      {
+        "name": "Undated version",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Dated for the year",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Covers more than one year",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Self-care, mood or wellness pages",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Budget or finance pages",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Meal planning",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Time blocking or hourly schedule",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Landscape layout",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Bundle of several products",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Student or academic",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Work or productivity focus",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Customizable or personalized",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Brain dump pages",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Routine builder",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Dopamine menu",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Priority matrix or top 3",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Quick start or setup guide",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Link test or setup check page",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      }
+    ],
+    "keywords": [
+      {
+        "tag": "reading tracker",
+        "used_by_top": 26
+      },
+      {
+        "tag": "reading journal",
+        "used_by_top": 26
+      },
+      {
+        "tag": "reading planner",
+        "used_by_top": 22
+      },
+      {
+        "tag": "book tracker",
+        "used_by_top": 21
+      },
+      {
+        "tag": "reading log",
+        "used_by_top": 19
+      },
+      {
+        "tag": "book review",
+        "used_by_top": 18
+      },
+      {
+        "tag": "digital journal",
+        "used_by_top": 14
+      },
+      {
+        "tag": "book journal",
+        "used_by_top": 12
+      },
+      {
+        "tag": "digital planner",
+        "used_by_top": 11
+      },
+      {
+        "tag": "digital book tracker",
+        "used_by_top": 10
+      },
+      {
+        "tag": "goodnotes journal",
+        "used_by_top": 10
+      },
+      {
+        "tag": "book journal digital",
+        "used_by_top": 8
+      },
+      {
+        "tag": "book log",
+        "used_by_top": 8
+      },
+      {
+        "tag": "reading list",
+        "used_by_top": 8
+      },
+      {
+        "tag": "book spreadsheet",
+        "used_by_top": 7
+      },
+      {
+        "tag": "book lover gift",
+        "used_by_top": 6
+      },
+      {
+        "tag": "digital reading",
+        "used_by_top": 6
+      },
+      {
+        "tag": "digital book journal",
+        "used_by_top": 6
+      },
+      {
+        "tag": "spreadsheet template",
+        "used_by_top": 5
+      },
+      {
+        "tag": "digital notebook",
+        "used_by_top": 5
+      },
+      {
+        "tag": "book collection",
+        "used_by_top": 4
+      },
+      {
+        "tag": "digital book",
+        "used_by_top": 4
+      },
+      {
+        "tag": "goodnotes reading",
+        "used_by_top": 4
+      },
+      {
+        "tag": "google sheet",
+        "used_by_top": 4
+      }
+    ],
+    "listings": [
+      {
+        "age_months": 10,
+        "mo_revenue": 2743,
+        "price": 19.18,
+        "rank": 1,
+        "reviews": 120,
+        "shop": "HeyMorning",
+        "title": "Book Tracker Reading List Planner Google Sheets Excel Dark Mode Reading Tracker Book Review Spreadsheet Book Journal Gift for Book Lover",
+        "total_sales": 2239,
+        "url": "https://www.etsy.com/listing/4429928067/book-tracker-reading-list-planner-google"
+      },
+      {
+        "age_months": 63,
+        "mo_revenue": 0,
+        "price": 21.37,
+        "rank": 2,
+        "reviews": 1279,
+        "shop": "TheFlowPlanner",
+        "title": "Digital Reading Journal, Digital Reading Planner, Digital Journal, Goodnotes Journal, Book Review, Reading Log, Reading Tracker, Bookshelf",
+        "total_sales": 14990,
+        "url": "https://www.etsy.com/listing/1049154117/digital-reading-journal-digital-reading"
+      },
+      {
+        "age_months": 3,
+        "mo_revenue": 2439,
+        "price": 14.63,
+        "rank": 3,
+        "reviews": 28,
+        "shop": "Evelibrary",
+        "title": "The Ultimate Book Tracker, Google Sheets, Personal Digital Library, Reading Journal Spreadsheet template, Reading List, Book Series Tracker",
+        "total_sales": 392,
+        "url": "https://www.etsy.com/listing/4533582716/the-ultimate-book-tracker-google-sheets"
+      },
+      {
+        "age_months": 30,
+        "mo_revenue": 390,
+        "price": 6.5,
+        "rank": 4,
+        "reviews": 1099,
+        "shop": "NestForYourPlans",
+        "title": "Digital Reading Journal | Classic Paper Texture Reading Planner for iPad | GoodNotes Reading Tracker | Android Reading Journal | Notability",
+        "total_sales": 14342,
+        "url": "https://www.etsy.com/listing/1693089288/digital-reading-journal-classic-paper"
+      },
+      {
+        "age_months": 33,
+        "mo_revenue": 1513,
+        "price": 9.97,
+        "rank": 5,
+        "reviews": 583,
+        "shop": "LetsPlanPlanners",
+        "title": "Reading Journal Digital Planner for iPad & Android Gift for Book Lover Reading Log Record Reviews Track Goals Notability GoodNotes Planner",
+        "total_sales": 5689,
+        "url": "https://www.etsy.com/listing/1669644555/reading-journal-digital-planner-for-ipad"
+      },
+      {
+        "age_months": 49,
+        "mo_revenue": 60,
+        "price": 6.6,
+        "rank": 6,
+        "reviews": 1905,
+        "shop": "LiveLovePlanners",
+        "title": "Digital Reading Journal for Goodnotes: Book Tracker with Stickers (PDF Download",
+        "total_sales": 12794,
+        "url": "https://www.etsy.com/listing/1296487306/digital-reading-journal-for-goodnotes"
+      },
+      {
+        "age_months": 11,
+        "mo_revenue": 674,
+        "price": 14.98,
+        "rank": 7,
+        "reviews": 84,
+        "shop": "ExclusiveDesignLab",
+        "title": "Book Tracker Spreadsheet Reading Tracker Digital Reading Log TBR Journal Template Book Library List Book Lover Planner Review Google Sheets",
+        "total_sales": 1428,
+        "url": "https://www.etsy.com/listing/4413959912/book-tracker-spreadsheet-reading-tracker"
+      },
+      {
+        "age_months": 50,
+        "mo_revenue": 97,
+        "price": 24.23,
+        "rank": 8,
+        "reviews": 1408,
+        "shop": "HappyDownloads",
+        "title": "Digital Reading Journal, Digital Reading Planner, Reading Digital Planner, Goodnotes, Reading Tracker, Reading Log, Book Review, Book Shelf",
+        "total_sales": 11061,
+        "url": "https://www.etsy.com/listing/1293484479/digital-reading-journal-digital-reading"
+      },
+      {
+        "age_months": 9,
+        "mo_revenue": 669,
+        "price": 14.63,
+        "rank": 9,
+        "reviews": 84,
+        "shop": "Evelibrary",
+        "title": "The Ultimate Book Tracker Google Sheets, Personal Digital Library, Reading Journal Spreadsheet, Book Lovers, Collection Log, Reading List",
+        "total_sales": 823,
+        "url": "https://www.etsy.com/listing/4435746402/the-ultimate-book-tracker-google-sheets"
+      },
+      {
+        "age_months": 36,
+        "mo_revenue": 0,
+        "price": 6.55,
+        "rank": 10,
+        "reviews": 1112,
+        "shop": "ThrivingPlanners",
+        "title": "Digital Reading Journal, Digital Reading Planner, Reading Tracker, Digital planner, Book Review, Book Shelf, Reading Log, Goodnotes journal",
+        "total_sales": 10930,
+        "url": "https://www.etsy.com/listing/1201610712/digital-reading-journal-digital-reading"
+      },
+      {
+        "age_months": 42,
+        "mo_revenue": 529,
+        "price": 14.31,
+        "rank": 11,
+        "reviews": 424,
+        "shop": "MyProductiveLifeCo",
+        "title": "Book Tracker Spreadsheet Google Sheets & Excel | Reading List, TBR Log, Book Series Tracker, Digital Reading Planner, Reading Habit Tracker",
+        "total_sales": 4736,
+        "url": "https://www.etsy.com/listing/1454699914/book-tracker-reading-list-spreadsheet"
+      },
+      {
+        "age_months": 43,
+        "mo_revenue": 132,
+        "price": 5.99,
+        "rank": 12,
+        "reviews": 736,
+        "shop": "PlannedSplendor",
+        "title": "Digital Reading Journal: Minimalist Boho Book Review Planner & Journal (PDF) - for GoodNotes, Notability",
+        "total_sales": 8185,
+        "url": "https://www.etsy.com/listing/1418707654/digital-reading-journal-minimalist-boho"
+      },
+      {
+        "age_months": 3,
+        "mo_revenue": 506,
+        "price": 14.63,
+        "rank": 13,
+        "reviews": 5,
+        "shop": "Evelibrary",
+        "title": "The Ultimate Book Tracker, Google Sheets, Personal Digital Library, Reading Journal Spreadsheet template, Reading List, Book Series, Brown",
+        "total_sales": 51,
+        "url": "https://www.etsy.com/listing/4544327550/the-ultimate-book-tracker-google-sheets"
+      },
+      {
+        "age_months": 37,
+        "mo_revenue": 156,
+        "price": 8.66,
+        "rank": 14,
+        "reviews": 871,
+        "shop": "NyxiaJournals",
+        "title": "Digital Reading Journal, Reading Log, Book Tracker, Goodnotes, Notability Journal,  Booktok Review Planner, Reading Planner for iPad",
+        "total_sales": 7840,
+        "url": "https://www.etsy.com/listing/1561628891/digital-reading-journal-reading-log-book"
+      },
+      {
+        "age_months": 10,
+        "mo_revenue": 396,
+        "price": 11.32,
+        "rank": 15,
+        "reviews": 20,
+        "shop": "NyxiaJournals",
+        "title": "Digital Reading Journal for Goodnotes, Book Tracker, Booktok Review Planner, Reading Journal Template,  Reading Journal Planner for IPad",
+        "total_sales": 162,
+        "url": "https://www.etsy.com/listing/4421819708/digital-reading-journal-20-book-tracker"
+      },
+      {
+        "age_months": 58,
+        "mo_revenue": 7,
+        "price": 7.26,
+        "rank": 16,
+        "reviews": 1113,
+        "shop": "LiveLovePlanners",
+        "title": "Reading Journal, Book Tracker, Reading Log, Book Stickers, Hyperlinked, Digital Download, For Goodnotes Notability iPad and Android",
+        "total_sales": 6668,
+        "url": "https://www.etsy.com/listing/1150317293/reading-journal-book-tracker-reading-log"
+      },
+      {
+        "age_months": 1,
+        "mo_revenue": 383,
+        "price": 17.39,
+        "rank": 17,
+        "reviews": 1,
+        "shop": "EverydayToolLab",
+        "title": "Book Tracker App, Reading Tracker, Digital Reading Journal, Personal Library, Goodreads Import, Series Tracker, Reading Log",
+        "total_sales": 22,
+        "url": "https://www.etsy.com/listing/4571284282/book-tracker-app-reading-tracker-digital"
+      },
+      {
+        "age_months": 47,
+        "mo_revenue": 0,
+        "price": 8.02,
+        "rank": 18,
+        "reviews": 414,
+        "shop": "Ursolplanners",
+        "title": "Digital Reading Journal: Book Tracker, Reviews, and Stickers (GoodNotes)",
+        "total_sales": 5382,
+        "url": "https://www.etsy.com/listing/1322368147/digital-reading-journal-book-tracker"
+      },
+      {
+        "age_months": 4,
+        "mo_revenue": 376,
+        "price": 11.74,
+        "rank": 19,
+        "reviews": 9,
+        "shop": "EriSavvyDesigns",
+        "title": "Book Tracker Google Sheets, Aesthetic Reading Log, Digital Reading Journal Spreadsheet, Gamified ADHD Library Dashboard (Essential Edition)",
+        "total_sales": 81,
+        "url": "https://www.etsy.com/listing/4514954616/reading-tracker-google-sheets-template"
+      },
+      {
+        "age_months": 34,
+        "mo_revenue": 40,
+        "price": 7.84,
+        "rank": 20,
+        "reviews": 527,
+        "shop": "BrighterPlans",
+        "title": "Digital Reading Journal, Digital Book Tracker for GoodNotes, iPad & Android Digital Reading Log, Digital Bookshelf, Portrait Reading Planner",
+        "total_sales": 5317,
+        "url": "https://www.etsy.com/listing/1628944004/digital-reading-journal-digital-book"
+      },
+      {
+        "age_months": 32,
+        "mo_revenue": 365,
+        "price": 14.04,
+        "rank": 21,
+        "reviews": 107,
+        "shop": "CuratedDay",
+        "title": "Digital Reading Journal for Romance Readers | Smut Reader | Spicy Books | Digital Reading Planner for Goodnotes | Digital Reading Tracker",
+        "total_sales": 1391,
+        "url": "https://www.etsy.com/listing/1656503818/digital-reading-journal-for-romance"
+      },
+      {
+        "age_months": 25,
+        "mo_revenue": 311,
+        "price": 7.78,
+        "rank": 22,
+        "reviews": 506,
+        "shop": "GirlGotGoals",
+        "title": "Digital Reading Journal, Book Log, Review Tracker & Bookshelf for GoodNotes, iPad, Android, Kindle Scribe",
+        "total_sales": 5013,
+        "url": "https://www.etsy.com/listing/1787943205/digital-reading-journal-book-log-review"
+      },
+      {
+        "age_months": 11,
+        "mo_revenue": 364,
+        "price": 19.18,
+        "rank": 23,
+        "reviews": 44,
+        "shop": "HeyMorning",
+        "title": "Book Tracker Reading Journal Google Sheets Excel Book Planner Digital Library Book Review Template Book Lover Gift Reading List Organizer",
+        "total_sales": 830,
+        "url": "https://www.etsy.com/listing/4404461384/book-tracker-reading-journal-google"
+      },
+      {
+        "age_months": 8,
+        "mo_revenue": 346,
+        "price": 13.5,
+        "rank": 24,
+        "reviews": 44,
+        "shop": "Evelibrary",
+        "title": "The Ultimate Book Tracker, Google Sheets, Personal Digital Library, Reading Journal Spreadsheet template, Book Lovers, Reading List, Fantasy",
+        "total_sales": 461,
+        "url": "https://www.etsy.com/listing/4461304068/the-ultimate-book-tracker-google-sheets"
+      },
+      {
+        "age_months": 48,
+        "mo_revenue": 0,
+        "price": 17.4,
+        "rank": 25,
+        "reviews": 597,
+        "shop": "Blackroseplanners",
+        "title": "Digital Reading Planner, Digital Reading Journal, Reading Ipad Planner, Goodnotes, Tracker, Log, Book Review, Bookshelf, Book Board, list",
+        "total_sales": 3604,
+        "url": "https://www.etsy.com/listing/1313455608/digital-reading-planner-digital-reading"
+      },
+      {
+        "age_months": 4,
+        "mo_revenue": 342,
+        "price": 19,
+        "rank": 26,
+        "reviews": 10,
+        "shop": "EverydayApps",
+        "title": "Book Tracker App, Reading Tracker App, Digital Reading Journal, Personal Library, Goodreads Import, Reading Challenge",
+        "total_sales": 59,
+        "url": "https://www.etsy.com/listing/4519043253/book-tracker-app-reading-tracker-app"
+      },
+      {
+        "age_months": 55,
+        "mo_revenue": 0,
+        "price": 16.03,
+        "rank": 27,
+        "reviews": 268,
+        "shop": "TheFlowPlanner",
+        "title": "Digital Reading Journal, Digital Reading Planner, Digital planner, Goodnotes Journal, Book Review, Book Shelf, Reading Log, Reading Tracker",
+        "total_sales": 3140,
+        "url": "https://www.etsy.com/listing/1205893991/digital-reading-journal-digital-reading"
+      },
+      {
+        "age_months": 30,
+        "mo_revenue": 315,
+        "price": 5.14,
+        "rank": 28,
+        "reviews": 47,
+        "shop": "MarvelsByMuse",
+        "title": "Digital Reading Journal | Reading Log, Book Review, Reading Planner | GoodNotes Journal, Digital Journal, iPad Journal",
+        "total_sales": 525,
+        "url": "https://www.etsy.com/listing/1719695229/digital-reading-journal-reading-log-book"
+      },
+      {
+        "age_months": 51,
+        "mo_revenue": 0,
+        "price": 3.99,
+        "rank": 29,
+        "reviews": 263,
+        "shop": "Manifestable",
+        "title": "Reading Journal | Digital Journal | Reading Planner | Book Tracker | Reading Tracker | Digital Notebook | Reading Log | GoodNotes Journal",
+        "total_sales": 3100,
+        "url": "https://www.etsy.com/listing/1274214731/reading-journal-digital-journal-reading"
+      },
+      {
+        "age_months": 37,
+        "mo_revenue": 7,
+        "price": 3.36,
+        "rank": 30,
+        "reviews": 523,
+        "shop": "Selfset",
+        "title": "Digital Reading Journal, Book Review & Library Tracker for Goodnotes, Digital Reading Log, Digital Bookshelf, Reading Planner for iPad",
+        "total_sales": 3055,
+        "url": "https://www.etsy.com/listing/1556161498/digital-reading-journal-book-review"
+      }
+    ],
+    "market": {
+      "best_price_band": "$7-23",
+      "competing_listings": 20555,
+      "monthly_searches": 990,
+      "new_sellers_in_top_pct": 40,
+      "opportunity_score": 39,
+      "summary": "Too niche. ~990 monthly searches, competition crowded (20,555 listings), and 40% of top sellers are under 6 months old. Top seller earns ~$4,260/mo; the best-earning price band is $7–23.",
+      "top_seller_revenue": 4260
+    },
+    "praise": [
+      {
+        "count": 57,
+        "quotes": [
+          "Super easy to use and has plenty of space to write in, has everything I could need for a reading journal",
+          "once I worked out how it worked I found it easy to use. Now I will have place for all my books I owe on my PC as well. Thanks",
+          "I'm new to digital journaling and this has been a learning experience but this file is easily understood and I enjoy the many pages to enjoy and build on."
+        ],
+        "theme": "Easy to set up and use"
+      },
+      {
+        "count": 49,
+        "quotes": [
+          "I’m still learning how to use the effectively, but it looks like it will be very helpful once I master it.",
+          "I love it !!!! , just what i needed ! super well made !!!  \r\n100% recommend.",
+          "Love all the detail, exactly what I was looking for."
+        ],
+        "theme": "Useful, fits my needs"
+      },
+      {
+        "count": 44,
+        "quotes": [
+          "This is my 3rd purchase from this seller. I love the design, it's fun and vibrant without being overwhelming. The quality is great. The instructions are clear and simple to follow.",
+          "Très mauvais pour Android , peu importe le programme qu'on a pour annoté sa ne fonctionne pas super bien . C'est dommage parce que les pages sont belles et ont l'air très intéressant",
+          "Very pretty layout love it"
+        ],
+        "theme": "Beautiful design"
+      },
+      {
+        "count": 22,
+        "quotes": [
+          "This planner is wonderfully put together and incredibly easy to navigate. Would definitely recommend!",
+          "I love it !!!! , just what i needed ! super well made !!!  \r\n100% recommend.",
+          "The stickers did not import for me but the rest of the template is great."
+        ],
+        "theme": "High quality"
+      },
+      {
+        "count": 20,
+        "quotes": [
+          "Super easy to use and has plenty of space to write in, has everything I could need for a reading journal",
+          "I am obsessed with this tracker. It helps so much to be able to keep everything in one place.",
+          "Great digital reading planner that had plenty of pages to go through!"
+        ],
+        "theme": "Has everything I need"
+      },
+      {
+        "count": 18,
+        "quotes": [
+          "Wonderful customer service and this tracker is so amazing and helpful.",
+          "Exactly what I needed!  Love the immediate download, and customer service was super responsive to questions!!  Thanks!",
+          "they reply really fast in case something happen, easy to work with and update. thank you so much."
+        ],
+        "theme": "Seller was helpful"
+      },
+      {
+        "count": 13,
+        "quotes": [
+          "The quality is AMAZING!!! I just wish it held more books. But totally keeping my eye on this store because when she makes one for more books I’m buying it!!!",
+          "This is my 3rd purchase from this seller. I love the design, it's fun and vibrant without being overwhelming. The quality is great. The instructions are clear and simple to follow.",
+          "I can always count on happy downloads to deliver. Great digital planning items."
+        ],
+        "theme": "Repeat buyer"
+      },
+      {
+        "count": 12,
+        "quotes": [
+          "it took sometime to get it to work but when I did it was as good as advertised",
+          "ita exactly as advertised",
+          "The product is exactly as described. No shipping needed as it’s a virtual product. Super helpful and exactly what I was looking for (:"
+        ],
+        "theme": "Exactly as described"
+      },
+      {
+        "count": 8,
+        "quotes": [
+          "I am obsessed with this tracker. It helps so much to be able to keep everything in one place.",
+          "Easy to understand. I like the colors and I’m excited to use this to keep me on track.",
+          "So many pages and the design is so simple you can actually decorate it as you like while printed ❤️ perfect to keep everything organized."
+        ],
+        "theme": "Helps me stay on track"
+      },
+      {
+        "count": 5,
+        "quotes": [
+          "So many pages and the design is so simple you can actually decorate it as you like while printed ❤️ perfect to keep everything organized.",
+          "A great journal that one can customise as one wishes.",
+          "very easy to use and edit!"
+        ],
+        "theme": "Flexible or customizable"
+      },
+      {
+        "count": 5,
+        "quotes": [
+          "This planner is wonderfully put together and incredibly easy to navigate. Would definitely recommend!",
+          "Everything is well put together including all hyperlinks",
+          "Planner is easy to navigate and love the aesthetic!"
+        ],
+        "theme": "Links work, easy to navigate"
+      },
+      {
+        "count": 4,
+        "quotes": [
+          "It even works on my Kobo ereader!",
+          "This was good for an iPad ."
+        ],
+        "theme": "Works on my device"
+      },
+      {
+        "count": 4,
+        "quotes": [
+          "Perfect! Easy to navigate, great price, just what I was looking for!",
+          "Great product and value. I am very pleased.",
+          "Makkelijk in gebruik en zeker de moeite"
+        ],
+        "theme": "Great value"
+      },
+      {
+        "count": 3,
+        "quotes": [
+          "This is my 3rd purchase from this seller. I love the design, it's fun and vibrant without being overwhelming. The quality is great. The instructions are clear and simple to follow.",
+          "I am new to rights planning,  and I'm excited to be using this Planner! Love all of her tutorial videos.",
+          "The videos that come with the download are great, it made it easier to understand how to use it. My issues comes from the links. At the very top of the page there are links that are just not nice to look at. It throws th"
+        ],
+        "theme": "Clear instructions or tutorials"
+      },
+      {
+        "count": 3,
+        "quotes": [
+          "Love it use it all the time",
+          "I use this all the time! I love the colors on it! There are a few spelling errors that I had to correct myself, but it wasn't a big deal!",
+          "I use this every single day to help me stay organized at work- I’m a nurse and I have to make notes constantly! All my coworkers see me using it and think it’s so cool- and it is! Thank you so much!"
+        ],
+        "theme": "I use it every day"
+      },
+      {
+        "count": 2,
+        "quotes": [],
+        "theme": "Love the stickers and extras"
+      }
+    ],
+    "price": {
+      "best_band": "$7-23",
+      "median": 12.62,
+      "p25": 7.39,
+      "p75": 15.77,
+      "revenue_weighted_median": 14.63,
+      "top10_by_revenue_median": 14.63
+    },
+    "query": "reading journal digital",
+    "refreshed": "2026-10-22T14:35:17Z",
+    "shops": [
+      {
+        "rating": 4.78,
+        "reviews": 3400,
+        "shop": "HeyMorning"
+      },
+      {
+        "rating": 4.84,
+        "reviews": 4332,
+        "shop": "TheFlowPlanner"
+      },
+      {
+        "rating": 4.79,
+        "reviews": 1539,
+        "shop": "Evelibrary"
+      },
+      {
+        "rating": 4.85,
+        "reviews": 4307,
+        "shop": "NestForYourPlans"
+      },
+      {
+        "rating": 4.85,
+        "reviews": 6005,
+        "shop": "LetsPlanPlanners"
+      },
+      {
+        "rating": 4.78,
+        "reviews": 12433,
+        "shop": "LiveLovePlanners"
+      },
+      {
+        "rating": 4.8,
+        "reviews": 12588,
+        "shop": "ExclusiveDesignLab"
+      },
+      {
+        "rating": 4.87,
+        "reviews": 29379,
+        "shop": "HappyDownloads"
+      },
+      {
+        "rating": 4.72,
+        "reviews": 10591,
+        "shop": "ThrivingPlanners"
+      },
+      {
+        "rating": 4.76,
+        "reviews": 5546,
+        "shop": "MyProductiveLifeCo"
+      },
+      {
+        "rating": 4.84,
+        "reviews": 1556,
+        "shop": "PlannedSplendor"
+      },
+      {
+        "rating": 4.83,
+        "reviews": 1014,
+        "shop": "NyxiaJournals"
+      }
+    ],
+    "wishes": [
+      {
+        "count": 1,
+        "theme": "Listing should say which apps are needed"
+      },
+      {
+        "count": 1,
+        "theme": "Auto-fill book details"
+      },
+      {
+        "count": 1,
+        "theme": "Easy move to a newer version"
+      },
+      {
+        "count": 1,
+        "theme": "Cheaper or smaller option"
+      },
+      {
+        "count": 1,
+        "theme": "Room for more books"
+      },
+      {
+        "count": 1,
+        "theme": "Ready-made fill-in elements"
+      }
+    ]
+  },
+  "status": "queued",
+  "title": "Shelf Life"
+}
