@@ -1,6 +1,6 @@
 {
  "product_id": "p-bpd-001",
- "at": "2026-10-23T15:30:43Z",
+ "at": "2026-10-23T15:36:32Z",
  "tech": [
   {
    "name": "file size",
@@ -63,155 +63,155 @@
    "item": "must:mh_business",
    "kind": "must",
    "found": true,
-   "where": "w01, w03, w27, d0101, d0502, d0831, year, goals, prices, routines, mm01",
-   "note": "Every week page shot has Content to post and Follow up; every day page shot has Calls and emails and Orders to send; Year plan, Price check, Business routines and Money month pages all exist."
+   "where": "w01, w03, w27, hsw01, d0101, d0111, d0502, d0831, goals, prices, routines, mm01",
+   "note": "Every week shot has Content to post and Follow up. Every day shot has Calls and emails and Orders to send. Year plan, Price check, Business routines and Money month pages exist and were screenshotted."
   },
   {
    "item": "must:mh_calendar",
    "kind": "must",
    "found": true,
-   "where": "year, m01, m07, w01, d0101; PDF link check",
-   "note": "Year page, 12 months, 365 day pages, all dates linked (year page targets all 365 days, all 13,269 links resolve, all 481 pages reachable). The file has 53 week pages, not 52: Week 1 is Dec 28 2026 to Jan 3 2027; the listing correctly says 53."
+   "where": "year, m01-m12, w01-w53, d0101-d1231 (page_modules + PDF link graph)",
+   "note": "481 pages: 12 months, 53 weeks, 365 day pages. Every year-page date links to its day (365 links). The link graph reaches all 481 pages from the cover and no link points to a missing destination. The brief said 52 weeks; the build has 53, and the listing says 53."
   },
   {
    "item": "must:mh_apps",
    "kind": "must",
    "found": true,
-   "where": "files/Open-Hours-2027.pdf; listing.description 'Works with'",
-   "note": "One PDF; the listing names Goodnotes, Notability, Noteshelf, Samsung Notes, Xodo and Adobe Acrobat Reader and says no subscription."
+   "where": "listing.description (Works with)",
+   "note": "One PDF. The listing names Goodnotes, Notability, Noteshelf, Samsung Notes, Xodo and Adobe Acrobat Reader and says no subscription is needed. The links are plain internal GoTo links (no JS, no forms, no external URIs). I could not test the file in the apps themselves."
   },
   {
    "item": "must:mh_look",
    "kind": "must",
    "found": true,
-   "where": "all shots; PDF fonts",
-   "note": "Calm, roomy pages. Only Libre Baskerville (Bold, Italic) and Jost are embedded, and there are 0 raster images, so text is vector."
+   "where": "all shots; PDF font list",
+   "note": "Calm ivory pages with clear headings and wide writing room. Embedded fonts are only LibreBaskerville (Bold, Italic) and Jost (Regular, Medium, SemiBold). The PDF has 0 raster images, so everything is vector."
   },
   {
    "item": "must:mh_easy",
    "kind": "must",
    "found": true,
    "where": "start, linktest, index",
-   "note": "Start here has 4 numbered steps, the Setup check has 3 test buttons and a fix list, and Contents has cards for every section plus all 14 months."
+   "note": "Start here has 4 numbered steps, Setup check has 3 test buttons and a fix list, and Contents has 11 section cards plus all 14 months. Week and day layouts are the same in every shot."
   },
   {
    "item": "must:mh_content",
    "kind": "must",
    "found": true,
-   "where": "m01, m07, hs11, w03, content",
-   "note": "Launches and content on month pages, Content to post on week pages, and a Content ideas page (1 of 2; content2 exists in page_modules)."
+   "where": "m01, m07, hs11 (Launches and content); w01/w03/w27/hsw01 (Content to post); content, content2",
+   "note": "Content slots appear on the month and week pages. There are 2 Content ideas pages: content is screenshotted, content2 exists in page_modules and is linked from content."
   },
   {
    "item": "fix:fx_not_useful",
    "kind": "fix",
    "found": true,
-   "where": "mm01, prices, w03; listing.description first lines",
-   "note": "Money month and Price check columns are as promised. The listing opens with who it is for and says 'not a business plan workbook, not a printable and not made to order'."
+   "where": "listing.description lines 1-3; mm01; prices; week shots",
+   "note": "The first lines say who it is for (one-person businesses, makers, Etsy sellers, service providers) and that it is not a business plan workbook, not a printable and not made to order. Money month, Price check, Content to post and Follow up are all present."
   },
   {
    "item": "fix:fx_misleading",
    "kind": "fix",
-   "found": false,
+   "found": true,
    "where": "listing.description; photo-10-ph10_inside.jpg",
-   "note": "The listing counts are correct (481 pages and 13.3 MB match the file; the per-type counts add up to 481 with no double count; dated Oct 26 2026 to Dec 31 2027, Monday start). But ph10 shows a crop of the Jan 11 day page, not the Contents page the brief requires. Contents is only shown small in ph6."
+   "note": "Listing says 481 pages and 13.3 MB. The PDF has 481 pages and is 13,309,452 bytes. Per-type counts match page_modules (53 weeks, 365 days, 14 Money months, 12 habit trackers, 9 head-start weeks). Also stated: one landscape PDF, Oct 26 2026 to Dec 31 2027, Monday start. ph10 shows Contents."
   },
   {
    "item": "fix:fx_download",
    "kind": "fix",
    "found": true,
-   "where": "start step 1; listing FAQ first line; listing 'What you get'",
-   "note": "Single PDF, no zip. Start here step 1 and the first FAQ answer both say to download in a web browser, not the Etsy app. The listing states 13.3 MB."
+   "where": "listing (first FAQ line, What you get); start step 1",
+   "note": "One PDF, no zip. The first FAQ line and Start here step 1 both say to download in a web browser because the Etsy app cannot download files. File size 13.3 MB is stated."
   },
   {
    "item": "fix:fx_basic",
    "kind": "fix",
    "found": false,
-   "where": "mm01, mmhs11, goals, prices, routines, m01h; photo-03, photo-05",
-   "note": "All the business pages exist, but ph3 and ph5 show whole pages shrunk down (ph5 is two pages side by side), not close ups. Habit trackers exist only for the 2027 months; Nov and Dec 2026 have none."
+   "where": "mm01, goals, prices, routines, m01h; photo-05-ph5_plan.jpg",
+   "note": "The pages are all there: Money months for Nov/Dec 2026 and all of 2027, a Year plan with Q1-Q4 ticks, Price check, Routines, 12 habit trackers and content slots. But ph5 is not a close-up as the brief requires: it shows both pages whole and shrunk side by side, so the column headers are tiny. Only ph3 is a close-up."
   },
   {
    "item": "fix:fx_value",
    "kind": "fix",
    "found": true,
-   "where": "listing.description; PDF link check",
-   "note": "481 linked pages, Oct 26 2026 to Dec 31 2027, exact count in the listing. My own check: 0 broken links and every page reachable from the cover."
+   "where": "listing; PDF link graph",
+   "note": "Exact count (481) is in the listing. Over 13,269 internal links, 0 point to a missing destination. All 481 pages can be reached from the cover, and 480 are within 2 taps of Contents."
   },
   {
    "item": "fix:fx_quality",
    "kind": "fix",
    "found": true,
-   "where": "PDF (768x576 pt, 0 images, embedded TrueType); photo-10; listing 'Good to know'",
-   "note": "Vector pages with embedded OFL fonts, sized 1024x768 at 96 dpi. ph10 is a zoomed crop. The listing says the pages are sized for screens, not letter or A4. No link rect sits outside the page."
+   "where": "PDF (768x576 pt = 1024x768 px, 0 images, embedded subset fonts); photo-10-ph10_inside.jpg; listing",
+   "note": "Vector pages with embedded OFL fonts at iPad landscape size. ph10 has a large zoomed crop of the day page that shows the text is sharp. The listing says pages are sized for screens, not letter/A4. The 'Dec 2026' tab on head-start pages runs to the page edge (see visual)."
   },
   {
    "item": "fix:fx_edit",
    "kind": "fix",
    "found": true,
-   "where": "start step 3; goals, prices, d0101; listing FAQ",
-   "note": "Step 3 explains the text box tool. Table rows measure about 30 px at page scale and day lines about 34 px. The listing says there are no fillable fields and it is not a Word or Canva template."
+   "where": "start step 3; listing (Good to know, FAQ); goals/prices/mm01/d0111",
+   "note": "Step 3 says to use the app's text box tool on any line or table row. The listing says it is not a fillable form and not a Word or Canva template. Row height measured from the shots is about 30 px (goals, prices) and about 33 px (money, schedule)."
   },
   {
    "item": "fix:fx_hard",
    "kind": "fix",
    "found": true,
-   "where": "start (Tip), linktest, w01/w03/w27 same layout; photo-07",
-   "note": "The Tip reads 'Each Monday, one week page. Each month end, one Money month.' There are 4 steps, a Setup check, the same week and day layouts all year, and ph7 shows both pages."
+   "where": "start (4 steps + Tip); linktest; photo-07-ph7_start.jpg",
+   "note": "The Tip reads 'Each Monday, one week page. Each month end, one Money month.' Setup check is linked from Start here step 2. The week and day layouts repeat. ph7 shows Start here and Setup check."
   },
   {
    "item": "fix:fx_support",
    "kind": "fix",
    "found": true,
-   "where": "linktest 'Nothing happened?'; start; listing FAQ and Help",
-   "note": "The fix list has 3 real fixes plus 'Still stuck? Message us on Etsy and we will help'. Start here covers download, apps, writing and typing. The FAQ repeats the answers. No reply-time promise."
+   "where": "linktest (Nothing happened?); start; listing FAQ",
+   "note": "The fix list has 3 real fixes (pen off, open in a PDF app, re-import unconverted) plus a 4th line, 'Still stuck? Message us on Etsy and we will help'. No reply-time promise. Start here covers download, apps, writing and typing, and the listing FAQ repeats these answers."
   },
   {
    "item": "fix:fx_nav",
    "kind": "fix",
    "found": true,
-   "where": "all shots; PDF two-tap check",
-   "note": "Top bar and month tabs are on every page except the cover, and every page is within 2 taps of Contents. The trail on week and day pages is Month / Week only (Year appears only in the month and Money trails), and the Contents page itself says 'Month / Week trail'."
+   "where": "all shots; PDF link graph",
+   "note": "The top bar (Home, Year, Goals, Prices, Content, Notes, Money) and the right-edge month tabs are on every shot. Trails: month 'Year / January', week 'January / Week 1', day 'January / Week 3'. Start here maps the top bar. All pages are within 2 taps of Contents (verified). On head-start pages, Nov/Dec 2027 tabs are swapped for Nov/Dec 2026 (see visual)."
   },
   {
    "item": "fix:fx_device",
    "kind": "fix",
    "found": true,
-   "where": "listing 'Works with'; start step 1",
-   "note": "Apps are listed by device (iPad, Android, Chromebook/Windows/Mac), with 'No Microsoft Word needed' and 'No subscription'. Start here step 1 repeats the app list."
+   "where": "listing (Works with); start step 1",
+   "note": "Apps are listed by device (iPad; Android; Chromebook, Windows and Mac). The listing says no Microsoft Word and no subscription are needed. Start step 1 repeats the app list per device."
   },
   {
    "item": "unique:u_money_month",
    "kind": "unique",
    "found": true,
-   "where": "mm01, mmhs11, m01, hs11 (Money month chip)",
-   "note": "14 Money month pages with money in by source and money out by cost type (planned and actual), totals, profit, orders or clients, best seller, what worked and one change. Each is linked from its month page."
+   "where": "mm01, mmhs11; m01/m07/hs11 Money month chip (links to mm01/mm07/mmhs11)",
+   "note": "Has money in by source and money out by cost type, each with Planned and Actual columns, plus totals, profit, orders or clients, best seller, what worked and one change for next month. There are 14 pages. Each month page links to its own Money month."
   },
   {
    "item": "unique:u_start_check",
    "kind": "unique",
    "found": true,
-   "where": "start, linktest, year, hs11, hsw01, hs12",
-   "note": "4 steps covering browser download, app, pen off and where to start for 2026 and 2027 buyers. Setup check buttons work. Head start runs from Mon Oct 26 (9 week pages), and the hs12 page links to the Dec 28 Week 1."
+   "where": "start, linktest, year (Starting in 2026? Head start), hs11, hsw01",
+   "note": "4 steps, and step 4 covers both an Oct-Dec 2026 buyer and a 2027 buyer. Setup check buttons jump to a month, the year and Contents. 2 head-start months and 9 weeks start Mon Oct 26 and lead into w01 (Dec 28)."
   },
   {
    "item": "unique:u_routines",
    "kind": "unique",
    "found": true,
-   "where": "routines, m01h, m01/m07 'Habit tracker' chip",
-   "note": "Daily, weekly, monthly and quarterly checklists include send orders, batch content, pay fees, put tax money aside and review prices. Habit trackers exist for each 2027 month (12), linked from the month page; there are none for Nov and Dec 2026."
+   "where": "routines; m01h; m01/m07 Habit tracker chip",
+   "note": "Routines cover every day, week, month and quarter, including send orders, batch content, pay fees, tax money aside and review prices. Each month has a habit tracker (14 blank rows, 31 days) linked from its month page."
   },
   {
    "item": "unique:u_year_plan",
    "kind": "unique",
    "found": true,
    "where": "goals, prices",
-   "note": "Year plan has Goal, Why it matters, First step and Q1 to Q4 tick boxes on 16 rows. Price check has Product or service, Cost to make, Fees and shipping, Your time, Price and Profit each on 18 rows."
+   "note": "Year plan has 16 rows: Goal, Why it matters, First step and Q1-Q4 tick boxes. Price check has 18 rows: Product or service, Cost to make, Fees and shipping, Your time, Price and Profit each."
   },
   {
    "item": "look",
    "kind": "look",
    "found": true,
-   "where": "all shots; sampled pixels; PDF fonts",
-   "note": "Ivory paper (#FAF7F1, close to white), charcoal ink, a sand #C8B89A bar on Contents, Start here and the cover, taupe habit circles, tabs stepping from sand to taupe, and solid charcoal buttons. Two families only, italic labels, no all-caps or decoration. The first tab samples #D2C5AB, a little lighter than #C8B89A."
+   "where": "all shots; PDF fonts",
+   "note": "Warm ivory paper and charcoal ink. Month tabs step from sand to taupe. Habit circles are taupe. Buttons are solid charcoal. Field labels are italic Baskerville and body text is Jost. No florals, foil or photos. The sand bar is present on the cover, Contents and Start here, but sits flush against the top edge."
   }
  ],
  "clone": {
@@ -231,53 +231,68 @@
  },
  "visual": [
   {
-   "issue": "ph2, ph3 and ph4 are labeled crops but show the whole page shrunk into about 55% of the frame, with large empty bands above and below. The alt text describes partial views ('day boxes for Monday to Thursday', 'the start of the schedule') that do not match what is in frame (r013, r005).",
-   "where": "photo-02-ph2_week.jpg, photo-03-ph3_money.jpg, photo-04-ph4_day.jpg",
+   "issue": "Head-start pages show the right-edge tabs as Jan-Oct (2027) followed by 'Nov 2026' and 'Dec 2026'. The 2026 months sit after October 2027, so the order is wrong. Nov and Dec 2027 tabs are missing from these pages, and the 'Dec 2026' label runs down to the bottom edge of the page.",
+   "where": "hs11, hsw01, mmhs11 (all head_start and mmhs pages)",
    "severity": "medium"
   },
   {
-   "issue": "Two whole pages side by side at about 45% width each. Top bar labels, table headers, the fix list and the Contents 'How the links work' text are tiny and hard to read at Etsy zoom (r013).",
+   "issue": "The top-bar 'Money' button (mapped as 'Month end' on Start here) always opens January 2027 (mm01) from every page. A buyer in November 2026 or July 2027 who taps Money lands on the wrong month and has to use the month page's Money month chip instead.",
+   "where": "top bar, all pages (link target mm01)",
+   "severity": "medium"
+  },
+  {
+   "issue": "ph3 crop stops before the Money out Total row and leaves out the right column. Its points still claim 'totals and profit' and 'Best seller and one change next month', none of which is in frame (r013, r005).",
+   "where": "photo-03-ph3_money.jpg",
+   "severity": "medium"
+  },
+  {
+   "issue": "ph5, ph6, ph7, ph8 and ph9 each show two whole pages shrunk side by side. Column headers, fix-list text, year-calendar dates and the Contents help box are tiny at Etsy zoom, so these break r013 (show the useful part large, not a whole page shrunk). ph5 was also promised as a close-up.",
    "where": "photo-05-ph5_plan.jpg, photo-06-ph6_links.jpg, photo-07-ph7_start.jpg, photo-08-ph8_headstart.jpg, photo-09-ph9_habits.jpg",
    "severity": "medium"
   },
   {
-   "issue": "ph10 is meant to show the Contents page so the buyer sees every section before buying. It shows a day page crop instead, and the 'J' of 'January 11' pokes out past the left edge of the card.",
+   "issue": "ph2 and ph4 show the whole page at about 55% width with a large empty band above it, so the page labels are small.",
+   "where": "photo-02-ph2_week.jpg, photo-04-ph4_day.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "ph10's third bullet sits alone on a line and crowds the 'Contents' caption below it. The 'January 11' crop cuts off the J descender at the card edge.",
    "where": "photo-10-ph10_inside.jpg",
-   "severity": "medium"
-  },
-  {
-   "issue": "The top bar Money button always opens January 2027 (mm01), even from head-start and mid-year pages. A buyer in July or in Nov 2026 lands on the wrong month and has to use the chip row.",
-   "where": "hs11, hsw01, m07, w27 (top bar)",
    "severity": "low"
   },
   {
-   "issue": "On head-start pages the right tabs swap Nov and Dec 2027 for 'Nov 2026' and 'Dec 2026'. Nov and Dec 2027 cannot be reached from the tabs there, and the 'Dec 2026' label runs right to the bottom edge of the page.",
-   "where": "hs11, hsw01, mmhs11",
+   "issue": "The large 'J' heading descender sticks out past the left page margin (about x=62 vs the 78 px margin) on January and July headings.",
+   "where": "m01, m07, mm01, d0101, d0111",
    "severity": "low"
   },
   {
-   "issue": "Dec 28 to 31, 2026 sit in Week 1 under January 2027, with no day pages. r008 says this week belongs to December 2026 because its Thursday is Dec 31. The listing does disclose it.",
-   "where": "w01, m01",
+   "issue": "The Thursday date number on week pages sits against the card's right padding, and '14' looks clipped.",
+   "where": "w03; photo-02-ph2_week.jpg",
    "severity": "low"
   },
   {
-   "issue": "On 5-week months the last week chip ('Week 5', 'Week 31') wraps alone onto a second line under the chip row.",
+   "issue": "A single week chip ('Week 5', 'Week 31') wraps alone onto a second row on month pages.",
    "where": "m01, m07",
    "severity": "low"
   },
   {
-   "issue": "The 'J' descender in January and July headings hangs about 8 px left of the page margin, out of line with everything else on the page.",
-   "where": "m01, m07, d0101, mm01",
-   "severity": "low"
-  },
-  {
-   "issue": "The short sand bar sits flush against the top edge of the page, so it looks like a clipped element rather than a ruled accent.",
+   "issue": "The sand motif bar sits flush against the top edge of the page at top right, so it reads as a clipped stray element.",
    "where": "cover, index, start",
    "severity": "low"
   },
   {
-   "issue": "Head-start months have no habit tracker, while Contents presents Habit trackers as monthly. An Oct to Dec buyer's first months have none.",
-   "where": "hs11, hs12",
+   "issue": "The Setup check eyebrow repeats the title ('Setup check' over 'Setup check').",
+   "where": "linktest",
+   "severity": "low"
+  },
+  {
+   "issue": "There are some empty areas: a band between the month buttons and the help box on Contents, the bottom of the Year plan card, and the lower-left of Setup check (r006).",
+   "where": "index, goals, linktest",
+   "severity": "low"
+  },
+  {
+   "issue": "The head-start week Oct 26 to Nov 1 is filed under 'November 2026' even though its Thursday (Oct 29) is in October (r008). There is no October page, so the impact is minor.",
+   "where": "hsw01",
    "severity": "low"
   }
  ],
