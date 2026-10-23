@@ -67,8 +67,14 @@ Paths below are relative to the repo root (where this file is). Run `./setup.sh`
 2. Publish it to the Review Queue artifact (images as files, product and evidence rows in its database).
 3. Copy data/handoff/<pid>/ to the laptop at Kairos\data\products\<pid>\ with device_commit_files, in the same step.
    Darren reviews the real file there, and an approval must find everything the laptop needs to list it.
+   Then `python3 stages/handoff.py done <pid>` and commit (data/products/<pid>/handoff.json is the delivery record).
+   Laptop not reachable: say so in the report. The built files are lost when this session ends; that's fine,
+   the catch-up below rebuilds them from the saved plan.
 
 ## Stage 8. Feedback, laptop results, stats (start of each night, before Stage 1)
+0. Handoff catch-up (whenever the laptop is reachable, in any session): `python3 stages/handoff.py missing`.
+   For each pid: `python3 stages/handoff.py rebuild <pid>`, copy every listed file to the laptop path it prints
+   with device_commit_files, then `python3 stages/handoff.py done <pid>`. Never mark done before the copy succeeds.
 1. Review Queue rows to files: ArtifactData `list` collection `reviews` and `products` with
    `out_dir` data/feedback/raw. Then `python3 stages/feedback.py process`.
    Approve (owner) -> laptop publish job. Fix -> fix queue for tonight. Reject -> lessons.
