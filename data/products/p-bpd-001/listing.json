@@ -146,26 +146,24 @@
   },
   "ph7_start": {
    "headline": "Works the first time",
-   "points": [],
-   "label": "Inside the file",
-   "steps": [
-    [
-     "Download in a browser",
-     "Buy, then download from Etsy in a web browser. The Etsy app cannot download files."
-    ],
-    [
-     "Open in your app",
-     "Open the PDF in Goodnotes, Notability, Noteshelf, Samsung Notes, Xodo or Acrobat Reader."
-    ],
-    [
-     "Check, then plan",
-     "Tap the Setup check buttons. A fix list is on the page if a link does not jump."
-    ]
+   "points": [
+    "Start here: 4 short steps",
+    "Setup check: tap to test the links",
+    "A fix list if a link does not jump"
    ],
+   "label": "Inside the file",
    "view": "crop",
    "zoom": [
     {
      "page": "start",
+     "x": [
+      0.03,
+      0.945
+     ],
+     "y": 0
+    },
+    {
+     "page": "linktest",
      "x": [
       0.03,
       0.945
@@ -235,7 +233,18 @@
     "Goodnotes, Notability, Noteshelf, Samsung Notes, Xodo",
     "No day pages for Oct to Dec 2026"
    ],
-   "label": "No surprises"
+   "label": "No surprises",
+   "view": "crop",
+   "zoom": [
+    {
+     "page": "d0111",
+     "x": [
+      0.03,
+      0.46
+     ],
+     "y": 0
+    }
+   ]
   }
  },
  "how_steps": [
@@ -254,15 +263,15 @@
  ],
  "alt": {
   "ph1_hero": "The Open Hours 2027 cover beside the week page for January 11 to 17, 2027 on a tablet, in warm ivory with charcoal text and sand accents.",
-  "ph2_week": "The top of the January 11 to 17 week page, large: day boxes for Monday to Thursday and the This week's top 3 and Content to post lists.",
-  "ph3_money": "The top of the January Money month page, large: the money in table and the This month box with money in, money out and profit.",
-  "ph4_day": "The top of the Monday, January 11 day page, large: Today's top 3 and the start of the 8am to 7pm schedule.",
-  "ph5_plan": "The tops of the Year plan page, with goals and quarter tick boxes, and the Price check table with cost, fees, time, price and profit columns.",
-  "ph6_links": "The tops of the Contents page, with a card for each section and a button for each month, and the 2027 year page with every date.",
-  "ph7_start": "The Start here page with its numbered steps, next to three steps for downloading, opening and checking the planner.",
-  "ph8_headstart": "The tops of the November 2026 head start month page and the week page for October 26 to November 1, 2026.",
-  "ph9_habits": "The tops of the Business routines checklist and the January habit tracker.",
-  "ph10_inside": "The Contents page on a tablet next to three facts: 481 pages in one 13.3 MB landscape PDF, the apps it works in, and no day pages for October to December 2026."
+  "ph2_week": "The January 11 to 17 week page: day boxes for Monday to Thursday and the This week's top 3 and Content to post lists.",
+  "ph3_money": "The January Money month page: the money in table and the This month box with money in, money out and profit.",
+  "ph4_day": "The Monday, January 11 day page: Today's top 3 and the start of the 8am to 7pm schedule.",
+  "ph5_plan": "The Year plan page, with goals and quarter tick boxes, and the Price check table with cost, fees, time, price and profit columns.",
+  "ph6_links": "The Contents page, with a card for each section and a button for each month, and the 2027 year page with every date.",
+  "ph7_start": "The Start here page with four numbered steps beside the Setup check page with its test buttons and fix list.",
+  "ph8_headstart": "The November 2026 head start month page and the week page for October 26 to November 1, 2026.",
+  "ph9_habits": "The Business routines checklist and the January habit tracker.",
+  "ph10_inside": "A large close-up of the top left of the January 11 day page, showing the small labels and tick boxes stay sharp, next to three facts: 481 pages in one 13.3 MB landscape PDF, the apps it works in, and no day pages for October to December 2026."
  },
  "launch_sale": {
   "percent": 25,

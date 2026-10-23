@@ -364,7 +364,7 @@ def m_cover(P, sec):
     if sec.get('button'):
         P.noun = button.split()[-1].lower()
     inner = f'''<div style="position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 120px 0 90px;gap:18px">
-      <p class="k" style="font-size:13px">{esc(s.get("kicker", "Digital planner"))}</p><p class="h" style="font-size:{sec.get("size", 92)}px;line-height:.95">{esc(s["title"])}</p>
+      <p class="k" style="font-size:13px">{esc(s.get("kicker", "Digital planner"))}</p><p class="h" style="font-size:{sec.get("size", 92)}px;line-height:1.04">{esc(s["title"])}</p>
       <p style="font-size:20px;color:{th["muted"]};max-width:560px;line-height:1.4">{esc(s.get("subtitle", ""))}</p>
       <div style="display:flex;gap:10px;margin-top:14px"><a href="#{sec.get("start", "index")}" style="padding:10px 22px;border-radius:99px;background:{P.btn};color:{th["paper"]};font:600 13px '{th["body"]}';letter-spacing:.14em;text-transform:uppercase">{esc(button)}</a></div></div>'''
     P.page('cover', motif(th, 'tr', 5, 260) + motif(th, 'bl', 9, 220) + inner + P.rail(), raw=True, style=f'background:{th["paper"] if P.gray else th["soft"]}')  # e-ink: pure white, a tint dithers
@@ -612,6 +612,8 @@ def _week(P, n, m, side_blocks, day_layout, with_days):
             head = f'<a href="#{P.did(d)}" style="display:flex;justify-content:space-between;align-items:baseline"><span class="k">{DOW[d.weekday()]}</span><span class="h" style="font-size:22px">{d.day}</span></a>' if with_days else f'<span class="k">{DOW[d.weekday()]} {d.day}</span>'
         elif d in getattr(P, 'extra_day_anchors', {}):
             head = f'<a href="#{P.extra_day_anchors[d]}" style="display:flex;justify-content:space-between;align-items:baseline"><span class="k">{DOW[d.weekday()]}</span><span class="h" style="font-size:22px">{d.day}</span></a>'
+        elif getattr(P, 'head_start_range', None) and P.head_start_range[0] <= d <= P.head_start_range[1]:
+            head = f'<div style="display:flex;justify-content:space-between;align-items:baseline"><span class="k">{DOW[d.weekday()]}</span><span class="h" style="font-size:22px">{d.day}</span></div>'  # a head-start day: real planner day, not faded
         else:
             head = f'<div style="display:flex;justify-content:space-between;opacity:.4"><span class="k">{DOW[d.weekday()]}</span><span class="h" style="font-size:22px">{d.day}</span></div>'
         cols += f'<div class="box" style="flex:1">{head}<div class="lines"></div></div>'
@@ -703,6 +705,7 @@ def m_head_start(P, sec):
     up = (lambda x: x) if th.get('labels') == 'italic' else str.upper
     rail_labels = {m2: f'{up(MONTHS[m2 - 1][:3])} {y2}' for y2, m2 in months} if mainl else None  # one label, one target
     P.head_start_links = [(f'{MONTHS[m2 - 1]} {y2}', f'{pre}{m2:02d}') for y2, m2 in months]
+    P.head_start_range = (lead_from, last)  # days the planner covers before the main year (Week 1 prints them unfaded)
     done = set()
     for (yy, mm) in months:
         cells = ''.join(f'<span class="d hd">{x}</span>' for x in DOW)
