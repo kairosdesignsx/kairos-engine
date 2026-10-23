@@ -162,9 +162,21 @@ class Book:
         cell.protection = Protection(locked=False)
         cell.fill = self.fill(self.th['soft'])
         cell.font = self.font(11)
-        cell.border = Border(bottom=Side(style='thin', color=hexc(self.th['muted'])))
+        if self.th.get('input_border'):  # boxed inputs: on a tinted sheet a fill alone is too close to the background
+            sd = Side(style='thin', color=hexc(self.th['accent']))
+            cell.border = Border(left=sd, right=sd, top=sd, bottom=sd)
+        else:
+            cell.border = Border(bottom=Side(style='thin', color=hexc(self.th['muted'])))
         if fmt:
             cell.number_format = fmt
+
+    def key_text(self):
+        return 'White boxed cells are yours to fill in.' if self.th.get('input_border') else 'Shaded cells are yours to fill in.'
+
+    def calc_key(self, cell):
+        """The 'Calculated' swatch in the colour key: the plain sheet colour with a thin border so it reads as a swatch."""
+        sd = Side(style='thin', color=hexc(self.th['muted']))
+        cell.border = Border(left=sd, right=sd, top=sd, bottom=sd)
 
     def calc(self, cell, formula, fmt=None, bold=False):
         cell.value = formula
@@ -225,8 +237,8 @@ def m_start(B, sec):
         r += 1
     r += 1
     ws.cell(r, 3, 'What the colors mean').font = B.font(12, True); r += 1
-    a = ws.cell(r, 3, 'Type here'); B.inp(a); ws.cell(r, 4, 'Shaded cells are yours to fill in.').font = B.font(11, color=B.th['muted']); r += 1
-    b = ws.cell(r, 3, 'Calculated'); b.font = B.font(11, True); ws.cell(r, 4, 'Plain cells do the math. They are locked so formulas cannot break.').font = B.font(11, color=B.th['muted']); r += 2
+    a = ws.cell(r, 3, 'Type here'); B.inp(a); ws.cell(r, 4, B.key_text()).font = B.font(11, color=B.th['muted']); r += 1
+    b = ws.cell(r, 3, 'Calculated'); b.font = B.font(11, True); B.calc_key(b); ws.cell(r, 4, 'Plain cells do the math. They are locked so formulas cannot break.').font = B.font(11, color=B.th['muted']); r += 2
     if sec.get('tip'):
         tcell = ws.cell(r, 3, 'Tip'); tcell.font = B.font(12, True)
         tx = ws.cell(r, 4, sec['tip']); tx.font = B.font(11); tx.alignment = Alignment(wrap_text=True); ws.row_dimensions[r].height = 40
@@ -424,9 +436,10 @@ def m_debt(B, sec):
         last = 9 + n
         B.calc(ws.cell(r, 6), f'=IF(C{r}="","",IF($C$6="Snowball",COUNTIFS($C$10:$C${last},"<"&C{r},$C$10:$C${last},"<>")+1,COUNTIFS($D$10:$D${last},">"&D{r},$C$10:$C${last},"<>")+1))', '0')
         B.calc(ws.cell(r, 7), f'=IF(OR(C{r}="",E{r}=""),"",IFERROR(ROUNDUP(NPER(D{r}/12,-E{r},C{r}),0),"never: raise the minimum"))', '0')
-        B.calc(ws.cell(r, 8), f'=IF(OR(C{r}="",E{r}="",NOT(ISNUMBER(G{r}))),"",G{r}*E{r}-C{r})', B.money)
+        # interest = what the payments add up to (NPER, not rounded up: the last payment is a partial one) minus the balance
+        B.calc(ws.cell(r, 8), f'=IF(OR(C{r}="",E{r}="",NOT(ISNUMBER(G{r}))),"",MAX(0,NPER(D{r}/12,-E{r},C{r})*E{r}-C{r}))', B.money)
         B.calc(ws.cell(r, 9), f'=IF(OR(C{r}="",E{r}="",F{r}<>1),"",IFERROR(ROUNDUP(NPER(D{r}/12,-(E{r}+$C$7),C{r}),0),""))', '0')
-        B.calc(ws.cell(r, 10), f'=IF(OR(I{r}="",NOT(ISNUMBER(H{r}))),"",MAX(0,H{r}-(I{r}*(E{r}+$C$7)-C{r})))', B.money)
+        B.calc(ws.cell(r, 10), f'=IF(OR(I{r}="",NOT(ISNUMBER(H{r}))),"",MAX(0,H{r}-(NPER(D{r}/12,-(E{r}+$C$7),C{r})*(E{r}+$C$7)-C{r})))', B.money)
     last = 9 + n
     ws.cell(last + 1, 2, 'Total').font = B.font(11, True)
     B.calc(ws.cell(last + 1, 3), f'=SUM(C10:C{last})', B.money, True); B.calc(ws.cell(last + 1, 5), f'=SUM(E10:E{last})', B.money, True)
@@ -497,8 +510,8 @@ def m_start_check(B, sec):
             r += 1
     r += 1
     ws.cell(r, 3, 'Colour key').font = B.font(12, True); r += 1
-    a = ws.cell(r, 3, 'Type here'); B.inp(a); ws.cell(r, 5, 'Shaded cells are yours to fill in.').font = B.font(10, color=B.th['muted']); r += 1
-    b = ws.cell(r, 3, 'Calculated'); b.font = B.font(11, True); ws.cell(r, 5, 'Plain cells hold formulas.').font = B.font(10, color=B.th['muted']); r += 1
+    a = ws.cell(r, 3, 'Type here'); B.inp(a); ws.cell(r, 5, B.key_text()).font = B.font(10, color=B.th['muted']); r += 1
+    b = ws.cell(r, 3, 'Calculated'); b.font = B.font(11, True); B.calc_key(b); ws.cell(r, 5, 'Plain cells hold formulas.').font = B.font(10, color=B.th['muted']); r += 1
     if sec.get('tip'):
         r += 1
         tl = ws.cell(r, 3, 'Tip'); tl.font = B.font(12, True); tl.alignment = Alignment(vertical='center')

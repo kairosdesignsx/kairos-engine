@@ -2,7 +2,7 @@
  "files": [
   {
    "name": "Clear-Budget.xlsx",
-   "mb": 0.1,
+   "mb": 0.21,
    "tabs": 19
   }
  ],
@@ -191,6 +191,6 @@
  ],
  "product_id": "p-gsb-001",
  "brief_id": "b-gsb-001",
- "built_at": "2026-10-22T08:19:43Z",
+ "built_at": "2026-10-23T14:42:06Z",
  "line": "spreadsheet"
 }

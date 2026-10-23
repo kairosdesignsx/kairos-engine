@@ -5,11 +5,13 @@
   "closest": "Annual & Monthly Budget for Couples Spreadsheet Google Sheets and Excel | Dual Income Planner, Shared Bills, Savings and Debt Tracker",
   "closest_shop": "MyProductiveLifeCo"
  },
- "max_image_sim": null,
+ "max_image_sim": 0.688,
  "image": {
-  "status": "pending",
-  "max": null,
-  "note": "competitor photos not fetched yet (laptop worker)"
+  "status": "checked",
+  "max": 0.688,
+  "ours": "photo-05-month.jpg",
+  "theirs": "1413307252/01.jpg",
+  "compared": 120
  },
  "pass": true
 }

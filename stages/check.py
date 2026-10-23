@@ -64,14 +64,14 @@ def clone(pid):
             except Exception:
                 continue
             for f, h in oh.items():
-                s = 1 - (h - ch) / 64
+                s = 1 - int(h - ch) / 64
                 if s > best[0]:
                     best = (s, f, c)
-        image = {"status": "checked", "max": round(best[0], 3), "ours": best[1], "theirs": os.path.relpath(best[2], comp_dir) if best[2] else None, "compared": len(comp)}
+        image = {"status": "checked", "max": round(float(best[0]), 3), "ours": best[1], "theirs": os.path.relpath(best[2], comp_dir) if best[2] else None, "compared": len(comp)}
     else:
         image = {"status": "pending", "max": None, "note": "competitor photos not fetched yet (laptop worker)"}
     res = {"max_text_sim": text['max'], "text": text, "max_image_sim": image['max'], "image": image,
-           "pass": text['max'] <= CHK['max_text_similarity'] and (image['max'] is None or image['max'] <= CHK['max_image_similarity'])}
+           "pass": bool(text["max"] <= CHK['max_text_similarity'] and (image['max'] is None or image['max'] <= CHK['max_image_similarity']))}
     store.write(os.path.join(d, 'check-clone.json'), res)
     return res
 

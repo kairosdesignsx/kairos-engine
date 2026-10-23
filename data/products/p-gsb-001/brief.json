@@ -26,7 +26,9 @@
     "keyword:monthly budget",
     "keyword:expense tracker",
     "praise:p_automated",
-    "complaint:c_not_useful"
+    "complaint:c_not_useful",
+    "feature:automated",
+    "feature:customizable"
    ]
   },
   {
@@ -75,7 +77,7 @@
   },
   {
    "id": "mh_look",
-   "what": "A finished, consistent look: one font (Arial), one header colour, one input shade, generous column widths and frozen headers.",
+   "what": "A finished, consistent look: one font (Arial), one header colour, one input style (white, boxed), generous column widths and frozen headers.",
    "evidence": [
     "praise:p_look"
    ]
@@ -85,7 +87,7 @@
   {
    "id": "f_hard",
    "complaint": "complaint:c_hard",
-   "how": "One rule across every tab: shaded cells are for typing, plain cells calculate (the colour key is on Start here). Logging is 4 columns with a category dropdown, so there is nothing to learn beyond Setup. January ships with an example month so the buyer sees the math work before typing anything, and the Ready check on Start here says in plain words what is done and what to do next.",
+   "how": "One rule across every tab: white boxed cells are for typing, plain cells calculate (the colour key is on Start here). Logging is 4 columns with a category dropdown, so there is nothing to learn beyond Setup. January ships with an example month so the buyer sees the math work before typing anything, and the Ready check on Start here says in plain words what is done and what to do next.",
    "evidence": [
     "complaint:c_hard",
     "praise:p_easy",
@@ -184,7 +186,7 @@
   {
    "id": "f_formulas",
    "complaint": "complaint:c_formulas",
-   "how": "Every formula cell is locked by sheet protection with no password, so buyers type only in shaded cells and cannot overwrite a formula in Excel. Month summaries pull categories straight from Setup, so renaming a category flows everywhere, and the Ready check flags log entries whose category no longer exists instead of silently dropping them. The build recalculates every tab and fails on any #REF!, #VALUE! or #NAME? error.",
+   "how": "Every formula cell is locked by sheet protection with no password, so buyers type only in white boxed cells and cannot overwrite a formula in Excel. Month summaries pull categories straight from Setup, so renaming a category flows everywhere, and the Ready check flags log entries whose category no longer exists instead of silently dropping them. The build recalculates every tab and fails on any #REF!, #VALUE! or #NAME? error.",
    "evidence": [
     "complaint:c_formulas",
     "feature:protected_formulas",
@@ -229,7 +231,7 @@
   {
    "id": "f_value",
    "complaint": "complaint:c_value",
-   "how": "Priced at $16, under the $18 to $33 band where top earners sit, for a full year of month tabs, a dashboard, paycheck plan, bills, debt and savings in one file with no upsell, survey or second purchase to get the file. Monthly tabs answer the 'expenses sheet is only for the full year' complaint quoted in this cluster.",
+   "how": "Priced at $22, inside the $18 to $33 band where top earners sit (style rule r015), with a 40% launch sale for 30 days. For that: a full year of month tabs, a dashboard, paycheck plan, bills, debt and savings in one file with no upsell, survey or second purchase to get the file. Monthly tabs answer the 'expenses sheet is only for the full year' complaint quoted in this cluster.",
    "evidence": [
     "complaint:c_value",
     "price:top10_by_revenue_median",
@@ -263,7 +265,7 @@
   {
    "id": "u_example_month",
    "name": "Example month you clear in one step",
-   "what": "January ships filled with ten realistic entries against the sample categories, so every summary, warning, progress bar and Dashboard chart shows working numbers on first open. Step 2 and the Ready check show how to clear it with one Delete.",
+   "what": "January ships filled with eleven realistic entries against the sample categories, so every summary, warning, progress bar and Dashboard chart shows working numbers on first open. Step 2 and the Ready check show how to clear it with one Delete.",
    "why": "'Can be hard for a super newbie' and 'I didn't have any experience with Google Sheets so I messed it up' are top quotes; seeing it work before typing is the cheapest teacher. Sample data is not visible in any top seller title.",
    "evidence": [
     "feature:sample_data",
@@ -293,19 +295,37 @@
    "verified_absent": false
   }
  ],
- "waived": [],
+ "waived": [
+  {
+   "ref": "feature:video_tutorial",
+   "reason": "Instructions live inside the workbook (Start here tab, a live Ready check and a note on every tab). The listing says plainly there is no video. Added to the evidence after the photo read on Oct 23; the product was built before."
+  },
+  {
+   "ref": "feature:mobile",
+   "reason": "Set up and tested on a computer (Google Sheets in a browser, Excel). We do not promise phone use we have not tested; the listing says to set it up on a computer."
+  },
+  {
+   "ref": "feature:multi_year",
+   "reason": "One year per copy by design: month tabs are undated and the Year is set in Setup, and a new year starts in a fresh download with Setup categories copied across. The listing explains this."
+  },
+  {
+   "ref": "feature:any_currency",
+   "reason": "Made for one currency, shown in U.S. dollars; the listing tells buyers how to change the number format for another currency (protection has no password)."
+  }
+ ],
  "look": {
-  "direction": "Calm and money-confident: deep ink-navy headers, an evergreen accent for links, progress bars and step numbers, and a pale green input shade on white. No pastels, no clipart, no rainbow category fills: colour only means 'type here', 'header' or 'over budget'. Light paper so it prints and screenshots cleanly; the listing photos sit on the same navy and white, which reads well in a dark room or a bright one.",
+  "direction": "Calm and money-confident: deep ink-navy headers, an evergreen accent for links, progress bars and step numbers, and white input cells boxed with a thin evergreen border on a soft grey (#E2E2E2) sheet, so typing cells stand out. No pastels, no clipart, no rainbow category fills: colour only means 'type here', 'header' or 'over budget'. Light paper so it prints and screenshots cleanly; the listing photos sit on the same navy and white, which reads well in a dark room or a bright one.",
   "theme": {
    "base": "slate",
    "header": "#1F2A44",
    "accent": "#2F6F5E",
-   "soft": "#E3EFE8",
+   "soft": "#FFFFFF",
    "ink": "#1F2A44",
-   "muted": "#5E6B78",
-   "paper": "#FFFFFF",
+   "muted": "#4B5563",
+   "paper": "#E2E2E2",
    "warn": "#C2410C",
-   "font": "Arial"
+   "font": "Arial",
+   "input_border": true
   },
   "avoid": [
    "blush pink and pastel palettes (common across low-price top sellers)",
@@ -439,13 +459,14 @@
    "base": "slate",
    "header": "#1F2A44",
    "accent": "#2F6F5E",
-   "soft": "#E3EFE8",
+   "soft": "#FFFFFF",
    "ink": "#1F2A44",
-   "muted": "#5E6B78",
-   "paper": "#FFFFFF",
+   "muted": "#4B5563",
+   "paper": "#E2E2E2",
    "warn": "#C2410C",
    "font": "Arial",
-   "photo_bg": "navy_white"
+   "photo_bg": "navy_white",
+   "input_border": true
   },
   "categories": [
    {
@@ -561,7 +582,7 @@
      ],
      [
       "Look at January, then clear it",
-      "January holds an example month so you can see the math work. Select the shaded Date to Amount cells in January's log and press Delete. The Ready check below shows Done when it is gone."
+      "January holds an example month so you can see the math work. Select the white Date to Amount cells in January's log and press Delete. The Ready check below shows Done when it is gone."
      ],
      [
       "Fill in Setup once",
@@ -576,7 +597,7 @@
       "See the year by month and where the money went. Bills, Paycheck plan, Debt and Savings are extras: use them when you want them, skip them if you do not."
      ]
     ],
-    "tip": "Shaded cells are for typing. Plain cells hold formulas. In Excel they are locked; to change one use Review > Unprotect Sheet (there is no password). In Google Sheets, if you type over a formula, Edit > Undo or File > Version history brings it back.",
+    "tip": "White boxed cells are for typing. Plain grey cells hold formulas. In Excel they are locked; to change one use Review > Unprotect Sheet (there is no password). In Google Sheets the same cells are protected; to change one use Data > Protect sheets and ranges and remove that tab's protection. Typed over a formula? Edit > Undo, or File > Version history in Google Sheets.",
     "checks": [
      {
       "id": "income",
@@ -708,6 +729,15 @@
    "at": "2026-10-22T19:27:53",
    "by": "Darren",
    "what": "Launch sale 40% (was 25%) as the second arm of discount test exp-001."
+  },
+  {
+   "why": "Review fix (Colynne, Oct 23): background #E2E2E2. Check round 1 found inputs no longer stood out, so input cells are now white with a thin evergreen box, and the colour key shows both swatches. Start here tip adds the Google Sheets way to unprotect."
+  },
+  {
+   "why": "Check round 2: the grey sheet dropped grey instruction text below 4.5:1, so muted text darkened to #4B5563 (about 6:1 on #E2E2E2). Launch sale recorded in listing.json."
+  },
+  {
+   "why": "Check round 3 found the Debt payoff interest overstated (months rounded up times payment). Interest now uses the unrounded NPER, so the last partial payment is counted right (Store card: $96.12 at minimum, $68.45 saved)."
   }
  ]
 }

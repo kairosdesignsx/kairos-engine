@@ -302,7 +302,7 @@
   }
  ],
  "look": {
-  "direction": "A quiet library, not boho beige and not old paper texture. Warm ivory paper (not white, so it glows less in a dark room) with deep ink-blue text at about 12:1 contrast so it stays sharp in daylight; muted text stays above 4.5:1. One oxblood accent for buttons and star outlines, with a small brass detail on the Contents and guide pages. Month tabs run from dusty clay to soft blue with dark ink labels. Baskerville headings feel bookish; Manrope body text is clean and easy to read at 1.1 scale. Plain ruled decoration (motif 'lines'): no florals, no clip-art book stacks, no script fonts.",
+  "direction": "A quiet library, not boho beige and not old paper texture. Warm ivory paper (not white, so it glows less in a dark room) with deep ink-blue text at about 12:1 contrast so it stays sharp in daylight; muted text stays above 4.5:1. One oxblood accent for buttons and star outlines, with a small brass detail on the Contents and guide pages. Month tabs run from dusty clay to soft blue with dark ink labels. Two fonts only: Baskerville for headings and, in italic, for field labels; Manrope for body text, with bold for buttons and tabs. No letter-spaced all-caps labels, so the pages read calm and easy on the eyes. Plain ruled decoration (motif 'lines'): no florals, no clip-art book stacks, no script fonts.",
   "theme": {
    "base": "navy",
    "paper": "#FBF7EF",
@@ -319,7 +319,8 @@
    "display": "Baskerville",
    "body": "Manrope",
    "motif": "lines",
-   "button": "#8C3B3B"
+   "button": "#8C3B3B",
+   "labels": "italic"
   },
   "avoid": [
    "boho minimalist beige with arches and dried flowers",
@@ -465,7 +466,8 @@
    "display": "Baskerville",
    "body": "Manrope",
    "motif": "lines",
-   "button": "#8C3B3B"
+   "button": "#8C3B3B",
+   "labels": "italic"
   },
   "type_scale": 1.1,
   "index_tip": "Tap a card above, a month below, or a month tab on the right. Every book page has a Library link at the top to go back. Follow links with the pen off (read mode); turn the pen on to write.",
@@ -502,7 +504,7 @@
      ],
      [
       "Start in any month",
-      "Pages are undated. Tap this month's tab on the right edge and write the year, then set your goal on the Reading year page.",
+      "Pages are undated. Tap this month's tab and write the year. On Reading year, set a goal for the months you have left; buying in Oct to Dec? Start there now, then begin a fresh copy in January.",
       "year"
      ]
     ],
@@ -613,5 +615,13 @@
  "build_notes": [
   "cover: the spec passes button 'Open journal'; the cover module currently hard-codes 'Open planner'. Read sec.get('button', 'Open planner') so this journal's cover does not call itself a planner (complaint:c_misleading).",
   "Only books, reading_month and reading_year are new. TBR uses table, quotes and notes use lined; the year and calendar modules are deliberately not used."
+ ],
+ "revisions": [
+  {
+   "why": "Review fix (Colynne, Oct 23): two fonts only and hierarchy by bold and italic. Labels moved from letter-spaced Manrope caps to Baskerville italic; pills and calendar heads in Manrope bold, normal case."
+  },
+  {
+   "why": "Check round 1 (fix): remaining letter-spaced capitals (buttons, top-bar map, month tabs, photo captions, footer) set in normal case; Start here step 4 tells a late-year buyer what to do."
+  }
  ]
 }

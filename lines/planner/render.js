@@ -2,7 +2,7 @@
 const { chromium } = require(require('path').join(__dirname, '..', '..', 'node_modules', 'playwright'));
 const [,, html, pdf, shots, anchors, w, h] = process.argv;
 (async () => {
-  const b = await chromium.launch({ executablePath: process.env.CHROMIUM || require('fs').readdirSync('/opt/pw-browsers').filter(d => d.startsWith('chromium_headless_shell')).map(d => '/opt/pw-browsers/' + d + '/chrome-linux/headless_shell')[0], args: ['--no-sandbox'] });
+  const b = await chromium.launch({ executablePath: process.env.CHROMIUM || require(require('path').join(__dirname, '..', '..', 'lib', 'chromium.js'))(), args: ['--no-sandbox'] });
   const p = await b.newPage({ viewport: { width: +(w || 1024), height: +(h || 768) }, deviceScaleFactor: 2 });
   await p.goto('file://' + html, { waitUntil: 'load' }); await p.waitForTimeout(500);
   const over = await p.evaluate(() => {

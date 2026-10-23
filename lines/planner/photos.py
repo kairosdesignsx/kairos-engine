@@ -160,6 +160,7 @@ body{{--b:'{th['body']}';width:2700px;height:2025px;overflow:hidden;position:rel
 .pill{{display:inline-block;font:600 40px '{th['body']}';padding:18px 40px;border-radius:999px;background:{th['ink']};color:{th['paper']}}}
 .pill.o{{background:transparent;color:{th['ink']};border:4px solid {th['ink']}}}
 .pt{{font-size:52px;line-height:1.3;display:flex;gap:22px}} .pt b{{color:{th['accent']}}}
+{f".k{{font:italic 400 50px '{th['display']}',serif;letter-spacing:0;text-transform:none}} [style*='text-transform:uppercase']{{text-transform:none!important;letter-spacing:.01em!important}}" if th.get('labels') == 'italic' else ''}
 </style></head><body>{body}</body></html>"""
 
 

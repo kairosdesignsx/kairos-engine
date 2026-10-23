@@ -72,20 +72,116 @@
   {
    "ref": "feature:google_sheets",
    "theme": "Works in Google Sheets",
-   "share": 0.967,
+   "share": 1.0,
+   "state": "included"
+  },
+  {
+   "ref": "feature:excel",
+   "theme": "Works in Excel",
+   "share": 1.0,
    "state": "included"
   },
   {
    "ref": "feature:monthly",
    "theme": "Monthly budget tabs",
+   "share": 1.0,
+   "state": "included"
+  },
+  {
+   "ref": "feature:dashboard",
+   "theme": "Dashboard with charts",
+   "share": 1.0,
+   "state": "included"
+  },
+  {
+   "ref": "feature:debt",
+   "theme": "Debt payoff tracker or snowball calculator",
+   "share": 1.0,
+   "state": "included"
+  },
+  {
+   "ref": "feature:automated",
+   "theme": "Automated, does the math",
+   "share": 1.0,
+   "state": "included"
+  },
+  {
+   "ref": "feature:customizable",
+   "theme": "Customizable categories",
+   "share": 1.0,
+   "state": "included"
+  },
+  {
+   "ref": "feature:savings",
+   "theme": "Savings goals or sinking funds",
+   "share": 0.967,
+   "state": "included"
+  },
+  {
+   "ref": "feature:expense",
+   "theme": "Expense or spending tracker",
+   "share": 0.967,
+   "state": "included"
+  },
+  {
+   "ref": "feature:bills",
+   "theme": "Bill tracker or bill calendar",
+   "share": 0.933,
+   "state": "included"
+  },
+  {
+   "ref": "feature:instructions_inside",
+   "theme": "Instructions inside the sheet",
+   "share": 0.9,
+   "state": "included"
+  },
+  {
+   "ref": "feature:sample_data",
+   "theme": "Comes with sample data",
+   "share": 0.9,
+   "state": "included"
+  },
+  {
+   "ref": "feature:paycheck",
+   "theme": "Budget by paycheck (weekly or biweekly)",
+   "share": 0.8,
+   "state": "included"
+  },
+  {
+   "ref": "feature:video_tutorial",
+   "theme": "Video tutorial",
+   "share": 0.767,
+   "state": "waived"
+  },
+  {
+   "ref": "feature:mobile",
+   "theme": "Works on phone",
+   "share": 0.767,
+   "state": "waived"
+  },
+  {
+   "ref": "feature:multi_year",
+   "theme": "Multi-year or undated",
+   "share": 0.7,
+   "state": "waived"
+  },
+  {
+   "ref": "feature:annual",
+   "theme": "Annual or yearly view",
    "share": 0.667,
    "state": "included"
+  },
+  {
+   "ref": "feature:any_currency",
+   "theme": "Works with any currency",
+   "share": 0.633,
+   "state": "waived"
   }
  ],
  "summary": {
   "fixed": 11,
-  "included": 2,
-  "waived": 0,
+  "included": 14,
+  "waived": 4,
   "missing": 0,
   "unique": 3
  }

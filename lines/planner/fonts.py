@@ -12,7 +12,7 @@ FILES = {
     'Nunito': [('nunito', 400, 'normal'), ('nunito', 600, 'normal'), ('nunito', 700, 'normal')],
     'DMSerif': [('dm-serif-display', 400, 'normal')],
     'Outfit': [('outfit', 400, 'normal'), ('outfit', 500, 'normal'), ('outfit', 600, 'normal')],
-    'Baskerville': [('libre-baskerville', 400, 'normal'), ('libre-baskerville', 700, 'normal')],
+    'Baskerville': [('libre-baskerville', 400, 'normal'), ('libre-baskerville', 700, 'normal'), ('libre-baskerville', 400, 'italic')],
 }
 _cache = {}
 def face(family):

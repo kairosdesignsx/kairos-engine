@@ -159,7 +159,20 @@ a{{color:inherit;text-decoration:none}}
 .foot{{position:absolute;left:{self.gutter}px;bottom:8px;font:500 9.5px '{th['body']}';color:{th['muted']};letter-spacing:.08em}}
 .step{{display:flex;gap:12px;align-items:flex-start}}
 .step b{{flex:none;width:28px;height:28px;border-radius:50%;background:{th['ink']};color:{th['paper']};display:flex;align-items:center;justify-content:center;font:700 13px '{th['body']}'}}
-""" + (self.eink_css() if self.eink else '')
+""" + self.label_css() + (self.eink_css() if self.eink else '')
+
+    def label_css(self):
+        """theme 'labels': 'italic' = two-font hierarchy by weight and italic instead of tracked all-caps labels
+        (Colynne, p-rjd-001: tracked caps read as a third font and tire the eyes). Labels set in the display face's
+        italic, pills and calendar heads in the body face's bold, normal case."""
+        th = self.th
+        if th.get('labels') != 'italic':
+            return ''
+        return (f".k{{font:italic 400 {self.fs(13)} '{th['display']}',serif;letter-spacing:0;text-transform:none;color:{th['muted']}}}"
+                f".nav a{{font:700 11.5px '{th['body']}';letter-spacing:.02em;text-transform:none}}"
+                f".cal .hd{{font:700 11px '{th['body']}';letter-spacing:.02em;text-transform:none}}"
+                f".rail a{{letter-spacing:.02em}}.foot{{letter-spacing:0}}"
+                f"[style*='text-transform:uppercase']{{text-transform:none!important;letter-spacing:.02em!important}}")
 
     # ---------- e-ink: writing lines and dots as plain vector strokes ----------
     def rule_period(self):
@@ -198,7 +211,7 @@ a{{color:inherit;text-decoration:none}}
         for i in range(12):
             c = self.tabs[i]; on = month == i + 1
             target = (rail_map or {}).get(i + 1, f'm{i + 1:02d}')
-            out.append(f'<a href="#{target}" class="{"on" if on else ""}" style="background:{c}{"" if (on or self.gray) else "cc"}">{(rail_labels or {}).get(i + 1, MONTHS[i][:3].upper())}</a>')
+            out.append(f'<a href="#{target}" class="{"on" if on else ""}" style="background:{c}{"" if (on or self.gray) else "cc"}">{(rail_labels or {}).get(i + 1, MONTHS[i][:3] if self.th.get('labels') == 'italic' else MONTHS[i][:3].upper())}</a>')
         return f'<div class="rail">{"".join(out)}</div>'
 
     def page(self, anchor, inner, active=None, month=None, crumb='', deco=False, raw=False, style='', rail_map=None, rail_labels=None):

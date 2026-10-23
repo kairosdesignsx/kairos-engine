@@ -34,12 +34,12 @@
   {
    "key": "must:mh_look",
    "kind": "must_have",
-   "text": "A finished, consistent look: one font (Arial), one header colour, one input shade, generous column widths and frozen headers."
+   "text": "A finished, consistent look: one font (Arial), one header colour, one input style (white, boxed), generous column widths and frozen headers."
   },
   {
    "key": "fix:f_hard",
    "kind": "fix",
-   "text": "complaint:c_hard: One rule across every tab: shaded cells are for typing, plain cells calculate (the colour key is on Start here). Logging is 4 columns with a category dropdown, so there is nothing to learn beyond Setup. January ships with an example month so the buyer sees the math work before typing anything, and the Ready check on Start here says in plain words what is done and what to do next."
+   "text": "complaint:c_hard: One rule across every tab: white boxed cells are for typing, plain cells calculate (the colour key is on Start here). Logging is 4 columns with a category dropdown, so there is nothing to learn beyond Setup. January ships with an example month so the buyer sees the math work before typing anything, and the Ready check on Start here says in plain words what is done and what to do next."
   },
   {
    "key": "fix:f_access",
@@ -74,7 +74,7 @@
   {
    "key": "fix:f_formulas",
    "kind": "fix",
-   "text": "complaint:c_formulas: Every formula cell is locked by sheet protection with no password, so buyers type only in shaded cells and cannot overwrite a formula in Excel. Month summaries pull categories straight from Setup, so renaming a category flows everywhere, and the Ready check flags log entries whose category no longer exists instead of silently dropping them. The build recalculates every tab and fails on any #REF!, #VALUE! or #NAME? error."
+   "text": "complaint:c_formulas: Every formula cell is locked by sheet protection with no password, so buyers type only in white boxed cells and cannot overwrite a formula in Excel. Month summaries pull categories straight from Setup, so renaming a category flows everywhere, and the Ready check flags log entries whose category no longer exists instead of silently dropping them. The build recalculates every tab and fails on any #REF!, #VALUE! or #NAME? error."
   },
   {
    "key": "fix:f_customize",
@@ -89,7 +89,7 @@
   {
    "key": "fix:f_value",
    "kind": "fix",
-   "text": "complaint:c_value: Priced at $16, under the $18 to $33 band where top earners sit, for a full year of month tabs, a dashboard, paycheck plan, bills, debt and savings in one file with no upsell, survey or second purchase to get the file. Monthly tabs answer the 'expenses sheet is only for the full year' complaint quoted in this cluster."
+   "text": "complaint:c_value: Priced at $22, inside the $18 to $33 band where top earners sit (style rule r015), with a 40% launch sale for 30 days. For that: a full year of month tabs, a dashboard, paycheck plan, bills, debt and savings in one file with no upsell, survey or second purchase to get the file. Monthly tabs answer the 'expenses sheet is only for the full year' complaint quoted in this cluster."
   },
   {
    "key": "unique:u_ready_check",
@@ -99,7 +99,7 @@
   {
    "key": "unique:u_example_month",
    "kind": "unique",
-   "text": "Example month you clear in one step: January ships filled with ten realistic entries against the sample categories, so every summary, warning, progress bar and Dashboard chart shows working numbers on first open. Step 2 and the Ready check show how to clear it with one Delete."
+   "text": "Example month you clear in one step: January ships filled with eleven realistic entries against the sample categories, so every summary, warning, progress bar and Dashboard chart shows working numbers on first open. Step 2 and the Ready check show how to clear it with one Delete."
   },
   {
    "key": "unique:u_zero_based",
@@ -109,7 +109,7 @@
   {
    "key": "look",
    "kind": "look",
-   "text": "Calm and money-confident: deep ink-navy headers, an evergreen accent for links, progress bars and step numbers, and a pale green input shade on white. No pastels, no clipart, no rainbow category fills: colour only means 'type here', 'header' or 'over budget'. Light paper so it prints and screenshots cleanly; the listing photos sit on the same navy and white, which reads well in a dark room or a bright one."
+   "text": "Calm and money-confident: deep ink-navy headers, an evergreen accent for links, progress bars and step numbers, and white input cells boxed with a thin evergreen border on a soft grey (#E2E2E2) sheet, so typing cells stand out. No pastels, no clipart, no rainbow category fills: colour only means 'type here', 'header' or 'over budget'. Light paper so it prints and screenshots cleanly; the listing photos sit on the same navy and white, which reads well in a dark room or a bright one."
   }
  ],
  "shots": [
