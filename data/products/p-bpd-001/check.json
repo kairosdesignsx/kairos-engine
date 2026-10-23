@@ -1,0 +1,298 @@
+{
+ "product_id": "p-bpd-001",
+ "at": "2026-10-23T15:11:31Z",
+ "tech": [
+  {
+   "name": "file size",
+   "pass": true,
+   "detail": "Open-Hours-2027.pdf: 13.3 MB (limit 19.5, Etsy 20)"
+  },
+  {
+   "name": "no text overflow",
+   "pass": true,
+   "detail": "none"
+  },
+  {
+   "name": "page count",
+   "pass": true,
+   "detail": "481 pages in PDF"
+  },
+  {
+   "name": "links present in PDF",
+   "pass": true,
+   "detail": "13241 link annotations for 12361 links in the source"
+  },
+  {
+   "name": "fonts licensed (OFL list only)",
+   "pass": true,
+   "detail": "fonts: ['Jost-Medium', 'Jost-Regular', 'Jost-SemiBold', 'LibreBaskerville-Bold', 'LibreBaskerville-Italic']"
+  },
+  {
+   "name": "page claims match the file",
+   "pass": true,
+   "detail": "claims [481, 481], file has 481"
+  },
+  {
+   "name": "listing photos",
+   "pass": true,
+   "detail": "10 photos, sizes [(2700, 2025)]"
+  },
+  {
+   "name": "title",
+   "pass": true,
+   "detail": "138 chars"
+  },
+  {
+   "name": "13 tags, max 20 chars",
+   "pass": true,
+   "detail": "13 tags"
+  },
+  {
+   "name": "no em dashes or emojis",
+   "pass": true,
+   "detail": "checked title and description"
+  },
+  {
+   "name": "says digital download",
+   "pass": true,
+   "detail": "download and nothing-shipped note"
+  }
+ ],
+ "coverage": [
+  {
+   "item": "must:mh_business",
+   "kind": "must",
+   "found": true,
+   "where": "w01, w27, hsw01, d0101, d0502, d0831, goals, prices, routines, mm01",
+   "note": "Every week shot has Content to post and Follow up, every day shot has Calls and emails and Orders to send; Year plan, Price check, Business routines and Money month pages are all present."
+  },
+  {
+   "item": "must:mh_calendar",
+   "kind": "must",
+   "found": true,
+   "where": "year, m01, m07, w01, d0101; PDF link scan",
+   "note": "Year page links all 365 day pages, plus 12 month pages and 365 day pages. There are 53 week pages, not 52 (w53 is Dec 27, 2027); the listing correctly says 53. Trails on week and day pages read Month / Week with no Year step."
+  },
+  {
+   "item": "must:mh_apps",
+   "kind": "must",
+   "found": false,
+   "where": "listing.description (Works with, FAQ)",
+   "note": "One PDF and all six apps are named, but the listing never says no subscription is needed (the word does not appear); it only says no Microsoft Word."
+  },
+  {
+   "item": "must:mh_look",
+   "kind": "must",
+   "found": true,
+   "where": "all shots; PDF fonts",
+   "note": "Calm pages with lots of writing room. Only Libre Baskerville and Jost are embedded, no raster images (0 image XObjects), so text is vector."
+  },
+  {
+   "item": "must:mh_easy",
+   "kind": "must",
+   "found": true,
+   "where": "start, linktest, index",
+   "note": "Start here has four numbered steps, Setup check has three jump buttons, and Contents shows every section card and all 14 months; the same week and day layout repeats in every shot."
+  },
+  {
+   "item": "must:mh_content",
+   "kind": "must",
+   "found": true,
+   "where": "m01, m07, hs11 (Launches and content); w01, w27 (Content to post); content",
+   "note": "Launches and content is on every month shot, Content to post is on every week shot, and there are 2 Content ideas pages (content, content2)."
+  },
+  {
+   "item": "fix:fx_not_useful",
+   "kind": "fix",
+   "found": true,
+   "where": "listing.description first two paragraphs; mm01; prices; w01",
+   "note": "The opening says it is for people running a business alone and says 'not a business plan workbook, not a printable and not made to order'. Money month, Price check and the week slots all match the brief."
+  },
+  {
+   "item": "fix:fx_misleading",
+   "kind": "fix",
+   "found": true,
+   "where": "listing.description What's inside / What you get; photo-10-ph10_inside.jpg",
+   "note": "The listing gives 481 pages and 13.3 MB, which match the file; each page type count adds up to exactly 481. It says one landscape PDF, Oct 26, 2026 to Dec 31, 2027, Monday start. ph10 shows the Contents page."
+  },
+  {
+   "item": "fix:fx_download",
+   "kind": "fix",
+   "found": true,
+   "where": "listing FAQ line 1; start step 1; files/",
+   "note": "One 13.3 MB PDF with no zip. The first FAQ line and Start here step 1 both say to use a web browser because the Etsy app cannot download files, then name the apps."
+  },
+  {
+   "item": "fix:fx_basic",
+   "kind": "fix",
+   "found": true,
+   "where": "mmhs11, mm01, goals, routines, m01h, m01; photo-03, photo-05",
+   "note": "Money month exists for Nov and Dec 2026 and all of 2027; Year plan has Q1 to Q4 ticks; routines cover four frequencies; there is a habit tracker per 2027 month. ph3 and ph5 show these pages, but as whole pages shrunk down, not close ups."
+  },
+  {
+   "item": "fix:fx_value",
+   "kind": "fix",
+   "found": true,
+   "where": "listing; PDF link scan",
+   "note": "481 pages and 13,241 internal links. All 481 pages can be reached from the cover and no link points to a missing page."
+  },
+  {
+   "item": "fix:fx_quality",
+   "kind": "fix",
+   "found": false,
+   "where": "PDF; photo-10-ph10_inside.jpg; listing Good to know",
+   "note": "The vector and OFL-font claim holds and pages are 768x576 pt (4:3, 1024x768). The listing says the pages are for screens, not paper. But ph10 has no zoomed crop of small text (and no file size or app list, though its alt text claims them)."
+  },
+  {
+   "item": "fix:fx_edit",
+   "kind": "fix",
+   "found": true,
+   "where": "start step 3; listing Good to know and FAQ; goals, prices, d0101",
+   "note": "Step 3 tells keyboard users to use the app's text box tool on any line or table row. The listing says it is not a fillable form and not a Word or Canva template. Table rows measure about 30 px at 1024 wide."
+  },
+  {
+   "item": "fix:fx_hard",
+   "kind": "fix",
+   "found": true,
+   "where": "start (steps 1-4, Tip); linktest; photo-07-ph7_start.jpg",
+   "note": "The Tip reads 'Each Monday, one week page. Each month end, one Money month.' There are four numbered steps, the Setup check buttons, and the same layout repeats; ph7 shows both pages."
+  },
+  {
+   "item": "fix:fx_support",
+   "kind": "fix",
+   "found": true,
+   "where": "linktest 'Nothing happened?'; start; listing FAQ/Help",
+   "note": "The fix list is printed on the page and the listing FAQ gives the same answers, with no reply-time promise. The list has 3 real fixes plus a 'Still stuck? Message us on Etsy' line, not the four fixes the brief asked for."
+  },
+  {
+   "item": "fix:fx_nav",
+   "kind": "fix",
+   "found": false,
+   "where": "PDF link scan from index; d0101/w01 trail; hs11 tabs",
+   "note": "notes3 and notes4 are 3 and 4 taps from Contents (only reachable through notes, then notes2, then notes3), which breaks 'every page two taps from Contents' and the same claim in the listing. Week and day trails have no Year step."
+  },
+  {
+   "item": "fix:fx_device",
+   "kind": "fix",
+   "found": false,
+   "where": "listing Works with; start step 1",
+   "note": "Apps are listed by device and Start step 1 repeats them, and 'No Microsoft Word needed' is there, but the listing never says no subscription is needed."
+  },
+  {
+   "item": "unique:u_money_month",
+   "kind": "unique",
+   "found": true,
+   "where": "mm01, mmhs11; m01-m12 link to mm01-mm12; hs11 links mmhs11",
+   "note": "The page has money in by source and money out by cost type (planned and actual), totals, profit, orders or clients, best seller, what worked and one change; every month page links to its own Money month."
+  },
+  {
+   "item": "unique:u_start_check",
+   "kind": "unique",
+   "found": true,
+   "where": "start, linktest, hs11, hsw01, year 'Starting in 2026?' button",
+   "note": "Four steps: browser download and apps, check links, pen off and typing, where to start for 2026 and 2027 buyers. The Setup check has jump buttons. Head start runs from Mon Oct 26 with 2 month and 9 week pages."
+  },
+  {
+   "item": "unique:u_routines",
+   "kind": "unique",
+   "found": true,
+   "where": "routines, m01h; m01-m12 link mNNh",
+   "note": "Every day, week, month and quarter columns are pre-filled with send orders, batch content, pay bills and fees, tax money aside and review prices. The habit tracker (14 rows x 31 days) is linked from each month page."
+  },
+  {
+   "item": "unique:u_year_plan",
+   "kind": "unique",
+   "found": true,
+   "where": "goals, prices",
+   "note": "Year plan has 16 rows with Goal, Why it matters, First step and Q1-Q4 boxes. Price check has 18 rows with Cost to make, Fees and shipping, Your time, Price and Profit each."
+  },
+  {
+   "item": "look",
+   "kind": "look",
+   "found": false,
+   "where": "all shots; hs11, hsw01, mmhs11 tabs; index/start top edge",
+   "note": "Ivory paper (250,247,241), charcoal ink at 14.3:1, sand-to-taupe tabs all at or above 6.5:1, solid charcoal buttons, two fonts and italic labels all match. But the head-start tabs read 'NOV 2026' and 'DEC 2026' in all caps, which the brief bans, and the sand bar is a clipped strip on the top page edge, not a ruled bar."
+  }
+ ],
+ "clone": {
+  "max_text_sim": 0.113,
+  "text": {
+   "max": 0.113,
+   "closest": "Digital Business Planner, Business Template, Small Business Planner, Content Planner, Social Media Planner, Side Hustle Planner, Goodnotes",
+   "closest_shop": "PlanRightCo"
+  },
+  "max_image_sim": null,
+  "image": {
+   "status": "pending",
+   "max": null,
+   "note": "competitor photos not fetched yet (laptop worker)"
+  },
+  "pass": true
+ },
+ "visual": [
+  {
+   "issue": "ph10's alt text says it shows a list of page count, file size, landscape format, Monday start, apps by device and a sharp close-up of small text. The photo only has three bullets and no zoom crop, file size or app list (breaks r005).",
+   "where": "photo-10-ph10_inside.jpg",
+   "severity": "high"
+  },
+  {
+   "issue": "The listing says 'Every page is two taps from Contents', but Notes pages 3 and 4 take 3 and 4 taps (only reachable through the Notes 'next' arrows).",
+   "where": "notes3, notes4; listing.description",
+   "severity": "medium"
+  },
+  {
+   "issue": "Labeled 'close up' (ph2, ph4 and their alt text), but they show the whole page shrunk inside a tablet frame, so field text is small at Etsy zoom (breaks r013).",
+   "where": "photo-02-ph2_week.jpg, photo-03-ph3_money.jpg, photo-04-ph4_day.jpg",
+   "severity": "medium"
+  },
+  {
+   "issue": "Two whole pages are shrunk side by side under a large empty band about 250 px tall below the headline, and the page text is too small to read (breaks r013). ph7's photo copy has three how-to steps that do not appear in the photo.",
+   "where": "photo-05-ph5_plan.jpg, photo-06-ph6_links.jpg, photo-07-ph7_start.jpg, photo-08-ph8_headstart.jpg, photo-09-ph9_habits.jpg",
+   "severity": "medium"
+  },
+  {
+   "issue": "The head-start month tabs 'NOV 2026' and 'DEC 2026' are all caps, unlike the other tabs, and the brief bans all-caps labels. The DEC 2026 label runs almost to the bottom edge of the page. These pages have no Nov 2027 or Dec 2027 tabs.",
+   "where": "hs11, hsw01, mmhs11 (all 2026 head-start and Money pages)",
+   "severity": "medium"
+  },
+  {
+   "issue": "A sand strip sits flush against the top edge at the upper right and looks like a clipped, misplaced element rather than a deliberate ruled bar.",
+   "where": "cover, index, start (also visible in ph1, ph6, ph7, ph10)",
+   "severity": "low"
+  },
+  {
+   "issue": "The Contents 'How the links work' text says calendar pages show a 'Month / Week trail', while the listing and brief promise Year / Month / Week. Week and day pages have no Year step.",
+   "where": "index; w01, d0101",
+   "severity": "low"
+  },
+  {
+   "issue": "On month pages the fifth week chip wraps onto a second line by itself, so the header looks uneven.",
+   "where": "m01, m07",
+   "severity": "low"
+  },
+  {
+   "issue": "The Setup check eyebrow repeats the title ('Setup check' over 'Setup check').",
+   "where": "linktest",
+   "severity": "low"
+  },
+  {
+   "issue": "Start step 4 says to 'plan from this week' for Oct to Dec buyers, but someone buying Oct 23 to 25, 2026 (the selling window is open now) has no page until Mon Oct 26. Nothing says to start on the Oct 26 week.",
+   "where": "start step 4; hsw01",
+   "severity": "low"
+  },
+  {
+   "issue": "February on the year page uses wider row spacing than the other months, so its rows do not line up with January's.",
+   "where": "year",
+   "severity": "low"
+  },
+  {
+   "issue": "Greyed days from the next and previous month are about 2.2:1 on the paper, hard to read in daylight.",
+   "where": "m01, m07, hs11, w01 (Dec 28-31)",
+   "severity": "low"
+  }
+ ],
+ "pass": false,
+ "notes": [
+  "Image clone check pending: competitor photos come from the laptop worker."
+ ]
+}

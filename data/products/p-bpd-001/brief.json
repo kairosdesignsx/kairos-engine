@@ -548,7 +548,7 @@
      ],
      [
       "Start today",
-      "Buying in Oct to Dec 2026? Tap Year, then Starting in 2026, and plan from this week. Buying in 2027? Tap Year, then today's date. Fill the Year plan and Money month from now on; earlier pages can stay blank."
+      "Buying in Oct to Dec 2026? Tap Year, then Starting in 2026; the planner begins Monday Oct 26. Buying in 2027? Tap Year, then today's date. Fill the Year plan and Money month from now on; earlier pages can stay blank."
      ]
     ],
     "tip": "Each Monday, one week page. Each month end, one Money month."
@@ -831,6 +831,11 @@
     "nav": "bool, default true"
    },
    "why": "Budget or finance pages are rare among top business planners (feature:budget, 17%, no revenue) and the largest complaint clusters are 'not useful for my needs' and 'too basic'. A single table page (the table module) cannot repeat per month or link from the month pages, and twelve separate table sections would each need a Contents card and would be unreachable from their months (r001). Costs 14 pages (about 0.5 MB)."
+  }
+ ],
+ "revisions": [
+  {
+   "why": "Check round 1: numbered page strip on multi-page Notes and Content ideas (every page two taps from Contents), normal-case head-start month tabs, zoomed listing photos, alt text matches each photo, no-subscription line, Start here names the Oct 26 start."
   }
  ]
 }

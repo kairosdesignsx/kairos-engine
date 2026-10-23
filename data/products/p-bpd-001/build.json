@@ -2,17 +2,17 @@
  "files": [
   {
    "name": "Open-Hours-2027.pdf",
-   "mb": 13.3,
+   "mb": 13.31,
    "pages": 481
   }
  ],
- "links": 12361,
+ "links": 12385,
  "overflow": [],
  "lean": false,
  "attempts": [
   {
    "lean": false,
-   "mb": 13.3,
+   "mb": 13.31,
    "pages": 481
   }
  ],
@@ -1973,6 +1973,6 @@
  ],
  "product_id": "p-bpd-001",
  "brief_id": "b-p-bpd-001",
- "built_at": "2026-10-23T15:04:29Z",
+ "built_at": "2026-10-23T15:15:03Z",
  "line": "planner"
 }

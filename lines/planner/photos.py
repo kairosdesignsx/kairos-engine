@@ -10,6 +10,10 @@ def page_names(brief):
     for sec in brief['spec'].get('sections', []):
         if sec.get('anchor') and sec.get('label'):
             names[sec['anchor']] = sec['label']
+        if sec.get('module') == 'money_month':  # mm01..mm12 and mmhs11.. carry the month in the name
+            pre = sec.get('anchor', 'mm'); lab = sec.get('label', 'Money month')
+            names.update({f'{pre}{i + 1:02d}': f'{lab}, {m}' for i, m in enumerate(MONTHS)})
+            names.update({f'{pre}hs{i + 1:02d}': f'{lab}, {m}' for i, m in enumerate(MONTHS)})
         if sec.get('module') == 'reading_month':
             names.update({f'm{i + 1:02d}': m for i, m in enumerate(MONTHS)})
     return names

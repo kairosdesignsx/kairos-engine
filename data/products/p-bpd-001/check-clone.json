@@ -1,0 +1,15 @@
+{
+ "max_text_sim": 0.113,
+ "text": {
+  "max": 0.113,
+  "closest": "Digital Business Planner, Business Template, Small Business Planner, Content Planner, Social Media Planner, Side Hustle Planner, Goodnotes",
+  "closest_shop": "PlanRightCo"
+ },
+ "max_image_sim": null,
+ "image": {
+  "status": "pending",
+  "max": null,
+  "note": "competitor photos not fetched yet (laptop worker)"
+ },
+ "pass": true
+}

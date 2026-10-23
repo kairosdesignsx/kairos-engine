@@ -460,7 +460,11 @@ def m_lined(P, sec):
     for i in range(1, n + 1):
         anchor = a if i == 1 else f'{a}{i}'
         nxt = f' <a href="#{a}{i + 1}">{arrow('r')}</a>' if i < n else ''
-        P.page(anchor, P.head(sec.get('kicker', '') if n == 1 else f'{sec.get("kicker", "")} · page {i} of {n}', sec['label'], right=f'<span class="k" style="font-size:16px">{nxt}</span>') +
+        prv = f'<a href="#{a if i == 2 else f"{a}{i - 1}"}">{arrow("l")}</a> ' if i > 1 else ''
+        th = P.th  # with several pages, a numbered strip opens any of them directly (every page two taps from Contents)
+        strip = '' if n == 1 else ''.join(f'<a href="#{a if j == 1 else f"{a}{j}"}" style="display:inline-flex;align-items:center;justify-content:center;min-width:30px;padding:5px 9px;border-radius:{P.rpill}px;font:600 11px \'{th["body"]}\';{"background:" + th["ink"] + ";color:" + th["paper"] if j == i else "background:" + th["soft"]}">{j}</a>' for j in range(1, n + 1))
+        right = f'<div style="display:flex;gap:6px;align-items:center">{strip}<span class="k" style="font-size:16px;margin-left:8px">{prv}{nxt}</span></div>'
+        P.page(anchor, P.head(sec.get('kicker', '') if n == 1 else f'{sec.get("kicker", "")} · page {i} of {n}', sec['label'], right=right) +
                f'<div class="box" style="flex:1"><div class="{"dots" if sec.get("dots") else "lines"}"></div></div>', active=a)
 
 
@@ -696,7 +700,8 @@ def m_head_start(P, sec):
                crumb=f'<a href="#{pre}{(d.month if (d.year, d.month) in months else m0):02d}">{MONTHS[d.month - 1]} {d.year}</a> / <a href="#{week_anchor}">{week_title}</a>')
 
     rail_map = {m2: f'{pre}{m2:02d}' for y2, m2 in months}
-    rail_labels = {m2: f'{MONTHS[m2 - 1][:3].upper()} {y2}' for y2, m2 in months} if mainl else None  # one label, one target
+    up = (lambda x: x) if th.get('labels') == 'italic' else str.upper
+    rail_labels = {m2: f'{up(MONTHS[m2 - 1][:3])} {y2}' for y2, m2 in months} if mainl else None  # one label, one target
     P.head_start_links = [(f'{MONTHS[m2 - 1]} {y2}', f'{pre}{m2:02d}') for y2, m2 in months]
     done = set()
     for (yy, mm) in months:
@@ -817,7 +822,8 @@ def m_money_month(P, sec):
         if is_hs:
             hmonths = [(x[2], x[1]) for x in hs]
             rail_map = {m2: f'{hs_sec.get("anchor", "hs")}{m2:02d}' for y2, m2 in hmonths}
-            rail_labels = {m2: f'{MONTHS[m2 - 1][:3].upper()} {y2}' for y2, m2 in hmonths} if hs_sec.get('main_links') else None
+            up = (lambda x: x) if th.get('labels') == 'italic' else str.upper
+            rail_labels = {m2: f'{up(MONTHS[m2 - 1][:3])} {y2}' for y2, m2 in hmonths} if hs_sec.get('main_links') else None
             P.page(a, inner, active=f'{pre}01', month=mon, rail_map=rail_map, rail_labels=rail_labels,
                    crumb=f'<a href="#{mpage}">{MONTHS[mon - 1]} {yr}</a> / Money')
         else:
