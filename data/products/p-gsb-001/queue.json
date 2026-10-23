@@ -38,8 +38,8 @@
    "p/p-gsb-001/26.jpg",
    "p/p-gsb-001/27.jpg"
   ],
-  "status": "queued",
-  "created": 1792668478265,
+  "status": "needs_help",
+  "created": 1792766864613,
   "listing": {
    "title": "Budget Spreadsheet Google Sheets and Excel, Monthly Budget Planner, Paycheck Budget, Expense Tracker, Bill and Debt Tracker for Beginners",
    "tags": [
@@ -57,12 +57,12 @@
     "savings tracker",
     "zero based budget"
    ],
-   "description": "A simple monthly budget spreadsheet for Google Sheets and Excel, made for first-time and returning budgeters. Set up your money once, log what you spend each month, and see your whole year on one Dashboard.\n\nWhat's inside: 19 tabs\n- Start here: 5 short steps, a live Ready check and links to every month\n- Dashboard: the year by month (income, spent, left over, saved and debt paid), your share to savings and debt, spending by category for the year, a bar chart by month and a pie chart by group (Needs, Wants, Savings, Debt)\n- Setup: your income lines and up to 30 categories, each with a group and a monthly budget\n- January to December: 12 month tabs, each with an 80-row spending log and budget vs actual for every category, with a progress bar that turns orange over 100% and the amount over shown in red\n- Bills: due day, amount, autopay and a paid mark for each month\n- Paycheck plan: every payday in the year, the bills due before the next one, and what is left from that paycheck\n- Debt payoff: snowball or avalanche, your pay order, months and interest at the minimum, and an extra amount each month that goes to the first debt in pay order, with months with extra and interest saved\n- Savings goals: a progress bar and how much to save each month to reach your date\n\nThe core is three tabs: Setup once, this month, Dashboard. Bills, Paycheck plan, Debt payoff and Savings goals are extras. Use them when you want them, skip them if you do not.\n\nWhat makes it different\n- A real file, not a link. You download the .xlsx workbook itself, so there is no view-only copy, no access to request, and your Etsy email does not have to match a Google account.\n- A Ready check that tells you what is left. Each setup item shows Done or To do as you type: income entered, every dollar budgeted, every category grouped, spending that matches your categories, no amounts without a category, example cleared. Each To do says what to fix and where.\n- See it work before you type. January comes filled in as an example month, so every total, bar and chart shows real numbers on first open, including one category over budget (Fun) shown in red. The example bills, debts and savings goals are there to show the math too. Clear or type over them when you are ready.\n- Every dollar has a job. Setup shows Left to budget, and the Ready check shows your Needs, Wants and Savings plus debt split next to the 50/30/20 guide. It works for zero-based budgeting or 50/30/20.\n- Budget by paycheck. Paid weekly, every 2 weeks or twice a month? The Paycheck plan lists every payday in the year, the bills due before the next one, and what is left. Paid monthly? You can skip this tab.\n- Progress bars that look the same in both apps. The bars are made of filled blocks, so Google Sheets and Excel show the same thing.\n- Hard to break. Shaded cells are for typing, plain cells calculate. Formulas are locked in Excel, color-coded in both. Rename a category in Setup and every month follows. The protection has no password, so you can still change anything. A savings goal shows Reached or Date passed: pick a new one, not an error.\n- Start any month. Month tabs are not dated, and months with nothing logged stay out of your totals, so starting mid-year works. Starting in October, November or December? Set the Year in Setup to this year (2026) and use those months. In January, keep that copy as last year's record and start the new year in a fresh download, copying your Setup categories across.\n- Instructions live inside the file: the Start here tab plus a one-line note at the top of every tab. There is no video.\n\nWorks with\n- Google Sheets: upload the file to Google Drive, then open it with Google Sheets\n- Excel 2019 or newer, Microsoft 365, and the free Excel for the web\n- Set it up on a computer\nMade for a personal or household budget in one currency. Amounts show in U.S. dollars ($); for another currency, unprotect the tab (no password) and change the number format.\nNot for: Apple Numbers or LibreOffice (not tested), bank syncing or automatic imports, business bookkeeping.\n\nHow to start\n1. Download the .xlsx from Etsy.com > Purchases on a computer and save it. Do not open it in a browser preview.\n2. Open it. Google Sheets: on drive.google.com choose New > File upload, then open the file with Google Sheets. Excel: double-click the file.\n3. Follow the Start here tab. It is the first tab, with 5 steps and the Ready check.\n\nQuestions buyers ask\nCan I download it in the Etsy phone app?\nNo. The Etsy phone app cannot download files. Sign in at Etsy.com on a computer and go to Purchases.\nThe file opened in my browser and looks wrong. What now?\nThat is a browser preview, not the spreadsheet. Save the .xlsx to your computer first, then upload it to Google Drive and open it with Google Sheets, or double-click it to open in Excel.\nDo I need to ask for access?\nNo. There is no link and no access request. The .xlsx is yours.\n\nWhat you get\n- Clear-Budget.xlsx (0.1 megabytes), one workbook with 19 tabs\nDigital download. Nothing is shipped.\n\nHelp\nQuestions? Message us on Etsy."
+   "description": "A simple monthly budget spreadsheet for Google Sheets and Excel, made for first-time and returning budgeters. Set up your money once, log what you spend each month, and see your whole year on one Dashboard.\n\nWhat's inside: 19 tabs\n- Start here: 5 short steps, a live Ready check and links to every month\n- Dashboard: the year by month (income, spent, left over, saved and debt paid), your share to savings and debt, spending by category for the year, a bar chart by month and a pie chart by group (Needs, Wants, Savings, Debt)\n- Setup: your income lines and up to 30 categories, each with a group and a monthly budget\n- January to December: 12 month tabs, each with an 80-row spending log and budget vs actual for every category, with a progress bar that turns orange over 100% and the amount over shown in red\n- Bills: due day, amount, autopay and a paid mark for each month\n- Paycheck plan: every payday in the year, the bills due before the next one, and what is left from that paycheck\n- Debt payoff: snowball or avalanche, your pay order, months and interest at the minimum, and an extra amount each month that goes to the first debt in pay order, with months with extra and interest saved\n- Savings goals: a progress bar and how much to save each month to reach your date\n\nThe core is three tabs: Setup once, this month, Dashboard. Bills, Paycheck plan, Debt payoff and Savings goals are extras. Use them when you want them, skip them if you do not.\n\nWhat makes it different\n- A real file, not a link. You download the .xlsx workbook itself, so there is no view-only copy, no access to request, and your Etsy email does not have to match a Google account.\n- A Ready check that tells you what is left. Each setup item shows Done or To do as you type: income entered, every dollar budgeted, every category grouped, spending that matches your categories, no amounts without a category, example cleared. Each To do says what to fix and where.\n- See it work before you type. January comes filled in as an example month, so every total, bar and chart shows real numbers on first open, including one category over budget (Fun) shown in red. The example bills, debts and savings goals are there to show the math too. Clear or type over them when you are ready.\n- Every dollar has a job. Setup shows Left to budget, and the Ready check shows your Needs, Wants and Savings plus debt split next to the 50/30/20 guide. It works for zero-based budgeting or 50/30/20.\n- Budget by paycheck. Paid weekly, every 2 weeks or twice a month? The Paycheck plan lists every payday in the year, the bills due before the next one, and what is left. Paid monthly? You can skip this tab.\n- Progress bars that look the same in both apps. The bars are made of filled blocks, so Google Sheets and Excel show the same thing.\n- Hard to break. White boxed cells are for typing, plain cells calculate. Formulas are locked in Excel, color-coded in both. Rename a category in Setup and every month follows. The protection has no password, so you can still change anything. A savings goal shows Reached or Date passed: pick a new one, not an error.\n- Start any month. Month tabs are not dated, and months with nothing logged stay out of your totals, so starting mid-year works. Starting in October, November or December? Set the Year in Setup to this year (2026) and use those months. In January, keep that copy as last year's record and start the new year in a fresh download, copying your Setup categories across.\n- Instructions live inside the file: the Start here tab plus a one-line note at the top of every tab. There is no video.\n\nWorks with\n- Google Sheets: upload the file to Google Drive, then open it with Google Sheets\n- Excel 2019 or newer, Microsoft 365, and the free Excel for the web\n- Set it up on a computer\nMade for a personal or household budget in one currency. Amounts show in U.S. dollars ($); for another currency, unprotect the tab (no password) and change the number format.\nNot for: Apple Numbers or LibreOffice (not tested), bank syncing or automatic imports, business bookkeeping.\n\nHow to start\n1. Download the .xlsx from Etsy.com > Purchases on a computer and save it. Do not open it in a browser preview.\n2. Open it. Google Sheets: on drive.google.com choose New > File upload, then open the file with Google Sheets. Excel: double-click the file.\n3. Follow the Start here tab. It is the first tab, with 5 steps and the Ready check.\n\nQuestions buyers ask\nCan I download it in the Etsy phone app?\nNo. The Etsy phone app cannot download files. Sign in at Etsy.com on a computer and go to Purchases.\nThe file opened in my browser and looks wrong. What now?\nThat is a browser preview, not the spreadsheet. Save the .xlsx to your computer first, then upload it to Google Drive and open it with Google Sheets, or double-click it to open in Excel.\nDo I need to ask for access?\nNo. There is no link and no access request. The .xlsx is yours.\nWhich app do I need?\nGoogle Sheets (free with a Google account) or Excel 2019 or newer, Microsoft 365 or the free Excel for the web. Not Apple Numbers.\nGoogle Sheets or Excel, which is better?\nBoth show the same tabs, totals and charts. Google Sheets is free and works from any computer; Excel also works offline.\nHow do I change a category?\nType over its name in Setup, or use any empty row there. Every month tab and the Dashboard follow.\nCan I change the locked cells?\nYes. Only formulas are locked and there is no password. Excel: Review > Unprotect Sheet. Google Sheets: Data > Protect sheets and ranges, then remove that tab's protection.\n\nWhat you get\n- Clear-Budget.xlsx (0.2 megabytes), one workbook with 19 tabs\nDigital download. Nothing is shipped.\n\nHelp\nQuestions? Message us on Etsy."
   },
   "files": [
    {
     "name": "Clear-Budget.xlsx",
-    "mb": 0.1,
+    "mb": 0.21,
     "tabs": 19
    }
   ],
@@ -74,7 +74,8 @@
     "shops": 12,
     "refreshed": "2026-10-22T07:21:16Z",
     "feature_sources": [
-     "titles"
+     "titles",
+     "descriptions_or_photos"
     ]
    },
    "market": {
@@ -83,91 +84,56 @@
     "best_price_band": "$18-33"
    },
    "checks": {
-    "pass": true,
-    "coverage": "22/22",
-    "coverage_ok": true,
+    "pass": false,
+    "coverage": "21/22",
+    "coverage_ok": false,
     "text_sim": 0.276,
     "closest": "Annual & Monthly Budget for Couples Spreadsheet Google Sheets and Excel | Dual Income Planner, Shared Bills, Savings and Debt Tracker",
-    "img_sim": null,
+    "img_sim": 0.688,
     "visual": [
      {
-      "issue": "Debt payoff sample now shows the $100 'Extra each month' saving $0.00: Snowball (the default) puts the new 0% Medical bill first, so the only row with extra results reads 4 months / Interest saved $0.00 and the other three rows are blank. On photo 7 a buyer sees the extra-payment feature apparently do nothing. Give the medical bill a small rate, or show the extra rolling to the next debt, so the default view shows a saving (Avalanche already shows $850).",
-      "where": "debt I10:J13, photo-07-extras.jpg",
+      "issue": "The #E2E2E2 sheet colour is a cell fill on A1:U139 only (gridlines off), so past column U or row 139 every tab turns plain white; a buyer who scrolls down or right in Sheets/Excel sees a hard grey/white edge. This is the reviewer's requested change, so fill whole columns/rows (or a much larger range).",
+      "where": "all 19 tabs (e.g. January A140, V1 have no fill)",
       "severity": "medium"
      },
      {
-      "issue": "Alt text is stale after the photo rework: photo 8's alt describes 'small views of the Start here, Setup, January and Dashboard tabs' that are no longer in the photo; photo 7's says 'four example bills' (six are shown); photos 1, 3, 4 and 6 say 'on a laptop' but show a browser window (breaks r013).",
-      "where": "listing.alt.inside, listing.alt.extras, listing.alt.hero/start/setup/paycheck",
+      "issue": "Spreadsheet text in the listing photos is small at Etsy zoom (r013): the hero dashboard, January, Paycheck and the Debt panel on the extras photo render body text around 12-14 px on a 2000 px image.",
+      "where": "photo-01-hero.jpg, photo-05-month.jpg, photo-06-paycheck.jpg, photo-07-extras.jpg",
       "severity": "medium"
      },
      {
-      "issue": "Dashboard 'Saved and debt paid' header wraps to two lines in a one-line header band; 'paid' is clipped at the bottom edge. Also visible on the hero photo.",
-      "where": "dashboard F6, photo-01-hero.jpg",
-      "severity": "low"
-     },
-     {
-      "issue": "Pie chart sits flush against the Group table (the 'Spent this year' header touches the chart border), and there is an empty band of about 4 rows between the pie and the bar chart.",
-      "where": "dashboard C23, chart anchors",
-      "severity": "low"
-     },
-     {
-      "issue": "Dashboard category list still has a gap before Credit card because that row shares the tall Group header row (row 23, 34pt).",
+      "issue": "Dashboard category list has a blank gap between Retirement and Credit card because row 23 is 34 pt tall (shared with the Group table header on the left).",
       "where": "dashboard H23",
       "severity": "low"
      },
      {
-      "issue": "Bills: Amount (right-aligned) and Autopay (left-aligned) run together ('$1,400.00Yes'). Also visible on photo 7.",
-      "where": "bills D7:E31, photo-07-extras.jpg",
+      "issue": "Large empty grey band between the pie chart and the bar chart, and the bar chart sits far down the tab.",
+      "where": "dashboard",
       "severity": "low"
      },
      {
-      "issue": "Interest at minimum is rounded-up months x minimum minus balance, so it overstates by up to one payment (Credit card shows $1,425, true is about $1,354); Interest saved inherits the same rounding.",
-      "where": "debt H10:H19, J10:J19",
+      "issue": "Start here uses only the left 60% of the width; the right side is empty grey, and step rows 2 and 3 are spaced tighter than 1, 4 and 5.",
+      "where": "start",
       "severity": "low"
      },
      {
-      "issue": "Still open from round 2: shaded 'type over' cells hold default formulas (month H6, Paycheck C6, C8, C11:C64) and the shaded Paycheck cells below the last payday (rows 38-64 for every 2 weeks) feed nothing and look like empty inputs.",
-      "where": "m01..m12 H6, paycheck C6, C8, C11:C64",
+      "issue": "Colour key shows 'Calculated' inside a boxed cell, which contradicts 'plain cells calculate'.",
+      "where": "start Colour key C35:C36",
       "severity": "low"
      },
      {
-      "issue": "Still open: Twice a month is modelled as the 15th and the 1st, not the common 15th and last day.",
-      "where": "paycheck F11:F64",
+      "issue": "Nav link row spacing is uneven and differs per tab (e.g. wide gap before Months on Start here, Bills on Dashboard), because links sit in columns of different widths.",
+      "where": "row 4 on all tabs",
       "severity": "low"
      },
      {
-      "issue": "Still open: Bills Autopay and the monthly paid marks feed no result (no unpaid count or total), which breaks the letter of r010; fine as a record.",
-      "where": "bills E7:Q31",
+      "issue": "About 27 white boxed Paycheck cells below the last payday have no payday next to them; they look like inputs that do nothing for every-2-weeks pay.",
+      "where": "paycheck C38:C64",
       "severity": "low"
      },
      {
-      "issue": "Still open: savings and month progress-bar block glyphs show seams between blocks.",
-      "where": "savings H7:H16, m01..m12 L12:L41",
-      "severity": "low"
-     },
-     {
-      "issue": "Still open: Start here nav has a large gap between Setup and Months (column E is 60 wide), and step 3's text sits higher than the other steps' text. The photo crops of Start here, Setup and Savings cut the nav row, so those photos show only part of the tab links.",
-      "where": "start row 4, row 8; photo-03, photo-04, photo-07",
-      "severity": "low"
-     },
-     {
-      "issue": "Photo 8 labels 'THE CORE: 15 TABS' while the description says 'The core is three tabs: Setup once, this month, Dashboard'.",
-      "where": "photo-08-inside.jpg, listing.description",
-      "severity": "low"
-     },
-     {
-      "issue": "Ready check grammar: '1 entries use a category not in Setup' and '1 amounts have no category' for a count of one.",
-      "where": "start E17, E18",
-      "severity": "low"
-     },
-     {
-      "issue": "How-it-works photo still has an empty top quarter and bottom quarter around the three cards.",
-      "where": "photo-02-how_open.jpg",
-      "severity": "low"
-     },
-     {
-      "issue": "Month photo is the smallest text in the set (log and summary at about 16px on the 2700px image, the 'Type over this' note about 11px); readable when zoomed but the useful part is not shown large, and the lower third of the laptop screen is empty log rows.",
-      "where": "photo-05-month.jpg",
+      "issue": "Listing photo backgrounds alternate navy (1,3,5,7) and light grey gradient (2,4,6,8) while the look brief says photos sit on navy and white.",
+      "where": "photo-02, photo-04, photo-06, photo-08",
       "severity": "low"
      }
     ]
@@ -177,7 +143,7 @@
      "theme": "Hard to use day to day",
      "count": 58,
      "state": "fixed",
-     "how": "One rule across every tab: shaded cells are for typing, plain cells calculate (the colour key is on Start here). Logging is 4 columns with a category dropdown, so there is nothing to learn beyond Setup. January ships with an example month so the buyer sees the math work before typing anything, and the Ready check on Start here says in plain words what is done and what to do next.",
+     "how": "One rule across every tab: white boxed cells are for typing, plain cells calculate (the colour key is on Start here). Logging is 4 columns with a category dropdown, so there is nothing to learn beyond Setup. January ships with an example month so the buyer sees the math work before typing anything, and the Ready check on Start here says in plain words what is done and what to do next.",
      "quote": "Great template. Can be hard for a super newbie to understand, but the videos help. Sometimes just basic would be good."
     },
     {
@@ -226,7 +192,7 @@
      "theme": "Formulas broke or showed errors",
      "count": 16,
      "state": "fixed",
-     "how": "Every formula cell is locked by sheet protection with no password, so buyers type only in shaded cells and cannot overwrite a formula in Excel. Month summaries pull categories straight from Setup, so renaming a category flows everywhere, and the Ready check flags log entries whose category no longer exists instead of silently dropping them. The build recalculates every tab and fails on any #REF!, #VALUE! or #NAME? error.",
+     "how": "Every formula cell is locked by sheet protection with no password, so buyers type only in white boxed cells and cannot overwrite a formula in Excel. Month summaries pull categories straight from Setup, so renaming a category flows everywhere, and the Ready check flags log entries whose category no longer exists instead of silently dropping them. The build recalculates every tab and fails on any #REF!, #VALUE! or #NAME? error.",
      "quote": "It is a little difficult to use and it did not automate everything and had errors"
     },
     {
@@ -247,22 +213,118 @@
      "theme": "Not worth the price",
      "count": 12,
      "state": "fixed",
-     "how": "Priced at $16, under the $18 to $33 band where top earners sit, for a full year of month tabs, a dashboard, paycheck plan, bills, debt and savings in one file with no upsell, survey or second purchase to get the file. Monthly tabs answer the 'expenses sheet is only for the full year' complaint quoted in this cluster.",
+     "how": "Priced at $22, inside the $18 to $33 band where top earners sit (style rule r015), with a 40% launch sale for 30 days. For that: a full year of month tabs, a dashboard, paycheck plan, bills, debt and savings in one file with no upsell, survey or second purchase to get the file. Monthly tabs answer the 'expenses sheet is only for the full year' complaint quoted in this cluster.",
      "quote": "This is for the user that does not have a lot of subscriptions. It was a waste of money for me."
     }
    ],
    "standard": [
     {
      "name": "Works in Google Sheets",
-     "share": 0.967,
+     "share": 1.0,
+     "state": "included",
+     "how": "One .xlsx workbook that opens in Google Sheets (upload to Drive, open with Google Sheets) and in Excel (Microsoft 365, Excel 2019 or newer, or the free Excel for the web). Named in the title, first photo and description."
+    },
+    {
+     "name": "Works in Excel",
+     "share": 1.0,
      "state": "included",
      "how": "One .xlsx workbook that opens in Google Sheets (upload to Drive, open with Google Sheets) and in Excel (Microsoft 365, Excel 2019 or newer, or the free Excel for the web). Named in the title, first photo and description."
     },
     {
      "name": "Monthly budget tabs",
-     "share": 0.667,
+     "share": 1.0,
      "state": "included",
      "how": "Twelve month tabs: income for the month, a 4-column spending log (date, what, category dropdown, amount) and budget vs actual per category with a progress bar and over-budget warning. Undated tab names (January to December) so any start month works."
+    },
+    {
+     "name": "Dashboard with charts",
+     "share": 1.0,
+     "state": "included",
+     "how": "A Dashboard tab with the year by month (income, spent, left over, saved), savings rate, spending by category for the whole year, a bar chart and a pie chart. Months with nothing logged stay empty so totals are right for mid-year starters."
+    },
+    {
+     "name": "Debt payoff tracker or snowball calculator",
+     "share": 1.0,
+     "state": "included",
+     "how": "Bills (due day, amount, autopay, a paid mark per month), Debt payoff (snowball or avalanche, payoff order, months and interest at the minimum) and Savings goals (progress bar, save per month to hit the date)."
+    },
+    {
+     "name": "Automated, does the math",
+     "share": 1.0,
+     "state": "included",
+     "how": "Twelve month tabs: income for the month, a 4-column spending log (date, what, category dropdown, amount) and budget vs actual per category with a progress bar and over-budget warning. Undated tab names (January to December) so any start month works."
+    },
+    {
+     "name": "Customizable categories",
+     "share": 1.0,
+     "state": "included",
+     "how": "Twelve month tabs: income for the month, a 4-column spending log (date, what, category dropdown, amount) and budget vs actual per category with a progress bar and over-budget warning. Undated tab names (January to December) so any start month works."
+    },
+    {
+     "name": "Savings goals or sinking funds",
+     "share": 0.967,
+     "state": "included",
+     "how": "Bills (due day, amount, autopay, a paid mark per month), Debt payoff (snowball or avalanche, payoff order, months and interest at the minimum) and Savings goals (progress bar, save per month to hit the date)."
+    },
+    {
+     "name": "Expense or spending tracker",
+     "share": 0.967,
+     "state": "included",
+     "how": "Twelve month tabs: income for the month, a 4-column spending log (date, what, category dropdown, amount) and budget vs actual per category with a progress bar and over-budget warning. Undated tab names (January to December) so any start month works."
+    },
+    {
+     "name": "Bill tracker or bill calendar",
+     "share": 0.933,
+     "state": "included",
+     "how": "Bills (due day, amount, autopay, a paid mark per month), Debt payoff (snowball or avalanche, payoff order, months and interest at the minimum) and Savings goals (progress bar, save per month to hit the date)."
+    },
+    {
+     "name": "Instructions inside the sheet",
+     "share": 0.9,
+     "state": "included",
+     "how": "Instructions inside the workbook (Start here tab and a one-line subtitle on every tab saying what to do there), not only in a separate PDF."
+    },
+    {
+     "name": "Comes with sample data",
+     "share": 0.9,
+     "state": "included",
+     "how": ""
+    },
+    {
+     "name": "Budget by paycheck (weekly or biweekly)",
+     "share": 0.8,
+     "state": "included",
+     "how": "A Paycheck plan tab for people paid weekly, every two weeks or twice a month: each payday in the year, which bills fall due before the next payday, and what is left from that paycheck."
+    },
+    {
+     "name": "Video tutorial",
+     "share": 0.767,
+     "state": "waived",
+     "how": "Instructions live inside the workbook (Start here tab, a live Ready check and a note on every tab). The listing says plainly there is no video. Added to the evidence after the photo read on Oct 23; the product was built before."
+    },
+    {
+     "name": "Works on phone",
+     "share": 0.767,
+     "state": "waived",
+     "how": "Set up and tested on a computer (Google Sheets in a browser, Excel). We do not promise phone use we have not tested; the listing says to set it up on a computer."
+    },
+    {
+     "name": "Multi-year or undated",
+     "share": 0.7,
+     "state": "waived",
+     "how": "One year per copy by design: month tabs are undated and the Year is set in Setup, and a new year starts in a fresh download with Setup categories copied across. The listing explains this."
+    },
+    {
+     "name": "Annual or yearly view",
+     "share": 0.667,
+     "state": "included",
+     "how": "A Dashboard tab with the year by month (income, spent, left over, saved), savings rate, spending by category for the whole year, a bar chart and a pie chart. Months with nothing logged stay empty so totals are right for mid-year starters."
+    },
+    {
+     "name": "Works with any currency",
+     "share": 0.633,
+     "state": "waived",
+     "how": "Made for one currency, shown in U.S. dollars; the listing tells buyers how to change the number format for another currency (protection has no password)."
     }
    ],
    "unique": [
@@ -274,7 +336,7 @@
     },
     {
      "name": "Example month you clear in one step",
-     "what": "January ships filled with ten realistic entries against the sample categories, so every summary, warning, progress bar and Dashboard chart shows working numbers on first open. Step 2 and the Ready check show how to clear it with one Delete.",
+     "what": "January ships filled with eleven realistic entries against the sample categories, so every summary, warning, progress bar and Dashboard chart shows working numbers on first open. Step 2 and the Ready check show how to clear it with one Delete.",
      "why": "'Can be hard for a super newbie' and 'I didn't have any experience with Google Sheets so I messed it up' are top quotes; seeing it work before typing is the cheapest teacher. Sample data is not visible in any top seller title.",
      "verified_absent": false
     },
@@ -373,7 +435,9 @@
       "keyword:monthly budget",
       "keyword:expense tracker",
       "praise:p_automated",
-      "complaint:c_not_useful"
+      "complaint:c_not_useful",
+      "feature:automated",
+      "feature:customizable"
      ]
     },
     {
@@ -417,7 +481,7 @@
      ]
     },
     {
-     "what": "A finished, consistent look: one font (Arial), one header colour, one input shade, generous column widths and frozen headers.",
+     "what": "A finished, consistent look: one font (Arial), one header colour, one input style (white, boxed), generous column widths and frozen headers.",
      "evidence": [
       "praise:p_look"
      ]
@@ -427,7 +491,7 @@
     {
      "complaint": "Hard to use day to day",
      "count": 58,
-     "how": "One rule across every tab: shaded cells are for typing, plain cells calculate (the colour key is on Start here). Logging is 4 columns with a category dropdown, so there is nothing to learn beyond Setup. January ships with an example month so the buyer sees the math work before typing anything, and the Ready check on Start here says in plain words what is done and what to do next."
+     "how": "One rule across every tab: white boxed cells are for typing, plain cells calculate (the colour key is on Start here). Logging is 4 columns with a category dropdown, so there is nothing to learn beyond Setup. January ships with an example month so the buyer sees the math work before typing anything, and the Ready check on Start here says in plain words what is done and what to do next."
     },
     {
      "complaint": "Couldn't open the file or get access to the sheet",
@@ -462,7 +526,7 @@
     {
      "complaint": "Formulas broke or showed errors",
      "count": 16,
-     "how": "Every formula cell is locked by sheet protection with no password, so buyers type only in shaded cells and cannot overwrite a formula in Excel. Month summaries pull categories straight from Setup, so renaming a category flows everywhere, and the Ready check flags log entries whose category no longer exists instead of silently dropping them. The build recalculates every tab and fails on any #REF!, #VALUE! or #NAME? error."
+     "how": "Every formula cell is locked by sheet protection with no password, so buyers type only in white boxed cells and cannot overwrite a formula in Excel. Month summaries pull categories straight from Setup, so renaming a category flows everywhere, and the Ready check flags log entries whose category no longer exists instead of silently dropping them. The build recalculates every tab and fails on any #REF!, #VALUE! or #NAME? error."
     },
     {
      "complaint": "Can't change categories or layout",
@@ -477,7 +541,7 @@
     {
      "complaint": "Not worth the price",
      "count": 12,
-     "how": "Priced at $16, under the $18 to $33 band where top earners sit, for a full year of month tabs, a dashboard, paycheck plan, bills, debt and savings in one file with no upsell, survey or second purchase to get the file. Monthly tabs answer the 'expenses sheet is only for the full year' complaint quoted in this cluster."
+     "how": "Priced at $22, inside the $18 to $33 band where top earners sit (style rule r015), with a 40% launch sale for 30 days. For that: a full year of month tabs, a dashboard, paycheck plan, bills, debt and savings in one file with no upsell, survey or second purchase to get the file. Monthly tabs answer the 'expenses sheet is only for the full year' complaint quoted in this cluster."
     }
    ],
    "unique": [
@@ -495,7 +559,7 @@
     },
     {
      "name": "Example month you clear in one step",
-     "what": "January ships filled with ten realistic entries against the sample categories, so every summary, warning, progress bar and Dashboard chart shows working numbers on first open. Step 2 and the Ready check show how to clear it with one Delete.",
+     "what": "January ships filled with eleven realistic entries against the sample categories, so every summary, warning, progress bar and Dashboard chart shows working numbers on first open. Step 2 and the Ready check show how to clear it with one Delete.",
      "why": "'Can be hard for a super newbie' and 'I didn't have any experience with Google Sheets so I messed it up' are top quotes; seeing it work before typing is the cheapest teacher. Sample data is not visible in any top seller title.",
      "evidence": [
       "feature:sample_data",
@@ -514,9 +578,26 @@
      ]
     }
    ],
-   "waived": [],
+   "waived": [
+    {
+     "ref": "feature:video_tutorial",
+     "reason": "Instructions live inside the workbook (Start here tab, a live Ready check and a note on every tab). The listing says plainly there is no video. Added to the evidence after the photo read on Oct 23; the product was built before."
+    },
+    {
+     "ref": "feature:mobile",
+     "reason": "Set up and tested on a computer (Google Sheets in a browser, Excel). We do not promise phone use we have not tested; the listing says to set it up on a computer."
+    },
+    {
+     "ref": "feature:multi_year",
+     "reason": "One year per copy by design: month tabs are undated and the Year is set in Setup, and a new year starts in a fresh download with Setup categories copied across. The listing explains this."
+    },
+    {
+     "ref": "feature:any_currency",
+     "reason": "Made for one currency, shown in U.S. dollars; the listing tells buyers how to change the number format for another currency (protection has no password)."
+    }
+   ],
    "look": {
-    "direction": "Calm and money-confident: deep ink-navy headers, an evergreen accent for links, progress bars and step numbers, and a pale green input shade on white. No pastels, no clipart, no rainbow category fills: colour only means 'type here', 'header' or 'over budget'. Light paper so it prints and screenshots cleanly; the listing photos sit on the same navy and white, which reads well in a dark room or a bright one.",
+    "direction": "Calm and money-confident: deep ink-navy headers, an evergreen accent for links, progress bars and step numbers, and white input cells boxed with a thin evergreen border on a soft grey (#E2E2E2) sheet, so typing cells stand out. No pastels, no clipart, no rainbow category fills: colour only means 'type here', 'header' or 'over budget'. Light paper so it prints and screenshots cleanly; the listing photos sit on the same navy and white, which reads well in a dark room or a bright one.",
     "avoid": [
      "blush pink and pastel palettes (common across low-price top sellers)",
      "rainbow fills per category or per month",
@@ -527,10 +608,10 @@
     "palette": {
      "header": "#1F2A44",
      "accent": "#2F6F5E",
-     "soft": "#E3EFE8",
+     "soft": "#FFFFFF",
      "ink": "#1F2A44",
-     "muted": "#5E6B78",
-     "paper": "#FFFFFF",
+     "muted": "#4B5563",
+     "paper": "#E2E2E2",
      "warn": "#C2410C"
     },
     "fonts": []
@@ -630,6 +711,15 @@
      "at": "2026-10-22T19:27:53",
      "by": "Darren",
      "what": "Launch sale 40% (was 25%) as the second arm of discount test exp-001."
+    },
+    {
+     "why": "Review fix (Colynne, Oct 23): background #E2E2E2. Check round 1 found inputs no longer stood out, so input cells are now white with a thin evergreen box, and the colour key shows both swatches. Start here tip adds the Google Sheets way to unprotect."
+    },
+    {
+     "why": "Check round 2: the grey sheet dropped grey instruction text below 4.5:1, so muted text darkened to #4B5563 (about 6:1 on #E2E2E2). Launch sale recorded in listing.json."
+    },
+    {
+     "why": "Check round 3 found the Debt payoff interest overstated (months rounded up times payment). Interest now uses the unrounded NPER, so the last partial payment is counted right (Store card: $96.12 at minimum, $68.45 saved)."
     }
    ],
    "check_rounds": [
@@ -653,12 +743,12 @@
     },
     {
      "round": 3,
-     "found": 22,
+     "found": 21,
      "of": 22,
      "high": 0,
      "medium": 2,
-     "low": 14,
-     "main": "Debt payoff sample now shows the $100 'Extra each month' saving $0.00: Snowball (the default) puts the new 0% Medical bill first, so the only row with extra results reads 4 months / Interest saved $0.00 and the other thr"
+     "low": 7,
+     "main": "The #E2E2E2 sheet colour is a cell fill on A1:U139 only (gridlines off), so past column U or row 139 every tab turns plain white; a buyer who scrolls down or right in Sheets/Excel sees a hard grey/white edge. This is the"
     }
    ]
   },
@@ -672,9 +762,10 @@
     "off_type_dropped": 43,
     "negative_reviews": 230,
     "feature_sources": [
-     "titles"
+     "titles",
+     "descriptions_or_photos"
     ],
-    "photos": "pending"
+    "photos": "read"
    },
    "market": {
     "opportunity_score": 39.0,
@@ -1312,20 +1403,20 @@
      ]
     },
     {
-     "theme": "Great value",
-     "count": 5,
-     "quotes": [
-      "Great price and product. Easy to use",
-      "Crazy value for the price. And a quality spreadsheet too. Thank you!"
-     ]
-    },
-    {
      "theme": "Customizable",
      "count": 5,
      "quotes": [
       "I love how nice the images are and how easy they are to edit. Great product!",
       "Great product! Was easy to convert into mine.",
       "Arrived via email. Easy to customize. Lots of fun"
+     ]
+    },
+    {
+     "theme": "Great value",
+     "count": 5,
+     "quotes": [
+      "Great price and product. Easy to use",
+      "Crazy value for the price. And a quality spreadsheet too. Thank you!"
      ]
     },
     {
@@ -1382,146 +1473,950 @@
     {
      "name": "Works in Google Sheets",
      "tier": "standard",
-     "share": 0.967,
-     "revenue_share": 0.997
+     "share": 1.0,
+     "revenue_share": 1.0
+    },
+    {
+     "name": "Works in Excel",
+     "tier": "standard",
+     "share": 1.0,
+     "revenue_share": 1.0
     },
     {
      "name": "Monthly budget tabs",
      "tier": "standard",
-     "share": 0.667,
-     "revenue_share": 0.708
+     "share": 1.0,
+     "revenue_share": 1.0
     },
     {
-     "name": "Works in Excel",
-     "tier": "common",
-     "share": 0.567,
-     "revenue_share": 0.699
-    },
-    {
-     "name": "Budget by paycheck (weekly or biweekly)",
-     "tier": "common",
-     "share": 0.4,
-     "revenue_share": 0.286
-    },
-    {
-     "name": "Expense or spending tracker",
-     "tier": "common",
-     "share": 0.4,
-     "revenue_share": 0.175
+     "name": "Dashboard with charts",
+     "tier": "standard",
+     "share": 1.0,
+     "revenue_share": 1.0
     },
     {
      "name": "Debt payoff tracker or snowball calculator",
-     "tier": "common",
-     "share": 0.367,
-     "revenue_share": 0.64
+     "tier": "standard",
+     "share": 1.0,
+     "revenue_share": 1.0
     },
     {
-     "name": "Bill tracker or bill calendar",
-     "tier": "common",
-     "share": 0.3,
-     "revenue_share": 0.566
+     "name": "Automated, does the math",
+     "tier": "standard",
+     "share": 1.0,
+     "revenue_share": 1.0
     },
     {
-     "name": "Annual or yearly view",
-     "tier": "rare",
-     "share": 0.267,
-     "revenue_share": 0.558
+     "name": "Customizable categories",
+     "tier": "standard",
+     "share": 1.0,
+     "revenue_share": 1.0
     },
     {
      "name": "Savings goals or sinking funds",
-     "tier": "rare",
-     "share": 0.233,
-     "revenue_share": 0.149
+     "tier": "standard",
+     "share": 0.967,
+     "revenue_share": 0.963
     },
     {
-     "name": "Couples or family budget",
-     "tier": "rare",
-     "share": 0.1,
-     "revenue_share": 0.055
+     "name": "Expense or spending tracker",
+     "tier": "standard",
+     "share": 0.967,
+     "revenue_share": 0.963
+    },
+    {
+     "name": "Bill tracker or bill calendar",
+     "tier": "standard",
+     "share": 0.933,
+     "revenue_share": 0.963
+    },
+    {
+     "name": "Instructions inside the sheet",
+     "tier": "standard",
+     "share": 0.9,
+     "revenue_share": 0.97
+    },
+    {
+     "name": "Comes with sample data",
+     "tier": "standard",
+     "share": 0.9,
+     "revenue_share": 0.821
+    },
+    {
+     "name": "Budget by paycheck (weekly or biweekly)",
+     "tier": "standard",
+     "share": 0.8,
+     "revenue_share": 0.837
+    },
+    {
+     "name": "Video tutorial",
+     "tier": "standard",
+     "share": 0.767,
+     "revenue_share": 0.912
+    },
+    {
+     "name": "Works on phone",
+     "tier": "standard",
+     "share": 0.767,
+     "revenue_share": 0.823
+    },
+    {
+     "name": "Multi-year or undated",
+     "tier": "standard",
+     "share": 0.7,
+     "revenue_share": 0.776
+    },
+    {
+     "name": "Annual or yearly view",
+     "tier": "standard",
+     "share": 0.667,
+     "revenue_share": 0.802
+    },
+    {
+     "name": "Works with any currency",
+     "tier": "standard",
+     "share": 0.633,
+     "revenue_share": 0.713
     },
     {
      "name": "Credit card tracking",
+     "tier": "common",
+     "share": 0.433,
+     "revenue_share": 0.671
+    },
+    {
+     "name": "Zero-based or 50/30/20 method",
+     "tier": "common",
+     "share": 0.433,
+     "revenue_share": 0.678
+    },
+    {
+     "name": "Net worth tracker",
+     "tier": "common",
+     "share": 0.367,
+     "revenue_share": 0.691
+    },
+    {
+     "name": "Couples or family budget",
+     "tier": "common",
+     "share": 0.367,
+     "revenue_share": 0.631
+    },
+    {
+     "name": "Rollover of leftover money",
+     "tier": "common",
+     "share": 0.367,
+     "revenue_share": 0.157
+    },
+    {
+     "name": "Dark mode",
+     "tier": "rare",
+     "share": 0.233,
+     "revenue_share": 0.126
+    },
+    {
+     "name": "Single-tab budget, duplicate for each period",
+     "tier": "rare",
+     "share": 0.2,
+     "revenue_share": 0.126
+    },
+    {
+     "name": "Subscription tracker with dashboard",
+     "tier": "rare",
+     "share": 0.2,
+     "revenue_share": 0.098
+    },
+    {
+     "name": "Checkboxes to mark bills/debts/savings paid",
+     "tier": "rare",
+     "share": 0.167,
+     "revenue_share": 0.165
+    },
+    {
+     "name": "Calendar with daily and weekly running balance",
+     "tier": "rare",
+     "share": 0.167,
+     "revenue_share": 0.101
+    },
+    {
+     "name": "Multiple currencies included",
+     "tier": "rare",
+     "share": 0.167,
+     "revenue_share": 0.099
+    },
+    {
+     "name": "Small business or side hustle",
+     "tier": "rare",
+     "share": 0.133,
+     "revenue_share": 0.043
+    },
+    {
+     "name": "Side menu for tab navigation",
+     "tier": "rare",
+     "share": 0.133,
+     "revenue_share": 0.433
+    },
+    {
+     "name": "Starting balance carry-over",
+     "tier": "rare",
+     "share": 0.133,
+     "revenue_share": 0.125
+    },
+    {
+     "name": "Savings and investment tracker (stocks, funds)",
+     "tier": "rare",
+     "share": 0.133,
+     "revenue_share": 0.056
+    },
+    {
+     "name": "Set recurring payments once, auto-filled every month (no copy paste)",
+     "tier": "rare",
+     "share": 0.133,
+     "revenue_share": 0.098
+    },
+    {
+     "name": "Whole budget on one tab",
+     "tier": "rare",
+     "share": 0.133,
+     "revenue_share": 0.031
+    },
+    {
+     "name": "Protected formulas (hard to break)",
+     "tier": "rare",
+     "share": 0.1,
+     "revenue_share": 0.04
+    },
+    {
+     "name": "Recurring transactions set once, auto-filled (weekly to every 6 months)",
+     "tier": "rare",
+     "share": 0.1,
+     "revenue_share": 0.462
+    },
+    {
+     "name": "Account balance tracker",
+     "tier": "rare",
+     "share": 0.1,
+     "revenue_share": 0.13
+    },
+    {
+     "name": "Accounts tracker (pay from account/card)",
      "tier": "rare",
      "share": 0.1,
      "revenue_share": 0.083
     },
     {
-     "name": "Dark mode",
+     "name": "Smart calendar auto-filled from payments, Monday or Sunday start",
      "tier": "rare",
      "share": 0.1,
-     "revenue_share": 0.05
+     "revenue_share": 0.04
     },
     {
-     "name": "Dashboard with charts",
+     "name": "No-spend challenge / days without spending tracker",
+     "tier": "rare",
+     "share": 0.067,
+     "revenue_share": 0.397
+    },
+    {
+     "name": "Investment forecast tab",
+     "tier": "rare",
+     "share": 0.067,
+     "revenue_share": 0.397
+    },
+    {
+     "name": "Days-left countdown for budget period",
+     "tier": "rare",
+     "share": 0.067,
+     "revenue_share": 0.095
+    },
+    {
+     "name": "Personalize dashboard with your name",
+     "tier": "rare",
+     "share": 0.067,
+     "revenue_share": 0.096
+    },
+    {
+     "name": "Daily spending chart",
+     "tier": "rare",
+     "share": 0.067,
+     "revenue_share": 0.085
+    },
+    {
+     "name": "Works with irregular/variable paychecks and multiple incomes",
+     "tier": "rare",
+     "share": 0.067,
+     "revenue_share": 0.08
+    },
+    {
+     "name": "Includes $, £ and € versions",
+     "tier": "rare",
+     "share": 0.067,
+     "revenue_share": 0.089
+    },
+    {
+     "name": "Hide/unhide tabs",
      "tier": "rare",
      "share": 0.067,
      "revenue_share": 0.108
     },
     {
-     "name": "Net worth tracker",
+     "name": "Bonus goal tracker (weekly, monthly, yearly goals)",
+     "tier": "rare",
+     "share": 0.067,
+     "revenue_share": 0.025
+    },
+    {
+     "name": "Any custom budget date range",
+     "tier": "rare",
+     "share": 0.067,
+     "revenue_share": 0.02
+    },
+    {
+     "name": "Custom budgeting period, start any month",
+     "tier": "rare",
+     "share": 0.067,
+     "revenue_share": 0.052
+    },
+    {
+     "name": "Snowball, avalanche or custom debt strategy, up to 20 debts",
+     "tier": "rare",
+     "share": 0.067,
+     "revenue_share": 0.074
+    },
+    {
+     "name": "Income summary donut chart",
+     "tier": "rare",
+     "share": 0.067,
+     "revenue_share": 0.017
+    },
+    {
+     "name": "Annual and monthly goal sheets",
+     "tier": "rare",
+     "share": 0.067,
+     "revenue_share": 0.046
+    },
+    {
+     "name": "Fixed vs variable expense tracking",
+     "tier": "rare",
+     "share": 0.067,
+     "revenue_share": 0.046
+    },
+    {
+     "name": "Sold in 4 colorways",
+     "tier": "rare",
+     "share": 0.067,
+     "revenue_share": 0.059
+    },
+    {
+     "name": "Calendar of bills, debt, subscriptions and income",
+     "tier": "rare",
+     "share": 0.067,
+     "revenue_share": 0.041
+    },
+    {
+     "name": "Free read-only demo link",
+     "tier": "rare",
+     "share": 0.067,
+     "revenue_share": 0.033
+    },
+    {
+     "name": "Bonus personal finance guide PDF and checklist",
+     "tier": "rare",
+     "share": 0.067,
+     "revenue_share": 0.033
+    },
+    {
+     "name": "Bank account balances tab",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.362
+    },
+    {
+     "name": "Monthly needs/wants vs threshold charts",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.362
+    },
+    {
+     "name": "Bonus savings and debt tracker template",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.094
+    },
+    {
+     "name": "Left-to-spend ring chart",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.003
+    },
+    {
+     "name": "Two color themes included",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.084
+    },
+    {
+     "name": "Non-monthly (irregular) bills planner",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.084
+    },
+    {
+     "name": "Top 25 expenses / spending breakdown ranking",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.084
+    },
+    {
+     "name": "Transaction log with sub-categories and accounts",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.084
+    },
+    {
+     "name": "Cash flow worksheet for any time period",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.084
+    },
+    {
+     "name": "Snowball or avalanche debt payoff plan",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.084
+    },
+    {
+     "name": "Notes box on monthly tab",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.084
+    },
+    {
+     "name": "Assign payer per transaction, auto split between partners",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.065
+    },
+    {
+     "name": "Subscriptions tracker",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.065
+    },
+    {
+     "name": "Money transfers between accounts",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.065
+    },
+    {
+     "name": "Debt payoff schedule auto-logged to transactions",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.065
+    },
+    {
+     "name": "Progress % per category with overspending highlighted",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.009
+    },
+    {
+     "name": "Per-item frequency dropdown (weekly, biweekly, 4-weekly, quarterly, annual)",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.043
+    },
+    {
+     "name": "Quarterly dashboard",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.043
+    },
+    {
+     "name": "12-month projection / forecast",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.043
+    },
+    {
+     "name": "Credit score focus debt method and credit utilization rate",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.043
+    },
+    {
+     "name": "Extra color theme free on request",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.043
+    },
+    {
+     "name": "Planned vs actual comparison chart",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.002
+    },
+    {
+     "name": "Rank bills and expenses by priority (very important to not important)",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.002
+    },
+    {
+     "name": "Pick year and month dropdown on one reusable sheet",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.002
+    },
+    {
+     "name": "Money back guarantee",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.002
+    },
+    {
+     "name": "Assign each bill to a person (who pays)",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.037
+    },
+    {
+     "name": "Bonus PDF personal finance guide and checklist",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.037
+    },
+    {
+     "name": "Free read-only demo link",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.037
+    },
+    {
+     "name": "Personalize with your name",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.002
+    },
+    {
+     "name": "Duplicate tab for each new period",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.002
+    },
+    {
+     "name": "Pick your priority and get the best-fit strategy with pros and cons",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.037
+    },
+    {
+     "name": "Debt-free date and total interest",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.037
+    },
+    {
+     "name": "Credit utilization rate per card",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.037
+    },
+    {
+     "name": "Payment schedule with completed months auto-marked",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.037
+    },
+    {
+     "name": "Paid-off debts greyed out automatically",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.037
+    },
+    {
+     "name": "Add or reduce extra payment any month",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.037
+    },
+    {
+     "name": "Up to 50 debts over 30 years",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.037
+    },
+    {
+     "name": "Free bonus simple budget",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.037
+    },
+    {
+     "name": "Progress percent with overspending highlighted",
      "tier": "rare",
      "share": 0.033,
      "revenue_share": 0.015
     },
     {
-     "name": "Automated, does the math",
-     "tier": "not_seen",
-     "share": 0.0,
+     "name": "Quick start guide",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.015
+    },
+    {
+     "name": "Side menu linking to every tab",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.035
+    },
+    {
+     "name": "Color coding separates input cells from calculated cells",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.035
+    },
+    {
+     "name": "Earner column to split income by person",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.035
+    },
+    {
+     "name": "Bonus goal tracker (weekly, monthly, yearly)",
+     "tier": "rare",
+     "share": 0.033,
      "revenue_share": 0.0
     },
     {
-     "name": "Zero-based or 50/30/20 method",
-     "tier": "not_seen",
-     "share": 0.0,
+     "name": "Works without Microsoft 365 (Excel 2016+)",
+     "tier": "rare",
+     "share": 0.033,
      "revenue_share": 0.0
     },
     {
-     "name": "Small business or side hustle",
-     "tier": "not_seen",
-     "share": 0.0,
+     "name": "Toggle for credit-card spender vs debit/cash spender",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.03
+    },
+    {
+     "name": "Debt interest, principal and projected payoff date",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.03
+    },
+    {
+     "name": "80+ icons to label categories",
+     "tier": "rare",
+     "share": 0.033,
      "revenue_share": 0.0
     },
     {
-     "name": "Customizable categories",
-     "tier": "not_seen",
-     "share": 0.0,
+     "name": "Need vs want split on expenses",
+     "tier": "rare",
+     "share": 0.033,
      "revenue_share": 0.0
     },
     {
-     "name": "Video tutorial",
-     "tier": "not_seen",
-     "share": 0.0,
+     "name": "Active vs passive income breakdown",
+     "tier": "rare",
+     "share": 0.033,
      "revenue_share": 0.0
     },
     {
-     "name": "Works on phone",
-     "tier": "not_seen",
-     "share": 0.0,
+     "name": "High-priority flag on debts",
+     "tier": "rare",
+     "share": 0.033,
      "revenue_share": 0.0
     },
     {
-     "name": "Multi-year or undated",
-     "tier": "not_seen",
-     "share": 0.0,
+     "name": "Short and long term savings goals",
+     "tier": "rare",
+     "share": 0.033,
      "revenue_share": 0.0
     },
     {
-     "name": "Instructions inside the sheet",
-     "tier": "not_seen",
-     "share": 0.0,
+     "name": "Subscription tracking",
+     "tier": "rare",
+     "share": 0.033,
      "revenue_share": 0.0
     },
     {
-     "name": "Protected formulas (hard to break)",
-     "tier": "not_seen",
-     "share": 0.0,
-     "revenue_share": 0.0
+     "name": "Spending breakdown by percent of budget",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.029
     },
     {
-     "name": "Comes with sample data",
-     "tier": "not_seen",
-     "share": 0.0,
-     "revenue_share": 0.0
+     "name": "Left to budget and left to spend boxes",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.029
+    },
+    {
+     "name": "Checkboxes to tick off paid bills and debts",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.003
+    },
+    {
+     "name": "Duplicate the sheet for each new week or month",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.003
+    },
+    {
+     "name": "Bonus art prints and daily/weekly planners",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.003
+    },
+    {
+     "name": "Projected balance line graph over the period",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.027
+    },
+    {
+     "name": "Per-category progress bars",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.027
+    },
+    {
+     "name": "Option to translate categories",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.027
+    },
+    {
+     "name": "Marketed as ADHD-friendly budget",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.027
+    },
+    {
+     "name": "Bill split ratio between partners",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.024
+    },
+    {
+     "name": "Separate partner 1, partner 2 and combined dashboards",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.024
+    },
+    {
+     "name": "Who-owes-whom transfer / distribution dashboard",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.024
+    },
+    {
+     "name": "Debt payoff with 4 methods (snowball, avalanche, custom, credit score)",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.024
+    },
+    {
+     "name": "Subscriptions section",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.024
+    },
+    {
+     "name": "Bonus group category tab",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.024
+    },
+    {
+     "name": "'Budget on track' status with amount left to spend",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.001
+    },
+    {
+     "name": "Savings & investments section (stocks, 401K)",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.001
+    },
+    {
+     "name": "Assign who pays each bill",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.019
+    },
+    {
+     "name": "Highest bill and highest variable expense callouts",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.019
+    },
+    {
+     "name": "Up to 20 savings goals with progress rings",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.019
+    },
+    {
+     "name": "Days left in period counter",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.002
+    },
+    {
+     "name": "Due date column for bills and debts",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.002
+    },
+    {
+     "name": "Income sources donut chart",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.002
+    },
+    {
+     "name": "Change colors",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.002
+    },
+    {
+     "name": "Over-budget differences shown in red",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.017
+    },
+    {
+     "name": "Daily balance trend line chart",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.017
+    },
+    {
+     "name": "Transaction and recurring trackers on the same tab as the budget",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.017
+    },
+    {
+     "name": "Per-person and combined breakdown of income and spending",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.017
+    },
+    {
+     "name": "Bonus debt snowball / avalanche calculator",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.017
+    },
+    {
+     "name": "Bill paid checkboxes with due dates",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.002
+    },
+    {
+     "name": "Left to budget and left to spend summary cards",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.002
+    },
+    {
+     "name": "Transaction log with category dropdowns",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.002
+    },
+    {
+     "name": "Toggle for credit-card spender vs debit or cash spender",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.016
+    },
+    {
+     "name": "Calendar view with bill deadlines and custom events",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.016
+    },
+    {
+     "name": "Multiple color ways sold separately",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.016
+    },
+    {
+     "name": "Central setup tab that auto-populates all months",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.016
+    },
+    {
+     "name": "Free bonus gifts (art prints, daily and weekly planner, habit tracker)",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.01
+    },
+    {
+     "name": "Bank accounts tracker with from/to account transfers",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.015
+    },
+    {
+     "name": "Annual planned vs actual breakdown",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.015
+    },
+    {
+     "name": "Distribution dashboard (spending by person)",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.015
+    },
+    {
+     "name": "Custom 12-month date range start",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.015
+    },
+    {
+     "name": "Running balance line chart through the month",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.001
+    },
+    {
+     "name": "Debt vs savings comparison chart",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.001
+    },
+    {
+     "name": "Starting balance input",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.001
+    },
+    {
+     "name": "Assign each bill or paycheck to a person",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.014
+    },
+    {
+     "name": "Extra debt payments tracking",
+     "tier": "rare",
+     "share": 0.033,
+     "revenue_share": 0.014
     }
    ],
    "price": {
@@ -1697,7 +2592,8 @@
    "brief_id": "b-gsb-001",
    "product_id": "p-gsb-001"
   },
-  "claude_note": "Image clone check pending: competitor photos come from the laptop worker. Before approving: upload the .xlsx to Google Drive and open it with Google Sheets, then open it in Excel. Check the charts, the dropdowns, the Ready check, and whether the formulas stay locked in Sheets (the listing only promises locked in Excel)."
+  "claude_note": "Fixed tonight from Colynne's review (colors): the sheet is now grey #E2E2E2 on every tab. Typing cells are white with a thin green box so they still stand out, grey text was darkened for contrast, and a Debt payoff interest bug (rounded months) was fixed. Marked needs help only because check round 4 was the last allowed: Round 4 (last allowed) open item: listing FAQ lacked 'which app' and 'Google vs Excel'. Both answers were added to the listing after round 4 and not re-checked by a fresh checker. Before approving: upload the .xlsx to Google Drive and open it with Google Sheets, then open it in Excel. Check the charts, the dropdowns, the Ready check, and whether the formulas stay locked in Sheets (the listing only promises locked in Excel).",
+  "revised": 1792766911225
  },
  "files": {
   "p/p-gsb-001/01.jpg": "/home/claude/kairos-engine/data/products/p-gsb-001/queue/01.jpg",

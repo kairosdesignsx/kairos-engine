@@ -7,7 +7,8 @@
   "note": "just make it 2 fonts only kasi masakit sa mata tapos gumamit ka ng bold, italic mga ganyan",
   "owner": false,
   "at": 1792759248938,
-  "status": "open"
+  "status": "done",
+  "done": "2026-10-23: two fonts, italic labels; passed check round 2; requeued"
  },
  {
   "product_id": "p-gsb-001",
@@ -17,7 +18,8 @@
   "note": "make the bg color #e2e2e2",
   "owner": false,
   "at": 1792759890736,
-  "status": "open"
+  "status": "done",
+  "done": "2026-10-23: grey #E2E2E2 sheet, boxed white inputs; requeued as needs help (round 4 limit, FAQ added after)"
  },
  {
   "product_id": "business-2027-navy",
@@ -27,6 +29,7 @@
   "note": "make the color c8b89a and 7a7368 or add that to the color theme",
   "owner": false,
   "at": 1792760657783,
-  "status": "open"
+  "status": "open",
+  "blocked": "Legacy product made before the engine (no brief or build here). Needs Darren: rebuild it in the engine or edit by hand."
  }
 ]
