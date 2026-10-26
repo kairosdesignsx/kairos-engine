@@ -179,7 +179,8 @@ a{{color:inherit;text-decoration:none}}
         return (f".nav{{top:8px}}.nav a{{display:inline-flex;align-items:center;height:40px;padding:0 14px}}"
                 f".nav .crumb a{{display:inline-flex;align-items:center;height:40px;padding:0 12px;border-radius:{self.rpill}px;background:{th['soft']}}}"
                 f".body{{top:62px}}a.pgn{{min-width:40px!important;height:40px;padding:0 10px!important}}"
-                f".k>a:has(>svg){{width:48px;height:42px}}")
+                f".k>a:has(>svg){{width:48px;height:42px}}a.go{{min-height:40px;display:inline-flex;align-items:center;gap:6px}}"
+                f"a.dchip{{display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 14px;border-radius:{self.rpill}px;background:{th['soft']};color:{th['ink']};font:600 13px '{th['body']}'}}")
 
     def label_css(self):
         """theme 'labels': 'italic' = two-font hierarchy by weight and italic instead of tracked all-caps labels
@@ -441,7 +442,7 @@ def _fill_link_test_map(P):
     """'Where things are': the top bar's buttons and what each opens (portrait Setup check, under the fix list)."""
     th = P.th
     kick = {a: k for (l, a, k) in P.index_items}
-    items = ''.join(f'<a href="#{an}" style="display:flex;gap:10px;align-items:baseline;padding:6px 0;border-bottom:1px solid {th["line"]}"><b style="min-width:84px;font:700 {P.fs(11.5)} \'{th["body"]}\';text-transform:uppercase;letter-spacing:.08em">{esc(l)}</b><span style="font-size:{P.fs(13)};color:{th["muted"]}">{esc("Contents" if an == "index" else kick.get(an, ""))}</span></a>' for l, an in P.nav_items[:P.nav_max])
+    items = ''.join(f'<a href="#{an}" style="display:flex;gap:10px;align-items:{"center;min-height:40px" if P.taps else "baseline"};padding:6px 0;border-bottom:1px solid {th["line"]}"><b style="min-width:84px;font:700 {P.fs(11.5)} \'{th["body"]}\';text-transform:uppercase;letter-spacing:.08em">{esc(l)}</b><span style="font-size:{P.fs(13)};color:{th["muted"]}">{esc(P.s.get("nav_desc", {}).get(an) or ("Contents" if an == "index" else kick.get(an, "")))}</span></a>' for l, an in P.nav_items[:P.nav_max])
     box = f'<div class="box" style="flex:1"><span class="k">Where things are: the top bar</span><div style="flex:1;display:flex;flex-direction:column;justify-content:space-evenly">{items}</div></div>'
     for i, pg in enumerate(P.pages):
         if '%%LT_MAP%%' in pg:
@@ -560,7 +561,7 @@ def m_pixels(P, sec):
         params={'label': 'str', 'kicker': 'str', 'steps': 'list', 'tip': 'str', 'anchor': 'str'})
 def m_guide(P, sec):
     a = sec.get('anchor') or re.sub(r'[^a-z0-9]', '', sec['label'].lower())[:12]
-    steps = ''.join(f'<div class="box step" style="padding:18px 20px;gap:14px;flex-direction:row"><b style="width:36px;height:36px;font-size:16px">{i}</b><div style="display:flex;flex-direction:column;gap:8px;flex:1"><p class="h" style="font-size:24px">{esc(st[0])}</p><p style="font-size:{P.fs(14.5)};line-height:1.5;color:{P.th["muted"]}">{esc(st[1])}</p>{(f'<a href="#{st[2]}" style="align-self:flex-start;margin-top:auto;padding:8px 16px;border-radius:{P.rpill}px;background:{P.btn};color:{P.th["paper"]};font:600 12px \'{P.th["body"]}\';letter-spacing:.08em;text-transform:uppercase">Go there {arrow("r")}</a>') if len(st) > 2 and st[2] else ''}</div></div>' for i, st in enumerate(sec['steps'], 1))
+    steps = ''.join(f'<div class="box step" style="padding:18px 20px;gap:14px;flex-direction:row"><b style="width:36px;height:36px;font-size:16px">{i}</b><div style="display:flex;flex-direction:column;gap:8px;flex:1"><p class="h" style="font-size:24px">{esc(st[0])}</p><p style="font-size:{P.fs(14.5)};line-height:1.5;color:{P.th["muted"]}">{esc(st[1])}</p>{(f'<a href="#{st[2]}" class="go" style="align-self:flex-start;margin-top:auto;padding:8px 16px;border-radius:{P.rpill}px;background:{P.btn};color:{P.th["paper"]};font:600 12px \'{P.th["body"]}\';letter-spacing:.08em;text-transform:uppercase">Go there {arrow("r")}</a>') if len(st) > 2 and st[2] else ''}</div></div>' for i, st in enumerate(sec['steps'], 1))
     if P.pf:  # printed: the button names the page to turn to (filled in at the end of the build)
         steps = re.sub(r'href="#([^"]+)"([^>]*)>Go there ', lambda mm: f'href="#{mm.group(1)}"{mm.group(2)}>Page %%PG:{mm.group(1)}%% ', steps)
         steps = steps.replace(f'background:{P.btn};color:{P.th["paper"]}', f'box-shadow:inset 0 0 0 1.5px {P.th["ink"]};color:{P.th["ink"]}')
@@ -685,6 +686,8 @@ def _week(P, n, m, side_blocks, day_layout, with_days):
         if d is None:
             target = f'u{n:02d}{i}'
             head = f'<a href="#{target}" style="display:flex;justify-content:space-between;align-items:baseline"><span class="k">{DOW[i]}</span><span class="h" style="font-size:22px;opacity:.35">__</span></a>' if with_days else f'<span class="k">{DOW[i]}</span>'
+            if with_days and P.taps:  # spec tap_targets 'large': a visible 30 pt Open chip, not just a thin strip on the day name
+                head = f'<div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span class="k" style="flex:1">{DOW[i]}</span><span class="h" style="font-size:22px;opacity:.35">__</span><a href="#{target}" class="dchip">Open {arrow("r")}</a></div>'
         elif d.year == P.year:
             head = f'<a href="#{P.did(d)}" style="display:flex;justify-content:space-between;align-items:baseline"><span class="k">{DOW[d.weekday()]}</span><span class="h" style="font-size:22px">{d.day}</span></a>' if with_days else f'<span class="k">{DOW[d.weekday()]} {d.day}</span>'
         elif d in getattr(P, 'extra_day_anchors', {}):

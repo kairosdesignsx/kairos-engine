@@ -2,17 +2,17 @@
  "files": [
   {
    "name": "Any-Monday.pdf",
-   "mb": 12.89,
+   "mb": 13.09,
    "pages": 453
   }
  ],
- "links": 9867,
+ "links": 10231,
  "overflow": [],
  "lean": false,
  "attempts": [
   {
    "lean": false,
-   "mb": 12.89,
+   "mb": 13.09,
    "pages": 453
   }
  ],
@@ -1854,6 +1854,6 @@
  ],
  "product_id": "p-gp-001",
  "brief_id": "b-p-gp-001-1",
- "built_at": "2026-10-26T20:15:31Z",
+ "built_at": "2026-10-26T20:23:11Z",
  "line": "planner"
 }

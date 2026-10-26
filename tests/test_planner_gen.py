@@ -160,6 +160,11 @@ def test_undated_weeks():
     r4 = gen.build(dict(SPEC, tap_targets='large', nav_max=5, dating={"mode": "undated"}, sections=[{"module": "cover"}, {"module": "index"}, {"module": "year"}, {"module": "lined", "label": "Notes", "pages": 3}, {"module": "checklist", "label": "Lists", "groups": [["A", []]]}, {"module": "calendar", "days": False, "free_weeks": True}]))
     assert '.nav a{display:inline-flex;align-items:center;height:40px' in r4['html'] and 'class="pgn"' in r4['html']
     assert re.search(r'<div class="nav">(?:<a [^>]*>[^<]*</a>){5}<span', r4['html']), 'nav_max 5: five top-bar buttons'
+    r5 = gen.build(dict(SPEC, tap_targets='large', nav_desc={'weeks': 'All 52 weeks, in order'}, dating={"mode": "undated"}, orientation='portrait',
+                        sections=[{"module": "cover"}, {"module": "index"}, {"module": "year"}, {"module": "link_test"}, {"module": "calendar", "free_weeks": True}]))
+    pg5 = dict(re.findall(r'<section class="pg" id="([^"]+)"[^>]*>(.*?)</section>', r5['html'], re.S))
+    assert pg5['w01'].count('class="dchip"') == 7 and 'href="#u016" class="dchip"' in pg5['w01'], 'large taps: an Open chip on every day box'
+    assert not r5['broken_links']
     # free_weeks: weeks 1 to 52 not filed under months, a Weeks page links them all, day arrows cross week edges
     r3 = gen.build(dict(SPEC, dating={"mode": "undated"}, sections=[{"module": "cover"}, {"module": "index"}, {"module": "year"}, {"module": "calendar", "free_weeks": True}]))
     assert not r3['broken_links'] and not r3['orphan_pages'], (r3['broken_links'][:5], r3['orphan_pages'][:5])

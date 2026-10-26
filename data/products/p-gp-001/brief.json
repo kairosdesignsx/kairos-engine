@@ -486,7 +486,7 @@
         "steps": [
           [
             "Open it in Goodnotes",
-            "Download from Etsy in a web browser (the Etsy app cannot download files). Open the PDF in Goodnotes with Share, then Open in Goodnotes, or in Notability, Noteshelf, Samsung Notes or Xodo."
+            "Download from Etsy in a web browser (the Etsy app cannot download files). In Goodnotes, use Share, then Open in Goodnotes, or New, then Import. Notability, Noteshelf, Samsung Notes and Xodo work too."
           ],
           [
             "Check the links",
@@ -495,7 +495,7 @@
           ],
           [
             "Start with Week 1",
-            "Open Week 1, write this Monday's date, then open today's page and plan. Bought mid-week? Start on today and leave the days before it blank. Week 2 follows, then Week 3, for 52 weeks.",
+            "Open Week 1 and write this Monday's date. Tap a day's Open button to open its page. Bought mid-week? Start on today and leave the days before it blank. Week 2 follows, for 52 weeks.",
             "w01"
           ],
           [
@@ -505,7 +505,7 @@
         ],
         "months": true,
         "months_label": "Months: tap the month you are in and write its dates",
-        "tip": "Weeks run 1 to 52 from the week you start, whatever the month. Weeks on the top bar lists all 52. Skipped a week? Leave it blank and carry on with this week."
+        "tip": "Weeks run 1 to 52 from the week you start, whatever the month. Starting late in a month? Write on that month's page now, or begin with next month's page: month pages are blank, so you fill each one when you reach it."
       },
       {
         "module": "link_test",
@@ -608,7 +608,14 @@
       }
     ],
     "tap_targets": "large",
-    "nav_max": 5
+    "nav_max": 5,
+    "nav_desc": {
+      "index": "Contents: every section and month",
+      "year": "Year at a glance: tap a month",
+      "lists": "Three lists: to buy, to try, to read",
+      "notes": "Six lined notes pages",
+      "weeks": "All 52 weeks, in order"
+    }
   },
   "new_modules": [],
   "build_notes": "Undated mode with calendar free_weeks: weeks 1 to 52 are not filed under months (Weeks page at anchor weeks), day arrows cross week edges. eink_format is used only as a layout switch (week_layout rows, custom Setup check fix list); no grayscale, no vector rules, default gutter."
