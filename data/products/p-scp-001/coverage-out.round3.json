@@ -1,0 +1,227 @@
+{
+ "items": [
+  {
+   "key": "must:mh_selfcare",
+   "found": true,
+   "where": "w01, menu, energy, hardday, m01, moods",
+   "note": "Week page has Mon-Sun rows for mood, energy, sleep, one kind thing for me + 5 named habits; menu by time, energy map, hard day plan, month mood squares with color key, Year in moods grid."
+  },
+  {
+   "key": "must:mh_journal",
+   "found": true,
+   "where": "jr01-jr52, m01-m13, notes/notes2/notes3",
+   "note": "Each jr page: printed prompt, lined My answer, Three small good things 1-3, A kind word to myself; month pages carry the monthly reflection (Moments to remember, What I will let go of); 3 notes pages (dot grid, as the listing says)."
+  },
+  {
+   "key": "must:mh_apps",
+   "found": true,
+   "where": "files/Tend.pdf; listing Works with",
+   "note": "One 130-page PDF, plain GoTo links to named destinations; listing and Start here name Goodnotes first, then Notability, Samsung Notes, Xodo, Noteshelf. App behaviour itself not testable here."
+  },
+  {
+   "key": "must:mh_nav",
+   "found": true,
+   "where": "index, all pages (PDF link scan)",
+   "note": "Contents card grid; 7-button top bar and trail on pages 2-130; 12 working month tabs on every page; arrows on every inner page. Caveat: the 13th tab is missing on 129 of 130 PDF pages (see visual)."
+  },
+  {
+   "key": "must:mh_look",
+   "found": true,
+   "where": "all shots, PDF fonts",
+   "note": "Calm cream/plum look, Cormorant Garamond + Nunito only (pdffonts), consistent cards and spacing; looks finished."
+  },
+  {
+   "key": "must:mh_guide",
+   "found": true,
+   "where": "start, linktest",
+   "note": "Start here (4 numbered steps, top bar map, tip) and Setup check (3 jump buttons, fix list, pen test) are pages inside the PDF."
+  },
+  {
+   "key": "fix:f_download",
+   "found": true,
+   "where": "files/Tend.pdf; listing How to start; photo-10-how_download.jpg; start step 1",
+   "note": "Single PDF, no zip; listing and photo 10 give buy/download in a web browser/import; Start here step 1 repeats it. The 3 steps are on photo 10, not the apps photo (photo 7)."
+  },
+  {
+   "key": "fix:f_not_useful",
+   "found": true,
+   "where": "w01, jr01; photos 1-3; listing What's inside",
+   "note": "Week page has a row per day and its journal page follows it; close-up photos of week and journal; listing lists every page type with counts."
+  },
+  {
+   "key": "fix:f_value",
+   "found": true,
+   "where": "page_modules, PDF, listing",
+   "note": "52 week + 52 journal pages, 52 unique prompts (all match the index), 13 months, journal index, moods, menu, energy, hard day, all linked; smallest writing rows ~8 mm (23 pt on a 576 pt page); listing counts sum to 130 = PDF page count."
+  },
+  {
+   "key": "fix:f_hard",
+   "found": true,
+   "where": "w01, start step 3",
+   "note": "Week page holds the whole week and has Journal and Self-care menu buttons (links to jr01 and menu verified); Start here step 3 walks exactly this; every page is pre-labelled."
+  },
+  {
+   "key": "fix:f_quality",
+   "found": false,
+   "where": "Tend.pdf all pages except notes3",
+   "note": "No typos found in the extracted text and all link targets resolve, but the month-tab rail overflows the page: the 13th tab is pushed below the page edge on 129 of 130 pages (its link rect sits at y -44..0, off the page), so 'no overflowing text, 0 broken links' does not hold. Fonts embedded, text is vector."
+  },
+  {
+   "key": "fix:f_device",
+   "found": true,
+   "where": "listing Works with / Not for; start tip; linktest; PDF 768x576 pt",
+   "note": "Landscape 4:3 tablet shape; listing has Works with and Not for (phones, file viewers, Canva/fillable forms) and how to type; Setup check tests links on device."
+  },
+  {
+   "key": "fix:f_misleading",
+   "found": true,
+   "where": "photos 1-9 captions; listing",
+   "note": "Photos 1-9 are crops of the built pages with page-name captions; description counts match the built file. Photo 8 and the listing overstate the Go there buttons (see visual)."
+  },
+  {
+   "key": "fix:f_basic",
+   "found": true,
+   "where": "prompts, menu, hardday, m01, moods",
+   "note": "52 different printed prompts; menu has 20 ideas in 4 time groups; hard day plan has 4 steps already written; month mood squares + key feed the Year in moods."
+  },
+  {
+   "key": "fix:f_missing",
+   "found": true,
+   "where": "weeks, w01, index; listing",
+   "note": "Weekly plans included; listing says no stickers and promises no bonus files; Contents shows 10 sections + 13 months on one screen."
+  },
+  {
+   "key": "fix:f_overwhelm",
+   "found": true,
+   "where": "page_modules, start, top bar",
+   "note": "130 pages, one week + one journal page per week, no daily pages; Start here 4 steps, step 3 says begin at Week 1; top bar has exactly 7 buttons."
+  },
+  {
+   "key": "fix:f_setup",
+   "found": true,
+   "where": "cover, start, linktest",
+   "note": "Cover Open planner links to start; Start here has 4 numbered steps, Go there buttons on steps 2-4 (step 1 has none); Setup check next with jump buttons and a fix list; nothing to set up."
+  },
+  {
+   "key": "fix:f_nav",
+   "found": true,
+   "where": "weeks, w01, jr01, all pages",
+   "note": "Month tabs (12), top bar Home/Weeks/Journal/Menu/Energy/Hard day/Moods, arrows and trail top right; weeks overview links all 52 weeks; jrNN follows wNN in page order."
+  },
+  {
+   "key": "fix:f_support",
+   "found": true,
+   "where": "linktest fix list, start, listing FAQ",
+   "note": "Fix list on Setup check, Start here tip, listing FAQ covers Etsy app, which app, links not tapping, typing; only 'Send the shop an Etsy message', no reply-time promise (r007)."
+  },
+  {
+   "key": "fix:f_edit",
+   "found": true,
+   "where": "w01, menu, energy, start tip, listing",
+   "note": "Two blank habit rows per week, blank rows in every menu group, write-in energy lists; Start here tip and listing say use the text tool; 'not a fillable form' is only in the listing, not in Start here."
+  },
+  {
+   "key": "unique:u_prompts",
+   "found": true,
+   "where": "jr01-jr52, prompts",
+   "note": "52 journal pages, each its own prompt, Week button back and Journal button from the week page; journal index (prompts) lists all 52 with one-tap links; top bar Journal opens it."
+  },
+  {
+   "key": "unique:u_menu",
+   "found": true,
+   "where": "menu, energy, hardday, w01",
+   "note": "Menu in 5 min / 15 min / an hour / a slow day with blank rows; energy map drains / fills / boundaries; hard day plan with steps written; every week page links to the menu."
+  },
+  {
+   "key": "unique:u_small",
+   "found": true,
+   "where": "page_modules",
+   "note": "One week + one journal page a week, 13 month pages and 5 tools, 130 pages in total."
+  },
+  {
+   "key": "unique:u_start",
+   "found": true,
+   "where": "cover, start, linktest",
+   "note": "Open planner on the cover goes to Start here (4 steps, 3 Go there buttons); its step 2 opens Setup check (jump buttons + fix list)."
+  },
+  {
+   "key": "unique:u_anytime",
+   "found": true,
+   "where": "w01, m01-m13, moods, start tip, index",
+   "note": "Undated weeks ('Dates __ to __') and months ('Month · year __'); Month 13 exists and is reachable from the Contents card and December's next arrow (not from the tab, see visual); Year in moods has 'Year __ to __' and a mid-year how-to. Day one works for an Oct-Dec buyer and for a mid-year buyer: Start here step 3 sends both to Week 1 with no dates to wait for."
+  },
+  {
+   "key": "look",
+   "found": true,
+   "where": "all shots, product.html colors, pdffonts",
+   "note": "Cream #FCF8F3, plum ink #3B2F40 at 11.9:1, muted #6C5F71 at 5.65:1 (5.18:1 on panels); plum buttons, peach-to-lavender tabs, honey ring on cover only; two families; no letter-spaced caps or clip art; landscape."
+  }
+ ],
+ "visual": [
+  {
+   "issue": "In the delivered PDF the 13th month tab is missing on 129 of 130 pages. The tab rail overflows: the 'Month 13' tab and its link sit below the page edge (link rect y -44..0), leaving an empty strip under Dec. It appears only on the last page (Notes 3), where a lone '13th' tab shows up. The page screenshots come from HTML and show a 13th tab that the PDF does not have. Month 13 can still be reached from the Contents card and December's next arrow, so this round's 'tab' fix did not land.",
+   "where": "Tend.pdf every page except notes3 (rendered with pdftoppm; link annotations checked)",
+   "severity": "medium"
+  },
+  {
+   "issue": "Start here step 1 has no Go there button, but the listing says '4 numbered steps, each with a Go there button' and photo 8 says '4 steps with Go there buttons' and 'Each step opens its page' (r003/r005). Photo 8 also renders the Start here text small (the Go there labels are about 15 px on a 2000 px photo), and the top third of the photo is empty (r013).",
+   "where": "start; listing description; photo-08-ph8_start.jpg",
+   "severity": "medium"
+  },
+  {
+   "issue": "Hero crop has no inner margin: the 'Check in' kicker touches the frame top-left, and the Dates 'to' line runs off the right edge, so the page looks clipped.",
+   "where": "photo-01-ph1_hero.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "The journal crop cuts through the My answer box at the bottom edge, and the kicker is tight to the frame.",
+   "where": "photo-03-ph3_journal.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "The left crop cuts the 5 and 15 minute columns at the bottom edge (no box bottom).",
+   "where": "photo-04-ph4_menu.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "Both crops show only 2 of each page's 3 columns (Boundaries and Small things that help are out of frame). They are mostly blank checkbox rows, and the column labels are small.",
+   "where": "photo-05-ph5_energy_hard.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "The bottom quarter of the photo is empty background.",
+   "where": "photo-06-ph6_month_year.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "A clipped honey-ring arc sits in the top-right corner and reads as a stray mark; the top third is empty. Photo 7 also has an empty top band.",
+   "where": "photo-10-how_download.jpg; photo-07-ph7_apps.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "Arrow placement is inconsistent. Hub and tool pages have small arrows beside the trail, but week, journal, month and notes pages use large arrow buttons under it (Notes has both). Week 1 and January have no back arrow. The listing says 'on every page arrows and a trail at the top right'.",
+   "where": "w01, jr01, m01, notes vs index/start/menu",
+   "severity": "low"
+  },
+  {
+   "issue": "The listing says 'Tend.pdf (3.2 MB)', but the built file is 3,294,997 bytes (3.3 MB, or 3.1 MiB) (r003).",
+   "where": "listing description What you get",
+   "severity": "low"
+  },
+  {
+   "issue": "Photo 9's point '13 months and 5 tools' does not match anything a buyer can count in the photo (Contents shows 10 section cards).",
+   "where": "photo-09-ph9_inside.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "Step 4 names both the Self-care menu and the Hard day plan, but its only Go there button opens the menu.",
+   "where": "start step 4",
+   "severity": "low"
+  },
+  {
+   "issue": "The Energy map's write-in lists use tick boxes, including 'Drains my energy', where ticking makes little sense.",
+   "where": "energy",
+   "severity": "low"
+  }
+ ]
+}

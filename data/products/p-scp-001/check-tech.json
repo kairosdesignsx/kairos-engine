@@ -2,7 +2,7 @@
  {
   "name": "file size",
   "pass": true,
-  "detail": "Tend.pdf: 3.29 MB (limit 19.5, Etsy 20)"
+  "detail": "Tend.pdf: 3.23 MB (limit 19.5, Etsy 20)"
  },
  {
   "name": "no text overflow",
@@ -17,7 +17,7 @@
  {
   "name": "links present in PDF",
   "pass": true,
-  "detail": "3305 link annotations for 3282 links in the source"
+  "detail": "3175 link annotations for 3152 links in the source"
  },
  {
   "name": "fonts licensed (OFL list only)",
