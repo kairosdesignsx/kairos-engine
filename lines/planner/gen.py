@@ -234,7 +234,7 @@ a{{color:inherit;text-decoration:none}}
             c = self.tabs[i]; on = month == i + 1
             target = (rail_map or {}).get(i + 1, f'm{i + 1:02d}')
             out.append(f'<a href="#{target}" class="{"on" if on else ""}" style="background:{c}{"" if (on or self.gray) else "cc"}">{(rail_labels or {}).get(i + 1, MONTHS[i][:3] if self.th.get('labels') == 'italic' else MONTHS[i][:3].upper())}</a>')
-        for k, (lab, an) in enumerate(_extra_months(self)):  # habit_month extra_months: tabs after December ('13th')
+        for k, (lab, an) in enumerate(_extra_months(self, rail=True)):  # habit_month extra_months: tabs after December ('13th')
             on = month == 13 + k
             out.append(f'<a href="#{an}" class="{"on" if on else ""}" style="background:{self.th["soft"]}">{k + 13}th</a>')
         return f'<div class="rail">{"".join(out)}</div>'
@@ -1054,10 +1054,10 @@ def m_reading_year(P, sec):
     P.page(a, inner, active=a)
 
 
-def _extra_months(P):
-    """[(label, anchor)] for habit_month extra_months (m13...): shown on the month rail, Contents and guide month grids."""
+def _extra_months(P, rail=False):
+    """[(label, anchor)] for habit_month extra_months (m13...): shown on the month rail (unless habit_month rail_tab is false), Contents and guide month grids."""
     hm = next((x for x in P.s.get('sections', []) if x.get('module') == 'habit_month'), None)
-    n = int((hm or {}).get('extra_months', 0))
+    n = int((hm or {}).get('extra_months', 0)) if not (rail and (hm or {}).get('rail_tab') is False) else 0
     return [((hm.get('extra_label', 'One more month') if n == 1 else f'Month {12 + k}'), f'm{12 + k:02d}') for k in range(1, n + 1)]
 
 

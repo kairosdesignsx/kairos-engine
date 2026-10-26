@@ -207,7 +207,7 @@
   {
    "id": "f_setup",
    "complaint": "complaint:c_setup",
-   "how": "The cover's Open planner button lands on Start here: 4 numbered steps with Go there buttons. Setup check is next: buttons that jump and come back, with a fix list if they do not. There is nothing to edit or set up before planning.",
+   "how": "The cover's Open planner button lands on Start here: 4 numbered steps, steps 2 to 4 with Go there buttons. Setup check is next: buttons that jump and come back, with a fix list if they do not. There is nothing to edit or set up before planning.",
    "evidence": [
     "complaint:c_setup",
     "feature:quick_start",
@@ -315,7 +315,7 @@
   {
    "id": "u_start",
    "name": "Five-minute start and setup check",
-   "what": "Start here (4 steps with Go there buttons) and Setup check (buttons that jump and return, with a fix list) open from the cover.",
+   "what": "Start here (4 steps; steps 2 to 4 have Go there buttons) and Setup check (buttons that jump and return, with a fix list) open from the cover.",
    "why": "Could not download (33), confusing setup (16) and device trouble (22) all end with a buyer who never started; no top seller shows a quick start or a link test.",
    "evidence": [
     "feature:quick_start",
@@ -908,7 +908,8 @@
      "What I will let go of"
     ],
     "extra_months": 1,
-    "extra_label": "Month 13"
+    "extra_label": "Month 13",
+    "rail_tab": false
    },
    {
     "module": "lined",

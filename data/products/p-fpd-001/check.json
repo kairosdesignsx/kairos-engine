@@ -1,11 +1,11 @@
 {
  "product_id": "p-fpd-001",
- "at": "2026-10-26T19:56:33Z",
+ "at": "2026-10-26T20:08:09Z",
  "tech": [
   {
    "name": "file size",
    "pass": true,
-   "detail": "Stronger-Weeks.pdf: 8.06 MB (limit 19.5, Etsy 20)"
+   "detail": "Stronger-Weeks.pdf: 8.26 MB (limit 19.5, Etsy 20)"
   },
   {
    "name": "no text overflow",
@@ -20,7 +20,7 @@
   {
    "name": "links present in PDF",
    "pass": true,
-   "detail": "7741 link annotations for 7724 links in the source"
+   "detail": "8088 link annotations for 8071 links in the source"
   },
   {
    "name": "fonts licensed (OFL list only)",
@@ -64,175 +64,175 @@
    "kind": "must",
    "found": true,
    "where": "wo001, meal01, progress, measure, w01",
-   "note": "Workout log 8 exercises x 4 sets with Last time, weekly meal grid plus 5-group grocery list, 52-week weight chart, measurements every 4 weeks, 7-day habit grid on every week page."
+   "note": "Workout log (8 exercises x Last time + 4 sets), weekly meal plan with 5-group grocery list, 52-week weight chart, measurements table, and a 7-day habit grid on every week page; all seen in shots."
   },
   {
    "item": "must:mh_journal",
    "kind": "must",
    "found": true,
-   "where": "w01, wo001, m01, notes",
-   "note": "Win of the week / Next week I will on week pages, How it felt / Next time I will on workouts, What went well / One change for next month on months, notes1-3 dot grid (notes2-3 from page_modules and links)."
+   "where": "w01, w27, wo001, m01, m07, notes (+notes2, notes3 in page_modules)",
+   "note": "Win of the week and Next week I will on week pages; How it felt and Next time I will on workouts; What went well / One change for next month on months; 3 dot-grid Notes pages (notes2, notes3 exist in page_modules, not screenshotted)."
   },
   {
    "item": "must:mh_apps",
    "kind": "must",
    "found": true,
-   "where": "files, listing.title, listing.description",
-   "note": "One PDF; title names Goodnotes first; Works with lists all 5 apps on iPad, Android and Windows tablets; all 7741 links are plain GoTo links, no JavaScript or URI. App behaviour not testable here."
+   "where": "files/Stronger-Weeks.pdf, listing.title, listing.description Works with",
+   "note": "One 344-page PDF; title reads 'for Goodnotes' first; Works with lists Goodnotes, Notability, Samsung Notes, Xodo, Noteshelf on iPad, Android and Windows tablets. On-device behaviour not testable here; all 8088 links are standard GoTo links to named destinations, 0 broken."
   },
   {
    "item": "must:mh_nav",
    "kind": "must",
    "found": true,
-   "where": "all pages (link map)",
-   "note": "Contents, 12 month tabs on all 344 pages, top bar on every inner page, prev/next arrows within each series, and a linked trail crumb on every page except the cover (Contents is the root). Round 1 trail gap fixed."
+   "where": "index, all pages (link scan), w27, m07, wo001",
+   "note": "Contents page; 13 month tabs (incl. Month 13) on all 344 pages; top bar Home/Weeks/Workouts/Progress on every page but the cover; prev/next arrows and a trail on every inner page. 0 broken links, 0 unreachable pages from the cover."
   },
   {
    "item": "must:mh_look",
    "kind": "must",
    "found": true,
    "where": "all shots",
-   "note": "Consistent margins, cards and type scale; Libre Baskerville headings and italic labels, Outfit body, cobalt buttons; all text vector."
+   "note": "Consistent editorial layout, 2 font families (Libre Baskerville + Outfit), even card spacing, no clip-art; small look deviations logged in visual."
   },
   {
    "item": "must:mh_guide",
    "kind": "must",
    "found": true,
    "where": "start, linktest",
-   "note": "Start here: 4 numbered steps with Go there buttons, month jump grid, tip. Setup check: 3 test buttons, 4-item fix list, top bar map, pen test."
+   "note": "Start here (4 numbered steps with Go there buttons, Month 13 tip) and Setup check (3 test buttons, 4-item fix list, pen test) are printed in the file."
   },
   {
    "item": "fix:f_not_useful",
    "kind": "fix",
    "found": true,
-   "where": "w01, wo001, meal01, log, m01, m13, linktest, progress, measure; listing.description",
-   "note": "Measured: smallest writing rows are grocery 7.14 mm, journal/reflection/habit/pen-test lines 7.67 mm, log 8.2 mm, cardio 9.0 mm, milestones 8.7 mm, measurements 10 mm; 8x4 workout table; listing counts every page type (sum 344). Only the chart scale ticks are 2.65 mm (see visual)."
+   "where": "w01, wo001, meal01, m01, linktest; listing.description",
+   "note": "Measured rows: 7.14 mm (grocery) to 11.9 mm (exercise), all >= 7 mm on a 576x768 pt (8 x 10.67 in) page; workout table is 8 rows x 4 sets; photos are single-page close-ups; listing counts every page type."
   },
   {
    "item": "fix:f_download",
    "kind": "fix",
    "found": true,
-   "where": "files, listing 'How to start', photo-10-how_download.jpg, start, cover",
-   "note": "One PDF, no stickers or zip; last photo shows 3 steps (buy and download in a web browser not the Etsy app, open in a note app, start); listing How to start and Start here step 1 repeat it; cover 'Stronger Weeks' opens the listing title."
+   "where": "files/, cover, start, listing.description How to start, photo-10-how_download.jpg",
+   "note": "Single PDF, no zip or stickers; listing and last photo give 3 steps (buy and download in a web browser not the Etsy app, import, start); Start here step 1 repeats it; cover title 'Stronger Weeks' matches the listing name."
   },
   {
    "item": "fix:f_misleading",
    "kind": "fix",
-   "found": false,
-   "where": "photo-06-ph8_links.jpg",
-   "note": "Every photo is the built file with a page caption and the description states digital PDF, tablets, portrait, undated, English, no stickers, pen or text tool. But photo-06 says 'Jump to any 7 weeks of the log' while each log page holds 6 weeks (1 to 6 ... 49 to 52)."
+   "found": true,
+   "where": "photos 01-09, listing.description Good to know",
+   "note": "Photos 1-9 are crops of the built pages with page-name captions (photo 8 adds an apps panel, photo 10 is the steps card); description says digital PDF for tablet note apps, portrait, undated, English, no stickers, pen or text tool. One alt-text over-claim logged in visual."
   },
   {
    "item": "fix:f_value",
    "kind": "fix",
    "found": true,
-   "where": "page_modules, link map, listing.description",
-   "note": "52 week pages, 52 meal plans, 208 workouts and 13 month pages in the file, each week hub links its meal plan and 4 workouts; listing counts match the 344-page PDF."
+   "where": "PDF page order, listing.description What's inside",
+   "note": "File holds 52 weeks, 52 meal plans, 208 workouts, 13 months, all linked; listing counts (344 pages, 52/208/52/9/13/3) match the built file exactly."
   },
   {
    "item": "fix:f_print",
    "kind": "fix",
    "found": true,
-   "where": "PDF page size, page order, listing 'Want paper too?'",
-   "note": "All 344 pages 576x768 pt (8 x 10.67 in); week, meal plan and 4 workouts are 6 consecutive pages (e.g. pp 6-11); listing explains Letter Actual size, A4 Fit to page, page ranges and that the tint prints."
+   "where": "PDF MediaBox 576x768 pt, page order, listing 'Want paper too?'",
+   "note": "Pages are 8 x 10.67 in; every week sits as week, meal plan, workouts 1-4 (6 pages in a row, verified for all 52); listing gives Letter Actual size, A4 Fit to page, and says the page colour prints."
   },
   {
    "item": "fix:f_hard",
    "kind": "fix",
    "found": true,
-   "where": "w01-w52, meal/wo pages, start",
-   "note": "Verified all 52 weeks: Meal plan + Workout 1-4 buttons, each of those has a '<- Week N' button back; Start here step 3 walks it; habits are a plain 7-day grid with day names over every column."
+   "where": "w01, meal01, wo001, start step 3",
+   "note": "Each week page links its meal plan and Workout 1-4, and all 260 child pages link back to their week (verified); Start here step 3 walks this; habits are a plain grid with day names over every column."
   },
   {
    "item": "fix:f_quality",
    "kind": "fix",
    "found": true,
-   "where": "PDF text, link map, check-tech.json",
-   "note": "No misspellings in the 351-word vocabulary; 0 broken links, every page reachable from the cover; tech check reports no overflow; 0 raster images; weeks, workouts and meals in number order once each."
+   "where": "PDF text and link scan, check-tech.json",
+   "note": "No misspellings in extracted text; 0 broken links, 0 unreachable pages, no overflow (check tech); text is real embedded vector text; weeks, meals, workouts run in order, each once."
   },
   {
    "item": "fix:f_basic",
    "kind": "fix",
    "found": true,
-   "where": "wo001, progress, measure, meal01",
-   "note": "Last time column on every exercise, 52-week chart on one page, check-ins every 4 weeks with How to measure guide, a tick circle in every meal cell."
+   "where": "wo001, progress, measure, w04, meal01",
+   "note": "Last time column on every exercise, 52-week chart on one page, measuring every 4 weeks with How to measure guide and Measure buttons on weeks 4..52, a tick circle per meal."
   },
   {
    "item": "fix:f_device",
    "kind": "fix",
    "found": true,
-   "where": "PDF, listing Works with / Not for, linktest",
-   "note": "All pages portrait; plain GoTo links; listing Works with and Not for (phones, Files/Photos, Canva, spreadsheets, fillable forms); Setup check tests links on the device."
+   "where": "PDF (portrait), listing Works with / Not for, linktest",
+   "note": "Portrait pages, plain GoTo links only (no JavaScript/forms), Works with and Not for lists (phones, file viewers, Canva, spreadsheets, fillable forms), Setup check page."
   },
   {
    "item": "fix:f_missing",
    "kind": "fix",
    "found": true,
    "where": "listing.description, meal01",
-   "note": "No stickers or bonus files advertised; counts match the file (344 = 1+1+1+1+1+52+208+9+52+1+1+13+3); every week has a meal plan with ticks and a grocery list."
+   "note": "No stickers or bonus files promised; counts match the file; a meal plan with tick per meal and grocery list for every week."
   },
   {
    "item": "fix:f_support",
    "kind": "fix",
    "found": true,
-   "where": "linktest, start, listing 'Questions buyers ask', 'Help'",
-   "note": "Fix list, Start here steps and a FAQ covering Etsy app download, which app, links not tapping, typing, more than 4 workouts, units. Printing is answered in 'Want paper too?' rather than the FAQ. No reply times promised (r007 pass)."
+   "where": "linktest, start, listing Questions buyers ask",
+   "note": "Fix list, Start here steps and FAQ (Etsy app, which app, links not tapping, typing); printing is answered in the separate 'Want paper too?' paragraph rather than the FAQ; no reply-time promises (r007)."
   },
   {
    "item": "fix:f_repetitive",
    "kind": "fix",
    "found": true,
-   "where": "all page types, listing.description",
-   "note": "Week hub, workout log, meal plan, month check-in, chart, measurements each have their own layout; listing counts 52 weeks, 208 workouts, 52 meal plans plainly inside 344."
+   "where": "w01, wo001, meal01, m01, progress, measure",
+   "note": "Six distinct layouts, one job each; listing counts repeats honestly (52 weeks, 208 workouts, 52 meal plans)."
   },
   {
    "item": "fix:f_broken",
    "kind": "fix",
    "found": true,
    "where": "linktest",
-   "note": "Three buttons (A week page, A month page, Contents) and a 4-item fix list: pen off, open in a PDF app not Files/Photos, re-import do not convert, send the shop an Etsy message."
+   "note": "Three test buttons (week page, month page, Contents) and the four-item fix list: pen off, open in a note app, re-import as PDF, message the shop."
   },
   {
    "item": "unique:u_week_hub",
    "kind": "unique",
    "found": true,
-   "where": "w01-w52, weeks, log-log9",
-   "note": "Link map: every week opens its meal plan and Workouts 1-4, each has a Week button back; 52 weeks overview opens all 52; 9 training log pages link all 208 workouts."
+   "where": "w01, meal01, wo001, weeks, log..log9",
+   "note": "Week buttons to meal plan and Workout 1-4, Week button back on each; 52-week overview links all 52 weeks; 9 log pages link all 208 workouts by week (verified)."
   },
   {
    "item": "unique:u_overload",
    "kind": "unique",
    "found": true,
    "where": "wo001",
-   "note": "Last time column, 'Copy your best set from last time, then try to beat it', Set 1-4 weight x reps, effort 1-5, cardio table, How it felt and Next time I will."
+   "note": "Last time column, weight x reps hint, Set 1-4, effort 1-5, cardio table, How it felt and Next time I will."
   },
   {
    "item": "unique:u_progress",
    "kind": "unique",
    "found": true,
-   "where": "progress, measure, weeks",
-   "note": "52-week grid with write-your-own scale, Start/Goal/Week 26/Week 52 write-in fields (no printed start or goal line on the chart), milestones, wins the scale does not show; measurements every 4 weeks with guide; Measure button on exactly weeks 4, 8 ... 52."
+   "where": "progress, measure, weeks, w04, w52",
+   "note": "52-week grid with write-your-own scale, Start/Goal/Week 26/Week 52, milestones and wins boxes; measurements table every 4 weeks with How to measure; Measure button on exactly weeks 4, 8 ... 52."
   },
   {
    "item": "unique:u_start",
    "kind": "unique",
    "found": true,
    "where": "cover, start, linktest",
-   "note": "Cover's only link (Open planner) goes to Start here; 4 numbered steps with Go there buttons; Setup check is the next page with buttons and fix list; return is Home then Setup check, as the page says."
+   "note": "Cover Open planner links to Start here; 4 numbered steps with Go there buttons; Start here's next arrow opens Setup check, with fix list. Returning to Setup check takes Home then the card (2 taps)."
   },
   {
    "item": "unique:u_anytime",
    "kind": "unique",
    "found": true,
-   "where": "w01, m01-m12, m13",
-   "note": "No dates printed, Week 1 has date blanks, months have a year blank, and a 13th page 'One more month' (Month ____ blank) now exists. It is hard to find: see visual."
+   "where": "w01, m01, m13, index, start, month tabs",
+   "note": "Undated weeks and months (Month/year blanks). Month 13 is linked from the Contents grid, the Start here month grid and tip, the 13th tab on all 344 pages, December's next arrow, and its own back arrow to December."
   },
   {
    "item": "look",
    "kind": "look",
    "found": true,
-   "where": "all shots, pdffonts",
-   "note": "Paper #F8F7F3 on cover and pages (cover fixed), navy ink, cobalt buttons, periwinkle-to-lime tabs, lime bar on cover; only Libre Baskerville Bold/Italic and Outfit; no letter-spaced caps or clip-art."
+   "where": "all shots, pdffonts, pixel samples",
+   "note": "Paper #F8F7F3, navy ink about 14.9:1, muted text about 5.6-5.9:1, cobalt buttons, lime cover bar and Dec tab, Libre Baskerville bold/italic + Outfit, no letter-spaced caps, no clip-art. The chart is grey, not cobalt, and the 13th tab is lavender rather than ending on lime (logged)."
   }
  ],
  "clone": {
@@ -252,62 +252,82 @@
  },
  "visual": [
   {
-   "issue": "The 13th month page ('One more month') is reachable only from the next arrow on December and the back arrow on Notes. It is missing from the Contents month grid, the Start here jump grid and the month tabs, and no page tells a mid-month starter that it exists or when to use it.",
-   "where": "m13, index, start, month tabs",
+   "issue": "Alt text says the photo shows 'weeks 1 to 6 with a button for each of their workouts', but the frame shows only weeks 1 to 3 (the crop stops at y 0.6). Alt text must describe only what is in frame (r013, r005).",
+   "where": "photo-06-ph8_links.jpg, listing.alt.ph8_links",
    "severity": "medium"
   },
   {
-   "issue": "Photo copy is wrong: 'Jump to any 7 weeks of the log', but each training log page holds 6 weeks (chips 1 to 6 ... 49 to 52) (r005).",
-   "where": "photo-06-ph8_links.jpg",
-   "severity": "medium"
-  },
-  {
-   "issue": "Progress/Measurements and Weeks/Training log photos still put two near-whole pages side by side at half width, so small labels are hard to read at Etsy zoom (r013). The Progress crop also cuts the last milestone checkbox at the bottom edge.",
-   "where": "photo-05-ph5_progress.jpg, photo-06-ph8_links.jpg",
+   "issue": "Large blank bands: the top 20-28% of the hero, week, progress, training log, inside and download photos is empty background, so the page close-up is smaller than it could be at Etsy zoom.",
+   "where": "photo-01, photo-02, photo-05, photo-06, photo-09, photo-10",
    "severity": "low"
   },
   {
-   "issue": "Start here photo shows almost the whole page shrunk; step text is small at Etsy zoom (r013).",
-   "where": "photo-07-ph7_start.jpg",
+   "issue": "Meals photo: the grocery-list crop starts with a thin sliver of the meal grid card's bottom border along its top edge, and the lower-right quarter of the photo is empty.",
+   "where": "photo-04-ph4_meals.jpg",
    "severity": "low"
   },
   {
-   "issue": "Large empty bands: blank top 20-28% on the hero, week, inside and download photos; empty lower-right quadrant on the meals photo; a stray lime sliver is cut off at the top-right corner of the download photo.",
-   "where": "photo-01, photo-02, photo-04, photo-09, photo-10",
+   "issue": "A stray lime bar fragment is cut off at the top-right corner of the download photo.",
+   "where": "photo-10-how_download.jpg",
    "severity": "low"
   },
   {
-   "issue": "Weight chart scale column is ruled every 2.65 mm, too tight to write a value per tick. The page says 'Write your scale on the left' but does not say how often to label.",
-   "where": "progress",
+   "issue": "Listing says 8.1 MB, but the file is 8,255,981 bytes (8.26 MB; check tech also reports 8.26 MB) (r003).",
+   "where": "listing.description What you get",
    "severity": "low"
   },
   {
-   "issue": "Milestones card leaves about 12% blank under its 10 checkboxes (r006, much smaller than round 1).",
-   "where": "progress",
+   "issue": "Look drift from the brief: the weight chart is drawn in grey, not the promised cobalt; the 13th tab and the weeks 49-52 cards are pale lavender, so the periwinkle-to-lime range does not end on lime.",
+   "where": "progress, cover/all pages tab strip, weeks",
    "severity": "low"
   },
   {
-   "issue": "Setup check eyebrow 'Setup check' repeats the heading; the top bar map box has wide gaps between its 4 rows (r006).",
-   "where": "linktest",
+   "issue": "Month 13 is called '13th' on the tab strip but 'Month 13' everywhere else.",
+   "where": "month tabs on every page",
    "severity": "low"
   },
   {
-   "issue": "Month headings' initial J hangs left of the page margin.",
-   "where": "m01, m07",
-   "severity": "low"
-  },
-  {
-   "issue": "'One more month' has no next arrow, while Notes has a back arrow to it.",
+   "issue": "Month 13's next arrow goes back to January instead of on to Notes, while Notes' back arrow goes to Month 13; a buyer swiping forward loops to January.",
    "where": "m13",
    "severity": "low"
   },
   {
-   "issue": "The listing FAQ has no printing question; printing is covered only in the separate 'Want paper too?' paragraph.",
-   "where": "listing.description",
+   "issue": "Start here step 1 ('Open it in a note app') has a Go there button that opens Contents, which does not relate to that step.",
+   "where": "start",
+   "severity": "low"
+  },
+  {
+   "issue": "Setup check 'Where things are: the top bar' box spreads 4 short rows over about 600 px with wide empty gaps (r006).",
+   "where": "linktest",
+   "severity": "low"
+  },
+  {
+   "issue": "Progress: the Milestones card leaves about 12% blank under its 10 checkboxes, and the scale column is ruled about every 2.8 mm with no hint on how often to label it.",
+   "where": "progress",
+   "severity": "low"
+  },
+  {
+   "issue": "The J of the month headings hangs left of the page margin.",
+   "where": "m01, m07",
+   "severity": "low"
+  },
+  {
+   "issue": "Notes pages show two forward arrows to the same page (beside the title and in the top-right trail) next to the 1/2/3 chips.",
+   "where": "notes, notes2, notes3",
+   "severity": "low"
+  },
+  {
+   "issue": "Listing says 'on every page arrows and a trail at the top right'. The cover has neither, and on week, meal, workout, log, month and notes pages the arrows sit beside the title, not at the top right.",
+   "where": "listing.description, cover, w01, meal01",
+   "severity": "low"
+  },
+  {
+   "issue": "Setup check test buttons do not come back on their own: the target pages (Week 1, January, Contents) have no link back to Setup check, so a buyer must tap Home and then the Setup check card, as the page says.",
+   "where": "linktest, w01, m01",
    "severity": "low"
   }
  ],
- "pass": false,
+ "pass": true,
  "notes": [
   "Image clone check pending: competitor photos come from the laptop worker."
  ]

@@ -3,219 +3,224 @@
   {
    "key": "must:mh_selfcare",
    "found": true,
-   "where": "w01, w27, menu, energy, hardday, m01, moods",
-   "note": "Week page has a row per day for mood, energy, sleep and one kind thing plus 5 habits and 2 blank rows; self-care menu by time, energy map, hard day plan, mood squares on every month page and a Year in moods grid with color key."
+   "where": "w01, menu, energy, hardday, m01, moods",
+   "note": "Week page has Mon-Sun rows for mood, energy, sleep, one kind thing for me + 5 named habits; menu by time, energy map, hard day plan, month mood squares with color key, Year in moods grid."
   },
   {
    "key": "must:mh_journal",
    "found": true,
-   "where": "jr01, prompts, m01, notes",
-   "note": "Each journal page has its printed prompt, lined My answer, Three small good things and A kind word to myself; month pages hold the monthly reflection (best/hardest day, moments, let go of); notes, notes2, notes3 are dot grid."
+   "where": "jr01-jr52, m01-m13, notes/notes2/notes3",
+   "note": "Each jr page: printed prompt, lined My answer, Three small good things 1-3, A kind word to myself; month pages carry the monthly reflection (Moments to remember, What I will let go of); 3 notes pages (dot grid, as the listing says)."
   },
   {
    "key": "must:mh_apps",
    "found": true,
-   "where": "files/Tend.pdf; listing title and Works with",
-   "note": "One 130-page PDF with plain GoTo links to 130 named destinations; Goodnotes named first in title, Works with and Start here. Behaviour in each app not tested here, only the link type."
+   "where": "files/Tend.pdf; listing Works with",
+   "note": "One 130-page PDF, plain GoTo links to named destinations; listing and Start here name Goodnotes first, then Notability, Samsung Notes, Xodo, Noteshelf. App behaviour itself not testable here."
   },
   {
    "key": "must:mh_nav",
    "found": true,
    "where": "index, all pages (PDF link scan)",
-   "note": "Contents, 12 month tabs and 7-button top bar on every page but the cover; every non-cover page now has a tappable trail (week -> Weeks, journal -> its week, tools/months -> Contents) and prev/next arrows (first/last page of a series has one). Arrow styles differ by page type (see visual)."
+   "note": "Contents card grid; 7-button top bar and trail on pages 2-130; 12 working month tabs on every page; arrows on every inner page. Caveat: the 13th tab is missing on 129 of 130 PDF pages (see visual)."
   },
   {
    "key": "must:mh_look",
    "found": true,
-   "where": "all shots",
-   "note": "Calm, finished layout: Cormorant Garamond headings and italic labels (now lining figures), Nunito body, plum buttons, peach-to-lavender tabs, generous spacing."
+   "where": "all shots, PDF fonts",
+   "note": "Calm cream/plum look, Cormorant Garamond + Nunito only (pdffonts), consistent cards and spacing; looks finished."
   },
   {
    "key": "must:mh_guide",
    "found": true,
    "where": "start, linktest",
-   "note": "Start here prints 4 numbered steps with Go there buttons and a top-bar map; Setup check has 3 test buttons and a Nothing happened? fix list, all inside the PDF."
+   "note": "Start here (4 numbered steps, top bar map, tip) and Setup check (3 jump buttons, fix list, pen test) are pages inside the PDF."
   },
   {
    "key": "fix:f_download",
    "found": true,
-   "where": "files; listing How to start/FAQ; photo-10; start step 1",
-   "note": "Ships as one PDF, not a zip. Browser-not-Etsy-app steps are in the listing, photo 10 and Start here step 1. The apps photo (photo 7) does not repeat the 3 steps; photo 10 carries them."
+   "where": "files/Tend.pdf; listing How to start; photo-10-how_download.jpg; start step 1",
+   "note": "Single PDF, no zip; listing and photo 10 give buy/download in a web browser/import; Start here step 1 repeats it. The 3 steps are on photo 10, not the apps photo (photo 7)."
   },
   {
    "key": "fix:f_not_useful",
    "found": true,
-   "where": "w01, jr01, photo-01..05, listing What's inside",
-   "note": "Week page with a row per day, followed in the file by that week's journal page. Photos 1-5 are real close-ups; listing lists every page type with its count."
+   "where": "w01, jr01; photos 1-3; listing What's inside",
+   "note": "Week page has a row per day and its journal page follows it; close-up photos of week and journal; listing lists every page type with counts."
   },
   {
    "key": "fix:f_value",
    "found": true,
-   "where": "PDF scan; w01, jr01, menu, m01",
-   "note": "52 week + 52 journal pages, 52 distinct prompts, 13 months, journal index, year in moods, menu, energy, hard day; 0 broken links, 130/130 pages reachable. Writing rows measure about 23 pt (8 mm) or more. Listing counts match the 130-page file."
+   "where": "page_modules, PDF, listing",
+   "note": "52 week + 52 journal pages, 52 unique prompts (all match the index), 13 months, journal index, moods, menu, energy, hard day, all linked; smallest writing rows ~8 mm (23 pt on a 576 pt page); listing counts sum to 130 = PDF page count."
   },
   {
    "key": "fix:f_hard",
    "found": true,
-   "where": "w01, w27, start step 3",
-   "note": "Week page holds the whole week and has Journal and Self-care menu buttons; all 52 week pages link their own journal page and the menu; Start here step 3 walks through Week 1."
+   "where": "w01, start step 3",
+   "note": "Week page holds the whole week and has Journal and Self-care menu buttons (links to jr01 and menu verified); Start here step 3 walks exactly this; every page is pre-labelled."
   },
   {
    "key": "fix:f_quality",
-   "found": true,
-   "where": "PDF text and link scan",
-   "note": "Word list from the full PDF text shows no typos in prompts or labels; 0 unresolved links, no unreachable pages; vector text with embedded Cormorant/Nunito only."
+   "found": false,
+   "where": "Tend.pdf all pages except notes3",
+   "note": "No typos found in the extracted text and all link targets resolve, but the month-tab rail overflows the page: the 13th tab is pushed below the page edge on 129 of 130 pages (its link rect sits at y -44..0, off the page), so 'no overflowing text, 0 broken links' does not hold. Fonts embedded, text is vector."
   },
   {
    "key": "fix:f_device",
    "found": true,
-   "where": "PDF 768x576 pt; listing Works with / Not for",
-   "note": "Plain PDF links on 4:3 landscape pages. Listing has Works with and Not for (phones, file viewers, Canva/forms/spreadsheets) and explains typing with the text tool; Setup check tests the links."
+   "where": "listing Works with / Not for; start tip; linktest; PDF 768x576 pt",
+   "note": "Landscape 4:3 tablet shape; listing has Works with and Not for (phones, file viewers, Canva/fillable forms) and how to type; Setup check tests links on device."
   },
   {
    "key": "fix:f_misleading",
    "found": true,
-   "where": "photos 1-10, listing",
-   "note": "Every photo shows the built file with a page-name caption; description counts match the file (130 pages, 3.2 MB). Photo 9 card-number captions do not follow the page's order (see visual)."
+   "where": "photos 1-9 captions; listing",
+   "note": "Photos 1-9 are crops of the built pages with page-name captions; description counts match the built file. Photo 8 and the listing overstate the Go there buttons (see visual)."
   },
   {
    "key": "fix:f_basic",
    "found": true,
    "where": "prompts, menu, hardday, m01, moods",
-   "note": "52 different printed prompts; menu has 20 ideas in 5 min / 15 min / an hour / a slow day; hard day plan has 4 prefilled smallest steps; mood squares on months and a year grid."
+   "note": "52 different printed prompts; menu has 20 ideas in 4 time groups; hard day plan has 4 steps already written; month mood squares + key feed the Year in moods."
   },
   {
    "key": "fix:f_missing",
    "found": true,
-   "where": "index; listing",
-   "note": "Weekly pages included; no stickers or bonus files promised. Contents shows all 10 sections and 12 months on one screen, but not the 13th 'One more month' page (see visual)."
+   "where": "weeks, w01, index; listing",
+   "note": "Weekly plans included; listing says no stickers and promises no bonus files; Contents shows 10 sections + 13 months on one screen."
   },
   {
    "key": "fix:f_overwhelm",
    "found": true,
-   "where": "start, top bar, PDF",
-   "note": "130 pages, one week and one journal page per week, no daily pages. Start here gives 4 steps and says start Week 1 today. Top bar has exactly 7 buttons."
+   "where": "page_modules, start, top bar",
+   "note": "130 pages, one week + one journal page per week, no daily pages; Start here 4 steps, step 3 says begin at Week 1; top bar has exactly 7 buttons."
   },
   {
    "key": "fix:f_setup",
    "found": true,
    "where": "cover, start, linktest",
-   "note": "Open planner lands on Start here (4 numbered steps, Go there buttons); Setup check is the next page with a fix list. Its buttons jump but do not link back; the printed way back is Home, then Setup check."
+   "note": "Cover Open planner links to start; Start here has 4 numbered steps, Go there buttons on steps 2-4 (step 1 has none); Setup check next with jump buttons and a fix list; nothing to set up."
   },
   {
    "key": "fix:f_nav",
    "found": true,
-   "where": "weeks, w01, jr01, top bar",
-   "note": "Top bar matches the brief's 7 buttons; trail at top right is a working back link on every non-cover page; 52-week overview opens any week in one tap; each journal page follows its week in the file."
+   "where": "weeks, w01, jr01, all pages",
+   "note": "Month tabs (12), top bar Home/Weeks/Journal/Menu/Energy/Hard day/Moods, arrows and trail top right; weeks overview links all 52 weeks; jrNN follows wNN in page order."
   },
   {
    "key": "fix:f_support",
    "found": true,
    "where": "linktest fix list, start, listing FAQ",
-   "note": "Listing FAQ covers Etsy app download, which app, links not tapping and typing. No reply-time promise anywhere ('Send the shop an Etsy message' only), so r007 passes."
+   "note": "Fix list on Setup check, Start here tip, listing FAQ covers Etsy app, which app, links not tapping, typing; only 'Send the shop an Etsy message', no reply-time promise (r007)."
   },
   {
    "key": "fix:f_edit",
    "found": true,
    "where": "w01, menu, energy, start tip, listing",
-   "note": "Blank habit rows, blank menu rows and blank energy lists; Start here tip and listing explain the text tool. 'Not a fillable form' appears only in the listing, not in Start here."
+   "note": "Two blank habit rows per week, blank rows in every menu group, write-in energy lists; Start here tip and listing say use the text tool; 'not a fillable form' is only in the listing, not in Start here."
   },
   {
    "key": "unique:u_prompts",
    "found": true,
-   "where": "jr01, prompts, w01, top bar",
-   "note": "52 journal pages each with its own prompt, linked from its week and back via Week N button; journal index lists all 52 prompts, one tap each; top bar Journal now opens the index on every page."
+   "where": "jr01-jr52, prompts",
+   "note": "52 journal pages, each its own prompt, Week button back and Journal button from the week page; journal index (prompts) lists all 52 with one-tap links; top bar Journal opens it."
   },
   {
    "key": "unique:u_menu",
    "found": true,
    "where": "menu, energy, hardday, w01",
-   "note": "Menu has 4 time groups of 5 ideas plus blank rows; energy map has drains / fills me back up / boundaries; hard day plan has prefilled steps; all 52 week pages link to the menu."
+   "note": "Menu in 5 min / 15 min / an hour / a slow day with blank rows; energy map drains / fills / boundaries; hard day plan with steps written; every week page links to the menu."
   },
   {
    "key": "unique:u_small",
    "found": true,
-   "where": "PDF, listing",
-   "note": "130 linked pages: one week page and one journal page per week, 13 months and a handful of tools."
+   "where": "page_modules",
+   "note": "One week + one journal page a week, 13 month pages and 5 tools, 130 pages in total."
   },
   {
    "key": "unique:u_start",
    "found": true,
    "where": "cover, start, linktest",
-   "note": "Start here (4 steps, Go there buttons) opens from the cover; Setup check is one tap further (Start here step 2 or next arrow), not directly from the cover."
+   "note": "Open planner on the cover goes to Start here (4 steps, 3 Go there buttons); its step 2 opens Setup check (jump buttons + fix list)."
   },
   {
    "key": "unique:u_anytime",
    "found": true,
-   "where": "w01, m01, m13, moods",
-   "note": "No dates printed; month pages have a year blank; 'One more month' (m13) exists with Month ____ and year ____; Year in moods has Year ___ to ___ and a how-to-color note for mid-year starts. Walked day one for an Oct buyer and a July buyer: Start here step 3 to Week 1 plus the month tab works for both. m13 is hard to find (see visual)."
+   "where": "w01, m01-m13, moods, start tip, index",
+   "note": "Undated weeks ('Dates __ to __') and months ('Month · year __'); Month 13 exists and is reachable from the Contents card and December's next arrow (not from the tab, see visual); Year in moods has 'Year __ to __' and a mid-year how-to. Day one works for an Oct-Dec buyer and for a mid-year buyer: Start here step 3 sends both to Week 1 with no dates to wait for."
   },
   {
    "key": "look",
    "found": true,
-   "where": "all shots",
-   "note": "Page #FCF8F3, heading ink 11.9:1, muted labels 5.65:1; plum buttons, peach-to-lavender tabs, honey ring on cover, Contents and Start here; only Cormorant Garamond and Nunito (r016), no letter-spaced caps, no clip art, landscape."
+   "where": "all shots, product.html colors, pdffonts",
+   "note": "Cream #FCF8F3, plum ink #3B2F40 at 11.9:1, muted #6C5F71 at 5.65:1 (5.18:1 on panels); plum buttons, peach-to-lavender tabs, honey ring on cover only; two families; no letter-spaced caps or clip art; landscape."
   }
  ],
  "visual": [
   {
-   "issue": "Month photo still shrinks the full page width into a thin strip: the top and bottom thirds of the frame are blank and the day numbers and 'Best day / Hardest day' labels are tiny, yet it is labelled 'close up' (r013).",
-   "where": "photo-06-ph6_month_year.jpg",
+   "issue": "In the delivered PDF the 13th month tab is missing on 129 of 130 pages. The tab rail overflows: the 'Month 13' tab and its link sit below the page edge (link rect y -44..0), leaving an empty strip under Dec. It appears only on the last page (Notes 3), where a lone '13th' tab shows up. The page screenshots come from HTML and show a 13th tab that the PDF does not have. Month 13 can still be reached from the Contents card and December's next arrow, so this round's 'tab' fix did not land.",
+   "where": "Tend.pdf every page except notes3 (rendered with pdftoppm; link annotations checked)",
    "severity": "medium"
   },
   {
-   "issue": "Contents photo leaves the bottom 40% of the frame empty, the right crop's top third is only a clipped piece of the honey ring, and the captions 'cards 1 to 6' / 'Cards 7 to 10' do not match the page's order (Journal and Self-care menu are cards 4 and 5 on the page) (r005/r013).",
-   "where": "photo-09-ph9_inside.jpg",
+   "issue": "Start here step 1 has no Go there button, but the listing says '4 numbered steps, each with a Go there button' and photo 8 says '4 steps with Go there buttons' and 'Each step opens its page' (r003/r005). Photo 8 also renders the Start here text small (the Go there labels are about 15 px on a 2000 px photo), and the top third of the photo is empty (r013).",
+   "where": "start; listing description; photo-08-ph8_start.jpg",
    "severity": "medium"
   },
   {
-   "issue": "The 13th 'One more month' page is not on Contents, the month tabs or Start here; only January-December's last arrow (m12) and Notes 1's back arrow lead to it. A buyer who starts mid-month, as the listing invites, will not find it.",
-   "where": "m13, index",
-   "severity": "medium"
-  },
-  {
-   "issue": "Arrow controls differ by page type: small arrows beside the trail on Contents and tool pages, large square buttons under the trail on week, journal and month pages, and both on Notes (two forward arrows). On w52, jr52, m13 and notes3 the arrow in the 'next' slot points back.",
-   "where": "w01-w52, jr01-jr52, m01-m13, notes-notes3",
+   "issue": "Hero crop has no inner margin: the 'Check in' kicker touches the frame top-left, and the Dates 'to' line runs off the right edge, so the page looks clipped.",
+   "where": "photo-01-ph1_hero.jpg",
    "severity": "low"
   },
   {
-   "issue": "Crops start at the page margin, so the italic kicker ('Check in · week 1 of 52', 'Reflect · week 1', 'Pick one', 'Notice', 'Five minutes') touches the frame's top-left edge and the J of 'Journal' sits on the edge; photos 3 and 4 also cut through the bottom of their boxes.",
-   "where": "photo-01, photo-03, photo-04, photo-05, photo-07, photo-08",
+   "issue": "The journal crop cuts through the My answer box at the bottom edge, and the kicker is tight to the frame.",
+   "where": "photo-03-ph3_journal.jpg",
    "severity": "low"
   },
   {
-   "issue": "Start here photo has blank bands in the top 30% and bottom 25% of the frame, small step text, and a clipped piece of the honey ring on the frame's top edge.",
-   "where": "photo-08-ph8_start.jpg",
+   "issue": "The left crop cuts the 5 and 15 minute columns at the bottom edge (no box bottom).",
+   "where": "photo-04-ph4_menu.jpg",
    "severity": "low"
   },
   {
-   "issue": "Energy map and Hard day plan photo shows each page at full height with only 2 of 3 columns, so the italic column labels are small.",
+   "issue": "Both crops show only 2 of each page's 3 columns (Boundaries and Small things that help are out of frame). They are mostly blank checkbox rows, and the column labels are small.",
    "where": "photo-05-ph5_energy_hard.jpg",
    "severity": "low"
   },
   {
-   "issue": "A stray fragment of the honey ring is clipped in the top-right corner of the download photo.",
-   "where": "photo-10-how_download.jpg",
+   "issue": "The bottom quarter of the photo is empty background.",
+   "where": "photo-06-ph6_month_year.jpg",
    "severity": "low"
   },
   {
-   "issue": "The honey ring and its filled circle sit directly behind the trail and arrows at top right, making the navigation area busy.",
-   "where": "index, start",
+   "issue": "A clipped honey-ring arc sits in the top-right corner and reads as a stray mark; the top third is empty. Photo 7 also has an empty top band.",
+   "where": "photo-10-how_download.jpg; photo-07-ph7_apps.jpg",
    "severity": "low"
   },
   {
-   "issue": "Setup check buttons land on Week 1, January and Contents, none of which links back to Setup check; the printed way back is Home, then Setup check.",
-   "where": "linktest",
+   "issue": "Arrow placement is inconsistent. Hub and tool pages have small arrows beside the trail, but week, journal, month and notes pages use large arrow buttons under it (Notes has both). Week 1 and January have no back arrow. The listing says 'on every page arrows and a trail at the top right'.",
+   "where": "w01, jr01, m01, notes vs index/start/menu",
    "severity": "low"
   },
   {
-   "issue": "Calm (plum) and Tired (grey-plum) swatches are close in tone, so small colored squares may be hard to tell apart on the year grid.",
-   "where": "moods, m01-m13 color key",
+   "issue": "The listing says 'Tend.pdf (3.2 MB)', but the built file is 3,294,997 bytes (3.3 MB, or 3.1 MiB) (r003).",
+   "where": "listing description What you get",
    "severity": "low"
   },
   {
-   "issue": "The cover has no top bar, trail or arrows, while the listing says 'on every page arrows and a trail'.",
-   "where": "cover; listing 'Easy to get around'",
+   "issue": "Photo 9's point '13 months and 5 tools' does not match anything a buyer can count in the photo (Contents shows 10 section cards).",
+   "where": "photo-09-ph9_inside.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "Step 4 names both the Self-care menu and the Hard day plan, but its only Go there button opens the menu.",
+   "where": "start step 4",
+   "severity": "low"
+  },
+  {
+   "issue": "The Energy map's write-in lists use tick boxes, including 'Drains my energy', where ticking makes little sense.",
+   "where": "energy",
    "severity": "low"
   }
  ]
