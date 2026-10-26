@@ -1368,6 +1368,63 @@ def m_prompt_week(P, sec):
                crumb=(f'<a href="#{wk}{n:02d}">Week {n}</a> / {esc(label)}' if wk else f'{esc(label)} · week {n}'))
 
 
+@module('mood_year', "Undated year-in-moods page (anchor, default 'moods'): one square per day for each month (3-letter month heads, impossible days faded), a Year to ____ line for a year that starts mid-way, a color key, how-to-color notes and a lined box that fills the column. One Contents card and one top-bar item. label, kicker, anchor, nav_label, keys [[name, hex]], how, notes_label",
+        params={'label': 'str (Year in moods)', 'kicker': 'str', 'anchor': "str, default 'moods'", 'keys': 'list of [name, hex] (5)', 'how': 'str: how to color', 'notes_label': 'str'})
+def m_mood_year(P, sec):
+    th = P.th; a = sec.get('anchor', 'moods'); label = sec.get('label', 'Year in moods')
+    keys = sec.get('keys') or list(zip(['Great', 'Good', 'Okay', 'Low', 'Hard'], [th['accent'], P.tabs[0], th['warm'], P.tabs[-1], th['muted']]))
+    _register(P, sec, label, a, sec.get('kicker', 'Track'))
+    last = {2: 29, 4: 30, 6: 30, 9: 30, 11: 30}
+    cols = f'{26 * P.scale:.0f}px repeat(12,minmax(0,1fr))'
+    head = '<span></span>' + ''.join(f'<span style="text-align:center;font:700 {P.fs(11.5)} \'{th["body"]}\';color:{th["ink"]}">{MONTHS[m][:3]}</span>' for m in range(12))
+    rows = ''.join(f'<span style="font:600 {P.fs(10)} \'{th["body"]}\';color:{th["muted"]};text-align:right;padding-right:5px;align-self:center">{d}</span>' +
+                   ''.join(f'<i style="border:1px solid {th["line"]};border-radius:3px;{"opacity:.2;" if d > last.get(m, 31) else ""}"></i>' for m in range(1, 13)) for d in range(1, 32))
+    grid = f'<div style="flex:2.4;display:grid;grid-template-columns:{cols};grid-template-rows:auto repeat(31,1fr);gap:2px 3px">{head}{rows}</div>'
+    kk = ''.join(f'<div style="display:flex;gap:10px;align-items:center;font-size:{P.fs(12.5)}"><i style="width:18px;height:18px;border-radius:4px;background:{c};display:block;flex:none"></i>{esc(k)}</div>' for k, c in keys)
+    how = sec.get('how', 'Each evening, color today\'s square in the color of your mood. Starting mid-year? Write the year at the top, begin on today\'s square and carry on into January.')
+    side = (f'<div class="col" style="flex:1"><div class="box"><span class="k">Color key</span>{kk}</div>'
+            f'<div class="box fill"><span class="k">How to color</span><span style="font-size:{P.fs(12)};line-height:1.45">{esc(how)}</span></div>'
+            f'{lines_box(P, sec.get("notes_label", "Moments to remember"))}</div>')
+    right = f'<div style="display:flex;gap:14px;align-items:flex-end;width:{300 * P.scale:.0f}px">{_wline(P, "Year")}{_wline(P, "to")}</div>'
+    P.page(a, P.head(sec.get('kicker', 'Track'), label, right=right) + f'<div class="row" style="flex:1">{grid}{side}</div>', active=a)
+
+
+def _lining_labels(html):
+    """Digits in italic labels set upright: the italic display face has only old-style figures (1 reads as i)."""
+    up = lambda t: re.sub(r'(?<!&#)(?<!&#x)(?<![\dA-Fa-f])(\d+)', r'<span style="font-style:normal">\1</span>', t)  # not inside &#x27; entities
+    return re.sub(r'(class="k"[^>]*>)([^<]*)', lambda m: m.group(1) + up(m.group(2)), html)
+
+
+@module('page_trails', "Prints no page. Put it last in sections. Every page gets a trail and arrows: an empty trail becomes 'Contents / page title', a trail with no link gets its first part linked to Contents, and a page with no previous and next arrows gets arrows (in the trail) to the pages before and after it in the file. With theme nums 'lining' and labels 'italic', digits in italic labels are set upright. home, home_label",
+        params={'home': "str, default 'index'", 'home_label': "str, default 'Contents'"})
+def m_page_trails(P, sec):
+    home = sec.get('home', 'index'); hl = sec.get('home_label', 'Contents')
+    ids = [a for a, _ in P.page_modules]
+    has_home = home in ids
+    for i, pg in enumerate(P.pages):
+        m = re.search(r'<span class="crumb">(.*?)</span>', pg, re.S)
+        if not m:
+            continue  # raw pages (cover)
+        a, crumb = ids[i], m.group(1)
+        t = re.search(r'<p class="h"[^>]*>(.*?)</p>', pg, re.S); title = t.group(1) if t else ''
+        if a == home:
+            new = esc(hl)
+        elif not crumb.strip():
+            new = f'<a href="#{home}">{esc(hl)}</a> / {title}' if has_home else title
+        elif '<a' not in crumb and has_home:
+            first, _, rest = crumb.partition(' / ')
+            new = f'<a href="#{home}">{first}</a>' + (f' / {rest}' if rest else '')
+        else:
+            new = crumb
+        if not re.search(r'class="?k"? style="?font-size:16px"?>\s*<a', pg):  # no previous / next arrows on this page
+            prv = ids[i - 1] if i > 0 else None; nxt = ids[i + 1] if i + 1 < len(ids) else None
+            new += ' <span style="margin-left:10px">' + (f'<a href="#{prv}">{arrow("l")}</a>' if prv else '') + (f' <a href="#{nxt}">{arrow("r")}</a>' if nxt else '') + '</span>'
+        P.pages[i] = pg[:m.start(1)] + new + pg[m.end(1):]
+    if P.th.get('nums') == 'lining' and P.th.get('labels') == 'italic':
+        orig = P.html
+        P.html = lambda: _lining_labels(orig())  # after Contents and guide panels are filled in
+
+
 @module('group_weeks', "Prints no page. Put it last in sections, after log_week and the modules its links name (meal_week, workout_log). Moves each week's linked pages right after that week's page (Week 1, its workouts, its meal plan, then Week 2...), so a buyer who swipes meets one week at a time and can print a week as one page range. Links and anchors do not change.",
         params={})
 def m_group_weeks(P, sec):

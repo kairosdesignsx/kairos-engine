@@ -174,7 +174,7 @@
    "modules": [
     "prompt_week",
     "checklist",
-    "year_pixels"
+    "mood_year"
    ]
   },
   {
@@ -267,7 +267,7 @@
   {
    "id": "u_prompts",
    "name": "A journal prompt for every week",
-   "what": "52 journal pages, each with its own printed prompt, linked from its week page and back, with three small good things and a kind word to myself.",
+   "what": "52 journal pages, each with its own printed prompt, linked from its week page and back, with three small good things and a kind word to myself. A journal index lists all 52 prompts, one tap each; the top bar's Journal button opens it.",
    "why": "Too basic and you basically make your own journal are named complaints (18 reviews); a prompt for every week gives the journal a starting point. Gratitude journal is a top search word.",
    "evidence": [
     "complaint:c_basic",
@@ -333,7 +333,7 @@
   {
    "id": "u_anytime",
    "name": "Start any week, keep it every year",
-   "what": "Undated weeks and months: write the dates the day you start. No year to run out, so the same file works next year too.",
+   "what": "Undated weeks and months: write the dates the day you start. No year to run out, so the same file works next year too. A 13th undated month page covers a run that starts mid-month, and Year in moods has a Year to ____ line.",
    "why": "Undated is rare among top sellers (7%), and buyers asked for a new edition each year; an undated planner never expires.",
    "evidence": [
     "feature:undated",
@@ -413,7 +413,7 @@
   }
  },
  "seo": {
-  "title": "Self Care Planner for Goodnotes, Undated Digital Wellness Journal with 52 Weekly Prompts, Mood and Habit Tracker, iPad and Android",
+  "title": "Tend Self Care Planner for Goodnotes, Undated Digital Wellness Journal with 52 Weekly Prompts, Mood and Habit Tracker, iPad and Android",
   "tags": [
    "self care planner",
    "self care journal",
@@ -542,7 +542,7 @@
    "nums": "lining"
   },
   "type_scale": 1.1,
-  "index_tip": "Tap a card above, a month below, or a month tab on the right. Each week page opens its journal page and the self-care menu, and the journal has a Week button back. Follow links with the pen off; turn the pen on to write.",
+  "index_tip": "Tap a card above, a month below, or a month tab on the right. Each week page opens its journal page and the self-care menu; the journal has a Week button back, and the trail at the top right takes you back from any page. Pen off to tap, pen on to write.",
   "sections": [
    {
     "module": "cover",
@@ -560,8 +560,7 @@
     "steps": [
      [
       "Open it in a note app",
-      "Download from Etsy in a web browser, not the Etsy app. Import the PDF into Goodnotes, Notability, Samsung Notes, Xodo or Noteshelf.",
-      "index"
+      "Download from Etsy in a web browser, not the Etsy app. Import the PDF into Goodnotes, Notability, Samsung Notes, Xodo or Noteshelf."
      ],
      [
       "Check the links",
@@ -603,7 +602,7 @@
     ],
     "fixes": [
      "Turn the pen off (read or view mode)",
-     "Open the file in a PDF planner app, not Files or Photos",
+     "Open the file in a note app, not Files or Photos",
      "Re-import the PDF, do not convert it",
      "Still stuck? Send the shop an Etsy message"
     ]
@@ -731,7 +730,9 @@
     ],
     "boxes": [
      "A kind word to myself"
-    ]
+    ],
+    "overview_anchor": "prompts",
+    "overview_title": "52 prompts"
    },
    {
     "module": "checklist",
@@ -833,16 +834,32 @@
     ]
    },
    {
-    "module": "year_pixels",
+    "module": "mood_year",
     "label": "Year in moods",
     "nav_label": "Moods",
-    "anchor": "pixels",
+    "kicker": "Track",
+    "anchor": "moods",
     "keys": [
-     "Calm",
-     "Happy",
-     "Okay",
-     "Low",
-     "Tired"
+     [
+      "Calm",
+      "#8F5F92"
+     ],
+     [
+      "Happy",
+      "#F3C9B5"
+     ],
+     [
+      "Okay",
+      "#E2B862"
+     ],
+     [
+      "Low",
+      "#C8C2E8"
+     ],
+     [
+      "Tired",
+      "#6C5F71"
+     ]
     ]
    },
    {
@@ -888,7 +905,9 @@
     "fields": [
      "Moments I want to remember",
      "What I will let go of"
-    ]
+    ],
+    "extra_months": 1,
+    "extra_label": "One more month"
    },
    {
     "module": "lined",
@@ -901,8 +920,12 @@
    },
    {
     "module": "group_weeks"
+   },
+   {
+    "module": "page_trails"
    }
-  ]
+  ],
+  "index_cols": 5
  },
  "new_modules": [
   {

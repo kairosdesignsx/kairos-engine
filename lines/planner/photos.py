@@ -6,7 +6,7 @@ from gen import resolve_theme, motif, esc, MONTHS
 
 
 def page_names(brief):
-    names = {'cover': 'Cover', 'index': 'Contents', 'year': 'Year at a glance'}
+    names = {'cover': 'Cover', 'index': 'Contents', 'year': 'Year at a glance', 'linktest': 'Setup check', 'weeks': 'All 52 weeks'}  # pages that can run without a label
     for sec in brief['spec'].get('sections', []):
         if sec.get('anchor') and sec.get('label'):
             names[sec['anchor']] = sec['label']

@@ -68,7 +68,7 @@
   {
    "id": "f_not_useful",
    "complaint": "complaint:c_not_useful",
-   "how": "Every page has a job a buyer does every week: plan the week, log the workout, plan the meals, tick what got done. Writing rows are at least 26 px tall and the workout table has 8 exercises by 4 sets. Photos show pages close up at real size so buyers can judge the space before buying, and the listing lists every page type with its count.",
+   "how": "Every page has a job a buyer does every week: plan the week, log the workout, plan the meals, tick what got done. Every writing row is at least 7 mm tall on the 8 x 10.7 in page (US college-ruled spacing) and the workout table has 8 exercises by 4 sets. Photos show pages close up so buyers can judge the space before buying, and the listing lists every page type with its count.",
    "evidence": [
     "complaint:c_not_useful",
     "praise:p_fits_needs",
@@ -83,7 +83,7 @@
   {
    "id": "f_download",
    "complaint": "complaint:c_download",
-   "how": "Ships as one PDF, not a zip, with no sticker files that can fail to import. Listing copy and the apps photo give the download in 3 steps: buy, download from Etsy in a web browser (the Etsy app cannot download digital files), open the PDF in a note app. Start here repeats the steps. The cover title matches the listing name.",
+   "how": "Ships as one PDF, not a zip, with no sticker files that can fail to import. Listing copy and the last listing photo give the download in 3 steps: buy, download from Etsy in a web browser (the Etsy app cannot download digital files), open the PDF in a note app. Start here repeats the steps. The cover title matches the listing name.",
    "evidence": [
     "complaint:c_download",
     "wish:w_listing_info",
@@ -125,7 +125,7 @@
   {
    "id": "f_print",
    "complaint": "complaint:c_print",
-   "how": "Made for tablets, and printable too: every page is 8 x 10.7 inches, smaller than both US Letter and A4, so a page prints at Actual size without cropping. Each week's pages sit together in the file (the week, its meal plan, its 4 workouts: 6 pages in a row), so one week prints as a single page range. The listing says how, and that the light page tint prints too.",
+   "how": "Made for tablets, and printable too: every page is 8 x 10.7 inches, smaller than both US Letter and A4, so a page prints on Letter at Actual size, and on A4 with Fit to page (the edge tabs need it). Each week's pages sit together in the file (the week, its meal plan, its 4 workouts: 6 pages in a row), so one week prints as a single page range. The listing says how, and that the light page tint prints too.",
    "evidence": [
     "complaint:c_print",
     "wish:w_separate_pages",
@@ -322,7 +322,7 @@
   {
    "id": "u_anytime",
    "name": "Start any day",
-   "what": "Undated weeks and months: write the dates on Week 1 the day you start, whether that is a Tuesday in October or the first of June. Nothing is wasted if you start late in the year.",
+   "what": "Undated weeks and months: write the dates on Week 1 the day you start, whether that is a Tuesday in October or the first of June. Nothing is wasted if you start late in the year. A 13th undated month page covers a 52-week run that starts mid-month.",
    "why": "Undated is rare among top sellers (10%) and buyers asked for an undated version; fitness plans start whenever the buyer is ready, and the market peaks in August, not only in January.",
    "evidence": [
     "feature:undated",
@@ -369,7 +369,8 @@
    "body": "Outfit",
    "motif": "lines",
    "button": "#2D4FC4",
-   "labels": "italic"
+   "labels": "italic",
+   "cover_bg": "#F8F7F3"
   },
   "avoid": [
    "rose gold and blush pink weight loss journals",
@@ -403,7 +404,7 @@
   }
  },
  "seo": {
-  "title": "Digital Fitness Planner for Goodnotes, Workout Log, Meal Planner and Weight Loss Tracker, Undated 52 Weeks, iPad and Android",
+  "title": "Stronger Weeks Digital Fitness Planner for Goodnotes, Workout Log, Meal Planner and Weight Loss Tracker, Undated 52 Weeks, iPad and Android",
   "tags": [
    "fitness planner",
    "workout planner",
@@ -423,16 +424,15 @@
  "photos": [
   {
    "id": "ph1_hero",
-   "shows": "Cover and Week 1 side by side, line: 'Plan the week, log every workout'.",
+   "shows": "Week 1 page close up with the product name: dates, buttons to the week's meal plan and workouts, day table.",
    "proves": "praise:p_look, feature:hyperlinked",
    "pages": [
-    "cover",
     "w01"
    ]
   },
   {
    "id": "ph2_week",
-   "shows": "Week 1 page large: dates, the Meal plan and Workout 1 to 4 buttons, the day table and habit grid.",
+   "shows": "Lower half of a week page: 7-day habit tracker, weigh-in, change and energy, win of the week.",
    "proves": "feature:hyperlinked, complaint:c_hard, complaint:c_manual_pages",
    "pages": [
     "w01"
@@ -474,7 +474,7 @@
   },
   {
    "id": "ph7_start",
-   "shows": "Start here close up: 4 steps with Go there buttons.",
+   "shows": "Start here close up: steps 1 and 2, steps 3 and 4.",
    "proves": "complaint:c_setup, complaint:c_broken, feature:quick_start, feature:test_page",
    "pages": [
     "start"
@@ -483,7 +483,7 @@
   {
    "id": "ph6_apps",
    "shows": "Works with panel beside the Setup check buttons and fix list.",
-   "proves": "complaint:c_download, complaint:c_device, complaint:c_print, wish:w_listing_info",
+   "proves": "complaint:c_device, complaint:c_print, wish:w_listing_info",
    "pages": [
     "linktest"
    ]
@@ -499,7 +499,7 @@
   {
    "id": "how_download",
    "shows": "How it works: 3 steps to download from Etsy in a web browser, import into a note app, and start Week 1.",
-   "proves": "complaint:c_download, complaint:c_setup",
+   "proves": "complaint:c_download, complaint:c_setup, wish:w_listing_info",
    "pages": []
   }
  ],
@@ -529,10 +529,11 @@
    "body": "Outfit",
    "motif": "lines",
    "button": "#2D4FC4",
-   "labels": "italic"
+   "labels": "italic",
+   "cover_bg": "#F8F7F3"
   },
   "type_scale": 1.05,
-  "index_tip": "Tap a card above, a month below, or a month tab on the right. Each week page opens its meal plan and four workouts, and each of those has a Week button back. Follow links with the pen off; turn the pen on to write.",
+  "index_tip": "Tap a card above, a month below, or a month tab on the right. Each week page opens its meal plan and four workouts, and each of those has a Week button back. The trail at the top right takes you back. Follow links with the pen off; turn the pen on to write.",
   "sections": [
    {
     "module": "cover",
@@ -570,7 +571,9 @@
      ]
     ],
     "tip": "Pen off to tap a link, pen on to write. Prefer typing? Use your app's text tool. Tap this month's tab on the right to set a goal for the month.",
-    "map": true
+    "map": false,
+    "months": true,
+    "months_label": "Jump to a month: set a goal for it"
    },
    {
     "module": "link_test",
@@ -667,7 +670,8 @@
     "fields": [
      "How it felt",
      "Next time I will"
-    ]
+    ],
+    "per_log_page": 24
    },
    {
     "module": "meal_week",
@@ -708,7 +712,7 @@
      {
       "kind": "checklist",
       "label": "Milestones I am aiming for",
-      "rows": 6
+      "rows": 8
      },
      {
       "kind": "lines",
@@ -809,7 +813,9 @@
     "fields": [
      "What went well",
      "One change for next month"
-    ]
+    ],
+    "extra_months": 1,
+    "extra_label": "One more month"
    },
    {
     "module": "lined",
@@ -822,6 +828,9 @@
    },
    {
     "module": "group_weeks"
+   },
+   {
+    "module": "page_trails"
    }
   ]
  },
