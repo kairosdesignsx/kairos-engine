@@ -2,17 +2,17 @@
  "files": [
   {
    "name": "Tend.pdf",
-   "mb": 3.29,
+   "mb": 3.23,
    "pages": 130
   }
  ],
- "links": 3282,
+ "links": 3152,
  "overflow": [],
  "lean": false,
  "attempts": [
   {
    "lean": false,
-   "mb": 3.29,
+   "mb": 3.23,
    "pages": 130
   }
  ],
@@ -561,6 +561,6 @@
  ],
  "product_id": "p-scp-001",
  "brief_id": "b-scp-001",
- "built_at": "2026-10-26T20:00:29Z",
+ "built_at": "2026-10-26T20:08:56Z",
  "line": "planner"
 }
