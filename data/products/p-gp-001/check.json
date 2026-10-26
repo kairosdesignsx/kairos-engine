@@ -1,11 +1,11 @@
 {
  "product_id": "p-gp-001",
- "at": "2026-10-26T19:43:39Z",
+ "at": "2026-10-26T20:21:41Z",
  "tech": [
   {
    "name": "file size",
    "pass": true,
-   "detail": "Any-Monday.pdf: 12.17 MB (limit 19.5, Etsy 20)"
+   "detail": "Any-Monday.pdf: 12.89 MB (limit 19.5, Etsy 20)"
   },
   {
    "name": "no text overflow",
@@ -20,7 +20,7 @@
   {
    "name": "links present in PDF",
    "pass": true,
-   "detail": "9415 link annotations for 9415 links in the source"
+   "detail": "9867 link annotations for 9867 links in the source"
   },
   {
    "name": "fonts licensed (OFL list only)",
@@ -63,148 +63,148 @@
    "item": "must:mh_goodnotes",
    "kind": "must",
    "found": true,
-   "where": "listing.title, listing.description, start, PDF link annotations",
-   "note": "One 453-page portrait PDF; Goodnotes is the first app named in the title, description and Start here step 1; all 9415 links are plain /Dest page links (no URI, JS or app tricks)."
+   "where": "listing.title, listing.description, start (step 1), cover; PDF link audit",
+   "note": "Goodnotes is the first app named in the title, description line 1, cover line and Start here step 1 (Notability, Noteshelf, Samsung Notes, Xodo also named); all 9,867 links in the PDF are plain GoTo page links, no URI, JavaScript or form fields."
   },
   {
    "item": "must:mh_any_year",
    "kind": "must",
    "found": true,
-   "where": "m01-m12, w01-w52, u010-u526, weeks",
-   "note": "12 undated month pages (blank 6x7 grids), Week 1-52 not tied to months, 364 day pages with 'date ____'; no year printed anywhere."
+   "where": "m01, m07 (screens), page_modules m01-m12, w01-w52, u010-u526; PDF 453 pages",
+   "note": "12 month pages with blank 6-row grids and no dates, Week 1 to Week 52 with blank date slots, 364 day pages headed 'Week N · date ____'; no year printed anywhere."
   },
   {
    "item": "must:mh_linked",
    "kind": "must",
    "found": true,
-   "where": "PDF link map (all pages)",
-   "note": "Checked in the PDF: all 453 pages reachable from cover; 12 month tabs on every page; Weeks page links all 52; every week links its 7 days; all 364 day pages link prev/next incl. Sunday->next Monday; every week and day page has a Weeks / Week trail. Trail links are only 11 pt tall (see visual)."
+   "where": "PDF link audit; index, year, weeks, w01, u010, u016",
+   "note": "Checked in the PDF: Contents and Year link out, Weeks page links all 52 weeks, 12 month tabs on every page (the current month's tab is highlighted, not self-linked), each week links its 7 days, every day has prev/next including Sunday to the next Monday (u016 to u020), and every week/day page has the Weeks / Week trail."
   },
   {
    "item": "must:mh_core",
    "kind": "must",
    "found": true,
-   "where": "year, m01-m12, m01h-m12h, w01-w52, u010, lists, notes-notes6",
-   "note": "Year overview, 12 months with Goals this month and Notes, 12 habit trackers (14 habits x 31 days), 52 weeks, day pages with Top 3/To do/Time blocks/Notes, Lists page, 6 notes pages."
+   "where": "year, m01, m01h, w01, u010, lists, notes (screens); page_modules m01h-m12h, notes2-notes6",
+   "note": "Year overview, 12 months with Goals this month and Notes, 12 habit trackers (14 rows x 31 days), 52 weeks, 364 days with Top 3, To do, Time blocks, Notes, a Lists page and 6 notes pages (notes2-6 exist in page_modules and the PDF; only notes 1 screenshotted)."
   },
   {
    "item": "must:mh_look",
    "kind": "must",
    "found": true,
-   "where": "pdffonts, all shots",
-   "note": "Only Cormorant Garamond and Manrope embedded; consistent margins and card radii; month tabs run indigo (Jan) to soft gold (Dec)."
+   "where": "pdffonts; all screenshots",
+   "note": "Embedded fonts are only Cormorant Garamond and Manrope; consistent margins and card radii; month tabs run indigo (#A4ADD9) to soft gold (#E8CF96). Minor style mix on month-page buttons noted under visual."
   },
   {
    "item": "must:mh_guide",
    "kind": "must",
    "found": true,
-   "where": "start, linktest, index",
-   "note": "Start here (4 steps), Setup check, and a 'How the links work' note on Contents are printed in the file; the Contents note says 'Month / Week trail' but pages show 'Weeks / Week N' (see visual)."
+   "where": "start, linktest, index ('How the links work' box)",
+   "note": "All three are printed in the file: a 4-step Start here page, a Setup check page and a How the links work note on Contents."
   },
   {
    "item": "fix:f_download",
    "kind": "fix",
    "found": true,
-   "where": "files/Any-Monday.pdf, listing.description 'How to start', photo-09-ph9.jpg, start",
-   "note": "Single PDF, 12.17 MB, no zip; listing and photo 9 give web-browser download, Share > Open in Goodnotes or New > Import; Start here step 1 repeats it (without the New > Import route)."
+   "where": "files/Any-Monday.pdf; listing.description 'How to start'; photo-09-ph9.jpg; start step 1",
+   "note": "One PDF of 12,886,545 bytes (under 19.5 MB), no zip; the listing and photo 9 give download in a browser, then Share > Open in Goodnotes or New > Import. Start here repeats the browser and Share steps but leaves out the New > Import path, and the listing says 12.2 MB."
   },
   {
    "item": "fix:f_setup",
    "kind": "fix",
    "found": true,
-   "where": "cover, start, linktest",
-   "note": "Open planner links to Start here; 4 steps (open it, check links, Start with Week 1 + Go there button, pen off/on) and a 12-month grid below; the next PDF page is Setup check; no stickers or add-ons."
+   "where": "cover (Open planner -> start, verified in PDF), start, linktest",
+   "note": "Open planner jumps to Start here: 4 steps with a 12-month grid underneath, each month a 73x49pt link. The next page is the Setup check with 3 jump buttons and a pen test box. There are no stickers or add-on files."
   },
   {
    "item": "fix:f_device",
    "kind": "fix",
    "found": true,
-   "where": "PDF page size, listing.description 'Works with', linktest",
-   "note": "All pages 576 x 768 pt (3:4, i.e. 768 x 1024 CSS px); listing has the Works with / Not made for phones, e-ink, Files, Photos, Drive preview text; Setup check tests links. Note: only 12.9/13-inch iPads are exactly 3:4; 11-inch iPads will show thin bands top/bottom (sides are fine, so the listing wording holds)."
+   "where": "pdfinfo (576x768 pt); listing.description 'Works with'; linktest",
+   "note": "Every page is 576x768 pt, a 3:4 shape (768x1024 px). The listing names the apps it works with and the ones it is not for (phones, e-ink, Files/Photos/Drive preview). The Setup check page tests the links on the device."
   },
   {
    "item": "fix:f_hard",
    "kind": "fix",
-   "found": false,
-   "where": "top bar on every page; u010, u182, u354, w01, w27",
-   "note": "Day and week layouts are identical everywhere (5 boxes / 2 columns), but the top bar is Home, Year, Notes, Weeks: Lists is not on the top bar of any page (reachable only from a Contents card)."
+   "found": true,
+   "where": "u010, u182, u354, w01, w27; PDF top-bar audit",
+   "note": "The three day screenshots are identical in layout (Top 3, To do, Notes left; Time blocks 6am to 9pm and Good things today right), and the week pages are identical. Home, Year, Lists, Notes and Weeks are on the top bar of all 452 pages after the cover (checked in the PDF)."
   },
   {
    "item": "fix:f_nav",
    "kind": "fix",
    "found": true,
-   "where": "PDF link map, weeks, w27, u182",
-   "note": "Month tabs on every page, Weeks on top bar opens all 52, weeks link 7 days, day arrows cross Sunday->Monday on all 51 week edges, week arrows go to the following week, trails on every week/day page."
+   "where": "PDF link audit; weeks, w27, u182, u354",
+   "note": "Weeks run in order: week next/prev chain verified w01..w52, day chain verified over all 364 days including week edges; prev/next buttons 36x32 pt; trail on all 416 week/day pages."
   },
   {
    "item": "fix:f_misleading",
    "kind": "fix",
-   "found": false,
-   "where": "photo-06-ph6.jpg caption, listing.description",
-   "note": "Description lists page counts, undated, portrait only, Monday start, no stickers, not fillable, English only; photos are real screenshots. But photo 6 is captioned 'linktest' (internal anchor), not the page name 'Setup check'."
+   "found": true,
+   "where": "photos 1-8 captions; listing.description 'What's inside' / 'Please note'",
+   "note": "Photos 1-8 show the built pages, each captioned with its page name (Cover, Day page, Week page, Month page, Start here, Setup check, Contents, Year at a glance, Habit tracker). The description gives the counts and says undated, Monday start, portrait only, English only, not a fillable form, no stickers."
   },
   {
    "item": "fix:f_broken",
    "kind": "fix",
    "found": true,
-   "where": "linktest, PDF link map",
-   "note": "Setup check has A month page / The year / Contents buttons (each links correctly) and a 4-line Nothing happened? list ending in 'Send the shop an Etsy message'; every page reachable from the cover."
+   "where": "linktest; PDF reachability audit",
+   "note": "Three jump buttons (month, year, Contents) and a four-line Nothing happened? list. In the PDF all 9,867 links resolve to real pages and all 453 pages can be reached from the cover."
   },
   {
    "item": "fix:f_support",
    "kind": "fix",
    "found": true,
-   "where": "listing.description 'Quick answers' and 'Help', linktest, start",
-   "note": "FAQ covers Etsy app download, which app, pen-on links, typing, undated weeks; Help says Setup check then Etsy message; no reply-time promise in listing or PDF (r007 ok)."
+   "where": "listing.description 'Quick answers' and 'Help'; linktest; start",
+   "note": "The FAQ answers the five problems the brief names (Etsy app, which app, links with the pen on, typing, undated weeks). Help says to use the Setup check and then send an Etsy message, with no reply-time promise (r007 ok)."
   },
   {
    "item": "fix:f_not_useful",
    "kind": "fix",
-   "found": false,
-   "where": "photo-02/03/04, listing.description 'Please note'",
-   "note": "Undated and the not-inside list (no budget, meal, fitness) are there, but photos 2-4 are not close-ups: each crop keeps ~90% of the page, shown at ~40% of the photo width, so box labels are tiny at Etsy zoom."
+   "found": true,
+   "where": "photos 2-4; listing.description 'Please note'",
+   "note": "Day, week and month pages are shown close up and readable in photos 2, 3 and 4. The listing says there are no budget, meal or fitness sections."
   },
   {
    "item": "fix:f_value",
    "kind": "fix",
-   "found": false,
-   "where": "u010, w01, photo-02-ph2.jpg",
-   "note": "Writing room is generous (half the day page is time blocks + lines; each weekday has its own lined box), but photo 2 shows the day page smaller than on-screen size, not about twice it."
+   "found": true,
+   "where": "u010, w01, photo-02-ph2.jpg, listing.description",
+   "note": "Half the day page is time blocks plus Good things, and each weekday has its own lined box on the week page (3 lines each). Photo 2 is a readable close-up, but at about 1x the on-iPad scale, not the 'twice' in the brief. The 1.1 text scale cannot be checked."
   },
   {
    "item": "unique:u_start_any_month",
    "kind": "unique",
    "found": true,
-   "where": "weeks, start, m01",
-   "note": "Weeks page lists Week 1-52 each with a 'starts ____' line; Start here step 3: open Week 1, write this Monday's date, start on today; month grids are 6 rows x 7 (42 boxes)."
+   "where": "weeks, start step 3, m01/m07",
+   "note": "Weeks page lists Week 1-52, each with a 'starts ____' line and a 120x46pt link; Start here: 'Open Week 1, write this Monday's date, then open today's page'; month grids are 6 rows x 7 (42 boxes)."
   },
   {
    "item": "unique:u_fills_ipad",
    "kind": "unique",
    "found": true,
-   "where": "w01, w27, PDF page size",
-   "note": "3:4 pages; week page is Mon-Thu left, Fri-Sun + Notes right, with This week's top 3 and Next week underneath (notes box sits in the right column, not underneath)."
+   "where": "pdfinfo; w01, w27",
+   "note": "Pages are a 3:4 portrait shape. The week page has two columns (Mon to Thu on the left; Fri, Sat, Sun and dotted Notes on the right), with This week's top 3 and Next week underneath."
   },
   {
    "item": "unique:u_setup_check",
    "kind": "unique",
    "found": true,
    "where": "linktest",
-   "note": "Jump buttons to a month, the year and Contents; pen test box; Nothing happened? fix list; top-bar map (Home, Year, Notes, Weeks)."
+   "note": "Has jump buttons to a month page, the year and Contents (each 242x41 pt), a full-height pen test box, a 4-line fix list and a top-bar map. The map's Weeks row has no description (see visual)."
   },
   {
    "item": "unique:u_time_blocks",
    "kind": "unique",
    "found": true,
-   "where": "u010, u182, u354",
-   "note": "Time blocks 6am to 9pm in the right column beside Top 3 on every day page shot."
+   "where": "u010, u182, u354; photo-02-ph2.jpg",
+   "note": "6am to 9pm hourly rows sit beside Top 3 and To do on every day screenshot."
   },
   {
    "item": "look",
    "kind": "look",
    "found": true,
-   "where": "u010 pixels, all shots, pdffonts",
-   "note": "Background #FBF9F4 and ink #1E2238 measured; indigo-to-gold tabs; Cormorant headings and italic labels, Manrope body; no tracked all-caps labels."
+   "where": "all screenshots (pixel samples), pdffonts",
+   "note": "Background is #FBF9F4 and headings are #1E2238 ink, with indigo-to-gold tabs. Cormorant is used for headings and italic labels, Manrope for body text. There are no tracked all-caps labels. Body text is a softer #555A6E, still about 6.5:1 contrast."
   }
  ],
  "clone": {
@@ -224,67 +224,77 @@
  },
  "visual": [
   {
-   "issue": "Year page says 'Tap a month' but only a 10 pt tall strip over each month name is a link; tapping the mini calendar (the obvious target) does nothing, so the page looks broken. Make each whole month block the link.",
-   "where": "year",
-   "severity": "high"
-  },
-  {
-   "issue": "r013 not fixed for photos 5, 6 and 7: each shows a whole page shrunk into a tablet mockup; body text is about 12 px tall in a 2000 px photo, unreadable at Etsy zoom.",
-   "where": "photo-05-ph5.jpg, photo-06-ph6.jpg, photo-07-ph7.jpg",
+   "issue": "In the Setup check's 'Where things are: the top bar' map, the Weeks row is blank: every other row has a description and Weeks has none, so it looks unfinished. The other descriptions reuse section taglines ('Calendar', 'Keep it all in one place', 'Write anything') rather than saying what the button opens.",
+   "where": "linktest (bottom-left card)",
    "severity": "medium"
   },
   {
-   "issue": "Photos 2-4 'zooms' crop x 0.03-0.925 and y 0.05-0.976, i.e. ~90% of the page, shown at ~40% of the photo width beside a large empty copy area; labels like Top 3, To do, Mon are tiny. Crop to a real close-up (e.g. top half of the page) and fill the frame.",
-   "where": "photo-02-ph2.jpg, photo-03-ph3.jpg, photo-04-ph4.jpg",
+   "issue": "On the week pages, each day opens its day page only through a 224x20 pt strip on the day-name header. Nothing marks it as tappable (no arrow or button style), and 20 pt is about 29 pt on an 11-inch iPad, below the 44 pt touch minimum. Neither Start here nor How the links work says that tapping a day name opens the day, so buyers may think the week-to-day link is missing.",
+   "where": "w01-w52 (all 364 day links)",
    "severity": "medium"
   },
   {
-   "issue": "Photo 6 caption reads 'linktest' (internal anchor name) instead of 'Setup check'.",
-   "where": "photo-06-ph6.jpg",
-   "severity": "medium"
-  },
-  {
-   "issue": "Tap targets still small: top-bar pills are 34-44 x 19 pt on every page (~27 pt on an 11-inch iPad), the Weeks / Week trail links are 11 pt tall on all 416 week and day pages (the only day-to-week link), notes page-number pills are 22 x 19 pt, month-page Habit tracker / All weeks buttons 23 pt tall.",
-   "where": "all pages (top bar), u*/w* trails, notes-notes6, m01-m12",
-   "severity": "medium"
-  },
-  {
-   "issue": "Contents 'How the links work' says calendar pages show a 'Month / Week' trail; week and day pages actually show 'Weeks / Week N' and month pages 'Year / January'.",
-   "where": "index",
-   "severity": "low"
-  },
-  {
-   "issue": "Month page buttons do not match: 'Habit tracker' is an outlined Cormorant italic pill, 'All weeks' a filled Manrope pill.",
-   "where": "m01, m07",
-   "severity": "low"
-  },
-  {
-   "issue": "Contents has 7 section cards, leaving two empty slots in the third row.",
-   "where": "index",
-   "severity": "low"
-  },
-  {
-   "issue": "Setup check top-bar map rows have large empty space above each label pair, so the box looks unevenly spaced.",
-   "where": "linktest",
-   "severity": "low"
-  },
-  {
-   "issue": "This week's top 3 box has about a third of empty shaded space below the three lines.",
-   "where": "w01, w27",
-   "severity": "low"
-  },
-  {
-   "issue": "Photo 8 crops cut the Sep-Dec mini calendars and the last habit rows off mid-grid at the bottom edge.",
+   "issue": "Photo 8 shows two small landscape crops in the top two-thirds and leaves the bottom third empty. At Etsy zoom the year-overview month names, weekday letters and the habit tracker's day numbers are tiny (r013).",
    "where": "photo-08-ph8.jpg",
+   "severity": "medium"
+  },
+  {
+   "issue": "Photo 4's headline 'Months that always fit' is about the 6-row grid, but the crop shows only 3 rows, so the photo does not show the claim it makes.",
+   "where": "photo-04-ph4.jpg",
    "severity": "low"
   },
   {
-   "issue": "Photo 5 point 'Tap the month you are in' and cover/photo 1 'Start any month' lead with months, while Start here now leads with 'Start with Week 1'; mixed first instruction.",
-   "where": "photo-05-ph5.jpg, photo-01-ph1.jpg, cover",
+   "issue": "Photo 3's week crop fills only the middle band, with about 25% empty background above and below; the page could be shown larger.",
+   "where": "photo-03-ph3.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "Photo 2's point 'Notes box under your list' is backed only by the Notes label at the cut edge; the box itself is out of frame. The alt text is honest ('the start of Notes').",
+   "where": "photo-02-ph2.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "Several key buttons are small: the Start here 'Go there' buttons are 76x25 pt (one is the day-one path to Week 1), the month page's Habit tracker and All weeks buttons are 23 pt tall, the Setup check map rows are 23-24 pt, and Open planner is 28 pt. On an iPad that is about 33 to 40 pt, below 44.",
+   "where": "start, m01-m12, linktest, cover",
+   "severity": "low"
+  },
+  {
+   "issue": "The month page's two buttons use different styles: 'Habit tracker' is outlined Cormorant italic and 'All weeks' is a filled Manrope bold pill.",
+   "where": "m01-m12",
+   "severity": "low"
+  },
+  {
+   "issue": "The listing's top-bar list ('Home, Year, Notes and Weeks') leaves out Lists, which is on every top bar in the file (r003).",
+   "where": "listing.description 'What makes it different'",
+   "severity": "low"
+  },
+  {
+   "issue": "The listing says 'Any-Monday.pdf (12.2 MB)', but the file is 12,886,545 bytes (12.9 MB, or 12.3 MiB) (r003).",
+   "where": "listing.description 'What you get'",
+   "severity": "low"
+  },
+  {
+   "issue": "Start here step 1 gives only Share > Open in Goodnotes. It leaves out the Goodnotes New > Import path that the listing and photo 9 give.",
+   "where": "start (step 1)",
+   "severity": "low"
+  },
+  {
+   "issue": "Some boxes are partly empty: the bottom third of the Start here step 1 and step 4 cards, and the bottom third of the week page's 'This week's top 3' box (r006).",
+   "where": "start; w01-w52",
+   "severity": "low"
+  },
+  {
+   "issue": "On the week page, each day's date slot is two tiny pale dashes ('_ _') in the box corner, which is easy to miss even though the page is titled 'Write the dates'.",
+   "where": "w01-w52",
+   "severity": "low"
+  },
+  {
+   "issue": "Day one, early buyer (r002/r014): someone who starts in late October runs 52 weeks into the next October, so the starting month's page has to cover both years. Neither Start here nor the listing says how to handle this.",
+   "where": "start; m01-m12",
    "severity": "low"
   }
  ],
- "pass": false,
+ "pass": true,
  "notes": [
   "Image clone check pending: competitor photos come from the laptop worker."
  ]
