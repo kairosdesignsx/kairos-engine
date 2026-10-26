@@ -6,6 +6,8 @@ spec = {
   "dating": {"mode": "dated", "year": 2027} | {"mode": "undated"},
   "theme": "sage" | {"base": "sage", ...token overrides, "display": font, "body": font, "motif": name},
   "type_scale": 1.0,                 # >1 for larger text (readability)
+  "tap_targets": "large",            # optional: top bar, trail and page-number buttons at least 30 pt tall (r-tap)
+  "nav_max": 5,                      # optional: how many top-bar buttons (default 7 landscape, 4 portrait)
   "sections": [ {"module": "cover"}, {"module": "calendar", ...}, ... ]
 }
 Every module registers itself in MODULES with a description and its parameters, so the brief
@@ -107,6 +109,8 @@ class Planner:
         self.rbox, self.rpill = (5, 6) if lean else (12, 99)
         self.pages, self.page_modules, self.seed = [], [], 1
         self.nav_items = []     # (label, anchor) shown on every page's top bar
+        self.nav_max = int(spec.get('nav_max', 7 if self.W > self.HT else 4))  # top-bar buttons (spec nav_max)
+        self.taps = spec.get('tap_targets') == 'large'  # spec tap_targets 'large': nav, trail and page buttons >= 30 pt
         self.index_items = []   # (label, anchor, kicker) for the contents page
         self.current = None
         # e-ink format (eink_format section): applies to the whole file, wherever the section sits in the list
@@ -166,7 +170,16 @@ a{{color:inherit;text-decoration:none}}
 .step{{display:flex;gap:12px;align-items:flex-start}}
 .step b{{flex:none;width:28px;height:28px;border-radius:50%;background:{th['ink']};color:{th['paper']};display:flex;align-items:center;justify-content:center;font:700 13px '{th['body']}'}}
 .k>a:has(>svg){{display:inline-flex;align-items:center;justify-content:center;width:46px;height:38px;margin-left:8px;border-radius:10px;background:{th['soft']};vertical-align:middle}}.k>a>svg{{width:20px;height:20px}}
-""" + self.label_css() + (self.eink_css() if self.eink else '') + (_pf_css(self) if self.pf else '') + ('*{font-variant-numeric:lining-nums}' if th.get('nums') == 'lining' else '')  # theme 'nums': 'lining' (Cormorant's old-style 1 reads as I)
+""" + self.label_css() + (self.eink_css() if self.eink else '') + (self.tap_css() if self.taps else '') + (_pf_css(self) if self.pf else '') + ('*{font-variant-numeric:lining-nums}' if th.get('nums') == 'lining' else '')  # theme 'nums': 'lining' (Cormorant's old-style 1 reads as I)
+
+    def tap_css(self):
+        """spec tap_targets 'large': every small button at least 40 css px (30 pt) tall: top bar, Month / Week trail links,
+        notes page numbers and prev/next arrows. The bar sits a little higher and the body starts 6px lower."""
+        th = self.th
+        return (f".nav{{top:8px}}.nav a{{display:inline-flex;align-items:center;height:40px;padding:0 14px}}"
+                f".nav .crumb a{{display:inline-flex;align-items:center;height:40px;padding:0 12px;border-radius:{self.rpill}px;background:{th['soft']}}}"
+                f".body{{top:62px}}a.pgn{{min-width:40px!important;height:40px;padding:0 10px!important}}"
+                f".k>a:has(>svg){{width:48px;height:42px}}")
 
     def label_css(self):
         """theme 'labels': 'italic' = two-font hierarchy by weight and italic instead of tracked all-caps labels
@@ -211,7 +224,7 @@ a{{color:inherit;text-decoration:none}}
         return f'<div class="nav">%%NAV:{active or ""}%%<span class="crumb">{crumb}</span></div>'
 
     def nav_links(self, active):
-        return ''.join(f'<a href="#{a}" class="{"on" if a == active else ""}">{esc(l)}</a>' for l, a in self.nav_items[:7 if self.W > self.HT else 4])
+        return ''.join(f'<a href="#{a}" class="{"on" if a == active else ""}">{esc(l)}</a>' for l, a in self.nav_items[:self.nav_max])
 
     def rail(self, month=None, rail_map=None, rail_labels=None):
         if self.pf:
@@ -424,7 +437,7 @@ def _fill_link_test_map(P):
     """'Where things are': the top bar's buttons and what each opens (portrait Setup check, under the fix list)."""
     th = P.th
     kick = {a: k for (l, a, k) in P.index_items}
-    items = ''.join(f'<a href="#{an}" style="display:flex;gap:10px;align-items:baseline;padding:6px 0;border-bottom:1px solid {th["line"]}"><b style="min-width:84px;font:700 {P.fs(11.5)} \'{th["body"]}\';text-transform:uppercase;letter-spacing:.08em">{esc(l)}</b><span style="font-size:{P.fs(13)};color:{th["muted"]}">{esc("Contents" if an == "index" else kick.get(an, ""))}</span></a>' for l, an in P.nav_items[:7 if P.W > P.HT else 4])
+    items = ''.join(f'<a href="#{an}" style="display:flex;gap:10px;align-items:baseline;padding:6px 0;border-bottom:1px solid {th["line"]}"><b style="min-width:84px;font:700 {P.fs(11.5)} \'{th["body"]}\';text-transform:uppercase;letter-spacing:.08em">{esc(l)}</b><span style="font-size:{P.fs(13)};color:{th["muted"]}">{esc("Contents" if an == "index" else kick.get(an, ""))}</span></a>' for l, an in P.nav_items[:P.nav_max])
     box = f'<div class="box" style="flex:1"><span class="k">Where things are: the top bar</span><div style="flex:1;display:flex;flex-direction:column;justify-content:space-evenly">{items}</div></div>'
     for i, pg in enumerate(P.pages):
         if '%%LT_MAP%%' in pg:
@@ -437,7 +450,7 @@ def _fill_guides(P):
     for a, sec in getattr(P, 'guide_extras', {}).items():
         extra = ''
         if sec.get('map'):
-            items = ''.join(f'<a href="#{an}" style="display:flex;gap:10px;align-items:baseline;padding:5px 0;border-bottom:1px solid {th["line"]}"><b style="min-width:110px;font:700 12px \'{th["body"]}\';text-transform:uppercase;letter-spacing:.08em">{esc(l)}</b><span style="font-size:{P.fs(13.5)};color:{th["muted"]}">{esc(next((k for (l2, a2, k) in P.index_items if a2 == an), ""))}</span></a>' for l, an in P.nav_items[:7 if P.W > P.HT else 4] if next((k for (l2, a2, k) in P.index_items if a2 == an), ""))
+            items = ''.join(f'<a href="#{an}" style="display:flex;gap:10px;align-items:baseline;padding:5px 0;border-bottom:1px solid {th["line"]}"><b style="min-width:110px;font:700 12px \'{th["body"]}\';text-transform:uppercase;letter-spacing:.08em">{esc(l)}</b><span style="font-size:{P.fs(13.5)};color:{th["muted"]}">{esc(next((k for (l2, a2, k) in P.index_items if a2 == an), ""))}</span></a>' for l, an in P.nav_items[:P.nav_max] if next((k for (l2, a2, k) in P.index_items if a2 == an), ""))
             extra += f'<div class="box" style="flex:none"><span class="k">{esc(sec.get("map_label", "The top bar, on every page"))}</span><div style="display:grid;grid-template-columns:1fr 1fr;gap:0 28px">{items}</div></div>'
         if sec.get('months'):
             hs_style = f'background:{th["paper"]};color:{th["ink"]};box-shadow:inset 0 0 0 2px {th["ink"]}' if P.gray else f'background:{th["ink"]};color:{th["paper"]}'
@@ -463,7 +476,10 @@ def m_year(P, sec):
         if P.pf:  # printed: three columns, larger dates
             cells = cells.replace('font-size:9.5px', f'font-size:{P.fs(11)}')
             cells = cells.replace('<span class="d x"></span>', '<span class="d x" style="padding:2px 3px;border:0">&#8203;</span>')  # empty rows keep their height: the 12 grids line up
-        blocks += f'<div style="display:flex;flex-direction:column;gap:4px"><a href="#m{m:02d}" class="k" style="color:{th["ink"]};font-size:11px">{MONTHS[m - 1]}</a><div class="cal" style="font-size:9px">{cells}</div></div>'
+        if P.undated:  # no date links inside, so the whole month block (name and grid) is one link: "Tap a month"
+            blocks += f'<a href="#m{m:02d}" style="display:flex;flex-direction:column;gap:4px"><span class="k" style="color:{th["ink"]};font-size:11px">{MONTHS[m - 1]}</span><div class="cal" style="font-size:9px">{cells}</div></a>'
+        else:
+            blocks += f'<div style="display:flex;flex-direction:column;gap:4px"><a href="#m{m:02d}" class="k" style="color:{th["ink"]};font-size:11px">{MONTHS[m - 1]}</a><div class="cal" style="font-size:9px">{cells}</div></div>'
     if P.pf:
         blocks = blocks.replace('font-size:11px">', f'font-size:{P.fs(15)}">')
     title = 'Year at a glance' if P.undated else f'{P.year} at a glance'
@@ -491,7 +507,7 @@ def m_lined(P, sec):
         nxt = f' <a href="#{a}{i + 1}">{arrow('r')}</a>' if i < n else ''
         prv = f'<a href="#{a if i == 2 else f"{a}{i - 1}"}">{arrow("l")}</a> ' if i > 1 else ''
         th = P.th  # with several pages, a numbered strip opens any of them directly (every page two taps from Contents)
-        strip = '' if n == 1 else ''.join(f'<a href="#{a if j == 1 else f"{a}{j}"}" style="display:inline-flex;align-items:center;justify-content:center;min-width:30px;padding:5px 9px;border-radius:{P.rpill}px;font:600 11px \'{th["body"]}\';{"background:" + th["ink"] + ";color:" + th["paper"] if j == i else "background:" + th["soft"]}">{j}</a>' for j in range(1, n + 1))
+        strip = '' if n == 1 else ''.join(f'<a href="#{a if j == 1 else f"{a}{j}"}" class="pgn" style="display:inline-flex;align-items:center;justify-content:center;min-width:30px;padding:5px 9px;border-radius:{P.rpill}px;font:600 11px \'{th["body"]}\';{"background:" + th["ink"] + ";color:" + th["paper"] if j == i else "background:" + th["soft"]}">{j}</a>' for j in range(1, n + 1))
         right = f'<div style="display:flex;gap:6px;align-items:center">{strip}<span class="k" style="font-size:16px;margin-left:8px">{prv}{nxt}</span></div>'
         P.page(anchor, P.head(sec.get('kicker', '') if n == 1 else f'{sec.get("kicker", "")} · page {i} of {n}', sec['label'], right=right) +
                f'<div class="box" style="flex:1"><div class="{"dots" if sec.get("dots") else "lines"}"></div></div>', active=a)
@@ -1411,9 +1427,9 @@ def m_page_trails(P, sec):
             new = esc(hl)
         elif not crumb.strip():
             new = f'<a href="#{home}">{esc(hl)}</a> / {title}' if has_home else title
-        elif '<a' not in crumb and has_home:
+        elif '<a' not in crumb and has_home:  # plain text trail: 'Months / May' links its first part; 'Workouts · page 1 of 9' gets Contents in front
             first, _, rest = crumb.partition(' / ')
-            new = f'<a href="#{home}">{first}</a>' + (f' / {rest}' if rest else '')
+            new = (f'<a href="#{home}">{first}</a> / {rest}') if rest else f'<a href="#{home}">{esc(hl)}</a> / {crumb}'
         else:
             new = crumb
         if not re.search(r'class="?k"? style="?font-size:16px"?>\s*<a', pg):  # no previous / next arrows on this page
@@ -1854,7 +1870,8 @@ def capabilities():
             'blocks': BLOCK_KINDS, 'day_presets': list(DAY_PRESETS), 'week_presets': list(WEEK_PRESETS),
             'themes': list(THEMES), 'orientations': list(SIZES), 'dating': ['dated (year)', 'undated'],
             'fonts': ['Corm', 'Jost', 'Fraunces', 'Manrope', 'Quicksand', 'Nunito', 'DMSerif', 'Outfit', 'Baskerville', 'Script'],
-            'type_scale': 'number, 1.0 default; 1.15 for larger text'}
+            'type_scale': 'number, 1.0 default; 1.15 for larger text',
+            'tap_targets': "'large': top bar, trail, page-number and arrow buttons at least 30 pt tall", 'nav_max': 'int, top-bar buttons (default 7 landscape, 4 portrait)'}
 
 
 def validate_spec(spec):

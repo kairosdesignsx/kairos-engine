@@ -1,0 +1,166 @@
+{
+ "items": [
+  {
+   "key": "must:mh_weekly_spread",
+   "found": true,
+   "where": "w01/w01b, w12/w12b, w27/w27b, w52/w52b, hsw01/hsw01b, spare/spareb",
+   "note": "Dated two-page spreads with a Monday start. The left page has This week's focus and tall Mon, Tue and Wed columns. The right page has Thu and Fri, then Sat over Sun. Text checks of the Letter PDF found 52 ISO week spreads with correct date ranges plus 10 head-start spreads (hsw01 to hsw10, in page_modules)."
+  },
+  {
+   "key": "must:mh_months_year",
+   "found": true,
+   "where": "hs11, m01, m03, m07 (month pages); hs11b, hs12b, m01b, m03b, m07b, m12b (reviews); year; dates, dates2",
+   "note": "Each month page has a Monday-start grid with an ISO week column, then Goals this month, Important dates and Bills and payments under the grid (as build_changes moved them). The review page has Wins, Carry over and Notes and sits on an even sheet back facing the next month (42 faces 43). Also present: 2027 at a glance and two 26-row Dates to remember pages."
+  },
+  {
+   "key": "must:mh_print",
+   "found": true,
+   "where": "files/*.pdf, every page",
+   "note": "pdfinfo: Letter 612x792 pt, A4 595x842 pt, 164 pages each. Measured ink bounding boxes on all pages of both files keep at least 0.475 in clear (raster rounding) and up to 0.875 in on the mirrored binding side. Pages are white and nothing prints to the edge."
+  },
+  {
+   "key": "must:mh_guide",
+   "found": true,
+   "where": "start (page 2)",
+   "note": "Printed Start here page with four numbered steps: download, print the check sheet, print one month at a time, punch and bind. Each step has a Page 3 or Page 5 link, and a tip follows."
+  },
+  {
+   "key": "must:mh_look",
+   "found": true,
+   "where": "all shots; pdffonts",
+   "note": "Only Cormorant Garamond and Jost are embedded. Every page type keeps one layout in all shots and in A4 renders (pages 2, 3, 5, 61)."
+  },
+  {
+   "key": "must:mh_habits",
+   "found": true,
+   "where": "w01b, w12b, w27b, w52b, hsw01b, spareb",
+   "note": "Every right page has Habits this week: an M T W T F S S header over 5 rows of 7 circles. The write-in name column is now about 38% of the box (221 of 586 px), close to the 40% spec."
+  },
+  {
+   "key": "fix:f_download",
+   "found": true,
+   "where": "files/, start step 1, listing 'How to start', 'What you get' and Help",
+   "note": "Two single PDFs with no zip. Both the page and the listing give the path You, Purchases, Download files, in a web browser, and say the Etsy app cannot download. Both say any PDF reader works. The listing states 1.46 MB each, matching the files (1,456,455 and 1,460,229 bytes)."
+  },
+  {
+   "key": "fix:f_not_useful",
+   "found": true,
+   "where": "photo-01-ph1_spread.jpg, listing description first line, page_modules",
+   "note": "52 ISO-dated spreads (w01 to w52) plus 10 head-start spreads, Mon to Wed left and Thu to Sun right. Photo 1 shows the open Week 12 spread. The listing's first sentence says 'two pages for every week'."
+  },
+  {
+   "key": "fix:f_print",
+   "found": true,
+   "where": "printcheck, printcheckb, PDFs, listing 'Good to know'",
+   "note": "Pages are true size with a 0.5 in safe area and a mirrored binding margin (measured), and there are no edge tabs. Print check is on pages 3 to 4 with rulers, four corner marks and a fix list. Hole guides: 3 on Letter, 2 on A4. The listing says Letter and A4 only, no A5 or Classic, and that Letter fits Big Happy Planner discs and 3-ring binders."
+  },
+  {
+   "key": "fix:f_quality",
+   "found": true,
+   "where": "all shots, check-tech.json, pdftotext of all week pages",
+   "note": "One layout per page type. All 52 week titles match their ISO Monday-to-Sunday dates, and the year page weekday offsets are correct. Lines are vector. check-tech reports no overflow and 1741/1741 links. Photos are crops of the built pages."
+  },
+  {
+   "key": "fix:f_misleading",
+   "found": true,
+   "where": "listing description, photo captions, photo-06-ph6_print_map.jpg",
+   "note": "The listing states: dated Mon Oct 26, 2026 to Sun Jan 2, 2028, Monday start, 1 undated spare week, no daily pages, Letter and A4 only, 164 pages (matches the files). Every photo has a caption naming its page, and the Print map photo shows every row. One alt text has stale week numbers (see visual issues)."
+  },
+  {
+   "key": "fix:f_support",
+   "found": true,
+   "where": "printcheckb; listing description 'Help'",
+   "note": "The back of the Print check has 5 fixes, a Settings that work table, and 'Still stuck? Send the shop an Etsy message.' The listing Help section now repeats all five fixes plus a download fix and the same last line. There is no reply-time promise in the product or the listing."
+  },
+  {
+   "key": "fix:f_value",
+   "found": true,
+   "where": "listing description, printmap",
+   "note": "The listing names both sizes, 14 months of dated pages, the spare week, and 'Print as many copies for your own use as you like'. The Print map gives sheets per row (4, 6, 6, 5 ... 2) and 82 in total."
+  },
+  {
+   "key": "fix:f_hard",
+   "found": true,
+   "where": "printmap, listing 'Works with'",
+   "note": "A plain PDF with no app or account. Each month row is 10 or 12 pages (5 or 6 whole sheets). Week spreads fall on even/odd pairs (for example 60/61), so they lie open as spreads in the binder."
+  },
+  {
+   "key": "fix:f_basic",
+   "found": true,
+   "where": "m01, m03, m07, hs11, m01b, w12, w12b",
+   "note": "Month pages have Goals this month, Important dates and Bills and payments, and the review page has Notes (per build_changes). Weeks have a focus list, habit strip and To do list. Labels are Cormorant italic with Jost body text."
+  },
+  {
+   "key": "fix:f_setup",
+   "found": true,
+   "where": "start steps 1 to 4, printmap 'Your first print, any date' and 'After that'",
+   "note": "Four numbered steps with Go there links. As the build_changes allow, step 3 now routes by date: find today in the Weeks column and print that row. Walked through: Oct 27 2026 gives the Nov 2026 row (pp 9 to 20, week Oct 26); Dec 15 2026 gives the Dec 2026 row (pp 21 to 32); Jan 2 2027 gives the Dec row; Jun 15 2027 gives June (85 to 94); Jun 29 2027 gives July (95 to 106). Each lands on a usable current week."
+  },
+  {
+   "key": "unique:u_print_check",
+   "found": true,
+   "where": "printcheck (p3), printcheckb (p4)",
+   "note": "Front: 6 in and 15 cm rulers, four corner marks at 0.5 in, binding-edge hole guides (3 on Letter at 1.25, 5.5 and 9.75 in; 2 on A4), a line, dot and fill sample, and a pen test box. Back: a Same way up check with mirrored corner marks, the fix list, a Settings that work table and a printer notes box."
+  },
+  {
+   "key": "unique:u_print_map",
+   "found": true,
+   "where": "printmap (p5)",
+   "note": "The table has What, Weeks, Pages, Sheets and Printed columns for the front pages, Nov and Dec 2026, each month of 2027 and the spare week, plus a total. The week ranges match the built weeks (for example April is Mar 29 to May 2). The two start boxes, 'Your first print, any date' and 'After that', replace the old before-2027 and later-2027 boxes, as the build_changes say."
+  },
+  {
+   "key": "unique:u_head_start",
+   "found": true,
+   "where": "hs11, hsw01/hsw01b, hs11b, hs12b, spare/spareb, sparen1/sparen2",
+   "note": "Head start has November and December 2026 month pages and reviews plus 10 week spreads from Mon Oct 26 (ISO weeks 44 to 53), then Week 1 on Jan 4. The undated spare spread has 'Week of' and blank date rules, sits between two Notes pages, and prints as 2 whole sheets."
+  },
+  {
+   "key": "look",
+   "found": true,
+   "where": "all shots and photos",
+   "note": "Blue-charcoal ink on white with rust date numbers. The pale warm tint fills only the focus, goals and tip boxes. Lines are light gray-blue and labels are Cormorant italic. Two families, no tracked capitals, motif, florals or edge tabs. Header links are outlined and labelled, not solid blocks."
+  }
+ ],
+ "visual": [
+  {
+   "issue": "Photo 3's alt text says the March calendar has 'week numbers 10 to 14'. After the ISO change, the grid shows weeks 9 to 13, so the listing states a fact the product contradicts (r003, r005).",
+   "where": "listing.json alt.ph3_month; photo-03-ph3_month.jpg; m03",
+   "severity": "medium"
+  },
+  {
+   "issue": "Photos 3, 7 and 9 show pages as cropped fragments on white cards with drop shadows, with no punch holes. Photos 1, 2 and 6 show punched printed sheets, so the set is inconsistent. Photo 7's week crop also runs off the bottom of the frame.",
+   "where": "photo-03, photo-07, photo-09",
+   "severity": "low"
+  },
+  {
+   "issue": "Photo 5's point says 'Six usual print problems, solved', but the sheet lists five problems plus a 'Still stuck?' line.",
+   "where": "photo-05-ph5_fixes.jpg; listing photo_copy.ph5_fixes",
+   "severity": "low"
+  },
+  {
+   "issue": "Photo 1 shrinks the whole spread, so the day labels and kickers are tiny at Etsy zoom (r013). Photo 2 covers the detail.",
+   "where": "photo-01-ph1_spread.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "The manual duplex steps say which side and edge to reload but not whether to reverse the page order of the stack. A one-sheet check-sheet test cannot reveal an order error, so a multi-sheet month row can come out mismatched.",
+   "where": "start step 4, printcheckb fix list, listing Help",
+   "severity": "low"
+  },
+  {
+   "issue": "The 2027 at a glance grids still use different row spacing per month (Feb, Apr, Jun, Jul and Sep rows are wider than Jan and Mar), so the 12 calendars do not line up.",
+   "where": "year",
+   "severity": "low"
+  },
+  {
+   "issue": "The cover has a large empty band (about a third of the page) between the Start here button and the facts row.",
+   "where": "cover",
+   "severity": "low"
+  },
+  {
+   "issue": "Week 52's right page has no forward link (for example to the Spare week). The top hole guide on the Print check front sits tight against the 'Print check' title.",
+   "where": "w52b; printcheck",
+   "severity": "low"
+  }
+ ]
+}

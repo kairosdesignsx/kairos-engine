@@ -97,7 +97,7 @@
   {
    "id": "f_value",
    "complaint": "complaint:c_value",
-   "how": "Not a single worksheet: 52 week pages and 52 prompt pages, each with a different printed prompt, plus 12 month pages, a year in moods, a self-care menu, an energy map and a hard day plan, all linked. Writing rows are at least 26 px tall. The listing gives exact counts from the built file.",
+   "how": "Not a single worksheet: 52 week pages and 52 prompt pages, each with a different printed prompt, plus 13 month pages, a journal index, a year in moods, a self-care menu, an energy map and a hard day plan, all linked. Every writing row is at least 7 mm tall (US college-ruled spacing). The listing gives exact counts from the built file.",
    "evidence": [
     "complaint:c_value",
     "complaint:c_space",
@@ -433,16 +433,15 @@
  "photos": [
   {
    "id": "ph1_hero",
-   "shows": "Cover and Week 1 on tablets: 'One gentle page a week'.",
+   "shows": "Week 1 close up with the product name: dates, buttons, a row per day.",
    "proves": "praise:p_look",
    "pages": [
-    "cover",
     "w01"
    ]
   },
   {
    "id": "ph2_week",
-   "shows": "Week page close up: a row per day for mood, energy, sleep and one kind thing, habits.",
+   "shows": "Habit grid on a week page close up.",
    "proves": "complaint:c_hard, complaint:c_missing",
    "pages": [
     "w01"

@@ -96,6 +96,8 @@ def crop_region(z, pieces, W, H, max_h):
     x0, x1 = z['x'][0] * W, z['x'][1] * W; y0 = z.get('y', 0) * H
     # big containers (a table, a lined page, a month grid) may be cut between their rows; cards, text, cells and tabs may not
     pieces = [q for q in pieces if not ((q[4] == 'box' and q[3] - q[1] > .4 * H) or (q[4] == 'svg' and q[3] - q[1] > 200))]
+    # zoom 'cut_ok': labels of writing boxes (lined Notes and the like) the crop may cut through; their text is still never sliced
+    pieces = [q for q in pieces if not (q[4] == 'box' and any(q[5].startswith(l) for l in z.get('cut_ok', [])))]
     inx = lambda q: q[2] > x0 + .5 and q[0] < x1 - .5
     cuts_y = lambda y: [q for q in pieces if inx(q) and q[1] < y - .5 and q[3] > y + .5]
     if z.get('y1') is not None:
@@ -207,7 +209,7 @@ def scenes(brief, listing, build, shots_dir, out_dir):
         pts = ''.join(f'<p class="pt"><b>&#9679;</b><span>{esc(x)}</span></p>' for x in c.get('points', [])[:3])
         label = f'<p class="k">{esc(c["label"])}</p>' if c.get('label') else ''
         key = f'{i + 1:02d}-{ph["id"]}'
-        if c.get('zoom') and i > 0:
+        if c.get('zoom') and (i > 0 or c.get('hero_zoom')):  # hero_zoom: the first photo is a close-up too (r013)
             Nc = lambda a, _c=c.get('captions', {}): esc(_c[a]) if a in _c else N(a)
             if blocks is None:
                 zpages = [z['page'] for ph2 in brief['photos'] for z in copy.get(ph2['id'], {}).get('zoom', []) if z['page'] in have]

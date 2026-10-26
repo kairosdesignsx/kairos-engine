@@ -2,18 +2,18 @@
  "files": [
   {
    "name": "Tend.pdf",
-   "mb": 3.01,
-   "pages": 128
+   "mb": 3.24,
+   "pages": 130
   }
  ],
- "links": 3012,
+ "links": 3150,
  "overflow": [],
  "lean": false,
  "attempts": [
   {
    "lean": false,
-   "mb": 3.01,
-   "pages": 128
+   "mb": 3.24,
+   "pages": 130
   }
  ],
  "page_modules": [
@@ -454,6 +454,10 @@
    "prompt_week"
   ],
   [
+   "prompts",
+   "prompt_week"
+  ],
+  [
    "menu",
    "checklist"
   ],
@@ -466,8 +470,8 @@
    "checklist"
   ],
   [
-   "pixels",
-   "year_pixels"
+   "moods",
+   "mood_year"
   ],
   [
    "m01",
@@ -518,6 +522,10 @@
    "habit_month"
   ],
   [
+   "m13",
+   "habit_month"
+  ],
+  [
    "notes",
    "lined"
   ],
@@ -540,8 +548,8 @@
   "m01.png",
   "m07.png",
   "menu.png",
+  "moods.png",
   "notes.png",
-  "pixels.png",
   "start.png",
   "w01.png",
   "w27.png",
@@ -553,6 +561,6 @@
  ],
  "product_id": "p-scp-001",
  "brief_id": "b-scp-001",
- "built_at": "2026-10-26T19:26:23Z",
+ "built_at": "2026-10-26T19:46:10Z",
  "line": "planner"
 }

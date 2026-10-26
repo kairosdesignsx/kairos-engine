@@ -2,18 +2,18 @@
  "files": [
   {
    "name": "Stronger-Weeks.pdf",
-   "mb": 7.63,
-   "pages": 342
+   "mb": 8.06,
+   "pages": 344
   }
  ],
- "links": 7615,
+ "links": 7724,
  "overflow": [],
  "lean": false,
  "attempts": [
   {
    "lean": false,
-   "mb": 7.63,
-   "pages": 342
+   "mb": 8.06,
+   "pages": 344
   }
  ],
  "page_modules": [
@@ -1318,6 +1318,10 @@
    "workout_log"
   ],
   [
+   "log9",
+   "workout_log"
+  ],
+  [
    "progress",
    "progress_chart"
   ],
@@ -1374,6 +1378,10 @@
    "habit_month"
   ],
   [
+   "m13",
+   "habit_month"
+  ],
+  [
    "notes",
    "lined"
   ],
@@ -1409,6 +1417,6 @@
  ],
  "product_id": "p-fpd-001",
  "brief_id": "b-fpd-001",
- "built_at": "2026-10-26T19:26:38Z",
+ "built_at": "2026-10-26T19:46:01Z",
  "line": "planner"
 }

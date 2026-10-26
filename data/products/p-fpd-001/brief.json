@@ -110,7 +110,7 @@
   {
    "id": "f_value",
    "complaint": "complaint:c_value",
-   "how": "Nothing to duplicate: 52 week pages, 52 meal plans and 208 workout logs are already in the file, all hyperlinked, so a buyer never copies pages to make more weeks (the exact 1-star complaint). The listing gives exact counts per page type from the built file.",
+   "how": "Nothing to duplicate: 52 week pages, 52 meal plans and 208 workout logs (and 13 month pages) are already in the file, all hyperlinked, so a buyer never copies pages to make more weeks (the exact 1-star complaint). The listing gives exact counts per page type from the built file.",
    "evidence": [
     "complaint:c_value",
     "complaint:c_manual_pages",
@@ -556,17 +556,17 @@
      ],
      [
       "Check the links",
-      "Open Setup check and tap its buttons with the pen off. If they jump, you are ready. If not, the fix list is on that page.",
+      "Open Setup check and tap its three buttons with the pen off. If each one jumps, you are ready. If one does not, the fix list on that page has four things to try. Do this once, on the tablet you will use.",
       "linktest"
      ],
      [
       "Start Week 1 today",
-      "Any day works, in any month: no dates are printed. Open Week 1, write the dates and plan your workouts, then tap Meal plan or Workout 1 on that page.",
+      "Any day works, in any month: no dates are printed. Open Week 1, write the dates and plan your workouts, then tap Meal plan or Workout 1 on that page. Every page there has a Week button to come back.",
       "w01"
      ],
      [
       "Write down where you start",
-      "On Progress, write your start weight and goal. On Measurements, fill in the Start row, then measure again every 4 weeks.",
+      "On Progress, write your start weight and goal. On Measurements, fill in the Start row, then measure again every 4 weeks: weeks 4, 8, 12 and on have a Measure button.",
       "progress"
      ]
     ],
@@ -712,7 +712,7 @@
      {
       "kind": "checklist",
       "label": "Milestones I am aiming for",
-      "rows": 8
+      "rows": 10
      },
      {
       "kind": "lines",
