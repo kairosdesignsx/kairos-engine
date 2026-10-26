@@ -1,0 +1,64 @@
+{
+"new_themes": [],
+"codes": [
+{
+"id": "r555",
+"off_type": false,
+"themes": [
+"p_fits_needs"
+]
+},
+{
+"id": "r556",
+"off_type": false,
+"themes": [
+"p_delivery",
+"p_easy"
+]
+},
+{
+"id": "r557",
+"off_type": false,
+"themes": [
+"p_repeat"
+]
+},
+{
+"id": "r558",
+"off_type": false,
+"themes": [
+"p_flexible",
+"p_guide",
+"p_quality"
+]
+},
+{
+"id": "r559",
+"off_type": false,
+"themes": [
+"p_fits_needs"
+]
+},
+{
+"id": "r560",
+"off_type": false,
+"themes": [
+"p_look"
+]
+},
+{
+"id": "r561",
+"off_type": false,
+"themes": [
+"p_delivery"
+]
+},
+{
+"id": "r562",
+"off_type": false,
+"themes": [
+"p_device"
+]
+}
+]
+}

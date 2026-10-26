@@ -1,0 +1,3190 @@
+{
+ "type_id": "goodnotes-planner",
+ "built_at": "2026-10-26T19:06:14Z",
+ "basis": {
+  "listings": 30,
+  "reviews": 532,
+  "reviews_coded": 458,
+  "off_type_dropped": 30,
+  "negative_reviews": 208,
+  "feature_sources": [
+   "titles"
+  ],
+  "photos": "pending"
+ },
+ "features": [
+  {
+   "id": "dated",
+   "name": "Dated for the year",
+   "have": [
+    "1602251608",
+    "4474152544",
+    "1123882489",
+    "4520368146",
+    "776177381",
+    "1305090483",
+    "661944197",
+    "1784469516",
+    "1322547322",
+    "4466031892",
+    "4340822313",
+    "979834364",
+    "4518430837",
+    "730507010",
+    "4514378454",
+    "1661820574",
+    "1150654254",
+    "1873340215",
+    "1125534670",
+    "1282376971",
+    "1756165829",
+    "4538357989",
+    "1127394968",
+    "1606634310",
+    "4568300822",
+    "1209326250",
+    "1833235300"
+   ],
+   "share": 0.9,
+   "revenue_share": 0.943,
+   "sales_share": 0.893,
+   "tier": "standard"
+  },
+  {
+   "id": "goodnotes",
+   "name": "Says Goodnotes",
+   "have": [
+    "1602251608",
+    "1068739082",
+    "4474152544",
+    "4520368146",
+    "661944197",
+    "1784469516",
+    "1322547322",
+    "4466031892",
+    "4340822313",
+    "979834364",
+    "4518430837",
+    "730507010",
+    "4514378454",
+    "1661820574",
+    "1150654254",
+    "1873340215",
+    "1282376971",
+    "4550281756",
+    "1756165829",
+    "4538357989",
+    "1127394968",
+    "1878185995",
+    "1606634310",
+    "4568300822",
+    "1209326250",
+    "1833235300"
+   ],
+   "share": 0.867,
+   "revenue_share": 0.872,
+   "sales_share": 0.746,
+   "tier": "standard"
+  },
+  {
+   "id": "multi_year",
+   "name": "Covers more than one year",
+   "have": [
+    "1602251608",
+    "4474152544",
+    "1123882489",
+    "4520368146",
+    "776177381",
+    "1305090483",
+    "661944197",
+    "1784469516",
+    "4466031892",
+    "4340822313",
+    "4518430837",
+    "4514378454",
+    "1150654254",
+    "1873340215",
+    "1125534670",
+    "1282376971",
+    "1756165829",
+    "4538357989",
+    "4568300822",
+    "1833235300"
+   ],
+   "share": 0.667,
+   "revenue_share": 0.936,
+   "sales_share": 0.563,
+   "tier": "standard"
+  },
+  {
+   "id": "undated",
+   "name": "Undated version",
+   "have": [
+    "1068739082",
+    "1123882489",
+    "776177381",
+    "1305090483",
+    "661944197",
+    "1322547322",
+    "4466031892",
+    "1661820574",
+    "1125534670",
+    "4550281756",
+    "1756165829",
+    "1606634310",
+    "1833235300"
+   ],
+   "share": 0.433,
+   "revenue_share": 0.292,
+   "sales_share": 0.632,
+   "tier": "common"
+  },
+  {
+   "id": "notability",
+   "name": "Says Notability",
+   "have": [
+    "1602251608",
+    "4474152544",
+    "4520368146",
+    "1784469516",
+    "1322547322",
+    "979834364",
+    "730507010",
+    "1661820574",
+    "1150654254",
+    "1873340215",
+    "4550281756",
+    "1878185995",
+    "1606634310"
+   ],
+   "share": 0.433,
+   "revenue_share": 0.534,
+   "sales_share": 0.421,
+   "tier": "common"
+  },
+  {
+   "id": "journal",
+   "name": "Journal or notebook pages",
+   "have": [
+    "1602251608",
+    "1068739082",
+    "661944197",
+    "1784469516",
+    "4466031892",
+    "4340822313",
+    "1661820574",
+    "1756165829",
+    "1878185995",
+    "4568300822",
+    "1209326250"
+   ],
+   "share": 0.367,
+   "revenue_share": 0.436,
+   "sales_share": 0.397,
+   "tier": "common"
+  },
+  {
+   "id": "all_in_one",
+   "name": "All-in-one life planner",
+   "have": [
+    "4474152544",
+    "1784469516",
+    "730507010",
+    "1661820574",
+    "1873340215",
+    "1127394968",
+    "1878185995",
+    "4568300822",
+    "1833235300"
+   ],
+   "share": 0.3,
+   "revenue_share": 0.29,
+   "sales_share": 0.223,
+   "tier": "common"
+  },
+  {
+   "id": "android",
+   "name": "Android or Samsung support",
+   "have": [
+    "1602251608",
+    "4466031892",
+    "4340822313",
+    "1150654254",
+    "1282376971",
+    "1756165829",
+    "1878185995"
+   ],
+   "share": 0.233,
+   "revenue_share": 0.302,
+   "sales_share": 0.145,
+   "tier": "rare"
+  },
+  {
+   "id": "bundle",
+   "name": "Bundle of several products",
+   "have": [
+    "1602251608",
+    "1123882489",
+    "4466031892",
+    "4340822313",
+    "1878185995",
+    "1209326250",
+    "1833235300"
+   ],
+   "share": 0.233,
+   "revenue_share": 0.361,
+   "sales_share": 0.159,
+   "tier": "rare"
+  },
+  {
+   "id": "hyperlinked",
+   "name": "Hyperlinked tabs and dates",
+   "have": [
+    "4520368146",
+    "4518430837",
+    "730507010",
+    "1873340215",
+    "1127394968",
+    "4568300822"
+   ],
+   "share": 0.2,
+   "revenue_share": 0.219,
+   "sales_share": 0.094,
+   "tier": "rare"
+  },
+  {
+   "id": "stickers",
+   "name": "Digital stickers included",
+   "have": [
+    "1602251608",
+    "1068739082",
+    "4466031892",
+    "4340822313",
+    "1878185995"
+   ],
+   "share": 0.167,
+   "revenue_share": 0.301,
+   "sales_share": 0.13,
+   "tier": "rare"
+  },
+  {
+   "id": "custom",
+   "name": "Customizable or personalized",
+   "have": [
+    "1123882489",
+    "776177381",
+    "1305090483",
+    "1125534670",
+    "1833235300"
+   ],
+   "share": 0.167,
+   "revenue_share": 0.15,
+   "sales_share": 0.257,
+   "tier": "rare"
+  },
+  {
+   "id": "adhd_specific",
+   "name": "Built for ADHD",
+   "have": [
+    "661944197",
+    "4340822313",
+    "1282376971"
+   ],
+   "share": 0.1,
+   "revenue_share": 0.098,
+   "sales_share": 0.123,
+   "tier": "rare"
+  },
+  {
+   "id": "portrait",
+   "name": "Portrait layout",
+   "have": [
+    "4474152544",
+    "4538357989",
+    "1127394968"
+   ],
+   "share": 0.1,
+   "revenue_share": 0.138,
+   "sales_share": 0.034,
+   "tier": "rare"
+  },
+  {
+   "id": "colorful",
+   "name": "Colorful or aesthetic look",
+   "have": [
+    "1068739082",
+    "1282376971",
+    "1833235300"
+   ],
+   "share": 0.1,
+   "revenue_share": 0.028,
+   "sales_share": 0.143,
+   "tier": "rare"
+  },
+  {
+   "id": "student",
+   "name": "Student or academic",
+   "have": [
+    "4514378454",
+    "4538357989"
+   ],
+   "share": 0.067,
+   "revenue_share": 0.071,
+   "sales_share": 0.001,
+   "tier": "rare"
+  },
+  {
+   "id": "habit_tracker",
+   "name": "Habit tracker",
+   "have": [
+    "1282376971"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.004,
+   "sales_share": 0.038,
+   "tier": "rare"
+  },
+  {
+   "id": "self_care",
+   "name": "Self-care, mood or wellness pages",
+   "have": [
+    "1282376971"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.004,
+   "sales_share": 0.038,
+   "tier": "rare"
+  },
+  {
+   "id": "budget",
+   "name": "Budget or finance pages",
+   "have": [
+    "1209326250"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.002,
+   "sales_share": 0.027,
+   "tier": "rare"
+  },
+  {
+   "id": "meal",
+   "name": "Meal planning",
+   "have": [
+    "1209326250"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.002,
+   "sales_share": 0.027,
+   "tier": "rare"
+  },
+  {
+   "id": "goals",
+   "name": "Goal setting",
+   "have": [
+    "1209326250"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.002,
+   "sales_share": 0.027,
+   "tier": "rare"
+  },
+  {
+   "id": "landscape",
+   "name": "Landscape layout",
+   "have": [
+    "4474152544"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.11,
+   "sales_share": 0.003,
+   "tier": "rare"
+  },
+  {
+   "id": "minimalist",
+   "name": "Minimalist look",
+   "have": [
+    "4518430837"
+   ],
+   "share": 0.033,
+   "revenue_share": 0.05,
+   "sales_share": 0.001,
+   "tier": "rare"
+  },
+  {
+   "id": "time_blocking",
+   "name": "Time blocking or hourly schedule",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "dark_mode",
+   "name": "Dark mode",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "eink",
+   "name": "E-ink tablets (reMarkable, Boox, Kindle Scribe)",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "work",
+   "name": "Work or productivity focus",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "brain_dump",
+   "name": "Brain dump pages",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "routines",
+   "name": "Routine builder",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "dopamine_menu",
+   "name": "Dopamine menu",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "priority_matrix",
+   "name": "Priority matrix or top 3",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "quick_start",
+   "name": "Quick start or setup guide",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  },
+  {
+   "id": "test_page",
+   "name": "Link test or setup check page",
+   "have": [],
+   "share": 0.0,
+   "revenue_share": 0.0,
+   "sales_share": 0.0,
+   "tier": "not_seen"
+  }
+ ],
+ "complaints": [
+  {
+   "id": "c_download",
+   "theme": "Couldn't download or open the file",
+   "count": 42,
+   "on_top_listings": 15,
+   "quotes": [
+    {
+     "text": "unable to download it seems this is not my first digital planner but I was totally unable to download.",
+     "shop": "ForLittleLion",
+     "stars": 1,
+     "review_id": "r250"
+    },
+    {
+     "text": "It was a useless purchase. I couldn’t get it to download onto my iPad. So I also wasted \nabout three hours of my time.",
+     "shop": "OptimumPlanners",
+     "stars": 1,
+     "review_id": "r389"
+    },
+    {
+     "text": "cannot download to use this. it sucks that i cannot get a refund. now that is money wasted trying to use this crap. I will stick to my paper",
+     "shop": "DigitalPlannerStart",
+     "stars": 1,
+     "review_id": "r517"
+    }
+   ],
+   "review_ids": [
+    "r5",
+    "r7",
+    "r8",
+    "r10",
+    "r16",
+    "r17",
+    "r23",
+    "r28",
+    "r49",
+    "r58",
+    "r65",
+    "r70",
+    "r95",
+    "r96",
+    "r98",
+    "r99",
+    "r103",
+    "r105",
+    "r111",
+    "r137",
+    "r140",
+    "r148",
+    "r158",
+    "r187",
+    "r245",
+    "r250",
+    "r260",
+    "r291",
+    "r293",
+    "r336",
+    "r338",
+    "r339",
+    "r343",
+    "r354",
+    "r389",
+    "r428",
+    "r433",
+    "r517",
+    "r526",
+    "r529",
+    "r530",
+    "r536"
+   ]
+  },
+  {
+   "id": "c_setup",
+   "theme": "Confusing setup or unclear instructions",
+   "count": 37,
+   "on_top_listings": 9,
+   "quotes": [
+    {
+     "text": "Not very user friendly or explicit with instructions on how to use for anyone unfamiliar with this kind of product",
+     "shop": "LetsPlanPlanners",
+     "stars": 1,
+     "review_id": "r26"
+    },
+    {
+     "text": "Great item but I couldn’t ever figure it out. Too complicated for me.",
+     "shop": "PrintMagicStudioX",
+     "stars": 3,
+     "review_id": "r122"
+    },
+    {
+     "text": "Great planner. Took a couple of tries before I got it right for me",
+     "shop": "HappyDownloads",
+     "stars": 4,
+     "review_id": "r324"
+    }
+   ],
+   "review_ids": [
+    "r2",
+    "r3",
+    "r7",
+    "r10",
+    "r19",
+    "r21",
+    "r22",
+    "r26",
+    "r28",
+    "r98",
+    "r104",
+    "r111",
+    "r112",
+    "r115",
+    "r122",
+    "r154",
+    "r186",
+    "r187",
+    "r206",
+    "r244",
+    "r253",
+    "r257",
+    "r296",
+    "r298",
+    "r324",
+    "r325",
+    "r335",
+    "r345",
+    "r386",
+    "r394",
+    "r415",
+    "r427",
+    "r429",
+    "r520",
+    "r531",
+    "r534",
+    "r553"
+   ]
+  },
+  {
+   "id": "c_device",
+   "theme": "Doesn't work on my app or device",
+   "count": 24,
+   "on_top_listings": 3,
+   "quotes": [
+    {
+     "text": "Do not purchase if you do not have Apple devices. \n\nYou also have to purchase Good notes if you want to be able to use the planner as stated in the tutorial. \n\nNot as described which is a shame",
+     "shop": "DigitalPlannerStart",
+     "stars": 1,
+     "review_id": "r528"
+    },
+    {
+     "text": "Couldn't get the planner to work. Owner wasn't much help since I was trying to use an android with her product just gave up.",
+     "shop": "ForLittleLion",
+     "stars": 1,
+     "review_id": "r246"
+    },
+    {
+     "text": "Not sure this works on surface go. Downloaded for hours to no success. Shop was quick to refund money. Even before they answered my question.",
+     "shop": "HappyDownloads",
+     "stars": 1,
+     "review_id": "r293"
+    }
+   ],
+   "review_ids": [
+    "r19",
+    "r20",
+    "r56",
+    "r116",
+    "r148",
+    "r152",
+    "r156",
+    "r170",
+    "r193",
+    "r246",
+    "r254",
+    "r263",
+    "r293",
+    "r301",
+    "r343",
+    "r390",
+    "r394",
+    "r430",
+    "r433",
+    "r461",
+    "r527",
+    "r528",
+    "r538",
+    "r540"
+   ]
+  },
+  {
+   "id": "c_hard",
+   "theme": "Hard to use day to day",
+   "count": 22,
+   "on_top_listings": 7,
+   "quotes": [
+    {
+     "text": "Not very user friendly or explicit with instructions on how to use for anyone unfamiliar with this kind of product",
+     "shop": "LetsPlanPlanners",
+     "stars": 1,
+     "review_id": "r26"
+    },
+    {
+     "text": "Worst download ever, save your money.  Hard to download and impossible to use.",
+     "shop": "phenixdigital",
+     "stars": 1,
+     "review_id": "r354"
+    },
+    {
+     "text": "Great item but I couldn’t ever figure it out. Too complicated for me.",
+     "shop": "PrintMagicStudioX",
+     "stars": 3,
+     "review_id": "r122"
+    }
+   ],
+   "review_ids": [
+    "r3",
+    "r11",
+    "r26",
+    "r68",
+    "r122",
+    "r142",
+    "r144",
+    "r244",
+    "r252",
+    "r297",
+    "r306",
+    "r332",
+    "r345",
+    "r353",
+    "r354",
+    "r359",
+    "r379",
+    "r380",
+    "r383",
+    "r384",
+    "r391",
+    "r434"
+   ]
+  },
+  {
+   "id": "c_misleading",
+   "theme": "Not as described or pictured",
+   "count": 21,
+   "on_top_listings": 5,
+   "quotes": [
+    {
+     "text": "There were not 70 planners their were 7 to 10 planners with variations that became 70. ut overall planners were perfect.",
+     "shop": "BrighterPlans",
+     "stars": 4,
+     "review_id": "r440"
+    },
+    {
+     "text": "When I read that something has a basic version I don’t expect all the fluff. Please in don’t want to track every moment of my life, just work things.",
+     "shop": "Milamaluplanners",
+     "stars": 2,
+     "review_id": "r195"
+    },
+    {
+     "text": "Do not purchase if you do not have Apple devices. \n\nYou also have to purchase Good notes if you want to be able to use the planner as stated in the tutorial. \n\nNot as described which is a shame",
+     "shop": "DigitalPlannerStart",
+     "stars": 1,
+     "review_id": "r528"
+    }
+   ],
+   "review_ids": [
+    "r15",
+    "r22",
+    "r54",
+    "r60",
+    "r102",
+    "r111",
+    "r141",
+    "r189",
+    "r195",
+    "r202",
+    "r297",
+    "r301",
+    "r304",
+    "r309",
+    "r346",
+    "r423",
+    "r424",
+    "r425",
+    "r440",
+    "r527",
+    "r528"
+   ]
+  },
+  {
+   "id": "c_support",
+   "theme": "Seller didn't help or reply",
+   "count": 20,
+   "on_top_listings": 6,
+   "quotes": [
+    {
+     "text": "I wish there was a customer Service to help me connect with the Apple and or Google Calendar",
+     "shop": "ForLittleLion",
+     "stars": 1,
+     "review_id": "r273"
+    },
+    {
+     "text": "It says it has been downloaded,but I have not been able to download or access the files at all. I have requested assistance and am waiting on reply.",
+     "shop": "CreativeDreamersCo",
+     "stars": 1,
+     "review_id": "r49"
+    },
+    {
+     "text": "It doesn't work at all...it crashed my system. I will have to get my bank to cancel the payment. Since no refund and I can't seem to get a response from anyone. For a refund!😠😡",
+     "shop": "DigitalPlannerStart",
+     "stars": 1,
+     "review_id": "r533"
+    }
+   ],
+   "review_ids": [
+    "r2",
+    "r49",
+    "r102",
+    "r125",
+    "r137",
+    "r241",
+    "r246",
+    "r254",
+    "r256",
+    "r260",
+    "r273",
+    "r291",
+    "r337",
+    "r338",
+    "r348",
+    "r374",
+    "r415",
+    "r520",
+    "r531",
+    "r533"
+   ]
+  },
+  {
+   "id": "c_broken",
+   "theme": "Doesn't work (no detail)",
+   "count": 19,
+   "on_top_listings": 9,
+   "quotes": [
+    {
+     "text": "It will not go in order and when imported to good notes it will not allow you to use any features such as pressing the months.",
+     "shop": "ForLittleLion",
+     "stars": 1,
+     "review_id": "r264"
+    },
+    {
+     "text": "This item doesn't even work, like the files don't exist.",
+     "shop": "LetsPlanPlanners",
+     "stars": 1,
+     "review_id": "r23"
+    },
+    {
+     "text": "Not visually pleasing as I hoped it would have been. Don’t use it unfortunately. Have brought a different once from Etsy as when I tried using it didn’t work properly.",
+     "shop": "DigitalPlannerStart",
+     "stars": 1,
+     "review_id": "r532"
+    }
+   ],
+   "review_ids": [
+    "r18",
+    "r21",
+    "r23",
+    "r24",
+    "r66",
+    "r114",
+    "r139",
+    "r146",
+    "r188",
+    "r256",
+    "r264",
+    "r298",
+    "r303",
+    "r351",
+    "r375",
+    "r392",
+    "r425",
+    "r532",
+    "r533"
+   ]
+  },
+  {
+   "id": "c_not_useful",
+   "theme": "Not useful for my needs",
+   "count": 13,
+   "on_top_listings": 3,
+   "quotes": [
+    {
+     "text": "Just not my way of doing things - might be someone elses.  The planner is nice just not my vibe",
+     "shop": "Plannerscollective",
+     "stars": 2,
+     "review_id": "r181"
+    },
+    {
+     "text": "It just wasn't what I was looking for.",
+     "shop": "OptimumPlanners",
+     "stars": 1,
+     "review_id": "r381"
+    },
+    {
+     "text": "The template are not useful. Too many unnecessary documents. Please see your chat box. Thank you",
+     "shop": "CreativeDreamersCo",
+     "stars": 1,
+     "review_id": "r62"
+    }
+   ],
+   "review_ids": [
+    "r62",
+    "r71",
+    "r143",
+    "r181",
+    "r182",
+    "r241",
+    "r306",
+    "r332",
+    "r340",
+    "r349",
+    "r381",
+    "r419",
+    "r421"
+   ]
+  },
+  {
+   "id": "c_value",
+   "theme": "Not worth the price",
+   "count": 12,
+   "on_top_listings": 4,
+   "quotes": [
+    {
+     "text": "The hyperlinks never worked complete waste of money",
+     "shop": "HappyDownloads",
+     "stars": 1,
+     "review_id": "r285"
+    },
+    {
+     "text": "5 for a pdf?  Gotta be kidding",
+     "shop": "CreativeDreamersCo",
+     "stars": 1,
+     "review_id": "r63"
+    },
+    {
+     "text": "Too difficult to understand. Money wasted. Went with an easier program to use.",
+     "shop": "LetsPlanPlanners",
+     "stars": 1,
+     "review_id": "r11"
+    }
+   ],
+   "review_ids": [
+    "r8",
+    "r11",
+    "r63",
+    "r190",
+    "r255",
+    "r285",
+    "r302",
+    "r347",
+    "r416",
+    "r459",
+    "r521",
+    "r538"
+   ]
+  },
+  {
+   "id": "c_nav",
+   "theme": "Hard to navigate or find pages",
+   "count": 11,
+   "on_top_listings": 5,
+   "quotes": [
+    {
+     "text": "It’s very difficult to navigate, too many options but not satisfied with the after import navigation.",
+     "shop": "HappyDownloads",
+     "stars": 1,
+     "review_id": "r294"
+    },
+    {
+     "text": "L'organisation est peu agréable. La présentation pourrait être améliorée. Les cases de planning semaine sont un peu petites.",
+     "shop": "Milamaluplanners",
+     "stars": 2,
+     "review_id": "r194"
+    },
+    {
+     "text": "Was expecting something a little easier to navigate, just wasn't for me!",
+     "shop": "DigitalPlannerStart",
+     "stars": 1,
+     "review_id": "r525"
+    }
+   ],
+   "review_ids": [
+    "r27",
+    "r109",
+    "r183",
+    "r194",
+    "r290",
+    "r294",
+    "r424",
+    "r426",
+    "r525",
+    "r535",
+    "r540"
+   ]
+  },
+  {
+   "id": "c_overwhelm",
+   "theme": "Too much, overwhelming",
+   "count": 10,
+   "on_top_listings": 5,
+   "quotes": [
+    {
+     "text": "It’s very difficult to navigate, too many options but not satisfied with the after import navigation.",
+     "shop": "HappyDownloads",
+     "stars": 1,
+     "review_id": "r294"
+    },
+    {
+     "text": "When I read that something has a basic version I don’t expect all the fluff. Please in don’t want to track every moment of my life, just work things.",
+     "shop": "Milamaluplanners",
+     "stars": 2,
+     "review_id": "r195"
+    },
+    {
+     "text": "Wasn't for me, too many tabs. too many things I never use.",
+     "shop": "DigitalPlannerStart",
+     "stars": 1,
+     "review_id": "r518"
+    }
+   ],
+   "review_ids": [
+    "r62",
+    "r183",
+    "r195",
+    "r219",
+    "r249",
+    "r294",
+    "r348",
+    "r436",
+    "r518",
+    "r540"
+   ]
+  },
+  {
+   "id": "c_quality",
+   "theme": "Errors, typos or low quality",
+   "count": 9,
+   "on_top_listings": 3,
+   "quotes": [
+    {
+     "text": "The downloads were two different PDFs. Neither one of them were legible to see.",
+     "shop": "Milamaluplanners",
+     "stars": 2,
+     "review_id": "r191"
+    },
+    {
+     "text": "Some months are missing boxes for the dates",
+     "shop": "CreativeDreamersCo",
+     "stars": 1,
+     "review_id": "r52"
+    },
+    {
+     "text": "So many misspelled words in the stickers.",
+     "shop": "phenixdigital",
+     "stars": 1,
+     "review_id": "r331"
+    }
+   ],
+   "review_ids": [
+    "r25",
+    "r52",
+    "r103",
+    "r191",
+    "r239",
+    "r249",
+    "r331",
+    "r420",
+    "r461"
+   ]
+  },
+  {
+   "id": "c_refund",
+   "theme": "Refund refused",
+   "count": 7,
+   "on_top_listings": 4,
+   "quotes": [
+    {
+     "text": "This didn't work and the vendor was not helpful fixing the issue and refused a refund.",
+     "shop": "ForLittleLion",
+     "stars": 1,
+     "review_id": "r256"
+    },
+    {
+     "text": "cannot download to use this. it sucks that i cannot get a refund. now that is money wasted trying to use this crap. I will stick to my paper",
+     "shop": "DigitalPlannerStart",
+     "stars": 1,
+     "review_id": "r517"
+    },
+    {
+     "text": "It doesn't work at all...it crashed my system. I will have to get my bank to cancel the payment. Since no refund and I can't seem to get a response from anyone. For a refund!😠😡",
+     "shop": "DigitalPlannerStart",
+     "stars": 1,
+     "review_id": "r533"
+    }
+   ],
+   "review_ids": [
+    "r2",
+    "r241",
+    "r256",
+    "r517",
+    "r533",
+    "r534",
+    "r540"
+   ]
+  },
+  {
+   "id": "c_extra_app",
+   "theme": "Needed an app or subscription that wasn't clear",
+   "count": 7,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "Do not purchase if you do not have Apple devices. \n\nYou also have to purchase Good notes if you want to be able to use the planner as stated in the tutorial. \n\nNot as described which is a shame",
+     "shop": "DigitalPlannerStart",
+     "stars": 1,
+     "review_id": "r528"
+    },
+    {
+     "text": "Unable to use due to program needed as had to pay a yearly subscription",
+     "shop": "OptimumPlanners",
+     "stars": 1,
+     "review_id": "r385"
+    },
+    {
+     "text": "I had so much trouble trying to use it on my phone , I was only able to download it but couldn’t use it. I wish it would have been a app instead. It was a waste",
+     "shop": "Plannerscollective",
+     "stars": 1,
+     "review_id": "r156"
+    }
+   ],
+   "review_ids": [
+    "r7",
+    "r46",
+    "r107",
+    "r156",
+    "r385",
+    "r528",
+    "r537"
+   ]
+  },
+  {
+   "id": "c_split_files",
+   "theme": "Split into many separate files",
+   "count": 7,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "So complicated to get it all going. Soooo many file - one just get lost. It could have so been much easier.",
+     "shop": "ForLittleLion",
+     "stars": 1,
+     "review_id": "r257"
+    },
+    {
+     "text": "Having to upload each color individual is a waste of time and a big inconvenience to the purchaser.",
+     "shop": "phenixdigital",
+     "stars": 1,
+     "review_id": "r330"
+    },
+    {
+     "text": "Impossible to download what’s advertised\r\nInstal instructions are not clear. Everything is separated & has to be imported one by one.\r\nWouldn’t recommend",
+     "shop": "Milamaluplanners",
+     "stars": 1,
+     "review_id": "r187"
+    }
+   ],
+   "review_ids": [
+    "r186",
+    "r187",
+    "r206",
+    "r257",
+    "r330",
+    "r380",
+    "r386"
+   ]
+  },
+  {
+   "id": "c_delivery_delay",
+   "theme": "Slow or no delivery of files",
+   "count": 6,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "i never received an order. i placed the order on 12/1/21 to have in time for the new year..\ni have done everything to figure out IF maybe i did something wrong..i was so excited about this order\nhelp\nsincerely marian samion",
+     "shop": "CreativeDreamersCo",
+     "stars": 1,
+     "review_id": "r65"
+    },
+    {
+     "text": "Can't download this item and still haven't gotten an email with download link.",
+     "shop": "LetsPlanPlanners",
+     "stars": 1,
+     "review_id": "r17"
+    },
+    {
+     "text": "You should state the delivery of your products.",
+     "shop": "PrintMagicStudioX",
+     "stars": 1,
+     "review_id": "r93"
+    }
+   ],
+   "review_ids": [
+    "r17",
+    "r65",
+    "r93",
+    "r251",
+    "r291",
+    "r438"
+   ]
+  },
+  {
+   "id": "c_readability",
+   "theme": "Text too small or hard to read",
+   "count": 5,
+   "on_top_listings": 3,
+   "quotes": [
+    {
+     "text": "The downloads were two different PDFs. Neither one of them were legible to see.",
+     "shop": "Milamaluplanners",
+     "stars": 2,
+     "review_id": "r191"
+    },
+    {
+     "text": "The calendar is great as far as all that it offers and the ease in using it. However the lettering and numbers are not nearly dark enough and it’s really hard to read.",
+     "shop": "PrintMagicStudioX",
+     "stars": 2,
+     "review_id": "r135"
+    }
+   ],
+   "review_ids": [
+    "r25",
+    "r31",
+    "r135",
+    "r190",
+    "r191"
+   ]
+  },
+  {
+   "id": "c_flat",
+   "theme": "Just a flat PDF, not interactive",
+   "count": 5,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "Screen roll of photos cannot interact at all. None of the tabs work is a literal photo... only! Awful! Useless!",
+     "shop": "OptimumPlanners",
+     "stars": 1,
+     "review_id": "r377"
+    },
+    {
+     "text": "Terrible. Not works. Não funciona. It are images, jpg. No work because are not pdf.",
+     "shop": "Plannerscollective",
+     "stars": 1,
+     "review_id": "r146"
+    },
+    {
+     "text": "No hyper links :(\nIt is what it is",
+     "shop": "CreativeDreamersCo",
+     "stars": 1,
+     "review_id": "r72"
+    }
+   ],
+   "review_ids": [
+    "r72",
+    "r113",
+    "r146",
+    "r263",
+    "r377"
+   ]
+  },
+  {
+   "id": "c_look",
+   "theme": "Didn't like the look",
+   "count": 5,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "L'organisation est peu agréable. La présentation pourrait être améliorée. Les cases de planning semaine sont un peu petites.",
+     "shop": "Milamaluplanners",
+     "stars": 2,
+     "review_id": "r194"
+    },
+    {
+     "text": "Not visually pleasing as I hoped it would have been. Don’t use it unfortunately. Have brought a different once from Etsy as when I tried using it didn’t work properly.",
+     "shop": "DigitalPlannerStart",
+     "stars": 1,
+     "review_id": "r532"
+    },
+    {
+     "text": "it is OK on laptop. Not very aesthetic on the iphone.",
+     "shop": "Plannerscollective",
+     "stars": 4,
+     "review_id": "r170"
+    }
+   ],
+   "review_ids": [
+    "r170",
+    "r194",
+    "r290",
+    "r420",
+    "r532"
+   ]
+  },
+  {
+   "id": "c_links",
+   "theme": "Links broken or go to the wrong page",
+   "count": 5,
+   "on_top_listings": 3,
+   "quotes": [
+    {
+     "text": "Screen roll of photos cannot interact at all. None of the tabs work is a literal photo... only! Awful! Useless!",
+     "shop": "OptimumPlanners",
+     "stars": 1,
+     "review_id": "r377"
+    },
+    {
+     "text": "It will not go in order and when imported to good notes it will not allow you to use any features such as pressing the months.",
+     "shop": "ForLittleLion",
+     "stars": 1,
+     "review_id": "r264"
+    },
+    {
+     "text": "The hyperlinks never worked complete waste of money",
+     "shop": "HappyDownloads",
+     "stars": 1,
+     "review_id": "r285"
+    }
+   ],
+   "review_ids": [
+    "r193",
+    "r203",
+    "r264",
+    "r285",
+    "r377"
+   ]
+  },
+  {
+   "id": "c_lag",
+   "theme": "Slow, laggy or file too big",
+   "count": 4,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "Due to the size of the file I found it to lag in different applications",
+     "shop": "Milamaluplanners",
+     "stars": 2,
+     "review_id": "r192"
+    },
+    {
+     "text": "The files are HUGE and are loading so slow I can barely use the planner. Please have this in mind before buying, I’m starting to regret the purchase.",
+     "shop": "ForLittleLion",
+     "stars": 1,
+     "review_id": "r259"
+    }
+   ],
+   "review_ids": [
+    "r19",
+    "r192",
+    "r259",
+    "r553"
+   ]
+  },
+  {
+   "id": "c_language",
+   "theme": "Only in English",
+   "count": 4,
+   "on_top_listings": 3,
+   "quotes": [
+    {
+     "text": "Entsprach nicht meinen Vorstellungen und Wünschen ,komplizierte Installierung und sehr irreführend für deutsche Kunden da beim Kauf alles auf Deutsch die Sprache im Nachgang aber  komplett auf Englisch.",
+     "shop": "LetsPlanPlanners",
+     "stars": 1,
+     "review_id": "r22"
+    },
+    {
+     "text": "L’agenda devait être en français mais il est en anglais . Pour m’apercevoir que c’est moi qui n’a pas bien lu. Étsy a été super , mon rembourser mon achat que je puisse en trouver un en français . Merci Etsy",
+     "shop": "phenixdigital",
+     "stars": 5,
+     "review_id": "r373"
+    },
+    {
+     "text": "Moi qui ne comprends pas l'anglais c'est trop compliquer à comprendre même avec certaines bases. Trop compliqué dommage",
+     "shop": "phenixdigital",
+     "stars": 1,
+     "review_id": "r353"
+    }
+   ],
+   "review_ids": [
+    "r22",
+    "r190",
+    "r353",
+    "r373"
+   ]
+  },
+  {
+   "id": "c_edit",
+   "theme": "Can't edit, type or customize",
+   "count": 4,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "Der Kalender ist ein PDF-Dokument.\nDieses kann ich zwar an meinem Tablet-PC öffnen aber nicht ohne weiteres bearbeiten. Viel zu aufwändig, dafür dass man täglich seinen Kalender verwalten muss.",
+     "shop": "OptimumPlanners",
+     "stars": 1,
+     "review_id": "r384"
+    },
+    {
+     "text": "I couldn't edit the document on the accent sheets only on the index and monthly review page, and when I was finally able to edit it kept deleting everything after I had gotten so far. Really pretty though",
+     "shop": "CreativeDreamersCo",
+     "stars": 1,
+     "review_id": "r66"
+    },
+    {
+     "text": "First of all this product cannot be edited, I reached out to the seller still not very helpful.It has so many unnecessary information.",
+     "shop": "phenixdigital",
+     "stars": 1,
+     "review_id": "r348"
+    }
+   ],
+   "review_ids": [
+    "r66",
+    "r348",
+    "r384",
+    "r435"
+   ]
+  },
+  {
+   "id": "c_basic",
+   "theme": "Too basic or boring",
+   "count": 4,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "Very boring and difficult to use.I would rather spend more for a better one.",
+     "shop": "BrighterPlans",
+     "stars": 1,
+     "review_id": "r434"
+    },
+    {
+     "text": "Average, good but very basic",
+     "shop": "BrighterPlans",
+     "stars": 3,
+     "review_id": "r455"
+    }
+   ],
+   "review_ids": [
+    "r184",
+    "r302",
+    "r434",
+    "r455"
+   ]
+  },
+  {
+   "id": "c_dates",
+   "theme": "Wrong or missing dates, calendar errors",
+   "count": 3,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "Some months are missing boxes for the dates",
+     "shop": "CreativeDreamersCo",
+     "stars": 1,
+     "review_id": "r52"
+    }
+   ],
+   "review_ids": [
+    "r25",
+    "r52",
+    "r527"
+   ]
+  },
+  {
+   "id": "c_plagiarism",
+   "theme": "Design copied from other creators",
+   "count": 2,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "THIS IS A STOLEN PLANNER.  \nDO NOT BUY THIS",
+     "shop": "LetsPlanPlanners",
+     "stars": 1,
+     "review_id": "r6"
+    }
+   ],
+   "review_ids": [
+    "r6",
+    "r386"
+   ]
+  },
+  {
+   "id": "c_space",
+   "theme": "Too little writing space",
+   "count": 2,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "L'organisation est peu agréable. La présentation pourrait être améliorée. Les cases de planning semaine sont un peu petites.",
+     "shop": "Milamaluplanners",
+     "stars": 2,
+     "review_id": "r194"
+    },
+    {
+     "text": "The squares are too small and the lines are too close. I can’t fit all my tasks and to dos. It’s best just to use a calendar template from GoodNotes or google",
+     "shop": "Plannerscollective",
+     "stars": 1,
+     "review_id": "r149"
+    }
+   ],
+   "review_ids": [
+    "r149",
+    "r194"
+   ]
+  },
+  {
+   "id": "c_manual_pages",
+   "theme": "Have to duplicate or add pages yourself",
+   "count": 2,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "Wasn’t aware it was a “build yourself” type of thing. Aesthetic of it is great, just know it’s not already put together.",
+     "shop": "Milamaluplanners",
+     "stars": 3,
+     "review_id": "r202"
+    }
+   ],
+   "review_ids": [
+    "r202",
+    "r241"
+   ]
+  },
+  {
+   "id": "c_upsell",
+   "theme": "Pushes paid add-ons or sign-ups",
+   "count": 2,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "This only took me to a freebie link where I'm forced to subscribe to things I don't want.  Completely disappointed.",
+     "shop": "HappyDownloads",
+     "stars": 1,
+     "review_id": "r295"
+    }
+   ],
+   "review_ids": [
+    "r295",
+    "r296"
+   ]
+  },
+  {
+   "id": "c_pdf_not_template",
+   "theme": "Just a PDF, not a native device template",
+   "count": 2,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "Der Kalender ist ein PDF-Dokument.\nDieses kann ich zwar an meinem Tablet-PC öffnen aber nicht ohne weiteres bearbeiten. Viel zu aufwändig, dafür dass man täglich seinen Kalender verwalten muss.",
+     "shop": "OptimumPlanners",
+     "stars": 1,
+     "review_id": "r384"
+    },
+    {
+     "text": "This is a PDF and cannot be edited and is not interactive. If uploaded to goodnotes, you will have to type using a text box all the time if you want to add anything. Not useful at all.",
+     "shop": "BrighterPlans",
+     "stars": 1,
+     "review_id": "r435"
+    }
+   ],
+   "review_ids": [
+    "r384",
+    "r435"
+   ]
+  },
+  {
+   "id": "c_security",
+   "theme": "Spam, privacy or virus worries",
+   "count": 2,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "Fine planner but i think they sell your info. Since i bought this I have had non-stop spam calls and phishing emails. Not worth a cheap planner.",
+     "shop": "BrighterPlans",
+     "stars": 1,
+     "review_id": "r417"
+    },
+    {
+     "text": "Had a virus attached to the planner",
+     "shop": "BrighterPlans",
+     "stars": 1,
+     "review_id": "r432"
+    }
+   ],
+   "review_ids": [
+    "r417",
+    "r432"
+   ]
+  },
+  {
+   "id": "c_missing",
+   "theme": "Missing pages or less than expected",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "There are no mood trackers or productivity pages I’m so disappointed",
+     "shop": "Plannerscollective",
+     "stars": 1,
+     "review_id": "r160"
+    }
+   ],
+   "review_ids": [
+    "r160"
+   ]
+  },
+  {
+   "id": "c_review_gate",
+   "theme": "Forced to leave a review",
+   "count": 1,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "Because you're making me write a review on a product I haven't even received yet just so I can track my order.",
+     "shop": "DigitalPlannerStart",
+     "stars": 1,
+     "review_id": "r539"
+    }
+   ],
+   "review_ids": [
+    "r539"
+   ]
+  }
+ ],
+ "praise": [
+  {
+   "id": "p_look",
+   "theme": "Beautiful design",
+   "count": 52,
+   "on_top_listings": 17,
+   "quotes": [
+    {
+     "text": "Great product! The planner is beautiful, useful, and just as described. Very happy with my purchase!",
+     "shop": "BrighterPlans",
+     "stars": 5,
+     "review_id": "r457"
+    },
+    {
+     "text": "Absolutely love this planner! It is very beautiful and very well structured. It really helps me stay organized. Highly recommend it!",
+     "shop": "DreamGirlPlan",
+     "stars": 5,
+     "review_id": "r512"
+    },
+    {
+     "text": "Beautiful templates, loved the different choices, options, fonts, designs and colors!",
+     "shop": "phenixdigital",
+     "stars": 5,
+     "review_id": "r365"
+    }
+   ],
+   "review_ids": [
+    "r18",
+    "r20",
+    "r29",
+    "r30",
+    "r35",
+    "r36",
+    "r46",
+    "r66",
+    "r78",
+    "r83",
+    "r86",
+    "r116",
+    "r119",
+    "r126",
+    "r132",
+    "r143",
+    "r168",
+    "r201",
+    "r202",
+    "r205",
+    "r212",
+    "r234",
+    "r235",
+    "r271",
+    "r275",
+    "r284",
+    "r365",
+    "r370",
+    "r457",
+    "r461",
+    "r463",
+    "r469",
+    "r472",
+    "r473",
+    "r475",
+    "r477",
+    "r478",
+    "r481",
+    "r485",
+    "r487",
+    "r490",
+    "r491",
+    "r494",
+    "r498",
+    "r501",
+    "r505",
+    "r507",
+    "r508",
+    "r511",
+    "r512",
+    "r553",
+    "r560"
+   ]
+  },
+  {
+   "id": "p_fits_needs",
+   "theme": "Useful, fits my needs",
+   "count": 44,
+   "on_top_listings": 25,
+   "quotes": [
+    {
+     "text": "Great product! The planner is beautiful, useful, and just as described. Very happy with my purchase!",
+     "shop": "BrighterPlans",
+     "stars": 5,
+     "review_id": "r457"
+    },
+    {
+     "text": "it's perfect, exactly what i was after, really impressed with the links too - makes it easy to get to where i need to be quickly.",
+     "shop": "Milamaluplanners",
+     "stars": 5,
+     "review_id": "r236"
+    },
+    {
+     "text": "I love this planner! It's perfect for what I need, and I'm trying to go completely digital!",
+     "shop": "DreamGirlPlan",
+     "stars": 5,
+     "review_id": "r515"
+    }
+   ],
+   "review_ids": [
+    "r29",
+    "r44",
+    "r73",
+    "r74",
+    "r76",
+    "r80",
+    "r81",
+    "r82",
+    "r123",
+    "r166",
+    "r171",
+    "r179",
+    "r196",
+    "r213",
+    "r221",
+    "r222",
+    "r227",
+    "r236",
+    "r238",
+    "r272",
+    "r276",
+    "r282",
+    "r284",
+    "r310",
+    "r355",
+    "r361",
+    "r367",
+    "r368",
+    "r369",
+    "r441",
+    "r448",
+    "r452",
+    "r457",
+    "r466",
+    "r468",
+    "r486",
+    "r490",
+    "r498",
+    "r504",
+    "r509",
+    "r514",
+    "r515",
+    "r555",
+    "r559"
+   ]
+  },
+  {
+   "id": "p_easy",
+   "theme": "Easy to set up and use",
+   "count": 43,
+   "on_top_listings": 14,
+   "quotes": [
+    {
+     "text": "Very user friendly! I am looking forward to using this to stay organized this school year!",
+     "shop": "DreamGirlPlan",
+     "stars": 5,
+     "review_id": "r506"
+    },
+    {
+     "text": "Lots of choices and easy to use for digital planning.",
+     "shop": "Plannerscollective",
+     "stars": 5,
+     "review_id": "r177"
+    },
+    {
+     "text": "I’m actually obsessed it’s so easy to use and SO CUTE",
+     "shop": "Milamaluplanners",
+     "stars": 5,
+     "review_id": "r235"
+    }
+   ],
+   "review_ids": [
+    "r31",
+    "r35",
+    "r76",
+    "r78",
+    "r83",
+    "r84",
+    "r85",
+    "r88",
+    "r89",
+    "r90",
+    "r92",
+    "r126",
+    "r127",
+    "r135",
+    "r169",
+    "r174",
+    "r177",
+    "r180",
+    "r203",
+    "r216",
+    "r218",
+    "r219",
+    "r220",
+    "r221",
+    "r225",
+    "r235",
+    "r275",
+    "r315",
+    "r370",
+    "r469",
+    "r473",
+    "r476",
+    "r479",
+    "r481",
+    "r483",
+    "r485",
+    "r489",
+    "r491",
+    "r499",
+    "r506",
+    "r511",
+    "r516",
+    "r556"
+   ]
+  },
+  {
+   "id": "p_support",
+   "theme": "Seller was helpful",
+   "count": 26,
+   "on_top_listings": 7,
+   "quotes": [
+    {
+     "text": "Seller is so nice, very attentive. All the products are wonderful. So much to choose from",
+     "shop": "LetsPlanPlanners",
+     "stars": 5,
+     "review_id": "r47"
+    },
+    {
+     "text": "Thank you so much Yuki! I love my planner! It’s thoughtfully made and so easy to navigate! Yuki answered all my questions and was great to work with! Thanks again!!",
+     "shop": "ForLittleLion",
+     "stars": 5,
+     "review_id": "r269"
+    },
+    {
+     "text": "Seller replied quickly when I had issues",
+     "shop": "DreamGirlPlan",
+     "stars": 5,
+     "review_id": "r513"
+    }
+   ],
+   "review_ids": [
+    "r9",
+    "r18",
+    "r31",
+    "r43",
+    "r47",
+    "r128",
+    "r133",
+    "r203",
+    "r205",
+    "r206",
+    "r229",
+    "r239",
+    "r266",
+    "r269",
+    "r278",
+    "r293",
+    "r319",
+    "r328",
+    "r360",
+    "r370",
+    "r445",
+    "r453",
+    "r495",
+    "r496",
+    "r497",
+    "r513"
+   ]
+  },
+  {
+   "id": "p_quality",
+   "theme": "High quality",
+   "count": 23,
+   "on_top_listings": 10,
+   "quotes": [
+    {
+     "text": "There were not 70 planners their were 7 to 10 planners with variations that became 70. ut overall planners were perfect.",
+     "shop": "BrighterPlans",
+     "stars": 4,
+     "review_id": "r440"
+    },
+    {
+     "text": "Not what I needed but I misread the item. Still a great product for those that need it",
+     "shop": "Plannerscollective",
+     "stars": 5,
+     "review_id": "r178"
+    },
+    {
+     "text": "Tres pratique et de bonne qualité! Parfait pour l’organisation académique!",
+     "shop": "DreamGirlPlan",
+     "stars": 5,
+     "review_id": "r514"
+    }
+   ],
+   "review_ids": [
+    "r36",
+    "r116",
+    "r164",
+    "r175",
+    "r178",
+    "r180",
+    "r223",
+    "r269",
+    "r281",
+    "r327",
+    "r328",
+    "r440",
+    "r456",
+    "r479",
+    "r481",
+    "r484",
+    "r489",
+    "r492",
+    "r499",
+    "r508",
+    "r514",
+    "r550",
+    "r558"
+   ]
+  },
+  {
+   "id": "p_complete",
+   "theme": "Has everything I need",
+   "count": 21,
+   "on_top_listings": 12,
+   "quotes": [
+    {
+     "text": "This is a great planner, has everything I wanted in one. Very impressed and highly recommend.",
+     "shop": "ForLittleLion",
+     "stars": 5,
+     "review_id": "r267"
+    },
+    {
+     "text": "Seller is so nice, very attentive. All the products are wonderful. So much to choose from",
+     "shop": "LetsPlanPlanners",
+     "stars": 5,
+     "review_id": "r47"
+    },
+    {
+     "text": "Fantastic.  Lots of page choices.  Easy to follow instructions.",
+     "shop": "PrintMagicStudioX",
+     "stars": 5,
+     "review_id": "r121"
+    }
+   ],
+   "review_ids": [
+    "r25",
+    "r34",
+    "r43",
+    "r45",
+    "r47",
+    "r121",
+    "r135",
+    "r167",
+    "r172",
+    "r177",
+    "r213",
+    "r220",
+    "r223",
+    "r267",
+    "r362",
+    "r442",
+    "r453",
+    "r473",
+    "r488",
+    "r497",
+    "r511"
+   ]
+  },
+  {
+   "id": "p_flexible",
+   "theme": "Flexible or customizable",
+   "count": 20,
+   "on_top_listings": 10,
+   "quotes": [
+    {
+     "text": "Beautiful templates, loved the different choices, options, fonts, designs and colors!",
+     "shop": "phenixdigital",
+     "stars": 5,
+     "review_id": "r365"
+    },
+    {
+     "text": "really neat design! i enjoy being able to pick and choose what style I want to use.",
+     "shop": "DreamGirlPlan",
+     "stars": 4,
+     "review_id": "r463"
+    },
+    {
+     "text": "I love how customizable this planner is, and the reflections are so helpful!",
+     "shop": "DigitalPlannerStart",
+     "stars": 5,
+     "review_id": "r546"
+    }
+   ],
+   "review_ids": [
+    "r34",
+    "r119",
+    "r165",
+    "r167",
+    "r176",
+    "r200",
+    "r212",
+    "r213",
+    "r219",
+    "r280",
+    "r283",
+    "r317",
+    "r365",
+    "r453",
+    "r461",
+    "r463",
+    "r482",
+    "r546",
+    "r551",
+    "r558"
+   ]
+  },
+  {
+   "id": "p_repeat",
+   "theme": "Repeat buyer",
+   "count": 17,
+   "on_top_listings": 8,
+   "quotes": [
+    {
+     "text": "This is my favorite digital planner. This is my third year purchasing from this shop. I love it!",
+     "shop": "DigitalPlannerStart",
+     "stars": 5,
+     "review_id": "r545"
+    },
+    {
+     "text": "I love these designs! I come back again and again!",
+     "shop": "Plannerscollective",
+     "stars": 5,
+     "review_id": "r168"
+    },
+    {
+     "text": "LOVE as always. always coming back to this planner",
+     "shop": "Milamaluplanners",
+     "stars": 5,
+     "review_id": "r237"
+    }
+   ],
+   "review_ids": [
+    "r38",
+    "r118",
+    "r168",
+    "r229",
+    "r237",
+    "r274",
+    "r280",
+    "r282",
+    "r316",
+    "r321",
+    "r328",
+    "r364",
+    "r495",
+    "r496",
+    "r545",
+    "r551",
+    "r557"
+   ]
+  },
+  {
+   "id": "p_as_described",
+   "theme": "Exactly as described",
+   "count": 17,
+   "on_top_listings": 7,
+   "quotes": [
+    {
+     "text": "Great product! The planner is beautiful, useful, and just as described. Very happy with my purchase!",
+     "shop": "BrighterPlans",
+     "stars": 5,
+     "review_id": "r457"
+    },
+    {
+     "text": "The item was as described and works perfectly! Will definitely recommend to others!",
+     "shop": "PrintMagicStudioX",
+     "stars": 5,
+     "review_id": "r131"
+    },
+    {
+     "text": "I really like this planner. It is as described and meets my expectations.",
+     "shop": "DigitalPlannerStart",
+     "stars": 5,
+     "review_id": "r543"
+    }
+   ],
+   "review_ids": [
+    "r39",
+    "r77",
+    "r83",
+    "r87",
+    "r89",
+    "r127",
+    "r131",
+    "r176",
+    "r207",
+    "r218",
+    "r268",
+    "r369",
+    "r449",
+    "r457",
+    "r493",
+    "r505",
+    "r543"
+   ]
+  },
+  {
+   "id": "p_guide",
+   "theme": "Clear instructions or tutorials",
+   "count": 14,
+   "on_top_listings": 8,
+   "quotes": [
+    {
+     "text": "I am new to rights planning,  and I'm excited to be using this Planner! Love all of her tutorial videos.",
+     "shop": "HappyDownloads",
+     "stars": 5,
+     "review_id": "r320"
+    },
+    {
+     "text": "Fantastic.  Lots of page choices.  Easy to follow instructions.",
+     "shop": "PrintMagicStudioX",
+     "stars": 5,
+     "review_id": "r121"
+    },
+    {
+     "text": "I would say the YouTube video really helped me. I watched it numerous times before I bought it. The last digital planner I bought I couldn't figure it out at all.",
+     "shop": "Plannerscollective",
+     "stars": 5,
+     "review_id": "r162"
+    }
+   ],
+   "review_ids": [
+    "r34",
+    "r38",
+    "r45",
+    "r46",
+    "r121",
+    "r162",
+    "r163",
+    "r172",
+    "r206",
+    "r278",
+    "r290",
+    "r320",
+    "r551",
+    "r558"
+   ]
+  },
+  {
+   "id": "p_delivery",
+   "theme": "Fast, easy download",
+   "count": 12,
+   "on_top_listings": 5,
+   "quotes": [
+    {
+     "text": "I recommande, excellent planner and instant download.",
+     "shop": "DigitalPlannerStart",
+     "stars": 5,
+     "review_id": "r561"
+    },
+    {
+     "text": "Great description, easy to download and use.",
+     "shop": "CreativeDreamersCo",
+     "stars": 5,
+     "review_id": "r89"
+    },
+    {
+     "text": "Great customer service easy download",
+     "shop": "HappyDownloads",
+     "stars": 5,
+     "review_id": "r319"
+    }
+   ],
+   "review_ids": [
+    "r76",
+    "r89",
+    "r92",
+    "r219",
+    "r220",
+    "r270",
+    "r319",
+    "r360",
+    "r488",
+    "r491",
+    "r556",
+    "r561"
+   ]
+  },
+  {
+   "id": "p_adhd",
+   "theme": "Helps me stay on track",
+   "count": 9,
+   "on_top_listings": 5,
+   "quotes": [
+    {
+     "text": "Very user friendly! I am looking forward to using this to stay organized this school year!",
+     "shop": "DreamGirlPlan",
+     "stars": 5,
+     "review_id": "r506"
+    },
+    {
+     "text": "Really love this planner. It makes it so much easier to stick to organising everything.",
+     "shop": "BrighterPlans",
+     "stars": 5,
+     "review_id": "r446"
+    },
+    {
+     "text": "Love this planner. Helping me be focused at work.",
+     "shop": "ForLittleLion",
+     "stars": 5,
+     "review_id": "r279"
+    }
+   ],
+   "review_ids": [
+    "r29",
+    "r279",
+    "r446",
+    "r447",
+    "r483",
+    "r506",
+    "r510",
+    "r511",
+    "r512"
+   ]
+  },
+  {
+   "id": "p_device",
+   "theme": "Works on my device",
+   "count": 9,
+   "on_top_listings": 7,
+   "quotes": [
+    {
+     "text": "Thank you for all of your hard work putting the planner togethr. It works well with Good Notes.",
+     "shop": "Milamaluplanners",
+     "stars": 5,
+     "review_id": "r233"
+    },
+    {
+     "text": "Love this digital planner - very helpful, using it on my iPad mini.",
+     "shop": "DreamGirlPlan",
+     "stars": 5,
+     "review_id": "r504"
+    },
+    {
+     "text": "Would recommend again! Great for my computer use as well<3",
+     "shop": "Plannerscollective",
+     "stars": 5,
+     "review_id": "r173"
+    }
+   ],
+   "review_ids": [
+    "r32",
+    "r34",
+    "r77",
+    "r91",
+    "r173",
+    "r233",
+    "r504",
+    "r507",
+    "r562"
+   ]
+  },
+  {
+   "id": "p_daily",
+   "theme": "I use it every day",
+   "count": 9,
+   "on_top_listings": 5,
+   "quotes": [
+    {
+     "text": "An excellent digital planner! I love it and use it everyday! What a blessing!🩷",
+     "shop": "LetsPlanPlanners",
+     "stars": 5,
+     "review_id": "r33"
+    },
+    {
+     "text": "Love it and I use it everyday! Can't wait to use it for 2026 as well.",
+     "shop": "DigitalPlannerStart",
+     "stars": 5,
+     "review_id": "r547"
+    },
+    {
+     "text": "I got the all-in-one digital planner and I’m absolutely obsessed with it. As a type-a girl this is my new hobby, my new personality, and my primary source of dopamine.",
+     "shop": "phenixdigital",
+     "stars": 5,
+     "review_id": "r371"
+    }
+   ],
+   "review_ids": [
+    "r33",
+    "r44",
+    "r75",
+    "r282",
+    "r355",
+    "r364",
+    "r371",
+    "r444",
+    "r547"
+   ]
+  },
+  {
+   "id": "p_extras",
+   "theme": "Love the stickers and extras",
+   "count": 8,
+   "on_top_listings": 2,
+   "quotes": [
+    {
+     "text": "good range of stickers that make all projects more personalised",
+     "shop": "Milamaluplanners",
+     "stars": 3,
+     "review_id": "r200"
+    },
+    {
+     "text": "easy to download and use! I love the stickers!",
+     "shop": "CreativeDreamersCo",
+     "stars": 5,
+     "review_id": "r92"
+    },
+    {
+     "text": "Adorable and easy to use digital stockers. Thank you.",
+     "shop": "Milamaluplanners",
+     "stars": 5,
+     "review_id": "r225"
+    }
+   ],
+   "review_ids": [
+    "r18",
+    "r34",
+    "r92",
+    "r172",
+    "r200",
+    "r206",
+    "r209",
+    "r225"
+   ]
+  },
+  {
+   "id": "p_nav",
+   "theme": "Links work, easy to navigate",
+   "count": 8,
+   "on_top_listings": 5,
+   "quotes": [
+    {
+     "text": "it's perfect, exactly what i was after, really impressed with the links too - makes it easy to get to where i need to be quickly.",
+     "shop": "Milamaluplanners",
+     "stars": 5,
+     "review_id": "r236"
+    },
+    {
+     "text": "Thank you so much Yuki! I love my planner! It’s thoughtfully made and so easy to navigate! Yuki answered all my questions and was great to work with! Thanks again!!",
+     "shop": "ForLittleLion",
+     "stars": 5,
+     "review_id": "r269"
+    },
+    {
+     "text": "love the hyperlinks and it's super cute and useful",
+     "shop": "DreamGirlPlan",
+     "stars": 5,
+     "review_id": "r501"
+    }
+   ],
+   "review_ids": [
+    "r39",
+    "r120",
+    "r163",
+    "r236",
+    "r269",
+    "r367",
+    "r501",
+    "r505"
+   ]
+  },
+  {
+   "id": "p_value",
+   "theme": "Great value",
+   "count": 7,
+   "on_top_listings": 4,
+   "quotes": [
+    {
+     "text": "Amazing product I absolutely  love my planner its so easy to use and amazing for the price I got it ! Definitely beginner friendly to set up as well 🥰✨️11/10!!",
+     "shop": "DreamGirlPlan",
+     "stars": 5,
+     "review_id": "r516"
+    },
+    {
+     "text": "I love how affordable, easy to manage, and pretty this digital planner is. Also, a special shoutout to the company for reaching out personally to make sure that my experience was good.",
+     "shop": "phenixdigital",
+     "stars": 5,
+     "review_id": "r370"
+    },
+    {
+     "text": "Great shop. Great price. Great items.",
+     "shop": "PrintMagicStudioX",
+     "stars": 5,
+     "review_id": "r136"
+    }
+   ],
+   "review_ids": [
+    "r25",
+    "r34",
+    "r46",
+    "r136",
+    "r370",
+    "r487",
+    "r516"
+   ]
+  },
+  {
+   "id": "p_fun",
+   "theme": "Fun to use",
+   "count": 4,
+   "on_top_listings": 3,
+   "quotes": [
+    {
+     "text": "I got the all-in-one digital planner and I’m absolutely obsessed with it. As a type-a girl this is my new hobby, my new personality, and my primary source of dopamine.",
+     "shop": "phenixdigital",
+     "stars": 5,
+     "review_id": "r371"
+    },
+    {
+     "text": "I love it. Was fun to set up.",
+     "shop": "Plannerscollective",
+     "stars": 5,
+     "review_id": "r174"
+    },
+    {
+     "text": "Going to be fun to play with",
+     "shop": "HappyDownloads",
+     "stars": 5,
+     "review_id": "r318"
+    }
+   ],
+   "review_ids": [
+    "r35",
+    "r174",
+    "r318",
+    "r371"
+   ]
+  }
+ ],
+ "wishes": [
+  {
+   "id": "w_next_year",
+   "theme": "New edition for upcoming years",
+   "count": 3,
+   "on_top_listings": 3,
+   "quotes": [
+    {
+     "text": "Love it and I use it everyday! Can't wait to use it for 2026 as well.",
+     "shop": "DigitalPlannerStart",
+     "stars": 5,
+     "review_id": "r547"
+    },
+    {
+     "text": "Excellent planner will buy next years",
+     "shop": "PrintMagicStudioX",
+     "stars": 5,
+     "review_id": "r118"
+    },
+    {
+     "text": "Amazing planner thank you so much! Love the easy customisation (so much easier than it looks at first glance, just follow the clear instructions peeps). Really hope there will be a 2026 version out soon, will definitely buy again :)",
+     "shop": "DigitalPlannerStart",
+     "stars": 5,
+     "review_id": "r551"
+    }
+   ],
+   "review_ids": [
+    "r118",
+    "r547",
+    "r551"
+   ]
+  },
+  {
+   "id": "w_order",
+   "theme": "Pages in a logical order",
+   "count": 2,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "I started using this and then realized that the planner also has days so I switched up the order of the planner, but other than that its literally perfect and is keeping me organized and held accountable for my very busy schedule",
+     "shop": "DreamGirlPlan",
+     "stars": 5,
+     "review_id": "r510"
+    },
+    {
+     "text": "i wish they was in order and cause it took forever to find something that i needed",
+     "shop": "PrintMagicStudioX",
+     "stars": 1,
+     "review_id": "r109"
+    }
+   ],
+   "review_ids": [
+    "r109",
+    "r510"
+   ]
+  },
+  {
+   "id": "w_nav_links",
+   "theme": "More links between views",
+   "count": 2,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "Not very user friendly. Would be nice to easily transfer info from the main calendar page to the individual days.",
+     "shop": "Plannerscollective",
+     "stars": 1,
+     "review_id": "r144"
+    }
+   ],
+   "review_ids": [
+    "r144",
+    "r241"
+   ]
+  },
+  {
+   "id": "w_page_types",
+   "theme": "More page types included",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "There are no mood trackers or productivity pages I’m so disappointed",
+     "shop": "Plannerscollective",
+     "stars": 1,
+     "review_id": "r160"
+    }
+   ],
+   "review_ids": [
+    "r160"
+   ]
+  },
+  {
+   "id": "w_sync",
+   "theme": "App and PDF versions that match",
+   "count": 1,
+   "on_top_listings": 1,
+   "quotes": [
+    {
+     "text": "I wish there was a customer Service to help me connect with the Apple and or Google Calendar",
+     "shop": "ForLittleLion",
+     "stars": 1,
+     "review_id": "r273"
+    }
+   ],
+   "review_ids": [
+    "r273"
+   ]
+  },
+  {
+   "id": "w_previews",
+   "theme": "Page previews before buying",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "You can't appreciate the real templates in the pictures that they show us",
+     "shop": "HappyDownloads",
+     "stars": 1,
+     "review_id": "r309"
+    }
+   ],
+   "review_ids": [
+    "r309"
+   ]
+  },
+  {
+   "id": "w_tutorial",
+   "theme": "A video showing how it works",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [],
+   "review_ids": [
+    "r335"
+   ]
+  },
+  {
+   "id": "w_side_tabs",
+   "theme": "Side tabs for faster navigation",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "This planner isn’t helpful, there are no monthly tabs so you are swiping through 5he pages to get through month to month",
+     "shop": "BrighterPlans",
+     "stars": 1,
+     "review_id": "r426"
+    }
+   ],
+   "review_ids": [
+    "r426"
+   ]
+  },
+  {
+   "id": "w_typeable",
+   "theme": "Pages you can type on",
+   "count": 1,
+   "on_top_listings": 0,
+   "quotes": [
+    {
+     "text": "This is a PDF and cannot be edited and is not interactive. If uploaded to goodnotes, you will have to type using a text box all the time if you want to add anything. Not useful at all.",
+     "shop": "BrighterPlans",
+     "stars": 1,
+     "review_id": "r435"
+    }
+   ],
+   "review_ids": [
+    "r435"
+   ]
+  }
+ ],
+ "price": {
+  "p25": 8.07,
+  "median": 24.05,
+  "p75": 29.84,
+  "top10_by_revenue_median": 20.08,
+  "revenue_weighted_median": 25.66,
+  "best_band": "$28-52"
+ },
+ "looks": [
+  {
+   "style": "Portrait layout",
+   "share": 0.1,
+   "have": [
+    "4474152544",
+    "4538357989",
+    "1127394968"
+   ]
+  },
+  {
+   "style": "Colorful or aesthetic look",
+   "share": 0.1,
+   "have": [
+    "1068739082",
+    "1282376971",
+    "1833235300"
+   ]
+  },
+  {
+   "style": "Landscape layout",
+   "share": 0.033,
+   "have": [
+    "4474152544"
+   ]
+  },
+  {
+   "style": "Minimalist look",
+   "share": 0.033,
+   "have": [
+    "4518430837"
+   ]
+  },
+  {
+   "style": "Dark mode",
+   "share": 0.0,
+   "have": []
+  }
+ ],
+ "keywords": [
+  {
+   "tag": "goodnotes planner",
+   "used_by_top": 21,
+   "volume": null
+  },
+  {
+   "tag": "digital planner",
+   "used_by_top": 21,
+   "volume": 4926.0
+  },
+  {
+   "tag": "ipad planner",
+   "used_by_top": 15,
+   "volume": null
+  },
+  {
+   "tag": "notability planner",
+   "used_by_top": 14,
+   "volume": null
+  },
+  {
+   "tag": "daily planner",
+   "used_by_top": 14,
+   "volume": null
+  },
+  {
+   "tag": "goodnotes template",
+   "used_by_top": 11,
+   "volume": null
+  },
+  {
+   "tag": "monthly planner",
+   "used_by_top": 11,
+   "volume": null
+  },
+  {
+   "tag": "weekly planner",
+   "used_by_top": 11,
+   "volume": null
+  },
+  {
+   "tag": "2026 digital planner",
+   "used_by_top": 9,
+   "volume": null
+  },
+  {
+   "tag": "undated planner",
+   "used_by_top": 8,
+   "volume": null
+  },
+  {
+   "tag": "hyperlinked planner",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "all in one planner",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "digital calendar",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "adhd planner",
+   "used_by_top": 6,
+   "volume": null
+  },
+  {
+   "tag": "planner digital",
+   "used_by_top": 6,
+   "volume": null
+  },
+  {
+   "tag": "best digital planner",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "minimalist planner",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "digital notebook",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "digital journal",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "good notes planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "android planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "academic planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "digital planner 2026",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "customizable planner",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "whole shop bundle",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "notability notebook",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "2027 digital planner",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "digital planner app",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "goodnotes templates",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "digital planners",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "digital ipad planner",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "2026 2027 planner",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "portrait planner",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "student planner",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "dated planner",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "planner for goodnote",
+   "used_by_top": 2,
+   "volume": null
+  },
+  {
+   "tag": "planner for tablet",
+   "used_by_top": 2,
+   "volume": null
+  },
+  {
+   "tag": "planner templates",
+   "used_by_top": 2,
+   "volume": null
+  },
+  {
+   "tag": "planner simple",
+   "used_by_top": 2,
+   "volume": null
+  },
+  {
+   "tag": "digital planner ipad",
+   "used_by_top": 2,
+   "volume": null
+  }
+ ],
+ "gaps": [
+  {
+   "kind": "fix",
+   "complaint": "c_download",
+   "theme": "Couldn't download or open the file",
+   "count": 42,
+   "features_that_fix": [
+    "quick_start",
+    "download_help_photo"
+   ]
+  },
+  {
+   "kind": "fix",
+   "complaint": "c_setup",
+   "theme": "Confusing setup or unclear instructions",
+   "count": 37,
+   "features_that_fix": [
+    "quick_start",
+    "test_page"
+   ]
+  },
+  {
+   "kind": "fix",
+   "complaint": "c_device",
+   "theme": "Doesn't work on my app or device",
+   "count": 24,
+   "features_that_fix": [
+    "android",
+    "eink",
+    "app_guides"
+   ]
+  },
+  {
+   "kind": "fix",
+   "complaint": "c_hard",
+   "theme": "Hard to use day to day",
+   "count": 22,
+   "features_that_fix": []
+  },
+  {
+   "kind": "fix",
+   "complaint": "c_misleading",
+   "theme": "Not as described or pictured",
+   "count": 21,
+   "features_that_fix": []
+  },
+  {
+   "kind": "fix",
+   "complaint": "c_support",
+   "theme": "Seller didn't help or reply",
+   "count": 20,
+   "features_that_fix": [
+    "help_page"
+   ]
+  },
+  {
+   "kind": "fix",
+   "complaint": "c_broken",
+   "theme": "Doesn't work (no detail)",
+   "count": 19,
+   "features_that_fix": []
+  },
+  {
+   "kind": "fix",
+   "complaint": "c_not_useful",
+   "theme": "Not useful for my needs",
+   "count": 13,
+   "features_that_fix": []
+  },
+  {
+   "kind": "open_feature",
+   "feature": "android",
+   "name": "Android or Samsung support",
+   "share": 0.233
+  },
+  {
+   "kind": "open_feature",
+   "feature": "bundle",
+   "name": "Bundle of several products",
+   "share": 0.233
+  },
+  {
+   "kind": "open_feature",
+   "feature": "hyperlinked",
+   "name": "Hyperlinked tabs and dates",
+   "share": 0.2
+  },
+  {
+   "kind": "open_feature",
+   "feature": "stickers",
+   "name": "Digital stickers included",
+   "share": 0.167
+  },
+  {
+   "kind": "open_feature",
+   "feature": "custom",
+   "name": "Customizable or personalized",
+   "share": 0.167
+  },
+  {
+   "kind": "open_feature",
+   "feature": "adhd_specific",
+   "name": "Built for ADHD",
+   "share": 0.1
+  },
+  {
+   "kind": "open_feature",
+   "feature": "portrait",
+   "name": "Portrait layout",
+   "share": 0.1
+  },
+  {
+   "kind": "open_feature",
+   "feature": "colorful",
+   "name": "Colorful or aesthetic look",
+   "share": 0.1
+  },
+  {
+   "kind": "open_feature",
+   "feature": "student",
+   "name": "Student or academic",
+   "share": 0.067
+  },
+  {
+   "kind": "open_feature",
+   "feature": "habit_tracker",
+   "name": "Habit tracker",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "self_care",
+   "name": "Self-care, mood or wellness pages",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "budget",
+   "name": "Budget or finance pages",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "meal",
+   "name": "Meal planning",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "goals",
+   "name": "Goal setting",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "landscape",
+   "name": "Landscape layout",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "minimalist",
+   "name": "Minimalist look",
+   "share": 0.033
+  },
+  {
+   "kind": "open_feature",
+   "feature": "time_blocking",
+   "name": "Time blocking or hourly schedule",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "dark_mode",
+   "name": "Dark mode",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "eink",
+   "name": "E-ink tablets (reMarkable, Boox, Kindle Scribe)",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "work",
+   "name": "Work or productivity focus",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "brain_dump",
+   "name": "Brain dump pages",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "routines",
+   "name": "Routine builder",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "dopamine_menu",
+   "name": "Dopamine menu",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "priority_matrix",
+   "name": "Priority matrix or top 3",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "quick_start",
+   "name": "Quick start or setup guide",
+   "share": 0.0
+  },
+  {
+   "kind": "open_feature",
+   "feature": "test_page",
+   "name": "Link test or setup check page",
+   "share": 0.0
+  },
+  {
+   "kind": "wish",
+   "wish": "w_next_year",
+   "theme": "New edition for upcoming years",
+   "count": 3
+  },
+  {
+   "kind": "wish",
+   "wish": "w_order",
+   "theme": "Pages in a logical order",
+   "count": 2
+  },
+  {
+   "kind": "wish",
+   "wish": "w_nav_links",
+   "theme": "More links between views",
+   "count": 2
+  },
+  {
+   "kind": "wish",
+   "wish": "w_page_types",
+   "theme": "More page types included",
+   "count": 1
+  },
+  {
+   "kind": "wish",
+   "wish": "w_sync",
+   "theme": "App and PDF versions that match",
+   "count": 1
+  },
+  {
+   "kind": "wish",
+   "wish": "w_previews",
+   "theme": "Page previews before buying",
+   "count": 1
+  },
+  {
+   "kind": "wish",
+   "wish": "w_tutorial",
+   "theme": "A video showing how it works",
+   "count": 1
+  },
+  {
+   "kind": "wish",
+   "wish": "w_side_tabs",
+   "theme": "Side tabs for faster navigation",
+   "count": 1
+  },
+  {
+   "kind": "wish",
+   "wish": "w_typeable",
+   "theme": "Pages you can type on",
+   "count": 1
+  }
+ ]
+}
