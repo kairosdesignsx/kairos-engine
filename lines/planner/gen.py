@@ -1293,7 +1293,8 @@ def m_progress_chart(P, sec):
 
 @module('habit_month', "Twelve undated month pages, anchors m01 to m12 (the month rail and the Contents month grid open them): month name with a year line, a goal box and a box of one-line stats, a habit grid (habits plus blank rows by days 1 to 31, a circle per day; days a month never has are faded), an optional mood row (a square per day to color, with a color key), and lined boxes (fields). Previous and next month arrows. One Contents card (Months) unless index is false; no top-bar item unless nav is true. label, kicker, habits, habits_label, blank_habits, goal, stats, mood, fields, index, nav",
         params={'label': 'str (Months)', 'kicker': 'str', 'habits': 'list of str', 'habits_label': 'str', 'blank_habits': 'int (3)', 'goal': 'str (box label)', 'stats': 'list of str',
-                'mood': '{label, keys: [[name, hex]]} or true', 'fields': 'list of str', 'index': 'bool', 'nav': 'bool (false)'})
+                'mood': '{label, keys: [[name, hex]]} or true', 'fields': 'list of str', 'index': 'bool', 'nav': 'bool (false)',
+                'extra_months': 'int: extra undated month pages after December (m13...), for runs that start mid-month', 'extra_label': 'str', 'home': 'str: trail link target (default index)'})
 def m_habit_month(P, sec):
     th = P.th; label = sec.get('label', 'Months'); kicker = sec.get('kicker', 'Monthly')
     habits = list(sec.get('habits') or []) + [''] * int(sec.get('blank_habits', 3))
@@ -1306,7 +1307,9 @@ def m_habit_month(P, sec):
     if mood:
         mk = mood.get('keys') if isinstance(mood, dict) else None
         keys = mk or list(zip(['Great', 'Good', 'Okay', 'Low', 'Hard'], [th['accent'], P.tabs[0], th['warm'], P.tabs[-1], th['muted']]))
-    for m in range(1, 13):
+    extra = int(sec.get('extra_months', 0)); M = 12 + extra  # extra undated months (m13...) for a 52-week run that starts mid-month
+    home = sec.get('home', 'index' if any(x.get('module') == 'index' for x in P.s.get('sections', [])) else 'm01')
+    for m in range(1, M + 1):
         fade = lambda d: 'opacity:.25;' if d > last.get(m, 31) else ''
         hh = f'<span class="k">{esc(sec.get("habits_label", "Habits"))}</span>' + ''.join(f'<span style="text-align:center;font:600 {P.fs(9.5)} \'{th["body"]}\';color:{th["muted"]};{fade(d)}">{d}</span>' for d in range(1, 32))
         hr = ''.join(f'<div style="display:grid;grid-template-columns:{ncol};align-items:center;border-bottom:1px solid {th["line"]};flex:1;min-height:{28 * P.scale:.0f}px">'
@@ -1322,13 +1325,14 @@ def m_habit_month(P, sec):
                   f'<div style="display:flex;gap:16px;flex-wrap:wrap;padding-left:{118 * P.scale:.0f}px">{kk}</div></div>')
         top = f'<div class="row" style="flex:none">{lines_box(P, goal, rows=2, style="flex:1.4")}' + (f'<div class="box fill" style="flex:1;justify-content:space-evenly">{"".join(field(P, s, "flex:none") for s in stats)}</div>' if stats else '') + '</div>'
         bottom = f'<div class="row" style="flex:1">{"".join(lines_box(P, f) for f in fields)}</div>'
-        P.page(f'm{m:02d}', P.head('Month · year ____', MONTHS[m - 1], right=_arrows(f'm{m - 1:02d}' if m > 1 else None, f'm{m + 1:02d}' if m < 12 else None)) + top + grid + md + bottom,
-               month=m, crumb=f'{esc(label)} / {MONTHS[m - 1]}')
+        name = MONTHS[m - 1] if m <= 12 else sec.get('extra_label', 'One more month')
+        P.page(f'm{m:02d}', P.head('Month · year ____' if m <= 12 else 'Month ____ · year ____', name, right=_arrows(f'm{m - 1:02d}' if m > 1 else None, f'm{m + 1:02d}' if m < M else None)) + top + grid + md + bottom,
+               month=m if m <= 12 else None, crumb=f'<a href="#{home}">{"Contents" if home == "index" else esc(label)}</a> / {esc(name)}')
 
 
 @module('prompt_week', "Weekly journal pages (anchor prefix + 2 digits: jr01 to jr52), one per numbered week, each with its own printed prompt (prompts, in order, repeating if fewer than count) and lined space to answer, plus boxes (numbered: lines numbered 1 to n, for example Three good things; lines: plain lined boxes). With week_anchor (pair with log_week links {anchor: this prefix}), a button back to the week page and a trail Week n / label. Previous and next arrows. One Contents card. label, kicker, anchor, count, prompts, numbered, boxes, week_anchor",
         params={'label': 'str (Journal)', 'kicker': 'str', 'anchor': "str prefix, default 'jr'", 'count': 'int (52)', 'prompts': 'list of str', 'numbered': '[label, n] or null',
-                'boxes': 'list of str: lined boxes', 'week_anchor': 'str: log_week prefix'})
+                'boxes': 'list of str: lined boxes', 'week_anchor': 'str: log_week prefix', 'overview_anchor': 'str: adds a journal index page (every prompt, one tap each); Contents card and top-bar item open it', 'overview_title': 'str'})
 def m_prompt_week(P, sec):
     th = P.th; pre = sec.get('anchor', 'jr'); N = int(sec.get('count', 52))
     label = sec.get('label', 'Journal'); kicker = sec.get('kicker', 'Reflect')
@@ -1336,8 +1340,17 @@ def m_prompt_week(P, sec):
     num = sec.get('numbered'); boxes = sec.get('boxes') or []
     wk = sec.get('week_anchor')
     jid = lambda n: f'{pre}{n:02d}'
-    _register(P, sec, label, jid(1), kicker)
+    ov = sec.get('overview_anchor')
+    _register(P, sec, label, ov or jid(1), kicker)
     portrait = P.HT > P.W
+    if ov:  # journal index: every week's prompt with a button to its page (the top-bar item opens this, not week 1)
+        half = math.ceil(N / 2)
+        row = lambda n: (f'<a href="#{jid(n)}" style="display:flex;align-items:center;gap:10px;border-bottom:1px solid {th["line"]};flex:1;min-height:0">'
+                         f'<span style="flex:none;min-width:{64 * P.scale:.0f}px;text-align:center;padding:2px 8px;border-radius:{P.rpill}px;background:{th["soft"]};font:700 {P.fs(11)} \'{th["body"]}\'">Week {n}</span>'
+                         f'<span style="font-size:{P.fs(11.5)};white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{esc(prompts[(n - 1) % len(prompts)])}</span></a>')
+        cols = ''.join(f'<div class="box" style="flex:1;gap:0">{"".join(row(n) for n in range(lo, min(lo + half, N + 1)))}</div>' for lo in (1, half + 1))
+        P.page(ov, P.head(kicker, sec.get('overview_title', f'{N} prompts'), right=f'<span style="font-size:{P.fs(12)};color:{th["muted"]}">Tap a week to open its page</span>') +
+               f'<div class="row" style="flex:1">{cols}</div>', active=ov)
     numbered = ''
     if num:
         rows = ''.join(f'<div style="display:flex;align-items:flex-end;gap:10px;border-bottom:1px solid {th["line"]};flex:1;min-height:{30 * P.scale:.0f}px;padding-bottom:4px"><span style="font:700 {P.fs(13)} \'{th["body"]}\';color:{th["muted"]};width:16px">{k}</span></div>' for k in range(1, int(num[1]) + 1))
@@ -1351,7 +1364,7 @@ def m_prompt_week(P, sec):
         body = f'<div class="row" style="flex:1">{main}<div class="col" style="flex:1">{side}</div></div>' if not portrait else f'{card}{lines_box(P, "My answer")}<div class="row" style="flex:.7">{side}</div>'
         back = _chip(P, f'Week {n}', f'{wk}{n:02d}', primary=True, back=True) if wk else ''
         right = f'<div style="display:flex;gap:12px;align-items:center">{back}{_arrows(jid(n - 1) if n > 1 else None, jid(n + 1) if n < N else None)}</div>'
-        P.page(jid(n), P.head(f'{kicker} · week {n}', label, right=right) + body, active=jid(1),
+        P.page(jid(n), P.head(f'{kicker} · week {n}', label, right=right) + body, active=ov or jid(1),
                crumb=(f'<a href="#{wk}{n:02d}">Week {n}</a> / {esc(label)}' if wk else f'{esc(label)} · week {n}'))
 
 
