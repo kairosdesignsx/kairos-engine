@@ -1,0 +1,1701 @@
+{
+  "brief": {
+    "check_rounds": [
+      {
+        "found": 21,
+        "high": 0,
+        "low": 9,
+        "main": "Head-start pages show the right-edge tabs as Jan-Oct (2027) followed by 'Nov 2026' and 'Dec 2026'. The 2026 months sit after October 2027, so the order is wrong. Nov and Dec 2027 tabs are missing from these pages, and th",
+        "medium": 4,
+        "of": 22,
+        "round": 1
+      }
+    ],
+    "fixes": [
+      {
+        "complaint": "Not useful for my needs",
+        "count": 26,
+        "how": "Aimed at one clear buyer, the one-person business, with pages for what that buyer does every week: Money month (money in by source, money out by cost type, profit, orders, best seller), Price check (cost, fees, time, price, profit per product), Content to post and Follow up on every week page. The listing's first lines say who it is for and what it is not (not a business plan workbook, not a printable, not made to order), so buyers with other needs do not buy it."
+      },
+      {
+        "complaint": "Not as described or pictured",
+        "count": 25,
+        "how": "Listing copy states the exact page count and file size of the built file (r003), what each page type is and how many there are (53 week pages, 365 day pages, 12 Money months, and so on), that it is one landscape PDF, dated Oct 26, 2026 to Dec 2027, Monday start. No page is counted twice. Photo ph10 shows the Contents page so the buyer sees every section before buying."
+      },
+      {
+        "complaint": "Couldn't download or open the file",
+        "count": 25,
+        "how": "One PDF delivered as a direct Etsy download (no zip, no outside link, no sign-up). The listing's first FAQ line and step 1 of the Start here page say: download in a web browser, not the Etsy app, then open the PDF in a named app. File size is stated in the listing so buyers on slow connections know what to expect."
+      },
+      {
+        "complaint": "Too basic or boring",
+        "count": 20,
+        "how": "Business depth on top of the calendar: Money month for each month (plus Nov and Dec 2026), a Year plan with quarter tick boxes, Price check, Business routines (daily, weekly, monthly, quarterly), a business habit tracker for every 2027 month, and content slots on month and week pages. Photos ph3 and ph5 show these pages close up."
+      },
+      {
+        "complaint": "Not worth the price",
+        "count": 15,
+        "how": "A complete working year, not a few templates: about 480 linked pages (exact count from the build in the listing) covering Oct 26, 2026 to Dec 31, 2027, with business pages that a spreadsheet does not give you in one place (week plan, content, follow ups and month money side by side). Every link is tested by the build (r001) so nothing in the price is broken."
+      },
+      {
+        "complaint": "Errors, typos or low quality",
+        "count": 15,
+        "how": "Vector PDF: all text and lines are drawn as vectors with embedded OFL fonts, so pages stay sharp at any zoom (no blurry raster pages). Pages are 1024 x 768 (iPad landscape) with every element inside the page margins, checked by the build's overflow check. Photo ph10 includes a zoomed crop of small text to show it is sharp. The listing says the pages are sized for a screen, not for letter or A4 paper."
+      },
+      {
+        "complaint": "Can't edit, type or customize",
+        "count": 13,
+        "how": "Start here step 3 says how to type: every line and table row is tall enough for the app's text box tool (Goodnotes, Notability, Xodo, Acrobat Reader), so keyboard users can type on any page; table rows are 30 px or more. The listing says plainly: write with a stylus or type with your app's text tool; there are no fill-in form fields and it is not a Word or Canva template."
+      },
+      {
+        "complaint": "Hard to use day to day",
+        "count": 13,
+        "how": "Two habits run the planner: the week page every Monday and the Money month at month end (the Start here tip says so). The Start here page gives four numbered steps; the Setup check confirms links before planning; the same week and day layout repeats all year so there is nothing new to learn after week one. Photo ph7 shows the Start here and Setup check pages."
+      },
+      {
+        "complaint": "Seller didn't help or reply",
+        "count": 10,
+        "how": "Help is printed in the file, so a buyer does not have to wait for a reply: the Setup check page lists the four fixes for links that do not jump, and the Start here page covers download, apps, writing and typing. The listing has the same answers as an FAQ. No reply-time promises anywhere (r007); the buyer is told they can send the shop an Etsy message."
+      },
+      {
+        "complaint": "Hard to navigate or find pages",
+        "count": 9,
+        "how": "Every page has the top bar (Home, Year, Goals, Prices, Content, Notes, Money) and the month tabs on the right edge; calendar pages show a tappable Year / Month / Week trail; the Contents page has a card for every section and all months; the Start here page maps the top bar. No scrolling: every page is reachable in two taps from Contents (r001)."
+      },
+      {
+        "complaint": "Doesn't work on my app or device",
+        "count": 9,
+        "how": "The listing has a Works with line naming the apps by device (iPad: Goodnotes, Notability, Noteshelf; Android: Samsung Notes, Xodo; Chromebook, Windows and Mac: Xodo or Adobe Acrobat Reader) and says it needs no Microsoft Word and no subscription. Landscape pages fit laptop screens as well as tablets. Start here step 1 repeats the app list."
+      }
+    ],
+    "look": {
+      "avoid": [
+        "pink, gold foil and marble 'girl boss' business planners",
+        "loud rainbow or neon social media planner palettes",
+        "dark mode only pages",
+        "pure white pages with thin pale gray text",
+        "script fonts, florals and clip-art on every page",
+        "spreadsheet-style grids that look like a printed Excel sheet"
+      ],
+      "direction": "Quiet studio stationery: warm ivory paper (not white, so it glows less in a dark room) with charcoal ink at about 14:1 contrast so it stays sharp in daylight; secondary text in warm gray-brown at 6.4:1. The reviewer's two colors carry the palette: sand #C8B89A for the short ruled bar on the Contents and guide pages and as the first month tab, and warm taupe #7A7368 as the structure accent (habit circles, small graphics, never body text, since it is only 4.4:1 on the paper). Month tabs step from sand to a lighter taupe (#9C958B) so every tab label in charcoal stays above 5:1. Buttons are solid charcoal. Two font families only (r016): Libre Baskerville for headings and, in italic, for field labels; Jost for body, with bold for buttons and tabs. No letter-spaced all-caps labels (theme labels: italic). Plain ruled decoration (motif lines): no florals, no gold foil, no marble, no photos, no script fonts.",
+      "fonts": [
+        "Baskerville",
+        "Jost"
+      ],
+      "palette": {
+        "accent": "#7A7368",
+        "button": "#24262B",
+        "ink": "#24262B",
+        "line": "#DED6C8",
+        "muted": "#5F5A52",
+        "paper": "#FAF7F1",
+        "soft": "#F0EBE1",
+        "warm": "#C8B89A"
+      }
+    },
+    "must_haves": [
+      {
+        "evidence": [
+          "feature:work",
+          "praise:p_fits_needs",
+          "keyword:business planner",
+          "keyword:small business"
+        ],
+        "what": "Built for running a business, not a general life planner: every week page has Content to post and Follow up, every day page has Calls and emails and Orders to send, plus Year plan, Price check, Business routines and Money month pages."
+      },
+      {
+        "evidence": [
+          "feature:dated",
+          "praise:p_complete",
+          "keyword:digital planner",
+          "keyword:2026 digital planner"
+        ],
+        "what": "Full dated 2027 calendar: year, 12 months, 52 weeks and 365 day pages, every date, tab and trail linked, so it replaces a diary as well as the business templates."
+      },
+      {
+        "evidence": [
+          "feature:goodnotes",
+          "feature:notability",
+          "feature:android",
+          "keyword:goodnotes planner",
+          "keyword:ipad planner",
+          "wish:w_listing_info"
+        ],
+        "what": "One hyperlinked PDF that works in Goodnotes, Notability, Noteshelf, Samsung Notes, Xodo and Adobe Acrobat Reader; the listing names these apps and says no subscription is needed."
+      },
+      {
+        "evidence": [
+          "praise:p_look",
+          "praise:p_quality",
+          "praise:p_space"
+        ],
+        "what": "Calm, uncluttered pages with clear hierarchy and plenty of writing room; two font families only, sharp vector text at any zoom."
+      },
+      {
+        "evidence": [
+          "praise:p_easy",
+          "praise:p_guide",
+          "praise:p_as_described"
+        ],
+        "what": "Easy to start and the same layout every week: Start here page with four steps, Setup check, Contents with every section and month."
+      },
+      {
+        "evidence": [
+          "keyword:social media planner",
+          "keyword:content planner",
+          "keyword:content calendar",
+          "listing:1774093834"
+        ],
+        "what": "Content planning built into the calendar (Launches and content on every month page, Content to post on every week page, Content ideas pages), because social media and content planners are a large share of what this market sells."
+      }
+    ],
+    "photos": [
+      {
+        "proves": "praise:p_look, feature:work, mh_business",
+        "shows": "Cover and the week of January 11 to 17, 2027 side by side on a tablet frame, line: 'Plan the week, keep the content going, see the money'."
+      },
+      {
+        "proves": "keyword:content planner, complaint:c_basic, complaint:c_hard",
+        "shows": "Week page close-up, large: seven day boxes with This week's top 3, Content to post and Follow up callouts, line: 'Every week: top 3, content, follow ups'."
+      },
+      {
+        "proves": "feature:budget, complaint:c_not_useful, complaint:c_basic",
+        "shows": "Money month for January close-up: money in by source, money out by cost type, profit, best seller, one change for next month, line: 'A money check at every month end'."
+      },
+      {
+        "proves": "feature:time_blocking, complaint:c_hard, complaint:c_value",
+        "shows": "Day page close-up (Monday January 11): Today's top 3, To do, Calls and emails, Orders to send, Schedule 8am to 7pm."
+      },
+      {
+        "proves": "feature:goals, complaint:c_not_useful, complaint:c_basic",
+        "shows": "Year plan and Price check in a 2-up with captions, the useful top part of each page large."
+      },
+      {
+        "proves": "complaint:c_nav, feature:hyperlinked",
+        "shows": "Contents page and the Year page with tap arrows: card to section, month tab to month, date to day, trail back."
+      },
+      {
+        "proves": "feature:test_page, feature:quick_start, complaint:c_download, complaint:c_hard, complaint:c_support",
+        "shows": "Start here steps and the Setup check page with its fix list, line: 'Works the first time: four steps and a link check'."
+      },
+      {
+        "proves": "feature:multi_year, complaint:c_setup",
+        "shows": "November 2026 head start month page and its first week page (Oct 26 to Nov 1), line: 'Start this week, not in January'."
+      },
+      {
+        "proves": "feature:habit_tracker, feature:routines",
+        "shows": "Business routines page and the January habit tracker in a 2-up, top halves large."
+      },
+      {
+        "proves": "complaint:c_misleading, complaint:c_device, complaint:c_quality, complaint:c_edit, wish:w_listing_info",
+        "shows": "What is inside: the Contents page beside a text panel with the exact page count and file size, one landscape PDF, Monday start, Works with apps by device, write or type, not a printable, plus a zoomed crop of small label text showing it is sharp."
+      }
+    ],
+    "positioning": "For people who run a business on their own (makers, Etsy and online sellers, service providers) who want one linked 2027 planner instead of a generic diary plus loose templates. It wins by pairing a full dated calendar with the three business pages solo owners use every month (Money month, content slots, Year plan) and by working the first time, with a Start here page, a Setup check and a head start that begins this week.",
+    "price": {
+      "amount": 26,
+      "evidence": [
+        "price:revenue_weighted_median",
+        "listing:1868290404",
+        "listing:772897479",
+        "listing:741760733",
+        "market:best_price_band",
+        "price:p75",
+        "complaint:c_value"
+      ],
+      "launch_sale": {
+        "days": 30,
+        "percent": 25,
+        "sale_price": 19.5
+      },
+      "why": "Buyers pay a sales-weighted $12.15 and the best-earning band runs $5 to $34; $26 sits well above that floor and inside the band (style rule r015), priced with the full dated business planners ($29 to $39) rather than the $3 to $8 single templates, because this is a complete linked year of about 481 pages with business pages built in. While the shop is new, a 25% Etsy sale for 30 days shows $19.50 with $26 crossed out, instead of a low list price."
+    },
+    "revisions": [
+      {
+        "why": "Check round 1: numbered page strip on multi-page Notes and Content ideas (every page two taps from Contents), normal-case head-start month tabs, zoomed listing photos, alt text matches each photo, no-subscription line, Start here names the Oct 26 start."
+      },
+      {
+        "why": "Check round 2: Setup check now in photo 7, photo 10 adds a large close-up of a day page, Week 1 days Dec 28 to 31 printed unfaded (head-start days), cover title line height so letters do not touch."
+      },
+      {
+        "why": "Check round 3: photo 10 shows Contents plus a day-page close-up, photo 3 is a large close-up of the money tables, brief text says 53 week pages and habit trackers for every 2027 month (what the file has)."
+      }
+    ],
+    "sections": [
+      "Cover",
+      "Contents",
+      "Start here",
+      "Setup check",
+      "Year at a glance",
+      "Year plan",
+      "Price check",
+      "Business routines",
+      "Content ideas",
+      "Notes",
+      "Head start: Oct 26 to Dec 2026",
+      "Months, weeks and days",
+      "Money month"
+    ],
+    "seo": {
+      "tags": [
+        "business planner",
+        "small business",
+        "digital planner",
+        "goodnotes planner",
+        "2027 digital planner",
+        "content planner",
+        "social media planner",
+        "etsy shop planner",
+        "side hustle planner",
+        "ipad planner",
+        "small business owner",
+        "business organizer",
+        "notability planner"
+      ],
+      "title": "Business Planner 2027 Digital, Small Business Planner, Goodnotes iPad Android, Hyperlinked, Money Tracker, Content Planner, Oct 2026 Start"
+    },
+    "unique": [
+      {
+        "evidence": [
+          "feature:budget",
+          "complaint:c_not_useful",
+          "complaint:c_basic",
+          "wish:w_page_types"
+        ],
+        "name": "Money month",
+        "what": "A one-page money check for every month of 2027 plus Nov and Dec 2026, linked from each month page: money in by source and money out by cost type (planned and actual), totals and profit, orders or clients, best seller, what worked and one change for next month.",
+        "why": "Budget pages are rare in top business planners (17% of listings, none with sales revenue) while the biggest complaints are 'not useful for my needs' and 'too basic'. A month-end money page is the page a one-person business actually needs and a generic planner never has."
+      },
+      {
+        "evidence": [
+          "feature:test_page",
+          "feature:quick_start",
+          "complaint:c_download",
+          "complaint:c_device",
+          "complaint:c_hard",
+          "complaint:c_setup",
+          "feature:multi_year"
+        ],
+        "name": "Start here, Setup check and a head start this week",
+        "what": "A four-step Start here page (download in a browser, which app, pen off to tap, where to start for an Oct to Dec 2026 buyer and a 2027 buyer), a Setup check page whose buttons prove the links work, and Nov to Dec 2026 month and week pages starting Monday Oct 26, so a buyer can plan from the day they buy.",
+        "why": "Download, device and setup problems together are about 60 complaints, and no top seller shows a setup check or quick start. A buyer in the selling window (Oct to Dec) would otherwise wait up to ten weeks to use a 2027 planner."
+      },
+      {
+        "evidence": [
+          "feature:habit_tracker",
+          "feature:routines",
+          "complaint:c_hard"
+        ],
+        "name": "Business routines and habit tracker",
+        "what": "A Business routines checklist (every day, week, month and quarter: send orders, batch content, pay fees, put tax money aside, review prices) and a habit tracker page for every month, linked from the month page, for the business habits the owner picks (post daily, answer messages, log money).",
+        "why": "Habit trackers and routine builders are not seen in any top business planner title; they turn the planner from a place to write into a system the owner repeats, which answers 'hard to use day to day'."
+      },
+      {
+        "evidence": [
+          "feature:goals",
+          "complaint:c_not_useful",
+          "keyword:etsy seller planner"
+        ],
+        "name": "Year plan with quarter ticks and Price check",
+        "what": "A Year plan table (goal, why it matters, first step, a tick box for each quarter) and a Price check table (cost to make, fees and shipping, your time, price, profit each) for up to 18 products or services.",
+        "why": "Goal setting is on only 6% of top sellers' titles, and buyers say generic planners are not geared to their business. Knowing profit per product is the question a solo seller asks before every price change."
+      }
+    ],
+    "waived": [
+      {
+        "reason": "Dated pages let every date link to its day page, and the selling window is for 2027. An undated edition would be a second full build that does not fit in the same file under the size limit, so it would be a separate listing. The listing says dated Oct 26, 2026 to Dec 2027.",
+        "ref": "feature:undated"
+      },
+      {
+        "reason": "The planner line builds one hyperlinked PDF; Word, Google Docs or Pages versions would lose the links. One review asked. The listing says PDF only and names the apps that open it, including free Xodo and Acrobat Reader for computers.",
+        "ref": "wish:w_file_format"
+      },
+      {
+        "reason": "Made-to-order personalization (one listing at $128) is a service with a waiting time, not an instant download. Instead the trackers use plain categories and blank rows any business can fill, and the listing says it is not personalized.",
+        "ref": "feature:custom"
+      },
+      {
+        "reason": "This is a digital planner with screen-sized landscape pages (4 reviews mention printing). Fitting letter and A4 paper would need a second layout. The listing says the pages are sized for tablets and screens, so print buyers are not misled.",
+        "ref": "complaint:c_print"
+      }
+    ]
+  },
+  "claude_note": "New tonight. Marked needs help only because 4 check rounds were used: the last checker wanted photo 5 (Year plan and Price check) as a close-up instead of two whole pages. Also open from the checker, medium: the top-bar Money button always opens January 2027, and on head-start pages the month tabs show Nov 2026 and Dec 2026 in place of Nov and Dec 2027. Price $26 with a 25% launch sale. Colors use the #C8B89A and #7A7368 asked for on the older business planner. Image clone check pending: competitor photos come from the laptop worker. Before approving: open the PDF in Goodnotes (or your tablet app), tap a few month tabs and dates, and write on one page. The listing names apps we have not tested on a real device yet.",
+  "created": 1792769796293,
+  "engine": {
+    "brief_id": "b-p-bpd-001",
+    "product_id": "p-bpd-001"
+  },
+  "evidence": {
+    "basis": {
+      "feature_sources": [
+        "titles"
+      ],
+      "listings": 18,
+      "refreshed": "2026-10-22T15:06:19Z",
+      "reviews": 468,
+      "shops": 12
+    },
+    "checks": {
+      "closest": "Digital Business Planner, Business Template, Small Business Planner, Content Planner, Social Media Planner, Side Hustle Planner, Goodnotes",
+      "coverage": "21/22",
+      "coverage_ok": false,
+      "img_sim": null,
+      "pass": false,
+      "text_sim": 0.113,
+      "visual": [
+        {
+          "issue": "Head-start pages show the right-edge tabs as Jan-Oct (2027) followed by 'Nov 2026' and 'Dec 2026'. The 2026 months sit after October 2027, so the order is wrong. Nov and Dec 2027 tabs are missing from these pages, and the 'Dec 2026' label runs down to the bottom edge of the page.",
+          "severity": "medium",
+          "where": "hs11, hsw01, mmhs11 (all head_start and mmhs pages)"
+        },
+        {
+          "issue": "The top-bar 'Money' button (mapped as 'Month end' on Start here) always opens January 2027 (mm01) from every page. A buyer in November 2026 or July 2027 who taps Money lands on the wrong month and has to use the month page's Money month chip instead.",
+          "severity": "medium",
+          "where": "top bar, all pages (link target mm01)"
+        },
+        {
+          "issue": "ph3 crop stops before the Money out Total row and leaves out the right column. Its points still claim 'totals and profit' and 'Best seller and one change next month', none of which is in frame (r013, r005).",
+          "severity": "medium",
+          "where": "photo-03-ph3_money.jpg"
+        },
+        {
+          "issue": "ph5, ph6, ph7, ph8 and ph9 each show two whole pages shrunk side by side. Column headers, fix-list text, year-calendar dates and the Contents help box are tiny at Etsy zoom, so these break r013 (show the useful part large, not a whole page shrunk). ph5 was also promised as a close-up.",
+          "severity": "medium",
+          "where": "photo-05-ph5_plan.jpg, photo-06-ph6_links.jpg, photo-07-ph7_start.jpg, photo-08-ph8_headstart.jpg, photo-09-ph9_habits.jpg"
+        },
+        {
+          "issue": "ph2 and ph4 show the whole page at about 55% width with a large empty band above it, so the page labels are small.",
+          "severity": "low",
+          "where": "photo-02-ph2_week.jpg, photo-04-ph4_day.jpg"
+        },
+        {
+          "issue": "ph10's third bullet sits alone on a line and crowds the 'Contents' caption below it. The 'January 11' crop cuts off the J descender at the card edge.",
+          "severity": "low",
+          "where": "photo-10-ph10_inside.jpg"
+        },
+        {
+          "issue": "The large 'J' heading descender sticks out past the left page margin (about x=62 vs the 78 px margin) on January and July headings.",
+          "severity": "low",
+          "where": "m01, m07, mm01, d0101, d0111"
+        },
+        {
+          "issue": "The Thursday date number on week pages sits against the card's right padding, and '14' looks clipped.",
+          "severity": "low",
+          "where": "w03; photo-02-ph2_week.jpg"
+        },
+        {
+          "issue": "A single week chip ('Week 5', 'Week 31') wraps alone onto a second row on month pages.",
+          "severity": "low",
+          "where": "m01, m07"
+        },
+        {
+          "issue": "The sand motif bar sits flush against the top edge of the page at top right, so it reads as a clipped stray element.",
+          "severity": "low",
+          "where": "cover, index, start"
+        },
+        {
+          "issue": "The Setup check eyebrow repeats the title ('Setup check' over 'Setup check').",
+          "severity": "low",
+          "where": "linktest"
+        },
+        {
+          "issue": "There are some empty areas: a band between the month buttons and the help box on Contents, the bottom of the Year plan card, and the lower-left of Setup check (r006).",
+          "severity": "low",
+          "where": "index, goals, linktest"
+        },
+        {
+          "issue": "The head-start week Oct 26 to Nov 1 is filed under 'November 2026' even though its Thursday (Oct 29) is in October (r008). There is no October page, so the impact is minor.",
+          "severity": "low",
+          "where": "hsw01"
+        }
+      ]
+    },
+    "competitors": [
+      {
+        "img": "https://i.etsystatic.com/64648544/r/il/5220c6/8488139768/il_570xN.8488139768_7f7o.jpg",
+        "mo_revenue": 1024,
+        "price": 128,
+        "shop": "SmartFinanceCore",
+        "title": "Custom Dog Walker Business Diary | Personalized Digital Planner for GoodNotes | Made-to-Order iPad Planner wit",
+        "total_sales": 8
+      },
+      {
+        "img": "https://i.etsystatic.com/7456355/r/il/aafaf2/5643988462/il_570xN.5643988462_69ju.jpg",
+        "mo_revenue": 49,
+        "price": 7,
+        "shop": "AttentionGetting",
+        "title": "Business Planner How to Start a Business Plan Startup Small Business Planner Printable Business Workbook PDF D",
+        "total_sales": 2730
+      },
+      {
+        "img": "https://i.etsystatic.com/67288661/r/il/52fe33/8377861553/il_570xN.8377861553_9rec.jpg",
+        "mo_revenue": 589,
+        "price": 17.31,
+        "shop": "BoldBloomPrintables",
+        "title": "Etsy Seller Planner Bundle | Profit Tracker, 150 ChatGPT Prompts & Shop Growth Guide | Digital Download",
+        "total_sales": 34
+      },
+      {
+        "img": "https://i.etsystatic.com/7456355/r/il/04e87c/7646539517/il_570xN.7646539517_ozkq.jpg",
+        "mo_revenue": 0,
+        "price": 6,
+        "shop": "AttentionGetting",
+        "title": "Marketing Plan Template Printable Fillable PDF, Marketing Social Media Planner, Marketing Planner Template, Ma",
+        "total_sales": 2352
+      },
+      {
+        "img": "https://i.etsystatic.com/19653953/r/il/3109c8/8642801438/il_570xN.8642801438_9ii9.jpg",
+        "mo_revenue": 273,
+        "price": 39.01,
+        "shop": "DigitizedPlanner",
+        "title": "Small Business Digital Planner 2026 2027, Entrepreneur GoodNotes iPad Android, Undated, Lifetime, Start Any Mo",
+        "total_sales": 7
+      },
+      {
+        "img": "https://i.etsystatic.com/32701791/r/il/972d66/6292967323/il_570xN.6292967323_k70h.jpg",
+        "mo_revenue": 202,
+        "price": 3.96,
+        "shop": "PlanRightCo",
+        "title": "Digital Business Planner, Business Template, Small Business Planner, Content Planner, Social Media Planner, Si",
+        "total_sales": 2286
+      },
+      {
+        "img": "https://i.etsystatic.com/10203039/r/il/4eea59/8099256766/il_570xN.8099256766_206u.jpg",
+        "mo_revenue": 272,
+        "price": 2.99,
+        "shop": "YepLooksGood",
+        "title": "Reseller Business Planner Printable PDF | Inventory Tracker | Daily Checklist | Sales & Expense Tracker | Digi",
+        "total_sales": 281
+      },
+      {
+        "img": "https://i.etsystatic.com/7456355/r/il/da90ee/7528430229/il_570xN.7528430229_27pb.jpg",
+        "mo_revenue": 0,
+        "price": 3,
+        "shop": "AttentionGetting",
+        "title": "Social Media Content Calendar 2026, 365 Social Media Post Ideas, Social Media Post Planner, Social Media Calen",
+        "total_sales": 1806
+      }
+    ],
+    "complaints": [
+      {
+        "count": 26,
+        "how": "Aimed at one clear buyer, the one-person business, with pages for what that buyer does every week: Money month (money in by source, money out by cost type, profit, orders, best seller), Price check (cost, fees, time, price, profit per product), Content to post and Follow up on every week page. The listing's first lines say who it is for and what it is not (not a business plan workbook, not a printable, not made to order), so buyers with other needs do not buy it.",
+        "quote": "A very general and not at all personalized nor geared towards your specific industry.  I do not recommend!",
+        "state": "fixed",
+        "theme": "Not useful for my needs"
+      },
+      {
+        "count": 25,
+        "how": "Listing copy states the exact page count and file size of the built file (r003), what each page type is and how many there are (53 week pages, 365 day pages, 12 Money months, and so on), that it is one landscape PDF, dated Oct 26, 2026 to Dec 2027, Monday start. No page is counted twice. Photo ph10 shows the Contents page so the buyer sees every section before buying.",
+        "quote": "Order did not meet my expectations.  I thought it was supposed to be about coordination of a move.",
+        "state": "fixed",
+        "theme": "Not as described or pictured"
+      },
+      {
+        "count": 25,
+        "how": "One PDF delivered as a direct Etsy download (no zip, no outside link, no sign-up). The listing's first FAQ line and step 1 of the Start here page say: download in a web browser, not the Etsy app, then open the PDF in a named app. File size is stated in the listing so buyers on slow connections know what to expect.",
+        "quote": "I can't  download for some reason. if someone could help i would appreciate it.\nthank you\ndolphin7116@gmail.com \nCathy",
+        "state": "fixed",
+        "theme": "Couldn't download or open the file"
+      },
+      {
+        "count": 20,
+        "how": "Business depth on top of the calendar: Money month for each month (plus Nov and Dec 2026), a Year plan with quarter tick boxes, Price check, Business routines (daily, weekly, monthly, quarterly), a business habit tracker for every 2027 month, and content slots on month and week pages. Photos ph3 and ph5 show these pages close up.",
+        "quote": "wasn't much information that I didnt know 3 pages @$1 a page not worth the amt.",
+        "state": "fixed",
+        "theme": "Too basic or boring"
+      },
+      {
+        "count": 15,
+        "how": "A complete working year, not a few templates: about 480 linked pages (exact count from the build in the listing) covering Oct 26, 2026 to Dec 31, 2027, with business pages that a spreadsheet does not give you in one place (week plan, content, follow ups and month money side by side). Every link is tested by the build (r001) so nothing in the price is broken.",
+        "quote": "wasn't much information that I didnt know 3 pages @$1 a page not worth the amt.",
+        "state": "fixed",
+        "theme": "Not worth the price"
+      },
+      {
+        "count": 15,
+        "how": "Vector PDF: all text and lines are drawn as vectors with embedded OFL fonts, so pages stay sharp at any zoom (no blurry raster pages). Pages are 1024 x 768 (iPad landscape) with every element inside the page margins, checked by the build's overflow check. Photo ph10 includes a zoomed crop of small text to show it is sharp. The listing says the pages are sized for a screen, not for letter or A4 paper.",
+        "quote": "Customisation & concept is great but all pages are pixelated & off centre on the multiple downloads I have done.",
+        "state": "fixed",
+        "theme": "Errors, typos or low quality"
+      },
+      {
+        "count": 13,
+        "how": "Start here step 3 says how to type: every line and table row is tall enough for the app's text box tool (Goodnotes, Notability, Xodo, Acrobat Reader), so keyboard users can type on any page; table rows are 30 px or more. The listing says plainly: write with a stylus or type with your app's text tool; there are no fill-in form fields and it is not a Word or Canva template.",
+        "quote": "I wish the planning book was more in-depth. I also wish you would be able to type on it online.",
+        "state": "fixed",
+        "theme": "Can't edit, type or customize"
+      },
+      {
+        "count": 13,
+        "how": "Two habits run the planner: the week page every Monday and the Money month at month end (the Start here tip says so). The Start here page gives four numbered steps; the Setup check confirms links before planning; the same week and day layout repeats all year so there is nothing new to learn after week one. Photo ph7 shows the Start here and Setup check pages.",
+        "quote": "I really like the product and how customizable it is but I find it challenging to use, I guess I’m not much of a tech savvy person",
+        "state": "fixed",
+        "theme": "Hard to use day to day"
+      },
+      {
+        "count": 10,
+        "how": "Help is printed in the file, so a buyer does not have to wait for a reply: the Setup check page lists the four fixes for links that do not jump, and the Start here page covers download, apps, writing and typing. The listing has the same answers as an FAQ. No reply-time promises anywhere (r007); the buyer is told they can send the shop an Etsy message.",
+        "quote": "I reached out to the seller to let them know that the planner did not download. They never responded. I emailed in October.",
+        "state": "fixed",
+        "theme": "Seller didn't help or reply"
+      },
+      {
+        "count": 9,
+        "how": "Every page has the top bar (Home, Year, Goals, Prices, Content, Notes, Money) and the month tabs on the right edge; calendar pages show a tappable Year / Month / Week trail; the Contents page has a card for every section and all months; the Start here page maps the top bar. No scrolling: every page is reachable in two taps from Contents (r001).",
+        "quote": "The planner does not work properly the links are broken, not that organized and its hard to get around",
+        "state": "fixed",
+        "theme": "Hard to navigate or find pages"
+      },
+      {
+        "count": 9,
+        "how": "The listing has a Works with line naming the apps by device (iPad: Goodnotes, Notability, Noteshelf; Android: Samsung Notes, Xodo; Chromebook, Windows and Mac: Xodo or Adobe Acrobat Reader) and says it needs no Microsoft Word and no subscription. Landscape pages fit laptop screens as well as tablets. Start here step 1 repeats the app list.",
+        "quote": "I wasn't able to download and use this template. I have a chromebook. Do not waste them money unless you have access to Microsoft Word",
+        "state": "fixed",
+        "theme": "Doesn't work on my app or device"
+      }
+    ],
+    "market": {
+      "best_price_band": "$5-34",
+      "competing_listings": 41407,
+      "monthly_searches": 542
+    },
+    "positioning": "For people who run a business on their own (makers, Etsy and online sellers, service providers) who want one linked 2027 planner instead of a generic diary plus loose templates. It wins by pairing a full dated calendar with the three business pages solo owners use every month (Money month, content slots, Year plan) and by working the first time, with a Start here page, a Setup check and a head start that begins this week.",
+    "standard": [
+      {
+        "how": "Built for running a business, not a general life planner: every week page has Content to post and Follow up, every day page has Calls and emails and Orders to send, plus Year plan, Price check, Business routines and Money month pages.",
+        "name": "Work or productivity focus",
+        "share": 0.778,
+        "state": "included"
+      }
+    ],
+    "unique": [
+      {
+        "name": "Money month",
+        "verified_absent": false,
+        "what": "A one-page money check for every month of 2027 plus Nov and Dec 2026, linked from each month page: money in by source and money out by cost type (planned and actual), totals and profit, orders or clients, best seller, what worked and one change for next month.",
+        "why": "Budget pages are rare in top business planners (17% of listings, none with sales revenue) while the biggest complaints are 'not useful for my needs' and 'too basic'. A month-end money page is the page a one-person business actually needs and a generic planner never has."
+      },
+      {
+        "name": "Start here, Setup check and a head start this week",
+        "verified_absent": false,
+        "what": "A four-step Start here page (download in a browser, which app, pen off to tap, where to start for an Oct to Dec 2026 buyer and a 2027 buyer), a Setup check page whose buttons prove the links work, and Nov to Dec 2026 month and week pages starting Monday Oct 26, so a buyer can plan from the day they buy.",
+        "why": "Download, device and setup problems together are about 60 complaints, and no top seller shows a setup check or quick start. A buyer in the selling window (Oct to Dec) would otherwise wait up to ten weeks to use a 2027 planner."
+      },
+      {
+        "name": "Business routines and habit tracker",
+        "verified_absent": false,
+        "what": "A Business routines checklist (every day, week, month and quarter: send orders, batch content, pay fees, put tax money aside, review prices) and a habit tracker page for every month, linked from the month page, for the business habits the owner picks (post daily, answer messages, log money).",
+        "why": "Habit trackers and routine builders are not seen in any top business planner title; they turn the planner from a place to write into a system the owner repeats, which answers 'hard to use day to day'."
+      },
+      {
+        "name": "Year plan with quarter ticks and Price check",
+        "verified_absent": false,
+        "what": "A Year plan table (goal, why it matters, first step, a tick box for each quarter) and a Price check table (cost to make, fees and shipping, your time, price, profit each) for up to 18 products or services.",
+        "why": "Goal setting is on only 6% of top sellers' titles, and buyers say generic planners are not geared to their business. Knowing profit per product is the question a solo seller asks before every price change."
+      }
+    ]
+  },
+  "files": [
+    {
+      "mb": 13.31,
+      "name": "Open-Hours-2027.pdf",
+      "pages": 481
+    }
+  ],
+  "images": [
+    "p/p-bpd-001/01.jpg",
+    "p/p-bpd-001/02.jpg",
+    "p/p-bpd-001/03.jpg",
+    "p/p-bpd-001/04.jpg",
+    "p/p-bpd-001/05.jpg",
+    "p/p-bpd-001/06.jpg",
+    "p/p-bpd-001/07.jpg",
+    "p/p-bpd-001/08.jpg",
+    "p/p-bpd-001/09.jpg",
+    "p/p-bpd-001/10.jpg",
+    "p/p-bpd-001/11.jpg",
+    "p/p-bpd-001/12.jpg",
+    "p/p-bpd-001/13.jpg",
+    "p/p-bpd-001/14.jpg",
+    "p/p-bpd-001/15.jpg",
+    "p/p-bpd-001/16.jpg",
+    "p/p-bpd-001/17.jpg",
+    "p/p-bpd-001/18.jpg",
+    "p/p-bpd-001/19.jpg",
+    "p/p-bpd-001/20.jpg",
+    "p/p-bpd-001/21.jpg",
+    "p/p-bpd-001/22.jpg",
+    "p/p-bpd-001/23.jpg",
+    "p/p-bpd-001/24.jpg",
+    "p/p-bpd-001/25.jpg",
+    "p/p-bpd-001/26.jpg",
+    "p/p-bpd-001/27.jpg",
+    "p/p-bpd-001/28.jpg",
+    "p/p-bpd-001/29.jpg",
+    "p/p-bpd-001/30.jpg",
+    "p/p-bpd-001/31.jpg",
+    "p/p-bpd-001/32.jpg",
+    "p/p-bpd-001/33.jpg"
+  ],
+  "lane": "business-planner-digital",
+  "launch_sale": {
+    "days": 30,
+    "percent": 25,
+    "sale_price": 19.5
+  },
+  "line": "Digital planners",
+  "listing": {
+    "description": "Open Hours 2027 is a dated digital planner for people who run a business on their own: makers, Etsy and online sellers, and service providers. Plan the week, keep your content going and check the month's money, all in one linked PDF that starts on Monday, October 26, 2026, so you can begin this week instead of waiting for January.\n\nIt is not a business plan workbook, not a printable and not made to order.\n\nWhat's inside: 481 pages in one landscape PDF\n- Cover and a Contents page that shows every section and month on one screen\n- Start here: 4 short steps to get going\n- Setup check: tap the buttons to test the links on your own device, with a fix list on the page\n- 2027 year at a glance (every date opens its day)\n- 12 month pages with This month's focus and Launches and content\n- 12 habit trackers, one for each month of 2027\n- 53 week pages with This week's top 3, Content to post and Follow up\n- 365 day pages with Today's top 3, To do, Calls and emails, Orders to send, a Schedule from 8am to 7pm and Notes and ideas\n- 14 Money month pages: one for each month of 2027, plus November and December 2026\n- Year plan: 16 goals, each with why it matters, a first step and a tick box for each quarter\n- Price check: 18 rows for cost to make, fees and shipping, your time, price and profit each\n- Business routines: every day, every week, every month and every quarter\n- 2 Content ideas pages and 4 Notes pages\n- Head start from Monday, October 26 to December 2026: 2 month pages and 9 week pages (no day pages for 2026; the December 28 week is Week 1 of 2027)\n\nGood to know: dated October 26, 2026 to December 31, 2027. Weeks start on Monday. Landscape pages sized for tablet and computer screens, not for letter or A4 paper. It is not a fillable form and not a Word or Canva template: write with your pen or type with your app's text tool. Not personalized.\n\nWhat makes it different\n- Made for running a business, not a general life planner. Every week page has Content to post and Follow up, and every day page has Calls and emails and Orders to send.\n- A money check at every month end. Each Money month page has money in by source and money out by cost type (planned and actual), totals and profit, orders or clients, your best seller, what worked and one change for next month. It opens from that month's page.\n- Know your profit before you change a price. The Price check page lays out cost, fees, your time, price and profit for each product or service.\n- Goals you check every quarter. The Year plan has a tick box for Q1 to Q4 next to each goal.\n- Routines so there is less to remember: send orders, batch content, pay fees, put tax money aside, review prices. Plus a habit tracker for each month, opened from the month page.\n- Start this week. Head start pages from Monday, October 26, 2026 lead straight into January 2027.\n- Working in five minutes. The cover's Open planner button takes you to Start here, and the Setup check page shows the links work on your device before you plan anything.\n- Easy to get around. A top bar on every page (Home, Year, Goals, Prices, Content, Notes, Money), month tabs down the right edge and a Year / Month / Week trail that works as a back button. Every page is two taps from Contents.\n- Room to type. Lines and table rows are tall enough for your app's text box tool.\n- Calm to look at: warm ivory paper, charcoal text and sand and taupe accents, with text that stays sharp at any zoom.\n- Help inside the file. The instructions and the fix list are printed on the pages.\n\nWorks with\nNo subscription and no account with us: you buy the PDF once and it is yours.\n- iPad: Goodnotes, Notability, Noteshelf\n- Android tablets: Samsung Notes, Xodo\n- Chromebook, Windows and Mac: Xodo or Adobe Acrobat Reader\nYou need a PDF app like one of these to tap the links and write on the pages. No Microsoft Word needed. Not made for phones, or for viewing in Files, Photos or Google Drive preview, which do not follow the links.\nLinks not tapping? Turn the pen off to follow a link and back on to write.\n\nHow to start\n1. Download the file from Etsy in a web browser. The Etsy app cannot download digital files.\n2. Open the PDF in your app and import it as a PDF.\n3. Tap the Setup check buttons, then tap Year and today's date (between October 26 and December 2026, tap Starting in 2026 on the Year page). Fill this week's top 3.\n\nQuestions buyers ask\n- The Etsy app won't download it. Use a web browser (Safari, Chrome) and go to Purchases. The Etsy app cannot download digital files.\n- Which app do I need? A PDF app: Goodnotes, Notability, Noteshelf, Samsung Notes, Xodo or Adobe Acrobat Reader.\n- The links don't tap. Turn the pen off (read or view mode). The Setup check page tests this in seconds.\n- Can I type in it? Yes, with your app's text tool. It isn't a fillable form, so there are no typing boxes, and nothing adds up for you.\n- Can I print it? It is made for screens. The landscape pages do not fit letter or A4 paper.\n- Is there an undated version? Not in this listing. This planner is dated October 26, 2026 to December 31, 2027.\n\nWhat you get\n- Open-Hours-2027.pdf (13.3 MB, 481 pages, landscape)\nOne PDF, not a zip, so it downloads and imports quickly.\nDigital download. Nothing is shipped.\n\nHelp\nThe Setup check page has a fix list. Still stuck? Message us on Etsy and we'll help you set it up.",
+    "tags": [
+      "business planner",
+      "small business",
+      "digital planner",
+      "goodnotes planner",
+      "2027 digital planner",
+      "content planner",
+      "social media planner",
+      "etsy shop planner",
+      "side hustle planner",
+      "ipad planner",
+      "small business owner",
+      "business organizer",
+      "notability planner"
+    ],
+    "title": "Small Business Planner 2027 Digital, Goodnotes iPad and Android, Hyperlinked, Money Tracker, Content Planner, Etsy Seller, Starts Oct 2026"
+  },
+  "price": 26,
+  "research": {
+    "basis": {
+      "feature_sources": [
+        "titles"
+      ],
+      "listings": 18,
+      "negative_reviews": 175,
+      "off_type_dropped": 50,
+      "photos": "pending",
+      "reviews": 468,
+      "reviews_coded": 382
+    },
+    "complaints": [
+      {
+        "count": 26,
+        "quotes": [
+          "A very general and not at all personalized nor geared towards your specific industry.  I do not recommend!",
+          "Order did not meet my expectations.  I thought it was supposed to be about coordination of a move.",
+          "Di per sé il prodotto p carino ma alla fine dei conti non molto utile almeno per i miei scopi."
+        ],
+        "theme": "Not useful for my needs"
+      },
+      {
+        "count": 25,
+        "quotes": [
+          "Order did not meet my expectations.  I thought it was supposed to be about coordination of a move.",
+          "Terrible advertising. \n\n40 pages repeated is not a 300 pager. False advertising at its best.",
+          "No tiene nada que ver , con lo que crees!! Que estas comprando lastima sentirse engañado."
+        ],
+        "theme": "Not as described or pictured"
+      },
+      {
+        "count": 25,
+        "quotes": [
+          "I can't  download for some reason. if someone could help i would appreciate it.\nthank you\ndolphin7116@gmail.com \nCathy",
+          "I had some difficulty downloading it, but she provided excellent customer service, and I was able to get it figured out.",
+          "I reached out to the seller to let them know that the planner did not download. They never responded. I emailed in October."
+        ],
+        "theme": "Couldn't download or open the file"
+      },
+      {
+        "count": 20,
+        "quotes": [
+          "wasn't much information that I didnt know 3 pages @$1 a page not worth the amt.",
+          "A very general and not at all personalized nor geared towards your specific industry.  I do not recommend!",
+          "Very affordable but not the greatest. I spend more money on one with more pages and detail to the planner."
+        ],
+        "theme": "Too basic or boring"
+      },
+      {
+        "count": 15,
+        "quotes": [
+          "wasn't much information that I didnt know 3 pages @$1 a page not worth the amt.",
+          "It only a paper with different color. It does what it does. But I can make one on google sheets or excel. Nothing much on it.",
+          "The hyperlinks never worked complete waste of money"
+        ],
+        "theme": "Not worth the price"
+      },
+      {
+        "count": 15,
+        "quotes": [
+          "Customisation & concept is great but all pages are pixelated & off centre on the multiple downloads I have done.",
+          "Purchased this in a time crunch, and couldn't even use it. They are all super blurry.",
+          "I printed in a letter size and every single page the word keto diet is cut 1/4 in the top page. I printed twice and both time the same thing happened. Use less"
+        ],
+        "theme": "Errors, typos or low quality"
+      },
+      {
+        "count": 13,
+        "quotes": [
+          "I wish the planning book was more in-depth. I also wish you would be able to type on it online.",
+          "great documents but near impossible for me to edit them and get them to print correctly",
+          "This is made to be used with an Apple Pencil. I was hoping to use it with my keyboard.  I could make it work with additional programs. But I’m not interested in paying more money."
+        ],
+        "theme": "Can't edit, type or customize"
+      },
+      {
+        "count": 13,
+        "quotes": [
+          "I really like the product and how customizable it is but I find it challenging to use, I guess I’m not much of a tech savvy person",
+          "This is just not for me. I am old school and the steps to use this are just too much.",
+          "it is not what it looks like. its very difficult to use. unless you have a tablet."
+        ],
+        "theme": "Hard to use day to day"
+      },
+      {
+        "count": 10,
+        "quotes": [
+          "I reached out to the seller to let them know that the planner did not download. They never responded. I emailed in October.",
+          "Nice design but not easy to work with unless you're Bill Gates. Seller is slow to respond to emails. Frustrating when you've spent HOURS messing with it and waiting 24 hours between emails from seller. :(",
+          "If your looking for sumthing to purchase and just instantly download this was not the product. Process took awhile to finally get purchase downloaded I reached out to seller who said she would get back to me and I never "
+        ],
+        "theme": "Seller didn't help or reply"
+      },
+      {
+        "count": 9,
+        "quotes": [
+          "The planner does not work properly the links are broken, not that organized and its hard to get around",
+          "It’s very difficult to navigate, too many options but not satisfied with the after import navigation.",
+          "not satisfied as you have to open the pdf and scroll through the prints every time to want to use them,  I prefer them to be individual sheets. sheets are done nicely."
+        ],
+        "theme": "Hard to navigate or find pages"
+      },
+      {
+        "count": 9,
+        "quotes": [
+          "I wasn't able to download and use this template. I have a chromebook. Do not waste them money unless you have access to Microsoft Word",
+          "it is not what it looks like. its very difficult to use. unless you have a tablet.",
+          "Not sure this works on surface go. Downloaded for hours to no success. Shop was quick to refund money. Even before they answered my question."
+        ],
+        "theme": "Doesn't work on my app or device"
+      },
+      {
+        "count": 8,
+        "quotes": [
+          "The planner does not work properly the links are broken, not that organized and its hard to get around",
+          "The hyperlinks never worked complete waste of money",
+          "It took many attempts to load in to Good Notes and when finally that worked I am unable to click on links, I can't navigate the journal. It is also very slow. Such a shame."
+        ],
+        "theme": "Links broken or go to the wrong page"
+      },
+      {
+        "count": 8,
+        "quotes": [
+          "Terrible advertising. \n\n40 pages repeated is not a 300 pager. False advertising at its best.",
+          "Solo tiene una página, que se repite en 4 colores diferentes. Me parece un timo",
+          "The Reading journal for the A5 is not available in the file. :("
+        ],
+        "theme": "Missing pages or less than expected"
+      },
+      {
+        "count": 7,
+        "quotes": [
+          "Bought this and tried to follow instructions but given up, I found instructions not clear and very time consuming",
+          "I can't make it work no matter how many times I've read see and re do all the instructions.",
+          "Great planner. Took a couple of tries before I got it right for me"
+        ],
+        "theme": "Confusing setup or unclear instructions"
+      },
+      {
+        "count": 6,
+        "quotes": [
+          "It took many attempts to load in to Good Notes and when finally that worked I am unable to click on links, I can't navigate the journal. It is also very slow. Such a shame.",
+          "Extremely SLOW. I wouldnt recommend."
+        ],
+        "theme": "Slow, laggy or file too big"
+      },
+      {
+        "count": 6,
+        "quotes": [
+          "I can't make it work no matter how many times I've read see and re do all the instructions.",
+          "This would not print over 4 pages, I asked for a refund and was told this never happens, no refund…\nI ordered from another shop and it all printed just fine.",
+          "Funktioniert nicht bei mir. Schade"
+        ],
+        "theme": "Doesn't work (no detail)"
+      },
+      {
+        "count": 5,
+        "quotes": [
+          "I keep asking for a refund but she insists or trying to send me something else after I said I purchased a different bundle from the same person",
+          "This would not print over 4 pages, I asked for a refund and was told this never happens, no refund…\nI ordered from another shop and it all printed just fine.",
+          "The panel sections in the planner are not customizable by color, only rainbow style. When you want a refund for the product because you are unhappy with this, they will refuse. Overall not very happy with my experience."
+        ],
+        "theme": "Refund refused"
+      },
+      {
+        "count": 5,
+        "quotes": [
+          "This is not a 2025-26 calendar as advertised, though it seems easier to use than most (others Ive looked into are 500+ pages). Hopeful that it might work…in six months when it begins!",
+          "can't edit the calendar it's 2021"
+        ],
+        "theme": "Wrong or missing dates, calendar errors"
+      },
+      {
+        "count": 4,
+        "quotes": [
+          "great documents but near impossible for me to edit them and get them to print correctly",
+          "I printed in a letter size and every single page the word keto diet is cut 1/4 in the top page. I printed twice and both time the same thing happened. Use less",
+          "can't figure out how to print it"
+        ],
+        "theme": "Hard to print correctly"
+      },
+      {
+        "count": 4,
+        "quotes": [
+          "SCAM!!! Do not buy from this seller! cannot rate it because I never received it.",
+          "It took forever for access",
+          "If your looking for sumthing to purchase and just instantly download this was not the product. Process took awhile to finally get purchase downloaded I reached out to seller who said she would get back to me and I never "
+        ],
+        "theme": "Slow or no delivery of files"
+      },
+      {
+        "count": 3,
+        "quotes": [
+          "This only took me to a freebie link where I'm forced to subscribe to things I don't want.  Completely disappointed.",
+          "This is all marketing all link to buy actual course"
+        ],
+        "theme": "Pushes paid add-ons or sign-ups"
+      },
+      {
+        "count": 3,
+        "quotes": [
+          "It’s very difficult to navigate, too many options but not satisfied with the after import navigation.",
+          "Item is very complexe, too much",
+          "This bible plan is WAY too much, and some of the themes I guess is what you would call it are just duplicates of the same pages just written a little differently. Repetitive maybe I'm not sure but it's just too much."
+        ],
+        "theme": "Too much, overwhelming"
+      },
+      {
+        "count": 3,
+        "quotes": [
+          "I wasn't able to download and use this template. I have a chromebook. Do not waste them money unless you have access to Microsoft Word",
+          "This is made to be used with an Apple Pencil. I was hoping to use it with my keyboard.  I could make it work with additional programs. But I’m not interested in paying more money."
+        ],
+        "theme": "Needed an app or subscription that wasn't clear"
+      },
+      {
+        "count": 3,
+        "quotes": [
+          "Waste of money & your time the design is horrible.",
+          "Mal diseño. No me gustó del todo",
+          "The videos that come with the download are great, it made it easier to understand how to use it. My issues comes from the links. At the very top of the page there are links that are just not nice to look at. It throws th"
+        ],
+        "theme": "Didn't like the look"
+      },
+      {
+        "count": 3,
+        "quotes": [
+          "Too many pages of same things it did not help my wedding planning",
+          "This bible plan is WAY too much, and some of the themes I guess is what you would call it are just duplicates of the same pages just written a little differently. Repetitive maybe I'm not sure but it's just too much."
+        ],
+        "theme": "Repetitive or duplicate pages"
+      },
+      {
+        "count": 2,
+        "quotes": [
+          "They are not hyperlinked. So there i no way to click on the month and get the other weeks. Its just a picture. The months at the top have no function. You can download a picture for free from anywhere."
+        ],
+        "theme": "Just a flat PDF, not interactive"
+      },
+      {
+        "count": 1,
+        "quotes": [],
+        "theme": "AI-generated artwork"
+      },
+      {
+        "count": 1,
+        "quotes": [],
+        "theme": "Charged for updates or fixes"
+      },
+      {
+        "count": 1,
+        "quotes": [
+          "Al imprimir en media carta los diseños son super  pequeños. NO esta mensado para esta opcion"
+        ],
+        "theme": "Text too small or hard to read"
+      },
+      {
+        "count": 1,
+        "quotes": [
+          "I was charged for three of the planters on my card and I only purchased one"
+        ],
+        "theme": "Charged the wrong amount"
+      },
+      {
+        "count": 1,
+        "quotes": [
+          "I received a recipe planner cover"
+        ],
+        "theme": "Received the wrong item"
+      },
+      {
+        "count": 1,
+        "quotes": [
+          "Alguns menus não permitem edição e/ou tradução para o português. Péssima experiência."
+        ],
+        "theme": "Only in English"
+      }
+    ],
+    "features": [
+      {
+        "name": "Work or productivity focus",
+        "revenue_share": 0.759,
+        "share": 0.778,
+        "tier": "standard"
+      },
+      {
+        "name": "Says Goodnotes",
+        "revenue_share": 0.627,
+        "share": 0.5,
+        "tier": "common"
+      },
+      {
+        "name": "Undated version",
+        "revenue_share": 0.112,
+        "share": 0.222,
+        "tier": "rare"
+      },
+      {
+        "name": "Dated for the year",
+        "revenue_share": 0.112,
+        "share": 0.222,
+        "tier": "rare"
+      },
+      {
+        "name": "Budget or finance pages",
+        "revenue_share": 0,
+        "share": 0.167,
+        "tier": "rare"
+      },
+      {
+        "name": "Bundle of several products",
+        "revenue_share": 0.241,
+        "share": 0.167,
+        "tier": "rare"
+      },
+      {
+        "name": "Covers more than one year",
+        "revenue_share": 0.112,
+        "share": 0.111,
+        "tier": "rare"
+      },
+      {
+        "name": "Journal or notebook pages",
+        "revenue_share": 0.012,
+        "share": 0.111,
+        "tier": "rare"
+      },
+      {
+        "name": "Says Notability",
+        "revenue_share": 0.012,
+        "share": 0.111,
+        "tier": "rare"
+      },
+      {
+        "name": "Goal setting",
+        "revenue_share": 0,
+        "share": 0.056,
+        "tier": "rare"
+      },
+      {
+        "name": "Time blocking or hourly schedule",
+        "revenue_share": 0,
+        "share": 0.056,
+        "tier": "rare"
+      },
+      {
+        "name": "Android or Samsung support",
+        "revenue_share": 0.112,
+        "share": 0.056,
+        "tier": "rare"
+      },
+      {
+        "name": "Customizable or personalized",
+        "revenue_share": 0.42,
+        "share": 0.056,
+        "tier": "rare"
+      },
+      {
+        "name": "Hyperlinked tabs and dates",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Built for ADHD",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "All-in-one life planner",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Habit tracker",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Self-care, mood or wellness pages",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Meal planning",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Digital stickers included",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Dark mode",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "E-ink tablets (reMarkable, Boox, Kindle Scribe)",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Landscape layout",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Portrait layout",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Minimalist look",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Colorful or aesthetic look",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Student or academic",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Brain dump pages",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Routine builder",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Dopamine menu",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Priority matrix or top 3",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Quick start or setup guide",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Link test or setup check page",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      }
+    ],
+    "keywords": [
+      {
+        "tag": "business planner",
+        "used_by_top": 13
+      },
+      {
+        "tag": "small business",
+        "used_by_top": 8
+      },
+      {
+        "tag": "digital planner",
+        "used_by_top": 8
+      },
+      {
+        "tag": "goodnotes planner",
+        "used_by_top": 6
+      },
+      {
+        "tag": "business plan",
+        "used_by_top": 6
+      },
+      {
+        "tag": "social media planner",
+        "used_by_top": 6
+      },
+      {
+        "tag": "content planner",
+        "used_by_top": 5
+      },
+      {
+        "tag": "ipad planner",
+        "used_by_top": 4
+      },
+      {
+        "tag": "goodnotes template",
+        "used_by_top": 4
+      },
+      {
+        "tag": "etsy shop planner",
+        "used_by_top": 3
+      },
+      {
+        "tag": "marketing planner",
+        "used_by_top": 3
+      },
+      {
+        "tag": "small business plan",
+        "used_by_top": 3
+      },
+      {
+        "tag": "undated planner",
+        "used_by_top": 3
+      },
+      {
+        "tag": "business starter kit",
+        "used_by_top": 2
+      },
+      {
+        "tag": "etsy seller planner",
+        "used_by_top": 2
+      },
+      {
+        "tag": "digital marketing",
+        "used_by_top": 2
+      },
+      {
+        "tag": "2026 digital planner",
+        "used_by_top": 2
+      },
+      {
+        "tag": "business organizer",
+        "used_by_top": 2
+      },
+      {
+        "tag": "business template",
+        "used_by_top": 2
+      },
+      {
+        "tag": "content calendar",
+        "used_by_top": 2
+      },
+      {
+        "tag": "digital journal",
+        "used_by_top": 2
+      },
+      {
+        "tag": "small business owner",
+        "used_by_top": 2
+      },
+      {
+        "tag": "side hustle planner",
+        "used_by_top": 2
+      },
+      {
+        "tag": "printable planner",
+        "used_by_top": 2
+      }
+    ],
+    "listings": [
+      {
+        "age_months": 1,
+        "mo_revenue": 1024,
+        "price": 128,
+        "rank": 1,
+        "reviews": 1,
+        "shop": "SmartFinanceCore",
+        "title": "Custom Dog Walker Business Diary | Personalized Digital Planner for GoodNotes | Made-to-Order iPad Planner with Your Logo & Colours",
+        "total_sales": 8,
+        "url": "https://www.etsy.com/listing/4570525085/custom-dog-walker-business-diary"
+      },
+      {
+        "age_months": 79,
+        "mo_revenue": 49,
+        "price": 7,
+        "rank": 2,
+        "reviews": 390,
+        "shop": "AttentionGetting",
+        "title": "Business Planner How to Start a Business Plan Startup Small Business Planner Printable Business Workbook PDF Digital Planner Business Plan",
+        "total_sales": 2730,
+        "url": "https://www.etsy.com/listing/771622070/business-planner-how-to-start-a-business"
+      },
+      {
+        "age_months": 2,
+        "mo_revenue": 589,
+        "price": 17.31,
+        "rank": 3,
+        "reviews": 1,
+        "shop": "BoldBloomPrintables",
+        "title": "Etsy Seller Planner Bundle | Profit Tracker, 150 ChatGPT Prompts & Shop Growth Guide | Digital Download",
+        "total_sales": 34,
+        "url": "https://www.etsy.com/listing/4548588923/etsy-seller-planner-bundle-profit"
+      },
+      {
+        "age_months": 98,
+        "mo_revenue": 0,
+        "price": 6,
+        "rank": 4,
+        "reviews": 336,
+        "shop": "AttentionGetting",
+        "title": "Marketing Plan Template Printable Fillable PDF, Marketing Social Media Planner, Marketing Planner Template, Marketing Business Plan Digital",
+        "total_sales": 2352,
+        "url": "https://www.etsy.com/listing/635054797/marketing-plan-template-printable"
+      },
+      {
+        "age_months": 19,
+        "mo_revenue": 273,
+        "price": 39.01,
+        "rank": 5,
+        "reviews": 1,
+        "shop": "DigitizedPlanner",
+        "title": "Small Business Digital Planner 2026 2027, Entrepreneur GoodNotes iPad Android, Undated, Lifetime, Start Any Month + Hour, KPI Tracker",
+        "total_sales": 7,
+        "url": "https://www.etsy.com/listing/1868290404/business-digital-planner-2026-undated"
+      },
+      {
+        "age_months": 25,
+        "mo_revenue": 202,
+        "price": 3.96,
+        "rank": 6,
+        "reviews": 128,
+        "shop": "PlanRightCo",
+        "title": "Digital Business Planner, Business Template, Small Business Planner, Content Planner, Social Media Planner, Side Hustle Planner, Goodnotes",
+        "total_sales": 2286,
+        "url": "https://www.etsy.com/listing/1774093834/digital-business-planner-business"
+      },
+      {
+        "age_months": 4,
+        "mo_revenue": 272,
+        "price": 2.99,
+        "rank": 7,
+        "reviews": 44,
+        "shop": "YepLooksGood",
+        "title": "Reseller Business Planner Printable PDF | Inventory Tracker | Daily Checklist | Sales & Expense Tracker | Digital Download",
+        "total_sales": 281,
+        "url": "https://www.etsy.com/listing/4516684787/reseller-business-planner-printable-pdf"
+      },
+      {
+        "age_months": 94,
+        "mo_revenue": 0,
+        "price": 3,
+        "rank": 8,
+        "reviews": 258,
+        "shop": "AttentionGetting",
+        "title": "Social Media Content Calendar 2026, 365 Social Media Post Ideas, Social Media Post Planner, Social Media Calendar Content Digital Products",
+        "total_sales": 1806,
+        "url": "https://www.etsy.com/listing/652367548/social-media-content-calendar-2026-365"
+      },
+      {
+        "age_months": 49,
+        "mo_revenue": 0,
+        "price": 11.92,
+        "rank": 9,
+        "reviews": 161,
+        "shop": "CreativeJamCo",
+        "title": "Digital Planner for Small Business, Undated Trackers, Social Media, Finances, GoodNotes Digital Journal, Monthly, Weekly, Side Hustle, iPad",
+        "total_sales": 1610,
+        "url": "https://www.etsy.com/listing/1300755756/digital-planner-for-small-business"
+      },
+      {
+        "age_months": 49,
+        "mo_revenue": 0,
+        "price": 19.06,
+        "rank": 10,
+        "reviews": 145,
+        "shop": "PLANcontent",
+        "title": "Printable Social Media Planner Bundle , Tik-tok Instagram Facebook Pinterest Content Pages A4, A5, 2026",
+        "total_sales": 1459,
+        "url": "https://www.etsy.com/listing/1312986477/social-media-planner-bundle-instagram"
+      },
+      {
+        "age_months": 59,
+        "mo_revenue": 30,
+        "price": 2.99,
+        "rank": 11,
+        "reviews": 102,
+        "shop": "thesipandplan",
+        "title": "Digital Business Planner,Business Notebook, Small Business Planner,  Goodnotes Planner, Notability Planner",
+        "total_sales": 1020,
+        "url": "https://www.etsy.com/listing/1106554128/digital-business-plannerbusiness"
+      },
+      {
+        "age_months": 75,
+        "mo_revenue": 0,
+        "price": 3,
+        "rank": 12,
+        "reviews": 207,
+        "shop": "AttentionGetting",
+        "title": "Etsy Holiday Sales Planner, How to Sell on Etsy Shop Planner, Etsy Seller Holiday Checklist, Etsy Holiday Planner Marketing Calendar",
+        "total_sales": 1449,
+        "url": "https://www.etsy.com/listing/846719639/etsy-holiday-sales-planner-etsy-shop"
+      },
+      {
+        "age_months": 49,
+        "mo_revenue": 0,
+        "price": 10.09,
+        "rank": 13,
+        "reviews": 135,
+        "shop": "PLANcontent",
+        "title": "Etsy Shop Planner , Small Digital Printable Business Tool, Budget Binder",
+        "total_sales": 1365,
+        "url": "https://www.etsy.com/listing/1285017174/etsy-shop-planner-printable-etsy"
+      },
+      {
+        "age_months": 81,
+        "mo_revenue": 0,
+        "price": 29.13,
+        "rank": 14,
+        "reviews": 156,
+        "shop": "HappyDownloads",
+        "title": "Business Planner 2026 2027 Undated, Business Digital Planner 2026, Side Hustle Planner Daily, Social Media Planner, Goodnotes Planner iPad",
+        "total_sales": 1247,
+        "url": "https://www.etsy.com/listing/772897479/business-planner-2026-2027-undated"
+      },
+      {
+        "age_months": 60,
+        "mo_revenue": 0,
+        "price": 8.99,
+        "rank": 15,
+        "reviews": 122,
+        "shop": "PrintablesByPlanners",
+        "title": "Side Hustle Freelance Business Planner Printable Solopreneur Budget Goals Digital Download Work from Home Small Business Classic Happy",
+        "total_sales": 1004,
+        "url": "https://www.etsy.com/listing/1093135626/side-hustle-freelance-business-planner"
+      },
+      {
+        "age_months": 49,
+        "mo_revenue": 0,
+        "price": 7.95,
+        "rank": 16,
+        "reviews": 95,
+        "shop": "CreativeJamCo",
+        "title": "Digital Planner, SOCIAL MEDIA Content Calendar, Instagram YouTube TikTok Influencer, Marketing Plan, iPad GoodNotes, Small Business, Undated",
+        "total_sales": 950,
+        "url": "https://www.etsy.com/listing/1314741061/digital-planner-social-media-content"
+      },
+      {
+        "age_months": 57,
+        "mo_revenue": 0,
+        "price": 3.7,
+        "rank": 17,
+        "reviews": 71,
+        "shop": "LiliesDaily",
+        "title": "Digital Work Planner for Goodnotes, Office Planning for Ipad, Work Schedule Checklist Template, Daily Task PDF",
+        "total_sales": 915,
+        "url": "https://www.etsy.com/listing/1155922276/digital-work-planner-for-goodnotes"
+      },
+      {
+        "age_months": 84,
+        "mo_revenue": 0,
+        "price": 30,
+        "rank": 18,
+        "reviews": 64,
+        "shop": "AmmaRoseDesigns",
+        "title": "Digital Business Planner Bundle | Goodnotes Planner | Notability Planner | Goodnotes Template | Digital Planning | Planner Business",
+        "total_sales": 896,
+        "url": "https://www.etsy.com/listing/741760733/digital-business-planner-bundle"
+      }
+    ],
+    "market": {
+      "best_price_band": "$5-34",
+      "competing_listings": 41407,
+      "monthly_searches": 542,
+      "new_sellers_in_top_pct": 35,
+      "opportunity_score": 39,
+      "summary": "Too niche. ~542 monthly searches, competition crowded (41,407 listings), and 35% of top sellers are under 6 months old. Top seller earns ~$4,449/mo; the best-earning price band is $5–34.",
+      "top_seller_revenue": 4449
+    },
+    "praise": [
+      {
+        "count": 89,
+        "quotes": [
+          "I love this planner! This is how all planners should be done. So much fun- exactly what I need and how I need it. Worth it!!!",
+          "Very simple and user friendly.  Very helpful to someone new to reselling.",
+          "Simple to use, easy to follow, fast download, not too many colors therefore cheaper printing at home! I recommend this for newbies considering entrepreneurship!"
+        ],
+        "theme": "Useful, fits my needs"
+      },
+      {
+        "count": 36,
+        "quotes": [
+          "It was a download so no shipping - really good spread sheet.",
+          "The product was really good.",
+          "Utilissimo e perfetto per la gestione e la tracciabilità del denaro, disponibilità fantastica e prodotto top! \r\nConsigliato!!!"
+        ],
+        "theme": "High quality"
+      },
+      {
+        "count": 33,
+        "quotes": [
+          "I am looking forward to using this guideline to start my business. It is very easy to follow and captures all that I need to document.",
+          "Very simple and user friendly.  Very helpful to someone new to reselling.",
+          "Fast, simple and easy purchase and download."
+        ],
+        "theme": "Easy to set up and use"
+      },
+      {
+        "count": 33,
+        "quotes": [
+          "Great download. It looks good",
+          "The minimalistic design helps enormously with ADHD and tendency to overload planners etc. Would recommend",
+          "Very cute bee design~ Love the categories for the tasks, keep me focus on what's really important."
+        ],
+        "theme": "Beautiful design"
+      },
+      {
+        "count": 24,
+        "quotes": [
+          "She's the best! quick to respond",
+          "I had some difficulty downloading it, but she provided excellent customer service, and I was able to get it figured out.",
+          "Utilissimo e perfetto per la gestione e la tracciabilità del denaro, disponibilità fantastica e prodotto top! \r\nConsigliato!!!"
+        ],
+        "theme": "Seller was helpful"
+      },
+      {
+        "count": 23,
+        "quotes": [
+          "I am looking forward to using this guideline to start my business. It is very easy to follow and captures all that I need to document.",
+          "A very comprehensive kit. Love that it comes in multiple sizes. Really easy to download and access. Thank you.",
+          "Very thoughtful packet of information. It’ll take some time to review each of the sections. Very helpful."
+        ],
+        "theme": "Has everything I need"
+      },
+      {
+        "count": 11,
+        "quotes": [
+          "A very comprehensive kit. Love that it comes in multiple sizes. Really easy to download and access. Thank you.",
+          "Customisation & concept is great but all pages are pixelated & off centre on the multiple downloads I have done.",
+          "Parfait pour planifier sans date spécifique ✨️"
+        ],
+        "theme": "Flexible or customizable"
+      },
+      {
+        "count": 11,
+        "quotes": [
+          "Came as advertised when purchased.",
+          "The item is as described.     But these are such American ideas .    Really not suitable for Europe.     I cannot use it so am disappointed.",
+          "I really like this organizer usually I have problems with the digital things but this one is working great. It matches its description. I love it."
+        ],
+        "theme": "Exactly as described"
+      },
+      {
+        "count": 11,
+        "quotes": [
+          "I love this planner! This is how all planners should be done. So much fun- exactly what I need and how I need it. Worth it!!!",
+          "Simple to use, easy to follow, fast download, not too many colors therefore cheaper printing at home! I recommend this for newbies considering entrepreneurship!",
+          "Very affordable but not the greatest. I spend more money on one with more pages and detail to the planner."
+        ],
+        "theme": "Great value"
+      },
+      {
+        "count": 8,
+        "quotes": [
+          "Love everything from Mom Rebooted!",
+          "Perfect and easy to use. As always it is easily uploaded in the ipad and used in my Notability app. I love it!",
+          "I can always count on happy downloads to deliver. Great digital planning items."
+        ],
+        "theme": "Repeat buyer"
+      },
+      {
+        "count": 5,
+        "quotes": [
+          "The minimalistic design helps enormously with ADHD and tendency to overload planners etc. Would recommend",
+          "Fair price for nice notebooks; they make me more motivated to work on my projects and do not take up space on my shelf.",
+          "Very cute bee design~ Love the categories for the tasks, keep me focus on what's really important."
+        ],
+        "theme": "Helps me stay on track"
+      },
+      {
+        "count": 3,
+        "quotes": [
+          "I am new to rights planning,  and I'm excited to be using this Planner! Love all of her tutorial videos.",
+          "Easy to follow instructions and downloading was very simple!",
+          "The videos that come with the download are great, it made it easier to understand how to use it. My issues comes from the links. At the very top of the page there are links that are just not nice to look at. It throws th"
+        ],
+        "theme": "Clear instructions or tutorials"
+      },
+      {
+        "count": 2,
+        "quotes": [
+          "It wasn’t what I expected it to be as a planner. I looove the stickers and thought I’d be just as in love with the planner, but I’m not and I’m bummed."
+        ],
+        "theme": "Love the stickers and extras"
+      },
+      {
+        "count": 2,
+        "quotes": [
+          "Perfect and easy to use. As always it is easily uploaded in the ipad and used in my Notability app. I love it!",
+          "works with my journaling app, i don't use all of them which sucks because they're very cute"
+        ],
+        "theme": "Works on my device"
+      },
+      {
+        "count": 2,
+        "quotes": [
+          "Great devotional material to do every evening"
+        ],
+        "theme": "I use it every day"
+      },
+      {
+        "count": 1,
+        "quotes": [],
+        "theme": "Plenty of writing space"
+      }
+    ],
+    "price": {
+      "best_band": "$5-34",
+      "median": 8.47,
+      "p25": 3.77,
+      "p75": 18.62,
+      "revenue_weighted_median": 12.15,
+      "top10_by_revenue_median": 6.5
+    },
+    "query": "business planner digital",
+    "refreshed": "2026-10-22T15:06:19Z",
+    "shops": [
+      {
+        "rating": 5,
+        "reviews": 13,
+        "shop": "SmartFinanceCore"
+      },
+      {
+        "rating": 4.84,
+        "reviews": 7355,
+        "shop": "AttentionGetting"
+      },
+      {
+        "rating": 4.33,
+        "reviews": 3,
+        "shop": "BoldBloomPrintables"
+      },
+      {
+        "rating": 4.87,
+        "reviews": 1419,
+        "shop": "DigitizedPlanner"
+      },
+      {
+        "rating": 4.56,
+        "reviews": 5067,
+        "shop": "PlanRightCo"
+      },
+      {
+        "rating": 4.55,
+        "reviews": 68,
+        "shop": "YepLooksGood"
+      },
+      {
+        "rating": 4.67,
+        "reviews": 38886,
+        "shop": "CreativeJamCo"
+      },
+      {
+        "rating": 4.72,
+        "reviews": 8121,
+        "shop": "PLANcontent"
+      },
+      {
+        "rating": 4.89,
+        "reviews": 2539,
+        "shop": "thesipandplan"
+      },
+      {
+        "rating": 4.87,
+        "reviews": 29379,
+        "shop": "HappyDownloads"
+      },
+      {
+        "rating": 4.87,
+        "reviews": 2759,
+        "shop": "PrintablesByPlanners"
+      },
+      {
+        "rating": 4.92,
+        "reviews": 3976,
+        "shop": "LiliesDaily"
+      }
+    ],
+    "wishes": [
+      {
+        "count": 3,
+        "theme": "More page types included"
+      },
+      {
+        "count": 2,
+        "theme": "More ways to customize"
+      },
+      {
+        "count": 1,
+        "theme": "Pages in a logical order"
+      },
+      {
+        "count": 1,
+        "theme": "Listing should say which apps are needed"
+      },
+      {
+        "count": 1,
+        "theme": "Easier way to receive the files"
+      },
+      {
+        "count": 1,
+        "theme": "Other file formats (Google Docs, Word, Pages)"
+      },
+      {
+        "count": 1,
+        "theme": "Pages you can type on"
+      },
+      {
+        "count": 1,
+        "theme": "Pages as separate files"
+      }
+    ]
+  },
+  "status": "needs_help",
+  "title": "Open Hours 2027"
+}

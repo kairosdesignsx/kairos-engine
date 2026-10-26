@@ -1,0 +1,73 @@
+{
+ "run": "20261026-1902",
+ "made": "2026-10-26T19:02:03Z",
+ "new_types": [
+  {
+   "type_id": "goodnotes-planner",
+   "idea": "goodnotes planner",
+   "score": 46.2,
+   "why": [
+    "market 84 (Go)",
+    "4,833 searches a month",
+    "158,587 listings",
+    "top-10 median $2,720/mo at $21.26",
+    "overlaps a type we already make (digital-planner)",
+    "Same #1 listing as 3 other types"
+   ]
+  },
+  {
+   "type_id": "digital-planner",
+   "idea": "digital planner",
+   "score": 42.9,
+   "why": [
+    "market 78 (Go)",
+    "4,926 searches a month",
+    "734,436 listings",
+    "top-10 median $4,592/mo at $21.84",
+    "overlaps a type we already make (digital-planner)",
+    "Same #1 listing as 2 other types"
+   ]
+  }
+ ],
+ "teardowns": [
+  {
+   "type_id": "goodnotes-planner",
+   "reason": "no evidence yet"
+  },
+  {
+   "type_id": "digital-planner",
+   "reason": "no evidence yet"
+  }
+ ],
+ "fixes": [
+  {
+   "product_id": "business-2027-navy",
+   "reasons": [
+    "colors"
+   ],
+   "note": "make the color c8b89a and 7a7368 or add that to the color theme",
+   "owner": false,
+   "at": 1792760657783,
+   "status": "open",
+   "blocked": "Legacy product made before the engine (no brief or build here). Needs Darren: rebuild it in the engine or edit by hand."
+  }
+ ],
+ "continue": [
+  {
+   "product_id": "p-wpp-001",
+   "type": "weekly-planner-printable",
+   "title": "Open Week 2027",
+   "stage": "after brief.check"
+  }
+ ],
+ "new_products": [
+  {
+   "type_id": "fitness-planner-digital",
+   "product_id": "p-fpd-001"
+  },
+  {
+   "type_id": "self-care-planner",
+   "product_id": "p-scp-001"
+  }
+ ]
+}

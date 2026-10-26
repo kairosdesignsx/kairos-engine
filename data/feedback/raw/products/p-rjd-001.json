@@ -31,9 +31,9 @@
       {
         "found": 22,
         "high": 0,
-        "low": 14,
-        "main": "Photo 5's point 'Start here: 4 short steps' is not what the photo shows: the Start here crop shows only steps 1 and 2. This breaks r013 (points describe only what is in frame).",
-        "medium": 1,
+        "low": 11,
+        "main": "Previous/next arrows are tiny, faint icons with tap areas about 11 x 14 pt (pypdf rects e.g. [513,680,524,694]), far below a comfortable finger target; buyers will miss them when stepping between books, months and Librar",
+        "medium": 2,
         "of": 22,
         "round": 4
       }
@@ -108,7 +108,7 @@
         "dark-mode-only pages",
         "script fonts and clip-art on every page"
       ],
-      "direction": "A quiet library, not boho beige and not old paper texture. Warm ivory paper (not white, so it glows less in a dark room) with deep ink-blue text at about 12:1 contrast so it stays sharp in daylight; muted text stays above 4.5:1. One oxblood accent for buttons and star outlines, with a small brass detail on the Contents and guide pages. Month tabs run from dusty clay to soft blue with dark ink labels. Baskerville headings feel bookish; Manrope body text is clean and easy to read at 1.1 scale. Plain ruled decoration (motif 'lines'): no florals, no clip-art book stacks, no script fonts.",
+      "direction": "A quiet library, not boho beige and not old paper texture. Warm ivory paper (not white, so it glows less in a dark room) with deep ink-blue text at about 12:1 contrast so it stays sharp in daylight; muted text stays above 4.5:1. One oxblood accent for buttons and star outlines, with a small brass detail on the Contents and guide pages. Month tabs run from dusty clay to soft blue with dark ink labels. Two fonts only: Baskerville for headings and, in italic, for field labels; Manrope for body text, with bold for buttons and tabs. No letter-spaced all-caps labels, so the pages read calm and easy on the eyes. Plain ruled decoration (motif 'lines'): no florals, no clip-art book stacks, no script fonts.",
       "fonts": [
         "Baskerville",
         "Manrope"
@@ -228,7 +228,14 @@
       },
       "why": "Buyers pay a sales-weighted $14.63 and the top earners sit at $14.63, inside the $7 to $23 best-earning band; $15 prices it with them for a 100-book journal with a full page per book. While the shop is new, a 25% launch sale for 30 days shows $11.25 with $15 crossed out (style rule r015), instead of a low price."
     },
-    "revisions": [],
+    "revisions": [
+      {
+        "why": "Review fix (Colynne, Oct 23): two fonts only and hierarchy by bold and italic. Labels moved from letter-spaced Manrope caps to Baskerville italic; pills and calendar heads in Manrope bold, normal case."
+      },
+      {
+        "why": "Check round 1 (fix): remaining letter-spaced capitals (buttons, top-bar map, month tabs, photo captions, footer) set in normal case; Start here step 4 tells a late-year buyer what to do."
+      }
+    ],
     "sections": [
       "Cover",
       "Contents",
@@ -314,8 +321,8 @@
       }
     ]
   },
-  "claude_note": "Passed 4 independent check rounds (22/22 promises, no high issues). Left open (medium): photo 5 bullet says 4 short steps but the close-up shows steps 1 and 2. Image clone check pending: competitor photos come from the laptop worker. Printing is not claimed (not tested). Before approving: open the PDF in Goodnotes or your tablet app, tap Library numbers and a few month tabs, and write on one page.",
-  "created": 1792685030125,
+  "claude_note": "Fixed tonight from Colynne's review (fonts): two fonts only. Headings stay Libre Baskerville; field labels are now Baskerville italic instead of spaced-out capitals; buttons, tabs and month tabs are Manrope bold in normal case. Passed check round 2. Please review again: her old Fix mark stays on the card until someone reviews it. Image clone check pending: competitor photos come from the laptop worker. Before approving: open the PDF in Goodnotes (or your tablet app), tap a few month tabs and dates, and write on one page. The listing names apps we have not tested on a real device yet.",
+  "created": 1792766861510,
   "engine": {
     "brief_id": "b-rjd-001",
     "product_id": "p-rjd-001"
@@ -339,79 +346,69 @@
       "text_sim": 0.221,
       "visual": [
         {
-          "issue": "Photo 5's point 'Start here: 4 short steps' is not what the photo shows: the Start here crop shows only steps 1 and 2. This breaks r013 (points describe only what is in frame).",
+          "issue": "Previous/next arrows are tiny, faint icons with tap areas about 11 x 14 pt (pypdf rects e.g. [513,680,524,694]), far below a comfortable finger target; buyers will miss them when stepping between books, months and Library pages.",
           "severity": "medium",
+          "where": "b001-b100, library-library4, m01-m12, quotes (top right, under the trail)"
+        },
+        {
+          "issue": "Setup check promises buttons that 'jump and return', but there is no way back to the page from the targets except Home then Setup check (two taps). The page explains this, but it is not the one-tap return the brief describes.",
+          "severity": "medium",
+          "where": "linktest"
+        },
+        {
+          "issue": "Start here step 4 tells Oct-Dec buyers to 'begin a fresh copy in January'. That suggests restarting the 100-book Library each year and goes against the undated 'nothing is wasted' pitch. It also does not say how to get a fresh copy (re-download or duplicate in the app).",
+          "severity": "low",
+          "where": "start, step 4 (also visible in photo-04)"
+        },
+        {
+          "issue": "The Setup check eyebrow repeats the title ('Setup check' above 'Setup check'); every other page uses a different eyebrow (Five minutes, Up next, Goal).",
+          "severity": "low",
+          "where": "linktest (also photo-05)"
+        },
+        {
+          "issue": "Start here step 1 is 'Open it in a note app', but its Go there button opens Contents, and the text has to say 'This button opens Contents'. The button does not match its step.",
+          "severity": "low",
+          "where": "start, step 1"
+        },
+        {
+          "issue": "The 'top bar, on every page' legend lists only Library, TBR and Quotes, leaving one cell of the 2x2 grid empty. Home is missing, although the Setup check legend includes it.",
+          "severity": "low",
+          "where": "start"
+        },
+        {
+          "issue": "The swash descender on 'J' in January and July sits left of the page's text margin, so the month title looks misaligned against the eyebrow and cards.",
+          "severity": "low",
+          "where": "m01, m06, m07 headings"
+        },
+        {
+          "issue": "Month pages show the year blank as typed underscores ('Month · year ____'), while the Reading year page uses a ruled line. The two fill-in styles are inconsistent and the underscores look unfinished.",
+          "severity": "low",
+          "where": "m01-m12 eyebrow"
+        },
+        {
+          "issue": "The brass detail appears on the cover, Contents and Start here but not on Setup check, the other guide page named in the look brief.",
+          "severity": "low",
+          "where": "linktest"
+        },
+        {
+          "issue": "The Reading year format tallies have only Print, Ebook and Audio, but the book page lets readers write in another format, so a write-in format has nowhere to be tallied.",
+          "severity": "low",
+          "where": "year, Tallies"
+        },
+        {
+          "issue": "Photo 5 crops Start here to steps 1-2 only, which leaves the lower-left quarter of the photo empty next to the full-height Setup check panel.",
+          "severity": "low",
           "where": "photo-05-ph5_start.jpg"
         },
         {
-          "issue": "Photo 6's point says '12 undated month pages', but only January is in frame.",
-          "severity": "low",
-          "where": "photo-06-ph6_year_month.jpg"
-        },
-        {
-          "issue": "The hero point 'Goodnotes, Notability and Android' mixes two apps with a platform. It leaves out iPad, Samsung Notes, Xodo and Noteshelf.",
+          "issue": "The hero bullet 'Goodnotes, Notability and Android' mixes two apps with a platform and leaves out iPad, the main device.",
           "severity": "low",
           "where": "photo-01-ph1_hero.jpg"
         },
         {
-          "issue": "The back tablet in the hero shows a Book 1 page that is mostly hidden behind the cover and has no caption.",
+          "issue": "The listing says 2.88 MB, but the file is 2,889,786 bytes (2.89 MB decimal, 2.76 MiB). This is a small mismatch with the built file (r003).",
           "severity": "low",
-          "where": "photo-01-ph1_hero.jpg"
-        },
-        {
-          "issue": "Start here cards 2 and 4 are about 40% empty below their Go there buttons, and the bottom of cards 1 and 3 is empty too.",
-          "severity": "low",
-          "where": "start"
-        },
-        {
-          "issue": "Step 1 'Open it in a note app' has a Go there button that only opens Contents. A buyer cannot tell why the button is in that step.",
-          "severity": "low",
-          "where": "start"
-        },
-        {
-          "issue": "The eyebrow 'SETUP CHECK' repeats the title 'Setup check'. The 'Where things are' panel has large gaps between its 4 rows.",
-          "severity": "low",
-          "where": "linktest"
-        },
-        {
-          "issue": "The Notes card sits alone in the third row of Contents, leaving two empty card slots.",
-          "severity": "low",
-          "where": "index"
-        },
-        {
-          "issue": "The cover is about 70% empty paper above and below the title block.",
-          "severity": "low",
-          "where": "cover"
-        },
-        {
-          "issue": "The 'J' in the January and July titles hangs past the left text margin.",
-          "severity": "low",
-          "where": "m01, m07"
-        },
-        {
-          "issue": "An empty band of about 100 px sits below the last TBR row inside the card.",
-          "severity": "low",
-          "where": "tbr"
-        },
-        {
-          "issue": "Quotes page 2 and Notes page 2 have no previous arrow back to page 1, while book and month pages have both arrows.",
-          "severity": "low",
-          "where": "quotes2, notes2 (PDF link scan)"
-        },
-        {
-          "issue": "The Reading year page runs January to December. A buyer starting in October to December cannot track a 12-month year from their start month on one page.",
-          "severity": "low",
-          "where": "year"
-        },
-        {
-          "issue": "The brass detail is on Start here but missing on Setup check, the other guide page.",
-          "severity": "low",
-          "where": "linktest"
-        },
-        {
-          "issue": "The bottom row is sliced by the crop edge in the Library and TBR crops.",
-          "severity": "low",
-          "where": "photo-03-ph3_library.jpg, photo-07-ph7_tbr_quotes.jpg"
+          "where": "listing.description What you get"
         }
       ]
     },
@@ -610,7 +607,7 @@
   },
   "files": [
     {
-      "mb": 2.88,
+      "mb": 2.89,
       "name": "Shelf-Life.pdf",
       "pages": 126
     }
@@ -644,7 +641,7 @@
   },
   "line": "Digital planners",
   "listing": {
-    "description": "Shelf Life is an undated digital reading journal for readers who want one place on their tablet for every book they finish. Write a title in the Library, tap its number, and that book's own review page opens. Start in any month, the day you buy it.\n\nWhat's inside: 126 portrait pages in one PDF\n- Cover and a Contents page that shows every section on one screen\n- Start here: 4 numbered steps, each with a Go there button\n- Setup check: tap the buttons to test the links on your own device, with a fix list if one does not jump\n- Library: 4 pages with 25 numbered lines each (title, author, finished, stars and a blank Shelf column you name yourself)\n- 100 book review pages, one per book, numbered 1 to 100, each linked from its Library line\n- To be read list: 26 lines for title, author, where you heard about it and a Got it box\n- 2 favorite quotes pages\n- Reading year: your goal, a row of 10 squares for each month (tally past 10), tallies and your top 5 of the year\n- 12 undated monthly reading pages, each with 8 lines for books finished (more go in that month's Notes)\n- 2 notes pages\n\nGood to know: a digital PDF for note apps. Portrait only and undated. No stickers. It is not a fillable form: write with your pen or type with your app's text tool.\n\nWhat makes it different\n- 100 books, all linked both ways. Tap a number in the Library to open that book's page. Tap Library at the top of the book page to go back to the right Library page, or use the arrows to step to the previous or next book.\n- One page layout to learn. Every book page is the same: title and author, genre, format (tick print, ebook or audio, or write another in the blank), started and finished dates, pages, stars, would I reread, why I picked it up, my thoughts, a favorite quote with its page number, a favorite character and a one-line review.\n- Working in five minutes. The cover's Open journal button takes you to Start here, and the Setup check page shows the links work on your device before you write anything.\n- See your reading year. Set a goal, color one square per finished book in each month's row and tap any month name to open its page.\n- Monthly pages to look back and plan ahead: books finished with stars, 31 reading days to color in, pages or hours read, book of the month and what is up next.\n- Easy to get around. Month tabs on every page, a top bar for Home, Library, TBR and Quotes, and a trail that works as a back button.\n- Yours to set up. The Shelf column and genre are written in by you, and format has a blank for anything that is not print, ebook or audio, so it fits any kind of reader.\n- A quiet library look: warm ivory paper, deep ink blue text and one oxblood accent, with text that stays crisp at any zoom.\n- Help inside the file. The instructions are printed on the pages, not only in a separate guide.\n\nWorks with\n- Goodnotes, Notability, Samsung Notes, Xodo and Noteshelf\n- on iPad, Android tablets and Windows tablets\nYou need a PDF note app like one of these to tap the links and write on the pages.\n\nNot for\n- Phones: the pages are tablet size\n- Files, Photos and other file viewers: they show the pages but do not follow the links\n- Anyone who wants a spreadsheet or a fillable form: this is a PDF you write on by hand or with your app's text tool\n\nLinks not tapping? Turn the pen off to follow a link and back on to write.\n\nHow to start\n1. Download the file from Etsy in a web browser. The Etsy app cannot download digital files.\n2. Open the PDF in your note app and import it as a PDF.\n3. Tap the Setup check buttons, then open the Library, write your first title on line 1 and tap its number.\n\nQuestions buyers ask\n- The Etsy app won't download it. Use a web browser (Safari, Chrome) and go to Purchases. The Etsy app cannot download digital files.\n- Which app do I need? A PDF note app: Goodnotes, Notability, Samsung Notes, Xodo or Noteshelf.\n- The links don't tap. Turn the pen off (read or view mode). The Setup check page tests this in seconds.\n- Can I type in it? Yes, with your app's text tool and any font your app has. It isn't a fillable form, so there are no typing boxes.\n- Can I turn it to landscape? No. It is portrait only, like a book held upright, and every page is laid out for that.\n\nWhat you get\n- Shelf-Life.pdf (2.88 MB, 126 pages, portrait)\nOne PDF, not a zip, so it downloads and imports quickly.\nDigital download. Nothing is shipped.\n\nHelp\nThe Setup check page has a fix list. Still stuck? Send a message through Etsy and name your app and device.",
+    "description": "Shelf Life is an undated digital reading journal for readers who want one place on their tablet for every book they finish. Write a title in the Library, tap its number, and that book's own review page opens. Start in any month, the day you buy it.\n\nWhat's inside: 126 portrait pages in one PDF\n- Cover and a Contents page that shows every section on one screen\n- Start here: 4 numbered steps, each with a Go there button\n- Setup check: tap the buttons to test the links on your own device, with a fix list if one does not jump\n- Library: 4 pages with 25 numbered lines each (title, author, finished, stars and a blank Shelf column you name yourself)\n- 100 book review pages, one per book, numbered 1 to 100, each linked from its Library line\n- To be read list: 26 lines for title, author, where you heard about it and a Got it box\n- 2 favorite quotes pages\n- Reading year: your goal, a row of 10 squares for each month (tally past 10), tallies and your top 5 of the year\n- 12 undated monthly reading pages, each with 8 lines for books finished (more go in that month's Notes)\n- 2 notes pages\n\nGood to know: a digital PDF for note apps. Portrait only and undated. No stickers. It is not a fillable form: write with your pen or type with your app's text tool.\n\nWhat makes it different\n- 100 books, all linked both ways. Tap a number in the Library to open that book's page. Tap Library at the top of the book page to go back to the right Library page, or use the arrows to step to the previous or next book.\n- One page layout to learn. Every book page is the same: title and author, genre, format (tick print, ebook or audio, or write another in the blank), started and finished dates, pages, stars, would I reread, why I picked it up, my thoughts, a favorite quote with its page number, a favorite character and a one-line review.\n- Working in five minutes. The cover's Open journal button takes you to Start here, and the Setup check page shows the links work on your device before you write anything.\n- See your reading year. Set a goal, color one square per finished book in each month's row and tap any month name to open its page.\n- Monthly pages to look back and plan ahead: books finished with stars, 31 reading days to color in, pages or hours read, book of the month and what is up next.\n- Easy to get around. Month tabs on every page, a top bar for Home, Library, TBR and Quotes, and a trail that works as a back button.\n- Yours to set up. The Shelf column and genre are written in by you, and format has a blank for anything that is not print, ebook or audio, so it fits any kind of reader.\n- A quiet library look: warm ivory paper, deep ink blue text and one oxblood accent, with text that stays crisp at any zoom.\n- Help inside the file. The instructions are printed on the pages, not only in a separate guide.\n\nWorks with\n- Goodnotes, Notability, Samsung Notes, Xodo and Noteshelf\n- on iPad, Android tablets and Windows tablets\nYou need a PDF note app like one of these to tap the links and write on the pages.\n\nNot for\n- Phones: the pages are tablet size\n- Files, Photos and other file viewers: they show the pages but do not follow the links\n- Anyone who wants a spreadsheet or a fillable form: this is a PDF you write on by hand or with your app's text tool\n\nLinks not tapping? Turn the pen off to follow a link and back on to write.\n\nHow to start\n1. Download the file from Etsy in a web browser. The Etsy app cannot download digital files.\n2. Open the PDF in your note app and import it as a PDF.\n3. Tap the Setup check buttons, then open the Library, write your first title on line 1 and tap its number.\n\nQuestions buyers ask\n- The Etsy app won't download it. Use a web browser (Safari, Chrome) and go to Purchases. The Etsy app cannot download digital files.\n- Which app do I need? A PDF note app: Goodnotes, Notability, Samsung Notes, Xodo or Noteshelf.\n- The links don't tap. Turn the pen off (read or view mode). The Setup check page tests this in seconds.\n- Can I type in it? Yes, with your app's text tool and any font your app has. It isn't a fillable form, so there are no typing boxes.\n- Can I turn it to landscape? No. It is portrait only, like a book held upright, and every page is laid out for that.\n\nWhat you get\n- Shelf-Life.pdf (2.89 MB, 126 pages, portrait)\nOne PDF, not a zip, so it downloads and imports quickly.\nDigital download. Nothing is shipped.\n\nHelp\nThe Setup check page has a fix list. Still stuck? Send a message through Etsy and name your app and device.",
     "tags": [
       "reading journal",
       "reading tracker",
@@ -1789,6 +1786,7 @@
       }
     ]
   },
+  "revised": 1792766911225,
   "status": "queued",
   "title": "Shelf Life"
 }

@@ -233,5 +233,62 @@
   ],
   "added_by": "picker",
   "added_at": "2026-10-23T13:42:04Z"
+ },
+ "goodnotes-planner": {
+  "name": "Goodnotes planner",
+  "query": "goodnotes planner",
+  "line": "planner",
+  "group": "Digital planners",
+  "format": "Hyperlinked digital planner PDF for Goodnotes, Notability and other PDF apps",
+  "include_any": [
+   "digital planner",
+   "goodnotes",
+   "hyperlinked",
+   "ipad planner",
+   "notability"
+  ],
+  "exclude_any": [
+   "printable",
+   "physical",
+   "sticker",
+   "notion",
+   "plr",
+   "mrr",
+   "canva"
+  ],
+  "focus_any": [
+   "goodnotes",
+   "planner"
+  ],
+  "added_by": "picker",
+  "added_at": "2026-10-26T19:02:03Z"
+ },
+ "digital-planner": {
+  "name": "Digital planner",
+  "query": "digital planner",
+  "line": "planner",
+  "group": "Digital planners",
+  "format": "Hyperlinked digital planner PDF for Goodnotes, Notability and other PDF apps",
+  "include_any": [
+   "digital planner",
+   "goodnotes",
+   "hyperlinked",
+   "ipad planner",
+   "notability"
+  ],
+  "exclude_any": [
+   "printable",
+   "physical",
+   "sticker",
+   "notion",
+   "plr",
+   "mrr",
+   "canva"
+  ],
+  "focus_any": [
+   "planner"
+  ],
+  "added_by": "picker",
+  "added_at": "2026-10-26T19:02:03Z"
  }
 }
