@@ -704,7 +704,8 @@
        "label": "Notes"
       }
      ]
-    }
+    },
+    "iso_weeks": true
    },
    {
     "module": "spare_week",
@@ -779,7 +780,7 @@
   {
    "at": "2026-10-27",
    "by": "build (stage 4), check round 1",
-   "what": "Week numbers are ISO 8601 (Week 1 = Jan 4 to 10, 2027; 52 weeks; head start now holds 10 weeks, Oct 26 to Jan 3). Print map gets a Weeks column and the start steps route by today's date (find today in the Weeks column, print that row) instead of sending every pre-2027 buyer to November; the first print skips the check sheet (pages 1 to 2 and 5 to 8). Manual duplex reload is spelled out. Habit name column widened to about 40%. On-screen arrows are labelled (Previous week, Next week) and solid buttons became outlined so nothing prints as a heavy ink block."
+   "what": "Week numbers are ISO 8601 (calendar iso_weeks: true, opt-in in this brief) (Week 1 = Jan 4 to 10, 2027; 52 weeks; head start now holds 10 weeks, Oct 26 to Jan 3). Print map gets a Weeks column and the start steps route by today's date (find today in the Weeks column, print that row) instead of sending every pre-2027 buyer to November; the first print skips the check sheet (pages 1 to 2 and 5 to 8). Manual duplex reload is spelled out. Habit name column widened to about 40%. On-screen arrows are labelled (Previous week, Next week) and solid buttons became outlined so nothing prints as a heavy ink block."
   }
  ]
 }

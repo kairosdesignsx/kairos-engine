@@ -115,11 +115,7 @@ class Planner:
         self.gray = bool(self.eink.get('grayscale'))
         self.btn = self.th.get('button', self.th['ink'])  # buttons (Open, Go there): theme token 'button', default ink
         # iso_weeks (calendar option): Week 1 is the week holding January 4 (ISO 8601), so days before it sit in week 0
-        # default: ISO when a head_start holds the days before ISO Week 1 (Week 1 = the week with Jan 4, so no Week 53 in 2027);
-        # calendar iso_weeks false keeps the old count (Week 1 = the week holding Jan 1)
-        _cal = next((x for x in spec.get('sections', []) if x.get('module') == 'calendar'), {})
-        _hs = any(x.get('module') == 'head_start' for x in spec.get('sections', []))
-        self.iso = bool(_cal.get('iso_weeks', _hs and not self.undated))
+        self.iso = any(x.get('module') == 'calendar' and x.get('iso_weeks') for x in spec.get('sections', []))
         self.noun = 'planner'   # what the file calls itself in printed help ('journal' when the cover button says so)
         # print_format section: true paper sizes, safe margins and spreads for home printing (applies to the whole file)
         self.pf = next((x for x in spec.get('sections', []) if x.get('module') == 'print_format'), None) or {}
@@ -574,7 +570,7 @@ def m_link_test(P, sec):
 
 
 @module('calendar', 'The dated or undated calendar: month pages, optional habit page per month, week pages and day pages, all cross-linked. month: {side: [labels]}, habits: bool, week: {preset | side: [blocks]}, day: {preset | left: [blocks], right: [blocks]}, days: bool',
-        params={'month': 'dict', 'habits': 'bool', 'week': 'dict', 'day': 'dict', 'days': 'bool', 'iso_weeks': 'bool: ISO 8601 week numbers (Week 1 holds January 4); needs a head_start covering the days before it. Default: true when the spec has a head_start, else false',
+        params={'month': 'dict', 'habits': 'bool', 'week': 'dict', 'day': 'dict', 'days': 'bool', 'iso_weeks': 'bool: ISO 8601 week numbers (Week 1 holds January 4); needs a head_start covering the days before it.',
                 'free_weeks': 'bool (undated only): weeks 1 to 52 run in order from the week the buyer starts, not filed under months; adds a Weeks page (anchor weeks) with all 52, month pages link to it'})
 def m_calendar(P, sec):
     if P.pf:

@@ -234,7 +234,7 @@ PRINT = {
   {"module": "table", "label": "Dates", "anchor": "dates", "headers": ["Date", "Done"], "rows": 20, "check_columns": ["Done"]},
   {"module": "table", "label": "Dates", "anchor": "dates2", "headers": ["Date", "Done"], "rows": 20, "check_columns": ["Done"]},
   {"module": "head_start", "label": "Head start", "anchor": "hs", "from": "2026-11", "to": "2026-12", "days": False, "nav": False},
-  {"module": "calendar", "habits": False, "days": False},
+  {"module": "calendar", "habits": False, "days": False, "iso_weeks": True},
   {"module": "spare_week", "anchor": "spare", "count": 1}
  ]}
 
@@ -256,11 +256,11 @@ def test_print():
     assert 'class="rail"' not in html and '@page{size:8.5in 11in' in html and '@page{size:210mm 297mm' in a4['html']
     assert 'href="#w12"' in pages['year'] and 'href="#hsw10"' in pages['year'] and 'href="#hsw10"' in pages['hs12'] and 'href="#hsw01"' in pages['hs11'], 'dates open their week (Jan 1 to 3 sit in the last head-start week)'
     assert 'href="#w01"' in pages['hsw10b'] and 'href="#hsw10"' in pages['w01'], 'head start runs into Week 1'
-    assert 'Jan 4 to Jan 10' in pages['w01'] and 'Mar 22 to Mar 28' in pages['w12'] and 'Dec 27 to Jan 2' in pages['w52'], 'ISO 8601 week numbers by default with a head start'
+    assert 'Jan 4 to Jan 10' in pages['w01'] and 'Mar 22 to Mar 28' in pages['w12'] and 'Dec 27 to Jan 2' in pages['w52'], 'iso_weeks: ISO 8601 week numbers'
     assert 'Weeks' in pages['printmap'] and 'Oct 26 to Nov 29' in pages['printmap'] and '1 to 2 and 5 to 8' in pages['printmap'], 'Print map: weeks per row, first print skips the check sheet'
     assert 'class="pfnav"' in pages['w12'] and 'Previous week' in pages['w12']
-    no_iso = gen.build(dict(PRINT, sections=[dict(x, iso_weeks=False) if x['module'] == 'calendar' else x for x in PRINT['sections']]))
-    assert 'w53' in [a for a, _ in no_iso['page_modules']], 'iso_weeks false keeps the old count'
+    no_iso = gen.build(dict(PRINT, sections=[{k: v for k, v in x.items() if k != 'iso_weeks'} for x in PRINT['sections']]))
+    assert 'w53' in [a for a, _ in no_iso['page_modules']] and not no_iso['print_problems'], 'without iso_weeks the old count stays (opt-in only)'
     assert f'1 to {idx["dates2"]}' in pages['printmap'] and '%%' not in html and 'Page 3' in pages['start']
     assert '<circle' in pages['w12b'] and 'Thursday to Sunday' in pages['w12']
     assert re.search(r'id="w12" data-side="even"', html) and re.search(r'id="w12b" data-side="odd"', html)
