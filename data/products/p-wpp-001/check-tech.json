@@ -2,12 +2,12 @@
  {
   "name": "file size",
   "pass": true,
-  "detail": "Open-Week-2027-Letter.pdf: 1.45 MB (limit 19.5, Etsy 20)"
+  "detail": "Open-Week-2027-Letter.pdf: 1.46 MB (limit 19.5, Etsy 20)"
  },
  {
   "name": "file size",
   "pass": true,
-  "detail": "Open-Week-2027-A4.pdf: 1.45 MB (limit 19.5, Etsy 20)"
+  "detail": "Open-Week-2027-A4.pdf: 1.46 MB (limit 19.5, Etsy 20)"
  },
  {
   "name": "no text overflow",
@@ -27,7 +27,7 @@
  {
   "name": "links present in PDF",
   "pass": true,
-  "detail": "1743 link annotations for 1743 links in the source"
+  "detail": "1741 link annotations for 1741 links in the source"
  },
  {
   "name": "fonts licensed (OFL list only)",

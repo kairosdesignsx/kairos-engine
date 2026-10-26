@@ -39,7 +39,7 @@
   {
    "key": "fix:f_not_useful",
    "kind": "fix",
-   "text": "complaint:c_not_useful: The core of the product is the thing these buyers could not find: a two-page weekly spread for all 53 weeks of 2027 plus 9 head-start weeks, Mon to Wed on the left and Thu to Sun on the right in vertical columns. Photo 1 shows the open spread, and the listing's first line says 'two pages for every week'."
+   "text": "complaint:c_not_useful: The core of the product is the thing these buyers could not find: a two-page weekly spread for all 52 weeks of 2027 (ISO week numbers) plus 10 head-start weeks, Mon to Wed on the left and Thu to Sun on the right in vertical columns. Photo 1 shows the open spread, and the listing's first line says 'two pages for every week'."
   },
   {
    "key": "fix:f_print",
@@ -59,7 +59,7 @@
   {
    "key": "fix:f_support",
    "kind": "fix",
-   "text": "complaint:c_support: The buyer can fix the common problems without waiting for a reply: the back of the Print check lists the fix for each of the five usual print problems and the settings that work, and the listing FAQ repeats them. No reply-time promise anywhere in the product or listing (r007); the last line of the fix list says what the buyer can do next: send the shop an Etsy message with a photo of the Print check sheet."
+   "text": "complaint:c_support: The buyer can fix the common problems without waiting for a reply: the back of the Print check lists the fix for each of the five usual print problems and the settings that work, and the listing FAQ repeats them. No reply-time promise anywhere in the product or listing (r007); the last line of the fix list says what the buyer can do next: 'Still stuck? Send the shop an Etsy message.'"
   },
   {
    "key": "fix:f_value",
@@ -249,13 +249,13 @@
    "module": "calendar"
   },
   {
-   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/w53.png",
-   "anchor": "w53",
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/w52.png",
+   "anchor": "w52",
    "module": "calendar"
   },
   {
-   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/w53b.png",
-   "anchor": "w53b",
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/w52b.png",
+   "anchor": "w52b",
    "module": "calendar"
   },
   {
@@ -394,6 +394,14 @@
    "head_start"
   ],
   [
+   "hsw10",
+   "head_start"
+  ],
+  [
+   "hsw10b",
+   "head_start"
+  ],
+  [
    "hs12b",
    "head_start"
   ],
@@ -434,19 +442,19 @@
    "calendar"
   ],
   [
-   "w05",
-   "calendar"
-  ],
-  [
-   "w05b",
-   "calendar"
-  ],
-  [
    "m01b",
    "calendar"
   ],
   [
    "m02",
+   "calendar"
+  ],
+  [
+   "w05",
+   "calendar"
+  ],
+  [
+   "w05b",
    "calendar"
   ],
   [
@@ -474,19 +482,19 @@
    "calendar"
   ],
   [
-   "w09",
-   "calendar"
-  ],
-  [
-   "w09b",
-   "calendar"
-  ],
-  [
    "m02b",
    "calendar"
   ],
   [
    "m03",
+   "calendar"
+  ],
+  [
+   "w09",
+   "calendar"
+  ],
+  [
+   "w09b",
    "calendar"
   ],
   [
@@ -514,19 +522,19 @@
    "calendar"
   ],
   [
-   "w13",
-   "calendar"
-  ],
-  [
-   "w13b",
-   "calendar"
-  ],
-  [
    "m03b",
    "calendar"
   ],
   [
    "m04",
+   "calendar"
+  ],
+  [
+   "w13",
+   "calendar"
+  ],
+  [
+   "w13b",
    "calendar"
   ],
   [
@@ -562,19 +570,19 @@
    "calendar"
   ],
   [
-   "w18",
-   "calendar"
-  ],
-  [
-   "w18b",
-   "calendar"
-  ],
-  [
    "m04b",
    "calendar"
   ],
   [
    "m05",
+   "calendar"
+  ],
+  [
+   "w18",
+   "calendar"
+  ],
+  [
+   "w18b",
    "calendar"
   ],
   [
@@ -602,19 +610,19 @@
    "calendar"
   ],
   [
-   "w22",
-   "calendar"
-  ],
-  [
-   "w22b",
-   "calendar"
-  ],
-  [
    "m05b",
    "calendar"
   ],
   [
    "m06",
+   "calendar"
+  ],
+  [
+   "w22",
+   "calendar"
+  ],
+  [
+   "w22b",
    "calendar"
   ],
   [
@@ -642,19 +650,19 @@
    "calendar"
   ],
   [
-   "w26",
-   "calendar"
-  ],
-  [
-   "w26b",
-   "calendar"
-  ],
-  [
    "m06b",
    "calendar"
   ],
   [
    "m07",
+   "calendar"
+  ],
+  [
+   "w26",
+   "calendar"
+  ],
+  [
+   "w26b",
    "calendar"
   ],
   [
@@ -690,19 +698,19 @@
    "calendar"
   ],
   [
-   "w31",
-   "calendar"
-  ],
-  [
-   "w31b",
-   "calendar"
-  ],
-  [
    "m07b",
    "calendar"
   ],
   [
    "m08",
+   "calendar"
+  ],
+  [
+   "w31",
+   "calendar"
+  ],
+  [
+   "w31b",
    "calendar"
   ],
   [
@@ -730,19 +738,19 @@
    "calendar"
   ],
   [
-   "w35",
-   "calendar"
-  ],
-  [
-   "w35b",
-   "calendar"
-  ],
-  [
    "m08b",
    "calendar"
   ],
   [
    "m09",
+   "calendar"
+  ],
+  [
+   "w35",
+   "calendar"
+  ],
+  [
+   "w35b",
    "calendar"
   ],
   [
@@ -778,19 +786,19 @@
    "calendar"
   ],
   [
-   "w40",
-   "calendar"
-  ],
-  [
-   "w40b",
-   "calendar"
-  ],
-  [
    "m09b",
    "calendar"
   ],
   [
    "m10",
+   "calendar"
+  ],
+  [
+   "w40",
+   "calendar"
+  ],
+  [
+   "w40b",
    "calendar"
   ],
   [
@@ -818,19 +826,19 @@
    "calendar"
   ],
   [
-   "w44",
-   "calendar"
-  ],
-  [
-   "w44b",
-   "calendar"
-  ],
-  [
    "m10b",
    "calendar"
   ],
   [
    "m11",
+   "calendar"
+  ],
+  [
+   "w44",
+   "calendar"
+  ],
+  [
+   "w44b",
    "calendar"
   ],
   [
@@ -858,19 +866,19 @@
    "calendar"
   ],
   [
-   "w48",
-   "calendar"
-  ],
-  [
-   "w48b",
-   "calendar"
-  ],
-  [
    "m11b",
    "calendar"
   ],
   [
    "m12",
+   "calendar"
+  ],
+  [
+   "w48",
+   "calendar"
+  ],
+  [
+   "w48b",
    "calendar"
   ],
   [
@@ -903,14 +911,6 @@
   ],
   [
    "w52b",
-   "calendar"
-  ],
-  [
-   "w53",
-   "calendar"
-  ],
-  [
-   "w53b",
    "calendar"
   ],
   [

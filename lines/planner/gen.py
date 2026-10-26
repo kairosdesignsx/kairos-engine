@@ -386,7 +386,7 @@ def m_cover(P, sec):
         owner = f'<div style="display:flex;align-items:flex-end;gap:14px"><span class="k" style="font-size:{P.fs(15)}">{esc(sec["owner"])}</span><span style="flex:1;border-bottom:1.3px solid {th["ink"]};height:30px"></span></div>' if sec.get('owner') else ''
         inner += f'<div style="position:absolute;left:90px;right:120px;bottom:96px;display:flex;flex-direction:column;gap:46px"><div style="display:flex;gap:22px">{facts}</div>{owner}</div>'
         inner = inner.replace('justify-content:center;padding:0 120px 0 90px', 'justify-content:flex-start;padding:2.3in 120px 0 90px').replace(f'background:{P.btn};color:{th["paper"]}', f'box-shadow:inset 0 0 0 1.5px {th["ink"]};color:{th["ink"]}')
-    P.page('cover', motif(th, 'tr', 5, 260) + motif(th, 'bl', 9, 220) + inner + P.rail(), raw=True, style=f'background:{th["paper"] if (P.gray or P.pf) else th["soft"]}')  # e-ink: pure white, a tint dithers; print: no tint
+    P.page('cover', motif(th, 'tr', 5, 260) + motif(th, 'bl', 9, 220) + inner + P.rail(), raw=True, style=f'background:{th.get("cover_bg") or (th["paper"] if (P.gray or P.pf) else th["soft"])}')  # theme 'cover_bg' overrides  # e-ink: pure white, a tint dithers; print: no tint
 
 
 @module('index', 'Contents page: a card for every section plus all months', nav='Home')
@@ -411,7 +411,7 @@ def _fill_index(P):
         grid = f'<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px">{cards}</div><p class="k" style="margin-top:6px">Months</p><div style="flex:1;display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:1fr;gap:8px">{months}</div>'
     else:  # landscape: the months grid also grows into the free space (no blank band above the tip, style rule r006)
         months = months.replace('padding:8px 0;text-align:center', 'display:flex;align-items:center;justify-content:center;text-align:center').replace("font:600 12px", f"font:600 {P.fs(13)}")
-        grid = f'<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px">{cards}</div>\n      <p class="k" style="margin-top:6px">Months</p><div style="flex:1;max-height:330px;display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:1fr;gap:8px">{months}</div>'
+        grid = f'<div style="display:grid;grid-template-columns:repeat({int(P.s.get("index_cols", 4))},1fr);gap:10px">{cards}</div>\n      <p class="k" style="margin-top:6px">Months</p><div style="flex:1;max-height:330px;display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:1fr;gap:8px">{months}</div>'
     inner = f'''<p class="h" style="font-size:44px">Contents</p>
       {grid}
       <div class="box fill" style="margin-top:auto{";flex:none" if P.HT > P.W else ""}"><span class="k">How the links work</span><span style="font-size:13px;line-height:1.5">{esc(tip)}</span></div>'''
@@ -1044,11 +1044,11 @@ def _tick_box(P, size=15):
     return f'<i style="width:{size}px;height:{size}px;border:1.4px solid {P.th["muted"]};border-radius:3px;display:block;margin:auto;flex:none"></i>'
 
 
-def _chip(P, label, anchor, primary=False):
+def _chip(P, label, anchor, primary=False, back=False):
     """A button to another page: filled (primary) or outlined."""
     th = P.th
     look = f'background:{P.btn};color:{th["paper"]}' if primary else f'background:{th["paper"]};color:{th["ink"]};box-shadow:inset 0 0 0 1.4px {th["line"]}'
-    return f'<a href="#{anchor}" style="display:inline-flex;align-items:center;gap:6px;white-space:nowrap;padding:7px 13px;border-radius:{P.rpill}px;{look};font:600 {P.fs(12)} \'{th["body"]}\'">{esc(label)} {arrow("r", 12)}</a>'
+    return f'<a href="#{anchor}" style="display:inline-flex;align-items:center;gap:6px;white-space:nowrap;padding:7px 13px;border-radius:{P.rpill}px;{look};font:600 {P.fs(12)} \'{th["body"]}\'">{(arrow("l", 12) + " " + esc(label)) if back else (esc(label) + " " + arrow("r", 12))}</a>'
 
 
 def _wline(P, label, width=None, after=''):
@@ -1179,7 +1179,7 @@ def m_meal_week(P, sec):
     ncol = 3 if portrait else 2
     grocery = f'<div class="box" style="flex:1"><span class="k">Grocery list</span><div style="flex:1;display:grid;grid-template-columns:repeat({ncol},minmax(0,1fr));gap:10px 18px">{gl}{fl}</div></div>'
     for n in range(1, N + 1):
-        back = _chip(P, f'Week {n}', f'{wk}{n:02d}', primary=True) if wk else ''
+        back = _chip(P, f'Week {n}', f'{wk}{n:02d}', primary=True, back=True) if wk else ''
         right = f'<div style="display:flex;gap:12px;align-items:center">{back}{_arrows(mid(n - 1) if n > 1 else None, mid(n + 1) if n < N else None)}</div>'
         body = f'{grid}{grocery}' if portrait else f'<div class="row" style="flex:1">{grid.replace("flex:1.5", "flex:1.7", 1)}{grocery}</div>'
         P.page(mid(n), P.head(f'{kicker} · week {n}', 'Meal plan', right=right) + body, active=mid(1),
@@ -1239,7 +1239,7 @@ def m_workout_log(P, sec):
     bottom = f'<div class="row" style="flex:1">{"".join(lines_box(P, f) for f in fields)}</div>'
     for i in range(1, N + 1):
         w, k = week_of(i), k_of(i)
-        back = _chip(P, f'Week {w}', f'{wk}{w:02d}', primary=True) if (per and wk) else ''
+        back = _chip(P, f'Week {w}', f'{wk}{w:02d}', primary=True, back=True) if (per and wk) else ''
         right = f'<div style="display:flex;gap:12px;align-items:center">{back}{_arrows(sid(i - 1) if i > 1 else None, sid(i + 1) if i < N else None)}</div>'
         kick = f'{kicker} · week {w}, {k} of {per}' if per else f'{kicker} · {i} of {N}'
         trail = f'<a href="#{lpg((i - 1) // rpp + 1)}">{esc(label)}</a> / ' + (f'<a href="#{wk}{w:02d}">Week {w}</a> / Workout {k}' if (per and wk) else f'Workout {i}')
@@ -1263,7 +1263,7 @@ def m_body_measure(P, sec):
     table = _table_box(P, 'Check-ins', cols, ['', 'Date'] + parts, rows, style='flex:1', hint='Measure in the morning, before eating. Change is your latest row minus Start.')
     tipbox = (f'<div class="box fill" style="flex:none"><span class="k">How to measure</span><div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 24px">' +
               ''.join(f'<p style="font-size:{P.fs(12)};line-height:1.4"><b>{esc(t)}</b> {esc(x)}</p>' for t, x in tips) + '</div></div>') if tips else ''
-    units = f'<div style="display:flex;gap:22px;align-items:flex-end">{_wline(P, "Length in (cm or in)")}{_wline(P, "Weight in (kg or lb)")}</div>'
+    units = f'<div style="display:flex;gap:22px;align-items:flex-end">{_wline(P, "Length unit, cm or in")}{_wline(P, "Weight unit, kg or lb")}</div>'
     P.page(a, P.head(kicker, label) + units + table + tipbox, active=a)
 
 
@@ -1349,7 +1349,7 @@ def m_prompt_week(P, sec):
                 f'<p class="h" style="font-size:{26 * P.scale:.0f}px;line-height:1.25">{esc(q)}</p></div>')
         main = f'<div class="col" style="flex:1.5">{card}{lines_box(P, "My answer")}</div>'
         body = f'<div class="row" style="flex:1">{main}<div class="col" style="flex:1">{side}</div></div>' if not portrait else f'{card}{lines_box(P, "My answer")}<div class="row" style="flex:.7">{side}</div>'
-        back = _chip(P, f'Week {n}', f'{wk}{n:02d}', primary=True) if wk else ''
+        back = _chip(P, f'Week {n}', f'{wk}{n:02d}', primary=True, back=True) if wk else ''
         right = f'<div style="display:flex;gap:12px;align-items:center">{back}{_arrows(jid(n - 1) if n > 1 else None, jid(n + 1) if n < N else None)}</div>'
         P.page(jid(n), P.head(f'{kicker} · week {n}', label, right=right) + body, active=jid(1),
                crumb=(f'<a href="#{wk}{n:02d}">Week {n}</a> / {esc(label)}' if wk else f'{esc(label)} · week {n}'))
