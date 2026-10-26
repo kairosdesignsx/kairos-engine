@@ -19,7 +19,7 @@
   },
   {
    "id": "mh_months_year",
-   "what": "Month spreads with a full calendar grid, goals, important dates and bills, plus a 2027 year at a glance and a Dates to remember page, so the weekly planner is complete without being a bundle.",
+   "what": "A month page for every month with a full calendar grid, goals, important dates and bills, a month review page (wins, carry over, notes) facing the next month, plus a 2027 year at a glance and Dates to remember pages, so the weekly planner is complete without being a bundle.",
    "evidence": [
     "praise:p_complete",
     "keyword:monthly planner",
@@ -168,7 +168,7 @@
   {
    "id": "f_hard",
    "complaint": "complaint:c_hard",
-   "how": "No platform, app or account: a plain PDF printed on paper. The Print map turns the file into one small print job per month (about 12 pages), and every week lies open as a spread in the binder.",
+   "how": "No platform, app or account: a plain PDF printed on paper. The Print map turns the file into one small print job per month (whole sheets, about 10 to 12 pages), and every week lies open as a spread in the binder.",
    "evidence": [
     "complaint:c_hard",
     "complaint:c_extra_app",
@@ -499,7 +499,7 @@
      ]
     },
     "month_spread": {
-     "right": [
+     "page": [
       {
        "kind": "checklist",
        "label": "Goals this month",
@@ -519,6 +519,19 @@
          "rows": 7
         }
        ]
+      }
+     ],
+     "review": [
+      {
+       "kind": "lines",
+       "label": "Wins this month",
+       "grow": false,
+       "height": 168
+      },
+      {
+       "kind": "checklist",
+       "label": "Carry over to next month",
+       "rows": 6
       },
       {
        "kind": "lines",
@@ -530,7 +543,14 @@
    {
     "module": "cover",
     "start": "start",
-    "button": "Start here"
+    "button": "Start here",
+    "size": 80,
+    "facts": [
+     "Dated weeks from Monday, October 26, 2026 to Sunday, January 2, 2028",
+     "Two pages for every week, Monday start",
+     "Print map on page 5: print one month at a time"
+    ],
+    "owner": "This planner belongs to"
    },
    {
     "module": "guide",
@@ -551,15 +571,15 @@
      ],
      [
       "Print one month at a time",
-      "The Print map lists the pages for every month. Print pages 1 to 7 once. Buying in October to December 2026? Print Head start November next; its first week begins Monday, October 26. Buying later? Print the current month's row and start this week.",
+      "The Print map lists the pages for every month, and each row is whole sheets. Print pages 1 to 8 once. Buying in October to December 2026? Print Head start November next; its first week begins Monday, October 26. Buying later? Print the current month's row and start this week.",
       "printmap"
      ],
      [
       "Punch and bind",
-      "Every month and every week opens as a two-page spread when printed double-sided. The binding edge is the wide margin: use a 3-hole punch, a disc punch or a binder clip. No double-sided printer? Print odd pages, put the stack back in the tray, then print even pages."
+      "Print each row double-sided, flip on long edge, and every week opens as a two-page spread. The binding edge is the wide margin: use a 3-hole punch, a disc punch or a binder clip. No double-sided printer? Print odd pages, put the stack back in the tray, then print even pages."
      ]
     ],
-    "tip": "Missed a week? Skip it and print this one. Need more weeks or a fresh copy? Print the same pages again, or the spare undated week, as often as you like."
+    "tip": "Missed a week? Skip it and start with this one. Need extra weeks or a fresh copy? Print that month's row again, or the Spare week row, as often as you like."
    },
    {
     "module": "print_check",
@@ -595,7 +615,7 @@
    {
     "module": "table",
     "label": "Dates to remember",
-    "kicker": "Birthdays and more",
+    "kicker": "Birthdays and more, page 1 of 2",
     "anchor": "dates",
     "nav": false,
     "headers": [
@@ -604,11 +624,30 @@
      "Plan or gift",
      "Done"
     ],
-    "rows": 24,
+    "rows": 26,
     "check_columns": [
      "Done"
     ],
     "dividers": true
+   },
+   {
+    "module": "table",
+    "label": "Dates to remember",
+    "kicker": "Birthdays and more, page 2 of 2",
+    "anchor": "dates2",
+    "nav": false,
+    "headers": [
+     "Date",
+     "Occasion",
+     "Plan or gift",
+     "Done"
+    ],
+    "rows": 26,
+    "check_columns": [
+     "Done"
+    ],
+    "dividers": true,
+    "index": true
    },
    {
     "module": "head_start",
@@ -674,21 +713,13 @@
     "anchor": "spare",
     "count": 1,
     "nav": false
-   },
-   {
-    "module": "lined",
-    "label": "Notes",
-    "kicker": "Notes",
-    "pages": 2,
-    "anchor": "notes",
-    "nav": false
    }
   ]
  },
  "new_modules": [
   {
    "name": "print_format",
-   "what": "Format switch for home-printed planners: prints no page. Put it first in sections; it applies to the whole file wherever it sits (read in Planner.__init__ like eink_format). (1) Sizes: one build per entry in sizes, portrait only: 'letter' = 8.5 x 11 in (816 x 1056 px at 96 px per inch), 'a4' = 210 x 297 mm (794 x 1123 px). @page size is written in in or mm so printers see the true paper size. The build stage writes one PDF per size, named '<title>-Letter.pdf' and '<title>-A4.pdf', with the same page order and page count in both (fail the build if the counts differ). Layout reflows with flex; nothing is laid out for one size only. (2) Safe area: nothing (text, rules, tints, tabs, decoration) is drawn within margin_in of any paper edge, because home printers cannot print the outer 0.2 to 0.25 in. On top of that the binding edge gets binding_in extra. With duplex true, odd pages (sheet fronts, right-hand pages) have the binding margin on the left and even pages (sheet backs, left-hand pages) on the right; with duplex false it is always on the left. (3) Spreads and parity: with duplex true, every month spread and week spread must start on an even PDF page (page 1 is the cover, a sheet front). Do not insert filler pages silently: fail the build and list the anchors that landed on an odd page. (4) Paper and ink: refuse (validate_spec problem) a theme whose paper is not #FFFFFF, because a tinted page prints with a white frame where the printer cannot reach. The cover background is white too (no soft fill). Filled boxes keep the soft token (a light tint). No month tints, no colored card backgrounds, no motif. (5) hide_nav true: no top-bar pills and no month rail on the page edge (an edge rail would be cut off by the printer). The trail stays, as plain small muted text in the header row, and keeps its links, as do the header arrows, so the PDF still navigates on screen. (6) page_numbers true: a small page number (body font, muted, 10px) at the outer bottom corner of each page inside the safe area, equal to the PDF page index, so the Print map and printed numbers match. Brand text moves to the inner bottom corner. (7) vector_rules true: writing lines and dot grids drawn as vector strokes (reuse the eink_format vector_script), 1px in the line color, so they print crisp instead of as blurry gradient patterns. (8) No day pages: when calendar days is false (and head_start days is false), every date on the year, month and head-start month pages links to the left page of the week holding that date (main year wNN, head start hswNN; dates in main Week 1 that fall in December 2026 link to w01), never to a missing day page. (9) month_spread {right: [blocks]}: each month of calendar and head_start becomes two pages. Left (anchor mNN, head start hsMM): kicker year, month title, week chips linking to each week's left page, then the Monday-start month grid filling the rest of the page width and height (5 or 6 rows), date cells linked as in (8). Right (anchor mNNb, head start hsMMb): head with kicker 'This month' and the month name, then the right blocks stacked to fill the page, plus prev and next month arrows. month.side is ignored. (10) week_spread {left_top: [blocks], day_rows: int, weekend: 'stacked', right_bottom: [blocks]}: each week of calendar, head_start and spare_week becomes two pages. Left (anchor wNN, head start hswNN): kicker 'Week N' plus year (head start: 'Head start, week N of 9'), title as the date range ('Mar 15 to Mar 21'), a small link 'Thursday to Sunday' to the right page, previous week arrow; then left_top blocks across the full width; then three equal vertical day columns Mon, Tue, Wed filling the rest. Right (anchor wNNb, hswNNb): kicker 'Week N', title 'Thursday to Sunday', next week arrow (last head-start week: to w01; Week 53: none); three columns Thu, Fri and a third column with Sat above Sun at half height each; right_bottom blocks across the full width underneath. Each day column is a box: day name as the label (italic with theme labels italic), the date number in the display font at about 26px, day_rows checkbox rows, then writing lines to the bottom of the box. Dates outside the dated range are faded and written but not linked, as on the current week pages. week.side is ignored. The week built once under the month holding its Thursday (r008) is unchanged. (11) New block kind 'habits' (label, rows), usable in any blocks list: a header row of seven day initials M T W T F S S over seven circle columns, and rows lines, each with a ruled write-in habit name (about 40% of the width) and seven empty SVG circles (r004), one per day.",
+   "what": "Format switch for home-printed planners: prints no page. Put it first in sections; it applies to the whole file wherever it sits (read in Planner.__init__ like eink_format). (1) Sizes: one build per entry in sizes, portrait only: 'letter' = 8.5 x 11 in (816 x 1056 px at 96 px per inch), 'a4' = 210 x 297 mm (794 x 1123 px). @page size is written in in or mm so printers see the true paper size. The build stage writes one PDF per size, named '<title>-Letter.pdf' and '<title>-A4.pdf', with the same page order and page count in both (fail the build if the counts differ). Layout reflows with flex; nothing is laid out for one size only. (2) Safe area: nothing (text, rules, tints, tabs, decoration) is drawn within margin_in of any paper edge, because home printers cannot print the outer 0.2 to 0.25 in. On top of that the binding edge gets binding_in extra. With duplex true, odd pages (sheet fronts, right-hand pages) have the binding margin on the left and even pages (sheet backs, left-hand pages) on the right; with duplex false it is always on the left. (3) Spreads and parity: with duplex true, every month spread and week spread must start on an even PDF page (page 1 is the cover, a sheet front). Do not insert filler pages silently: fail the build and list the anchors that landed on an odd page. (4) Paper and ink: refuse (validate_spec problem) a theme whose paper is not #FFFFFF, because a tinted page prints with a white frame where the printer cannot reach. The cover background is white too (no soft fill). Filled boxes keep the soft token (a light tint). No month tints, no colored card backgrounds, no motif. (5) hide_nav true: no top-bar pills and no month rail on the page edge (an edge rail would be cut off by the printer). The trail stays, as plain small muted text in the header row, and keeps its links, as do the header arrows, so the PDF still navigates on screen. (6) page_numbers true: a small page number (body font, muted, 10px) at the outer bottom corner of each page inside the safe area, equal to the PDF page index, so the Print map and printed numbers match. Brand text moves to the inner bottom corner. (7) vector_rules true: writing lines and dot grids drawn as vector strokes (reuse the eink_format vector_script), 1px in the line color, so they print crisp instead of as blurry gradient patterns. (8) No day pages: when calendar days is false (and head_start days is false), every date on the year, month and head-start month pages links to the left page of the week holding that date (main year wNN, head start hswNN; dates in main Week 1 that fall in December 2026 link to w01), never to a missing day page. (9) month_spread {page: [blocks], review: [blocks]}: each month of calendar and head_start prints as whole sheets, so a buyer can print one month at a time and the spreads still face each other: the month page (anchor mNN, head start hsMM) is a sheet front with the year, month title, a Monday-start grid with a week column (each date and week links to its week's left page) and the page blocks under it; then every week as a spread; then the month review page (anchor mNNb) on the last sheet back, with the review blocks, facing the next month's page. month.side is ignored. (10) week_spread {left_top: [blocks], day_rows: int, weekend: 'stacked', right_bottom: [blocks]}: each week of calendar, head_start and spare_week becomes two pages. Left (anchor wNN, head start hswNN): kicker 'Week N' plus year (head start: 'Head start, week N of 9'), title as the date range ('Mar 15 to Mar 21'), a small link 'Thursday to Sunday' to the right page, previous week arrow; then left_top blocks across the full width; then three equal vertical day columns Mon, Tue, Wed filling the rest. Right (anchor wNNb, hswNNb): kicker 'Week N', title 'Thursday to Sunday', next week arrow (last head-start week: to w01; Week 53: none); three columns Thu, Fri and a third column with Sat above Sun at half height each; right_bottom blocks across the full width underneath. Each day column is a box: day name as the label (italic with theme labels italic), the date number in the display font at about 26px, day_rows checkbox rows, then writing lines to the bottom of the box. Dates outside the dated range are faded and written but not linked, as on the current week pages. week.side is ignored. The week built once under the month holding its Thursday (r008) is unchanged. (11) New block kind 'habits' (label, rows), usable in any blocks list: a header row of seven day initials M T W T F S S over seven circle columns, and rows lines, each with a ruled write-in habit name (about 40% of the width) and seven empty SVG circles (r004), one per day.",
    "params": {
     "sizes": "list of 'letter' | 'a4' (one PDF per size)",
     "margin_in": "number, safe margin on every edge in inches (0.5)",
@@ -697,7 +728,7 @@
     "hide_nav": "bool, no top bar and no edge rail; trail and arrows kept",
     "page_numbers": "bool, printed page number at the outer bottom corner",
     "vector_rules": "bool, writing lines and dots as vector strokes",
-    "month_spread": "dict {right: [blocks]}",
+    "month_spread": "dict {page: [blocks under the grid], review: [blocks on the review page]}",
     "week_spread": "dict {left_top: [blocks], day_rows: int, weekend: 'stacked', right_bottom: [blocks]}"
    },
    "why": "The line only builds tablet-sized screen pages (1024 x 768). complaint:c_print (33 reviews) is about pages printing at the wrong size or cut off, complaint:c_not_useful (34) names the missing two-page weekly planner, and complaint:c_quality (30) names misalignments; a printable needs real paper sizes, a safe area, mirrored binding margins and spreads that line up when printed double-sided."
@@ -714,7 +745,7 @@
   },
   {
    "name": "print_map",
-   "what": "One page, anchor printmap: a table of what to print, filled at the end of the build from the final page order (placeholder like %%INDEX%%). Columns: What (links to the first page of the group), Pages ('8 to 19'), Sheets (double-sided sheets, pages divided by 2 rounded up), and a narrow Printed tick-box column. Rows, in file order: 'Start here, Print check, Print map, Year, Dates to remember' (the front pages, 1 to 7 here), one row per head-start month ('November 2026', 'December 2026': the month spread plus the weeks built under it), one row per main month ('January 2027' to 'December 2027', likewise), 'Spare week (undated)', 'Notes'. Under the table, two filled text boxes side by side: 'Starting before 2027' (Print pages 1 to N once, then Head start November; the first week begins Monday, October 26, 2026) and 'Starting later in 2027' (Print pages 1 to N once, then the current month's row; print each month a few days before it begins). N is the last front page, filled in by the build. Page numbers equal the printed page_numbers of print_format and are the same in the Letter and A4 files. Registers no top-bar item.",
+   "what": "One page, anchor printmap: a table of what to print, filled at the end of the build from the final page order (placeholder like %%INDEX%%). Columns: What (links to the first page of the group), Pages ('8 to 19'), Sheets (double-sided sheets, pages divided by 2 rounded up), and a narrow Printed tick-box column. Rows, in file order: 'Start here, Print check, Print map, Year, Dates to remember' (the front pages, 1 to 8 here), one row per head-start month ('November 2026', 'December 2026': the month spread plus the weeks built under it), one row per main month ('January 2027' to 'December 2027', likewise), 'Spare week' (with its notes pages). Every row is whole sheets. Under the table, two filled text boxes side by side: 'Starting before 2027' (Print pages 1 to N once, then Head start November; the first week begins Monday, October 26, 2026) and 'Starting later in 2027' (Print pages 1 to N once, then the current month's row; print each month a few days before it begins). N is the last front page, filled in by the build. Page numbers equal the printed page_numbers of print_format and are the same in the Letter and A4 files. Registers no top-bar item.",
    "params": {
     "label": "str (Print map)",
     "kicker": "str",
@@ -724,7 +755,7 @@
   },
   {
    "name": "spare_week",
-   "what": "count undated week spreads at the end of the dated planner, in the same print_format week_spread layout: anchors spare and spareb (then spare2, spare2b, and so on). Left page kicker 'Spare week, print as many as you need', title 'Week of' followed by a write-in rule; each day column shows its day name and a short blank rule for the date instead of a number. Right page as the dated right page with a blank date rule per day. Arrows link left and right pages to each other. Registers a Print map row and no top-bar item. With duplex true the first page must land on an even page.",
+   "what": "count undated week spreads at the end of the dated planner, in the same print_format week_spread layout: anchors spare and spareb (then spare2, spare2b, and so on). Left page kicker 'Spare week, print as many as you need', title 'Week of' followed by a write-in rule; each day column shows its day name and a short blank rule for the date instead of a number. Right page as the dated right page with a blank date rule per day. Arrows link left and right pages to each other. Registers a Print map row and no top-bar item. With duplex true the first page must land on an even page. Built as two whole sheets: a Notes page (sheet front), the spread, a Notes page (sheet back), anchors spare n1 and n2 around it, so a reprint drops into the binder anywhere.",
    "params": {
     "label": "str (Spare week)",
     "kicker": "str",
@@ -732,6 +763,18 @@
     "count": "int, number of spreads (1)"
    },
    "why": "wish:w_undated and wish:w_next_year ask for undated pages and later years, and feature:undated is rare (10% of top sellers); a reprintable undated spread lets a buyer add extra weeks or keep going past January 2, 2028 without buying an undated product."
+  }
+ ],
+ "build_changes": [
+  {
+   "at": "2026-10-27",
+   "by": "build (stage 4)",
+   "what": "Whole-sheet months. A two-page spread always straddles two sheets, so with spreads starting on even pages a month whose pages start on a sheet back (as in the original plan) cannot be printed on its own: page 30 of a 30 to 39 job lands on a sheet front and every spread in that month comes out back to back instead of facing. Each Print map row is now whole sheets: front pages 1 to 8 (Dates to remember became two pages), each month = month page (sheet front) + its week spreads + a month review page (sheet back, facing the next month), and the spare week prints between two Notes pages (the old Notes section). The month spread's right-page blocks moved under the grid (Goals, Important dates, Bills) and onto the review page (Notes)."
+  },
+  {
+   "at": "2026-10-27",
+   "by": "build (stage 4)",
+   "what": "Printed cover gets a facts row and a 'This planner belongs to' line (cover facts, owner); the Start here tip now says to reprint a month's row or the Spare week row, since a single week spread straddles two sheets."
   }
  ]
 }

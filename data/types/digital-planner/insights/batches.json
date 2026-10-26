@@ -1,0 +1,27 @@
+[
+ {
+  "in": "/home/claude/kairos-engine/data/types/digital-planner/insights/code-in-1.json",
+  "out": "/home/claude/kairos-engine/data/types/digital-planner/insights/code-out-1.json",
+  "n": 120
+ },
+ {
+  "in": "/home/claude/kairos-engine/data/types/digital-planner/insights/code-in-2.json",
+  "out": "/home/claude/kairos-engine/data/types/digital-planner/insights/code-out-2.json",
+  "n": 120
+ },
+ {
+  "in": "/home/claude/kairos-engine/data/types/digital-planner/insights/code-in-3.json",
+  "out": "/home/claude/kairos-engine/data/types/digital-planner/insights/code-out-3.json",
+  "n": 120
+ },
+ {
+  "in": "/home/claude/kairos-engine/data/types/digital-planner/insights/code-in-4.json",
+  "out": "/home/claude/kairos-engine/data/types/digital-planner/insights/code-out-4.json",
+  "n": 120
+ },
+ {
+  "in": "/home/claude/kairos-engine/data/types/digital-planner/insights/code-in-5.json",
+  "out": "/home/claude/kairos-engine/data/types/digital-planner/insights/code-out-5.json",
+  "n": 8
+ }
+]

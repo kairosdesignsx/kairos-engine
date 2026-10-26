@@ -1,12 +1,7 @@
 {
  "pass": true,
  "problems": [],
- "needs_module": [
-  "print_format",
-  "print_check",
-  "print_map",
-  "spare_week"
- ],
+ "needs_module": [],
  "coverage": [
   {
    "ref": "complaint:c_download",

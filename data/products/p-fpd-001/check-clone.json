@@ -1,0 +1,15 @@
+{
+ "max_text_sim": 0.234,
+ "text": {
+  "max": 0.234,
+  "closest": "Digital FITNESS planner, GoodNotes Fitness Planner, Fitness Journal, Weight Loss Tracker, UNDATED iPad Workout Planner, Wellness Template",
+  "closest_shop": "CreativeJamCo"
+ },
+ "max_image_sim": null,
+ "image": {
+  "status": "pending",
+  "max": null,
+  "note": "competitor photos not fetched yet (laptop worker)"
+ },
+ "pass": true
+}

@@ -1,0 +1,86 @@
+{
+ "pass": true,
+ "problems": [],
+ "needs_module": [],
+ "coverage": [
+  {
+   "ref": "complaint:c_download",
+   "theme": "Couldn't download or open the file",
+   "count": 42,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_setup",
+   "theme": "Confusing setup or unclear instructions",
+   "count": 37,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_device",
+   "theme": "Doesn't work on my app or device",
+   "count": 24,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_hard",
+   "theme": "Hard to use day to day",
+   "count": 22,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_misleading",
+   "theme": "Not as described or pictured",
+   "count": 21,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_support",
+   "theme": "Seller didn't help or reply",
+   "count": 20,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_broken",
+   "theme": "Doesn't work (no detail)",
+   "count": 19,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_not_useful",
+   "theme": "Not useful for my needs",
+   "count": 13,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_value",
+   "theme": "Not worth the price",
+   "count": 12,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_nav",
+   "theme": "Hard to navigate or find pages",
+   "count": 11,
+   "state": "fixed"
+  },
+  {
+   "ref": "feature:dated",
+   "theme": "Dated for the year",
+   "share": 0.966,
+   "state": "included"
+  },
+  {
+   "ref": "feature:goodnotes",
+   "theme": "Says Goodnotes",
+   "share": 0.862,
+   "state": "included"
+  }
+ ],
+ "summary": {
+  "fixed": 10,
+  "included": 2,
+  "waived": 0,
+  "missing": 0,
+  "unique": 3
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "max_text_sim": 0.204,
+ "text": {
+  "max": 0.204,
+  "closest": "Digital Planner for GoodNotes, 2026 Undated, iPad Notability Planner (Digital Download)",
+  "closest_shop": "OptimumPlanners"
+ },
+ "max_image_sim": null,
+ "image": {
+  "status": "pending",
+  "max": null,
+  "note": "competitor photos not fetched yet (laptop worker)"
+ },
+ "pass": true
+}

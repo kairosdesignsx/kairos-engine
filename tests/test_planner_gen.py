@@ -145,10 +145,121 @@ def test_eink():
     assert 'repeating-linear-gradient' in plain and 'wkside' not in plain and 'Turn the pen off' in plain and 'left:40px' in plain
 
 
+def test_undated_weeks():
+    """Undated: weeks run in order through the year (Mar 9-13, Dec 48-52) and month grids have 6 rows (42 boxes)."""
+    r = gen.build(dict(SPEC, dating={"mode": "undated"}, sections=[{"module": "cover"}, {"module": "index"}, {"module": "calendar", "days": False}]))
+    pages = dict(re.findall(r'<section class="pg" id="([^"]+)"[^>]*>(.*?)</section>', r['html'], re.S))
+    for m, ws in ((3, range(9, 14)), (12, range(48, 53))):
+        assert all(f'href="#w{w:02d}"' in pages[f'm{m:02d}'] for w in ws), (m, list(ws))
+    assert 'href="#w49"' not in pages['m03']
+    assert pages['m01'].count('<span class="d"></span>') == 42
+    r2 = gen.build(dict(SPEC, dating={"mode": "undated"}, sections=[{"module": "cover"}, {"module": "year"}, {"module": "calendar", "days": False}]))
+    yr = dict(re.findall(r'<section class="pg" id="([^"]+)"[^>]*>(.*?)</section>', r2['html'], re.S))['year']
+    assert yr.count('border:1px solid') >= 12 * 42, 'undated year page: boxes to write dates in'
+
+
+# Trackers (fitness, meals, self-care): log_week hub, workout_log, meal_week, progress_chart, body_measure, habit_month, group_weeks
+TRACK = {
+ "title": "Test Fit", "subtitle": "Trackers", "brand": "Kairos test", "orientation": "portrait", "dating": {"mode": "undated"},
+ "theme": {"base": "navy", "display": "Baskerville", "body": "Outfit", "button": "#2D4FC4", "labels": "italic"}, "type_scale": 1.05,
+ "sections": [
+  {"module": "cover", "start": "start"}, {"module": "index"},
+  {"module": "guide", "label": "Start here", "anchor": "start", "nav": False, "steps": [["A", "a", "w01"], ["B", "b", "linktest"], ["C", "c", "progress"], ["D", "d", "m01"]], "map": True},
+  {"module": "link_test", "label": "Setup check", "anchor": "linktest", "nav": False, "targets": [["A week page", "w01"], ["A month page", "m01"], ["Contents", "index"]],
+   "fixes": ["Pen off", "Note app", "Re-import", "Send the shop an Etsy message"]},
+  {"module": "log_week", "label": "Weeks", "count": 6, "columns": [{"label": "Workout plan", "width": 2.2}, {"label": "Minutes"}, {"label": "Done", "check": True}],
+   "habits": ["Water", "Steps"], "stats": ["Weigh-in", "Change"], "fields": ["Win of the week", "Next week I will"],
+   "links": [{"label": "Meal plan", "anchor": "meal"}, {"label": "Workout", "anchor": "wo", "per": 3}], "mark_every": 4, "mark_anchor": "measure", "mark_label": "Measure"},
+  {"module": "workout_log", "label": "Workouts", "kicker": "Training log", "count": 18, "per_week": 3, "week_anchor": "w"},
+  {"module": "meal_week", "count": 6, "week_anchor": "w", "nav": False, "grocery_rows": 4},
+  {"module": "progress_chart", "label": "Progress", "anchor": "progress", "points": 6, "every": 2, "fields": ["Start", "Goal"],
+   "blocks": [{"kind": "checklist", "label": "Milestones", "rows": 5}, {"kind": "lines", "label": "Wins"}], "links": [["Measurements", "measure"]]},
+  {"module": "body_measure", "anchor": "measure", "nav": False, "week_anchor": "w", "every": 2, "weeks": 6, "tips": [["Waist", "At the narrowest point."], ["Hips", "Widest part."]]},
+  {"module": "habit_month", "habits": ["Workout day"], "blank_habits": 3, "mood": {"label": "Energy"}, "stats": ["Workouts done"], "fields": ["What went well", "One change"]},
+  {"module": "group_weeks"}
+ ]}
+
+
+def test_trackers():
+    r, over = run(TRACK, 'trackers')
+    assert not over, over
+    ids = [a for a, _ in r['page_modules']]
+    pages = dict(re.findall(r'<section class="pg" id="([^"]+)"(.*?)</section>', r['html'], flags=re.S))
+    # group_weeks: week, its meal plan, its workouts, then the next week; log list pages stay after the weeks
+    i = ids.index('w01')
+    assert ids[i:i + 10] == ['w01', 'meal01', 'wo001', 'wo002', 'wo003', 'w02', 'meal02', 'wo004', 'wo005', 'wo006'], ids[i:i + 10]
+    assert ids.index('weeks') < i and ids.index('log') > ids.index('wo018')
+    assert len(ids) == len(set(ids)) and 'group_weeks' not in [m for _, m in r['page_modules']]
+    # week hub links both ways; measure button every 4th week; overview opens every week
+    assert all(f'href="#{a}"' in pages['w02'] for a in ('meal02', 'wo004', 'wo005', 'wo006', 'w01', 'w03', 'weeks'))
+    assert 'href="#measure"' in pages['w04'] and 'href="#measure"' not in pages['w03']
+    assert 'href="#w02"' in pages['meal02'] and 'href="#w02"' in pages['wo005'] and 'Workout 2' in pages['wo005']
+    assert all(f'href="#w{n:02d}"' in pages['weeks'] for n in range(1, 7))
+    # log list: each workout one tap, week pills; measure rows open week pages; months m01 to m12 with faded Feb 30, 31
+    assert all(f'href="#wo{n:03d}"' in pages['log'] for n in range(1, 19)) and 'href="#w06"' in pages['log']
+    assert 'href="#w04"' in pages['measure'] and 'href="#w06"' in pages['measure'] and 'How to measure' in pages['measure']
+    assert [f'm{m:02d}' for m in range(1, 13)] == [a for a in ids if re.fullmatch(r'm\d{2}', a)]
+    assert 'Energy' in pages['m02'] and pages['m02'].count('opacity:.25') >= 4 and pages['m01'].count('opacity:.25') == 0
+    assert 'Last time' in pages['wo001'] and 'Set 4' in pages['wo001'] and 'Grocery list' in pages['meal01']
+    assert 'A week page' in pages['linktest'] and 'Send the shop an Etsy message' in pages['linktest'] and 'we will help' not in pages['linktest']
+    # landscape builds without overflow too (a meal planner may be landscape)
+    r2, over2 = run(dict(TRACK, orientation='landscape'), 'trackers-land')
+    assert not over2, over2
+    assert '—' not in r['html'], 'no em dashes'
+
+
+# Print format (home-printed weekly planner): Letter and A4, safe and binding margins, whole-sheet months, spreads
+PRINT_TH = {"base": "sage", "paper": "#FFFFFF", "ink": "#1F2A33", "muted": "#55606B", "line": "#C3C9CF", "accent": "#A8492B", "soft": "#F5EFEA", "display": "Corm", "body": "Jost", "motif": "none", "labels": "italic"}
+PRINT = {
+ "title": "Test Print", "subtitle": "Paper", "kicker": "Printable weekly planner", "brand": "Kairos test", "orientation": "portrait", "dating": {"mode": "dated", "year": 2027}, "theme": PRINT_TH, "type_scale": 1.1,
+ "sections": [
+  {"module": "print_format", "sizes": ["letter", "a4"], "margin_in": 0.5, "binding_in": 0.375, "duplex": True, "hide_nav": True, "page_numbers": True, "vector_rules": True,
+   "week_spread": {"left_top": [{"kind": "checklist", "label": "Focus", "rows": 3, "fill": True}], "day_rows": 3, "weekend": "stacked",
+                   "right_bottom": [{"kind": "pair", "items": [{"kind": "habits", "label": "Habits", "rows": 5}, {"kind": "checklist", "label": "To do", "rows": 5}]}]},
+   "month_spread": {"page": [{"kind": "checklist", "label": "Goals", "rows": 3, "fill": True}], "review": [{"kind": "lines", "label": "Notes"}]}},
+  {"module": "cover", "start": "start", "button": "Start here", "size": 80, "facts": ["Fact one"], "owner": "This planner belongs to"},
+  {"module": "guide", "label": "Start here", "anchor": "start", "nav": False, "steps": [["A", "a"], ["B", "b", "printcheck"], ["C", "c", "printmap"], ["D", "d"]]},
+  {"module": "print_check", "anchor": "printcheck", "fixes": ["One", "Two"]},
+  {"module": "print_map", "anchor": "printmap"},
+  {"module": "year", "nav": False, "links": [["Head start", "hs11"]]},
+  {"module": "table", "label": "Dates", "anchor": "dates", "headers": ["Date", "Done"], "rows": 20, "check_columns": ["Done"]},
+  {"module": "table", "label": "Dates", "anchor": "dates2", "headers": ["Date", "Done"], "rows": 20, "check_columns": ["Done"]},
+  {"module": "head_start", "label": "Head start", "anchor": "hs", "from": "2026-11", "to": "2026-12", "days": False, "nav": False},
+  {"module": "calendar", "habits": False, "days": False},
+  {"module": "spare_week", "anchor": "spare", "count": 1}
+ ]}
+
+
+def test_print():
+    assert gen.validate_spec(dict(PRINT, theme=dict(PRINT_TH, paper="#FBFAF6")))[0], 'print_format must refuse tinted paper'
+    assert gen.validate_spec(PRINT) == ([], [])
+    a4 = gen.build(dict(PRINT, paper='a4'))
+    r, over = run(PRINT, 'print')
+    assert not over, over
+    assert not r['print_problems'] and not a4['print_problems'], (r['print_problems'], a4['print_problems'])
+    assert r['size'] == (816, 1056) and a4['size'] == (794, 1122) and r['pages'] == a4['pages'] and r['pages'] % 2 == 0
+    ids = [a for a, _ in r['page_modules']]; idx = {a: i + 1 for i, a in enumerate(ids)}
+    assert 'print_format' not in [m for _, m in r['page_modules']]
+    assert idx['printcheck'] % 2 == 1 and idx['hs11'] % 2 == 1 and idx['m01'] % 2 == 1 and idx['m01b'] % 2 == 0, 'months are whole sheets'
+    assert all(idx[a] % 2 == 0 for a in ids if re.fullmatch(r'(hs)?w\d\d|spare', a)), 'spreads start on a sheet back'
+    assert 'w53' in idx and 'w54' not in idx and 'hsw09' in idx and 'hsw10' not in idx and not any(re.fullmatch(r'd\d{4}', a) for a in ids), '53 weeks, 9 head-start weeks, no day pages'
+    html = r['html']; pages = dict(re.findall(r'<section class="pg" id="([^"]+)"(.*?)</section>', html, flags=re.S))
+    assert 'class="rail"' not in html and '@page{size:8.5in 11in' in html and '@page{size:210mm 297mm' in a4['html']
+    assert 'href="#w12"' in pages['year'] and 'href="#w01"' in pages['hs12'] and 'href="#hsw01"' in pages['hs11'], 'dates open their week'
+    assert 'href="#w01"' in pages['hsw09b'] and 'href="#hsw09"' in pages['w01'], 'head start runs into Week 1'
+    assert f'1 to {idx["dates2"]}' in pages['printmap'] and '%%' not in html and 'Page 3' in pages['start']
+    assert '<circle' in pages['w12b'] and 'Thursday to Sunday' in pages['w12']
+    assert re.search(r'id="w12" data-side="even"', html) and re.search(r'id="w12b" data-side="odd"', html)
+    assert '\u2014' not in html, 'no em dashes'
+
+
 if __name__ == '__main__':
     import re
+    test_trackers()
+    test_undated_weeks()
     test_journal()
     test_eink()
+    test_print()
     r, over = run(SPEC, 'dated')
     und = dict(SPEC, dating={"mode": "undated"}, theme="sage", orientation="portrait")
     r2, over2 = run(und, 'undated')

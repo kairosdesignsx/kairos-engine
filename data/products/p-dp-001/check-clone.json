@@ -1,0 +1,15 @@
+{
+ "max_text_sim": 0.147,
+ "text": {
+  "max": 0.147,
+  "closest": "2027 Digital Planner, Dated GoodNotes Planner, iPad Daily Weekly Monthly Planner, Digital Journal, Notability Planner, New 2027 Calendar",
+  "closest_shop": "PixeIPerfectPlanners"
+ },
+ "max_image_sim": null,
+ "image": {
+  "status": "pending",
+  "max": null,
+  "note": "competitor photos not fetched yet (laptop worker)"
+ },
+ "pass": true
+}

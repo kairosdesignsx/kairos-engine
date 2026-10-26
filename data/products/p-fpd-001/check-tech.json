@@ -1,0 +1,57 @@
+[
+ {
+  "name": "file size",
+  "pass": true,
+  "detail": "Stronger-Weeks.pdf: 7.63 MB (limit 19.5, Etsy 20)"
+ },
+ {
+  "name": "no text overflow",
+  "pass": true,
+  "detail": "none"
+ },
+ {
+  "name": "page count",
+  "pass": true,
+  "detail": "342 pages in PDF"
+ },
+ {
+  "name": "links present in PDF",
+  "pass": true,
+  "detail": "8273 link annotations for 7615 links in the source"
+ },
+ {
+  "name": "fonts licensed (OFL list only)",
+  "pass": true,
+  "detail": "fonts: ['LibreBaskerville-Bold', 'LibreBaskerville-Italic', 'OutfitThin-Medium', 'OutfitThin-Regular', 'OutfitThin-SemiBold']"
+ },
+ {
+  "name": "page claims match the file",
+  "pass": true,
+  "detail": "claims [342], file has 342"
+ },
+ {
+  "name": "listing photos",
+  "pass": true,
+  "detail": "10 photos, sizes [(2700, 2025)]"
+ },
+ {
+  "name": "title",
+  "pass": true,
+  "detail": "124 chars"
+ },
+ {
+  "name": "13 tags, max 20 chars",
+  "pass": true,
+  "detail": "13 tags"
+ },
+ {
+  "name": "no em dashes or emojis",
+  "pass": true,
+  "detail": "checked title and description"
+ },
+ {
+  "name": "says digital download",
+  "pass": true,
+  "detail": "download and nothing-shipped note"
+ }
+]

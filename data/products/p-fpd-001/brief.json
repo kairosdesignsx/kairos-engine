@@ -1,0 +1,876 @@
+{
+ "brief_id": "b-fpd-001",
+ "product_id": "p-fpd-001",
+ "type_id": "fitness-planner-digital",
+ "line": "planner",
+ "created_at": "2026-10-27T10:00:00+08:00",
+ "positioning": "For anyone starting or restarting a fitness routine on a tablet: an undated 52-week fitness planner where every week page opens that week's meal plan and four workout logs, and each of those has a button back. Top sellers win on cute pages, but their buyers' biggest complaints are pages that are not practical, files that would not open and repeated filler pages, so this one wins on a weekly hub that links everything, workout logs built for getting stronger (a Last time column on every exercise) and a five-minute start with a setup check.",
+ "must_haves": [
+  {
+   "id": "mh_trackers",
+   "what": "The tracking set fitness buyers search for: a workout log, a weekly meal planner with a grocery list, a weight chart, a body measurements table and a weekly habit tracker.",
+   "evidence": [
+    "keyword:workout planner",
+    "keyword:meal planner",
+    "keyword:weight loss tracker",
+    "keyword:body measurements",
+    "keyword:habit tracker",
+    "feature:habit_tracker",
+    "feature:meal",
+    "praise:p_complete"
+   ]
+  },
+  {
+   "id": "mh_journal",
+   "what": "Journal space, not only grids: Win of the week and Next week I will on every week page, How it felt and Next time on every workout, a monthly reflection, and three dot-grid notes pages.",
+   "evidence": [
+    "feature:journal",
+    "praise:p_fits_needs",
+    "keyword:fitness journal"
+   ]
+  },
+  {
+   "id": "mh_apps",
+   "what": "One PDF that works in Goodnotes (named first in the title and listing), Notability, Samsung Notes, Xodo and Noteshelf on iPad, Android and Windows tablets.",
+   "evidence": [
+    "feature:goodnotes",
+    "feature:android",
+    "keyword:goodnotes planner",
+    "praise:p_device"
+   ]
+  },
+  {
+   "id": "mh_nav",
+   "what": "Fully hyperlinked: Contents, month tabs on every page, a top bar (Home, Weeks, Workouts, Progress), previous and next arrows, and a trail back on every page.",
+   "evidence": [
+    "praise:p_nav",
+    "feature:hyperlinked"
+   ]
+  },
+  {
+   "id": "mh_look",
+   "what": "A finished, designed look with real typography and consistent spacing; design is the biggest praise driver.",
+   "evidence": [
+    "praise:p_look",
+    "praise:p_quality"
+   ]
+  },
+  {
+   "id": "mh_guide",
+   "what": "Instructions printed inside the file (Start here and Setup check pages), not only in a separate PDF or video.",
+   "evidence": [
+    "praise:p_guide",
+    "praise:p_easy"
+   ]
+  }
+ ],
+ "fixes": [
+  {
+   "id": "f_not_useful",
+   "complaint": "complaint:c_not_useful",
+   "how": "Every page has a job a buyer does every week: plan the week, log the workout, plan the meals, tick what got done. Writing rows are at least 26 px tall and the workout table has 8 exercises by 4 sets. Photos show pages close up at real size so buyers can judge the space before buying, and the listing lists every page type with its count.",
+   "evidence": [
+    "complaint:c_not_useful",
+    "praise:p_fits_needs",
+    "complaint:c_space"
+   ],
+   "modules": [
+    "log_week",
+    "workout_log",
+    "meal_week"
+   ]
+  },
+  {
+   "id": "f_download",
+   "complaint": "complaint:c_download",
+   "how": "Ships as one PDF, not a zip, with no sticker files that can fail to import. Listing copy and the apps photo give the download in 3 steps: buy, download from Etsy in a web browser (the Etsy app cannot download digital files), open the PDF in a note app. Start here repeats the steps. The cover title matches the listing name.",
+   "evidence": [
+    "complaint:c_download",
+    "wish:w_listing_info",
+    "wish:w_easy_delivery"
+   ],
+   "modules": [
+    "guide",
+    "cover"
+   ]
+  },
+  {
+   "id": "f_misleading",
+   "complaint": "complaint:c_misleading",
+   "how": "Every listing photo is the built file, captioned with the page name; nothing is shown that the file lacks. The description says plainly: digital PDF for note apps on tablets, portrait, undated, English, no stickers, handwrite or use the app's text tool.",
+   "evidence": [
+    "complaint:c_misleading",
+    "praise:p_as_described",
+    "complaint:c_language"
+   ],
+   "modules": [
+    "index"
+   ]
+  },
+  {
+   "id": "f_value",
+   "complaint": "complaint:c_value",
+   "how": "Nothing to duplicate: 52 week pages, 52 meal plans and 208 workout logs are already in the file, all hyperlinked, so a buyer never copies pages to make more weeks (the exact 1-star complaint). The listing gives exact counts per page type from the built file.",
+   "evidence": [
+    "complaint:c_value",
+    "complaint:c_manual_pages",
+    "price:revenue_weighted_median"
+   ],
+   "modules": [
+    "log_week",
+    "workout_log",
+    "meal_week"
+   ]
+  },
+  {
+   "id": "f_print",
+   "complaint": "complaint:c_print",
+   "how": "Made for tablets, and printable too: every page is 8 x 10.7 inches, smaller than both US Letter and A4, so a page prints at Actual size without cropping. Each week's pages sit together in the file (the week, its meal plan, its 4 workouts: 6 pages in a row), so one week prints as a single page range. The listing says how, and that the light page tint prints too.",
+   "evidence": [
+    "complaint:c_print",
+    "wish:w_separate_pages",
+    "praise:p_print"
+   ],
+   "modules": [
+    "group_weeks"
+   ]
+  },
+  {
+   "id": "f_hard",
+   "complaint": "complaint:c_hard",
+   "how": "One starting point: the week page. It opens that week's meal plan and Workout 1 to 4 with buttons, and every one of those has a Week button back. Start here step 3 walks through exactly this. Habit circles sit in a plain 7-day grid with one habit per row and day names over every column, not a circle wheel.",
+   "evidence": [
+    "complaint:c_hard",
+    "praise:p_easy",
+    "complaint:c_overwhelm"
+   ],
+   "modules": [
+    "log_week",
+    "guide"
+   ]
+  },
+  {
+   "id": "f_quality",
+   "complaint": "complaint:c_quality",
+   "how": "Every printed word on every page type is spell-checked before publishing, and the build checks 0 broken links, no unreachable pages and no overflowing text. All text is vector so it stays crisp at any zoom. Weeks, workouts and meal plans run in number order, each exactly once.",
+   "evidence": [
+    "complaint:c_quality",
+    "complaint:c_links",
+    "praise:p_quality"
+   ],
+   "modules": [
+    "log_week"
+   ]
+  },
+  {
+   "id": "f_basic",
+   "complaint": "complaint:c_basic",
+   "how": "Tools that make a plan work, not blank boxes: a Last time column on every exercise so each workout can beat the one before, a 52-week weight chart that shows the trend on one page, measuring every 4 weeks with a How to measure guide, and a meal grid with a tick for each meal eaten as planned.",
+   "evidence": [
+    "complaint:c_basic",
+    "praise:p_adhd"
+   ],
+   "modules": [
+    "workout_log",
+    "progress_chart",
+    "body_measure",
+    "meal_week"
+   ]
+  },
+  {
+   "id": "f_device",
+   "complaint": "complaint:c_device",
+   "how": "Portrait pages at the tablet's own upright shape, and every link is a plain PDF link that all major note apps follow. The listing has a Works with and Not for box: Goodnotes, Notability, Samsung Notes, Xodo and Noteshelf on iPad, Android and Windows tablets; not for phones, not Canva, not a spreadsheet, not a fillable form. The Setup check page proves it on the buyer's own device in one minute.",
+   "evidence": [
+    "complaint:c_device",
+    "complaint:c_extra_app",
+    "feature:android",
+    "wish:w_listing_info"
+   ],
+   "modules": [
+    "link_test"
+   ]
+  },
+  {
+   "id": "f_missing",
+   "complaint": "complaint:c_missing",
+   "how": "No promised extras that can go missing: no stickers or bonus files are advertised, and the listing counts each page type from the built file (style rule r003). The 3-star complaint about no pages for tracking what you eat is answered by a meal plan for every week with a tick per meal and a grocery list.",
+   "evidence": [
+    "complaint:c_missing",
+    "feature:meal",
+    "feature:stickers"
+   ],
+   "modules": [
+    "meal_week",
+    "index"
+   ]
+  },
+  {
+   "id": "f_support",
+   "complaint": "complaint:c_support",
+   "how": "Most messages are 'it does not work' questions, so the answers are in the file and the listing: the Setup check fix list, the Start here steps and a listing FAQ with the top problems (Etsy app download, which app, links not tapping, how to type, printing). Reply speed is shop-level, and the file promises no reply times (style rule r007).",
+   "evidence": [
+    "complaint:c_support",
+    "praise:p_support",
+    "complaint:c_setup"
+   ],
+   "modules": [
+    "link_test",
+    "guide"
+   ]
+  },
+  {
+   "id": "f_repetitive",
+   "complaint": "complaint:c_repetitive",
+   "how": "Each page type has one clear job and a different layout (week hub, workout log, meal plan, month check-in, chart, measurements). Repeats are the logs a buyer fills over a year, counted honestly in the listing as 52 weeks, 208 workout logs and 52 meal plans, never padded into a bigger page count.",
+   "evidence": [
+    "complaint:c_repetitive",
+    "complaint:c_misleading"
+   ],
+   "modules": [
+    "log_week",
+    "workout_log",
+    "meal_week",
+    "habit_month"
+   ]
+  },
+  {
+   "id": "f_broken",
+   "complaint": "complaint:c_broken",
+   "how": "The Setup check page: tap three buttons, and if one does not jump, a four-item fix list is right there (pen off, open in a note app, re-import as PDF, then message the shop).",
+   "evidence": [
+    "complaint:c_broken",
+    "feature:test_page"
+   ],
+   "modules": [
+    "link_test"
+   ]
+  }
+ ],
+ "unique": [
+  {
+   "id": "u_week_hub",
+   "name": "One week, one tap",
+   "what": "Each of the 52 week pages has buttons to that week's meal plan and Workout 1 to 4, and each of those pages has a Week button back. A 52-week overview opens any week, and the training log lists every workout by week with a button to each.",
+   "why": "Hyperlinked tabs are shown by only 3% of top sellers, and a 1-star buyer complained about no links for days and having to duplicate pages for more weeks. Linking a week's pages together makes a year of logs as easy to use as one week.",
+   "evidence": [
+    "feature:hyperlinked",
+    "complaint:c_manual_pages",
+    "complaint:c_value",
+    "praise:p_nav"
+   ],
+   "modules": [
+    "log_week",
+    "workout_log",
+    "meal_week",
+    "group_weeks"
+   ],
+   "verified_absent": false
+  },
+  {
+   "id": "u_overload",
+   "name": "Workout logs that help you get stronger",
+   "what": "Every workout page has a Last time column next to each exercise: copy your best set from last time, then beat it, with weight x reps for 4 sets, an effort rating, a cardio table and Next time notes.",
+   "why": "Too basic and not useful are two of the top complaints (13 and 32 reviews). A log that shows last time next to this time turns a blank grid into a plan for progress.",
+   "evidence": [
+    "complaint:c_basic",
+    "complaint:c_not_useful",
+    "keyword:workout tracker"
+   ],
+   "modules": [
+    "workout_log"
+   ],
+   "verified_absent": false
+  },
+  {
+   "id": "u_progress",
+   "name": "A year of progress on one page",
+   "what": "A 52-week weight chart (write your own scale, one dot a week), start and goal lines, milestones and wins the scale does not show, plus a measurements table every 4 weeks with a How to measure guide. Week 4, 8, 12 and so on show a Measure button.",
+   "why": "Goal setting is rare in top sellers (3% of titles), body measurements and weight tracking are top search words, and buyers praise planners that track progress on goals.",
+   "evidence": [
+    "feature:goals",
+    "keyword:body measurements",
+    "keyword:weight tracker",
+    "praise:p_adhd"
+   ],
+   "modules": [
+    "progress_chart",
+    "body_measure",
+    "log_week"
+   ],
+   "verified_absent": false
+  },
+  {
+   "id": "u_start",
+   "name": "Five-minute start and setup check",
+   "what": "The cover's Open planner button lands on Start here: 4 numbered steps with Go there buttons. Setup check is next: buttons that jump and come back, with a fix list if they do not.",
+   "why": "Could not download or open (28), did not work on my device (12), confusing setup (10) and does not work (8) all end in the same place: a buyer who never got started. No top seller shows a quick start or link test in their titles.",
+   "evidence": [
+    "feature:quick_start",
+    "feature:test_page",
+    "complaint:c_download",
+    "complaint:c_device",
+    "complaint:c_setup"
+   ],
+   "modules": [
+    "guide",
+    "link_test",
+    "cover"
+   ],
+   "verified_absent": false
+  },
+  {
+   "id": "u_anytime",
+   "name": "Start any day",
+   "what": "Undated weeks and months: write the dates on Week 1 the day you start, whether that is a Tuesday in October or the first of June. Nothing is wasted if you start late in the year.",
+   "why": "Undated is rare among top sellers (10%) and buyers asked for an undated version; fitness plans start whenever the buyer is ready, and the market peaks in August, not only in January.",
+   "evidence": [
+    "feature:undated",
+    "wish:w_undated",
+    "market:summary"
+   ],
+   "modules": [
+    "log_week",
+    "habit_month"
+   ],
+   "verified_absent": false
+  }
+ ],
+ "waived": [
+  {
+   "ref": "feature:dated",
+   "reason": "Dated planners earn well for all-in-one life planners, but a fitness plan starts the day the buyer is ready. Undated weeks also keep the Oct to Dec buyer and the mid-year buyer on the same start-up steps (style rules r002, r014)."
+  },
+  {
+   "ref": "feature:stickers",
+   "reason": "No sticker file: the planner line builds one PDF, and extra files are a download risk. The listing says there are no stickers, so nobody goes looking for them."
+  },
+  {
+   "ref": "wish:w_typeable",
+   "reason": "Not a fillable form. Note apps let buyers type with their text tool on any page; Start here and the listing say so."
+  }
+ ],
+ "look": {
+  "direction": "Athletic editorial, not pink, rose gold or kawaii, and not neon gym black. Cool off-white paper (#F8F7F3, softer than white in a dark room) with deep navy ink at about 15:1 contrast, so it stays sharp in daylight; muted text stays above 5:1. One cobalt accent for buttons and the chart, with a lime detail on the cover and as the end of the month-tab range (periwinkle to lime). Two fonts only: Libre Baskerville bold for headings and Baskerville italic for field labels; Outfit for body text, with semibold for buttons, days and tabs. No letter-spaced all-caps labels. Plain ruled decoration, no clip-art dumbbells or fruit.",
+  "theme": {
+   "base": "navy",
+   "paper": "#F8F7F3",
+   "ink": "#1B2230",
+   "muted": "#566070",
+   "line": "#D7D8D0",
+   "accent": "#2D4FC4",
+   "soft": "#ECEFF6",
+   "warm": "#C3D545",
+   "tabs": [
+    "#AEC0F0",
+    "#D4E07C"
+   ],
+   "display": "Baskerville",
+   "body": "Outfit",
+   "motif": "lines",
+   "button": "#2D4FC4",
+   "labels": "italic"
+  },
+  "avoid": [
+   "rose gold and blush pink weight loss journals",
+   "kawaii pastel all-in-one planners",
+   "black neon gym themes",
+   "clip-art dumbbells, fruit and measuring tapes on every page",
+   "script fonts"
+  ],
+  "evidence": [
+   "look:Minimalist look",
+   "look:Colorful or aesthetic look",
+   "look:Dark mode",
+   "praise:p_look",
+   "listing:1049190781",
+   "listing:4536868083"
+  ]
+ },
+ "price": {
+  "amount": 24,
+  "why": "Buyers pay a sales-weighted $22.43 and the top earners' median is $22.45; $24 sits with them for a full year of linked weeks, workouts and meal plans. Many cheap listings sit at $3 to $8 with low monthly revenue. While the shop is new, a 25% launch sale for 30 days shows $18 with $24 crossed out (style rule r015), instead of a low price.",
+  "evidence": [
+   "price:revenue_weighted_median",
+   "price:top10_by_revenue_median",
+   "price:median",
+   "market:best_price_band"
+  ],
+  "launch_sale": {
+   "percent": 25,
+   "days": 30,
+   "sale_price": 18
+  }
+ },
+ "seo": {
+  "title": "Digital Fitness Planner for Goodnotes, Workout Log, Meal Planner and Weight Loss Tracker, Undated 52 Weeks, iPad and Android",
+  "tags": [
+   "fitness planner",
+   "workout planner",
+   "fitness tracker",
+   "weight loss tracker",
+   "fitness journal",
+   "meal planner",
+   "workout tracker",
+   "weight loss journal",
+   "digital planner",
+   "goodnotes planner",
+   "body measurements",
+   "habit tracker",
+   "weight loss planner"
+  ]
+ },
+ "photos": [
+  {
+   "id": "ph1_hero",
+   "shows": "Cover and Week 1 side by side, line: 'Plan the week, log every workout'.",
+   "proves": "praise:p_look, feature:hyperlinked",
+   "pages": [
+    "cover",
+    "w01"
+   ]
+  },
+  {
+   "id": "ph2_week",
+   "shows": "Week 1 page large: dates, the Meal plan and Workout 1 to 4 buttons, the day table and habit grid.",
+   "proves": "feature:hyperlinked, complaint:c_hard, complaint:c_manual_pages",
+   "pages": [
+    "w01"
+   ]
+  },
+  {
+   "id": "ph3_workout",
+   "shows": "Workout page close up: Exercise, Last time and Set 1 to 4 columns, effort rating.",
+   "proves": "complaint:c_basic, complaint:c_not_useful",
+   "pages": [
+    "wo001"
+   ]
+  },
+  {
+   "id": "ph4_meals",
+   "shows": "Meal plan page: days by meals with a tick per meal, grocery list in groups.",
+   "proves": "feature:meal, complaint:c_missing",
+   "pages": [
+    "meal01"
+   ]
+  },
+  {
+   "id": "ph5_progress",
+   "shows": "Progress chart and Measurements pages, 2 up with captions.",
+   "proves": "feature:goals, keyword:body measurements",
+   "pages": [
+    "progress",
+    "measure"
+   ]
+  },
+  {
+   "id": "ph6_apps",
+   "shows": "Plain text panel beside Start here: works with Goodnotes, Notability, Samsung Notes, Xodo, Noteshelf on iPad, Android and Windows tablets; download in a web browser; not for phones; prints at actual size on Letter or A4.",
+   "proves": "complaint:c_download, complaint:c_device, complaint:c_print, wish:w_listing_info",
+   "pages": [
+    "start"
+   ]
+  },
+  {
+   "id": "ph7_start",
+   "shows": "Start here and Setup check, 2 up with captions, line: 'Working in five minutes'.",
+   "proves": "complaint:c_setup, complaint:c_broken, feature:quick_start, feature:test_page",
+   "pages": [
+    "start",
+    "linktest"
+   ]
+  },
+  {
+   "id": "ph8_links",
+   "shows": "52-week overview and the training log list, 2 up: every week and every workout one tap away.",
+   "proves": "feature:hyperlinked, complaint:c_value",
+   "pages": [
+    "weeks",
+    "log"
+   ]
+  },
+  {
+   "id": "ph9_month",
+   "shows": "A month page: goal, workout days and energy colors for the month, reflection.",
+   "proves": "feature:habit_tracker, feature:undated",
+   "pages": [
+    "m01"
+   ]
+  },
+  {
+   "id": "ph10_inside",
+   "shows": "Contents page with the page counts from the built file: what is inside and what is not (no stickers, undated, portrait).",
+   "proves": "complaint:c_misleading, complaint:c_repetitive, praise:p_as_described",
+   "pages": [
+    "index"
+   ]
+  }
+ ],
+ "spec": {
+  "title": "Stronger Weeks",
+  "subtitle": "A linked fitness planner. Plan the week, log every workout, plan your meals and watch your progress. Start any day.",
+  "kicker": "Digital fitness planner",
+  "brand": "Kairos Design Studio",
+  "orientation": "portrait",
+  "dating": {
+   "mode": "undated"
+  },
+  "theme": {
+   "base": "navy",
+   "paper": "#F8F7F3",
+   "ink": "#1B2230",
+   "muted": "#566070",
+   "line": "#D7D8D0",
+   "accent": "#2D4FC4",
+   "soft": "#ECEFF6",
+   "warm": "#C3D545",
+   "tabs": [
+    "#AEC0F0",
+    "#D4E07C"
+   ],
+   "display": "Baskerville",
+   "body": "Outfit",
+   "motif": "lines",
+   "button": "#2D4FC4",
+   "labels": "italic"
+  },
+  "type_scale": 1.05,
+  "index_tip": "Tap a card above, a month below, or a month tab on the right. Each week page opens its meal plan and four workouts, and each of those has a Week button back. Follow links with the pen off; turn the pen on to write.",
+  "sections": [
+   {
+    "module": "cover",
+    "start": "start"
+   },
+   {
+    "module": "index"
+   },
+   {
+    "module": "guide",
+    "label": "Start here",
+    "kicker": "Five minutes",
+    "anchor": "start",
+    "nav": false,
+    "steps": [
+     [
+      "Open it in a note app",
+      "Download from Etsy in a web browser (the Etsy app cannot download files). Import the PDF into Goodnotes, Notability, Samsung Notes, Xodo or Noteshelf, not Files or Photos. This button opens Contents.",
+      "index"
+     ],
+     [
+      "Check the links",
+      "Open Setup check and tap its buttons with the pen off. If they jump, you are ready. If not, the fix list is on that page.",
+      "linktest"
+     ],
+     [
+      "Start Week 1 today",
+      "Any day works, in any month: no dates are printed. Open Week 1, write the dates and plan your workouts, then tap Meal plan or Workout 1 on that page.",
+      "w01"
+     ],
+     [
+      "Write down where you start",
+      "On Progress, write your start weight and goal. On Measurements, fill in the Start row, then measure again every 4 weeks.",
+      "progress"
+     ]
+    ],
+    "tip": "Pen off to tap a link, pen on to write. Prefer typing? Use your app's text tool. Tap this month's tab on the right to set a goal for the month.",
+    "map": true
+   },
+   {
+    "module": "link_test",
+    "label": "Setup check",
+    "anchor": "linktest",
+    "nav": false,
+    "targets": [
+     [
+      "A week page",
+      "w01"
+     ],
+     [
+      "A month page",
+      "m01"
+     ],
+     [
+      "Contents",
+      "index"
+     ]
+    ],
+    "fixes": [
+     "Turn the pen off (read or view mode)",
+     "Open the file in a PDF planner app, not Files or Photos",
+     "Re-import the PDF, do not convert it",
+     "Still stuck? Send the shop an Etsy message"
+    ]
+   },
+   {
+    "module": "log_week",
+    "label": "Weeks",
+    "kicker": "Plan",
+    "anchor": "w",
+    "overview_anchor": "weeks",
+    "overview_title": "52 weeks",
+    "count": 52,
+    "columns": [
+     {
+      "label": "Workout plan",
+      "width": 2.2
+     },
+     {
+      "label": "Minutes"
+     },
+     {
+      "label": "Done",
+      "check": true
+     }
+    ],
+    "habits": [
+     "Water, 8 glasses",
+     "Steps goal",
+     "Sleep 7 hours",
+     "Protein at each meal",
+     "Stretch 10 minutes"
+    ],
+    "blank_habits": 2,
+    "stats": [
+     "Weigh-in",
+     "Change",
+     "Energy, 1 to 5"
+    ],
+    "fields": [
+     "Win of the week",
+     "Next week I will"
+    ],
+    "links": [
+     {
+      "label": "Meal plan",
+      "anchor": "meal"
+     },
+     {
+      "label": "Workout",
+      "anchor": "wo",
+      "per": 4
+     }
+    ],
+    "mark_every": 4,
+    "mark_anchor": "measure",
+    "mark_label": "Measure"
+   },
+   {
+    "module": "workout_log",
+    "label": "Workouts",
+    "nav_label": "Workouts",
+    "kicker": "Training log",
+    "anchor": "wo",
+    "log_anchor": "log",
+    "count": 208,
+    "per_week": 4,
+    "week_anchor": "w",
+    "exercises": 8,
+    "sets": 4,
+    "cardio": true,
+    "fields": [
+     "How it felt",
+     "Next time I will"
+    ]
+   },
+   {
+    "module": "meal_week",
+    "label": "Meal plans",
+    "kicker": "Meals",
+    "anchor": "meal",
+    "count": 52,
+    "week_anchor": "w",
+    "nav": false,
+    "grocery": [
+     "Produce",
+     "Protein",
+     "Dairy and eggs",
+     "Pantry",
+     "Other"
+    ],
+    "fields": [
+     "Prep ahead"
+    ],
+    "grocery_rows": 4
+   },
+   {
+    "module": "progress_chart",
+    "label": "Progress",
+    "kicker": "Weight chart",
+    "anchor": "progress",
+    "y_label": "Weekly weigh-in",
+    "points": 52,
+    "every": 4,
+    "rows": 20,
+    "fields": [
+     "Start",
+     "Goal",
+     "Week 26",
+     "Week 52"
+    ],
+    "blocks": [
+     {
+      "kind": "checklist",
+      "label": "Milestones I am aiming for",
+      "rows": 6
+     },
+     {
+      "kind": "lines",
+      "label": "Wins the scale does not show"
+     }
+    ],
+    "links": [
+     [
+      "Measurements",
+      "measure"
+     ]
+    ]
+   },
+   {
+    "module": "body_measure",
+    "label": "Measurements",
+    "kicker": "Every 4 weeks",
+    "anchor": "measure",
+    "nav": false,
+    "week_anchor": "w",
+    "every": 4,
+    "weeks": 52,
+    "parts": [
+     "Weight",
+     "Chest",
+     "Waist",
+     "Hips",
+     "Thigh",
+     "Arm"
+    ],
+    "tips": [
+     [
+      "Weight",
+      "Same scale, same time: after waking, before eating."
+     ],
+     [
+      "Chest",
+      "Around the fullest part, arms relaxed at your sides."
+     ],
+     [
+      "Waist",
+      "At the narrowest point, usually just above the belly button. Breathe out first."
+     ],
+     [
+      "Hips",
+      "Around the widest part of your seat, feet together."
+     ],
+     [
+      "Thigh",
+      "Around the fullest part of one thigh. Use the same leg every time."
+     ],
+     [
+      "Arm",
+      "Around the fullest part of the upper arm, relaxed."
+     ]
+    ]
+   },
+   {
+    "module": "habit_month",
+    "label": "Months",
+    "kicker": "Monthly",
+    "habits": [
+     "Workout day"
+    ],
+    "blank_habits": 3,
+    "habits_label": "Habits",
+    "goal": "This month's goal",
+    "stats": [
+     "Workouts done",
+     "Weigh-in, first week",
+     "Weigh-in, last week"
+    ],
+    "mood": {
+     "label": "Energy",
+     "keys": [
+      [
+       "High",
+       "#2D4FC4"
+      ],
+      [
+       "Good",
+       "#AEC0F0"
+      ],
+      [
+       "Okay",
+       "#D4E07C"
+      ],
+      [
+       "Low",
+       "#E8C9A6"
+      ],
+      [
+       "Rest day",
+       "#C9CDD6"
+      ]
+     ]
+    },
+    "fields": [
+     "What went well",
+     "One change for next month"
+    ]
+   },
+   {
+    "module": "lined",
+    "label": "Notes",
+    "kicker": "Anything",
+    "anchor": "notes",
+    "pages": 3,
+    "dots": true,
+    "nav": false
+   },
+   {
+    "module": "group_weeks"
+   }
+  ]
+ },
+ "new_modules": [
+  {
+   "name": "log_week",
+   "what": "Undated numbered week pages with a 52-week overview: dates line, buttons to the week's linked pages, day table, 7-day habit grid, stats and lined boxes.",
+   "params": "label, kicker, anchor, overview_anchor, count, days, columns, habits, blank_habits, stats, fields, links, mark_every, mark_anchor, mark_label",
+   "why": "u_week_hub and the weekly habit tracker; reusable for meal and self-care planners."
+  },
+  {
+   "name": "workout_log",
+   "what": "Workout log list pages plus session pages (Last time column, sets, effort, cardio, notes), optionally grouped per week with back links.",
+   "params": "label, anchor, log_anchor, count, per_week, week_anchor, exercises, sets, cardio, fields",
+   "why": "u_overload and the workout tracker must-have."
+  },
+  {
+   "name": "meal_week",
+   "what": "Weekly meal plan: days by meals with a tick per cell, grocery list in groups, prep box, back to the week.",
+   "params": "label, anchor, count, meals, days, grocery, grocery_rows, fields, week_anchor, tick",
+   "why": "feature:meal and complaint:c_missing; reusable for a meal planner."
+  },
+  {
+   "name": "progress_chart",
+   "what": "A plot grid for one number over time with a write-in scale, fields above and blocks below.",
+   "params": "label, anchor, points, every, rows, y_label, fields, blocks, links",
+   "why": "u_progress; reusable for sleep or mood charts."
+  },
+  {
+   "name": "body_measure",
+   "what": "Measurements table by check-in with a Change row and How to measure tips, check-ins linked to week pages.",
+   "params": "label, anchor, parts, every, weeks, week_anchor, tips",
+   "why": "keyword:body measurements, u_progress."
+  },
+  {
+   "name": "habit_month",
+   "what": "Twelve undated month pages (m01 to m12) with goal, stats, a 31-day habit grid, an optional mood or energy row and reflection boxes.",
+   "params": "label, habits, blank_habits, goal, stats, mood, fields",
+   "why": "Month tabs need month pages; monthly check-in; reusable for self-care."
+  },
+  {
+   "name": "group_weeks",
+   "what": "Reorders pages so each week's linked pages follow its week page.",
+   "params": "none",
+   "why": "f_print: a week prints as one page range and swiping meets one week at a time."
+  }
+ ],
+ "build_notes": "Page size 768 x 1024 px = 8 x 10.67 in (576 x 768 pt), checked in the built PDF: fits US Letter and A4 at Actual size. Printing has not been tested on a physical printer; the listing may state the page size and that it fits Letter and A4, not print quality."
+}

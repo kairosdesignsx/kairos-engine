@@ -14,6 +14,9 @@ def file_checks(d, brief, b, L, add, CHK):
     r = pypdf.PdfReader(os.path.join(d, 'files', b['files'][0]['name']))
     n = len(r.pages)
     add('page count', n == b['files'][0]['pages'], f'{n} pages in PDF')
+    for f in b['files'][1:]:  # print_format: one file per paper size, same pages
+        n2 = len(pypdf.PdfReader(os.path.join(d, 'files', f['name'])).pages)
+        add(f"page count {f['name']}", n2 == f['pages'] == n, f'{n2} pages (first file {n})')
     annots = sum(len(p.get('/Annots') or []) for p in r.pages)
     add('links present in PDF', annots >= 0.9 * b['links'], f'{annots} link annotations for {b["links"]} links in the source')
     fonts = set()

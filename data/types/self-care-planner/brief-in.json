@@ -1,0 +1,1844 @@
+{
+ "type_id": "self-care-planner",
+ "product_type": "Self care planner",
+ "format": "Digital life or fitness planner (PDF)",
+ "line": "planner",
+ "rules": {
+  "significant_complaint_count": 12,
+  "min_unique": 2,
+  "evidence_ref_kinds": [
+   "complaint:<id>",
+   "praise:<id>",
+   "wish:<id>",
+   "feature:<id>",
+   "price:<field>",
+   "keyword:<tag>",
+   "listing:<listing_id>",
+   "market:<field>",
+   "look:<style>"
+  ]
+ },
+ "basis": {
+  "listings": 30,
+  "reviews": 580,
+  "reviews_coded": 500,
+  "off_type_dropped": 33,
+  "negative_reviews": 217,
+  "feature_sources": [
+   "titles"
+  ],
+  "photos": "pending"
+ },
+ "market": {
+  "opportunity_score": 58.0,
+  "monthly_searches": 1412.0,
+  "competing_listings": 110170.0,
+  "top_seller_revenue": 2410.0,
+  "new_sellers_in_top_pct": 35.0,
+  "summary": "Proceed with caution. ~1,412 monthly searches, competition crowded (110,170 listings), and 35% of top sellers are under 6 months old. Top seller earns ~$2,410/mo; the best-earning price band is $20–28.",
+  "best_price_band": "$20-28"
+ },
+ "must_address": [
+  {
+   "ref": "complaint:c_download",
+   "theme": "Couldn't download or open the file",
+   "count": 33,
+   "quotes": [
+    {
+     "text": "I cannot find the download to the actual planner after purchasing. The purchase only included the guide on how to set up the planner",
+     "stars": 1
+    },
+    {
+     "text": "This product was very hard to use and I couldn't download it to use on my iPad or computer with having issues seeing part of the planning pages.",
+     "stars": 1
+    },
+    {
+     "text": "Very difficult to download and I haven’t got everything yer",
+     "stars": 2
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_not_useful",
+   "theme": "Not useful for my needs",
+   "count": 29,
+   "quotes": [
+    {
+     "text": "Did not provide weekly plans as most “planners” have. The options are immense but focus more on developing plans, checklist…..",
+     "stars": 2
+    },
+    {
+     "text": "Wasnt what i was looking for amd a bit confusing tbh",
+     "stars": 2
+    },
+    {
+     "text": "It wasn't for me. Too hard for me to figure out.",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_value",
+   "theme": "Not worth the price",
+   "count": 28,
+   "quotes": [
+    {
+     "text": "I did not feel the spacing for writing in the calendar was sufficient for my needs.  Sucks wasted $14 and I have already deleted.",
+     "stars": 1
+    },
+    {
+     "text": "Use caution! You actually don't get a workbook. You get a single page in two formats, A4 and letter. I paid way too much for one piece of paper that I had to print.",
+     "stars": 2
+    },
+    {
+     "text": "While it is nice it isnt what I wanted I just want a simple planner with the month, and day sections with some notes. I just wasted my money on something I'll never use",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_hard",
+   "theme": "Hard to use day to day",
+   "count": 25,
+   "quotes": [
+    {
+     "text": "This product was very hard to use and I couldn't download it to use on my iPad or computer with having issues seeing part of the planning pages.",
+     "stars": 1
+    },
+    {
+     "text": "Not easy to use, you basically make your own journal",
+     "stars": 2
+    },
+    {
+     "text": "Wasnt what i was looking for amd a bit confusing tbh",
+     "stars": 2
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_quality",
+   "theme": "Errors, typos or low quality",
+   "count": 22,
+   "quotes": [
+    {
+     "text": "The icons for ebook and audiobook are swapped throughout. Otherwise a good package with lots of options.",
+     "stars": 3
+    },
+    {
+     "text": "I love it except there’s a typo or two",
+     "stars": 4
+    },
+    {
+     "text": "Customisation & concept is great but all pages are pixelated & off centre on the multiple downloads I have done.",
+     "stars": 2
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_device",
+   "theme": "Doesn't work on my app or device",
+   "count": 22,
+   "quotes": [
+    {
+     "text": "Unable to use on a Samsung tablet S.  Seller tried to help, but after doing research, it's not compatible with this style tablet.",
+     "stars": 1
+    },
+    {
+     "text": "Sadly this isn't great when you are trying to write with a text function, it keeps reverting to pen after each word and it does the same with font size after each word. Given up with it within the hou",
+     "stars": 1
+    },
+    {
+     "text": "I wasn't able to download and use this template. I have a chromebook. Do not waste them money unless you have access to Microsoft Word",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_misleading",
+   "theme": "Not as described or pictured",
+   "count": 20,
+   "quotes": [
+    {
+     "text": "Use caution! You actually don't get a workbook. You get a single page in two formats, A4 and letter. I paid way too much for one piece of paper that I had to print.",
+     "stars": 2
+    },
+    {
+     "text": "Terrible advertising. \n\n40 pages repeated is not a 300 pager. False advertising at its best.",
+     "stars": 1
+    },
+    {
+     "text": "No tiene nada que ver , con lo que crees!! Que estas comprando lastima sentirse engañado.",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_basic",
+   "theme": "Too basic or boring",
+   "count": 18,
+   "quotes": [
+    {
+     "text": "Not easy to use, you basically make your own journal",
+     "stars": 2
+    },
+    {
+     "text": "Very affordable but not the greatest. I spend more money on one with more pages and detail to the planner.",
+     "stars": 1
+    },
+    {
+     "text": "I thought that this was more informative other than a \nBlatant attempt at copying another person’s work.",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_missing",
+   "theme": "Missing pages or less than expected",
+   "count": 17,
+   "quotes": [
+    {
+     "text": "Did not provide weekly plans as most “planners” have. The options are immense but focus more on developing plans, checklist…..",
+     "stars": 2
+    },
+    {
+     "text": "I cannot find the download to the actual planner after purchasing. The purchase only included the guide on how to set up the planner",
+     "stars": 1
+    },
+    {
+     "text": "Use caution! You actually don't get a workbook. You get a single page in two formats, A4 and letter. I paid way too much for one piece of paper that I had to print.",
+     "stars": 2
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_overwhelm",
+   "theme": "Too much, overwhelming",
+   "count": 16,
+   "quotes": [
+    {
+     "text": "It was overwhelming, I sat and tried to read through as much of it as possible, but I had no idea where to start.",
+     "stars": 1
+    },
+    {
+     "text": "It’s a lot of pages and not easy to navigate",
+     "stars": 3
+    },
+    {
+     "text": "To much for my ocd …overwhelming",
+     "stars": 2
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_setup",
+   "theme": "Confusing setup or unclear instructions",
+   "count": 16,
+   "quotes": [
+    {
+     "text": "I was not sure how to edit this file I followed the instructions and it still didn’t turn out right.",
+     "stars": 1
+    },
+    {
+     "text": "Het lukt me niet hem makkelijk gebruiksklaar te krijgen op mijn iPad.",
+     "stars": 3
+    },
+    {
+     "text": "Bought this and tried to follow instructions but given up, I found instructions not clear and very time consuming",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_nav",
+   "theme": "Hard to navigate or find pages",
+   "count": 13,
+   "quotes": [
+    {
+     "text": "Layout was very busy and hard for me to navigate",
+     "stars": 1
+    },
+    {
+     "text": "It’s a lot of pages and not easy to navigate",
+     "stars": 3
+    },
+    {
+     "text": "The planner does not work properly the links are broken, not that organized and its hard to get around",
+     "stars": 2
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_support",
+   "theme": "Seller didn't help or reply",
+   "count": 12,
+   "quotes": [
+    {
+     "text": "How to download too many apps just to make their main app work plus it took days for their customer service to reach back",
+     "stars": 1
+    },
+    {
+     "text": "I was unable to download my purchase, I tried everything on the autoreply email from seller. No support, no download. Find another seller who actually manages their business.",
+     "stars": 1
+    },
+    {
+     "text": "I have message this person on here and facebook. They have seen my message and no respond. BAD COMMUNICATION and DOESNT PRINT LIKE IT SHOULD! WASTE OF TIME AND MONEY. DONT BOTHER",
+     "stars": 1
+    }
+   ]
+  },
+  {
+   "ref": "complaint:c_edit",
+   "theme": "Can't edit, type or customize",
+   "count": 12,
+   "quotes": [
+    {
+     "text": "I was not sure how to edit this file I followed the instructions and it still didn’t turn out right.",
+     "stars": 1
+    },
+    {
+     "text": "Sadly this isn't great when you are trying to write with a text function, it keeps reverting to pen after each word and it does the same with font size after each word. Given up with it within the hou",
+     "stars": 1
+    },
+    {
+     "text": "The item says “fillable”.  Most of the blank spaces are but the filled Spaces cannot be changed to reflect the actual subjects the children are taking.",
+     "stars": 3
+    }
+   ]
+  }
+ ],
+ "other_complaints": [
+  {
+   "ref": "complaint:c_refund",
+   "theme": "Refund refused",
+   "count": 11
+  },
+  {
+   "ref": "complaint:c_print",
+   "theme": "Hard to print correctly",
+   "count": 8
+  },
+  {
+   "ref": "complaint:c_links",
+   "theme": "Links broken or go to the wrong page",
+   "count": 8
+  },
+  {
+   "ref": "complaint:c_repetitive",
+   "theme": "Repetitive or duplicate pages",
+   "count": 8
+  },
+  {
+   "ref": "complaint:c_extra_app",
+   "theme": "Needed an app or subscription that wasn't clear",
+   "count": 7
+  },
+  {
+   "ref": "complaint:c_look",
+   "theme": "Didn't like the look",
+   "count": 7
+  },
+  {
+   "ref": "complaint:c_delivery_delay",
+   "theme": "Slow or no delivery of files",
+   "count": 6
+  },
+  {
+   "ref": "complaint:c_broken",
+   "theme": "Doesn't work (no detail)",
+   "count": 5
+  },
+  {
+   "ref": "complaint:c_readability",
+   "theme": "Text too small or hard to read",
+   "count": 5
+  },
+  {
+   "ref": "complaint:c_space",
+   "theme": "Too little writing space",
+   "count": 4
+  },
+  {
+   "ref": "complaint:c_dates",
+   "theme": "Wrong or missing dates, calendar errors",
+   "count": 3
+  },
+  {
+   "ref": "complaint:c_lag",
+   "theme": "Slow, laggy or file too big",
+   "count": 3
+  },
+  {
+   "ref": "complaint:c_plagiarism",
+   "theme": "Design copied from other creators",
+   "count": 2
+  },
+  {
+   "ref": "complaint:c_ai_art",
+   "theme": "AI-generated artwork",
+   "count": 2
+  },
+  {
+   "ref": "complaint:c_split_files",
+   "theme": "Split into many separate files",
+   "count": 2
+  },
+  {
+   "ref": "complaint:c_wrong_item",
+   "theme": "Received the wrong item",
+   "count": 2
+  },
+  {
+   "ref": "complaint:c_review_gate",
+   "theme": "Forced to leave a review",
+   "count": 1
+  },
+  {
+   "ref": "complaint:c_fake_reviews",
+   "theme": "Reviews seem fake or bought",
+   "count": 1
+  },
+  {
+   "ref": "complaint:c_review_nag",
+   "theme": "Nagged for a review",
+   "count": 1
+  },
+  {
+   "ref": "complaint:c_billing",
+   "theme": "Charged the wrong amount",
+   "count": 1
+  }
+ ],
+ "praise": [
+  {
+   "ref": "praise:p_look",
+   "theme": "Beautiful design",
+   "count": 78,
+   "quotes": [
+    {
+     "text": "Very cute planner! It had a lot of activity’s to keep you on schedule and accountable.",
+     "stars": 5
+    },
+    {
+     "text": "This is truly amazing, I love all the hyper-links and how it incorporates wellbeing, the coloring, etc. Tons of templates and super easy to use.",
+     "stars": 5
+    },
+    {
+     "text": "Everything is laid out well, hyperlinks work perfectly, additional pages are thoughtfully made, and the color scheme is so pretty. I really enjoy using it!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_fits_needs",
+   "theme": "Useful, fits my needs",
+   "count": 76,
+   "quotes": [
+    {
+     "text": "The owner of this company is a honest person and her products are very useful.",
+     "stars": 5
+    },
+    {
+     "text": "Working through the pages helped me organise my emotions and build healthier habits. They are gentle, practical tools for personal development.",
+     "stars": 5
+    },
+    {
+     "text": "convenient, pretty, useful, worked out great for me",
+     "stars": 4
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_complete",
+   "theme": "Has everything I need",
+   "count": 46,
+   "quotes": [
+    {
+     "text": "The icons for ebook and audiobook are swapped throughout. Otherwise a good package with lots of options.",
+     "stars": 3
+    },
+    {
+     "text": "This is truly amazing, I love all the hyper-links and how it incorporates wellbeing, the coloring, etc. Tons of templates and super easy to use.",
+     "stars": 5
+    },
+    {
+     "text": "Great resources! Full of fun ways to stay organized, digitally!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_easy",
+   "theme": "Easy to set up and use",
+   "count": 32,
+   "quotes": [
+    {
+     "text": "This is truly amazing, I love all the hyper-links and how it incorporates wellbeing, the coloring, etc. Tons of templates and super easy to use.",
+     "stars": 5
+    },
+    {
+     "text": "very easy to download and start creating :)",
+     "stars": 5
+    },
+    {
+     "text": "A very comprehensive kit. Love that it comes in multiple sizes. Really easy to download and access. Thank you.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_quality",
+   "theme": "High quality",
+   "count": 31,
+   "quotes": [
+    {
+     "text": "Great planner. A little overwhelming at first, but love it so far!",
+     "stars": 5
+    },
+    {
+     "text": "Everything is laid out well, hyperlinks work perfectly, additional pages are thoughtfully made, and the color scheme is so pretty. I really enjoy using it!",
+     "stars": 5
+    },
+    {
+     "text": "Quality was amazing. \nMatched Description. \nMet Expectations.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_adhd",
+   "theme": "Helps me stay on track",
+   "count": 28,
+   "quotes": [
+    {
+     "text": "Very cute planner! It had a lot of activity’s to keep you on schedule and accountable.",
+     "stars": 5
+    },
+    {
+     "text": "Working through the pages helped me organise my emotions and build healthier habits. They are gentle, practical tools for personal development.",
+     "stars": 5
+    },
+    {
+     "text": "Artikel von dem Verkäufer begleiten mich scheon ein paar Jahre und sie gestalten meinen Alltag einfacher. Kann ich für Spectrum- Ponies nur empfehlen!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_support",
+   "theme": "Seller was helpful",
+   "count": 24,
+   "quotes": [
+    {
+     "text": "Unable to use on a Samsung tablet S.  Seller tried to help, but after doing research, it's not compatible with this style tablet.",
+     "stars": 1
+    },
+    {
+     "text": "Beautiful planner! And helpful seller w the details!",
+     "stars": 2
+    },
+    {
+     "text": "Quick to respond. Very sweet.",
+     "stars": 4
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_flexible",
+   "theme": "Flexible or customizable",
+   "count": 20,
+   "quotes": [
+    {
+     "text": "Very fun and plenty of options to curate to individual needs.",
+     "stars": 5
+    },
+    {
+     "text": "This planner really does have everything. There are tons of custom pages and all sorts of trackers that you can include throughout your planner. I seriously can't believe how much I got for this price",
+     "stars": 5
+    },
+    {
+     "text": "A very comprehensive kit. Love that it comes in multiple sizes. Really easy to download and access. Thank you.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_as_described",
+   "theme": "Exactly as described",
+   "count": 18,
+   "quotes": [
+    {
+     "text": "High quality explanation & instructions. Matched the description, & exceeded my expectation. Thank you so much. 💖",
+     "stars": 5
+    },
+    {
+     "text": "Not the fault of the seller - this is exactly what it purports to be.  It's just so MUCH that it's overwhelming and I won't be able to use it effectively.",
+     "stars": 1
+    },
+    {
+     "text": "The product was exactly as advertised.  It was an easy download and print.",
+     "stars": 4
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_nav",
+   "theme": "Links work, easy to navigate",
+   "count": 9,
+   "quotes": [
+    {
+     "text": "This is truly amazing, I love all the hyper-links and how it incorporates wellbeing, the coloring, etc. Tons of templates and super easy to use.",
+     "stars": 5
+    },
+    {
+     "text": "Everything is laid out well, hyperlinks work perfectly, additional pages are thoughtfully made, and the color scheme is so pretty. I really enjoy using it!",
+     "stars": 5
+    },
+    {
+     "text": "I really like the way this planner navigated, having a homenspace and then branching out",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_value",
+   "theme": "Great value",
+   "count": 9,
+   "quotes": [
+    {
+     "text": "This planner really does have everything. There are tons of custom pages and all sorts of trackers that you can include throughout your planner. I seriously can't believe how much I got for this price",
+     "stars": 5
+    },
+    {
+     "text": "I love this planner! This is how all planners should be done. So much fun- exactly what I need and how I need it. Worth it!!!",
+     "stars": 5
+    },
+    {
+     "text": "This planner has helped me so much. So much care and thought has been put into it, and it shows. Well worth the money. Highly recommend.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_repeat",
+   "theme": "Repeat buyer",
+   "count": 8,
+   "quotes": [
+    {
+     "text": "Artikel von dem Verkäufer begleiten mich scheon ein paar Jahre und sie gestalten meinen Alltag einfacher. Kann ich für Spectrum- Ponies nur empfehlen!",
+     "stars": 5
+    },
+    {
+     "text": "Great setup. Going to have to get one for 2025",
+     "stars": 5
+    },
+    {
+     "text": "I repurchased for this year because I loved it so much. Plenty of page formatting options and special features! 10/10 recommend",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_guide",
+   "theme": "Clear instructions or tutorials",
+   "count": 7,
+   "quotes": [
+    {
+     "text": "High quality explanation & instructions. Matched the description, & exceeded my expectation. Thank you so much. 💖",
+     "stars": 5
+    },
+    {
+     "text": "Great for keeping organised and easy to understand instructions.",
+     "stars": 4
+    },
+    {
+     "text": "The planner is everything I’ve ever wanted in a digital planner, plus it’s so cute!! The video tutorials are very thorough and really help you understand how to use the planner right away.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_print",
+   "theme": "Prints easily and cleanly",
+   "count": 7,
+   "quotes": [
+    {
+     "text": "great product. easy to download and print. Just bought a few other pages to supplement the perfect planner set up",
+     "stars": 5
+    },
+    {
+     "text": "The product was exactly as advertised.  It was an easy download and print.",
+     "stars": 4
+    },
+    {
+     "text": "Easy to access and print out. I haven't finished it, but so far love it.",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_delivery",
+   "theme": "Fast, easy download",
+   "count": 7,
+   "quotes": [
+    {
+     "text": "very easy to download and start creating :)",
+     "stars": 5
+    },
+    {
+     "text": "Easy to access and print out. I haven't finished it, but so far love it.",
+     "stars": 5
+    },
+    {
+     "text": "great product. easy to download and print. Just bought a few other pages to supplement the perfect planner set up",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_device",
+   "theme": "Works on my device",
+   "count": 6,
+   "quotes": [
+    {
+     "text": "Helpful and useful on phone and iPad",
+     "stars": 2
+    },
+    {
+     "text": "works with my journaling app, i don't use all of them which sucks because they're very cute",
+     "stars": 4
+    },
+    {
+     "text": "Wonderful monochrome look! Works beautifully with Kindle Scribe!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_extras",
+   "theme": "Love the stickers and extras",
+   "count": 4,
+   "quotes": [
+    {
+     "text": "My second year purchasing a planner from Brooklynn’s shop, and it won’t be my last! I adore the new color schemes and the covers that come with it, I love switching up the covers every month :)",
+     "stars": 5
+    },
+    {
+     "text": "Love this journal! I’m just in the beginning of my tarot journey and this journal makes it so easy to record your draws and interpretations. It even has cheat sheets if you need a refresher on the mea",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_daily",
+   "theme": "I use it every day",
+   "count": 3,
+   "quotes": [
+    {
+     "text": "I love it! Use it everyday.",
+     "stars": 5
+    },
+    {
+     "text": "I use this daily for work!",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_fun",
+   "theme": "Fun to use",
+   "count": 3,
+   "quotes": [
+    {
+     "text": "Very fun and plenty of options to curate to individual needs.",
+     "stars": 5
+    },
+    {
+     "text": "It was fun, i really enjoyed getting to colour it all in.",
+     "stars": 5
+    },
+    {
+     "text": "Great, as described. Fun tool for my business",
+     "stars": 5
+    }
+   ]
+  },
+  {
+   "ref": "praise:p_space",
+   "theme": "Plenty of writing space",
+   "count": 2,
+   "quotes": []
+  },
+  {
+   "ref": "praise:p_updates",
+   "theme": "Free updates",
+   "count": 1,
+   "quotes": []
+  }
+ ],
+ "wishes": [
+  {
+   "ref": "wish:w_page_types",
+   "theme": "More page types included",
+   "count": 5
+  },
+  {
+   "ref": "wish:w_customize",
+   "theme": "More ways to customize",
+   "count": 2
+  },
+  {
+   "ref": "wish:w_next_year",
+   "theme": "New edition for upcoming years",
+   "count": 2
+  },
+  {
+   "ref": "wish:w_nav_links",
+   "theme": "More links between views",
+   "count": 2
+  },
+  {
+   "ref": "wish:w_back_button",
+   "theme": "A back button",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_side_tabs",
+   "theme": "Side tabs for faster navigation",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_easy_delivery",
+   "theme": "Easier way to receive the files",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_portrait",
+   "theme": "Portrait version",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_sunday_start",
+   "theme": "Sunday-start weeks",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_listing_info",
+   "theme": "Listing should say which apps are needed",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_previews",
+   "theme": "Page previews before buying",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_themes",
+   "theme": "More design themes",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_file_format",
+   "theme": "Other file formats (Google Docs, Word, Pages)",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_typeable",
+   "theme": "Pages you can type on",
+   "count": 1
+  },
+  {
+   "ref": "wish:w_gamify",
+   "theme": "More game-style rewards",
+   "count": 1
+  }
+ ],
+ "features": [
+  {
+   "ref": "feature:self_care",
+   "name": "Self-care, mood or wellness pages",
+   "tier": "standard",
+   "share": 0.7,
+   "revenue_share": 0.651
+  },
+  {
+   "ref": "feature:dated",
+   "name": "Dated for the year",
+   "tier": "common",
+   "share": 0.533,
+   "revenue_share": 0.616
+  },
+  {
+   "ref": "feature:multi_year",
+   "name": "Covers more than one year",
+   "tier": "common",
+   "share": 0.4,
+   "revenue_share": 0.524
+  },
+  {
+   "ref": "feature:journal",
+   "name": "Journal or notebook pages",
+   "tier": "common",
+   "share": 0.4,
+   "revenue_share": 0.309
+  },
+  {
+   "ref": "feature:adhd_specific",
+   "name": "Built for ADHD",
+   "tier": "common",
+   "share": 0.367,
+   "revenue_share": 0.352
+  },
+  {
+   "ref": "feature:goodnotes",
+   "name": "Says Goodnotes",
+   "tier": "common",
+   "share": 0.333,
+   "revenue_share": 0.377
+  },
+  {
+   "ref": "feature:colorful",
+   "name": "Colorful or aesthetic look",
+   "tier": "rare",
+   "share": 0.233,
+   "revenue_share": 0.267
+  },
+  {
+   "ref": "feature:bundle",
+   "name": "Bundle of several products",
+   "tier": "rare",
+   "share": 0.233,
+   "revenue_share": 0.257
+  },
+  {
+   "ref": "feature:habit_tracker",
+   "name": "Habit tracker",
+   "tier": "rare",
+   "share": 0.2,
+   "revenue_share": 0.159
+  },
+  {
+   "ref": "feature:android",
+   "name": "Android or Samsung support",
+   "tier": "rare",
+   "share": 0.2,
+   "revenue_share": 0.322
+  },
+  {
+   "ref": "feature:all_in_one",
+   "name": "All-in-one life planner",
+   "tier": "rare",
+   "share": 0.133,
+   "revenue_share": 0.213
+  },
+  {
+   "ref": "feature:goals",
+   "name": "Goal setting",
+   "tier": "rare",
+   "share": 0.1,
+   "revenue_share": 0.088
+  },
+  {
+   "ref": "feature:dark_mode",
+   "name": "Dark mode",
+   "tier": "rare",
+   "share": 0.1,
+   "revenue_share": 0.14
+  },
+  {
+   "ref": "feature:notability",
+   "name": "Says Notability",
+   "tier": "rare",
+   "share": 0.1,
+   "revenue_share": 0.228
+  },
+  {
+   "ref": "feature:work",
+   "name": "Work or productivity focus",
+   "tier": "rare",
+   "share": 0.1,
+   "revenue_share": 0.177
+  },
+  {
+   "ref": "feature:undated",
+   "name": "Undated version",
+   "tier": "rare",
+   "share": 0.067,
+   "revenue_share": 0.117
+  },
+  {
+   "ref": "feature:portrait",
+   "name": "Portrait layout",
+   "tier": "rare",
+   "share": 0.067,
+   "revenue_share": 0.161
+  },
+  {
+   "ref": "feature:minimalist",
+   "name": "Minimalist look",
+   "tier": "rare",
+   "share": 0.067,
+   "revenue_share": 0.161
+  },
+  {
+   "ref": "feature:custom",
+   "name": "Customizable or personalized",
+   "tier": "rare",
+   "share": 0.067,
+   "revenue_share": 0.132
+  },
+  {
+   "ref": "feature:hyperlinked",
+   "name": "Hyperlinked tabs and dates",
+   "tier": "rare",
+   "share": 0.033,
+   "revenue_share": 0.05
+  },
+  {
+   "ref": "feature:budget",
+   "name": "Budget or finance pages",
+   "tier": "rare",
+   "share": 0.033,
+   "revenue_share": 0.039
+  },
+  {
+   "ref": "feature:meal",
+   "name": "Meal planning",
+   "tier": "rare",
+   "share": 0.033,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:brain_dump",
+   "name": "Brain dump pages",
+   "tier": "rare",
+   "share": 0.033,
+   "revenue_share": 0.067
+  },
+  {
+   "ref": "feature:time_blocking",
+   "name": "Time blocking or hourly schedule",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:stickers",
+   "name": "Digital stickers included",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:eink",
+   "name": "E-ink tablets (reMarkable, Boox, Kindle Scribe)",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:landscape",
+   "name": "Landscape layout",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:student",
+   "name": "Student or academic",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:routines",
+   "name": "Routine builder",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:dopamine_menu",
+   "name": "Dopamine menu",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:priority_matrix",
+   "name": "Priority matrix or top 3",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:quick_start",
+   "name": "Quick start or setup guide",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  },
+  {
+   "ref": "feature:test_page",
+   "name": "Link test or setup check page",
+   "tier": "not_seen",
+   "share": 0.0,
+   "revenue_share": 0.0
+  }
+ ],
+ "standard_features": [
+  "feature:self_care"
+ ],
+ "price": {
+  "p25": 8.41,
+  "median": 15.0,
+  "p75": 24.33,
+  "top10_by_revenue_median": 18.04,
+  "revenue_weighted_median": 15.0,
+  "best_band": "$20-28"
+ },
+ "keywords": [
+  {
+   "tag": "ipad planner",
+   "used_by_top": 11,
+   "volume": null
+  },
+  {
+   "tag": "adhd planner",
+   "used_by_top": 11,
+   "volume": null
+  },
+  {
+   "tag": "self care planner",
+   "used_by_top": 9,
+   "volume": null
+  },
+  {
+   "tag": "adhd resources",
+   "used_by_top": 8,
+   "volume": null
+  },
+  {
+   "tag": "adhd digital planner",
+   "used_by_top": 8,
+   "volume": null
+  },
+  {
+   "tag": "adhd journal",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "adhd organizer",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "adhd workbook",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "adhd work planner",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "adhd goal setting",
+   "used_by_top": 7,
+   "volume": null
+  },
+  {
+   "tag": "adhd planner adult",
+   "used_by_top": 6,
+   "volume": null
+  },
+  {
+   "tag": "digital planner",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "adhd goodnotes",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "digital notebook",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "digital journal",
+   "used_by_top": 5,
+   "volume": null
+  },
+  {
+   "tag": "goodnotes planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "productivity planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "self care",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "neurodivergent",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "self care journal",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "printable planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "fitness planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "wellness planner",
+   "used_by_top": 4,
+   "volume": null
+  },
+  {
+   "tag": "weekly planner",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "daily planner",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "mental health",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "gratitude journal",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "adhd to do list",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "weight loss tracker",
+   "used_by_top": 3,
+   "volume": null
+  },
+  {
+   "tag": "weight loss journal",
+   "used_by_top": 3,
+   "volume": null
+  }
+ ],
+ "looks": [
+  {
+   "ref": "look:Colorful or aesthetic look",
+   "share": 0.233
+  },
+  {
+   "ref": "look:Dark mode",
+   "share": 0.1
+  },
+  {
+   "ref": "look:Portrait layout",
+   "share": 0.067
+  },
+  {
+   "ref": "look:Minimalist look",
+   "share": 0.067
+  },
+  {
+   "ref": "look:Landscape layout",
+   "share": 0.0
+  }
+ ],
+ "top_listings": [
+  {
+   "ref": "listing:1587562177",
+   "title": "2026 2027 Digital Planner for Goodnotes, Notability, iPad & Samsung Tab | Aesthetic Planner | Minimalist Modern Vertical",
+   "shop": "BytheBrookDesign",
+   "price": 15.0,
+   "mo_revenue": 870.0,
+   "total_sales": 5998.0
+  },
+  {
+   "ref": "listing:1282376971",
+   "title": "2026 + 2027 ADHD Digital Planner (Rainbow): Self-Care and Habit Tracker (Goodnotes/Android) (Digital Download)",
+   "shop": "FutureADHD",
+   "price": 24.33,
+   "mo_revenue": 148.0,
+   "total_sales": 20694.0
+  },
+  {
+   "ref": "listing:4550934368",
+   "title": "Spoon Theory Workbook | Energy Management Worksheets | Chronic Illness Planner | Fatigue Pacing Tracker | Burnout Self C",
+   "shop": "PaperoxStd",
+   "price": 9.99,
+   "mo_revenue": 679.0,
+   "total_sales": 68.0
+  },
+  {
+   "ref": "listing:1259249004",
+   "title": "2026 + 2027 ADHD Digital Planner (Sunset): Habit and Self-Care Tracker (Goodnotes/Android)",
+   "shop": "FutureADHD",
+   "price": 24.33,
+   "mo_revenue": 33.0,
+   "total_sales": 7575.0
+  },
+  {
+   "ref": "listing:4332596790",
+   "title": "ADHD Planner 2026-2027, ADHD Digital Planner, Goodnotes Planner, iPad Planner, Daily Weekly Monthly Planner, Productivit",
+   "shop": "Manifestable",
+   "price": 9.99,
+   "mo_revenue": 599.0,
+   "total_sales": 2610.0
+  },
+  {
+   "ref": "listing:1345375335",
+   "title": "Dark Mode ADHD Digital Planner (2026-2027), Self-Care Tracker (Digital Download)",
+   "shop": "FutureADHD",
+   "price": 24.33,
+   "mo_revenue": 16.0,
+   "total_sales": 7039.0
+  },
+  {
+   "ref": "listing:1620103130",
+   "title": "2026 & 2027 ADHD Digital Planner (Dark Rainbow): Self-Care and Habit Tracker (iPad, Android)",
+   "shop": "FutureADHD",
+   "price": 24.33,
+   "mo_revenue": 556.0,
+   "total_sales": 3605.0
+  },
+  {
+   "ref": "listing:1827825727",
+   "title": "Dark ADHD Life Planner 2026 2027, GoodNotes iPad Android Notability, Undated, Lifetime, Brain Dump, Self Care Journal, C",
+   "shop": "DigitizedPlanner",
+   "price": 37.45,
+   "mo_revenue": 524.0,
+   "total_sales": 77.0
+  },
+  {
+   "ref": "listing:1322182653",
+   "title": "Self Care Planner | Digital Planner | GoodNotes Planner | iPad Planner | Daily Planner | Mental Health Mindfulness Heali",
+   "shop": "Manifestable",
+   "price": 3.99,
+   "mo_revenue": 0.0,
+   "total_sales": 5413.0
+  },
+  {
+   "ref": "listing:4418917488",
+   "title": "Self-Care Compass Sheet PDF, Personalized Well-Being Guide, Therapy-Inspired Mental Health Worksheets & Self Care Planne",
+   "shop": "PaperoxStd",
+   "price": 4.98,
+   "mo_revenue": 508.0,
+   "total_sales": 340.0
+  },
+  {
+   "ref": "listing:1257544669",
+   "title": "2026 + 2027 ADHD Printable Planner (Sunset) Adult Daily Journal, Self-Care (PDF)",
+   "shop": "FutureADHD",
+   "price": 24.33,
+   "mo_revenue": 33.0,
+   "total_sales": 4819.0
+  },
+  {
+   "ref": "listing:1489157910",
+   "title": "Mega shop bundle, 500 + Pages of Therapy worksheets and Activities. Anxiety, Self-Care Planner. Emotional Support. Copin",
+   "shop": "CounsellorCronan",
+   "price": 21.07,
+   "mo_revenue": 506.0,
+   "total_sales": 2852.0
+  },
+  {
+   "ref": "listing:729202822",
+   "title": "Printable Planner Bundle - All printable planners in the shop ~ Make important life changes ~ Plan your next steps ~ Get",
+   "shop": "lovingmondays",
+   "price": 39.8,
+   "mo_revenue": 0.0,
+   "total_sales": 4344.0
+  },
+  {
+   "ref": "listing:4316435473",
+   "title": "Bullet Journal Bundle (Bundle A), 2026-2027 Monthly & Yearly Trackers, Habit Trackers, Planners, Mood Trackers, Self-Car",
+   "shop": "FreshFolioPrintables",
+   "price": 11.9,
+   "mo_revenue": 500.0,
+   "total_sales": 628.0
+  },
+  {
+   "ref": "listing:1094713506",
+   "title": "Fitness Planner, Weight Loss Tracker, BUNDLE, Workout Planner Fitness Journal, Wellness, Health Goal, Meal Planner, Self",
+   "shop": "CreativeJamCo",
+   "price": 3.7,
+   "mo_revenue": 0.0,
+   "total_sales": 4210.0
+  }
+ ],
+ "capabilities": {
+  "modules": {
+   "cover": {
+    "desc": "Cover page with title, subtitle and an Open button. start (anchor the button opens, default index), button (default Open planner; \"Open journal\" also makes printed help say journal), size (title px)",
+    "params": {
+     "start": "str",
+     "button": "str, default \"Open planner\"",
+     "size": "int"
+    }
+   },
+   "index": {
+    "desc": "Contents page: a card for every section plus all months",
+    "params": {}
+   },
+   "year": {
+    "desc": "Year at a glance: 12 mini calendars, every date links to its day (dated) or month (undated)",
+    "params": {}
+   },
+   "lined": {
+    "desc": "Lined or dot-grid writing pages (notes, goals, brain dump). label, kicker, pages, dots, anchor",
+    "params": {
+     "label": "str",
+     "kicker": "str",
+     "pages": "int",
+     "dots": "bool",
+     "anchor": "str"
+    }
+   },
+   "checklist": {
+    "desc": "Checklist page in columns. label, kicker, groups: [[title, [items]]], anchor",
+    "params": {
+     "label": "str",
+     "kicker": "str",
+     "groups": "list",
+     "anchor": "str"
+    }
+   },
+   "table": {
+    "desc": "Table page. label, kicker, headers, rows, first_column (pre-filled), anchor, check_columns (headers drawn as a narrow column of tick boxes), dividers (column rules)",
+    "params": {
+     "label": "str",
+     "headers": "list",
+     "rows": "int",
+     "first_column": "list",
+     "anchor": "str",
+     "check_columns": "list of header names",
+     "dividers": "bool"
+    }
+   },
+   "year_pixels": {
+    "desc": "Year in pixels: color one square per day for mood or energy. label, keys",
+    "params": {
+     "label": "str",
+     "keys": "list"
+    }
+   },
+   "guide": {
+    "desc": "Printed guide page with numbered steps (how to start, how to import, how links work). label, kicker, steps: [[title, text]], tip, anchor",
+    "params": {
+     "label": "str",
+     "kicker": "str",
+     "steps": "list",
+     "tip": "str",
+     "anchor": "str"
+    }
+   },
+   "link_test": {
+    "desc": "Setup check page: buttons that jump to a test page and back, so buyers confirm links work before planning. label, anchor, targets ([[button label, anchor]] x3, default month, year, Contents), fixes (4 str: the fix list)",
+    "params": {
+     "label": "str",
+     "anchor": "str",
+     "targets": "list of [label, anchor], 3 items",
+     "fixes": "list of 4 str"
+    }
+   },
+   "calendar": {
+    "desc": "The dated or undated calendar: month pages, optional habit page per month, week pages and day pages, all cross-linked. month: {side: [labels]}, habits: bool, week: {preset | side: [blocks]}, day: {preset | left: [blocks], right: [blocks]}, days: bool",
+    "params": {
+     "month": "dict",
+     "habits": "bool",
+     "week": "dict",
+     "day": "dict",
+     "days": "bool",
+     "iso_weeks": "bool: ISO 8601 week numbers (Week 1 holds January 4); needs a head_start covering the days before it"
+    }
+   },
+   "head_start": {
+    "desc": "Lead-in months before the main dated year (for example Nov and Dec 2026 in a 2027 planner): month pages whose dates link to lead-in week pages, Monday-start week pages titled by date range, optional lead-in day pages. Anchors use their own prefix. The last week links days that fall in the main year to their day pages and offers Continue to the main year. label, kicker, anchor (prefix, default hs), from YYYY-MM, to YYYY-MM, days bool, month {side}, week {preset|side}, day {preset|left,right}, continue_to (default m01)",
+    "params": {
+     "label": "str",
+     "kicker": "str",
+     "anchor": "str",
+     "from": "YYYY-MM",
+     "to": "YYYY-MM",
+     "days": "bool",
+     "month": "dict",
+     "week": "dict",
+     "day": "dict",
+     "continue_to": "str",
+     "main_links": "bool: on head-start pages the head-start month tabs say their year (NOV 2026) so one label has one target, the last head-start week arrow opens main Week 1 and Week 1 gets a back arrow"
+    }
+   },
+   "money_month": {
+    "desc": "One month-end money page per month (anchors mm01 to mm12; with head_start also mmhs11, mmhs12 for the head-start months), each linked from its month page by a chip. Two tables (Money in, Money out: Category, Planned, Actual, Total row), a This month box (Money in, Money out, Profit), lined boxes for fields (the last fills the page) and a strip of pills to every Money month. One Contents card and one top-bar item. label, kicker, anchor, nav_label, head_start, income, expenses, fields",
+    "params": {
+     "label": "str (Money month)",
+     "kicker": "str (Month end)",
+     "anchor": "str prefix, default 'mm'",
+     "nav_label": "str (Money)",
+     "head_start": "bool: also pages for the head_start months",
+     "income": "list of str (3 to 5)",
+     "expenses": "list of str (4 to 8)",
+     "fields": "list of str: lined boxes, the last grows",
+     "index": "bool",
+     "nav": "bool"
+    }
+   },
+   "eink_format": {
+    "desc": "Format switch for e-ink tablets (reMarkable): prints no page. Put it first in sections. Widens the left gutter to left_gutter px (clears the toolbar), draws writing lines and dot grids as vector strokes instead of gradient patterns (vector_rules), refuses a theme with any color when grayscale is true and drops the month and card tints, lays portrait week pages (calendar and head start) out as two columns of day boxes with the side blocks underneath (week_layout rows), and replaces the Setup check fix list and pen test label (link_test_fixes, pen_label). In portrait the Setup check also gets a map of the top bar under the pen test.",
+    "params": {
+     "left_gutter": "int px, default 40",
+     "vector_rules": "bool",
+     "grayscale": "bool",
+     "week_layout": "'grid' (default) | 'rows'",
+     "link_test_fixes": "list of 4 str",
+     "pen_label": "str"
+    }
+   },
+   "books": {
+    "desc": "Book log (Library) plus one review page per book, cross-linked both ways. Library pages (anchor, then anchor2, anchor3...): per_log_page numbered lines (No., Title, Author, Finished, Stars, Shelf); each number opens that book; a strip links all Library pages. Book pages (book_anchor + 001...): title, author, genre, format, dates, pages, stars, reread, why I picked it up, thoughts (fills the page), favorite quote with page, favorite character, one-line review; previous and next book arrows; trail back to the Library page holding its line. One Contents card and one top-bar item. label, kicker, anchor, book_anchor, count, per_log_page",
+    "params": {
+     "label": "str (Library)",
+     "kicker": "str",
+     "anchor": "str, default 'library'",
+     "book_anchor": "str, default 'b' (b001)",
+     "count": "int (100)",
+     "per_log_page": "int (25)"
+    }
+   },
+   "reading_month": {
+    "desc": "Twelve undated monthly reading pages, anchors m01 to m12 (the month rail and Contents month grid link to them): books finished this month with stars, 31 reading-day circles, pages or hours read, book of the month, up next, notes. Trail Reading year / Month. Registers nothing unless index or nav is true. label, index, nav",
+    "params": {
+     "label": "str (not shown)",
+     "index": "bool, default false",
+     "nav": "bool, default false"
+    }
+   },
+   "reading_year": {
+    "desc": "One undated reading-year page (anchor 'year'): yearly book goal with a year field, month by month rows (each month links to m01 to m12) with 10 squares to color per finished book, tallies (Fiction, Nonfiction, Print, Ebook, Audio), top 5 of the year, best quote of the year. Registers a Contents card and, unless nav is false, a top-bar item. label, kicker, anchor, nav",
+    "params": {
+     "label": "str (Reading year)",
+     "kicker": "str",
+     "anchor": "str, must be 'year'",
+     "nav": "bool"
+    }
+   },
+   "log_week": {
+    "desc": "Undated numbered week pages (anchor prefix + 2 digits: w01 to w52) plus an overview page (overview_anchor) with a card per week: tap to open it, write its start date. Each week page: a dates line, buttons to the pages that belong to that week (links, for example its meal plan and workout logs; mark_every adds a button to mark_anchor every few weeks, for example a measuring check-in), a day table (days x columns; check columns draw tick boxes), a habit grid (habits plus blank rows x 7 days of circles), a box of one-line stats (for example Weigh-in) and lined boxes (fields). Previous and next arrows, trail back to the overview. One Contents card and one top-bar item, both opening the overview. label, kicker, anchor, overview_anchor, overview_title, count, days, columns, habits, habits_label, blank_habits, stats, fields, links, mark_every, mark_anchor, mark_label",
+    "params": {
+     "label": "str (Weeks)",
+     "kicker": "str",
+     "anchor": "str prefix, default 'w'",
+     "overview_anchor": "str, default 'weeks'",
+     "overview_title": "str",
+     "count": "int (52)",
+     "days": "list of 7 str (Mon to Sun)",
+     "columns": "list of {label, check: bool, width: fr number}",
+     "habits": "list of str",
+     "habits_label": "str",
+     "blank_habits": "int (2)",
+     "stats": "list of str: one-line fields",
+     "fields": "list of str: lined boxes",
+     "links": "list of {label, anchor: prefix, per: int}",
+     "mark_every": "int",
+     "mark_anchor": "str",
+     "mark_label": "str"
+    }
+   },
+   "meal_week": {
+    "desc": "Weekly meal plan pages (anchor prefix + 2 digits: meal01 to meal52), one per numbered week: a grid of days x meals with a small circle in each cell to tick when you ate what you planned, a grocery list in groups with tick boxes, and lined boxes (fields) beside the groups. With week_anchor (pair with log_week), a button back to that week's page and a trail Week n / Meals. Previous and next arrows. One Contents card. label, kicker, anchor, count, meals, days, grocery, grocery_rows, fields, week_anchor, tick",
+    "params": {
+     "label": "str (Meal plans)",
+     "kicker": "str",
+     "anchor": "str prefix, default 'meal'",
+     "count": "int (52)",
+     "meals": "list of str (Breakfast, Lunch, Dinner, Snacks)",
+     "days": "list of 7 str",
+     "grocery": "list of str: group names",
+     "grocery_rows": "int (5)",
+     "fields": "list of str",
+     "week_anchor": "str: log_week prefix",
+     "tick": "bool (true)"
+    }
+   },
+   "workout_log": {
+    "desc": "Workout log: count session pages (anchor prefix + 3 digits: wo001...) and log list pages (log_anchor, then log2, log3...) with a line and a button for every session. With per_week, sessions belong to numbered weeks (week n holds sessions (n-1)*per_week+1 to n*per_week, titled Workout 1 to per_week) and get a button back to the week page (week_anchor; pair with log_week links {anchor: this prefix, per: per_week}). Session page: date, focus, minutes, effort 1 to 5; an exercise table (Exercise, Last time, Set 1 to sets, each set weight x reps) so every session can beat the last; an optional cardio table; lined boxes (fields). Previous and next arrows. One Contents card and one top-bar item, both opening the log list. label, kicker, anchor, log_anchor, count, per_week, week_anchor, exercises, sets, cardio, fields, per_log_page",
+    "params": {
+     "label": "str (Training log)",
+     "kicker": "str",
+     "anchor": "str prefix, default 'wo'",
+     "log_anchor": "str, default 'log'",
+     "count": "int (156)",
+     "per_week": "int",
+     "week_anchor": "str: log_week prefix",
+     "exercises": "int rows (8)",
+     "sets": "int (4)",
+     "cardio": "bool (true)",
+     "fields": "list of str (2)",
+     "per_log_page": "int"
+    }
+   },
+   "body_measure": {
+    "desc": "Body measurements page: a table of check-ins (rows: Start, then every few weeks) by Date and parts (columns), a Change since start row, a units line, and a How to measure box (tips: one per part). With week_anchor (pair with log_week), each Week n check-in opens that week's page. One Contents card. label, kicker, anchor, parts, every, weeks, week_anchor, tips",
+    "params": {
+     "label": "str (Measurements)",
+     "kicker": "str",
+     "anchor": "str, default 'measure'",
+     "parts": "list of str (columns, 5 to 7)",
+     "every": "int (4)",
+     "weeks": "int (52)",
+     "week_anchor": "str",
+     "tips": "list of [part, how]"
+    }
+   },
+   "progress_chart": {
+    "desc": "A chart page to plot one number over time (weight, sleep hours, mood...): points (columns, labelled every few points) by rows, with room for your own scale on the left, a box of one-line fields above (for example Start, Goal) and blocks under the chart (any block kinds: checklist, lines...). links: buttons in the title row. label, kicker, anchor, points, point_label, every, rows, y_label, hint, fields, blocks, links",
+    "params": {
+     "label": "str (Progress)",
+     "kicker": "str",
+     "anchor": "str, default 'progress'",
+     "points": "int (52)",
+     "point_label": "str (Week)",
+     "every": "int (4)",
+     "rows": "int (20)",
+     "y_label": "str",
+     "hint": "str",
+     "fields": "list of str",
+     "blocks": "list of blocks",
+     "links": "list of [label, anchor]"
+    }
+   },
+   "habit_month": {
+    "desc": "Twelve undated month pages, anchors m01 to m12 (the month rail and the Contents month grid open them): month name with a year line, a goal box and a box of one-line stats, a habit grid (habits plus blank rows by days 1 to 31, a circle per day; days a month never has are faded), an optional mood row (a square per day to color, with a color key), and lined boxes (fields). Previous and next month arrows. One Contents card (Months) unless index is false; no top-bar item unless nav is true. label, kicker, habits, habits_label, blank_habits, goal, stats, mood, fields, index, nav",
+    "params": {
+     "label": "str (Months)",
+     "kicker": "str",
+     "habits": "list of str",
+     "habits_label": "str",
+     "blank_habits": "int (3)",
+     "goal": "str (box label)",
+     "stats": "list of str",
+     "mood": "{label, keys: [[name, hex]]} or true",
+     "fields": "list of str",
+     "index": "bool",
+     "nav": "bool (false)"
+    }
+   },
+   "group_weeks": {
+    "desc": "Prints no page. Put it last in sections, after log_week and the modules its links name (meal_week, workout_log). Moves each week's linked pages right after that week's page (Week 1, its workouts, its meal plan, then Week 2...), so a buyer who swipes meets one week at a time and can print a week as one page range. Links and anchors do not change.",
+    "params": {}
+   },
+   "print_format": {
+    "desc": "Format switch for home-printed planners: prints no page. Put it first. One PDF per paper size (sizes: letter 8.5 x 11 in, a4 210 x 297 mm, portrait, same page order and count), nothing within margin_in of any edge, binding_in extra on the binding edge (mirrored with duplex: odd pages bind left, even pages bind right), white paper only, no top bar or month rail (hide_nav; the trail stays as small text with its links), printed page numbers (page_numbers), vector writing lines (vector_rules). No day pages: dates open their week. Each month prints as whole sheets: a month page (sheet front: grid with a week column, then month_spread.page blocks) and a month review page (month_spread.review blocks, the left page facing the next month), with every week between them as a two-page spread (week_spread: left_top blocks over Mon to Wed; Thu, Fri and Sat over Sun with right_bottom blocks under). The build fails when a spread starts on a sheet front or a Print map row is not whole sheets.",
+    "params": {
+     "sizes": "list of 'letter' | 'a4'",
+     "margin_in": "number (0.5)",
+     "binding_in": "number (0.375)",
+     "duplex": "bool",
+     "hide_nav": "bool",
+     "page_numbers": "bool",
+     "vector_rules": "bool",
+     "month_spread": "dict {page: [blocks under the month grid], review: [blocks on the month review page]}",
+     "week_spread": "dict {left_top: [blocks], day_rows: int, weekend: 'stacked', right_bottom: [blocks]}"
+    }
+   },
+   "print_check": {
+    "desc": "One-sheet print test (needs print_format): front (anchor, a sheet front) with true-size inch and centimetre rulers, four corner marks at the 0.5 in safe area, binding-edge hole guides (Letter 3 holes 4.25 in apart, A4 2 holes 80 mm apart), a line, dot and tone sample and a pen test box; back (anchor + 'b') with the alignment check, the fixes checklist, a Settings that work table, a box to write your own printer settings, and links to Start here and the Print map. label, anchor, fixes (up to 6)",
+    "params": {
+     "label": "str (Print check)",
+     "anchor": "str, default 'printcheck'",
+     "fixes": "list of up to 6 str"
+    }
+   },
+   "print_map": {
+    "desc": "Print map page (needs print_format): one row per run of whole sheets in file order (front pages, each head-start month, each month, spare week) with its page range, sheet count and a Printed tick box, filled at the end of the build; under it 'Starting before <year>' and 'Starting later in <year>' boxes. label, kicker, anchor",
+    "params": {
+     "label": "str (Print map)",
+     "kicker": "str",
+     "anchor": "str, default 'printmap'"
+    }
+   },
+   "spare_week": {
+    "desc": "Undated week spreads for print_format (count of them), each printed as two whole sheets: a Notes page (sheet front), the week spread (Week of ____, a blank date rule per day) and a Notes page (sheet back), so a copy drops into the binder anywhere. Anchors: anchor+'n1', anchor, anchor+'b', anchor+'n2' (then anchor2..). label, kicker, anchor, count",
+    "params": {
+     "label": "str (Spare week)",
+     "kicker": "str",
+     "anchor": "str, default 'spare'",
+     "count": "int (1)"
+    }
+   }
+  },
+  "blocks": {
+   "checklist": "Checkbox list. label, rows, items (pre-filled), fill, grow",
+   "lines": "Lined writing box. label, grow (default true) or height",
+   "dots": "Dot-grid box. label, grow or height",
+   "water": "Water tracker drops. label, count",
+   "scale": "Circles 1 to max to rate energy, mood or focus. label, max",
+   "hours": "Hourly schedule. label, from, to, row (px)",
+   "pair": "Two blocks side by side. items: [block, block]",
+   "text": "Short printed tip or instruction. label, text",
+   "habits": "Weekly habit strip: day initials M to S over seven circles per row, a write-in habit name per row. label, rows"
+  },
+  "day_presets": [
+   "default",
+   "adhd"
+  ],
+  "week_presets": [
+   "default",
+   "adhd"
+  ],
+  "themes": [
+   "sage",
+   "neutral",
+   "pastel",
+   "navy",
+   "blush",
+   "night"
+  ],
+  "orientations": [
+   "landscape",
+   "portrait"
+  ],
+  "dating": [
+   "dated (year)",
+   "undated"
+  ],
+  "fonts": [
+   "Corm",
+   "Jost",
+   "Fraunces",
+   "Manrope",
+   "Quicksand",
+   "Nunito",
+   "DMSerif",
+   "Outfit",
+   "Baskerville",
+   "Script"
+  ],
+  "type_scale": "number, 1.0 default; 1.15 for larger text"
+ },
+ "style_rules": [
+  {
+   "id": "r001",
+   "rule": "Every page must be reachable by links from the first page. Groups of pages that only link to each other count as unreachable.",
+   "enforced": "build (automatic)",
+   "from": "p-adhd-001 check round 2"
+  },
+  {
+   "id": "r002",
+   "rule": "Setup steps must work for a buyer on any purchase date in the selling window, for example before the dated year starts. Walk through day one for an early buyer and a mid-year buyer.",
+   "enforced": "brief writer and coverage checker",
+   "from": "p-adhd-001 check round 3"
+  },
+  {
+   "id": "r003",
+   "rule": "Every number or fact in the listing (pages, file size, what is and isn't included) must match the built file. Rebuilds change counts; update the copy.",
+   "enforced": "check tech (page counts automatic)",
+   "from": "p-adhd-001 rebuilds"
+  },
+  {
+   "id": "r004",
+   "rule": "Use only glyphs the embedded fonts contain. Draw arrows and icons as SVG, otherwise a non-licensed fallback font gets embedded.",
+   "enforced": "check tech + line test (automatic)",
+   "from": "p-adhd-001 check tech"
+  },
+  {
+   "id": "r005",
+   "rule": "A listing photo must show what its copy and alt text claim. A small multi-page grid needs captions and readable pages (2x2 beats 4 in a row).",
+   "enforced": "coverage checker",
+   "from": "p-adhd-001 check rounds 1 to 3"
+  },
+  {
+   "id": "r006",
+   "rule": "No half-empty pages. Fill spare space with something a buyer uses (a map of the top bar, a month jump grid, a pen test area), never decoration.",
+   "enforced": "coverage checker",
+   "from": "p-adhd-001 check rounds 1 to 3"
+  },
+  {
+   "id": "r007",
+   "rule": "Never promise service levels in the product (for example 'we reply fast'). Say what the buyer can do instead.",
+   "enforced": "coverage checker",
+   "from": "p-adhd-001 check round 1"
+  },
+  {
+   "id": "r008",
+   "rule": "A week that spans two months is built once, under the month that holds its Thursday; day pages name their own month in the trail.",
+   "enforced": "planner line (automatic)",
+   "from": "brief writer found it"
+  },
+  {
+   "id": "r009",
+   "rule": "Spreadsheets: never rely on a feature Google Sheets drops on import (data bars, Excel-only functions, external-style '#Sheet' links). Use text bars, functions both apps share, and internal tab links.",
+   "enforced": "spreadsheet line (automatic) + coverage checker",
+   "from": "coverage check, Clear Budget round 1"
+  },
+  {
+   "id": "r010",
+   "rule": "Every input cell must change at least one result. An input that nothing reads is a broken promise.",
+   "enforced": "coverage checker",
+   "from": "coverage check, Clear Budget round 1 (Debt 'Extra each month')"
+  },
+  {
+   "id": "r011",
+   "rule": "Size every list for the worst real case (weekly pay has 53 paydays a year; a month can hold 80+ purchases), or say plainly where it stops.",
+   "enforced": "brief writer + coverage checker",
+   "from": "coverage check, Clear Budget round 1"
+  },
+  {
+   "id": "r012",
+   "rule": "Only input cells are shaded. Labels, totals and formulas are never shaded like inputs.",
+   "enforced": "spreadsheet line (automatic)",
+   "from": "coverage check, Clear Budget round 1"
+  },
+  {
+   "id": "r013",
+   "rule": "Listing photos must be readable at Etsy's zoom: show the useful part of a page or tab, large, never a whole page shrunk to fit. Alt text and points describe only what is in frame.",
+   "enforced": "photos stage (photo views) + coverage checker",
+   "from": "coverage check, Clear Budget round 1"
+  },
+  {
+   "id": "r014",
+   "rule": "Start-up steps cover a buyer who buys before the product's year starts (Oct to Dec) as well as one who buys mid-year.",
+   "enforced": "brief writer + coverage checker",
+   "from": "coverage check, Clear Budget round 1"
+  },
+  {
+   "id": "r015",
+   "rule": "Price inside the market's best-earning range, never under it: at least the revenue-weighted median price (what buyers actually pay, weighted by sales). A low price makes a good product look cheap. While the shop has few reviews, launch with a time-limited Etsy sale (25% off for 30 days) on the full price instead of a low price.",
+   "enforced": "brief check (automatic) + brief writer",
+   "from": "Darren and Colynne, Oct 22 2026 (Canva course advice, confirmed by our price data)"
+  },
+  {
+   "id": "r016",
+   "rule": "At most two font families per product: one for headings, one for body. Build hierarchy with weight, size and italic, not extra typefaces. Too many fonts tires the eyes.",
+   "enforced": "brief writer + coverage checker",
+   "from": "Colynne's review of p-rjd-001, Oct 23 2026 (fix: fonts)"
+  }
+ ],
+ "past_briefs": []
+}

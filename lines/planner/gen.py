@@ -117,6 +117,12 @@ class Planner:
         # iso_weeks (calendar option): Week 1 is the week holding January 4 (ISO 8601), so days before it sit in week 0
         self.iso = any(x.get('module') == 'calendar' and x.get('iso_weeks') for x in spec.get('sections', []))
         self.noun = 'planner'   # what the file calls itself in printed help ('journal' when the cover button says so)
+        # print_format section: true paper sizes, safe margins and spreads for home printing (applies to the whole file)
+        self.pf = next((x for x in spec.get('sections', []) if x.get('module') == 'print_format'), None) or {}
+        if self.pf:
+            self.paper = spec.get('paper') or (self.pf.get('sizes') or ['letter'])[0]
+            self.W, self.HT = PAPER[self.paper][2], PAPER[self.paper][3]
+            self.pf_groups, self.pf_spreads = [], []
 
     def fs(self, px):
         return f'{px * self.scale:.1f}px'
@@ -159,7 +165,7 @@ a{{color:inherit;text-decoration:none}}
 .foot{{position:absolute;left:{self.gutter}px;bottom:8px;font:500 9.5px '{th['body']}';color:{th['muted']};letter-spacing:.08em}}
 .step{{display:flex;gap:12px;align-items:flex-start}}
 .step b{{flex:none;width:28px;height:28px;border-radius:50%;background:{th['ink']};color:{th['paper']};display:flex;align-items:center;justify-content:center;font:700 13px '{th['body']}'}}
-""" + self.label_css() + (self.eink_css() if self.eink else '')
+""" + self.label_css() + (self.eink_css() if self.eink else '') + (_pf_css(self) if self.pf else '')
 
     def label_css(self):
         """theme 'labels': 'italic' = two-font hierarchy by weight and italic instead of tracked all-caps labels
@@ -207,6 +213,8 @@ a{{color:inherit;text-decoration:none}}
         return ''.join(f'<a href="#{a}" class="{"on" if a == active else ""}">{esc(l)}</a>' for l, a in self.nav_items[:7 if self.W > self.HT else 4])
 
     def rail(self, month=None, rail_map=None, rail_labels=None):
+        if self.pf:
+            return ''  # print_format: no edge rail (a home printer cuts it off)
         out = []
         for i in range(12):
             c = self.tabs[i]; on = month == i + 1
@@ -215,6 +223,8 @@ a{{color:inherit;text-decoration:none}}
         return f'<div class="rail">{"".join(out)}</div>'
 
     def page(self, anchor, inner, active=None, month=None, crumb='', deco=False, raw=False, style='', rail_map=None, rail_labels=None):
+        if self.pf:
+            return _pf_page(self, anchor, inner, crumb=crumb, raw=raw, style=style)
         self.seed += 3
         m = (motif(self.th, 'tr', self.seed) + motif(self.th, 'bl', self.seed + 1)) if deco else ''
         if raw:
@@ -247,21 +257,21 @@ a{{color:inherit;text-decoration:none}}
     def cal_grid(self, m, link_days=True, small=False):
         cells = ''.join(f'<span class="d hd">{x[0] if small else x}</span>' for x in DOW)
         if self.undated:
-            for i in range(35):
+            for i in range(42):  # 6 rows: a 31-day month that starts on a Saturday or Sunday still fits
                 cells += '<span class="d"></span>'
-            return cells, 5
+            return cells, 6
         cal = calendar.Calendar(0).monthdatescalendar(self.year, m)
         for wk in cal:
             for d in wk:
                 if d.month != m:
                     cells += '<span class="d x"></span>' if small else f'<span class="d x">{d.day}</span>'
                 else:
-                    cells += f'<a class="d" href="#{self.did(d)}">{d.day}</a>' if link_days else f'<span class="d">{d.day}</span>'
+                    cells += f'<a class="d" href="#{_pf_week_anchor(self, d) if self.pf else self.did(d)}">{d.day}</a>' if link_days else f'<span class="d">{d.day}</span>'
         return cells, len(cal)
 
     def html(self):
         body = re.sub(r'%%NAV:([^%]*)%%', lambda m: self.nav_links(m.group(1) or None), ''.join(self.pages))
-        if self.eink.get('vector_rules'):
+        if self.eink.get('vector_rules') or self.pf.get('vector_rules'):
             body += self.vector_script()
         return f'<!doctype html><html><head><meta charset="utf-8"><style>{self.css()}</style></head><body>{body}</body></html>'
 
@@ -298,6 +308,8 @@ def block(P, b):
         return '<div class="row">' + ''.join(f'<div style="flex:1;display:flex;flex-direction:column">{block(P, x)}</div>' for x in b['items']) + '</div>'
     if k == 'text':
         return f'<div class="box fill"><span class="k">{label}</span><span style="font-size:{P.fs(12.5)};line-height:1.45">{esc(b.get("text", ""))}</span></div>'
+    if k == 'habits':
+        return _habits(P, b)
     raise ValueError(f'unknown block kind {k}')
 
 
@@ -310,6 +322,7 @@ BLOCK_KINDS = {
     'hours': 'Hourly schedule. label, from, to, row (px)',
     'pair': 'Two blocks side by side. items: [block, block]',
     'text': 'Short printed tip or instruction. label, text',
+    'habits': 'Weekly habit strip: day initials M to S over seven circles per row, a write-in habit name per row. label, rows',
 }
 
 DAY_PRESETS = {
@@ -367,7 +380,11 @@ def m_cover(P, sec):
       <p class="k" style="font-size:13px">{esc(s.get("kicker", "Digital planner"))}</p><p class="h" style="font-size:{sec.get("size", 92)}px;line-height:1.04">{esc(s["title"])}</p>
       <p style="font-size:20px;color:{th["muted"]};max-width:560px;line-height:1.4">{esc(s.get("subtitle", ""))}</p>
       <div style="display:flex;gap:10px;margin-top:14px"><a href="#{sec.get("start", "index")}" style="padding:10px 22px;border-radius:99px;background:{P.btn};color:{th["paper"]};font:600 13px '{th["body"]}';letter-spacing:.14em;text-transform:uppercase">{esc(button)}</a></div></div>'''
-    P.page('cover', motif(th, 'tr', 5, 260) + motif(th, 'bl', 9, 220) + inner + P.rail(), raw=True, style=f'background:{th["paper"] if P.gray else th["soft"]}')  # e-ink: pure white, a tint dithers
+    if P.pf:  # printed cover: facts row and an owner line at the foot of the page (print_format cover params: facts, owner)
+        facts = ''.join(f'<div style="flex:1;border-top:1.3px solid {th["line"]};padding-top:10px;font-size:{P.fs(12.5)};line-height:1.4;color:{th["muted"]}">{esc(f)}</div>' for f in sec.get('facts', []))
+        owner = f'<div style="display:flex;align-items:flex-end;gap:14px"><span class="k" style="font-size:{P.fs(15)}">{esc(sec["owner"])}</span><span style="flex:1;border-bottom:1.3px solid {th["ink"]};height:30px"></span></div>' if sec.get('owner') else ''
+        inner += f'<div style="position:absolute;left:90px;right:120px;bottom:96px;display:flex;flex-direction:column;gap:46px"><div style="display:flex;gap:22px">{facts}</div>{owner}</div>'
+    P.page('cover', motif(th, 'tr', 5, 260) + motif(th, 'bl', 9, 220) + inner + P.rail(), raw=True, style=f'background:{th["paper"] if (P.gray or P.pf) else th["soft"]}')  # e-ink: pure white, a tint dithers; print: no tint
 
 
 @module('index', 'Contents page: a card for every section plus all months', nav='Home')
@@ -438,17 +455,23 @@ def m_year(P, sec):
         cells, nrows = P.cal_grid(m, small=True, link_days=not P.undated)
         cells += '<span class="d x"></span>' * (7 * (6 - nrows))
         cells = cells.replace('class="d', 'style="padding:2px 3px;font-size:9.5px;border:0;text-align:center" class="d')
+        if P.undated:  # blank boxes to write the dates in, instead of an empty page
+            cells = cells.replace('border:0;text-align:center" class="d"', f'border:1px solid {th["line"]};min-height:22px;text-align:center" class="d"')
+        if P.pf:  # printed: three columns, larger dates
+            cells = cells.replace('font-size:9.5px', f'font-size:{P.fs(11)}')
         blocks += f'<div style="display:flex;flex-direction:column;gap:4px"><a href="#m{m:02d}" class="k" style="color:{th["ink"]};font-size:11px">{MONTHS[m - 1]}</a><div class="cal" style="font-size:9px">{cells}</div></div>'
+    if P.pf:
+        blocks = blocks.replace('font-size:11px">', f'font-size:{P.fs(15)}">')
     title = 'Year at a glance' if P.undated else f'{P.year} at a glance'
     _register(P, sec, 'Year', 'year', 'Calendar')
     chips = ''.join(f'<a href="#{a_}" style="display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:{P.rpill}px;{(f'background:{th["paper"]};color:{th["ink"]};box-shadow:inset 0 0 0 1.5px {th["ink"]}') if P.gray else (f'background:{th["ink"]};color:{th["paper"]}')};font:600 11px \'{th["body"]}\';letter-spacing:.06em;text-transform:uppercase">{esc(l_)} {arrow("r", 12)}</a>' for l_, a_ in sec.get('links', []))
-    hint = f'<div style="display:flex;gap:12px;align-items:center">{chips}<span class="k">{"Tap a month" if P.undated else "Tap any date"}</span></div>'
+    hint = f'<div style="display:flex;gap:12px;align-items:center">{chips}<span class="k">{"Tap a month" if P.undated else "On screen, a date opens its week" if P.pf else "Tap any date"}</span></div>'
     if P.HT > P.W and chips:  # portrait: the chips and hint get their own row under the title, so neither wraps
         hint = hint.replace('text-transform:uppercase">', 'text-transform:uppercase;white-space:nowrap">').replace('<span class="k">', '<span class="k" style="white-space:nowrap">')
         head = P.head('Overview', title) + f'<div style="display:flex;justify-content:space-between;align-items:center">{hint}</div>'
     else:
         head = P.head('Overview', title, right=hint)
-    P.page('year', head + f'<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:14px 22px;flex:1">{blocks}</div>', active='year')
+    P.page('year', head + f'<div style="display:grid;grid-template-columns:repeat({3 if P.pf else 4},1fr);gap:14px 22px;flex:1">{blocks}</div>', active='year')
 
 
 @module('lined', 'Lined or dot-grid writing pages (notes, goals, brain dump). label, kicker, pages, dots, anchor',
@@ -511,6 +534,8 @@ def m_pixels(P, sec):
 def m_guide(P, sec):
     a = sec.get('anchor') or re.sub(r'[^a-z0-9]', '', sec['label'].lower())[:12]
     steps = ''.join(f'<div class="box step" style="padding:18px 20px;gap:14px;flex-direction:row"><b style="width:36px;height:36px;font-size:16px">{i}</b><div style="display:flex;flex-direction:column;gap:8px;flex:1"><p class="h" style="font-size:24px">{esc(st[0])}</p><p style="font-size:{P.fs(14.5)};line-height:1.5;color:{P.th["muted"]}">{esc(st[1])}</p>{(f'<a href="#{st[2]}" style="align-self:flex-start;margin-top:auto;padding:8px 16px;border-radius:{P.rpill}px;background:{P.btn};color:{P.th["paper"]};font:600 12px \'{P.th["body"]}\';letter-spacing:.08em;text-transform:uppercase">Go there {arrow("r")}</a>') if len(st) > 2 and st[2] else ''}</div></div>' for i, st in enumerate(sec['steps'], 1))
+    if P.pf:  # printed: the button names the page to turn to (filled in at the end of the build)
+        steps = re.sub(r'href="#([^"]+)"([^>]*)>Go there ', lambda mm: f'href="#{mm.group(1)}"{mm.group(2)}>Page %%PG:{mm.group(1)}%% ', steps)
     tip = f'<div class="box fill" style="margin-top:auto"><span class="k">Tip</span><span style="font-size:13px;line-height:1.45">{esc(sec["tip"])}</span></div>' if sec.get('tip') else ''
     _register(P, sec, sec['label'], a, sec.get('kicker', 'Start here'))
     P.page(a, P.head(sec.get('kicker', 'Start here'), sec['label']) + f'<div style="display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:1fr;gap:14px;flex:1">{steps}</div>%%GUIDE_EXTRA:{a}%%{tip}', active=a, deco=True)
@@ -518,12 +543,13 @@ def m_guide(P, sec):
     P.guide_extras[a] = sec
 
 
-@module('link_test', 'Setup check page: buttons that jump to a test page and back, so buyers confirm links work before planning. label, anchor')
+@module('link_test', 'Setup check page: buttons that jump to a test page and back, so buyers confirm links work before planning. label, anchor, targets ([[button label, anchor]] x3, default month, year, Contents), fixes (4 str: the fix list)',
+        params={'label': 'str', 'anchor': 'str', 'targets': 'list of [label, anchor], 3 items', 'fixes': 'list of 4 str'})
 def m_link_test(P, sec):
     th = P.th; a = sec.get('anchor', 'linktest')
-    targets = [('A month page', 'm01'), ('The year', 'year'), ('Contents', 'index')]
+    targets = [tuple(t) for t in sec['targets']] if sec.get('targets') else [('A month page', 'm01'), ('The year', 'year'), ('Contents', 'index')]
     btns = ''.join(f'<a href="#{t}" style="padding:16px 22px;border-radius:14px;background:{th["soft"]};font:600 17px \'{th["body"]}\';display:flex;justify-content:space-between;align-items:center"><span>{esc(l)}</span><span>{arrow('r')}</span></a>' for l, t in targets)
-    fixes = _chk(4, P.eink.get('link_test_fixes') or ["Turn the pen off (read or view mode)", f"Open the file in a {'note' if P.noun == 'journal' else 'PDF planner'} app, not Files or Photos", "Re-import the PDF, do not convert it", "Still stuck? Send the shop an Etsy message" if P.noun == 'journal' else "Still stuck? Message us on Etsy and we will help"])
+    fixes = _chk(4, sec.get('fixes') or P.eink.get('link_test_fixes') or ["Turn the pen off (read or view mode)", f"Open the file in a {'note' if P.noun == 'journal' else 'PDF planner'} app, not Files or Photos", "Re-import the PDF, do not convert it", "Still stuck? Send the shop an Etsy message" if P.noun == 'journal' else "Still stuck? Message us on Etsy and we will help"])
     pen = P.eink.get('pen_label', 'Test the pen: turn it on and write your name here')
     ltmap = '%%LT_MAP%%' if P.HT > P.W else ''  # portrait: the tall left column gets a map of the top bar (no half-empty page)
     inner = P.head('Setup check', sec.get('label', 'Do your links work?')) + f'''
@@ -539,6 +565,8 @@ def m_link_test(P, sec):
 @module('calendar', 'The dated or undated calendar: month pages, optional habit page per month, week pages and day pages, all cross-linked. month: {side: [labels]}, habits: bool, week: {preset | side: [blocks]}, day: {preset | left: [blocks], right: [blocks]}, days: bool',
         params={'month': 'dict', 'habits': 'bool', 'week': 'dict', 'day': 'dict', 'days': 'bool', 'iso_weeks': 'bool: ISO 8601 week numbers (Week 1 holds January 4); needs a head_start covering the days before it'})
 def m_calendar(P, sec):
+    if P.pf:
+        return _pf_calendar(P, sec)
     th = P.th
     msec = sec.get('month', {}); wsec = sec.get('week', {}); dsec = sec.get('day', {})
     side_labels = msec.get('side', ['Goals', 'Notes'])
@@ -549,8 +577,8 @@ def m_calendar(P, sec):
     for m in range(1, 13):
         cells, rows = P.cal_grid(m)
         if P.undated:
-            weeks = list(range((m - 1) * 4 + 1, (m - 1) * 4 + 5)) + ([49 + (m - 1) // 3] if m % 3 == 0 else [])
-            weeks = [w for w in weeks if w <= 52]
+            n0 = sum((4, 4, 5)[i % 3] for i in range(m - 1))  # weeks in order: Jan 1-4, Feb 5-8, Mar 9-13 ... Dec 48-52
+            weeks = list(range(n0 + 1, n0 + 1 + (4, 4, 5)[(m - 1) % 3]))
         else:
             weeks = sorted({P.week_of(d) for d in calendar.Calendar(0).itermonthdates(P.year, m) if d.month == m})
         w0 = [w for w in weeks if w < 1]; weeks = [w for w in weeks if w >= 1]  # iso_weeks: week 0 belongs to the year before
@@ -660,6 +688,8 @@ def _day(P, d, n, m, i, lay):
 @module('head_start', 'Lead-in months before the main dated year (for example Nov and Dec 2026 in a 2027 planner): month pages whose dates link to lead-in week pages, Monday-start week pages titled by date range, optional lead-in day pages. Anchors use their own prefix. The last week links days that fall in the main year to their day pages and offers Continue to the main year. label, kicker, anchor (prefix, default hs), from YYYY-MM, to YYYY-MM, days bool, month {side}, week {preset|side}, day {preset|left,right}, continue_to (default m01)',
         params={'label': 'str', 'kicker': 'str', 'anchor': 'str', 'from': 'YYYY-MM', 'to': 'YYYY-MM', 'days': 'bool', 'month': 'dict', 'week': 'dict', 'day': 'dict', 'continue_to': 'str', 'main_links': 'bool: on head-start pages the head-start month tabs say their year (NOV 2026) so one label has one target, the last head-start week arrow opens main Week 1 and Week 1 gets a back arrow'})
 def m_head_start(P, sec):
+    if P.pf:
+        return _pf_head_start(P, sec)
     th = P.th; pre = sec.get('anchor', 'hs'); cont = sec.get('continue_to', 'm01')
     mainl = bool(sec.get('main_links'))  # one meaning per month tab: tabs always open the main year's months
     y0, m0 = map(int, sec['from'].split('-')); y1, m1 = map(int, sec['to'].split('-'))
@@ -975,6 +1005,708 @@ def m_reading_year(P, sec):
     P.page(a, inner, active=a)
 
 
+# ---------- trackers (fitness, meals, self-care): undated weeks, workouts, meals, body, charts, months ----------
+def _circle(P, r=6.3, color=None):
+    """An empty circle to tick or fill (SVG, so no glyph is needed)."""
+    s = round(r * 2 + 3)
+    return f'<svg width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="flex:none;display:block"><circle cx="{s / 2}" cy="{s / 2}" r="{r}" fill="none" stroke="{color or P.th["muted"]}" stroke-width="1.3"/></svg>'
+
+
+def _tick_box(P, size=15):
+    return f'<i style="width:{size}px;height:{size}px;border:1.4px solid {P.th["muted"]};border-radius:3px;display:block;margin:auto;flex:none"></i>'
+
+
+def _chip(P, label, anchor, primary=False):
+    """A button to another page: filled (primary) or outlined."""
+    th = P.th
+    look = f'background:{P.btn};color:{th["paper"]}' if primary else f'background:{th["paper"]};color:{th["ink"]};box-shadow:inset 0 0 0 1.4px {th["line"]}'
+    return f'<a href="#{anchor}" style="display:inline-flex;align-items:center;gap:6px;white-space:nowrap;padding:7px 13px;border-radius:{P.rpill}px;{look};font:600 {P.fs(12)} \'{th["body"]}\'">{esc(label)} {arrow("r", 12)}</a>'
+
+
+def _wline(P, label, width=None, after=''):
+    """Inline write-in: label then a rule (dates, units)."""
+    th = P.th
+    w = f'width:{width}px;flex:none' if width else 'flex:1'
+    return f'<div style="display:flex;align-items:flex-end;gap:8px;{w}"><span class="k" style="flex:none">{esc(label)}</span><span style="flex:1;min-width:30px;border-bottom:1.2px solid {th["line"]};height:{22 * P.scale:.0f}px"></span>{after}</div>'
+
+
+def _linked(n, links):
+    """Pages that belong to numbered week n. links: [{label, anchor (prefix), per}]. per 1: prefix + 2 digits (meal05);
+    per k > 1: k pages numbered across all weeks, prefix + 3 digits (week 2 of per 4: wo005 to wo008), labelled 'label 1' to 'label k'."""
+    out = []
+    for L in links:
+        per = int(L.get('per', 1))
+        if per == 1:
+            out.append((L['label'], f'{L["anchor"]}{n:02d}'))
+        else:
+            out += [(f'{L["label"]} {j}', f'{L["anchor"]}{(n - 1) * per + j:03d}') for j in range(1, per + 1)]
+    return out
+
+
+def _grid_rows(P, cols, labels, cells, row_style='flex:1;min-height:0'):
+    """Rows of a ruled table: a label cell then one cell per column (cells(j) gives cell content)."""
+    th = P.th
+    return ''.join(f'<div style="display:grid;grid-template-columns:{cols};border-bottom:1px solid {th["line"]};{row_style};align-items:stretch">'
+                   f'<span style="display:flex;align-items:center;padding:0 6px;font:600 {P.fs(12.5)} \'{th["body"]}\'">{lab}</span>' +
+                   ''.join(f'<span style="border-left:1px solid {th["line"]};display:flex;align-items:center;justify-content:center;position:relative">{cells(j)}</span>' for j in range(cells.n)) +
+                   '</div>' for lab in labels)
+
+
+class _Cells:
+    def __init__(self, n, fn):
+        self.n, self.fn = n, fn
+
+    def __call__(self, j):
+        return self.fn(j)
+
+
+def _table_box(P, title, cols, headers, rows_html, style='flex:1', hint='', center=()):
+    th = P.th
+    hdr = ''.join(f'<span class="k" style="padding:4px 8px;{"text-align:center" if i in center else ""}">{esc(h)}</span>' for i, h in enumerate(headers))
+    top = (f'<div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-bottom:6px"><span class="k" style="flex:none">{esc(title)}</span>'
+           f'<span style="font-size:{P.fs(11.5)};color:{th["muted"]};text-align:right;line-height:1.3">{esc(hint)}</span></div>') if title else ''
+    return (f'<div class="box" style="{style};gap:0">{top}<div style="display:grid;grid-template-columns:{cols};border-bottom:1.5px solid {th["ink"]}">{hdr}</div>'
+            f'<div style="flex:1;display:flex;flex-direction:column">{rows_html}</div></div>')
+
+
+@module('log_week', "Undated numbered week pages (anchor prefix + 2 digits: w01 to w52) plus an overview page (overview_anchor) with a card per week: tap to open it, write its start date. Each week page: a dates line, buttons to the pages that belong to that week (links, for example its meal plan and workout logs; mark_every adds a button to mark_anchor every few weeks, for example a measuring check-in), a day table (days x columns; check columns draw tick boxes), a habit grid (habits plus blank rows x 7 days of circles), a box of one-line stats (for example Weigh-in) and lined boxes (fields). Previous and next arrows, trail back to the overview. One Contents card and one top-bar item, both opening the overview. label, kicker, anchor, overview_anchor, overview_title, count, days, columns, habits, habits_label, blank_habits, stats, fields, links, mark_every, mark_anchor, mark_label",
+        params={'label': 'str (Weeks)', 'kicker': 'str', 'anchor': "str prefix, default 'w'", 'overview_anchor': "str, default 'weeks'", 'overview_title': 'str', 'count': 'int (52)',
+                'days': 'list of 7 str (Mon to Sun)', 'columns': 'list of {label, check: bool, width: fr number}', 'habits': 'list of str', 'habits_label': 'str', 'blank_habits': 'int (2)',
+                'stats': 'list of str: one-line fields', 'fields': 'list of str: lined boxes', 'links': 'list of {label, anchor: prefix, per: int}',
+                'mark_every': 'int', 'mark_anchor': 'str', 'mark_label': 'str'})
+def m_log_week(P, sec):
+    th = P.th
+    pre = sec.get('anchor', 'w'); ov = sec.get('overview_anchor', 'weeks'); N = int(sec.get('count', 52))
+    label = sec.get('label', 'Weeks'); kicker = sec.get('kicker', 'Plan')
+    days = sec.get('days') or DOW
+    cols = sec.get('columns') or [{'label': 'Plan'}, {'label': 'Done', 'check': True}]
+    habits = list(sec.get('habits') or []) + [''] * int(sec.get('blank_habits', 2))
+    stats = sec.get('stats') or []; fields = sec.get('fields') or ['Notes']
+    links = sec.get('links') or []
+    mark = int(sec.get('mark_every') or 0); mark_a = sec.get('mark_anchor'); mark_l = sec.get('mark_label', 'Check-in')
+    wid = lambda n: f'{pre}{n:02d}'
+    _register(P, sec, label, ov, kicker)
+    portrait = P.HT > P.W
+    # overview: one card per week, tinted in blocks of four weeks
+    ncol = 4 if portrait else 8
+    cards = ''
+    for n in range(1, N + 1):
+        tag = f'<span style="font:600 {P.fs(10.5)} \'{th["body"]}\';color:{th["accent"]}">{esc(mark_l)}</span>' if (mark and n % mark == 0) else ''
+        bg = f'background:{th["paper"]};border-color:{th["line"]}' if P.gray else f'background:{P.tint(((n - 1) // 4) % 12, "30")};border-color:transparent'
+        cards += (f'<a href="#{wid(n)}" class="box" style="padding:6px 10px;gap:2px;justify-content:space-between;{bg}">'
+                  f'<span style="display:flex;justify-content:space-between;align-items:baseline;gap:4px"><b style="font:700 {P.fs(13.5)} \'{th["body"]}\'">Week {n}</b>{tag}</span>'
+                  f'<span style="display:flex;align-items:flex-end;gap:6px"><span style="font-size:{P.fs(10.5)};color:{th["muted"]}">from</span><span style="flex:1;border-bottom:1.2px solid {th["line"] if P.gray else mix(th["muted"], th["paper"], .55)};height:14px"></span></span></a>')
+    hint = f'<span style="font-size:{P.fs(12)};color:{th["muted"]}">Tap a week to open it</span>'
+    P.page(ov, P.head(kicker, sec.get('overview_title', f'{N} weeks'), right=hint) +
+           f'<div style="flex:1;display:grid;grid-template-columns:repeat({ncol},1fr);grid-auto-rows:1fr;gap:6px">{cards}</div>', active=ov)
+    # week pages
+    tcols = f'{58 * P.scale:.0f}px ' + ' '.join(f'{68 * P.scale:.0f}px' if c.get('check') else f'{c.get("width", 1)}fr' for c in cols)
+    trows = _grid_rows(P, tcols, [esc(d) for d in days], _Cells(len(cols), lambda j: _tick_box(P) if cols[j].get('check') else ''))
+    table = _table_box(P, '', tcols, ['Day'] + [c['label'] for c in cols], trows, style='flex:1.35',
+                       center={i + 1 for i, c in enumerate(cols) if c.get('check')})
+    hab = ''
+    if habits:
+        hcols = f'minmax(0,1fr) repeat({len(days)},{40 * P.scale:.0f}px)'
+        hh = f'<span class="k">{esc(sec.get("habits_label", "Habits"))}</span>' + ''.join(f'<span style="text-align:center;font:600 {P.fs(11)} \'{th["body"]}\';color:{th["muted"]}">{esc(d)}</span>' for d in days)
+        hr = ''.join(f'<div style="display:grid;grid-template-columns:{hcols};align-items:center;border-bottom:1px solid {th["line"]};flex:1;min-height:{24 * P.scale:.0f}px">'
+                     f'<span style="font-size:{P.fs(12.5)};padding-right:6px">{esc(h)}</span>' + ''.join(f'<span style="display:flex;justify-content:center">{_circle(P)}</span>' for _ in days) + '</div>' for h in habits)
+        hab = (f'<div class="box" style="flex:1;gap:0"><div style="display:grid;grid-template-columns:{hcols};align-items:end;padding-bottom:4px;border-bottom:1.5px solid {th["ink"]}">{hh}</div>'
+               f'<div style="flex:1;display:flex;flex-direction:column">{hr}</div></div>')
+    st = (f'<div class="box fill" style="flex:1;justify-content:space-evenly">' + ''.join(field(P, s, 'flex:none') for s in stats) + '</div>') if stats else ''
+    bottom = f'<div class="row" style="flex:.8">{st}{"".join(lines_box(P, f) for f in fields)}</div>'
+    for n in range(1, N + 1):
+        chips = ''.join(_chip(P, l, a_, primary=(i == 0)) for i, (l, a_) in enumerate(_linked(n, links)))
+        if mark and mark_a and n % mark == 0:
+            chips += _chip(P, mark_l, mark_a)
+        dates = f'<div style="display:flex;align-items:flex-end;gap:10px">{_wline(P, "Dates")}{_wline(P, "to")}</div>'
+        chiprow = f'<div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">{chips}</div>' if chips else ''
+        inner = (P.head(f'{kicker} · week {n} of {N}', f'Week {n}', right=_arrows(wid(n - 1) if n > 1 else None, wid(n + 1) if n < N else None)) +
+                 dates + chiprow + table + hab + bottom)
+        P.page(wid(n), inner, active=ov, crumb=f'<a href="#{ov}">{esc(label)}</a> / Week {n}')
+
+
+@module('meal_week', "Weekly meal plan pages (anchor prefix + 2 digits: meal01 to meal52), one per numbered week: a grid of days x meals with a small circle in each cell to tick when you ate what you planned, a grocery list in groups with tick boxes, and lined boxes (fields) beside the groups. With week_anchor (pair with log_week), a button back to that week's page and a trail Week n / Meals. Previous and next arrows. One Contents card. label, kicker, anchor, count, meals, days, grocery, grocery_rows, fields, week_anchor, tick",
+        params={'label': 'str (Meal plans)', 'kicker': 'str', 'anchor': "str prefix, default 'meal'", 'count': 'int (52)', 'meals': 'list of str (Breakfast, Lunch, Dinner, Snacks)',
+                'days': 'list of 7 str', 'grocery': 'list of str: group names', 'grocery_rows': 'int (5)', 'fields': 'list of str', 'week_anchor': 'str: log_week prefix', 'tick': 'bool (true)'})
+def m_meal_week(P, sec):
+    th = P.th; pre = sec.get('anchor', 'meal'); N = int(sec.get('count', 52))
+    label = sec.get('label', 'Meal plans'); kicker = sec.get('kicker', 'Meals')
+    meals = sec.get('meals') or ['Breakfast', 'Lunch', 'Dinner', 'Snacks']
+    days = sec.get('days') or DOW
+    groups = sec.get('grocery') or ['Produce', 'Protein', 'Dairy and eggs', 'Pantry', 'Other']
+    grows = int(sec.get('grocery_rows', 5)); fields = sec.get('fields') or ['Prep ahead']
+    wk = sec.get('week_anchor'); tick = sec.get('tick', True)
+    mid = lambda n: f'{pre}{n:02d}'
+    _register(P, sec, label, mid(1), kicker)
+    portrait = P.HT > P.W
+    tcols = f'{58 * P.scale:.0f}px repeat({len(meals)},minmax(0,1fr))'
+    circ = (lambda j: f'<span style="position:absolute;right:5px;top:5px">{_circle(P, 5.5)}</span>') if tick else (lambda j: '')
+    rows = _grid_rows(P, tcols, [esc(d) for d in days], _Cells(len(meals), circ))
+    grid = _table_box(P, "This week's meals", tcols, [''] + meals, rows, style='flex:1.5',
+                      hint='Tick the circle when you ate what you planned' if tick else '')
+    gl = ''.join(f'<div style="display:flex;flex-direction:column;min-width:0"><span style="font:700 {P.fs(12.5)} \'{th["body"]}\';padding-bottom:2px">{esc(g)}</span>{_chk(grows)}</div>' for g in groups)
+    fl = ''.join(f'<div style="display:flex;flex-direction:column;min-width:0"><span style="font:700 {P.fs(12.5)} \'{th["body"]}\';padding-bottom:2px">{esc(f)}</span><div class="lines"></div></div>' for f in fields)
+    ncol = 3 if portrait else 2
+    grocery = f'<div class="box" style="flex:1"><span class="k">Grocery list</span><div style="flex:1;display:grid;grid-template-columns:repeat({ncol},minmax(0,1fr));gap:10px 18px">{gl}{fl}</div></div>'
+    for n in range(1, N + 1):
+        back = _chip(P, f'Week {n}', f'{wk}{n:02d}', primary=True) if wk else ''
+        right = f'<div style="display:flex;gap:12px;align-items:center">{back}{_arrows(mid(n - 1) if n > 1 else None, mid(n + 1) if n < N else None)}</div>'
+        body = f'{grid}{grocery}' if portrait else f'<div class="row" style="flex:1">{grid.replace("flex:1.5", "flex:1.7", 1)}{grocery}</div>'
+        P.page(mid(n), P.head(f'{kicker} · week {n}', 'Meal plan', right=right) + body, active=mid(1),
+               crumb=(f'<a href="#{wk}{n:02d}">Week {n}</a> / Meals' if wk else f'{esc(label)} · week {n}'))
+
+
+@module('workout_log', "Workout log: count session pages (anchor prefix + 3 digits: wo001...) and log list pages (log_anchor, then log2, log3...) with a line and a button for every session. With per_week, sessions belong to numbered weeks (week n holds sessions (n-1)*per_week+1 to n*per_week, titled Workout 1 to per_week) and get a button back to the week page (week_anchor; pair with log_week links {anchor: this prefix, per: per_week}). Session page: date, focus, minutes, effort 1 to 5; an exercise table (Exercise, Last time, Set 1 to sets, each set weight x reps) so every session can beat the last; an optional cardio table; lined boxes (fields). Previous and next arrows. One Contents card and one top-bar item, both opening the log list. label, kicker, anchor, log_anchor, count, per_week, week_anchor, exercises, sets, cardio, fields, per_log_page",
+        params={'label': 'str (Training log)', 'kicker': 'str', 'anchor': "str prefix, default 'wo'", 'log_anchor': "str, default 'log'", 'count': 'int (156)', 'per_week': 'int',
+                'week_anchor': 'str: log_week prefix', 'exercises': 'int rows (8)', 'sets': 'int (4)', 'cardio': 'bool (true)', 'fields': 'list of str (2)', 'per_log_page': 'int'})
+def m_workout_log(P, sec):
+    th = P.th; pre = sec.get('anchor', 'wo'); la = sec.get('log_anchor', 'log'); N = int(sec.get('count', 156))
+    label = sec.get('label', 'Training log'); kicker = sec.get('kicker', 'Workouts')
+    per = int(sec.get('per_week') or 0); wk = sec.get('week_anchor')
+    ex = int(sec.get('exercises', 8)); sets = int(sec.get('sets', 4)); cardio = sec.get('cardio', True)
+    fields = sec.get('fields') or ['How it felt', 'Next time']
+    sid = lambda i: f'{pre}{i:03d}'
+    rpp = int(sec.get('per_log_page') or (per * 7 if per else 26)); npg = math.ceil(N / rpp)
+    lpg = lambda p: la if p == 1 else f'{la}{p}'
+    week_of = lambda i: (i - 1) // per + 1 if per else None
+    k_of = lambda i: (i - 1) % per + 1 if per else i
+    _register(P, sec, label, la, kicker)
+    pill = lambda txt, a_: f'<a href="#{a_}" style="display:inline-flex;align-items:center;justify-content:center;min-width:{34 * P.scale:.0f}px;padding:3px 9px;border-radius:{P.rpill}px;background:{th["soft"]};font:700 {P.fs(11.5)} \'{th["body"]}\'">{esc(txt)}</a>'
+    # log list pages
+    heads = (['Week', 'Workout'] if per else ['No.']) + ['Date', 'Focus', 'Minutes', 'Effort']
+    lcols = (f'{82 * P.scale:.0f}px {76 * P.scale:.0f}px' if per else f'{58 * P.scale:.0f}px') + ' 1fr 1.6fr 0.8fr 0.8fr'
+    for p in range(1, npg + 1):
+        lo, hi = (p - 1) * rpp + 1, min(p * rpp, N)
+        strip = ''.join(f'<a href="#{lpg(q)}" style="padding:5px 11px;border-radius:{P.rpill}px;font:600 {P.fs(11)} \'{th["body"]}\';{"background:" + th["ink"] + ";color:" + th["paper"] if q == p else "background:" + th["soft"]}">'
+                        f'{week_of((q - 1) * rpp + 1) if per else (q - 1) * rpp + 1} to {week_of(min(q * rpp, N)) if per else min(q * rpp, N)}</a>' for q in range(1, npg + 1))
+        rows = ''
+        for i in range(lo, hi + 1):
+            first = (not per) or k_of(i) == 1
+            sep = f'border-top:1.3px solid {mix(th["muted"], th["paper"], .45)};' if (per and k_of(i) == 1 and i != lo) else ''
+            wcell = (f'<span style="display:flex;align-items:center">{pill(f"Week {week_of(i)}", f"{wk}{week_of(i):02d}") if (first and wk) else (esc(f"Week {week_of(i)}") if first else "")}</span>' if per else '')
+            rows += (f'<div style="display:grid;grid-template-columns:{lcols};align-items:stretch;border-bottom:1px solid {th["line"]};{sep}flex:1;min-height:0">{wcell}'
+                     f'<span style="display:flex;align-items:center">{pill(str(k_of(i)), sid(i))}</span>' +
+                     ''.join(f'<span style="border-left:1px solid {th["line"]}"></span>' for _ in range(4)) + '</div>')
+        inner = (P.head(f'{kicker} · ' + (f'weeks {week_of(lo)} to {week_of(hi)}' if per else f'{lo} to {hi}'), label, right=_arrows(lpg(p - 1) if p > 1 else None, lpg(p + 1) if p < npg else None)) +
+                 f'<div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap"><span class="k" style="margin-right:4px">{"Weeks" if per else "Workouts"}</span>{strip}<span style="margin-left:auto;font-size:{P.fs(12)};color:{th["muted"]}">Tap a number to open that workout</span></div>' +
+                 _table_box(P, '', lcols, heads, rows))
+        P.page(lpg(p), inner, active=la, crumb=f'{esc(label)} · page {p} of {npg}')
+    # session pages
+    effort = ''.join(f'<circle cx="{12 + j * 28}" cy="12" r="10.5" fill="none" stroke="{th["muted"]}" stroke-width="1.3"/><text x="{12 + j * 28}" y="16" text-anchor="middle" font-size="11.5" font-family="{th["body"]}" fill="{th["ink"]}">{j + 1}</text>' for j in range(5))
+    effort = f'<div style="display:flex;align-items:center;gap:10px;flex:none"><span class="k">Effort</span><svg width="{5 * 28}" height="24" viewBox="0 0 {5 * 28} 24">{effort}</svg></div>'
+    details = (f'<div class="box" style="gap:12px;padding:12px 14px;flex:none"><div class="row" style="gap:22px">{field(P, "Date")}{field(P, "Focus", "flex:1.6")}</div>'
+               f'<div class="row" style="gap:22px;align-items:flex-end">{field(P, "Minutes", "flex:.8")}{effort}</div></div>')
+    ecols = f'1.8fr 1fr repeat({sets},1fr)'
+    erows = ''.join(f'<div style="display:grid;grid-template-columns:{ecols};border-bottom:1px solid {th["line"]};flex:1;min-height:0">' +
+                    ''.join(f'<span style="{"border-left:1px solid " + th["line"] if j else ""}{";border-right:1.3px solid " + mix(th["muted"], th["paper"], .45) if j == 1 else ""}"></span>' for j in range(sets + 2)) + '</div>' for _ in range(ex))
+    extable = _table_box(P, 'Exercises', ecols, ['Exercise', 'Last time'] + [f'Set {j}' for j in range(1, sets + 1)], erows, style='flex:2.3',
+                         hint='Write weight x reps, for example 20 x 10. Copy your best set from last time, then try to beat it.')
+    ctable = ''
+    if cardio:
+        ccols = '1.8fr 1fr 1fr 2fr'
+        crows = ''.join(f'<div style="display:grid;grid-template-columns:{ccols};border-bottom:1px solid {th["line"]};height:{32 * P.scale:.0f}px">' + ''.join(f'<span style="{"border-left:1px solid " + th["line"] if j else ""}"></span>' for j in range(4)) + '</div>' for _ in range(2))
+        ctable = _table_box(P, 'Cardio', ccols, ['Activity', 'Minutes', 'Distance', 'Notes'], crows, style='flex:none')
+    bottom = f'<div class="row" style="flex:1">{"".join(lines_box(P, f) for f in fields)}</div>'
+    for i in range(1, N + 1):
+        w, k = week_of(i), k_of(i)
+        back = _chip(P, f'Week {w}', f'{wk}{w:02d}', primary=True) if (per and wk) else ''
+        right = f'<div style="display:flex;gap:12px;align-items:center">{back}{_arrows(sid(i - 1) if i > 1 else None, sid(i + 1) if i < N else None)}</div>'
+        kick = f'{kicker} · week {w}, {k} of {per}' if per else f'{kicker} · {i} of {N}'
+        trail = f'<a href="#{lpg((i - 1) // rpp + 1)}">{esc(label)}</a> / ' + (f'<a href="#{wk}{w:02d}">Week {w}</a> / Workout {k}' if (per and wk) else f'Workout {i}')
+        P.page(sid(i), P.head(kick, f'Workout {k}', right=right) + details + extable + ctable + bottom, active=la, crumb=trail)
+
+
+@module('body_measure', "Body measurements page: a table of check-ins (rows: Start, then every few weeks) by Date and parts (columns), a Change since start row, a units line, and a How to measure box (tips: one per part). With week_anchor (pair with log_week), each Week n check-in opens that week's page. One Contents card. label, kicker, anchor, parts, every, weeks, week_anchor, tips",
+        params={'label': 'str (Measurements)', 'kicker': 'str', 'anchor': "str, default 'measure'", 'parts': 'list of str (columns, 5 to 7)', 'every': 'int (4)', 'weeks': 'int (52)',
+                'week_anchor': 'str', 'tips': 'list of [part, how]'})
+def m_body_measure(P, sec):
+    th = P.th; a = sec.get('anchor', 'measure'); label = sec.get('label', 'Measurements'); kicker = sec.get('kicker', 'Every 4 weeks')
+    parts = sec.get('parts') or ['Weight', 'Chest', 'Waist', 'Hips', 'Thigh', 'Arm']
+    every = int(sec.get('every', 4)); weeks = int(sec.get('weeks', 52)); wk = sec.get('week_anchor')
+    checks = [('Start', 1)] + [(f'Week {w}', w) for w in range(every, weeks + 1, every)]
+    tips = sec.get('tips') or []
+    _register(P, sec, label, a, kicker)
+    cols = f'{92 * P.scale:.0f}px repeat({len(parts) + 1},minmax(0,1fr))'
+    lab = lambda t, w: (f'<a href="#{wk}{w:02d}" style="padding:3px 9px;border-radius:{P.rpill}px;background:{th["soft"]};font:700 {P.fs(11.5)} \'{th["body"]}\'">{esc(t)}</a>' if wk else esc(t))
+    rows = _grid_rows(P, cols, [lab(t, w) for t, w in checks], _Cells(len(parts) + 1, lambda j: ''))
+    rows += _grid_rows(P, cols, [f'<b>Change</b>'], _Cells(len(parts) + 1, lambda j: ''), row_style=f'flex:1.1;min-height:0;border-top:1.5px solid {th["ink"]}')
+    table = _table_box(P, 'Check-ins', cols, ['', 'Date'] + parts, rows, style='flex:1', hint='Measure in the morning, before eating. Change is your latest row minus Start.')
+    tipbox = (f'<div class="box fill" style="flex:none"><span class="k">How to measure</span><div style="display:grid;grid-template-columns:1fr 1fr;gap:6px 24px">' +
+              ''.join(f'<p style="font-size:{P.fs(12)};line-height:1.4"><b>{esc(t)}</b> {esc(x)}</p>' for t, x in tips) + '</div></div>') if tips else ''
+    units = f'<div style="display:flex;gap:22px;align-items:flex-end">{_wline(P, "Length in (cm or in)")}{_wline(P, "Weight in (kg or lb)")}</div>'
+    P.page(a, P.head(kicker, label) + units + table + tipbox, active=a)
+
+
+@module('progress_chart', "A chart page to plot one number over time (weight, sleep hours, mood...): points (columns, labelled every few points) by rows, with room for your own scale on the left, a box of one-line fields above (for example Start, Goal) and blocks under the chart (any block kinds: checklist, lines...). links: buttons in the title row. label, kicker, anchor, points, point_label, every, rows, y_label, hint, fields, blocks, links",
+        params={'label': 'str (Progress)', 'kicker': 'str', 'anchor': "str, default 'progress'", 'points': 'int (52)', 'point_label': 'str (Week)', 'every': 'int (4)', 'rows': 'int (20)',
+                'y_label': 'str', 'hint': 'str', 'fields': 'list of str', 'blocks': 'list of blocks', 'links': 'list of [label, anchor]'})
+def m_progress_chart(P, sec):
+    th = P.th; a = sec.get('anchor', 'progress'); label = sec.get('label', 'Progress'); kicker = sec.get('kicker', 'Track')
+    pts = int(sec.get('points', 52)); every = int(sec.get('every', 4)); rows = int(sec.get('rows', 20))
+    plab = sec.get('point_label', 'Week'); ylab = sec.get('y_label', 'Your scale')
+    fields = sec.get('fields') or []; blocks = sec.get('blocks') or []; links = sec.get('links') or []
+    _register(P, sec, label, a, kicker)
+    yw = 44
+    strong = mix(th['muted'], th['paper'], .5)
+    vl = ''.join(f'<i style="position:absolute;top:0;bottom:0;left:{100 * (j - .5) / pts:.3f}%;border-left:1px solid {strong if (j % every == 0 or j == 1) else th["line"]}"></i>' for j in range(1, pts + 1))
+    hl = ''.join(f'<i style="position:absolute;left:-{yw}px;right:0;top:{100 * r / rows:.3f}%;border-top:1px solid {th["line"]}"></i>' for r in range(1, rows))
+    xl = ''.join(f'<span style="position:absolute;left:{100 * (j - .5) / pts:.3f}%;transform:translateX(-50%);font:600 {P.fs(10.5)} \'{th["body"]}\';color:{th["muted"]}">{j}</span>' for j in range(1, pts + 1) if (j == 1 or j % every == 0))
+    chart = (f'<div class="box" style="flex:1;gap:8px"><div style="display:flex;justify-content:space-between;align-items:baseline;gap:12px"><span class="k">{esc(ylab)}</span>'
+             f'<span style="font-size:{P.fs(11.5)};color:{th["muted"]}">{esc(sec.get("hint", f"Write your scale on the left. One dot per {plab.lower()}, then join the dots."))}</span></div>'
+             f'<div style="flex:1;display:flex;flex-direction:column;padding-left:{yw}px;min-height:0"><div style="flex:1;position:relative;border:1.3px solid {strong}">{hl}{vl}</div>'
+             f'<div style="position:relative;height:20px;margin-top:4px">{xl}</div><span style="align-self:center;font:600 {P.fs(11)} \'{th["body"]}\';color:{th["muted"]}">{esc(plab)}</span></div></div>')
+    fbox = (f'<div class="box fill" style="flex-direction:row;gap:22px;align-items:flex-end;flex:none;padding:14px 16px">' + ''.join(field(P, f) for f in fields) + '</div>') if fields else ''
+    brow = (f'<div class="row" style="flex:.42 0 auto">' + ''.join(f'<div style="flex:1;display:flex;flex-direction:column">{block(P, dict(b, grow=True))}</div>' for b in blocks) + '</div>') if blocks else ''
+    right = f'<div style="display:flex;gap:6px">{"".join(_chip(P, l, an) for l, an in links)}</div>'
+    P.page(a, P.head(kicker, label, right=right) + fbox + chart + brow, active=a)
+
+
+@module('habit_month', "Twelve undated month pages, anchors m01 to m12 (the month rail and the Contents month grid open them): month name with a year line, a goal box and a box of one-line stats, a habit grid (habits plus blank rows by days 1 to 31, a circle per day; days a month never has are faded), an optional mood row (a square per day to color, with a color key), and lined boxes (fields). Previous and next month arrows. One Contents card (Months) unless index is false; no top-bar item unless nav is true. label, kicker, habits, habits_label, blank_habits, goal, stats, mood, fields, index, nav",
+        params={'label': 'str (Months)', 'kicker': 'str', 'habits': 'list of str', 'habits_label': 'str', 'blank_habits': 'int (3)', 'goal': 'str (box label)', 'stats': 'list of str',
+                'mood': '{label, keys: [[name, hex]]} or true', 'fields': 'list of str', 'index': 'bool', 'nav': 'bool (false)'})
+def m_habit_month(P, sec):
+    th = P.th; label = sec.get('label', 'Months'); kicker = sec.get('kicker', 'Monthly')
+    habits = list(sec.get('habits') or []) + [''] * int(sec.get('blank_habits', 3))
+    stats = sec.get('stats') or []; goal = sec.get('goal', "This month's goal")
+    mood = sec.get('mood'); fields = sec.get('fields') or ['Notes']
+    _register(P, dict(sec, nav=sec.get('nav', False)), label, 'm01', kicker)
+    last = {2: 29, 4: 30, 6: 30, 9: 30, 11: 30}
+    ncol = f'{118 * P.scale:.0f}px repeat(31,minmax(0,1fr))'
+    keys = []
+    if mood:
+        mk = mood.get('keys') if isinstance(mood, dict) else None
+        keys = mk or list(zip(['Great', 'Good', 'Okay', 'Low', 'Hard'], [th['accent'], P.tabs[0], th['warm'], P.tabs[-1], th['muted']]))
+    for m in range(1, 13):
+        fade = lambda d: 'opacity:.25;' if d > last.get(m, 31) else ''
+        hh = f'<span class="k">{esc(sec.get("habits_label", "Habits"))}</span>' + ''.join(f'<span style="text-align:center;font:600 {P.fs(9.5)} \'{th["body"]}\';color:{th["muted"]};{fade(d)}">{d}</span>' for d in range(1, 32))
+        hr = ''.join(f'<div style="display:grid;grid-template-columns:{ncol};align-items:center;border-bottom:1px solid {th["line"]};flex:1;min-height:{28 * P.scale:.0f}px">'
+                     f'<span style="font-size:{P.fs(12)};padding-right:6px;overflow:hidden;white-space:nowrap">{esc(h)}</span>' +
+                     ''.join(f'<span style="display:flex;justify-content:center;{fade(d)}">{_circle(P, 5.2)}</span>' for d in range(1, 32)) + '</div>' for h in habits)
+        grid = (f'<div class="box" style="{"flex:1.6" if len(habits) > 5 else "flex:none"};gap:0"><div style="display:grid;grid-template-columns:{ncol};align-items:end;padding-bottom:4px;border-bottom:1.5px solid {th["ink"]}">{hh}</div>'
+                f'<div style="flex:1;display:flex;flex-direction:column">{hr}</div></div>')
+        md = ''
+        if mood:
+            sq = ''.join(f'<span style="display:flex;justify-content:center;{fade(d)}"><i style="width:13px;height:13px;border:1.3px solid {th["muted"]};border-radius:3px;display:block"></i></span>' for d in range(1, 32))
+            kk = ''.join(f'<span style="display:inline-flex;align-items:center;gap:6px;font-size:{P.fs(11.5)}"><i style="width:13px;height:13px;border-radius:3px;background:{c};display:block"></i>{esc(k)}</span>' for k, c in keys)
+            md = (f'<div class="box" style="flex:none;gap:8px"><div style="display:grid;grid-template-columns:{ncol};align-items:center"><span class="k">{esc((mood.get("label") if isinstance(mood, dict) else None) or "Mood")}</span>{sq}</div>'
+                  f'<div style="display:flex;gap:16px;flex-wrap:wrap;padding-left:{118 * P.scale:.0f}px">{kk}</div></div>')
+        top = f'<div class="row" style="flex:none">{lines_box(P, goal, rows=2, style="flex:1.4")}' + (f'<div class="box fill" style="flex:1;justify-content:space-evenly">{"".join(field(P, s, "flex:none") for s in stats)}</div>' if stats else '') + '</div>'
+        bottom = f'<div class="row" style="flex:1">{"".join(lines_box(P, f) for f in fields)}</div>'
+        P.page(f'm{m:02d}', P.head('Month · year ____', MONTHS[m - 1], right=_arrows(f'm{m - 1:02d}' if m > 1 else None, f'm{m + 1:02d}' if m < 12 else None)) + top + grid + md + bottom,
+               month=m, crumb=f'{esc(label)} / {MONTHS[m - 1]}')
+
+
+@module('group_weeks', "Prints no page. Put it last in sections, after log_week and the modules its links name (meal_week, workout_log). Moves each week's linked pages right after that week's page (Week 1, its workouts, its meal plan, then Week 2...), so a buyer who swipes meets one week at a time and can print a week as one page range. Links and anchors do not change.",
+        params={})
+def m_group_weeks(P, sec):
+    lw = next((x for x in P.s.get('sections', []) if x.get('module') == 'log_week'), None)
+    if not lw:
+        return
+    pre = lw.get('anchor', 'w'); N = int(lw.get('count', 52))
+    seq = []
+    for n in range(1, N + 1):
+        seq += [f'{pre}{n:02d}'] + [a for _, a in _linked(n, lw.get('links') or [])]
+    pos = {a: i for i, (a, _) in enumerate(P.page_modules)}
+    seq = [a for a in seq if a in pos]
+    if not seq:
+        return
+    moved = set(seq); first = min(pos[a] for a in seq)
+    order = [i for i in range(len(P.pages)) if i < first and P.page_modules[i][0] not in moved] + [pos[a] for a in seq] + \
+            [i for i in range(first, len(P.pages)) if P.page_modules[i][0] not in moved]
+    P.pages = [P.pages[i] for i in order]
+    P.page_modules = [P.page_modules[i] for i in order]
+
+
+# ---------- print format (home-printed planners: true Letter and A4, safe margins, two-page spreads) ----------
+PAPER = {'letter': ('8.5in', '11in', 816.0, 1056.0, 'Letter'), 'a4': ('210mm', '297mm', 793.7, 1122.5, 'A4')}
+FULL_DOW = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+
+def _pf_css(P):
+    th = P.th; w, h = PAPER[P.paper][:2]
+    m = 96 * float(P.pf.get('margin_in', .5)); b = m + 96 * float(P.pf.get('binding_in', .375))
+    ln, mu, ink = th['line'], th['muted'], th['ink']
+    out = (f"@page{{size:{w} {h};margin:0}}.pg{{width:{w};height:{h}}}"
+           f".pfh{{position:absolute;top:{m:.0f}px;height:16px;display:flex;align-items:center;gap:5px;font:400 {P.fs(10)} '{th['body']}';color:{mu};white-space:nowrap}}"
+           f".pfh a{{color:inherit}}.pfh b{{font-weight:600;color:{ink}}}"
+           f".body{{top:{m + 26:.0f}px;bottom:{m + 24:.0f}px}}"
+           f".pno,.foot{{position:absolute;bottom:{m:.0f}px;font:500 10px '{th['body']}';color:{mu};line-height:1;letter-spacing:0}}")
+    for side, L, R in (('odd', b, m), ('even', m, b)):
+        out += f".pg[data-side={side}] .body,.pg[data-side={side}] .pfh{{left:{L:.0f}px;right:{R:.0f}px}}"
+    out += (f".pg[data-side=odd] .pfh{{justify-content:flex-end}}.pg[data-side=odd] .pno{{right:{m:.0f}px}}.pg[data-side=odd] .foot{{left:{b:.0f}px}}"
+            f".pg[data-side=even] .pno{{left:{m:.0f}px}}.pg[data-side=even] .foot{{right:{b:.0f}px;left:auto}}"
+            f".pg[data-mk] .pfh{{padding:0 34px}}.pg[data-mk][data-side=odd] .pno{{right:{m + 34:.0f}px}}.pg[data-mk][data-side=even] .pno{{left:{m + 34:.0f}px}}"
+            f".pg[data-mk][data-side=odd] .foot{{left:{b + 34:.0f}px}}.pg[data-mk][data-side=even] .foot{{right:{b + 34:.0f}px}}"
+            # month grid
+            f".pfgh,.pfg{{display:grid;grid-template-columns:{40 * P.scale:.0f}px repeat(7,1fr)}}"
+            f".pfgh span{{font:700 {P.fs(10.5)} '{th['body']}';color:{mu};padding:0 6px 5px}}"
+            f".pfg{{flex:1;min-height:0;border-right:1px solid {ln};border-bottom:1px solid {ln}}}"
+            f".pfg>*{{border-top:1px solid {ln};border-left:1px solid {ln};padding:5px 7px;font:600 {P.fs(12.5)} '{th['body']}';color:{th['accent']};display:block}}"
+            f".pfg .x{{color:{mix(mu, th['paper'], .5)};font-weight:500}}"
+            f".pfg .wk{{background:{th['soft']};color:{mu};font:600 {P.fs(10)} '{th['body']}';padding:6px 0;text-align:center;line-height:1.25}}"
+            # week spreads
+            f".pfday{{flex:1 1 0;min-width:0;gap:4px}}.pfdh{{display:flex;justify-content:space-between;align-items:baseline;gap:6px;padding-bottom:2px}}"
+            f".pfdh .k{{font-size:{P.fs(15)}}}.pfnum{{font:600 26px '{th['display']}',serif;color:{th['accent']};line-height:1;font-variant-numeric:lining-nums}}.h{{font-variant-numeric:lining-nums}}"
+            f".pfnum small{{font:500 {P.fs(10)} '{th['body']}';color:{mu};margin-right:5px}}"
+            f".pfblank{{display:inline-block;width:46px;border-bottom:1.3px solid {ln};height:20px}}"
+            f".pflink{{display:inline-flex;align-items:center;gap:5px;font:600 {P.fs(11)} '{th['body']}';color:{mu};white-space:nowrap}}"
+            f".pfmark{{position:absolute;width:24px;height:24px;border:0 solid {ink}}}")
+    if P.pf.get('vector_rules'):
+        out += '.lines,.dots{background:none!important;position:relative;overflow:hidden}.lines>svg,.dots>svg{position:absolute;left:0;top:0}'
+    return out
+
+
+def _pf_page(P, anchor, inner, crumb='', raw=False, style='', marks=False, over=''):
+    """One printed page: safe margins on every edge, the binding margin on the inner edge (mirrored when duplex),
+    the trail as small text in the header row, page number at the outer bottom corner, brand at the inner one."""
+    n = len(P.pages) + 1
+    side = 'odd' if (n % 2 == 1 or not P.pf.get('duplex', True)) else 'even'
+    if not crumb and not raw and len(P.pf_groups) == 1:
+        crumb = f'%%PFTRAIL:{anchor}%%'  # front pages: a trail linking every front page
+    pno = f'<p class="pno">{n}</p>' if (P.pf.get('page_numbers') and not raw) else ''
+    mk = ' data-mk="1"' if marks else ''
+    if raw:
+        body = inner
+    else:
+        body = over + (f'<div class="pfh">{crumb}</div>' if crumb else '') + f'<div class="body">{inner}</div>{pno}<p class="foot">{esc(P.s.get("brand", ""))}</p>'
+    P.pages.append(f'<section class="pg" id="{anchor}" data-side="{side}"{mk} style="{style}">{body}</section>')
+    P.page_modules.append((anchor, P.current))
+
+
+def _pf_group(P, label, sub=''):
+    """A Print map row starts at the next page. Every row must be whole sheets (starts on a sheet front)."""
+    P.pf_groups.append([label, sub, len(P.pages) + 1])
+
+
+def _pf_hs(P):
+    return next((x for x in P.s.get('sections', []) if x.get('module') == 'head_start'), None)
+
+
+def _pf_lead_from(P):
+    hs = _pf_hs(P)
+    if not hs:
+        return None
+    y0, m0 = map(int, hs['from'].split('-')); first = datetime.date(y0, m0, 1)
+    return first - datetime.timedelta(days=first.weekday())
+
+
+def _pf_week_anchor(P, d):
+    """Left page of the week holding d (no day pages in a printed planner), or None outside the dated range."""
+    if P.undated:
+        return None
+    w1 = P.week_start(1); last = P.week_start(P.nweeks()) + datetime.timedelta(days=6)
+    if w1 <= d <= last:
+        return f'w{P.week_of(d):02d}'
+    lf = _pf_lead_from(P)
+    if lf and lf <= d < w1:
+        return f'{_pf_hs(P).get("anchor", "hs")}w{(d - lf).days // 7 + 1:02d}'
+    return None
+
+
+def _pf_in_range(P, d):
+    return _pf_week_anchor(P, d) is not None
+
+
+def _pf_grid(P, yy, mm, hs=False):
+    """Monday-start month grid filling its space; a week column opens each week, every date opens its week."""
+    cal = calendar.Calendar(0).monthdatescalendar(yy, mm)
+    head = f'<div class="pfgh"><span style="padding:0;text-align:center">{"From" if hs else "Week"}</span>' + ''.join(f'<span>{x}</span>' for x in DOW) + '</div>'
+    cells = ''
+    for wk in cal:
+        wa = _pf_week_anchor(P, wk[0]) or _pf_week_anchor(P, wk[6])
+        lab = f'{MONTHS[wk[0].month - 1][:3]}<br>{wk[0].day}' if hs else (str(P.week_of(wk[0])) if wa and wa.startswith('w') else '')
+        cells += f'<a class="wk" href="#{wa}">{lab}</a>' if wa else '<span class="wk"></span>'
+        for d in wk:
+            a = _pf_week_anchor(P, d)
+            cls = '' if d.month == mm else ' x'
+            cells += f'<a class="d{cls}" href="#{a}">{d.day}</a>' if a else f'<span class="d{cls}">{d.day}</span>'
+    return head + f'<div class="pfg" style="grid-template-rows:repeat({len(cal)},1fr)">{cells}</div>'
+
+
+def _pf_link(href, text, d='r'):
+    a = arrow(d, 12)
+    return f'<a class="pflink" href="#{href}">{a + " " if d == "l" else ""}{esc(text)}{" " + a if d == "r" else ""}</a>'
+
+
+def _pf_month(P, yy, mm, anchor, kicker, trail, prev_l, next_l, hs=False):
+    """Month opener (a sheet front, right-hand page) and month review (the last page of the month's sheets, left-hand,
+    facing the next month's opener). Weeks print between them as two-page spreads, so each month is whole sheets."""
+    ms = P.pf.get('month_spread') or {}
+    page_blocks = ms.get('page') or [{'kind': 'checklist', 'label': 'Goals this month', 'rows': 3, 'fill': True}]
+    review_blocks = ms.get('review') or [{'kind': 'lines', 'label': 'Notes'}]
+    nav = '<div style="display:flex;gap:14px;align-items:center">' + (_pf_link(*prev_l, d='l') if prev_l else '') + _pf_link(anchor + 'b', 'Month review') + (_pf_link(*next_l) if next_l else '') + '</div>'
+    inner = P.head(kicker, MONTHS[mm - 1], size=52, right=nav) + f'<div class="col" style="flex:1;gap:0">{_pf_grid(P, yy, mm, hs)}</div>' + ''.join(block(P, b) for b in page_blocks)
+    _pf_page(P, anchor, inner, crumb=trail)
+    return review_blocks
+
+
+def _pf_review(P, yy, mm, anchor, trail, blocks, next_l):
+    right = '<div style="display:flex;gap:14px;align-items:center">' + _pf_link(anchor[:-1], f'{MONTHS[mm - 1]} page', d='l') + (_pf_link(*next_l) if next_l else '') + '</div>'
+    inner = P.head(f'{MONTHS[mm - 1]} {yy}', 'Month review', size=44, right=right) + ''.join(block(P, b) for b in blocks)
+    _pf_page(P, anchor, inner, crumb=trail)
+
+
+def _pf_daycol(P, i, d, style=''):
+    rows = int((P.pf.get('week_spread') or {}).get('day_rows', 3))
+    if d is None:
+        num = '<span class="pfblank"></span>'
+    else:
+        mon = f'<small>{MONTHS[d.month - 1][:3]}</small>' if d.day == 1 else ''
+        num = f'<span class="pfnum">{mon}{d.day}</span>'
+    fade = ';opacity:.4' if (d is not None and not _pf_in_range(P, d)) else ''
+    return f'<div class="box pfday" style="{style}{fade}"><div class="pfdh"><span class="k">{FULL_DOW[i]}</span>{num}</div>{_chk(rows)}<div class="lines"></div></div>'
+
+
+def _pf_week(P, a, days, kicker, title, trail, prev_a=None, next_a=None, spare=False):
+    """Two-page week spread: left page (even, sheet back) Mon to Wed under the left_top blocks; right page (odd, next
+    sheet front) Thu, Fri and Sat over Sun, with the right_bottom blocks underneath."""
+    ws = P.pf.get('week_spread') or {}
+    days = days or [None] * 7
+    P.pf_spreads.append(a)
+    rng = '' if spare else f'{MONTHS[days[0].month - 1][:3]} {days[0].day} to {MONTHS[days[6].month - 1][:3]} {days[6].day}'
+    lnav = '<div style="display:flex;gap:14px;align-items:center">' + (f'<a href="#{prev_a}" class="k" style="font-size:16px">{arrow("l")}</a>' if prev_a else '') + _pf_link(a + 'b', 'Thursday to Sunday') + '</div>'
+    head = P.head(kicker, title, size=40, right=lnav)
+    if spare:
+        head = head.replace(f'>{esc(title)}</p>', f'>{esc(title)} <span style="display:inline-block;width:230px;border-bottom:1.3px solid {P.th["line"]};height:30px;vertical-align:baseline"></span></p>', 1)
+    left = head + ''.join(block(P, b) for b in ws.get('left_top', [])) + '<div class="row" style="flex:1">' + ''.join(_pf_daycol(P, i, days[i]) for i in range(3)) + '</div>'
+    _pf_page(P, a, left, crumb=trail)
+    rnav = '<div style="display:flex;gap:14px;align-items:center">' + _pf_link(a, 'Monday to Wednesday', d='l') + (f'<a href="#{next_a}" class="k" style="font-size:16px">{arrow("r")}</a>' if next_a else '') + '</div>'
+    rk = kicker if spare else f'{kicker} · {rng}'
+    right = (P.head(rk, 'Thursday to Sunday', size=40, right=rnav) +
+             '<div class="row" style="flex:1">' + _pf_daycol(P, 3, days[3]) + _pf_daycol(P, 4, days[4]) +
+             f'<div class="col" style="flex:1 1 0;min-width:0">{_pf_daycol(P, 5, days[5])}{_pf_daycol(P, 6, days[6])}</div></div>' +
+             ''.join(block(P, b) for b in ws.get('right_bottom', [])))
+    _pf_page(P, a + 'b', right, crumb=trail)
+
+
+def _habits(P, b):
+    """Weekly habit strip: a write-in name and seven circles (SVG, r004) per row, day initials on top."""
+    th = P.th; rh = round(26 * P.scale)
+    letters = '<span></span>' + ''.join(f'<span style="text-align:center;font:700 {P.fs(10.5)} \'{th["body"]}\';color:{th["muted"]}">{x}</span>' for x in 'MTWTFSS')
+    circ = f'<svg width="17" height="17" viewBox="0 0 17 17"><circle cx="8.5" cy="8.5" r="7" fill="none" stroke="{th["muted"]}" stroke-width="1.2"/></svg>'
+    cell = f'<span style="display:flex;align-items:center;justify-content:center;height:{rh}px;border-bottom:1px solid {th["line"]}">{circ}</span>'
+    rows = ''.join(f'<span style="height:{rh}px;border-bottom:1px solid {th["line"]};margin-right:8px"></span>' + cell * 7 for _ in range(int(b.get('rows', 5))))
+    return f'<div class="box" style="flex:1"><span class="k">{esc(b.get("label", "Habits"))}</span><div style="display:grid;grid-template-columns:2.4fr repeat(7,1fr);align-items:end">{letters}{rows}</div></div>'
+
+
+@module('print_format', "Format switch for home-printed planners: prints no page. Put it first. One PDF per paper size (sizes: letter 8.5 x 11 in, a4 210 x 297 mm, portrait, same page order and count), nothing within margin_in of any edge, binding_in extra on the binding edge (mirrored with duplex: odd pages bind left, even pages bind right), white paper only, no top bar or month rail (hide_nav; the trail stays as small text with its links), printed page numbers (page_numbers), vector writing lines (vector_rules). No day pages: dates open their week. Each month prints as whole sheets: a month page (sheet front: grid with a week column, then month_spread.page blocks) and a month review page (month_spread.review blocks, the left page facing the next month), with every week between them as a two-page spread (week_spread: left_top blocks over Mon to Wed; Thu, Fri and Sat over Sun with right_bottom blocks under). The build fails when a spread starts on a sheet front or a Print map row is not whole sheets.",
+        params={'sizes': "list of 'letter' | 'a4'", 'margin_in': 'number (0.5)', 'binding_in': 'number (0.375)', 'duplex': 'bool', 'hide_nav': 'bool', 'page_numbers': 'bool', 'vector_rules': 'bool',
+                'month_spread': 'dict {page: [blocks under the month grid], review: [blocks on the month review page]}',
+                'week_spread': "dict {left_top: [blocks], day_rows: int, weekend: 'stacked', right_bottom: [blocks]}"})
+def m_print_format(P, sec):
+    _pf_group(P, 'Front pages')  # read by Planner.__init__ (P.pf); here it only opens the first Print map row
+
+
+def _pf_head_start(P, sec):
+    pre = sec.get('anchor', 'hs')
+    y0, m0 = map(int, sec['from'].split('-')); y1, m1 = map(int, sec['to'].split('-'))
+    months = []; y, m = y0, m0
+    while (y, m) <= (y1, m1):
+        months.append((y, m)); y, m = (y + 1, 1) if m == 12 else (y, m + 1)
+    lead = _pf_lead_from(P); w1 = P.week_start(1)
+    weeks = []; d = lead
+    while d < w1:
+        weeks.append([d + datetime.timedelta(days=i) for i in range(7)]); d += datetime.timedelta(days=7)
+    first = datetime.date(y0, m0, 1)
+    home = lambda w: (w[3].year, w[3].month) if (w[3].year, w[3].month) in months else (months[0] if w[3] < first else months[-1])
+    _register(P, sec, sec.get('label', 'Head start'), f'{pre}{m0:02d}', sec.get('kicker', 'Start now'), nav=False)
+    P.head_start_links = [(f'{MONTHS[m2 - 1]} {y2}', f'{pre}{m2:02d}') for y2, m2 in months]
+    N = len(weeks)
+    for k, (yy, mm) in enumerate(months):
+        _pf_group(P, f'{MONTHS[mm - 1]} {yy}', 'Head start')
+        ma = f'{pre}{mm:02d}'
+        trail = f'<a href="#printmap">Print map</a> / Head start / {MONTHS[mm - 1]} {yy}'
+        prev_l = (f'{pre}{months[k - 1][1]:02d}', MONTHS[months[k - 1][1] - 1]) if k > 0 else None
+        nxt = (f'{pre}{months[k + 1][1]:02d}', MONTHS[months[k + 1][1] - 1]) if k + 1 < len(months) else ('m01', f'January {P.year}')
+        rev = _pf_month(P, yy, mm, ma, f'Head start · {yy}', trail, prev_l, nxt, hs=True)
+        for i, w in enumerate(weeks):
+            if home(w) != (yy, mm):
+                continue
+            wt = f'<a href="#printmap">Print map</a> / <a href="#{ma}">{MONTHS[mm - 1]} {yy}</a> / Head start week {i + 1} of {N}'
+            rng = f'{MONTHS[w[0].month - 1][:3]} {w[0].day} to {MONTHS[w[6].month - 1][:3]} {w[6].day}'
+            _pf_week(P, f'{pre}w{i + 1:02d}', w, f'Head start, week {i + 1} of {N}', rng, wt,
+                     prev_a=f'{pre}w{i:02d}' if i > 0 else None, next_a=f'{pre}w{i + 2:02d}' if i + 1 < N else 'w01')
+        _pf_review(P, yy, mm, ma + 'b', trail, rev, nxt)
+
+
+def _pf_calendar(P, sec):
+    ny = P.nweeks()
+    owner = {}
+    for n in range(1, ny + 1):
+        thu = P.week_start(n) + datetime.timedelta(days=3)
+        owner[n] = thu.month if thu.year == P.year else (1 if thu.year < P.year else 12)  # r008: built under the month holding its Thursday
+    hs = _pf_hs(P)
+    last_hs = None
+    if hs:
+        lf = _pf_lead_from(P); last_hs = f'{hs.get("anchor", "hs")}w{(P.week_start(1) - lf).days // 7:02d}'
+    spare = next((x for x in P.s.get('sections', []) if x.get('module') == 'spare_week'), None)
+    for m in range(1, 13):
+        _pf_group(P, f'{MONTHS[m - 1]} {P.year}')
+        ma = f'm{m:02d}'
+        trail = f'<a href="#printmap">Print map</a> / <a href="#year">{P.year}</a> / {MONTHS[m - 1]}'
+        if m > 1:
+            prev_l = (f'm{m - 1:02d}', MONTHS[m - 2])
+        elif hs:
+            prev_l = (f'{hs.get("anchor", "hs")}{int(hs["to"].split("-")[1]):02d}', MONTHS[int(hs['to'].split('-')[1]) - 1])
+        else:
+            prev_l = None
+        nxt = (f'm{m + 1:02d}', MONTHS[m]) if m < 12 else ((spare.get('anchor', 'spare') + 'n1', 'Spare week') if spare else None)
+        rev = _pf_month(P, P.year, m, ma, str(P.year), trail, prev_l, nxt)
+        for n in [n for n in range(1, ny + 1) if owner[n] == m]:
+            days = [P.week_start(n) + datetime.timedelta(days=i) for i in range(7)]
+            wt = f'<a href="#printmap">Print map</a> / <a href="#year">{P.year}</a> / <a href="#{ma}">{MONTHS[m - 1]}</a> / Week {n}'
+            rng = f'{MONTHS[days[0].month - 1][:3]} {days[0].day} to {MONTHS[days[6].month - 1][:3]} {days[6].day}'
+            _pf_week(P, f'w{n:02d}', days, f'Week {n} · {P.year}', rng, wt,
+                     prev_a=f'w{n - 1:02d}' if n > 1 else last_hs, next_a=f'w{n + 1:02d}' if n < ny else None)
+        _pf_review(P, P.year, m, ma + 'b', trail, rev, nxt)
+
+
+@module('print_check', "One-sheet print test (needs print_format): front (anchor, a sheet front) with true-size inch and centimetre rulers, four corner marks at the 0.5 in safe area, binding-edge hole guides (Letter 3 holes 4.25 in apart, A4 2 holes 80 mm apart), a line, dot and tone sample and a pen test box; back (anchor + 'b') with the alignment check, the fixes checklist, a Settings that work table, a box to write your own printer settings, and links to Start here and the Print map. label, anchor, fixes (up to 6)",
+        params={'label': 'str (Print check)', 'anchor': "str, default 'printcheck'", 'fixes': 'list of up to 6 str'})
+def m_print_check(P, sec):
+    th = P.th; a = sec.get('anchor', 'printcheck'); label = sec.get('label', 'Print check')
+    _register(P, sec, label, a, 'Before you print', nav=False)
+    m = 96 * float(P.pf.get('margin_in', .5)); b = 96 * float(P.pf.get('binding_in', .375))
+    ink = th['ink']
+
+    def marks():
+        return ''.join(f'<i class="pfmark" style="{v}:{m:.0f}px;{hz}:{m:.0f}px;border-{v}-width:1.6px;border-{hz}-width:1.6px"></i>'
+                       for v in ('top', 'bottom') for hz in ('left', 'right'))
+    # rulers at true physical size: CSS in and mm units print at real size when Scale is Actual size
+    ticks = ''.join(f'<line x1="{12.5 + i * 12.5}" y1="0" x2="{12.5 + i * 12.5}" y2="{30 if i % 8 == 0 else 21 if i % 4 == 0 else 15 if i % 2 == 0 else 9}" stroke="{ink}" stroke-width="{1.4 if i % 8 == 0 else .9}"/>' for i in range(49))
+    nums = ''.join(f'<text x="{12.5 + i * 100}" y="48" text-anchor="middle" font-family="{th["body"]}" font-size="15" font-weight="600" fill="{ink}">{i}</text>' for i in range(7))
+    inch = f'<svg style="width:6.25in;height:.55in;display:block" viewBox="0 0 625 55"><line x1="12.5" y1=".5" x2="612.5" y2=".5" stroke="{ink}" stroke-width="1.2"/>{ticks}{nums}</svg>'
+    cticks = ''.join(f'<line x1="{5 + i}" y1="0" x2="{5 + i}" y2="{7 if i % 10 == 0 else 5 if i % 5 == 0 else 3}" stroke="{ink}" stroke-width="{.32 if i % 10 == 0 else .2}"/>' for i in range(151))
+    cnums = ''.join(f'<text x="{5 + i * 10}" y="12.2" text-anchor="middle" font-family="{th["body"]}" font-size="3.6" font-weight="600" fill="{ink}">{i}</text>' for i in range(16))
+    cm = f'<svg style="width:160mm;height:14mm;display:block" viewBox="0 0 160 14"><line x1="5" y1=".15" x2="155" y2=".15" stroke="{ink}" stroke-width=".3"/>{cticks}{cnums}</svg>'
+    holes_at = ['1.25in', '5.5in', '9.75in'] if P.paper == 'letter' else ['108.5mm', '188.5mm']
+    holes = ''.join(f'<i style="position:absolute;left:{m + b / 2 - 11:.1f}px;top:calc({t} - 11px);width:22px;height:22px;border-radius:50%;border:1.4px dashed {th["muted"]}"></i>' for t in holes_at)
+    strip = (holes + f'<div style="position:absolute;left:{m:.0f}px;width:{b:.0f}px;top:calc({holes_at[0]} + 26px);height:2.6in;display:flex;align-items:center;justify-content:center">'
+             f'<span style="writing-mode:vertical-rl;transform:rotate(180deg);font:600 {P.fs(10)} \'{th["body"]}\';color:{th["muted"]};white-space:nowrap">Binding edge: punch here</span></div>')
+    rulers = (f'<div class="box" style="gap:10px"><span class="k">Scale check: true-size rulers</span>{inch}{cm}'
+              f'<span style="font-size:{P.fs(12.5)};line-height:1.45">Hold a real ruler to the 5 inch and 12 cm marks. If they match, the scale is right.</span></div>')
+    corners = (f'<div class="box fill" style="flex-direction:row;align-items:center;gap:14px"><svg width="34" height="34" viewBox="0 0 34 34" style="flex:none"><path d="M2,32 V2 H32" fill="none" stroke="{ink}" stroke-width="2"/></svg>'
+               f'<span style="font-size:{P.fs(12.5)};line-height:1.45"><b>Corner marks.</b> All four corners showing means nothing is cut off. They sit half an inch from each edge of the paper.</span></div>')
+    tone = (f'<div class="box"><span class="k">Lines should be light but clear</span><div class="row" style="gap:14px">'
+            f'<div style="flex:1;display:flex;flex-direction:column;gap:4px"><span style="font-size:{P.fs(11)};color:{th["muted"]}">Writing lines</span><div class="lines" style="flex:none;height:{3 * P.rule_period()}px"></div></div>'
+            f'<div style="flex:1;display:flex;flex-direction:column;gap:4px"><span style="font-size:{P.fs(11)};color:{th["muted"]}">Dot grid</span><div class="dots" style="flex:none;height:{3 * P.rule_period()}px"></div></div>'
+            f'<div style="flex:1;display:flex;flex-direction:column;gap:4px"><span style="font-size:{P.fs(11)};color:{th["muted"]}">Filled box</span><div style="height:{3 * P.rule_period()}px;background:{th["soft"]};border-radius:{P.rbox}px"></div></div></div></div>')
+    pen = f'<div class="box" style="flex:1"><span class="k">Pen test: write here to check your pen does not bleed</span><div class="lines"></div></div>'
+    turn = _pf_link(a + 'b', 'Turn over')
+    _pf_page(P, a, P.head('Front of the sheet', label, right=turn) + rulers + corners + tone + pen, marks=True, over=marks() + strip)
+    fixes = sec.get('fixes') or []
+    settings = [('Paper size', 'Same as the file: Letter or A4'), ('Scale', 'Actual size or 100%'), ('Double-sided', 'Flip on long edge'), ('Color', 'Color or grayscale, both work')]
+    rows = ''.join(f'<div style="display:grid;grid-template-columns:1fr 2fr;border-bottom:1px solid {th["line"]};padding:7px 0;font-size:{P.fs(12.5)}"><b style="font-weight:600">{esc(k)}</b><span>{esc(v)}</span></div>' for k, v in settings)
+    back = (P.head('Back of the sheet', label, right='<div style="display:flex;gap:14px">' + _pf_link('start', 'Start here', d='l') + _pf_link('printmap', 'Print map') + '</div>') +
+            f'<div class="box fill"><span class="k">Same way up?</span><span style="font-size:{P.fs(12.5)};line-height:1.45">This side should read the same way up as the front. Hold the sheet to the light: the corner marks should sit on top of the front ones.</span></div>'
+            f'<div class="box"><span class="k">Something looks wrong?</span>{_chk(len(fixes), fixes)}</div>'
+            f'<div class="box" style="gap:0"><span class="k" style="padding-bottom:4px">Settings that work</span>{rows}</div>'
+            f'<div class="box" style="flex:1"><span class="k">Your printer and the settings that worked</span><div class="lines"></div></div>')
+    _pf_page(P, a + 'b', back, marks=True, over=marks())
+
+
+@module('print_map', "Print map page (needs print_format): one row per run of whole sheets in file order (front pages, each head-start month, each month, spare week) with its page range, sheet count and a Printed tick box, filled at the end of the build; under it 'Starting before <year>' and 'Starting later in <year>' boxes. label, kicker, anchor",
+        params={'label': 'str (Print map)', 'kicker': 'str', 'anchor': "str, default 'printmap'"})
+def m_print_map(P, sec):
+    a = sec.get('anchor', 'printmap')
+    _register(P, sec, sec.get('label', 'Print map'), a, sec.get('kicker', 'Pages by month'), nav=False)
+    P.pf_map = (a, sec)
+    _pf_page(P, a, '%%PRINTMAP%%')
+
+
+def _pf_fill(P):
+    """End of build: the Print map table, the front-page trail and printed page numbers; parity problems."""
+    th = P.th; total = len(P.pages)
+    idx = {a: i + 1 for i, (a, _) in enumerate(P.page_modules)}
+    groups = []
+    for i, (label, sub, start) in enumerate(P.pf_groups):
+        end = P.pf_groups[i + 1][2] - 1 if i + 1 < len(P.pf_groups) else total
+        if end >= start:
+            groups.append((label, sub, start, end, P.page_modules[start - 1][0]))
+    names = {a: l for (l, a, k) in P.index_items}
+    front = [a for a, _ in P.page_modules[:groups[0][3]]] if groups else []
+    seen = {}; trail_items = []
+    for a in front:
+        if a in names:
+            seen[names[a]] = seen.get(names[a], 0) + 1
+            trail_items.append((a, names[a] if seen[names[a]] == 1 else f'{names[a]} {seen[names[a]]}'))
+    lastfront = groups[0][3] if groups else 0
+    if groups and not groups[0][1]:
+        groups[0] = (groups[0][0], ', '.join(['Cover'] + list(dict.fromkeys(names[a] for a in front if a in names))), *groups[0][2:])
+    box = f'<i style="width:15px;height:15px;border:1.4px solid {th["muted"]};border-radius:3px;display:block;margin:auto"></i>'
+    cols = f'2.9fr 1fr .7fr {64 * P.scale:.0f}px'
+    hdr = ''.join(f'<span class="k" style="padding:4px 6px{";text-align:center" if j == 3 else ""}">{h}</span>' for j, h in enumerate(['What', 'Pages', 'Sheets', 'Printed']))
+    sub = lambda s: f'<span style="font-size:{P.fs(10)};color:{th["muted"]}">{esc(s)}</span>' if s else ''
+    rows = ''.join(f'<div style="display:grid;grid-template-columns:{cols};align-items:center;border-bottom:1px solid {th["line"]};flex:1 0 auto;padding:4px 0">'
+                   f'<a href="#{a}" style="padding:0 6px;display:flex;flex-wrap:wrap;align-items:baseline;gap:0 10px"><b style="font:600 {P.fs(12.5)} \'{th["body"]}\'">{esc(l)}</b>{sub(s)}</a>'
+                   f'<span style="padding:0 6px;font-size:{P.fs(12.5)}">{s0} to {s1}</span><span style="padding:0 6px;font-size:{P.fs(12.5)}">{math.ceil((s1 - s0 + 1) / 2)}</span>{box}</div>'
+                   for l, s, s0, s1, a in groups)
+    rows += (f'<div style="display:grid;grid-template-columns:{cols};align-items:center;border-top:1.5px solid {th["ink"]};padding:8px 0">'
+             f'<b style="padding:0 6px;font:600 {P.fs(12.5)} \'{th["body"]}\'">Whole planner</b><span style="padding:0 6px;font-size:{P.fs(12.5)}">1 to {total}</span><span style="padding:0 6px;font-size:{P.fs(12.5)}">{math.ceil(total / 2)}</span><span></span></div>')
+    hs = next((g for g in groups if g[1] == 'Head start'), None)
+    yr = P.year
+    before = (f'Print pages 1 to {lastfront} once, then the {hs[0]} row. Its first week begins Monday, {_pf_lead_from(P).strftime("%B")} {_pf_lead_from(P).day}, {_pf_lead_from(P).year}. Print each row a few days before that month begins.') if hs else f'Print pages 1 to {lastfront} once, then the January row.'
+    later = f'Print pages 1 to {lastfront} once, then the current month\'s row and start with this week. Print each month a few days before it begins. Missed a week? Skip it.'
+    a, sec = P.pf_map
+    intro = (f'<div class="box fill"><span class="k">How to print</span><span style="font-size:{P.fs(12.5)};line-height:1.45">Each row is whole sheets. Print one row at a time, double-sided (flip on long edge), at Actual size, '
+             f'and it drops into your binder in order with every week open as a two-page spread. The page numbers are printed at the bottom corner of every page and are the same in the Letter and A4 files.</span></div>')
+    table = f'<div class="box" style="flex:1;gap:0"><div style="display:grid;grid-template-columns:{cols};border-bottom:1.5px solid {th["ink"]}">{hdr}</div><div style="flex:1;display:flex;flex-direction:column">{rows}</div></div>'
+    starts = (f'<div class="row"><div class="box fill" style="flex:1"><span class="k">Starting before {yr}</span><span style="font-size:{P.fs(12)};line-height:1.45">{esc(before)}</span></div>'
+              f'<div class="box fill" style="flex:1"><span class="k">Starting later in {yr}</span><span style="font-size:{P.fs(12)};line-height:1.45">{esc(later)}</span></div></div>')
+    inner = P.head(sec.get('kicker', 'Pages by month'), sec.get('label', 'Print map')) + intro + table + starts
+    out = []
+    for i, pg in enumerate(P.pages):
+        pg = pg.replace('%%PRINTMAP%%', inner)
+        if '%%PFTRAIL:' in pg:
+            pg = re.sub(r'%%PFTRAIL:([^%]+)%%', lambda mm: ' · '.join(f'<b>{esc(t)}</b>' if x == mm.group(1) else f'<a href="#{x}">{esc(t)}</a>' for x, t in trail_items), pg)
+        pg = re.sub(r'%%PG:([^%]+)%%', lambda mm: str(idx.get(mm.group(1), '?')), pg)
+        out.append(pg)
+    P.pages = out
+    probs = []
+    if P.pf.get('duplex', True):
+        probs += [f'spread {x} starts on page {idx[x]}, a sheet front' for x in P.pf_spreads if idx[x] % 2]
+        probs += [f'Print map row {g[0]} starts on page {g[2]}, a sheet back (rows must be whole sheets)' for g in groups if g[2] % 2 == 0]
+        if total % 2:
+            probs.append(f'{total} pages: the last sheet is half blank')
+        pc = next((x for x, mod in P.page_modules if mod == 'print_check'), None)
+        if pc and idx[pc] % 2 == 0:
+            probs.append(f'print check {pc} is on page {idx[pc]}: front and back are not one sheet')
+    P.pf_problems = probs
+
+
+@module('spare_week', "Undated week spreads for print_format (count of them), each printed as two whole sheets: a Notes page (sheet front), the week spread (Week of ____, a blank date rule per day) and a Notes page (sheet back), so a copy drops into the binder anywhere. Anchors: anchor+'n1', anchor, anchor+'b', anchor+'n2' (then anchor2..). label, kicker, anchor, count",
+        params={'label': 'str (Spare week)', 'kicker': 'str', 'anchor': "str, default 'spare'", 'count': 'int (1)'})
+def m_spare_week(P, sec):
+    th = P.th; a0 = sec.get('anchor', 'spare'); n = int(sec.get('count', 1))
+    _register(P, sec, sec.get('label', 'Spare week'), f'{a0}n1', sec.get('kicker', 'Undated'), nav=False)
+    for i in range(1, n + 1):
+        a = a0 if i == 1 else f'{a0}{i}'
+        _pf_group(P, sec.get('label', 'Spare week') + ('' if n == 1 else f' {i}'), 'Undated: a notes page, the week spread, a notes page')
+        trail = f'<a href="#printmap">Print map</a> / {esc(sec.get("label", "Spare week"))}'
+        _pf_page(P, f'{a}n1', P.head('Spare week', 'Notes', right=_pf_link(a, 'Spare week')) + '<div class="box" style="flex:1"><div class="lines"></div></div>', crumb=trail)
+        _pf_week(P, a, None, sec.get('kicker', 'Spare week, print as many as you need'), 'Week of', trail, prev_a=f'{a}n1', next_a=f'{a}n2', spare=True)
+        _pf_page(P, f'{a}n2', P.head('Spare week', 'Notes', right=_pf_link(a + 'b', 'Spare week', d='l')) + '<div class="box" style="flex:1"><div class="lines"></div></div>', crumb=trail)
+
+
+def _pf_problems(spec, th):
+    pf = next((x for x in spec.get('sections', []) if x.get('module') == 'print_format'), None)
+    if not pf:
+        return []
+    out = []
+    if str(th.get('paper', '')).upper() != '#FFFFFF':
+        out.append(f"print_format: paper must be #FFFFFF (a tinted page prints with a white frame), not {th.get('paper')}")
+    bad = [s for s in pf.get('sizes', ['letter']) if s not in PAPER]
+    if bad or not pf.get('sizes'):
+        out.append(f"print_format: sizes must be letter and/or a4, not {pf.get('sizes')}")
+    if spec.get('orientation', 'portrait') != 'portrait':
+        out.append('print_format: portrait only')
+    if (pf.get('week_spread') or {}).get('weekend', 'stacked') != 'stacked':
+        out.append("print_format: week_spread weekend must be 'stacked'")
+    if any(x.get('module') == 'calendar' and x.get('days') is not False for x in spec.get('sections', [])):
+        out.append('print_format: calendar days must be false (no day pages in a printed weekly planner)')
+    return out
+
+
 # ---------- build ----------
 def capabilities():
     return {'modules': {k: {'desc': v['desc'], 'params': v['params']} for k, v in MODULES.items()},
@@ -1001,6 +1733,7 @@ def validate_spec(spec):
                 problems.append('grayscale: theme colors are not gray: ' + ', '.join(bad))
         if ek and ek.get('week_layout', 'grid') not in ('grid', 'rows'):
             problems.append(f"eink_format week_layout must be 'grid' or 'rows', not {ek.get('week_layout')!r}")
+        problems += _pf_problems(spec, th)
     except Exception as e:
         problems.append(f'theme: {e}')
     return problems, needs
@@ -1018,6 +1751,8 @@ def build(spec):
         _fill_index(P)
     _fill_guides(P)
     _fill_link_test_map(P)
+    if P.pf:
+        _pf_fill(P)
     html = P.html()
     all_ids = re.findall(r'<section class="pg" id="([^"]+)"', html)
     ids = set(re.findall(r'id="([^"]+)"', html))
@@ -1033,7 +1768,7 @@ def build(spec):
         seen.add(a); stack.extend(graph[a] - seen)
     orphans = [a for a in all_ids if a not in seen]
     return {'html': html, 'pages': len(P.pages), 'page_modules': P.page_modules, 'broken_links': broken, 'duplicate_pages': dup, 'orphan_pages': orphans,
-            'size': (P.W, P.HT), 'links': len(re.findall(r'href="#', html))}
+            'size': (round(P.W), round(P.HT)), 'print_problems': getattr(P, 'pf_problems', []), 'paper': getattr(P, 'paper', None), 'links': len(re.findall(r'href="#', html))}
 
 
 if __name__ == '__main__':
