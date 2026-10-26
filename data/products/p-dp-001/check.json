@@ -1,0 +1,289 @@
+{
+ "product_id": "p-dp-001",
+ "at": "2026-10-26T19:26:36Z",
+ "tech": [
+  {
+   "name": "file size",
+   "pass": true,
+   "detail": "Lights-Low-2027.pdf: 12.86 MB (limit 19.5, Etsy 20)"
+  },
+  {
+   "name": "no text overflow",
+   "pass": true,
+   "detail": "none"
+  },
+  {
+   "name": "page count",
+   "pass": true,
+   "detail": "532 pages in PDF"
+  },
+  {
+   "name": "links present in PDF",
+   "pass": true,
+   "detail": "12852 link annotations for 11860 links in the source"
+  },
+  {
+   "name": "fonts licensed (OFL list only)",
+   "pass": true,
+   "detail": "fonts: ['LibreBaskerville-Bold', 'LibreBaskerville-Italic', 'OutfitThin-Medium', 'OutfitThin-Regular', 'OutfitThin-SemiBold']"
+  },
+  {
+   "name": "page claims match the file",
+   "pass": true,
+   "detail": "claims [532, 532], file has 532"
+  },
+  {
+   "name": "listing photos",
+   "pass": true,
+   "detail": "9 photos, sizes [(2700, 2025)]"
+  },
+  {
+   "name": "title",
+   "pass": true,
+   "detail": "130 chars"
+  },
+  {
+   "name": "13 tags, max 20 chars",
+   "pass": true,
+   "detail": "13 tags"
+  },
+  {
+   "name": "no em dashes or emojis",
+   "pass": true,
+   "detail": "checked title and description"
+  },
+  {
+   "name": "says digital download",
+   "pass": true,
+   "detail": "download and nothing-shipped note"
+  }
+ ],
+ "coverage": [
+  {
+   "item": "must:mh_dated",
+   "kind": "must",
+   "found": true,
+   "where": "year, m01, m07, w01, w03, w27, d0101, d0115, d0502, d0831",
+   "note": "2027 Monday-start grids; PDF check: year page links all 365 days, each month links its weeks and every date, each week links its 7 days, every day page has prev/next (no gaps across the 432 day pages)."
+  },
+  {
+   "item": "must:mh_multi_year",
+   "kind": "must",
+   "found": true,
+   "where": "hs11, hsw02, hs12 (rendered p54), hsw01 (rendered p14), year 'Starting in 2026? Head start' button",
+   "note": "Head start Nov and Dec 2026 month pages, 9 week pages from Oct 26 and 67 day pages; Oct 26-31 sit on the November 2026 page and hsw01; hs1231 next goes to d0101."
+  },
+  {
+   "item": "must:mh_apps",
+   "kind": "must",
+   "found": true,
+   "where": "Lights-Low-2027.pdf, listing.description 'Works with'",
+   "note": "One 532-page landscape PDF (768x576 pt = 1024x768), plain GoTo links only, no JS or forms; listing names Goodnotes first then Notability, Noteshelf, Samsung Notes, Xodo. Not tested inside the apps."
+  },
+  {
+   "item": "must:mh_core",
+   "kind": "must",
+   "found": true,
+   "where": "year, goals, m01-m12, m01h (rendered p92), w01-w53, d0101-d1231, notes-notes6",
+   "note": "All present; habit trackers exist for all 12 months in page_modules (only January rendered and checked), 6 notes pages with 1-6 pager."
+  },
+  {
+   "item": "must:mh_look",
+   "kind": "must",
+   "found": true,
+   "where": "all shots; pdffonts",
+   "note": "Only Libre Baskerville (bold, italic) and Outfit embedded; consistent margins; rail runs periwinkle Jan to amber Dec with dark tab text. Contents page spacing is unbalanced (see visual)."
+  },
+  {
+   "item": "must:mh_guide",
+   "kind": "must",
+   "found": true,
+   "where": "start, linktest, index 'How the links work'",
+   "note": "Start here 4 steps incl. 'Choose a light pen', Setup check page, links note on Contents."
+  },
+  {
+   "item": "fix:f_download",
+   "kind": "fix",
+   "found": false,
+   "where": "files/Lights-Low-2027.pdf, listing.how_steps, start, photo-09-ph9.jpg",
+   "note": "One PDF, 12.86 MB, listing has the 3 steps and Start here step 1 repeats them, but the last photo only says 'Download on Etsy in a web browser': no Open in Goodnotes step, no 3-step sequence."
+  },
+  {
+   "item": "fix:f_setup",
+   "kind": "fix",
+   "found": true,
+   "where": "cover, start, linktest",
+   "note": "Cover 'Open planner' links to start; 4 steps; jump grid Nov 2026 to Dec 2027; next page is Setup check with 3 jump buttons and a pen test box; nothing to import."
+  },
+  {
+   "item": "fix:f_device",
+   "kind": "fix",
+   "found": true,
+   "where": "PDF page size, listing.description 'Works with'",
+   "note": "Pages are 4:3 landscape; listing lists the 5 apps and 'Not made for phones, e-ink tablets, or viewing in Files, Photos or a Google Drive preview' (the e-ink reason is not given)."
+  },
+  {
+   "item": "fix:f_hard",
+   "kind": "fix",
+   "found": true,
+   "where": "d0101, d0115, d0502, d0831, w01, w03, w27, hsw02",
+   "note": "Identical day layout (Top 3, Work, Home left; Time blocks 6am-10pm, Tomorrow right) and identical week layout; Home/Year/Goals/Notes bar on every page except the cover (checked in PDF links)."
+  },
+  {
+   "item": "fix:f_nav",
+   "kind": "fix",
+   "found": false,
+   "where": "w01, hs12, rail on every page",
+   "note": "Tabs, year dates, month-to-weeks, week-to-days, day arrows and Month / Week trails all work, but Week 1 (Dec 28 to Jan 3, Thursday Dec 31, 2026) is built under January 2027, not under December as the Thursday rule (r008) requires."
+  },
+  {
+   "item": "fix:f_misleading",
+   "kind": "fix",
+   "found": true,
+   "where": "photos 1-9 captions, listing.description",
+   "note": "Every photo is a real page screenshot captioned with its page name; description gives counts per page type and states dark only, landscape, Monday weeks, Oct 26 2026 to Dec 31 2027, no stickers, handwrite/text tool, English only."
+  },
+  {
+   "item": "fix:f_broken",
+   "kind": "fix",
+   "found": true,
+   "where": "linktest; PDF link audit",
+   "note": "3 jump buttons (month, year, Contents), pen test box, four-line 'Nothing happened?' list; all 12,852 link annotations resolve and all 532 pages are reachable from the cover."
+  },
+  {
+   "item": "fix:f_support",
+   "kind": "fix",
+   "found": false,
+   "where": "listing.description 'Help', linktest",
+   "note": "Fix list and Start here are present, but the listing has no FAQ of the top five problems, and both the listing ('we'll help you set it up') and the Setup check page ('we will help') promise service, breaking r007."
+  },
+  {
+   "item": "fix:f_not_useful",
+   "kind": "fix",
+   "found": true,
+   "where": "photo-02-ph2.jpg, photo-03-ph3.jpg, listing.description 'Please note'",
+   "note": "Real day and week pages shown and the description lists what is not inside (no light version, no budget, meal or fitness); pages are whole and shrunk, so hour labels are small (see visual)."
+  },
+  {
+   "item": "fix:f_value",
+   "kind": "fix",
+   "found": false,
+   "where": "d0101, w03, photo-02-ph2.jpg",
+   "note": "14 months, one page per day, roomy day and week pages, but no photo shows the day page at real size: photo 2 shows the whole page shrunk to about 60% of the canvas width."
+  },
+  {
+   "item": "unique:u_dark",
+   "kind": "unique",
+   "found": true,
+   "where": "all pages; product.html CSS",
+   "note": "Background #1B1F2B, text #EEEAF4, amber accents, built dark; Start here step 3 says to pick white, pale gray or a light pen color."
+  },
+  {
+   "item": "unique:u_work_home",
+   "kind": "unique",
+   "found": true,
+   "where": "d0101, w03",
+   "note": "Top 3, Work, Home left; Time blocks 6am-10pm and Tomorrow right; week has This week's focus, Wins, Next week."
+  },
+  {
+   "item": "unique:u_setup_check",
+   "kind": "unique",
+   "found": true,
+   "where": "linktest",
+   "note": "Buttons to a month (m01), the year and Contents, pen test lines and a 4-item fix list."
+  },
+  {
+   "item": "look",
+   "kind": "look",
+   "found": true,
+   "where": "all shots",
+   "note": "Navy, light ink, amber, landscape, two families, italic Baskerville labels, no tracked caps. Out-of-month dates (#676878, about 3.2:1) and week-notes dots sit below the 7:1 aim (decorative/inactive, see visual)."
+  }
+ ],
+ "clone": {
+  "max_text_sim": 0.147,
+  "text": {
+   "max": 0.147,
+   "closest": "2027 Digital Planner, Dated GoodNotes Planner, iPad Daily Weekly Monthly Planner, Digital Journal, Notability Planner, New 2027 Calendar",
+   "closest_shop": "PixeIPerfectPlanners"
+  },
+  "max_image_sim": null,
+  "image": {
+   "status": "pending",
+   "max": null,
+   "note": "competitor photos not fetched yet (laptop worker)"
+  },
+  "pass": true
+ },
+ "visual": [
+  {
+   "issue": "Fix list line 4 promises service: 'Still stuck? Message us on Etsy and we will help' (r007). Built into the file buyers keep and repeated in listing photo 6. Replace it with a buyer action, e.g. re-download in a web browser and re-import.",
+   "where": "linktest; photo-06-ph6.jpg",
+   "severity": "high"
+  },
+  {
+   "issue": "Listing Help section promises service: 'Message us on Etsy and we'll help you set it up' (r007), and the FAQ with the top five problems the brief asked for is missing.",
+   "where": "listing.description",
+   "severity": "medium"
+  },
+  {
+   "issue": "Empty-looking Contents page: about a third of the page is blank between the month buttons and 'How the links work', and the card grid has an empty eighth slot (r006). This is also the hero screen in the 'What you get' photo and in photo 7.",
+   "where": "index; photo-09-ph9.jpg; photo-07-ph7.jpg",
+   "severity": "medium"
+  },
+  {
+   "issue": "Start here step 4 says 'Tap this month below', but the jump grid starts at November 2026. A buyer on Oct 26 to 31 (today's selling window) has no October button and has to guess that November 2026 holds their week.",
+   "where": "start",
+   "severity": "medium"
+  },
+  {
+   "issue": "Photo 7 shrinks two whole pages side by side. The year-at-a-glance dates and the Contents text cannot be read at Etsy zoom (r013), and a large empty band sits under the headline.",
+   "where": "photo-07-ph7.jpg",
+   "severity": "medium"
+  },
+  {
+   "issue": "Photos 2 to 6, 8 and 9 each show a whole page shrunk to about 60% of the canvas, not the useful part large (r013). Hour labels, fix-list and tip text are small, and the bottom fifth of each canvas is empty.",
+   "where": "photo-02 to photo-06, photo-08, photo-09",
+   "severity": "medium"
+  },
+  {
+   "issue": "A stray 160x6px amber strip floats at the top edge, left of the rail, on only the cover, Contents and Start here pages. It looks like a cut-off element and is visible in photos 1, 5, 7 and 9.",
+   "where": "cover, index, start",
+   "severity": "low"
+  },
+  {
+   "issue": "Setup check eyebrow repeats the title ('Setup check / Setup check'), and the left column leaves about a quarter of the page empty under the fix list.",
+   "where": "linktest",
+   "severity": "low"
+  },
+  {
+   "issue": "Week 1 (Dec 28 to Jan 3) is filed under January although its Thursday is Dec 31 (r008). Week 1 has no back arrow to the Dec 21 head start week, and that week's next arrow goes to January, not Week 1.",
+   "where": "w01, hsw09",
+   "severity": "low"
+  },
+  {
+   "issue": "Week numbers are offset from ISO weeks (Week 1 = Dec 28 to Jan 3, ISO week 1 = Jan 4 to 10). Buyers matching work calendars will be one off all year.",
+   "where": "w01-w53",
+   "severity": "low"
+  },
+  {
+   "issue": "The same Nov and Dec rail tabs jump to the 2026 head start months on head start pages but to Nov and Dec 2027 everywhere else.",
+   "where": "hs11, hs12, hsw*, hs* day pages",
+   "severity": "low"
+  },
+  {
+   "issue": "Out-of-month dates (#676878 on #1B1F2B, about 3.2:1) and the week Notes dot grid are faint, below the 'everything well above 7 to 1' look.",
+   "where": "m01, m07, hs11, w01, w03",
+   "severity": "low"
+  },
+  {
+   "issue": "The day page Tomorrow box has one writing line in a tall box, so most of it looks empty.",
+   "where": "d0101, d0115, d0502, d0831",
+   "severity": "low"
+  }
+ ],
+ "pass": false,
+ "notes": [
+  "Image clone check pending: competitor photos come from the laptop worker."
+ ]
+}

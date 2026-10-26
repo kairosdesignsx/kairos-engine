@@ -21,7 +21,7 @@ You write the Etsy listing and the text on the listing photos for one product.
        Spreadsheet: Google Sheets and Excel (versions from the brief); say what it is not for (from the brief). Only claim what the brief's build_notes allow.
     5. How to start: 3 short steps.
     6. What you get: file names and sizes. "Digital download. Nothing is shipped."
-    7. Help: "Message us on Etsy and we'll help you set it up."
+    7. Help: "Still stuck? Send the shop an Etsy message." Never promise service (no "we'll help", "we reply fast"; style rule r007).
   No em dashes. No emojis. No ALL CAPS words. No claims you cannot see in the brief or build.
  "photo_copy": { "<photo id from brief.photos>": {"headline": max 6 words, "points": 0 to 3 short lines, "label": optional 2 to 4 word tag,
                   "steps": optional [[title, text] x3] when the photo shows a process (download, setup); shown as numbered steps} },

@@ -169,9 +169,10 @@ TRACK = {
    "fixes": ["Pen off", "Note app", "Re-import", "Send the shop an Etsy message"]},
   {"module": "log_week", "label": "Weeks", "count": 6, "columns": [{"label": "Workout plan", "width": 2.2}, {"label": "Minutes"}, {"label": "Done", "check": True}],
    "habits": ["Water", "Steps"], "stats": ["Weigh-in", "Change"], "fields": ["Win of the week", "Next week I will"],
-   "links": [{"label": "Meal plan", "anchor": "meal"}, {"label": "Workout", "anchor": "wo", "per": 3}], "mark_every": 4, "mark_anchor": "measure", "mark_label": "Measure"},
+   "links": [{"label": "Meal plan", "anchor": "meal"}, {"label": "Workout", "anchor": "wo", "per": 3}, {"label": "Journal", "anchor": "jr"}], "mark_every": 4, "mark_anchor": "measure", "mark_label": "Measure"},
   {"module": "workout_log", "label": "Workouts", "kicker": "Training log", "count": 18, "per_week": 3, "week_anchor": "w"},
   {"module": "meal_week", "count": 6, "week_anchor": "w", "nav": False, "grocery_rows": 4},
+  {"module": "prompt_week", "count": 6, "week_anchor": "w", "prompts": ["First prompt?", "Second prompt?"], "numbered": ["Three good things", 3], "boxes": ["A kind word"]},
   {"module": "progress_chart", "label": "Progress", "anchor": "progress", "points": 6, "every": 2, "fields": ["Start", "Goal"],
    "blocks": [{"kind": "checklist", "label": "Milestones", "rows": 5}, {"kind": "lines", "label": "Wins"}], "links": [["Measurements", "measure"]]},
   {"module": "body_measure", "anchor": "measure", "nav": False, "week_anchor": "w", "every": 2, "weeks": 6, "tips": [["Waist", "At the narrowest point."], ["Hips", "Widest part."]]},
@@ -187,7 +188,8 @@ def test_trackers():
     pages = dict(re.findall(r'<section class="pg" id="([^"]+)"(.*?)</section>', r['html'], flags=re.S))
     # group_weeks: week, its meal plan, its workouts, then the next week; log list pages stay after the weeks
     i = ids.index('w01')
-    assert ids[i:i + 10] == ['w01', 'meal01', 'wo001', 'wo002', 'wo003', 'w02', 'meal02', 'wo004', 'wo005', 'wo006'], ids[i:i + 10]
+    assert ids[i:i + 12] == ['w01', 'meal01', 'wo001', 'wo002', 'wo003', 'jr01', 'w02', 'meal02', 'wo004', 'wo005', 'wo006', 'jr02'], ids[i:i + 12]
+    assert 'First prompt?' in pages['jr03'] and 'Second prompt?' in pages['jr04'] and 'href="#w04"' in pages['jr04'] and 'href="#jr04"' in pages['w04']
     assert ids.index('weeks') < i and ids.index('log') > ids.index('wo018')
     assert len(ids) == len(set(ids)) and 'group_weeks' not in [m for _, m in r['page_modules']]
     # week hub links both ways; measure button every 4th week; overview opens every week

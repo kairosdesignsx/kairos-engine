@@ -165,6 +165,7 @@ a{{color:inherit;text-decoration:none}}
 .foot{{position:absolute;left:{self.gutter}px;bottom:8px;font:500 9.5px '{th['body']}';color:{th['muted']};letter-spacing:.08em}}
 .step{{display:flex;gap:12px;align-items:flex-start}}
 .step b{{flex:none;width:28px;height:28px;border-radius:50%;background:{th['ink']};color:{th['paper']};display:flex;align-items:center;justify-content:center;font:700 13px '{th['body']}'}}
+.k>a:has(>svg){{display:inline-flex;align-items:center;justify-content:center;width:46px;height:38px;margin-left:8px;border-radius:10px;background:{th['soft']};vertical-align:middle}}.k>a>svg{{width:20px;height:20px}}
 """ + self.label_css() + (self.eink_css() if self.eink else '') + (_pf_css(self) if self.pf else '') + ('*{font-variant-numeric:lining-nums}' if th.get('nums') == 'lining' else '')  # theme 'nums': 'lining' (Cormorant's old-style 1 reads as I)
 
     def label_css(self):
@@ -549,7 +550,7 @@ def m_link_test(P, sec):
     th = P.th; a = sec.get('anchor', 'linktest')
     targets = [tuple(t) for t in sec['targets']] if sec.get('targets') else [('A month page', 'm01'), ('The year', 'year'), ('Contents', 'index')]
     btns = ''.join(f'<a href="#{t}" style="padding:16px 22px;border-radius:14px;background:{th["soft"]};font:600 17px \'{th["body"]}\';display:flex;justify-content:space-between;align-items:center"><span>{esc(l)}</span><span>{arrow('r')}</span></a>' for l, t in targets)
-    fixes = _chk(4, sec.get('fixes') or P.eink.get('link_test_fixes') or ["Turn the pen off (read or view mode)", f"Open the file in a {'note' if P.noun == 'journal' else 'PDF planner'} app, not Files or Photos", "Re-import the PDF, do not convert it", "Still stuck? Send the shop an Etsy message" if P.noun == 'journal' else "Still stuck? Message us on Etsy and we will help"])
+    fixes = _chk(4, sec.get('fixes') or P.eink.get('link_test_fixes') or ["Turn the pen off (read or view mode)", f"Open the file in a {'note' if P.noun == 'journal' else 'PDF planner'} app, not Files or Photos", "Re-import the PDF, do not convert it", "Still stuck? Send the shop an Etsy message"])
     pen = P.eink.get('pen_label', 'Test the pen: turn it on and write your name here')
     ltmap = '%%LT_MAP%%' if P.HT > P.W else ''  # portrait: the tall left column gets a map of the top bar (no half-empty page)
     inner = P.head('Setup check', sec.get('label', 'Do your links work?')) + f'''
@@ -563,7 +564,8 @@ def m_link_test(P, sec):
 
 
 @module('calendar', 'The dated or undated calendar: month pages, optional habit page per month, week pages and day pages, all cross-linked. month: {side: [labels]}, habits: bool, week: {preset | side: [blocks]}, day: {preset | left: [blocks], right: [blocks]}, days: bool',
-        params={'month': 'dict', 'habits': 'bool', 'week': 'dict', 'day': 'dict', 'days': 'bool', 'iso_weeks': 'bool: ISO 8601 week numbers (Week 1 holds January 4); needs a head_start covering the days before it'})
+        params={'month': 'dict', 'habits': 'bool', 'week': 'dict', 'day': 'dict', 'days': 'bool', 'iso_weeks': 'bool: ISO 8601 week numbers (Week 1 holds January 4); needs a head_start covering the days before it',
+                'free_weeks': 'bool (undated only): weeks 1 to 52 run in order from the week the buyer starts, not filed under months; adds a Weeks page (anchor weeks) with all 52, month pages link to it'})
 def m_calendar(P, sec):
     if P.pf:
         return _pf_calendar(P, sec)
@@ -574,16 +576,23 @@ def m_calendar(P, sec):
     dlay = dsec if dsec.get('left') else DAY_PRESETS[dsec.get('preset', 'default')]
     if sec.get('habits'):
         _register(P, {'nav': False}, 'Habit trackers', 'm01h', 'Monthly', nav=False)
+    free = P.undated and sec.get('free_weeks')  # undated: weeks 1 to 52 run from the buyer's first week, not filed under months
+    if free:
+        _free_weeks_index(P, sec)
     for m in range(1, 13):
         cells, rows = P.cal_grid(m)
-        if P.undated:
+        if free:
+            weeks = []
+        elif P.undated:
             n0 = sum((4, 4, 5)[i % 3] for i in range(m - 1))  # weeks in order: Jan 1-4, Feb 5-8, Mar 9-13 ... Dec 48-52
             weeks = list(range(n0 + 1, n0 + 1 + (4, 4, 5)[(m - 1) % 3]))
         else:
             weeks = sorted({P.week_of(d) for d in calendar.Calendar(0).itermonthdates(P.year, m) if d.month == m})
         w0 = [w for w in weeks if w < 1]; weeks = [w for w in weeks if w >= 1]  # iso_weeks: week 0 belongs to the year before
         wl = ''.join(f'<a href="#w{w:02d}" style="display:inline-flex;align-items:center;line-height:1;padding:6px 9px;border-radius:{P.rpill}px;background:{th["soft"]};font:600 10.5px \'{th["body"]}\'">Week {w}</a>' for w in weeks)
-        side = ''.join(f'<div class="box" style="flex:1"><span class="k">{esc(x)}</span><div class="lines"></div></div>' for x in side_labels)
+        if free:
+            wl = f'<a href="#weeks" style="display:inline-flex;align-items:center;line-height:1;padding:6px 12px;border-radius:{P.rpill}px;background:{th["soft"]};font:600 10.5px \'{th["body"]}\'">All weeks</a>'
+        side =''.join(f'<div class="box" style="flex:1"><span class="k">{esc(x)}</span><div class="lines"></div></div>' for x in side_labels)
         habit = f'<a href="#m{m:02d}h" class="k" style="color:{th["ink"]};padding:6px 10px;border-radius:99px;border:1.3px solid {th["line"]}">Habit tracker</a>' if sec.get('habits') else ''
         mm_sec = _mm(P)
         if mm_sec:
@@ -612,6 +621,19 @@ def m_calendar(P, sec):
                 if owner != m:
                     continue  # a week that spans two months is built once, under the month holding its Thursday
             _week(P, n, m, wside, dlay, sec.get('days', True))
+    if free:
+        for n in range(1, 53):
+            _week(P, n, None, wside, dlay, sec.get('days', True))
+
+
+def _free_weeks_index(P, sec):
+    """Undated free_weeks: one page linking all 52 weeks, each with a line to write the week's first date."""
+    th = P.th; cols = 4 if P.HT > P.W else 6
+    cells = ''.join(f'<a href="#w{n:02d}" class="box" style="padding:6px 10px;gap:2px;justify-content:center"><span style="font:700 {P.fs(13)} \'{th["body"]}\'">Week {n}</span>'
+                    f'<span style="font-size:{P.fs(11)};color:{th["muted"]};border-bottom:1px solid {th["line"]};padding-bottom:1px">starts</span></a>' for n in range(1, 53))
+    _register(P, sec.get('weeks_index', {}), 'Weeks', 'weeks', 'All 52 weeks')
+    P.page('weeks', P.head('Write each week\'s first date once', 'Weeks') +
+           f'<div style="flex:1;display:grid;grid-template-columns:repeat({cols},1fr);grid-auto-rows:1fr;gap:6px">{cells}</div>', active='weeks', crumb='<a href="#year">Year</a> / Weeks')
 
 
 def _week_grid(P, cols, side):
@@ -652,7 +674,7 @@ def _week(P, n, m, side_blocks, day_layout, with_days):
     inner = f'''{P.head(rng, f"Week {n}")}
       {_week_grid(P, cols, side)}'''
     inner = inner.replace(P.head(rng, f"Week {n}"), P.head(rng, f"Week {n}", right=f'<span class="k" style="font-size:16px">{nav_w}</span>'), 1)
-    P.page(f'w{n:02d}', inner, month=m, crumb=f'<a href="#m{m:02d}">{MONTHS[m - 1]}</a> / Week {n}')
+    P.page(f'w{n:02d}', inner, month=m, crumb=(f'<a href="#m{m:02d}">{MONTHS[m - 1]}</a>' if m else '<a href="#weeks">Weeks</a>') + f' / Week {n}')
     if not with_days:
         return
     for i, d in enumerate(days):
@@ -664,8 +686,8 @@ def _week(P, n, m, side_blocks, day_layout, with_days):
 def _day(P, d, n, m, i, lay):
     if d is None:
         anchor = f'u{n:02d}{i}'
-        prev_a = f'u{n:02d}{i - 1}' if i > 0 else None
-        next_a = f'u{n:02d}{i + 1}' if i < 6 else None
+        prev_a = f'u{n:02d}{i - 1}' if i > 0 else (f'u{n - 1:02d}6' if n > 1 else None)  # across week edges too
+        next_a = f'u{n:02d}{i + 1}' if i < 6 else (f'u{n + 1:02d}0' if n < 52 else None)
         title = DOW[i] + 'day' if DOW[i] != 'Wed' else 'Wednesday'
         title = {'Mon': 'Monday', 'Tue': 'Tuesday', 'Wed': 'Wednesday', 'Thu': 'Thursday', 'Fri': 'Friday', 'Sat': 'Saturday', 'Sun': 'Sunday'}[DOW[i]]
         kicker = f'Week {n} · date ____'
@@ -682,7 +704,7 @@ def _day(P, d, n, m, i, lay):
     inner = f'{P.head(kicker, title, right=f"<span class=k style=font-size:16px>{arrows}</span>")}<div class="row" style="flex:1"><div class="col" style="flex:1">{left}</div><div class="col" style="flex:1.15">{right}</div></div>'
     mm = d.month if d else m
     wk = (f'<a href="#{P.w0[0]}">{esc(P.w0[1])}</a>' if getattr(P, 'w0', None) else f'Week {n}') if (n < 1 and d) else f'<a href="#w{n:02d}">Week {n}</a>'
-    P.page(anchor, inner, month=mm, crumb=f'<a href="#m{mm:02d}">{MONTHS[mm - 1]}</a> / {wk}')
+    P.page(anchor, inner, month=mm, crumb=(f'<a href="#m{mm:02d}">{MONTHS[mm - 1]}</a>' if mm else '<a href="#weeks">Weeks</a>') + f' / {wk}')
 
 
 @module('head_start', 'Lead-in months before the main dated year (for example Nov and Dec 2026 in a 2027 planner): month pages whose dates link to lead-in week pages, Monday-start week pages titled by date range, optional lead-in day pages. Anchors use their own prefix. The last week links days that fall in the main year to their day pages and offers Continue to the main year. label, kicker, anchor (prefix, default hs), from YYYY-MM, to YYYY-MM, days bool, month {side}, week {preset|side}, day {preset|left,right}, continue_to (default m01)',
