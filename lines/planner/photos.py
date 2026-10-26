@@ -165,7 +165,7 @@ body{{--b:'{th['body']}';width:2700px;height:2025px;overflow:hidden;position:rel
 .pill{{display:inline-block;font:600 40px '{th['body']}';padding:18px 40px;border-radius:999px;background:{th['ink']};color:{th['paper']}}}
 .pill.o{{background:transparent;color:{th['ink']};border:4px solid {th['ink']}}}
 .pt{{font-size:52px;line-height:1.3;display:flex;gap:22px}} .pt b{{color:{th['accent']}}}
-{f".k{{font:italic 400 50px '{th['display']}',serif;letter-spacing:0;text-transform:none}} [style*='text-transform:uppercase']{{text-transform:none!important;letter-spacing:.01em!important}}" if th.get('labels') == 'italic' else ''}
+{f".k{{font:italic 400 50px '{th['display']}',serif;letter-spacing:0;text-transform:none}} [style*='text-transform:uppercase']{{text-transform:none!important;letter-spacing:.01em!important}}" if th.get('labels') == 'italic' else ''}{'*{font-variant-numeric:lining-nums}' if th.get('nums') == 'lining' else ''}
 </style></head><body>{body}</body></html>"""
 
 
@@ -203,12 +203,12 @@ def scenes(brief, listing, build, shots_dir, out_dir):
             S[key] = base(th, crop_scene(th, c, pg, P, Nc, W, H, frame, head, pts, label))
             continue
         if i == 0 and frame == 'paper' and len(pg) >= 2:  # open two-page spread, as it lies in a binder
-            pw = 780; ph_ = pw * H / W; x0 = 2700 - 130 - 2 * pw; y0 = (2025 - ph_) / 2 + 30
+            pw = 830; ph_ = pw * H / W; x0 = 2700 - 120 - 2 * pw; y0 = (2025 - ph_) / 2 + 20
             sheets = ''.join(f'<img src="{P(a)}" style="position:absolute;left:{x0 + k * pw}px;top:{y0:.0f}px;width:{pw}px;height:{ph_:.0f}px;display:block">' for k, a in enumerate(pg[:2]))
             gutter = f'<div style="position:absolute;left:{x0 + pw - 40}px;top:{y0:.0f}px;width:80px;height:{ph_:.0f}px;background:linear-gradient(90deg,rgba(0,0,0,0),rgba(60,45,30,.10) 50%,rgba(0,0,0,0))"></div>'
             spread = f'<div style="position:absolute;left:{x0}px;top:{y0:.0f}px;width:{2 * pw}px;height:{ph_:.0f}px;background:#fff;box-shadow:{FRAMES["paper"]["shadow"]}"></div>' + sheets + gutter
             S[key] = base(th, f'''<div style="position:absolute;left:150px;top:0;bottom:0;width:{x0 - 230}px;display:flex;flex-direction:column;justify-content:center;gap:40px">
-              {label or '<p class="k">Printable planner</p>'}<p class="h" style="font-size:150px">{esc(listing.get("hero_title") or brief["spec"]["title"])}</p>
+              {label or '<p class="k">Printable planner</p>'}<p class="h" style="font-size:136px">{esc(listing.get("hero_title") or brief["spec"]["title"])}</p>
               <p style="font-size:56px;color:{th["muted"]};line-height:1.25">{head}</p>{pts}
               <div style="display:flex;gap:20px;flex-wrap:wrap">{''.join(f'<span class="pill{" o" if j else ""}">{esc(x)}</span>' for j, x in enumerate(pills))}</div></div>''' + spread)
             continue

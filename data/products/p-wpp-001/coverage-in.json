@@ -1,0 +1,942 @@
+{
+ "product_id": "p-wpp-001",
+ "items": [
+  {
+   "key": "must:mh_weekly_spread",
+   "kind": "must_have",
+   "text": "A dated two-page spread for every week (Monday start, vertical day columns, a weekly focus list), the layout buyers came for."
+  },
+  {
+   "key": "must:mh_months_year",
+   "kind": "must_have",
+   "text": "A month page for every month with a full calendar grid, goals, important dates and bills, a month review page (wins, carry over, notes) facing the next month, plus a 2027 year at a glance and Dates to remember pages, so the weekly planner is complete without being a bundle."
+  },
+  {
+   "key": "must:mh_print",
+   "kind": "must_have",
+   "text": "True Letter (8.5 x 11 in) and A4 files that print cleanly on a home printer at Actual size, with white paper and nothing printed near the edge."
+  },
+  {
+   "key": "must:mh_guide",
+   "kind": "must_have",
+   "text": "A printed Start here page with the four steps from download to binding."
+  },
+  {
+   "key": "must:mh_look",
+   "kind": "must_have",
+   "text": "A calm, well-made two-font design with consistent alignment on every page."
+  },
+  {
+   "key": "must:mh_habits",
+   "kind": "must_have",
+   "text": "A small weekly habit strip on each week's right page (five habits by seven days), instead of separate tracker pages."
+  },
+  {
+   "key": "fix:f_download",
+   "kind": "fix",
+   "text": "complaint:c_download: Two files only, one per paper size (Open-Week-2027-Letter.pdf and Open-Week-2027-A4.pdf), each a single small PDF with no zip. Listing copy and the Start here page say exactly where to download (Etsy, You, Purchases, Download files, in a web browser, because the Etsy app cannot download files) and that any PDF reader opens them. Listing copy states each file size from the build (r003)."
+  },
+  {
+   "key": "fix:f_not_useful",
+   "kind": "fix",
+   "text": "complaint:c_not_useful: The core of the product is the thing these buyers could not find: a two-page weekly spread for all 53 weeks of 2027 plus 9 head-start weeks, Mon to Wed on the left and Thu to Sun on the right in vertical columns. Photo 1 shows the open spread, and the listing's first line says 'two pages for every week'."
+  },
+  {
+   "key": "fix:f_print",
+   "kind": "fix",
+   "text": "complaint:c_print: print_format builds true-size Letter and A4 pages with a 0.5 in safe margin on every edge, a mirrored 0.375 in binding margin, white paper and no edge tabs, so nothing is cut off and nothing needs Fit to page. The Print check sheet (pages 3 to 4) has rulers at real size, four corner marks and a fix list. Listing copy says plainly: Letter and A4 only, no A5 or Classic Happy Planner size, and the Letter file fits Big Happy Planner discs and standard binders."
+  },
+  {
+   "key": "fix:f_quality",
+   "kind": "fix",
+   "text": "complaint:c_quality: Every page comes from one layout per page type, so alignment is identical on all pages and in both sizes; every date is generated from the calendar, not typed; lines are vector strokes that print crisp; the build fails on any overflowing box, broken link or spread on the wrong side of the sheet. Listing photos are crops of the real built pages."
+  },
+  {
+   "key": "fix:f_misleading",
+   "kind": "fix",
+   "text": "complaint:c_misleading: Listing copy states exactly what is dated and what is not: dated weeks from Monday, October 26, 2026 to Sunday, January 2, 2028, Monday start; one undated spare week spread; no daily pages; Letter and A4 only; page count from the build (r003). Every photo is a real page with its name in the caption, and the Print map photo shows the full page list."
+  },
+  {
+   "key": "fix:f_support",
+   "kind": "fix",
+   "text": "complaint:c_support: The buyer can fix the common problems without waiting for a reply: the back of the Print check lists the fix for each of the five usual print problems and the settings that work, and the listing FAQ repeats them. No reply-time promise anywhere in the product or listing (r007); the last line of the fix list says what the buyer can do next: send the shop an Etsy message with a photo of the Print check sheet."
+  },
+  {
+   "key": "fix:f_value",
+   "kind": "fix",
+   "text": "complaint:c_value: One purchase holds both paper sizes, 14 months of dated pages and a spare undated week, and the files can be reprinted any time (a ruined week or a second copy costs one sheet). Listing copy lists exactly this, and the Print map shows the sheets per month so the buyer sees the paper cost before printing."
+  },
+  {
+   "key": "fix:f_hard",
+   "kind": "fix",
+   "text": "complaint:c_hard: No platform, app or account: a plain PDF printed on paper. The Print map turns the file into one small print job per month (whole sheets, about 10 to 12 pages), and every week lies open as a spread in the binder."
+  },
+  {
+   "key": "fix:f_basic",
+   "kind": "fix",
+   "text": "complaint:c_basic: Month right pages carry Goals this month, Important dates, Bills and payments and Notes, and each week has a focus list, habit strip and to do list, so the common pages a buyer expects are there in place. The design uses an editorial Cormorant Garamond and Jost pairing with italic labels, not plain outlines."
+  },
+  {
+   "key": "fix:f_setup",
+   "kind": "fix",
+   "text": "complaint:c_setup: The Start here page (page 2) gives four numbered steps with Go there links: download, print the check sheet, print one month, punch and bind. Each step covers a buyer starting in October to December 2026 (Head start, first week Monday, October 26) and one starting mid-2027 (print the current month's row)."
+  },
+  {
+   "key": "unique:u_print_check",
+   "kind": "unique",
+   "text": "Print check sheet: Pages 3 to 4, one sheet printed double-sided before anything else: true-size inch and centimetre rulers, four corner marks, binding-edge hole guides, a line and tone sample, a pen bleed test, and on the back the front-to-back alignment check, a fix list and the settings that work."
+  },
+  {
+   "key": "unique:u_print_map",
+   "kind": "unique",
+   "text": "Print map: pages by month: A page listing the exact page range and number of sheets for every month, the front pages and the spare week, with a tick box per row and two start paths (before 2027, and later in 2027)."
+  },
+  {
+   "key": "unique:u_head_start",
+   "kind": "unique",
+   "text": "Head start plus a spare undated week: Dated head-start months for November and December 2026 with week spreads from Monday, October 26, so a buyer in the selling window starts this week, and one undated spare week spread to reprint for extra weeks or after January 2, 2028."
+  },
+  {
+   "key": "look",
+   "kind": "look",
+   "text": "Ink and rust on white paper, made for a home printer. Pure white pages (a tint would print with a white frame where the printer cannot reach and wastes ink), deep blue-charcoal ink #1F2A33 at about 14.6:1 contrast, muted text #55606B at about 6.4:1 so small labels stay readable on paper and in dim light, and light gray-blue 1px writing lines that are clear but quiet under handwriting. One rust accent (#A8492B, 5.8:1) for date numbers and small markers; filled boxes such as This week's focus use a pale warm tint that costs little ink and still reads in grayscale. Two font families only (r016): Cormorant Garamond for headings and, in italic, for every label (theme labels: italic), and Jost for body text and numbers, with bold for links and weekday heads. No letter-spaced capitals, no motif, no florals, no script, no edge tabs. The result is editorial and calm, different from beige minimalism and from pastel rainbow bundles, and every page also prints well in black and white."
+  }
+ ],
+ "shots": [
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/cover.png",
+   "anchor": "cover",
+   "module": "cover"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/dates.png",
+   "anchor": "dates",
+   "module": "table"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/dates2.png",
+   "anchor": "dates2",
+   "module": "table"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/hs11.png",
+   "anchor": "hs11",
+   "module": "head_start"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/hs11b.png",
+   "anchor": "hs11b",
+   "module": "head_start"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/hs12b.png",
+   "anchor": "hs12b",
+   "module": "head_start"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/hsw01.png",
+   "anchor": "hsw01",
+   "module": "head_start"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/hsw01b.png",
+   "anchor": "hsw01b",
+   "module": "head_start"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/m01.png",
+   "anchor": "m01",
+   "module": "calendar"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/m01b.png",
+   "anchor": "m01b",
+   "module": "calendar"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/m03.png",
+   "anchor": "m03",
+   "module": "calendar"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/m03b.png",
+   "anchor": "m03b",
+   "module": "calendar"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/m07.png",
+   "anchor": "m07",
+   "module": "calendar"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/m07b.png",
+   "anchor": "m07b",
+   "module": "calendar"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/m12b.png",
+   "anchor": "m12b",
+   "module": "calendar"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/printcheck.png",
+   "anchor": "printcheck",
+   "module": "print_check"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/printcheckb.png",
+   "anchor": "printcheckb",
+   "module": "print_check"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/printmap.png",
+   "anchor": "printmap",
+   "module": "print_map"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/spare.png",
+   "anchor": "spare",
+   "module": "spare_week"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/spareb.png",
+   "anchor": "spareb",
+   "module": "spare_week"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/sparen1.png",
+   "anchor": "sparen1",
+   "module": "spare_week"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/sparen2.png",
+   "anchor": "sparen2",
+   "module": "spare_week"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/start.png",
+   "anchor": "start",
+   "module": "guide"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/w01.png",
+   "anchor": "w01",
+   "module": "calendar"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/w01b.png",
+   "anchor": "w01b",
+   "module": "calendar"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/w12.png",
+   "anchor": "w12",
+   "module": "calendar"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/w12b.png",
+   "anchor": "w12b",
+   "module": "calendar"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/w27.png",
+   "anchor": "w27",
+   "module": "calendar"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/w27b.png",
+   "anchor": "w27b",
+   "module": "calendar"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/w53.png",
+   "anchor": "w53",
+   "module": "calendar"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/w53b.png",
+   "anchor": "w53b",
+   "module": "calendar"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-wpp-001/shots/year.png",
+   "anchor": "year",
+   "module": "year"
+  }
+ ],
+ "photos": [
+  "/home/claude/kairos-engine/data/products/p-wpp-001/photos/photo-01-ph1_spread.jpg",
+  "/home/claude/kairos-engine/data/products/p-wpp-001/photos/photo-02-ph2_detail.jpg",
+  "/home/claude/kairos-engine/data/products/p-wpp-001/photos/photo-03-ph3_month.jpg",
+  "/home/claude/kairos-engine/data/products/p-wpp-001/photos/photo-04-ph4_print_check.jpg",
+  "/home/claude/kairos-engine/data/products/p-wpp-001/photos/photo-05-ph5_fixes.jpg",
+  "/home/claude/kairos-engine/data/products/p-wpp-001/photos/photo-06-ph6_print_map.jpg",
+  "/home/claude/kairos-engine/data/products/p-wpp-001/photos/photo-07-ph7_head_start.jpg",
+  "/home/claude/kairos-engine/data/products/p-wpp-001/photos/photo-08-ph8_whats_inside.jpg",
+  "/home/claude/kairos-engine/data/products/p-wpp-001/photos/photo-09-ph9_year_spare.jpg"
+ ],
+ "listing": "/home/claude/kairos-engine/data/products/p-wpp-001/listing.json",
+ "page_modules": [
+  [
+   "cover",
+   "cover"
+  ],
+  [
+   "start",
+   "guide"
+  ],
+  [
+   "printcheck",
+   "print_check"
+  ],
+  [
+   "printcheckb",
+   "print_check"
+  ],
+  [
+   "printmap",
+   "print_map"
+  ],
+  [
+   "year",
+   "year"
+  ],
+  [
+   "dates",
+   "table"
+  ],
+  [
+   "dates2",
+   "table"
+  ],
+  [
+   "hs11",
+   "head_start"
+  ],
+  [
+   "hsw01",
+   "head_start"
+  ],
+  [
+   "hsw01b",
+   "head_start"
+  ],
+  [
+   "hsw02",
+   "head_start"
+  ],
+  [
+   "hsw02b",
+   "head_start"
+  ],
+  [
+   "hsw03",
+   "head_start"
+  ],
+  [
+   "hsw03b",
+   "head_start"
+  ],
+  [
+   "hsw04",
+   "head_start"
+  ],
+  [
+   "hsw04b",
+   "head_start"
+  ],
+  [
+   "hsw05",
+   "head_start"
+  ],
+  [
+   "hsw05b",
+   "head_start"
+  ],
+  [
+   "hs11b",
+   "head_start"
+  ],
+  [
+   "hs12",
+   "head_start"
+  ],
+  [
+   "hsw06",
+   "head_start"
+  ],
+  [
+   "hsw06b",
+   "head_start"
+  ],
+  [
+   "hsw07",
+   "head_start"
+  ],
+  [
+   "hsw07b",
+   "head_start"
+  ],
+  [
+   "hsw08",
+   "head_start"
+  ],
+  [
+   "hsw08b",
+   "head_start"
+  ],
+  [
+   "hsw09",
+   "head_start"
+  ],
+  [
+   "hsw09b",
+   "head_start"
+  ],
+  [
+   "hs12b",
+   "head_start"
+  ],
+  [
+   "m01",
+   "calendar"
+  ],
+  [
+   "w01",
+   "calendar"
+  ],
+  [
+   "w01b",
+   "calendar"
+  ],
+  [
+   "w02",
+   "calendar"
+  ],
+  [
+   "w02b",
+   "calendar"
+  ],
+  [
+   "w03",
+   "calendar"
+  ],
+  [
+   "w03b",
+   "calendar"
+  ],
+  [
+   "w04",
+   "calendar"
+  ],
+  [
+   "w04b",
+   "calendar"
+  ],
+  [
+   "w05",
+   "calendar"
+  ],
+  [
+   "w05b",
+   "calendar"
+  ],
+  [
+   "m01b",
+   "calendar"
+  ],
+  [
+   "m02",
+   "calendar"
+  ],
+  [
+   "w06",
+   "calendar"
+  ],
+  [
+   "w06b",
+   "calendar"
+  ],
+  [
+   "w07",
+   "calendar"
+  ],
+  [
+   "w07b",
+   "calendar"
+  ],
+  [
+   "w08",
+   "calendar"
+  ],
+  [
+   "w08b",
+   "calendar"
+  ],
+  [
+   "w09",
+   "calendar"
+  ],
+  [
+   "w09b",
+   "calendar"
+  ],
+  [
+   "m02b",
+   "calendar"
+  ],
+  [
+   "m03",
+   "calendar"
+  ],
+  [
+   "w10",
+   "calendar"
+  ],
+  [
+   "w10b",
+   "calendar"
+  ],
+  [
+   "w11",
+   "calendar"
+  ],
+  [
+   "w11b",
+   "calendar"
+  ],
+  [
+   "w12",
+   "calendar"
+  ],
+  [
+   "w12b",
+   "calendar"
+  ],
+  [
+   "w13",
+   "calendar"
+  ],
+  [
+   "w13b",
+   "calendar"
+  ],
+  [
+   "m03b",
+   "calendar"
+  ],
+  [
+   "m04",
+   "calendar"
+  ],
+  [
+   "w14",
+   "calendar"
+  ],
+  [
+   "w14b",
+   "calendar"
+  ],
+  [
+   "w15",
+   "calendar"
+  ],
+  [
+   "w15b",
+   "calendar"
+  ],
+  [
+   "w16",
+   "calendar"
+  ],
+  [
+   "w16b",
+   "calendar"
+  ],
+  [
+   "w17",
+   "calendar"
+  ],
+  [
+   "w17b",
+   "calendar"
+  ],
+  [
+   "w18",
+   "calendar"
+  ],
+  [
+   "w18b",
+   "calendar"
+  ],
+  [
+   "m04b",
+   "calendar"
+  ],
+  [
+   "m05",
+   "calendar"
+  ],
+  [
+   "w19",
+   "calendar"
+  ],
+  [
+   "w19b",
+   "calendar"
+  ],
+  [
+   "w20",
+   "calendar"
+  ],
+  [
+   "w20b",
+   "calendar"
+  ],
+  [
+   "w21",
+   "calendar"
+  ],
+  [
+   "w21b",
+   "calendar"
+  ],
+  [
+   "w22",
+   "calendar"
+  ],
+  [
+   "w22b",
+   "calendar"
+  ],
+  [
+   "m05b",
+   "calendar"
+  ],
+  [
+   "m06",
+   "calendar"
+  ],
+  [
+   "w23",
+   "calendar"
+  ],
+  [
+   "w23b",
+   "calendar"
+  ],
+  [
+   "w24",
+   "calendar"
+  ],
+  [
+   "w24b",
+   "calendar"
+  ],
+  [
+   "w25",
+   "calendar"
+  ],
+  [
+   "w25b",
+   "calendar"
+  ],
+  [
+   "w26",
+   "calendar"
+  ],
+  [
+   "w26b",
+   "calendar"
+  ],
+  [
+   "m06b",
+   "calendar"
+  ],
+  [
+   "m07",
+   "calendar"
+  ],
+  [
+   "w27",
+   "calendar"
+  ],
+  [
+   "w27b",
+   "calendar"
+  ],
+  [
+   "w28",
+   "calendar"
+  ],
+  [
+   "w28b",
+   "calendar"
+  ],
+  [
+   "w29",
+   "calendar"
+  ],
+  [
+   "w29b",
+   "calendar"
+  ],
+  [
+   "w30",
+   "calendar"
+  ],
+  [
+   "w30b",
+   "calendar"
+  ],
+  [
+   "w31",
+   "calendar"
+  ],
+  [
+   "w31b",
+   "calendar"
+  ],
+  [
+   "m07b",
+   "calendar"
+  ],
+  [
+   "m08",
+   "calendar"
+  ],
+  [
+   "w32",
+   "calendar"
+  ],
+  [
+   "w32b",
+   "calendar"
+  ],
+  [
+   "w33",
+   "calendar"
+  ],
+  [
+   "w33b",
+   "calendar"
+  ],
+  [
+   "w34",
+   "calendar"
+  ],
+  [
+   "w34b",
+   "calendar"
+  ],
+  [
+   "w35",
+   "calendar"
+  ],
+  [
+   "w35b",
+   "calendar"
+  ],
+  [
+   "m08b",
+   "calendar"
+  ],
+  [
+   "m09",
+   "calendar"
+  ],
+  [
+   "w36",
+   "calendar"
+  ],
+  [
+   "w36b",
+   "calendar"
+  ],
+  [
+   "w37",
+   "calendar"
+  ],
+  [
+   "w37b",
+   "calendar"
+  ],
+  [
+   "w38",
+   "calendar"
+  ],
+  [
+   "w38b",
+   "calendar"
+  ],
+  [
+   "w39",
+   "calendar"
+  ],
+  [
+   "w39b",
+   "calendar"
+  ],
+  [
+   "w40",
+   "calendar"
+  ],
+  [
+   "w40b",
+   "calendar"
+  ],
+  [
+   "m09b",
+   "calendar"
+  ],
+  [
+   "m10",
+   "calendar"
+  ],
+  [
+   "w41",
+   "calendar"
+  ],
+  [
+   "w41b",
+   "calendar"
+  ],
+  [
+   "w42",
+   "calendar"
+  ],
+  [
+   "w42b",
+   "calendar"
+  ],
+  [
+   "w43",
+   "calendar"
+  ],
+  [
+   "w43b",
+   "calendar"
+  ],
+  [
+   "w44",
+   "calendar"
+  ],
+  [
+   "w44b",
+   "calendar"
+  ],
+  [
+   "m10b",
+   "calendar"
+  ],
+  [
+   "m11",
+   "calendar"
+  ],
+  [
+   "w45",
+   "calendar"
+  ],
+  [
+   "w45b",
+   "calendar"
+  ],
+  [
+   "w46",
+   "calendar"
+  ],
+  [
+   "w46b",
+   "calendar"
+  ],
+  [
+   "w47",
+   "calendar"
+  ],
+  [
+   "w47b",
+   "calendar"
+  ],
+  [
+   "w48",
+   "calendar"
+  ],
+  [
+   "w48b",
+   "calendar"
+  ],
+  [
+   "m11b",
+   "calendar"
+  ],
+  [
+   "m12",
+   "calendar"
+  ],
+  [
+   "w49",
+   "calendar"
+  ],
+  [
+   "w49b",
+   "calendar"
+  ],
+  [
+   "w50",
+   "calendar"
+  ],
+  [
+   "w50b",
+   "calendar"
+  ],
+  [
+   "w51",
+   "calendar"
+  ],
+  [
+   "w51b",
+   "calendar"
+  ],
+  [
+   "w52",
+   "calendar"
+  ],
+  [
+   "w52b",
+   "calendar"
+  ],
+  [
+   "w53",
+   "calendar"
+  ],
+  [
+   "w53b",
+   "calendar"
+  ],
+  [
+   "m12b",
+   "calendar"
+  ],
+  [
+   "sparen1",
+   "spare_week"
+  ],
+  [
+   "spare",
+   "spare_week"
+  ],
+  [
+   "spareb",
+   "spare_week"
+  ],
+  [
+   "sparen2",
+   "spare_week"
+  ]
+ ],
+ "line": "planner",
+ "files": [
+  "/home/claude/kairos-engine/data/products/p-wpp-001/files/Open-Week-2027-Letter.pdf",
+  "/home/claude/kairos-engine/data/products/p-wpp-001/files/Open-Week-2027-A4.pdf"
+ ]
+}

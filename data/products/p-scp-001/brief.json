@@ -1,0 +1,912 @@
+{
+ "brief_id": "b-scp-001",
+ "product_id": "p-scp-001",
+ "type_id": "self-care-planner",
+ "line": "planner",
+ "created_at": "2026-10-27T13:00:00+08:00",
+ "positioning": "For people who want to look after themselves without a planner that becomes one more chore: an undated, landscape self-care planner with one gentle page a week, a journal prompt for every week, a self-care menu and a hard day plan. Top sellers win on pretty, packed ADHD bundles, but their buyers' top complaints are files that would not open, pages they could not use or find, and too much to start with, so this one wins on being small on purpose: one week page to learn, everything linked, and working in five minutes.",
+ "must_haves": [
+  {
+   "id": "mh_selfcare",
+   "what": "Real self-care pages: a weekly check-in (mood, energy, sleep, one kind thing a day, gentle habits), a self-care menu of ideas by time, an energy map, a hard day plan, monthly mood colors and a year in moods.",
+   "evidence": [
+    "feature:self_care",
+    "keyword:self care planner",
+    "keyword:self care journal",
+    "keyword:wellness planner",
+    "praise:p_fits_needs",
+    "praise:p_complete"
+   ]
+  },
+  {
+   "id": "mh_journal",
+   "what": "Journal space: a prompt page for every week with lined space, three small good things and a kind word to myself, a monthly reflection and three notes pages.",
+   "evidence": [
+    "feature:journal",
+    "keyword:gratitude journal",
+    "keyword:digital journal"
+   ]
+  },
+  {
+   "id": "mh_apps",
+   "what": "One PDF that works in Goodnotes (named first), Notability, Samsung Notes, Xodo and Noteshelf on iPad, Android and Windows tablets.",
+   "evidence": [
+    "feature:goodnotes",
+    "feature:notability",
+    "feature:android",
+    "keyword:goodnotes planner",
+    "praise:p_device"
+   ]
+  },
+  {
+   "id": "mh_nav",
+   "what": "Fully hyperlinked: Contents, month tabs on every page, a top bar, previous and next arrows, and a trail back on every page.",
+   "evidence": [
+    "praise:p_nav",
+    "feature:hyperlinked",
+    "wish:w_back_button",
+    "wish:w_side_tabs"
+   ]
+  },
+  {
+   "id": "mh_look",
+   "what": "A finished, calm look with real typography; design is the biggest praise driver.",
+   "evidence": [
+    "praise:p_look",
+    "praise:p_quality"
+   ]
+  },
+  {
+   "id": "mh_guide",
+   "what": "Instructions printed inside the file (Start here and Setup check), not only in a separate guide.",
+   "evidence": [
+    "praise:p_guide",
+    "praise:p_easy"
+   ]
+  }
+ ],
+ "fixes": [
+  {
+   "id": "f_download",
+   "complaint": "complaint:c_download",
+   "how": "Ships as one PDF, not a zip and not a guide that points somewhere else (a 1-star buyer only found the guide). Listing copy and the apps photo give the download in 3 steps: buy, download from Etsy in a web browser (the Etsy app cannot download digital files), open the PDF in a note app. Start here repeats them.",
+   "evidence": [
+    "complaint:c_download",
+    "wish:w_easy_delivery",
+    "wish:w_listing_info"
+   ],
+   "modules": [
+    "guide",
+    "cover"
+   ]
+  },
+  {
+   "id": "f_not_useful",
+   "complaint": "complaint:c_not_useful",
+   "how": "It has the weekly plan a 1-star buyer missed: a week page with a row for every day, plus a journal page for the same week. Photos show the pages close up so buyers can judge them, and the listing lists every page type with its count.",
+   "evidence": [
+    "complaint:c_not_useful",
+    "complaint:c_missing",
+    "praise:p_fits_needs"
+   ],
+   "modules": [
+    "log_week",
+    "prompt_week"
+   ]
+  },
+  {
+   "id": "f_value",
+   "complaint": "complaint:c_value",
+   "how": "Not a single worksheet: 52 week pages and 52 prompt pages, each with a different printed prompt, plus 12 month pages, a year in moods, a self-care menu, an energy map and a hard day plan, all linked. Writing rows are at least 26 px tall. The listing gives exact counts from the built file.",
+   "evidence": [
+    "complaint:c_value",
+    "complaint:c_space",
+    "price:revenue_weighted_median"
+   ],
+   "modules": [
+    "log_week",
+    "prompt_week",
+    "habit_month"
+   ]
+  },
+  {
+   "id": "f_hard",
+   "complaint": "complaint:c_hard",
+   "how": "One page to learn: the week page. It holds the whole week (a row per day for mood, energy, sleep and one kind thing, and 5 gentle habits) and opens that week's journal and the self-care menu with buttons. Start here step 3 walks through exactly this. Nothing to build yourself: every page is laid out and filled with labels.",
+   "evidence": [
+    "complaint:c_hard",
+    "praise:p_easy",
+    "complaint:c_basic"
+   ],
+   "modules": [
+    "log_week",
+    "guide"
+   ]
+  },
+  {
+   "id": "f_quality",
+   "complaint": "complaint:c_quality",
+   "how": "Every printed word, including all 52 prompts, is spell-checked before publishing, and the build checks 0 broken links, no unreachable pages and no overflowing text. Vector text stays crisp at any zoom.",
+   "evidence": [
+    "complaint:c_quality",
+    "complaint:c_links",
+    "praise:p_quality"
+   ],
+   "modules": [
+    "prompt_week"
+   ]
+  },
+  {
+   "id": "f_device",
+   "complaint": "complaint:c_device",
+   "how": "Plain PDF links every major note app follows, landscape pages at the tablet's own shape. The listing has a Works with and Not for box (not for phones, not Canva, not a fillable form) and says how to type with the text tool. Setup check proves the links on the buyer's own device.",
+   "evidence": [
+    "complaint:c_device",
+    "complaint:c_extra_app",
+    "feature:android",
+    "wish:w_listing_info"
+   ],
+   "modules": [
+    "link_test"
+   ]
+  },
+  {
+   "id": "f_misleading",
+   "complaint": "complaint:c_misleading",
+   "how": "Every listing photo is the built file, captioned with the page name, and the description counts each page type from the built file (style rule r003): no padded page counts.",
+   "evidence": [
+    "complaint:c_misleading",
+    "praise:p_as_described",
+    "wish:w_previews"
+   ],
+   "modules": [
+    "index"
+   ]
+  },
+  {
+   "id": "f_basic",
+   "complaint": "complaint:c_basic",
+   "how": "Content, not only boxes: 52 different printed prompts, a self-care menu with 20 ideas sorted by how much time you have, a hard day plan with the smallest steps already written, and mood colors that build into a year in moods.",
+   "evidence": [
+    "complaint:c_basic",
+    "feature:dopamine_menu"
+   ],
+   "modules": [
+    "prompt_week",
+    "checklist",
+    "year_pixels"
+   ]
+  },
+  {
+   "id": "f_missing",
+   "complaint": "complaint:c_missing",
+   "how": "Weekly plans are included (the 1-star complaint), and no extras are promised that could go missing: no stickers, no bonus files. Contents shows every section on one screen.",
+   "evidence": [
+    "complaint:c_missing",
+    "feature:stickers"
+   ],
+   "modules": [
+    "log_week",
+    "index"
+   ]
+  },
+  {
+   "id": "f_overwhelm",
+   "complaint": "complaint:c_overwhelm",
+   "how": "Small on purpose: about 130 pages, one week page and one journal page a week, no daily pages to fall behind on. Start here gives 4 steps and says where to begin. The top bar never shows more than 7 buttons.",
+   "evidence": [
+    "complaint:c_overwhelm",
+    "complaint:c_nav",
+    "complaint:c_hard"
+   ],
+   "modules": [
+    "guide",
+    "log_week"
+   ]
+  },
+  {
+   "id": "f_setup",
+   "complaint": "complaint:c_setup",
+   "how": "The cover's Open planner button lands on Start here: 4 numbered steps with Go there buttons. Setup check is next: buttons that jump and come back, with a fix list if they do not. There is nothing to edit or set up before planning.",
+   "evidence": [
+    "complaint:c_setup",
+    "feature:quick_start",
+    "feature:test_page"
+   ],
+   "modules": [
+    "guide",
+    "link_test"
+   ]
+  },
+  {
+   "id": "f_nav",
+   "complaint": "complaint:c_nav",
+   "how": "A calm layout and few page types. Every page has month tabs, a top bar (Home, Weeks, Journal, Menu, Energy, Hard day, Moods), arrows and a trail at the top right that works as a back button; a 52-week overview opens any week in one tap, and each week's journal page sits right after it in the file.",
+   "evidence": [
+    "complaint:c_nav",
+    "wish:w_back_button",
+    "wish:w_nav_links",
+    "wish:w_side_tabs"
+   ],
+   "modules": [
+    "log_week",
+    "group_weeks"
+   ]
+  },
+  {
+   "id": "f_support",
+   "complaint": "complaint:c_support",
+   "how": "The answers live in the file and the listing: the Setup check fix list, Start here and a listing FAQ (Etsy app download, which app, links not tapping, how to type). Reply speed is shop-level, and the file promises no reply times (style rule r007).",
+   "evidence": [
+    "complaint:c_support",
+    "praise:p_support"
+   ],
+   "modules": [
+    "link_test",
+    "guide"
+   ]
+  },
+  {
+   "id": "f_edit",
+   "complaint": "complaint:c_edit",
+   "how": "Nothing to edit before use. Blank habit rows, a blank menu row in every group and write-in energy lists make it the buyer's own. Start here and the listing say how to type with the app's text tool, and that it is not a fillable form.",
+   "evidence": [
+    "complaint:c_edit",
+    "praise:p_flexible",
+    "wish:w_customize",
+    "wish:w_typeable"
+   ],
+   "modules": [
+    "log_week",
+    "checklist",
+    "guide"
+   ]
+  }
+ ],
+ "unique": [
+  {
+   "id": "u_prompts",
+   "name": "A journal prompt for every week",
+   "what": "52 journal pages, each with its own printed prompt, linked from its week page and back, with three small good things and a kind word to myself.",
+   "why": "Too basic and you basically make your own journal are named complaints (18 reviews); a prompt for every week gives the journal a starting point. Gratitude journal is a top search word.",
+   "evidence": [
+    "complaint:c_basic",
+    "complaint:c_hard",
+    "keyword:gratitude journal"
+   ],
+   "modules": [
+    "prompt_week",
+    "log_week"
+   ],
+   "verified_absent": false
+  },
+  {
+   "id": "u_menu",
+   "name": "Self-care menu and hard day plan",
+   "what": "A self-care menu of ideas sorted by time (5 minutes, 15 minutes, an hour, a slow day) with blank rows to add your own, an energy map (what drains me, what fills me back up, boundaries) and a hard day plan with the smallest steps already written. Every week page has a button to the menu.",
+   "why": "A menu of options and routines are not seen in top sellers' titles (dopamine menu, routines), and an energy workbook is one of the best-earning listings in the market.",
+   "evidence": [
+    "feature:dopamine_menu",
+    "feature:routines",
+    "listing:4550934368",
+    "praise:p_adhd"
+   ],
+   "modules": [
+    "checklist",
+    "log_week"
+   ],
+   "verified_absent": false
+  },
+  {
+   "id": "u_small",
+   "name": "Small on purpose",
+   "what": "One week page and one journal page a week, 12 month pages and a handful of tools: about 130 linked pages, not 1,500. Nothing piles up when you skip a few days.",
+   "why": "Too much and overwhelming (16) and hard to navigate (13) are significant complaints; buyers wrote that they had no idea where to start.",
+   "evidence": [
+    "complaint:c_overwhelm",
+    "complaint:c_nav"
+   ],
+   "modules": [
+    "log_week",
+    "guide"
+   ],
+   "verified_absent": false
+  },
+  {
+   "id": "u_start",
+   "name": "Five-minute start and setup check",
+   "what": "Start here (4 steps with Go there buttons) and Setup check (buttons that jump and return, with a fix list) open from the cover.",
+   "why": "Could not download (33), confusing setup (16) and device trouble (22) all end with a buyer who never started; no top seller shows a quick start or a link test.",
+   "evidence": [
+    "feature:quick_start",
+    "feature:test_page",
+    "complaint:c_download",
+    "complaint:c_setup"
+   ],
+   "modules": [
+    "guide",
+    "link_test",
+    "cover"
+   ],
+   "verified_absent": false
+  },
+  {
+   "id": "u_anytime",
+   "name": "Start any week, keep it every year",
+   "what": "Undated weeks and months: write the dates the day you start. No year to run out, so the same file works next year too.",
+   "why": "Undated is rare among top sellers (7%), and buyers asked for a new edition each year; an undated planner never expires.",
+   "evidence": [
+    "feature:undated",
+    "wish:w_next_year"
+   ],
+   "modules": [
+    "log_week",
+    "habit_month"
+   ],
+   "verified_absent": false
+  }
+ ],
+ "waived": [
+  {
+   "ref": "feature:dated",
+   "reason": "Dated planners are common, but a self-care habit starts when the buyer is ready; undated weeks give the Oct to Dec buyer and the mid-year buyer the same start (style rules r002, r014), and the file never expires."
+  },
+  {
+   "ref": "feature:stickers",
+   "reason": "No sticker file: one PDF only, and extra files are a download risk. The listing says there are no stickers."
+  },
+  {
+   "ref": "complaint:c_refund",
+   "reason": "Refunds are shop-level policy, not something the file can fix; the listing's photos and counts let buyers judge before buying."
+  }
+ ],
+ "look": {
+  "direction": "Quiet dusk, not rainbow ADHD and not dark mode. Warm cream paper (#FCF8F3, soft in a dark room) with deep plum ink at about 12:1 contrast; muted text stays above 5:1. Plum buttons, peach and lavender month tabs, a honey ring on the cover and guide pages. Two fonts only: Cormorant Garamond for headings and, in italic, for labels; Nunito for body text, with bold for buttons and days. No letter-spaced capitals, no clip-art flowers or cartoon girls. Landscape, so it reads differently from our portrait planners.",
+  "theme": {
+   "base": "blush",
+   "paper": "#FCF8F3",
+   "ink": "#3B2F40",
+   "muted": "#6C5F71",
+   "line": "#E7DDD6",
+   "accent": "#8F5F92",
+   "soft": "#F5EDEA",
+   "warm": "#E2B862",
+   "tabs": [
+    "#F3C9B5",
+    "#C8C2E8"
+   ],
+   "display": "Corm",
+   "body": "Nunito",
+   "motif": "arch",
+   "button": "#6F4C73",
+   "labels": "italic",
+   "nums": "lining"
+  },
+  "avoid": [
+   "rainbow ADHD planners",
+   "dark mode with neon accents",
+   "cartoon girls, clip-art flowers and stickers on every page",
+   "pink kawaii",
+   "script fonts"
+  ],
+  "evidence": [
+   "look:Colorful or aesthetic look",
+   "look:Dark mode",
+   "look:Minimalist look",
+   "praise:p_look",
+   "listing:1620103130"
+  ]
+ },
+ "price": {
+  "amount": 22,
+  "why": "Buyers pay a sales-weighted $15 and top earners sit at $18, but the best-earning band is $20 to $28; $22 sits in it for a linked year of weeks with 52 written prompts. While the shop is new, a 25% launch sale for 30 days shows $16.50 with $22 crossed out (style rule r015), instead of a low price.",
+  "evidence": [
+   "price:revenue_weighted_median",
+   "price:top10_by_revenue_median",
+   "market:best_price_band",
+   "price:p75"
+  ],
+  "launch_sale": {
+   "percent": 25,
+   "days": 30,
+   "sale_price": 16.5
+  }
+ },
+ "seo": {
+  "title": "Self Care Planner for Goodnotes, Undated Digital Wellness Journal with 52 Weekly Prompts, Mood and Habit Tracker, iPad and Android",
+  "tags": [
+   "self care planner",
+   "self care journal",
+   "wellness planner",
+   "digital journal",
+   "gratitude journal",
+   "mood tracker",
+   "habit tracker",
+   "undated planner",
+   "goodnotes planner",
+   "ipad planner",
+   "mental health",
+   "self care",
+   "digital planner"
+  ]
+ },
+ "photos": [
+  {
+   "id": "ph1_hero",
+   "shows": "Cover and Week 1 on tablets: 'One gentle page a week'.",
+   "proves": "praise:p_look",
+   "pages": [
+    "cover",
+    "w01"
+   ]
+  },
+  {
+   "id": "ph2_week",
+   "shows": "Week page close up: a row per day for mood, energy, sleep and one kind thing, habits.",
+   "proves": "complaint:c_hard, complaint:c_missing",
+   "pages": [
+    "w01"
+   ]
+  },
+  {
+   "id": "ph3_journal",
+   "shows": "Journal page close up with its printed prompt and three good things.",
+   "proves": "complaint:c_basic, keyword:gratitude journal",
+   "pages": [
+    "jr01"
+   ]
+  },
+  {
+   "id": "ph4_menu",
+   "shows": "Self-care menu close up: ideas by time.",
+   "proves": "feature:dopamine_menu",
+   "pages": [
+    "menu"
+   ]
+  },
+  {
+   "id": "ph5_energy_hard",
+   "shows": "Energy map and hard day plan, 2 up.",
+   "proves": "feature:routines",
+   "pages": [
+    "energy",
+    "hardday"
+   ]
+  },
+  {
+   "id": "ph6_month_year",
+   "shows": "A month page and the year in moods, 2 up.",
+   "proves": "feature:habit_tracker, feature:undated",
+   "pages": [
+    "m01",
+    "pixels"
+   ]
+  },
+  {
+   "id": "ph7_apps",
+   "shows": "Works with panel beside Start here.",
+   "proves": "complaint:c_download, complaint:c_device, wish:w_listing_info",
+   "pages": [
+    "start"
+   ]
+  },
+  {
+   "id": "ph8_start",
+   "shows": "Start here and Setup check, 2 up.",
+   "proves": "complaint:c_setup, feature:test_page",
+   "pages": [
+    "start",
+    "linktest"
+   ]
+  },
+  {
+   "id": "ph9_inside",
+   "shows": "Contents with page counts: what is inside and what is not.",
+   "proves": "complaint:c_misleading, complaint:c_overwhelm",
+   "pages": [
+    "index"
+   ]
+  }
+ ],
+ "spec": {
+  "title": "Tend",
+  "subtitle": "A gentle self-care planner. One page a week, a prompt to write about, and small kind things for yourself. Start any day.",
+  "kicker": "Undated self-care planner",
+  "brand": "Kairos Design Studio",
+  "orientation": "landscape",
+  "dating": {
+   "mode": "undated"
+  },
+  "theme": {
+   "base": "blush",
+   "paper": "#FCF8F3",
+   "ink": "#3B2F40",
+   "muted": "#6C5F71",
+   "line": "#E7DDD6",
+   "accent": "#8F5F92",
+   "soft": "#F5EDEA",
+   "warm": "#E2B862",
+   "tabs": [
+    "#F3C9B5",
+    "#C8C2E8"
+   ],
+   "display": "Corm",
+   "body": "Nunito",
+   "motif": "arch",
+   "button": "#6F4C73",
+   "labels": "italic",
+   "nums": "lining"
+  },
+  "type_scale": 1.1,
+  "index_tip": "Tap a card above, a month below, or a month tab on the right. Each week page opens its journal page and the self-care menu, and the journal has a Week button back. Follow links with the pen off; turn the pen on to write.",
+  "sections": [
+   {
+    "module": "cover",
+    "start": "start"
+   },
+   {
+    "module": "index"
+   },
+   {
+    "module": "guide",
+    "label": "Start here",
+    "kicker": "Five minutes",
+    "anchor": "start",
+    "nav": false,
+    "steps": [
+     [
+      "Open it in a note app",
+      "Download from Etsy in a web browser (the Etsy app cannot download files). Import the PDF into Goodnotes, Notability, Samsung Notes, Xodo or Noteshelf, not Files or Photos.",
+      "index"
+     ],
+     [
+      "Check the links",
+      "Open Setup check and tap its buttons with the pen off. If they jump, you are ready. If not, the fix list is on that page.",
+      "linktest"
+     ],
+     [
+      "Start Week 1 today",
+      "Any day works: no dates are printed. Open Week 1, write the dates, and each evening fill in one row. Tap Journal on that page for this week's prompt.",
+      "w01"
+     ],
+     [
+      "Make it yours",
+      "Add your own ideas to the Self-care menu and fill in your Hard day plan on a good day, so it is ready when you need it.",
+      "menu"
+     ]
+    ],
+    "tip": "Pen off to tap a link, pen on to write. Prefer typing? Use your app's text tool. Skipped a few days? Just pick up on today's row.",
+    "map": true
+   },
+   {
+    "module": "link_test",
+    "label": "Setup check",
+    "anchor": "linktest",
+    "nav": false,
+    "targets": [
+     [
+      "A week page",
+      "w01"
+     ],
+     [
+      "A month page",
+      "m01"
+     ],
+     [
+      "Contents",
+      "index"
+     ]
+    ],
+    "fixes": [
+     "Turn the pen off (read or view mode)",
+     "Open the file in a PDF planner app, not Files or Photos",
+     "Re-import the PDF, do not convert it",
+     "Still stuck? Send the shop an Etsy message"
+    ]
+   },
+   {
+    "module": "log_week",
+    "label": "Weeks",
+    "kicker": "Check in",
+    "anchor": "w",
+    "overview_anchor": "weeks",
+    "overview_title": "52 weeks",
+    "count": 52,
+    "columns": [
+     {
+      "label": "Mood",
+      "width": 0.55
+     },
+     {
+      "label": "Energy",
+      "width": 0.55
+     },
+     {
+      "label": "Sleep",
+      "width": 0.55
+     },
+     {
+      "label": "One kind thing for me",
+      "width": 2.2
+     },
+     {
+      "label": "Done",
+      "check": true
+     }
+    ],
+    "habits": [
+     "Drank water",
+     "Moved gently",
+     "Fresh air",
+     "Ate a real meal",
+     "In bed on time"
+    ],
+    "blank_habits": 2,
+    "stats": [
+     "Mood this week",
+     "Hours of rest"
+    ],
+    "fields": [
+     "What helped this week",
+     "Next week I need"
+    ],
+    "links": [
+     {
+      "label": "Journal",
+      "anchor": "jr"
+     }
+    ],
+    "mark_every": 1,
+    "mark_anchor": "menu",
+    "mark_label": "Self-care menu"
+   },
+   {
+    "module": "prompt_week",
+    "label": "Journal",
+    "kicker": "Reflect",
+    "anchor": "jr",
+    "count": 52,
+    "week_anchor": "w",
+    "prompts": [
+     "What would make this week feel a little lighter?",
+     "What does my body need more of right now?",
+     "Who made me smile lately, and why?",
+     "What can I say no to this week?",
+     "What is one thing I did well recently?",
+     "Where do I feel most at ease?",
+     "What drained me last week, and what can I change?",
+     "What small comfort can I plan for each day?",
+     "What am I carrying that is not mine to carry?",
+     "What would I tell a friend who felt the way I do today?",
+     "What did I enjoy as a child that I could try again?",
+     "Which part of my day do I look forward to most?",
+     "What does rest look like for me, honestly?",
+     "What is one worry I can write down and set aside?",
+     "What am I proud of that nobody else saw?",
+     "How do I want to feel on Sunday evening?",
+     "What helps me sleep well?",
+     "What is one boundary that protects my energy?",
+     "Which song, smell or place calms me down?",
+     "What can I let be good enough this week?",
+     "Who do I want to spend more time with?",
+     "What have I learned about myself lately?",
+     "What does my ideal slow morning look like?",
+     "What is something kind I can do for future me?",
+     "Halfway: what has changed since Week 1?",
+     "What am I grateful for in my home?",
+     "Which habit is helping me most right now?",
+     "What thought keeps coming back, and is it true?",
+     "What would I do with a free afternoon?",
+     "Where can I ask for help this week?",
+     "What made me laugh recently?",
+     "How does my body feel today, from head to toe?",
+     "What is one thing I can finish and stop thinking about?",
+     "What compliment do I find hard to accept?",
+     "What season of life am I in, and what does it need?",
+     "Which places or people give me energy?",
+     "What is a small risk I would like to take?",
+     "What can I forgive myself for?",
+     "What does a good day look like, step by step?",
+     "What am I looking forward to this month?",
+     "What would make my space feel calmer?",
+     "What do I need to hear today?",
+     "Which moments this week felt most like me?",
+     "What can I do less of, without guilt?",
+     "What is a memory that still makes me happy?",
+     "How have I grown since Week 1?",
+     "What did I handle better than I expected?",
+     "Who would I like to thank, and for what?",
+     "What do I want to carry into my next 52 weeks?",
+     "What can I leave behind?",
+     "What were the best small moments of these weeks?",
+     "Looking back over 52 weeks: what helped most?"
+    ],
+    "numbered": [
+     "Three small good things",
+     3
+    ],
+    "boxes": [
+     "A kind word to myself"
+    ]
+   },
+   {
+    "module": "checklist",
+    "label": "Self-care menu",
+    "nav_label": "Menu",
+    "kicker": "Pick one",
+    "anchor": "menu",
+    "rows": 16,
+    "groups": [
+     [
+      "5 minutes",
+      [
+       "Drink a glass of water",
+       "Step outside and breathe",
+       "Stretch your shoulders",
+       "Text someone you like",
+       "Tidy one small spot"
+      ]
+     ],
+     [
+      "15 minutes",
+      [
+       "Take a short walk",
+       "Shower with music on",
+       "Make a warm drink and sit",
+       "Write one page",
+       "Lie down, phone away"
+      ]
+     ],
+     [
+      "An hour",
+      [
+       "Cook something simple",
+       "Take a long bath",
+       "Read for fun",
+       "Have a nap",
+       "Call a friend"
+      ]
+     ],
+     [
+      "A slow day",
+      [
+       "Sleep in",
+       "Movie and a blanket",
+       "Walk somewhere green",
+       "Phone off for the afternoon",
+       "Plan nothing"
+      ]
+     ]
+    ]
+   },
+   {
+    "module": "checklist",
+    "label": "Energy map",
+    "nav_label": "Energy",
+    "kicker": "Notice",
+    "anchor": "energy",
+    "rows": 16,
+    "groups": [
+     [
+      "Drains my energy",
+      []
+     ],
+     [
+      "Fills me back up",
+      []
+     ],
+     [
+      "Boundaries I want to keep",
+      []
+     ]
+    ]
+   },
+   {
+    "module": "checklist",
+    "label": "Hard day plan",
+    "nav_label": "Hard day",
+    "kicker": "Ready when needed",
+    "anchor": "hardday",
+    "rows": 16,
+    "groups": [
+     [
+      "On a hard day, I only need to",
+      [
+       "Drink some water",
+       "Eat something",
+       "Rest for a while",
+       "Text one person"
+      ]
+     ],
+     [
+      "People I can reach",
+      []
+     ],
+     [
+      "Small things that help",
+      []
+     ]
+    ]
+   },
+   {
+    "module": "year_pixels",
+    "label": "Year in moods",
+    "nav_label": "Moods",
+    "anchor": "pixels",
+    "keys": [
+     "Calm",
+     "Happy",
+     "Okay",
+     "Low",
+     "Tired"
+    ]
+   },
+   {
+    "module": "habit_month",
+    "label": "Months",
+    "kicker": "Monthly",
+    "habits": [
+     "Time just for me"
+    ],
+    "blank_habits": 3,
+    "habits_label": "Habits",
+    "goal": "This month I want to feel",
+    "stats": [
+     "Best day",
+     "Hardest day",
+     "What helped most"
+    ],
+    "mood": {
+     "label": "Mood",
+     "keys": [
+      [
+       "Calm",
+       "#8F5F92"
+      ],
+      [
+       "Happy",
+       "#F3C9B5"
+      ],
+      [
+       "Okay",
+       "#E2B862"
+      ],
+      [
+       "Low",
+       "#C8C2E8"
+      ],
+      [
+       "Tired",
+       "#6C5F71"
+      ]
+     ]
+    },
+    "fields": [
+     "Moments I want to remember",
+     "What I will let go of"
+    ]
+   },
+   {
+    "module": "lined",
+    "label": "Notes",
+    "kicker": "Anything",
+    "anchor": "notes",
+    "pages": 3,
+    "dots": true,
+    "nav": false
+   },
+   {
+    "module": "group_weeks"
+   }
+  ]
+ },
+ "new_modules": [
+  {
+   "name": "prompt_week",
+   "what": "Weekly journal pages with a printed prompt each, answer lines, numbered good things and lined boxes, linked back to the week.",
+   "params": "label, kicker, anchor, count, prompts, numbered, boxes, week_anchor",
+   "why": "u_prompts; reusable for gratitude or reading prompts."
+  }
+ ],
+ "build_notes": "Reuses log_week (landscape layout added), habit_month, checklist, year_pixels and group_weeks from p-fpd-001. Not tested on a physical printer: the listing must not claim printing."
+}

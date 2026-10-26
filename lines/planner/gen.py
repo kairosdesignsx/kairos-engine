@@ -165,7 +165,7 @@ a{{color:inherit;text-decoration:none}}
 .foot{{position:absolute;left:{self.gutter}px;bottom:8px;font:500 9.5px '{th['body']}';color:{th['muted']};letter-spacing:.08em}}
 .step{{display:flex;gap:12px;align-items:flex-start}}
 .step b{{flex:none;width:28px;height:28px;border-radius:50%;background:{th['ink']};color:{th['paper']};display:flex;align-items:center;justify-content:center;font:700 13px '{th['body']}'}}
-""" + self.label_css() + (self.eink_css() if self.eink else '') + (_pf_css(self) if self.pf else '')
+""" + self.label_css() + (self.eink_css() if self.eink else '') + (_pf_css(self) if self.pf else '') + ('*{font-variant-numeric:lining-nums}' if th.get('nums') == 'lining' else '')  # theme 'nums': 'lining' (Cormorant's old-style 1 reads as I)
 
     def label_css(self):
         """theme 'labels': 'italic' = two-font hierarchy by weight and italic instead of tracked all-caps labels
@@ -1106,7 +1106,7 @@ def m_log_week(P, sec):
                        center={i + 1 for i, c in enumerate(cols) if c.get('check')})
     hab = ''
     if habits:
-        hcols = f'minmax(0,1fr) repeat({len(days)},{40 * P.scale:.0f}px)'
+        hcols = f'minmax(0,1fr) repeat({len(days)},{(40 if portrait else 33) * P.scale:.0f}px)'
         hh = f'<span class="k">{esc(sec.get("habits_label", "Habits"))}</span>' + ''.join(f'<span style="text-align:center;font:600 {P.fs(11)} \'{th["body"]}\';color:{th["muted"]}">{esc(d)}</span>' for d in days)
         hr = ''.join(f'<div style="display:grid;grid-template-columns:{hcols};align-items:center;border-bottom:1px solid {th["line"]};flex:1;min-height:{24 * P.scale:.0f}px">'
                      f'<span style="font-size:{P.fs(12.5)};padding-right:6px">{esc(h)}</span>' + ''.join(f'<span style="display:flex;justify-content:center">{_circle(P)}</span>' for _ in days) + '</div>' for h in habits)
@@ -1296,6 +1296,35 @@ def m_habit_month(P, sec):
         bottom = f'<div class="row" style="flex:1">{"".join(lines_box(P, f) for f in fields)}</div>'
         P.page(f'm{m:02d}', P.head('Month · year ____', MONTHS[m - 1], right=_arrows(f'm{m - 1:02d}' if m > 1 else None, f'm{m + 1:02d}' if m < 12 else None)) + top + grid + md + bottom,
                month=m, crumb=f'{esc(label)} / {MONTHS[m - 1]}')
+
+
+@module('prompt_week', "Weekly journal pages (anchor prefix + 2 digits: jr01 to jr52), one per numbered week, each with its own printed prompt (prompts, in order, repeating if fewer than count) and lined space to answer, plus boxes (numbered: lines numbered 1 to n, for example Three good things; lines: plain lined boxes). With week_anchor (pair with log_week links {anchor: this prefix}), a button back to the week page and a trail Week n / label. Previous and next arrows. One Contents card. label, kicker, anchor, count, prompts, numbered, boxes, week_anchor",
+        params={'label': 'str (Journal)', 'kicker': 'str', 'anchor': "str prefix, default 'jr'", 'count': 'int (52)', 'prompts': 'list of str', 'numbered': '[label, n] or null',
+                'boxes': 'list of str: lined boxes', 'week_anchor': 'str: log_week prefix'})
+def m_prompt_week(P, sec):
+    th = P.th; pre = sec.get('anchor', 'jr'); N = int(sec.get('count', 52))
+    label = sec.get('label', 'Journal'); kicker = sec.get('kicker', 'Reflect')
+    prompts = sec.get('prompts') or ['What do I want more of this week?']
+    num = sec.get('numbered'); boxes = sec.get('boxes') or []
+    wk = sec.get('week_anchor')
+    jid = lambda n: f'{pre}{n:02d}'
+    _register(P, sec, label, jid(1), kicker)
+    portrait = P.HT > P.W
+    numbered = ''
+    if num:
+        rows = ''.join(f'<div style="display:flex;align-items:flex-end;gap:10px;border-bottom:1px solid {th["line"]};flex:1;min-height:{30 * P.scale:.0f}px;padding-bottom:4px"><span style="font:700 {P.fs(13)} \'{th["body"]}\';color:{th["muted"]};width:16px">{k}</span></div>' for k in range(1, int(num[1]) + 1))
+        numbered = f'<div class="box" style="flex:1"><span class="k">{esc(num[0])}</span><div style="flex:1;display:flex;flex-direction:column">{rows}</div></div>'
+    side = numbered + ''.join(lines_box(P, b) for b in boxes)
+    for n in range(1, N + 1):
+        q = prompts[(n - 1) % len(prompts)]
+        card = (f'<div class="box fill" style="flex:none;padding:18px 20px;gap:8px"><span class="k">This week\'s prompt</span>'
+                f'<p class="h" style="font-size:{26 * P.scale:.0f}px;line-height:1.25">{esc(q)}</p></div>')
+        main = f'<div class="col" style="flex:1.5">{card}{lines_box(P, "My answer")}</div>'
+        body = f'<div class="row" style="flex:1">{main}<div class="col" style="flex:1">{side}</div></div>' if not portrait else f'{card}{lines_box(P, "My answer")}<div class="row" style="flex:.7">{side}</div>'
+        back = _chip(P, f'Week {n}', f'{wk}{n:02d}', primary=True) if wk else ''
+        right = f'<div style="display:flex;gap:12px;align-items:center">{back}{_arrows(jid(n - 1) if n > 1 else None, jid(n + 1) if n < N else None)}</div>'
+        P.page(jid(n), P.head(f'{kicker} · week {n}', label, right=right) + body, active=jid(1),
+               crumb=(f'<a href="#{wk}{n:02d}">Week {n}</a> / {esc(label)}' if wk else f'{esc(label)} · week {n}'))
 
 
 @module('group_weeks', "Prints no page. Put it last in sections, after log_week and the modules its links name (meal_week, workout_log). Moves each week's linked pages right after that week's page (Week 1, its workouts, its meal plan, then Week 2...), so a buyer who swipes meets one week at a time and can print a week as one page range. Links and anchors do not change.",

@@ -1,0 +1,67 @@
+[
+ {
+  "name": "file size",
+  "pass": true,
+  "detail": "Open-Week-2027-Letter.pdf: 1.45 MB (limit 19.5, Etsy 20)"
+ },
+ {
+  "name": "file size",
+  "pass": true,
+  "detail": "Open-Week-2027-A4.pdf: 1.45 MB (limit 19.5, Etsy 20)"
+ },
+ {
+  "name": "no text overflow",
+  "pass": true,
+  "detail": "none"
+ },
+ {
+  "name": "page count",
+  "pass": true,
+  "detail": "164 pages in PDF"
+ },
+ {
+  "name": "page count Open-Week-2027-A4.pdf",
+  "pass": true,
+  "detail": "164 pages (first file 164)"
+ },
+ {
+  "name": "links present in PDF",
+  "pass": true,
+  "detail": "1743 link annotations for 1743 links in the source"
+ },
+ {
+  "name": "fonts licensed (OFL list only)",
+  "pass": true,
+  "detail": "fonts: ['CormorantGaramondLight-MediumItalic', 'CormorantGaramondLight-SemiBold', 'Jost-Medium', 'Jost-Regular', 'Jost-SemiBold']"
+ },
+ {
+  "name": "page claims match the file",
+  "pass": true,
+  "detail": "claims [164, 164, 164], file has 164"
+ },
+ {
+  "name": "listing photos",
+  "pass": true,
+  "detail": "9 photos, sizes [(2700, 2025)]"
+ },
+ {
+  "name": "title",
+  "pass": true,
+  "detail": "124 chars"
+ },
+ {
+  "name": "13 tags, max 20 chars",
+  "pass": true,
+  "detail": "13 tags"
+ },
+ {
+  "name": "no em dashes or emojis",
+  "pass": true,
+  "detail": "checked title and description"
+ },
+ {
+  "name": "says digital download",
+  "pass": true,
+  "detail": "download and nothing-shipped note"
+ }
+]

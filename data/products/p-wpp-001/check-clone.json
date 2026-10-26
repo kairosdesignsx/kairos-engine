@@ -1,0 +1,15 @@
+{
+ "max_text_sim": 0.148,
+ "text": {
+  "max": 0.148,
+  "closest": "2027 Weekly Planner Printable | Monday Start, 2-Page Spread | Dated Weekly Calendar | Minimalist Planner Insert | PDF | 6 Colors",
+  "closest_shop": "khdigitaldesignsco"
+ },
+ "max_image_sim": null,
+ "image": {
+  "status": "pending",
+  "max": null,
+  "note": "competitor photos not fetched yet (laptop worker)"
+ },
+ "pass": true
+}

@@ -1,0 +1,104 @@
+{
+ "pass": true,
+ "problems": [],
+ "needs_module": [],
+ "coverage": [
+  {
+   "ref": "complaint:c_download",
+   "theme": "Couldn't download or open the file",
+   "count": 33,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_not_useful",
+   "theme": "Not useful for my needs",
+   "count": 29,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_value",
+   "theme": "Not worth the price",
+   "count": 28,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_hard",
+   "theme": "Hard to use day to day",
+   "count": 25,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_quality",
+   "theme": "Errors, typos or low quality",
+   "count": 22,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_device",
+   "theme": "Doesn't work on my app or device",
+   "count": 22,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_misleading",
+   "theme": "Not as described or pictured",
+   "count": 20,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_basic",
+   "theme": "Too basic or boring",
+   "count": 18,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_missing",
+   "theme": "Missing pages or less than expected",
+   "count": 17,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_overwhelm",
+   "theme": "Too much, overwhelming",
+   "count": 16,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_setup",
+   "theme": "Confusing setup or unclear instructions",
+   "count": 16,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_nav",
+   "theme": "Hard to navigate or find pages",
+   "count": 13,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_support",
+   "theme": "Seller didn't help or reply",
+   "count": 12,
+   "state": "fixed"
+  },
+  {
+   "ref": "complaint:c_edit",
+   "theme": "Can't edit, type or customize",
+   "count": 12,
+   "state": "fixed"
+  },
+  {
+   "ref": "feature:self_care",
+   "theme": "Self-care, mood or wellness pages",
+   "share": 0.7,
+   "state": "included"
+  }
+ ],
+ "summary": {
+  "fixed": 14,
+  "included": 1,
+  "waived": 0,
+  "missing": 0,
+  "unique": 5
+ }
+}
