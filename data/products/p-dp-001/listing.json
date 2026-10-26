@@ -28,30 +28,28 @@
       "caption": "Cover and a day page"
     },
     "ph2": {
-      "headline": "Top 3, work and time blocks",
+      "headline": "Top 3 and your work list",
       "points": [
-        "Top 3 and a Work list",
-        "Hourly time blocks from 6am",
-        "A page for every day of 2027"
+        "Top 3 for what matters most",
+        "A Work list with tick boxes"
       ],
       "zoom": [
         {
           "page": "d0115",
           "x": [
             0.015,
-            0.72
+            0.455
           ],
           "y": 0.06,
-          "y1": 0.6665,
+          "y1": 0.5520833333333334,
           "caption": "Day page",
           "cut_ok": [
-            "Work",
-            "Time blocks"
+            "Work"
           ]
         }
       ],
-      "width": 1750,
-      "size": 90
+      "width": 1850,
+      "size": 84
     },
     "ph3": {
       "headline": "52 week pages",
@@ -211,7 +209,7 @@
   ],
   "alt": {
     "ph1": "Dark navy cover of the Lights Low 2027 planner on a tablet, with the top of a day page behind it.",
-    "ph2": "Close-up of the top of a dark mode day page: Top 3, the Work list and hourly time blocks from 6am.",
+    "ph2": "Close-up of the top left of a dark mode day page: Friday, January 15, the Top 3 and the start of the Work list.",
     "ph3": "Close-up of the top of a dark mode week page: Week 3 with large dated boxes for Monday to Thursday.",
     "ph4": "Close-up of the top of the January 2027 month page: weekday headers, two rows of dates, week buttons and a habit tracker button.",
     "ph5": "Close-up of the Start here page: four numbered steps and the month grid to jump in.",
