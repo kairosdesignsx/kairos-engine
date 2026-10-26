@@ -322,7 +322,7 @@
   {
    "id": "u_anytime",
    "name": "Start any day",
-   "what": "Undated weeks and months: write the dates on Week 1 the day you start, whether that is a Tuesday in October or the first of June. Nothing is wasted if you start late in the year. A 13th undated month page covers a 52-week run that starts mid-month.",
+   "what": "Undated weeks and months: write the dates on Week 1 the day you start, whether that is a Tuesday in October or the first of June. Nothing is wasted if you start late in the year. A 13th undated month page (Month 13) covers a 52-week run that starts mid-month.",
    "why": "Undated is rare among top sellers (10%) and buyers asked for an undated version; fitness plans start whenever the buyer is ready, and the market peaks in August, not only in January.",
    "evidence": [
     "feature:undated",
@@ -456,19 +456,17 @@
   },
   {
    "id": "ph5_progress",
-   "shows": "Progress chart and Measurements pages, 2 up with captions.",
+   "shows": "Progress page close up: start and goal lines and the 52-week weight chart, with the Measurements button.",
    "proves": "feature:goals, keyword:body measurements",
    "pages": [
-    "progress",
-    "measure"
+    "progress"
    ]
   },
   {
    "id": "ph8_links",
-   "shows": "52-week overview and the training log list, 2 up: every week and every workout one tap away.",
+   "shows": "Training log close up: every workout listed by week with a button to each.",
    "proves": "feature:hyperlinked, complaint:c_value",
    "pages": [
-    "weeks",
     "log"
    ]
   },
@@ -551,12 +549,12 @@
     "steps": [
      [
       "Open it in a note app",
-      "Download from Etsy in a web browser (the Etsy app cannot download files). Import the PDF into Goodnotes, Notability, Samsung Notes, Xodo or Noteshelf, not Files or Photos. This button opens Contents.",
+      "Download from Etsy in a web browser (the Etsy app cannot download files). Import the PDF into Goodnotes, Notability, Samsung Notes, Xodo or Noteshelf, not Files or Photos.",
       "index"
      ],
      [
       "Check the links",
-      "Open Setup check and tap its three buttons with the pen off. If each one jumps, you are ready. If one does not, the fix list on that page has four things to try. Do this once, on the tablet you will use.",
+      "Open Setup check and tap its three buttons with the pen off. If each one jumps, you are ready. If one does not, the fix list on that page has four things to try.",
       "linktest"
      ],
      [
@@ -570,7 +568,7 @@
       "progress"
      ]
     ],
-    "tip": "Pen off to tap a link, pen on to write. Prefer typing? Use your app's text tool. Tap this month's tab on the right to set a goal for the month.",
+    "tip": "Pen off to tap a link, pen on to write. Started mid-month? Month 13, after December, finishes your 52 weeks.",
     "map": false,
     "months": true,
     "months_label": "Jump to a month: set a goal for it"
@@ -599,7 +597,8 @@
      "Open the file in a PDF planner app, not Files or Photos",
      "Re-import the PDF, do not convert it",
      "Still stuck? Send the shop an Etsy message"
-    ]
+    ],
+    "kicker": "Check links"
    },
    {
     "module": "log_week",
@@ -815,7 +814,7 @@
      "One change for next month"
     ],
     "extra_months": 1,
-    "extra_label": "One more month"
+    "extra_label": "Month 13"
    },
    {
     "module": "lined",

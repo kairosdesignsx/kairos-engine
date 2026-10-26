@@ -2,17 +2,17 @@
  "files": [
   {
    "name": "Stronger-Weeks.pdf",
-   "mb": 8.06,
+   "mb": 8.26,
    "pages": 344
   }
  ],
- "links": 7724,
+ "links": 8071,
  "overflow": [],
  "lean": false,
  "attempts": [
   {
    "lean": false,
-   "mb": 8.06,
+   "mb": 8.26,
    "pages": 344
   }
  ],
@@ -1417,6 +1417,6 @@
  ],
  "product_id": "p-fpd-001",
  "brief_id": "b-fpd-001",
- "built_at": "2026-10-26T19:46:01Z",
+ "built_at": "2026-10-26T20:00:20Z",
  "line": "planner"
 }

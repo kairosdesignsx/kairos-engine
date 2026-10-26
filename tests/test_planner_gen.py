@@ -156,6 +156,10 @@ def test_undated_weeks():
     r2 = gen.build(dict(SPEC, dating={"mode": "undated"}, sections=[{"module": "cover"}, {"module": "year"}, {"module": "calendar", "days": False}]))
     yr = dict(re.findall(r'<section class="pg" id="([^"]+)"[^>]*>(.*?)</section>', r2['html'], re.S))['year']
     assert yr.count('border:1px solid') >= 12 * 42, 'undated year page: boxes to write dates in'
+    assert all(f'<a href="#m{m:02d}" style="display:flex' in yr for m in range(1, 13)), 'undated year: the whole month block is the link'
+    r4 = gen.build(dict(SPEC, tap_targets='large', nav_max=5, dating={"mode": "undated"}, sections=[{"module": "cover"}, {"module": "index"}, {"module": "year"}, {"module": "lined", "label": "Notes", "pages": 3}, {"module": "checklist", "label": "Lists", "groups": [["A", []]]}, {"module": "calendar", "days": False, "free_weeks": True}]))
+    assert '.nav a{display:inline-flex;align-items:center;height:40px' in r4['html'] and 'class="pgn"' in r4['html']
+    assert re.search(r'<div class="nav">(?:<a [^>]*>[^<]*</a>){5}<span', r4['html']), 'nav_max 5: five top-bar buttons'
     # free_weeks: weeks 1 to 52 not filed under months, a Weeks page links them all, day arrows cross week edges
     r3 = gen.build(dict(SPEC, dating={"mode": "undated"}, sections=[{"module": "cover"}, {"module": "index"}, {"module": "year"}, {"module": "calendar", "free_weeks": True}]))
     assert not r3['broken_links'] and not r3['orphan_pages'], (r3['broken_links'][:5], r3['orphan_pages'][:5])
@@ -271,6 +275,7 @@ if __name__ == '__main__':
     import re
     test_trackers()
     test_undated_weeks()
+    print('ok undated weeks')
     test_journal()
     test_eink()
     test_print()

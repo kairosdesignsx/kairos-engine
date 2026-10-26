@@ -234,13 +234,16 @@ a{{color:inherit;text-decoration:none}}
             c = self.tabs[i]; on = month == i + 1
             target = (rail_map or {}).get(i + 1, f'm{i + 1:02d}')
             out.append(f'<a href="#{target}" class="{"on" if on else ""}" style="background:{c}{"" if (on or self.gray) else "cc"}">{(rail_labels or {}).get(i + 1, MONTHS[i][:3] if self.th.get('labels') == 'italic' else MONTHS[i][:3].upper())}</a>')
+        for k, (lab, an) in enumerate(_extra_months(self)):  # habit_month extra_months: tabs after December ('13th')
+            on = month == 13 + k
+            out.append(f'<a href="#{an}" class="{"on" if on else ""}" style="background:{self.th["soft"]}">{k + 13}th</a>')
         return f'<div class="rail">{"".join(out)}</div>'
 
     def page(self, anchor, inner, active=None, month=None, crumb='', deco=False, raw=False, style='', rail_map=None, rail_labels=None):
         if self.pf:
             return _pf_page(self, anchor, inner, crumb=crumb, raw=raw, style=style)
         self.seed += 3
-        m = (motif(self.th, 'tr', self.seed) + motif(self.th, 'bl', self.seed + 1)) if deco else ''
+        m = (motif(self.th, 'tr', self.seed) + motif(self.th, 'bl', self.seed + 1)) if (deco and self.th.get('motif_pages', True)) else ''  # theme motif_pages false: motif on the cover only
         if raw:
             self.pages.append(f'<section class="pg" id="{anchor}" style="{style}">{inner}</section>')
         else:
@@ -417,6 +420,7 @@ def _fill_index(P):
     hs_style = f'background:{th["paper"]};color:{th["ink"]};box-shadow:inset 0 0 0 2px {th["ink"]}' if P.gray else f'background:{th["ink"]};color:{th["paper"]}'  # e-ink: no large dark blocks (they ghost)
     months = ''.join(f'<a href="#{an}" style="padding:8px 0;text-align:center;border-radius:8px;{hs_style};font:600 12px \'{th["body"]}\'">{esc(lb)}</a>' for lb, an in getattr(P, 'head_start_links', []))
     months += ''.join(f'<a href="#m{i + 1:02d}" style="padding:8px 0;text-align:center;border-radius:8px;background:{P.tint(i, th.get("tile_alpha", "55"))};font:600 12px \'{th["body"]}\'">{MONTHS[i]}{"" if P.undated or not getattr(P, "head_start_links", None) else " " + str(P.year)}</a>' for i in range(12))
+    months += ''.join(f'<a href="#{an}" style="padding:8px 0;text-align:center;border-radius:8px;background:{th["soft"]};font:600 12px \'{th["body"]}\'">{esc(lb)}</a>' for lb, an in _extra_months(P))
     tip = P.s.get('index_tip', 'Tap a month tab on the right, any section above, or any date to jump there. Home on the top bar brings you back here, and calendar pages show where you are at the top right. Follow links in read mode (Goodnotes: turn the pen off).')
     if P.HT > P.W:  # portrait: wider cards, and a months grid that fills the page with big tap targets
         cards = cards.replace('min-height:76px', 'min-height:96px')
@@ -456,6 +460,7 @@ def _fill_guides(P):
             hs_style = f'background:{th["paper"]};color:{th["ink"]};box-shadow:inset 0 0 0 2px {th["ink"]}' if P.gray else f'background:{th["ink"]};color:{th["paper"]}'
             ms = ''.join(f'<a href="#{an}" style="display:flex;align-items:center;justify-content:center;border-radius:12px;{hs_style};font:600 15px \'{th["body"]}\'">{esc(lb)}</a>' for lb, an in getattr(P, 'head_start_links', []))
             ms += ''.join(f'<a href="#m{i + 1:02d}" style="display:flex;align-items:center;justify-content:center;border-radius:12px;background:{P.tint(i, th.get("tile_alpha", "55"))};font:600 15px \'{th["body"]}\'">{MONTHS[i]}{"" if P.undated else " " + str(P.year)}</a>' for i in range(12))
+            ms += ''.join(f'<a href="#{an}" style="display:flex;align-items:center;justify-content:center;text-align:center;border-radius:12px;background:{th["soft"]};font:600 15px \'{th["body"]}\'">{esc(lb)}</a>' for lb, an in _extra_months(P))
             extra += f'<div class="box" style="flex:1"><span class="k">{esc(sec.get("months_label", "Jump back in: tap this month"))}</span><div style="flex:1;display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:1fr;gap:10px">{ms}</div></div>'
         if not extra:
             extra = '<div style="flex:1"></div>'
@@ -575,7 +580,7 @@ def m_link_test(P, sec):
     fixes = _chk(4, sec.get('fixes') or P.eink.get('link_test_fixes') or ["Turn the pen off (read or view mode)", f"Open the file in a {'note' if P.noun == 'journal' else 'PDF planner'} app, not Files or Photos", "Re-import the PDF, do not convert it", "Still stuck? Send the shop an Etsy message"])
     pen = P.eink.get('pen_label', 'Test the pen: turn it on and write your name here')
     ltmap = '%%LT_MAP%%' if P.HT > P.W else ''  # portrait: the tall left column gets a map of the top bar (no half-empty page)
-    inner = P.head('Setup check', sec.get('label', 'Do your links work?')) + f'''
+    inner = P.head(sec.get('kicker', 'Setup check'), sec.get('label', 'Do your links work?')) + f'''
       <div class="row" style="flex:1">
         <div class="col" style="flex:1"><div class="box fill"><span class="k">Try it now</span><span style="font-size:{P.fs(14)};line-height:1.5">Tap each button. If it jumps, your {P.noun} is set up. To come back here, tap Home, then Setup check.</span></div>{btns}
           <div class="box"><span class="k">Nothing happened?</span>{fixes}</div>{ltmap}</div>
@@ -1049,6 +1054,13 @@ def m_reading_year(P, sec):
     P.page(a, inner, active=a)
 
 
+def _extra_months(P):
+    """[(label, anchor)] for habit_month extra_months (m13...): shown on the month rail, Contents and guide month grids."""
+    hm = next((x for x in P.s.get('sections', []) if x.get('module') == 'habit_month'), None)
+    n = int((hm or {}).get('extra_months', 0))
+    return [((hm.get('extra_label', 'One more month') if n == 1 else f'Month {12 + k}'), f'm{12 + k:02d}') for k in range(1, n + 1)]
+
+
 # ---------- trackers (fitness, meals, self-care): undated weeks, workouts, meals, body, charts, months ----------
 def _circle(P, r=6.3, color=None):
     """An empty circle to tick or fill (SVG, so no glyph is needed)."""
@@ -1342,8 +1354,8 @@ def m_habit_month(P, sec):
         top = f'<div class="row" style="flex:none">{lines_box(P, goal, rows=2, style="flex:1.4")}' + (f'<div class="box fill" style="flex:1;justify-content:space-evenly">{"".join(field(P, s, "flex:none") for s in stats)}</div>' if stats else '') + '</div>'
         bottom = f'<div class="row" style="flex:1">{"".join(lines_box(P, f) for f in fields)}</div>'
         name = MONTHS[m - 1] if m <= 12 else sec.get('extra_label', 'One more month')
-        P.page(f'm{m:02d}', P.head('Month · year ____' if m <= 12 else 'Month ____ · year ____', name, right=_arrows(f'm{m - 1:02d}' if m > 1 else None, f'm{m + 1:02d}' if m < M else None)) + top + grid + md + bottom,
-               month=m if m <= 12 else None, crumb=f'<a href="#{home}">{"Contents" if home == "index" else esc(label)}</a> / {esc(name)}')
+        P.page(f'm{m:02d}', P.head('Month · year ____' if m <= 12 else 'Month ____ · year ____', name, right=_arrows(f'm{m - 1:02d}' if m > 1 else None, f'm{m + 1:02d}' if m < M else ('m01' if M > 12 else None))) + top + grid + md + bottom,
+               month=m, crumb=f'<a href="#{home}">{"Contents" if home == "index" else esc(label)}</a> / {esc(name)}')
 
 
 @module('prompt_week', "Weekly journal pages (anchor prefix + 2 digits: jr01 to jr52), one per numbered week, each with its own printed prompt (prompts, in order, repeating if fewer than count) and lined space to answer, plus boxes (numbered: lines numbered 1 to n, for example Three good things; lines: plain lined boxes). With week_anchor (pair with log_week links {anchor: this prefix}), a button back to the week page and a trail Week n / label. Previous and next arrows. One Contents card. label, kicker, anchor, count, prompts, numbered, boxes, week_anchor",

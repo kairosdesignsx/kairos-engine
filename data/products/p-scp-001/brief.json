@@ -333,7 +333,7 @@
   {
    "id": "u_anytime",
    "name": "Start any week, keep it every year",
-   "what": "Undated weeks and months: write the dates the day you start. No year to run out, so the same file works next year too. A 13th undated month page covers a run that starts mid-month, and Year in moods has a Year to ____ line.",
+   "what": "Undated weeks and months: write the dates the day you start. No year to run out, so the same file works next year too. A 13th undated month page (Month 13) covers a run that starts mid-month, and Year in moods has a Year to ____ line.",
    "why": "Undated is rare among top sellers (7%), and buyers asked for a new edition each year; an undated planner never expires.",
    "evidence": [
     "feature:undated",
@@ -361,7 +361,7 @@
   }
  ],
  "look": {
-  "direction": "Quiet dusk, not rainbow ADHD and not dark mode. Warm cream paper (#FCF8F3, soft in a dark room) with deep plum ink at about 12:1 contrast; muted text stays above 5:1. Plum buttons, peach and lavender month tabs, a honey ring on the cover and guide pages. Two fonts only: Cormorant Garamond for headings and, in italic, for labels; Nunito for body text, with bold for buttons and days. No letter-spaced capitals, no clip-art flowers or cartoon girls. Landscape, so it reads differently from our portrait planners.",
+  "direction": "Quiet dusk, not rainbow ADHD and not dark mode. Warm cream paper (#FCF8F3, soft in a dark room) with deep plum ink at about 12:1 contrast; muted text stays above 5:1. Plum buttons, peach and lavender month tabs, a honey ring on the cover. Two fonts only: Cormorant Garamond for headings and, in italic, for labels; Nunito for body text, with bold for buttons and days. No letter-spaced capitals, no clip-art flowers or cartoon girls. Landscape, so it reads differently from our portrait planners.",
   "theme": {
    "base": "blush",
    "paper": "#FCF8F3",
@@ -380,7 +380,8 @@
    "motif": "arch",
    "button": "#6F4C73",
    "labels": "italic",
-   "nums": "lining"
+   "nums": "lining",
+   "motif_pages": false
   },
   "avoid": [
    "rainbow ADHD planners",
@@ -474,7 +475,7 @@
   },
   {
    "id": "ph6_month_year",
-   "shows": "A month page close up: goal, best and hardest day, habit row and mood colors.",
+   "shows": "Month page close up: how I want to feel, habit rows for days 1 to 31, mood squares and key.",
    "proves": "feature:habit_tracker, feature:undated",
    "pages": [
     "m01"
@@ -538,7 +539,8 @@
    "motif": "arch",
    "button": "#6F4C73",
    "labels": "italic",
-   "nums": "lining"
+   "nums": "lining",
+   "motif_pages": false
   },
   "type_scale": 1.1,
   "index_tip": "Tap a card above, a month below, or a month tab on the right. Each week page opens its journal page and the self-care menu; the journal has a Week button back, and the trail at the top right takes you back from any page. Pen off to tap, pen on to write.",
@@ -577,7 +579,7 @@
       "menu"
      ]
     ],
-    "tip": "Pen off to tap a link, pen on to write. Prefer typing? Use your app's text tool. Missed a few days? Pick up on today's row.",
+    "tip": "Pen off to tap a link, pen on to write. Prefer typing? Use your app's text tool. Started mid-month? Month 13, after December, finishes your year.",
     "map": true
    },
    {
@@ -857,7 +859,7 @@
      ],
      [
       "Tired",
-      "#6C5F71"
+      "#A9A29B"
      ]
     ]
    },
@@ -897,7 +899,7 @@
       ],
       [
        "Tired",
-       "#6C5F71"
+       "#A9A29B"
       ]
      ]
     },
@@ -906,7 +908,7 @@
      "What I will let go of"
     ],
     "extra_months": 1,
-    "extra_label": "One more month"
+    "extra_label": "Month 13"
    },
    {
     "module": "lined",
