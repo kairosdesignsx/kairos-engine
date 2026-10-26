@@ -2,17 +2,17 @@
  "files": [
   {
    "name": "Lights-Low-2027.pdf",
-   "mb": 13.49,
+   "mb": 13.78,
    "pages": 533
   }
  ],
- "links": 11878,
+ "links": 12411,
  "overflow": [],
  "lean": false,
  "attempts": [
   {
    "lean": false,
-   "mb": 13.49,
+   "mb": 13.78,
    "pages": 533
   }
  ],
@@ -2177,6 +2177,6 @@
  ],
  "product_id": "p-dp-001",
  "brief_id": "b-p-dp-001-1",
- "built_at": "2026-10-26T19:51:00Z",
+ "built_at": "2026-10-26T20:29:53Z",
  "line": "planner"
 }

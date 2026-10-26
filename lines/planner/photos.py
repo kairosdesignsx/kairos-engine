@@ -244,7 +244,7 @@ def scenes(brief, listing, build, shots_dir, out_dir):
         if i == 0:
             tw = 1050 if portrait else 1350
             t1 = T(P(pg[1]), tw, 1300 if portrait else 1250, 160, ratio, 4, 1) if len(pg) > 1 else ''
-            t2 = T(P(pg[0]), tw, 1180 if portrait else 1180, 480 if not portrait else 300, ratio, -3, 2, N(pg[0])) if pg else ''
+            t2 = T(P(pg[0]), tw, 1180 if portrait else 1180, 480 if not portrait else 300, ratio, -3, 2, esc(c['caption']) if c.get('caption') else N(pg[0])) if pg else ''  # photo copy 'caption' names both pages
             S[key] = base(th, (motif(th, 'tr', 3, 520) if th.get('motif') not in ('lines', None) else '') + f'''<div style="position:absolute;left:150px;top:0;bottom:0;width:1000px;display:flex;flex-direction:column;justify-content:center;gap:40px">
               {label or '<p class="k">Digital planner</p>'}<p class="h" style="font-size:170px">{esc(listing.get("hero_title") or brief["spec"]["title"])}</p>
               <p style="font-size:60px;color:{th["muted"]};line-height:1.25">{head}</p>{pts}

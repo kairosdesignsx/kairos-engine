@@ -24,7 +24,8 @@
         "Undated, portrait, for Goodnotes",
         "453 hyperlinked pages"
       ],
-      "label": "Undated planner"
+      "label": "Undated planner",
+      "caption": "Cover and a day page"
     },
     "ph2": {
       "headline": "A page for every day",
@@ -112,7 +113,7 @@
             0.925
           ],
           "y": 0.05,
-          "y1": 0.696,
+          "y1": 0.71,
           "caption": "Start here"
         }
       ],
@@ -164,7 +165,7 @@
     "ph8": {
       "headline": "A habit tracker every month",
       "points": [
-        "Up to 14 habits a month",
+        "One line per habit",
         "A dot for each of 31 days",
         "Opens from each month page"
       ],

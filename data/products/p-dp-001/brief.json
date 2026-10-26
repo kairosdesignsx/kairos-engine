@@ -446,7 +446,7 @@
         "steps": [
           [
             "Open it in Goodnotes",
-            "Download from Etsy in a web browser (the Etsy app cannot download files). Open the PDF in Goodnotes with Share, then Open in Goodnotes, or in Notability, Noteshelf, Samsung Notes or Xodo."
+            "Download from Etsy in a web browser (the Etsy app cannot download files). In Goodnotes, use Share, then Open in Goodnotes, or New, then Import. Notability, Noteshelf, Samsung Notes and Xodo work too."
           ],
           [
             "Check the links",
@@ -459,7 +459,7 @@
           ],
           [
             "Start today",
-            "Tap this month below, then today's date. Buying October 26 to 31? Tap November 2026: its first week starts Monday, October 26. The head start leads straight into January 2027."
+            "Tap this month below, then today's date. Buying between October 26 and December 31, 2026? Tap 2026 at the top of the month tabs, or November 2026 below. Its first week starts Monday, October 26 and leads straight into January 2027."
           ]
         ],
         "months": true,
@@ -659,6 +659,10 @@
         },
         "iso_weeks": true
       }
+    ],
+    "rail_first": [
+      "2026",
+      "hs11"
     ]
   },
   "new_modules": [],

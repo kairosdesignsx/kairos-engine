@@ -238,6 +238,10 @@ a{{color:inherit;text-decoration:none}}
         for k, (lab, an) in enumerate(_extra_months(self, rail=True)):  # habit_month extra_months: tabs after December ('13th')
             on = month == 13 + k
             out.append(f'<a href="#{an}" class="{"on" if on else ""}" style="background:{self.th["soft"]}">{k + 13}th</a>')
+        first = self.s.get('rail_first')  # spec rail_first [label, anchor]: an extra tab above January (e.g. the head start year)
+        if first:
+            out.insert(0, f'<a href="#{first[1]}" style="background:{self.th["ink"]};color:{self.th["paper"]}">{esc(first[0])}</a>')
+            return f'<div class="rail" style="bottom:2px">{"".join(out)}</div>'  # 13 tabs: a fractional last tab would be pushed past the page in print
         return f'<div class="rail">{"".join(out)}</div>'
 
     def page(self, anchor, inner, active=None, month=None, crumb='', deco=False, raw=False, style='', rail_map=None, rail_labels=None):
@@ -781,7 +785,7 @@ def m_head_start(P, sec):
         arrows = (f'<a href="#{day_anchor(pd)}">{arrow("l")}</a>' if in_lead(pd) else '') + (f' <a href="#{nxt}">{arrow("r")}</a>' if nxt else '')
         left = ''.join(block(P, b) for b in dlay['left']); rightb = ''.join(block(P, b) for b in dlay['right'])
         P.page(day_anchor(d), month=d.month if (d.year, d.month) in months else None, rail_map=rail_map, rail_labels=rail_labels, inner=f'{P.head(d.strftime("%A") + f" · {d.year}", f"{MONTHS[d.month - 1]} {d.day}", right=f"<span class=k style=font-size:16px>{arrows}</span>")}<div class="row" style="flex:1"><div class="col" style="flex:1">{left}</div><div class="col" style="flex:1.15">{rightb}</div></div>',
-               crumb=f'<a href="#{pre}{(d.month if (d.year, d.month) in months else m0):02d}">{MONTHS[d.month - 1]} {d.year}</a> / <a href="#{week_anchor}">{week_title}</a>')
+               crumb=f'<a href="#{pre}{(d.month if (d.year, d.month) in months else m0):02d}">{MONTHS[(d.month if (d.year, d.month) in months else m0) - 1]} {d.year}</a> / <a href="#{week_anchor}">{week_title}</a>')  # the trail names the month it opens
 
     rail_map = {m2: f'{pre}{m2:02d}' for y2, m2 in months}
     up = (lambda x: x) if th.get('labels') == 'italic' else str.upper
