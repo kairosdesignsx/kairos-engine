@@ -601,7 +601,10 @@
             }
           ]
         },
-        "free_weeks": true
+        "free_weeks": true,
+        "weeks_index": {
+          "index": false
+        }
       }
     ],
     "tap_targets": "large",

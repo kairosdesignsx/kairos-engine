@@ -73,10 +73,11 @@
     {
      "page": "w01",
      "x": [
-      0.555,
+      0.55,
       0.945
      ],
-     "y": 0.26,
+     "y": 0.265,
+     "y1": 0.97,
      "caption": "Week 1, habits"
     }
    ],
@@ -218,7 +219,7 @@
    "headline": "Check in every month",
    "points": [
     "How you want to feel",
-    "4 habit rows, a circle for each day",
+    "4 habit rows, days 1 to 31",
     "A mood square for each day"
    ],
    "label": "Month page, close up",
@@ -227,14 +228,14 @@
      "page": "m01",
      "x": [
       0.035,
-      0.54
+      0.945
      ],
-     "y": 0.07,
-     "y1": 0.657,
-     "caption": "January, left half"
+     "y": 0.162,
+     "y1": 0.655,
+     "caption": "January"
     }
    ],
-   "width": 1450,
+   "width": 1750,
    "captions": {
     "w01": "Week 1",
     "jr01": "Journal, week 1",
@@ -247,7 +248,8 @@
     "linktest": "Setup check",
     "index": "Contents",
     "weeks": "52 weeks"
-   }
+   },
+   "size": 96
   },
   "ph7_apps": {
    "headline": "Works on your tablet",
@@ -404,7 +406,7 @@
   "ph3_journal": "Close-up of a journal page with its printed prompt and lined space for the answer.",
   "ph4_menu": "The self-care menu shown in two close-ups: ideas for 5 and 15 minutes, and for an hour and a slow day.",
   "ph5_energy_hard": "The Energy map and the Hard day plan, side by side, with their column labels and lines.",
-  "ph6_month_year": "Close-up of the left half of a month page: how I want to feel, habit rows with a circle for days 1 to 15, and mood squares.",
+  "ph6_month_year": "Close-up of the middle of a month page: how I want to feel, best and hardest day, habit rows with a circle for days 1 to 31, and mood squares with a color key.",
   "ph7_apps": "Close-up of the Setup check buttons and fix list beside a panel listing the apps and devices it works with.",
   "ph8_start": "Close-up of the four Start here steps, each with a Go there button.",
   "ph9_inside": "Close-up of the ten Contents cards beside the page counts: 130 pages including 52 weeks and 52 journal pages.",
