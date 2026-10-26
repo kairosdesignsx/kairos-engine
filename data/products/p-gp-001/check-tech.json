@@ -2,7 +2,7 @@
  {
   "name": "file size",
   "pass": true,
-  "detail": "Any-Monday.pdf: 12.17 MB (limit 19.5, Etsy 20)"
+  "detail": "Any-Monday.pdf: 12.89 MB (limit 19.5, Etsy 20)"
  },
  {
   "name": "no text overflow",
@@ -17,7 +17,7 @@
  {
   "name": "links present in PDF",
   "pass": true,
-  "detail": "9415 link annotations for 9415 links in the source"
+  "detail": "9867 link annotations for 9867 links in the source"
  },
  {
   "name": "fonts licensed (OFL list only)",

@@ -457,7 +457,7 @@
       "nums": "lining"
     },
     "type_scale": 1.1,
-    "index_tip": "Tap a card, a month, or a month tab on the right edge. Home on the top bar brings you back here, and calendar pages show a Month / Week trail at the top right. Follow links with the pen off (read mode); turn the pen on to write.",
+    "index_tip": "Tap a card, a month, or a month tab on the right edge. Home on the top bar brings you back here, and week and day pages show a Weeks / Week trail at the top right. Follow links with the pen off (read mode); turn the pen on to write.",
     "sections": [
       {
         "module": "eink_format",
