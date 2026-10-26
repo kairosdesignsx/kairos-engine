@@ -464,11 +464,12 @@
    ]
   },
   {
-   "id": "ph6_apps",
-   "shows": "Plain text panel beside Start here: works with Goodnotes, Notability, Samsung Notes, Xodo, Noteshelf on iPad, Android and Windows tablets; download in a web browser; not for phones; prints at actual size on Letter or A4.",
-   "proves": "complaint:c_download, complaint:c_device, complaint:c_print, wish:w_listing_info",
+   "id": "ph8_links",
+   "shows": "52-week overview and the training log list, 2 up: every week and every workout one tap away.",
+   "proves": "feature:hyperlinked, complaint:c_value",
    "pages": [
-    "start"
+    "weeks",
+    "log"
    ]
   },
   {
@@ -481,29 +482,26 @@
    ]
   },
   {
-   "id": "ph8_links",
-   "shows": "52-week overview and the training log list, 2 up: every week and every workout one tap away.",
-   "proves": "feature:hyperlinked, complaint:c_value",
+   "id": "ph6_apps",
+   "shows": "Plain text panel beside Start here: works with Goodnotes, Notability, Samsung Notes, Xodo, Noteshelf on iPad, Android and Windows tablets; download in a web browser; not for phones; prints at actual size on Letter or A4.",
+   "proves": "complaint:c_download, complaint:c_device, complaint:c_print, wish:w_listing_info",
    "pages": [
-    "weeks",
-    "log"
+    "start"
    ]
   },
   {
-   "id": "ph9_month",
-   "shows": "A month page: goal, workout days and energy colors for the month, reflection.",
-   "proves": "feature:habit_tracker, feature:undated",
-   "pages": [
-    "m01"
-   ]
-  },
-  {
-   "id": "ph10_inside",
-   "shows": "Contents page with the page counts from the built file: what is inside and what is not (no stickers, undated, portrait).",
+   "id": "ph9_inside",
+   "shows": "Contents page close up with the page counts from the built file: what is inside and what is not (no stickers, undated, portrait).",
    "proves": "complaint:c_misleading, complaint:c_repetitive, praise:p_as_described",
    "pages": [
     "index"
    ]
+  },
+  {
+   "id": "how_download",
+   "shows": "How it works: 3 steps to download from Etsy in a web browser, import into a note app, and start Week 1.",
+   "proves": "complaint:c_download, complaint:c_setup",
+   "pages": []
   }
  ],
  "spec": {

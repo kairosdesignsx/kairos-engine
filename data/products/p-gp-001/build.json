@@ -2,18 +2,18 @@
  "files": [
   {
    "name": "Any-Monday.pdf",
-   "mb": 11.72,
-   "pages": 452
+   "mb": 12.17,
+   "pages": 453
   }
  ],
- "links": 9283,
+ "links": 9415,
  "overflow": [],
  "lean": false,
  "attempts": [
   {
    "lean": false,
-   "mb": 11.72,
-   "pages": 452
+   "mb": 12.17,
+   "pages": 453
   }
  ],
  "page_modules": [
@@ -66,11 +66,103 @@
    "lined"
   ],
   [
+   "weeks",
+   "calendar"
+  ],
+  [
    "m01",
    "calendar"
   ],
   [
    "m01h",
+   "calendar"
+  ],
+  [
+   "m02",
+   "calendar"
+  ],
+  [
+   "m02h",
+   "calendar"
+  ],
+  [
+   "m03",
+   "calendar"
+  ],
+  [
+   "m03h",
+   "calendar"
+  ],
+  [
+   "m04",
+   "calendar"
+  ],
+  [
+   "m04h",
+   "calendar"
+  ],
+  [
+   "m05",
+   "calendar"
+  ],
+  [
+   "m05h",
+   "calendar"
+  ],
+  [
+   "m06",
+   "calendar"
+  ],
+  [
+   "m06h",
+   "calendar"
+  ],
+  [
+   "m07",
+   "calendar"
+  ],
+  [
+   "m07h",
+   "calendar"
+  ],
+  [
+   "m08",
+   "calendar"
+  ],
+  [
+   "m08h",
+   "calendar"
+  ],
+  [
+   "m09",
+   "calendar"
+  ],
+  [
+   "m09h",
+   "calendar"
+  ],
+  [
+   "m10",
+   "calendar"
+  ],
+  [
+   "m10h",
+   "calendar"
+  ],
+  [
+   "m11",
+   "calendar"
+  ],
+  [
+   "m11h",
+   "calendar"
+  ],
+  [
+   "m12",
+   "calendar"
+  ],
+  [
+   "m12h",
    "calendar"
   ],
   [
@@ -202,14 +294,6 @@
    "calendar"
   ],
   [
-   "m02",
-   "calendar"
-  ],
-  [
-   "m02h",
-   "calendar"
-  ],
-  [
    "w05",
    "calendar"
   ],
@@ -335,14 +419,6 @@
   ],
   [
    "u086",
-   "calendar"
-  ],
-  [
-   "m03",
-   "calendar"
-  ],
-  [
-   "m03h",
    "calendar"
   ],
   [
@@ -506,14 +582,6 @@
    "calendar"
   ],
   [
-   "m04",
-   "calendar"
-  ],
-  [
-   "m04h",
-   "calendar"
-  ],
-  [
    "w14",
    "calendar"
   ],
@@ -642,14 +710,6 @@
    "calendar"
   ],
   [
-   "m05",
-   "calendar"
-  ],
-  [
-   "m05h",
-   "calendar"
-  ],
-  [
    "w18",
    "calendar"
   ],
@@ -775,14 +835,6 @@
   ],
   [
    "u216",
-   "calendar"
-  ],
-  [
-   "m06",
-   "calendar"
-  ],
-  [
-   "m06h",
    "calendar"
   ],
   [
@@ -946,14 +998,6 @@
    "calendar"
   ],
   [
-   "m07",
-   "calendar"
-  ],
-  [
-   "m07h",
-   "calendar"
-  ],
-  [
    "w27",
    "calendar"
   ],
@@ -1082,14 +1126,6 @@
    "calendar"
   ],
   [
-   "m08",
-   "calendar"
-  ],
-  [
-   "m08h",
-   "calendar"
-  ],
-  [
    "w31",
    "calendar"
   ],
@@ -1215,14 +1251,6 @@
   ],
   [
    "u346",
-   "calendar"
-  ],
-  [
-   "m09",
-   "calendar"
-  ],
-  [
-   "m09h",
    "calendar"
   ],
   [
@@ -1386,14 +1414,6 @@
    "calendar"
   ],
   [
-   "m10",
-   "calendar"
-  ],
-  [
-   "m10h",
-   "calendar"
-  ],
-  [
    "w40",
    "calendar"
   ],
@@ -1522,14 +1542,6 @@
    "calendar"
   ],
   [
-   "m11",
-   "calendar"
-  ],
-  [
-   "m11h",
-   "calendar"
-  ],
-  [
    "w44",
    "calendar"
   ],
@@ -1655,14 +1667,6 @@
   ],
   [
    "u476",
-   "calendar"
-  ],
-  [
-   "m12",
-   "calendar"
-  ],
-  [
-   "m12h",
    "calendar"
   ],
   [
@@ -1841,6 +1845,7 @@
   "u354.png",
   "w01.png",
   "w27.png",
+  "weeks.png",
   "year.png"
  ],
  "size_px": [
@@ -1849,6 +1854,6 @@
  ],
  "product_id": "p-gp-001",
  "brief_id": "b-p-gp-001-1",
- "built_at": "2026-10-26T19:15:50Z",
+ "built_at": "2026-10-26T19:30:40Z",
  "line": "planner"
 }

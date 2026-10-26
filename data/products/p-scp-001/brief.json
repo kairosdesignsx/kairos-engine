@@ -475,11 +475,10 @@
   },
   {
    "id": "ph6_month_year",
-   "shows": "A month page and the year in moods, 2 up.",
+   "shows": "A month page close up: goal, best and hardest day, habit row and mood colors.",
    "proves": "feature:habit_tracker, feature:undated",
    "pages": [
-    "m01",
-    "pixels"
+    "m01"
    ]
   },
   {
@@ -506,6 +505,12 @@
    "pages": [
     "index"
    ]
+  },
+  {
+   "id": "how_download",
+   "shows": "How it works: 3 steps to download from Etsy in a web browser, import into a note app, and start Week 1.",
+   "proves": "complaint:c_download, complaint:c_setup",
+   "pages": []
   }
  ],
  "spec": {

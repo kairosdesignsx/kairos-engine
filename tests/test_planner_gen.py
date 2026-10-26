@@ -156,6 +156,13 @@ def test_undated_weeks():
     r2 = gen.build(dict(SPEC, dating={"mode": "undated"}, sections=[{"module": "cover"}, {"module": "year"}, {"module": "calendar", "days": False}]))
     yr = dict(re.findall(r'<section class="pg" id="([^"]+)"[^>]*>(.*?)</section>', r2['html'], re.S))['year']
     assert yr.count('border:1px solid') >= 12 * 42, 'undated year page: boxes to write dates in'
+    # free_weeks: weeks 1 to 52 not filed under months, a Weeks page links them all, day arrows cross week edges
+    r3 = gen.build(dict(SPEC, dating={"mode": "undated"}, sections=[{"module": "cover"}, {"module": "index"}, {"module": "year"}, {"module": "calendar", "free_weeks": True}]))
+    assert not r3['broken_links'] and not r3['orphan_pages'], (r3['broken_links'][:5], r3['orphan_pages'][:5])
+    pg3 = dict(re.findall(r'<section class="pg" id="([^"]+)"[^>]*>(.*?)</section>', r3['html'], re.S))
+    assert all(f'href="#w{n:02d}"' in pg3['weeks'] for n in range(1, 53)) and 'href="#weeks"' in pg3['m10']
+    assert 'href="#w4' not in pg3['m10'] and 'href="#weeks">Weeks</a> / Week 44' in pg3['w44']
+    assert 'href="#u020"' in pg3['u016'] and 'href="#u016"' in pg3['u020'] and 'href="#u530"' not in pg3['u526']
 
 
 # Trackers (fitness, meals, self-care): log_week hub, workout_log, meal_week, progress_chart, body_measure, habit_month, group_weeks

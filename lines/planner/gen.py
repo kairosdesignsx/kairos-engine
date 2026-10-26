@@ -633,7 +633,7 @@ def _free_weeks_index(P, sec):
                     f'<span style="font-size:{P.fs(11)};color:{th["muted"]};border-bottom:1px solid {th["line"]};padding-bottom:1px">starts</span></a>' for n in range(1, 53))
     _register(P, sec.get('weeks_index', {}), 'Weeks', 'weeks', 'All 52 weeks')
     P.page('weeks', P.head('Write each week\'s first date once', 'Weeks') +
-           f'<div style="flex:1;display:grid;grid-template-columns:repeat({cols},1fr);grid-auto-rows:1fr;gap:6px">{cells}</div>', active='weeks', crumb='<a href="#year">Year</a> / Weeks')
+           f'<div style="flex:1;display:grid;grid-template-columns:repeat({cols},1fr);grid-auto-rows:1fr;gap:6px">{cells}</div>', active='weeks', crumb='Weeks')
 
 
 def _week_grid(P, cols, side):
