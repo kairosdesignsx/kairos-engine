@@ -2,7 +2,7 @@
  {
   "name": "file size",
   "pass": true,
-  "detail": "Lights-Low-2027.pdf: 12.86 MB (limit 19.5, Etsy 20)"
+  "detail": "Lights-Low-2027.pdf: 13.49 MB (limit 19.5, Etsy 20)"
  },
  {
   "name": "no text overflow",
@@ -12,12 +12,12 @@
  {
   "name": "page count",
   "pass": true,
-  "detail": "532 pages in PDF"
+  "detail": "533 pages in PDF"
  },
  {
   "name": "links present in PDF",
   "pass": true,
-  "detail": "12852 link annotations for 11860 links in the source"
+  "detail": "11878 link annotations for 11878 links in the source"
  },
  {
   "name": "fonts licensed (OFL list only)",
@@ -27,7 +27,7 @@
  {
   "name": "page claims match the file",
   "pass": true,
-  "detail": "claims [532, 532], file has 532"
+  "detail": "claims [533, 533], file has 533"
  },
  {
   "name": "listing photos",

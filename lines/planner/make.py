@@ -79,6 +79,11 @@ def build_print(brief, pdir, files_dir, shots_dir, max_mb, pf):
             anchors += [a + 'b' for a in anchors if a + 'b' in ids] + list(last.values()) + wk[:1] + wk[-1:] + [a + 'b' for a in wk[:1] + wk[-1:]]
             anchors = [a for a in dict.fromkeys(anchors) if a in ids]
         over = _render(html_path, raw, shots_dir, anchors, res['size'])
+        if k == 0:  # paper photos: the same pages with on-screen-only links hidden (class pfnav)
+            php = os.path.join(pdir, 'product-photo.html')
+            open(php, 'w').write(res['html'].replace('</style>', '.pfnav{visibility:hidden!important}</style>', 1))
+            sp = os.path.join(pdir, 'shots-paper'); import shutil; shutil.rmtree(sp, ignore_errors=True)
+            _render(php, '-', sp, anchors, res['size'])
         over_all += [[f'{size}:{o[0]}'] + list(o[1:]) for o in over] if k else over
         name = f"{base}-{gen.PAPER[size][4]}.pdf"
         _true_size(raw, size)

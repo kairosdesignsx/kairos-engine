@@ -42,6 +42,9 @@ FRAMES = {  # device frame: 'dark' (generic tablet) or 'eink' (light gray e-ink 
 }
 
 
+PAPER_DESK = '#ECE5DB'  # desk tone behind printed sheets (print_format photos)
+
+
 def tablet(src, w, x, y, ratio, rot=0, z=1, caption='', frame='dark'):
     f = FRAMES[frame]
     pad = w * f['pad']
@@ -111,14 +114,22 @@ def crop_region(z, pieces, W, H, max_h):
     return x0, y0, x1, y1
 
 
-def zoom_card(src, reg, x, y, cw, W, H, frame):
+def zoom_card(src, reg, x, y, cw, W, H, frame, holes=None):
     """A whole-block region of one page, shown large on a rounded card (a close-up, not a device)."""
     x0, y0, x1, y1 = reg
     k = cw / (x1 - x0); ch = (y1 - y0) * k
     bd = '#c4c4bf' if frame == 'eink' else '#d8cfc0'
-    return (f'<div style="position:absolute;left:{x}px;top:{y:.0f}px;width:{cw}px;height:{ch:.0f}px;overflow:hidden;border-radius:30px;border:3px solid {bd};'
-            f'box-shadow:0 30px 60px rgba(30,25,40,.16),0 6px 14px rgba(30,25,40,.10);background:#fff">'
-            f'<img src="{src}" style="position:absolute;left:{-x0 * k:.0f}px;top:{-y0 * k:.0f}px;width:{W * k:.0f}px;height:{H * k:.0f}px"></div>'), ch
+    look = (f'border-radius:30px;border:3px solid {bd};box-shadow:0 30px 60px rgba(30,25,40,.16),0 6px 14px rgba(30,25,40,.10)' if frame != 'paper'
+            else f'border-radius:3px;box-shadow:{FRAMES["paper"]["shadow"]}')  # paper: a printed sheet, square cut, no border
+    punch = ''
+    if holes and frame == 'paper':  # punched binder holes, 3/8 in from the binding edge, at the Letter 3-hole positions
+        hx = 36 if holes == 'left' else W - 36
+        for hy in (120, 528, 936):
+            if x0 < hx < x1 and y0 + 14 < hy < y1 - 14:
+                punch += (f'<i style="position:absolute;left:{(hx - x0 - 13) * k:.0f}px;top:{(hy - y0 - 13) * k:.0f}px;width:{26 * k:.0f}px;height:{26 * k:.0f}px;'
+                          f'border-radius:50%;background:{PAPER_DESK};box-shadow:inset 0 {2 * k:.0f}px {3 * k:.0f}px rgba(40,30,20,.35)"></i>')
+    return (f'<div style="position:absolute;left:{x}px;top:{y:.0f}px;width:{cw}px;height:{ch:.0f}px;overflow:hidden;{look};background:#fff">'
+            f'<img src="{src}" style="position:absolute;left:{-x0 * k:.0f}px;top:{-y0 * k:.0f}px;width:{W * k:.0f}px;height:{H * k:.0f}px">{punch}</div>'), ch
 
 
 def zoom_scene(th, c, P, N, W, H, frame, head, pts, label, have, blocks):
@@ -130,7 +141,7 @@ def zoom_scene(th, c, P, N, W, H, frame, head, pts, label, have, blocks):
         x0, x1 = z['x'][0] * W, z['x'][1] * W
         reg = crop_region(z, blocks[z['page']], W, H, 1720 * (x1 - x0) / cw)
         x = 150 if left else 2700 - 150 - cw
-        card, ch = zoom_card(P(z['page']), reg, x, 0, cw, W, H, frame)
+        card, ch = zoom_card(P(z['page']), reg, x, 0, cw, W, H, frame, z.get('holes'))
         y = (2025 - ch) / 2 + 35
         card = card.replace('top:0px', f'top:{y:.0f}px', 1)
         tx = x + cw + 120 if left else 150; tw = 2700 - 150 - tx if left else x - 120 - 150
@@ -148,7 +159,7 @@ def zoom_scene(th, c, P, N, W, H, frame, head, pts, label, have, blocks):
     for k, z in enumerate(zs[:2]):
         cw = ws[k]; x0, x1 = z['x'][0] * W, z['x'][1] * W
         reg = crop_region(z, blocks[z['page']], W, H, (2025 - y - 50) * (x1 - x0) / cw)
-        card, ch = zoom_card(P(z['page']), reg, xs[k], y, cw, W, H, frame)
+        card, ch = zoom_card(P(z['page']), reg, xs[k], y, cw, W, H, frame, z.get('holes'))
         out += card + cap(name(z), xs[k], y - 66, cw)
     return (f'<div style="position:absolute;left:150px;right:150px;top:80px;display:flex;flex-direction:column;gap:20px">{label}<p class="h" style="font-size:110px">{head}</p>'
             f'<div style="display:flex;gap:60px;flex-wrap:wrap">{"".join(f"<p class=pt><b>&#9679;</b><span>{esc(x)}</span></p>" for x in c.get("points", [])[:3])}</div></div>' + out)
@@ -182,6 +193,11 @@ def scenes(brief, listing, build, shots_dir, out_dir):
     if any(x.get('module') == 'print_format' for x in brief['spec'].get('sections', [])):
         frame = 'paper'  # a printed planner is shown as paper, never inside a device
     pills = listing.get('hero_pills') or ['Hyperlinked', f'{pages} pages']
+    if frame == 'paper':  # printed pages: shots with on-screen-only links hidden, sheets on a warm desk tone
+        sp = os.path.join(os.path.dirname(os.path.abspath(shots_dir)), 'shots-paper')
+        if os.path.isdir(sp):
+            P = lambda a: 'file://' + os.path.join(sp, a + '.png')
+        th = dict(th, paper=PAPER_DESK, soft='#DED3C5')
     T = lambda *a, **k: tablet(*a, frame=frame, **k)
     S = {}; blocks = None
     for i, ph in enumerate(brief['photos']):
@@ -207,6 +223,10 @@ def scenes(brief, listing, build, shots_dir, out_dir):
             sheets = ''.join(f'<img src="{P(a)}" style="position:absolute;left:{x0 + k * pw}px;top:{y0:.0f}px;width:{pw}px;height:{ph_:.0f}px;display:block">' for k, a in enumerate(pg[:2]))
             gutter = f'<div style="position:absolute;left:{x0 + pw - 40}px;top:{y0:.0f}px;width:80px;height:{ph_:.0f}px;background:linear-gradient(90deg,rgba(0,0,0,0),rgba(60,45,30,.10) 50%,rgba(0,0,0,0))"></div>'
             spread = f'<div style="position:absolute;left:{x0}px;top:{y0:.0f}px;width:{2 * pw}px;height:{ph_:.0f}px;background:#fff;box-shadow:{FRAMES["paper"]["shadow"]}"></div>' + sheets + gutter
+            kk = pw / W  # punched binder holes along the gutter of both pages
+            spread += ''.join(f'<i style="position:absolute;left:{x0 + pw + sgn * 36 * kk - 13 * kk:.0f}px;top:{y0 + hy * kk - 13 * kk:.0f}px;width:{26 * kk:.0f}px;height:{26 * kk:.0f}px;border-radius:50%;background:{PAPER_DESK};box-shadow:inset 0 2px 3px rgba(40,30,20,.35)"></i>' for sgn in (-1, 1) for hy in (120, 528, 936))
+            if c.get('caption'):
+                spread += f'<p style="position:absolute;left:{x0}px;width:{2 * pw}px;top:{y0 + ph_ + 40:.0f}px;text-align:center;font:600 38px var(--b);opacity:.8">{esc(c["caption"])}</p>'
             S[key] = base(th, f'''<div style="position:absolute;left:150px;top:0;bottom:0;width:{x0 - 230}px;display:flex;flex-direction:column;justify-content:center;gap:40px">
               {label or '<p class="k">Printable planner</p>'}<p class="h" style="font-size:136px">{esc(listing.get("hero_title") or brief["spec"]["title"])}</p>
               <p style="font-size:56px;color:{th["muted"]};line-height:1.25">{head}</p>{pts}
