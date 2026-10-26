@@ -2,7 +2,7 @@
  {
   "name": "file size",
   "pass": true,
-  "detail": "Tend.pdf: 3.01 MB (limit 19.5, Etsy 20)"
+  "detail": "Tend.pdf: 3.24 MB (limit 19.5, Etsy 20)"
  },
  {
   "name": "no text overflow",
@@ -12,22 +12,22 @@
  {
   "name": "page count",
   "pass": true,
-  "detail": "128 pages in PDF"
+  "detail": "130 pages in PDF"
  },
  {
   "name": "links present in PDF",
   "pass": true,
-  "detail": "3242 link annotations for 3012 links in the source"
+  "detail": "3173 link annotations for 3150 links in the source"
  },
  {
   "name": "fonts licensed (OFL list only)",
   "pass": true,
-  "detail": "fonts: ['CormorantGaramondLight-MediumItalic', 'CormorantGaramondLight-SemiBold', 'NunitoExtraLight-Bold', 'NunitoExtraLight-Regular', 'NunitoExtraLight-SemiBold']"
+  "detail": "fonts: ['CormorantGaramondLight-MediumItalic', 'CormorantGaramondLight-Regular', 'CormorantGaramondLight-SemiBold', 'NunitoExtraLight-Bold', 'NunitoExtraLight-Regular', 'NunitoExtraLight-SemiBold']"
  },
  {
   "name": "page claims match the file",
   "pass": true,
-  "detail": "claims [128], file has 128"
+  "detail": "claims [130], file has 130"
  },
  {
   "name": "listing photos",
@@ -37,7 +37,7 @@
  {
   "name": "title",
   "pass": true,
-  "detail": "130 chars"
+  "detail": "135 chars"
  },
  {
   "name": "13 tags, max 20 chars",

@@ -335,8 +335,8 @@
   "ph9_inside": {
    "headline": "Exactly what is inside",
    "points": [
-    "130 pages: 52 weeks, 52 journal pages",
-    "13 months, journal index, menu, energy, hard day, moods",
+    "130 pages, 52 weeks, 52 prompts",
+    "13 months and 5 tools",
     "Landscape, undated, no stickers"
    ],
    "label": "No surprises",
@@ -345,28 +345,25 @@
      "page": "index",
      "x": [
       0.035,
+      0.575
+     ],
+     "y": 0.056,
+     "y1": 0.37,
+     "caption": "Contents, cards 1 to 6",
+     "width": 1340
+    },
+    {
+     "page": "index",
+     "x": [
+      0.576,
       0.945
      ],
      "y": 0.056,
      "y1": 0.37,
-     "caption": "Contents"
+     "caption": "Cards 7 to 10",
+     "width": 916
     }
-   ],
-   "width": 1550,
-   "side": "right",
-   "captions": {
-    "w01": "Week 1",
-    "jr01": "Journal, week 1",
-    "menu": "Self-care menu",
-    "energy": "Energy map",
-    "hardday": "Hard day plan",
-    "m01": "Month page",
-    "pixels": "Year in moods",
-    "start": "Start here",
-    "linktest": "Setup check",
-    "index": "Contents",
-    "weeks": "52 weeks"
-   }
+   ]
   },
   "how_download": {
    "headline": "Ready in three steps",
@@ -409,7 +406,7 @@
   "ph6_month_year": "Close-up of the middle of a month page: how I want to feel, best and hardest day, habit rows with a circle for days 1 to 31, and mood squares with a color key.",
   "ph7_apps": "Close-up of the Setup check buttons and fix list beside a panel listing the apps and devices it works with.",
   "ph8_start": "Close-up of the four Start here steps, each with a Go there button.",
-  "ph9_inside": "Close-up of the ten Contents cards beside the page counts: 130 pages including 52 weeks and 52 journal pages.",
+  "ph9_inside": "The ten Contents cards in two close-ups, under the page counts: 130 pages including 52 weeks and 52 journal pages.",
   "how_download": "Three steps: download from Etsy in a web browser, import into a note app, start Week 1."
  }
 }

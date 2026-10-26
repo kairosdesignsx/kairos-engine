@@ -48,7 +48,8 @@
           ]
         }
       ],
-      "width": 1450
+      "width": 1650,
+      "size": 96
     },
     "ph3": {
       "headline": "52 weeks that follow you",
@@ -65,17 +66,18 @@
             0.925
           ],
           "y": 0.05,
-          "y1": 0.453,
+          "y1": 0.448,
           "caption": "Week page"
         }
       ],
-      "width": 1500
+      "width": 1650,
+      "size": 96
     },
     "ph4": {
       "headline": "Months that always fit",
       "points": [
-        "6-row grid fits any month",
-        "Goals this month beside it",
+        "Big boxes to write the dates in",
+        "Goals this month beside the grid",
         "Habit tracker and All weeks buttons"
       ],
       "zoom": [
@@ -86,14 +88,15 @@
             0.925
           ],
           "y": 0.05,
-          "y1": 0.567,
+          "y1": 0.5665,
           "caption": "Month page",
           "cut_ok": [
             "Notes"
           ]
         }
       ],
-      "width": 1500
+      "width": 1650,
+      "size": 96
     },
     "ph5": {
       "headline": "Ready in five minutes",
@@ -109,11 +112,12 @@
             0.925
           ],
           "y": 0.05,
-          "y1": 0.702,
+          "y1": 0.696,
           "caption": "Start here"
         }
       ],
-      "width": 1450
+      "width": 1650,
+      "size": 96
     },
     "ph6": {
       "headline": "Check your links first",
@@ -129,11 +133,12 @@
             0.925
           ],
           "y": 0.05,
-          "y1": 0.66,
+          "y1": 0.654,
           "caption": "Setup check"
         }
       ],
-      "width": 1450
+      "width": 1650,
+      "size": 96
     },
     "ph7": {
       "headline": "Everything two taps away",
@@ -149,11 +154,12 @@
             0.925
           ],
           "y": 0.05,
-          "y1": 0.536,
+          "y1": 0.483,
           "caption": "Contents"
         }
       ],
-      "width": 1500
+      "width": 1650,
+      "size": 96
     },
     "ph8": {
       "headline": "Year view and habit trackers",
@@ -169,7 +175,7 @@
             0.925
           ],
           "y": 0.05,
-          "y1": 0.417,
+          "y1": 0.41,
           "caption": "Year at a glance"
         },
         {
@@ -179,7 +185,7 @@
             0.925
           ],
           "y": 0.05,
-          "y1": 0.468,
+          "y1": 0.453,
           "caption": "Habit tracker"
         }
       ]

@@ -2,7 +2,7 @@
  {
   "name": "file size",
   "pass": true,
-  "detail": "Stronger-Weeks.pdf: 7.63 MB (limit 19.5, Etsy 20)"
+  "detail": "Stronger-Weeks.pdf: 8.06 MB (limit 19.5, Etsy 20)"
  },
  {
   "name": "no text overflow",
@@ -12,12 +12,12 @@
  {
   "name": "page count",
   "pass": true,
-  "detail": "342 pages in PDF"
+  "detail": "344 pages in PDF"
  },
  {
   "name": "links present in PDF",
   "pass": true,
-  "detail": "8273 link annotations for 7615 links in the source"
+  "detail": "7741 link annotations for 7724 links in the source"
  },
  {
   "name": "fonts licensed (OFL list only)",
@@ -27,7 +27,7 @@
  {
   "name": "page claims match the file",
   "pass": true,
-  "detail": "claims [342], file has 342"
+  "detail": "claims [344], file has 344"
  },
  {
   "name": "listing photos",
@@ -37,7 +37,7 @@
  {
   "name": "title",
   "pass": true,
-  "detail": "124 chars"
+  "detail": "139 chars"
  },
  {
   "name": "13 tags, max 20 chars",

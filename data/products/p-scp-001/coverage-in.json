@@ -44,7 +44,7 @@
   {
    "key": "fix:f_value",
    "kind": "fix",
-   "text": "complaint:c_value: Not a single worksheet: 52 week pages and 52 prompt pages, each with a different printed prompt, plus 12 month pages, a year in moods, a self-care menu, an energy map and a hard day plan, all linked. Writing rows are at least 26 px tall. The listing gives exact counts from the built file."
+   "text": "complaint:c_value: Not a single worksheet: 52 week pages and 52 prompt pages, each with a different printed prompt, plus 13 month pages, a journal index, a year in moods, a self-care menu, an energy map and a hard day plan, all linked. Every writing row is at least 7 mm tall (US college-ruled spacing). The listing gives exact counts from the built file."
   },
   {
    "key": "fix:f_hard",
@@ -104,7 +104,7 @@
   {
    "key": "unique:u_prompts",
    "kind": "unique",
-   "text": "A journal prompt for every week: 52 journal pages, each with its own printed prompt, linked from its week page and back, with three small good things and a kind word to myself."
+   "text": "A journal prompt for every week: 52 journal pages, each with its own printed prompt, linked from its week page and back, with three small good things and a kind word to myself. A journal index lists all 52 prompts, one tap each; the top bar's Journal button opens it."
   },
   {
    "key": "unique:u_menu",
@@ -124,7 +124,7 @@
   {
    "key": "unique:u_anytime",
    "kind": "unique",
-   "text": "Start any week, keep it every year: Undated weeks and months: write the dates the day you start. No year to run out, so the same file works next year too."
+   "text": "Start any week, keep it every year: Undated weeks and months: write the dates the day you start. No year to run out, so the same file works next year too. A 13th undated month page covers a run that starts mid-month, and Year in moods has a Year to ____ line."
   },
   {
    "key": "look",
@@ -179,14 +179,14 @@
    "module": "checklist"
   },
   {
+   "path": "/home/claude/kairos-engine/data/products/p-scp-001/shots/moods.png",
+   "anchor": "moods",
+   "module": "mood_year"
+  },
+  {
    "path": "/home/claude/kairos-engine/data/products/p-scp-001/shots/notes.png",
    "anchor": "notes",
    "module": "lined"
-  },
-  {
-   "path": "/home/claude/kairos-engine/data/products/p-scp-001/shots/pixels.png",
-   "anchor": "pixels",
-   "module": "year_pixels"
   },
   {
    "path": "/home/claude/kairos-engine/data/products/p-scp-001/shots/start.png",
@@ -660,6 +660,10 @@
    "prompt_week"
   ],
   [
+   "prompts",
+   "prompt_week"
+  ],
+  [
    "menu",
    "checklist"
   ],
@@ -672,8 +676,8 @@
    "checklist"
   ],
   [
-   "pixels",
-   "year_pixels"
+   "moods",
+   "mood_year"
   ],
   [
    "m01",
@@ -721,6 +725,10 @@
   ],
   [
    "m12",
+   "habit_month"
+  ],
+  [
+   "m13",
    "habit_month"
   ],
   [

@@ -34,12 +34,12 @@
   {
    "key": "fix:f_not_useful",
    "kind": "fix",
-   "text": "complaint:c_not_useful: Every page has a job a buyer does every week: plan the week, log the workout, plan the meals, tick what got done. Writing rows are at least 26 px tall and the workout table has 8 exercises by 4 sets. Photos show pages close up at real size so buyers can judge the space before buying, and the listing lists every page type with its count."
+   "text": "complaint:c_not_useful: Every page has a job a buyer does every week: plan the week, log the workout, plan the meals, tick what got done. Every writing row is at least 7 mm tall on the 8 x 10.7 in page (US college-ruled spacing) and the workout table has 8 exercises by 4 sets. Photos show pages close up so buyers can judge the space before buying, and the listing lists every page type with its count."
   },
   {
    "key": "fix:f_download",
    "kind": "fix",
-   "text": "complaint:c_download: Ships as one PDF, not a zip, with no sticker files that can fail to import. Listing copy and the apps photo give the download in 3 steps: buy, download from Etsy in a web browser (the Etsy app cannot download digital files), open the PDF in a note app. Start here repeats the steps. The cover title matches the listing name."
+   "text": "complaint:c_download: Ships as one PDF, not a zip, with no sticker files that can fail to import. Listing copy and the last listing photo give the download in 3 steps: buy, download from Etsy in a web browser (the Etsy app cannot download digital files), open the PDF in a note app. Start here repeats the steps. The cover title matches the listing name."
   },
   {
    "key": "fix:f_misleading",
@@ -49,12 +49,12 @@
   {
    "key": "fix:f_value",
    "kind": "fix",
-   "text": "complaint:c_value: Nothing to duplicate: 52 week pages, 52 meal plans and 208 workout logs are already in the file, all hyperlinked, so a buyer never copies pages to make more weeks (the exact 1-star complaint). The listing gives exact counts per page type from the built file."
+   "text": "complaint:c_value: Nothing to duplicate: 52 week pages, 52 meal plans and 208 workout logs (and 13 month pages) are already in the file, all hyperlinked, so a buyer never copies pages to make more weeks (the exact 1-star complaint). The listing gives exact counts per page type from the built file."
   },
   {
    "key": "fix:f_print",
    "kind": "fix",
-   "text": "complaint:c_print: Made for tablets, and printable too: every page is 8 x 10.7 inches, smaller than both US Letter and A4, so a page prints at Actual size without cropping. Each week's pages sit together in the file (the week, its meal plan, its 4 workouts: 6 pages in a row), so one week prints as a single page range. The listing says how, and that the light page tint prints too."
+   "text": "complaint:c_print: Made for tablets, and printable too: every page is 8 x 10.7 inches, smaller than both US Letter and A4, so a page prints on Letter at Actual size, and on A4 with Fit to page (the edge tabs need it). Each week's pages sit together in the file (the week, its meal plan, its 4 workouts: 6 pages in a row), so one week prints as a single page range. The listing says how, and that the light page tint prints too."
   },
   {
    "key": "fix:f_hard",
@@ -119,7 +119,7 @@
   {
    "key": "unique:u_anytime",
    "kind": "unique",
-   "text": "Start any day: Undated weeks and months: write the dates on Week 1 the day you start, whether that is a Tuesday in October or the first of June. Nothing is wasted if you start late in the year."
+   "text": "Start any day: Undated weeks and months: write the dates on Week 1 the day you start, whether that is a Tuesday in October or the first of June. Nothing is wasted if you start late in the year. A 13th undated month page covers a 52-week run that starts mid-month."
   },
   {
    "key": "look",
@@ -1519,6 +1519,10 @@
    "workout_log"
   ],
   [
+   "log9",
+   "workout_log"
+  ],
+  [
    "progress",
    "progress_chart"
   ],
@@ -1572,6 +1576,10 @@
   ],
   [
    "m12",
+   "habit_month"
+  ],
+  [
+   "m13",
    "habit_month"
   ],
   [

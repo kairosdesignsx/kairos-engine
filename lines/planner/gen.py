@@ -416,7 +416,7 @@ def _fill_index(P):
                     for (l, a, k), c in zip(P.index_items[:12], P.tabs * 3))
     hs_style = f'background:{th["paper"]};color:{th["ink"]};box-shadow:inset 0 0 0 2px {th["ink"]}' if P.gray else f'background:{th["ink"]};color:{th["paper"]}'  # e-ink: no large dark blocks (they ghost)
     months = ''.join(f'<a href="#{an}" style="padding:8px 0;text-align:center;border-radius:8px;{hs_style};font:600 12px \'{th["body"]}\'">{esc(lb)}</a>' for lb, an in getattr(P, 'head_start_links', []))
-    months += ''.join(f'<a href="#m{i + 1:02d}" style="padding:8px 0;text-align:center;border-radius:8px;background:{P.tint(i, "55")};font:600 12px \'{th["body"]}\'">{MONTHS[i]}{"" if P.undated or not getattr(P, "head_start_links", None) else " " + str(P.year)}</a>' for i in range(12))
+    months += ''.join(f'<a href="#m{i + 1:02d}" style="padding:8px 0;text-align:center;border-radius:8px;background:{P.tint(i, th.get("tile_alpha", "55"))};font:600 12px \'{th["body"]}\'">{MONTHS[i]}{"" if P.undated or not getattr(P, "head_start_links", None) else " " + str(P.year)}</a>' for i in range(12))
     tip = P.s.get('index_tip', 'Tap a month tab on the right, any section above, or any date to jump there. Home on the top bar brings you back here, and calendar pages show where you are at the top right. Follow links in read mode (Goodnotes: turn the pen off).')
     if P.HT > P.W:  # portrait: wider cards, and a months grid that fills the page with big tap targets
         cards = cards.replace('min-height:76px', 'min-height:96px')
@@ -455,7 +455,7 @@ def _fill_guides(P):
         if sec.get('months'):
             hs_style = f'background:{th["paper"]};color:{th["ink"]};box-shadow:inset 0 0 0 2px {th["ink"]}' if P.gray else f'background:{th["ink"]};color:{th["paper"]}'
             ms = ''.join(f'<a href="#{an}" style="display:flex;align-items:center;justify-content:center;border-radius:12px;{hs_style};font:600 15px \'{th["body"]}\'">{esc(lb)}</a>' for lb, an in getattr(P, 'head_start_links', []))
-            ms += ''.join(f'<a href="#m{i + 1:02d}" style="display:flex;align-items:center;justify-content:center;border-radius:12px;background:{P.tint(i, "55")};font:600 15px \'{th["body"]}\'">{MONTHS[i]}{"" if P.undated else " " + str(P.year)}</a>' for i in range(12))
+            ms += ''.join(f'<a href="#m{i + 1:02d}" style="display:flex;align-items:center;justify-content:center;border-radius:12px;background:{P.tint(i, th.get("tile_alpha", "55"))};font:600 15px \'{th["body"]}\'">{MONTHS[i]}{"" if P.undated else " " + str(P.year)}</a>' for i in range(12))
             extra += f'<div class="box" style="flex:1"><span class="k">{esc(sec.get("months_label", "Jump back in: tap this month"))}</span><div style="flex:1;display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:1fr;gap:10px">{ms}</div></div>'
         if not extra:
             extra = '<div style="flex:1"></div>'
@@ -477,7 +477,7 @@ def m_year(P, sec):
             cells = cells.replace('font-size:9.5px', f'font-size:{P.fs(11)}')
             cells = cells.replace('<span class="d x"></span>', '<span class="d x" style="padding:2px 3px;border:0">&#8203;</span>')  # empty rows keep their height: the 12 grids line up
         if P.undated:  # no date links inside, so the whole month block (name and grid) is one link: "Tap a month"
-            blocks += f'<a href="#m{m:02d}" style="display:flex;flex-direction:column;gap:4px"><span class="k" style="color:{th["ink"]};font-size:11px">{MONTHS[m - 1]}</span><div class="cal" style="font-size:9px">{cells}</div></a>'
+            blocks += f'<a href="#m{m:02d}" style="display:flex;flex-direction:column;gap:4px"><span class="k" style="color:{th["ink"]};font-size:11px">{MONTHS[m - 1]}</span><div class="cal" style="font-size:9px;grid-template-rows:auto;grid-auto-rows:1fr">{cells}</div></a>'
         else:
             blocks += f'<div style="display:flex;flex-direction:column;gap:4px"><a href="#m{m:02d}" class="k" style="color:{th["ink"]};font-size:11px">{MONTHS[m - 1]}</a><div class="cal" style="font-size:9px">{cells}</div></div>'
     if P.pf:
