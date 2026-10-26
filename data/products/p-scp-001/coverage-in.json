@@ -1,0 +1,743 @@
+{
+ "product_id": "p-scp-001",
+ "items": [
+  {
+   "key": "must:mh_selfcare",
+   "kind": "must_have",
+   "text": "Real self-care pages: a weekly check-in (mood, energy, sleep, one kind thing a day, gentle habits), a self-care menu of ideas by time, an energy map, a hard day plan, monthly mood colors and a year in moods."
+  },
+  {
+   "key": "must:mh_journal",
+   "kind": "must_have",
+   "text": "Journal space: a prompt page for every week with lined space, three small good things and a kind word to myself, a monthly reflection and three notes pages."
+  },
+  {
+   "key": "must:mh_apps",
+   "kind": "must_have",
+   "text": "One PDF that works in Goodnotes (named first), Notability, Samsung Notes, Xodo and Noteshelf on iPad, Android and Windows tablets."
+  },
+  {
+   "key": "must:mh_nav",
+   "kind": "must_have",
+   "text": "Fully hyperlinked: Contents, month tabs on every page, a top bar, previous and next arrows, and a trail back on every page."
+  },
+  {
+   "key": "must:mh_look",
+   "kind": "must_have",
+   "text": "A finished, calm look with real typography; design is the biggest praise driver."
+  },
+  {
+   "key": "must:mh_guide",
+   "kind": "must_have",
+   "text": "Instructions printed inside the file (Start here and Setup check), not only in a separate guide."
+  },
+  {
+   "key": "fix:f_download",
+   "kind": "fix",
+   "text": "complaint:c_download: Ships as one PDF, not a zip and not a guide that points somewhere else (a 1-star buyer only found the guide). Listing copy and the apps photo give the download in 3 steps: buy, download from Etsy in a web browser (the Etsy app cannot download digital files), open the PDF in a note app. Start here repeats them."
+  },
+  {
+   "key": "fix:f_not_useful",
+   "kind": "fix",
+   "text": "complaint:c_not_useful: It has the weekly plan a 1-star buyer missed: a week page with a row for every day, plus a journal page for the same week. Photos show the pages close up so buyers can judge them, and the listing lists every page type with its count."
+  },
+  {
+   "key": "fix:f_value",
+   "kind": "fix",
+   "text": "complaint:c_value: Not a single worksheet: 52 week pages and 52 prompt pages, each with a different printed prompt, plus 12 month pages, a year in moods, a self-care menu, an energy map and a hard day plan, all linked. Writing rows are at least 26 px tall. The listing gives exact counts from the built file."
+  },
+  {
+   "key": "fix:f_hard",
+   "kind": "fix",
+   "text": "complaint:c_hard: One page to learn: the week page. It holds the whole week (a row per day for mood, energy, sleep and one kind thing, and 5 gentle habits) and opens that week's journal and the self-care menu with buttons. Start here step 3 walks through exactly this. Nothing to build yourself: every page is laid out and filled with labels."
+  },
+  {
+   "key": "fix:f_quality",
+   "kind": "fix",
+   "text": "complaint:c_quality: Every printed word, including all 52 prompts, is spell-checked before publishing, and the build checks 0 broken links, no unreachable pages and no overflowing text. Vector text stays crisp at any zoom."
+  },
+  {
+   "key": "fix:f_device",
+   "kind": "fix",
+   "text": "complaint:c_device: Plain PDF links every major note app follows, landscape pages at the tablet's own shape. The listing has a Works with and Not for box (not for phones, not Canva, not a fillable form) and says how to type with the text tool. Setup check proves the links on the buyer's own device."
+  },
+  {
+   "key": "fix:f_misleading",
+   "kind": "fix",
+   "text": "complaint:c_misleading: Every listing photo is the built file, captioned with the page name, and the description counts each page type from the built file (style rule r003): no padded page counts."
+  },
+  {
+   "key": "fix:f_basic",
+   "kind": "fix",
+   "text": "complaint:c_basic: Content, not only boxes: 52 different printed prompts, a self-care menu with 20 ideas sorted by how much time you have, a hard day plan with the smallest steps already written, and mood colors that build into a year in moods."
+  },
+  {
+   "key": "fix:f_missing",
+   "kind": "fix",
+   "text": "complaint:c_missing: Weekly plans are included (the 1-star complaint), and no extras are promised that could go missing: no stickers, no bonus files. Contents shows every section on one screen."
+  },
+  {
+   "key": "fix:f_overwhelm",
+   "kind": "fix",
+   "text": "complaint:c_overwhelm: Small on purpose: about 130 pages, one week page and one journal page a week, no daily pages to fall behind on. Start here gives 4 steps and says where to begin. The top bar never shows more than 7 buttons."
+  },
+  {
+   "key": "fix:f_setup",
+   "kind": "fix",
+   "text": "complaint:c_setup: The cover's Open planner button lands on Start here: 4 numbered steps with Go there buttons. Setup check is next: buttons that jump and come back, with a fix list if they do not. There is nothing to edit or set up before planning."
+  },
+  {
+   "key": "fix:f_nav",
+   "kind": "fix",
+   "text": "complaint:c_nav: A calm layout and few page types. Every page has month tabs, a top bar (Home, Weeks, Journal, Menu, Energy, Hard day, Moods), arrows and a trail at the top right that works as a back button; a 52-week overview opens any week in one tap, and each week's journal page sits right after it in the file."
+  },
+  {
+   "key": "fix:f_support",
+   "kind": "fix",
+   "text": "complaint:c_support: The answers live in the file and the listing: the Setup check fix list, Start here and a listing FAQ (Etsy app download, which app, links not tapping, how to type). Reply speed is shop-level, and the file promises no reply times (style rule r007)."
+  },
+  {
+   "key": "fix:f_edit",
+   "kind": "fix",
+   "text": "complaint:c_edit: Nothing to edit before use. Blank habit rows, a blank menu row in every group and write-in energy lists make it the buyer's own. Start here and the listing say how to type with the app's text tool, and that it is not a fillable form."
+  },
+  {
+   "key": "unique:u_prompts",
+   "kind": "unique",
+   "text": "A journal prompt for every week: 52 journal pages, each with its own printed prompt, linked from its week page and back, with three small good things and a kind word to myself."
+  },
+  {
+   "key": "unique:u_menu",
+   "kind": "unique",
+   "text": "Self-care menu and hard day plan: A self-care menu of ideas sorted by time (5 minutes, 15 minutes, an hour, a slow day) with blank rows to add your own, an energy map (what drains me, what fills me back up, boundaries) and a hard day plan with the smallest steps already written. Every week page has a button to the menu."
+  },
+  {
+   "key": "unique:u_small",
+   "kind": "unique",
+   "text": "Small on purpose: One week page and one journal page a week, 12 month pages and a handful of tools: about 130 linked pages, not 1,500. Nothing piles up when you skip a few days."
+  },
+  {
+   "key": "unique:u_start",
+   "kind": "unique",
+   "text": "Five-minute start and setup check: Start here (4 steps with Go there buttons) and Setup check (buttons that jump and return, with a fix list) open from the cover."
+  },
+  {
+   "key": "unique:u_anytime",
+   "kind": "unique",
+   "text": "Start any week, keep it every year: Undated weeks and months: write the dates the day you start. No year to run out, so the same file works next year too."
+  },
+  {
+   "key": "look",
+   "kind": "look",
+   "text": "Quiet dusk, not rainbow ADHD and not dark mode. Warm cream paper (#FCF8F3, soft in a dark room) with deep plum ink at about 12:1 contrast; muted text stays above 5:1. Plum buttons, peach and lavender month tabs, a honey ring on the cover and guide pages. Two fonts only: Cormorant Garamond for headings and, in italic, for labels; Nunito for body text, with bold for buttons and days. No letter-spaced capitals, no clip-art flowers or cartoon girls. Landscape, so it reads differently from our portrait planners."
+  }
+ ],
+ "shots": [
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-scp-001/shots/cover.png",
+   "anchor": "cover",
+   "module": "cover"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-scp-001/shots/energy.png",
+   "anchor": "energy",
+   "module": "checklist"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-scp-001/shots/hardday.png",
+   "anchor": "hardday",
+   "module": "checklist"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-scp-001/shots/index.png",
+   "anchor": "index",
+   "module": "index"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-scp-001/shots/jr01.png",
+   "anchor": "jr01",
+   "module": "prompt_week"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-scp-001/shots/linktest.png",
+   "anchor": "linktest",
+   "module": "link_test"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-scp-001/shots/m01.png",
+   "anchor": "m01",
+   "module": "habit_month"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-scp-001/shots/m07.png",
+   "anchor": "m07",
+   "module": "habit_month"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-scp-001/shots/menu.png",
+   "anchor": "menu",
+   "module": "checklist"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-scp-001/shots/notes.png",
+   "anchor": "notes",
+   "module": "lined"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-scp-001/shots/pixels.png",
+   "anchor": "pixels",
+   "module": "year_pixels"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-scp-001/shots/start.png",
+   "anchor": "start",
+   "module": "guide"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-scp-001/shots/w01.png",
+   "anchor": "w01",
+   "module": "log_week"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-scp-001/shots/w27.png",
+   "anchor": "w27",
+   "module": "log_week"
+  },
+  {
+   "path": "/home/claude/kairos-engine/data/products/p-scp-001/shots/weeks.png",
+   "anchor": "weeks",
+   "module": "log_week"
+  }
+ ],
+ "photos": [
+  "/home/claude/kairos-engine/data/products/p-scp-001/photos/photo-01-ph1_hero.jpg",
+  "/home/claude/kairos-engine/data/products/p-scp-001/photos/photo-02-ph2_week.jpg",
+  "/home/claude/kairos-engine/data/products/p-scp-001/photos/photo-03-ph3_journal.jpg",
+  "/home/claude/kairos-engine/data/products/p-scp-001/photos/photo-04-ph4_menu.jpg",
+  "/home/claude/kairos-engine/data/products/p-scp-001/photos/photo-05-ph5_energy_hard.jpg",
+  "/home/claude/kairos-engine/data/products/p-scp-001/photos/photo-06-ph6_month_year.jpg",
+  "/home/claude/kairos-engine/data/products/p-scp-001/photos/photo-07-ph7_apps.jpg",
+  "/home/claude/kairos-engine/data/products/p-scp-001/photos/photo-08-ph8_start.jpg",
+  "/home/claude/kairos-engine/data/products/p-scp-001/photos/photo-09-ph9_inside.jpg",
+  "/home/claude/kairos-engine/data/products/p-scp-001/photos/photo-10-how_download.jpg"
+ ],
+ "listing": "/home/claude/kairos-engine/data/products/p-scp-001/listing.json",
+ "page_modules": [
+  [
+   "cover",
+   "cover"
+  ],
+  [
+   "index",
+   "index"
+  ],
+  [
+   "start",
+   "guide"
+  ],
+  [
+   "linktest",
+   "link_test"
+  ],
+  [
+   "weeks",
+   "log_week"
+  ],
+  [
+   "w01",
+   "log_week"
+  ],
+  [
+   "jr01",
+   "prompt_week"
+  ],
+  [
+   "w02",
+   "log_week"
+  ],
+  [
+   "jr02",
+   "prompt_week"
+  ],
+  [
+   "w03",
+   "log_week"
+  ],
+  [
+   "jr03",
+   "prompt_week"
+  ],
+  [
+   "w04",
+   "log_week"
+  ],
+  [
+   "jr04",
+   "prompt_week"
+  ],
+  [
+   "w05",
+   "log_week"
+  ],
+  [
+   "jr05",
+   "prompt_week"
+  ],
+  [
+   "w06",
+   "log_week"
+  ],
+  [
+   "jr06",
+   "prompt_week"
+  ],
+  [
+   "w07",
+   "log_week"
+  ],
+  [
+   "jr07",
+   "prompt_week"
+  ],
+  [
+   "w08",
+   "log_week"
+  ],
+  [
+   "jr08",
+   "prompt_week"
+  ],
+  [
+   "w09",
+   "log_week"
+  ],
+  [
+   "jr09",
+   "prompt_week"
+  ],
+  [
+   "w10",
+   "log_week"
+  ],
+  [
+   "jr10",
+   "prompt_week"
+  ],
+  [
+   "w11",
+   "log_week"
+  ],
+  [
+   "jr11",
+   "prompt_week"
+  ],
+  [
+   "w12",
+   "log_week"
+  ],
+  [
+   "jr12",
+   "prompt_week"
+  ],
+  [
+   "w13",
+   "log_week"
+  ],
+  [
+   "jr13",
+   "prompt_week"
+  ],
+  [
+   "w14",
+   "log_week"
+  ],
+  [
+   "jr14",
+   "prompt_week"
+  ],
+  [
+   "w15",
+   "log_week"
+  ],
+  [
+   "jr15",
+   "prompt_week"
+  ],
+  [
+   "w16",
+   "log_week"
+  ],
+  [
+   "jr16",
+   "prompt_week"
+  ],
+  [
+   "w17",
+   "log_week"
+  ],
+  [
+   "jr17",
+   "prompt_week"
+  ],
+  [
+   "w18",
+   "log_week"
+  ],
+  [
+   "jr18",
+   "prompt_week"
+  ],
+  [
+   "w19",
+   "log_week"
+  ],
+  [
+   "jr19",
+   "prompt_week"
+  ],
+  [
+   "w20",
+   "log_week"
+  ],
+  [
+   "jr20",
+   "prompt_week"
+  ],
+  [
+   "w21",
+   "log_week"
+  ],
+  [
+   "jr21",
+   "prompt_week"
+  ],
+  [
+   "w22",
+   "log_week"
+  ],
+  [
+   "jr22",
+   "prompt_week"
+  ],
+  [
+   "w23",
+   "log_week"
+  ],
+  [
+   "jr23",
+   "prompt_week"
+  ],
+  [
+   "w24",
+   "log_week"
+  ],
+  [
+   "jr24",
+   "prompt_week"
+  ],
+  [
+   "w25",
+   "log_week"
+  ],
+  [
+   "jr25",
+   "prompt_week"
+  ],
+  [
+   "w26",
+   "log_week"
+  ],
+  [
+   "jr26",
+   "prompt_week"
+  ],
+  [
+   "w27",
+   "log_week"
+  ],
+  [
+   "jr27",
+   "prompt_week"
+  ],
+  [
+   "w28",
+   "log_week"
+  ],
+  [
+   "jr28",
+   "prompt_week"
+  ],
+  [
+   "w29",
+   "log_week"
+  ],
+  [
+   "jr29",
+   "prompt_week"
+  ],
+  [
+   "w30",
+   "log_week"
+  ],
+  [
+   "jr30",
+   "prompt_week"
+  ],
+  [
+   "w31",
+   "log_week"
+  ],
+  [
+   "jr31",
+   "prompt_week"
+  ],
+  [
+   "w32",
+   "log_week"
+  ],
+  [
+   "jr32",
+   "prompt_week"
+  ],
+  [
+   "w33",
+   "log_week"
+  ],
+  [
+   "jr33",
+   "prompt_week"
+  ],
+  [
+   "w34",
+   "log_week"
+  ],
+  [
+   "jr34",
+   "prompt_week"
+  ],
+  [
+   "w35",
+   "log_week"
+  ],
+  [
+   "jr35",
+   "prompt_week"
+  ],
+  [
+   "w36",
+   "log_week"
+  ],
+  [
+   "jr36",
+   "prompt_week"
+  ],
+  [
+   "w37",
+   "log_week"
+  ],
+  [
+   "jr37",
+   "prompt_week"
+  ],
+  [
+   "w38",
+   "log_week"
+  ],
+  [
+   "jr38",
+   "prompt_week"
+  ],
+  [
+   "w39",
+   "log_week"
+  ],
+  [
+   "jr39",
+   "prompt_week"
+  ],
+  [
+   "w40",
+   "log_week"
+  ],
+  [
+   "jr40",
+   "prompt_week"
+  ],
+  [
+   "w41",
+   "log_week"
+  ],
+  [
+   "jr41",
+   "prompt_week"
+  ],
+  [
+   "w42",
+   "log_week"
+  ],
+  [
+   "jr42",
+   "prompt_week"
+  ],
+  [
+   "w43",
+   "log_week"
+  ],
+  [
+   "jr43",
+   "prompt_week"
+  ],
+  [
+   "w44",
+   "log_week"
+  ],
+  [
+   "jr44",
+   "prompt_week"
+  ],
+  [
+   "w45",
+   "log_week"
+  ],
+  [
+   "jr45",
+   "prompt_week"
+  ],
+  [
+   "w46",
+   "log_week"
+  ],
+  [
+   "jr46",
+   "prompt_week"
+  ],
+  [
+   "w47",
+   "log_week"
+  ],
+  [
+   "jr47",
+   "prompt_week"
+  ],
+  [
+   "w48",
+   "log_week"
+  ],
+  [
+   "jr48",
+   "prompt_week"
+  ],
+  [
+   "w49",
+   "log_week"
+  ],
+  [
+   "jr49",
+   "prompt_week"
+  ],
+  [
+   "w50",
+   "log_week"
+  ],
+  [
+   "jr50",
+   "prompt_week"
+  ],
+  [
+   "w51",
+   "log_week"
+  ],
+  [
+   "jr51",
+   "prompt_week"
+  ],
+  [
+   "w52",
+   "log_week"
+  ],
+  [
+   "jr52",
+   "prompt_week"
+  ],
+  [
+   "menu",
+   "checklist"
+  ],
+  [
+   "energy",
+   "checklist"
+  ],
+  [
+   "hardday",
+   "checklist"
+  ],
+  [
+   "pixels",
+   "year_pixels"
+  ],
+  [
+   "m01",
+   "habit_month"
+  ],
+  [
+   "m02",
+   "habit_month"
+  ],
+  [
+   "m03",
+   "habit_month"
+  ],
+  [
+   "m04",
+   "habit_month"
+  ],
+  [
+   "m05",
+   "habit_month"
+  ],
+  [
+   "m06",
+   "habit_month"
+  ],
+  [
+   "m07",
+   "habit_month"
+  ],
+  [
+   "m08",
+   "habit_month"
+  ],
+  [
+   "m09",
+   "habit_month"
+  ],
+  [
+   "m10",
+   "habit_month"
+  ],
+  [
+   "m11",
+   "habit_month"
+  ],
+  [
+   "m12",
+   "habit_month"
+  ],
+  [
+   "notes",
+   "lined"
+  ],
+  [
+   "notes2",
+   "lined"
+  ],
+  [
+   "notes3",
+   "lined"
+  ]
+ ],
+ "line": "planner",
+ "files": [
+  "/home/claude/kairos-engine/data/products/p-scp-001/files/Tend.pdf"
+ ]
+}

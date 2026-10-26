@@ -86,7 +86,7 @@
    "points": [
     "52 different questions",
     "Lined space for your answer",
-    "One prompt for every week"
+    "A calm page to write on"
    ],
    "label": "Journal page, close up",
    "zoom": [
@@ -94,7 +94,7 @@
      "page": "jr01",
      "x": [
       0.035,
-      0.62
+      0.574
      ],
      "y": 0.07,
      "caption": "Journal, week 1"
@@ -129,21 +129,19 @@
      "page": "menu",
      "x": [
       0.035,
-      0.5
+      0.485
      ],
      "y": 0.07,
-     "caption": "Self-care menu, 5 and 15 minutes",
-     "y1": 0.62
+     "caption": "Self-care menu, 5 and 15 minutes"
     },
     {
      "page": "menu",
      "x": [
-      0.48,
+      0.487,
       0.945
      ],
-     "y": 0.07,
-     "caption": "An hour and a slow day",
-     "y1": 0.62
+     "y": 0.16,
+     "caption": "An hour and a slow day"
     }
    ],
    "captions": {
@@ -172,21 +170,19 @@
      "page": "energy",
      "x": [
       0.035,
-      0.66
+      0.636
      ],
      "y": 0.07,
-     "caption": "Energy map",
-     "y1": 0.75
+     "caption": "Energy map"
     },
     {
      "page": "hardday",
      "x": [
       0.035,
-      0.66
+      0.636
      ],
      "y": 0.07,
-     "caption": "Hard day plan",
-     "y1": 0.75
+     "caption": "Hard day plan"
     }
    ],
    "captions": {
@@ -220,7 +216,7 @@
      ],
      "y": 0.07,
      "caption": "Month page",
-     "y1": 0.66
+     "y1": 0.657
     }
    ],
    "width": 1600,
@@ -244,16 +240,17 @@
    "label": "Before you buy",
    "zoom": [
     {
-     "page": "start",
+     "page": "linktest",
      "x": [
       0.035,
-      0.945
+      0.481
      ],
      "y": 0.07,
-     "caption": "Start here"
+     "y1": 0.81,
+     "caption": "Setup check"
     }
    ],
-   "width": 1400,
+   "width": 1000,
    "size": 100,
    "captions": {
     "w01": "Week 1",
@@ -287,8 +284,8 @@
    "headline": "Working in five minutes",
    "points": [
     "4 steps with Go there buttons",
-    "Test the links on your device",
-    "A fix list if one does not jump"
+    "Start the day you buy it",
+    "Each step opens its page"
    ],
    "label": "Start here and Setup check",
    "zoom": [
@@ -299,16 +296,8 @@
       0.945
      ],
      "y": 0.07,
+     "y1": 0.684,
      "caption": "Start here"
-    },
-    {
-     "page": "linktest",
-     "x": [
-      0.035,
-      0.945
-     ],
-     "y": 0.07,
-     "caption": "Setup check"
     }
    ],
    "captions": {
@@ -323,7 +312,8 @@
     "linktest": "Setup check",
     "index": "Contents",
     "weeks": "52 weeks"
-   }
+   },
+   "width": 1600
   },
   "ph9_inside": {
    "headline": "Exactly what is inside",
@@ -341,10 +331,11 @@
       0.945
      ],
      "y": 0.056,
+     "y1": 0.64,
      "caption": "Contents"
     }
    ],
-   "width": 1500,
+   "width": 1550,
    "side": "right",
    "captions": {
     "w01": "Week 1",
@@ -386,9 +377,9 @@
   "ph4_menu": "The self-care menu shown in two close-ups: ideas for 5 and 15 minutes, and for an hour and a slow day.",
   "ph5_energy_hard": "The top of the Energy map and the Hard day plan, side by side.",
   "ph6_month_year": "Close-up of the top of a month page: how I want to feel, best and hardest day, a habit row and mood squares for each day.",
-  "ph7_apps": "Close-up of the Start here page beside a panel listing the apps and devices it works with.",
-  "ph8_start": "The top of the Start here and Setup check pages, side by side.",
-  "ph9_inside": "Close-up of the Contents page beside a list of every page type and its count.",
+  "ph7_apps": "Close-up of the Setup check buttons and fix list beside a panel listing the apps and devices it works with.",
+  "ph8_start": "Close-up of the four Start here steps, each with a Go there button.",
+  "ph9_inside": "Close-up of the Contents cards and month buttons beside a list of every page type and its count.",
   "how_download": "Three steps: download from Etsy in a web browser, import into a note app, start Week 1."
  }
 }

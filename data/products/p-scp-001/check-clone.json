@@ -1,0 +1,15 @@
+{
+ "max_text_sim": 0.213,
+ "text": {
+  "max": 0.213,
+  "closest": "2026 & 2027 ADHD Digital Planner (Dark Rainbow): Self-Care and Habit Tracker (iPad, Android)",
+  "closest_shop": "FutureADHD"
+ },
+ "max_image_sim": null,
+ "image": {
+  "status": "pending",
+  "max": null,
+  "note": "competitor photos not fetched yet (laptop worker)"
+ },
+ "pass": true
+}

@@ -474,19 +474,18 @@
   },
   {
    "id": "ph7_start",
-   "shows": "Start here and Setup check, 2 up with captions, line: 'Working in five minutes'.",
+   "shows": "Start here close up: 4 steps with Go there buttons.",
    "proves": "complaint:c_setup, complaint:c_broken, feature:quick_start, feature:test_page",
    "pages": [
-    "start",
-    "linktest"
+    "start"
    ]
   },
   {
    "id": "ph6_apps",
-   "shows": "Plain text panel beside Start here: works with Goodnotes, Notability, Samsung Notes, Xodo, Noteshelf on iPad, Android and Windows tablets; download in a web browser; not for phones; prints at actual size on Letter or A4.",
+   "shows": "Works with panel beside the Setup check buttons and fix list.",
    "proves": "complaint:c_download, complaint:c_device, complaint:c_print, wish:w_listing_info",
    "pages": [
-    "start"
+    "linktest"
    ]
   },
   {

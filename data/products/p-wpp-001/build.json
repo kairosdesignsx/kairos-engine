@@ -2,30 +2,30 @@
  "files": [
   {
    "name": "Open-Week-2027-Letter.pdf",
-   "mb": 1.45,
+   "mb": 1.46,
    "pages": 164,
    "paper": "letter"
   },
   {
    "name": "Open-Week-2027-A4.pdf",
-   "mb": 1.45,
+   "mb": 1.46,
    "pages": 164,
    "paper": "a4"
   }
  ],
- "links": 1743,
+ "links": 1741,
  "overflow": [],
  "lean": false,
  "attempts": [
   {
    "lean": false,
-   "mb": 1.45,
+   "mb": 1.46,
    "pages": 164,
    "paper": "letter"
   },
   {
    "lean": false,
-   "mb": 1.45,
+   "mb": 1.46,
    "pages": 164,
    "paper": "a4"
   }
@@ -148,6 +148,14 @@
    "head_start"
   ],
   [
+   "hsw10",
+   "head_start"
+  ],
+  [
+   "hsw10b",
+   "head_start"
+  ],
+  [
    "hs12b",
    "head_start"
   ],
@@ -188,19 +196,19 @@
    "calendar"
   ],
   [
-   "w05",
-   "calendar"
-  ],
-  [
-   "w05b",
-   "calendar"
-  ],
-  [
    "m01b",
    "calendar"
   ],
   [
    "m02",
+   "calendar"
+  ],
+  [
+   "w05",
+   "calendar"
+  ],
+  [
+   "w05b",
    "calendar"
   ],
   [
@@ -228,19 +236,19 @@
    "calendar"
   ],
   [
-   "w09",
-   "calendar"
-  ],
-  [
-   "w09b",
-   "calendar"
-  ],
-  [
    "m02b",
    "calendar"
   ],
   [
    "m03",
+   "calendar"
+  ],
+  [
+   "w09",
+   "calendar"
+  ],
+  [
+   "w09b",
    "calendar"
   ],
   [
@@ -268,19 +276,19 @@
    "calendar"
   ],
   [
-   "w13",
-   "calendar"
-  ],
-  [
-   "w13b",
-   "calendar"
-  ],
-  [
    "m03b",
    "calendar"
   ],
   [
    "m04",
+   "calendar"
+  ],
+  [
+   "w13",
+   "calendar"
+  ],
+  [
+   "w13b",
    "calendar"
   ],
   [
@@ -316,19 +324,19 @@
    "calendar"
   ],
   [
-   "w18",
-   "calendar"
-  ],
-  [
-   "w18b",
-   "calendar"
-  ],
-  [
    "m04b",
    "calendar"
   ],
   [
    "m05",
+   "calendar"
+  ],
+  [
+   "w18",
+   "calendar"
+  ],
+  [
+   "w18b",
    "calendar"
   ],
   [
@@ -356,19 +364,19 @@
    "calendar"
   ],
   [
-   "w22",
-   "calendar"
-  ],
-  [
-   "w22b",
-   "calendar"
-  ],
-  [
    "m05b",
    "calendar"
   ],
   [
    "m06",
+   "calendar"
+  ],
+  [
+   "w22",
+   "calendar"
+  ],
+  [
+   "w22b",
    "calendar"
   ],
   [
@@ -396,19 +404,19 @@
    "calendar"
   ],
   [
-   "w26",
-   "calendar"
-  ],
-  [
-   "w26b",
-   "calendar"
-  ],
-  [
    "m06b",
    "calendar"
   ],
   [
    "m07",
+   "calendar"
+  ],
+  [
+   "w26",
+   "calendar"
+  ],
+  [
+   "w26b",
    "calendar"
   ],
   [
@@ -444,19 +452,19 @@
    "calendar"
   ],
   [
-   "w31",
-   "calendar"
-  ],
-  [
-   "w31b",
-   "calendar"
-  ],
-  [
    "m07b",
    "calendar"
   ],
   [
    "m08",
+   "calendar"
+  ],
+  [
+   "w31",
+   "calendar"
+  ],
+  [
+   "w31b",
    "calendar"
   ],
   [
@@ -484,19 +492,19 @@
    "calendar"
   ],
   [
-   "w35",
-   "calendar"
-  ],
-  [
-   "w35b",
-   "calendar"
-  ],
-  [
    "m08b",
    "calendar"
   ],
   [
    "m09",
+   "calendar"
+  ],
+  [
+   "w35",
+   "calendar"
+  ],
+  [
+   "w35b",
    "calendar"
   ],
   [
@@ -532,19 +540,19 @@
    "calendar"
   ],
   [
-   "w40",
-   "calendar"
-  ],
-  [
-   "w40b",
-   "calendar"
-  ],
-  [
    "m09b",
    "calendar"
   ],
   [
    "m10",
+   "calendar"
+  ],
+  [
+   "w40",
+   "calendar"
+  ],
+  [
+   "w40b",
    "calendar"
   ],
   [
@@ -572,19 +580,19 @@
    "calendar"
   ],
   [
-   "w44",
-   "calendar"
-  ],
-  [
-   "w44b",
-   "calendar"
-  ],
-  [
    "m10b",
    "calendar"
   ],
   [
    "m11",
+   "calendar"
+  ],
+  [
+   "w44",
+   "calendar"
+  ],
+  [
+   "w44b",
    "calendar"
   ],
   [
@@ -612,19 +620,19 @@
    "calendar"
   ],
   [
-   "w48",
-   "calendar"
-  ],
-  [
-   "w48b",
-   "calendar"
-  ],
-  [
    "m11b",
    "calendar"
   ],
   [
    "m12",
+   "calendar"
+  ],
+  [
+   "w48",
+   "calendar"
+  ],
+  [
+   "w48b",
    "calendar"
   ],
   [
@@ -657,14 +665,6 @@
   ],
   [
    "w52b",
-   "calendar"
-  ],
-  [
-   "w53",
-   "calendar"
-  ],
-  [
-   "w53b",
    "calendar"
   ],
   [
@@ -718,8 +718,8 @@
   "w12b.png",
   "w27.png",
   "w27b.png",
-  "w53.png",
-  "w53b.png",
+  "w52.png",
+  "w52b.png",
   "year.png"
  ],
  "size_px": [
@@ -729,6 +729,6 @@
  "print": true,
  "product_id": "p-wpp-001",
  "brief_id": "b-p-wpp-001",
- "built_at": "2026-10-26T19:18:42Z",
+ "built_at": "2026-10-26T19:35:06Z",
  "line": "planner"
 }

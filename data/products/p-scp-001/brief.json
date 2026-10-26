@@ -483,19 +483,18 @@
   },
   {
    "id": "ph7_apps",
-   "shows": "Works with panel beside Start here.",
+   "shows": "Works with panel beside the Setup check buttons and fix list.",
    "proves": "complaint:c_download, complaint:c_device, wish:w_listing_info",
    "pages": [
-    "start"
+    "linktest"
    ]
   },
   {
    "id": "ph8_start",
-   "shows": "Start here and Setup check, 2 up.",
+   "shows": "Start here close up: 4 steps with Go there buttons.",
    "proves": "complaint:c_setup, feature:test_page",
    "pages": [
-    "start",
-    "linktest"
+    "start"
    ]
   },
   {

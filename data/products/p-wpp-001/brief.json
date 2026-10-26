@@ -83,7 +83,7 @@
   {
    "id": "f_not_useful",
    "complaint": "complaint:c_not_useful",
-   "how": "The core of the product is the thing these buyers could not find: a two-page weekly spread for all 53 weeks of 2027 plus 9 head-start weeks, Mon to Wed on the left and Thu to Sun on the right in vertical columns. Photo 1 shows the open spread, and the listing's first line says 'two pages for every week'.",
+   "how": "The core of the product is the thing these buyers could not find: a two-page weekly spread for all 52 weeks of 2027 (ISO week numbers) plus 10 head-start weeks, Mon to Wed on the left and Thu to Sun on the right in vertical columns. Photo 1 shows the open spread, and the listing's first line says 'two pages for every week'.",
    "evidence": [
     "complaint:c_not_useful",
     "complaint:c_overwhelm",
@@ -142,7 +142,7 @@
   {
    "id": "f_support",
    "complaint": "complaint:c_support",
-   "how": "The buyer can fix the common problems without waiting for a reply: the back of the Print check lists the fix for each of the five usual print problems and the settings that work, and the listing FAQ repeats them. No reply-time promise anywhere in the product or listing (r007); the last line of the fix list says what the buyer can do next: send the shop an Etsy message with a photo of the Print check sheet.",
+   "how": "The buyer can fix the common problems without waiting for a reply: the back of the Print check lists the fix for each of the five usual print problems and the settings that work, and the listing FAQ repeats them. No reply-time promise anywhere in the product or listing (r007); the last line of the fix list says what the buyer can do next: 'Still stuck? Send the shop an Etsy message.'",
    "evidence": [
     "complaint:c_support",
     "praise:p_support"
@@ -571,12 +571,12 @@
      ],
      [
       "Print one month at a time",
-      "The Print map lists the pages for every month, and each row is whole sheets. Print pages 1 to 8 once. Buying in October to December 2026? Print Head start November next; its first week begins Monday, October 26. Buying later? Print the current month's row and start this week.",
+      "Print pages 1 to 2 and 5 to 8 (you already have the check sheet). Then find today's date in the Weeks column of the Print map, print that row and start with this week. Print each next row before its first week begins. The first week is Monday, October 26, 2026.",
       "printmap"
      ],
      [
       "Punch and bind",
-      "Print each row double-sided, flip on long edge, and every week opens as a two-page spread. The binding edge is the wide margin: use a 3-hole punch, a disc punch or a binder clip. No double-sided printer? Print odd pages, put the stack back in the tray, then print even pages."
+      "Print each row double-sided, flip on long edge. Punch the wide margin: 3 holes for Letter, 2 for A4, or use a disc punch. No double-sided printer? Print odd pages, put the stack back blank side to print, top edge in first, then print even pages. Try it on the check sheet first."
      ]
     ],
     "tip": "Missed a week? Skip it and start with this one. Need extra weeks or a fresh copy? Print that month's row again, or the Spare week row, as often as you like."
@@ -590,9 +590,9 @@
      "Ruler too short or pages shrunk: set Scale to Actual size or 100% and turn off Fit to page",
      "A corner mark is missing: set paper size to match the file (Letter or A4)",
      "Back side upside down: choose Flip on long edge",
-     "No double-sided printer: print odd pages, put the stack back in the tray, then print even pages",
+     "No double-sided printer: print odd pages, reload the stack blank side to print with the top edge in first, then print even pages",
      "Too much ink: print in grayscale or draft; every page works in black and white",
-     "Still not right? Send the shop an Etsy message with a photo of this sheet"
+     "Still stuck? Send the shop an Etsy message."
     ]
    },
    {
@@ -775,6 +775,11 @@
    "at": "2026-10-27",
    "by": "build (stage 4)",
    "what": "Printed cover gets a facts row and a 'This planner belongs to' line (cover facts, owner); the Start here tip now says to reprint a month's row or the Spare week row, since a single week spread straddles two sheets."
+  },
+  {
+   "at": "2026-10-27",
+   "by": "build (stage 4), check round 1",
+   "what": "Week numbers are ISO 8601 (Week 1 = Jan 4 to 10, 2027; 52 weeks; head start now holds 10 weeks, Oct 26 to Jan 3). Print map gets a Weeks column and the start steps route by today's date (find today in the Weeks column, print that row) instead of sending every pre-2027 buyer to November; the first print skips the check sheet (pages 1 to 2 and 5 to 8). Manual duplex reload is spelled out. Habit name column widened to about 40%. On-screen arrows are labelled (Previous week, Next week) and solid buttons became outlined so nothing prints as a heavy ink block."
   }
  ]
 }

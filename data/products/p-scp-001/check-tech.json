@@ -1,0 +1,57 @@
+[
+ {
+  "name": "file size",
+  "pass": true,
+  "detail": "Tend.pdf: 3.01 MB (limit 19.5, Etsy 20)"
+ },
+ {
+  "name": "no text overflow",
+  "pass": true,
+  "detail": "none"
+ },
+ {
+  "name": "page count",
+  "pass": true,
+  "detail": "128 pages in PDF"
+ },
+ {
+  "name": "links present in PDF",
+  "pass": true,
+  "detail": "3242 link annotations for 3012 links in the source"
+ },
+ {
+  "name": "fonts licensed (OFL list only)",
+  "pass": true,
+  "detail": "fonts: ['CormorantGaramondLight-MediumItalic', 'CormorantGaramondLight-SemiBold', 'NunitoExtraLight-Bold', 'NunitoExtraLight-Regular', 'NunitoExtraLight-SemiBold']"
+ },
+ {
+  "name": "page claims match the file",
+  "pass": true,
+  "detail": "claims [128], file has 128"
+ },
+ {
+  "name": "listing photos",
+  "pass": true,
+  "detail": "10 photos, sizes [(2700, 2025)]"
+ },
+ {
+  "name": "title",
+  "pass": true,
+  "detail": "130 chars"
+ },
+ {
+  "name": "13 tags, max 20 chars",
+  "pass": true,
+  "detail": "13 tags"
+ },
+ {
+  "name": "no em dashes or emojis",
+  "pass": true,
+  "detail": "checked title and description"
+ },
+ {
+  "name": "says digital download",
+  "pass": true,
+  "detail": "download and nothing-shipped note"
+ }
+]

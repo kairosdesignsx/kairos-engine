@@ -16,13 +16,13 @@
   "time block planner"
  ],
  "price": 28,
- "description": "Any Monday is an undated digital planner for Goodnotes on iPad. Start in the month you are in, write your own dates, and keep going for a whole year. Nothing runs out on December 31.\n\nWhat's inside (452 pages in one PDF)\n- Cover, Contents and a Year overview\n- Start here page: 4 steps to get going in five minutes\n- Setup check page: buttons that jump, a pen test and a fix list\n- 12 month pages, each with a 6-row grid so every month fits, Goals this month and Notes\n- 12 monthly habit trackers (14 habits, 31 days)\n- 52 week pages: two tall columns of day boxes, This week's top 3 and Notes for the week\n- 364 day pages: Top 3, To do, Notes, Time blocks from 6am to 9pm, Good things today\n- Lists page (To buy, To try, To read or watch)\n- 6 notes pages\n\nWhat makes it different\n- Undated: start this week, in any month. When December is done, carry on with January.\n- Portrait pages in the iPad's own 3:4 shape, so the page fills the screen in Goodnotes with no blank bands at the sides.\n- Hyperlinked everywhere: month tabs down the right edge of every page, Contents and Year on the top bar, every month links to its weeks, every week to its days, and every day to the next and previous day.\n- Weeks run in order through the year, so the next-week arrow always opens the following week.\n- One file, no zip, no stickers or add-ons to import.\n- Two typefaces only, quiet ink and indigo with soft gold, large clear text.\n\nPlease note\n- Undated: you write the dates. Weeks start on Monday.\n- Portrait only. English only.\n- Handwrite with a stylus or use your app's text tool. It is not a fillable form.\n- No stickers, budget, meal or fitness sections.\n\nWorks with\nGoodnotes (made for it first), Notability, Noteshelf, Samsung Notes and Xodo on iPad and Android tablets. You need a PDF planner app. Not made for phones, e-ink tablets, or viewing in Files, Photos or a Google Drive preview.\n\nHow to start\n1. Download from Etsy in a web browser (the Etsy app cannot download digital files).\n2. Open the PDF in Goodnotes: Share, then Open in Goodnotes.\n3. Tap Open planner, follow Start here, then tap the month you are in.\n\nWhat you get\nAny-Monday.pdf (11.7 MB, 452 pages).\nDigital download. Nothing is shipped.\n\nHelp\nMessage us on Etsy and we'll help you set it up.",
+ "description": "Any Monday is an undated digital planner for Goodnotes on iPad. Start on any day of the year, write your own dates, and keep going for 52 weeks. Nothing runs out on December 31.\n\nWhat's inside (453 pages in one PDF)\n- Cover, Contents and a Year overview with blank month grids\n- Start here page: 4 steps to get going in five minutes\n- Setup check page: buttons that jump, a pen test and a fix list\n- Weeks page: all 52 weeks in one place, with a line to write each week's first date\n- 12 month pages, each with a 6-row grid so every month fits, Goals this month and Notes\n- 12 monthly habit trackers (14 habits, 31 days)\n- 52 week pages: two tall columns of day boxes, This week's top 3 and Next week\n- 364 day pages: Top 3, To do, Notes, Time blocks from 6am to 9pm, Good things today\n- Lists page (To buy, To try, To read or watch)\n- 6 notes pages\n\nWhat makes it different\n- Undated, and the weeks follow you: Week 1 is the week you start, whatever the month. Week 2 follows, then Week 3, for 52 weeks.\n- Portrait pages in the iPad's own 3:4 shape, so the page fills the screen in Goodnotes with no blank bands at the sides.\n- Hyperlinked: month tabs down the right edge of every page; Home, Year, Notes and Weeks on the top bar; every week opens its seven days; every day has large previous and next buttons, including from Sunday to the next Monday.\n- One file, no zip, no stickers or add-ons to import.\n- Two typefaces only, quiet ink and indigo with soft gold, large clear text.\n\nPlease note\n- Undated: you write the dates. Weeks start on Monday.\n- Portrait only. English only.\n- Handwrite with a stylus or use your app's text tool. It is not a fillable form.\n- No stickers, budget, meal or fitness sections.\n\nWorks with\nGoodnotes (made for it first), Notability, Noteshelf, Samsung Notes and Xodo on iPad and Android tablets. You need a PDF planner app. Not made for phones, e-ink tablets, or viewing in Files, Photos or a Google Drive preview.\n\nHow to start\n1. Download from Etsy in a web browser (the Etsy app cannot download digital files).\n2. Open the PDF in Goodnotes: Share, then Open in Goodnotes. Or in Goodnotes tap New, then Import, and choose the file.\n3. Tap Open planner, follow Start here, open Week 1 and write this Monday's date.\n\nQuick answers\n- I can't download it in the Etsy app. Etsy's app does not download digital files. Open Etsy in a web browser, go to Purchases and download from there.\n- Which app do I need? Goodnotes, Notability, Noteshelf, Samsung Notes or Xodo. Files, Photos and Google Drive previews show the pages but cannot follow links.\n- The links don't do anything. Turn the pen off (read or view mode) and tap again. The Setup check page tests this in one minute.\n- Can I type? Yes, with your app's text tool. The pages are not a fillable form.\n- How do undated weeks work? Week 1 is whichever week you start in. Write its Monday's date on the week page and on the Weeks page, then carry on with Week 2.\n\nWhat you get\nAny-Monday.pdf (12.2 MB, 453 pages).\nDigital download. Nothing is shipped.\n\nHelp\nStart with the Setup check page in the planner. Still stuck? Send the shop an Etsy message.",
  "photo_copy": {
   "ph1": {
    "headline": "Start any month. Plan all year.",
    "points": [
     "Undated, portrait, for Goodnotes",
-    "452 hyperlinked pages"
+    "453 hyperlinked pages"
    ],
    "label": "Undated planner"
   },
@@ -32,21 +32,57 @@
     "Top 3 and To do",
     "Time blocks 6am to 9pm",
     "Notes and Good things today"
-   ]
+   ],
+   "zoom": [
+    {
+     "page": "u010",
+     "x": [
+      0.03,
+      0.925
+     ],
+     "y": 0.05,
+     "y1": 0.976
+    }
+   ],
+   "width": 1100
   },
   "ph3": {
-   "headline": "52 week pages",
+   "headline": "52 weeks that follow you",
    "points": [
-    "Two tall columns of day boxes",
-    "This week's top 3 and notes"
-   ]
+    "Week 1 is the week you start",
+    "Two tall columns of day boxes"
+   ],
+   "zoom": [
+    {
+     "page": "w01",
+     "x": [
+      0.03,
+      0.925
+     ],
+     "y": 0.05,
+     "y1": 0.976
+    }
+   ],
+   "width": 1100
   },
   "ph4": {
    "headline": "Months that always fit",
    "points": [
     "6-row grid for every month",
-    "Goals, notes and week buttons"
-   ]
+    "Goals, notes and all weeks"
+   ],
+   "zoom": [
+    {
+     "page": "m01",
+     "x": [
+      0.03,
+      0.925
+     ],
+     "y": 0.05,
+     "y1": 0.976
+    }
+   ],
+   "width": 1100
   },
   "ph5": {
    "headline": "Ready in five minutes",
@@ -74,40 +110,54 @@
    "points": [
     "Year overview",
     "12 monthly habit trackers"
+   ],
+   "zoom": [
+    {
+     "page": "year",
+     "x": [
+      0.03,
+      0.925
+     ],
+     "y": 0.05
+    },
+    {
+     "page": "m01h",
+     "x": [
+      0.03,
+      0.925
+     ],
+     "y": 0.05
+    }
    ]
   },
   "ph9": {
-   "headline": "What you get",
-   "points": [
-    "One PDF, 452 pages, 11.7 MB",
-    "Undated, portrait, English only",
-    "Download on Etsy in a web browser"
-   ]
+   "headline": "How it works",
+   "label": "Instant digital download"
   }
  },
  "how_steps": [
   [
    "Download",
-   "Download from Etsy in a web browser. The Etsy app cannot download digital files."
+   "On Etsy in a web browser, not the Etsy app. Go to Purchases."
   ],
   [
    "Open",
-   "Open the PDF in Goodnotes with Share, then Open in Goodnotes, or in another PDF planner app."
+   "In Goodnotes: Share, then Open in Goodnotes, or New, then Import."
   ],
   [
    "Start",
-   "Tap Open planner, follow Start here, then tap the month you are in."
+   "Tap Open planner, open Week 1 and write this Monday's date."
   ]
  ],
  "alt": {
   "ph1": "Cover of the Any Monday undated planner on a tablet, with the top of a day page behind it.",
-  "ph2": "Undated portrait day page with Top 3, To do, Notes, time blocks from 6am to 9pm and Good things today.",
-  "ph3": "Week page with two columns of day boxes, This week's top 3 and Notes for the week.",
-  "ph4": "January month page with a blank six-row grid, Goals this month, Notes and buttons for weeks 1 to 4.",
+  "ph2": "Close-up of an undated day page with Top 3, To do, Notes and time blocks from 6am.",
+  "ph3": "Close-up of the Week 1 page with two columns of day boxes, Monday to Sunday.",
+  "ph4": "Close-up of the January month page with a blank six-row grid, Goals this month and an All weeks button.",
   "ph5": "Start here page with four numbered steps and a grid of all twelve months.",
   "ph6": "Setup check page with three link buttons, a fix list, a top bar map and a pen test box.",
   "ph7": "Contents page with section cards and a grid of all twelve months.",
-  "ph8": "Year overview with twelve mini calendars of blank boxes to write the dates in, beside a January habit tracker.",
-  "ph9": "Contents page beside a summary: one PDF of 452 pages, undated, portrait, downloaded on Etsy in a web browser."
+  "ph8": "Close-ups of the year overview with blank mini calendars and a January habit tracker.",
+  "ph9": "Three steps: download on Etsy in a web browser, open in Goodnotes, open Week 1 and write the date."
  }
 }
