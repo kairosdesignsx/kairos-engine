@@ -1,35 +1,176 @@
-{"items": [
- {"key": "must:mh_dated", "found": true, "where": "year, m01-m12, w01-w52, d0101-d1231 (PDF link annotations)", "note": "Monday-start 2027 grids; PDF check: year page has 365 day links, every month links all its days and weeks, every week links its days (w52 links the 5 dates in 2027), all 432 day pages have correct prev/next; 0 unresolved links, 533/533 pages reachable from cover."},
- {"key": "must:mh_multi_year", "found": true, "where": "hs11, hs12, hsw01-hsw10, hs1026-hs1231; start jump grid; year 'Starting in 2026? Head start' button", "note": "Nov and Dec 2026 month pages, 10 head start weeks (Oct 26 to Jan 3) and 67 day pages, all linked; hs1231 next goes to d0101; Oct 26 cell on hs11 opens hs1026."},
- {"key": "must:mh_apps", "found": true, "where": "files/Lights-Low-2027.pdf; listing description 'Works with'", "note": "One 768x576 pt (4:3) landscape PDF, only GoTo link annotations (no JavaScript, no form fields); listing names Goodnotes first plus Notability, Noteshelf, Samsung Notes, Xodo. Not tested inside the apps."},
- {"key": "must:mh_core", "found": true, "where": "year, goals, m01-m12, m01h-m12h, w01-w52, d pages, notes-notes6", "note": "Year at a glance, 2027 goals table, 12 month pages, 12 habit trackers (m01h rendered from PDF: 14 habit rows x 31 days), 52 weeks, 365 days, 6 notes pages."},
- {"key": "must:mh_look", "found": true, "where": "all shots and PDF renders; pdffonts", "note": "Navy #1B1F2B pages, PDF embeds only LibreBaskerville (Bold, Italic) and Outfit (Regular, Medium, SemiBold); consistent grid; tabs run periwinkle to tan/amber, though inactive tabs are dimmed to mid-tones (see visual)."},
- {"key": "must:mh_guide", "found": true, "where": "start, linktest, index ('How the links work')", "note": "Start here has 4 steps incl. 'Choose a light pen'; Setup check page; How the links work note on Contents; Tip box on Start here about pen off/on and white text color."},
- {"key": "fix:f_download", "found": true, "where": "files/ (one PDF, 13.49 MB); listing 'How to start'; photo-09; start step 1", "note": "Single PDF, no zip, 13.49 MB (listing says 13.5 MB); listing and photo 9 give browser download (Etsy app cannot), Share then Open in Goodnotes; Start here step 1 repeats it. Photo 9 shows Download/Open/Start, no separate 'buy' step."},
- {"key": "fix:f_setup", "found": true, "where": "cover 'Open planner' -> start; start; linktest", "note": "Open planner link lands on start (verified in PDF); 4 steps exactly as briefed with jump grid Nov 2026 to Dec 2027 under them; Go there -> linktest with 3 jump buttons and pen test box; nothing to assemble."},
- {"key": "fix:f_device", "found": true, "where": "PDF page size; listing 'Works with'", "note": "Pages 768x576 pt = 1024x768 px, 4:3; all tabs and dates are plain GoTo links; listing lists the five apps and says not for phones, e-ink tablets, Files, Photos or Google Drive preview (the 'dark pages waste e-ink' reason is not given)."},
- {"key": "fix:f_hard", "found": true, "where": "d0101, d0115, d0502, d0831, hs1026; w01, w03, w27, hsw02", "note": "Every day page identical: Top 3, Work, Home left; Time blocks 6am-10pm and Tomorrow right (five boxes, the brief says six but lists five); week pages identical; Home/Year/Goals/Notes top bar on every page except the cover."},
- {"key": "fix:f_nav", "found": true, "where": "tabs on all 533 pages; year; m pages; w pages; day trails", "note": "12 tab links on every page; ISO weeks (w01 = Jan 4 to 10); day pages have large prev/next plus linked Month / Week trail; hsw10 (Dec 28 to Jan 3) is the last head start week. hsw01 is filed under November although its Thursday is Oct 29 (deliberate, no October page)."},
- {"key": "fix:f_misleading", "found": true, "where": "photos 1-8; listing description", "note": "Photos 2-8 are crops of real pages captioned Day page, Week page, Month page, Start here, Setup check, Contents, Head start week; description lists counts and states dark only, landscape, Monday start, Oct 26 2026 to Dec 31 2027, no stickers, handwrite or text tool, English only. Photo 9 is a text graphic, not a screenshot."},
- {"key": "fix:f_broken", "found": true, "where": "linktest; PDF link audit", "note": "Three buttons (A month page -> m01, The year -> year, Contents -> index), pen test box, four-line 'Nothing happened?' list; my audit: 11878 links, 0 unresolved, every page reachable from the cover."},
- {"key": "fix:f_support", "found": true, "where": "linktest fix list; start; listing 'Quick answers' and 'Help'", "note": "Listing FAQ covers Etsy app download, which app, links not tapping, writing/typed text not showing (light color), no light version; Help says use Setup check then send an Etsy message; no reply time promised (r007 ok)."},
- {"key": "fix:f_not_useful", "found": true, "where": "photo-02, photo-03; listing 'Please note'", "note": "Day and week pages shown in photos 2 and 3 (readable when zoomed, small at normal view, see visual); listing says no stickers, budget, meal or fitness sections and no light version."},
- {"key": "fix:f_value", "found": false, "where": "listing; d pages; photo-02", "note": "Dates, a page for every day, half-page time blocks and per-day lined week boxes are all there, but photo 2 is not a close-up: it is the whole day page (91% x 91% crop) at about 1.9 photo px per page px, roughly 0.9x the iPad retina size, not about 1.5x."},
- {"key": "unique:u_dark", "found": true, "where": "all pages; start step 3", "note": "Background #1B1F2B, main text #F6F3FB at 14.98:1 (secondary #D2CFE2 at 10.8:1), designed dark; Start here says pick white or a pale pen. Amber shows only in the tab gradient's warm end and active late-year tabs."},
- {"key": "unique:u_work_home", "found": true, "where": "d0115, d0831; w03, w27; photo-02, photo-03", "note": "Top 3, Work, Home left, hourly 6am-10pm blocks and Tomorrow right on every day; week pages have This week's focus, Wins, Next week."},
- {"key": "unique:u_setup_check", "found": true, "where": "linktest; photo-06", "note": "Jump buttons to a month, the year and Contents (verified targets), lined pen test box, 'Nothing happened?' fix list."},
- {"key": "look", "found": true, "where": "PDF renders at 384 dpi, measured", "note": "Measured in the PDF: text and labels 7.75 to 14.98:1, month tab text 7.55 (Jan) to 8.01 (Dec):1, Contents month tile text 8.8 to 9.0:1, dimmed fill dates 3.72:1 (the allowed exception); two families, italic labels, no tracked caps. 'Amber accents like a desk lamp' are barely present inside the file (see visual)."}
-],
-"visual": [
- {"issue": "Photos 2, 3, 4 and 8 show the whole page (crop 3% to 94.5% wide, 6% to 97% high) shrunk into 65% of the photo, not the useful part large (r013). The smallest labels (time blocks, weekday headers, week chips) are about 13 px tall in the 2700 px photo, so they cannot be read at Etsy's normal size. Photo 2 also fails the brief's '1.5x close-up' promise.", "where": "photo-02-ph2.jpg, photo-03-ph3.jpg, photo-04-ph4.jpg, photo-08-ph8.jpg", "severity": "medium"},
- {"issue": "The Nov and Dec month tabs on the cover, Contents, Start here, Year and every 2027 page open November and December 2027. A buyer in Nov or Dec 2026 who taps 'Nov' lands a year ahead. The 2026 tabs appear only on head start pages.", "where": "cover, index, start, year, all m/w/d pages (tabs at y 0-96 pt)", "severity": "medium"},
- {"issue": "Amber accents are almost absent inside the file. Amber appears only as the warm end of the tab gradient and the active tab on Oct to Dec pages, so January to September pages are navy and lavender only. Yet the listing says 'amber accents' and every photo has amber bullet dots, which are part of the photo template, not the file.", "where": "d0101, w03, m01, year; listing 'What makes it different'", "severity": "low"},
- {"issue": "Inactive month tabs are dimmed to mid-tones: Jan #ABB2D0, May #B6B3BA, Jul #BCB4AF, Dec #CAB693. The May to Jul tabs look flat grey rather than 'pale periwinkle to pale amber'. The 2027 month tiles on Contents also fade to a muddy grey-brown (#464444). Contrast still passes.", "where": "tabs on all pages; index month tiles", "severity": "low"},
- {"issue": "Photo 1's only caption is 'Cover', but the frame also shows a day page on a second tablet with its tabs half covered. The point 'dated 2027' leaves out the head start from October 2026.", "where": "photo-01-ph1.jpg", "severity": "low"},
- {"issue": "The Start here crop stops above the jump grid, but step 4 in the frame says 'Tap this month below'.", "where": "photo-05-ph5.jpg", "severity": "low"},
- {"issue": "The left crop edge (x 0.03) touches or clips the descender of the 'J' in 'January'. The bottom borders of the boxes sit right on the frame edge.", "where": "photo-02-ph2.jpg, photo-04-ph4.jpg", "severity": "low"},
- {"issue": "The Oct 26 to Nov 1 day pages show 'October 2026' in the trail, but tapping it opens the November 2026 month page. The first head start week is filed under November although its Thursday (Oct 29) falls in October.", "where": "hs1026-hs1031 trail; hsw01", "severity": "low"},
- {"issue": "The bottom 15% of each Lists column is blank. The Setup check left column has an empty band under the fix list, about 17% of the page height (r006, minor).", "where": "lists, linktest", "severity": "low"},
- {"issue": "The Contents card title 'Head start: Oct 26 to Dec 2026' breaks after 'Oct' onto two lines, while every other card title fits on one line.", "where": "index; photo-07-ph7.jpg", "severity": "low"},
- {"issue": "Photo 9 is a text graphic, not a screenshot of the file, which goes against the brief's 'every listing photo is a screenshot of the built file'. The brief itself also calls photo 9 'How it works'.", "where": "photo-09-ph9.jpg", "severity": "low"}
-]}
+{
+ "items": [
+  {
+   "key": "must:mh_dated",
+   "found": true,
+   "where": "year, m01-m12, w01-w52, d0101-d1231 (PDF links)",
+   "note": "PDF: year page links all 365 days; each month links its weeks and every date; each week links its 7 days; day prev/next chain verified across all 432 day pages with 0 errors; Monday-start grids."
+  },
+  {
+   "key": "must:mh_multi_year",
+   "found": true,
+   "where": "hs11, hs12, hsw01-hsw10, hs1026-hs1231",
+   "note": "Head start has Nov and Dec 2026 month pages, 10 weeks from Oct 26 and 67 day pages; Oct 26-31 have no October month page and sit under November (said in listing and Start here)."
+  },
+  {
+   "key": "must:mh_apps",
+   "found": true,
+   "where": "files/Lights-Low-2027.pdf; listing 'Works with'",
+   "note": "One landscape PDF (768x576 pt = 1024x768); listing names Goodnotes first, then Notability, Noteshelf, Samsung Notes, Xodo on iPad and Android tablets."
+  },
+  {
+   "key": "must:mh_core",
+   "found": true,
+   "where": "year, goals, m01-m12, m01h-m12h, w01-w52, d-pages, notes-notes6",
+   "note": "All present: year at a glance, 2027 goals, 12 months, 12 habit trackers (each month page has a Habit tracker button), 52 weeks, 365 days, 6 notes pages."
+  },
+  {
+   "key": "must:mh_look",
+   "found": true,
+   "where": "all pages; pdffonts",
+   "note": "Embedded fonts are only Libre Baskerville (Bold, Italic) and Outfit; consistent dark layout; tabs run from periwinkle (169,175,205) to amber-tan (200,179,144)."
+  },
+  {
+   "key": "must:mh_guide",
+   "found": true,
+   "where": "start, linktest, index 'How the links work'",
+   "note": "Start here (4 steps incl. light pen), Setup check page, and a How the links work note on Contents plus a pen-off tip on Start here."
+  },
+  {
+   "key": "fix:f_download",
+   "found": true,
+   "where": "files/; listing 'How to start'; photo-09-ph9.jpg; start step 1",
+   "note": "Single PDF, 13.78 MB; listing and photo 9 give download in a web browser (not the Etsy app) and Share, then Open in Goodnotes; Start here step 1 repeats it."
+  },
+  {
+   "key": "fix:f_setup",
+   "found": true,
+   "where": "cover -> start -> linktest",
+   "note": "Cover's only link, Open planner, opens Start here: 4 steps (open, check links, light pen, start today) over a 14-month jump grid; Setup check has 3 jump buttons and a pen test box; nothing to assemble."
+  },
+  {
+   "key": "fix:f_device",
+   "found": true,
+   "where": "PDF page size; listing 'Works with'",
+   "note": "Pages 768x576 pt (4:3); all links are plain GoTo links (12,411, 0 broken); listing says not for phones, e-ink tablets, Files, Photos or Google Drive preview."
+  },
+  {
+   "key": "fix:f_hard",
+   "found": true,
+   "where": "all day and week pages",
+   "note": "Every day page has the same Top 3/Work/Home left and Time blocks 6am-10pm/Tomorrow right; week pages share one layout; Home/Year/Goals/Notes bar is on all 532 pages after the cover."
+  },
+  {
+   "key": "fix:f_nav",
+   "found": true,
+   "where": "rail on all pages; year; m-pages; w-pages; day trails",
+   "note": "Tabs on every page, year dates open days, months list weeks, weeks link 7 days, big prev/next and Month/Week trail; ISO weeks (w01 = Jan 4). One deviation: hsw01 (Thursday Oct 29) is filed under November, since there is no October page."
+  },
+  {
+   "key": "fix:f_misleading",
+   "found": true,
+   "where": "photos 1-8; listing description",
+   "note": "Photos 1-8 are crops of the built pages with page-name captions (photo 9 is How it works, as the brief asks); the description gives counts per page type and every 'plainly says' point."
+  },
+  {
+   "key": "fix:f_broken",
+   "found": true,
+   "where": "linktest; PDF link graph",
+   "note": "Setup check: 3 buttons (m01, year, index), a pen test box and a 4-line Nothing happened? list. My own check: 12,411 links, 0 broken, all 533 pages reachable from the cover."
+  },
+  {
+   "key": "fix:f_support",
+   "found": true,
+   "where": "listing 'Quick answers' and 'Help'; linktest; start",
+   "note": "FAQ covers the Etsy app download, which app, links not tapping, light/typed text color and no light version; Help says Setup check then Etsy message; no reply-time promise."
+  },
+  {
+   "key": "fix:f_not_useful",
+   "found": true,
+   "where": "photo-02-ph2.jpg, photo-03-ph3.jpg; listing 'Please note'",
+   "note": "Real day and week page crops, readable; listing says no budget, meal or fitness sections and no light version."
+  },
+  {
+   "key": "fix:f_value",
+   "found": false,
+   "where": "photo-02-ph2.jpg; d0115",
+   "note": "Writing room and 14 months are there, but photo 2 is not a 1.5x close-up: crop is 70.5% of page width (722 px) in a 1750 px frame = 2.42 photo px per page px; the full 2700 px photo on the same screen shows the page at about 0.92x its on-screen size (only 1.42x even against a whole page in the same frame). For about 1.5x: about 2400 px frame with crop x 0.015-0.62, or crop to about 44% of the page width."
+  },
+  {
+   "key": "unique:u_dark",
+   "found": true,
+   "where": "all pages; start step 3",
+   "note": "Paper is (27,31,43) = #1B1F2B, ink (246,243,251), contrast 14.98:1, amber accents; Start here step 3 says to pick white, pale gray or a light pen color."
+  },
+  {
+   "key": "unique:u_work_home",
+   "found": true,
+   "where": "d-pages, w-pages",
+   "note": "Day: Top 3, Work, Home left; Time blocks 6am-10pm and Tomorrow right. Week: This week's focus, Wins, Next week."
+  },
+  {
+   "key": "unique:u_setup_check",
+   "found": true,
+   "where": "linktest",
+   "note": "Buttons to a month (January), the year and Contents; a large pen test box; a Nothing happened? fix list."
+  },
+  {
+   "key": "look",
+   "found": true,
+   "where": "all shots and PDF renders",
+   "note": "Navy paper, light ink, amber accents, landscape; Baskerville headings and italic labels, Outfit body, no tracked caps; tabs 7.3-7.8:1, 2027 tiles about 8.8-9:1, dimmed outside-month dates 3.72:1, as specified."
+  }
+ ],
+ "visual": [
+  {
+   "issue": "Head start trail label is wrong for October dates: the day pages for Oct 26 to 31 and week 1 read 'November 2026 / Oct 26 to Nov 1', although those days are in October. Rule r008 says day pages name their own month, and the 2027 pages do this (d0101 reads 'January / Dec 28 to Jan 3'). An Oct 26-31 buyer meets this label on day one. No tab is highlighted on these six day pages either.",
+   "where": "hs1026-hs1031, hsw01 (top-right trail)",
+   "severity": "medium"
+  },
+  {
+   "issue": "Photo 2 is not the promised 1.5x close-up of the day page. Viewed on the same screen it shows the page at about 0.92x its on-screen size (2.42 photo px per page px vs 2.64 for a full-width page).",
+   "where": "photo-02-ph2.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "Rail link rects are not strictly inside the page box: on all 533 pages the top 2026 tab link runs to y=576.06 pt on a 576 pt page (0.06 pt over). The Jun and Jul tab links also overlap by 0.75 pt. A buyer cannot see this, but it is outside the box.",
+   "where": "every page, month tab rail",
+   "severity": "low"
+  },
+  {
+   "issue": "Ruled lines are hairlines at sub-pixel width, so their weight changes from page to page. Tomorrow lines vanish at 1x (96 dpi) on 214 of 432 day pages, and Wins/Next week lines vanish on 32 of 62 week pages; at 2x they draw at 1 px on those pages and 2 px on the others.",
+   "where": "e.g. d0113, d0115, hs1101, hsw10 vs hs1026, hsw01",
+   "severity": "low"
+  },
+  {
+   "issue": "Photo 4's small text: date digits about 17 px and the 'Week 1-4' buttons about 13 px cap height on a 2700 px photo. They are readable at Etsy full-screen zoom but tiny in the gallery. The frame fills only the middle third of the photo, and the top third is empty.",
+   "where": "photo-04-ph4.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "On head start pages the Jan-Oct tabs are 2027 months with no year, next to 'Nov 2026'/'Dec 2026'. A late-October buyer tapping 'Oct' gets October 2027. Nov and Dec 2027 cannot be reached by tab from these pages.",
+   "where": "rail on hs* and hsw* pages (79 pages)",
+   "severity": "low"
+  },
+  {
+   "issue": "The Contents card title breaks awkwardly as 'Head start: Oct / 26 to Dec 2026', with tight leading.",
+   "where": "index, photo-07-ph7.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "Photo 8's alt text says 'November 2026', but the frame shows only 'Nov 2 to Nov 8' with no year (r013: alt text describes only what is in frame).",
+   "where": "photo-08-ph8.jpg alt",
+   "severity": "low"
+  },
+  {
+   "issue": "Photo 2: the '7pm' label sits right against the bottom edge of the frame.",
+   "where": "photo-02-ph2.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "The bottom fifth of each Lists column is empty, and the Setup check left column is empty below the fix list.",
+   "where": "lists, linktest",
+   "severity": "low"
+  }
+ ]
+}
