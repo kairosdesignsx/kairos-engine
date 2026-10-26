@@ -7,18 +7,7 @@
   }
  ],
  "links": 3012,
- "overflow": [
-  [
-   "start",
-   "page",
-   5
-  ],
-  [
-   "start",
-   "box: Tip",
-   6
-  ]
- ],
+ "overflow": [],
  "lean": false,
  "attempts": [
   {
@@ -564,6 +553,6 @@
  ],
  "product_id": "p-scp-001",
  "brief_id": "b-scp-001",
- "built_at": "2026-10-26T19:25:32Z",
+ "built_at": "2026-10-26T19:26:05Z",
  "line": "planner"
 }

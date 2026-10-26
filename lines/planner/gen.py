@@ -1091,7 +1091,7 @@ def m_log_week(P, sec):
     ncol = 4 if portrait else 8
     cards = ''
     for n in range(1, N + 1):
-        tag = f'<span style="font:600 {P.fs(10.5)} \'{th["body"]}\';color:{th["accent"]}">{esc(mark_l)}</span>' if (mark and n % mark == 0) else ''
+        tag = f'<span style="font:600 {P.fs(10.5)} \'{th["body"]}\';color:{th["accent"]}">{esc(mark_l)}</span>' if (mark > 1 and n % mark == 0) else ''  # every-week buttons are not marked on the overview
         bg = f'background:{th["paper"]};border-color:{th["line"]}' if P.gray else f'background:{P.tint(((n - 1) // 4) % 12, "30")};border-color:transparent'
         cards += (f'<a href="#{wid(n)}" class="box" style="padding:6px 10px;gap:2px;justify-content:space-between;{bg}">'
                   f'<span style="display:flex;justify-content:space-between;align-items:baseline;gap:4px"><b style="font:700 {P.fs(13.5)} \'{th["body"]}\'">Week {n}</b>{tag}</span>'

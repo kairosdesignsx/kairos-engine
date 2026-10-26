@@ -1,0 +1,197 @@
+{
+ "items": [
+  {
+   "key": "must:mh_goodnotes",
+   "found": true,
+   "where": "listing.title, listing.description, start",
+   "note": "Goodnotes is the first app in the title and description and step 1 on Start here; all 10019 links in the PDF are plain internal /Dest links (no URI or JS). Other apps not device-tested."
+  },
+  {
+   "key": "must:mh_any_year",
+   "found": true,
+   "where": "page_modules, m01, w01, u010, year",
+   "note": "Undated: 12 month pages, 52 week pages, 364 day pages (452 pages total, matches listing); dates are blank to write in. But weeks are fixed to months 4-4-5, which does not match real years (see visual)."
+  },
+  {
+   "key": "must:mh_linked",
+   "found": false,
+   "where": "u016, u046, u436 (PDF links)",
+   "note": "Contents, Year, tabs, month to weeks, week to days and trails all work, but day to day stops at week edges: 51 Sundays have no next-day link and 51 Mondays no previous-day link (e.g. u016 links only to u015)."
+  },
+  {
+   "key": "must:mh_core",
+   "found": true,
+   "where": "year, m01, m01h, w01, u010, lists, notes",
+   "note": "Year overview, month pages with Goals this month and Notes, habit tracker per month (m01h shot, m02h to m12h in page_modules only), 52 weeks, 364 days with Top 3, To do, Time blocks, Notes, Lists and notes 1 to 6."
+  },
+  {
+   "key": "must:mh_look",
+   "found": true,
+   "where": "all shots; PDF font list",
+   "note": "Embedded fonts are only Cormorant Garamond and Manrope; spacing is consistent; tabs go from periwinkle (#A1ABD9) to soft gold (#E5CD96), more muted lavender than true indigo."
+  },
+  {
+   "key": "must:mh_guide",
+   "found": true,
+   "where": "start, linktest, index",
+   "note": "Start here with 4 steps, Setup check page, and a 'How the links work' box on Contents, all inside the file."
+  },
+  {
+   "key": "fix:f_download",
+   "found": false,
+   "where": "listing.description, listing.how_steps, photo-09-ph9.jpg, start",
+   "note": "One 11.7 MB PDF and Start here repeats the steps. But photo 9 shows only 'Download on Etsy in a web browser', not the three steps, and the listing leaves out the Goodnotes > New > Import route."
+  },
+  {
+   "key": "fix:f_setup",
+   "found": true,
+   "where": "cover, start, linktest",
+   "note": "Open planner links to Start here (4 steps that match the brief, with a 12-month grid). Setup check is the next page, with jump buttons and a pen test box. No add-ons."
+  },
+  {
+   "key": "fix:f_device",
+   "found": true,
+   "where": "PDF mediabox, listing.description 'Works with', linktest",
+   "note": "All 452 pages are 576x768 pt (3:4, 768x1024 px at 96 dpi). The listing has a Works with / Not made for paragraph with the right apps and exclusions. Setup check is present."
+  },
+  {
+   "key": "fix:f_hard",
+   "found": true,
+   "where": "u010, u182, u354, w01, w27",
+   "note": "The day pages have the same five boxes in the same places, the week pages share one two-column layout, and Home, Year, Lists and Notes are on every top bar."
+  },
+  {
+   "key": "fix:f_nav",
+   "found": false,
+   "where": "m10, w43, u010, u016 (PDF links)",
+   "note": "Month tabs, week buttons, week to 7 days, the trail and in-order week numbers (Jan 1 to 4, Mar 9 to 13, Dec 48 to 52) all work, but Mondays have no previous arrow and Sundays have no next arrow, so 'previous and next arrows' only holds inside a week."
+  },
+  {
+   "key": "fix:f_misleading",
+   "found": true,
+   "where": "photos 1-9 captions, listing.description",
+   "note": "Every photo is a screenshot of the built file with the page name as its caption. The description has counts plus undated, Monday start, portrait only, no stickers, handwrite or text tool, English only. It also wrongly says 'every day to the next and previous day'."
+  },
+  {
+   "key": "fix:f_broken",
+   "found": true,
+   "where": "linktest; PDF link check",
+   "note": "Three jump buttons (month, year, Contents) and the four-line Nothing happened? list match the brief. All link targets resolve and all 452 pages can be reached from the cover."
+  },
+  {
+   "key": "fix:f_support",
+   "found": false,
+   "where": "listing.description",
+   "note": "There is no listing FAQ. Links not tapping (pen off) is not covered in the listing at all, and the Help line promises 'we'll help you set it up', which breaks r007."
+  },
+  {
+   "key": "fix:f_not_useful",
+   "found": false,
+   "where": "photo-02-ph2.jpg, photo-03-ph3.jpg, photo-04-ph4.jpg, listing.description",
+   "note": "Undated, and the listing names what is not inside (no budget, meal or fitness). But the day, week and month photos show whole pages shrunk to about half the photo height, so they are not readable at Etsy's zoom."
+  },
+  {
+   "key": "fix:f_value",
+   "found": false,
+   "where": "u010, w01, photo-02-ph2.jpg",
+   "note": "Half of the day page is Time blocks and Good things. Each weekday gets its own lined box. Nothing goes out of date. But photo 2 shows the whole day page shrunk, not at real size, and the 1.1 text scale cannot be checked."
+  },
+  {
+   "key": "unique:u_start_any_month",
+   "found": true,
+   "where": "start, index, m01, m07",
+   "note": "Start here step 3 and the month grid jump straight to any month. Month grids are 6 rows x 7 (42 boxes). The fixed weeks-per-month split breaks this for many real months (see visual)."
+  },
+  {
+   "key": "unique:u_fills_ipad",
+   "found": true,
+   "where": "PDF mediabox, w01, w27",
+   "note": "All pages are 3:4 portrait. The week page has Mon to Thu on the left, Fri to Sun and Notes on the right, with This week's top 3 and Notes for the week underneath."
+  },
+  {
+   "key": "unique:u_setup_check",
+   "found": true,
+   "where": "linktest",
+   "note": "Jump buttons to a month, the year and Contents, a lined pen test box, the Nothing happened? fix list and a 'Where things are: the top bar' map."
+  },
+  {
+   "key": "unique:u_time_blocks",
+   "found": true,
+   "where": "u010, u182, u354",
+   "note": "Hourly lines from 6am to 9pm (16 rows) next to Top 3 on every day page screenshot."
+  },
+  {
+   "key": "look",
+   "found": true,
+   "where": "all shots; sampled colors",
+   "note": "The background is #FBF9F4 ivory with dark ink. Cormorant is used for headings and italic labels, Manrope for body text. Tabs run from lavender-indigo to gold, with no tracked all-caps. The cover uses a cool #ECEEF6 instead of ivory."
+  }
+ ],
+ "visual": [
+  {
+   "issue": "Weeks are fixed to months 4-4-5 (Jan w1-4, Mar w9-13, Oct w40-43...), so they rarely match a real calendar. Today's buyer: the week of Oct 26 to Nov 1 2026 (Thursday Oct 29) is October's 5th week, but October only has Weeks 40 to 43, so this week is only Week 44, filed under November with a 'November' trail and tab. The drift comes back through the year (Mar 2027 has 4 weeks vs 5 pages, Apr 2027 has 5 vs 4). Start here step 3 also says to open the month's 'first week', which for a mid-month buyer is weeks in the past, and nothing says how to find the current week. Breaks the day-one walk in r002/r014.",
+   "where": "start (step 3, Tip), m10 week buttons, w44 trail, u44x trails",
+   "severity": "high"
+  },
+  {
+   "issue": "Day-to-day arrows stop at week edges: 51 Sundays have no next-day arrow and 51 Mondays no previous-day arrow (e.g. u016 links only to u015, u040 has no link to u036), yet the listing says 'every day to the next and previous day' (r003).",
+   "where": "u0x6 / u0x0 day pages; listing.description 'Hyperlinked everywhere'",
+   "severity": "medium"
+  },
+  {
+   "issue": "Promise wording breaks r007: listing ends with 'Help: Message us on Etsy and we'll help you set it up.' It should say what the buyer can do (Setup check fix list, then send an Etsy message), not promise help.",
+   "where": "listing.description (Help)",
+   "severity": "medium"
+  },
+  {
+   "issue": "Photos 2, 3 and 4 show a whole page shrunk inside a tablet frame (the page is about half the photo height), and photo 8 shows two pages at about a third of the height. Box labels, time-block hours and habit day numbers will not be readable at Etsy's zoom (r013). The bottom 20% or more of each photo is empty.",
+   "where": "photo-02-ph2.jpg, photo-03-ph3.jpg, photo-04-ph4.jpg, photo-08-ph8.jpg",
+   "severity": "medium"
+  },
+  {
+   "issue": "Photo 9 reuses the same Contents screenshot as photo 7, and it does not show the three download steps (buy, download in a browser, open in Goodnotes) that the brief assigns to it.",
+   "where": "photo-09-ph9.jpg vs photo-07-ph7.jpg",
+   "severity": "medium"
+  },
+  {
+   "issue": "Previous and next arrows are tiny tap targets, about 11 x 15 pt each and only 3 pt apart (rects [500,680,510,695] and [513,680,524,695]), so they are easy to miss or mis-tap with a finger on day, week and notes pages.",
+   "where": "w27, u182, u354, notes (top right arrows)",
+   "severity": "medium"
+  },
+  {
+   "issue": "The Contents 'Habit trackers' card only opens January's tracker, and tracker pages have no link to other months' trackers, so an October starter lands on January.",
+   "where": "index, m01h",
+   "severity": "low"
+  },
+  {
+   "issue": "Cormorant old-style figure 1 in the week title reads like a small-cap I ('Week I'), also in photo 3.",
+   "where": "w01, photo-03-ph3.jpg",
+   "severity": "low"
+  },
+  {
+   "issue": "A stray gold strip touches the top edge at top right, but only on the cover, Contents and Start here. It looks like a leftover element.",
+   "where": "cover, index, start, photos 1/5/7/9",
+   "severity": "low"
+  },
+  {
+   "issue": "On Setup check, the eyebrow 'Setup check' repeats the title, the top-bar map rows have large empty gaps above each line, and 'Year: Calendar' does not say it opens Year at a glance.",
+   "where": "linktest",
+   "severity": "low"
+  },
+  {
+   "issue": "The week page has two notes boxes, 'Notes' (dot grid) and 'Notes for the week', which is a redundant label.",
+   "where": "w01, w27",
+   "severity": "low"
+  },
+  {
+   "issue": "The date blanks in week day boxes are tiny faint '_ _' marks at the top right that barely read as a place to write the date.",
+   "where": "w01, w27",
+   "severity": "low"
+  },
+  {
+   "issue": "Styles are inconsistent: the day-page trail has both parts bold while week and month trails grey the second part, and the month page 'Habit tracker' button is an italic serif outline while the week buttons are sans pills.",
+   "where": "u010 vs w01/m01; m01, m07",
+   "severity": "low"
+  }
+ ]
+}

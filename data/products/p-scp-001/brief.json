@@ -556,7 +556,7 @@
     "steps": [
      [
       "Open it in a note app",
-      "Download from Etsy in a web browser (the Etsy app cannot download files). Import the PDF into Goodnotes, Notability, Samsung Notes, Xodo or Noteshelf, not Files or Photos.",
+      "Download from Etsy in a web browser, not the Etsy app. Import the PDF into Goodnotes, Notability, Samsung Notes, Xodo or Noteshelf.",
       "index"
      ],
      [
@@ -566,16 +566,16 @@
      ],
      [
       "Start Week 1 today",
-      "Any day works: no dates are printed. Open Week 1, write the dates, and each evening fill in one row. Tap Journal on that page for this week's prompt.",
+      "No dates are printed. Open Week 1, write the dates and fill in one row each evening. Tap Journal for this week's prompt.",
       "w01"
      ],
      [
       "Make it yours",
-      "Add your own ideas to the Self-care menu and fill in your Hard day plan on a good day, so it is ready when you need it.",
+      "Add your own ideas to the Self-care menu, and fill in your Hard day plan on a good day.",
       "menu"
      ]
     ],
-    "tip": "Pen off to tap a link, pen on to write. Prefer typing? Use your app's text tool. Skipped a few days? Just pick up on today's row.",
+    "tip": "Pen off to tap a link, pen on to write. Prefer typing? Use your app's text tool. Missed a few days? Pick up on today's row.",
     "map": true
    },
    {
