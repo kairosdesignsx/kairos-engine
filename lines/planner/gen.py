@@ -1121,7 +1121,9 @@ def m_log_week(P, sec):
         dates = f'<div style="display:flex;align-items:flex-end;gap:10px">{_wline(P, "Dates")}{_wline(P, "to")}</div>'
         chiprow = f'<div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">{chips}</div>' if chips else ''
         inner = (P.head(f'{kicker} · week {n} of {N}', f'Week {n}', right=_arrows(wid(n - 1) if n > 1 else None, wid(n + 1) if n < N else None)) +
-                 dates + chiprow + table + hab + bottom)
+                 dates + chiprow + (table + hab + bottom if portrait else  # landscape: day table and notes left, habits and stats right
+                 f'<div class="row" style="flex:1"><div class="col" style="flex:1.35">{table}<div class="row" style="flex:.75">{"".join(lines_box(P, f) for f in fields)}</div></div>'
+                 f'<div class="col" style="flex:1">{hab}{st.replace("flex:1;justify-content", "flex:none;justify-content", 1)}</div></div>'))
         P.page(wid(n), inner, active=ov, crumb=f'<a href="#{ov}">{esc(label)}</a> / Week {n}')
 
 

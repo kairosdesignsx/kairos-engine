@@ -38,6 +38,7 @@ def page_name(a, names):
 FRAMES = {  # device frame: 'dark' (generic tablet) or 'eink' (light gray e-ink tablet, for reMarkable files)
     'dark': dict(bg='#1c1c21', pad=.032, shadow='0 40px 80px rgba(30,25,40,.28),0 8px 18px rgba(30,25,40,.18)', edge=''),
     'eink': dict(bg='#d9d9d5', pad=.05, shadow='0 30px 60px rgba(0,0,0,.16),0 6px 14px rgba(0,0,0,.10)', edge='border:2px solid #c4c4bf;'),
+    'paper': dict(bg='#ffffff', pad=0, shadow='0 30px 60px rgba(60,45,30,.16),0 4px 10px rgba(60,45,30,.10)', edge='', radius=4),  # print_format: a printed sheet
 }
 
 
@@ -46,7 +47,7 @@ def tablet(src, w, x, y, ratio, rot=0, z=1, caption='', frame='dark'):
     pad = w * f['pad']
     cap = f'<div style="position:absolute;left:50%;bottom:-74px;transform:translateX(-50%);white-space:nowrap;font:600 36px var(--b);letter-spacing:.06em;text-transform:uppercase;opacity:.75">{caption}</div>' if caption else ''
     return (f'<div style="position:absolute;left:{x}px;top:{y}px;width:{w}px;transform:rotate({rot}deg);z-index:{z};'
-            f'background:{f["bg"]};{f["edge"]}border-radius:{w * .045:.0f}px;padding:{pad:.0f}px;box-shadow:{f["shadow"]}">'
+            f'background:{f["bg"]};{f["edge"]}border-radius:{f.get("radius", w * .045):.0f}px;padding:{pad:.0f}px;box-shadow:{f["shadow"]}">'
             f'<img src="{src}" style="width:100%;display:block;border-radius:{w * .01:.0f}px;aspect-ratio:{ratio}">{cap}</div>')
 
 
@@ -178,6 +179,9 @@ def scenes(brief, listing, build, shots_dir, out_dir):
     names = page_names(brief)
     N = lambda a: esc(page_name(a, names))
     frame = 'eink' if any(x.get('module') == 'eink_format' for x in brief['spec'].get('sections', [])) else 'dark'
+    if any(x.get('module') == 'print_format' for x in brief['spec'].get('sections', [])):
+        frame = 'paper'  # a printed planner is shown as paper, never inside a device
+    pills = listing.get('hero_pills') or ['Hyperlinked', f'{pages} pages']
     T = lambda *a, **k: tablet(*a, frame=frame, **k)
     S = {}; blocks = None
     for i, ph in enumerate(brief['photos']):
@@ -198,6 +202,16 @@ def scenes(brief, listing, build, shots_dir, out_dir):
             Nc = lambda a, _c=c.get('captions', {}): esc(_c[a]) if a in _c else N(a)  # listing can name a page more exactly
             S[key] = base(th, crop_scene(th, c, pg, P, Nc, W, H, frame, head, pts, label))
             continue
+        if i == 0 and frame == 'paper' and len(pg) >= 2:  # open two-page spread, as it lies in a binder
+            pw = 780; ph_ = pw * H / W; x0 = 2700 - 130 - 2 * pw; y0 = (2025 - ph_) / 2 + 30
+            sheets = ''.join(f'<img src="{P(a)}" style="position:absolute;left:{x0 + k * pw}px;top:{y0:.0f}px;width:{pw}px;height:{ph_:.0f}px;display:block">' for k, a in enumerate(pg[:2]))
+            gutter = f'<div style="position:absolute;left:{x0 + pw - 40}px;top:{y0:.0f}px;width:80px;height:{ph_:.0f}px;background:linear-gradient(90deg,rgba(0,0,0,0),rgba(60,45,30,.10) 50%,rgba(0,0,0,0))"></div>'
+            spread = f'<div style="position:absolute;left:{x0}px;top:{y0:.0f}px;width:{2 * pw}px;height:{ph_:.0f}px;background:#fff;box-shadow:{FRAMES["paper"]["shadow"]}"></div>' + sheets + gutter
+            S[key] = base(th, f'''<div style="position:absolute;left:150px;top:0;bottom:0;width:{x0 - 230}px;display:flex;flex-direction:column;justify-content:center;gap:40px">
+              {label or '<p class="k">Printable planner</p>'}<p class="h" style="font-size:150px">{esc(listing.get("hero_title") or brief["spec"]["title"])}</p>
+              <p style="font-size:56px;color:{th["muted"]};line-height:1.25">{head}</p>{pts}
+              <div style="display:flex;gap:20px;flex-wrap:wrap">{''.join(f'<span class="pill{" o" if j else ""}">{esc(x)}</span>' for j, x in enumerate(pills))}</div></div>''' + spread)
+            continue
         if i == 0:
             tw = 1050 if portrait else 1350
             t1 = T(P(pg[1]), tw, 1300 if portrait else 1250, 160, ratio, 4, 1) if len(pg) > 1 else ''
@@ -205,7 +219,7 @@ def scenes(brief, listing, build, shots_dir, out_dir):
             S[key] = base(th, (motif(th, 'tr', 3, 520) if th.get('motif') not in ('lines', None) else '') + f'''<div style="position:absolute;left:150px;top:0;bottom:0;width:1000px;display:flex;flex-direction:column;justify-content:center;gap:40px">
               {label or '<p class="k">Digital planner</p>'}<p class="h" style="font-size:170px">{esc(listing.get("hero_title") or brief["spec"]["title"])}</p>
               <p style="font-size:60px;color:{th["muted"]};line-height:1.25">{head}</p>{pts}
-              <div style="display:flex;gap:20px;flex-wrap:wrap"><span class="pill">Hyperlinked</span><span class="pill o">{pages} pages</span></div></div>''' + t1 + t2)
+              <div style="display:flex;gap:20px;flex-wrap:wrap">{''.join(f'<span class="pill{" o" if j else ""}">{esc(x)}</span>' for j, x in enumerate(pills))}</div></div>''' + t1 + t2)
         elif len(pg) >= 4:
             few = len(pg) <= 4
             cols = 2 if few else 4
