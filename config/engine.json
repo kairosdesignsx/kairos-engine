@@ -7,7 +7,7 @@
   "review_shops": 12,
   "reviews_per_call": 50,
   "shop_teardowns": 5,
-  "refresh_days": 30
+  "refresh_days": 60
  },
  "brief": {
   "min_unique_features": 2,
@@ -55,5 +55,9 @@
    "until_reviews": 15
   },
   "_how": "Brief check refuses a price under the floor (from insights.price). Etsy's API cannot create sales, so the launch sale is set up by hand in Shop Manager > Marketing > Sales and discounts; listing.txt says how."
+ },
+ "insights": {
+  "max_positive": 150,
+  "_how": "Review coding: all reviews of 3 stars or less, plus up to max_positive longer positive ones; identical reviews reuse codes from other types on the same line."
  }
 }

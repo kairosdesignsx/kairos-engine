@@ -20,6 +20,38 @@ COLUMNS = ["Product", "Shop Name", "Price", "Sales", "Revenue", "Total Sales", "
 MAX_AGE_DAYS = 7  # harvested results older than this are not trusted
 
 
+CACHE_DIR = os.path.join(store.DATA, 'everbee-cache')   # results saved across nights (sessions don't share transcripts)
+CACHE_DAYS = {'mcp__EverBee__view_shop_reviews': 30, 'mcp__EverBee__analyze_shop': 30}  # others: MAX_AGE_DAYS
+
+
+def _cache_key(name, inp):
+    import hashlib
+    return hashlib.sha1((name + json.dumps(inp, sort_keys=True)).encode()).hexdigest()[:16]
+
+
+def _calls(since):
+    """Transcript results from this session, plus saved results from earlier nights that are still fresh."""
+    got = list(harvest.calls(since=since))
+    if os.path.isdir(CACHE_DIR):
+        now = time.time()
+        for f in os.listdir(CACHE_DIR):
+            r = store.read(os.path.join(CACHE_DIR, f)) or {}
+            age_ok = now - r.get('saved', 0) <= CACHE_DAYS.get(r.get('tool'), MAX_AGE_DAYS) * 86400
+            if r.get('tool') and age_ok:
+                got.append((r['tool'], r['input'], r['text'], r.get('ts') or ''))
+    return got
+
+
+def _save(found):
+    os.makedirs(CACHE_DIR, exist_ok=True)
+    for c, m in found:
+        if m and m[0]:
+            name, inp = c['tool'], c['input']
+            path = os.path.join(CACHE_DIR, _cache_key(name, inp) + '.json')
+            if not os.path.exists(path):
+                store.write(path, {"tool": name, "input": inp, "text": m[0], "ts": m[1], "saved": time.time()})
+
+
 def tdir(type_id):
     return os.path.join(store.type_dir(type_id), 'teardown')
 
@@ -55,7 +87,7 @@ def _subset(want, have):
 def _find(calls_wanted, max_age_days=MAX_AGE_DAYS):
     """Newest harvested result for each wanted call. Returns list of (call, text|None)."""
     since = time.time() - max_age_days * 86400
-    got = list(harvest.calls(since=since))
+    got = _calls(since)
     got.sort(key=lambda x: x[3] or '')
     out = []
     for c in calls_wanted:
@@ -64,6 +96,7 @@ def _find(calls_wanted, max_age_days=MAX_AGE_DAYS):
             if name == c['tool'] and _subset(c['input'], inp) and _strip_page_default(c['input']) == _strip_page_default(inp):
                 match = (txt, ts)
         out.append((c, match))
+    _save(out)
     return out
 
 
@@ -201,7 +234,7 @@ def _review_page(inp):
 def collect_b(type_id):
     plan = store.read(os.path.join(tdir(type_id), 'calls-b.json'))
     since = time.time() - MAX_AGE_DAYS * 86400
-    got = sorted(harvest.calls(since=since), key=lambda x: x[3] or '')
+    got = sorted(_calls(since), key=lambda x: x[3] or '')
     found, missing = [], []
     for c in plan['calls']:
         m = None
@@ -212,6 +245,7 @@ def collect_b(type_id):
             found.append((c, m))
         elif not c.get('optional'):
             missing.append(c)
+    _save(found)
     if missing:
         return {"ok": False, "missing": missing}
     skipped = [c['input'] for c in plan['calls'] if c.get('optional') and not any(c is f for f, _ in found)]

@@ -39,14 +39,42 @@ def prepare(type_id):
     ev = store.read(os.path.join(store.type_dir(type_id), 'evidence.json'))
     reviews = [{"id": r['id'], "stars": r['stars'], "text": r['text']} for r in ev['reviews'] if len(r['text']) >= 12]
     cb = codebook(line)
+    # 1) reuse codes from other types on the same line when the review text is identical (same shops show up across types)
+    norm = lambda t: re.sub(r'\s+', ' ', t.strip().lower())
+    cache = {}
+    for tid, t in types.items():
+        if tid == type_id or t.get('line') != line or not os.path.isdir(idir(tid)):
+            continue
+        for b in store.read(os.path.join(idir(tid), 'batches.json'), []):
+            src, out = store.read(b['in']) if b.get('in') else None, store.read(b['out']) or {}
+            if not src:
+                continue
+            txt = {r['id']: norm(r['text']) for r in src.get('reviews', [])}
+            for c in out.get('codes', []):
+                if c.get('id') in txt:
+                    cache.setdefault(txt[c['id']], {k: v for k, v in c.items() if k != 'id'})
+    reused, todo = [], []
+    for r in reviews:
+        hit = cache.get(norm(r['text']))
+        (reused.append(dict(hit, id=r['id'])) if hit else todo.append(r))
+    # 2) cap: every critical review (3 stars or less) is coded; positive ones up to insights.max_positive, longest first
+    cap = (store.CONFIG.get('insights') or {}).get('max_positive', 150)
+    neg = [r for r in todo if r['stars'] <= 3]
+    pos = sorted((r for r in todo if r['stars'] > 3), key=lambda r: -len(r['text']))
+    skipped = max(0, len(pos) - cap)
+    reviews = neg + pos[:cap]
     batches = []
+    if reused:
+        out0 = store.write(os.path.join(idir(type_id), 'code-out-0.json'), {"new_themes": [], "codes": reused, "reused": True})
+        batches.append({"in": None, "out": out0, "n": len(reused), "cached": True})
     for i in range(0, len(reviews), BATCH):
         n = i // BATCH + 1
         src = store.write(os.path.join(idir(type_id), f'code-in-{n}.json'),
                           {"product_type": types[type_id]['name'] + ' (' + types[type_id]['format'] + ')', "codebook": cb, "reviews": reviews[i:i + BATCH]})
         batches.append({"in": src, "out": os.path.join(idir(type_id), f'code-out-{n}.json'), "n": len(reviews[i:i + BATCH])})
     store.write(os.path.join(idir(type_id), 'batches.json'), batches)
-    return {"reviews_to_code": len(reviews), "batches": batches}
+    return {"reviews_to_code": len(reviews), "reused_codes": len(reused), "positive_skipped": skipped,
+            "batches": [b for b in batches if not b.get('cached')]}
 
 
 def _feature_hits(L, feats):

@@ -40,15 +40,17 @@ Every subagent call passes a model. Routine steps run on Sonnet; judgment and bu
    data/learn/style-rules.json via the Feedback stage; briefs read it.
 
 ## Stage 1. Teardown (per product type, refreshed every 30 days)
-1. `python3 stages/teardown.py plan-a <type>` -> calls-a.json.
-2. Subagent(s) with prompts/everbee-caller.md make those calls (split into slices of about 15).
+1. `python3 stages/teardown.py plan-a <type>` -> calls-a.json, then `collect-a <type>` straight away: results saved from
+   earlier nights (data/everbee-cache, 7 days; shop reviews 30 days) count, so only the `missing` calls need making.
+2. Subagent(s) with prompts/everbee-caller.md make just the missing calls (split into slices of about 15).
 3. `python3 stages/teardown.py collect-a <type>`. If `missing`, have a subagent make just those calls, collect again.
 4. Read teardown/relevance.json. Fix any wrong relevant/not-relevant marks (set `"by": "session"`).
-5. `plan-b`, subagents make calls-b.json calls, `collect-b`. Shop teardowns (analyze_shop) are optional; they rate-limit.
+5. `plan-b`, then `collect-b` first; subagents make only the `missing` calls, then `collect-b` again. Shop teardowns (analyze_shop) are optional; they rate-limit.
 6. Result: data/types/<type>/evidence.json and a laptop job for competitor photos and descriptions.
 
 ## Stage 2. Insights
-1. `python3 stages/insights.py prepare <type>` -> coding batches.
+1. `python3 stages/insights.py prepare <type>` -> coding batches. Reviews already coded for another type are reused, and positive
+   reviews are capped (config insights.max_positive), so code only the batches it returns.
 2. One subagent per batch with prompts/review-coder.md (they run in parallel).
 3. `python3 stages/insights.py reconcile <type>`, read new-themes.json, write insights/aliases.json for duplicates.
 4. `python3 stages/insights.py build <type>` -> insights.json.
