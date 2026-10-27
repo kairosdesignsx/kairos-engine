@@ -1,0 +1,57 @@
+{
+ "run": "20261027-1340",
+ "made": "2026-10-27T13:40:52Z",
+ "new_types": [
+  {
+   "type_id": "2027-digital-planner",
+   "idea": "2027 digital planner",
+   "score": 41.8,
+   "why": [
+    "market 76 (Go)",
+    "241 searches a month",
+    "15,173 listings",
+    "top-10 median $2,814/mo at $23.50",
+    "overlaps a type we already make (digital-planner)",
+    "Same #1 listing as 2 other types"
+   ]
+  },
+  {
+   "type_id": "2027-printable-planner",
+   "idea": "2027 printable planner",
+   "score": 41.2,
+   "why": [
+    "market 75 (Go)",
+    "1 searches a month",
+    "14,360 listings",
+    "top-10 median $1,996/mo at $25.63",
+    "overlaps a type we already make (digital-planner)",
+    "Same #1 listing as 2 other types; No search data"
+   ]
+  }
+ ],
+ "teardowns": [
+  {
+   "type_id": "2027-digital-planner",
+   "reason": "no evidence yet"
+  },
+  {
+   "type_id": "2027-printable-planner",
+   "reason": "no evidence yet"
+  }
+ ],
+ "fixes": [
+  {
+   "product_id": "business-2027-navy",
+   "reasons": [
+    "colors"
+   ],
+   "note": "make the color c8b89a and 7a7368 or add that to the color theme",
+   "owner": false,
+   "at": 1792760657783,
+   "status": "open",
+   "blocked": "Legacy product made before the engine (no brief or build here). Needs Darren: rebuild it in the engine or edit by hand."
+  }
+ ],
+ "continue": [],
+ "new_products": []
+}

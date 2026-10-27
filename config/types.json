@@ -290,5 +290,53 @@
   ],
   "added_by": "picker",
   "added_at": "2026-10-26T19:02:03Z"
+ },
+ "2027-digital-planner": {
+  "name": "2027 digital planner",
+  "query": "2027 digital planner",
+  "line": "planner",
+  "group": "2027 planners",
+  "format": "Dated 2027 planner PDF",
+  "include_any": [
+   "2027",
+   "planner"
+  ],
+  "exclude_any": [
+   "physical",
+   "notion",
+   "plr",
+   "mrr",
+   "sticker"
+  ],
+  "focus_any": [
+   "2027",
+   "planner"
+  ],
+  "added_by": "picker",
+  "added_at": "2026-10-27T13:40:52Z"
+ },
+ "2027-printable-planner": {
+  "name": "2027 printable planner",
+  "query": "2027 printable planner",
+  "line": "planner",
+  "group": "2027 planners",
+  "format": "Dated 2027 planner PDF",
+  "include_any": [
+   "2027",
+   "planner"
+  ],
+  "exclude_any": [
+   "physical",
+   "notion",
+   "plr",
+   "mrr",
+   "sticker"
+  ],
+  "focus_any": [
+   "2027",
+   "planner"
+  ],
+  "added_by": "picker",
+  "added_at": "2026-10-27T13:40:52Z"
  }
 }

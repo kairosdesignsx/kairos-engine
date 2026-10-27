@@ -1,0 +1,1822 @@
+{
+  "brief": {
+    "check_rounds": [
+      {
+        "found": 21,
+        "high": 0,
+        "low": 9,
+        "main": "Start here step 1 and photo 9 say 'In Goodnotes, use Share, then Open in Goodnotes': Share then Open in Goodnotes happens in Safari or Files after the download, not inside Goodnotes, so a buyer may look for a Share butto",
+        "medium": 2,
+        "of": 21,
+        "round": 1
+      }
+    ],
+    "fixes": [
+      {
+        "complaint": "Couldn't download or open the file",
+        "count": 42,
+        "how": "Ships as one PDF, not a zip, under 19.5 MB. The listing and photo 9 give the download in three steps: buy, download from Etsy in a web browser (the Etsy app cannot download digital files), open the PDF in Goodnotes with Share, then Open in Goodnotes, or in Goodnotes with New, then Import. The Start here page repeats the steps."
+      },
+      {
+        "complaint": "Confusing setup or unclear instructions",
+        "count": 37,
+        "how": "The cover's Open planner button lands on a 4-step Start here page (import it, check the links, start in the month you are in, pen off to tap and on to write) with a months grid underneath, so step 3 is one tap. The next page is a Setup check with buttons that jump and a pen test box. Nothing to assemble: there are no stickers, covers or add-on files to import."
+      },
+      {
+        "complaint": "Doesn't work on my app or device",
+        "count": 24,
+        "how": "Pages are 768 x 1024 portrait, the iPad's own 3:4 shape, so in Goodnotes the page fills the screen with no blank bands at the sides (the size complaint on a top seller's portrait planner). The listing has a Works with / Not for box: works in Goodnotes, Notability, Noteshelf, Samsung Notes and Xodo on iPad and Android tablets; not made for phones, e-ink tablets or for viewing in Files, Photos or a Google Drive preview. The Setup check page proves the links on the buyer's own device in one minute."
+      },
+      {
+        "complaint": "Hard to use day to day",
+        "count": 22,
+        "how": "Every day page has the same five boxes in the same places (Top 3, To do, Notes on the left; Time blocks 6am to 9pm and Good things today on the right), and every week page is the same two columns of day boxes, so there is one layout to learn. Home, Year, Lists and Notes sit on the top bar of every page."
+      },
+      {
+        "complaint": "Hard to navigate or find pages",
+        "count": 11,
+        "how": "Month tabs run down the right edge of every page; Weeks on the top bar opens a page with all 52 weeks; each week links its seven days; day pages have large previous and next buttons that also cross from Sunday to the next Monday; every week and day page has a Weeks / Week trail. Weeks run 1 to 52 in order from the buyer's first week, so the next-week button always opens the following week."
+      },
+      {
+        "complaint": "Not as described or pictured",
+        "count": 21,
+        "how": "Every listing photo is a screenshot of the built file, captioned with the page name; no mockup shows anything the file lacks. The description lists each page type with counts and says plainly: undated (you write the dates), portrait only, Monday-start weeks, no stickers, handwrite or use the app's text tool (not a fillable form), English only."
+      },
+      {
+        "complaint": "Doesn't work (no detail)",
+        "count": 19,
+        "how": "The Setup check page turns 'it doesn't work' into a 30-second test: three buttons that must jump, and a four-line Nothing happened? list (pen off, open it in a planner app not Files, re-import the PDF, then send the shop an Etsy message). The build checks every link resolves and every page is reachable from the cover."
+      },
+      {
+        "complaint": "Seller didn't help or reply",
+        "count": 20,
+        "how": "Most support messages are setup questions, so the answers are in the file and the listing: the Setup check fix list, the Start here steps and a listing FAQ with the top five problems (Etsy app download, which app, links not tapping because the pen is on, how to type, how undated weeks work). The listing says what the buyer can do (Setup check, then send the shop an Etsy message) and promises no reply time."
+      },
+      {
+        "complaint": "Not useful for my needs",
+        "count": 13,
+        "how": "Undated, so it fits the buyer's calendar: start any day and keep going for 52 weeks. Photos 2 to 4 show the day, week and month pages close up and readable, and the listing lists what is not inside (no budget, meal or fitness sections), so buyers who need those do not buy the wrong planner."
+      },
+      {
+        "complaint": "Not worth the price",
+        "count": 12,
+        "how": "One purchase covers 52 weeks from whenever the buyer starts and never goes out of date. Writing room is generous: half of each day page is time blocks and open writing, each weekday has its own tall lined box on the week page, text is set at 1.1 scale. Photo 2 shows the day page close up at about twice its on-screen size."
+      }
+    ],
+    "look": {
+      "avoid": [
+        "Pastel rainbow tabs and sticker-heavy covers",
+        "Landscape two-page spreads",
+        "Sage green and teal (our Just Today planner)",
+        "Beige boho neutrals with arches"
+      ],
+      "direction": "Quiet ink and indigo on warm ivory with soft gold accents, portrait, lots of air. Headings in Cormorant Garamond, labels in its italic, body in Manrope: two families, hierarchy from weight, size and italic. Month tabs run from indigo to soft gold. High contrast ink (#1E2238 on #FBF9F4) for low-light reading; no tracked all-caps labels.",
+      "fonts": [
+        "Corm",
+        "Manrope"
+      ],
+      "palette": {
+        "accent": "#3B4A8A",
+        "ink": "#1E2238",
+        "line": "#D3D0C6",
+        "muted": "#555A6E",
+        "paper": "#FBF9F4",
+        "soft": "#ECEEF6",
+        "warm": "#D6A23C"
+      }
+    },
+    "must_haves": [
+      {
+        "evidence": [
+          "feature:goodnotes",
+          "feature:notability",
+          "keyword:goodnotes planner",
+          "keyword:notability planner",
+          "keyword:goodnotes template",
+          "keyword:ipad planner"
+        ],
+        "what": "One portrait PDF made for Goodnotes first (named first in the title, the listing and the Start here page), that also opens in Notability, Noteshelf, Samsung Notes and Xodo. Plain PDF links only, no app-specific tricks."
+      },
+      {
+        "evidence": [
+          "feature:multi_year",
+          "feature:undated",
+          "keyword:undated planner",
+          "wish:w_next_year"
+        ],
+        "what": "Works for any year and any start day: 12 undated month pages, 52 week pages numbered from the week the buyer starts (not tied to fixed months) and 364 day pages. The buyer writes the dates; nothing expires on December 31."
+      },
+      {
+        "evidence": [
+          "feature:hyperlinked",
+          "keyword:hyperlinked planner",
+          "praise:p_nav"
+        ],
+        "what": "Hyperlinked everywhere: Contents, Year, a Weeks page with all 52 weeks, month tabs down the right edge of every page, each week to its seven days, every day to the next and previous day (across week edges too), and a Weeks / Week trail at the top right of every week and day page."
+      },
+      {
+        "evidence": [
+          "praise:p_complete",
+          "praise:p_daily",
+          "praise:p_fits_needs",
+          "keyword:daily planner",
+          "keyword:weekly planner",
+          "keyword:monthly planner"
+        ],
+        "what": "The core set buyers use every day: year overview, 12 month pages with goals and notes, a habit tracker for every month, 52 week pages, a page for every day with top 3, to do, time blocks and notes, a Lists page and 6 notes pages."
+      },
+      {
+        "evidence": [
+          "praise:p_look",
+          "praise:p_quality",
+          "keyword:minimalist planner"
+        ],
+        "what": "A finished, quiet design with real typography: two font families only (Cormorant Garamond for headings and italic labels, Manrope for body text), consistent spacing, indigo and soft gold month tabs. Design is the biggest praise driver."
+      },
+      {
+        "evidence": [
+          "praise:p_guide",
+          "praise:p_easy"
+        ],
+        "what": "Instructions printed inside the file (Start here, Setup check, a how-the-links-work note on Contents), not only in a video or a separate PDF."
+      }
+    ],
+    "photos": [
+      {
+        "proves": "feature:goodnotes and praise:p_look",
+        "shows": "Cover and a day page side by side: title, Undated and portrait, Goodnotes"
+      },
+      {
+        "proves": "unique u_time_blocks and complaint:c_space",
+        "shows": "A day page at readable size: Top 3, To do, Notes, Time blocks 6am to 9pm, Good things today"
+      },
+      {
+        "proves": "unique u_fills_ipad",
+        "shows": "A week page: two tall columns of day boxes plus the week's top 3 and notes"
+      },
+      {
+        "proves": "unique u_start_any_month and complaint:c_dates",
+        "shows": "A month page with a 6-row blank grid, goals and notes, and its week buttons"
+      },
+      {
+        "proves": "complaint:c_setup",
+        "shows": "Start here: four steps and the months grid to start in the month you are in"
+      },
+      {
+        "proves": "unique u_setup_check and complaint:c_broken",
+        "shows": "Setup check: buttons that jump, pen test, fix list and the top bar map"
+      },
+      {
+        "proves": "complaint:c_nav",
+        "shows": "Contents with every section and month, plus the month tabs on the right edge"
+      },
+      {
+        "proves": "praise:p_complete",
+        "shows": "Year overview and a monthly habit tracker"
+      },
+      {
+        "proves": "complaint:c_download",
+        "shows": "How it works: buy, download in a web browser, open in Goodnotes"
+      }
+    ],
+    "positioning": "For Goodnotes users on an iPad who want one calm everyday planner they can start the week they buy it, in any month, and never have to replace when the year rolls over: an undated portrait planner whose pages fill the iPad screen, opens in the first five minutes (Start here plus a Setup check page), and keeps every page two taps away. It wins against the 600-page dated bundles on the things their buyers complain about most: downloads and setup, apps and screen fit, and getting lost.",
+    "price": {
+      "amount": 28,
+      "evidence": [
+        "price:revenue_weighted_median",
+        "price:best_band",
+        "price:median",
+        "complaint:c_value"
+      ],
+      "launch_sale": {
+        "days": 30,
+        "percent": 25,
+        "sale_price": 21
+      },
+      "why": "At the bottom of the best-earning band ($28 to $52) and above what buyers actually pay weighted by sales ($25.66). It replaces a yearly dated planner, so it is priced as a full planner, not a $4 template. While the shop has few reviews it launches with a 30-day 25% Etsy sale on the full price instead of a low price (style rule r015)."
+    },
+    "revisions": [],
+    "sections": [
+      "eink_format",
+      "Cover",
+      "Contents",
+      "Start here",
+      "link_test",
+      "Year at a glance",
+      "Lists",
+      "Notes",
+      "Months, weeks and days"
+    ],
+    "seo": {
+      "tags": [
+        "goodnotes planner",
+        "undated planner",
+        "digital planner",
+        "ipad planner",
+        "portrait planner",
+        "notability planner",
+        "hyperlinked planner",
+        "daily planner",
+        "weekly planner",
+        "monthly planner",
+        "goodnotes template",
+        "minimalist planner",
+        "time block planner"
+      ],
+      "title": "Undated Digital Planner for Goodnotes, Portrait iPad Planner, Start Any Month, Hyperlinked Daily Weekly Monthly Planner, Notability"
+    },
+    "unique": [
+      {
+        "evidence": [
+          "wish:w_next_year",
+          "complaint:c_dates",
+          "feature:undated",
+          "keyword:undated planner"
+        ],
+        "name": "Start any day, weeks that follow you",
+        "what": "Weeks 1 to 52 run in order from the week the buyer starts, on any day of the year, instead of being tied to fixed months; a Weeks page lists all 52 with a line to write each first date. Start here says: open Week 1, write this Monday's date, start on today. Undated month pages have 6-row grids (42 boxes), so every real month fits.",
+        "why": "Buyers ask for next year's edition and complain about months with missing date boxes; an undated planner that fits every month removes both, and lets an October or mid-year buyer start today."
+      },
+      {
+        "evidence": [
+          "feature:portrait",
+          "complaint:c_device",
+          "listing:4538357989",
+          "look:Portrait layout"
+        ],
+        "name": "Portrait pages that fill the iPad",
+        "what": "Every page is 768 x 1024, exactly the iPad's 3:4 portrait shape, with week pages laid out as two tall columns of day boxes (Monday to Thursday, Friday to Sunday and Notes) and the week's top 3 and notes underneath.",
+        "why": "Only 10% of top sellers offer portrait and a top portrait seller is criticised for blank space at the sides in Goodnotes; screen fit is part of the device complaints."
+      },
+      {
+        "evidence": [
+          "feature:test_page",
+          "complaint:c_setup",
+          "complaint:c_broken",
+          "complaint:c_links"
+        ],
+        "name": "Setup check page",
+        "what": "A page with buttons that jump to a month, the year and Contents, a pen test box, a fix list for when nothing happens, and a map of what each top-bar button opens.",
+        "why": "Download, setup and 'doesn't work' are three of the four biggest complaint clusters; no top seller shows a test page."
+      },
+      {
+        "evidence": [
+          "feature:time_blocking",
+          "feature:priority_matrix",
+          "praise:p_daily"
+        ],
+        "name": "Time blocks on every day",
+        "what": "Each day page has hourly time blocks from 6am to 9pm beside a Top 3 list, so the day is planned by time, not only as a to-do list.",
+        "why": "No top seller shows time blocking in their titles; planning by the hour is the daily habit buyers praise."
+      }
+    ],
+    "waived": [
+      {
+        "reason": "Deliberately undated: undated listings hold 63% of all-time sales among top sellers and our dated Goodnotes planner (Just Today, p-adhd-001) already covers the dated 2027 buyer. The listing says undated in the title.",
+        "ref": "feature:dated"
+      }
+    ]
+  },
+  "claude_note": "Image clone check pending: competitor photos come from the laptop worker. Before approving: open the PDF in Goodnotes (or your tablet app), tap a few month tabs and dates, and write on one page. The listing names apps we have not tested on a real device yet.",
+  "created": 1793047154146,
+  "engine": {
+    "brief_id": "b-p-gp-001-1",
+    "product_id": "p-gp-001"
+  },
+  "evidence": {
+    "basis": {
+      "feature_sources": [
+        "titles"
+      ],
+      "listings": 30,
+      "refreshed": "2026-10-26T19:04:57Z",
+      "reviews": 532,
+      "shops": 12
+    },
+    "checks": {
+      "closest": "Digital Planner for GoodNotes, 2026 Undated, iPad Notability Planner (Digital Download)",
+      "coverage": "21/21",
+      "coverage_ok": true,
+      "img_sim": null,
+      "pass": true,
+      "text_sim": 0.204,
+      "visual": [
+        {
+          "issue": "Start here step 1 and photo 9 say 'In Goodnotes, use Share, then Open in Goodnotes': Share then Open in Goodnotes happens in Safari or Files after the download, not inside Goodnotes, so a buyer may look for a Share button in Goodnotes (the listing's step 2 is worded correctly).",
+          "severity": "medium",
+          "where": "start, photo-09-ph9.jpg"
+        },
+        {
+          "issue": "The Habit tracker and All weeks buttons on every month page have tap boxes only 23 pt tall in the PDF (about 31 px, 68x23 and 53x23 pt), well under a 44 px finger target, so they are easy to miss.",
+          "severity": "medium",
+          "where": "m01-m12 (PDF link rects)"
+        },
+        {
+          "issue": "Top-bar pills, trails and week Open buttons are 30 pt tall (40 px), just under 44 px; day prev/next arrows are 36x31 pt (48x42 px), which is not the 'large' buttons the listing promises.",
+          "severity": "low",
+          "where": "all pages top bar, u010-u526 nav"
+        },
+        {
+          "issue": "The Contents 'Habit trackers' card always opens January's tracker, even for a buyer starting in another month.",
+          "severity": "low",
+          "where": "index"
+        },
+        {
+          "issue": "In the Setup check top-bar map, Lists reads 'Three lists: to buy, to try, to read', but the page's third list is 'To read or watch'.",
+          "severity": "low",
+          "where": "linktest"
+        },
+        {
+          "issue": "Photo 1 is captioned 'Cover and a day page', but the day page is almost fully hidden behind the cover; only its top bar and 'Week 1 · date' show.",
+          "severity": "low",
+          "where": "photo-01-ph1.jpg"
+        },
+        {
+          "issue": "In photos 3 and 7, the landscape crop fills only the middle of the frame, leaving large empty bands above and below.",
+          "severity": "low",
+          "where": "photo-03-ph3.jpg, photo-07-ph7.jpg"
+        },
+        {
+          "issue": "Photo 4's crop ends on a thin sliver of the cut-off Notes box under Goals this month.",
+          "severity": "low",
+          "where": "photo-04-ph4.jpg"
+        },
+        {
+          "issue": "The cover uses a cool blue-grey #ECEEF6 rather than the warm ivory of the brief's look (inner pages are ivory).",
+          "severity": "low",
+          "where": "cover"
+        },
+        {
+          "issue": "The date blanks are small for handwriting: '_ _' in each week day box and 'date ____' in the day page eyebrow.",
+          "severity": "low",
+          "where": "w01-w52, u010-u526"
+        },
+        {
+          "issue": "Week 52 still prints a 'Next week' box although the planner ends there.",
+          "severity": "low",
+          "where": "w52"
+        }
+      ]
+    },
+    "competitors": [
+      {
+        "img": "https://i.etsystatic.com/30633662/r/il/deef75/8233119891/il_570xN.8233119891_h2ee.jpg",
+        "mo_revenue": 5787,
+        "price": 39.94,
+        "shop": "LetsPlanPlanners",
+        "title": "SHOP BUNDLE 2026, 2027 Digital Planner GoodNotes iPad Template Android Notability Journal Stickers Printables ",
+        "total_sales": 9488
+      },
+      {
+        "img": "https://i.etsystatic.com/22694265/r/il/609a52/5317130120/il_570xN.5317130120_kmdw.jpg",
+        "mo_revenue": 99,
+        "price": 3.95,
+        "shop": "CreativeDreamersCo",
+        "title": "Undated Goodnotes Planner, Monthly Digital Planner, Goodnotes Template, iPad Planner, Digital Journal Pdf, Goo",
+        "total_sales": 55396
+      },
+      {
+        "img": "https://i.etsystatic.com/41200043/r/il/d49bcf/8496190532/il_570xN.8496190532_p3if.jpg",
+        "mo_revenue": 4337,
+        "price": 25.66,
+        "shop": "PrintMagicStudioX",
+        "title": "All-In-One Digital Planner 2026 2027 2028 Any Year, Landscape & Portrait, 14 Languages, GoodNotes Notability P",
+        "total_sales": 1886
+      },
+      {
+        "img": "https://i.etsystatic.com/20314568/r/il/58c9d1/7532269615/il_570xN.7532269615_lw4k.jpg",
+        "mo_revenue": 1522,
+        "price": 29.84,
+        "shop": "Plannerscollective",
+        "title": "Custom Digital Planner Bundle: 2026, 2027 & Undated",
+        "total_sales": 55091
+      },
+      {
+        "img": "https://i.etsystatic.com/53222015/r/il/bb1560/8166865774/il_570xN.8166865774_nkkx.jpg",
+        "mo_revenue": 4332,
+        "price": 7.93,
+        "shop": "Milamaluplanners",
+        "title": "2026 2027 Digital Planner MidYear Planner Simple Digital Planner 2026 2027 Hyperlinked GoodNotes Notability Da",
+        "total_sales": 1673
+      },
+      {
+        "img": "https://i.etsystatic.com/20451897/r/il/566b06/8530760944/il_570xN.8530760944_8gta.jpg",
+        "mo_revenue": 142,
+        "price": 35.38,
+        "shop": "ForLittleLion",
+        "title": "CUSTOM Digital Planner 2026 2027 2028 & Undated",
+        "total_sales": 53311
+      },
+      {
+        "img": "https://i.etsystatic.com/20451897/r/il/991e61/8524648224/il_570xN.8524648224_pra4.jpg",
+        "mo_revenue": 3025,
+        "price": 44.48,
+        "shop": "ForLittleLion",
+        "title": "CUSTOM Digital Planner 2026 2027 2028 & Undated",
+        "total_sales": 5485
+      },
+      {
+        "img": "https://i.etsystatic.com/8752191/r/il/449445/7332822856/il_570xN.7332822856_kdaq.jpg",
+        "mo_revenue": 1398,
+        "price": 29.13,
+        "shop": "HappyDownloads",
+        "title": "Digital Planner 2026 2027 Undated Digital Planners Goodnotes Planner iPad Planner Daily Planner Weekly Planner",
+        "total_sales": 44860
+      }
+    ],
+    "complaints": [
+      {
+        "count": 42,
+        "how": "Ships as one PDF, not a zip, under 19.5 MB. The listing and photo 9 give the download in three steps: buy, download from Etsy in a web browser (the Etsy app cannot download digital files), open the PDF in Goodnotes with Share, then Open in Goodnotes, or in Goodnotes with New, then Import. The Start here page repeats the steps.",
+        "quote": "unable to download it seems this is not my first digital planner but I was totally unable to download.",
+        "state": "fixed",
+        "theme": "Couldn't download or open the file"
+      },
+      {
+        "count": 37,
+        "how": "The cover's Open planner button lands on a 4-step Start here page (import it, check the links, start in the month you are in, pen off to tap and on to write) with a months grid underneath, so step 3 is one tap. The next page is a Setup check with buttons that jump and a pen test box. Nothing to assemble: there are no stickers, covers or add-on files to import.",
+        "quote": "Not very user friendly or explicit with instructions on how to use for anyone unfamiliar with this kind of product",
+        "state": "fixed",
+        "theme": "Confusing setup or unclear instructions"
+      },
+      {
+        "count": 24,
+        "how": "Pages are 768 x 1024 portrait, the iPad's own 3:4 shape, so in Goodnotes the page fills the screen with no blank bands at the sides (the size complaint on a top seller's portrait planner). The listing has a Works with / Not for box: works in Goodnotes, Notability, Noteshelf, Samsung Notes and Xodo on iPad and Android tablets; not made for phones, e-ink tablets or for viewing in Files, Photos or a Google Drive preview. The Setup check page proves the links on the buyer's own device in one minute.",
+        "quote": "Do not purchase if you do not have Apple devices. \n\nYou also have to purchase Good notes if you want to be able to use the planner as stated in the tutorial. \n\nNot as described whi",
+        "state": "fixed",
+        "theme": "Doesn't work on my app or device"
+      },
+      {
+        "count": 22,
+        "how": "Every day page has the same five boxes in the same places (Top 3, To do, Notes on the left; Time blocks 6am to 9pm and Good things today on the right), and every week page is the same two columns of day boxes, so there is one layout to learn. Home, Year, Lists and Notes sit on the top bar of every page.",
+        "quote": "Not very user friendly or explicit with instructions on how to use for anyone unfamiliar with this kind of product",
+        "state": "fixed",
+        "theme": "Hard to use day to day"
+      },
+      {
+        "count": 21,
+        "how": "Every listing photo is a screenshot of the built file, captioned with the page name; no mockup shows anything the file lacks. The description lists each page type with counts and says plainly: undated (you write the dates), portrait only, Monday-start weeks, no stickers, handwrite or use the app's text tool (not a fillable form), English only.",
+        "quote": "There were not 70 planners their were 7 to 10 planners with variations that became 70. ut overall planners were perfect.",
+        "state": "fixed",
+        "theme": "Not as described or pictured"
+      },
+      {
+        "count": 20,
+        "how": "Most support messages are setup questions, so the answers are in the file and the listing: the Setup check fix list, the Start here steps and a listing FAQ with the top five problems (Etsy app download, which app, links not tapping because the pen is on, how to type, how undated weeks work). The listing says what the buyer can do (Setup check, then send the shop an Etsy message) and promises no reply time.",
+        "quote": "I wish there was a customer Service to help me connect with the Apple and or Google Calendar",
+        "state": "fixed",
+        "theme": "Seller didn't help or reply"
+      },
+      {
+        "count": 19,
+        "how": "The Setup check page turns 'it doesn't work' into a 30-second test: three buttons that must jump, and a four-line Nothing happened? list (pen off, open it in a planner app not Files, re-import the PDF, then send the shop an Etsy message). The build checks every link resolves and every page is reachable from the cover.",
+        "quote": "It will not go in order and when imported to good notes it will not allow you to use any features such as pressing the months.",
+        "state": "fixed",
+        "theme": "Doesn't work (no detail)"
+      },
+      {
+        "count": 13,
+        "how": "Undated, so it fits the buyer's calendar: start any day and keep going for 52 weeks. Photos 2 to 4 show the day, week and month pages close up and readable, and the listing lists what is not inside (no budget, meal or fitness sections), so buyers who need those do not buy the wrong planner.",
+        "quote": "Just not my way of doing things - might be someone elses.  The planner is nice just not my vibe",
+        "state": "fixed",
+        "theme": "Not useful for my needs"
+      },
+      {
+        "count": 12,
+        "how": "One purchase covers 52 weeks from whenever the buyer starts and never goes out of date. Writing room is generous: half of each day page is time blocks and open writing, each weekday has its own tall lined box on the week page, text is set at 1.1 scale. Photo 2 shows the day page close up at about twice its on-screen size.",
+        "quote": "The hyperlinks never worked complete waste of money",
+        "state": "fixed",
+        "theme": "Not worth the price"
+      },
+      {
+        "count": 11,
+        "how": "Month tabs run down the right edge of every page; Weeks on the top bar opens a page with all 52 weeks; each week links its seven days; day pages have large previous and next buttons that also cross from Sunday to the next Monday; every week and day page has a Weeks / Week trail. Weeks run 1 to 52 in order from the buyer's first week, so the next-week button always opens the following week.",
+        "quote": "It’s very difficult to navigate, too many options but not satisfied with the after import navigation.",
+        "state": "fixed",
+        "theme": "Hard to navigate or find pages"
+      }
+    ],
+    "market": {
+      "best_price_band": "$28-52",
+      "competing_listings": 160124,
+      "monthly_searches": 4833
+    },
+    "positioning": "For Goodnotes users on an iPad who want one calm everyday planner they can start the week they buy it, in any month, and never have to replace when the year rolls over: an undated portrait planner whose pages fill the iPad screen, opens in the first five minutes (Start here plus a Setup check page), and keeps every page two taps away. It wins against the 600-page dated bundles on the things their buyers complain about most: downloads and setup, apps and screen fit, and getting lost.",
+    "standard": [
+      {
+        "how": "Deliberately undated: undated listings hold 63% of all-time sales among top sellers and our dated Goodnotes planner (Just Today, p-adhd-001) already covers the dated 2027 buyer. The listing says undated in the title.",
+        "name": "Dated for the year",
+        "share": 0.9,
+        "state": "waived"
+      },
+      {
+        "how": "One portrait PDF made for Goodnotes first (named first in the title, the listing and the Start here page), that also opens in Notability, Noteshelf, Samsung Notes and Xodo. Plain PDF links only, no app-specific tricks.",
+        "name": "Says Goodnotes",
+        "share": 0.867,
+        "state": "included"
+      },
+      {
+        "how": "Works for any year and any start day: 12 undated month pages, 52 week pages numbered from the week the buyer starts (not tied to fixed months) and 364 day pages. The buyer writes the dates; nothing expires on December 31.",
+        "name": "Covers more than one year",
+        "share": 0.667,
+        "state": "included"
+      }
+    ],
+    "unique": [
+      {
+        "name": "Start any day, weeks that follow you",
+        "verified_absent": false,
+        "what": "Weeks 1 to 52 run in order from the week the buyer starts, on any day of the year, instead of being tied to fixed months; a Weeks page lists all 52 with a line to write each first date. Start here says: open Week 1, write this Monday's date, start on today. Undated month pages have 6-row grids (42 boxes), so every real month fits.",
+        "why": "Buyers ask for next year's edition and complain about months with missing date boxes; an undated planner that fits every month removes both, and lets an October or mid-year buyer start today."
+      },
+      {
+        "name": "Portrait pages that fill the iPad",
+        "verified_absent": false,
+        "what": "Every page is 768 x 1024, exactly the iPad's 3:4 portrait shape, with week pages laid out as two tall columns of day boxes (Monday to Thursday, Friday to Sunday and Notes) and the week's top 3 and notes underneath.",
+        "why": "Only 10% of top sellers offer portrait and a top portrait seller is criticised for blank space at the sides in Goodnotes; screen fit is part of the device complaints."
+      },
+      {
+        "name": "Setup check page",
+        "verified_absent": false,
+        "what": "A page with buttons that jump to a month, the year and Contents, a pen test box, a fix list for when nothing happens, and a map of what each top-bar button opens.",
+        "why": "Download, setup and 'doesn't work' are three of the four biggest complaint clusters; no top seller shows a test page."
+      },
+      {
+        "name": "Time blocks on every day",
+        "verified_absent": false,
+        "what": "Each day page has hourly time blocks from 6am to 9pm beside a Top 3 list, so the day is planned by time, not only as a to-do list.",
+        "why": "No top seller shows time blocking in their titles; planning by the hour is the daily habit buyers praise."
+      }
+    ]
+  },
+  "files": [
+    {
+      "mb": 13.09,
+      "name": "Any-Monday.pdf",
+      "pages": 453
+    }
+  ],
+  "images": [
+    "p/p-gp-001/01.jpg",
+    "p/p-gp-001/02.jpg",
+    "p/p-gp-001/03.jpg",
+    "p/p-gp-001/04.jpg",
+    "p/p-gp-001/05.jpg",
+    "p/p-gp-001/06.jpg",
+    "p/p-gp-001/07.jpg",
+    "p/p-gp-001/08.jpg",
+    "p/p-gp-001/09.jpg",
+    "p/p-gp-001/10.jpg",
+    "p/p-gp-001/11.jpg",
+    "p/p-gp-001/12.jpg",
+    "p/p-gp-001/13.jpg",
+    "p/p-gp-001/14.jpg",
+    "p/p-gp-001/15.jpg",
+    "p/p-gp-001/16.jpg",
+    "p/p-gp-001/17.jpg",
+    "p/p-gp-001/18.jpg",
+    "p/p-gp-001/19.jpg",
+    "p/p-gp-001/20.jpg",
+    "p/p-gp-001/21.jpg",
+    "p/p-gp-001/22.jpg",
+    "p/p-gp-001/23.jpg",
+    "p/p-gp-001/24.jpg",
+    "p/p-gp-001/25.jpg"
+  ],
+  "lane": "goodnotes-planner",
+  "launch_sale": {
+    "days": 30,
+    "percent": 25,
+    "sale_price": 21
+  },
+  "line": "Digital planners",
+  "listing": {
+    "description": "Any Monday is an undated digital planner for Goodnotes on iPad. Start on any day of the year, write your own dates, and keep going for 52 weeks. Nothing runs out on December 31.\n\nWhat's inside (453 pages in one PDF)\n- Cover, Contents and a Year overview with blank month grids\n- Start here page: 4 steps to get going in five minutes\n- Setup check page: buttons that jump, a pen test and a fix list\n- Weeks page: all 52 weeks in one place, with a line to write each week's first date\n- 12 month pages, each with a 6-row grid so every month fits, Goals this month and Notes\n- 12 monthly habit trackers (14 habits, 31 days)\n- 52 week pages: two tall columns of day boxes, This week's top 3 and Next week\n- 364 day pages: Top 3, To do, Notes, Time blocks from 6am to 9pm, Good things today\n- Lists page (To buy, To try, To read or watch)\n- 6 notes pages\n\nWhat makes it different\n- Undated, and the weeks follow you: Week 1 is the week you start, whatever the month. Week 2 follows, then Week 3, for 52 weeks.\n- Portrait pages in the iPad's own 3:4 shape, so the page fills the screen in Goodnotes with no blank bands at the sides.\n- Hyperlinked: month tabs down the right edge of every page; Home, Year, Lists, Notes and Weeks on the top bar; every day box on a week page has an Open button for its day; every day has large previous and next buttons, including from Sunday to the next Monday.\n- One file, no zip, no stickers or add-ons to import.\n- Two typefaces only, quiet ink and indigo with soft gold, large clear text.\n\nPlease note\n- Undated: you write the dates. Weeks start on Monday.\n- Portrait only. English only.\n- Handwrite with a stylus or use your app's text tool. It is not a fillable form.\n- No stickers, budget, meal or fitness sections.\n\nWorks with\nGoodnotes (made for it first), Notability, Noteshelf, Samsung Notes and Xodo on iPad and Android tablets. You need a PDF planner app. Not made for phones, e-ink tablets, or viewing in Files, Photos or a Google Drive preview.\n\nHow to start\n1. Download from Etsy in a web browser (the Etsy app cannot download digital files).\n2. Open the PDF in Goodnotes: Share, then Open in Goodnotes. Or in Goodnotes tap New, then Import, and choose the file.\n3. Tap Open planner, follow Start here, open Week 1 and write this Monday's date.\n\nQuick answers\n- I can't download it in the Etsy app. Etsy's app does not download digital files. Open Etsy in a web browser, go to Purchases and download from there.\n- Which app do I need? Goodnotes, Notability, Noteshelf, Samsung Notes or Xodo. Files, Photos and Google Drive previews show the pages but cannot follow links.\n- The links don't do anything. Turn the pen off (read or view mode) and tap again. The Setup check page tests this in one minute.\n- Can I type? Yes, with your app's text tool. The pages are not a fillable form.\n- How do undated weeks work? Week 1 is whichever week you start in. Write its Monday's date on the week page and on the Weeks page, then carry on with Week 2.\n\nWhat you get\nAny-Monday.pdf (13.1 MB, 453 pages).\nDigital download. Nothing is shipped.\n\nHelp\nStart with the Setup check page in the planner. Still stuck? Send the shop an Etsy message.",
+    "tags": [
+      "goodnotes planner",
+      "undated planner",
+      "digital planner",
+      "ipad planner",
+      "portrait planner",
+      "notability planner",
+      "hyperlinked planner",
+      "daily planner",
+      "weekly planner",
+      "monthly planner",
+      "goodnotes template",
+      "minimalist planner",
+      "time block planner"
+    ],
+    "title": "Undated Digital Planner for Goodnotes, Portrait iPad Planner, Start Any Month, Hyperlinked Daily Weekly Monthly Planner, Notability"
+  },
+  "price": 28,
+  "research": {
+    "basis": {
+      "feature_sources": [
+        "titles"
+      ],
+      "listings": 30,
+      "negative_reviews": 208,
+      "off_type_dropped": 30,
+      "photos": "pending",
+      "reviews": 532,
+      "reviews_coded": 458
+    },
+    "complaints": [
+      {
+        "count": 42,
+        "quotes": [
+          "unable to download it seems this is not my first digital planner but I was totally unable to download.",
+          "It was a useless purchase. I couldn’t get it to download onto my iPad. So I also wasted \nabout three hours of my time.",
+          "cannot download to use this. it sucks that i cannot get a refund. now that is money wasted trying to use this crap. I will stick to my paper"
+        ],
+        "theme": "Couldn't download or open the file"
+      },
+      {
+        "count": 37,
+        "quotes": [
+          "Not very user friendly or explicit with instructions on how to use for anyone unfamiliar with this kind of product",
+          "Great item but I couldn’t ever figure it out. Too complicated for me.",
+          "Great planner. Took a couple of tries before I got it right for me"
+        ],
+        "theme": "Confusing setup or unclear instructions"
+      },
+      {
+        "count": 24,
+        "quotes": [
+          "Do not purchase if you do not have Apple devices. \n\nYou also have to purchase Good notes if you want to be able to use the planner as stated in the tutorial. \n\nNot as described which is a shame",
+          "Couldn't get the planner to work. Owner wasn't much help since I was trying to use an android with her product just gave up.",
+          "Not sure this works on surface go. Downloaded for hours to no success. Shop was quick to refund money. Even before they answered my question."
+        ],
+        "theme": "Doesn't work on my app or device"
+      },
+      {
+        "count": 22,
+        "quotes": [
+          "Not very user friendly or explicit with instructions on how to use for anyone unfamiliar with this kind of product",
+          "Worst download ever, save your money.  Hard to download and impossible to use.",
+          "Great item but I couldn’t ever figure it out. Too complicated for me."
+        ],
+        "theme": "Hard to use day to day"
+      },
+      {
+        "count": 21,
+        "quotes": [
+          "There were not 70 planners their were 7 to 10 planners with variations that became 70. ut overall planners were perfect.",
+          "When I read that something has a basic version I don’t expect all the fluff. Please in don’t want to track every moment of my life, just work things.",
+          "Do not purchase if you do not have Apple devices. \n\nYou also have to purchase Good notes if you want to be able to use the planner as stated in the tutorial. \n\nNot as described which is a shame"
+        ],
+        "theme": "Not as described or pictured"
+      },
+      {
+        "count": 20,
+        "quotes": [
+          "I wish there was a customer Service to help me connect with the Apple and or Google Calendar",
+          "It says it has been downloaded,but I have not been able to download or access the files at all. I have requested assistance and am waiting on reply.",
+          "It doesn't work at all...it crashed my system. I will have to get my bank to cancel the payment. Since no refund and I can't seem to get a response from anyone. For a refund!😠😡"
+        ],
+        "theme": "Seller didn't help or reply"
+      },
+      {
+        "count": 19,
+        "quotes": [
+          "It will not go in order and when imported to good notes it will not allow you to use any features such as pressing the months.",
+          "This item doesn't even work, like the files don't exist.",
+          "Not visually pleasing as I hoped it would have been. Don’t use it unfortunately. Have brought a different once from Etsy as when I tried using it didn’t work properly."
+        ],
+        "theme": "Doesn't work (no detail)"
+      },
+      {
+        "count": 13,
+        "quotes": [
+          "Just not my way of doing things - might be someone elses.  The planner is nice just not my vibe",
+          "It just wasn't what I was looking for.",
+          "The template are not useful. Too many unnecessary documents. Please see your chat box. Thank you"
+        ],
+        "theme": "Not useful for my needs"
+      },
+      {
+        "count": 12,
+        "quotes": [
+          "The hyperlinks never worked complete waste of money",
+          "5 for a pdf?  Gotta be kidding",
+          "Too difficult to understand. Money wasted. Went with an easier program to use."
+        ],
+        "theme": "Not worth the price"
+      },
+      {
+        "count": 11,
+        "quotes": [
+          "It’s very difficult to navigate, too many options but not satisfied with the after import navigation.",
+          "L'organisation est peu agréable. La présentation pourrait être améliorée. Les cases de planning semaine sont un peu petites.",
+          "Was expecting something a little easier to navigate, just wasn't for me!"
+        ],
+        "theme": "Hard to navigate or find pages"
+      },
+      {
+        "count": 10,
+        "quotes": [
+          "It’s very difficult to navigate, too many options but not satisfied with the after import navigation.",
+          "When I read that something has a basic version I don’t expect all the fluff. Please in don’t want to track every moment of my life, just work things.",
+          "Wasn't for me, too many tabs. too many things I never use."
+        ],
+        "theme": "Too much, overwhelming"
+      },
+      {
+        "count": 9,
+        "quotes": [
+          "The downloads were two different PDFs. Neither one of them were legible to see.",
+          "Some months are missing boxes for the dates",
+          "So many misspelled words in the stickers."
+        ],
+        "theme": "Errors, typos or low quality"
+      },
+      {
+        "count": 7,
+        "quotes": [
+          "This didn't work and the vendor was not helpful fixing the issue and refused a refund.",
+          "cannot download to use this. it sucks that i cannot get a refund. now that is money wasted trying to use this crap. I will stick to my paper",
+          "It doesn't work at all...it crashed my system. I will have to get my bank to cancel the payment. Since no refund and I can't seem to get a response from anyone. For a refund!😠😡"
+        ],
+        "theme": "Refund refused"
+      },
+      {
+        "count": 7,
+        "quotes": [
+          "Do not purchase if you do not have Apple devices. \n\nYou also have to purchase Good notes if you want to be able to use the planner as stated in the tutorial. \n\nNot as described which is a shame",
+          "Unable to use due to program needed as had to pay a yearly subscription",
+          "I had so much trouble trying to use it on my phone , I was only able to download it but couldn’t use it. I wish it would have been a app instead. It was a waste"
+        ],
+        "theme": "Needed an app or subscription that wasn't clear"
+      },
+      {
+        "count": 7,
+        "quotes": [
+          "So complicated to get it all going. Soooo many file - one just get lost. It could have so been much easier.",
+          "Having to upload each color individual is a waste of time and a big inconvenience to the purchaser.",
+          "Impossible to download what’s advertised\r\nInstal instructions are not clear. Everything is separated & has to be imported one by one.\r\nWouldn’t recommend"
+        ],
+        "theme": "Split into many separate files"
+      },
+      {
+        "count": 6,
+        "quotes": [
+          "i never received an order. i placed the order on 12/1/21 to have in time for the new year..\ni have done everything to figure out IF maybe i did something wrong..i was so excited about this order\nhelp\nsincerely marian sam",
+          "Can't download this item and still haven't gotten an email with download link.",
+          "You should state the delivery of your products."
+        ],
+        "theme": "Slow or no delivery of files"
+      },
+      {
+        "count": 5,
+        "quotes": [
+          "The downloads were two different PDFs. Neither one of them were legible to see.",
+          "The calendar is great as far as all that it offers and the ease in using it. However the lettering and numbers are not nearly dark enough and it’s really hard to read."
+        ],
+        "theme": "Text too small or hard to read"
+      },
+      {
+        "count": 5,
+        "quotes": [
+          "Screen roll of photos cannot interact at all. None of the tabs work is a literal photo... only! Awful! Useless!",
+          "Terrible. Not works. Não funciona. It are images, jpg. No work because are not pdf.",
+          "No hyper links :(\nIt is what it is"
+        ],
+        "theme": "Just a flat PDF, not interactive"
+      },
+      {
+        "count": 5,
+        "quotes": [
+          "L'organisation est peu agréable. La présentation pourrait être améliorée. Les cases de planning semaine sont un peu petites.",
+          "Not visually pleasing as I hoped it would have been. Don’t use it unfortunately. Have brought a different once from Etsy as when I tried using it didn’t work properly.",
+          "it is OK on laptop. Not very aesthetic on the iphone."
+        ],
+        "theme": "Didn't like the look"
+      },
+      {
+        "count": 5,
+        "quotes": [
+          "Screen roll of photos cannot interact at all. None of the tabs work is a literal photo... only! Awful! Useless!",
+          "It will not go in order and when imported to good notes it will not allow you to use any features such as pressing the months.",
+          "The hyperlinks never worked complete waste of money"
+        ],
+        "theme": "Links broken or go to the wrong page"
+      },
+      {
+        "count": 4,
+        "quotes": [
+          "Due to the size of the file I found it to lag in different applications",
+          "The files are HUGE and are loading so slow I can barely use the planner. Please have this in mind before buying, I’m starting to regret the purchase."
+        ],
+        "theme": "Slow, laggy or file too big"
+      },
+      {
+        "count": 4,
+        "quotes": [
+          "Entsprach nicht meinen Vorstellungen und Wünschen ,komplizierte Installierung und sehr irreführend für deutsche Kunden da beim Kauf alles auf Deutsch die Sprache im Nachgang aber  komplett auf Englisch.",
+          "L’agenda devait être en français mais il est en anglais . Pour m’apercevoir que c’est moi qui n’a pas bien lu. Étsy a été super , mon rembourser mon achat que je puisse en trouver un en français . Merci Etsy",
+          "Moi qui ne comprends pas l'anglais c'est trop compliquer à comprendre même avec certaines bases. Trop compliqué dommage"
+        ],
+        "theme": "Only in English"
+      },
+      {
+        "count": 4,
+        "quotes": [
+          "Der Kalender ist ein PDF-Dokument.\nDieses kann ich zwar an meinem Tablet-PC öffnen aber nicht ohne weiteres bearbeiten. Viel zu aufwändig, dafür dass man täglich seinen Kalender verwalten muss.",
+          "I couldn't edit the document on the accent sheets only on the index and monthly review page, and when I was finally able to edit it kept deleting everything after I had gotten so far. Really pretty though",
+          "First of all this product cannot be edited, I reached out to the seller still not very helpful.It has so many unnecessary information."
+        ],
+        "theme": "Can't edit, type or customize"
+      },
+      {
+        "count": 4,
+        "quotes": [
+          "Very boring and difficult to use.I would rather spend more for a better one.",
+          "Average, good but very basic"
+        ],
+        "theme": "Too basic or boring"
+      },
+      {
+        "count": 3,
+        "quotes": [
+          "Some months are missing boxes for the dates"
+        ],
+        "theme": "Wrong or missing dates, calendar errors"
+      },
+      {
+        "count": 2,
+        "quotes": [
+          "THIS IS A STOLEN PLANNER.  \nDO NOT BUY THIS"
+        ],
+        "theme": "Design copied from other creators"
+      },
+      {
+        "count": 2,
+        "quotes": [
+          "L'organisation est peu agréable. La présentation pourrait être améliorée. Les cases de planning semaine sont un peu petites.",
+          "The squares are too small and the lines are too close. I can’t fit all my tasks and to dos. It’s best just to use a calendar template from GoodNotes or google"
+        ],
+        "theme": "Too little writing space"
+      },
+      {
+        "count": 2,
+        "quotes": [
+          "Wasn’t aware it was a “build yourself” type of thing. Aesthetic of it is great, just know it’s not already put together."
+        ],
+        "theme": "Have to duplicate or add pages yourself"
+      },
+      {
+        "count": 2,
+        "quotes": [
+          "This only took me to a freebie link where I'm forced to subscribe to things I don't want.  Completely disappointed."
+        ],
+        "theme": "Pushes paid add-ons or sign-ups"
+      },
+      {
+        "count": 2,
+        "quotes": [
+          "Der Kalender ist ein PDF-Dokument.\nDieses kann ich zwar an meinem Tablet-PC öffnen aber nicht ohne weiteres bearbeiten. Viel zu aufwändig, dafür dass man täglich seinen Kalender verwalten muss.",
+          "This is a PDF and cannot be edited and is not interactive. If uploaded to goodnotes, you will have to type using a text box all the time if you want to add anything. Not useful at all."
+        ],
+        "theme": "Just a PDF, not a native device template"
+      },
+      {
+        "count": 2,
+        "quotes": [
+          "Fine planner but i think they sell your info. Since i bought this I have had non-stop spam calls and phishing emails. Not worth a cheap planner.",
+          "Had a virus attached to the planner"
+        ],
+        "theme": "Spam, privacy or virus worries"
+      },
+      {
+        "count": 1,
+        "quotes": [
+          "There are no mood trackers or productivity pages I’m so disappointed"
+        ],
+        "theme": "Missing pages or less than expected"
+      },
+      {
+        "count": 1,
+        "quotes": [
+          "Because you're making me write a review on a product I haven't even received yet just so I can track my order."
+        ],
+        "theme": "Forced to leave a review"
+      }
+    ],
+    "features": [
+      {
+        "name": "Dated for the year",
+        "revenue_share": 0.943,
+        "share": 0.9,
+        "tier": "standard"
+      },
+      {
+        "name": "Says Goodnotes",
+        "revenue_share": 0.872,
+        "share": 0.867,
+        "tier": "standard"
+      },
+      {
+        "name": "Covers more than one year",
+        "revenue_share": 0.936,
+        "share": 0.667,
+        "tier": "standard"
+      },
+      {
+        "name": "Undated version",
+        "revenue_share": 0.292,
+        "share": 0.433,
+        "tier": "common"
+      },
+      {
+        "name": "Says Notability",
+        "revenue_share": 0.534,
+        "share": 0.433,
+        "tier": "common"
+      },
+      {
+        "name": "Journal or notebook pages",
+        "revenue_share": 0.436,
+        "share": 0.367,
+        "tier": "common"
+      },
+      {
+        "name": "All-in-one life planner",
+        "revenue_share": 0.29,
+        "share": 0.3,
+        "tier": "common"
+      },
+      {
+        "name": "Android or Samsung support",
+        "revenue_share": 0.302,
+        "share": 0.233,
+        "tier": "rare"
+      },
+      {
+        "name": "Bundle of several products",
+        "revenue_share": 0.361,
+        "share": 0.233,
+        "tier": "rare"
+      },
+      {
+        "name": "Hyperlinked tabs and dates",
+        "revenue_share": 0.219,
+        "share": 0.2,
+        "tier": "rare"
+      },
+      {
+        "name": "Digital stickers included",
+        "revenue_share": 0.301,
+        "share": 0.167,
+        "tier": "rare"
+      },
+      {
+        "name": "Customizable or personalized",
+        "revenue_share": 0.15,
+        "share": 0.167,
+        "tier": "rare"
+      },
+      {
+        "name": "Built for ADHD",
+        "revenue_share": 0.098,
+        "share": 0.1,
+        "tier": "rare"
+      },
+      {
+        "name": "Portrait layout",
+        "revenue_share": 0.138,
+        "share": 0.1,
+        "tier": "rare"
+      },
+      {
+        "name": "Colorful or aesthetic look",
+        "revenue_share": 0.028,
+        "share": 0.1,
+        "tier": "rare"
+      },
+      {
+        "name": "Student or academic",
+        "revenue_share": 0.071,
+        "share": 0.067,
+        "tier": "rare"
+      },
+      {
+        "name": "Habit tracker",
+        "revenue_share": 0.004,
+        "share": 0.033,
+        "tier": "rare"
+      },
+      {
+        "name": "Self-care, mood or wellness pages",
+        "revenue_share": 0.004,
+        "share": 0.033,
+        "tier": "rare"
+      },
+      {
+        "name": "Budget or finance pages",
+        "revenue_share": 0.002,
+        "share": 0.033,
+        "tier": "rare"
+      },
+      {
+        "name": "Meal planning",
+        "revenue_share": 0.002,
+        "share": 0.033,
+        "tier": "rare"
+      },
+      {
+        "name": "Goal setting",
+        "revenue_share": 0.002,
+        "share": 0.033,
+        "tier": "rare"
+      },
+      {
+        "name": "Landscape layout",
+        "revenue_share": 0.11,
+        "share": 0.033,
+        "tier": "rare"
+      },
+      {
+        "name": "Minimalist look",
+        "revenue_share": 0.05,
+        "share": 0.033,
+        "tier": "rare"
+      },
+      {
+        "name": "Time blocking or hourly schedule",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Dark mode",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "E-ink tablets (reMarkable, Boox, Kindle Scribe)",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Work or productivity focus",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Brain dump pages",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Routine builder",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Dopamine menu",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Priority matrix or top 3",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Quick start or setup guide",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      },
+      {
+        "name": "Link test or setup check page",
+        "revenue_share": 0,
+        "share": 0,
+        "tier": "not_seen"
+      }
+    ],
+    "keywords": [
+      {
+        "tag": "goodnotes planner",
+        "used_by_top": 21
+      },
+      {
+        "tag": "digital planner",
+        "used_by_top": 21
+      },
+      {
+        "tag": "ipad planner",
+        "used_by_top": 15
+      },
+      {
+        "tag": "notability planner",
+        "used_by_top": 14
+      },
+      {
+        "tag": "daily planner",
+        "used_by_top": 14
+      },
+      {
+        "tag": "goodnotes template",
+        "used_by_top": 11
+      },
+      {
+        "tag": "monthly planner",
+        "used_by_top": 11
+      },
+      {
+        "tag": "weekly planner",
+        "used_by_top": 11
+      },
+      {
+        "tag": "2026 digital planner",
+        "used_by_top": 9
+      },
+      {
+        "tag": "undated planner",
+        "used_by_top": 8
+      },
+      {
+        "tag": "hyperlinked planner",
+        "used_by_top": 7
+      },
+      {
+        "tag": "all in one planner",
+        "used_by_top": 7
+      },
+      {
+        "tag": "digital calendar",
+        "used_by_top": 7
+      },
+      {
+        "tag": "adhd planner",
+        "used_by_top": 6
+      },
+      {
+        "tag": "planner digital",
+        "used_by_top": 6
+      },
+      {
+        "tag": "best digital planner",
+        "used_by_top": 5
+      },
+      {
+        "tag": "minimalist planner",
+        "used_by_top": 5
+      },
+      {
+        "tag": "digital notebook",
+        "used_by_top": 4
+      },
+      {
+        "tag": "digital journal",
+        "used_by_top": 4
+      },
+      {
+        "tag": "good notes planner",
+        "used_by_top": 4
+      },
+      {
+        "tag": "android planner",
+        "used_by_top": 4
+      },
+      {
+        "tag": "academic planner",
+        "used_by_top": 4
+      },
+      {
+        "tag": "digital planner 2026",
+        "used_by_top": 3
+      },
+      {
+        "tag": "customizable planner",
+        "used_by_top": 3
+      }
+    ],
+    "listings": [
+      {
+        "age_months": 35,
+        "mo_revenue": 5787,
+        "price": 39.94,
+        "rank": 1,
+        "reviews": 907,
+        "shop": "LetsPlanPlanners",
+        "title": "SHOP BUNDLE 2026, 2027 Digital Planner GoodNotes iPad Template Android Notability Journal Stickers Printables & Inserts",
+        "total_sales": 9488,
+        "url": "https://www.etsy.com/listing/1602251608/shop-bundle-2026-digital-planner"
+      },
+      {
+        "age_months": 61,
+        "mo_revenue": 99,
+        "price": 3.95,
+        "rank": 2,
+        "reviews": 6402,
+        "shop": "CreativeDreamersCo",
+        "title": "Undated Goodnotes Planner, Monthly Digital Planner, Goodnotes Template, iPad Planner, Digital Journal Pdf, Goodnotes Stickers Boho, Simple",
+        "total_sales": 55396,
+        "url": "https://www.etsy.com/listing/1068739082/undated-goodnotes-planner-monthly"
+      },
+      {
+        "age_months": 7,
+        "mo_revenue": 4337,
+        "price": 25.66,
+        "rank": 3,
+        "reviews": 154,
+        "shop": "PrintMagicStudioX",
+        "title": "All-In-One Digital Planner 2026 2027 2028 Any Year, Landscape & Portrait, 14 Languages, GoodNotes Notability Planner, Daily Weekly Monthly",
+        "total_sales": 1886,
+        "url": "https://www.etsy.com/listing/4474152544/all-in-one-digital-planner-2026-2027"
+      },
+      {
+        "age_months": 59,
+        "mo_revenue": 1522,
+        "price": 29.84,
+        "rank": 4,
+        "reviews": 4705,
+        "shop": "Plannerscollective",
+        "title": "Custom Digital Planner Bundle: 2026, 2027 & Undated",
+        "total_sales": 55091,
+        "url": "https://www.etsy.com/listing/1123882489/custom-digital-planner-bundle-2026-2027"
+      },
+      {
+        "age_months": 4,
+        "mo_revenue": 4332,
+        "price": 7.93,
+        "rank": 5,
+        "reviews": 47,
+        "shop": "Milamaluplanners",
+        "title": "2026 2027 Digital Planner MidYear Planner Simple Digital Planner 2026 2027 Hyperlinked GoodNotes Notability Daily Weekly Monthly Planner",
+        "total_sales": 1673,
+        "url": "https://www.etsy.com/listing/4520368146/2026-2027-digital-planner-midyear"
+      },
+      {
+        "age_months": 80,
+        "mo_revenue": 142,
+        "price": 35.38,
+        "rank": 6,
+        "reviews": 3780,
+        "shop": "ForLittleLion",
+        "title": "CUSTOM Digital Planner 2026 2027 2028 & Undated",
+        "total_sales": 53311,
+        "url": "https://www.etsy.com/listing/776177381/premium-custom-digital-planner-2026-2027"
+      },
+      {
+        "age_months": 49,
+        "mo_revenue": 3025,
+        "price": 44.48,
+        "rank": 7,
+        "reviews": 395,
+        "shop": "ForLittleLion",
+        "title": "CUSTOM Digital Planner 2026 2027 2028 & Undated",
+        "total_sales": 5485,
+        "url": "https://www.etsy.com/listing/1305090483/premium-custom-digital-planner-2026-2027"
+      },
+      {
+        "age_months": 95,
+        "mo_revenue": 1398,
+        "price": 29.13,
+        "rank": 8,
+        "reviews": 5729,
+        "shop": "HappyDownloads",
+        "title": "Digital Planner 2026 2027 Undated Digital Planners Goodnotes Planner iPad Planner Daily Planner Weekly Planner Digital Journal ADHD Planner",
+        "total_sales": 44860,
+        "url": "https://www.etsy.com/listing/661944197/digital-planner-2026-2027-undated"
+      },
+      {
+        "age_months": 25,
+        "mo_revenue": 2911,
+        "price": 3.96,
+        "rank": 9,
+        "reviews": 3624,
+        "shop": "phenixdigital",
+        "title": "All-in-One Digital Planner 2026, 2027, 2028 Digital Planner, Digital Journal, Digital Goodnotes Template, Weekly, Daily Planner, Notability",
+        "total_sales": 39759,
+        "url": "https://www.etsy.com/listing/1784469516/all-in-one-digital-planner-2026-2027"
+      },
+      {
+        "age_months": 48,
+        "mo_revenue": 0,
+        "price": 10,
+        "rank": 10,
+        "reviews": 4599,
+        "shop": "OptimumPlanners",
+        "title": "Digital Planner for GoodNotes, 2026 Undated, iPad Notability Planner (Digital Download)",
+        "total_sales": 40600,
+        "url": "https://www.etsy.com/listing/1322547322/digital-planner-for-goodnotes-2026"
+      },
+      {
+        "age_months": 7,
+        "mo_revenue": 2717,
+        "price": 6.72,
+        "rank": 11,
+        "reviews": 124,
+        "shop": "BrighterPlans",
+        "title": "Digital Planner, Undated iPad & Android Planner Bundle, GoodNotes Calendar, Daily Weekly Monthly Journal with Stickers, Notebooks 2026 2027",
+        "total_sales": 1915,
+        "url": "https://www.etsy.com/listing/4466031892/digital-planner-undated-ipad-android"
+      },
+      {
+        "age_months": 15,
+        "mo_revenue": 2323,
+        "price": 28.02,
+        "rank": 12,
+        "reviews": 75,
+        "shop": "BrighterPlans",
+        "title": "Digital Planner Whole Shop Bundle, GoodNotes Calendar, iPad & Android Digital Notebooks, Journals, ADHD Planner, Digital Stickers, 2025 2026",
+        "total_sales": 1270,
+        "url": "https://www.etsy.com/listing/4340822313/digital-planner-whole-shop-bundle"
+      },
+      {
+        "age_months": 66,
+        "mo_revenue": 0,
+        "price": 29.84,
+        "rank": 13,
+        "reviews": 2898,
+        "shop": "Plannerscollective",
+        "title": "Digital planner, Goodnotes planner, iPad planner, Notability planner, Dated digital planner, Digital calendar",
+        "total_sales": 33981,
+        "url": "https://www.etsy.com/listing/979834364/digital-planner-goodnotes-planner-ipad"
+      },
+      {
+        "age_months": 4,
+        "mo_revenue": 1987,
+        "price": 14.5,
+        "rank": 14,
+        "reviews": 20,
+        "shop": "DreamGirlPlan",
+        "title": "2026 2027 Digital Planner, Mid Year Planner, Daily Planner, Goodnotes Planner, Minimalist Planner, Ipad Planner, Hyperlinked Planner",
+        "total_sales": 500,
+        "url": "https://www.etsy.com/listing/4518430837/2026-2027-digital-planner-mid-year"
+      },
+      {
+        "age_months": 84,
+        "mo_revenue": 0,
+        "price": 24.97,
+        "rank": 15,
+        "reviews": 3225,
+        "shop": "DigitalPlannerStart",
+        "title": "2026 Ultimate Digital Planner | Monthly, Weekly, Daily Planner, iPad Planner, Hyperlinked Digital Planner, Goodnotes Planner, Notability",
+        "total_sales": 31861,
+        "url": "https://www.etsy.com/listing/730507010/2025-ultimate-digital-planner-monthly"
+      },
+      {
+        "age_months": 4,
+        "mo_revenue": 1686,
+        "price": 8.48,
+        "rank": 16,
+        "reviews": 14,
+        "shop": "Milamaluplanners",
+        "title": "Student Planner Academic Planner 2026 2027 Digital Planner Student Planner 2026 2027 Goodnotes College Student Planner School iPad Templates",
+        "total_sales": 628,
+        "url": "https://www.etsy.com/listing/4514378454/student-planner-academic-planner-2026"
+      },
+      {
+        "age_months": 32,
+        "mo_revenue": 56,
+        "price": 3.7,
+        "rank": 17,
+        "reviews": 1798,
+        "shop": "AuraPlannersCo",
+        "title": "All-in-One Digital Planner 2026, Undated Digital Planner, Digital Journal, Digital Goodnotes Template, Notability, Daily Planner",
+        "total_sales": 27025,
+        "url": "https://www.etsy.com/listing/1661820574/all-in-one-digital-planner-2026-undated"
+      },
+      {
+        "age_months": 39,
+        "mo_revenue": 0,
+        "price": 9.16,
+        "rank": 18,
+        "reviews": 2501,
+        "shop": "ThrivingPlanners",
+        "title": "2025-2026 Digital Planner, GoodNotes Planner, iPad Planner, Daily Planner, Notability Planner, Android Planner daily digital planner",
+        "total_sales": 24351,
+        "url": "https://www.etsy.com/listing/1150654254/2025-2026-digital-planner-goodnotes"
+      },
+      {
+        "age_months": 20,
+        "mo_revenue": 1400,
+        "price": 27.99,
+        "rank": 19,
+        "reviews": 40,
+        "shop": "LandOfPrintables",
+        "title": "ULTIMATE Digital Planner 2027 2028 –2031, Goodnotes Planner, Five Year Planner, iPad Planner, Notability, Hyperlinked Planner, ALL in ONE",
+        "total_sales": 397,
+        "url": "https://www.etsy.com/listing/1873340215/ultimate-digital-planner-goodnotes"
+      },
+      {
+        "age_months": 58,
+        "mo_revenue": 358,
+        "price": 29.84,
+        "rank": 20,
+        "reviews": 2053,
+        "shop": "Plannerscollective",
+        "title": "Custom Digital Planner: 2026-2027 Undated, iPad & Tablet",
+        "total_sales": 24062,
+        "url": "https://www.etsy.com/listing/1125534670/custom-digital-planner-2026-2027-undated"
+      },
+      {
+        "age_months": 50,
+        "mo_revenue": 148,
+        "price": 24.33,
+        "rank": 21,
+        "reviews": 2573,
+        "shop": "FutureADHD",
+        "title": "2026 + 2027 ADHD Digital Planner (Rainbow): Self-Care and Habit Tracker (Goodnotes/Android) (Digital Download)",
+        "total_sales": 20694,
+        "url": "https://www.etsy.com/listing/1282376971/2026-adhd-digital-planner-rainbow-self"
+      },
+      {
+        "age_months": 2,
+        "mo_revenue": 1205,
+        "price": 9.65,
+        "rank": 22,
+        "reviews": 3,
+        "shop": "InkAndStoneDigital",
+        "title": "Hobonichi Weeks Style Digital Planner | Undated Weekly Planner | Goodnotes, Notability, Ipad | Mon and Sun start",
+        "total_sales": 165,
+        "url": "https://www.etsy.com/listing/4550281756/hobonichi-weeks-style-digital-planner"
+      },
+      {
+        "age_months": 27,
+        "mo_revenue": 0,
+        "price": 7.85,
+        "rank": 23,
+        "reviews": 950,
+        "shop": "BrighterPlans",
+        "title": "Digital Planner Undated, iPad & Android Planner, GoodNotes Planner, Digital Calendar, Daily, Weekly, Monthly Journal, 2025 2026 iPad Planner",
+        "total_sales": 18479,
+        "url": "https://www.etsy.com/listing/1756165829/digital-planner-undated-ipad-android"
+      },
+      {
+        "age_months": 3,
+        "mo_revenue": 1128,
+        "price": 12,
+        "rank": 24,
+        "reviews": 7,
+        "shop": "DreamGirlPlan",
+        "title": "2026 2027 Student Planner, Academic Planner, Study Digital Planner, College Planner, Goodnotes Planner, Ipad Planner, Portrait Planner",
+        "total_sales": 175,
+        "url": "https://www.etsy.com/listing/4538357989/2026-2027-student-planner-academic"
+      },
+      {
+        "age_months": 58,
+        "mo_revenue": 0,
+        "price": 23.76,
+        "rank": 25,
+        "reviews": 1383,
+        "shop": "TheFlowPlanner",
+        "title": "2026 Digital Planner, 2026 Portrait Planner, 2026 Planner, 2026 Dated Planner, Hyperlinked Digital Life Planner, GoodNotes 2026 Planner iPad",
+        "total_sales": 16114,
+        "url": "https://www.etsy.com/listing/1127394968/2026-digital-planner-2026-portrait"
+      },
+      {
+        "age_months": 20,
+        "mo_revenue": 960,
+        "price": 40,
+        "rank": 26,
+        "reviews": 133,
+        "shop": "PlanRightCo",
+        "title": "Ultimate Digital Planner Bundle, Goodnotes iPad Templates, Notability, Android, Journal, Daily, Weekly, Monthly Planners, Stickers & Inserts",
+        "total_sales": 2384,
+        "url": "https://www.etsy.com/listing/1878185995/ultimate-digital-planner-bundle"
+      },
+      {
+        "age_months": 35,
+        "mo_revenue": 143,
+        "price": 3.96,
+        "rank": 27,
+        "reviews": 844,
+        "shop": "PlanRightCo",
+        "title": "Digital Planner - GoodNotes, iPad, Notability | Daily, Weekly, Monthly | 2024-2025 | Undated | Digital Planner 2024 2025 Undated iPad",
+        "total_sales": 14846,
+        "url": "https://www.etsy.com/listing/1606634310/digital-planner-goodnotes-ipad"
+      },
+      {
+        "age_months": 1,
+        "mo_revenue": 923,
+        "price": 4.64,
+        "rank": 28,
+        "reviews": 19,
+        "shop": "WBaiStudio",
+        "title": "Digital Planner 2026 2027 2028 | GoodNotes Planner | All In One Digital Planner | iPad Planner | Hyperlinked Planner | Digital Journal",
+        "total_sales": 197,
+        "url": "https://www.etsy.com/listing/4568300822/digital-planner-2026-2027-2028-goodnotes"
+      },
+      {
+        "age_months": 54,
+        "mo_revenue": 80,
+        "price": 39.94,
+        "rank": 29,
+        "reviews": 1674,
+        "shop": "LetsPlanPlanners",
+        "title": "Digital Planner 2027 Whole Shop Bundle Budget Fitness Notebook Goal Meal Planning iPad GoodNotes 2026",
+        "total_sales": 14510,
+        "url": "https://www.etsy.com/listing/1209326250/digital-planner-whole-shop-bundle-budget"
+      },
+      {
+        "age_months": 22,
+        "mo_revenue": 875,
+        "price": 35,
+        "rank": 30,
+        "reviews": 72,
+        "shop": "TheMAMdesign",
+        "title": "Custom Digital Planner Bundle 2026 2027 2028 & Undated, All-in-One Digital Planner for iPad and Tablet, Goodnotes Planner, Aesthetic Planner",
+        "total_sales": 1368,
+        "url": "https://www.etsy.com/listing/1833235300/digital-planner-bundle-2026-2027-undated"
+      }
+    ],
+    "market": {
+      "best_price_band": "$28-52",
+      "competing_listings": 160124,
+      "monthly_searches": 4833,
+      "new_sellers_in_top_pct": 45,
+      "opportunity_score": 58,
+      "summary": "Proceed with caution. ~4,833 monthly searches, competition crowded (160,124 listings), and 45% of top sellers are under 6 months old. Top seller earns ~$27,644/mo; the best-earning price band is $28–52.",
+      "top_seller_revenue": 27644
+    },
+    "praise": [
+      {
+        "count": 52,
+        "quotes": [
+          "Great product! The planner is beautiful, useful, and just as described. Very happy with my purchase!",
+          "Absolutely love this planner! It is very beautiful and very well structured. It really helps me stay organized. Highly recommend it!",
+          "Beautiful templates, loved the different choices, options, fonts, designs and colors!"
+        ],
+        "theme": "Beautiful design"
+      },
+      {
+        "count": 44,
+        "quotes": [
+          "Great product! The planner is beautiful, useful, and just as described. Very happy with my purchase!",
+          "it's perfect, exactly what i was after, really impressed with the links too - makes it easy to get to where i need to be quickly.",
+          "I love this planner! It's perfect for what I need, and I'm trying to go completely digital!"
+        ],
+        "theme": "Useful, fits my needs"
+      },
+      {
+        "count": 43,
+        "quotes": [
+          "Very user friendly! I am looking forward to using this to stay organized this school year!",
+          "Lots of choices and easy to use for digital planning.",
+          "I’m actually obsessed it’s so easy to use and SO CUTE"
+        ],
+        "theme": "Easy to set up and use"
+      },
+      {
+        "count": 26,
+        "quotes": [
+          "Seller is so nice, very attentive. All the products are wonderful. So much to choose from",
+          "Thank you so much Yuki! I love my planner! It’s thoughtfully made and so easy to navigate! Yuki answered all my questions and was great to work with! Thanks again!!",
+          "Seller replied quickly when I had issues"
+        ],
+        "theme": "Seller was helpful"
+      },
+      {
+        "count": 23,
+        "quotes": [
+          "There were not 70 planners their were 7 to 10 planners with variations that became 70. ut overall planners were perfect.",
+          "Not what I needed but I misread the item. Still a great product for those that need it",
+          "Tres pratique et de bonne qualité! Parfait pour l’organisation académique!"
+        ],
+        "theme": "High quality"
+      },
+      {
+        "count": 21,
+        "quotes": [
+          "This is a great planner, has everything I wanted in one. Very impressed and highly recommend.",
+          "Seller is so nice, very attentive. All the products are wonderful. So much to choose from",
+          "Fantastic.  Lots of page choices.  Easy to follow instructions."
+        ],
+        "theme": "Has everything I need"
+      },
+      {
+        "count": 20,
+        "quotes": [
+          "Beautiful templates, loved the different choices, options, fonts, designs and colors!",
+          "really neat design! i enjoy being able to pick and choose what style I want to use.",
+          "I love how customizable this planner is, and the reflections are so helpful!"
+        ],
+        "theme": "Flexible or customizable"
+      },
+      {
+        "count": 17,
+        "quotes": [
+          "This is my favorite digital planner. This is my third year purchasing from this shop. I love it!",
+          "I love these designs! I come back again and again!",
+          "LOVE as always. always coming back to this planner"
+        ],
+        "theme": "Repeat buyer"
+      },
+      {
+        "count": 17,
+        "quotes": [
+          "Great product! The planner is beautiful, useful, and just as described. Very happy with my purchase!",
+          "The item was as described and works perfectly! Will definitely recommend to others!",
+          "I really like this planner. It is as described and meets my expectations."
+        ],
+        "theme": "Exactly as described"
+      },
+      {
+        "count": 14,
+        "quotes": [
+          "I am new to rights planning,  and I'm excited to be using this Planner! Love all of her tutorial videos.",
+          "Fantastic.  Lots of page choices.  Easy to follow instructions.",
+          "I would say the YouTube video really helped me. I watched it numerous times before I bought it. The last digital planner I bought I couldn't figure it out at all."
+        ],
+        "theme": "Clear instructions or tutorials"
+      },
+      {
+        "count": 12,
+        "quotes": [
+          "I recommande, excellent planner and instant download.",
+          "Great description, easy to download and use.",
+          "Great customer service easy download"
+        ],
+        "theme": "Fast, easy download"
+      },
+      {
+        "count": 9,
+        "quotes": [
+          "Very user friendly! I am looking forward to using this to stay organized this school year!",
+          "Really love this planner. It makes it so much easier to stick to organising everything.",
+          "Love this planner. Helping me be focused at work."
+        ],
+        "theme": "Helps me stay on track"
+      },
+      {
+        "count": 9,
+        "quotes": [
+          "Thank you for all of your hard work putting the planner togethr. It works well with Good Notes.",
+          "Love this digital planner - very helpful, using it on my iPad mini.",
+          "Would recommend again! Great for my computer use as well<3"
+        ],
+        "theme": "Works on my device"
+      },
+      {
+        "count": 9,
+        "quotes": [
+          "An excellent digital planner! I love it and use it everyday! What a blessing!🩷",
+          "Love it and I use it everyday! Can't wait to use it for 2026 as well.",
+          "I got the all-in-one digital planner and I’m absolutely obsessed with it. As a type-a girl this is my new hobby, my new personality, and my primary source of dopamine."
+        ],
+        "theme": "I use it every day"
+      },
+      {
+        "count": 8,
+        "quotes": [
+          "good range of stickers that make all projects more personalised",
+          "easy to download and use! I love the stickers!",
+          "Adorable and easy to use digital stockers. Thank you."
+        ],
+        "theme": "Love the stickers and extras"
+      },
+      {
+        "count": 8,
+        "quotes": [
+          "it's perfect, exactly what i was after, really impressed with the links too - makes it easy to get to where i need to be quickly.",
+          "Thank you so much Yuki! I love my planner! It’s thoughtfully made and so easy to navigate! Yuki answered all my questions and was great to work with! Thanks again!!",
+          "love the hyperlinks and it's super cute and useful"
+        ],
+        "theme": "Links work, easy to navigate"
+      },
+      {
+        "count": 7,
+        "quotes": [
+          "Amazing product I absolutely  love my planner its so easy to use and amazing for the price I got it ! Definitely beginner friendly to set up as well 🥰✨️11/10!!",
+          "I love how affordable, easy to manage, and pretty this digital planner is. Also, a special shoutout to the company for reaching out personally to make sure that my experience was good.",
+          "Great shop. Great price. Great items."
+        ],
+        "theme": "Great value"
+      },
+      {
+        "count": 4,
+        "quotes": [
+          "I got the all-in-one digital planner and I’m absolutely obsessed with it. As a type-a girl this is my new hobby, my new personality, and my primary source of dopamine.",
+          "I love it. Was fun to set up.",
+          "Going to be fun to play with"
+        ],
+        "theme": "Fun to use"
+      }
+    ],
+    "price": {
+      "best_band": "$28-52",
+      "median": 24.05,
+      "p25": 8.07,
+      "p75": 29.84,
+      "revenue_weighted_median": 25.66,
+      "top10_by_revenue_median": 20.08
+    },
+    "query": "goodnotes planner",
+    "refreshed": "2026-10-26T19:04:57Z",
+    "shops": [
+      {
+        "rating": 4.85,
+        "reviews": 6025,
+        "shop": "LetsPlanPlanners"
+      },
+      {
+        "rating": 4.83,
+        "reviews": 12873,
+        "shop": "CreativeDreamersCo"
+      },
+      {
+        "rating": 4.61,
+        "reviews": 3846,
+        "shop": "PrintMagicStudioX"
+      },
+      {
+        "rating": 4.83,
+        "reviews": 12123,
+        "shop": "Plannerscollective"
+      },
+      {
+        "rating": 4.85,
+        "reviews": 660,
+        "shop": "Milamaluplanners"
+      },
+      {
+        "rating": 4.74,
+        "reviews": 8057,
+        "shop": "ForLittleLion"
+      },
+      {
+        "rating": 4.87,
+        "reviews": 29379,
+        "shop": "HappyDownloads"
+      },
+      {
+        "rating": 4.75,
+        "reviews": 9673,
+        "shop": "phenixdigital"
+      },
+      {
+        "rating": 4.68,
+        "reviews": 6723,
+        "shop": "OptimumPlanners"
+      },
+      {
+        "rating": 4.73,
+        "reviews": 6503,
+        "shop": "BrighterPlans"
+      },
+      {
+        "rating": 4.88,
+        "reviews": 126,
+        "shop": "DreamGirlPlan"
+      },
+      {
+        "rating": 4.81,
+        "reviews": 4394,
+        "shop": "DigitalPlannerStart"
+      }
+    ],
+    "wishes": [
+      {
+        "count": 3,
+        "theme": "New edition for upcoming years"
+      },
+      {
+        "count": 2,
+        "theme": "Pages in a logical order"
+      },
+      {
+        "count": 2,
+        "theme": "More links between views"
+      },
+      {
+        "count": 1,
+        "theme": "More page types included"
+      },
+      {
+        "count": 1,
+        "theme": "App and PDF versions that match"
+      },
+      {
+        "count": 1,
+        "theme": "Page previews before buying"
+      },
+      {
+        "count": 1,
+        "theme": "A video showing how it works"
+      },
+      {
+        "count": 1,
+        "theme": "Side tabs for faster navigation"
+      },
+      {
+        "count": 1,
+        "theme": "Pages you can type on"
+      }
+    ]
+  },
+  "status": "queued",
+  "title": "Any Monday"
+}
