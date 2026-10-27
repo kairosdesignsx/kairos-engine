@@ -63,13 +63,17 @@ def results():
     return out
 
 
+PHOTO_MAX, PHOTO_LISTINGS = 8, 15
+
+
 def photo_tasks(tid, per=6):
     types = store.read(os.path.join(store.ROOT, 'config', 'types.json'))
     line = store.read(os.path.join(store.ROOT, 'config', 'lines', types[tid]['line'] + '.json'))
     ev = store.read(os.path.join(store.type_dir(tid), 'evidence.json'))
     feats = [{"id": f['id'], "name": f['name']} for f in line['features']]
-    Ls = [{"listing_id": L['listing_id'], "title": L['title'], "description": (L.get('description') or '')[:4000], "photos": L.get('photos', [])}
-          for L in ev['listings'] if L.get('photos')]
+    # usage budget: the first PHOTO_MAX photos of the top PHOTO_LISTINGS listings (sellers lead with what matters)
+    Ls = [{"listing_id": L['listing_id'], "title": L['title'], "description": (L.get('description') or '')[:4000], "photos": L.get('photos', [])[:PHOTO_MAX]}
+          for L in ev['listings'] if L.get('photos')][:PHOTO_LISTINGS]
     tasks = []
     for i in range(0, len(Ls), per):
         n = i // per + 1
