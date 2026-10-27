@@ -65,7 +65,10 @@ Paths below are relative to the repo root (where this file is). Run `./setup.sh`
 ## Stage 7. Queue
 1. `python3 stages/enqueue.py <pid>` prepares the review payload and data/handoff/<pid>/ (files, photos, listing.json, listing.txt).
 2. Publish it to the Review Queue artifact (images as files, product and evidence rows in its database).
-3. Copy data/handoff/<pid>/ to the laptop at Kairos\data\products\<pid>\ with device_commit_files, in the same step.
+3. Copy data/handoff/<pid>/ to the laptop folder `python3 stages/handoff.py rebuild` or `done` prints
+   (Kairos\data\products\<pid> <Product name>\, for example "p-gp-001 Any Monday"; never a bare id) with device_commit_files,
+   in the same step. Then `python3 stages/handoff.py names` and copy data/handoff/names.json to Kairos\data\products\names.json
+   (the laptop worker renames any bare-id folder from it).
    Darren reviews the real file there, and an approval must find everything the laptop needs to list it.
    Then `python3 stages/handoff.py done <pid>` and commit (data/products/<pid>/handoff.json is the delivery record).
    Laptop not reachable: say so in the report. The built files are lost when this session ends; that's fine,
@@ -85,7 +88,8 @@ Paths below are relative to the repo root (where this file is). Run `./setup.sh`
 3. New competitor photos: `python3 stages/ingest.py photo-tasks <type>`, one subagent per task with
    prompts/photo-reader.md, then `photo-merge <type>` and rebuild insights. Briefs written after this see real features.
 4. Jobs for the laptop (data/jobs/outbox/*.json) go to Kairos\jobs\outbox\ with device_commit_files, and finished
-   product files (PDF, photos) go to Kairos\data\products\<pid>\ so the laptop can publish them.
+   product files (PDF, photos) go to Kairos\data\products\<pid> <Product name>\ so the laptop can publish them
+   (publish jobs still name files as data/products/<pid>/...; the worker resolves the named folder).
 
 ## Stage 8b. Experiments
 data/learn/experiments.json lists running tests (for example launch-sale depth). With the stats in data/stats/, update each

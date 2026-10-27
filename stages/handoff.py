@@ -7,6 +7,10 @@ never reached the laptop and rebuilds their handoff from the saved plan.
   python3 stages/handoff.py missing          -> queued products with no delivery record
   python3 stages/handoff.py rebuild <pid>    -> build + photos (if needed) + data/handoff/<pid>/
   python3 stages/handoff.py done <pid>       -> record the laptop copy (after device_commit_files)
+  python3 stages/handoff.py names            -> data/handoff/names.json for Kairos\\data\\products\\names.json
+
+Laptop folders are named "<pid> <Product name>" (for example "p-gp-001 Any Monday"). The laptop worker
+renames older bare-id folders from names.json and finds files either way.
 """
 import json, os, subprocess, sys, datetime
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'lib')); sys.path.insert(0, os.path.dirname(__file__))
@@ -16,6 +20,30 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 def _d(pid): return os.path.join(store.DATA, 'products', pid)
+
+
+BAD = '<>:"/\\|?*'
+
+
+def name(pid):
+    d = _d(pid)
+    t = ((store.read(os.path.join(d, 'queue.json')) or {}).get('doc') or {}).get('title') or (store.read(os.path.join(d, 'brief.json')) or {}).get('title') or ''
+    return ''.join(c for c in t if c not in BAD).strip()
+
+
+def laptop(pid):
+    n = name(pid)
+    return "C:\\Users\\darre\\Documents\\Kairos\\data\\products\\" + (f"{pid} {n}" if n else pid) + "\\"
+
+
+def names():
+    out = {}
+    for pid in sorted(os.listdir(os.path.join(store.DATA, 'products'))):
+        if os.path.exists(os.path.join(_d(pid), 'queue.json')) and name(pid):
+            out[pid] = name(pid)
+    os.makedirs(os.path.join(store.DATA, 'handoff'), exist_ok=True)
+    store.write(os.path.join(store.DATA, 'handoff', 'names.json'), out)
+    return {"names": out, "laptop": "C:\\Users\\darre\\Documents\\Kairos\\data\\products\\names.json"}
 
 
 def missing():
@@ -39,17 +67,17 @@ def rebuild(pid):
     out = enqueue._handoff(pid, d, store.read(os.path.join(d, 'listing.json')), store.read(os.path.join(d, 'build.json')))
     files = sorted(os.path.relpath(os.path.join(r, f), out) for r, _, fs in os.walk(out) for f in fs)
     return {"pid": pid, "handoff": out, "files": files,
-            "laptop": f"C:\\Users\\darre\\Documents\\Kairos\\data\\products\\{pid}\\"}
+            "laptop": laptop(pid)}
 
 
 def done(pid):
-    rec = {"pid": pid, "laptop": f"C:\\Users\\darre\\Documents\\Kairos\\data\\products\\{pid}\\",
-           "copied_at": datetime.datetime.utcnow().replace(microsecond=0).isoformat() + 'Z'}
+    rec = {"pid": pid, "laptop": laptop(pid),
+           "copied_at": datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')}
     store.write(os.path.join(_d(pid), 'handoff.json'), rec)
     return rec
 
 
 if __name__ == '__main__':
     cmd = sys.argv[1]
-    r = missing() if cmd == 'missing' else rebuild(sys.argv[2]) if cmd == 'rebuild' else done(sys.argv[2])
+    r = missing() if cmd == 'missing' else names() if cmd == 'names' else rebuild(sys.argv[2]) if cmd == 'rebuild' else done(sys.argv[2])
     print(json.dumps(r, indent=1))

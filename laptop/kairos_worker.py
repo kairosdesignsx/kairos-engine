@@ -13,7 +13,7 @@ Jobs
   publish            {product_id, listing:{...}, files:[...], photos:[...], state:"draft"|"active"}
   stats              {}                                         -> views, favorites, sales per listing
 """
-import base64, hashlib, json, mimetypes, os, secrets, sys, threading, time, traceback, urllib.error, urllib.parse, urllib.request, uuid, webbrowser
+import base64, hashlib, json, mimetypes, os, secrets, shutil, sys, threading, time, traceback, urllib.error, urllib.parse, urllib.request, uuid, webbrowser
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -222,16 +222,18 @@ def job_publish(job):
     form = {'quantity': 999, 'title': L['title'], 'description': L['description'], 'price': L['price'],
             'who_made': 'i_did', 'when_made': 'made_to_order', 'taxonomy_id': tax,
             'type': 'download', 'is_supply': 'false', 'should_auto_renew': 'true', 'tags': L['tags']}
+    photos = [resolve(r) for r in job['photos']]; files = [resolve(r) for r in job['files']]
+    missing = [p for p in photos + files if not os.path.exists(p)]
+    if missing:
+        raise FileNotFoundError('missing before creating the draft: ' + '; '.join(missing))
     created = call('POST', f'/shops/{shop}/listings', form=form, auth=True)
     lid = created['listing_id']
     log('publish', job['product_id'], 'draft listing', lid)
-    for rank, rel in enumerate(job['photos'], 1):
-        p = os.path.join(KAIROS, rel)
+    for rank, p in enumerate(photos, 1):
         alt = (job.get('alt') or [])[rank - 1] if rank <= len(job.get('alt') or []) else ''
         call('POST', f'/shops/{shop}/listings/{lid}/images', form={'rank': rank, 'alt_text': alt[:500]} if alt else {'rank': rank},
              files={'image': (os.path.basename(p), open(p, 'rb').read())}, auth=True)
-    for rank, rel in enumerate(job['files'], 1):
-        p = os.path.join(KAIROS, rel)
+    for rank, p in enumerate(files, 1):
         call('POST', f'/shops/{shop}/listings/{lid}/files', form={'name': os.path.basename(p), 'rank': rank},
              files={'file': (os.path.basename(p), open(p, 'rb').read())}, auth=True)
     if job.get('state') == 'active':
@@ -301,12 +303,64 @@ def job_inspect(job):
     return out
 
 
+PRODUCTS = os.path.join(DATA, 'products')
+BAD = '<>:"/\\|?*'
+
+
+def product_dir(pid):
+    """The product's folder: 'p-xxx-001 Product Name' (or the old bare 'p-xxx-001')."""
+    if os.path.isdir(PRODUCTS):
+        for n in sorted(os.listdir(PRODUCTS)):
+            if (n == pid or n.startswith(pid + ' ')) and os.path.isdir(os.path.join(PRODUCTS, n)):
+                return os.path.join(PRODUCTS, n)
+    return os.path.join(PRODUCTS, pid)
+
+
+def resolve(rel):
+    """A job path like data/products/<pid>/files/X.pdf, wherever the product folder now lives."""
+    p = os.path.join(KAIROS, rel)
+    parts = rel.replace('\\', '/').split('/')
+    if not os.path.exists(p) and len(parts) > 3 and parts[0] == 'data' and parts[1] == 'products':
+        p = os.path.join(product_dir(parts[2]), *parts[3:])
+    return p
+
+
+def name_product_folders():
+    """Rename product folders to 'p-xxx-001 Product Name' using data/products/names.json from the engine.
+    Merges into the named folder if both exist. A folder that's open in another app is skipped until the next run."""
+    try:
+        names = json.load(open(os.path.join(PRODUCTS, 'names.json'), encoding='utf-8'))
+    except Exception:
+        return
+    for pid, name in names.items():
+        want = os.path.join(PRODUCTS, f"{pid} {''.join(c for c in name if c not in BAD).strip()}")
+        for n in sorted(os.listdir(PRODUCTS)):
+            src = os.path.join(PRODUCTS, n)
+            if src == want or not os.path.isdir(src) or not (n == pid or n.startswith(pid + ' ')):
+                continue
+            try:
+                if not os.path.exists(want):
+                    os.rename(src, want)
+                else:
+                    for root, _, files in os.walk(src):
+                        for f in files:
+                            dst = os.path.join(want, os.path.relpath(os.path.join(root, f), src))
+                            os.makedirs(os.path.dirname(dst), exist_ok=True)
+                            if not os.path.exists(dst):
+                                shutil.move(os.path.join(root, f), dst)
+                    shutil.rmtree(src, ignore_errors=True)
+                log('named folder', n, '->', os.path.basename(want))
+            except OSError as e:
+                log('could not rename', n, '(open in another app?)', e)
+
+
 JOBS = {'competitor_photos': job_competitor_photos, 'publish': job_publish, 'stats': job_stats, 'fix_listing': job_fix_listing, 'inspect': job_inspect}
 
 
 def once():
     for d in (OUTBOX, DONE, RESULTS):
         os.makedirs(d, exist_ok=True)
+    name_product_folders()
     for name in sorted(os.listdir(OUTBOX)):
         if not name.endswith('.json'):
             continue
