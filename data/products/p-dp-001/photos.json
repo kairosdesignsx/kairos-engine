@@ -10,5 +10,28 @@
   "photo-08-ph8.jpg",
   "photo-09-ph9.jpg"
  ],
- "made": "2026-10-26T20:45:03Z"
+ "made": "2026-10-27T16:51:10Z",
+ "zoom_scale": {
+  "photo-02-ph2.jpg": [
+   4.11
+  ],
+  "photo-03-ph3.jpg": [
+   2.49
+  ],
+  "photo-04-ph4.jpg": [
+   1.84
+  ],
+  "photo-05-ph5.jpg": [
+   1.84
+  ],
+  "photo-06-ph6.jpg": [
+   2.98
+  ],
+  "photo-07-ph7.jpg": [
+   1.84
+  ],
+  "photo-08-ph8.jpg": [
+   2.49
+  ]
+ }
 }

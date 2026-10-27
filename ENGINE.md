@@ -23,6 +23,11 @@ Every subagent call passes a model. Routine steps run on Sonnet; judgment and bu
   listing writer (listing-writer.md), coverage checker (coverage-checker.md), and any copy, collect or publish step.
 - Session model (no override): brief writer (brief-writer.md), new line modules and build fixes, and the final read of a product
   that failed Check twice.
+- Effort: every subagent call also passes `effort` (this runbook asks for it explicitly):
+  low for EverBee callers and any copy, collect or publish step; medium for review coders, photo readers and the listing writer;
+  high for the coverage checker and the brief writer; build fixes run in the session at its own effort.
+- Code checks first: `check.py tech` now fails links past the page edge, overlapping links to different pages, close-ups smaller
+  than MIN_ZOOM (lines/planner/checks.py) and photos with big empty bands. Fix those before spending a coverage-checker round.
 - Keep subagent prompts short: point at files, don't paste them. One product per subagent; never re-run a step whose output exists.
 - Stop for the night if the run has used about an hour of work and something is still failing: queue what passed, report the rest.
 

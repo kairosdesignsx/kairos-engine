@@ -134,6 +134,14 @@ def zoom_card(src, reg, x, y, cw, W, H, frame, holes=None):
             f'<img src="{src}" style="position:absolute;left:{-x0 * k:.0f}px;top:{-y0 * k:.0f}px;width:{W * k:.0f}px;height:{H * k:.0f}px">{punch}</div>'), ch
 
 
+SCALES = {}   # photo key -> [photo px per page css px, per close-up]; >= 2.7 reads at Etsy zoom (check.py tech, r013)
+_CUR = ['']
+
+
+def _rec(cw, x0, x1):
+    SCALES.setdefault(_CUR[0], []).append(round(cw / max(1.0, x1 - x0), 2))
+
+
 def zoom_scene(th, c, P, N, W, H, frame, head, pts, label, have, blocks):
     zs = [z for z in c['zoom'] if z['page'] in have]
     cap = lambda txt, x, y, w: f'<p style="position:absolute;left:{x}px;top:{y:.0f}px;width:{w}px;text-align:center;font:600 38px var(--b);letter-spacing:.06em;text-transform:uppercase;opacity:.8">{txt}</p>'
@@ -141,14 +149,14 @@ def zoom_scene(th, c, P, N, W, H, frame, head, pts, label, have, blocks):
     if len(zs) == 1 and c.get('wide'):  # wide: headline and points on top, one close-up across the photo (for wide, short crops)
         z = zs[0]; cw = int(c.get('width', 2400)); x = (2700 - cw) // 2; y = 560
         x0, x1 = z['x'][0] * W, z['x'][1] * W
-        reg = crop_region(z, blocks[z['page']], W, H, (2025 - y - 50) * (x1 - x0) / cw)
+        reg = crop_region(z, blocks[z['page']], W, H, (2025 - y - 50) * (x1 - x0) / cw); _rec(cw, x0, x1)
         card, ch = zoom_card(P(z['page']), reg, x, y, cw, W, H, frame)
         return (f'<div style="position:absolute;left:150px;right:150px;top:80px;display:flex;flex-direction:column;gap:20px">{label}<p class="h" style="font-size:110px">{head}</p>'
                 f'<div style="display:flex;gap:60px;flex-wrap:wrap">{"".join(f"<p class=pt><b>&#9679;</b><span>{esc(t)}</span></p>" for t in c.get("points", [])[:3])}</div></div>' + card + cap(name(z), x, y - 66, cw))
     if len(zs) == 1:
         z = zs[0]; cw = int(c.get('width', 1500)); left = c.get('side', 'left') == 'left'
         x0, x1 = z['x'][0] * W, z['x'][1] * W
-        reg = crop_region(z, blocks[z['page']], W, H, 1720 * (x1 - x0) / cw)
+        reg = crop_region(z, blocks[z['page']], W, H, 1720 * (x1 - x0) / cw); _rec(cw, x0, x1)
         x = 150 if left else 2700 - 150 - cw
         card, ch = zoom_card(P(z['page']), reg, x, 0, cw, W, H, frame, z.get('holes'))
         y = (2025 - ch) / 2 + 35
@@ -167,7 +175,7 @@ def zoom_scene(th, c, P, N, W, H, frame, head, pts, label, have, blocks):
     y = 560; out = ''
     for k, z in enumerate(zs[:2]):
         cw = ws[k]; x0, x1 = z['x'][0] * W, z['x'][1] * W
-        reg = crop_region(z, blocks[z['page']], W, H, (2025 - y - 50) * (x1 - x0) / cw)
+        reg = crop_region(z, blocks[z['page']], W, H, (2025 - y - 50) * (x1 - x0) / cw); _rec(cw, x0, x1)
         card, ch = zoom_card(P(z['page']), reg, xs[k], y, cw, W, H, frame, z.get('holes'))
         out += card + cap(name(z), xs[k], y - 66, cw)
     return (f'<div style="position:absolute;left:150px;right:150px;top:80px;display:flex;flex-direction:column;gap:20px">{label}<p class="h" style="font-size:110px">{head}</p>'
@@ -208,7 +216,7 @@ def scenes(brief, listing, build, shots_dir, out_dir):
             P = lambda a: 'file://' + os.path.join(sp, a + '.png')
         th = dict(th, paper=PAPER_DESK, soft='#DED3C5')
     T = lambda *a, **k: tablet(*a, frame=frame, **k)
-    S = {}; blocks = None
+    S = {}; blocks = None; SCALES.clear()
     for i, ph in enumerate(brief['photos']):
         c = copy.get(ph['id'], {})
         pg = [a for a in (c.get('pages') or ph.get('pages', [])) if a in have]
@@ -221,6 +229,7 @@ def scenes(brief, listing, build, shots_dir, out_dir):
             if blocks is None:
                 zpages = [z['page'] for ph2 in brief['photos'] for z in copy.get(ph2['id'], {}).get('zoom', []) if z['page'] in have]
                 blocks = page_blocks(os.path.join(os.path.dirname(os.path.abspath(shots_dir)), 'product.html'), zpages, W, H)
+            _CUR[0] = key
             S[key] = base(th, zoom_scene(th, c, P, Nc, W, H, frame, head, pts, label, have, blocks))
             continue
         if c.get('view') == 'crop' and pg and i > 0:

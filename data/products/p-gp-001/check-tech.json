@@ -30,6 +30,26 @@
   "detail": "claims [453, 453], file has 453"
  },
  {
+  "name": "links inside the page (Any-Monday.pdf)",
+  "pass": true,
+  "detail": "all inside"
+ },
+ {
+  "name": "links don't overlap (Any-Monday.pdf)",
+  "pass": true,
+  "detail": "none"
+ },
+ {
+  "name": "close-ups big enough to read (r013)",
+  "pass": true,
+  "detail": "all close-ups at readable size"
+ },
+ {
+  "name": "no big empty bands in photos (r006)",
+  "pass": true,
+  "detail": "largest 0.27"
+ },
+ {
   "name": "listing photos",
   "pass": true,
   "detail": "9 photos, sizes [(2700, 2025)]"
