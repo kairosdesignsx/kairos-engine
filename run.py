@@ -78,6 +78,15 @@ def plan():
     # learn before repeating: no new product of a type while its last one waits for Darren's review
     ready_types = [t for t in ready_types if t not in waiting]
     ready_types.sort(key=lambda t: (t in made, 0))  # types with no product yet first
+    # family cap: no first product for a type whose family already has FAMILY_CAP types with products (wait for their sales)
+    import pick
+    groups = store.read(os.path.join(store.ROOT, 'config', 'groups.json'))
+    fam = lambda t: groups.get(types[t]['group'], {}).get('family', types[t]['group'])
+    fam_made = {}
+    for t in made:
+        if t in types:
+            fam_made[fam(t)] = fam_made.get(fam(t), 0) + 1
+    ready_types = [t for t in ready_types if t in made or fam_made.get(fam(t), 0) < pick.FAMILY_CAP]
     new = []
     for i in range(budget):
         if not ready_types:

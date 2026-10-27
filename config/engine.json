@@ -21,9 +21,9 @@
   "max_build_retries": 4
  },
  "nightly": {
-  "max_new_products": 3,
+  "max_new_products": 1,
   "max_fixes": 5,
-  "new_types_per_night": 2,
+  "new_types_per_night": 1,
   "_how": "max_new_products: products started per night. new_types_per_night: top picks from stages/pick.py added as new types (teardown that night, products from the next night). Types with no product yet are built first."
  },
  "kill_rule": {

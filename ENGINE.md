@@ -17,6 +17,15 @@ Paths below are relative to the repo root (where this file is). Run `./setup.sh`
 - Nothing reaches the queue without passing Check.
 - Keep the main context small: EverBee calls and review coding go to subagents (briefs in prompts/).
 
+## Models (usage budget)
+Every subagent call passes a model. Routine steps run on Sonnet; judgment and building stay on the session model (Opus).
+- Sonnet (`model: "sonnet"`): EverBee callers (everbee-caller.md), review coders (review-coder.md), photo readers (photo-reader.md),
+  listing writer (listing-writer.md), coverage checker (coverage-checker.md), and any copy, collect or publish step.
+- Session model (no override): brief writer (brief-writer.md), new line modules and build fixes, and the final read of a product
+  that failed Check twice.
+- Keep subagent prompts short: point at files, don't paste them. One product per subagent; never re-run a step whose output exists.
+- Stop for the night if the run has used about an hour of work and something is still failing: queue what passed, report the rest.
+
 ## Stage 0. Plan tonight
 1. `python3 run.py plan` writes runs/<id>/plan.json. It runs the picker (stages/pick.py: market research x what the
    lines can build x overlap with what we already make), adds the top picks as new types (config `nightly.new_types_per_night`),

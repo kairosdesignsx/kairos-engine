@@ -5,12 +5,14 @@
 
 Score = market score (EverBee research, 0 to 100)
         x line fit       (1.0 the line builds it today; 0.85 it needs new modules; no line = not picked, listed as needs_line)
-        x overlap        (0.55 when a type in the same family (config/groups.json) already exists: breadth first while the shop is new;
+        x overlap        (0.55 per type already in the same family (config/groups.json), and none at all once a family has FAMILY_CAP types: breadth first while the shop is new;
                           a group whose product is approved or selling gets this lifted later from stats)
         x lessons        (0.7 when Darren rejected a product of this group)
 Ideas with call "Skip" are left out; "Test" ideas stay but rank lower because their market score is lower.
 """
 import json, os, re, sys
+
+FAMILY_CAP = 2  # no new type in a family that already has this many types, until sales data says the family works
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'lib'))
 import store
 
@@ -41,7 +43,7 @@ def run():
         lessons = [json.loads(l) for l in open(lp) if l.strip()]
     rejected_groups = {tgroups.get(l.get('type_id')) for l in lessons}
     have_queries = {t.get('query') for t in types.values()}
-    picks, needs_line = [], []
+    picks, needs_line, held = [], [], []
     for i in ideas:
         if i.get('call') == 'Skip':
             continue
@@ -52,8 +54,13 @@ def run():
             needs_line.append({"idea": i['idea'], "group": i['group'], "market": i['score'], "why": g.get('note', 'no line can build this yet')})
             continue
         fit = g.get('fit', 1.0)
-        fams = {groups.get(x, {}).get('family', x) for x in tgroups.values()}
-        overlap = 0.55 if g.get('family', i['group']) in fams else 1.0
+        fam = g.get('family', i['group'])
+        in_fam = sum(1 for x in tgroups.values() if groups.get(x, {}).get('family', x) == fam)
+        if in_fam >= FAMILY_CAP:
+            held.append({"idea": i['idea'], "group": i['group'], "market": i['score'],
+                         "why": f"we already make {in_fam} types in the {fam} family; wait for their sales before adding more"})
+            continue
+        overlap = 0.55 ** in_fam
         lesson = 0.7 if i['group'] in rejected_groups else 1.0
         score = round(i['score'] * fit * overlap * lesson, 1)
         why = [f"market {i['score']} ({i['call']})", f"{i['searches']:,} searches a month", f"{i['listings']:,} listings",
@@ -71,7 +78,8 @@ def run():
     picks.sort(key=lambda x: -x['score'])
     for n, p in enumerate(picks, 1):
         p['rank'] = n
-    out = {"made": store.now(), "source": "data/market/opportunities.json", "picks": picks, "needs_line": sorted(needs_line, key=lambda x: -x['market'])}
+    out = {"made": store.now(), "source": "data/market/opportunities.json", "picks": picks, "needs_line": sorted(needs_line, key=lambda x: -x['market']),
+           "held": sorted(held, key=lambda x: -x['market'])}
     store.write(os.path.join(store.DATA, 'plan', 'picks.json'), out)
     md = ["# What to make next", "", "| # | Idea | Line | Score | Why |", "|---|---|---|---|---|"]
     md += [f"| {p['rank']} | {p['idea']} | {p['line']} | {p['score']} | {'; '.join(p['why'])} |" for p in picks[:15]]
