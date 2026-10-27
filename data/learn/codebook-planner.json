@@ -34,6 +34,11 @@
    "id": "p_fun",
    "theme": "Fun to use",
    "use_for": "Buyer says it is fun or enjoyable to fill in or use."
+  },
+  {
+   "id": "p_calendar_links",
+   "theme": "Links to my calendar app",
+   "use_for": "Praise for links that send entries or appointments to the buyer's calendar app."
   }
  ],
  "complaints": [
@@ -146,6 +151,21 @@
    "id": "c_manual_pages",
    "theme": "Have to duplicate or add pages yourself",
    "use_for": "Only one copy of each page or no repeating dated pages, so the buyer must duplicate or build pages before using it."
+  },
+  {
+   "id": "c_page_size",
+   "theme": "Wrong page size for my device or planner",
+   "use_for": "Page dimensions don't fit the buyer's device, app or planner size (blank margins, A4 instead of expected size, size not offered)."
+  },
+  {
+   "id": "c_watermark",
+   "theme": "Watermark on the pages",
+   "use_for": "Pages carry a seller or personal watermark the buyer doesn't want on the finished print."
+  },
+  {
+   "id": "c_size",
+   "theme": "Wrong page size for my planner",
+   "use_for": "Page size didn't fit the buyer's planner, binder or hole punch, or the size they needed wasn't offered."
   }
  ],
  "wishes": [
@@ -303,6 +323,21 @@
    "id": "w_gamify",
    "theme": "More game-style rewards",
    "use_for": "Wants more happening in gamified features, such as rewards or changes when leveling up."
+  },
+  {
+   "id": "w_carry_over",
+   "theme": "Carry entries between calendar views",
+   "use_for": "Wants entries on the main or monthly calendar to flow easily into the daily pages."
+  },
+  {
+   "id": "w_app",
+   "theme": "A phone app version",
+   "use_for": "Wishes the planner were a standalone app instead of a file."
+  },
+  {
+   "id": "w_calendar_sync",
+   "theme": "Connect to Apple or Google Calendar",
+   "use_for": "Wants the planner to link or sync with a calendar app such as Apple or Google Calendar."
   }
  ]
 }

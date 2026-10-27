@@ -1,0 +1,1138 @@
+{
+ "product_type": "2027 digital planner (Dated 2027 planner PDF)",
+ "codebook": {
+  "complaints": [
+   {
+    "id": "c_download",
+    "theme": "Couldn't download or open the file",
+    "use_for": "Download failed, file won't open, can't find the file after buying."
+   },
+   {
+    "id": "c_setup",
+    "theme": "Confusing setup or unclear instructions",
+    "use_for": "Didn't know how to import, set up or start; instructions or videos unclear."
+   },
+   {
+    "id": "c_hard",
+    "theme": "Hard to use day to day",
+    "use_for": "General 'hard to use', 'not user friendly', 'not intuitive' with no specific cause."
+   },
+   {
+    "id": "c_nav",
+    "theme": "Hard to navigate or find pages",
+    "use_for": "Can't find pages, tabs or buttons awkward, wants faster ways around."
+   },
+   {
+    "id": "c_links",
+    "theme": "Links broken or go to the wrong page",
+    "use_for": "Specific hyperlink failures."
+   },
+   {
+    "id": "c_device",
+    "theme": "Doesn't work on my app or device",
+    "use_for": "Android, Samsung, reMarkable, OneNote, Kindle, Windows, app glitches."
+   },
+   {
+    "id": "c_extra_app",
+    "theme": "Needed an app or subscription that wasn't clear",
+    "use_for": "Had to buy Goodnotes or another app to use it."
+   },
+   {
+    "id": "c_lag",
+    "theme": "Slow, laggy or file too big",
+    "use_for": "Performance and file size."
+   },
+   {
+    "id": "c_dates",
+    "theme": "Wrong or missing dates, calendar errors",
+    "use_for": "Dates, weekdays or calendar order wrong."
+   },
+   {
+    "id": "c_missing",
+    "theme": "Missing pages or less than expected",
+    "use_for": "Fewer pages, sections or items than promised."
+   },
+   {
+    "id": "c_space",
+    "theme": "Too little writing space",
+    "use_for": "Boxes, calendar cells or lines too small to write in."
+   },
+   {
+    "id": "c_readability",
+    "theme": "Text too small or hard to read",
+    "use_for": "Font size, contrast, legibility."
+   },
+   {
+    "id": "c_edit",
+    "theme": "Can't edit, type or customize",
+    "use_for": "Wanted to type, edit text, change colors or tabs and couldn't."
+   },
+   {
+    "id": "c_overwhelm",
+    "theme": "Too much, overwhelming",
+    "use_for": "So many pages or sections that the buyer didn't know where to start."
+   },
+   {
+    "id": "c_basic",
+    "theme": "Too basic or boring",
+    "use_for": "Too simple, not enough to it."
+   },
+   {
+    "id": "c_look",
+    "theme": "Didn't like the look",
+    "use_for": "Colors, style or design disliked."
+   },
+   {
+    "id": "c_misleading",
+    "theme": "Not as described or pictured",
+    "use_for": "Product differs from photos or description, misleading listing."
+   },
+   {
+    "id": "c_not_useful",
+    "theme": "Not useful for my needs",
+    "use_for": "Didn't fit how the buyer plans, no specific defect."
+   },
+   {
+    "id": "c_quality",
+    "theme": "Errors, typos or low quality",
+    "use_for": "Mistakes, sloppy pages, blurry images, broken elements."
+   },
+   {
+    "id": "c_broken",
+    "theme": "Doesn't work (no detail)",
+    "use_for": "'Doesn't work' with no further detail."
+   },
+   {
+    "id": "c_value",
+    "theme": "Not worth the price",
+    "use_for": "Price or value complaints."
+   },
+   {
+    "id": "c_support",
+    "theme": "Seller didn't help or reply",
+    "use_for": "Slow or unhelpful support."
+   },
+   {
+    "id": "c_refund",
+    "theme": "Refund refused",
+    "use_for": "Seller refused refund or exchange."
+   },
+   {
+    "id": "c_language",
+    "theme": "Only in English",
+    "use_for": "Wanted another language."
+   },
+   {
+    "id": "c_upsell",
+    "theme": "Pushes paid add-ons or sign-ups",
+    "use_for": "Links or pages inside the product lead to extra purchases, paywalls or forced email/subscription sign-ups."
+   },
+   {
+    "id": "c_security",
+    "theme": "Spam, privacy or virus worries",
+    "use_for": "Buyer links the purchase to spam, sold personal data, a virus or other security problems."
+   },
+   {
+    "id": "c_review_gate",
+    "theme": "Forced to leave a review",
+    "use_for": "Seller required a rating or review before giving access to the file."
+   },
+   {
+    "id": "c_pdf_not_template",
+    "theme": "Just a PDF, not a native device template",
+    "use_for": "Loads as a plain PDF or document instead of a notebook template on the device; buyer expected native templates."
+   },
+   {
+    "id": "c_time_format",
+    "theme": "Unwanted time format",
+    "use_for": "Time slots in 24-hour (military) or other format the buyer finds confusing."
+   },
+   {
+    "id": "c_review_nag",
+    "theme": "Nagged for a review",
+    "use_for": "Annoyed by repeated review requests or notifications asking for a rating."
+   },
+   {
+    "id": "c_plagiarism",
+    "theme": "Design copied from other creators",
+    "use_for": "Buyer says the product or shop uses stolen or plagiarized work."
+   },
+   {
+    "id": "c_offensive",
+    "theme": "Offensive or biased content",
+    "use_for": "Images or text the buyer finds sexist, racist or otherwise offensive."
+   },
+   {
+    "id": "c_flat",
+    "theme": "Just a flat PDF, not interactive",
+    "use_for": "File acts like a plain image or PDF with no working digital features (no links, not set up for the note app)."
+   },
+   {
+    "id": "c_print",
+    "theme": "Hard to print correctly",
+    "use_for": "Printing is tricky, pages print wrong, misaligned or not as they should."
+   },
+   {
+    "id": "c_repetitive",
+    "theme": "Repetitive or duplicate pages",
+    "use_for": "Many near-duplicate or redundant pages, not enough variety."
+   },
+   {
+    "id": "c_shipping",
+    "theme": "Physical order slow or never arrived",
+    "use_for": "Printed or hard-copy order shipped late, got lost or never arrived."
+   },
+   {
+    "id": "c_split_files",
+    "theme": "Split into many separate files",
+    "use_for": "Product comes as many separate files or downloads instead of one combined planner."
+   },
+   {
+    "id": "c_paid_update",
+    "theme": "Charged for updates or fixes",
+    "use_for": "Buyer had to pay again for an updated or bug-fixed version."
+   },
+   {
+    "id": "c_fake_reviews",
+    "theme": "Reviews seem fake or bought",
+    "use_for": "Buyer says positive reviews are fake or rewarded with freebies."
+   },
+   {
+    "id": "c_not_physical",
+    "theme": "Expected a physical product",
+    "use_for": "Buyer didn't realise it was a printable file or didn't want to print and cut it themselves."
+   },
+   {
+    "id": "c_ai_art",
+    "theme": "AI-generated artwork",
+    "use_for": "Buyer objects that covers, images or stickers are AI-generated rather than hand-made."
+   },
+   {
+    "id": "c_billing",
+    "theme": "Charged the wrong amount",
+    "use_for": "Buyer was charged more than once or more than the price shown."
+   },
+   {
+    "id": "c_wrong_item",
+    "theme": "Received the wrong item",
+    "use_for": "Buyer got a different product or file than the one ordered."
+   },
+   {
+    "id": "c_delivery_delay",
+    "theme": "Slow or no delivery of files",
+    "use_for": "Took a long time to get access, still waiting, or never received the files."
+   },
+   {
+    "id": "c_share",
+    "theme": "Locked, can't share with others",
+    "use_for": "File is locked or restricted so the buyer can't share it with family or other users."
+   },
+   {
+    "id": "c_manual_pages",
+    "theme": "Have to duplicate or add pages yourself",
+    "use_for": "Only one copy of each page or no repeating dated pages, so the buyer must duplicate or build pages before using it."
+   }
+  ],
+  "praise": [
+   {
+    "id": "p_look",
+    "theme": "Beautiful design",
+    "use_for": "Pretty, aesthetic, love the colors."
+   },
+   {
+    "id": "p_easy",
+    "theme": "Easy to set up and use",
+    "use_for": "Easy, simple, user friendly."
+   },
+   {
+    "id": "p_nav",
+    "theme": "Links work, easy to navigate",
+    "use_for": "Praise for hyperlinks and moving around."
+   },
+   {
+    "id": "p_complete",
+    "theme": "Has everything I need",
+    "use_for": "Comprehensive, lots of pages, all in one."
+   },
+   {
+    "id": "p_adhd",
+    "theme": "Helps me stay on track",
+    "use_for": "Helps with ADHD, focus, staying organized."
+   },
+   {
+    "id": "p_daily",
+    "theme": "I use it every day",
+    "use_for": "Daily use, habit, hooked."
+   },
+   {
+    "id": "p_flexible",
+    "theme": "Flexible or customizable",
+    "use_for": "Can adapt it, undated, choose pages."
+   },
+   {
+    "id": "p_extras",
+    "theme": "Love the stickers and extras",
+    "use_for": "Stickers, bonus files."
+   },
+   {
+    "id": "p_device",
+    "theme": "Works on my device",
+    "use_for": "Works on Android, Samsung, Kindle, other apps."
+   },
+   {
+    "id": "p_guide",
+    "theme": "Clear instructions or tutorials",
+    "use_for": "Helpful guide, video, instructions."
+   },
+   {
+    "id": "p_as_described",
+    "theme": "Exactly as described",
+    "use_for": "Matches the listing."
+   },
+   {
+    "id": "p_quality",
+    "theme": "High quality",
+    "use_for": "Well made, professional."
+   },
+   {
+    "id": "p_value",
+    "theme": "Great value",
+    "use_for": "Good price for what you get."
+   },
+   {
+    "id": "p_support",
+    "theme": "Seller was helpful",
+    "use_for": "Good support."
+   },
+   {
+    "id": "p_repeat",
+    "theme": "Repeat buyer",
+    "use_for": "Bought before, will buy again, favorite shop."
+   },
+   {
+    "id": "p_fits_needs",
+    "theme": "Useful, fits my needs",
+    "use_for": "Useful, helpful, exactly what I needed or was looking for; suits how the buyer plans."
+   },
+   {
+    "id": "p_fast",
+    "theme": "Fast and responsive",
+    "use_for": "Praise that the file runs quickly with no lag on the device."
+   },
+   {
+    "id": "p_space",
+    "theme": "Plenty of writing space",
+    "use_for": "Praise for roomy boxes, lines or note space."
+   },
+   {
+    "id": "p_print",
+    "theme": "Prints easily and cleanly",
+    "use_for": "Praise that pages are easy to print and come out crisp."
+   },
+   {
+    "id": "p_updates",
+    "theme": "Free updates",
+    "use_for": "Praise for free updates or new yearly editions at no extra cost."
+   },
+   {
+    "id": "p_delivery",
+    "theme": "Fast, easy download",
+    "use_for": "Praise that the files arrived quickly or were easy to download or access after buying."
+   },
+   {
+    "id": "p_fun",
+    "theme": "Fun to use",
+    "use_for": "Buyer says it is fun or enjoyable to fill in or use."
+   }
+  ],
+  "wishes": [
+   {
+    "id": "w_customize",
+    "theme": "More ways to customize",
+    "use_for": "Edit tabs, change colors, add pages."
+   },
+   {
+    "id": "w_side_tabs",
+    "theme": "Side tabs for faster navigation",
+    "use_for": "Wants tabs instead of buttons."
+   },
+   {
+    "id": "w_back_button",
+    "theme": "A back button",
+    "use_for": "Return to previous page."
+   },
+   {
+    "id": "w_portrait",
+    "theme": "Portrait version",
+    "use_for": "Wants portrait orientation."
+   },
+   {
+    "id": "w_sunday_start",
+    "theme": "Sunday-start weeks",
+    "use_for": "Calendar starting on Sunday."
+   },
+   {
+    "id": "w_listing_info",
+    "theme": "Listing should say which apps are needed",
+    "use_for": "Clarity before buying."
+   },
+   {
+    "id": "w_file_format",
+    "theme": "Other file formats (Google Docs, Word, Pages)",
+    "use_for": "Wants the product in another file format or editor, such as Google Docs, Word or Apple Pages."
+   },
+   {
+    "id": "w_order",
+    "theme": "Pages in a logical order",
+    "use_for": "Wants pages or sections arranged in a sensible order so things are quick to find."
+   },
+   {
+    "id": "w_page_types",
+    "theme": "More page types included",
+    "use_for": "Wants a specific kind of page added to the product, such as to-do lists."
+   },
+   {
+    "id": "w_sharper_images",
+    "theme": "Larger, sharper image files",
+    "use_for": "Wants higher-resolution stickers or images that stay sharp when enlarged."
+   },
+   {
+    "id": "w_easy_stickers",
+    "theme": "Stickers ready to copy and paste",
+    "use_for": "Wants stickers or images that can be placed directly without tracing or extra steps."
+   },
+   {
+    "id": "w_time_range",
+    "theme": "Wider daily time range",
+    "use_for": "Wants the daily schedule to start earlier or end later."
+   },
+   {
+    "id": "w_language",
+    "theme": "Other languages",
+    "use_for": "Wants the product in a language other than English, or without foreign-language text."
+   },
+   {
+    "id": "w_easy_delivery",
+    "theme": "Easier way to receive the files",
+    "use_for": "Wishes the files were simpler to receive or download after buying."
+   },
+   {
+    "id": "w_tutorial",
+    "theme": "A video showing how it works",
+    "use_for": "Wants a demo or video tutorial showing how to use the product."
+   },
+   {
+    "id": "w_prefilled",
+    "theme": "Times or details pre-filled on pages",
+    "use_for": "Wants hours, dates or other fixed details already printed on pages so they need not be written each time."
+   },
+   {
+    "id": "w_next_year",
+    "theme": "New edition for upcoming years",
+    "use_for": "Wants the product released again for next year or every year."
+   },
+   {
+    "id": "w_autofill",
+    "theme": "Auto-fill book details",
+    "use_for": "Wants book info and cover filled in automatically, e.g. from the ISBN."
+   },
+   {
+    "id": "w_migrate",
+    "theme": "Easy move to a newer version",
+    "use_for": "Wants to carry existing entries over when upgrading to a new edition."
+   },
+   {
+    "id": "w_cheaper",
+    "theme": "Cheaper or smaller option",
+    "use_for": "Wants a lower price or to buy only the pages they need."
+   },
+   {
+    "id": "w_checkoff",
+    "theme": "A way to check items off",
+    "use_for": "Wants checkboxes or a way to mark items done or paid each period."
+   },
+   {
+    "id": "w_capacity",
+    "theme": "Room for more books",
+    "use_for": "Wants the journal to hold more book entries or review pages."
+   },
+   {
+    "id": "w_ready_elements",
+    "theme": "Ready-made fill-in elements",
+    "use_for": "Wants pre-made stickers or elements (such as filled-in star ratings) to drop in instead of drawing them."
+   },
+   {
+    "id": "w_printed",
+    "theme": "Option to buy it printed",
+    "use_for": "Would rather pay to have the planner printed and shipped."
+   },
+   {
+    "id": "w_undated",
+    "theme": "Undated version",
+    "use_for": "Wants an undated version of a dated page or calendar."
+   },
+   {
+    "id": "w_crop_marks",
+    "theme": "Crop or trim marks for printing",
+    "use_for": "Wants cut, bleed or trim marks so printed pages fit the planner."
+   },
+   {
+    "id": "w_sync",
+    "theme": "App and PDF versions that match",
+    "use_for": "Wants the companion app and the PDF/note-app version to share the same templates and stay in sync."
+   },
+   {
+    "id": "w_print_layout",
+    "theme": "Print layouts for smaller sizes",
+    "use_for": "Wants ready layouts for A5 or half-sheet sizes, e.g. two pages per sheet with cut lines."
+   },
+   {
+    "id": "w_previews",
+    "theme": "Page previews before buying",
+    "use_for": "Wants to see previews of the actual pages before purchasing."
+   },
+   {
+    "id": "w_themes",
+    "theme": "More design themes",
+    "use_for": "Wants more themes or style variations of the product."
+   },
+   {
+    "id": "w_links",
+    "theme": "Hyperlinked pages",
+    "use_for": "Wants the file hyperlinked for digital use."
+   },
+   {
+    "id": "w_typeable",
+    "theme": "Pages you can type on",
+    "use_for": "Wants fillable or typeable pages instead of handwriting only."
+   },
+   {
+    "id": "w_separate_pages",
+    "theme": "Pages as separate files",
+    "use_for": "Wants each sheet or page as its own file instead of one long PDF to scroll through."
+   },
+   {
+    "id": "w_rewards",
+    "theme": "More game-like rewards",
+    "use_for": "Wants more rewards, effects or features for gamified progress such as levelling up."
+   },
+   {
+    "id": "w_explanations",
+    "theme": "Clearer explanations of topics",
+    "use_for": "Wants concepts, diagrams or sections explained more clearly or in more depth."
+   },
+   {
+    "id": "w_nav_links",
+    "theme": "More links between views",
+    "use_for": "Wants extra hyperlinks between views (e.g. daily back to weekly, month to week) for quicker navigation."
+   },
+   {
+    "id": "w_gamify",
+    "theme": "More game-style rewards",
+    "use_for": "Wants more happening in gamified features, such as rewards or changes when leveling up."
+   }
+  ]
+ },
+ "reviews": [
+  {
+   "id": "r416",
+   "stars": 5,
+   "text": "Great planner. A little overwhelming at first, but love it so far!"
+  },
+  {
+   "id": "r417",
+   "stars": 5,
+   "text": "Bello questo articolo, lo consiglio"
+  },
+  {
+   "id": "r418",
+   "stars": 5,
+   "text": "Love it! Great design! Love the dark option!"
+  },
+  {
+   "id": "r419",
+   "stars": 5,
+   "text": "Really happy. It is like she really gets ADHD brains!"
+  },
+  {
+   "id": "r420",
+   "stars": 5,
+   "text": "This is truly amazing, I love all the hyper-links and how it incorporates wellbeing, the coloring, etc. Tons of templates and super easy to use."
+  },
+  {
+   "id": "r421",
+   "stars": 5,
+   "text": "This planner has helped me so much. So much care and thought has been put into it, and it shows. Well worth the money. Highly recommend."
+  },
+  {
+   "id": "r422",
+   "stars": 5,
+   "text": "Artikel von dem Verkäufer begleiten mich scheon ein paar Jahre und sie gestalten meinen Alltag einfacher. Kann ich für Spectrum- Ponies nur empfehlen!"
+  },
+  {
+   "id": "r423",
+   "stars": 5,
+   "text": "I have the digital version as well. It's been nice to have both."
+  },
+  {
+   "id": "r424",
+   "stars": 5,
+   "text": "Awesome, just what I needed to thrive in a world that is not designed for the ADHD Hunters & Gatherers."
+  },
+  {
+   "id": "r425",
+   "stars": 5,
+   "text": "Beautiful planner w/everything an ADHD having adult could need"
+  },
+  {
+   "id": "r426",
+   "stars": 5,
+   "text": "I love this planner so much! I have the digital version as well but I find having this printed out physically helps me to remember to fill everything out. I HIGHLY recommend this product for anyone who has ADHD and needs some help with organisation and structure. It's so cute, fun, and interactive in a way that will make you want to use it and stay organised.\r\nThank you so much for making this product! I take my planning binder everywhere with me now and it's made planning fun!"
+  },
+  {
+   "id": "r427",
+   "stars": 5,
+   "text": "Download is available for you to access immediately after purchase, template has a lovely color palette and is very easy and fun to use! I'll forever appreciate the seller for providing free updates for each new year. Thank you for sharing this planner!"
+  },
+  {
+   "id": "r428",
+   "stars": 5,
+   "text": "Perfect for my ADHD brain."
+  },
+  {
+   "id": "r429",
+   "stars": 5,
+   "text": "This item is so neat."
+  },
+  {
+   "id": "r430",
+   "stars": 5,
+   "text": "I love how comprehensive and easy to navigate this planner is! Thank you for making this :)"
+  },
+  {
+   "id": "r431",
+   "stars": 1,
+   "text": "Just bad. Don’t waste money"
+  },
+  {
+   "id": "r432",
+   "stars": 1,
+   "text": "0000 0000 000 00 00 000000"
+  },
+  {
+   "id": "r433",
+   "stars": 3,
+   "text": "This planner is super cute, and I love that there are so many color options. HOWEVER this is the complete wrong size for goodnotes and there is a lot of blank space on the sides, despite advertising that it is for apps like goodnotes. The page size is way too small and I have now spent money on a product I won't be using. This is a really small detail I just know it will bug me"
+  },
+  {
+   "id": "r435",
+   "stars": 4,
+   "text": "really neat design! i enjoy being able to pick and choose what style I want to use."
+  },
+  {
+   "id": "r436",
+   "stars": 4,
+   "text": "I like it very much"
+  },
+  {
+   "id": "r437",
+   "stars": 5,
+   "text": "love love love love love"
+  },
+  {
+   "id": "r438",
+   "stars": 5,
+   "text": "Love this planner because it works for what I am looking for"
+  },
+  {
+   "id": "r440",
+   "stars": 5,
+   "text": "It was exactly what I was looking for!"
+  },
+  {
+   "id": "r441",
+   "stars": 5,
+   "text": "Super cute and user friendly. getting married in 2026 and excited to put all my wedding adventures in these pages."
+  },
+  {
+   "id": "r442",
+   "stars": 5,
+   "text": "Love to use this planner!"
+  },
+  {
+   "id": "r443",
+   "stars": 5,
+   "text": "I would recommend to others"
+  },
+  {
+   "id": "r444",
+   "stars": 5,
+   "text": "Sehr schöner Planner, benutze ihn gerne"
+  },
+  {
+   "id": "r445",
+   "stars": 5,
+   "text": "Bought a 2026 digital planner which includes Oct 2025-Dec 2025 (bought it on 11/8/2025) \r\nI love how chic and minimal the planner is. It offers everything I need which is calendar, weekly/daily planner. It’s not complicated and not overwhelming like some of the planners which works for others. This one is perfect for me. Highly recommend if you want something chic and minimalist. \r\nEasy to download and use. For reference I use Goodnotes on my iPad. \r\nWill be purchasing from this seller again in the future."
+  },
+  {
+   "id": "r446",
+   "stars": 5,
+   "text": "Thank you so much !"
+  },
+  {
+   "id": "r447",
+   "stars": 5,
+   "text": "Clean and aesthetic design. I really like covers! 😍"
+  },
+  {
+   "id": "r448",
+   "stars": 5,
+   "text": "Great product and easy to use"
+  },
+  {
+   "id": "r449",
+   "stars": 5,
+   "text": "very comfy! I like minimalism"
+  },
+  {
+   "id": "r450",
+   "stars": 5,
+   "text": "So cute would so recommend"
+  },
+  {
+   "id": "r451",
+   "stars": 5,
+   "text": "Good formatting, easy to use"
+  },
+  {
+   "id": "r452",
+   "stars": 5,
+   "text": "Will be looking forward to using this"
+  },
+  {
+   "id": "r453",
+   "stars": 5,
+   "text": "User friendly, great quality. Very cute =)"
+  },
+  {
+   "id": "r454",
+   "stars": 5,
+   "text": "I enjoy this planner very much. I love how it included Oct-Dec of 25 so could start using it immediately."
+  },
+  {
+   "id": "r455",
+   "stars": 5,
+   "text": "Loverrr this adhd variant of the planner. It was well prepared and very easy to use! Looking forward to hav this as my 2026 bff! THank you!!"
+  },
+  {
+   "id": "r456",
+   "stars": 5,
+   "text": "Absolutely love it and the quality"
+  },
+  {
+   "id": "r457",
+   "stars": 5,
+   "text": "First time user! Very happy with the beautiful and user friendly design.Looking forward to plan my 2026!"
+  },
+  {
+   "id": "r458",
+   "stars": 5,
+   "text": "This planner suits me well"
+  },
+  {
+   "id": "r459",
+   "stars": 5,
+   "text": "Very functional planner and cute colour options. Great price too!"
+  },
+  {
+   "id": "r460",
+   "stars": 5,
+   "text": "Easy digital download. There are just enough extras in this planner that is perfect for me. Good examples in the product description"
+  },
+  {
+   "id": "r461",
+   "stars": 5,
+   "text": "Easy to use & great format, love it."
+  },
+  {
+   "id": "r462",
+   "stars": 5,
+   "text": "cute and useful love it"
+  },
+  {
+   "id": "r463",
+   "stars": 5,
+   "text": "Easy to download, beautifully designed, and very simple to use!"
+  },
+  {
+   "id": "r464",
+   "stars": 5,
+   "text": "great quality! can't wait to use in 2026!"
+  },
+  {
+   "id": "r465",
+   "stars": 5,
+   "text": "As expected. Thank you! 🙂"
+  },
+  {
+   "id": "r466",
+   "stars": 5,
+   "text": "Super cute. Love the layout."
+  },
+  {
+   "id": "r467",
+   "stars": 5,
+   "text": "Great product and very helpful seller. Will buy more products. Thank you! :)"
+  },
+  {
+   "id": "r468",
+   "stars": 5,
+   "text": "Great product and very helpful seller. Will buy more products. Thank you! :)"
+  },
+  {
+   "id": "r469",
+   "stars": 5,
+   "text": "Super uitgebreide planner en snel reactie op een vraag."
+  },
+  {
+   "id": "r470",
+   "stars": 5,
+   "text": "Beautiful and very useful planner!"
+  },
+  {
+   "id": "r471",
+   "stars": 5,
+   "text": "Good quality and easy to use"
+  },
+  {
+   "id": "r472",
+   "stars": 5,
+   "text": "Loving using this planner so far!"
+  },
+  {
+   "id": "r473",
+   "stars": 5,
+   "text": "love the hyperlinks and it's super cute and useful"
+  },
+  {
+   "id": "r474",
+   "stars": 5,
+   "text": "Nice so nice yes yes"
+  },
+  {
+   "id": "r475",
+   "stars": 5,
+   "text": "Loved the planner so much!"
+  },
+  {
+   "id": "r476",
+   "stars": 5,
+   "text": "Love this digital planner - very helpful, using it on my iPad mini."
+  },
+  {
+   "id": "r477",
+   "stars": 5,
+   "text": "Exactly as advertised, all links work, nice layout"
+  },
+  {
+   "id": "r478",
+   "stars": 5,
+   "text": "Very user friendly! I am looking forward to using this to stay organized this school year!"
+  },
+  {
+   "id": "r479",
+   "stars": 5,
+   "text": "Easy to use in goodnotes! Plenty of cover options"
+  },
+  {
+   "id": "r480",
+   "stars": 5,
+   "text": "I love it and it's super cute, very well created!"
+  },
+  {
+   "id": "r481",
+   "stars": 5,
+   "text": "Perfect planner for studies !"
+  },
+  {
+   "id": "r482",
+   "stars": 5,
+   "text": "I started using this and then realized that the planner also has days so I switched up the order of the planner, but other than that its literally perfect and is keeping me organized and held accountable for my very busy schedule"
+  },
+  {
+   "id": "r483",
+   "stars": 5,
+   "text": "I was looking for a digital planner that was easy to use, beautifully designed, and actually helped me organize my life! This one checks all the boxes! ✨ That’s saying something because I’m a graphic designer AND a teacher, so I’m very picky about my documents and organization tools LOL 🤣. \n\nYou get SO much content, which really shows how much time and care goes into creating these. I’m so impressed and excited to use them!\n\nThank you for creating such amazing digital downloads! 🤍 I am in love with all the templates from DreamGirlPlan! 🤍"
+  },
+  {
+   "id": "r484",
+   "stars": 5,
+   "text": "Absolutely love this planner! It is very beautiful and very well structured. It really helps me stay organized. Highly recommend it!"
+  },
+  {
+   "id": "r485",
+   "stars": 5,
+   "text": "Seller replied quickly when I had issues"
+  },
+  {
+   "id": "r486",
+   "stars": 5,
+   "text": "Tres pratique et de bonne qualité! Parfait pour l’organisation académique!"
+  },
+  {
+   "id": "r487",
+   "stars": 5,
+   "text": "I love this planner! It's perfect for what I need, and I'm trying to go completely digital!"
+  },
+  {
+   "id": "r488",
+   "stars": 5,
+   "text": "Amazing product I absolutely  love my planner its so easy to use and amazing for the price I got it ! Definitely beginner friendly to set up as well 🥰✨️11/10!!"
+  },
+  {
+   "id": "r489",
+   "stars": 1,
+   "text": "Download is not easy, more difficult"
+  },
+  {
+   "id": "r490",
+   "stars": 1,
+   "text": "This isn’t the dark version"
+  },
+  {
+   "id": "r491",
+   "stars": 1,
+   "text": "not what I thought it was.. please cancel my account."
+  },
+  {
+   "id": "r492",
+   "stars": 1,
+   "text": "This has been, hands down, the worst experience I have ever had with a product I ordered from Etsy. \n\nThe process of downloading this planner is terrible. I have not been able to upload it to Goodnotes & the website \"forces\" you to download to an email address. It's challenging just to receive the file because it is so big that the server times out.  When it finally was uploaded to GoodNotes, it took forever to load.  And then, when it finally loaded, the formatting was for A4 sized paper.  To make matters worse, when I clicked on the links to move from month to month, I was sent to the wrong page.  For instance, I clicked on \"April\" and was sent to the \"Monthly Goals\" page.  Cannot begin to express how frustrating and EXPENSIVE the overall experience has been. At this point, I would like a total refund."
+  },
+  {
+   "id": "r493",
+   "stars": 1,
+   "text": "need to spend more money, lame."
+  },
+  {
+   "id": "r494",
+   "stars": 1,
+   "text": "I can't get anything to download. I read the FAQ, but that wasn't the slightest bit helpful. I messaged the seller, hopefully I get a response. Right now I've paid $19.99 for something I can't use."
+  },
+  {
+   "id": "r495",
+   "stars": 1,
+   "text": "Took OVER A MONTH to receive this item and in the mean time the seller was absolutely ZERO help. I asked about having one of the designs listed as a PDF printed and they only responded with an automated message. I'm not sure if this is just a big box store posing as an 'artist' on Etsy or what, but it was impossible to reach a human...only got automated responses saying they are too busy to actually respond to questions. Then when I reached out about where my item was because of the super long shipping, all I got for a response was a screen shot of the tracking label.  This is the first negative review I've ever left for an Etsy seller in all my years on this site. Don't claim to be an artist in California if you are really operating out of a factory overseas...it's deceptive and wrong. Etsy is for artists and individuals!"
+  },
+  {
+   "id": "r496",
+   "stars": 1,
+   "text": "Very disappointed with this purchase and disappointed with the seller. I purchased this thinking it was a photoshop, editable file, which it is not. The platform you use for customers to access and edit your creations isn't user friendly and makes printing large volumes very complicated. If you reach out to customers and ask for feedback I feel you should do more when a customer tells you they are unhappy. Would have loved to hear some tips and tricks about making the process easier, instead you brushed me aside in the too hard basket. Thank you for creating lovely designs, but maybe rethink the way in which customers can access them :)"
+  },
+  {
+   "id": "r497",
+   "stars": 1,
+   "text": "I ordered a printed student planner. The product description said that it would be printed and shipped within 48 hours. It was not shipped out for 13 days. It was sent through FedEx, so I thought I might still get the planner before school started. Nope.\n\nThe tracking info showed the book taking a slow drive across the country from Massachusetts (NOT California) before getting lost in Washington State. At which point the tracker showed FedEx relaying the shipping info to the USPS.\n\nWeeks after my order, the shop owner initially shrugged and told me to contact FedEx and the post office to hunt down the package and go get it myself. The order was Refunded only after I opened a case with Etsy and provided them screenshots of the product and shop descriptions and emails showing the timeline."
+  },
+  {
+   "id": "r498",
+   "stars": 1,
+   "text": "Difficult and complicated,unable to download or find it on my iPad ANYWHERE to get it into GoodNotes,"
+  },
+  {
+   "id": "r499",
+   "stars": 1,
+   "text": "This Is Not an All Access Pass. The Goals Planner has a cost, as do other Planners."
+  },
+  {
+   "id": "r500",
+   "stars": 1,
+   "text": "I HATE leaving bad reviews and I NEVER leave them.... but this experience has been super frustrating. I ordered what I assumed was a digital pdf planner...  but no file was ever sent to me. So then I thought maybe I misunderstood and it was a printed planner that’ll be sent to me, so decided to wait a while to see if something showed up.... it’s now been almost 4 months and I still have NOTHING to show for my purchase. So since the right thing to do when you have an issue is to contact the seller instead of leaving negative feedback, that’s what I did.... TWICE! Never got a response... so I’m still coming up 0 in this situation. I just don’t know what to do at this point other than throw my hands up and say “oh well”. If it can get resolved I’d be happy to delete this and make a new comment retracting my statement."
+  },
+  {
+   "id": "r501",
+   "stars": 1,
+   "text": "wasn't able to download 😔"
+  },
+  {
+   "id": "r502",
+   "stars": 1,
+   "text": "I was not able to download the product.  The link that I was sent did not work."
+  },
+  {
+   "id": "r503",
+   "stars": 1,
+   "text": "Paid for hard copy  and never received."
+  },
+  {
+   "id": "r504",
+   "stars": 1,
+   "text": "Their download is too many steps and weird. I have bought a ton of stuff on Etsy and never had to go through so much crap to finally get to the download link and then when I finally did all I got was instructions on how to download their stuff, never ever did get to the item I purchased, Save your money, buy from someone else."
+  },
+  {
+   "id": "r505",
+   "stars": 1,
+   "text": "This was a waste of time and money"
+  },
+  {
+   "id": "r506",
+   "stars": 1,
+   "text": "I was looking for a fully customizable template.  I even purchased Adobe to convert to Word so I could customize, the entire file became jumbled and cannot be fixed unless I put a lot of work into the document.  I will be looking for something else."
+  },
+  {
+   "id": "r507",
+   "stars": 1,
+   "text": "In the back of the planner was some random book printed twice of about 50 pages, that ruined the planner for me. If this wouldn't have occurred, looks like it would have been a great planner."
+  },
+  {
+   "id": "r510",
+   "stars": 1,
+   "text": "Ordered this and realized the planner size wasn't available only after I contacted her because it was no where in the description (oh but it is now). Once realizing it wouldn't work for me, I contacted seller again and she said no refunds. Will never do business with this company again."
+  },
+  {
+   "id": "r511",
+   "stars": 1,
+   "text": "Not happy I have to use my email to sign into an account that is not Etsy. I don't trust this other site."
+  },
+  {
+   "id": "r513",
+   "stars": 1,
+   "text": "I needed it for an IPad mini 5 and it as imposible yo read because everything was too small"
+  },
+  {
+   "id": "r514",
+   "stars": 1,
+   "text": "This is by no means a 500+ Happy Planner Template purchase.  Basically, this is material that was resized for the Life Planner, and other planner materials already made for their shop and Happy Planner was put in the title.  The only thing \"Happy Planner\" about this is the size of the documents.  Templates is very misleading.  The first item I opened for the Mini was disporportioned and you could tell that they sized down the larger file.  So it's not 500+ unique templates that are solely for the Happy Planner.  I reached out immediately upon realizing that this wasn't what was advertised.  It was assumed that I didn't know how to open the file and then asked what was I expecting.  Really?  Thank you.  I was expecting to recive what I paid for.  Very disappointed.  I would suggest supporting a different shop."
+  },
+  {
+   "id": "r516",
+   "stars": 5,
+   "text": "Very clean and easy template! Perfect to stick on our fridge."
+  },
+  {
+   "id": "r517",
+   "stars": 5,
+   "text": "This is my 3rd year using this planner and notebooks.  I love how they are editable to what I need.  Thank you for such a great designed tool!"
+  },
+  {
+   "id": "r518",
+   "stars": 5,
+   "text": "Great quality product, would buy again"
+  },
+  {
+   "id": "r519",
+   "stars": 5,
+   "text": "A collection of customizable printables for my b6/mini HP. I really enjoyed choosing the background templates for each insert type."
+  },
+  {
+   "id": "r520",
+   "stars": 3,
+   "text": "This digital planner itself is great. It is well thought out, loads of options for layouts and themes etc.  My issues can with the actual set up and use of the planner.  You need to have an account and build your planner through the portal and then download it. I then had to purchase Noteshelf to run the planner across my windows devices. It took me ages to find a way to get the tabbed links to work in Noteshelf and there are too many clicks to get to the day to day pages as that is what I use the most.  I did love that I could have a normal diary page one side of the double and my planner with periods on the other side.  I also tried the app but that does not seem to synch with the Noteshelf planner but in fairness I did not look for very long as I was fed up of the time I had wasted so far. I have gone back to a paper plannner"
+  },
+  {
+   "id": "r521",
+   "stars": 5,
+   "text": "Planner was nice. The download was a little difficult, but I figured it out."
+  },
+  {
+   "id": "r522",
+   "stars": 5,
+   "text": "Thank you!! I love it.  Specially because it comes with an app which makes it so much easier."
+  },
+  {
+   "id": "r523",
+   "stars": 5,
+   "text": "Took me forever to figure out how get it on my iPad but once I did it’s great!"
+  },
+  {
+   "id": "r524",
+   "stars": 5,
+   "text": "Excellent puzzles and exciting to do."
+  },
+  {
+   "id": "r525",
+   "stars": 5,
+   "text": "Estoy encantada con el app y que se puede abrir en Goodnotes. Sin embargo, me di cuenta que no tienen los mismos templates y por lo tanto, no los puedo usar a la vez. Sería fantástico que ambas tuvieran los mismos templates y que el pdf de Goodnotes baje con el mismo template o formato que el digital.  Por lo demás , estoy encantada con este planner porque tiene muchas cosas que me ayudan a facilitarme el trabajo como maestra."
+  },
+  {
+   "id": "r526",
+   "stars": 5,
+   "text": "I love these planners. I've been using the Ultimate Planner for my ReMarkable2 for about 3 years now. They're easy to customize and work great for me. I highly recommend them."
+  },
+  {
+   "id": "r527",
+   "stars": 4,
+   "text": "Lots of options. Is as described"
+  },
+  {
+   "id": "r528",
+   "stars": 4,
+   "text": "Love this but wish it wasn’t as hard to download"
+  },
+  {
+   "id": "r529",
+   "stars": 5,
+   "text": "top Quality! easy and fast."
+  },
+  {
+   "id": "r530",
+   "stars": 5,
+   "text": "This is a great product."
+  },
+  {
+   "id": "r531",
+   "stars": 4,
+   "text": "Lots of layouts for different categories, not all inserts customizable - customization is a small learning curve. Overall a good product to personalize your planner with inserts you want and need."
+  },
+  {
+   "id": "r532",
+   "stars": 5,
+   "text": "great product easy to use."
+  },
+  {
+   "id": "r533",
+   "stars": 5,
+   "text": "great service quick and easy and I love the designs"
+  },
+  {
+   "id": "r534",
+   "stars": 5,
+   "text": "I think this is the best planner on Etsy for the Kindle Scribe colorsoft! It was fun to build and I absolutely love how customizable it is. Especially with being able to change the colors and theme! I was also able to set it up perfectly for my needs, rather than trying to fit my thoughts into someone else’s template! But if you prefer the premade templates, they’re still there. On some of the templates you can’t change the prompts, but there’s so many that you can change that it’s barely noticeable. I would definitely recommend this, and I will definitely be checking out the planners for other devices as well!"
+  },
+  {
+   "id": "r535",
+   "stars": 1,
+   "text": "eh eh eh eh eh"
+  },
+  {
+   "id": "r536",
+   "stars": 1,
+   "text": "I’ve been ripped off and I can’t get a refund. Avoid run takeoff be scared."
+  },
+  {
+   "id": "r537",
+   "stars": 1,
+   "text": "Not able to download the templates"
+  },
+  {
+   "id": "r538",
+   "stars": 1,
+   "text": "Didn't work on my Move"
+  },
+  {
+   "id": "r539",
+   "stars": 2,
+   "text": "Plenty of templates etc but these are all available from other providers too. Given it's marketed in colour for the Paper Pro I was expecting more design, use of colour etc but the majority are black and white and fairly basic in nature. I'm sure it's ideal for many people and that's great, but not what I was expecting or looking for."
+  },
+  {
+   "id": "r540",
+   "stars": 2,
+   "text": "i thougt i would like this but don't"
+  },
+  {
+   "id": "r541",
+   "stars": 2,
+   "text": "Good product, but it  doesn't fit my needs"
+  }
+ ]
+}

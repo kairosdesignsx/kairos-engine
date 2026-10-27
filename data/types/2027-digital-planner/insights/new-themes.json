@@ -1,0 +1,32 @@
+[
+ {
+  "id": "c_page_size",
+  "theme": "Wrong page size for my device or planner",
+  "use_for": "Page dimensions don't fit the buyer's device, app or planner size (blank margins, A4 instead of expected size, size not offered).",
+  "count": 3
+ },
+ {
+  "id": "w_carry_over",
+  "theme": "Carry entries between calendar views",
+  "use_for": "Wants entries on the main or monthly calendar to flow easily into the daily pages.",
+  "count": 1
+ },
+ {
+  "id": "w_app",
+  "theme": "A phone app version",
+  "use_for": "Wishes the planner were a standalone app instead of a file.",
+  "count": 1
+ },
+ {
+  "id": "w_calendar_sync",
+  "theme": "Connect to Apple or Google Calendar",
+  "use_for": "Wants the planner to link or sync with a calendar app such as Apple or Google Calendar.",
+  "count": 1
+ },
+ {
+  "id": "p_calendar_links",
+  "theme": "Links to my calendar app",
+  "use_for": "Praise for links that send entries or appointments to the buyer's calendar app.",
+  "count": 1
+ }
+]

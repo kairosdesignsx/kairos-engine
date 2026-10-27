@@ -1,0 +1,14 @@
+[
+ {
+  "id": "c_size",
+  "theme": "Wrong page size for my planner",
+  "use_for": "Page size didn't fit the buyer's planner, binder or hole punch, or the size they needed wasn't offered.",
+  "count": 6
+ },
+ {
+  "id": "c_watermark",
+  "theme": "Watermark on the pages",
+  "use_for": "Pages carry a seller or personal watermark the buyer doesn't want on the finished print.",
+  "count": 1
+ }
+]
