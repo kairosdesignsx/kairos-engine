@@ -1,0 +1,142 @@
+{
+ "type_id": "2027-printable-planner",
+ "made": "2026-10-27T13:41:03Z",
+ "calls": [
+  {
+   "tool": "mcp__EverBee__validate_product_idea",
+   "input": {
+    "product_idea": "2027 printable planner"
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_listings",
+   "input": {
+    "params": {
+     "search_term": "2027 printable planner",
+     "listing_type": "download",
+     "order_by": "est_mo_revenue",
+     "order_direction": "desc"
+    },
+    "columns": [
+     "Product",
+     "Shop Name",
+     "Price",
+     "Sales",
+     "Revenue",
+     "Total Sales",
+     "Total Reviews",
+     "Listing Age",
+     "Total Favorites",
+     "Total Views",
+     "Conversion Rate",
+     "Shop Age",
+     "Total Shop Sales",
+     "Tags",
+     "URL",
+     "Category"
+    ]
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_listings",
+   "input": {
+    "params": {
+     "search_term": "2027 printable planner",
+     "listing_type": "download",
+     "order_by": "est_mo_revenue",
+     "order_direction": "desc",
+     "page": 2
+    },
+    "columns": [
+     "Product",
+     "Shop Name",
+     "Price",
+     "Sales",
+     "Revenue",
+     "Total Sales",
+     "Total Reviews",
+     "Listing Age",
+     "Total Favorites",
+     "Total Views",
+     "Conversion Rate",
+     "Shop Age",
+     "Total Shop Sales",
+     "Tags",
+     "URL",
+     "Category"
+    ]
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_listings",
+   "input": {
+    "params": {
+     "search_term": "2027 printable planner",
+     "listing_type": "download",
+     "order_by": "est_total_sales",
+     "order_direction": "desc"
+    },
+    "columns": [
+     "Product",
+     "Shop Name",
+     "Price",
+     "Sales",
+     "Revenue",
+     "Total Sales",
+     "Total Reviews",
+     "Listing Age",
+     "Total Favorites",
+     "Total Views",
+     "Conversion Rate",
+     "Shop Age",
+     "Total Shop Sales",
+     "Tags",
+     "URL",
+     "Category"
+    ]
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_listings",
+   "input": {
+    "params": {
+     "search_term": "2027 printable planner",
+     "listing_type": "download",
+     "order_by": "est_total_sales",
+     "order_direction": "desc",
+     "page": 2
+    },
+    "columns": [
+     "Product",
+     "Shop Name",
+     "Price",
+     "Sales",
+     "Revenue",
+     "Total Sales",
+     "Total Reviews",
+     "Listing Age",
+     "Total Favorites",
+     "Total Views",
+     "Conversion Rate",
+     "Shop Age",
+     "Total Shop Sales",
+     "Tags",
+     "URL",
+     "Category"
+    ]
+   }
+  },
+  {
+   "tool": "mcp__EverBee__view_tag_patterns",
+   "input": {
+    "params": {
+     "search_term": "2027 printable planner",
+     "listing_type": "download",
+     "order_by": "est_total_sales",
+     "order_direction": "desc",
+     "per_page": 20
+    }
+   }
+  }
+ ]
+}
